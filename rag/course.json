@@ -1,0 +1,497 @@
+{
+  "slug": "rag",
+  "title": "RAG 檢索增強生成完整教學",
+  "shortTitle": "RAG",
+  "updated": "2026-10-30",
+  "footerLabel": "RETRIEVAL AUGMENTED GENERATION",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 BM25、切塊、引用、權限、GraphRAG 或 nDCG。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "建立第一條 RAG 流程",
+      "description": "理解問題、資料契約與第一個可執行助理。"
+    },
+    {
+      "id": "ingestion",
+      "number": "02",
+      "title": "把文件變成可用知識",
+      "description": "解析、清理、切塊、來源與版本管理。"
+    },
+    {
+      "id": "retrieval",
+      "number": "03",
+      "title": "讓系統找對資料",
+      "description": "BM25、向量、索引、權限與混合檢索。"
+    },
+    {
+      "id": "context",
+      "number": "04",
+      "title": "把候選變成可靠證據",
+      "description": "重排、改寫、內容預算、引用與拒答。"
+    },
+    {
+      "id": "advanced",
+      "number": "05",
+      "title": "進階 RAG 架構",
+      "description": "對話、結構化資料、多模態與 Agentic RAG。"
+    },
+    {
+      "id": "evaluation",
+      "number": "06",
+      "title": "量測品質與守住邊界",
+      "description": "黃金資料集、檢索指標、生成評估與安全。"
+    },
+    {
+      "id": "production",
+      "number": "07",
+      "title": "讓系統持續可靠運作",
+      "description": "服務架構、更新、成本、觀測與故障診斷。"
+    },
+    {
+      "id": "practice",
+      "number": "08",
+      "title": "完成自己的知識助理",
+      "description": "完整專案、部署路線、習題與速查表。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-what-is-rag",
+      "group": "foundations",
+      "title": "RAG 是什麼：讓回答有可以檢查的依據",
+      "summary": "從模型記憶與外部知識的差異開始，理解檢索增強生成的責任邊界。",
+      "tags": [
+        "RAG",
+        "Grounding"
+      ]
+    },
+    {
+      "id": "02-choose-architecture",
+      "group": "foundations",
+      "title": "先選對問題：RAG、長上下文、微調與資料庫",
+      "summary": "根據資料更新、查證需求與計算方式，選擇合適的技術組合。",
+      "tags": [
+        "架構",
+        "決策"
+      ]
+    },
+    {
+      "id": "03-pipeline",
+      "group": "foundations",
+      "title": "把流程拆開：建索引與回答問題",
+      "summary": "分清 ingestion 與 query path，讓更新、除錯與效能都有清楚位置。",
+      "tags": [
+        "Pipeline",
+        "索引"
+      ]
+    },
+    {
+      "id": "04-environment-first-run",
+      "group": "foundations",
+      "title": "環境準備與第一個離線 RAG",
+      "summary": "下載範例，實際執行檢索、來源映射與原句回答，建立可重現的起點。",
+      "tags": [
+        "Python",
+        "離線"
+      ],
+      "example": "01_first_rag.py"
+    },
+    {
+      "id": "05-data-contracts",
+      "group": "foundations",
+      "title": "資料契約：Document、Chunk、Hit 與 Answer",
+      "summary": "設計可追溯的資料欄位，避免片段身分、分數與引用在流程中混在一起。",
+      "tags": [
+        "Schema",
+        "Metadata"
+      ]
+    },
+    {
+      "id": "06-parsing",
+      "group": "ingestion",
+      "title": "文件解析：PDF、OCR、HTML 與表格",
+      "summary": "辨認來源格式的資訊損失，保留閱讀順序、位置與解析品質。",
+      "tags": [
+        "PDF",
+        "OCR"
+      ],
+      "example": "02_ingestion.py"
+    },
+    {
+      "id": "07-cleaning-lineage",
+      "group": "ingestion",
+      "title": "文字清理與資料血緣：保留事實的每一步",
+      "summary": "處理編碼、重複內容與清理規則，同時讓原文與標準化文字可追蹤。",
+      "tags": [
+        "清理",
+        "Lineage"
+      ]
+    },
+    {
+      "id": "08-chunking",
+      "group": "ingestion",
+      "title": "Chunking：大小、重疊與邊界的取捨",
+      "summary": "透過可執行切塊與公式，理解片段太大、太小和重疊過多的影響。",
+      "tags": [
+        "Chunking",
+        "LaTeX"
+      ],
+      "example": "03_chunking.py"
+    },
+    {
+      "id": "09-structure-parent-child",
+      "group": "ingestion",
+      "title": "結構感知、Parent–Child 與上下文補充",
+      "summary": "讓小片段負責命中，再讓適當的父段落提供完整條件與背景。",
+      "tags": [
+        "Parent–Child",
+        "結構"
+      ]
+    },
+    {
+      "id": "10-versioned-ingestion",
+      "group": "ingestion",
+      "title": "版本、增量匯入與刪除：讓知識跟著資料更新",
+      "summary": "設計冪等匯入、內容與權限更新，以及不殘留舊片段的索引生命週期。",
+      "tags": [
+        "版本",
+        "Upsert"
+      ]
+    },
+    {
+      "id": "11-bm25",
+      "group": "retrieval",
+      "title": "稀疏檢索：從詞元、TF–IDF 到 BM25",
+      "summary": "理解精確字詞命中的價值，推導 BM25 並處理中文、型號與錯誤碼。",
+      "tags": [
+        "BM25",
+        "Sparse"
+      ],
+      "example": "04_bm25.py"
+    },
+    {
+      "id": "12-vectors",
+      "group": "retrieval",
+      "title": "向量與相似度：把 cosine 真正算懂",
+      "summary": "從手工座標理解內積、長度、cosine 與距離，分清幾何示範和語意模型。",
+      "tags": [
+        "Embedding",
+        "LaTeX"
+      ],
+      "example": "05_vector_math.py"
+    },
+    {
+      "id": "13-embedding-models",
+      "group": "retrieval",
+      "title": "Embedding 模型與 API：語言、維度與一致性",
+      "summary": "選擇表示模型、保存版本，並以明確的 live 開關連接真正的 Embeddings API。",
+      "tags": [
+        "API",
+        "多語"
+      ],
+      "example": "13_openai_embeddings.py"
+    },
+    {
+      "id": "14-vector-indexes",
+      "group": "retrieval",
+      "title": "向量索引與資料庫：Exact、HNSW、pgvector",
+      "summary": "從線性掃描建立正確性基線，再理解近似搜尋與資料庫的工程取捨。",
+      "tags": [
+        "HNSW",
+        "pgvector"
+      ]
+    },
+    {
+      "id": "15-permissions-filters",
+      "group": "retrieval",
+      "title": "Metadata Filter 與權限：先限定能看的資料",
+      "summary": "把租戶、角色、版本與有效狀態落在程式和搜尋條件，避免證據跨越授權邊界。",
+      "tags": [
+        "ACL",
+        "Filter"
+      ],
+      "example": "06_filters_sqlite.py"
+    },
+    {
+      "id": "16-hybrid-rrf",
+      "group": "retrieval",
+      "title": "Hybrid Search 與 RRF：融合不同檢索訊號",
+      "summary": "保留關鍵字與語意檢索的各自價值，用排名融合處理分數尺度差異。",
+      "tags": [
+        "Hybrid",
+        "RRF"
+      ],
+      "example": "07_rrf.py"
+    },
+    {
+      "id": "17-reranking",
+      "group": "context",
+      "title": "Reranking：把相關候選排到真正需要的位置",
+      "summary": "區分 bi-encoder、cross-encoder 與啟發式重排，找出召回與精排的責任。",
+      "tags": [
+        "Reranker",
+        "Cross-encoder"
+      ],
+      "example": "08_reranking.py"
+    },
+    {
+      "id": "18-mmr-diversity",
+      "group": "context",
+      "title": "MMR 與多樣性：避免五段證據都在說同一句話",
+      "summary": "在相關性與新資訊之間取捨，理解去重、來源配額與 MMR。",
+      "tags": [
+        "MMR",
+        "多樣性"
+      ]
+    },
+    {
+      "id": "19-query-transformation",
+      "group": "context",
+      "title": "Query Transformation：改寫、Multi-query 與 HyDE",
+      "summary": "把口語問題轉成更可檢索的形式，同時保留原始意圖與硬條件。",
+      "tags": [
+        "Query Rewrite",
+        "HyDE"
+      ],
+      "example": "09_query_expansion.py"
+    },
+    {
+      "id": "20-multilingual-domain",
+      "group": "context",
+      "title": "跨語言與領域詞彙：中文、英文、型號與單位",
+      "summary": "處理術語對齊與精確條件，建立可解釋的詞典與檢索路由。",
+      "tags": [
+        "繁體中文",
+        "領域"
+      ]
+    },
+    {
+      "id": "21-context-budget",
+      "group": "context",
+      "title": "Context Engineering：預算、排序與證據封裝",
+      "summary": "計算指令、歷史、證據與輸出預算，保留完整條款及穩定來源映射。",
+      "tags": [
+        "Context",
+        "Budget"
+      ],
+      "example": "10_context_citations.py"
+    },
+    {
+      "id": "22-grounded-generation",
+      "group": "context",
+      "title": "Grounded Generation：引用、拒答與答案檢查",
+      "summary": "把事實支持度、來源編號與生成狀態分開檢查，建立明確的無答案行為。",
+      "tags": [
+        "Citations",
+        "拒答"
+      ]
+    },
+    {
+      "id": "23-conversational-rag",
+      "group": "advanced",
+      "title": "Conversational RAG：追問、歷史與記憶",
+      "summary": "把代名詞還原成可檢索問題，防止對話歷史變成沒有根據的知識。",
+      "tags": [
+        "Conversation",
+        "Memory"
+      ],
+      "example": "15_conversation.py"
+    },
+    {
+      "id": "24-structured-data",
+      "group": "advanced",
+      "title": "SQL、結構化檢索與 Text-to-SQL 的分工",
+      "summary": "讓文件解釋規則、資料庫執行精確計算，並控制自然語言查詢的權限。",
+      "tags": [
+        "SQL",
+        "Structured"
+      ]
+    },
+    {
+      "id": "25-tables-multimodal",
+      "group": "advanced",
+      "title": "表格與多模態 RAG：保留列欄、圖像與單位",
+      "summary": "設計文字、表格與頁面影像的檢索單位，避免數值脫離欄位語境。",
+      "tags": [
+        "Tables",
+        "Multimodal"
+      ]
+    },
+    {
+      "id": "26-agentic-rag",
+      "group": "advanced",
+      "title": "Agentic RAG 與 LangGraph：有界的搜尋迴圈",
+      "summary": "在需要多步查證時加入路由、評估與重查，同時設定停止、成本與權限。",
+      "tags": [
+        "Agentic RAG",
+        "LangGraph"
+      ]
+    },
+    {
+      "id": "27-graph-hierarchical-rag",
+      "group": "advanced",
+      "title": "GraphRAG、RAPTOR 與進階架構的選擇",
+      "summary": "區分關係圖、摘要樹與流程圖，讓進階方法對應具體問題。",
+      "tags": [
+        "GraphRAG",
+        "RAPTOR"
+      ]
+    },
+    {
+      "id": "28-managed-rag",
+      "group": "advanced",
+      "title": "自建與託管 RAG：OpenAI、Gemini、Claude 如何搭配",
+      "summary": "比較自主管線與供應商檔案檢索，釐清上傳、索引完成、引用與責任邊界。",
+      "tags": [
+        "File Search",
+        "供應商"
+      ]
+    },
+    {
+      "id": "29-evaluation-dataset",
+      "group": "evaluation",
+      "title": "評估資料集：問題、標準答案與 Qrels",
+      "summary": "建立能區分檢索錯誤、生成錯誤與無答案行為的測試資料。",
+      "tags": [
+        "Dataset",
+        "Qrels"
+      ]
+    },
+    {
+      "id": "30-retrieval-metrics",
+      "group": "evaluation",
+      "title": "檢索指標：Precision、Recall、MRR 與 nDCG",
+      "summary": "逐步計算指標，正確處理排名、相關等級與重複文件。",
+      "tags": [
+        "Metrics",
+        "LaTeX"
+      ],
+      "example": "11_evaluation.py"
+    },
+    {
+      "id": "31-answer-evaluation",
+      "group": "evaluation",
+      "title": "答案評估：正確性、忠實度、引用與拒答",
+      "summary": "建立人工量表與可校準的自動評分，把流暢度和事實品質分開。",
+      "tags": [
+        "Faithfulness",
+        "Evals"
+      ]
+    },
+    {
+      "id": "32-experiments",
+      "group": "evaluation",
+      "title": "實驗與消融：知道是哪個改動帶來進步",
+      "summary": "固定資料與評估條件，逐一比較切塊、檢索、重排與生成，避免只調到熟悉的題目。",
+      "tags": [
+        "Ablation",
+        "實驗"
+      ]
+    },
+    {
+      "id": "33-rag-security",
+      "group": "evaluation",
+      "title": "RAG 安全：Prompt Injection、資料外洩與授權",
+      "summary": "把外部文字視為不可信資料，透過權限、工具邊界與輸出檢查降低風險。",
+      "tags": [
+        "安全",
+        "Prompt Injection"
+      ]
+    },
+    {
+      "id": "34-service-architecture",
+      "group": "production",
+      "title": "正式服務架構：API、背景匯入與索引版本",
+      "summary": "把本機原型分成可維護的服務邊界，設計狀態、併發與失敗回應。",
+      "tags": [
+        "API",
+        "Production"
+      ]
+    },
+    {
+      "id": "35-updates-cache",
+      "group": "production",
+      "title": "更新、刪除與快取：避免舊答案持續出現",
+      "summary": "把文件、權限、索引與答案快取連成同一個生命週期，驗證冪等與失效。",
+      "tags": [
+        "Cache",
+        "Lifecycle"
+      ],
+      "example": "12_incremental.py"
+    },
+    {
+      "id": "36-cost-latency",
+      "group": "production",
+      "title": "成本與延遲：用數據分配檢索與生成預算",
+      "summary": "估算匯入與查詢成本，觀察 p50、p95 與重試，避免只看模型單價。",
+      "tags": [
+        "Cost",
+        "Latency"
+      ]
+    },
+    {
+      "id": "37-observability",
+      "group": "production",
+      "title": "Observability：讓每個答案都能追查與重現",
+      "summary": "設計 trace、品質監控與使用者回饋，保留足夠證據而不收集多餘敏感資料。",
+      "tags": [
+        "Tracing",
+        "Monitoring"
+      ]
+    },
+    {
+      "id": "38-debugging",
+      "group": "production",
+      "title": "故障診斷：從錯答案回到最早出錯的階段",
+      "summary": "用具體症狀逐層定位解析、檢索、權限、context 和生成問題。",
+      "tags": [
+        "Debugging",
+        "回歸"
+      ]
+    },
+    {
+      "id": "39-capstone",
+      "group": "practice",
+      "title": "完整專案：從文件到可查證的知識助理",
+      "summary": "把虛構手冊、授權、BM25、重排、context、引用與評估組成可執行專案。",
+      "tags": [
+        "Capstone",
+        "實作"
+      ],
+      "example": "16_capstone.py"
+    },
+    {
+      "id": "40-live-and-deployment",
+      "group": "practice",
+      "title": "接上真正模型與部署：教學網站、API 與金鑰",
+      "summary": "執行選配 Dense RAG，並分清 GitHub Pages 靜態課程與需要伺服器的問答服務。",
+      "tags": [
+        "部署",
+        "Live RAG"
+      ],
+      "example": "14_live_rag.py"
+    },
+    {
+      "id": "41-exercises",
+      "group": "practice",
+      "title": "分級練習與解答：從會跑到能解釋失敗",
+      "summary": "用可觀察行為驗收基礎、進階與專案練習，避免只複製範例。",
+      "tags": [
+        "Exercises",
+        "驗收"
+      ]
+    },
+    {
+      "id": "42-reference",
+      "group": "practice",
+      "title": "速查表、名詞與官方資料路線",
+      "summary": "整理參數、公式、實作入口與延伸閱讀，讓你日後可以快速回查。",
+      "tags": [
+        "Reference",
+        "參數"
+      ]
+    }
+  ]
+}

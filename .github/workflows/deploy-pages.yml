@@ -33,9 +33,13 @@ jobs:
             tools/requirements-ci.txt
             tools/requirements.txt
             langgraph/examples/requirements.txt
+            pytorch/examples/requirements.txt
 
       - name: Install build and test dependencies
         run: python -m pip install -r tools/requirements-ci.txt
+
+      - name: Install pinned latest-stable PyTorch CPU course baseline
+        run: python -m pip install -r pytorch/examples/requirements.txt --index-url https://download.pytorch.org/whl/cpu
 
       - name: Build course pages and downloads
         run: python tools/build.py
@@ -48,6 +52,15 @@ jobs:
 
       - name: Test LLM examples without real API requests
         run: python -m unittest discover -s llm/examples -p test_examples.py -v
+
+      - name: Test RAG retrieval, permissions, citations, and offline examples
+        run: python -m unittest discover -s rag/examples -p test_examples.py -v
+
+      - name: Test embedding mathematics, learning, adapters, and offline examples
+        run: python -m unittest discover -s embedding/examples -p test_examples.py -v
+
+      - name: Test PyTorch CPU training, gradients, checkpoints, resume, and export
+        run: python -m unittest discover -s pytorch/examples -p test_examples.py -v
 
       - name: Prepare publishable website
         run: python tools/prepare_pages.py --target pages

@@ -1,0 +1,561 @@
+{
+  "slug": "embedding",
+  "title": "Embedding 與表示學習完整教學",
+  "shortTitle": "Embedding",
+  "updated": "2026-10-30",
+  "footerLabel": "EMBEDDINGS & REPRESENTATION LEARNING",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 cosine、Word2Vec、Pooling、對比學習、PCA、量化或 Gemini。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "先把向量與表示想清楚",
+      "description": "從第一個座標到可執行的表示，不跳過基本觀念。"
+    },
+    {
+      "id": "origins",
+      "number": "02",
+      "title": "表示是怎麼學出來的",
+      "description": "共現、矩陣分解、Word2Vec、子詞與上下文。"
+    },
+    {
+      "id": "sentences",
+      "number": "03",
+      "title": "句向量與對比學習",
+      "description": "Pooling、正負樣本、損失、任務前綴與多語模型。"
+    },
+    {
+      "id": "models",
+      "number": "04",
+      "title": "模型、API 與資料契約",
+      "description": "選型、OpenAI、Gemini、本機推論與可重現設定。"
+    },
+    {
+      "id": "applications",
+      "number": "05",
+      "title": "把 Embedding 用在不同問題",
+      "description": "搜尋、分類、聚類、去重、推薦與離群分析。"
+    },
+    {
+      "id": "geometry",
+      "number": "06",
+      "title": "評估、幾何與壓縮",
+      "description": "指標、門檻、空間形狀、降維、量化與維度取捨。"
+    },
+    {
+      "id": "advanced",
+      "number": "07",
+      "title": "多模態、微調與可靠性",
+      "description": "跨模態表示、資料、訓練、蒸餾與隱私邊界。"
+    },
+    {
+      "id": "engineering",
+      "number": "08",
+      "title": "從實驗到自己的工作台",
+      "description": "索引、遷移、成本、完整專案、習題與速查。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-representation",
+      "group": "foundations",
+      "title": "Embedding 是什麼：讓資料成為可以運算的表示",
+      "summary": "從文字、圖片與使用者行為出發，理解表示與任務之間的關係。",
+      "tags": [
+        "表示學習",
+        "概念"
+      ]
+    },
+    {
+      "id": "02-vector-arithmetic",
+      "group": "foundations",
+      "title": "向量數學：座標、內積、範數與線性組合",
+      "summary": "把每個運算實際算一次，建立後續相似度、Pooling 和梯度的基礎。",
+      "tags": [
+        "線性代數",
+        "LaTeX"
+      ],
+      "example": "01_vectors.py"
+    },
+    {
+      "id": "03-similarity",
+      "group": "foundations",
+      "title": "Cosine、Dot Product 與 L2：分數到底代表什麼",
+      "summary": "區分方向與尺度，理解排序方向、正規化和不能直接當機率的相似度。",
+      "tags": [
+        "Cosine",
+        "距離"
+      ]
+    },
+    {
+      "id": "04-tokens-and-levels",
+      "group": "foundations",
+      "title": "Token、Embedding Table、Hidden State 與句向量",
+      "summary": "從 tokenizer 到模型輸出，辨認不同層次的向量與它們的用途。",
+      "tags": [
+        "Token",
+        "Pooling"
+      ]
+    },
+    {
+      "id": "05-vector-spaces",
+      "group": "foundations",
+      "title": "向量空間與相容性：同維度也可能完全不能混用",
+      "summary": "用旋轉不變性、模型版本與任務設定，理解向量需要完整的身分契約。",
+      "tags": [
+        "空間",
+        "版本"
+      ]
+    },
+    {
+      "id": "06-first-run",
+      "group": "foundations",
+      "title": "環境準備與第一個向量工作台",
+      "summary": "下載完整範例，先以純 Python 觀察向量、訓練與搜尋，再選配真正模型。",
+      "tags": [
+        "Python",
+        "離線"
+      ]
+    },
+    {
+      "id": "07-cooccurrence",
+      "group": "origins",
+      "title": "分布假說與共現矩陣：從鄰近文字找規律",
+      "summary": "建立 word–context 計數，理解視窗、頻率與 PMI 的作用。",
+      "tags": [
+        "Co-occurrence",
+        "PPMI"
+      ],
+      "example": "03_cooccurrence.py"
+    },
+    {
+      "id": "08-sparse-low-rank",
+      "group": "origins",
+      "title": "One-hot、TF–IDF 與低秩分解：稀疏到稠密的橋樑",
+      "summary": "理解詞彙表示、IDF、SVD 與低秩近似，避免把稠密一律等同語意。",
+      "tags": [
+        "TF–IDF",
+        "SVD"
+      ],
+      "example": "02_tfidf.py"
+    },
+    {
+      "id": "09-word2vec",
+      "group": "origins",
+      "title": "Word2Vec：CBOW、Skip-gram 與兩張向量表",
+      "summary": "把鄰近詞預測轉成可學習參數，理解局部訓練目標與語意關係。",
+      "tags": [
+        "Word2Vec",
+        "Skip-gram"
+      ]
+    },
+    {
+      "id": "10-negative-sampling",
+      "group": "origins",
+      "title": "負採樣與梯度：親手更新一個詞向量",
+      "summary": "推導 logistic loss 與同時更新，實際訓練六詞模型並驗證梯度。",
+      "tags": [
+        "Gradient",
+        "Negative Sampling"
+      ],
+      "example": "04_tiny_skipgram.py"
+    },
+    {
+      "id": "11-glove-fasttext",
+      "group": "origins",
+      "title": "GloVe、fastText 與 OOV：詞的內部也有結構",
+      "summary": "比較全域共現目標、子詞表示與未知詞，理解相似拼字的幫助和限制。",
+      "tags": [
+        "GloVe",
+        "fastText"
+      ]
+    },
+    {
+      "id": "12-contextual-encoders",
+      "group": "origins",
+      "title": "上下文表示：BERT、Attention 與位置資訊",
+      "summary": "理解 token 表示如何隨句子改變，以及一般語言模型不自動成為句向量模型。",
+      "tags": [
+        "BERT",
+        "Contextual"
+      ]
+    },
+    {
+      "id": "13-sentence-encoders",
+      "group": "sentences",
+      "title": "Sentence Embedding：Bi-encoder、Cross-encoder 與 Late Interaction",
+      "summary": "分清預先索引與聯合比較的架構，理解速度、精度與可重用性的取捨。",
+      "tags": [
+        "SBERT",
+        "Bi-encoder"
+      ]
+    },
+    {
+      "id": "14-pooling",
+      "group": "sentences",
+      "title": "Pooling、Attention Mask 與正規化",
+      "summary": "從 token hidden states 計算句向量，實際比較 PAD 參與前後的結果。",
+      "tags": [
+        "Mean Pooling",
+        "Mask"
+      ],
+      "example": "06_pooling.py"
+    },
+    {
+      "id": "15-contrastive-learning",
+      "group": "sentences",
+      "title": "對比學習與 InfoNCE：拉近正樣本、區分負樣本",
+      "summary": "推導穩定 softmax 損失，理解溫度、排名和錯誤標籤如何影響學習。",
+      "tags": [
+        "InfoNCE",
+        "Temperature"
+      ],
+      "example": "05_contrastive.py"
+    },
+    {
+      "id": "16-training-pairs",
+      "group": "sentences",
+      "title": "正負樣本、Triplet、Hard Negative 與 False Negative",
+      "summary": "建立符合業務的訓練關係，避免相似內容被當錯誤負例。",
+      "tags": [
+        "Dataset",
+        "Triplet"
+      ]
+    },
+    {
+      "id": "17-task-recipes",
+      "group": "sentences",
+      "title": "任務前綴、Instruction 與 Query／Document 非對稱",
+      "summary": "把模型卡的輸入規則納入版本，避免看似相同文字進入不同空間。",
+      "tags": [
+        "Prompt",
+        "Task Type"
+      ]
+    },
+    {
+      "id": "18-multilingual",
+      "group": "sentences",
+      "title": "多語與跨領域：繁體中文、代碼與真正的跨語對齊",
+      "summary": "設計語言與領域分組測試，分辨能編碼、能理解和能精確識別。",
+      "tags": [
+        "多語",
+        "Domain"
+      ]
+    },
+    {
+      "id": "19-choose-model",
+      "group": "models",
+      "title": "模型選型：把 Benchmark 變成自己的驗收",
+      "summary": "同時比較任務品質、語言、長度、延遲、成本與部署限制。",
+      "tags": [
+        "MTEB",
+        "選型"
+      ]
+    },
+    {
+      "id": "20-openai-api",
+      "group": "models",
+      "title": "OpenAI Embeddings：參數、輸出與批次配對",
+      "summary": "用明確的 dry run／live 分界學會 model、input、dimensions 與回應驗證。",
+      "tags": [
+        "OpenAI",
+        "API"
+      ],
+      "example": "17_openai.py"
+    },
+    {
+      "id": "21-gemini-api",
+      "group": "models",
+      "title": "Gemini Embeddings：任務類型、REST 與 SDK 欄位",
+      "summary": "理解 query/document 設定、同步批次順序及新版巢狀 config。",
+      "tags": [
+        "Gemini",
+        "Task Type"
+      ],
+      "example": "18_gemini.py"
+    },
+    {
+      "id": "22-local-inference",
+      "group": "models",
+      "title": "本機 Sentence Transformers：模型下載、離線與 Recipe",
+      "summary": "控制相依套件、固定 revision，分清已有權重推論與允許新下載。",
+      "tags": [
+        "Local",
+        "Sentence Transformers"
+      ],
+      "example": "19_local_model.py"
+    },
+    {
+      "id": "23-batching-errors",
+      "group": "models",
+      "title": "批次、長文本、非同步與錯誤處理",
+      "summary": "讓 Embedding 匯入能限流、重試與恢復，同時保留每筆資料對應。",
+      "tags": [
+        "Batching",
+        "Retry"
+      ]
+    },
+    {
+      "id": "24-manifest-storage",
+      "group": "models",
+      "title": "Manifest、快取與向量儲存：把表示當成有版本的資料",
+      "summary": "保存模型、角色、維度與前處理，防止同名文件在不同空間誤讀。",
+      "tags": [
+        "Manifest",
+        "SQLite"
+      ],
+      "example": "16_manifest.py"
+    },
+    {
+      "id": "25-semantic-search",
+      "group": "applications",
+      "title": "語意搜尋：Exact Search、Hybrid 與 RAG 的接點",
+      "summary": "把 query 與文件放進相容空間，建立可追溯的搜尋結果與精確字詞基線。",
+      "tags": [
+        "Search",
+        "Hybrid"
+      ],
+      "example": "07_search.py"
+    },
+    {
+      "id": "26-classification",
+      "group": "applications",
+      "title": "Embedding 分類：最近中心、kNN 與監督式模型",
+      "summary": "用標註資料建立類別邊界，分清 cosine 排名、類別機率和未知輸入。",
+      "tags": [
+        "Classification",
+        "Centroid"
+      ],
+      "example": "08_classification.py"
+    },
+    {
+      "id": "27-clustering",
+      "group": "applications",
+      "title": "Embedding 聚類：K-means、DBSCAN 與群集驗收",
+      "summary": "用沒有標籤的向量探索結構，避免把群號誤認為真實分類。",
+      "tags": [
+        "Clustering",
+        "K-means"
+      ],
+      "example": "09_clustering.py"
+    },
+    {
+      "id": "28-deduplication",
+      "group": "applications",
+      "title": "去重與相似配對：門檻、分組與避免誤合併",
+      "summary": "把相似度轉成可審查的配對決策，保留版本、數字與關鍵差異。",
+      "tags": [
+        "Deduplication",
+        "Threshold"
+      ],
+      "example": "10_thresholds.py"
+    },
+    {
+      "id": "29-recommendations",
+      "group": "applications",
+      "title": "內容推薦與個人偏好向量：冷啟動、多樣性與時間",
+      "summary": "以歷史內容建立偏好表示，分清內容式推薦與協同訊號。",
+      "tags": [
+        "Recommendation",
+        "Profile"
+      ],
+      "example": "11_recommendations.py"
+    },
+    {
+      "id": "30-outliers",
+      "group": "applications",
+      "title": "離群、探索與漂移：距離很遠不代表一定錯誤",
+      "summary": "用局部鄰近程度辨認值得檢查的資料，避免將罕見內容自動視為異常事件。",
+      "tags": [
+        "Outlier",
+        "Drift"
+      ],
+      "example": "12_anomalies.py"
+    },
+    {
+      "id": "31-evaluation",
+      "group": "geometry",
+      "title": "Embedding 評估：檢索、分類、聚類與資料切分",
+      "summary": "讓指標對應任務，防止測試洩漏、重複文件和單一平均掩蓋問題。",
+      "tags": [
+        "Evaluation",
+        "Metrics"
+      ],
+      "example": "13_evaluation.py"
+    },
+    {
+      "id": "32-threshold-calibration",
+      "group": "geometry",
+      "title": "門檻與校準：Precision–Recall、ROC 與成本",
+      "summary": "把連續分數轉成決策，分清驗證門檻、機率校準與不同資料分布。",
+      "tags": [
+        "Threshold",
+        "Calibration"
+      ]
+    },
+    {
+      "id": "33-space-geometry",
+      "group": "geometry",
+      "title": "空間幾何：各向異性、Hubness、中心化與距離集中",
+      "summary": "解釋很多句子都很像、少數文件總在前面的可能原因，先診斷再修正。",
+      "tags": [
+        "Anisotropy",
+        "Hubness"
+      ]
+    },
+    {
+      "id": "34-projection",
+      "group": "geometry",
+      "title": "PCA、t-SNE 與 UMAP：看見結構，也看見投影限制",
+      "summary": "實際計算線性主成分，分清探索圖、可部署轉換與原空間近鄰。",
+      "tags": [
+        "PCA",
+        "UMAP"
+      ],
+      "example": "14_pca.py"
+    },
+    {
+      "id": "35-quantization",
+      "group": "geometry",
+      "title": "向量量化：float32、int8、Binary 與重打分",
+      "summary": "實際壓縮數值、保存尺度與誤差，分清表示壓縮和模型權重量化。",
+      "tags": [
+        "Quantization",
+        "int8"
+      ],
+      "example": "15_quantization.py"
+    },
+    {
+      "id": "36-dimensionality",
+      "group": "geometry",
+      "title": "維度縮減：PCA、投影與 Matryoshka Representation",
+      "summary": "理解哪些向量可以截短，並為不同成本條件建立可比較的設定。",
+      "tags": [
+        "Matryoshka",
+        "維度"
+      ]
+    },
+    {
+      "id": "37-clip",
+      "group": "advanced",
+      "title": "CLIP 與跨模態空間：文字如何找圖片",
+      "summary": "理解成對圖文訓練、共享表示與對比目標，不把任意 encoder 混在一起。",
+      "tags": [
+        "CLIP",
+        "Multimodal"
+      ]
+    },
+    {
+      "id": "38-multimodal-documents",
+      "group": "advanced",
+      "title": "圖片、音訊、影片與文件：選對表示單位",
+      "summary": "處理頁面、音訊片段與時間定位，避免把模型模態支援推論到所有工具。",
+      "tags": [
+        "Audio",
+        "Document"
+      ]
+    },
+    {
+      "id": "39-finetuning-data",
+      "group": "advanced",
+      "title": "領域微調前：資料定義、切分、授權與基線",
+      "summary": "決定什麼時候值得訓練，建立正負配對和回歸範圍，避免昂貴地學錯目標。",
+      "tags": [
+        "Fine-tuning",
+        "Data"
+      ]
+    },
+    {
+      "id": "40-training-recipe",
+      "group": "advanced",
+      "title": "微調實作路線：Loss、Batch、Trainer 與 Checkpoint",
+      "summary": "把資料、目標與資源連成一個可重現實驗，理解訓練和 encoder 更新的邊界。",
+      "tags": [
+        "Trainer",
+        "Checkpoint"
+      ]
+    },
+    {
+      "id": "41-distillation",
+      "group": "advanced",
+      "title": "蒸餾與壓縮：讓較小模型學到可用關係",
+      "summary": "比較向量對齊、關係蒸餾與模型／輸出壓縮，量測真正的品質成本。",
+      "tags": [
+        "Distillation",
+        "Compression"
+      ]
+    },
+    {
+      "id": "42-privacy-bias",
+      "group": "advanced",
+      "title": "隱私、偏誤與對抗：向量不是匿名化資料",
+      "summary": "理解表示可能保留敏感資訊，建立授權、刪除與分組驗收。",
+      "tags": [
+        "Privacy",
+        "Bias"
+      ]
+    },
+    {
+      "id": "43-indexes-capacity",
+      "group": "engineering",
+      "title": "索引與容量：Exact、HNSW、過濾與記憶體估算",
+      "summary": "把 encoder 品質和搜尋近似誤差分開，估算完整儲存而不只看向量 payload。",
+      "tags": [
+        "ANN",
+        "HNSW"
+      ]
+    },
+    {
+      "id": "44-migration",
+      "group": "engineering",
+      "title": "版本遷移與服務契約：換模型不只改一行名稱",
+      "summary": "設計雙索引、快取失效、影子比較與回復，讓新舊空間不互相污染。",
+      "tags": [
+        "Migration",
+        "Versioning"
+      ]
+    },
+    {
+      "id": "45-cost-monitoring",
+      "group": "engineering",
+      "title": "吞吐、成本與監控：知道時間和資源花在哪裡",
+      "summary": "量測 tokenization、推論、搜尋與版本，讓效能改善有對照。",
+      "tags": [
+        "Latency",
+        "Monitoring"
+      ]
+    },
+    {
+      "id": "46-capstone",
+      "group": "engineering",
+      "title": "完整專案：自己的 Embedding 工作台",
+      "summary": "把表示、搜尋、評估、版本和模型接點整理成可執行的獨立資料夾。",
+      "tags": [
+        "Capstone",
+        "實作"
+      ],
+      "example": "20_workbench.py"
+    },
+    {
+      "id": "47-exercises",
+      "group": "engineering",
+      "title": "分級練習與解答：從數學驗證到模型比較",
+      "summary": "以可觀察結果驗收表示、訓練、任務、門檻與遷移，讓理解能被檢查。",
+      "tags": [
+        "Exercises",
+        "驗收"
+      ]
+    },
+    {
+      "id": "48-reference",
+      "group": "engineering",
+      "title": "名詞、參數、公式與官方資料速查",
+      "summary": "整理從向量運算到模型契約的回查入口，清楚標示驗證與實作範圍。",
+      "tags": [
+        "Reference",
+        "參數"
+      ]
+    }
+  ]
+}

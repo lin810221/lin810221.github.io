@@ -1,0 +1,663 @@
+{
+  "slug": "pytorch",
+  "title": "PyTorch 實作工程完整教學",
+  "shortTitle": "PyTorch",
+  "updated": "2026-10-30",
+  "baseline": "2.15.0",
+  "footerLabel": "PYTORCH 2.15.0 · TENSORS TO TRAINING",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 broadcasting、Autograd、DataLoader、AMP、checkpoint 或 DDP。",
+  "groups": [
+    {
+      "id": "start",
+      "number": "01",
+      "title": "從環境到 Tensor",
+      "description": "建立可執行環境，讀懂 dtype、shape、索引與廣播。"
+    },
+    {
+      "id": "grad",
+      "number": "02",
+      "title": "記憶體、梯度與裝置",
+      "description": "理解 views、計算圖、反向傳播與數值診斷。"
+    },
+    {
+      "id": "building",
+      "number": "03",
+      "title": "資料與模型的契約",
+      "description": "資料切分、批次、padding、模組、層與損失。"
+    },
+    {
+      "id": "training",
+      "number": "04",
+      "title": "寫對完整訓練流程",
+      "description": "optimizer、驗證、指標、排程與第一個回歸模型。"
+    },
+    {
+      "id": "practice",
+      "number": "05",
+      "title": "不同資料的實作練習",
+      "description": "表格、影像、序列、凍結、自訂資料與除錯。"
+    },
+    {
+      "id": "engineering",
+      "number": "06",
+      "title": "可恢復、可重現的實驗",
+      "description": "存檔、續訓、設定、隨機性與梯度累積。"
+    },
+    {
+      "id": "performance",
+      "number": "07",
+      "title": "GPU、效能與交付",
+      "description": "記憶體、AMP、Profiler、compile、DDP 與 export。"
+    },
+    {
+      "id": "finish",
+      "number": "08",
+      "title": "測試與自己的完整專案",
+      "description": "從數值測試到專題、解答、版本遷移與速查。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-mental-model",
+      "group": "start",
+      "title": "先看全貌：PyTorch 如何讓模型學習",
+      "summary": "把資料、參數、損失、梯度與更新連成一個可以追蹤的流程。",
+      "tags": [
+        "PyTorch",
+        "Tensor",
+        "training"
+      ],
+      "example": "01_tensors.py"
+    },
+    {
+      "id": "02-installation",
+      "group": "start",
+      "title": "安裝最新版：Python、CPU、CUDA 與環境檢查",
+      "summary": "建立隔離環境，知道安裝了哪個套件，以及硬體能力如何確認。",
+      "tags": [
+        "install",
+        "venv",
+        "CUDA",
+        "2.15.0"
+      ]
+    },
+    {
+      "id": "03-project",
+      "group": "start",
+      "title": "專案與執行方式：從 Notebook 到可重現腳本",
+      "summary": "整理入口、資料、設定與產出，避免程式只在目前工作目錄能執行。",
+      "tags": [
+        "Python",
+        "CLI",
+        "project"
+      ]
+    },
+    {
+      "id": "04-tensors",
+      "group": "start",
+      "title": "Tensor 的數值契約：建立、dtype、device 與共享儲存",
+      "summary": "學會辨認一個 Tensor 的四個基本屬性，以及資料轉換的成本。",
+      "tags": [
+        "Tensor",
+        "dtype",
+        "device",
+        "NumPy"
+      ]
+    },
+    {
+      "id": "05-shapes",
+      "group": "start",
+      "title": "Shape 與軸：索引、切片、維度變換與 reduction",
+      "summary": "在每一步寫下維度，避免數字可以計算但意義已經錯位。",
+      "tags": [
+        "shape",
+        "indexing",
+        "keepdim"
+      ],
+      "example": "02_shapes.py"
+    },
+    {
+      "id": "06-broadcasting",
+      "group": "start",
+      "title": "運算與 Broadcasting：從逐元素到矩陣乘法",
+      "summary": "用具體形狀推算廣播，理解向量化何時正確、何時會意外放大資料。",
+      "tags": [
+        "broadcasting",
+        "matmul",
+        "vectorization"
+      ]
+    },
+    {
+      "id": "07-views",
+      "group": "grad",
+      "title": "Views、stride 與資料共享：reshape 為何有時複製",
+      "summary": "分清資料的形狀、記憶體布局、共享關係與計算圖關係。",
+      "tags": [
+        "view",
+        "stride",
+        "reshape",
+        "detach",
+        "clone"
+      ],
+      "example": "03_views.py"
+    },
+    {
+      "id": "08-autograd",
+      "group": "grad",
+      "title": "Autograd：從手算偏導數到 backward",
+      "summary": "用一個只有單一權重的例子，對照計算圖、leaf Tensor 與梯度。",
+      "tags": [
+        "autograd",
+        "backward",
+        "requires_grad"
+      ],
+      "example": "04_autograd.py"
+    },
+    {
+      "id": "09-graph-lifecycle",
+      "group": "grad",
+      "title": "計算圖生命週期與梯度累積：為什麼需要 zero_grad",
+      "summary": "釐清每次 forward 的圖、反向保存的中間量，以及跨 batch 的梯度狀態。",
+      "tags": [
+        "zero_grad",
+        "retain_graph",
+        "graph",
+        "gradient accumulation"
+      ]
+    },
+    {
+      "id": "10-gradient-debug",
+      "group": "grad",
+      "title": "梯度除錯：chain rule、gradcheck 與 in-place 操作",
+      "summary": "以可手算與數值差分的實驗，區分圖被切斷、梯度為零與數值不穩。",
+      "tags": [
+        "gradcheck",
+        "anomaly",
+        "in-place",
+        "chain rule"
+      ]
+    },
+    {
+      "id": "11-devices",
+      "group": "grad",
+      "title": "Device 與資料搬移：CPU 跑通，再使用 GPU",
+      "summary": "避免模型、輸入、標籤與臨時 Tensor 分散在不同裝置。",
+      "tags": [
+        "device",
+        "CUDA",
+        "to",
+        "buffer"
+      ]
+    },
+    {
+      "id": "12-numerics",
+      "group": "grad",
+      "title": "數值穩定性：NaN、Inf、mask 與精度",
+      "summary": "先找出第一個失效的運算，再決定是否需要更高精度或不同公式。",
+      "tags": [
+        "NaN",
+        "Inf",
+        "isfinite",
+        "precision",
+        "mask"
+      ]
+    },
+    {
+      "id": "13-datasets",
+      "group": "building",
+      "title": "Dataset 與資料切分：先決定樣本，再談模型",
+      "summary": "將一筆資料的特徵、答案與來源定義清楚，避免切分和前處理洩漏。",
+      "tags": [
+        "Dataset",
+        "split",
+        "leakage",
+        "preprocessing"
+      ]
+    },
+    {
+      "id": "14-dataloader",
+      "group": "building",
+      "title": "DataLoader：batch、shuffle、workers 與 Windows",
+      "summary": "用六筆樣本追蹤每個 batch，理解尾批與多程序的條件。",
+      "tags": [
+        "DataLoader",
+        "batch_size",
+        "num_workers",
+        "Windows"
+      ],
+      "example": "05_dataloader.py"
+    },
+    {
+      "id": "15-collate",
+      "group": "building",
+      "title": "Collate、Padding 與 mask：把變長資料變成 batch",
+      "summary": "定義 PAD、有效位置與平均分母，讓不同長度序列能正確一起運算。",
+      "tags": [
+        "collate_fn",
+        "padding",
+        "mask",
+        "sequence"
+      ],
+      "example": "06_collate.py"
+    },
+    {
+      "id": "16-modules",
+      "group": "building",
+      "title": "nn.Module：參數、buffer、子模組與 state_dict",
+      "summary": "讓 optimizer、device 搬移與存檔都能找到真正需要管理的狀態。",
+      "tags": [
+        "nn.Module",
+        "Parameter",
+        "ModuleList",
+        "buffer",
+        "state_dict"
+      ],
+      "example": "07_modules.py"
+    },
+    {
+      "id": "17-layers",
+      "group": "building",
+      "title": "常用層與 shape：Linear、Conv2d、Embedding 與正規化",
+      "summary": "把每一層當作有明確輸入輸出規格的數值運算。",
+      "tags": [
+        "Linear",
+        "Conv2d",
+        "Embedding",
+        "Dropout",
+        "BatchNorm"
+      ]
+    },
+    {
+      "id": "18-losses",
+      "group": "building",
+      "title": "損失函數的資料契約：CE、BCE 與 MSE",
+      "summary": "分清 logits、機率、索引與浮點標籤，避免多套一次 activation。",
+      "tags": [
+        "CrossEntropyLoss",
+        "BCEWithLogitsLoss",
+        "MSELoss",
+        "logits"
+      ],
+      "example": "08_losses.py"
+    },
+    {
+      "id": "19-optimizers",
+      "group": "training",
+      "title": "Optimizer：SGD、AdamW、param groups 與梯度清除",
+      "summary": "理解更新規則、optimizer 狀態與參數清單，而非只調 learning rate。",
+      "tags": [
+        "SGD",
+        "AdamW",
+        "param groups",
+        "weight decay"
+      ]
+    },
+    {
+      "id": "20-training-loop",
+      "group": "training",
+      "title": "完整訓練迴圈：每一步都知道在更新什麼",
+      "summary": "從資料 batch 到指標累積，寫出可讀、可檢查的 train_epoch。",
+      "tags": [
+        "train loop",
+        "backward",
+        "metrics",
+        "zero_grad"
+      ],
+      "example": "09_training_loop.py"
+    },
+    {
+      "id": "21-evaluation",
+      "group": "training",
+      "title": "驗證與推論：eval、no_grad、inference_mode",
+      "summary": "兩種獨立開關：模組行為與Autograd記錄，必須各自設定。",
+      "tags": [
+        "eval",
+        "no_grad",
+        "inference_mode",
+        "Dropout"
+      ],
+      "example": "10_evaluation.py"
+    },
+    {
+      "id": "22-metrics",
+      "group": "training",
+      "title": "評估指標與資料洩漏：accuracy 之外要看什麼",
+      "summary": "以混淆矩陣、基準模型與切分策略，判斷訓練成效是否可信。",
+      "tags": [
+        "metrics",
+        "accuracy",
+        "precision",
+        "recall",
+        "leakage"
+      ]
+    },
+    {
+      "id": "23-scheduling",
+      "group": "training",
+      "title": "學習率排程、Early Stopping 與最佳模型",
+      "summary": "讓停止條件與best checkpoint可解釋，也能在中斷後繼續。",
+      "tags": [
+        "scheduler",
+        "early stopping",
+        "best checkpoint"
+      ]
+    },
+    {
+      "id": "24-regression",
+      "group": "training",
+      "title": "第一個完整回歸：讓 Linear 學會一條直線",
+      "summary": "從已知答案的合成問題，核對loss下降、權重與偏移。",
+      "tags": [
+        "regression",
+        "Linear",
+        "MSE",
+        "SGD"
+      ],
+      "example": "11_regression.py"
+    },
+    {
+      "id": "25-classification",
+      "group": "practice",
+      "title": "表格分類專案：資料、MLP、驗證與測試",
+      "summary": "沿著一份完整實驗，追蹤資料在哪裡產生、參數如何更新、成績如何取得。",
+      "tags": [
+        "classification",
+        "MLP",
+        "train",
+        "val",
+        "test"
+      ],
+      "example": "12_classification.py"
+    },
+    {
+      "id": "26-cnn",
+      "group": "practice",
+      "title": "CNN 實作：從 NCHW 到可訓練的影像分類器",
+      "summary": "在自行產生的橫線與直線圖片上驗證Conv2d、Flatten與分類流程。",
+      "tags": [
+        "CNN",
+        "Conv2d",
+        "NCHW",
+        "images"
+      ],
+      "example": "13_cnn.py"
+    },
+    {
+      "id": "27-sequences",
+      "group": "practice",
+      "title": "序列實作：Embedding、mask pooling 與文字分類",
+      "summary": "用小詞表練習token ID、PAD梯度與序列到類別的轉換。",
+      "tags": [
+        "Embedding",
+        "sequence",
+        "pooling",
+        "padding_idx"
+      ],
+      "example": "14_sequences.py"
+    },
+    {
+      "id": "28-transfer",
+      "group": "practice",
+      "title": "凍結與遷移學習：參數不更新，模組仍有模式",
+      "summary": "分清requires_grad、optimizer覆蓋範圍與BatchNorm／Dropout的狀態。",
+      "tags": [
+        "freeze",
+        "transfer learning",
+        "requires_grad",
+        "optimizer"
+      ],
+      "example": "15_freezing.py"
+    },
+    {
+      "id": "29-custom-data",
+      "group": "practice",
+      "title": "自訂檔案資料：解析、驗證與前處理邊界",
+      "summary": "將JSON範例換成真實資料時，讓錯誤在進入模型之前被發現。",
+      "tags": [
+        "custom Dataset",
+        "JSON",
+        "validation",
+        "data contract"
+      ]
+    },
+    {
+      "id": "30-debugging",
+      "group": "practice",
+      "title": "訓練除錯實務：一個batch、hooks與梯度診斷",
+      "summary": "用最小可重現問題定位錯誤，讓每個實驗都能排除一種原因。",
+      "tags": [
+        "debug",
+        "overfit batch",
+        "hooks",
+        "gradient norm"
+      ]
+    },
+    {
+      "id": "31-checkpoints",
+      "group": "engineering",
+      "title": "儲存與載入：state_dict、map_location 與信任來源",
+      "summary": "把模型、前處理與設定一起交付，區分推論權重與續訓狀態。",
+      "tags": [
+        "torch.save",
+        "torch.load",
+        "weights_only",
+        "map_location"
+      ],
+      "example": "16_checkpoints.py"
+    },
+    {
+      "id": "32-resume",
+      "group": "engineering",
+      "title": "續訓與完全重現：從第2輪接回第4輪",
+      "summary": "實際比較連續訓練與存檔再恢復，明確界定可重現的範圍。",
+      "tags": [
+        "resume",
+        "checkpoint",
+        "RNG",
+        "optimizer state"
+      ],
+      "example": "17_resume.py"
+    },
+    {
+      "id": "33-configuration",
+      "group": "engineering",
+      "title": "Config、CLI 與產物：讓實驗可以交給未來的自己",
+      "summary": "將可變設定集中管理，明確拒絕錯誤輸入與覆蓋既有檔案。",
+      "tags": [
+        "config",
+        "argparse",
+        "CLI",
+        "artifacts"
+      ]
+    },
+    {
+      "id": "34-reproducibility",
+      "group": "engineering",
+      "title": "隨機種子與可重現性：seed能保證什麼",
+      "summary": "辨認不同隨機來源、運算非決定性與跨版本差異。",
+      "tags": [
+        "seed",
+        "Generator",
+        "deterministic",
+        "reproducibility"
+      ],
+      "example": "18_seeds.py"
+    },
+    {
+      "id": "35-input-performance",
+      "group": "engineering",
+      "title": "輸入管線與記憶體：先量測，再增加workers",
+      "summary": "區分讀檔、轉換、搬移與模型計算的瓶頸。",
+      "tags": [
+        "performance",
+        "DataLoader",
+        "pin_memory",
+        "prefetch"
+      ]
+    },
+    {
+      "id": "36-accumulation",
+      "group": "engineering",
+      "title": "梯度累積：有效batch與不等長尾批的正確加權",
+      "summary": "以4、4、2筆microbatch，驗證一次大batch更新的數值等價條件。",
+      "tags": [
+        "gradient accumulation",
+        "microbatch",
+        "weighted loss"
+      ],
+      "example": "19_accumulation.py"
+    },
+    {
+      "id": "37-cuda-memory",
+      "group": "performance",
+      "title": "CUDA實務：非同步、OOM、allocated與reserved",
+      "summary": "讀懂GPU記憶體與計時，避免用錯誤量測做效能決策。",
+      "tags": [
+        "CUDA",
+        "OOM",
+        "memory",
+        "async",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "38-amp",
+      "group": "performance",
+      "title": "混合精度AMP：autocast、GradScaler與clipping順序",
+      "summary": "使用目前API，先保留float32基準，再選配CUDA混合精度。",
+      "tags": [
+        "AMP",
+        "autocast",
+        "GradScaler",
+        "float16",
+        "bfloat16"
+      ],
+      "example": "20_amp.py"
+    },
+    {
+      "id": "39-profiler",
+      "group": "performance",
+      "title": "Profiler：找瓶頸，而不是猜哪一行慢",
+      "summary": "使用CPU事件與shape記錄建立分析方法，再延伸到GPU。",
+      "tags": [
+        "profiler",
+        "record_function",
+        "performance"
+      ],
+      "example": "21_profiler.py"
+    },
+    {
+      "id": "40-compile",
+      "group": "performance",
+      "title": "torch.compile：圖擷取、graph break與效能驗證",
+      "summary": "理解編譯的條件與成本，區分數值正確、成功擷取及真正加速。",
+      "tags": [
+        "torch.compile",
+        "Dynamo",
+        "Inductor",
+        "graph break"
+      ],
+      "example": "22_compile.py"
+    },
+    {
+      "id": "41-distributed",
+      "group": "performance",
+      "title": "DDP與多GPU入門：rank、sampler、同步與分母",
+      "summary": "先理解資料平行的契約，再選配啟動CPU兩程序或真正多GPU。",
+      "tags": [
+        "DDP",
+        "torchrun",
+        "DistributedSampler",
+        "rank",
+        "FSDP"
+      ],
+      "example": "23_distributed.py"
+    },
+    {
+      "id": "42-export",
+      "group": "performance",
+      "title": "交付與匯出：state_dict、torch.export與ONNX入口",
+      "summary": "將模型格式、shape限制與執行runtime分清楚，避免把匯出成功當部署完成。",
+      "tags": [
+        "torch.export",
+        "ONNX",
+        "TorchScript",
+        "deployment"
+      ]
+    },
+    {
+      "id": "43-testing",
+      "group": "finish",
+      "title": "有意義的PyTorch測試：shape、梯度、續訓與數值等價",
+      "summary": "測行為與工程保證，避免把每行程式原封不動抄成測試。",
+      "tags": [
+        "testing",
+        "unittest",
+        "assert_close",
+        "gradcheck"
+      ]
+    },
+    {
+      "id": "44-experiments",
+      "group": "finish",
+      "title": "實驗管理：記錄、比較、資源與模型卡",
+      "summary": "讓每一次結果能被解讀，也能被下一次實驗可靠比較。",
+      "tags": [
+        "experiment",
+        "logging",
+        "model card",
+        "artifacts"
+      ]
+    },
+    {
+      "id": "45-failure-guide",
+      "group": "finish",
+      "title": "故障診斷手冊：從錯誤訊息找到最小原因",
+      "summary": "把常見失敗整理成證據、判斷與下一步，練習有順序地除錯。",
+      "tags": [
+        "troubleshooting",
+        "shape",
+        "NaN",
+        "OOM",
+        "hang"
+      ]
+    },
+    {
+      "id": "46-capstone",
+      "group": "finish",
+      "title": "完整專題：訓練、選模、存檔、載入與新資料推論",
+      "summary": "把前面所有契約組成一條實際可執行、能檢查產物的流程。",
+      "tags": [
+        "capstone",
+        "training",
+        "checkpoint",
+        "inference"
+      ],
+      "example": "24_capstone.py"
+    },
+    {
+      "id": "47-exercises",
+      "group": "finish",
+      "title": "整合練習與解答：從看懂到獨立寫出",
+      "summary": "用可驗收的題目檢查理解，依序練資料、梯度、訓練與工程產物。",
+      "tags": [
+        "exercises",
+        "answers",
+        "practice"
+      ]
+    },
+    {
+      "id": "48-reference",
+      "group": "finish",
+      "title": "速查、版本與下一步：用最新API持續學習",
+      "summary": "整理目前版本基準、已驗證範圍、常用契約與後續延伸。",
+      "tags": [
+        "reference",
+        "2.15.0",
+        "migration",
+        "glossary"
+      ]
+    }
+  ]
+}

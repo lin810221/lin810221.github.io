@@ -1,0 +1,9 @@
+[
+  {"id":"leave","title":"星河工作室｜休假辦法","text":"本教材中的星河工作室是虛構組織，規則僅供檢索練習。\n特休申請必須提前三個工作日提出，並由直屬主管核准。\n病假請於當日上午通知主管，連續三日需附證明。\n特休餘額可在員工入口查詢。","version":"2026-10","source":"demo://handbook/leave","page":2},
+  {"id":"travel","title":"星河工作室｜差旅規範","text":"國內出差住宿費上限為每晚新臺幣 2400 元，請保留住宿收據。\n差旅報銷應在返程後十個工作日內提交。\n國際出差的住宿額度依核准計畫，不能沿用國內上限。","version":"2026-10","source":"demo://handbook/travel","page":5},
+  {"id":"remote","title":"星河工作室｜遠端工作","text":"遠端工作每週最多兩日，須在前一週由主管核准。\n遠端工作期間仍須遵守資料保護規範。\n居家設備補助屬另一份規章，本文件沒有補助金額。","version":"2026-10","source":"demo://handbook/remote","page":8},
+  {"id":"it","title":"星河工作室｜帳號與 VPN","text":"忘記密碼請使用員工入口的密碼重設功能。\nVPN 故障請提供錯誤代碼並聯絡 IT 服務台。\n錯誤碼 VPN-403 表示授權檢查失敗，請確認帳號權限。","version":"2026-10","source":"demo://handbook/it","page":12},
+  {"id":"travel-old","title":"星河工作室｜舊差旅規範","text":"國內出差住宿費上限為每晚新臺幣 1800 元。此版本已失效。","version":"2024-01","source":"demo://archive/travel","active":false},
+  {"id":"salary","title":"星河工作室｜薪資設定","text":"薪資設定的管理權限僅供人資使用。虛構主管薪資為每月 999999 元。","roles":["hr"],"source":"demo://private/salary"},
+  {"id":"other","title":"另一租戶｜休假辦法","text":"特休申請必須提前三十個工作日提出。","tenant":"other","source":"demo://other/leave"}
+]

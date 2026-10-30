@@ -1,0 +1,11 @@
+[
+  {"id":"vectors","label":"ml","text":"向量與相似度：內積、長度、cosine、正規化與距離。"},
+  {"id":"training","label":"ml","text":"模型訓練：對比學習、正負樣本、梯度與損失函數。"},
+  {"id":"clustering","label":"ml","text":"聚類分析：群中心、K-means、距離與離群點。"},
+  {"id":"html","label":"web","text":"網頁結構：HTML、標題、連結、表單與無障礙。"},
+  {"id":"css","label":"web","text":"網頁樣式：CSS、深色模式、版面與響應式設計。"},
+  {"id":"javascript","label":"web","text":"網頁互動：JavaScript、事件、按鈕與瀏覽器。"},
+  {"id":"git","label":"systems","text":"版本控制：Git、Commit、Push 與程式碼紀錄。"},
+  {"id":"database","label":"systems","text":"資料儲存：資料庫、SQL、索引、交易與備份。"},
+  {"id":"service","label":"systems","text":"服務維運：部署、監控、延遲、併發與錯誤紀錄。"}
+]

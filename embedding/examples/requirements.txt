@@ -1,0 +1,2 @@
+# All default examples and tests use Python 3.11+ standard library only.
+# Optional local inference: separately install sentence-transformers in a venv.

@@ -1,0 +1,2 @@
+# Latest stable checked on 2026-10-30. CPU index: https://download.pytorch.org/whl/cpu
+torch==2.15.0

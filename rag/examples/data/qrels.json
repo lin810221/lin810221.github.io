@@ -1,0 +1,7 @@
+[
+  {"query":"特休申請提前","relevant":{"leave":2}},
+  {"query":"國內出差住宿費上限","relevant":{"travel":2}},
+  {"query":"遠端工作每週","relevant":{"remote":2}},
+  {"query":"VPN-403 授權","relevant":{"it":2}},
+  {"query":"國際出差住宿額度","relevant":{"travel":2}}
+]
