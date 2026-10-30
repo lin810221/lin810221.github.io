@@ -1,0 +1,2 @@
+# Latest stable framework checked on 2026-10-30; use the official CPU wheel index.
+torch==2.15.0

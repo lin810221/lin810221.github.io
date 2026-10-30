@@ -1,0 +1,1011 @@
+{
+  "slug": "deep-learning",
+  "title": "深度學習完整教學",
+  "shortTitle": "深度學習",
+  "updated": "2026-10-30",
+  "baseline": "PyTorch 2.15.0 · Python 3.11 · CPU verified",
+  "footerLabel": "THE DEEP LEARNING FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "searchHint": "搜尋梯度、CNN、Attention 或 Diffusion…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從表示與數學開始",
+      "description": "環境、向量、導數、機率與第一個神經元。"
+    },
+    {
+      "id": "networks",
+      "number": "02",
+      "title": "神經網路如何反向學習",
+      "description": "MLP、forward、手算與矩陣反向傳播、梯度檢查。"
+    },
+    {
+      "id": "objectives",
+      "number": "03",
+      "title": "損失、資料與學習問題",
+      "description": "回歸與分類目標、資料邊界、標籤與模型容量。"
+    },
+    {
+      "id": "optimization",
+      "number": "04",
+      "title": "讓深層模型學得動",
+      "description": "SGD、AdamW、排程、初始化與梯度訊號。"
+    },
+    {
+      "id": "regularization",
+      "number": "05",
+      "title": "泛化、正則化與正規化",
+      "description": "過擬合、Dropout、BatchNorm、LayerNorm與資料增強。"
+    },
+    {
+      "id": "vision",
+      "number": "06",
+      "title": "卷積與殘差架構",
+      "description": "卷積運算、感受野、CNN、shortcut與遷移學習。"
+    },
+    {
+      "id": "sequence",
+      "number": "07",
+      "title": "有時間與順序的資料",
+      "description": "RNN、BPTT、LSTM／GRU、Embedding與變長序列。"
+    },
+    {
+      "id": "attention",
+      "number": "08",
+      "title": "Attention與表示學習",
+      "description": "Q／K／V、mask、multi-head、Transformer橋接與自監督。"
+    },
+    {
+      "id": "generative",
+      "number": "09",
+      "title": "生成模型的共同問題",
+      "description": "AE、VAE、GAN、Diffusion與Flow Matching的低維實驗。"
+    },
+    {
+      "id": "reliability",
+      "number": "10",
+      "title": "診斷、可靠性與模型壓縮",
+      "description": "失敗定位、重現、校準、解釋、穩健性與蒸餾。"
+    },
+    {
+      "id": "projects",
+      "number": "11",
+      "title": "把原理組成完整專題",
+      "description": "表格、影像、序列與生成實驗的驗收及交付。"
+    },
+    {
+      "id": "synthesis",
+      "number": "12",
+      "title": "整合、習題與持續學習",
+      "description": "實驗設計、架構地圖、手算解答、實作挑戰與速查。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-representations",
+      "group": "foundations",
+      "title": "深度學習全貌：讓特徵也成為可以學習的表示",
+      "summary": "從神經元到層次表示，先看清楚資料、架構、目標與最佳化的關係。",
+      "tags": [
+        "deep learning",
+        "representation",
+        "architecture",
+        "overview"
+      ]
+    },
+    {
+      "id": "02-environment",
+      "group": "foundations",
+      "title": "最新版實作環境：CPU、版本與可重現入口",
+      "summary": "先確認解譯器與套件，再開始不需模型下載的實驗。",
+      "tags": [
+        "install",
+        "2.15.0",
+        "CPU",
+        "environment"
+      ]
+    },
+    {
+      "id": "03-linear-algebra",
+      "group": "foundations",
+      "title": "必要線性代數：shape、內積與批次矩陣",
+      "summary": "把每個符號對到實際維度，讓之後的forward與backward有清楚契約。",
+      "tags": [
+        "matrix",
+        "shape",
+        "Jacobian",
+        "linear algebra"
+      ]
+    },
+    {
+      "id": "04-calculus",
+      "group": "foundations",
+      "title": "導數、梯度與Chain Rule：從局部變化到整個模型",
+      "summary": "用標量與向量的連鎖關係，理解反向傳播不是神秘黑盒。",
+      "tags": [
+        "chain rule",
+        "gradient",
+        "partial derivative",
+        "calculus"
+      ]
+    },
+    {
+      "id": "05-probability",
+      "group": "foundations",
+      "title": "機率與最大概似：為什麼這些loss合理",
+      "summary": "將回歸、分類與生成目標連回機率模型，分清密度與機率。",
+      "tags": [
+        "likelihood",
+        "MLE",
+        "entropy",
+        "cross entropy",
+        "probability"
+      ]
+    },
+    {
+      "id": "06-neuron",
+      "group": "foundations",
+      "title": "第一個神經元：仿射、非線性與輸出含義",
+      "summary": "用一筆兩維輸入手算forward，建立每一層都可追蹤的習慣。",
+      "tags": [
+        "neuron",
+        "affine",
+        "activation",
+        "Linear"
+      ],
+      "example": "01_neuron.py"
+    },
+    {
+      "id": "07-mlp",
+      "group": "networks",
+      "title": "MLP與XOR：非線性如何改變可表示的規則",
+      "summary": "理解隱藏層的功能，再實際訓練一個可擬合四個角點的小網路。",
+      "tags": [
+        "MLP",
+        "XOR",
+        "nonlinearity",
+        "expressivity"
+      ],
+      "example": "02_xor.py"
+    },
+    {
+      "id": "08-forward",
+      "group": "networks",
+      "title": "Forward與參數帳本：每一層到底計算什麼",
+      "summary": "用固定維度追蹤中間表示、共享參數與記憶體成本。",
+      "tags": [
+        "forward",
+        "parameter count",
+        "shape",
+        "activation memory"
+      ]
+    },
+    {
+      "id": "09-scalar-backprop",
+      "group": "networks",
+      "title": "手算反向傳播：一個隱藏神經元的四個梯度",
+      "summary": "將forward數值保存，再沿每條依賴路徑回傳導數。",
+      "tags": [
+        "backpropagation",
+        "chain rule",
+        "manual gradients"
+      ],
+      "example": "03_scalar_backprop.py"
+    },
+    {
+      "id": "10-matrix-backprop",
+      "group": "networks",
+      "title": "矩陣反向傳播：一個batch如何一起求梯度",
+      "summary": "由softmax CE的輸出梯度，推回兩層MLP並核對shape。",
+      "tags": [
+        "vectorized backprop",
+        "Jacobian",
+        "softmax gradient"
+      ],
+      "example": "04_matrix_backprop.py"
+    },
+    {
+      "id": "11-gradient-check",
+      "group": "networks",
+      "title": "梯度檢查：有限差分、double與不可微邊界",
+      "summary": "用第二種計算方式發現符號、分母或圖被切斷的錯誤。",
+      "tags": [
+        "gradcheck",
+        "finite difference",
+        "autograd",
+        "double"
+      ],
+      "example": "05_gradcheck.py"
+    },
+    {
+      "id": "12-activations",
+      "group": "networks",
+      "title": "Activation：Sigmoid、Tanh、ReLU、GELU與梯度",
+      "summary": "比較函數值、飽和區與導數，理解選擇對表示及最佳化的影響。",
+      "tags": [
+        "sigmoid",
+        "tanh",
+        "ReLU",
+        "GELU",
+        "SiLU"
+      ],
+      "example": "06_activations.py"
+    },
+    {
+      "id": "13-regression-loss",
+      "group": "objectives",
+      "title": "回歸損失：MSE、MAE與Huber的梯度偏好",
+      "summary": "將相同殘差送入不同目標，觀察大誤差受到多少懲罰。",
+      "tags": [
+        "MSE",
+        "MAE",
+        "Huber",
+        "SmoothL1",
+        "regression"
+      ],
+      "example": "07_regression_losses.py"
+    },
+    {
+      "id": "14-classification-loss",
+      "group": "objectives",
+      "title": "分類損失：Logits、BCE、Softmax CE與加權分母",
+      "summary": "分清單選與多標籤的資料格式，再推導正確輸出梯度。",
+      "tags": [
+        "BCEWithLogitsLoss",
+        "CrossEntropyLoss",
+        "logits",
+        "reduction"
+      ],
+      "example": "08_classification_losses.py"
+    },
+    {
+      "id": "15-data-boundaries",
+      "group": "objectives",
+      "title": "資料與前處理：深度模型也需要訓練邊界",
+      "summary": "把標籤時間、群組、標準化與增強的角色納入完整資料設計。",
+      "tags": [
+        "data split",
+        "leakage",
+        "preprocessing",
+        "train validation test"
+      ]
+    },
+    {
+      "id": "16-training-evaluation",
+      "group": "objectives",
+      "title": "訓練與評估的角色：梯度、模式與選模",
+      "summary": "先讓每個step做正確的事，再讓validation與test回答不同問題。",
+      "tags": [
+        "train loop",
+        "eval",
+        "inference_mode",
+        "metrics"
+      ],
+      "example": "09_training_loop.py"
+    },
+    {
+      "id": "17-labels",
+      "group": "objectives",
+      "title": "標籤、權重與不平衡：訊號品質先於網路大小",
+      "summary": "檢查答案來源，再明確推導加權目標與決策成本。",
+      "tags": [
+        "label quality",
+        "class weight",
+        "imbalance",
+        "weighted loss"
+      ],
+      "example": "10_imbalance.py"
+    },
+    {
+      "id": "18-capacity",
+      "group": "objectives",
+      "title": "容量、深度與可學性：能表示不等於能學到",
+      "summary": "區分函數族的可能性、最佳化結果與未見資料表現。",
+      "tags": [
+        "capacity",
+        "universal approximation",
+        "inductive bias",
+        "generalization"
+      ]
+    },
+    {
+      "id": "19-sgd-momentum",
+      "group": "optimization",
+      "title": "SGD與Momentum：沿梯度走，還要記住方向",
+      "summary": "以同一個二次函數追蹤更新，理解batch雜訊與動量狀態。",
+      "tags": [
+        "SGD",
+        "momentum",
+        "optimization",
+        "learning rate"
+      ],
+      "example": "11_sgd_momentum.py"
+    },
+    {
+      "id": "20-adamw",
+      "group": "optimization",
+      "title": "Adam與AdamW：自適應尺度與解耦衰減",
+      "summary": "理解一階、二階估計與weight decay，避免把不同更新混稱L2。",
+      "tags": [
+        "Adam",
+        "AdamW",
+        "weight decay",
+        "bias correction"
+      ],
+      "example": "12_adamw.py"
+    },
+    {
+      "id": "21-schedules",
+      "group": "optimization",
+      "title": "學習率與排程：warmup、下降、early stopping",
+      "summary": "先決定更新的時間單位，再設計能比較的訓練預算。",
+      "tags": [
+        "scheduler",
+        "warmup",
+        "cosine",
+        "early stopping"
+      ],
+      "example": "13_schedules.py"
+    },
+    {
+      "id": "22-initialization",
+      "group": "optimization",
+      "title": "初始化：對稱性、Xavier、He與訊號尺度",
+      "summary": "以second moment核對ReLU初始化，而非將所有方差近似混為一談。",
+      "tags": [
+        "initialization",
+        "Xavier",
+        "He",
+        "fan_in",
+        "variance"
+      ],
+      "example": "14_initialization.py"
+    },
+    {
+      "id": "23-gradient-flow",
+      "group": "optimization",
+      "title": "梯度消失與爆炸：長鏈、Jacobian與殘差路徑",
+      "summary": "先看精確標量乘積，再理解它對矩陣深網路提供的直覺。",
+      "tags": [
+        "vanishing gradients",
+        "exploding gradients",
+        "Jacobian",
+        "residual"
+      ],
+      "example": "15_gradient_flow.py"
+    },
+    {
+      "id": "24-gradient-control",
+      "group": "optimization",
+      "title": "梯度裁切、累積與精度：先維持目標再控制更新",
+      "summary": "以不等長microbatch驗證有效batch的加權，並理解AMP順序。",
+      "tags": [
+        "clipping",
+        "gradient accumulation",
+        "AMP",
+        "numerical stability"
+      ],
+      "example": "16_clipping_accumulation.py"
+    },
+    {
+      "id": "25-generalization",
+      "group": "regularization",
+      "title": "過擬合與泛化：資料、容量與最佳化共同決定",
+      "summary": "用訓練與驗證曲線提出假設，避免把單一現象簡化成固定解法。",
+      "tags": [
+        "generalization",
+        "overfitting",
+        "bias variance",
+        "learning curves"
+      ]
+    },
+    {
+      "id": "26-weight-regularization",
+      "group": "regularization",
+      "title": "L1、L2與weight decay：限制哪一種複雜度",
+      "summary": "從目標函數到實際更新，理解正則化尺度與參數分組。",
+      "tags": [
+        "L1",
+        "L2",
+        "weight decay",
+        "regularization",
+        "implicit bias"
+      ]
+    },
+    {
+      "id": "27-dropout",
+      "group": "regularization",
+      "title": "Dropout：隨機遮蔽、期望與推論模式",
+      "summary": "用inverted scaling手算平均保持，了解它對學習訊號的擾動。",
+      "tags": [
+        "Dropout",
+        "inverted dropout",
+        "train eval",
+        "regularization"
+      ],
+      "example": "17_dropout.py"
+    },
+    {
+      "id": "28-batchnorm",
+      "group": "regularization",
+      "title": "BatchNorm：批次統計、running buffers與兩種variance",
+      "summary": "精確區分訓練正規化和推論統計，理解小batch與凍結的影響。",
+      "tags": [
+        "BatchNorm",
+        "running mean",
+        "variance",
+        "momentum"
+      ],
+      "example": "18_batchnorm.py"
+    },
+    {
+      "id": "29-layernorm",
+      "group": "regularization",
+      "title": "LayerNorm、GroupNorm與RMSNorm：正規化軸的選擇",
+      "summary": "比較批次相依性、affine參數與保存狀態，避免只背名稱。",
+      "tags": [
+        "LayerNorm",
+        "GroupNorm",
+        "RMSNorm",
+        "normalization"
+      ],
+      "example": "19_layernorm.py"
+    },
+    {
+      "id": "30-augmentation",
+      "group": "regularization",
+      "title": "資料增強與Mixup：先定義哪些變換保留答案",
+      "summary": "把不變性假設寫進資料流程，並檢查soft target與loss的一致性。",
+      "tags": [
+        "augmentation",
+        "mixup",
+        "invariance",
+        "soft targets"
+      ],
+      "example": "20_mixup.py"
+    },
+    {
+      "id": "31-convolution",
+      "group": "vision",
+      "title": "卷積運算：局部感受、權重共享與cross-correlation",
+      "summary": "用3×3影像與2×2kernel手算每個位置，理解CNN的結構偏好。",
+      "tags": [
+        "convolution",
+        "cross correlation",
+        "kernel",
+        "weight sharing"
+      ],
+      "example": "21_convolution.py"
+    },
+    {
+      "id": "32-receptive-field",
+      "group": "vision",
+      "title": "輸出尺寸與感受野：stride、padding、dilation",
+      "summary": "推算每層看見哪些輸入，再用真實梯度支持範圍核對。",
+      "tags": [
+        "receptive field",
+        "stride",
+        "padding",
+        "dilation"
+      ],
+      "example": "22_receptive_field.py"
+    },
+    {
+      "id": "33-pooling",
+      "group": "vision",
+      "title": "Pooling與下採樣：資訊、等變性與aliasing",
+      "summary": "分清最大、平均、stride與global pooling對模型造成的偏好。",
+      "tags": [
+        "pooling",
+        "downsampling",
+        "aliasing",
+        "global average pooling"
+      ]
+    },
+    {
+      "id": "34-cnn-training",
+      "group": "vision",
+      "title": "CNN完整訓練：從合成線條到可驗證分類",
+      "summary": "將卷積、shape、loss與資料切分組成真正的學習實驗。",
+      "tags": [
+        "CNN",
+        "image classification",
+        "synthetic data",
+        "training"
+      ],
+      "example": "23_cnn.py"
+    },
+    {
+      "id": "35-residual",
+      "group": "vision",
+      "title": "Residual：學修正量，保留直接路徑",
+      "summary": "從identity Jacobian理解shortcut，同時注意shape與activation位置。",
+      "tags": [
+        "ResNet",
+        "residual",
+        "shortcut",
+        "identity",
+        "Jacobian"
+      ],
+      "example": "24_residual.py"
+    },
+    {
+      "id": "36-transfer",
+      "group": "vision",
+      "title": "遷移學習：預訓練表示、凍結與領域差異",
+      "summary": "把機制、前處理與資料適用性分清楚，再決定微調範圍。",
+      "tags": [
+        "transfer learning",
+        "freeze",
+        "pretraining",
+        "fine tuning"
+      ],
+      "example": "25_freezing.py"
+    },
+    {
+      "id": "37-sequence-data",
+      "group": "sequence",
+      "title": "序列資料：時間、順序、長度與預測位置",
+      "summary": "先定義能看見哪些位置，再選RNN、CNN或Attention。",
+      "tags": [
+        "sequence",
+        "time series",
+        "causality",
+        "lengths"
+      ]
+    },
+    {
+      "id": "38-rnn",
+      "group": "sequence",
+      "title": "RNN：共享參數的遞迴與手動展開",
+      "summary": "將同一組weights跨時間使用，理解hidden state如何傳遞。",
+      "tags": [
+        "RNN",
+        "recurrent",
+        "hidden state",
+        "unroll"
+      ],
+      "example": "26_rnn.py"
+    },
+    {
+      "id": "39-bptt",
+      "group": "sequence",
+      "title": "BPTT：跨時間反向傳播與截斷",
+      "summary": "在共享參數與長鏈之間，分清記憶狀態與梯度歷史。",
+      "tags": [
+        "BPTT",
+        "truncated BPTT",
+        "detach",
+        "gradient flow"
+      ]
+    },
+    {
+      "id": "40-gates",
+      "group": "sequence",
+      "title": "LSTM與GRU：用gate控制更新與記憶",
+      "summary": "理解cell state、忘記與讀寫門，以及框架公式的細節。",
+      "tags": [
+        "LSTM",
+        "GRU",
+        "gates",
+        "cell state"
+      ],
+      "example": "27_lstm_gru.py"
+    },
+    {
+      "id": "41-embedding-mask",
+      "group": "sequence",
+      "title": "Embedding、Padding與Mask：索引如何成為表示",
+      "summary": "把詞表、特殊ID與有效長度寫成可測契約。",
+      "tags": [
+        "Embedding",
+        "padding",
+        "mask",
+        "pooling",
+        "token IDs"
+      ],
+      "example": "28_embedding_mask.py"
+    },
+    {
+      "id": "42-sequence-training",
+      "group": "sequence",
+      "title": "變長序列完整專案：Embedding到GRU分類",
+      "summary": "真正處理collate、pack、train/val/test與最後有效state。",
+      "tags": [
+        "sequence project",
+        "GRU",
+        "pack_padded_sequence",
+        "collate"
+      ],
+      "example": "29_sequence_project.py"
+    },
+    {
+      "id": "43-attention",
+      "group": "attention",
+      "title": "Attention：Query、Key、Value與縮放內積",
+      "summary": "用一個小矩陣手算權重，理解內容相依的資訊聚合。",
+      "tags": [
+        "attention",
+        "QKV",
+        "scaled dot product",
+        "softmax"
+      ],
+      "example": "30_attention.py"
+    },
+    {
+      "id": "44-attention-masks",
+      "group": "attention",
+      "title": "Self、Cross與Causal Mask：防止未來資訊滲漏",
+      "summary": "用擾動未來value的實驗，驗證能看見的位置是否符合任務。",
+      "tags": [
+        "self attention",
+        "cross attention",
+        "causal mask",
+        "padding mask"
+      ],
+      "example": "31_causal_mask.py"
+    },
+    {
+      "id": "45-multihead-position",
+      "group": "attention",
+      "title": "Multi-head與位置資訊：多個子空間如何組合",
+      "summary": "理解head拆分、投影與順序訊號，再銜接完整Transformer。",
+      "tags": [
+        "multihead",
+        "position encoding",
+        "permutation",
+        "attention"
+      ]
+    },
+    {
+      "id": "46-transformer-bridge",
+      "group": "attention",
+      "title": "一個Transformer Block：Attention、FFN、Norm與Residual",
+      "summary": "實際組合pre-norm causal block，建立通往完整模型課程的橋梁。",
+      "tags": [
+        "Transformer block",
+        "pre norm",
+        "FFN",
+        "residual",
+        "causality"
+      ],
+      "example": "32_transformer_block.py"
+    },
+    {
+      "id": "47-contrastive",
+      "group": "attention",
+      "title": "表示與對比學習：讓相似的定義來自任務",
+      "summary": "從positive pairs、negative candidates到可微分的InfoNCE目標。",
+      "tags": [
+        "contrastive learning",
+        "InfoNCE",
+        "representation",
+        "temperature"
+      ],
+      "example": "33_contrastive.py"
+    },
+    {
+      "id": "48-self-supervision",
+      "group": "attention",
+      "title": "自監督、預訓練與微調：目標如何塑造表示",
+      "summary": "比較重建、遮罩預測、對比與蒸餾式方法的共同資料邊界。",
+      "tags": [
+        "self supervised",
+        "pretraining",
+        "masked prediction",
+        "linear probe"
+      ]
+    },
+    {
+      "id": "49-autoencoder",
+      "group": "generative",
+      "title": "Autoencoder：瓶頸、重建與表示限制",
+      "summary": "真正訓練一維瓶頸重建二維曲線，區分壓縮與生成分布。",
+      "tags": [
+        "autoencoder",
+        "bottleneck",
+        "reconstruction",
+        "latent"
+      ],
+      "example": "34_autoencoder.py"
+    },
+    {
+      "id": "50-vae",
+      "group": "generative",
+      "title": "VAE：重參數化、ELBO與Gaussian KL",
+      "summary": "將重建與latent prior連起來，分清beta目標與報告指標。",
+      "tags": [
+        "VAE",
+        "ELBO",
+        "reparameterization",
+        "KL divergence"
+      ],
+      "example": "35_vae.py"
+    },
+    {
+      "id": "51-gan",
+      "group": "generative",
+      "title": "GAN：交替對抗目標與梯度邊界",
+      "summary": "用低維分布實際更新兩個模型，避免把loss下降當收斂保證。",
+      "tags": [
+        "GAN",
+        "generator",
+        "discriminator",
+        "non saturating",
+        "detach"
+      ],
+      "example": "36_gan.py"
+    },
+    {
+      "id": "52-diffusion",
+      "group": "generative",
+      "title": "Diffusion：加噪、epsilon預測與反向取樣",
+      "summary": "實際訓練一維DDPM，推導每個係數並標示離散近似限制。",
+      "tags": [
+        "diffusion",
+        "DDPM",
+        "epsilon prediction",
+        "noise schedule"
+      ],
+      "example": "37_diffusion.py"
+    },
+    {
+      "id": "53-flows",
+      "group": "generative",
+      "title": "Flow Matching：學速度場與積分生成",
+      "summary": "比較改變變數、連續路徑與條件速度目標，真正跑一維Euler取樣。",
+      "tags": [
+        "flow matching",
+        "normalizing flow",
+        "ODE",
+        "velocity field"
+      ],
+      "example": "38_flow_matching.py"
+    },
+    {
+      "id": "54-generative-evaluation",
+      "group": "generative",
+      "title": "生成模型評估：重建、似然、分布與人類判斷",
+      "summary": "為不同目標選證據，避免以漂亮樣本或單一loss代替完整驗收。",
+      "tags": [
+        "generative evaluation",
+        "FID",
+        "likelihood",
+        "coverage",
+        "diversity"
+      ]
+    },
+    {
+      "id": "55-training-failures",
+      "group": "reliability",
+      "title": "模型沒有學到：從第一個失敗的數值開始查",
+      "summary": "建立可重複的診斷順序，將資料、計算圖、最佳化與評估錯誤分開定位。",
+      "tags": [
+        "debugging",
+        "overfit one batch",
+        "NaN",
+        "gradients"
+      ]
+    },
+    {
+      "id": "56-reproducibility",
+      "group": "reliability",
+      "title": "重現與隨機性：seed是實驗條件的一部分",
+      "summary": "區分固定設定下的重跑、跨環境一致性，以及跨seed結果是否穩定。",
+      "tags": [
+        "reproducibility",
+        "seed",
+        "determinism",
+        "ablation"
+      ]
+    },
+    {
+      "id": "57-calibration-ood",
+      "group": "reliability",
+      "title": "信心、校準與分布外資料：高分不等於可靠",
+      "summary": "理解機率品質、溫度縮放與分布移動，避免把softmax最大值視為安全保證。",
+      "tags": [
+        "calibration",
+        "temperature scaling",
+        "OOD",
+        "Brier score"
+      ]
+    },
+    {
+      "id": "58-saliency",
+      "group": "reliability",
+      "title": "模型看哪裡：梯度敏感度與解釋的界線",
+      "summary": "用可驗證的小函數理解input gradient，辨認局部敏感度、歸因與因果的差別。",
+      "tags": [
+        "saliency",
+        "input gradient",
+        "interpretability",
+        "finite difference"
+      ],
+      "example": "39_saliency.py"
+    },
+    {
+      "id": "59-robustness",
+      "group": "reliability",
+      "title": "穩健性：定義哪些改變應該不影響答案",
+      "summary": "將自然擾動、分布移動與梯度敏感度轉成有條件的測試，而非籠統聲稱模型穩健。",
+      "tags": [
+        "robustness",
+        "distribution shift",
+        "perturbation",
+        "invariance"
+      ]
+    },
+    {
+      "id": "60-distillation",
+      "group": "reliability",
+      "title": "知識蒸餾：讓小模型學標籤，也學老師的分布",
+      "summary": "推導溫度、KL方向及T平方縮放，實作凍結teacher與student更新。",
+      "tags": [
+        "distillation",
+        "teacher",
+        "student",
+        "temperature",
+        "compression"
+      ],
+      "example": "40_distillation.py"
+    },
+    {
+      "id": "61-tabular-project",
+      "group": "projects",
+      "title": "專題一：非線性表格分類的完整實驗",
+      "summary": "從已知生成規則到模型選擇，讀懂資料、指標與每次權重更新的責任。",
+      "tags": [
+        "project",
+        "tabular",
+        "MLP",
+        "validation",
+        "baseline"
+      ],
+      "example": "41_tabular_project.py"
+    },
+    {
+      "id": "62-image-project",
+      "group": "projects",
+      "title": "專題二：CNN學到方向，還是記住位置",
+      "summary": "用合成亮帶資料建立可解釋的影像實驗，明確拆開架構能力與資料捷徑。",
+      "tags": [
+        "project",
+        "CNN",
+        "image",
+        "shortcut learning"
+      ]
+    },
+    {
+      "id": "63-sequence-project",
+      "group": "projects",
+      "title": "專題三：變長序列、最後token與有效長度",
+      "summary": "把padding、packed sequence與任務規則連成可測試的序列分類流程。",
+      "tags": [
+        "project",
+        "GRU",
+        "packed sequence",
+        "padding",
+        "length"
+      ]
+    },
+    {
+      "id": "64-generative-project",
+      "group": "projects",
+      "title": "專題四：用低維生成實驗檢驗你的理解",
+      "summary": "比較AE、VAE、GAN、Diffusion與Flow Matching實際做的運算及各自的驗收條件。",
+      "tags": [
+        "project",
+        "generative models",
+        "DDPM",
+        "flow matching",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "65-model-choice",
+      "group": "projects",
+      "title": "選模型與寫模型卡：把假設留給下一位使用者",
+      "summary": "整理任務、資料、架構與限制，讓結果可以被理解、比較與接手。",
+      "tags": [
+        "model selection",
+        "model card",
+        "inductive bias",
+        "budget"
+      ]
+    },
+    {
+      "id": "66-artifacts",
+      "group": "projects",
+      "title": "交付模型：前處理、權重與推論契約一起保存",
+      "summary": "實作可重載的完整推論artifact，並區分它與可精確續訓的checkpoint。",
+      "tags": [
+        "artifact",
+        "checkpoint",
+        "inference",
+        "serialization",
+        "schema"
+      ],
+      "example": "42_checkpoint.py"
+    },
+    {
+      "id": "67-experimentation",
+      "group": "synthesis",
+      "title": "研究式實驗：讓每個改動回答一個問題",
+      "summary": "學會baseline、消融、配對重跑及結果紀錄，將「感覺有效」變成可核對的觀察。",
+      "tags": [
+        "experiment design",
+        "ablation",
+        "baseline",
+        "learning curves"
+      ]
+    },
+    {
+      "id": "68-architecture-map",
+      "group": "synthesis",
+      "title": "架構地圖：從CNN、Transformer到圖與生成模型",
+      "summary": "以資料結構、訊息交換方式與訓練目標整理架構，而非把所有名稱排成新舊名次。",
+      "tags": [
+        "architecture",
+        "CNN",
+        "ViT",
+        "GNN",
+        "Transformer",
+        "generative"
+      ]
+    },
+    {
+      "id": "69-course-bridges",
+      "group": "synthesis",
+      "title": "接下來怎麼學：從深度學習走向各個獨立領域",
+      "summary": "依目前缺少的能力選擇下一門課，並保留各領域足夠獨立的完整性。",
+      "tags": [
+        "learning path",
+        "PyTorch",
+        "embedding",
+        "RAG",
+        "ML"
+      ]
+    },
+    {
+      "id": "70-math-exercises",
+      "group": "synthesis",
+      "title": "數學習題詳解：用數字檢查你是否真的理解",
+      "summary": "從鏈式法則、CE、參數量到Attention與生成公式，逐題列出可檢核解法。",
+      "tags": [
+        "exercises",
+        "derivation",
+        "backpropagation",
+        "attention",
+        "solutions"
+      ]
+    },
+    {
+      "id": "71-implementation-exercises",
+      "group": "synthesis",
+      "title": "實作挑戰詳解：讓錯誤在測試中暴露",
+      "summary": "以資料、梯度、mask、狀態與artifact設計具體挑戰，附驗收方式與解題方向。",
+      "tags": [
+        "exercises",
+        "testing",
+        "invariants",
+        "implementation",
+        "solutions"
+      ]
+    },
+    {
+      "id": "72-reference",
+      "group": "synthesis",
+      "title": "術語、公式與版本速查：把整門課收進一張地圖",
+      "summary": "整理使用時最常混淆的概念、官方來源與可執行基準，方便回來查閱。",
+      "tags": [
+        "reference",
+        "glossary",
+        "version",
+        "PyTorch",
+        "quick reference"
+      ]
+    }
+  ]
+}

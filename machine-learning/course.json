@@ -1,0 +1,854 @@
+{
+  "slug": "machine-learning",
+  "title": "機器學習完整教學",
+  "shortTitle": "機器學習",
+  "updated": "2026-10-30",
+  "baseline": "scikit-learn 1.9.1",
+  "footerLabel": "MACHINE LEARNING · SCIKIT-LEARN 1.9.1",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試洩漏、Ridge、SVM、交叉驗證、校準、KMeans 或 PCA。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "先把學習問題定義清楚",
+      "description": "問題、環境、數學、損失與資料的第一份契約。"
+    },
+    {
+      "id": "data",
+      "number": "02",
+      "title": "可信的資料處理流程",
+      "description": "切分、洩漏、缺失、尺度、類別與特徵工程。"
+    },
+    {
+      "id": "linear",
+      "number": "03",
+      "title": "從線性模型建立直覺",
+      "description": "回歸、正則化、Logistic、分類型態、SGD 與近鄰。"
+    },
+    {
+      "id": "nonlinear",
+      "number": "04",
+      "title": "非線性與集成模型",
+      "description": "Naive Bayes、SVM、決策樹、森林與 Boosting。"
+    },
+    {
+      "id": "evaluation",
+      "number": "05",
+      "title": "評估與選模",
+      "description": "基準、指標、交叉驗證、搜尋與巢狀評估。"
+    },
+    {
+      "id": "reliability",
+      "number": "06",
+      "title": "讓決策與結果可信",
+      "description": "不平衡、校準、門檻、學習曲線與不確定性。"
+    },
+    {
+      "id": "unsupervised",
+      "number": "07",
+      "title": "沒有標籤時如何學習",
+      "description": "分群、密度、PCA、流形視覺化與異常偵測。"
+    },
+    {
+      "id": "applications",
+      "number": "08",
+      "title": "特徵、解釋與不同資料",
+      "description": "文字、表格、模型解讀、穩健性與增量學習。"
+    },
+    {
+      "id": "engineering",
+      "number": "09",
+      "title": "交付與完整專案",
+      "description": "保存、推論、效能、監控、分類與回歸專題。"
+    },
+    {
+      "id": "next",
+      "number": "10",
+      "title": "整合、練習與持續學習",
+      "description": "分群專題、模型選擇、新版API、跨課程連結與解答。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-first-model",
+      "group": "foundations",
+      "title": "機器學習全貌：從資料到可以驗證的預測",
+      "summary": "先跑一個完整模型，再逐步拆開資料、規則、損失與泛化。",
+      "tags": [
+        "machine learning",
+        "workflow",
+        "fit",
+        "predict"
+      ],
+      "example": "01_first_pipeline.py"
+    },
+    {
+      "id": "02-environment",
+      "group": "foundations",
+      "title": "最新版環境與工具：建立可重現的scikit-learn專案",
+      "summary": "確認套件版本、解譯器與範例結構，讓日後升版能重新驗證。",
+      "tags": [
+        "install",
+        "1.9.1",
+        "venv",
+        "NumPy",
+        "SciPy"
+      ]
+    },
+    {
+      "id": "03-problem-definition",
+      "group": "foundations",
+      "title": "問題定義：分類、回歸、排序與非監督學習",
+      "summary": "把要預測的對象、時間與使用決策寫清楚，再決定方法。",
+      "tags": [
+        "classification",
+        "regression",
+        "ranking",
+        "target"
+      ]
+    },
+    {
+      "id": "04-mathematics",
+      "group": "foundations",
+      "title": "必要數學：向量、矩陣、機率與條件分布",
+      "summary": "用一份特徵矩陣理解運算記號，建立讀懂後續公式的基礎。",
+      "tags": [
+        "linear algebra",
+        "probability",
+        "expectation",
+        "distribution"
+      ]
+    },
+    {
+      "id": "05-risk",
+      "group": "foundations",
+      "title": "損失、經驗風險與泛化：模型到底在最小化什麼",
+      "summary": "分清訓練目標、選模指標與真實使用成本。",
+      "tags": [
+        "loss",
+        "empirical risk",
+        "generalization",
+        "regularization"
+      ]
+    },
+    {
+      "id": "06-data-contract",
+      "group": "foundations",
+      "title": "資料探索與schema：一欄數字背後的意義",
+      "summary": "從欄位、時間、單位與缺失率開始，讓模型輸入保持一致。",
+      "tags": [
+        "EDA",
+        "schema",
+        "features",
+        "missing",
+        "data quality"
+      ]
+    },
+    {
+      "id": "07-splitting",
+      "group": "data",
+      "title": "資料切分：IID、分層、群組與時間",
+      "summary": "讓訓練與評估模擬真實未見資料，而非僅做隨機分割。",
+      "tags": [
+        "split",
+        "stratify",
+        "GroupKFold",
+        "TimeSeriesSplit"
+      ],
+      "example": "02_split.py"
+    },
+    {
+      "id": "08-leakage",
+      "group": "data",
+      "title": "資料洩漏與Pipeline：把fit放在正確的地方",
+      "summary": "從標準化到特徵選擇，所有學習資料統計的步驟都需要切分邊界。",
+      "tags": [
+        "leakage",
+        "Pipeline",
+        "fit_transform",
+        "ColumnTransformer"
+      ]
+    },
+    {
+      "id": "09-missing",
+      "group": "data",
+      "title": "缺失值：刪除、補值與缺失指標",
+      "summary": "理解missing的來源，讓訓練與推論使用相同的處理規則。",
+      "tags": [
+        "imputation",
+        "missing",
+        "SimpleImputer",
+        "indicator"
+      ],
+      "example": "03_preprocessing.py"
+    },
+    {
+      "id": "10-scaling",
+      "group": "data",
+      "title": "尺度與分布轉換：StandardScaler、RobustScaler與單位",
+      "summary": "知道哪些模型依賴距離與係數懲罰，哪些轉換會改變資料意義。",
+      "tags": [
+        "StandardScaler",
+        "RobustScaler",
+        "normalization",
+        "units"
+      ]
+    },
+    {
+      "id": "11-categories",
+      "group": "data",
+      "title": "類別編碼：One-Hot、未知值與高基數",
+      "summary": "區分類別代碼與數值大小，處理訓練沒見過的新類別。",
+      "tags": [
+        "OneHotEncoder",
+        "unknown",
+        "cardinality",
+        "encoding"
+      ],
+      "example": "04_categories.py"
+    },
+    {
+      "id": "12-features",
+      "group": "data",
+      "title": "特徵工程與選擇：讓訊號可用，讓洩漏可見",
+      "summary": "結合領域定義、交互作用與選擇方法，避免只靠自動搜尋。",
+      "tags": [
+        "feature engineering",
+        "feature selection",
+        "interaction",
+        "leakage"
+      ]
+    },
+    {
+      "id": "13-linear-regression",
+      "group": "linear",
+      "title": "線性回歸：從最小平方法到係數與殘差",
+      "summary": "手算一條直線，理解最小化平方誤差的解與其限制。",
+      "tags": [
+        "LinearRegression",
+        "OLS",
+        "least squares",
+        "residual"
+      ],
+      "example": "05_linear_regression.py"
+    },
+    {
+      "id": "14-regularization",
+      "group": "linear",
+      "title": "Ridge、Lasso與Elastic Net：用限制換取穩定性",
+      "summary": "比較L2收縮、L1稀疏與混合懲罰，理解尺度與超參數方向。",
+      "tags": [
+        "Ridge",
+        "Lasso",
+        "ElasticNet",
+        "alpha",
+        "L1",
+        "L2"
+      ],
+      "example": "06_regularization.py"
+    },
+    {
+      "id": "15-logistic",
+      "group": "linear",
+      "title": "Logistic Regression：機率、Log loss與決策邊界",
+      "summary": "從線性分數到二元機率，使用1.9版的正則化介面。",
+      "tags": [
+        "LogisticRegression",
+        "sigmoid",
+        "log loss",
+        "C",
+        "l1_ratio"
+      ],
+      "example": "07_logistic.py"
+    },
+    {
+      "id": "16-target-types",
+      "group": "linear",
+      "title": "二元、多類與多標籤：不要讓答案格式決定錯任務",
+      "summary": "分清互斥類別、可同時成立的標籤與不同平均方式。",
+      "tags": [
+        "multiclass",
+        "multilabel",
+        "OneVsRestClassifier",
+        "softmax"
+      ]
+    },
+    {
+      "id": "17-sgd",
+      "group": "linear",
+      "title": "梯度下降與SGD：步長、mini-batch與正則化",
+      "summary": "理解迭代模型如何更新，以及收斂、資料順序和尺度的關係。",
+      "tags": [
+        "SGD",
+        "gradient descent",
+        "learning rate",
+        "SGDClassifier"
+      ]
+    },
+    {
+      "id": "18-knn",
+      "group": "linear",
+      "title": "k近鄰：距離、投票與維度的代價",
+      "summary": "用最直接的相似樣本方法，理解尺度與局部平滑。",
+      "tags": [
+        "kNN",
+        "KNeighborsClassifier",
+        "distance",
+        "curse of dimensionality"
+      ],
+      "example": "08_knn.py"
+    },
+    {
+      "id": "19-naive-bayes",
+      "group": "nonlinear",
+      "title": "Naive Bayes：條件獨立、平滑與文字分類",
+      "summary": "從Bayes公式理解高效基準，也看見機率假設的限制。",
+      "tags": [
+        "Naive Bayes",
+        "MultinomialNB",
+        "GaussianNB",
+        "smoothing"
+      ],
+      "example": "09_naive_bayes.py"
+    },
+    {
+      "id": "20-svm",
+      "group": "nonlinear",
+      "title": "SVM與Kernel：margin、C與非線性邊界",
+      "summary": "理解最大間隔的偏好，以及RBF核和尺度之間的關係。",
+      "tags": [
+        "SVM",
+        "SVC",
+        "margin",
+        "kernel",
+        "RBF",
+        "gamma"
+      ],
+      "example": "10_svm.py"
+    },
+    {
+      "id": "21-trees",
+      "group": "nonlinear",
+      "title": "決策樹：分裂、Gini、Entropy與可讀規則",
+      "summary": "用四筆樣本手算資訊改善，理解貪婪分段模型。",
+      "tags": [
+        "DecisionTreeClassifier",
+        "Gini",
+        "entropy",
+        "split"
+      ],
+      "example": "11_tree.py"
+    },
+    {
+      "id": "22-tree-control",
+      "group": "nonlinear",
+      "title": "控制樹的複雜度：深度、葉大小與剪枝",
+      "summary": "將規則數量、穩定性與未見資料表現一起納入選擇。",
+      "tags": [
+        "max_depth",
+        "min_samples_leaf",
+        "ccp_alpha",
+        "pruning"
+      ]
+    },
+    {
+      "id": "23-forests",
+      "group": "nonlinear",
+      "title": "Bagging與Random Forest：多棵樹如何降低變異",
+      "summary": "理解bootstrap、特徵隨機性與集成相關性，而非只增加樹數。",
+      "tags": [
+        "bagging",
+        "RandomForestClassifier",
+        "bootstrap",
+        "OOB"
+      ],
+      "example": "12_random_forest.py"
+    },
+    {
+      "id": "24-boosting",
+      "group": "nonlinear",
+      "title": "Boosting：逐步修正錯誤與Histogram Gradient Boosting",
+      "summary": "比較加法模型、learning rate與樹數，建立強表格基準。",
+      "tags": [
+        "boosting",
+        "HistGradientBoosting",
+        "learning_rate",
+        "AdaBoost"
+      ],
+      "example": "13_boosting.py"
+    },
+    {
+      "id": "25-baselines",
+      "group": "evaluation",
+      "title": "建立基準與公平比較：先知道複雜度換來什麼",
+      "summary": "用相同資料、切分與指標比較dummy、線性與非線性模型。",
+      "tags": [
+        "baseline",
+        "DummyClassifier",
+        "comparison",
+        "selection"
+      ],
+      "example": "14_compare.py"
+    },
+    {
+      "id": "26-classification-metrics",
+      "group": "evaluation",
+      "title": "分類評估：混淆矩陣、ROC、PR與不平衡",
+      "summary": "用四筆手工分數算清楚precision、recall、F1及排序評估。",
+      "tags": [
+        "confusion matrix",
+        "precision",
+        "recall",
+        "F1",
+        "ROC",
+        "AP",
+        "PR"
+      ],
+      "example": "15_classification_metrics.py"
+    },
+    {
+      "id": "27-regression-metrics",
+      "group": "evaluation",
+      "title": "回歸評估：MAE、RMSE、R²與殘差單位",
+      "summary": "理解指標的分母、尺度與負分數，避免只報一個數字。",
+      "tags": [
+        "MAE",
+        "RMSE",
+        "R2",
+        "residual",
+        "regression metrics"
+      ],
+      "example": "16_regression_metrics.py"
+    },
+    {
+      "id": "28-cross-validation",
+      "group": "evaluation",
+      "title": "交叉驗證：每折重學、分數變異與scoring方向",
+      "summary": "知道CV估計什麼，並追蹤每一折的前處理與模型。",
+      "tags": [
+        "cross_validate",
+        "KFold",
+        "StratifiedKFold",
+        "scoring"
+      ],
+      "example": "17_cross_validation.py"
+    },
+    {
+      "id": "29-search",
+      "group": "evaluation",
+      "title": "超參數搜尋：Grid、Random與完整Pipeline",
+      "summary": "以明確預算搜尋合理空間，保存候選結果而非只看best_score。",
+      "tags": [
+        "GridSearchCV",
+        "RandomizedSearchCV",
+        "hyperparameter",
+        "CV"
+      ],
+      "example": "18_search.py"
+    },
+    {
+      "id": "30-nested-cv",
+      "group": "evaluation",
+      "title": "Nested CV：評估整個選模程序",
+      "summary": "外層保留評估，內層搜尋，避免把最佳內層分數當最終成績。",
+      "tags": [
+        "nested CV",
+        "selection bias",
+        "outer fold",
+        "inner fold"
+      ],
+      "example": "19_nested_cv.py"
+    },
+    {
+      "id": "31-imbalance",
+      "group": "reliability",
+      "title": "不平衡學習：class weight、抽樣與成本",
+      "summary": "在稀有事件下保留真實分布，分清訓練調整與決策調整。",
+      "tags": [
+        "imbalance",
+        "class_weight",
+        "resampling",
+        "balanced accuracy"
+      ],
+      "example": "20_imbalance.py"
+    },
+    {
+      "id": "32-calibration",
+      "group": "reliability",
+      "title": "機率校準：可靠度圖、Brier與Sigmoid／Isotonic",
+      "summary": "評估模型的信心是否有對應頻率，避免把排序能力當機率品質。",
+      "tags": [
+        "calibration",
+        "CalibratedClassifierCV",
+        "Brier",
+        "isotonic"
+      ],
+      "example": "21_calibration.py"
+    },
+    {
+      "id": "33-thresholds",
+      "group": "reliability",
+      "title": "決策門檻：成本、容量與TunedThresholdClassifierCV",
+      "summary": "讓接受／拒絕規則在適當資料上選擇，並隨模型一起保存。",
+      "tags": [
+        "threshold",
+        "TunedThresholdClassifierCV",
+        "cost",
+        "FP",
+        "FN"
+      ],
+      "example": "22_threshold.py"
+    },
+    {
+      "id": "34-learning-curves",
+      "group": "reliability",
+      "title": "學習曲線與偏差變異：如何判斷下一步",
+      "summary": "用訓練量、模型容量與誤差差距診斷，而非看到曲線就下單一結論。",
+      "tags": [
+        "learning curve",
+        "bias",
+        "variance",
+        "underfit",
+        "overfit"
+      ],
+      "example": "23_learning_curve.py"
+    },
+    {
+      "id": "35-uncertainty",
+      "group": "reliability",
+      "title": "不確定性與穩健比較：bootstrap、變異與區間",
+      "summary": "分清分數估計的不確定性、模型信心與資料分布限制。",
+      "tags": [
+        "uncertainty",
+        "bootstrap",
+        "confidence interval",
+        "robustness"
+      ]
+    },
+    {
+      "id": "36-error-analysis",
+      "group": "reliability",
+      "title": "錯誤分析與子群：找出平均分數掩蓋的問題",
+      "summary": "將錯誤連回資料、標籤、時間與使用者群，而非只調超參數。",
+      "tags": [
+        "error analysis",
+        "subgroup",
+        "slice",
+        "confusion",
+        "drift"
+      ]
+    },
+    {
+      "id": "37-unsupervised",
+      "group": "unsupervised",
+      "title": "非監督學習全貌：結構、表示與密度",
+      "summary": "沒有指定答案時，先定義探索目的與驗證方法。",
+      "tags": [
+        "unsupervised",
+        "clustering",
+        "density",
+        "GMM",
+        "EM"
+      ]
+    },
+    {
+      "id": "38-kmeans",
+      "group": "unsupervised",
+      "title": "KMeans：指派、更新、初始化與群數",
+      "summary": "手動執行Lloyd迭代，理解inertia與局部解。",
+      "tags": [
+        "KMeans",
+        "Lloyd",
+        "inertia",
+        "k-means++",
+        "n_init"
+      ],
+      "example": "24_kmeans.py"
+    },
+    {
+      "id": "39-density-clustering",
+      "group": "unsupervised",
+      "title": "階層與密度分群：DBSCAN、HDBSCAN與噪音",
+      "summary": "比較距離連結與局部密度假設，知道何時不需要先指定K。",
+      "tags": [
+        "DBSCAN",
+        "HDBSCAN",
+        "hierarchical",
+        "eps",
+        "min_samples"
+      ],
+      "example": "25_density.py"
+    },
+    {
+      "id": "40-pca",
+      "group": "unsupervised",
+      "title": "PCA：中心化、主方向與重建誤差",
+      "summary": "從最大變異方向理解降維，連回線性代數的特徵分解。",
+      "tags": [
+        "PCA",
+        "SVD",
+        "eigenvector",
+        "explained variance",
+        "reconstruction"
+      ],
+      "example": "26_pca.py"
+    },
+    {
+      "id": "41-manifold",
+      "group": "unsupervised",
+      "title": "非線性降維與視覺化：t-SNE、Isomap與UMAP邊界",
+      "summary": "把探索圖當作有假設的投影，避免從形狀讀出不存在的結論。",
+      "tags": [
+        "t-SNE",
+        "Isomap",
+        "manifold",
+        "UMAP",
+        "visualization"
+      ]
+    },
+    {
+      "id": "42-anomaly",
+      "group": "unsupervised",
+      "title": "異常偵測：Isolation Forest、LOF與novelty",
+      "summary": "分清訓練資料中的離群點、未來新奇點與真實事件標籤。",
+      "tags": [
+        "IsolationForest",
+        "LOF",
+        "novelty",
+        "outlier",
+        "contamination"
+      ],
+      "example": "27_anomaly.py"
+    },
+    {
+      "id": "43-text-features",
+      "group": "applications",
+      "title": "文字特徵工程：TF-IDF、n-gram與分類管線",
+      "summary": "將文字向量化與模型包在同一訓練邊界，處理中英文差異。",
+      "tags": [
+        "TF-IDF",
+        "TfidfVectorizer",
+        "text",
+        "tokenization",
+        "sparse"
+      ]
+    },
+    {
+      "id": "44-tabular-design",
+      "group": "applications",
+      "title": "表格建模設計：類別、比例、計數與目標變換",
+      "summary": "依資料生成與使用限制選擇特徵和模型，而不是統一套標準化。",
+      "tags": [
+        "tabular",
+        "ColumnTransformer",
+        "Poisson",
+        "Tweedie",
+        "target transform"
+      ]
+    },
+    {
+      "id": "45-inspection",
+      "group": "applications",
+      "title": "模型解釋：係數、Permutation、PDP與局部說明",
+      "summary": "解釋模型如何使用特徵，同時保留相關性與因果的邊界。",
+      "tags": [
+        "interpretability",
+        "permutation importance",
+        "PDP",
+        "ICE",
+        "SHAP"
+      ],
+      "example": "28_inspection.py"
+    },
+    {
+      "id": "46-robustness",
+      "group": "applications",
+      "title": "資料品質與穩健性：離群值、雜訊與敏感性實驗",
+      "summary": "用可控制擾動檢查模型，而不是只靠一份乾淨test。",
+      "tags": [
+        "robustness",
+        "outliers",
+        "noise",
+        "sensitivity",
+        "data validation"
+      ]
+    },
+    {
+      "id": "47-incremental",
+      "group": "applications",
+      "title": "增量與大型資料：partial_fit、MiniBatch與串流",
+      "summary": "理解什麼狀態能逐步更新，並防止前處理座標隨資料漂移。",
+      "tags": [
+        "partial_fit",
+        "SGDClassifier",
+        "MiniBatchKMeans",
+        "streaming"
+      ]
+    },
+    {
+      "id": "48-responsible-use",
+      "group": "applications",
+      "title": "分布、隱私與公平：模型進入真實世界的限制",
+      "summary": "將用途、資料權限與錯誤負擔納入評估，不讓分數取代完整決策。",
+      "tags": [
+        "distribution shift",
+        "fairness",
+        "privacy",
+        "limitations"
+      ]
+    },
+    {
+      "id": "49-persistence",
+      "group": "engineering",
+      "title": "模型保存與版本：交付完整Pipeline",
+      "summary": "保存前處理、模型、門檻與schema，重啟後用相同原始資料核對。",
+      "tags": [
+        "joblib",
+        "persistence",
+        "version",
+        "artifact",
+        "Pipeline"
+      ],
+      "example": "29_persistence.py"
+    },
+    {
+      "id": "50-inference-contract",
+      "group": "engineering",
+      "title": "推論介面：欄位名稱、機率與決策的一致性",
+      "summary": "把raw資料轉成固定契約，讓相同模型在不同入口有相同行為。",
+      "tags": [
+        "inference",
+        "schema",
+        "classes",
+        "predict_proba",
+        "validation"
+      ]
+    },
+    {
+      "id": "51-performance",
+      "group": "engineering",
+      "title": "效能與資源：稀疏、batch、平行與量測",
+      "summary": "用相同工作量比較延遲與吞吐，避免把資源開關當加速保證。",
+      "tags": [
+        "performance",
+        "sparse",
+        "batch",
+        "n_jobs",
+        "threadpoolctl"
+      ]
+    },
+    {
+      "id": "52-monitoring",
+      "group": "engineering",
+      "title": "實驗、監控與重訓：讓結果有完整脈絡",
+      "summary": "記錄選擇歷程，監控資料與任務品質，設計可回復的更新流程。",
+      "tags": [
+        "experiment tracking",
+        "monitoring",
+        "drift",
+        "retraining"
+      ]
+    },
+    {
+      "id": "53-classification-project",
+      "group": "engineering",
+      "title": "完整分類專題：混合欄位、CV、門檻與最終測試",
+      "summary": "沿著一條真實執行的離線流程，核對每個資料角色與產物。",
+      "tags": [
+        "capstone",
+        "classification",
+        "GridSearchCV",
+        "threshold",
+        "artifact"
+      ],
+      "example": "30_capstone.py"
+    },
+    {
+      "id": "54-regression-project",
+      "group": "engineering",
+      "title": "完整回歸專題：基準、搜尋與原單位評估",
+      "summary": "將分類流程的資料邊界延伸到連續目標，核對負scoring與殘差。",
+      "tags": [
+        "regression project",
+        "Ridge",
+        "DummyRegressor",
+        "MAE",
+        "RMSE"
+      ]
+    },
+    {
+      "id": "55-clustering-project",
+      "group": "next",
+      "title": "完整分群專題：表示、穩定性與新樣本指派",
+      "summary": "在無label使用情境下，定義可以驗收的結構與解讀。",
+      "tags": [
+        "clustering project",
+        "KMeans",
+        "silhouette",
+        "stability"
+      ]
+    },
+    {
+      "id": "56-model-choice",
+      "group": "next",
+      "title": "如何選模型：從問題、資料與限制走向候選",
+      "summary": "用可解釋的選擇順序縮小範圍，再由驗證而非流行度決定。",
+      "tags": [
+        "estimator selection",
+        "model comparison",
+        "model map"
+      ]
+    },
+    {
+      "id": "57-modern-api",
+      "group": "next",
+      "title": "1.9版API與遷移：新教材如何避免舊寫法落差",
+      "summary": "整理本課實際使用的現行介面，以及更新時需要重新驗證的邊界。",
+      "tags": [
+        "1.9.1",
+        "migration",
+        "l1_ratio",
+        "FrozenEstimator",
+        "metadata routing"
+      ]
+    },
+    {
+      "id": "58-bridges",
+      "group": "next",
+      "title": "與PyTorch、Embedding及RAG銜接",
+      "summary": "將同一套資料與評估思維帶到神經網路、表示與檢索應用。",
+      "tags": [
+        "PyTorch",
+        "Embedding",
+        "RAG",
+        "deep learning",
+        "connections"
+      ]
+    },
+    {
+      "id": "59-exercises",
+      "group": "next",
+      "title": "整合練習與解答：自己完成一次可靠學習流程",
+      "summary": "從手算到資料隔離與交付，用具體驗收檢查是否能獨立完成。",
+      "tags": [
+        "exercises",
+        "answers",
+        "practice",
+        "validation"
+      ]
+    },
+    {
+      "id": "60-reference",
+      "group": "next",
+      "title": "速查、名詞與版本：回來查找你的下一步",
+      "summary": "整理本課資料契約、演算法與驗證範圍，讓教材可以持續使用。",
+      "tags": [
+        "reference",
+        "glossary",
+        "1.9.1",
+        "checklist"
+      ]
+    }
+  ]
+}

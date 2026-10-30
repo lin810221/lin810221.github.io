@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有五個領域：**LangGraph 完整教學**（28 章、12 份 Python 範例）、**LLM 服務與 AI Agents**（38 章、12 份範例）、**RAG 檢索增強生成**（42 章、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（48 章、20 份範例、4 個互動實驗室）與 **PyTorch 實作工程**（48 章、24 份範例、4 個互動實驗室）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有七個領域：**LangGraph 完整教學**（28 章、12 份 Python 範例）、**LLM 服務與 AI Agents**（38 章、12 份範例）、**RAG 檢索增強生成**（42 章、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（48 章、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（48 章、24 份範例、4 個互動實驗室）、**機器學習**（60 章、30 份範例、5 個互動實驗室）與 **深度學習**（72 章、42 份範例、6 個互動實驗室）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -48,6 +48,18 @@ LearningNote/
 │   ├── assets/overview.js     shape、梯度、更新與尾批實驗室
 │   ├── examples/              24 個入口、共用實作、合成資料與測試
 │   └── examples.zip           含需求檔與測試的完整範例包
+├── machine-learning/          機器學習（scikit-learn 1.9.1）
+│   ├── course.json            60 章的分組與摘要
+│   ├── chapters/              Markdown 教材
+│   ├── assets/overview.js     回歸、成本、CV、樹與 KMeans 實驗室
+│   ├── examples/              30 個離線入口、完整管線與數值測試
+│   └── examples.zip           含合成資料與鎖版需求的完整範例包
+├── deep-learning/             深度學習（PyTorch 2.15.0）
+│   ├── course.json            72 章的分組與摘要
+│   ├── chapters/              Markdown 教材、公式、練習與解答
+│   ├── assets/overview.js     梯度、XOR、卷積、正規化、Attention 與加噪
+│   ├── examples/              42 個入口、獨立核心、合成資料與測試
+│   └── examples.zip           完整可執行下載包
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -97,3 +109,17 @@ python -m unittest discover -s pytorch/examples -p test_examples.py -v
 ```
 
 新增或更新課程前，先確認官方最新穩定版，再固定版本驗證與記錄日期。完整規範見 [COURSE_AUTHORING.md](COURSE_AUTHORING.md)，開發清單見 [COURSE_CHECKLIST.md](COURSE_CHECKLIST.md)。
+
+機器學習範例見 [machine-learning/examples/README.md](machine-learning/examples/README.md)。以 2026-10-30 查核的最新穩定版 **scikit-learn 1.9.1** 製作，Python 3.11 與相容依賴實測 45 項測試。涵蓋 train-only 前處理、主要模型、CV、校準、成本門檻、非監督與模型保存；預設 CPU、合成資料、完全離線。
+
+```powershell
+python -m pip install -r machine-learning/examples/requirements.txt
+python -m unittest discover -s machine-learning/examples -p test_examples.py -v
+```
+
+深度學習範例見 [deep-learning/examples/README.md](deep-learning/examples/README.md)。依 2026-10-30 查核的最新穩定版 **PyTorch 2.15.0** 製作，Python 3.11 / CPU 實測 55 項測試與全部 42 入口。涵蓋梯度推導、架構、生成與完整專題；使用合成資料，安裝完成後離線執行。GPU 與真實資料效果未驗證。
+
+```powershell
+python -m pip install -r deep-learning/examples/requirements.txt --index-url https://download.pytorch.org/whl/cpu
+python -m unittest discover -s deep-learning/examples -p test_examples.py -v
+```

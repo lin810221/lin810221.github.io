@@ -6,7 +6,7 @@ import {Worker,isMainThread,parentPort,workerData} from 'node:worker_threads';
 
 export const reports=[];
 if(isMainThread) {
-  for(const file of ['test-reader.mjs','test-llm-reader.mjs','test-rag-reader.mjs','test-embedding-reader.mjs','test-pytorch-reader.mjs']) {
+  for(const file of ['test-reader.mjs','test-llm-reader.mjs','test-rag-reader.mjs','test-embedding-reader.mjs','test-pytorch-reader.mjs','test-machine-learning-reader.mjs','test-deep-learning-reader.mjs']) {
     reports.push(await new Promise((resolve,reject)=> {
       const worker=new Worker(new URL(import.meta.url),{workerData:file});
       let result;

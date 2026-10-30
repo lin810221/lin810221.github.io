@@ -1,0 +1,5 @@
+[
+  {"tenure_months":12,"weekly_usage":6.5,"support_tickets":1,"plan":"plus"},
+  {"tenure_months":2,"weekly_usage":1.0,"support_tickets":4,"plan":"basic"},
+  {"tenure_months":null,"weekly_usage":4.0,"support_tickets":0,"plan":"new_plan"}
+]
