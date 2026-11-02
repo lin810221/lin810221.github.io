@@ -74,7 +74,7 @@ def build(course_path):
                 relative = example_path.relative_to(examples)
                 if any(part.startswith(".") or part == "__pycache__" for part in relative.parts):
                     continue
-                if example_path.is_file() and example_path.suffix in {".py", ".md", ".txt", ".json", ".sql"}:
+                if example_path.is_file() and example_path.suffix in {".py", ".md", ".txt", ".json", ".sql", ".csv"}:
                     info = zipfile.ZipInfo("examples/" + relative.as_posix(), date_time=(2026, 10, 29, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_DEFLATED
                     archive.writestr(info, example_path.read_bytes())

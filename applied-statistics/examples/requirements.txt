@@ -1,0 +1,16 @@
+# Official stable versions checked 2026-11-02; tested with Python 3.13.
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+statsmodels==0.15.0
+patsy==1.0.3
+packaging==26.3
+python-dateutil==4.0.0
+six==1.17.0
+# Tested transitive dependency set; not a claim that every leaf is globally latest.
+formulaic==1.2.2
+interface-meta==2.0.1
+narwhals==2.28.0
+typing-extensions==4.16.0
+tzdata==2026.6
+wrapt==2.5.2

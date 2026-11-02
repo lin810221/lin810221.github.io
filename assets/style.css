@@ -24,3 +24,5 @@ dialog{color:var(--text);background:#171d18;border:1px solid #41513c;border-radi
 .ml-art{color:#9fd3db;background:radial-gradient(ellipse at 50% 50%,#9fd3db10,transparent 72%),#161f20}
 
 .dl-art{color:#b3d9c4;background:radial-gradient(ellipse at 50% 50%,#b3d9c410,transparent 72%),#17221c}
+
+.statistics-art{color:#dcc7a3;background:radial-gradient(ellipse at 50% 50%,#dcc7a310,transparent 72%),#211f18}

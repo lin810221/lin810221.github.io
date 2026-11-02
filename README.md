@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有七個領域：**LangGraph 完整教學**（28 章、12 份 Python 範例）、**LLM 服務與 AI Agents**（38 章、12 份範例）、**RAG 檢索增強生成**（42 章、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（48 章、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（48 章、24 份範例、4 個互動實驗室）、**機器學習**（60 章、30 份範例、5 個互動實驗室）與 **深度學習**（72 章、42 份範例、6 個互動實驗室）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有八個領域：**LangGraph 完整教學**（28 章、12 份 Python 範例）、**LLM 服務與 AI Agents**（38 章、12 份範例）、**RAG 檢索增強生成**（42 章、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（48 章、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（48 章、24 份範例、4 個互動實驗室）、**機器學習**（60 章、30 份範例、5 個互動實驗室）、**深度學習**（72 章、42 份範例、6 個互動實驗室）與 **應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -60,6 +60,12 @@ LearningNote/
 │   ├── assets/overview.js     梯度、XOR、卷積、正規化、Attention 與加噪
 │   ├── examples/              42 個入口、獨立核心、合成資料與測試
 │   └── examples.zip           完整可執行下載包
+├── applied-statistics/        應用統計（SciPy 1.18.1 / statsmodels 0.15.0）
+│   ├── course.json            原十章與附錄，共70個閱讀單元
+│   ├── chapters/              原節號、公式、手算與完整習題解答
+│   ├── assets/overview.js     八個互動統計數值實驗
+│   ├── examples/              40個入口、獨立核心、合成問卷CSV與測試
+│   └── examples.zip           完整資料、程式及鎖版需求
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -122,4 +128,13 @@ python -m unittest discover -s machine-learning/examples -p test_examples.py -v
 ```powershell
 python -m pip install -r deep-learning/examples/requirements.txt --index-url https://download.pytorch.org/whl/cpu
 python -m unittest discover -s deep-learning/examples -p test_examples.py -v
+```
+
+應用統計見 [applied-statistics/examples/README.md](applied-statistics/examples/README.md)。保留使用者十章目錄與小節，問卷章改為 Python，不包含 SPSS 操作。2026-11-02 查核最新穩定版 **SciPy 1.18.1 / statsmodels 0.15.0**，Python 3.13 實測 60 項測試。合成問卷保留完整計分、缺失、信度、因素與比較流程；不宣稱代表真實母體或正式量表驗證。
+
+此課使用獨立 Python >=3.12 環境（建議 3.13），不要在既有 Python 3.11 課程環境直接混裝。
+
+```powershell
+python -m pip install -r applied-statistics/examples/requirements.txt
+python -m unittest discover -s applied-statistics/examples -p test_examples.py -v
 ```
