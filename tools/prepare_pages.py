@@ -64,7 +64,8 @@ def main():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     readme = "# Learning Notes\n\n" + "\n".join(
-        f"- [{course['title']}]({folder}/index.html): {len(course['lessons'])} chapters"
+        f"- [{course['title']}]({folder}/index.html): "
+        f"{sum(str(group['number']).isdigit() for group in course['groups'])} chapters / {len(course['lessons'])} units"
         for folder, course in courses
     ) + "\n\nThis repository contains the published static website and downloadable examples.\n"
     (destination / "README.md").write_text(readme, encoding="utf-8")

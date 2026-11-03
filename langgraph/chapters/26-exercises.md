@@ -4,7 +4,7 @@
 
 ## 練習一：拒絕空名字
 
-修改第 4 章，在 normalize 後加入 validate。只有空白的名字應拋出 `ValueError`，正常名字仍產生問候。
+修改「[寫出第一個 StateGraph](#04-first-graph)」，在 normalize 後加入 validate。只有空白的名字應拋出 `ValueError`，正常名字仍產生問候。
 
 參考節點：
 
@@ -24,7 +24,7 @@ builder.add_edge("validate", "greet")
 
 ## 練習二：理解 Reducer 增量
 
-將第 6 章的初始 events 改成 `["initial"]`，兩分支仍回傳 `["A"]` 與 `["B"]`。最後應恰好有三個項目。
+將「[Reducer：狀態究竟怎麼合併？](#06-reducers)」的初始 events 改成 `["initial"]`，兩分支仍回傳 `["A"]` 與 `["B"]`。最後應恰好有三個項目。
 
 ```python
 result = build_graph().invoke({"events": ["initial"]})
@@ -35,7 +35,7 @@ assert sorted(result["events"]) == ["A", "B", "initial"]
 
 ## 練習三：兩個人的對話不要混在一起
 
-延續第 12 章，A 說兩句、B 說一句。A 應有四則訊息，B 應有兩則。
+延續「[Checkpoint 與 Thread 持久化](#12-checkpoints)」，A 說兩句、B 說一句。A 應有四則訊息，B 應有兩則。
 
 ```python
 graph = build_graph()
@@ -68,7 +68,7 @@ assert result["answer"] == "Checkpointer 保存 thread 狀態。[D1]"
 
 ## 練習五：平行結果與空任務
 
-把第 17 章的輸入改成 `["A", "A", "B"]`，結果應有三份並保持輸入索引順序。再用空 topics，結果應是空報告而非停在沒有輸出的狀態。
+把「[平行節點與 Send Map-Reduce](#17-parallel-send)」的輸入改成 `["A", "A", "B"]`，結果應有三份並保持輸入索引順序。再用空 topics，結果應是空報告而非停在沒有輸出的狀態。
 
 ```python
 graph = build_graph()

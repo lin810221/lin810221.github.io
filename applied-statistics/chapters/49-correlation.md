@@ -1,4 +1,4 @@
-# 9-1　概論及相關分析：Pearson與Spearman
+# 概論及相關分析：Pearson與Spearman {#9-1-pearsonspearman}
 
 看圖、尺度與配對來源，再量化關聯；相關不等於因果。
 

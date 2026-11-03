@@ -4,6 +4,19 @@
   const course = window.COURSE;
   const $ = selector => document.querySelector(selector);
   const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  if (!course?.lessons?.length) { $('#main').textContent = '教材資料尚未載入，請確認 assets/course-data.js 存在。'; return; }
+  // IDs are stable URLs/storage keys. Display numbers follow each chapter's order.
+  const lessonPositions = new Map();
+  course.groups.forEach(group => {
+    const units = course.lessons.filter(lesson => lesson.group === group.id);
+    const chapterLabel = /^\d+$/.test(group.number) ? `第 ${Number(group.number)} 章` : group.number === '附' ? '附錄' : group.title;
+    const chapterKicker = /^\d+$/.test(group.number) ? `CHAPTER ${group.number}` : `APPENDIX${group.number === '附' ? '' : ' ' + group.number}`;
+    units.forEach((lesson, index) => {
+      const number = String(index + 1).padStart(2, '0');
+      lessonPositions.set(lesson.id, {number, count:units.length, chapterLabel, chapterKicker, label:`${chapterLabel} · 單元 ${number}`});
+    });
+  });
+  const unitLabel = lesson => lessonPositions.get(lesson.id).label;
   const STORAGE_KEY = `learning-notes:${course?.slug || 'langgraph'}:v1`;
   let storageOK = true;
   let saved = {completed: [], notes: {}, last: ''};
@@ -42,7 +55,7 @@
     });
   }
   function buildNavigation() {
-    $('#chapter-nav').innerHTML = course.groups.map(group => `<section class="nav-group"><h2 class="nav-group-title"><span class="mono">${group.number}</span>${escapeHTML(group.title)}</h2>${course.lessons.filter(l => l.group === group.id).map(lesson => `<a class="chapter-link" data-lesson="${lesson.id}" href="#${lesson.id}"><span class="chapter-number">${lesson.id.slice(0, 2)}</span><span class="chapter-label">${escapeHTML(lesson.title)}</span><span class="chapter-check"></span></a>`).join('')}</section>`).join('');
+    $('#chapter-nav').innerHTML = course.groups.map(group => `<section class="nav-group"><h2 class="nav-group-title"><span class="mono">${group.number}</span>${escapeHTML(group.title)}</h2>${course.lessons.filter(l => l.group === group.id).map(lesson => `<a class="chapter-link" data-lesson="${lesson.id}" href="#${lesson.id}"><span class="chapter-number">${lessonPositions.get(lesson.id).number}</span><span class="chapter-label">${escapeHTML(lesson.title)}</span><span class="chapter-check"></span></a>`).join('')}</section>`).join('');
     updateProgress();
   }
   const footer = `<footer class="page-footer"><span>Learning Notes <span>／ 一次理解一個概念。</span></span><span class="mono">UPDATED ${escapeHTML((course.updated || '2026-10-29').replaceAll('-', '.'))} · ${escapeHTML(course.footerLabel || 'PYTHON')}</span></footer>`;
@@ -53,13 +66,13 @@
     }
     const last = saved.last || course.lessons[0].id;
     const totalMinutes = course.lessons.reduce((sum, l) => sum + l.minutes, 0);
-    $('#main').innerHTML = `<section class="course-hero" id="intro"><div class="eyebrow">THE COMPLETE GUIDE <span>／ 從零到實務</span></div><h1>LangGraph<span class="hero-period">.</span></h1><h2 class="hero-subtitle">讓 AI 的每一步，<br>都在你的掌握之中。</h2><p class="hero-description">從第一個節點開始，親手建立有狀態、有記憶、能等待人類決策的工作流程。一步步理解原理，寫出可以驗證的程式。</p><div class="hero-meta"><span><b>28</b> 個完整章節</span><span><b>12</b> 份可執行範例</span><span>約 <b>${Math.round(totalMinutes / 60 * 10) / 10}</b> 小時純閱讀</span><span>不含動手練習時間</span></div><div class="hero-actions"><a class="primary-button" href="#${last}">${saved.last ? '繼續學習' : '從第一章開始'} <span aria-hidden="true">→</span></a><a class="text-link" href="#overview/roadmap">瀏覽學習路線 <span aria-hidden="true">↓</span></a></div></section>
-    <section id="try-it"><div class="section-header"><h2>先看看，一張圖如何思考</h2><span>AN INTERACTIVE WALKTHROUGH</span></div><div class="graph-lab"><div class="lab-header"><span><span class="status-dot"></span> 知識助理的工作流程</span><span class="lab-badge">6 STEPS · STATEFUL</span></div><div class="lab-body"><div class="graph-track" role="list" aria-label="示意流程的六個節點">${[['START','接收問題'],['ROUTE','分類'],['RETRIEVE','找資料'],['DRAFT','寫草稿'],['INTERRUPT','人工審核'],['END','完成']].map((item, i) => `${i ? '<span class="graph-connector" aria-hidden="true"></span>' : ''}<div role="listitem" class="graph-node" data-step="${i}"><small>${item[0]}</small><span>${item[1]}</span></div>`).join('')}</div><div class="lab-state" aria-live="polite"><div class="lab-state-info"><strong id="lab-step-title"></strong><span id="lab-step-description"></span></div><pre id="lab-state-code"></pre></div><div class="lab-controls"><span id="lab-counter"></span><div><button id="lab-reset" class="secondary-button" aria-label="重設流程示範">↺ 重設</button><button id="lab-next" class="secondary-button"></button></div></div></div><div class="lab-caption">這是瀏覽器中的概念示範，使用固定資料，不會呼叫模型。完整 Python 實作在第 25 章。</div></div></section>
+    $('#main').innerHTML = `<section class="course-hero" id="intro"><div class="eyebrow">THE COMPLETE GUIDE <span>／ 從零到實務</span></div><h1>LangGraph<span class="hero-period">.</span></h1><h2 class="hero-subtitle">讓 AI 的每一步，<br>都在你的掌握之中。</h2><p class="hero-description">從第一個節點開始，親手建立有狀態、有記憶、能等待人類決策的工作流程。一步步理解原理，寫出可以驗證的程式。</p><div class="hero-meta"><span><b>28</b> 個閱讀單元</span><span><b>12</b> 份可執行範例</span><span>約 <b>${Math.round(totalMinutes / 60 * 10) / 10}</b> 小時純閱讀</span><span>不含動手練習時間</span></div><div class="hero-actions"><a class="primary-button" href="#${last}">${saved.last ? '繼續學習' : '從第一單元開始'} <span aria-hidden="true">→</span></a><a class="text-link" href="#overview/roadmap">瀏覽學習路線 <span aria-hidden="true">↓</span></a></div></section>
+    <section id="try-it"><div class="section-header"><h2>先看看，一張圖如何思考</h2><span>AN INTERACTIVE WALKTHROUGH</span></div><div class="graph-lab"><div class="lab-header"><span><span class="status-dot"></span> 知識助理的工作流程</span><span class="lab-badge">6 STEPS · STATEFUL</span></div><div class="lab-body"><div class="graph-track" role="list" aria-label="示意流程的六個節點">${[['START','接收問題'],['ROUTE','分類'],['RETRIEVE','找資料'],['DRAFT','寫草稿'],['INTERRUPT','人工審核'],['END','完成']].map((item, i) => `${i ? '<span class="graph-connector" aria-hidden="true"></span>' : ''}<div role="listitem" class="graph-node" data-step="${i}"><small>${item[0]}</small><span>${item[1]}</span></div>`).join('')}</div><div class="lab-state" aria-live="polite"><div class="lab-state-info"><strong id="lab-step-title"></strong><span id="lab-step-description"></span></div><pre id="lab-state-code"></pre></div><div class="lab-controls"><span id="lab-counter"></span><div><button id="lab-reset" class="secondary-button" aria-label="重設流程示範">↺ 重設</button><button id="lab-next" class="secondary-button"></button></div></div></div><div class="lab-caption">這是瀏覽器中的概念示範，使用固定資料，不會呼叫模型。完整 Python 實作在「<a href="#${course.lessons[24].id}">${escapeHTML(course.lessons[24].title)}</a>」單元。</div></div></section>
     <section id="roadmap"><div class="section-header"><h2>你的學習路線</h2><span>BUILD UNDERSTANDING, STEP BY STEP</span></div><div class="module-list">${course.groups.map(group => {
       const lessons = course.lessons.filter(l => l.group === group.id);
-      return `<a class="module-row" href="#${lessons[0].id}"><span class="module-num">${group.number}</span><div><div class="module-name">${escapeHTML(group.title)}</div><div class="module-description">${escapeHTML(group.description)}</div></div><span class="module-count">${lessons.length} CHAPTERS <span aria-hidden="true">↗</span></span></a>`;
-    }).join('')}</div></section><div class="reading-note" id="before-start"><strong>開始之前</strong><br>基礎章節只需要 Python；需要 API Key 的模型範例會明確註明。建議邊閱讀、邊修改程式，將「看得懂」變成「做得到」。<br>範例驗證基準：LangGraph ${course.baseline}。新版功能另作說明，每章附官方來源。</div>${footer}`;
-    $('#page-toc').innerHTML = `<h2 class="toc-label">本頁導覽</h2><div class="toc-links"><a href="#overview/intro">關於這份教學</a><a href="#overview/try-it">互動流程示範</a><a href="#overview/roadmap">學習路線</a><a href="#overview/before-start">開始之前</a></div><div class="toc-tip"><p>學習，不需要一次完成。</p><p>每章都可以留下自己的筆記，完成後勾選，讓理解一步步累積。</p><p><kbd>Ctrl</kbd> + <kbd>K</kbd> 搜尋教學</p><p><a href="examples/README.md">Python 範例說明 ↗</a></p></div>`;
+      return `<a class="module-row" href="#${lessons[0].id}"><span class="module-num">${group.number}</span><div><div class="module-name">${escapeHTML(group.title)}</div><div class="module-description">${escapeHTML(group.description)}</div></div><span class="module-count">${lessons.length} UNITS <span aria-hidden="true">↗</span></span></a>`;
+    }).join('')}</div></section><div class="reading-note" id="before-start"><strong>開始之前</strong><br>基礎章節只需要 Python；需要 API Key 的模型範例會明確註明。建議邊閱讀、邊修改程式，將「看得懂」變成「做得到」。<br>範例驗證基準：LangGraph ${course.baseline}。新版功能另作說明，每個單元附官方來源。</div>${footer}`;
+    $('#page-toc').innerHTML = `<h2 class="toc-label">本頁導覽</h2><div class="toc-links"><a href="#overview/intro">關於這份教學</a><a href="#overview/try-it">互動流程示範</a><a href="#overview/roadmap">學習路線</a><a href="#overview/before-start">開始之前</a></div><div class="toc-tip"><p>學習，不需要一次完成。</p><p>每個單元都可以留下自己的筆記，完成後勾選，讓理解一步步累積。</p><p><kbd>Ctrl</kbd> + <kbd>K</kbd> 搜尋教學</p><p><a href="examples/README.md">Python 範例說明 ↗</a></p></div>`;
     initLab();
   }
   function initLab() {
@@ -89,8 +102,9 @@
   function renderLesson(lesson) {
     const index = course.lessons.indexOf(lesson);
     const group = course.groups.find(g => g.id === lesson.group);
+    const position = lessonPositions.get(lesson.id);
     const completed = saved.completed.includes(lesson.id);
-    $('#main').innerHTML = `<header class="lesson-header"><div class="lesson-breadcrumb"><a href="#overview">${escapeHTML(course.shortTitle || 'LangGraph')}</a><span>/</span>${escapeHTML(group.title)}<span>/</span>第 ${index + 1} 章</div><div class="lesson-kicker">CHAPTER ${lesson.id.slice(0, 2)} <span>／ ${course.lessons.length}</span></div><h1>${escapeHTML(lesson.title)}</h1><p class="lesson-summary">${escapeHTML(lesson.summary)}</p><div class="lesson-meta"><span>約 ${lesson.minutes} 分鐘閱讀</span>${lesson.tags.map(tag => `<span class="tag">${escapeHTML(tag)}</span>`).join('')}<span>${completed ? '✓ 已完成' : '按自己的步調閱讀'}</span></div></header><article class="lesson-content">${lesson.html}</article>${lesson.example ? `<div class="example-download"><div><strong>本章可執行範例</strong><span class="mono">examples/${escapeHTML(lesson.example)}</span></div><a class="secondary-button" href="examples/${escapeHTML(lesson.example)}" download>下載 Python 範例 ↓</a></div>` : ''}<section class="notes-box"><div class="notes-heading"><label for="lesson-notes">寫下你的理解</label><span id="note-status">${storageOK ? '自動儲存於此瀏覽器' : '目前無法儲存，離開頁面前請自行備份'}</span></div><textarea id="lesson-notes" placeholder="有什麼想法、疑問，或值得記住的細節？"></textarea></section><div class="completion-row"><button class="complete-button" id="complete-lesson" aria-pressed="${completed}">${completed ? '✓ 已完成本章' : '○ 標記本章已完成'}</button><p>理解需要練習，進度不需要趕。</p></div><nav class="lesson-pagination" aria-label="章節切換">${index > 0 ? `<a class="pagination-link previous" href="#${course.lessons[index - 1].id}"><small>← 上一章</small><strong>${escapeHTML(course.lessons[index - 1].title)}</strong></a>` : '<a class="pagination-link previous" href="#overview"><small>← 回到課程</small><strong>課程總覽</strong></a>'}${index < course.lessons.length - 1 ? `<a class="pagination-link next" href="#${course.lessons[index + 1].id}"><small>下一章 →</small><strong>${escapeHTML(course.lessons[index + 1].title)}</strong></a>` : '<a class="pagination-link next" href="#overview"><small>回顧你的學習 →</small><strong>回到學習路線</strong></a>'}</nav>${footer}`;
+    $('#main').innerHTML = `<header class="lesson-header"><div class="lesson-breadcrumb"><a href="#overview">${escapeHTML(course.shortTitle || 'LangGraph')}</a><span>/</span>${escapeHTML(position.chapterLabel)} · ${escapeHTML(group.title)}<span>/</span>單元 ${position.number}</div><div class="lesson-kicker">${escapeHTML(position.chapterKicker)} <span>／ UNIT ${position.number} OF ${position.count}</span></div><h1>${escapeHTML(lesson.title)}</h1><p class="lesson-summary">${escapeHTML(lesson.summary)}</p><div class="lesson-meta"><span>約 ${lesson.minutes} 分鐘閱讀</span>${lesson.tags.map(tag => `<span class="tag">${escapeHTML(tag)}</span>`).join('')}<span>${completed ? '✓ 已完成' : '按自己的步調閱讀'}</span></div></header><article class="lesson-content">${lesson.html}</article>${lesson.example ? `<div class="example-download"><div><strong>本單元可執行範例</strong><span class="mono">examples/${escapeHTML(lesson.example)}</span></div><a class="secondary-button" href="examples/${escapeHTML(lesson.example)}" download>下載 Python 範例 ↓</a></div>` : ''}<section class="notes-box"><div class="notes-heading"><label for="lesson-notes">寫下你的理解</label><span id="note-status">${storageOK ? '自動儲存於此瀏覽器' : '目前無法儲存，離開頁面前請自行備份'}</span></div><textarea id="lesson-notes" placeholder="有什麼想法、疑問，或值得記住的細節？"></textarea></section><div class="completion-row"><button class="complete-button" id="complete-lesson" aria-pressed="${completed}">${completed ? '✓ 已完成本單元' : '○ 標記本單元已完成'}</button><p>理解需要練習，進度不需要趕。</p></div><nav class="lesson-pagination" aria-label="單元切換">${index > 0 ? `<a class="pagination-link previous" href="#${course.lessons[index - 1].id}"><small>← 上一單元 · ${escapeHTML(unitLabel(course.lessons[index - 1]))}</small><strong>${escapeHTML(course.lessons[index - 1].title)}</strong></a>` : '<a class="pagination-link previous" href="#overview"><small>← 回到課程</small><strong>課程總覽</strong></a>'}${index < course.lessons.length - 1 ? `<a class="pagination-link next" href="#${course.lessons[index + 1].id}"><small>下一單元 · ${escapeHTML(unitLabel(course.lessons[index + 1]))} →</small><strong>${escapeHTML(course.lessons[index + 1].title)}</strong></a>` : '<a class="pagination-link next" href="#overview"><small>回顧你的學習 →</small><strong>回到學習路線</strong></a>'}</nav>${footer}`;
     if (lesson.example && course.exampleBundle) {
       const download = $('.example-download a');
       download.setAttribute('href',course.exampleBundle);
@@ -108,7 +122,7 @@
       if (nowComplete) saved.completed.push(lesson.id);
       const persisted = save();
       event.currentTarget.setAttribute('aria-pressed', String(nowComplete));
-      event.currentTarget.textContent = nowComplete ? '✓ 已完成本章' : '○ 標記本章已完成';
+      event.currentTarget.textContent = nowComplete ? '✓ 已完成本單元' : '○ 標記本單元已完成';
       updateProgress();
       toast(persisted ? (nowComplete ? '已記錄這一步的累積。' : '已更新閱讀進度。') : '目前無法儲存進度，重新開啟後可能遺失。');
     });
@@ -133,7 +147,7 @@
       window.renderMathInElement($('.lesson-content'), {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}],throwOnError:false,trust:false,ignoredTags:['script','noscript','style','textarea','pre','code']});
     }
     const headings = [...document.querySelectorAll('.lesson-content h2, .lesson-content h3')];
-    $('#page-toc').innerHTML = `<h2 class="toc-label">本章內容</h2><div class="toc-links">${headings.map(h => `<a class="${h.tagName === 'H3' ? 'subheading' : ''}" href="#${lesson.id}/${h.id}">${escapeHTML(h.textContent)}</a>`).join('')}</div><div class="toc-tip"><p><kbd>Ctrl</kbd> + <kbd>K</kbd> 搜尋內容</p><p><kbd>Alt</kbd> + <kbd>←</kbd> / <kbd>→</kbd><br>切換上一章、下一章</p><p>公式以 LaTeX 語法撰寫，<br>可以離線顯示。</p></div>`;
+    $('#page-toc').innerHTML = `<h2 class="toc-label">本單元內容</h2><div class="toc-links">${headings.map(h => `<a class="${h.tagName === 'H3' ? 'subheading' : ''}" href="#${lesson.id}/${h.id}">${escapeHTML(h.textContent)}</a>`).join('')}</div><div class="toc-tip"><p><kbd>Ctrl</kbd> + <kbd>K</kbd> 搜尋內容</p><p><kbd>Alt</kbd> + <kbd>←</kbd> / <kbd>→</kbd><br>切換上一單元、下一單元</p><p>公式以 LaTeX 語法撰寫，<br>可以離線顯示。</p></div>`;
     observeHeadings(headings);
   }
   async function copy(text) {
@@ -199,10 +213,9 @@
     $('#search-results').innerHTML = results.length ? results.map(({lesson}) => {
       const pos = lesson.text.toLocaleLowerCase().indexOf(terms[0]);
       const snippet = pos >= 0 ? lesson.text.slice(Math.max(0,pos-30),pos+110).replace(/[#`*\n]/g,' ') : lesson.summary;
-      return `<a class="search-result" href="#${lesson.id}"><strong><span class="mono">${lesson.id.slice(0,2)}</span> · ${mark(lesson.title)}</strong><small>${mark(snippet)}</small></a>`;
-    }).join('') : '<div class="search-empty">找不到符合的章節。<br>可以換成較短的詞，或試試 API 的英文名稱。</div>';
+      return `<a class="search-result" href="#${lesson.id}"><strong><span class="mono">${escapeHTML(unitLabel(lesson))}</span> · ${mark(lesson.title)}</strong><small>${mark(snippet)}</small></a>`;
+    }).join('') : '<div class="search-empty">找不到符合的單元。<br>可以換成較短的詞，或試試 API 的英文名稱。</div>';
   }
-  if (!course?.lessons?.length) { $('#main').textContent = '教材資料尚未載入，請確認 assets/course-data.js 存在。'; return; }
   buildNavigation(); render();
   window.addEventListener('hashchange',render);
   $('#open-search').addEventListener('click',showSearch);

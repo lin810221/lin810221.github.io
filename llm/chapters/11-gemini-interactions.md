@@ -1,6 +1,6 @@
 ## 為什麼這一章使用 Interactions？
 
-目前 Google 官方將 Interactions API 作為新專案的主要建議介面；舊 generateContent 仍受支援。本課以目前介面為主，下一章另外整理舊範例遷移。
+目前 Google 官方將 Interactions API 作為新專案的主要建議介面；舊 generateContent 仍受支援。本課以目前介面為主，下一單元另外整理舊範例遷移。
 
 Interactions 使用 input、steps 與 generation_config，支援模型和相關 Agent 能力。不要把舊的 contents / candidates 解析直接搬過來。
 

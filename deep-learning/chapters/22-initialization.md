@@ -25,7 +25,7 @@ nn.init.kaiming_normal_的mode、nonlinearity與實際運算布局要對應。nn
 
 ## 練習與解答
 
-將所有weights標準差乘10，深層activation可能迅速爆大；除以10可能訊號消失。解答：記錄每層activation mean／second moment與grad norm，固定資料比較初始化，而不只看最後loss是否有限。初始化、norm與residual互相影響，下一章繼續看梯度鏈。
+將所有weights標準差乘10，深層activation可能迅速爆大；除以10可能訊號消失。解答：記錄每層activation mean／second moment與grad norm，固定資料比較初始化，而不只看最後loss是否有限。初始化、norm與residual互相影響，下一單元繼續看梯度鏈。
 
 ## 完整可執行範例
 

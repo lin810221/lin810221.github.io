@@ -24,7 +24,7 @@ Contrastive learning 學配對區分；false negative 是被誤當負例的相�
 
 ## 公式路線
 
-內積、範數在第 2 章；cosine 與 L2 在第 3 章；PPMI 在第 7 章；TF–IDF／SVD 在第 8 章；負採樣梯度在第 10 章；pooling 在第 14 章；InfoNCE 在第 15 章；triplet 在第 16 章；K-means 在第 27 章；門檻在第 32 章；PCA／量化／MRL 在第 34–36 章。
+內積、範數在「[向量數學：座標、內積、範數與線性組合](#02-vector-arithmetic)」；cosine 與 L2 在「[Cosine、Dot Product 與 L2：分數到底代表什麼](#03-similarity)」；PPMI 在「[分布假說與共現矩陣：從鄰近文字找規律](#07-cooccurrence)」；TF–IDF／SVD 在「[One-hot、TF–IDF 與低秩分解：稀疏到稠密的橋樑](#08-sparse-low-rank)」；負採樣梯度在「[負採樣與梯度：親手更新一個詞向量](#10-negative-sampling)」；pooling 在「[Pooling、Attention Mask 與正規化](#14-pooling)」；InfoNCE 在「[對比學習與 InfoNCE：拉近正樣本、區分負樣本](#15-contrastive-learning)」；triplet 在「[正負樣本、Triplet、Hard Negative 與 False Negative](#16-training-pairs)」；K-means 在「[Embedding 聚類：K-means、DBSCAN 與群集驗收](#27-clustering)」；門檻在「[門檻與校準：Precision–Recall、ROC 與成本](#32-threshold-calibration)」；PCA／量化／MRL 在「[PCA、t-SNE 與 UMAP：看見結構，也看見投影限制](#34-projection)」至「[維度縮減：PCA、投影與 Matryoshka Representation](#36-dimensionality)」。
 
 ## 原始研究
 

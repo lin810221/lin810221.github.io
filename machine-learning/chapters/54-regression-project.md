@@ -34,7 +34,7 @@ print('dummy MAE',mean_absolute_error(d,baseline.predict(b)))
 
 ## 殘差與產物
 
-列signed residual、誤差分位數、特徵／子群切片與極端值。若target有轉換，在原單位評估並保存inverse規則。模型保存整條scaler+Ridge，加schema、版本與選參流程，沿用第49章的信任與相容性原則。
+列signed residual、誤差分位數、特徵／子群切片與極端值。若target有轉換，在原單位評估並保存inverse規則。模型保存整條scaler+Ridge，加schema、版本與選參流程，沿用「[模型保存與版本：交付完整Pipeline](#49-persistence)」的信任與相容性原則。
 
 ## 練習與解答
 

@@ -51,9 +51,15 @@ for(const lesson of window.COURSE.lessons){
   for(const element of doc.querySelectorAll('.math-source,.math-block')){const text=element.textContent.trim(),display=element.classList.contains('math-block'),tex=display?text.slice(2,-2).trim():text.slice(1,-1);assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;}
 }
 assert.equal(examples,40);assert.ok(equations>=25);
-const codes=window.COURSE.lessons.map(l=>l.title.split('　')[0]);for(const [chapter,sections] of [[1,4],[2,3],[3,3],[4,5],[5,8],[6,4],[7,8],[8,5],[9,3],[10,11]])for(let section=1;section<=sections;section++)assert.ok(codes.includes(`${chapter}-${section}`));
+assert.equal(window.COURSE.lessons[0].title,'統計學的定義：從問題到不確定性');
+assert.deepEqual(window.COURSE.groups.map(g=>window.COURSE.lessons.filter(l=>l.group===g.id).length),[5,4,4,6,9,5,9,6,4,12,6]);
+for(const lesson of window.COURSE.lessons){
+  assert.ok(!/^(?:\d+(?:-\d+)+|習題\d+|(?:附錄|解答|延伸|專題)[A-Z])\s/.test(lesson.title));
+  const {document:doc}=parseHTML(`<!doctype html><html><body>${lesson.html}</body></html>`);
+  for(const heading of doc.querySelectorAll('h1,h2,h3'))assert.ok(!/^\d+(?:-\d+)+\s/.test(heading.textContent));
+}
 navigate('01-statistics-definition');q('#complete-lesson').click();assert.equal(q('#progress-count').textContent,'1 / 70');q('#lesson-notes').value='先問觀察單位與分母。';input('#lesson-notes');navigate('02-statistics-branches');navigate('01-statistics-definition');assert.equal(q('#lesson-notes').value,'先問觀察單位與分母。');
 assert.equal(storage.get('learning-notes:deep-learning:v1'),previous);assert.equal(JSON.parse(storage.get('learning-notes:applied-statistics:v1')).completed.length,1);
-q('#open-search').click();for(const text of ['Welch','信賴區間','因素分析','10-11']){q('#search-input').value=text;input('#search-input');assert.ok(document.querySelectorAll('.search-result').length>0);}q('#close-search').click();q('#menu-toggle').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'true');q('#sidebar-shade').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'false');
+q('#open-search').click();for(const text of ['Welch','信賴區間','因素分析','事後比較']){q('#search-input').value=text;input('#search-input');assert.ok(document.querySelectorAll('.search-result').length>0);}q('#close-search').click();q('#menu-toggle').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'true');q('#sidebar-shade').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'false');
 navigate('overview');assert.equal(document.querySelectorAll('.as-lab').length,8);assert.equal(q('#desc-mean').textContent,'5.3333');assert.equal(q('#power-value').textContent,'78.2%');
-export const report={syntax:'PASS',units:70,chapters:10,groupsIncludingAppendices:11,examples,equations,labs:'histogram, binomial, repeated sampling, CI coverage, normal power, ANOVA, OLS, alpha: PASS',reader:'original section codes, TOC, ZIP, search, notes, progress, menu, remount: PASS',isolation:'deep learning notes preserved',limit:'DOM emulation; no real-browser layout verification'};
+export const report={syntax:'PASS',units:70,chapters:10,groupsIncludingAppendices:11,examples,equations,labs:'histogram, binomial, repeated sampling, CI coverage, normal power, ANOVA, OLS, alpha: PASS',reader:'clean titles, TOC, ZIP, search, notes, progress, menu, remount: PASS',isolation:'deep learning notes preserved',limit:'DOM emulation; no real-browser layout verification'};

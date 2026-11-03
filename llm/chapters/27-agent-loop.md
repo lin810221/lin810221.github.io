@@ -12,7 +12,7 @@
 
 <!-- example:06_agent.py -->
 
-預設 `python examples/06_agent.py` 執行離線版本。加上 `--provider openai` 但沒有 --live，仍只顯示原生工具請求預覽。接上真模型的完整轉接程式在下一章。
+預設 `python examples/06_agent.py` 執行離線版本。加上 `--provider openai` 但沒有 --live，仍只顯示原生工具請求預覽。接上真模型的完整轉接程式在下一單元。
 
 ## 逐段理解控制流程
 
@@ -32,7 +32,7 @@ max_turns 限制模型回合，max_calls 限制新的工具執行。到達上限
 
 核心中的 history 是教學用中立資料，不等於任何供應商的 wire format。真實工具 Agent 要保存原生 reasoning、steps 或 content blocks，以及必要的簽章與 ID。
 
-因此下一章提供各自的原生循環，而不是把這個簡化 history 直接送入三家的 API。
+因此下一單元提供各自的原生循環，而不是把這個簡化 history 直接送入三家的 API。
 
 **練習：**把工具名稱改成 delete_all，確認得到 unknown_tool；再讓模型無限提出同一個請求，確認最終仍會因回合預算停止。
 

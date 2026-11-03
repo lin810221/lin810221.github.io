@@ -1,6 +1,6 @@
 # 深度學習完整教學：可執行範例
 
-72 章教材搭配 **42 個 Python 入口**、獨立共用核心及 **55 項測試**。以 **2026-10-30 查核的最新穩定版 PyTorch 2.15.0** 製作，已在 Python 3.11.6、torch 2.15.0+cpu 執行。[正式發布](https://github.com/pytorch/pytorch/releases/tag/v2.15.0)、[套件版本](https://pypi.org/project/torch/2.15.0/)、[2.15 官方文件](https://docs.pytorch.org/docs/2.15/)。
+12 章、72 個閱讀單元搭配 **42 個 Python 入口**、獨立共用核心及 **55 項測試**。以 **2026-10-30 查核的最新穩定版 PyTorch 2.15.0** 製作，已在 Python 3.11.6、torch 2.15.0+cpu 執行。[正式發布](https://github.com/pytorch/pytorch/releases/tag/v2.15.0)、[套件版本](https://pypi.org/project/torch/2.15.0/)、[2.15 官方文件](https://docs.pytorch.org/docs/2.15/)。
 
 ## 安裝與第一個完整實驗
 

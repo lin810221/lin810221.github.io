@@ -1,0 +1,668 @@
+{
+  "slug": "mcp",
+  "title": "MCP 與工具整合完整教學",
+  "shortTitle": "MCP 與工具整合",
+  "updated": "2026-11-03",
+  "baseline": "MCP 2026-07-28 / Python SDK 2.3.0",
+  "footerLabel": "MODEL CONTEXT PROTOCOL",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 stdio、OAuth、Schema、MRTR、冪等或工具審核。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "建立 MCP 心智模型",
+      "description": "從使用情境、角色與版本，到第一個可呼叫的工具。"
+    },
+    {
+      "id": "protocol",
+      "number": "02",
+      "title": "讀懂協定與連線",
+      "description": "JSON-RPC、探索、stdio、HTTP、分頁與檢查工具。"
+    },
+    {
+      "id": "contracts",
+      "number": "03",
+      "title": "設計可靠的工具契約",
+      "description": "輸入、輸出、描述、驗證、非同步與生命週期。"
+    },
+    {
+      "id": "context",
+      "number": "04",
+      "title": "資源、互動與擴充",
+      "description": "URI、Prompt、快取、訂閱及新版多輪輸入。"
+    },
+    {
+      "id": "hosts",
+      "number": "05",
+      "title": "整合 Host 與 AI Agents",
+      "description": "多伺服器路由、Agent 迴圈與三家服務整合。"
+    },
+    {
+      "id": "security",
+      "number": "06",
+      "title": "身分、權限與信任",
+      "description": "OAuth、Token、網路邊界、多租戶與供應鏈。"
+    },
+    {
+      "id": "effects",
+      "number": "07",
+      "title": "讓變更可以被信任",
+      "description": "審核、不可變預覽、冪等交易、預算與稽核。"
+    },
+    {
+      "id": "projects",
+      "number": "08",
+      "title": "資料整合與完整專案",
+      "description": "檔案、SQL、HTTP、RAG 與工單驗收交付。"
+    },
+    {
+      "id": "production",
+      "number": "09",
+      "title": "部署、維護與進階路線",
+      "description": "ASGI、擴展、相容性、CI、Apps 與習題詳解。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-why-mcp",
+      "group": "foundations",
+      "title": "MCP 解決什麼問題：從模型回答到系統能力",
+      "summary": "先分清楚模型、工具與整合協定，建立這門課要解決的工程問題。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "02-host-client-server",
+      "group": "foundations",
+      "title": "Host、Client、Server：資料如何穿過系統",
+      "summary": "畫出控制流程與資料邊界，理解誰持有模型、連線及外部權限。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "03-tools-resources-prompts",
+      "group": "foundations",
+      "title": "工具、資源、提示模板：選對暴露介面",
+      "summary": "從行為、內容與互動目的，區分 MCP 的三種主要伺服器能力。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "04-versions-and-migration",
+      "group": "foundations",
+      "title": "版本基準：新版無狀態請求與舊版握手",
+      "summary": "以 2026-11-03 查核的 MCP 2026-07-28、Python SDK 2.3.0 為主線。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "05-first-server",
+      "group": "foundations",
+      "title": "建立第一個 Python MCP Server",
+      "summary": "用型別、裝飾器與回傳模型，建立可以被探索和呼叫的搜尋工具。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "01_first_server.py"
+    },
+    {
+      "id": "06-first-client",
+      "group": "foundations",
+      "title": "第一個 Client：探索、呼叫與檢查結果",
+      "summary": "不依賴 LLM，先證明工具、資源與提示模板可以正常互通。",
+      "tags": [
+        "建立 MCP 心智模型",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "02_first_client.py"
+    },
+    {
+      "id": "07-json-rpc",
+      "group": "protocol",
+      "title": "JSON-RPC 與請求中繼資料",
+      "summary": "看懂線上的訊息，分清楚 request、response、notification 與內容型別。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "03_wire_messages.py"
+    },
+    {
+      "id": "08-discovery-capabilities",
+      "group": "protocol",
+      "title": "探索與能力協商：先知道對方會什麼",
+      "summary": "用 server/discover 理解新版連線，並為不支援的能力設計降級路徑。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "09-stdio",
+      "group": "protocol",
+      "title": "stdio：把本機程式接成 MCP 工具",
+      "summary": "理解子程序、標準串流、環境變數和 Windows 路徑的實際邊界。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "04_stdio_roundtrip.py"
+    },
+    {
+      "id": "10-streamable-http",
+      "group": "protocol",
+      "title": "Streamable HTTP：把工具提供給遠端 Client",
+      "summary": "理解單一端點、JSON／SSE 回應、Origin 與舊版傳輸的差異。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "05_http_server.py"
+    },
+    {
+      "id": "11-errors-pagination",
+      "group": "protocol",
+      "title": "錯誤、分頁與取消：讓 Client 有完整控制",
+      "summary": "把連線失敗、協定失敗、工具失敗與正常空結果分開處理。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "12-inspector-testing",
+      "group": "protocol",
+      "title": "Inspector 與第一輪整合除錯",
+      "summary": "用可觀察的請求和回應定位問題，建立不依賴模型猜測的驗證流程。",
+      "tags": [
+        "讀懂協定與連線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "13-input-contracts",
+      "group": "contracts",
+      "title": "輸入契約：JSON Schema、型別與限制",
+      "summary": "把可接受的輸入寫清楚，避免將模型輸出直接視為可信參數。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "07_input_schema.py"
+    },
+    {
+      "id": "14-output-contracts",
+      "group": "contracts",
+      "title": "輸出契約：content 與 structuredContent",
+      "summary": "讓模型有內容可讀，讓程式有結構可驗證，並正確處理多種內容區塊。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "08_structured_results.py"
+    },
+    {
+      "id": "15-tool-design",
+      "group": "contracts",
+      "title": "工具命名、描述與 annotations",
+      "summary": "讓工具容易被正確選用，同時維持可審查的業務邊界。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "16-validation-errors",
+      "group": "contracts",
+      "title": "驗證與錯誤契約：什麼能讓模型修正",
+      "summary": "區分可公開的業務錯誤和內部故障，避免把錯誤訊息變成資料洩漏管道。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "09_errors.py"
+    },
+    {
+      "id": "17-context-lifespan",
+      "group": "contracts",
+      "title": "非同步、Context 與 Lifespan",
+      "summary": "管理每次請求與整個服務的資源，避免阻塞、共用身分與連線洩漏。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "10_context_lifespan.py"
+    },
+    {
+      "id": "18-contract-tests",
+      "group": "contracts",
+      "title": "工具契約測試：成功之外也要驗證拒絕",
+      "summary": "把工具清單、Schema、錯誤與資源清理變成可以重複執行的驗收條件。",
+      "tags": [
+        "設計可靠的工具契約",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "19-resources-uris",
+      "group": "context",
+      "title": "資源與 URI 模板：把內容提供給 Host",
+      "summary": "設計穩定可引用的內容介面，並保持讀取權限、大小與版本清楚。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "11_resources.py"
+    },
+    {
+      "id": "20-prompts-completion",
+      "group": "context",
+      "title": "Prompt 與補全：提供可重用的使用流程",
+      "summary": "將訊息模板、參數建議與模型生成分開，避免混淆三種不同操作。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "12_prompts_completion.py"
+    },
+    {
+      "id": "21-headers-metadata",
+      "group": "context",
+      "title": "Header 參數與 _meta：路由資訊不等於身分",
+      "summary": "理解新版的參數標頭映射，並避免讓可偽造欄位決定租戶權限。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "13_header_parameters.py"
+    },
+    {
+      "id": "22-subscriptions-cache",
+      "group": "context",
+      "title": "訂閱與快取：清單改變後如何保持正確",
+      "summary": "理解 subscriptions/listen、失效通知與權限隔離，避免舊資料或跨租戶結果被重用。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "14_cache_isolation.py"
+    },
+    {
+      "id": "23-elicitation-mrtr",
+      "group": "context",
+      "title": "Elicitation 與 MRTR：向使用者補齊輸入",
+      "summary": "在新版中以結果攜帶輸入需求，理解 Resolve、重送與不透明狀態。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "15_elicitation.py"
+    },
+    {
+      "id": "24-legacy-and-extensions",
+      "group": "context",
+      "title": "舊能力與新擴充：Roots、Sampling、Tasks",
+      "summary": "辨識核心、棄用功能與選用擴充，不把規範存在誤認為整個生態已支援。",
+      "tags": [
+        "資源、互動與擴充",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "25-client-adapters",
+      "group": "hosts",
+      "title": "建立自己的 Client Adapter",
+      "summary": "把協定連線封裝成應用介面，同時保留錯誤、型別與生命週期資訊。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "06_http_client.py"
+    },
+    {
+      "id": "26-multi-server-routing",
+      "group": "hosts",
+      "title": "多伺服器整合與工具命名空間",
+      "summary": "處理同名工具、連線清理、權限差異與動態工具清單。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "16_multi_server.py"
+    },
+    {
+      "id": "27-agent-loop",
+      "group": "hosts",
+      "title": "把 MCP 接進 Agent 控制迴圈",
+      "summary": "讓模型提出呼叫，讓 Host 執行政策，讓 Server 維護事實。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "17_agent_loop.py"
+    },
+    {
+      "id": "28-openai-integration",
+      "group": "hosts",
+      "title": "OpenAI 整合：遠端 MCP 與自行管理工具",
+      "summary": "比較 Responses API 的 MCP 工具與自建 Client adapter，保留審核和結果控制。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "18_provider_configs.py"
+    },
+    {
+      "id": "29-claude-integration",
+      "group": "hosts",
+      "title": "Claude 整合：API Connector、桌面與開發工具",
+      "summary": "辨識產品層差異，使用當前 MCP toolset 配置，而非混用舊版 beta 範例。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "30-gemini-integration",
+      "group": "hosts",
+      "title": "Gemini 整合：CLI 設定與模型 Adapter",
+      "summary": "使用明確的工具允許清單，區分 Gemini CLI 與 API 的工具執行責任。",
+      "tags": [
+        "整合 Host 與 AI Agents",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "31-trust-injection",
+      "group": "security",
+      "title": "信任邊界與 Prompt Injection",
+      "summary": "把工具描述、外部文件、模型提案與已驗證事實分開，建立可強制的防線。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "32-oauth-flow",
+      "group": "security",
+      "title": "OAuth 授權流程：Client、資源伺服器與身分服務",
+      "summary": "理解登入、取得 Token、發現 metadata 與使用 scope 的責任分工。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "33-token-validation",
+      "group": "security",
+      "title": "Token 驗證：簽章、issuer、audience 與主體",
+      "summary": "驗證 Token 的目標與期限，將可信 claims 轉成 Server 內部 Principal。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "19_jwt_verifier.py"
+    },
+    {
+      "id": "34-origin-ssrf",
+      "group": "security",
+      "title": "Origin、SSRF 與重新導向",
+      "summary": "保護本機服務與遠端連線，避免工具整合變成任意網路存取通道。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "20_endpoint_policy.py"
+    },
+    {
+      "id": "35-tenant-acl",
+      "group": "security",
+      "title": "多租戶與資料 ACL：每次呼叫都要隔離",
+      "summary": "把主體綁在伺服器端，讓列舉、搜尋、讀取、預覽與提交遵守同一條權限路徑。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "21_tenant_acl.py"
+    },
+    {
+      "id": "36-secrets-supply-chain",
+      "group": "security",
+      "title": "祕密、日誌與工具供應鏈",
+      "summary": "用最小環境、固定相依與安全紀錄降低整合服務的維護風險。",
+      "tags": [
+        "身分、權限與信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "22_audit_redaction.py"
+    },
+    {
+      "id": "37-approval-policy",
+      "group": "effects",
+      "title": "審核政策：誰可以決定哪一個操作",
+      "summary": "把模型提案、Host 確認與業務核准分成可追查的狀態。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "23_approval_workflow.py"
+    },
+    {
+      "id": "38-immutable-previews",
+      "group": "effects",
+      "title": "不可變預覽：綁定主體、內容與版本",
+      "summary": "讓使用者核准的變更，和伺服器真正執行的變更保持一致。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "39-idempotent-transactions",
+      "group": "effects",
+      "title": "冪等鍵、交易與執行收據",
+      "summary": "在重送、並行與回應遺失時，保證同一操作不會重複產生效果。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "24_idempotency.py"
+    },
+    {
+      "id": "40-deadlines-retries",
+      "group": "effects",
+      "title": "Deadline、重試與取消：先判斷是否可重送",
+      "summary": "限制總等待時間，並為寫入逾時保留未知結果狀態。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "25_retries_deadlines.py"
+    },
+    {
+      "id": "41-budgets-concurrency",
+      "group": "effects",
+      "title": "並行、呼叫數與結果預算",
+      "summary": "把 Agent 和工具服務的資源使用量限制在可維護範圍。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "26_bounded_concurrency.py"
+    },
+    {
+      "id": "42-tracing-audit",
+      "group": "effects",
+      "title": "可觀測性與稽核：從對話追到執行事實",
+      "summary": "串起模型提案、工具呼叫、上游請求與交易收據，同時控制敏感資訊。",
+      "tags": [
+        "讓變更可以被信任",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "43-filesystem-adapter",
+      "group": "projects",
+      "title": "檔案工具：限制目錄、格式與讀取量",
+      "summary": "把檔案存取包成有邊界的能力，避免任意路徑與超大文件讀取。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "27_filesystem.py"
+    },
+    {
+      "id": "44-sql-adapter",
+      "group": "projects",
+      "title": "SQL 工具：參數化查詢與唯讀權限",
+      "summary": "以業務問題設計查詢能力，不讓模型任意取得資料庫控制面。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "28_sql_readonly.py"
+    },
+    {
+      "id": "45-http-adapter",
+      "group": "projects",
+      "title": "HTTP 上游 Adapter：限時、限量與結果驗證",
+      "summary": "把外部 API 的不穩定性隔離在明確契約內，避免直接透傳不可信回應。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "46-rag-integration",
+      "group": "projects",
+      "title": "MCP 與 RAG：搜尋、讀取、引用與權限",
+      "summary": "用工具與資源建立可追溯知識流程，同時保留檢索品質的獨立責任。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "47-capstone-project",
+      "group": "projects",
+      "title": "完整專題：可審核的工單知識助理",
+      "summary": "把搜尋、租戶隔離、預覽、核准、冪等提交與稽核串成可執行專案。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "29_capstone.py"
+    },
+    {
+      "id": "48-acceptance-delivery",
+      "group": "projects",
+      "title": "驗收交付：產生可核對的報告與資料",
+      "summary": "讓專案成果包含執行證據、版本與限制，而不只是一張聊天截圖。",
+      "tags": [
+        "資料整合與完整專案",
+        "MCP 2026-07-28",
+        "Python 實作"
+      ],
+      "example": "30_delivery_report.py"
+    },
+    {
+      "id": "49-deployment-asgi",
+      "group": "production",
+      "title": "部署 ASGI：反向代理、認證與服務生命週期",
+      "summary": "從本機測試走向服務部署，明確處理路由、資源、HTTPS 與身分注入。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "50-scaling-operations",
+      "group": "production",
+      "title": "擴展與維運：無狀態協定仍有應用狀態",
+      "summary": "處理多 worker、共享收據、訂閱、容量及安全停止。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "51-compatibility-upgrades",
+      "group": "production",
+      "title": "相容性與升級：從 v1 到 v2 的檢查路線",
+      "summary": "將 import、型別、協定模式與 Host 差異整理成可驗證矩陣。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "52-ci-conformance",
+      "group": "production",
+      "title": "CI 與協定驗收：每次更新都能重跑",
+      "summary": "把教材、範例、工具契約與真實傳輸檢查放入可維護的更新流程。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "53-apps-skills-registry",
+      "group": "production",
+      "title": "MCP Apps、Skills 與 Registry：下一步如何延伸",
+      "summary": "認識當前擴充生態與支援狀態，保持 UI、工作流程與執行權限的分離。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    },
+    {
+      "id": "54-exercises-reference",
+      "group": "production",
+      "title": "總練習、詳解與版本速查",
+      "summary": "用設計題和故障情境檢查理解，並整理日常開發最常查的路線。",
+      "tags": [
+        "部署、維護與進階路線",
+        "MCP 2026-07-28"
+      ]
+    }
+  ]
+}

@@ -45,6 +45,6 @@ drafts = [future.result() for future in futures]
 
 本課先學 Graph API，是為了清楚看見狀態與控制；了解後再選較符合專案的介面，不必為了使用兩種而增加複雜度。
 
-**練習：**將第 8 章的有界循環改寫成 entrypoint 內的 `for` 迴圈，每次工作以 task 表示。比較你更容易從哪個版本看出停止條件。
+**練習：**將「[條件分支、循環與 Command](#08-routing-loops)」的有界循環改寫成 entrypoint 內的 `for` 迴圈，每次工作以 task 表示。比較你更容易從哪個版本看出停止條件。
 
 官方來源：[Functional API overview](https://docs.langchain.com/oss/python/langgraph/functional-api)、[Use Functional API](https://docs.langchain.com/oss/python/langgraph/use-functional-api)。

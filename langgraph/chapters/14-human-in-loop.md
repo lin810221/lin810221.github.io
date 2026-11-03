@@ -45,6 +45,6 @@ def dangerous_review(state):
 
 至少顯示待核准內容、來源、準備執行的動作，以及待審資料版本。若等待期間草稿或來源已更新，舊核准是否仍有效必須有規則。記錄審核者、時間與版本是應用責任。
 
-**練習：**用 `approved=False` 跑另一條 thread，確認不會發布原草稿。再加入 `edited` 欄位，讓核准者可修改答案；完整做法在第 25 章。
+**練習：**用 `approved=False` 跑另一條 thread，確認不會發布原草稿。再加入 `edited` 欄位，讓核准者可修改答案；完整做法在「[完整專案：有審核的知識助理](#25-capstone)」。
 
 官方來源：[Interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts)、[interrupt reference](https://reference.langchain.com/python/langgraph/types/interrupt)。

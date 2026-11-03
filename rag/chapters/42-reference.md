@@ -23,7 +23,7 @@ Agentic RAG 表示有動態檢索決策的流程；GraphRAG、RAPTOR、Self-RAG 
 
 ## 公式回查
 
-切塊數量與邊界看第 8 章；BM25 看第 11 章；cosine 與 L2 看第 12 章；RRF 看第 16 章；MMR 看第 18 章；context 預算看第 21 章；檢索指標看第 30 章；生成主張支持看第 31 章；成本看第 36 章。
+切塊數量與邊界看「[Chunking：大小、重疊與邊界的取捨](#08-chunking)」；BM25 看「[稀疏檢索：從詞元、TF–IDF 到 BM25](#11-bm25)」；cosine 與 L2 看「[向量與相似度：把 cosine 真正算懂](#12-vectors)」；RRF 看「[Hybrid Search 與 RRF：融合不同檢索訊號](#16-hybrid-rrf)」；MMR 看「[MMR 與多樣性：避免五段證據都在說同一句話](#18-mmr-diversity)」；context 預算看「[Context Engineering：預算、排序與證據封裝](#21-context-budget)」；檢索指標看「[檢索指標：Precision、Recall、MRR 與 nDCG](#30-retrieval-metrics)」；生成主張支持看「[答案評估：正確性、忠實度、引用與拒答](#31-answer-evaluation)」；成本看「[成本與延遲：用數據分配檢索與生成預算](#36-cost-latency)」。
 
 公式由本機 KaTeX 排版，可離線閱讀。公式說明的是選定定義，工具實作可能用不同 IDF、gain 或空集合處理，導入前對照定義與測試。
 

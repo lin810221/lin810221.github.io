@@ -6,7 +6,7 @@ Time travel 有兩個常見用途：用同樣快照重新執行後續步驟，�
 
 ## 讀取歷史與重播
 
-延續第 12 章已執行完成的 `graph` 和 `config`：
+延續「[Checkpoint 與 Thread 持久化](#12-checkpoints)」已執行完成的 `graph` 和 `config`：
 
 ```python
 history = list(graph.get_state_history(config))

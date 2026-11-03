@@ -1,4 +1,4 @@
-# 8-3　多重比較：Tukey、Games–Howell與Holm
+# 多重比較：Tukey、Games–Howell與Holm {#8-3-tukeygameshowellholm}
 
 先定比較家族，再選與模型相符的差異、區間及調整p。
 

@@ -27,7 +27,7 @@ pin_memory 主要用於主機到 GPU 搬移；CPU 主線先不開。persistent_w
 
 ## 練習與解答
 
-N=10、batch_size=4，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；第 20 章會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
+N=10、batch_size=4，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；「[完整訓練迴圈：每一步都知道在更新什麼](#20-training-loop)」會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
 
 ## 完整可執行範例
 

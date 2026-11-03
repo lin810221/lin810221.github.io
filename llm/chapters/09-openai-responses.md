@@ -8,7 +8,7 @@ Responses 的 input 可以是簡單文字，也可以是支援的訊息與項目
 
 <!-- example:01_openai.py -->
 
-它呼叫第 4 章的共用模組，乾跑時印出完整請求；要讀實作請打開 `provider_requests.py`。執行 `python examples/01_openai.py --live` 前，先設定 OPENAI_API_KEY 與 OPENAI_MODEL。
+它呼叫「[第一個請求：輸入、輸出與結束狀態](#04-first-request)」的共用模組，乾跑時印出完整請求；要讀實作請打開 `provider_requests.py`。執行 `python examples/01_openai.py --live` 前，先設定 OPENAI_API_KEY 與 OPENAI_MODEL。
 
 ## 官方 Python SDK 寫法
 
@@ -52,7 +52,7 @@ else:
 
 官方 SDK 的 `output_text` 是方便取得可見文字的 helper。原始 JSON 主要是 output 陣列：你應先看項目 type，對 message 再看 content block type。
 
-如果 output[0] 是 reasoning 或 function_call，直接讀 `output[0].content[0].text` 會失敗。第 4 章的解析器就是為了避免依賴固定位置。
+如果 output[0] 是 reasoning 或 function_call，直接讀 `output[0].content[0].text` 會失敗。「[第一個請求：輸入、輸出與結束狀態](#04-first-request)」的解析器就是為了避免依賴固定位置。
 
 `status="completed"` 表示生成完成，但若其中有 function_call，應用仍需要處理工具協定，不能只把空文字交給使用者。若 incomplete，檢查相關 details 和 usage，再決定是否延長預算。
 

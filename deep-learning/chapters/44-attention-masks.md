@@ -24,7 +24,7 @@ functional SDPA的dropout_p由你明確提供，不能以為外部model.eval會�
 
 ## 練習與解答
 
-L4的query第1個只能看key0；query最後可看0..3。解答：把每個query能看的索引寫出，再做擾動測試。若Q/K也改未來，前面的合法可見值依舊不該改；多層網路還需norm／其他運算不跨未來位置，第46章測完整小block。
+L4的query第1個只能看key0；query最後可看0..3。解答：把每個query能看的索引寫出，再做擾動測試。若Q/K也改未來，前面的合法可見值依舊不該改；多層網路還需norm／其他運算不跨未來位置，「[一個Transformer Block：Attention、FFN、Norm與Residual](#46-transformer-bridge)」測完整小block。
 
 ## 完整可執行範例
 

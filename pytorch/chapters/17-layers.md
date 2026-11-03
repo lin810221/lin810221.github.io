@@ -14,7 +14,7 @@ $$
 H_{out}=\left\lfloor\frac{H+2P-D(K-1)-1}{S}+1\right\rfloor
 $$
 
-本課 8×8、kernel3、padding1、stride1 保持 8×8，輸出4個 channel，Flatten 是256，而不是64。第26章完整例子直接驗證這個尺寸。
+本課 8×8、kernel3、padding1、stride1 保持 8×8，輸出4個 channel，Flatten 是256，而不是64。「[CNN 實作：從 NCHW 到可訓練的影像分類器](#26-cnn)」完整例子直接驗證這個尺寸。
 
 ## Embedding 是查表
 

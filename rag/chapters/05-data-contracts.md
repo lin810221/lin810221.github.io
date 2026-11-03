@@ -32,7 +32,7 @@
 
 ## 分數與引用各有自己的契約
 
-BM25、cosine、cross-encoder 分數不在同一尺度。`Hit` 可保存 `retrieval_score`、`rerank_score`、`rank` 與 `retriever_name`，不要都叫 `score` 然後直接相加。融合方法在第 16 章說明。
+BM25、cosine、cross-encoder 分數不在同一尺度。`Hit` 可保存 `retrieval_score`、`rerank_score`、`rank` 與 `retriever_name`，不要都叫 `score` 然後直接相加。融合方法在「[Hybrid Search 與 RRF：融合不同檢索訊號](#16-hybrid-rrf)」說明。
 
 引用映射由應用程式建立，例如 `[S1] -> chunk_id`。回答可以使用 `[S1]`，但映射中的文件版本不能隨生成改變。引用編號存在只驗證結構；主張是否被該片段支持，還需要另一層評估。
 

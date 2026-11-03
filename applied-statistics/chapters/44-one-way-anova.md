@@ -1,4 +1,4 @@
-# 8-2　單因子ANOVA：平方和、自由度與Welch
+# 單因子ANOVA：平方和、自由度與Welch {#8-2-anovawelch}
 
 以一組可手算資料核對F，再比較不同variance假設。
 

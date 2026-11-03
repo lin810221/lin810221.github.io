@@ -22,7 +22,7 @@ MultinomialNB對非負計數／權重常見於文字；BernoulliNB用二元出�
 
 ## 本章文字示範
 
-六段自寫英文短句分sport／software，TF-IDF加NB對兩段新句推論。這是小詞表機制，不是大語料準確率。中文需要斷詞或char n-gram策略，會在第43章補充；不要把英文預設token規則當中文萬用處理。
+六段自寫英文短句分sport／software，TF-IDF加NB對兩段新句推論。這是小詞表機制，不是大語料準確率。中文需要斷詞或char n-gram策略，會在「[文字特徵工程：TF-IDF、n-gram與分類管線](#43-text-features)」補充；不要把英文預設token規則當中文萬用處理。
 
 ## 練習與解答
 

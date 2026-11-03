@@ -13,7 +13,7 @@ $$
 
 ## 更新規則仍需看optimizer
 
-對基本SGD，某些L2與decay形式可相連；Adam的自適應縮放則使加進grad的L2與AdamW解耦decay不同。第20章已用零資料梯度核對，不應在這裡又把所有weight_decay都叫一樣的L2。
+對基本SGD，某些L2與decay形式可相連；Adam的自適應縮放則使加進grad的L2與AdamW解耦decay不同。「[Adam與AdamW：自適應尺度與解耦衰減](#20-adamw)」已用零資料梯度核對，不應在這裡又把所有weight_decay都叫一樣的L2。
 
 ## 分母與超參數
 

@@ -47,6 +47,6 @@ def draft_node(state):
 
 只有互相獨立的工作才適合平行。重試可重跑模型或工具，但不能假設外部動作沒收到回覆就是沒成功。每一個發布或交易邊界都應有明確去重。
 
-**練習：**將第 36 章的知識助理畫成圖，指出哪些節點可以替換供應商，哪些應保持固定規則。接著閱讀 [LangGraph 完整課程](../langgraph/index.html) 的 checkpoint 與人工審核章節。
+**練習：**將「[完整專案：可切換供應商的知識助理](#36-capstone)」的知識助理畫成圖，指出哪些節點可以替換供應商，哪些應保持固定規則。接著閱讀 [LangGraph 完整課程](../langgraph/index.html) 的 checkpoint 與人工審核章節。
 
 官方來源：[LangGraph thinking](https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph)、[LangGraph workflows](https://docs.langchain.com/oss/python/langgraph/workflows-agents)、[Google ADK](https://adk.dev/)。

@@ -1,4 +1,4 @@
-# 10-5　因素分析：探索結構、KMO、Bartlett與旋轉
+# 因素分析：探索結構、KMO、Bartlett與旋轉 {#10-5-kmobartlett}
 
 以真正主軸因素分析示範，與PCA、CFA及效度判斷分開。
 

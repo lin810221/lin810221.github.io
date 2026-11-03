@@ -26,7 +26,7 @@ StandardScaler→SVC(kernel='rbf')是本章基準，gamma='scale'依資料尺度
 
 ## 分數不是機率
 
-預設SVC有decision_function，可用作ROC AUC等排序指標，但不能直接叫機率。probability選項／校準有額外fit成本與資料流程；本章明確回報decision score的AUC，第32章再做獨立的機率校準。
+預設SVC有decision_function，可用作ROC AUC等排序指標，但不能直接叫機率。probability選項／校準有額外fit成本與資料流程；本章明確回報decision score的AUC，「[機率校準：可靠度圖、Brier與Sigmoid／Isotonic](#32-calibration)」再做獨立的機率校準。
 
 ## 練習與解答
 

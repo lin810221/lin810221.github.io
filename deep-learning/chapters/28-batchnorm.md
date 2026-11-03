@@ -4,7 +4,7 @@
 
 ## 沿哪些軸計算
 
-BatchNorm1d對feature/channel沿batch等適當軸估統計，BatchNorm2d對每channel聚合N與空間。它不是將每一筆的所有feature各自平均；LayerNorm下一章使用不同軸。先看輸入layout與API，不從名字猜。
+BatchNorm1d對feature/channel沿batch等適當軸估統計，BatchNorm2d對每channel聚合N與空間。它不是將每一筆的所有feature各自平均；LayerNorm下一單元使用不同軸。先看輸入layout與API，不從名字猜。
 
 $$
 \hat x=\frac{x-\mu_B}{\sqrt{\sigma_B^2+\epsilon}},\qquad y=\gamma\hat x+\beta

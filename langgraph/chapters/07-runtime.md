@@ -16,7 +16,7 @@ def inspect_request(state: dict, config: RunnableConfig) -> dict:
     return {"thread_label": thread_id or "stateless"}
 ```
 
-`config` 放的是執行設定，例如 `thread_id`、追蹤 tag 和 recursion limit。第 11 章會用 `Runtime[Context]` 傳入身分與依賴；它們不需要都塞進 State。
+`config` 放的是執行設定，例如 `thread_id`、追蹤 tag 和 recursion limit。「[Context、設定與結構化輸出](#11-context-output)」會用 `Runtime[Context]` 傳入身分與依賴；它們不需要都塞進 State。
 
 ## Super-step 的時間線
 

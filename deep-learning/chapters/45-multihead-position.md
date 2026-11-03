@@ -43,7 +43,7 @@ $$
 
 ## 練習與解答
 
-d_model8、heads2，每head4；若改heads3，標準等分方式不相容，不能靠reshape丟元素。解答：維度與投影要一致。下一章把MHA、FFN、norm與residual組起來，再用整block測未來不變，而非只列元件名稱。
+d_model8、heads2，每head4；若改heads3，標準等分方式不相容，不能靠reshape丟元素。解答：維度與投影要一致。下一單元把MHA、FFN、norm與residual組起來，再用整block測未來不變，而非只列元件名稱。
 
 ## 原始論文與官方來源
 

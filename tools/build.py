@@ -54,7 +54,7 @@ def build(course_path):
     for lesson in catalog["lessons"]:
         source = (course_path / "chapters" / (lesson["id"] + ".md")).read_text(encoding="utf-8")
         source = re.sub(r"<!-- example:([a-zA-Z0-9_]+\.py) -->", lambda m: "```python\n" + (course_path / "examples" / m.group(1)).read_text(encoding="utf-8").rstrip() + "\n```", source)
-        md = markdown.Markdown(extensions=["fenced_code", "tables", "toc", "codehilite", MathExtension()], extension_configs={"codehilite": {"guess_lang": False}, "toc": {"permalink": False}})
+        md = markdown.Markdown(extensions=["fenced_code", "tables", "toc", "attr_list", "codehilite", MathExtension()], extension_configs={"codehilite": {"guess_lang": False}, "toc": {"permalink": False}})
         lesson["html"] = md.convert(source)
         languages = iter(re.findall(r"^```([^\s`]*)", source, re.M)[::2])
         lesson["html"] = re.sub(r'<div class="codehilite">', lambda _: '<div class="codehilite" data-language="' + html.escape(next(languages, "code"), quote=True) + '">', lesson["html"])
@@ -80,7 +80,7 @@ def build(course_path):
                     archive.writestr(info, example_path.read_bytes())
     style = HtmlFormatter(style="github-dark").get_style_defs(".codehilite")
     (ROOT / "assets" / "syntax.css").write_text(style, encoding="utf-8")
-    print(f"Built {course_path.name}: {len(catalog['lessons'])} chapters / {count:,} source characters")
+    print(f"Built {course_path.name}: {len(catalog['lessons'])} units / {count:,} source characters")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)

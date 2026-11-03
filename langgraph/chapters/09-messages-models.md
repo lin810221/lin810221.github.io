@@ -37,7 +37,7 @@ def mock_chat(state: MessagesState) -> dict:
 
 ## 換成真正的聊天模型
 
-以下是**需要網路與供應商 API Key**的獨立片段。先依第 3 章安裝 `langchain-anthropic` 並設定環境變數。教材不會替你實際送出請求。
+以下是**需要網路與供應商 API Key**的獨立片段。先依「[環境安裝與專案準備](#03-environment)」安裝 `langchain-anthropic` 並設定環境變數。教材不會替你實際送出請求。
 
 ```python
 import os
@@ -73,6 +73,6 @@ if __name__ == "__main__":
 
 呼叫模型出錯時，先區分驗證失敗、認證問題、速率限制、服務暫時失敗、輸入過長。這些原因需要不同處理；不應全部轉成「模型不知道」。
 
-**練習：**先用 mock_chat 接到第 4 章的建圖方式，再換成真模型。確認公開輸入及回傳的 State 契約不需要因此改變。
+**練習：**先用 mock_chat 接到「[寫出第一個 StateGraph](#04-first-graph)」的建圖方式，再換成真模型。確認公開輸入及回傳的 State 契約不需要因此改變。
 
 官方來源：[Messages](https://docs.langchain.com/oss/python/langchain/messages)、[ChatAnthropic integration](https://docs.langchain.com/oss/python/integrations/chat/anthropic)。

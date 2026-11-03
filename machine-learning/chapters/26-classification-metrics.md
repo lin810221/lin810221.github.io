@@ -28,7 +28,7 @@ ROC看TPR與FPR的門檻軌跡，AUC衡量正負排序關係；PR看precision與
 
 ## 練習與解答
 
-1000筆只有10正例，全猜負accuracy=.99但recall=0。解答：以支持數、PR與決策成本判斷，別把.99當成功。預測分數整體做嚴格單調轉換，排序指標可維持，固定.5門檻與機率品質卻可能不同。真實threshold在validation選，第33章會實作。
+1000筆只有10正例，全猜負accuracy=.99但recall=0。解答：以支持數、PR與決策成本判斷，別把.99當成功。預測分數整體做嚴格單調轉換，排序指標可維持，固定.5門檻與機率品質卻可能不同。真實threshold在validation選，「[決策門檻：成本、容量與TunedThresholdClassifierCV](#33-thresholds)」會實作。
 
 ## 完整可執行範例
 

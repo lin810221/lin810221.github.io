@@ -30,7 +30,7 @@ print(device, float(loss.detach().cpu()))
 
 ## 搬移是否可以更快
 
-GPU 資料載入常會比較 pin_memory 與 non_blocking 搬移，是否能重疊還取決於記憶體類型、stream 與後續依賴。不要把 non_blocking=True 當任何硬體都變快的保證。少量資料頻繁 CPU↔GPU 往返，可能比直接在 CPU 更慢；第 35、37 章會量測。
+GPU 資料載入常會比較 pin_memory 與 non_blocking 搬移，是否能重疊還取決於記憶體類型、stream 與後續依賴。不要把 non_blocking=True 當任何硬體都變快的保證。少量資料頻繁 CPU↔GPU 往返，可能比直接在 CPU 更慢；「[輸入管線與記憶體：先量測，再增加workers](#35-input-performance)」、「[CUDA實務：非同步、OOM、allocated與reserved](#37-cuda-memory)」會量測。
 
 ## 練習與解答
 

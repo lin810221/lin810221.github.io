@@ -20,7 +20,7 @@ detach 切斷 Autograd 關係，通常仍共享儲存；clone 複製數值，但
 
 ## 練習與解答
 
-你寫 `best = model.state_dict()` 後繼續訓練，best 還是當時最好的模型嗎？解答：不能這樣假設；state_dict 的 Tensor 可仍引用目前參數。對每個值 detach、CPU、clone，或立即寫檔，再繼續更新。這正是第 23、31 章保存 best checkpoint 的重點。
+你寫 `best = model.state_dict()` 後繼續訓練，best 還是當時最好的模型嗎？解答：不能這樣假設；state_dict 的 Tensor 可仍引用目前參數。對每個值 detach、CPU、clone，或立即寫檔，再繼續更新。這正是「[學習率排程、Early Stopping 與最佳模型](#23-scheduling)」、「[儲存與載入：state_dict、map_location 與信任來源](#31-checkpoints)」保存 best checkpoint 的重點。
 
 ## 完整可執行範例
 

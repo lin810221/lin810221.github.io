@@ -26,7 +26,7 @@ Q[L,d_k]、K[S,d_k]、V[S,d_v]，權重[L,S]，輸出[L,d_v]。每個query row�
 
 ## 練習與解答
 
-QK logits全相同，權重均勻，輸出是values平均。若某key被mask則需先排除再正規化，不是在softmax後隨意設零而忘記重新歸一。空可見集合需明確政策，下一章用future invariance測causal實作。
+QK logits全相同，權重均勻，輸出是values平均。若某key被mask則需先排除再正規化，不是在softmax後隨意設零而忘記重新歸一。空可見集合需明確政策，下一單元用future invariance測causal實作。
 
 ## 完整可執行範例
 

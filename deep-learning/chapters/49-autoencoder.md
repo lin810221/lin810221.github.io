@@ -21,7 +21,7 @@ $$
 
 ## Denoising與其他變體
 
-denoising AE輸入受擾動、target為clean，逼模型學部分穩健結構；sparse／contractive等另有目標。不能看到所有方法都有encoder-decoder就叫同一loss。下一章VAE加入概率latent與KL，目的與普通AE不同。
+denoising AE輸入受擾動、target為clean，逼模型學部分穩健結構；sparse／contractive等另有目標。不能看到所有方法都有encoder-decoder就叫同一loss。下一單元VAE加入概率latent與KL，目的與普通AE不同。
 
 ## 評估與失敗
 

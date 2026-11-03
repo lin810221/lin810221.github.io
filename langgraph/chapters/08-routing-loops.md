@@ -39,7 +39,7 @@ def decide(state: dict) -> Command[Literal["retry", "finish"]]:
 
 這個片段需要將 `decide`、`retry`、`finish` 註冊到你的圖中。它展示 Command 的用法，不是可單獨執行的完整圖。**Command 不會取消既有固定出站 edge**，因此使用 `goto` 時要檢查是否又連了一條固定下一站。
 
-`Command(goto=...)` 用在節點回傳，控制下一站；`Command(resume=...)` 用在外部恢復 interrupt，目的不同。第 14 章會完整實作後者。
+`Command(goto=...)` 用在節點回傳，控制下一站；`Command(resume=...)` 用在外部恢復 interrupt，目的不同。「[Human-in-the-loop：暫停與恢復](#14-human-in-loop)」會完整實作後者。
 
 ## 怎麼設計不會失控的循環？
 

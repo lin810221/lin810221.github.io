@@ -28,7 +28,7 @@ def respond(state: dict, runtime: Runtime[Context]) -> dict:
 builder = StateGraph(State, context_schema=Context)
 ```
 
-建圖時的 `State` 需要你另外定義。編譯後以 `graph.invoke(input, config, context=Context(user_id="u1"))` 傳入。第 22 章的完整範例也會實際使用這套機制。
+建圖時的 `State` 需要你另外定義。編譯後以 `graph.invoke(input, config, context=Context(user_id="u1"))` 傳入。「[錯誤、重試、逾時與快取](#22-reliability)」的完整範例也會實際使用這套機制。
 
 Context 不是秘密管理系統；應用若將它寫到 log 仍會外洩。資料庫或模型用戶端可作為當輪依賴，但不要把這些難以序列化的物件放入 checkpoint State。
 

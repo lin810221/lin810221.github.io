@@ -20,7 +20,7 @@ linear probe固定backbone只學線性head，fine-tune更新更多層，二者�
 
 ## 與本課範例的關係
 
-第33例只測in-batch對比數學與grad，不宣稱重現完整SimCLR；AE／VAE篇實際學低維重建；第60章以小teacher/student示範distillation。這些讓你看見目標差異，之後可沿原始論文與獨立Embedding課深化。
+第33例只測in-batch對比數學與grad，不宣稱重現完整SimCLR；AE／VAE篇實際學低維重建；「[知識蒸餾：讓小模型學標籤，也學老師的分布](#60-distillation)」以小teacher/student示範distillation。這些讓你看見目標差異，之後可沿原始論文與獨立Embedding課深化。
 
 ## 自己設計一個檢查
 

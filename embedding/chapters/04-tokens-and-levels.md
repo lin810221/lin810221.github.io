@@ -25,7 +25,7 @@ hidden_dim 與最後 output_dim 可以不同。模型可能另外投影、正規
 
 不同長度句子組成 batch 時常加入 PAD。mask 決定哪些位置是真正輸入。mean pooling 需處理 PAD，是否包含 CLS、SEP 等特殊 token 則依模型 recipe，不宜一概刪除。
 
-如果把 PAD 的 hidden states 混入平均，可能改變向量長度與方向。即使 PAD 恰好為零，只改變平均尺度，後續若未正規化仍可能影響內積；第 14 章會實際計算。
+如果把 PAD 的 hidden states 混入平均，可能改變向量長度與方向。即使 PAD 恰好為零，只改變平均尺度，後續若未正規化仍可能影響內積；「[Pooling、Attention Mask 與正規化](#14-pooling)」會實際計算。
 
 ## Index 與 Embedding 不同
 

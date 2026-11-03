@@ -17,7 +17,7 @@ OpenAI Agents SDK、Google ADK、Claude Agent SDK 的抽象與執行環境不同
 
 ## 自行開啟連線的方式
 
-先設定第 3 章的 Key 與支援工具的模型，再選擇要使用的供應商：
+先設定「[環境、金鑰、HTTP 與 SDK](#03-environment)」的 Key 與支援工具的模型，再選擇要使用的供應商：
 
 ```powershell
 python examples/06_agent.py --provider openai

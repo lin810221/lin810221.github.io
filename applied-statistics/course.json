@@ -79,10 +79,9 @@
     {
       "id": "01-statistics-definition",
       "group": "introduction",
-      "title": "1-1　統計學的定義：從問題到不確定性",
+      "title": "統計學的定義：從問題到不確定性",
       "summary": "先定義想了解的對象，再決定資料、量數與推論範圍。",
       "tags": [
-        "1-1",
         "緒論",
         "statistics definition"
       ]
@@ -90,10 +89,9 @@
     {
       "id": "02-statistics-branches",
       "group": "introduction",
-      "title": "1-2　統計學的分類：描述、推論與應用",
+      "title": "統計學的分類：描述、推論與應用",
       "summary": "分清四個常見名稱的分類軸，讓理論與實務互相支援。",
       "tags": [
-        "1-2",
         "緒論",
         "statistics branches"
       ]
@@ -101,10 +99,9 @@
     {
       "id": "03-key-terms",
       "group": "introduction",
-      "title": "1-3　名詞解釋：變數、母體、樣本與統計量",
+      "title": "名詞解釋：變數、母體、樣本與統計量",
       "summary": "用固定參數與隨機統計量的差異，建立後面抽樣分配的語言。",
       "tags": [
-        "1-3",
         "緒論",
         "key terms"
       ]
@@ -112,10 +109,9 @@
     {
       "id": "04-data-and-scales",
       "group": "introduction",
-      "title": "1-4　統計資料的性質、種類與衡量尺度",
+      "title": "統計資料的性質、種類與衡量尺度",
       "summary": "從欄位字典開始，決定哪些運算與比較有合理意義。",
       "tags": [
-        "1-4",
         "緒論",
         "data and scales"
       ],
@@ -124,10 +120,9 @@
     {
       "id": "05-exercises-introduction",
       "group": "introduction",
-      "title": "習題01　緒論習題與詳解",
+      "title": "緒論習題與詳解",
       "summary": "用資料來源與觀察單位檢驗統計敘述是否說得太遠。",
       "tags": [
-        "習題01",
         "緒論",
         "exercises introduction"
       ]
@@ -135,10 +130,9 @@
     {
       "id": "06-categorical-tables",
       "group": "tables",
-      "title": "2-1　屬質資料：表格法與圖示法",
+      "title": "屬質資料：表格法與圖示法",
       "summary": "用人數、比例與明確分母，避免類別圖形誤導。",
       "tags": [
-        "2-1",
         "統計資料的整理與圖表",
         "categorical tables"
       ]
@@ -146,10 +140,9 @@
     {
       "id": "07-quantitative-tables",
       "group": "tables",
-      "title": "2-2　屬量資料：次數分配、直方圖與累積圖",
+      "title": "屬量資料：次數分配、直方圖與累積圖",
       "summary": "把分箱邊界、密度與累積意義寫清楚。",
       "tags": [
-        "2-2",
         "統計資料的整理與圖表",
         "quantitative tables"
       ],
@@ -158,10 +151,9 @@
     {
       "id": "08-distribution-shapes",
       "group": "tables",
-      "title": "2-3　次數分配的型態：對稱、偏態、J型與U型",
+      "title": "次數分配的型態：對稱、偏態、J型與U型",
       "summary": "形狀是描述線索，需要與尺度、資料來源及分組方式一起解讀。",
       "tags": [
-        "2-3",
         "統計資料的整理與圖表",
         "distribution shapes"
       ]
@@ -169,10 +161,9 @@
     {
       "id": "09-exercises-tables",
       "group": "tables",
-      "title": "習題02　圖表習題與詳解",
+      "title": "圖表習題與詳解",
       "summary": "核對分母、箱界與面積，學會看穿圖形錯覺。",
       "tags": [
-        "習題02",
         "統計資料的整理與圖表",
         "exercises tables"
       ]
@@ -180,10 +171,9 @@
     {
       "id": "10-central-tendency",
       "group": "descriptive",
-      "title": "3-1　集中趨勢：平均、中位、分位與眾數",
+      "title": "集中趨勢：平均、中位、分位與眾數",
       "summary": "依問題與尺度選摘要，清楚交代分位數的計算慣例。",
       "tags": [
-        "3-1",
         "統計量數之測量",
         "central tendency"
       ],
@@ -192,10 +182,9 @@
     {
       "id": "11-dispersion",
       "group": "descriptive",
-      "title": "3-2　差異量數：全距、四分位差、平均差與標準差",
+      "title": "差異量數：全距、四分位差、平均差與標準差",
       "summary": "分清變異數分母、穩健尺度與相對差異的適用條件。",
       "tags": [
-        "3-2",
         "統計量數之測量",
         "dispersion"
       ]
@@ -203,10 +192,9 @@
     {
       "id": "12-standardization-outliers",
       "group": "descriptive",
-      "title": "3-3　平均與標準差的應用：Z分數、界限與離群值",
+      "title": "平均與標準差的應用：Z分數、界限與離群值",
       "summary": "區分分布無關的保證、常態近似的經驗法則及探索旗標。",
       "tags": [
-        "3-3",
         "統計量數之測量",
         "standardization outliers"
       ]
@@ -214,10 +202,9 @@
     {
       "id": "13-exercises-descriptive",
       "group": "descriptive",
-      "title": "習題03　量數習題與詳解",
+      "title": "量數習題與詳解",
       "summary": "完整手算一組資料，並檢查每項量數的用途。",
       "tags": [
-        "習題03",
         "統計量數之測量",
         "exercises descriptive"
       ]
@@ -225,10 +212,9 @@
     {
       "id": "14-probability-rules",
       "group": "probability",
-      "title": "4-1　機率概論：測度、性質與運算法則",
+      "title": "機率概論：測度、性質與運算法則",
       "summary": "從事件關係出發，分清互斥、獨立與條件。",
       "tags": [
-        "4-1",
         "機率及機率分配",
         "probability rules"
       ],
@@ -237,10 +223,9 @@
     {
       "id": "15-random-variables",
       "group": "probability",
-      "title": "4-2　隨機變數及離散、連續機率分配",
+      "title": "隨機變數及離散、連續機率分配",
       "summary": "把結果映射成數字，分清PMF、PDF、CDF與點機率。",
       "tags": [
-        "4-2",
         "機率及機率分配",
         "random variables"
       ],
@@ -249,10 +234,9 @@
     {
       "id": "16-expectation-variance",
       "group": "probability",
-      "title": "4-3　期望值與變異數的性質：總和與相依",
+      "title": "期望值與變異數的性質：總和與相依",
       "summary": "從加權平均推到變異，特別留意共變異數不能任意省略。",
       "tags": [
-        "4-3",
         "機率及機率分配",
         "expectation variance"
       ]
@@ -260,10 +244,9 @@
     {
       "id": "17-discrete-families",
       "group": "probability",
-      "title": "4-4　常用離散分配：均等、二項、超幾何與Poisson",
+      "title": "常用離散分配：均等、二項、超幾何與Poisson",
       "summary": "依抽樣機制選分配，而不是依資料是整數就隨便挑。",
       "tags": [
-        "4-4",
         "機率及機率分配",
         "discrete families"
       ],
@@ -272,10 +255,9 @@
     {
       "id": "18-continuous-families",
       "group": "probability",
-      "title": "4-5　連續均勻、常態與二項的常態近似",
+      "title": "連續均勻、常態與二項的常態近似",
       "summary": "分清精確模型、標準化與近似條件，完整處理連續性修正。",
       "tags": [
-        "4-5",
         "機率及機率分配",
         "continuous families"
       ],
@@ -284,10 +266,9 @@
     {
       "id": "19-exercises-probability",
       "group": "probability",
-      "title": "習題04　機率與分配習題詳解",
+      "title": "機率與分配習題詳解",
       "summary": "從事件、參數到尾端計算，逐步驗證每個答案。",
       "tags": [
-        "習題04",
         "機率及機率分配",
         "exercises probability"
       ]
@@ -295,10 +276,9 @@
     {
       "id": "20-sampling-basics",
       "group": "sampling",
-      "title": "5-1　抽樣的基本概念：抽樣誤差與非抽樣誤差",
+      "title": "抽樣的基本概念：抽樣誤差與非抽樣誤差",
       "summary": "樣本數不是唯一品質指標，先看誰有機會被觀察。",
       "tags": [
-        "5-1",
         "抽樣及抽樣分配",
         "sampling basics"
       ]
@@ -306,10 +286,9 @@
     {
       "id": "21-sampling-designs",
       "group": "sampling",
-      "title": "5-2　四種抽樣方法：簡單、分層、群集與系統",
+      "title": "四種抽樣方法：簡單、分層、群集與系統",
       "summary": "將抽取程序與估計變異一起規劃，不把不同設計都當SRS。",
       "tags": [
-        "5-2",
         "抽樣及抽樣分配",
         "sampling designs"
       ],
@@ -318,10 +297,9 @@
     {
       "id": "22-sampling-distribution",
       "group": "sampling",
-      "title": "5-3　統計量與抽樣分配：資料分布以外的另一張圖",
+      "title": "統計量與抽樣分配：資料分布以外的另一張圖",
       "summary": "分清原始觀察、一次樣本與重複抽樣統計量。",
       "tags": [
-        "5-3",
         "抽樣及抽樣分配",
         "sampling distribution"
       ]
@@ -329,10 +307,9 @@
     {
       "id": "23-mean-sampling",
       "group": "sampling",
-      "title": "5-4　樣本平均數的抽樣分配與中央極限定理",
+      "title": "樣本平均數的抽樣分配與中央極限定理",
       "summary": "把精確常態結果、漸近結果與有限母體修正分開。",
       "tags": [
-        "5-4",
         "抽樣及抽樣分配",
         "mean sampling"
       ],
@@ -341,10 +318,9 @@
     {
       "id": "24-student-t",
       "group": "sampling",
-      "title": "5-5　t分配的特性與機率計算",
+      "title": "t分配的特性與機率計算",
       "summary": "當未知母體SD由樣本估計時，理解額外不確定性。",
       "tags": [
-        "5-5",
         "抽樣及抽樣分配",
         "student t"
       ],
@@ -353,10 +329,9 @@
     {
       "id": "25-proportion-sampling",
       "group": "sampling",
-      "title": "5-6　樣本比例的抽樣分配",
+      "title": "樣本比例的抽樣分配",
       "summary": "從成功次數到比例，明確區分p與p̂。",
       "tags": [
-        "5-6",
         "抽樣及抽樣分配",
         "proportion sampling"
       ]
@@ -364,10 +339,9 @@
     {
       "id": "26-chi-square-sampling",
       "group": "sampling",
-      "title": "5-7　樣本變異數與卡方抽樣分配",
+      "title": "樣本變異數與卡方抽樣分配",
       "summary": "理解正常性對變異數精確推論特別重要。",
       "tags": [
-        "5-7",
         "抽樣及抽樣分配",
         "chi square sampling"
       ]
@@ -375,10 +349,9 @@
     {
       "id": "27-f-distribution",
       "group": "sampling",
-      "title": "5-8　F分配：兩個獨立變異估計的比例",
+      "title": "F分配：兩個獨立變異估計的比例",
       "summary": "追蹤分子分母自由度，建立變異比與ANOVA的共同語言。",
       "tags": [
-        "5-8",
         "抽樣及抽樣分配",
         "f distribution"
       ]
@@ -386,10 +359,9 @@
     {
       "id": "28-exercises-sampling",
       "group": "sampling",
-      "title": "習題05　抽樣與抽樣分配習題詳解",
+      "title": "抽樣與抽樣分配習題詳解",
       "summary": "將設計、統計量、SE與參照分布連成完整答案。",
       "tags": [
-        "習題05",
         "抽樣及抽樣分配",
         "exercises sampling"
       ]
@@ -397,10 +369,9 @@
     {
       "id": "29-mean-confidence",
       "group": "intervals",
-      "title": "6-1　母體平均數區間估計：已知σ、未知σ與流程",
+      "title": "母體平均數區間估計：已知σ、未知σ與流程",
       "summary": "用假設選公式，完整理解95%信賴的長期涵義。",
       "tags": [
-        "6-1",
         "區間估計",
         "mean confidence"
       ],
@@ -409,10 +380,9 @@
     {
       "id": "30-proportion-confidence",
       "group": "intervals",
-      "title": "6-2　母體比例區間：Wald、Wilson與精確法",
+      "title": "母體比例區間：Wald、Wilson與精確法",
       "summary": "邊界、小樣本與覆蓋率問題，比只背一個±公式更重要。",
       "tags": [
-        "6-2",
         "區間估計",
         "proportion confidence"
       ],
@@ -421,10 +391,9 @@
     {
       "id": "31-planning-sample-size",
       "group": "intervals",
-      "title": "6-3　樣本大小的決定：誤差、信賴與可行性",
+      "title": "樣本大小的決定：誤差、信賴與可行性",
       "summary": "估計精確度的樣本數規劃，與檢定力規劃分開處理。",
       "tags": [
-        "6-3",
         "區間估計",
         "planning sample size"
       ],
@@ -433,10 +402,9 @@
     {
       "id": "32-variance-confidence",
       "group": "intervals",
-      "title": "6-4　母體變異數與標準差的區間",
+      "title": "母體變異數與標準差的區間",
       "summary": "由卡方樞紐反解不對稱區間，清楚標示正常性條件。",
       "tags": [
-        "6-4",
         "區間估計",
         "variance confidence"
       ],
@@ -445,10 +413,9 @@
     {
       "id": "33-exercises-intervals",
       "group": "intervals",
-      "title": "習題06　區間估計習題詳解",
+      "title": "區間估計習題詳解",
       "summary": "將估計值、SE、切點、端點與語意完整寫出。",
       "tags": [
-        "習題06",
         "區間估計",
         "exercises intervals"
       ]
@@ -456,10 +423,9 @@
     {
       "id": "34-testing-foundations",
       "group": "testing",
-      "title": "7-1　假設檢定、誤差、拒絕區與檢定力",
+      "title": "假設檢定、誤差、拒絕區與檢定力",
       "summary": "先定研究問題與決策規則，再計算p值。",
       "tags": [
-        "7-1",
         "假設檢定",
         "testing foundations"
       ],
@@ -468,10 +434,9 @@
     {
       "id": "35-one-mean-test",
       "group": "testing",
-      "title": "7-2　母體平均數檢定：大樣本與小樣本",
+      "title": "母體平均數檢定：大樣本與小樣本",
       "summary": "以σ資訊與設計決定Z或t，並連結差異與信賴區間。",
       "tags": [
-        "7-2",
         "假設檢定",
         "one mean test"
       ],
@@ -480,10 +445,9 @@
     {
       "id": "36-one-proportion-test",
       "group": "testing",
-      "title": "7-3　母體比例檢定：二項精確與常態近似",
+      "title": "母體比例檢定：二項精確與常態近似",
       "summary": "用H0下的變異建立檢定，讓小樣本與邊界另有處理。",
       "tags": [
-        "7-3",
         "假設檢定",
         "one proportion test"
       ],
@@ -492,10 +456,9 @@
     {
       "id": "37-one-variance-test",
       "group": "testing",
-      "title": "7-4　母體變異數檢定：卡方參照與敏感度",
+      "title": "母體變異數檢定：卡方參照與敏感度",
       "summary": "針對分散提出假設，避免把平均檢定當成變動檢定。",
       "tags": [
-        "7-4",
         "假設檢定",
         "one variance test"
       ],
@@ -504,10 +467,9 @@
     {
       "id": "38-two-means",
       "group": "testing",
-      "title": "7-5　兩母體平均數：大樣本、Welch、pooled與成對",
+      "title": "兩母體平均數：大樣本、Welch、pooled與成對",
       "summary": "先辨認資料關係，再決定標準誤，而非先跑等變異檢定分流。",
       "tags": [
-        "7-5",
         "假設檢定",
         "two means"
       ],
@@ -516,10 +478,9 @@
     {
       "id": "39-two-proportions",
       "group": "testing",
-      "title": "7-6　兩母體比例檢定與差異區間",
+      "title": "兩母體比例檢定與差異區間",
       "summary": "區分H0下的合併比例、區間估計及配對二元資料。",
       "tags": [
-        "7-6",
         "假設檢定",
         "two proportions"
       ],
@@ -528,10 +489,9 @@
     {
       "id": "40-two-variances",
       "group": "testing",
-      "title": "7-7　兩母體變異數：F檢定與穩健替代",
+      "title": "兩母體變異數：F檢定與穩健替代",
       "summary": "保留變異比的正常性前提，不把預檢當方法選擇的唯一依據。",
       "tags": [
-        "7-7",
         "假設檢定",
         "two variances"
       ],
@@ -540,10 +500,9 @@
     {
       "id": "41-chi-square-tests",
       "group": "testing",
-      "title": "7-8　卡方檢定：獨立性、齊一性與適合度",
+      "title": "卡方檢定：獨立性、齊一性與適合度",
       "summary": "相同統計量背後可能有不同抽樣設計與研究敘述。",
       "tags": [
-        "7-8",
         "假設檢定",
         "chi square tests"
       ],
@@ -552,10 +511,9 @@
     {
       "id": "42-exercises-testing",
       "group": "testing",
-      "title": "習題07　假設檢定習題詳解：方向、配對與結論",
+      "title": "假設檢定習題詳解：方向、配對與結論",
       "summary": "練習把一句需求轉成正確程序，並保留效果與不確定性。",
       "tags": [
-        "習題07",
         "假設檢定",
         "exercises testing"
       ],
@@ -564,10 +522,9 @@
     {
       "id": "43-anova-introduction",
       "group": "anova",
-      "title": "8-1　變異數分析概論：用變異比較平均",
+      "title": "變異數分析概論：用變異比較平均",
       "summary": "理解「分析變異」為何在檢定多組母體平均。",
       "tags": [
-        "8-1",
         "變異數分析",
         "anova introduction"
       ]
@@ -575,10 +532,9 @@
     {
       "id": "44-one-way-anova",
       "group": "anova",
-      "title": "8-2　單因子ANOVA：平方和、自由度與Welch",
+      "title": "單因子ANOVA：平方和、自由度與Welch",
       "summary": "以一組可手算資料核對F，再比較不同variance假設。",
       "tags": [
-        "8-2",
         "變異數分析",
         "one way anova"
       ],
@@ -587,10 +543,9 @@
     {
       "id": "45-multiple-comparisons",
       "group": "anova",
-      "title": "8-3　多重比較：Tukey、Games–Howell與Holm",
+      "title": "多重比較：Tukey、Games–Howell與Holm",
       "summary": "先定比較家族，再選與模型相符的差異、區間及調整p。",
       "tags": [
-        "8-3",
         "變異數分析",
         "multiple comparisons"
       ],
@@ -599,10 +554,9 @@
     {
       "id": "46-two-factor-additive",
       "group": "anova",
-      "title": "8-4　二因子無交互作用模型：加法效果",
+      "title": "二因子無交互作用模型：加法效果",
       "summary": "區分模型沒有交互項與實驗沒有重複，避免將兩件事混淆。",
       "tags": [
-        "8-4",
         "變異數分析",
         "two factor additive"
       ],
@@ -611,10 +565,9 @@
     {
       "id": "47-two-factor-interaction",
       "group": "anova",
-      "title": "8-5　二因子含交互作用：效果依情境改變",
+      "title": "二因子含交互作用：效果依情境改變",
       "summary": "用差異之差和簡單效果理解交互，而不只讀一個星號。",
       "tags": [
-        "8-5",
         "變異數分析",
         "two factor interaction"
       ],
@@ -623,10 +576,9 @@
     {
       "id": "48-exercises-anova",
       "group": "anova",
-      "title": "習題08　ANOVA習題詳解：從平方和到條件效果",
+      "title": "ANOVA習題詳解：從平方和到條件效果",
       "summary": "核對每個自由度、比較方向與實際研究結論。",
       "tags": [
-        "習題08",
         "變異數分析",
         "exercises anova"
       ]
@@ -634,10 +586,9 @@
     {
       "id": "49-correlation",
       "group": "regression",
-      "title": "9-1　概論及相關分析：Pearson與Spearman",
+      "title": "概論及相關分析：Pearson與Spearman",
       "summary": "看圖、尺度與配對來源，再量化關聯；相關不等於因果。",
       "tags": [
-        "9-1",
         "相關與迴歸分析",
         "correlation"
       ],
@@ -646,10 +597,9 @@
     {
       "id": "50-linear-regression",
       "group": "regression",
-      "title": "9-2　直線迴歸模式：係數、最小平方與殘差",
+      "title": "直線迴歸模式：係數、最小平方與殘差",
       "summary": "把一條擬合線變成明確的條件平均模型。",
       "tags": [
-        "9-2",
         "相關與迴歸分析",
         "linear regression"
       ],
@@ -658,10 +608,9 @@
     {
       "id": "51-regression-inference",
       "group": "regression",
-      "title": "9-3　迴歸統計推論：SE、區間、診斷與預測",
+      "title": "迴歸統計推論：SE、區間、診斷與預測",
       "summary": "區分係數不確定、平均反應區間及新觀察預測區間。",
       "tags": [
-        "9-3",
         "相關與迴歸分析",
         "regression inference"
       ],
@@ -670,10 +619,9 @@
     {
       "id": "52-exercises-regression",
       "group": "regression",
-      "title": "習題09　相關與迴歸習題詳解",
+      "title": "相關與迴歸習題詳解",
       "summary": "以手算斜率、殘差與區間語意，檢查軟體輸出。",
       "tags": [
-        "習題09",
         "相關與迴歸分析",
         "exercises regression"
       ]
@@ -681,10 +629,9 @@
     {
       "id": "53-python-workflow",
       "group": "survey",
-      "title": "10-1　基本操作：環境、欄位字典與可重現分析",
+      "title": "基本操作：環境、欄位字典與可重現分析",
       "summary": "本章以Python處理同一份合成問卷，不包含SPSS操作。",
       "tags": [
-        "10-1",
         "問卷調查分析與Python實作",
         "python workflow"
       ],
@@ -693,10 +640,9 @@
     {
       "id": "54-questionnaire-design",
       "group": "survey",
-      "title": "10-2　問卷調查與應用：從構念到題目",
+      "title": "問卷調查與應用：從構念到題目",
       "summary": "先確定想衡量什麼，再決定抽樣、題項與計分。",
       "tags": [
-        "10-2",
         "問卷調查分析與Python實作",
         "questionnaire design"
       ]
@@ -704,10 +650,9 @@
     {
       "id": "55-reliability-validity",
       "group": "survey",
-      "title": "10-3　信度與效度：alpha不是量表合格證",
+      "title": "信度與效度：alpha不是量表合格證",
       "summary": "分清一致性、穩定性與測量解釋的證據，避免只靠閾值判定。",
       "tags": [
-        "10-3",
         "問卷調查分析與Python實作",
         "reliability validity"
       ],
@@ -716,10 +661,9 @@
     {
       "id": "56-survey-description",
       "group": "survey",
-      "title": "10-4　敘述統計與交叉分析：先了解回覆者",
+      "title": "敘述統計與交叉分析：先了解回覆者",
       "summary": "檢定之前先看題項、缺失、分數分布與各組分母。",
       "tags": [
-        "10-4",
         "問卷調查分析與Python實作",
         "survey description"
       ]
@@ -727,10 +671,9 @@
     {
       "id": "57-factor-analysis",
       "group": "survey",
-      "title": "10-5　因素分析：探索結構、KMO、Bartlett與旋轉",
+      "title": "因素分析：探索結構、KMO、Bartlett與旋轉",
       "summary": "以真正主軸因素分析示範，與PCA、CFA及效度判斷分開。",
       "tags": [
-        "10-5",
         "問卷調查分析與Python實作",
         "factor analysis"
       ],
@@ -739,10 +682,9 @@
     {
       "id": "58-survey-contingency",
       "group": "survey",
-      "title": "10-6　交叉表：列百分比、期望數與關聯",
+      "title": "交叉表：列百分比、期望數與關聯",
       "summary": "從問卷類別計數走到Pearson卡方，清楚交代觀察單位。",
       "tags": [
-        "10-6",
         "問卷調查分析與Python實作",
         "survey contingency"
       ],
@@ -751,10 +693,9 @@
     {
       "id": "59-survey-one-sample",
       "group": "survey",
-      "title": "10-7　單一樣本t：合成量表分數與基準值",
+      "title": "單一樣本t：合成量表分數與基準值",
       "summary": "把問卷計分、有效n與近似連續假設接到完整報告。",
       "tags": [
-        "10-7",
         "問卷調查分析與Python實作",
         "survey one sample"
       ],
@@ -763,10 +704,9 @@
     {
       "id": "60-survey-independent",
       "group": "survey",
-      "title": "10-8　獨立樣本t：兩類回覆者的平均差",
+      "title": "獨立樣本t：兩類回覆者的平均差",
       "summary": "以Welch示範分組、有效n、差異方向與區間解讀。",
       "tags": [
-        "10-8",
         "問卷調查分析與Python實作",
         "survey independent"
       ],
@@ -775,10 +715,9 @@
     {
       "id": "61-survey-paired",
       "group": "survey",
-      "title": "10-9　成對樣本t：按ID對齊前後測",
+      "title": "成對樣本t：按ID對齊前後測",
       "summary": "保留配對的資料關係，避免兩欄看似同長卻錯人配對。",
       "tags": [
-        "10-9",
         "問卷調查分析與Python實作",
         "survey paired"
       ],
@@ -787,10 +726,9 @@
     {
       "id": "62-survey-anova",
       "group": "survey",
-      "title": "10-10　單因子變異數分析：三組合成量表分數",
+      "title": "單因子變異數分析：三組合成量表分數",
       "summary": "在同一計分協定下做整體比較，再準備有調整的後續對比。",
       "tags": [
-        "10-10",
         "問卷調查分析與Python實作",
         "survey anova"
       ],
@@ -799,10 +737,9 @@
     {
       "id": "63-survey-posthoc",
       "group": "survey",
-      "title": "10-11　事後比較：從整體差異到三對區間",
+      "title": "事後比較：從整體差異到三對區間",
       "summary": "閱讀調整p與同時區間，保留家族與差異方向。",
       "tags": [
-        "10-11",
         "問卷調查分析與Python實作",
         "survey posthoc"
       ]
@@ -810,10 +747,9 @@
     {
       "id": "64-exercises-survey",
       "group": "survey",
-      "title": "習題10　問卷分析習題詳解：從原始題項到報告",
+      "title": "問卷分析習題詳解：從原始題項到報告",
       "summary": "把計分、有效樣本、方法與解釋串成一次可重現分析。",
       "tags": [
-        "習題10",
         "問卷調查分析與Python實作",
         "exercises survey"
       ]
@@ -821,10 +757,9 @@
     {
       "id": "65-worked-solutions",
       "group": "appendices",
-      "title": "解答A　補充習題解答：計算、選法與合理結論",
+      "title": "補充習題解答：計算、選法與合理結論",
       "summary": "十章已附解答，本單元再以跨章題檢驗完整推理。",
       "tags": [
-        "解答A",
         "解答、附錄與完整專題",
         "worked solutions"
       ],
@@ -833,10 +768,9 @@
     {
       "id": "66-distribution-tables",
       "group": "appendices",
-      "title": "附錄B　分配表、尾向與常用切點",
+      "title": "分配表、尾向與常用切點",
       "summary": "將傳統查表與CDF、SF、PPF對照，避免表頭慣例造成錯誤。",
       "tags": [
-        "附錄B",
         "解答、附錄與完整專題",
         "distribution tables"
       ]
@@ -844,10 +778,9 @@
     {
       "id": "67-method-selector",
       "group": "appendices",
-      "title": "附錄C　方法選擇與分析報告檢核表",
+      "title": "方法選擇與分析報告檢核表",
       "summary": "先選估計目標、資料關係與設計，再選軟體函式。",
       "tags": [
-        "附錄C",
         "解答、附錄與完整專題",
         "method selector"
       ]
@@ -855,10 +788,9 @@
     {
       "id": "68-robust-resampling",
       "group": "appendices",
-      "title": "延伸D　延伸：非參數、重抽樣、缺失與多元模型",
+      "title": "延伸：非參數、重抽樣、缺失與多元模型",
       "summary": "補足應用時常遇到的分岔，同時清楚標示超出原十章主線的範圍。",
       "tags": [
-        "延伸D",
         "解答、附錄與完整專題",
         "robust resampling"
       ]
@@ -866,10 +798,9 @@
     {
       "id": "69-capstone",
       "group": "appendices",
-      "title": "專題E　完整專題：從問卷CSV到可重現JSON報告",
+      "title": "完整專題：從問卷CSV到可重現JSON報告",
       "summary": "把計分、描述、信度、因素、比較與限制組成一份可交付結果。",
       "tags": [
-        "專題E",
         "解答、附錄與完整專題",
         "capstone"
       ],
@@ -878,10 +809,9 @@
     {
       "id": "70-reference",
       "group": "appendices",
-      "title": "附錄F　符號、公式、版本與原目錄對照速查",
+      "title": "符號、公式、版本與原目錄對照速查",
       "summary": "讓你回來查定義、尾向與章節位置，保留完整學習脈絡。",
       "tags": [
-        "附錄F",
         "解答、附錄與完整專題",
         "reference"
       ]

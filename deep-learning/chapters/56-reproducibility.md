@@ -32,7 +32,7 @@ $$
 
 ## 重跑清單要保存到哪裡
 
-保留原始資料識別與切分索引、前處理、程式commit、Python／Torch完整版本、裝置、seed、超參數及最佳epoch。推論artifact只保留推論必要資訊；要精確續訓還需optimizer、scheduler、RNG與採樣進度。第66章會明確區分這兩種交付，本課範例不聲稱完整續訓。
+保留原始資料識別與切分索引、前處理、程式commit、Python／Torch完整版本、裝置、seed、超參數及最佳epoch。推論artifact只保留推論必要資訊；要精確續訓還需optimizer、scheduler、RNG與採樣進度。「[交付模型：前處理、權重與推論契約一起保存](#66-artifacts)」會明確區分這兩種交付，本課範例不聲稱完整續訓。
 
 ## 如何寫可信的結論
 

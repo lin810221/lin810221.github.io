@@ -14,23 +14,23 @@
 
 ## 已完成
 
-- [x] [LangGraph 完整教學](langgraph/index.html) — 28 章，圖式流程、狀態、記憶、人工審核與 Agent。
-- [x] [LLM 服務與 AI Agents](llm/index.html) — 38 章，供應商 API、功能參數、工具呼叫與 Agent 實作。
-- [x] [RAG 檢索增強生成](rag/index.html) — 42 章，文件處理、檢索、重排、引用、評估與部署。
-- [x] [Embedding 與表示學習](embedding/index.html) — 48 章，向量、表示學習、模型、應用、降維、量化與微調。
-- [x] [PyTorch 實作工程](pytorch/index.html) — 48 章、24 份 Python 範例、4 個互動實驗室；以 2026-10-30 查核的最新穩定版 2.15.0 製作。
+- [x] [LangGraph 完整教學](langgraph/index.html) — 6 章、28 個單元，圖式流程、狀態、記憶、人工審核與 Agent。
+- [x] [LLM 服務與 AI Agents](llm/index.html) — 8 章、38 個單元，供應商 API、功能參數、工具呼叫與 Agent 實作。
+- [x] [RAG 檢索增強生成](rag/index.html) — 8 章、42 個單元，文件處理、檢索、重排、引用、評估與部署。
+- [x] [Embedding 與表示學習](embedding/index.html) — 8 章、48 個單元，向量、表示學習、模型、應用、降維、量化與微調。
+- [x] [PyTorch 實作工程](pytorch/index.html) — 8 章、48 個單元、24 份 Python 範例、4 個互動實驗室；以 2026-10-30 查核的最新穩定版 2.15.0 製作。
 
   核心範圍：Tensor、shape／broadcasting、Autograd、`nn.Module`、Dataset／DataLoader、optimizer、訓練迴圈、device、推論模式、儲存與載入。
 
   延伸範圍：混合精度、梯度累積、checkpoint、重現性、profiling、記憶體與多 GPU 入門。以實作與除錯為主，對應深度學習原理，但不重複推導每個架構。
 
-- [x] [機器學習完整教學](machine-learning/index.html) — 60 章、30 份 Python 範例、5 個互動實驗室；以 2026-10-30 查核的最新穩定版 scikit-learn 1.9.1 製作。
+- [x] [機器學習完整教學](machine-learning/index.html) — 10 章、60 個單元、30 份 Python 範例、5 個互動實驗室；以 2026-10-30 查核的最新穩定版 scikit-learn 1.9.1 製作。
 
   核心範圍：監督與非監督學習、訓練／驗證／測試、泛化、偏差與變異、特徵工程、線性與 Logistic regression、kNN、決策樹、集成、SVM、聚類與 PCA。
 
   延伸範圍：交叉驗證、超參數搜尋、不平衡資料、校準、可解釋性與完整 pipeline。以表格資料的預測與模型比較為主，神經網路僅作橋接，深入架構留給深度學習。
 
-- [x] [深度學習完整教學](deep-learning/index.html) — 72 章、42 份 Python 範例、6 個互動實驗室；以 2026-10-30 查核的最新穩定版 PyTorch 2.15.0 製作。
+- [x] [深度學習完整教學](deep-learning/index.html) — 12 章、72 個單元、42 份 Python 範例、6 個互動實驗室；以 2026-10-30 查核的最新穩定版 PyTorch 2.15.0 製作。
 
   核心範圍：神經元與 MLP、計算圖、反向傳播、損失、初始化、最佳化、正則化、Dropout、正規化、CNN、序列模型與表示學習。
 
@@ -38,9 +38,15 @@
 
 - [x] [應用統計完整教學](applied-statistics/index.html) — 依使用者十章目錄製作，70 個閱讀單元、40 份 Python 範例、8 個互動實驗；2026-11-02 查核 SciPy 1.18.1 / statsmodels 0.15.0。
 
-  核心範圍：統計緒論、資料整理與圖表、集中與差異量數、機率與常用分配、抽樣與抽樣分配、區間估計、假設檢定、單因子／二因子 ANOVA、相關與直線迴歸、問卷計分、信效度與因素分析。保留原節號，十章皆附習題詳解；問卷操作改用 Python，不包含 SPSS。
+  核心範圍：統計緒論、資料整理與圖表、集中與差異量數、機率與常用分配、抽樣與抽樣分配、區間估計、假設檢定、單因子／二因子 ANOVA、相關與直線迴歸、問卷計分、信效度與因素分析。標題不重複舊節號，章內單元從01編號，十章皆附習題詳解；問卷操作改用 Python，不包含 SPSS。
 
   延伸範圍：Welch、Tukey／Games–Howell、Holm、HC3、重抽樣、非參數與缺失處理、多元／GLM 入門，以及完整問卷分析報告。數理推導與機率基礎保留必要內容，系統理論仍由各自獨立課程深化。
+
+- [x] [MCP 與工具整合完整教學](mcp/index.html) — 9 章、54 個單元、30 份 Python 範例、6 個互動實驗；2026-11-03 查核 MCP 2026-07-28／官方 Python SDK 2.3.0。
+
+  核心範圍：Host／Client／Server、JSON-RPC、無狀態請求與舊版握手、工具契約、stdio／Streamable HTTP、資源／Prompt、MRTR、多伺服器與三家服務整合、OAuth、Token 與租戶 ACL。
+
+  延伸範圍：可信審核、不可變預覽、冪等交易與收據、重試預算、可觀測性、檔案／SQL／HTTP／RAG adapter、工單專題、ASGI、CI、Apps／Skills 與版本遷移。供應商 API、正式 IdP 與雲端部署的未實測範圍明確標示。
 
 ## 數學基礎
 
@@ -115,12 +121,6 @@
   延伸範圍：物件偵測、語意與實例分割、ViT、IoU／mAP、定位錯誤與視覺模型部署。以電腦視覺任務與訓練為主，OCR 文件流程與圖文問答另在多模態課深入。
 
 ## AI 應用與工程
-
-- [ ] **MCP 與工具整合**
-
-  核心範圍：Host／Client／Server、工具與資源、協定生命週期、參數契約、連線方式、驗證、權限與錯誤處理。
-
-  延伸範圍：多工具整合、可觀測性、測試、部署與有副作用操作的審核。以建立和使用自己的工具伺服器為完整專案。
 
 - [ ] **FastAPI 與 AI 後端工程**
 

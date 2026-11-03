@@ -57,6 +57,6 @@ print(graph.get_graph().draw_mermaid())
 
 若節點只有 `print()` 而沒有回傳更新，後續欄位可能無法建立。若把 `return {"greeting": ...}` 寫成 `return "hello"`，則不符合 StateGraph 節點的更新契約。另請留意 `"greet"` 是名稱，`greet` 是函式，兩者用途不同。
 
-**練習：**在兩個節點之間加上 `validate`，名字為空白時拋出 `ValueError`。先觀察錯誤會向呼叫端傳遞，再思考正式 API 應在哪裡驗證輸入。參考解答見第 26 章。
+**練習：**在兩個節點之間加上 `validate`，名字為空白時拋出 `ValueError`。先觀察錯誤會向呼叫端傳遞，再思考正式 API 應在哪裡驗證輸入。參考解答見「[動手練習與參考解答](#26-exercises)」。
 
 官方來源：[Use Graph API](https://docs.langchain.com/oss/python/langgraph/use-graph-api)。

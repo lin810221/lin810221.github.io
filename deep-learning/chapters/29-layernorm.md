@@ -25,7 +25,7 @@ RMSNorm按均方根縮放，一般不減mean；它與LayerNorm不是只改名稱
 
 ## Norm與residual位置
 
-pre-norm先規範化再經子層與加回，post-norm在加總後正規化，影響梯度路徑與訓練行為。第46章TinyBlock用pre-norm並實測causal invariant；完整Transformer各種變體由獨立課深入，不把一個小block等同所有LLM。
+pre-norm先規範化再經子層與加回，post-norm在加總後正規化，影響梯度路徑與訓練行為。「[一個Transformer Block：Attention、FFN、Norm與Residual](#46-transformer-bridge)」TinyBlock用pre-norm並實測causal invariant；完整Transformer各種變體由獨立課深入，不把一個小block等同所有LLM。
 
 ## 練習與解答
 

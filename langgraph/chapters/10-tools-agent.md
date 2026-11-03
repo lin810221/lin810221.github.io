@@ -27,7 +27,7 @@ user → agent ──有 tool_calls──→ tools ──→ agent
 
 ## 接上真模型
 
-延續上一章建立的 `model`，先綁定同一份工具列表，再替換模型節點：
+延續上一單元建立的 `model`，先綁定同一份工具列表，再替換模型節點：
 
 ```python
 model_with_tools = model.bind_tools([multiply])

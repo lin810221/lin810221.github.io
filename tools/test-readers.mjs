@@ -6,7 +6,7 @@ import {Worker,isMainThread,parentPort,workerData} from 'node:worker_threads';
 
 export const reports=[];
 if(isMainThread) {
-  for(const file of ['test-reader.mjs','test-llm-reader.mjs','test-rag-reader.mjs','test-embedding-reader.mjs','test-pytorch-reader.mjs','test-machine-learning-reader.mjs','test-deep-learning-reader.mjs','test-statistics-reader.mjs']) {
+  for(const file of ['test-reader.mjs','test-llm-reader.mjs','test-rag-reader.mjs','test-embedding-reader.mjs','test-pytorch-reader.mjs','test-machine-learning-reader.mjs','test-deep-learning-reader.mjs','test-statistics-reader.mjs','test-mcp-reader.mjs','test-reader-numbering.mjs']) {
     reports.push(await new Promise((resolve,reject)=> {
       const worker=new Worker(new URL(import.meta.url),{workerData:file});
       let result;
@@ -17,5 +17,6 @@ if(isMainThread) {
   }
 } else {
   const result=await import(new URL(workerData,import.meta.url));
-  parentPort.postMessage(result.report);
+  const {verifyReaderNumbering}=await import('./check-reader-numbering.mjs');
+  parentPort.postMessage({...result.report,numbering:verifyReaderNumbering()});
 }

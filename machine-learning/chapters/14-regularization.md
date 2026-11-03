@@ -14,7 +14,7 @@ $$
 L_{Lasso}=\frac{1}{2N}\lVert y-Xw\rVert_2^2+\alpha\lVert w\rVert_1
 $$
 
-不同API的loss縮放未必相同，不能把相同alpha直接解讀為相同懲罰強度。兩者一般alpha越大限制越強；Logistic的C則是反方向，下一章再分清。
+不同API的loss縮放未必相同，不能把相同alpha直接解讀為相同懲罰強度。兩者一般alpha越大限制越強；Logistic的C則是反方向，下一單元再分清。
 
 ## 縮放與係數解讀
 

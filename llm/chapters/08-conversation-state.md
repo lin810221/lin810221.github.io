@@ -36,7 +36,7 @@ Messages API 可用 user / assistant 陣列傳入先前回合，system 在頂層
 
 應用建立 user_id → thread_id → run_id 的關係，並在後端確認使用者能存取指定 thread。前端送來一個 thread_id 不能直接代表它有權讀取。
 
-對話隔離、長期偏好、審核權限與可用文件範圍應分別設計。第 29 章會以 SQLite 實作簡單的使用者與 thread 範圍。
+對話隔離、長期偏好、審核權限與可用文件範圍應分別設計。「[Agent 的短期記憶、長期記憶與檢索](#29-agent-memory)」會以 SQLite 實作簡單的使用者與 thread 範圍。
 
 **練習：**同一人兩條對話要共享語言偏好，但不共享完整聊天歷史。畫出哪份資料放在 session，哪份放在跨 session 的應用儲存。
 

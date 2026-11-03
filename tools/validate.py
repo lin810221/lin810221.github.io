@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
+LEGACY_TITLE_NUMBER = re.compile(r"^(?:\d+(?:-\d+)+|(?:習題|附錄)\s*[0-9A-Za-z]+)[\s\u3000]")
 
 
 class InspectHTML(HTMLParser):
@@ -57,6 +58,11 @@ def validate_course(course_path):
     assert len(course["lessons"]) == len(expected["lessons"])
     assert len({lesson["id"] for lesson in course["lessons"]}) == len(course["lessons"])
     group_ids = {group["id"] for group in course["groups"]}
+    assert len(group_ids) == len(course["groups"]), f"Duplicate chapter IDs: {course_path.name}"
+    chapter_numbers = [int(group["number"]) for group in course["groups"] if group["number"].isdigit()]
+    assert chapter_numbers == list(range(1, len(chapter_numbers) + 1)), f"Chapters must be numbered in order: {course_path.name}"
+    for group in course["groups"]:
+        assert any(lesson["group"] == group["id"] for lesson in course["lessons"]), f"Empty chapter: {group['id']}"
     link_count = math_count = code_count = 0
     for page in (ROOT / "index.html", course_path / "index.html"):
         parsed = InspectHTML()
@@ -65,6 +71,8 @@ def validate_course(course_path):
         link_count += local_links_exist(parsed.links, page.parent)
     for lesson in course["lessons"]:
         assert lesson["group"] in group_ids
+        assert not LEGACY_TITLE_NUMBER.match(lesson["title"]), f"Remove manual section numbering from title: {lesson['id']}"
+        assert lesson["title"] == next(item["title"] for item in expected["lessons"] if item["id"] == lesson["id"]), f"Rebuild changed title: {lesson['id']}"
         assert len(lesson["text"]) > 1000, f"Missing substantial content: {lesson['id']}"
         assert "<!-- example:" not in lesson["text"]
         assert lesson["text"].count("```") % 2 == 0
@@ -86,7 +94,7 @@ def validate_course(course_path):
     for url in font_urls:
         assert (ROOT / "assets" / "vendor" / "katex" / url.strip('"\'')).is_file(), f"Missing offline font: {url}"
     assert math_count >= (6 if course_path.name == "langgraph" else 4)
-    print(f"PASS {course_path.name}: {len(course['lessons'])} chapters, {code_count} linked examples, {link_count} local links, {len(font_urls)} offline fonts, {math_count} display equations")
+    print(f"PASS {course_path.name}: {len(course['lessons'])} units, {code_count} linked examples, {link_count} local links, {len(font_urls)} offline fonts, {math_count} display equations")
 
 
 def main():

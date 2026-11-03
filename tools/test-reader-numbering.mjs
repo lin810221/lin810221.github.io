@@ -1,0 +1,21 @@
+/* IDs need not be numeric or match display order; bookmarks/storage stay stable. */
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {parseHTML,Event,HTMLElement} from '../.qa/vendor/linkedom.mjs';
+const {window,document}=parseHTML(await readFile(new URL('../applied-statistics/index.html',import.meta.url),'utf8'));
+const q=s=>document.querySelector(s),location={hash:'#02-existing-bookmark'},saved={completed:['arbitrary-id'],notes:{'arbitrary-id':'my original note'},last:'arbitrary-id'};
+const storage=new Map([['learning-notes:numbering-fixture:v1',JSON.stringify(saved)]]);
+const lesson=(id,group,title)=>({id,group,title,summary:'A numbering example',tags:[],minutes:4,text:title,html:'<h2 id="details">Details</h2><p>Example</p>'});
+window.COURSE={slug:'numbering-fixture',shortTitle:'Numbering',groups:[{id:'first',number:'01',title:'First'},{id:'second',number:'02',title:'Second'},{id:'appendix',number:'附',title:'Reference'}],lessons:[lesson('88-unrelated-prefix','first','First unit'),lesson('arbitrary-id','first','Second unit'),lesson('02-existing-bookmark','second','Chapter two'),lesson('stable-appendix','appendix','Appendix unit')]};
+window.renderCourseOverview=({main,toc})=>{main.innerHTML='<h1>Overview</h1>';toc.innerHTML='';};window.renderCourseOverview.courseSlug='numbering-fixture';
+HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
+q('#search-dialog').showModal=function(){this.open=true;};q('#search-dialog').close=function(){this.open=false;};
+Object.assign(globalThis,{window,document,location,requestAnimationFrame:fn=>fn(),localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v)}});
+await import(new URL('../assets/reader.js',import.meta.url).href);
+assert.ok(q('.lesson-kicker').textContent.includes('CHAPTER 02'));assert.ok(q('.lesson-kicker').textContent.includes('UNIT 01 OF 1'));
+assert.equal(q('[data-lesson="88-unrelated-prefix"] .chapter-number').textContent,'01');assert.equal(q('[data-lesson="arbitrary-id"] .chapter-number').textContent,'02');
+location.hash='#arbitrary-id';window.dispatchEvent(new Event('hashchange'));assert.equal(q('#lesson-notes').value,saved.notes['arbitrary-id']);assert.equal(q('#complete-lesson').getAttribute('aria-pressed'),'true');assert.equal(q('#progress-count').textContent,'1 / 4');
+assert.ok(q('.pagination-link.next small').textContent.includes('第 2 章 · 單元 01'));
+location.hash='#stable-appendix';window.dispatchEvent(new Event('hashchange'));assert.ok(q('.lesson-kicker').textContent.startsWith('APPENDIX'));assert.ok(!q('.lesson-breadcrumb').textContent.includes('第 附 章'));
+assert.deepEqual(JSON.parse(storage.get('learning-notes:numbering-fixture:v1')).notes,saved.notes);
+export const report={reader:'non-numeric IDs, unrelated file prefixes, bookmarked routes, chapter reset, appendices, stored notes/completion: PASS'};

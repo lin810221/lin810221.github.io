@@ -33,7 +33,7 @@ AMP採torch.amp與torch.autocast主線；讀checkpoint明確weights_only與map_l
 
 epoch是資料完整一輪，step是一次optimizer更新，microbatch是有效群組的一部分，logits是未正規化分數，buffer是需管理但非可訓練參數的狀態。loss下降、預測正確、效能提升與部署完成分別需要不同證據。
 
-接著可學更完整深度學習原理、Transformer、模型微調或訓練基礎設施；Embedding課程則把表示連到搜尋與應用。先完成第46章專題，再挑你需要的一條路。練習：用自己的話解釋eval與zero_grad為何不能互換，並寫一個會因漏掉其中一項而失敗的測試。
+接著可學更完整深度學習原理、Transformer、模型微調或訓練基礎設施；Embedding課程則把表示連到搜尋與應用。先完成「[完整專題：訓練、選模、存檔、載入與新資料推論](#46-capstone)」專題，再挑你需要的一條路。練習：用自己的話解釋eval與zero_grad為何不能互換，並寫一個會因漏掉其中一項而失敗的測試。
 
 ## 官方來源與延伸閱讀
 

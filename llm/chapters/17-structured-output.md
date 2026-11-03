@@ -8,7 +8,7 @@
 
 JSON mode 通常聚焦產出 JSON 語法；結構化輸出可進一步約束欄位、型別與有限選項。各家支援的是 JSON Schema 的特定子集，不能假設任何複雜約束都可在服務端強制。
 
-OpenAI Responses 使用 text.format；Gemini Interactions 使用 response_format；Claude Messages 使用 output_config.format。格式的形狀也不同，請使用第 4 章 with_schema 的對應。
+OpenAI Responses 使用 text.format；Gemini Interactions 使用 response_format；Claude Messages 使用 output_config.format。格式的形狀也不同，請使用「[第一個請求：輸入、輸出與結束狀態](#04-first-request)」 with_schema 的對應。
 
 ## 完整的應用驗證程式
 

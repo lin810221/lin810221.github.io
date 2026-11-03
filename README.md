@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有八個領域：**LangGraph 完整教學**（28 章、12 份 Python 範例）、**LLM 服務與 AI Agents**（38 章、12 份範例）、**RAG 檢索增強生成**（42 章、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（48 章、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（48 章、24 份範例、4 個互動實驗室）、**機器學習**（60 章、30 份範例、5 個互動實驗室）、**深度學習**（72 章、42 份範例、6 個互動實驗室）與 **應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有九個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -25,44 +25,44 @@ LearningNote/
 │   ├── assets/course-data.js  產生好的離線教材
 │   └── examples/              Python 範例與測試
 ├── llm/                       LLM 服務與 AI Agents
-│   ├── course.json            38 章的分組與摘要
+│   ├── course.json            8 章、38 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材
 │   ├── assets/overview.js     三家 API 與採樣實驗室
 │   ├── examples/              範例、共用模組與離線測試
 │   └── examples.zip           完整範例壓縮包
 ├── rag/                       RAG 檢索增強生成
-│   ├── course.json            42 章的分組與摘要
+│   ├── course.json            8 章、42 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材
 │   ├── assets/overview.js     檢索、切塊與指標實驗室
 │   ├── examples/              16 個入口、共用模組與虛構資料
 │   └── examples.zip           含資料與測試的完整範例包
 ├── embedding/                 Embedding 與表示學習
-│   ├── course.json            48 章的分組與摘要
+│   ├── course.json            8 章、48 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材
 │   ├── assets/overview.js     幾何、對比學習、門檻、投影實驗室
 │   ├── examples/              20 個入口、共用數學與模型 adapter
 │   └── examples.zip           含資料與測試的完整範例包
 ├── pytorch/                   PyTorch 實作工程（2.15.0）
-│   ├── course.json            48 章的分組與摘要
+│   ├── course.json            8 章、48 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材
 │   ├── assets/overview.js     shape、梯度、更新與尾批實驗室
 │   ├── examples/              24 個入口、共用實作、合成資料與測試
 │   └── examples.zip           含需求檔與測試的完整範例包
 ├── machine-learning/          機器學習（scikit-learn 1.9.1）
-│   ├── course.json            60 章的分組與摘要
+│   ├── course.json            10 章、60 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材
 │   ├── assets/overview.js     回歸、成本、CV、樹與 KMeans 實驗室
 │   ├── examples/              30 個離線入口、完整管線與數值測試
 │   └── examples.zip           含合成資料與鎖版需求的完整範例包
 ├── deep-learning/             深度學習（PyTorch 2.15.0）
-│   ├── course.json            72 章的分組與摘要
+│   ├── course.json            12 章、72 個單元的分組與摘要
 │   ├── chapters/              Markdown 教材、公式、練習與解答
 │   ├── assets/overview.js     梯度、XOR、卷積、正規化、Attention 與加噪
 │   ├── examples/              42 個入口、獨立核心、合成資料與測試
 │   └── examples.zip           完整可執行下載包
 ├── applied-statistics/        應用統計（SciPy 1.18.1 / statsmodels 0.15.0）
 │   ├── course.json            原十章與附錄，共70個閱讀單元
-│   ├── chapters/              原節號、公式、手算與完整習題解答
+│   ├── chapters/              單元教材、公式、手算與完整習題解答
 │   ├── assets/overview.js     八個互動統計數值實驗
 │   ├── examples/              40個入口、獨立核心、合成問卷CSV與測試
 │   └── examples.zip           完整資料、程式及鎖版需求
@@ -130,7 +130,7 @@ python -m pip install -r deep-learning/examples/requirements.txt --index-url htt
 python -m unittest discover -s deep-learning/examples -p test_examples.py -v
 ```
 
-應用統計見 [applied-statistics/examples/README.md](applied-statistics/examples/README.md)。保留使用者十章目錄與小節，問卷章改為 Python，不包含 SPSS 操作。2026-11-02 查核最新穩定版 **SciPy 1.18.1 / statsmodels 0.15.0**，Python 3.13 實測 60 項測試。合成問卷保留完整計分、缺失、信度、因素與比較流程；不宣稱代表真實母體或正式量表驗證。
+應用統計見 [applied-statistics/examples/README.md](applied-statistics/examples/README.md)。保留使用者十章目錄與內容，章內單元由閱讀器重新編號，問卷章改為 Python，不包含 SPSS 操作。2026-11-02 查核最新穩定版 **SciPy 1.18.1 / statsmodels 0.15.0**，Python 3.13 實測 60 項測試。合成問卷保留完整計分、缺失、信度、因素與比較流程；不宣稱代表真實母體或正式量表驗證。
 
 此課使用獨立 Python >=3.12 環境（建議 3.13），不要在既有 Python 3.11 課程環境直接混裝。
 
@@ -138,3 +138,7 @@ python -m unittest discover -s deep-learning/examples -p test_examples.py -v
 python -m pip install -r applied-statistics/examples/requirements.txt
 python -m unittest discover -s applied-statistics/examples -p test_examples.py -v
 ```
+
+## MCP 與工具整合
+
+入口：[完整課程](mcp/index.html)。原稿、共用模組與 30 份範例位於 `mcp/`；安裝與實測範圍見 [範例說明](mcp/examples/README.md)。新增獨立 MCP CI job，避免與既有課程相依互相影響。
