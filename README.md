@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有九個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有十個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -66,6 +66,13 @@ LearningNote/
 │   ├── assets/overview.js     八個互動統計數值實驗
 │   ├── examples/              40個入口、獨立核心、合成問卷CSV與測試
 │   └── examples.zip           完整資料、程式及鎖版需求
+├── mcp/                       MCP 與工具整合：54 個單元、30 份範例
+├── search/                    搜尋引擎與向量資料庫
+│   ├── course.json            10 章、60 個閱讀單元
+│   ├── chapters/              索引、查詢、資料生命週期與維運教材
+│   ├── assets/overview.js     7 個確定性互動實驗
+│   ├── examples/              32 個入口、實際引擎、虛構資料與驗收
+│   └── examples.zip           含依賴鎖版與資料的完整下載包
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -142,3 +149,17 @@ python -m unittest discover -s applied-statistics/examples -p test_examples.py -
 ## MCP 與工具整合
 
 入口：[完整課程](mcp/index.html)。原稿、共用模組與 30 份範例位於 `mcp/`；安裝與實測範圍見 [範例說明](mcp/examples/README.md)。新增獨立 MCP CI job，避免與既有課程相依互相影響。
+
+## 搜尋引擎與向量資料庫
+
+課程入口：[search/index.html](search/index.html)。完整安裝與驗收見 [search/examples/README.md](search/examples/README.md)。從根目錄執行：
+
+```powershell
+py -3.11 -m venv .qa/search-latest
+.qa/search-latest/Scripts/python.exe -m pip install -r search/examples/requirements.txt
+.qa/search-latest/Scripts/python.exe -m unittest discover -s search/examples -p test_examples.py -v
+python tools/build.py search
+python tools/validate.py
+```
+
+實測路線為 APSW／SQLite FTS5、Faiss CPU 與 Qdrant Local；Elasticsearch 預設記錄真實 SDK 序列化，PostgreSQL 預設檢查參數化 SQL。遠端服務、RLS、容器、服務快照與叢集效能需另驗證。人工八維特徵不是語意模型；預設不連線、不下載模型。與 RAG／Embedding 的重疊以必要回顧和交叉閱讀處理，本課主線聚焦索引、儲存、更新與維運。

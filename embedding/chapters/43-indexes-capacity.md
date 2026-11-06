@@ -33,3 +33,8 @@ tenant、active、版本和文件資格是硬條件，不能在發給模型後�
 **題目：**ANN recall 很高但答案來源常錯，要優先調 ef_search 嗎？
 
 **參考答案：**先看任務相關標註、原文與向量配對、模型 recipe 和硬條件。若已忠實找回 exact 近鄰，錯誤可能在表示或資料，而不是近似探索。
+
+
+## 延伸：索引與資料庫工程
+
+表示確定後的索引工程，見 [搜尋引擎與向量資料庫](../search/index.html#19-distance-and-exact-baseline)：包含真實 Faiss 參數實驗、Qdrant／pgvector、資料同步與容量維運。本課聚焦表示空間與模型品質。

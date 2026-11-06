@@ -57,6 +57,9 @@ def validate_course(course_path):
     expected = json.loads((course_path / "course.json").read_text(encoding="utf-8"))
     assert len(course["lessons"]) == len(expected["lessons"])
     assert len({lesson["id"] for lesson in course["lessons"]}) == len(course["lessons"])
+    source_ids = {path.stem for path in (course_path / "chapters").glob("*.md")}
+    expected_ids = {lesson["id"] for lesson in expected["lessons"]}
+    assert source_ids == expected_ids, f"Chapter sources/catalog mismatch in {course_path.name}: {sorted(source_ids ^ expected_ids)}"
     group_ids = {group["id"] for group in course["groups"]}
     assert len(group_ids) == len(course["groups"]), f"Duplicate chapter IDs: {course_path.name}"
     chapter_numbers = [int(group["number"]) for group in course["groups"] if group["number"].isdigit()]

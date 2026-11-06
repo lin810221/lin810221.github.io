@@ -44,3 +44,8 @@ pgvector 使用不同運算子處理不同距離；索引 operator class 需要�
 **題目：**資料庫搜尋只回兩筆，`LIMIT 10`，可否斷言只有兩份相關文件？
 
 **參考答案：**不一定。可能受篩選、索引探索、分數閾值或資料狀態影響。先用相同可見範圍的精確搜尋比較，再檢查 ANN 設定與實際候選數。查詢回傳數與知識庫中相關資料數並不相同。
+
+
+## 延伸：索引與資料庫工程
+
+索引、儲存與維運的完整工程實作，見 [搜尋引擎與向量資料庫](../search/index.html#19-distance-and-exact-baseline)：從 Faiss Exact/HNSW/IVF-PQ 到 Qdrant、pgvector、Filter 與備份重建。本課繼續聚焦 RAG 的證據與答案。

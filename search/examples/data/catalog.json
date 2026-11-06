@@ -1,0 +1,12 @@
+[
+  {"point_id": 1001, "tenant": "alpha", "doc_id": "AX-100", "title": "USB C hub AX-100", "body": "usb c hub ethernet hdmi adapter dock", "category": "accessory", "revision": 1, "active": true},
+  {"point_id": 1002, "tenant": "alpha", "doc_id": "CB-200", "title": "USB C charging cable", "body": "usb c cable charging power durable cable", "category": "accessory", "revision": 1, "active": true},
+  {"point_id": 1003, "tenant": "alpha", "doc_id": "BAT-10", "title": "Notebook battery repair", "body": "notebook battery replacement lithium repair safety", "category": "manual", "revision": 1, "active": true},
+  {"point_id": 1004, "tenant": "alpha", "doc_id": "VEC-01", "title": "Vector index guide", "body": "vector hnsw index search filtering database", "category": "manual", "revision": 1, "active": true},
+  {"point_id": 1005, "tenant": "alpha", "doc_id": "ZH-01", "title": "全文搜尋調校", "body": "搜尋 索引 BM25 中文 斷詞 查詢", "category": "manual", "revision": 1, "active": true},
+  {"point_id": 1006, "tenant": "alpha", "doc_id": "AX-OLD", "title": "USB hub retired model", "body": "usb hub ethernet withdrawn old catalog", "category": "accessory", "revision": 1, "active": false},
+  {"point_id": 1007, "tenant": "alpha", "doc_id": "SQL-01", "title": "PostgreSQL operations", "body": "postgresql sql database index backup replication", "category": "manual", "revision": 1, "active": true},
+  {"point_id": 1008, "tenant": "alpha", "doc_id": "NET-01", "title": "Network adapter guide", "body": "ethernet network adapter usb dock connectivity", "category": "manual", "revision": 1, "active": true},
+  {"point_id": 2001, "tenant": "beta", "doc_id": "AX-100", "title": "Private USB hub pricing", "body": "usb hub ethernet confidential beta pricing", "category": "private", "revision": 1, "active": true},
+  {"point_id": 2002, "tenant": "beta", "doc_id": "VEC-01", "title": "Private vector configuration", "body": "vector index search confidential beta tuning", "category": "private", "revision": 1, "active": true}
+]

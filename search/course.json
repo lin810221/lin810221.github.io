@@ -1,0 +1,706 @@
+{
+  "slug": "search",
+  "title": "搜尋引擎與向量資料庫完整教學",
+  "shortTitle": "搜尋與向量資料庫",
+  "updated": "2026-11-05",
+  "baseline": "Elasticsearch 9.5.6 / Qdrant 1.20.0 / Faiss 1.15.1 / pgvector 0.8.7",
+  "footerLabel": "SEARCH ENGINES & VECTOR DATABASES",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 BM25、HNSW、Filter、Outbox、pgvector 或備份。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "搜尋系統的全貌",
+      "description": "需求、資料契約、查詢流程與第一個可執行索引。"
+    },
+    {
+      "id": "lexical",
+      "number": "02",
+      "title": "全文檢索與倒排索引",
+      "description": "斷詞、位置、BM25 與可解釋的文字查詢。"
+    },
+    {
+      "id": "elastic",
+      "number": "03",
+      "title": "Elasticsearch 搜尋工程",
+      "description": "Mapping、DSL、批次寫入、可見性與深層分頁。"
+    },
+    {
+      "id": "vectors",
+      "number": "04",
+      "title": "向量索引與 ANN",
+      "description": "Exact 基準、Faiss、HNSW、IVF 與量化實驗。"
+    },
+    {
+      "id": "qdrant",
+      "number": "05",
+      "title": "Qdrant 向量資料庫",
+      "description": "Collection、Payload、混合查詢與本機持久化。"
+    },
+    {
+      "id": "postgres",
+      "number": "06",
+      "title": "PostgreSQL 與 pgvector",
+      "description": "在關聯交易、全文索引與向量查詢之間作選擇。"
+    },
+    {
+      "id": "hybrid",
+      "number": "07",
+      "title": "混合搜尋與品質評估",
+      "description": "候選融合、排序、評分資料集與失敗分析。"
+    },
+    {
+      "id": "lifecycle",
+      "number": "08",
+      "title": "資料生命週期與一致性",
+      "description": "冪等更新、刪除、Outbox、重建與版本切換。"
+    },
+    {
+      "id": "operations",
+      "number": "09",
+      "title": "效能、容量與維運",
+      "description": "量測查詢、分片、備份還原與故障處理。"
+    },
+    {
+      "id": "delivery",
+      "number": "10",
+      "title": "整合專題與驗收交付",
+      "description": "完成可查、可更新、可隔離、可重建的搜尋服務。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-scope-and-overlap",
+      "group": "foundations",
+      "title": "這門課的位置：把搜尋做成可靠的系統",
+      "summary": "從商品目錄與知識庫開始，區分表示學習、檢索工程與答案生成。",
+      "tags": [
+        "搜尋系統的全貌",
+        "scope and overlap"
+      ]
+    },
+    {
+      "id": "02-source-index-query",
+      "group": "foundations",
+      "title": "來源、索引與查詢服務：資料走過哪幾層",
+      "summary": "把搜尋拆成資料流與查詢流，避免把索引當成唯一真相。",
+      "tags": [
+        "搜尋系統的全貌",
+        "source index query"
+      ]
+    },
+    {
+      "id": "03-versions-and-environment",
+      "group": "foundations",
+      "title": "版本、環境與可重現執行",
+      "summary": "以 2026-11-05 查核的正式穩定版本建立隔離環境，辨識伺服器與 SDK 的不同版本。",
+      "tags": [
+        "搜尋系統的全貌",
+        "versions and environment"
+      ]
+    },
+    {
+      "id": "04-first-fts",
+      "group": "foundations",
+      "title": "第一次全文搜尋：建立、寫入與查詢",
+      "summary": "用真正的 SQLite FTS5 建立商品索引，觀察一個查詢如何返回資料。",
+      "tags": [
+        "搜尋系統的全貌",
+        "first fts"
+      ],
+      "example": "01_first_fts.py"
+    },
+    {
+      "id": "05-schema-and-identifiers",
+      "group": "foundations",
+      "title": "文件契約：ID、租戶、版本與表示配方",
+      "summary": "先定義能跨引擎維持一致的文件，再談索引格式。",
+      "tags": [
+        "搜尋系統的全貌",
+        "schema and identifiers"
+      ]
+    },
+    {
+      "id": "06-query-intent-and-plan",
+      "group": "foundations",
+      "title": "查詢意圖與計畫：代碼、文字與語意各走哪條路",
+      "summary": "先問使用者想找什麼，再決定查詢欄位、候選預算與回退策略。",
+      "tags": [
+        "搜尋系統的全貌",
+        "query intent and plan"
+      ]
+    },
+    {
+      "id": "07-inverted-index-positions",
+      "group": "lexical",
+      "title": "倒排索引與位置：詞如何指向文件",
+      "summary": "親手建立 postings，理解詞項、文件頻率、位置與短語查詢的關係。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "inverted index positions"
+      ],
+      "example": "03_postings.py"
+    },
+    {
+      "id": "08-analyzers-and-chinese",
+      "group": "lexical",
+      "title": "正規化與中文斷詞：搜尋品質的第一道門",
+      "summary": "比較 Unicode 正規化、詞切分與漢字 bigram，避免把 tokenization 問題誤認為模型問題。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "analyzers and chinese"
+      ],
+      "example": "02_analyzers.py"
+    },
+    {
+      "id": "09-bm25-scoring",
+      "group": "lexical",
+      "title": "BM25：詞頻、稀有度與文件長度如何影響名次",
+      "summary": "從可計算的公式理解排名，並分清原始 BM25、欄位權重與各引擎實作。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "bm25 scoring"
+      ],
+      "example": "04_bm25.py"
+    },
+    {
+      "id": "10-boolean-phrase-filter",
+      "group": "lexical",
+      "title": "布林、短語與 Filter：相關性與資格分開判斷",
+      "summary": "區分可得分的文字條件、必要資格與使用者可輸入的查詢語法。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "boolean phrase filter"
+      ],
+      "example": "05_literal_queries.py"
+    },
+    {
+      "id": "11-fields-synonyms-fuzzy",
+      "group": "lexical",
+      "title": "欄位、同義詞與模糊匹配：增加召回也要控制誤召回",
+      "summary": "設計 title、body、code 與類別的不同查詢用途，理解擴展查詢的代價。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "fields synonyms fuzzy"
+      ]
+    },
+    {
+      "id": "12-fts-query-and-maintenance",
+      "group": "lexical",
+      "title": "FTS5 實作整理：同步、排序與查詢限制",
+      "summary": "把第一個全文索引補成能維護的模組，辨識簡易引擎的能力界線。",
+      "tags": [
+        "全文檢索與倒排索引",
+        "fts query and maintenance"
+      ]
+    },
+    {
+      "id": "13-elasticsearch-mapping",
+      "group": "elastic",
+      "title": "Elasticsearch Mapping：text、keyword 與向量欄位",
+      "summary": "把文件契約轉成可檢查的 Mapping，避免動態型別猜測累積成遷移問題。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "elasticsearch mapping"
+      ],
+      "example": "06_elastic_mapping.py"
+    },
+    {
+      "id": "14-elasticsearch-analyzers",
+      "group": "elastic",
+      "title": "Elasticsearch Analyzer：索引分析與查詢分析",
+      "summary": "用 _analyze 驗證文字處理鏈，讓中文、代碼與自然語言各有清楚契約。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "elasticsearch analyzers"
+      ]
+    },
+    {
+      "id": "15-query-dsl-and-aggregation",
+      "group": "elastic",
+      "title": "Query DSL、Filter 與 Aggregation：查詢也要有邊界",
+      "summary": "建立受控的 multi_match 與精確 Filter，理解查詢、聚合與資料資格的作用範圍。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "query dsl and aggregation"
+      ],
+      "example": "07_elastic_query.py"
+    },
+    {
+      "id": "16-bulk-refresh-and-version",
+      "group": "elastic",
+      "title": "Bulk、Refresh 與版本：寫入成功多久能搜尋",
+      "summary": "分開理解批次請求、單筆錯誤、可搜尋性與併發覆寫。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "bulk refresh and version"
+      ],
+      "example": "08_bulk_refresh.py"
+    },
+    {
+      "id": "17-pit-pagination-and-routing",
+      "group": "elastic",
+      "title": "PIT、search_after 與 Routing：穩定走過大量結果",
+      "summary": "用一致的排序與搜尋快照設計分頁，避免深層 OFFSET 與跨頁更新造成混亂。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "pit pagination and routing"
+      ],
+      "example": "09_pagination.py"
+    },
+    {
+      "id": "18-elasticsearch-and-opensearch",
+      "group": "elastic",
+      "title": "Elasticsearch 與 OpenSearch：選型與相容性的界線",
+      "summary": "辨識產品、版本與服務差異，用能力清單選擇，而非把名稱相近當成可直接互換。",
+      "tags": [
+        "Elasticsearch 搜尋工程",
+        "elasticsearch and opensearch"
+      ]
+    },
+    {
+      "id": "19-distance-and-exact-baseline",
+      "group": "vectors",
+      "title": "向量契約與 Exact 基準：先定義什麼叫鄰近",
+      "summary": "用同一個可查集合與距離函式建立正確答案，再衡量 ANN 的近似損失。",
+      "tags": [
+        "向量索引與 ANN",
+        "distance and exact baseline"
+      ],
+      "example": "10_exact_vectors.py"
+    },
+    {
+      "id": "20-faiss-flat",
+      "group": "vectors",
+      "title": "Faiss Flat：真正的全量向量檢索",
+      "summary": "用 float32 連續矩陣建立 IndexFlatIP，與 NumPy Exact 逐筆比較。",
+      "tags": [
+        "向量索引與 ANN",
+        "faiss flat"
+      ],
+      "example": "11_faiss_flat.py"
+    },
+    {
+      "id": "21-faiss-hnsw",
+      "group": "vectors",
+      "title": "HNSW：圖結構、建置成本與搜尋廣度",
+      "summary": "執行真正 Faiss HNSW，量測近似召回，分清 M、efConstruction 與 efSearch。",
+      "tags": [
+        "向量索引與 ANN",
+        "faiss hnsw"
+      ],
+      "example": "12_faiss_hnsw.py"
+    },
+    {
+      "id": "22-ivf-pq-and-quantization",
+      "group": "vectors",
+      "title": "IVF-PQ：分桶與壓縮帶來什麼誤差",
+      "summary": "把候選剪枝與向量量化分開理解，實際訓練一個小型 Faiss IVF-PQ。",
+      "tags": [
+        "向量索引與 ANN",
+        "ivf pq and quantization"
+      ],
+      "example": "13_faiss_ivfpq.py"
+    },
+    {
+      "id": "23-filtering-and-candidate-budget",
+      "group": "vectors",
+      "title": "向量 Filter 與候選預算：先過濾還是後過濾",
+      "summary": "用固定排名模擬候選耗盡，再辨識真正資料庫執行計畫的不同做法。",
+      "tags": [
+        "向量索引與 ANN",
+        "filtering and candidate budget"
+      ],
+      "example": "14_filter_candidates.py"
+    },
+    {
+      "id": "24-ann-tuning-experiment",
+      "group": "vectors",
+      "title": "ANN 調參實驗：固定資料，分開品質、延遲與容量",
+      "summary": "設計能重跑的參數比較，避免把一次最快結果當成結論。",
+      "tags": [
+        "向量索引與 ANN",
+        "ann tuning experiment"
+      ]
+    },
+    {
+      "id": "25-collections-and-local",
+      "group": "qdrant",
+      "title": "Qdrant Collection 與 Local：先建立正確的向量空間",
+      "summary": "實際建立 named dense 與 sparse vectors，分清本機 SDK 與遠端服務的責任。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "collections and local"
+      ],
+      "example": "15_qdrant_local.py"
+    },
+    {
+      "id": "26-payload-filtering",
+      "group": "qdrant",
+      "title": "Payload、型別與索引：每條向量查詢的資料資格",
+      "summary": "以 tenant、active 與 recipe 組出強制 Filter，觀察型別與索引如何影響結果。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "payload filtering"
+      ],
+      "example": "16_qdrant_filters.py"
+    },
+    {
+      "id": "27-query-points-and-prefetch",
+      "group": "qdrant",
+      "title": "Query Points 與 Prefetch：候選、輸出與成本",
+      "summary": "讀懂新版 Query API 的查詢層次，設定有界候選而非只調最後的 limit。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "query points and prefetch"
+      ]
+    },
+    {
+      "id": "28-dense-sparse-fusion",
+      "group": "qdrant",
+      "title": "Qdrant Dense＋Sparse：實際執行兩路召回與融合",
+      "summary": "把同一份文件的不同表示放入 named vectors，以每路 Filter 和 RRF 組成混合查詢。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "dense sparse fusion"
+      ],
+      "example": "17_qdrant_hybrid.py"
+    },
+    {
+      "id": "29-upsert-delete-persistence",
+      "group": "qdrant",
+      "title": "Upsert、刪除與 Local 持久化：不把成功回應當版本保護",
+      "summary": "觀察同 ID 覆寫、刪除與重新開啟資料，再補上來源版本與重送語意。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "upsert delete persistence"
+      ],
+      "example": "18_qdrant_updates.py"
+    },
+    {
+      "id": "30-server-snapshots-and-replicas",
+      "group": "qdrant",
+      "title": "Qdrant Server：Payload Index、複本與 Snapshot 的邊界",
+      "summary": "從 Local 走向服務前，先列出需要在真實部署驗證的行為。",
+      "tags": [
+        "Qdrant 向量資料庫",
+        "server snapshots and replicas"
+      ],
+      "example": "19_qdrant_persistence.py"
+    },
+    {
+      "id": "31-postgres-schema-and-fts",
+      "group": "postgres",
+      "title": "PostgreSQL Schema 與全文索引：讓搜尋靠近關聯資料",
+      "summary": "用 typed schema、tsvector 與 GIN 組織搜尋資料，同時保留業務交易。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "postgres schema and fts"
+      ],
+      "example": "20_pg_schema.py"
+    },
+    {
+      "id": "32-pgvector-operators",
+      "group": "postgres",
+      "title": "pgvector 距離運算子與 Operator Class",
+      "summary": "讓 SQL 的 ORDER BY 與索引度量一致，並透過 Psycopg 綁定向量參數。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "pgvector operators"
+      ],
+      "example": "21_pg_query.py"
+    },
+    {
+      "id": "33-pgvector-ann-and-iterative",
+      "group": "postgres",
+      "title": "pgvector HNSW、IVFFlat 與 Iterative Scan",
+      "summary": "理解索引建置、查詢參數與 Filter 後候選不足，再用真實計畫驗證。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "pgvector ann and iterative"
+      ]
+    },
+    {
+      "id": "34-explain-and-query-plans",
+      "group": "postgres",
+      "title": "EXPLAIN：確認資料庫實際做了什麼",
+      "summary": "讀懂掃描、排序、估計值與實際值，區分 SQL 正確和查詢計畫有效率。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "explain and query plans"
+      ]
+    },
+    {
+      "id": "35-rls-and-connection-pools",
+      "group": "postgres",
+      "title": "RLS、角色與連線池：資料隔離不只一個 WHERE",
+      "summary": "將可信身分映射到交易範圍，明確檢查管理者、擁有者與連線重用的例外。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "rls and connection pools"
+      ],
+      "example": "22_pg_roles.py"
+    },
+    {
+      "id": "36-transactions-and-dual-store",
+      "group": "postgres",
+      "title": "單庫交易與雙庫同步：何時需要 Outbox",
+      "summary": "比較來源與索引在同一交易內外的差異，避免把兩次成功呼叫誤當原子提交。",
+      "tags": [
+        "PostgreSQL 與 pgvector",
+        "transactions and dual store"
+      ]
+    },
+    {
+      "id": "37-sparse-retrieval",
+      "group": "hybrid",
+      "title": "Sparse Retrieval：BM25、詞頻與學習式稀疏表示",
+      "summary": "辨識 sparse vector 的不同來源，不把所有稀疏查詢都叫 BM25。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "sparse retrieval"
+      ]
+    },
+    {
+      "id": "38-reciprocal-rank-fusion",
+      "group": "hybrid",
+      "title": "RRF：不用混比分數，也能融合多路排名",
+      "summary": "從排名而非原始分數融合候選，處理去重、權重與缺席分支。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "reciprocal rank fusion"
+      ],
+      "example": "23_rrf.py"
+    },
+    {
+      "id": "39-score-normalization",
+      "group": "hybrid",
+      "title": "線性融合與分數校準：何時分數才可以相加",
+      "summary": "比較每路 min-max 的簡易基線與跨查詢校準，認識單一路徑常數分數的陷阱。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "score normalization"
+      ],
+      "example": "24_linear_fusion.py"
+    },
+    {
+      "id": "40-diversity-and-reranking",
+      "group": "hybrid",
+      "title": "去重、多樣性與 Reranking：前幾名不能只有同一份文件",
+      "summary": "區分候選召回與二階段排序，設計可替換且有預算的重排介面。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "diversity and reranking"
+      ]
+    },
+    {
+      "id": "41-qrels-and-metrics",
+      "group": "hybrid",
+      "title": "Qrels、Recall、MRR 與 nDCG：別把兩種正確混在一起",
+      "summary": "同時量測 ANN 是否接近 Exact，以及搜尋結果是否真的相關。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "qrels and metrics"
+      ],
+      "example": "25_evaluation.py"
+    },
+    {
+      "id": "42-multilingual-and-feedback",
+      "group": "hybrid",
+      "title": "多語、日誌與回饋：找到品質退化的切片",
+      "summary": "把真實查詢轉成可驗證的改善資料，同時避免把點擊當成無偏真值。",
+      "tags": [
+        "混合搜尋與品質評估",
+        "multilingual and feedback"
+      ]
+    },
+    {
+      "id": "43-etl-and-bulk-ingestion",
+      "group": "lifecycle",
+      "title": "ETL 與批次匯入：讓錯誤可重跑、可對帳",
+      "summary": "從原始文件到可查索引，安排驗證、分批、錯誤隔離與水位紀錄。",
+      "tags": [
+        "資料生命週期與一致性",
+        "etl and bulk ingestion"
+      ]
+    },
+    {
+      "id": "44-monotonic-revisions",
+      "group": "lifecycle",
+      "title": "Revision 與冪等 Upsert：相同重送，過期拒絕",
+      "summary": "將版本規則寫進來源模組，讓舊事件無法覆蓋新文件。",
+      "tags": [
+        "資料生命週期與一致性",
+        "monotonic revisions"
+      ],
+      "example": "26_versioned_ingest.py"
+    },
+    {
+      "id": "45-tombstones-and-deletion",
+      "group": "lifecycle",
+      "title": "Tombstone 與刪除傳播：查不到不等於清除完成",
+      "summary": "保留刪除版本以防舊事件復活，並區分可見性、索引回收與資料保留。",
+      "tags": [
+        "資料生命週期與一致性",
+        "tombstones and deletion"
+      ]
+    },
+    {
+      "id": "46-outbox-and-checkpoint",
+      "group": "lifecycle",
+      "title": "Outbox、Checkpoint 與當機重播",
+      "summary": "真的在索引寫入後、保存水位前注入故障，觀察 at-least-once 如何恢復。",
+      "tags": [
+        "資料生命週期與一致性",
+        "outbox and checkpoint"
+      ],
+      "example": "27_outbox_replay.py"
+    },
+    {
+      "id": "47-generation-cutover",
+      "group": "lifecycle",
+      "title": "Generation、切換與回復：新索引先驗收再上線",
+      "summary": "將索引版本與 query recipe 成套切換，以交易內比較避免覆蓋別人的操作。",
+      "tags": [
+        "資料生命週期與一致性",
+        "generation cutover"
+      ],
+      "example": "28_generation_cutover.py"
+    },
+    {
+      "id": "48-embedding-recipe-migration",
+      "group": "lifecycle",
+      "title": "表示配方遷移：維度相同也需要版本切換",
+      "summary": "為模型、正規化、稀疏詞表與前處理變更建立完整重建路線。",
+      "tags": [
+        "資料生命週期與一致性",
+        "embedding recipe migration"
+      ]
+    },
+    {
+      "id": "49-segments-wal-and-consistency",
+      "group": "operations",
+      "title": "Segment、Refresh、WAL 與複本：四種不同的承諾",
+      "summary": "分清可搜尋、可恢復、可讀到最新與可災難復原，不用單一成功訊號概括。",
+      "tags": [
+        "效能、容量與維運",
+        "segments wal and consistency"
+      ]
+    },
+    {
+      "id": "50-capacity-planning",
+      "group": "operations",
+      "title": "容量估算：原向量、量化、圖與複本都要算",
+      "summary": "從可驗算的 bytes 起步，明列未包含項目，避免把理想碼大小當總容量。",
+      "tags": [
+        "效能、容量與維運",
+        "capacity planning"
+      ],
+      "example": "29_capacity.py"
+    },
+    {
+      "id": "51-benchmark-and-tail-latency",
+      "group": "operations",
+      "title": "Benchmark、p50 與 p95：量測一個可比較的工作負載",
+      "summary": "建立真實 Faiss 計時入口，同時把本機核心耗時與服務端到端延遲分開。",
+      "tags": [
+        "效能、容量與維運",
+        "benchmark and tail latency"
+      ],
+      "example": "30_benchmark.py"
+    },
+    {
+      "id": "52-shards-routing-and-cache",
+      "group": "operations",
+      "title": "分片、租戶與快取：速度不能打破資料邊界",
+      "summary": "規劃資料分布與查詢快取，將主體、版本與失效條件納入設計。",
+      "tags": [
+        "效能、容量與維運",
+        "shards routing and cache"
+      ]
+    },
+    {
+      "id": "53-backup-and-rebuild",
+      "group": "operations",
+      "title": "備份、還原與重建：真正測一次才能知道能否恢復",
+      "summary": "以來源快照重建全新索引，區分舊 checkpoint 與新索引的資料水位。",
+      "tags": [
+        "效能、容量與維運",
+        "backup and rebuild"
+      ]
+    },
+    {
+      "id": "54-monitoring-and-failure-playbook",
+      "group": "operations",
+      "title": "監控、SLO 與升級排錯：從症狀找到故障層",
+      "summary": "把品質、同步與資源一起觀察，建立可以實際執行的處理路線。",
+      "tags": [
+        "效能、容量與維運",
+        "monitoring and failure playbook"
+      ]
+    },
+    {
+      "id": "55-engine-selection",
+      "group": "delivery",
+      "title": "引擎選型：從需求矩陣決定，不從排行榜決定",
+      "summary": "比較嵌入式全文、向量函式庫、向量服務與關聯整合的責任分配。",
+      "tags": [
+        "整合專題與驗收交付",
+        "engine selection"
+      ]
+    },
+    {
+      "id": "56-catalog-project",
+      "group": "delivery",
+      "title": "完整專題：可更新、可隔離的商品混合搜尋",
+      "summary": "把來源、FTS、Qdrant、候選融合與最新資格驗證組成一條可執行服務。",
+      "tags": [
+        "整合專題與驗收交付",
+        "catalog project"
+      ],
+      "example": "31_catalog_project.py"
+    },
+    {
+      "id": "57-acceptance-and-delivery",
+      "group": "delivery",
+      "title": "驗收與交付：產出能重建的搜尋專案",
+      "summary": "將功能、隔離、故障重送與備份重建轉成可檢查報告。",
+      "tags": [
+        "整合專題與驗收交付",
+        "acceptance and delivery"
+      ],
+      "example": "32_delivery_report.py"
+    },
+    {
+      "id": "58-optional-service-lab",
+      "group": "delivery",
+      "title": "服務整合實驗：Elasticsearch 與 PostgreSQL 的下一步",
+      "summary": "在自行啟動的隔離服務驗證配方，明確區分輸出請求與真正執行。",
+      "tags": [
+        "整合專題與驗收交付",
+        "optional service lab"
+      ]
+    },
+    {
+      "id": "59-exercises-and-solutions",
+      "group": "delivery",
+      "title": "綜合習題與詳解：用故障案例檢查理解",
+      "summary": "從漏查、舊資料、容量誤估與恢復失敗，練習判斷正確的修復層。",
+      "tags": [
+        "整合專題與驗收交付",
+        "exercises and solutions"
+      ]
+    },
+    {
+      "id": "60-reference-and-versions",
+      "group": "delivery",
+      "title": "版本矩陣、官方文件與後續路線",
+      "summary": "整理本次查核來源、實測邊界與下一個可持續練習的方向。",
+      "tags": [
+        "整合專題與驗收交付",
+        "reference and versions"
+      ]
+    }
+  ]
+}
