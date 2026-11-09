@@ -1,0 +1,10 @@
+id,exercise_id,primary_target,reps,load_kg,unit,rir
+squat-1,squat,knee_dominant,8,40,kg,2
+squat-2,squat,knee_dominant,8,40,kg,2
+squat-3,squat,knee_dominant,8,40,kg,
+row-1,row,upper_pull,8,25,kg,2
+row-2,row,upper_pull,8,25,kg,2
+row-3,row,upper_pull,8,25,kg,
+pushup-1,pushup,upper_push,8,,kg,2
+pushup-2,pushup,upper_push,8,,kg,2
+pushup-3,pushup,upper_push,8,,kg,

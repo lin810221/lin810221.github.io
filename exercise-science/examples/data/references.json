@@ -1,0 +1,23 @@
+{
+  "checked": "2026-11-09",
+  "sources": [
+    {
+      "id": "acsm2026",
+      "title": "ACSM 2026 resistance training position stand",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/",
+      "scope": "Healthy adults, not a clinical prescription"
+    },
+    {
+      "id": "who2020",
+      "title": "WHO physical activity guidelines",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "scope": "Population and age-specific guidance"
+    },
+    {
+      "id": "acwr",
+      "title": "ACWR conceptual pitfalls",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32502973/",
+      "scope": "No causal individual safe zone"
+    }
+  ]
+}

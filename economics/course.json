@@ -1,0 +1,980 @@
+{
+  "slug": "economics",
+  "title": "經濟學完整教學",
+  "shortTitle": "經濟學",
+  "updated": "2026-11-09",
+  "baseline": "Python 3.15.2 / 2025 SNA & BPM7 transition",
+  "footerLabel": "ECONOMICS · CHOICE, INSTITUTIONS & OUTCOMES",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 供需、彈性、機會成本、GDP、Solow、賽局或資料修訂。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "用經濟學思考",
+      "description": "稀少性、機會成本、制度、模型與必要數學。"
+    },
+    {
+      "id": "markets",
+      "number": "02",
+      "title": "供需、彈性與市場干預",
+      "description": "從均衡到稅負、補貼、價格管制與福利。"
+    },
+    {
+      "id": "consumers",
+      "number": "03",
+      "title": "消費者選擇與跨期決策",
+      "description": "預算、偏好、效用、所得替代、工作與儲蓄。"
+    },
+    {
+      "id": "producers",
+      "number": "04",
+      "title": "生產、成本與完全競爭",
+      "description": "邊際生產力、成本曲線、供給與長期進出。"
+    },
+    {
+      "id": "strategy",
+      "number": "05",
+      "title": "市場力量與賽局",
+      "description": "獨占、定價、寡占、Nash、重複互動與平台。"
+    },
+    {
+      "id": "public",
+      "number": "06",
+      "title": "市場失靈與公共政策",
+      "description": "福利、公共財、外部性、碳定價與政策設計。"
+    },
+    {
+      "id": "institutions",
+      "number": "07",
+      "title": "勞動、資訊與行為",
+      "description": "工資、分配、保險、契約、誘因與行為證據。"
+    },
+    {
+      "id": "measurement",
+      "number": "08",
+      "title": "總體經濟怎麼測量",
+      "description": "GDP、國民帳、物價、失業與統計口徑。"
+    },
+    {
+      "id": "growth",
+      "number": "09",
+      "title": "長期成長與發展",
+      "description": "生產力、Solow、黃金律、制度與永續。"
+    },
+    {
+      "id": "money",
+      "number": "10",
+      "title": "貨幣、金融與銀行",
+      "description": "資產負債表、存款創造、利率、資產價格與風險。"
+    },
+    {
+      "id": "fluctuations",
+      "number": "11",
+      "title": "景氣、需求與通膨",
+      "description": "AD–AS、乘數、IS–MP、預期與 Phillips 曲線。"
+    },
+    {
+      "id": "policy",
+      "number": "12",
+      "title": "財政與貨幣政策",
+      "description": "政策效果、分配、債務動態、穩定器與政策規則。"
+    },
+    {
+      "id": "international",
+      "number": "13",
+      "title": "國際貿易與開放經濟",
+      "description": "比較利益、關稅、匯率、國際收支與三難。"
+    },
+    {
+      "id": "evidence",
+      "number": "14",
+      "title": "資料、證據與整合專題",
+      "description": "識別、資料版本、情境分析、完整習題與交付。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-economic-questions",
+      "group": "foundations",
+      "title": "經濟學在問什麼：選擇、互動與制度",
+      "summary": "從時間、資源與交換理解經濟學，而不把學科縮成股市或金錢。",
+      "tags": [
+        "用經濟學思考",
+        "economic questions"
+      ],
+      "example": "01_opportunity_cost.py"
+    },
+    {
+      "id": "02-scarcity-and-opportunity-cost",
+      "group": "foundations",
+      "title": "稀少性、機會成本與邊際思考",
+      "summary": "把下一個最佳替代用途放入成本，分清沉沒成本與未來決策。",
+      "tags": [
+        "用經濟學思考",
+        "scarcity and opportunity cost"
+      ]
+    },
+    {
+      "id": "03-models-and-frontiers",
+      "group": "foundations",
+      "title": "模型、PPF 與比較靜態：簡化如何幫助理解",
+      "summary": "用生產可能邊界練習可行、效率、成長與模型假設。",
+      "tags": [
+        "用經濟學思考",
+        "models and frontiers"
+      ],
+      "example": "02_ppf_and_models.py"
+    },
+    {
+      "id": "04-institutions-and-method",
+      "group": "foundations",
+      "title": "制度、歷史與實證：效率之外還要問誰受益",
+      "summary": "分清實然與應然，理解制度、權力與證據在經濟分析中的位置。",
+      "tags": [
+        "用經濟學思考",
+        "institutions and method"
+      ]
+    },
+    {
+      "id": "05-math-and-units",
+      "group": "foundations",
+      "title": "數學與單位：斜率、彈性、百分比與存量流量",
+      "summary": "用最少必要數學讀懂圖、公式與資料，避免常見的單位錯誤。",
+      "tags": [
+        "用經濟學思考",
+        "math and units"
+      ],
+      "example": "03_units_and_rates.py"
+    },
+    {
+      "id": "06-learning-path-and-environment",
+      "group": "foundations",
+      "title": "學習路線、Python 與模型實驗規則",
+      "summary": "從零安排閱讀與實作，清楚區分理論、虛構情境、官方定義與真實證據。",
+      "tags": [
+        "用經濟學思考",
+        "learning path and environment"
+      ]
+    },
+    {
+      "id": "07-supply-demand-equilibrium",
+      "group": "markets",
+      "title": "需求、供給與競爭均衡",
+      "summary": "從願付價格與邊際成本推導市場交會，讀懂均衡是什麼假設下的結果。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "supply demand equilibrium"
+      ],
+      "example": "04_supply_and_demand.py"
+    },
+    {
+      "id": "08-shifts-and-comparative-statics",
+      "group": "markets",
+      "title": "曲線位移與沿線移動：怎麼判斷衝擊",
+      "summary": "用四步法分析所得、技術、投入成本與預期，不把所有變化都叫需求增加。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "shifts and comparative statics"
+      ]
+    },
+    {
+      "id": "09-elasticity",
+      "group": "markets",
+      "title": "彈性：用百分比衡量反應",
+      "summary": "從點彈性與中點彈性比較需求反應，分清斜率、單位與局部變化。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "elasticity"
+      ],
+      "example": "05_elasticity.py"
+    },
+    {
+      "id": "10-revenue-and-other-elasticities",
+      "group": "markets",
+      "title": "總收益、所得彈性與交叉彈性",
+      "summary": "將彈性轉成可推理的價格反應，同時保留偏好與市場界定的限制。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "revenue and other elasticities"
+      ]
+    },
+    {
+      "id": "11-tax-incidence",
+      "group": "markets",
+      "title": "從量稅、稅負歸宿與無謂損失",
+      "summary": "將買方價格、賣方實收、稅收與福利分開計算，辨識法律義務與經濟負擔。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "tax incidence"
+      ],
+      "example": "06_tax_and_controls.py"
+    },
+    {
+      "id": "12-price-controls",
+      "group": "markets",
+      "title": "價格上限、下限與配給：成交量之外的代價",
+      "summary": "比較約束是否生效、短缺過剩與配給機制，不把受益者平均化。",
+      "tags": [
+        "供需、彈性與市場干預",
+        "price controls"
+      ]
+    },
+    {
+      "id": "13-budget-sets",
+      "group": "consumers",
+      "title": "預算限制與可行選擇",
+      "summary": "把價格、所得與機會成本放到同一條線，理解補助與配給如何改變可行集合。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "budget sets"
+      ],
+      "example": "07_consumer_budget.py"
+    },
+    {
+      "id": "14-preferences-and-utility",
+      "group": "consumers",
+      "title": "偏好、無異曲線與效用的意義",
+      "summary": "理解完整性、遞移性與邊際替代率，避免把效用當成可跨人相加的幸福計。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "preferences and utility"
+      ]
+    },
+    {
+      "id": "15-consumer-optimum",
+      "group": "consumers",
+      "title": "消費者最適、需求與補償變動",
+      "summary": "推導Cobb–Douglas需求，再以固定效用的補償實驗銜接所得與替代效果。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "consumer optimum"
+      ],
+      "example": "08_hicks_decomposition.py"
+    },
+    {
+      "id": "16-income-substitution-effects",
+      "group": "consumers",
+      "title": "所得效果、替代效果與Giffen財",
+      "summary": "用補償需求分解價格反應，說清正常財、劣等財與需求例外。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "income substitution effects"
+      ]
+    },
+    {
+      "id": "17-labor-leisure-choice",
+      "group": "consumers",
+      "title": "工作與休閒：工資上升為何不一定多工作",
+      "summary": "將休閒視為有機會成本的選擇，理解工資變化的兩個方向。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "labor leisure choice"
+      ],
+      "example": "09_labor_leisure.py"
+    },
+    {
+      "id": "18-intertemporal-and-risk",
+      "group": "consumers",
+      "title": "跨期消費、儲蓄與風險",
+      "summary": "用現值預算與期望效用分析借貸及保險，分清機會成本與不確定。",
+      "tags": [
+        "消費者選擇與跨期決策",
+        "intertemporal and risk"
+      ]
+    },
+    {
+      "id": "19-production-functions",
+      "group": "producers",
+      "title": "生產函數與技術：投入如何變成產出",
+      "summary": "用生產函數區分技術、投入與效率，開始建立企業決策。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "production functions"
+      ],
+      "example": "10_production.py"
+    },
+    {
+      "id": "20-marginal-and-average-product",
+      "group": "producers",
+      "title": "邊際報酬、平均生產力與規模報酬",
+      "summary": "用不同的變動實驗分清短期遞減報酬與長期規模效果。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "marginal and average product"
+      ]
+    },
+    {
+      "id": "21-cost-functions",
+      "group": "producers",
+      "title": "固定、變動、平均與邊際成本",
+      "summary": "從一份可計算成本函數，判斷生產、停工與利潤。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "cost functions"
+      ],
+      "example": "11_cost_curves.py"
+    },
+    {
+      "id": "22-cost-minimization-and-scale",
+      "group": "producers",
+      "title": "成本最小化、等產量與長期規模",
+      "summary": "將投入技術和投入價格接起來，區分技術效率與經濟效率。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "cost minimization and scale"
+      ]
+    },
+    {
+      "id": "23-perfect-competition",
+      "group": "producers",
+      "title": "完全競爭：價格接受者的供給決策",
+      "summary": "從利潤函數推到P=MC，再補上停工與可行條件。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "perfect competition"
+      ],
+      "example": "12_competition_and_exit.py"
+    },
+    {
+      "id": "24-entry-exit-and-long-run",
+      "group": "producers",
+      "title": "進入、退出與長期均衡",
+      "summary": "解釋零經濟利潤、正常報酬與競爭調整，不把它們誤讀成沒有收入。",
+      "tags": [
+        "生產、成本與完全競爭",
+        "entry exit and long run"
+      ]
+    },
+    {
+      "id": "25-monopoly",
+      "group": "strategy",
+      "title": "獨占：邊際收益、加價與福利",
+      "summary": "以同一需求與成本比較獨占和競爭，算出價格、產量與無謂損失。",
+      "tags": [
+        "市場力量與賽局",
+        "monopoly"
+      ],
+      "example": "13_monopoly.py"
+    },
+    {
+      "id": "26-price-discrimination",
+      "group": "strategy",
+      "title": "差別取價、兩部費率與獨占性競爭",
+      "summary": "比較定價工具如何分配剩餘，並檢查套利、資訊與市場區隔條件。",
+      "tags": [
+        "市場力量與賽局",
+        "price discrimination"
+      ]
+    },
+    {
+      "id": "27-cournot-and-bertrand",
+      "group": "strategy",
+      "title": "寡占：Cournot數量競爭與Bertrand價格競爭",
+      "summary": "讓企業考慮對手的反應，理解市場結構如何改變均衡。",
+      "tags": [
+        "市場力量與賽局",
+        "cournot and bertrand"
+      ],
+      "example": "14_cournot.py"
+    },
+    {
+      "id": "28-game-representation",
+      "group": "strategy",
+      "title": "賽局的元素、最佳回應與優勢策略",
+      "summary": "先學會讀報酬矩陣，再判斷均衡，而非把所有互動都叫零和。",
+      "tags": [
+        "市場力量與賽局",
+        "game representation"
+      ]
+    },
+    {
+      "id": "29-nash-and-mixed-strategies",
+      "group": "strategy",
+      "title": "Nash均衡、混合策略與多重均衡",
+      "summary": "實際找出純策略與內部混合解，理解隨機化與相互無差異的條件。",
+      "tags": [
+        "市場力量與賽局",
+        "nash and mixed strategies"
+      ],
+      "example": "15_games.py"
+    },
+    {
+      "id": "30-repeated-games-and-platforms",
+      "group": "strategy",
+      "title": "重複互動、承諾與平台經濟",
+      "summary": "把一次賽局放進時間與網路，辨識合作、串通與雙邊市場的條件。",
+      "tags": [
+        "市場力量與賽局",
+        "repeated games and platforms"
+      ]
+    },
+    {
+      "id": "31-welfare-and-efficiency",
+      "group": "public",
+      "title": "福利、剩餘與效率：市場結果如何評估",
+      "summary": "區分消費者剩餘、總剩餘、Pareto與分配，建立政策比較基準。",
+      "tags": [
+        "市場失靈與公共政策",
+        "welfare and efficiency"
+      ],
+      "example": "16_welfare.py"
+    },
+    {
+      "id": "32-public-goods-and-commons",
+      "group": "public",
+      "title": "公共財、共有資源與搭便車",
+      "summary": "以排他性與敵對性分類，理解公共提供與共同治理的不同問題。",
+      "tags": [
+        "市場失靈與公共政策",
+        "public goods and commons"
+      ]
+    },
+    {
+      "id": "33-externalities-and-pigou",
+      "group": "public",
+      "title": "外部性、社會成本與Pigou稅",
+      "summary": "把沒有反映在交易價格的損害納入，說明矯正稅為何可能提高福利。",
+      "tags": [
+        "市場失靈與公共政策",
+        "externalities and pigou"
+      ],
+      "example": "17_externalities.py"
+    },
+    {
+      "id": "34-property-rights-and-coase",
+      "group": "public",
+      "title": "產權、談判與Coase：什麼條件下能內部化",
+      "summary": "理解明確權利與低交易成本的作用，同時保留資訊、分配與集體行動限制。",
+      "tags": [
+        "市場失靈與公共政策",
+        "property rights and coase"
+      ]
+    },
+    {
+      "id": "35-carbon-and-quantity-price",
+      "group": "public",
+      "title": "碳定價、總量管制與減排成本",
+      "summary": "用不同邊際減排成本的廠商比較統一標準、排放交易與價格工具。",
+      "tags": [
+        "市場失靈與公共政策",
+        "carbon and quantity price"
+      ],
+      "example": "18_abatement.py"
+    },
+    {
+      "id": "36-regulation-and-distribution",
+      "group": "public",
+      "title": "監理、政府失靈與分配敏感的政策設計",
+      "summary": "同時檢查市場失靈與執行能力，把政策目標、工具和評估分開。",
+      "tags": [
+        "市場失靈與公共政策",
+        "regulation and distribution"
+      ]
+    },
+    {
+      "id": "37-labor-demand-and-monopsony",
+      "group": "institutions",
+      "title": "勞動需求、工資與買方獨占",
+      "summary": "從生產力與市場結構理解工資，不把競爭模型當所有就業現象的結論。",
+      "tags": [
+        "勞動、資訊與行為",
+        "labor demand and monopsony"
+      ],
+      "example": "19_labor_market.py"
+    },
+    {
+      "id": "38-inequality-and-poverty",
+      "group": "institutions",
+      "title": "所得分配、財富、不平等與貧窮",
+      "summary": "分清所得與財富，讀懂Lorenz、Gini與貧窮指標的資訊和盲點。",
+      "tags": [
+        "勞動、資訊與行為",
+        "inequality and poverty"
+      ]
+    },
+    {
+      "id": "39-risk-and-adverse-selection",
+      "group": "institutions",
+      "title": "風險、保險與逆選擇",
+      "summary": "從期望效用到保險市場，分清事前隱藏資訊與契約後行為。",
+      "tags": [
+        "勞動、資訊與行為",
+        "risk and adverse selection"
+      ],
+      "example": "20_insurance.py"
+    },
+    {
+      "id": "40-principal-agent-and-signals",
+      "group": "institutions",
+      "title": "委託代理、道德風險與訊號",
+      "summary": "讓不可觀察努力與品質進入契約，理解績效指標為何會改變行為。",
+      "tags": [
+        "勞動、資訊與行為",
+        "principal agent and signals"
+      ]
+    },
+    {
+      "id": "41-behavioral-economics",
+      "group": "institutions",
+      "title": "行為經濟學：有限理性、參考點與現在偏誤",
+      "summary": "在標準選擇模型外加入可檢驗機制，不把每次偏離都簡單貼標籤。",
+      "tags": [
+        "勞動、資訊與行為",
+        "behavioral economics"
+      ],
+      "example": "21_behavioral_discounting.py"
+    },
+    {
+      "id": "42-micro-integration",
+      "group": "institutions",
+      "title": "個體篇整合練習：模型變了，結論也可能變",
+      "summary": "把市場、選擇、制度與證據放進同一份政策問題，練習說明適用條件。",
+      "tags": [
+        "勞動、資訊與行為",
+        "micro integration"
+      ]
+    },
+    {
+      "id": "43-gdp-and-value-added",
+      "group": "measurement",
+      "title": "GDP、最終產出與附加價值",
+      "summary": "從境內生產與期間流量開始，避免把交易、資產與福利混在一起。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "gdp and value added"
+      ],
+      "example": "22_gdp_accounting.py"
+    },
+    {
+      "id": "44-national-accounts-and-standards",
+      "group": "measurement",
+      "title": "國民帳、GNI與2025新統計標準",
+      "summary": "區分境內與居民所得、存量流量，以及標準發布和資料實作的時間差。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "national accounts and standards"
+      ]
+    },
+    {
+      "id": "45-nominal-real-and-indexes",
+      "group": "measurement",
+      "title": "名目、實質、GDP平減與CPI",
+      "summary": "用同一份虛構商品表計算價格與數量變動，分清不同指數的權重。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "nominal real and indexes"
+      ],
+      "example": "23_price_indexes.py"
+    },
+    {
+      "id": "46-inflation-and-living-costs",
+      "group": "measurement",
+      "title": "通膨、生活成本與住宅：讀物價新聞",
+      "summary": "區分通膨下降、物價下降與個人感受，不將單一漲價當整體持續通膨。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "inflation and living costs"
+      ]
+    },
+    {
+      "id": "47-unemployment-and-participation",
+      "group": "measurement",
+      "title": "失業率、勞參率與就業人口比",
+      "summary": "用正確分母讀勞動市場，觀察離開勞動力如何改變失業率。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "unemployment and participation"
+      ],
+      "example": "24_labor_statistics.py"
+    },
+    {
+      "id": "48-macro-data-reading",
+      "group": "measurement",
+      "title": "總體資料閱讀：頻率、季調、年率與修訂",
+      "summary": "建立可比資料清單，避免把不同口徑放在同一張圖得出錯誤故事。",
+      "tags": [
+        "總體經濟怎麼測量",
+        "macro data reading"
+      ]
+    },
+    {
+      "id": "49-long-run-growth",
+      "group": "growth",
+      "title": "長期成長、生活水準與複利",
+      "summary": "先比較實質人均與生產力，再分辨短期反彈和長期成長。",
+      "tags": [
+        "長期成長與發展",
+        "long run growth"
+      ],
+      "example": "25_growth_and_compounding.py"
+    },
+    {
+      "id": "50-productivity-and-human-capital",
+      "group": "growth",
+      "title": "生產力、資本深化與人力資本",
+      "summary": "用成長會計區分投入與殘差，理解教育、健康與組織的角色。",
+      "tags": [
+        "長期成長與發展",
+        "productivity and human capital"
+      ]
+    },
+    {
+      "id": "51-solow-model",
+      "group": "growth",
+      "title": "Solow模型：儲蓄、折舊與資本動態",
+      "summary": "實際迭代每有效勞工資本，區分水準效果與持續成長來源。",
+      "tags": [
+        "長期成長與發展",
+        "solow model"
+      ],
+      "example": "26_solow_transition.py"
+    },
+    {
+      "id": "52-golden-rule-and-endogenous-growth",
+      "group": "growth",
+      "title": "黃金律、消費與內生成長",
+      "summary": "從最大化穩態消費看儲蓄取捨，再介紹知識與創新的持續性。",
+      "tags": [
+        "長期成長與發展",
+        "golden rule and endogenous growth"
+      ]
+    },
+    {
+      "id": "53-development-and-institutions",
+      "group": "growth",
+      "title": "經濟發展、制度與成長證據",
+      "summary": "用結構轉型與制度理解收入差距，避免由單一相關推出普遍處方。",
+      "tags": [
+        "長期成長與發展",
+        "development and institutions"
+      ],
+      "example": "27_growth_accounting.py"
+    },
+    {
+      "id": "54-sustainability-and-demography",
+      "group": "growth",
+      "title": "成長、人口與環境限制",
+      "summary": "將人口、資源與污染放進長期問題，分清相對脫鉤、絕對脫鉤與不確定。",
+      "tags": [
+        "長期成長與發展",
+        "sustainability and demography"
+      ]
+    },
+    {
+      "id": "55-money-and-banks",
+      "group": "money",
+      "title": "貨幣、存款與銀行：先看資產負債表",
+      "summary": "分清現金、準備金與銀行存款，以配對分錄理解放款創造。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "money and banks"
+      ],
+      "example": "28_bank_balance_sheet.py"
+    },
+    {
+      "id": "56-credit-and-balance-sheets",
+      "group": "money",
+      "title": "放款、還本、結算與信用風險",
+      "summary": "走完銀行交易的後半段，分清存款消滅、跨行準備與資本損失。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "credit and balance sheets"
+      ]
+    },
+    {
+      "id": "57-nominal-real-interest",
+      "group": "money",
+      "title": "名目、實質利率與Fisher關係",
+      "summary": "保持價格與現金流口徑一致，區分事前預期和事後實現。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "nominal real interest"
+      ],
+      "example": "29_fisher_rates.py"
+    },
+    {
+      "id": "58-central-bank-operations",
+      "group": "money",
+      "title": "央行操作、政策利率與傳導",
+      "summary": "以當代利率與流動性機制為主，區分不同國家的工具和市場利率。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "central bank operations"
+      ]
+    },
+    {
+      "id": "59-asset-prices-and-discounting",
+      "group": "money",
+      "title": "資產價格、債券與折現",
+      "summary": "從固定現金流算現值與存續期間，理解利率風險而不跳到投資建議。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "asset prices and discounting"
+      ],
+      "example": "30_bond_prices.py"
+    },
+    {
+      "id": "60-financial-stability",
+      "group": "money",
+      "title": "槓桿、危機與金融穩定",
+      "summary": "辨識資產負債表放大機制與政策取捨，不將危機簡化成單一利率故事。",
+      "tags": [
+        "貨幣、金融與銀行",
+        "financial stability"
+      ]
+    },
+    {
+      "id": "61-business-cycles-and-adas",
+      "group": "fluctuations",
+      "title": "景氣、產出缺口與AD–AS",
+      "summary": "從需求與供給衝擊比較價量，分清總體價格水準與單一商品價格。",
+      "tags": [
+        "景氣、需求與通膨",
+        "business cycles and adas"
+      ],
+      "example": "31_ad_as.py"
+    },
+    {
+      "id": "62-keynesian-and-classical",
+      "group": "fluctuations",
+      "title": "Keynesian與古典基準：時間尺度與假設",
+      "summary": "比較價格黏性、工資調整與長期供給，不把不同模型當不可並存的口號。",
+      "tags": [
+        "景氣、需求與通膨",
+        "keynesian and classical"
+      ]
+    },
+    {
+      "id": "63-expenditure-multiplier",
+      "group": "fluctuations",
+      "title": "支出乘數、租稅與進口漏出",
+      "summary": "從商品市場恆等與消費規則求均衡，清楚說出乘數依賴什麼。",
+      "tags": [
+        "景氣、需求與通膨",
+        "expenditure multiplier"
+      ],
+      "example": "32_multiplier.py"
+    },
+    {
+      "id": "64-is-lm-to-is-mp",
+      "group": "fluctuations",
+      "title": "IS–LM與IS–MP：利率如何進入需求",
+      "summary": "讀懂傳統固定貨幣量圖，同時銜接當代利率政策表示法。",
+      "tags": [
+        "景氣、需求與通膨",
+        "is lm to is mp"
+      ]
+    },
+    {
+      "id": "65-is-mp-pc",
+      "group": "fluctuations",
+      "title": "IS–MP–PC：聯立需求、政策與通膨",
+      "summary": "用三個明確方程解出一致的產出缺口、實質利率與通膨情境。",
+      "tags": [
+        "景氣、需求與通膨",
+        "is mp pc"
+      ],
+      "example": "33_is_mp_pc.py"
+    },
+    {
+      "id": "66-expectations-and-phillips",
+      "group": "fluctuations",
+      "title": "通膨預期與Phillips曲線",
+      "summary": "區分短期條件關係、供給衝擊與長期預期調整，不把歷史相關當固定選單。",
+      "tags": [
+        "景氣、需求與通膨",
+        "expectations and phillips"
+      ]
+    },
+    {
+      "id": "67-fiscal-policy",
+      "group": "policy",
+      "title": "財政政策：支出、租稅與需求",
+      "summary": "把簡化乘數放回融資、時序與央行反應，學會比較不同政策情境。",
+      "tags": [
+        "財政與貨幣政策",
+        "fiscal policy"
+      ],
+      "example": "34_fiscal_scenarios.py"
+    },
+    {
+      "id": "68-tax-design-and-public-spending",
+      "group": "policy",
+      "title": "稅制、公共支出與行為反應",
+      "summary": "分清平均與邊際稅率，評估效率、分配、稅基與行政成本。",
+      "tags": [
+        "財政與貨幣政策",
+        "tax design and public spending"
+      ]
+    },
+    {
+      "id": "69-debt-dynamics",
+      "group": "policy",
+      "title": "赤字、債務與利率成長差",
+      "summary": "以一致名目口徑追蹤淨債務比，分清初級收支與利息。",
+      "tags": [
+        "財政與貨幣政策",
+        "debt dynamics"
+      ],
+      "example": "35_debt_dynamics.py"
+    },
+    {
+      "id": "70-stabilizers-and-rules",
+      "group": "policy",
+      "title": "自動穩定器、裁量政策與財政規則",
+      "summary": "比較會隨景氣自行反應的制度與臨時措施，理解規則和彈性的取捨。",
+      "tags": [
+        "財政與貨幣政策",
+        "stabilizers and rules"
+      ]
+    },
+    {
+      "id": "71-monetary-rules",
+      "group": "policy",
+      "title": "貨幣政策規則、通膨目標與溝通",
+      "summary": "用規則作透明的反應基準，同時說明自然利率、缺口與預期的不確定。",
+      "tags": [
+        "財政與貨幣政策",
+        "monetary rules"
+      ],
+      "example": "36_policy_tradeoffs.py"
+    },
+    {
+      "id": "72-policy-mix-and-evaluation",
+      "group": "policy",
+      "title": "政策組合、衝擊診斷與不確定性",
+      "summary": "把需求、供給、金融和分配放到同一張決策表，不用單一工具回答所有問題。",
+      "tags": [
+        "財政與貨幣政策",
+        "policy mix and evaluation"
+      ]
+    },
+    {
+      "id": "73-comparative-advantage",
+      "group": "international",
+      "title": "比較利益、專業化與貿易利益",
+      "summary": "以機會成本而非絕對速度判斷分工，同時檢查交易量與分配。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "comparative advantage"
+      ],
+      "example": "37_comparative_advantage.py"
+    },
+    {
+      "id": "74-trade-and-distribution",
+      "group": "international",
+      "title": "要素、產業調整與貿易分配",
+      "summary": "比較短期特定要素與長期可移動要素，理解總收益背後的贏家與輸家。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "trade and distribution"
+      ]
+    },
+    {
+      "id": "75-tariffs-and-trade-policy",
+      "group": "international",
+      "title": "關稅、配額與小國福利",
+      "summary": "算出消費、生產、收入與兩個扭曲，再說清大國與報復的不同條件。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "tariffs and trade policy"
+      ],
+      "example": "38_tariff.py"
+    },
+    {
+      "id": "76-exchange-rates-and-parity",
+      "group": "international",
+      "title": "匯率報價、實質匯率與利率平價",
+      "summary": "先寫分子分母，再談升貶值、購買力和遠期，不把條件關係當預測。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "exchange rates and parity"
+      ]
+    },
+    {
+      "id": "77-balance-of-payments",
+      "group": "international",
+      "title": "國際收支、金融帳與國際投資部位",
+      "summary": "用一致符號對帳，分清交易流量、資產存量與統計差額。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "balance of payments"
+      ],
+      "example": "39_exchange_and_bop.py"
+    },
+    {
+      "id": "78-open-economy-trilemma",
+      "group": "international",
+      "title": "匯率制度、三難與開放經濟政策",
+      "summary": "連結固定匯率、資本移動與貨幣自主，保留制度連續性和金融風險。",
+      "tags": [
+        "國際貿易與開放經濟",
+        "open economy trilemma"
+      ]
+    },
+    {
+      "id": "79-questions-and-identification",
+      "group": "evidence",
+      "title": "經濟證據：描述、預測與因果",
+      "summary": "先決定要回答什麼，再選資料與方法，避免把相關係數當政策效果。",
+      "tags": [
+        "資料、證據與整合專題",
+        "questions and identification"
+      ],
+      "example": "40_evidence_and_identification.py"
+    },
+    {
+      "id": "80-ols-did-and-limitations",
+      "group": "evidence",
+      "title": "OLS與差中差：算式之外的識別條件",
+      "summary": "讀懂簡單迴歸與2×2 DID，並列出它們不能自動解決的問題。",
+      "tags": [
+        "資料、證據與整合專題",
+        "ols did and limitations"
+      ]
+    },
+    {
+      "id": "81-vintages-and-revisions",
+      "group": "evidence",
+      "title": "資料版本、修訂與前視偏差",
+      "summary": "實作as-of選取，重現某個決策日當時能知道的資訊。",
+      "tags": [
+        "資料、證據與整合專題",
+        "vintages and revisions"
+      ],
+      "example": "41_data_vintages.py"
+    },
+    {
+      "id": "82-data-quality-and-official-sources",
+      "group": "evidence",
+      "title": "官方資料、資料品質與可重現分析",
+      "summary": "把定義、發布與來源放進資料契約，為真實經濟研究建立入口。",
+      "tags": [
+        "資料、證據與整合專題",
+        "data quality and official sources"
+      ]
+    },
+    {
+      "id": "83-policy-capstone",
+      "group": "evidence",
+      "title": "完整專題：一份可檢查的政策情境報告",
+      "summary": "輸出設定、敏感度CSV、獨立SVG與JSON，讓假設、算術和限制一起交付。",
+      "tags": [
+        "資料、證據與整合專題",
+        "policy capstone"
+      ],
+      "example": "42_policy_report.py"
+    },
+    {
+      "id": "84-exercises-and-references",
+      "group": "evidence",
+      "title": "綜合習題、答案與版本速查",
+      "summary": "整合個體、總體與資料，說明這門課已完成什麼，以及如何繼續深化。",
+      "tags": [
+        "資料、證據與整合專題",
+        "exercises and references"
+      ]
+    }
+  ]
+}

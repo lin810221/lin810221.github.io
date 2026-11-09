@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有十個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有十三個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -73,6 +73,24 @@ LearningNote/
 │   ├── assets/overview.js     7 個確定性互動實驗
 │   ├── examples/              32 個入口、實際引擎、虛構資料與驗收
 │   └── examples.zip           含依賴鎖版與資料的完整下載包
+├── exercise-science/          運動科學與訓練原理：動作、適應、安排與觀察
+│   ├── index.html
+│   ├── course.json
+│   ├── chapters/              96份可編輯課文
+│   ├── assets/                課程資料與12個互動實驗
+│   └── examples/              48份離線Python範例、虛構資料與測試
+├── nutrition/                 營養學與飲食科學：原理、生活、證據與食安
+│   ├── index.html
+│   ├── course.json
+│   ├── chapters/              96份可編輯課文
+│   ├── assets/                離線課程資料與12個互動實驗
+│   └── examples/              48份Python範例、虛構資料、模型與測試
+├── economics/                 經濟學：個體、總體、國際與證據
+│   ├── course.json            14章、84個單元
+│   ├── chapters/              原創教材、公式、練習與解答
+│   ├── assets/overview.js     10個互動數值／圖形實驗
+│   ├── examples/              42個入口、模型、虛構CSV與驗收
+│   └── examples.zip           可獨立執行的完整下載包
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -163,3 +181,36 @@ python tools/validate.py
 ```
 
 實測路線為 APSW／SQLite FTS5、Faiss CPU 與 Qdrant Local；Elasticsearch 預設記錄真實 SDK 序列化，PostgreSQL 預設檢查參數化 SQL。遠端服務、RLS、容器、服務快照與叢集效能需另驗證。人工八維特徵不是語意模型；預設不連線、不下載模型。與 RAG／Embedding 的重疊以必要回顧和交叉閱讀處理，本課主線聚焦索引、儲存、更新與維運。
+
+## 經濟學
+
+入口：[economics/index.html](economics/index.html)。[執行與模型說明](economics/examples/README.md)。Python 3.15.2、僅標準函式庫，不需安裝第三方套件；閱讀網站不需Python。從根目錄執行：
+
+```powershell
+py -3.15 -m unittest discover -s economics/examples -p test_examples.py -v
+py -3.15 economics/examples/42_policy_report.py --output my-economics-report
+python tools/build.py economics
+python tools/validate.py
+```
+
+涵蓋個體／總體、賽局、資訊、行為、貿易、貨幣金融及政策情境。全部CSV為虛構，預設不下載官方資料；模型算術不冒充真實預測或因果估計。2025 SNA／BPM7與各國資料採用過渡分開說明。「課內進階內容」屬同門課；其他獨立課程明確標示「跨課閱讀」。
+
+## 營養學與飲食科學
+
+入口：[nutrition/index.html](nutrition/index.html)。[執行、來源與資料限制](nutrition/examples/README.md)。Python 3.15.2、標準函式庫；網頁閱讀不需Python。台灣正式指南與美國換算分開標示，草案不取代現行規範。食物與部分日誌為明示虛構，計算不產生個人診斷、需要量或安全判決。
+
+```powershell
+py -3.15 -m unittest discover -s nutrition/examples -p test_examples.py -v
+py -3.15 nutrition/examples/48_complete_report.py --output my-nutrition-report
+python tools/build.py nutrition
+```
+
+## 運動科學與訓練原理
+
+入口：[exercise-science/index.html](exercise-science/index.html)。[執行、模型與資料說明](exercise-science/examples/README.md)。2026-11-09查核ACSM2026阻力訓練立場、WHO2020正式指南與2026說明頁；發布年與查核日分開。Python3.15.2、標準函式庫，閱讀不需Python。範例明示虛構，不產生個人課表、醫療許可或ACWR傷害安全區。
+
+```powershell
+py -3.15 -m unittest discover -s exercise-science/examples -p test_examples.py -v
+py -3.15 exercise-science/examples/48_complete_project.py --output my-exercise-report
+python tools/build.py exercise-science
+```

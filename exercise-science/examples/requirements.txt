@@ -1,0 +1,2 @@
+# Verified latest stable runtime on 2026-11-09: CPython 3.15.2.
+# Standard library only; no third-party packages or live requests.

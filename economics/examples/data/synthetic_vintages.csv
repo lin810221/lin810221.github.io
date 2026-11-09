@@ -1,0 +1,8 @@
+series,period_end,release_date,value,unit,adjustment
+synthetic_real_output,2025-03-31,2025-05-01,100,index,synthetic_SA
+synthetic_real_output,2025-03-31,2025-08-01,101,index,synthetic_SA
+synthetic_real_output,2025-06-30,2025-08-01,102,index,synthetic_SA
+synthetic_real_output,2025-06-30,2025-11-01,100,index,synthetic_SA
+synthetic_real_output,2025-09-30,2025-11-01,104,index,synthetic_SA
+synthetic_real_output,2025-09-30,2026-02-01,103,index,synthetic_SA
+synthetic_real_output,2025-12-31,2026-02-01,105,index,synthetic_SA

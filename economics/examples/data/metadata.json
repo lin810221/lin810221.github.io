@@ -1,0 +1,8 @@
+{
+  "synthetic": true,
+  "description": "Fictional teaching economy. These are not Taiwan or any other country's observations.",
+  "checked": "2026-11-09",
+  "basket": {"currency": "teaching tokens", "quantities": "fictional final goods", "base_year": "2024", "method": "fixed-base demonstration, not official chain-linking"},
+  "vintages": {"unit": "index", "adjustment": "synthetic_SA", "base": "fictional", "release_dates": "synthetic", "revisions": "intentional for look-ahead-bias exercise"},
+  "policy_model": {"demand": "P=100-Q", "supply": "P=20+Q", "tax_unit": "tokens per good", "scope": "partial-equilibrium competitive model, no externalities", "not_calibrated": true}
+}

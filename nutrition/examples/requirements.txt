@@ -1,0 +1,2 @@
+# Verified runtime: CPython 3.15.2 (2026-11-09).
+# Standard library only. No third-party requirements or network calls.

@@ -1,0 +1,1118 @@
+{
+  "slug": "exercise-science",
+  "title": "運動科學與訓練原理完整教學",
+  "shortTitle": "運動科學與訓練原理",
+  "updated": "2026-11-09",
+  "baseline": "ACSM 2026 / WHO 2020 / Python 3.15.2",
+  "footerLabel": "EXERCISE SCIENCE · MOVE, ADAPT & UNDERSTAND",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 RIR、力矩、肌肥大、FITT、配速、並行訓練或ACWR。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "運動科學的問題與證據",
+      "description": "健康、表現、指南、篩檢與資料語言。"
+    },
+    {
+      "id": "mechanics",
+      "number": "02",
+      "title": "動作與生物力學",
+      "description": "關節、力、力矩、功率與動作分析。"
+    },
+    {
+      "id": "muscle",
+      "number": "03",
+      "title": "肌肉與神經適應",
+      "description": "收縮、肌纖維、招募、力量速度與疲勞。"
+    },
+    {
+      "id": "physiology",
+      "number": "04",
+      "title": "能量系統與心肺生理",
+      "description": "ATP、氧運輸、代謝、閾值與耗能估計。"
+    },
+    {
+      "id": "assessment",
+      "number": "05",
+      "title": "測量與適能評估",
+      "description": "信度、測試條件、肌力、耐力與結果判讀。"
+    },
+    {
+      "id": "resistance",
+      "number": "06",
+      "title": "阻力訓練的基本工程",
+      "description": "動作、負荷、組次、休息、技術與選擇。"
+    },
+    {
+      "id": "hypertrophy",
+      "number": "07",
+      "title": "肌肥大與訓練劑量",
+      "description": "肌肉刺激、組數、頻率、力竭與個別差異。"
+    },
+    {
+      "id": "strengthpower",
+      "number": "08",
+      "title": "肌力、功率與速度",
+      "description": "最大力量、爆發力、衝量、跳躍與變向。"
+    },
+    {
+      "id": "endurance",
+      "number": "09",
+      "title": "有氧與耐力訓練",
+      "description": "強度語言、配速、心率、持續與間歇。"
+    },
+    {
+      "id": "programming",
+      "number": "10",
+      "title": "課表設計與漸進",
+      "description": "FITT、目標、超負荷、自我調節與週期化。"
+    },
+    {
+      "id": "concurrent",
+      "number": "11",
+      "title": "混合訓練與運動專項",
+      "description": "並行、順序、循環、團隊與競賽需求。"
+    },
+    {
+      "id": "movement",
+      "number": "12",
+      "title": "活動度、平衡與技能",
+      "description": "柔軟度、穩定、控制、學習與遷移。"
+    },
+    {
+      "id": "monitoring",
+      "number": "13",
+      "title": "紀錄、疲勞與恢復",
+      "description": "內外負荷、缺值、DOMS、平滑與ACWR限制。"
+    },
+    {
+      "id": "populations",
+      "number": "14",
+      "title": "生命階段與可及性",
+      "description": "初學、兒少、長者、孕哺、身心障礙與疾病背景。"
+    },
+    {
+      "id": "risk",
+      "number": "15",
+      "title": "風險、環境與支持條件",
+      "description": "篩檢、疼痛、熱、空污、補水與營養回顧。"
+    },
+    {
+      "id": "practice",
+      "number": "16",
+      "title": "整合案例與完整專題",
+      "description": "證據、計畫審核、資料報告、排錯與解答。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-exercise-science-map",
+      "group": "foundations",
+      "title": "運動科學在問什麼：健康、能力與表現",
+      "summary": "建立全課地圖，分開身體活動、運動、訓練和競技表現。",
+      "tags": [
+        "運動科學的問題與證據",
+        "exercise science map"
+      ],
+      "example": "01_first_training_record.py"
+    },
+    {
+      "id": "02-goals-and-specificity",
+      "group": "foundations",
+      "title": "目標、特異性與個別差異",
+      "summary": "把想變強轉成可觀察問題，理解適應和測試為何需要對上任務。",
+      "tags": [
+        "運動科學的問題與證據",
+        "goals and specificity"
+      ]
+    },
+    {
+      "id": "03-guidelines-and-editions",
+      "group": "foundations",
+      "title": "指南與最新版本：WHO和ACSM各回答什麼",
+      "summary": "以2026查核基線建立主線，分清發布年、查核日和研究截止日。",
+      "tags": [
+        "運動科學的問題與證據",
+        "guidelines and editions"
+      ],
+      "example": "02_guideline_context.py"
+    },
+    {
+      "id": "04-evidence-and-causality",
+      "group": "foundations",
+      "title": "研究證據：平均效果、機制與個人應用",
+      "summary": "建立判讀框架，不把單篇研究、顯著性或最新年份當萬用答案。",
+      "tags": [
+        "運動科學的問題與證據",
+        "evidence and causality"
+      ]
+    },
+    {
+      "id": "05-records-and-units",
+      "group": "foundations",
+      "title": "訓練資料：單位、量表、零與未知",
+      "summary": "建立後續範例的資料契約，防止算對數字卻用錯概念。",
+      "tags": [
+        "運動科學的問題與證據",
+        "records and units"
+      ],
+      "example": "03_units_and_missing.py"
+    },
+    {
+      "id": "06-learning-and-screening",
+      "group": "foundations",
+      "title": "學習路線、運動前資訊與專業分工",
+      "summary": "知道教材、教練、測試和醫療評估各能處理什麼問題。",
+      "tags": [
+        "運動科學的問題與證據",
+        "learning and screening"
+      ]
+    },
+    {
+      "id": "07-movement-map",
+      "group": "mechanics",
+      "title": "動作地圖：關節、平面與基本模式",
+      "summary": "用結構語言描述動作，不以單一外觀判定每個人的最佳姿勢。",
+      "tags": [
+        "動作與生物力學",
+        "movement map"
+      ],
+      "example": "04_force_and_angle.py"
+    },
+    {
+      "id": "08-joints-and-tissues",
+      "group": "mechanics",
+      "title": "關節、肌腱與組織負荷：能力和任務一起看",
+      "summary": "理解活動空間、組織受力與漸進適應，不追求人人相同的角度。",
+      "tags": [
+        "動作與生物力學",
+        "joints and tissues"
+      ]
+    },
+    {
+      "id": "09-force-and-torque",
+      "group": "mechanics",
+      "title": "力、力臂與力矩：同重量為何難度不同",
+      "summary": "從向量與垂直距離推導力矩，學會清楚標單位。",
+      "tags": [
+        "動作與生物力學",
+        "force and torque"
+      ],
+      "example": "05_lever_arm.py"
+    },
+    {
+      "id": "10-levers-and-equilibrium",
+      "group": "mechanics",
+      "title": "槓桿、平衡與外在需求",
+      "summary": "把力矩放回簡化模型，分開靜態與動態問題。",
+      "tags": [
+        "動作與生物力學",
+        "levers and equilibrium"
+      ]
+    },
+    {
+      "id": "11-work-and-power",
+      "group": "mechanics",
+      "title": "機械功、功率與代謝能量",
+      "summary": "知道kg-reps、J、W和kcal不能直接互換。",
+      "tags": [
+        "動作與生物力學",
+        "work and power"
+      ],
+      "example": "06_work_and_power.py"
+    },
+    {
+      "id": "12-motion-analysis",
+      "group": "mechanics",
+      "title": "動作分析、ROM與器材：從描述到選擇",
+      "summary": "把影片、器材與動作變化放進同一份可查核紀錄。",
+      "tags": [
+        "動作與生物力學",
+        "motion analysis"
+      ]
+    },
+    {
+      "id": "13-sarcomere-and-fibers",
+      "group": "muscle",
+      "title": "肌肉如何收縮：肌節、鈣與ATP",
+      "summary": "把分子層級接回動作，理解收縮不必然等於整條肌肉縮短。",
+      "tags": [
+        "肌肉與神經適應",
+        "sarcomere and fibers"
+      ],
+      "example": "07_fiber_context.py"
+    },
+    {
+      "id": "14-contraction-types",
+      "group": "muscle",
+      "title": "向心、離心、等長與伸張縮短循環",
+      "summary": "按肌肉和任務定義動作階段，不把離心等同放鬆。",
+      "tags": [
+        "肌肉與神經適應",
+        "contraction types"
+      ]
+    },
+    {
+      "id": "15-motor-units",
+      "group": "muscle",
+      "title": "運動單位、招募與神經適應",
+      "summary": "理解力量受神經控制與練習影響，不以早期進步直接量化增肌。",
+      "tags": [
+        "肌肉與神經適應",
+        "motor units"
+      ],
+      "example": "08_neural_versus_size.py"
+    },
+    {
+      "id": "16-muscle-architecture",
+      "group": "muscle",
+      "title": "長度張力、肌肉架構與動作角度",
+      "summary": "知道角度和組織結構會影響產力，不把單一曲線直接套到全身動作。",
+      "tags": [
+        "肌肉與神經適應",
+        "muscle architecture"
+      ]
+    },
+    {
+      "id": "17-force-velocity",
+      "group": "muscle",
+      "title": "力量、速度與功率：任務優先順序",
+      "summary": "分清用力意圖、實際速度與機械功率，避免一律慢做或一律快做。",
+      "tags": [
+        "肌肉與神經適應",
+        "force velocity"
+      ],
+      "example": "09_concentric_speed.py"
+    },
+    {
+      "id": "18-adaptation-and-fatigue",
+      "group": "muscle",
+      "title": "適應、疲勞與訓練後變化",
+      "summary": "理解短期反應與長期適應不同，不以痠痛或泵感當效果保證。",
+      "tags": [
+        "肌肉與神經適應",
+        "adaptation and fatigue"
+      ]
+    },
+    {
+      "id": "19-energy-systems",
+      "group": "physiology",
+      "title": "ATP與三種供能路徑：一直共同工作",
+      "summary": "理解磷酸原、醣解與氧化供能，不用固定秒數切換開關。",
+      "tags": [
+        "能量系統與心肺生理",
+        "energy systems"
+      ],
+      "example": "10_cardiac_output.py"
+    },
+    {
+      "id": "20-cardiorespiratory-system",
+      "group": "physiology",
+      "title": "心肺與氧運輸：從呼吸到組織",
+      "summary": "把通氣、循環與氧利用連起來，不把喘或心率當全部適能。",
+      "tags": [
+        "能量系統與心肺生理",
+        "cardiorespiratory system"
+      ]
+    },
+    {
+      "id": "21-vo2-and-units",
+      "group": "physiology",
+      "title": "VO₂max、VO₂peak與單位",
+      "summary": "理解絕對與相對耗氧，區分實測最大與測到的峰值。",
+      "tags": [
+        "能量系統與心肺生理",
+        "vo2 and units"
+      ],
+      "example": "11_oxygen_units.py"
+    },
+    {
+      "id": "22-thresholds-and-zones",
+      "group": "physiology",
+      "title": "乳酸、通氣閾值與訓練區：不同系統別混用",
+      "summary": "學會問區域如何定義，避免看到Zone 2就假設所有人同標準。",
+      "tags": [
+        "能量系統與心肺生理",
+        "thresholds and zones"
+      ]
+    },
+    {
+      "id": "23-met-energy",
+      "group": "physiology",
+      "title": "MET與耗能估計：gross、net與適用範圍",
+      "summary": "用標準成人MET驗算，同時保留估計、年齡和活動體系的差別。",
+      "tags": [
+        "能量系統與心肺生理",
+        "met energy"
+      ],
+      "example": "12_met_arithmetic.py"
+    },
+    {
+      "id": "24-adaptation-time-course",
+      "group": "physiology",
+      "title": "耐力適應與時間：供能、效率與恢復",
+      "summary": "把長期觀察和急性反應分開，不以一次心率或熱量評估全部效果。",
+      "tags": [
+        "能量系統與心肺生理",
+        "adaptation time course"
+      ]
+    },
+    {
+      "id": "25-measurement-basics",
+      "group": "assessment",
+      "title": "測量、信度與最小可偵測變化",
+      "summary": "先知道測試有多穩定，再討論觀察到的進步。",
+      "tags": [
+        "測量與適能評估",
+        "measurement basics"
+      ],
+      "example": "13_paired_repeatability.py"
+    },
+    {
+      "id": "26-standardized-testing",
+      "group": "assessment",
+      "title": "標準化與熟悉化：前後測真的能比較嗎",
+      "summary": "把測試協定寫成可重複步驟，避免只記最後結果。",
+      "tags": [
+        "測量與適能評估",
+        "standardized testing"
+      ]
+    },
+    {
+      "id": "27-strength-tests",
+      "group": "assessment",
+      "title": "肌力測試：實測1RM、次最大與估計",
+      "summary": "分清測量和預測，不要求初學者靠最大試舉理解原理。",
+      "tags": [
+        "測量與適能評估",
+        "strength tests"
+      ],
+      "example": "14_test_conditions.py"
+    },
+    {
+      "id": "28-endurance-tests",
+      "group": "assessment",
+      "title": "心肺測試、場地測試與穿戴估值",
+      "summary": "知道跑步時間、步行任務與實驗室測量各能支持什麼。",
+      "tags": [
+        "測量與適能評估",
+        "endurance tests"
+      ]
+    },
+    {
+      "id": "29-functional-and-rom-tests",
+      "group": "assessment",
+      "title": "功能、活動度與結果方向",
+      "summary": "用適當任務觀察能力，先弄清是越高越好還是越低越好。",
+      "tags": [
+        "測量與適能評估",
+        "functional and rom tests"
+      ],
+      "example": "15_change_direction.py"
+    },
+    {
+      "id": "30-baseline-and-decisions",
+      "group": "assessment",
+      "title": "建立基線與評估進步：從數據到下一個問題",
+      "summary": "整合測試、實際完成與生活條件，不由單次分數自動改課表。",
+      "tags": [
+        "測量與適能評估",
+        "baseline and decisions"
+      ]
+    },
+    {
+      "id": "31-resistance-variables",
+      "group": "resistance",
+      "title": "阻力訓練的變數：負荷、組次與努力",
+      "summary": "先建立完整紀錄，再討論肌力、肌肥大或功能目標。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "resistance variables"
+      ],
+      "example": "16_relative_load.py"
+    },
+    {
+      "id": "32-exercise-selection",
+      "group": "resistance",
+      "title": "選動作：目標肌群、模式、器材與可行性",
+      "summary": "建立一份可說明理由的選擇表，不以動作名氣決定必要性。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "exercise selection"
+      ]
+    },
+    {
+      "id": "33-technique-and-instruction",
+      "group": "resistance",
+      "title": "技術學習：蹲、髖主導、推、拉的觀察步驟",
+      "summary": "用低複雜任務建立可重複動作，將指令連到可觀察結果。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "technique and instruction"
+      ],
+      "example": "17_exercise_identity.py"
+    },
+    {
+      "id": "34-warmup-and-order",
+      "group": "resistance",
+      "title": "暖身、動作順序與保護條件",
+      "summary": "用一般到特定的準備理解課程結構，避免把熱身當疲勞競賽。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "warmup and order"
+      ]
+    },
+    {
+      "id": "35-sets-rest-and-volume",
+      "group": "resistance",
+      "title": "組數、次數、休息與總量",
+      "summary": "學會計算和比較，同時知道噸數沒有涵蓋的條件。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "sets rest and volume"
+      ],
+      "example": "18_volume_load.py"
+    },
+    {
+      "id": "36-resistance-session",
+      "group": "resistance",
+      "title": "組成一堂阻力課：計畫、完成與觀察",
+      "summary": "把選動作、技術、工作組和紀錄串成可檢查流程。",
+      "tags": [
+        "阻力訓練的基本工程",
+        "resistance session"
+      ]
+    },
+    {
+      "id": "37-hypertrophy-mechanisms",
+      "group": "hypertrophy",
+      "title": "肌肥大：機械刺激、組織改變與測量",
+      "summary": "理解增肌是長期結果，不以痠痛、泵感或急性訊號當保證。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "hypertrophy mechanisms"
+      ],
+      "example": "19_direct_sets.py"
+    },
+    {
+      "id": "38-weekly-sets",
+      "group": "hypertrophy",
+      "title": "每週組數：劑量、邊際收益與耐受",
+      "summary": "讀懂2026較高週量的證據，不把十組當全民起跑門檻。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "weekly sets"
+      ]
+    },
+    {
+      "id": "39-frequency-and-distribution",
+      "group": "hypertrophy",
+      "title": "頻率與分配：同週量能有不同排法",
+      "summary": "分開頻率本身和頻率帶來的總量、疲勞與可行性變化。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "frequency and distribution"
+      ],
+      "example": "20_frequency_volume.py"
+    },
+    {
+      "id": "40-load-and-repetition-range",
+      "group": "hypertrophy",
+      "title": "負荷、次數區間與有效努力",
+      "summary": "不將肌肥大鎖死一個神奇次數，先理解負荷和接近完成極限。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "load and repetition range"
+      ]
+    },
+    {
+      "id": "41-failure-rir-rpe",
+      "group": "hypertrophy",
+      "title": "力竭、RIR與RPE：量表不能混用",
+      "summary": "理解不必每組力竭，也不把精確RIR數字當已證實的全民最佳值。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "failure rir rpe"
+      ],
+      "example": "21_rir_scale.py"
+    },
+    {
+      "id": "42-hypertrophy-plan-review",
+      "group": "hypertrophy",
+      "title": "增肌計畫審核：從進度到可持續性",
+      "summary": "用完整變數與長期觀察檢查計畫，不靠痠痛和一次體重變化。",
+      "tags": [
+        "肌肥大與訓練劑量",
+        "hypertrophy plan review"
+      ]
+    },
+    {
+      "id": "43-maximal-strength",
+      "group": "strengthpower",
+      "title": "最大肌力：負荷特異性與估計公式",
+      "summary": "讀懂高負荷證據，分清研究最佳化和初學者當下需要。",
+      "tags": [
+        "肌力、功率與速度",
+        "maximal strength"
+      ],
+      "example": "22_estimated_one_rm.py"
+    },
+    {
+      "id": "44-power-training",
+      "group": "strengthpower",
+      "title": "功率訓練：合適阻力與快速施力",
+      "summary": "把力量和速度連起來，不將爆發力等同動作做得很累。",
+      "tags": [
+        "肌力、功率與速度",
+        "power training"
+      ]
+    },
+    {
+      "id": "45-impulse-and-jump",
+      "group": "strengthpower",
+      "title": "衝量、快速產力與跳躍",
+      "summary": "從力時關係理解起跳，不把高度直接當整段產力能力。",
+      "tags": [
+        "肌力、功率與速度",
+        "impulse and jump"
+      ],
+      "example": "23_impulse.py"
+    },
+    {
+      "id": "46-plyometrics",
+      "group": "strengthpower",
+      "title": "增強式與反彈任務：接觸、控制與漸進",
+      "summary": "用任務需求理解跳躍與快速轉換，不以跳箱高度排名能力。",
+      "tags": [
+        "肌力、功率與速度",
+        "plyometrics"
+      ]
+    },
+    {
+      "id": "47-speed-agility",
+      "group": "strengthpower",
+      "title": "速度、加速、變向與敏捷",
+      "summary": "分開跑得快、換方向和對刺激作反應，不用單一測試替代全部技能。",
+      "tags": [
+        "肌力、功率與速度",
+        "speed agility"
+      ],
+      "example": "24_speed_and_pace.py"
+    },
+    {
+      "id": "48-power-strength-integration",
+      "group": "strengthpower",
+      "title": "整合力量與速度：優先目標與測試",
+      "summary": "把力量基礎、快速任務與專項技能連起來，避免同時追所有數字。",
+      "tags": [
+        "肌力、功率與速度",
+        "power strength integration"
+      ]
+    },
+    {
+      "id": "49-endurance-map",
+      "group": "endurance",
+      "title": "耐力訓練地圖：持續、間歇與任務需求",
+      "summary": "從目標、強度和可持續時間理解有氧安排，不只累積里程。",
+      "tags": [
+        "有氧與耐力訓練",
+        "endurance map"
+      ],
+      "example": "25_running_pace.py"
+    },
+    {
+      "id": "50-intensity-language",
+      "group": "endurance",
+      "title": "中等、費力、RPE與談話測試",
+      "summary": "區分絕對和相對強度，讓容易、很累等語言有清楚背景。",
+      "tags": [
+        "有氧與耐力訓練",
+        "intensity language"
+      ]
+    },
+    {
+      "id": "51-heart-rate-reserve",
+      "group": "endurance",
+      "title": "心率強度：HRmax、HRR與估計限制",
+      "summary": "用給定假設數值計算，不把年齡公式當實測最大心率。",
+      "tags": [
+        "有氧與耐力訓練",
+        "heart rate reserve"
+      ],
+      "example": "26_heart_rate_reserve.py"
+    },
+    {
+      "id": "52-continuous-and-base",
+      "group": "endurance",
+      "title": "持續訓練、基礎量與日常活動",
+      "summary": "理解容易持續的活動如何支持長期參與，不把低強度當完全無效。",
+      "tags": [
+        "有氧與耐力訓練",
+        "continuous and base"
+      ]
+    },
+    {
+      "id": "53-intervals-and-hiit",
+      "group": "endurance",
+      "title": "間歇訓練：工作、恢復與總時鐘",
+      "summary": "把結構寫清楚，不用HIIT標籤取代強度與恢復資訊。",
+      "tags": [
+        "有氧與耐力訓練",
+        "intervals and hiit"
+      ],
+      "example": "27_interval_clock.py"
+    },
+    {
+      "id": "54-endurance-plan-review",
+      "group": "endurance",
+      "title": "耐力計畫審核：週量、品質與可持續性",
+      "summary": "將持續與間歇放回整週，分開計畫、完成和反應。",
+      "tags": [
+        "有氧與耐力訓練",
+        "endurance plan review"
+      ]
+    },
+    {
+      "id": "55-fitt-and-goals",
+      "group": "programming",
+      "title": "FITT與課表資料：把目標寫成結構",
+      "summary": "將頻率、強度、時間、型態連到結果，再加入量、漸進與實際完成。",
+      "tags": [
+        "課表設計與漸進",
+        "fitt and goals"
+      ],
+      "example": "28_fitt_record.py"
+    },
+    {
+      "id": "56-progressive-overload",
+      "group": "programming",
+      "title": "漸進超負荷：不是每次都必須更重",
+      "summary": "把增加刺激和觀察適應分開，不追求無限遞增。",
+      "tags": [
+        "課表設計與漸進",
+        "progressive overload"
+      ]
+    },
+    {
+      "id": "57-autoregulation",
+      "group": "programming",
+      "title": "自我調節、雙重漸進與觀察條件",
+      "summary": "示範規則如何支持討論，不讓程式直接替真人加量。",
+      "tags": [
+        "課表設計與漸進",
+        "autoregulation"
+      ],
+      "example": "29_progression_observation.py"
+    },
+    {
+      "id": "58-weekly-scheduling",
+      "group": "programming",
+      "title": "整週安排：優先、干擾與時間預算",
+      "summary": "把阻力、有氧、技能與生活放到同一張時間表。",
+      "tags": [
+        "課表設計與漸進",
+        "weekly scheduling"
+      ]
+    },
+    {
+      "id": "59-periodization",
+      "group": "programming",
+      "title": "週期化、區塊與減量：工具而非必需儀式",
+      "summary": "理解系統變化的用途，分開一般健康成人與競賽準備。",
+      "tags": [
+        "課表設計與漸進",
+        "periodization"
+      ],
+      "example": "30_periodization_example.py"
+    },
+    {
+      "id": "60-program-review",
+      "group": "programming",
+      "title": "課表審核：目標、劑量、可行性與回饋",
+      "summary": "把完整計畫轉成一組可以逐項檢查的問題。",
+      "tags": [
+        "課表設計與漸進",
+        "program review"
+      ]
+    },
+    {
+      "id": "61-concurrent-evidence",
+      "group": "concurrent",
+      "title": "有氧與阻力並行：不是一定互相抵銷",
+      "summary": "用2026回顧理解共同訓練，保留目標、方法和族群差異。",
+      "tags": [
+        "混合訓練與運動專項",
+        "concurrent evidence"
+      ],
+      "example": "31_concurrent_schedule.py"
+    },
+    {
+      "id": "62-sequence-and-spacing",
+      "group": "concurrent",
+      "title": "順序、間隔與優先目標",
+      "summary": "在有限時間內安排混合課，不把一項研究順序當普遍禁忌。",
+      "tags": [
+        "混合訓練與運動專項",
+        "sequence and spacing"
+      ]
+    },
+    {
+      "id": "63-circuit-structure",
+      "group": "concurrent",
+      "title": "循環與混合課：時鐘不等於劑量等效",
+      "summary": "算清站點、過渡和恢復，分開有氧、阻力與技能目的。",
+      "tags": [
+        "混合訓練與運動專項",
+        "circuit structure"
+      ],
+      "example": "32_circuit_clock.py"
+    },
+    {
+      "id": "64-team-and-repeated-efforts",
+      "group": "concurrent",
+      "title": "團隊運動、反覆回合與專項體能",
+      "summary": "將技術、決策與身體能力放在同一張需求分析表。",
+      "tags": [
+        "混合訓練與運動專項",
+        "team and repeated efforts"
+      ]
+    },
+    {
+      "id": "65-skill-transfer",
+      "group": "concurrent",
+      "title": "專項遷移：把訓練結果接到目標任務",
+      "summary": "明確對應測試，不因身體能力進步就自動宣稱技術已提高。",
+      "tags": [
+        "混合訓練與運動專項",
+        "skill transfer"
+      ],
+      "example": "33_specificity_map.py"
+    },
+    {
+      "id": "66-mixed-program-case",
+      "group": "concurrent",
+      "title": "混合計畫案例：時間有限時如何審核",
+      "summary": "比較安排的目的與代價，不輸出唯一最佳週表。",
+      "tags": [
+        "混合訓練與運動專項",
+        "mixed program case"
+      ]
+    },
+    {
+      "id": "67-mobility-and-flexibility",
+      "group": "movement",
+      "title": "活動度、柔軟度與ROM測量",
+      "summary": "先說關節、任務與測法，再討論角度增加的用途。",
+      "tags": [
+        "活動度、平衡與技能",
+        "mobility and flexibility"
+      ],
+      "example": "34_rom_record.py"
+    },
+    {
+      "id": "68-stretching-methods",
+      "group": "movement",
+      "title": "靜態、動態與其他伸展方法",
+      "summary": "把短期準備、長期柔軟度與表現目的分開。",
+      "tags": [
+        "活動度、平衡與技能",
+        "stretching methods"
+      ]
+    },
+    {
+      "id": "69-balance-and-stability",
+      "group": "movement",
+      "title": "平衡、穩定與感覺控制",
+      "summary": "理解任務如何改變需求，不把更晃當所有目標都更好。",
+      "tags": [
+        "活動度、平衡與技能",
+        "balance and stability"
+      ],
+      "example": "35_balance_repeatability.py"
+    },
+    {
+      "id": "70-core-and-control",
+      "group": "movement",
+      "title": "軀幹控制與動作協調",
+      "summary": "把核心概念放回任務，不用單一腹肌動作處理所有問題。",
+      "tags": [
+        "活動度、平衡與技能",
+        "core and control"
+      ]
+    },
+    {
+      "id": "71-motor-learning",
+      "group": "movement",
+      "title": "動作學習、回饋、保留與遷移",
+      "summary": "區分當下做得較好和真的學會，讓練習目標可檢查。",
+      "tags": [
+        "活動度、平衡與技能",
+        "motor learning"
+      ],
+      "example": "36_skill_learning.py"
+    },
+    {
+      "id": "72-movement-integration",
+      "group": "movement",
+      "title": "把活動度、力量與技能整合",
+      "summary": "針對任務找需要補的能力，避免把每種困難都歸給僵硬或無力。",
+      "tags": [
+        "活動度、平衡與技能",
+        "movement integration"
+      ]
+    },
+    {
+      "id": "73-internal-external-load",
+      "group": "monitoring",
+      "title": "內外負荷與session-RPE",
+      "summary": "用一致量表描述整堂感受，知道AU不是不同運動的精準等價劑量。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "internal external load"
+      ],
+      "example": "37_session_load.py"
+    },
+    {
+      "id": "74-daily-weekly-records",
+      "group": "monitoring",
+      "title": "每日與每週紀錄：完成、休息與缺漏",
+      "summary": "讓圖表保留資料原意，不把空格當成已確認沒有訓練。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "daily weekly records"
+      ]
+    },
+    {
+      "id": "75-recovery-and-doms",
+      "group": "monitoring",
+      "title": "疲勞、DOMS與恢復觀察",
+      "summary": "分清一般訓練反應、警訊與長期問題，不用痠痛判進步。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "recovery and doms"
+      ],
+      "example": "38_rolling_missing.py"
+    },
+    {
+      "id": "76-sleep-and-support",
+      "group": "monitoring",
+      "title": "睡眠、生活壓力與恢復支持",
+      "summary": "把訓練放回生活，不以產品或單一分數替代基本條件。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "sleep and support"
+      ]
+    },
+    {
+      "id": "77-acwr-and-models",
+      "group": "monitoring",
+      "title": "ACWR與fitness-fatigue模型：描述不等於預測",
+      "summary": "親手計算比值，理解為何不提供傷害安全區或自動準備分數。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "acwr and models"
+      ],
+      "example": "39_acwr_limit.py"
+    },
+    {
+      "id": "78-monitoring-decisions",
+      "group": "monitoring",
+      "title": "從紀錄到調整：先查資料再談決策",
+      "summary": "建立不靠單一分數的回饋流程，保留真正需要專業處理的問題。",
+      "tags": [
+        "紀錄、疲勞與恢復",
+        "monitoring decisions"
+      ]
+    },
+    {
+      "id": "79-population-guidelines",
+      "group": "populations",
+      "title": "不同族群的指南：年齡和情境不能省略",
+      "summary": "區分健康活動方向、訓練最佳化與個人醫療安排。",
+      "tags": [
+        "生命階段與可及性",
+        "population guidelines"
+      ],
+      "example": "40_population_scope.py"
+    },
+    {
+      "id": "80-beginners-and-return",
+      "group": "populations",
+      "title": "初學者與中斷後回復：先建立可持續能力",
+      "summary": "把學習、耐受和生活條件放在進步之前，不照搬舊紀錄。",
+      "tags": [
+        "生命階段與可及性",
+        "beginners and return"
+      ]
+    },
+    {
+      "id": "81-children-and-older",
+      "group": "populations",
+      "title": "兒少與長者：發展、功能和監督",
+      "summary": "理解年齡相關需要，不將成人高負荷案例按比例縮放。",
+      "tags": [
+        "生命階段與可及性",
+        "children and older"
+      ],
+      "example": "41_age_context.py"
+    },
+    {
+      "id": "82-pregnancy-postpartum",
+      "group": "populations",
+      "title": "孕期與產後：一般方向和特殊條件",
+      "summary": "分開健康族群活動指南與需要產檢團隊評估的情況。",
+      "tags": [
+        "生命階段與可及性",
+        "pregnancy postpartum"
+      ]
+    },
+    {
+      "id": "83-disability-and-access",
+      "group": "populations",
+      "title": "身心障礙、可及性與不同資料體系",
+      "summary": "把活動形式、設備與支持納入課程，不以標準成人步行資料代替所有人。",
+      "tags": [
+        "生命階段與可及性",
+        "disability and access"
+      ],
+      "example": "42_accessible_record.py"
+    },
+    {
+      "id": "84-chronic-conditions",
+      "group": "populations",
+      "title": "慢性病、藥物與專業運動安排",
+      "summary": "辨認一般健康訓練與疾病相關安排的界線，準備有用的溝通資料。",
+      "tags": [
+        "生命階段與可及性",
+        "chronic conditions"
+      ]
+    },
+    {
+      "id": "85-screening-and-signals",
+      "group": "risk",
+      "title": "運動前篩檢與警訊：資料不足不給綠燈",
+      "summary": "了解篩檢流程的目的，知道何時需要停止與尋求專業協助。",
+      "tags": [
+        "風險、環境與支持條件",
+        "screening and signals"
+      ],
+      "example": "43_screening_information.py"
+    },
+    {
+      "id": "86-pain-and-load",
+      "group": "risk",
+      "title": "疼痛、傷害與負荷：不靠一個姿勢診斷",
+      "summary": "分清一般訓練反應和需要評估的問題，不把教材變成復健處方。",
+      "tags": [
+        "風險、環境與支持條件",
+        "pain and load"
+      ]
+    },
+    {
+      "id": "87-heat-air-and-environment",
+      "group": "risk",
+      "title": "熱、濕度、空氣品質與戶外條件",
+      "summary": "把環境加入負荷判讀，不因配速相同就假設生理需求相同。",
+      "tags": [
+        "風險、環境與支持條件",
+        "heat air and environment"
+      ],
+      "example": "44_environment_context.py"
+    },
+    {
+      "id": "88-hydration-and-support",
+      "group": "risk",
+      "title": "補水、裝備與運動支援：先看任務",
+      "summary": "理解需求受環境和個人影響，不開固定飲水或產品配額。",
+      "tags": [
+        "風險、環境與支持條件",
+        "hydration and support"
+      ]
+    },
+    {
+      "id": "89-nutrition-and-supplements",
+      "group": "risk",
+      "title": "運動營養、能量可用性與補充品回顧",
+      "summary": "將普通飲食和恢復放在前面，不以補充品取代訓練與評估。",
+      "tags": [
+        "風險、環境與支持條件",
+        "nutrition and supplements"
+      ],
+      "example": "45_recovery_nutrition.py"
+    },
+    {
+      "id": "90-sustainable-participation",
+      "group": "risk",
+      "title": "持續參與、心理與訓練文化",
+      "summary": "把喜好、資源與回饋納入原理，不用羞辱和極端疲勞當成效標準。",
+      "tags": [
+        "風險、環境與支持條件",
+        "sustainable participation"
+      ]
+    },
+    {
+      "id": "91-evidence-case",
+      "group": "practice",
+      "title": "案例：審核一則訓練建議",
+      "summary": "從每組力竭、神奇頻率與最新研究標題回到證據。",
+      "tags": [
+        "整合案例與完整專題",
+        "evidence case"
+      ],
+      "example": "46_evidence_audit.py"
+    },
+    {
+      "id": "92-program-case",
+      "group": "practice",
+      "title": "案例：兩份看似相同的訓練計畫",
+      "summary": "比較量、努力、ROM、時鐘與結果，指出無法推論的部分。",
+      "tags": [
+        "整合案例與完整專題",
+        "program case"
+      ]
+    },
+    {
+      "id": "93-data-report-case",
+      "group": "practice",
+      "title": "案例：四週虛構紀錄的可重現報告",
+      "summary": "生成CSV、SVG和JSON，將缺漏與資料身份一起交付。",
+      "tags": [
+        "整合案例與完整專題",
+        "data report case"
+      ],
+      "example": "47_report_preview.py"
+    },
+    {
+      "id": "94-troubleshooting",
+      "group": "practice",
+      "title": "排錯：單位、定義、來源與解讀",
+      "summary": "依層次查找問題，不因程式成功就停止思考。",
+      "tags": [
+        "整合案例與完整專題",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "95-complete-project",
+      "group": "practice",
+      "title": "完整專題：可重跑的訓練資料分析",
+      "summary": "把契約、計算、檢查和限制交給下一位閱讀者。",
+      "tags": [
+        "整合案例與完整專題",
+        "complete project"
+      ],
+      "example": "48_complete_project.py"
+    },
+    {
+      "id": "96-exercises-and-references",
+      "group": "practice",
+      "title": "綜合習題、版本速查與後續閱讀",
+      "summary": "回收全課概念，保留可追溯的正式來源和更新方式。",
+      "tags": [
+        "整合案例與完整專題",
+        "exercises and references"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "tw_label_energy": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "energy",
+    "unit": "kcal",
+    "value": 2000
+  },
+  "tw_label_protein": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "protein",
+    "unit": "g",
+    "value": 60
+  },
+  "tw_label_fat": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "fat",
+    "unit": "g",
+    "value": 60
+  },
+  "tw_label_saturated_fat": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "saturated_fat",
+    "unit": "g",
+    "value": 18
+  },
+  "tw_label_carbohydrate": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "carbohydrate",
+    "unit": "g",
+    "value": 300
+  },
+  "tw_label_sodium": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "sodium",
+    "unit": "mg",
+    "value": 2000
+  },
+  "tw_label_sugars": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "sugars",
+    "unit": "g",
+    "value": null
+  },
+  "tw_label_trans_fat": {
+    "kind": "NRV",
+    "population": "Taiwan general packaged-food labeling, ages 4 and above; not a personal target",
+    "jurisdiction": "Taiwan",
+    "source": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765",
+    "checked": "2026-11-09",
+    "source_scope": null,
+    "form": null,
+    "nutrient": "trans_fat",
+    "unit": "g",
+    "value": null
+  },
+  "us_folic_acid_ul": {
+    "kind": "UL",
+    "unit": "ug",
+    "value": 1000,
+    "population": "US healthy adults ages 19+, synthetic folic acid only",
+    "jurisdiction": "United States",
+    "form": "folic_acid",
+    "source_scope": "supplements_and_fortification",
+    "source": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+    "checked": "2026-11-09"
+  }
+}

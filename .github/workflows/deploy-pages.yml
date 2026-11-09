@@ -151,8 +151,59 @@ jobs:
       - name: Test FTS5, Faiss, Qdrant Local, isolation, replay and restore
         run: python -m unittest discover -s search/examples -p test_examples.py -v
 
+  economics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up verified latest stable economics runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+
+      - name: Test economic models, accounting, data vintages and report artifacts
+        run: python -m unittest discover -s economics/examples -p test_examples.py -v
+
+  nutrition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up verified latest stable nutrition runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+
+      - name: Test nutrition units, missing data, reference scope and offline reports
+        run: python -m unittest discover -s nutrition/examples -p test_examples.py -v
+
+  exercise_science:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up independent latest stable exercise runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+
+      - name: Test exercise arithmetic, missing records, model scope and reports
+        run: python -m unittest discover -s exercise-science/examples -p test_examples.py -v
+
   deploy:
-    needs: [build, statistics, mcp, search]
+    needs: [build, statistics, mcp, search, economics, nutrition, exercise_science]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

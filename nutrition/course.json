@@ -1,0 +1,1118 @@
+{
+  "slug": "nutrition",
+  "title": "營養學與飲食科學完整教學",
+  "shortTitle": "營養學與飲食科學",
+  "updated": "2026-11-09",
+  "baseline": "Taiwan DRIs 8 / WHO 2026 / Python 3.15.2",
+  "footerLabel": "NUTRITION · FOOD, EVIDENCE & EVERYDAY CHOICES",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 自由糖、DFE、RAE、鈉、我的餐盤、過敏原或食物基質。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "營養、食物與證據",
+      "description": "基本語言、參考值、資料來源與學習方法。"
+    },
+    {
+      "id": "digestion",
+      "number": "02",
+      "title": "從入口到吸收與利用",
+      "description": "消化、吸收、代謝、腸道與食物基質。"
+    },
+    {
+      "id": "energy",
+      "number": "03",
+      "title": "能量與飲食評估",
+      "description": "能量係數、需求估計、紀錄、誤差與不確定。"
+    },
+    {
+      "id": "carbohydrates",
+      "number": "04",
+      "title": "醣類、糖與膳食纖維",
+      "description": "結構、來源、血糖指標、全穀與腸道。"
+    },
+    {
+      "id": "fats",
+      "number": "05",
+      "title": "脂質與脂肪品質",
+      "description": "脂肪酸、替代、必需脂肪、標示與食物。"
+    },
+    {
+      "id": "protein",
+      "number": "06",
+      "title": "蛋白質與胺基酸",
+      "description": "消化、品質、需要量、來源與分布。"
+    },
+    {
+      "id": "vitamins",
+      "number": "07",
+      "title": "維生素與單位",
+      "description": "脂溶性、水溶性、RAE／DFE與上限來源。"
+    },
+    {
+      "id": "minerals",
+      "number": "08",
+      "title": "礦物質、水與電解質",
+      "description": "鈣、鐵、微量元素、鈉鉀與體液。"
+    },
+    {
+      "id": "patterns",
+      "number": "09",
+      "title": "食物類別與飲食型態",
+      "description": "六大類、我的餐盤、替代與整體模式。"
+    },
+    {
+      "id": "labels",
+      "number": "10",
+      "title": "營養標示與食物資料",
+      "description": "份量、每日參考值、法規、宣稱與資料庫。"
+    },
+    {
+      "id": "planning",
+      "number": "11",
+      "title": "把飲食問題變成可觀察的紀錄",
+      "description": "外食、食譜、生熟、預算與紀錄誤差。"
+    },
+    {
+      "id": "activity",
+      "number": "12",
+      "title": "食慾、身體組成與活動",
+      "description": "能量動態、行為、運動營養與恢復。"
+    },
+    {
+      "id": "lifespan",
+      "number": "13",
+      "title": "生命階段與不同飲食需要",
+      "description": "孕哺、嬰幼兒、學齡、長者、植物飲食與轉介。"
+    },
+    {
+      "id": "evidence",
+      "number": "14",
+      "title": "補充品、研究與風險",
+      "description": "效果、偏誤、來源限定、交互作用與判讀。"
+    },
+    {
+      "id": "safety",
+      "number": "15",
+      "title": "食品安全與食物過敏",
+      "description": "污染、保存、加熱、交叉接觸與族群差異。"
+    },
+    {
+      "id": "practice",
+      "number": "16",
+      "title": "整合案例與可重現交付",
+      "description": "情境分析、資料審核、完整報告與習題。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-nutrition-and-food",
+      "group": "foundations",
+      "title": "營養學在研究什麼：從食物到整體飲食",
+      "summary": "先建立學科地圖，分清營養素、食物、飲食型態與健康結果。",
+      "tags": [
+        "營養、食物與證據",
+        "nutrition and food"
+      ],
+      "example": "01_first_food_record.py"
+    },
+    {
+      "id": "02-nutrients-and-standards",
+      "group": "foundations",
+      "title": "營養素、參考值與個人差異",
+      "summary": "區分EAR、RDA、AI、UL、NRV與指南，不把不同標準的數字混用。",
+      "tags": [
+        "營養、食物與證據",
+        "nutrients and standards"
+      ]
+    },
+    {
+      "id": "03-evidence-and-causation",
+      "group": "foundations",
+      "title": "營養證據：機制、相關與因果",
+      "summary": "理解研究能回答什麼，為之後保健宣稱與飲食型態建立判讀方法。",
+      "tags": [
+        "營養、食物與證據",
+        "evidence and causation"
+      ],
+      "example": "02_source_and_reference.py"
+    },
+    {
+      "id": "04-food-data-and-uncertainty",
+      "group": "foundations",
+      "title": "食物資料、缺值與不確定性",
+      "summary": "認識可食重量、生熟、每份與資料版本，建立可信的計算輸入。",
+      "tags": [
+        "營養、食物與證據",
+        "food data and uncertainty"
+      ]
+    },
+    {
+      "id": "05-units-and-calculations",
+      "group": "foundations",
+      "title": "單位、能量與濃度：先把分母寫清楚",
+      "summary": "分清g、mg、μg、kcal、kJ、IU與百分比，避免千倍和重複計算錯誤。",
+      "tags": [
+        "營養、食物與證據",
+        "units and calculations"
+      ],
+      "example": "03_units.py"
+    },
+    {
+      "id": "06-learning-path-and-versions",
+      "group": "foundations",
+      "title": "學習路線、指南版本與範例環境",
+      "summary": "從零安排閱讀，明確標示本課的正式基線、虛構資料與可驗證範圍。",
+      "tags": [
+        "營養、食物與證據",
+        "learning path and versions"
+      ]
+    },
+    {
+      "id": "07-digestive-map",
+      "group": "digestion",
+      "title": "消化系統地圖：食物經過哪些關卡",
+      "summary": "把攝取、消化、吸收與利用分開，避免將入口重量直接當吸收量。",
+      "tags": [
+        "從入口到吸收與利用",
+        "digestive map"
+      ],
+      "example": "04_portion_flow.py"
+    },
+    {
+      "id": "08-enzymes-and-macronutrients",
+      "group": "digestion",
+      "title": "消化液、酵素與三大營養素",
+      "summary": "理解分解需要什麼，分清胃酸、酵素與膽汁的工作。",
+      "tags": [
+        "從入口到吸收與利用",
+        "enzymes and macronutrients"
+      ]
+    },
+    {
+      "id": "09-absorption-and-transport",
+      "group": "digestion",
+      "title": "吸收、血液、淋巴與體液",
+      "summary": "從腸壁到身體運輸，理解濃度、質量和容量不是同一件事。",
+      "tags": [
+        "從入口到吸收與利用",
+        "absorption and transport"
+      ],
+      "example": "05_mass_volume.py"
+    },
+    {
+      "id": "10-liver-metabolism",
+      "group": "digestion",
+      "title": "肝臟、儲存與代謝調節",
+      "summary": "看懂攝取後的分配與能量轉換，避免把單一燃料等同體脂變化。",
+      "tags": [
+        "從入口到吸收與利用",
+        "liver metabolism"
+      ]
+    },
+    {
+      "id": "11-bioavailability",
+      "group": "digestion",
+      "title": "生物可利用率與食物基質",
+      "summary": "分清含量、吸收和利用，理解同餐、加工與個體差異。",
+      "tags": [
+        "從入口到吸收與利用",
+        "bioavailability"
+      ],
+      "example": "06_absorption_uncertainty.py"
+    },
+    {
+      "id": "12-gut-and-tolerance",
+      "group": "digestion",
+      "title": "腸道菌、纖維與食物耐受",
+      "summary": "辨識發酵、症狀、益生菌與個人差異，不用一個菌相分數包辦健康。",
+      "tags": [
+        "從入口到吸收與利用",
+        "gut and tolerance"
+      ]
+    },
+    {
+      "id": "13-energy-factors",
+      "group": "energy",
+      "title": "食物能量與4／4／9：什麼時候可以用",
+      "summary": "用明示係數計算能量，分清可利用碳水、纖維與標示值。",
+      "tags": [
+        "能量與飲食評估",
+        "energy factors"
+      ],
+      "example": "07_energy_factors.py"
+    },
+    {
+      "id": "14-expenditure-and-needs",
+      "group": "energy",
+      "title": "能量支出、需要量與估計公式",
+      "summary": "理解休息代謝、活動、食物熱效應與成長，而不把估計值當精確處方。",
+      "tags": [
+        "能量與飲食評估",
+        "expenditure and needs"
+      ]
+    },
+    {
+      "id": "15-portion-error-and-ranges",
+      "group": "energy",
+      "title": "份量誤差與範圍估計",
+      "summary": "把不確定寫進結果，理解上下界、可信區間和缺值的差別。",
+      "tags": [
+        "能量與飲食評估",
+        "portion error and ranges"
+      ],
+      "example": "08_estimation_ranges.py"
+    },
+    {
+      "id": "16-energy-balance-and-time",
+      "group": "energy",
+      "title": "能量平衡、體重與時間尺度",
+      "summary": "把守恆、動態與測量分開，不將一天的差值當長期體脂預測。",
+      "tags": [
+        "能量與飲食評估",
+        "energy balance and time"
+      ]
+    },
+    {
+      "id": "17-dietary-assessment",
+      "group": "energy",
+      "title": "飲食評估：回憶、日誌與重複觀察",
+      "summary": "比較觀察工具的用途，分清部分記錄與習慣攝取。",
+      "tags": [
+        "能量與飲食評估",
+        "dietary assessment"
+      ],
+      "example": "09_diary_variation.py"
+    },
+    {
+      "id": "18-using-references",
+      "group": "energy",
+      "title": "用參考值做規劃與評估：別把門檻混在一起",
+      "summary": "理解群體分布、個人規劃與上限，避免用百分比做錯誤判定。",
+      "tags": [
+        "能量與飲食評估",
+        "using references"
+      ]
+    },
+    {
+      "id": "19-carb-structure",
+      "group": "carbohydrates",
+      "title": "醣類家族：糖、澱粉與可利用碳水",
+      "summary": "從結構和食品分類理解醣類，先把總量與子項分清楚。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "carb structure"
+      ],
+      "example": "10_sugar_subsets.py"
+    },
+    {
+      "id": "20-total-added-free-sugars",
+      "group": "carbohydrates",
+      "title": "總糖、添加糖與自由糖：三個不同問題",
+      "summary": "看懂營養標示能告訴什麼，避免把含糖量直接當自由糖。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "total added free sugars"
+      ]
+    },
+    {
+      "id": "21-gi-and-gl",
+      "group": "carbohydrates",
+      "title": "GI、GL與實際血糖：別把指標當預測器",
+      "summary": "分清固定測試、食用份量和個人反應，正確使用血糖指標。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "gi and gl"
+      ],
+      "example": "11_gi_gl.py"
+    },
+    {
+      "id": "22-whole-grains-and-processing",
+      "group": "carbohydrates",
+      "title": "全穀、精製與加工：看來源和組合",
+      "summary": "理解保留結構與食物成分的差異，避免單靠顏色和加工標籤判斷。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "whole grains and processing"
+      ]
+    },
+    {
+      "id": "23-fiber-types",
+      "group": "carbohydrates",
+      "title": "膳食纖維：種類、功能與耐受",
+      "summary": "分清纖維的物理化學性質，不把所有纖維當同一種補充劑。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "fiber types"
+      ],
+      "example": "12_fiber_and_state.py"
+    },
+    {
+      "id": "24-carb-application",
+      "group": "carbohydrates",
+      "title": "醣類的生活判斷與常見迷思",
+      "summary": "把份量、來源、纖維與健康情境放在一起，不讓單一標籤決定飲食。",
+      "tags": [
+        "醣類、糖與膳食纖維",
+        "carb application"
+      ]
+    },
+    {
+      "id": "25-lipid-structure",
+      "group": "fats",
+      "title": "脂質的結構與功能：不只提供能量",
+      "summary": "辨認三酸甘油酯、脂肪酸、磷脂與膽固醇，理解分類和食物來源。",
+      "tags": [
+        "脂質與脂肪品質",
+        "lipid structure"
+      ],
+      "example": "13_fat_energy.py"
+    },
+    {
+      "id": "26-saturated-and-trans",
+      "group": "fats",
+      "title": "飽和與反式脂肪：從比例到替代",
+      "summary": "讀懂WHO的能量比例和適用背景，不把指南寫成毒性開關。",
+      "tags": [
+        "脂質與脂肪品質",
+        "saturated and trans"
+      ]
+    },
+    {
+      "id": "27-isocaloric-substitution",
+      "group": "fats",
+      "title": "等能量替代：把比較條件說清楚",
+      "summary": "用可檢查的算術理解替代研究，同時保留食物其他成分。",
+      "tags": [
+        "脂質與脂肪品質",
+        "isocaloric substitution"
+      ],
+      "example": "14_fat_replacement.py"
+    },
+    {
+      "id": "28-essential-and-omega",
+      "group": "fats",
+      "title": "必需脂肪酸與Omega-3：看清ALA、EPA、DHA",
+      "summary": "分清化學形式、食物與補充品，避免用魚油總重量代替有效成分。",
+      "tags": [
+        "脂質與脂肪品質",
+        "essential and omega"
+      ]
+    },
+    {
+      "id": "29-rounding-and-zero",
+      "group": "fats",
+      "title": "標示0與數值修整：沒有量到不等於不存在",
+      "summary": "以數學區間理解修整，清楚分開法規的零標示條件。",
+      "tags": [
+        "脂質與脂肪品質",
+        "rounding and zero"
+      ],
+      "example": "15_rounding_not_absence.py"
+    },
+    {
+      "id": "30-fat-food-choice",
+      "group": "fats",
+      "title": "脂肪的食物判斷：油、魚、堅果與乳品",
+      "summary": "把化學分類放回可持續的飲食選擇，練習完整的比較表。",
+      "tags": [
+        "脂質與脂肪品質",
+        "fat food choice"
+      ]
+    },
+    {
+      "id": "31-amino-acids",
+      "group": "protein",
+      "title": "蛋白質與胺基酸：結構、功能與更新",
+      "summary": "從必需胺基酸和蛋白質周轉建立概念，不把蛋白質等同肌肉。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "amino acids"
+      ],
+      "example": "16_protein_arithmetic.py"
+    },
+    {
+      "id": "32-protein-quality",
+      "group": "protein",
+      "title": "消化率、限制胺基酸與蛋白質品質",
+      "summary": "理解品質指標的用途與限制，避免把植物蛋白寫成沒有某胺基酸。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "protein quality"
+      ]
+    },
+    {
+      "id": "33-protein-needs",
+      "group": "protein",
+      "title": "蛋白質需要量：基準、活動與臨床背景",
+      "summary": "把不同來源的係數保留完整背景，避免競賽式比較誰的數字最大。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "protein needs"
+      ],
+      "example": "17_protein_foods.py"
+    },
+    {
+      "id": "34-protein-foods",
+      "group": "protein",
+      "title": "豆魚蛋肉、乳品與植物來源的選擇",
+      "summary": "比較蛋白質來源的整體組成，而非只用動物或植物二分。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "protein foods"
+      ]
+    },
+    {
+      "id": "35-meal-distribution",
+      "group": "protein",
+      "title": "蛋白質分布、總量與實際紀錄",
+      "summary": "用三餐分配觀察資料，同時區分研究問題與自動最佳化。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "meal distribution"
+      ],
+      "example": "18_protein_distribution.py"
+    },
+    {
+      "id": "36-plant-protein-myths",
+      "group": "protein",
+      "title": "植物飲食與高蛋白迷思的整合判讀",
+      "summary": "把總量、品質、其他營養與實際生活合在一起。",
+      "tags": [
+        "蛋白質與胺基酸",
+        "plant protein myths"
+      ]
+    },
+    {
+      "id": "37-vitamin-a-rae",
+      "group": "vitamins",
+      "title": "脂溶性維生素A、E、K與RAE",
+      "summary": "建立脂溶性維生素地圖，實作維生素A的形式限定換算。",
+      "tags": [
+        "維生素與單位",
+        "vitamin a rae"
+      ],
+      "example": "19_vitamin_a.py"
+    },
+    {
+      "id": "38-stability-and-storage",
+      "group": "vitamins",
+      "title": "脂溶性維生素的吸收、保存與補充",
+      "summary": "把食物基質、製程與來源限定連起來，不用一個係數描述全部損失。",
+      "tags": [
+        "維生素與單位",
+        "stability and storage"
+      ]
+    },
+    {
+      "id": "39-vitamin-d-units",
+      "group": "vitamins",
+      "title": "維生素D：μg、IU、食物與日照",
+      "summary": "以明確的維生素D換算理解單位，分開攝取、血中濃度和建議。",
+      "tags": [
+        "維生素與單位",
+        "vitamin d units"
+      ],
+      "example": "20_vitamin_d.py"
+    },
+    {
+      "id": "40-b-vitamins-and-b12",
+      "group": "vitamins",
+      "title": "B群與B12：代謝角色不等於提供能量",
+      "summary": "建立水溶性維生素觀念，理解B12來源與吸收的特殊性。",
+      "tags": [
+        "維生素與單位",
+        "b vitamins and b12"
+      ]
+    },
+    {
+      "id": "41-folate-dfe",
+      "group": "vitamins",
+      "title": "葉酸、DFE與來源限定的上限",
+      "summary": "實作食物葉酸與folic acid換算，避免把DFE當所有上限的分子。",
+      "tags": [
+        "維生素與單位",
+        "folate dfe"
+      ],
+      "example": "21_folate.py"
+    },
+    {
+      "id": "42-vitamin-c-and-assessment",
+      "group": "vitamins",
+      "title": "維生素C、食物處理與微量營養評估",
+      "summary": "把水溶性維生素放回食物與紀錄，避免以單一症狀自我診斷。",
+      "tags": [
+        "維生素與單位",
+        "vitamin c and assessment"
+      ]
+    },
+    {
+      "id": "43-calcium-magnesium-phosphorus",
+      "group": "minerals",
+      "title": "鈣、鎂與磷：骨骼和其他功能",
+      "summary": "認識礦物質的多重角色，分開攝取、體內調節與測量。",
+      "tags": [
+        "礦物質、水與電解質",
+        "calcium magnesium phosphorus"
+      ],
+      "example": "22_mineral_units.py"
+    },
+    {
+      "id": "44-iron-and-absorption",
+      "group": "minerals",
+      "title": "鐵：血基質、非血基質與缺乏評估",
+      "summary": "分清鐵的形式、吸收影響與檢驗限制，不把疲倦等於缺鐵。",
+      "tags": [
+        "礦物質、水與電解質",
+        "iron and absorption"
+      ]
+    },
+    {
+      "id": "45-sodium-potassium-salt",
+      "group": "minerals",
+      "title": "鈉、鉀與食鹽：單位與制度要分清楚",
+      "summary": "換算鈉與鹽，區分WHO指南、台灣標示NRV與美國CDRR。",
+      "tags": [
+        "礦物質、水與電解質",
+        "sodium potassium salt"
+      ],
+      "example": "23_sodium_salt.py"
+    },
+    {
+      "id": "46-trace-elements",
+      "group": "minerals",
+      "title": "碘、鋅、硒與微量元素：需要少不等於越多越好",
+      "summary": "建立微量元素的來源、變異與上限概念，避免以單一食物固定補量。",
+      "tags": [
+        "礦物質、水與電解質",
+        "trace elements"
+      ]
+    },
+    {
+      "id": "47-water-and-hydration",
+      "group": "minerals",
+      "title": "水分、體液與補水：不只數杯子",
+      "summary": "理解飲料與食物水分、活動及健康背景，辨認體積和質量的差別。",
+      "tags": [
+        "礦物質、水與電解質",
+        "water and hydration"
+      ],
+      "example": "24_water_basis.py"
+    },
+    {
+      "id": "48-mineral-integration",
+      "group": "minerals",
+      "title": "整合礦物質評估：資料、來源與下一步",
+      "summary": "把攝取紀錄和臨床問題分開，完成一份可查核的微量營養摘要。",
+      "tags": [
+        "礦物質、水與電解質",
+        "mineral integration"
+      ]
+    },
+    {
+      "id": "49-six-food-groups",
+      "group": "patterns",
+      "title": "台灣六大類食物：分類是組合工具",
+      "summary": "從食物到飲食，理解類別、份量與可替代條件。",
+      "tags": [
+        "食物類別與飲食型態",
+        "six food groups"
+      ],
+      "example": "25_food_groups.py"
+    },
+    {
+      "id": "50-my-plate",
+      "group": "patterns",
+      "title": "我的餐盤：把圖像提示變成可理解的原則",
+      "summary": "閱讀台灣餐盤口訣，理解用途與需要調整的情境。",
+      "tags": [
+        "食物類別與飲食型態",
+        "my plate"
+      ]
+    },
+    {
+      "id": "51-nutrient-density",
+      "group": "patterns",
+      "title": "營養密度：每100g、每份與每100kcal",
+      "summary": "用三種分母比較食物，理解每個指標看見與漏掉什麼。",
+      "tags": [
+        "食物類別與飲食型態",
+        "nutrient density"
+      ],
+      "example": "26_nutrient_density.py"
+    },
+    {
+      "id": "52-dietary-patterns",
+      "group": "patterns",
+      "title": "飲食型態：地中海、DASH與植物為主",
+      "summary": "從整體模式讀研究，而非將名稱當保證效果的品牌。",
+      "tags": [
+        "食物類別與飲食型態",
+        "dietary patterns"
+      ]
+    },
+    {
+      "id": "53-food-substitution",
+      "group": "patterns",
+      "title": "食物替代：先決定要保留哪個功能",
+      "summary": "比較不同組合的營養與資料完整性，不輸出單一健康排行榜。",
+      "tags": [
+        "食物類別與飲食型態",
+        "food substitution"
+      ],
+      "example": "27_pattern_comparison.py"
+    },
+    {
+      "id": "54-vegetarian-labels",
+      "group": "patterns",
+      "title": "素食分類、食物限制與可靠來源",
+      "summary": "讀懂台灣五類素食標示，避免把植物五辛素直接翻成vegan。",
+      "tags": [
+        "食物類別與飲食型態",
+        "vegetarian labels"
+      ]
+    },
+    {
+      "id": "55-serving-package",
+      "group": "labels",
+      "title": "每份、每包與每100：先把分母對齊",
+      "summary": "讀懂一包不一定等於一份，依實際吃的量計算。",
+      "tags": [
+        "營養標示與食物資料",
+        "serving package"
+      ],
+      "example": "28_serving_and_package.py"
+    },
+    {
+      "id": "56-label-jurisdictions",
+      "group": "labels",
+      "title": "台灣與其他地區標示：規則不能混用",
+      "summary": "對照現行台灣規範與國際名稱，標示生效日和適用食品。",
+      "tags": [
+        "營養標示與食物資料",
+        "label jurisdictions"
+      ]
+    },
+    {
+      "id": "57-nrv-and-percent",
+      "group": "labels",
+      "title": "每日參考值百分比：通用分母不是個人需要",
+      "summary": "實作台灣四歲以上一般標示NRV，糖與反式脂肪保留無基準。",
+      "tags": [
+        "營養標示與食物資料",
+        "nrv and percent"
+      ],
+      "example": "29_label_nrv.py"
+    },
+    {
+      "id": "58-nutrition-and-health-claims",
+      "group": "labels",
+      "title": "營養宣稱、健康食品與保健廣告",
+      "summary": "分開成分宣稱、台灣健康食品核准與一般行銷語。",
+      "tags": [
+        "營養標示與食物資料",
+        "nutrition and health claims"
+      ]
+    },
+    {
+      "id": "59-label-energy",
+      "group": "labels",
+      "title": "從營養素重建熱量：為何不一定完全相等",
+      "summary": "檢查醣類、纖維與係數，不用簡化算式作合規認證。",
+      "tags": [
+        "營養標示與食物資料",
+        "label energy"
+      ],
+      "example": "30_label_energy_check.py"
+    },
+    {
+      "id": "60-food-databases",
+      "group": "labels",
+      "title": "食物成分資料庫：來源、狀態與版本",
+      "summary": "理解檢驗、標示與調查資料的差異，建立可更新的查詢紀錄。",
+      "tags": [
+        "營養標示與食物資料",
+        "food databases"
+      ]
+    },
+    {
+      "id": "61-meal-totals",
+      "group": "planning",
+      "title": "一餐的營養加總：已知小計與未知",
+      "summary": "建立可靠的食物向量加總，同一餐的各營養素可能有不同完整性。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "meal totals"
+      ],
+      "example": "31_meal_aggregation.py"
+    },
+    {
+      "id": "62-eating-out",
+      "group": "planning",
+      "title": "外食、便利商店與飲料：先取得可比較資訊",
+      "summary": "用情境與限制安排選擇，避免只用熱量排序餐點。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "eating out"
+      ]
+    },
+    {
+      "id": "63-recipe-yield",
+      "group": "planning",
+      "title": "食譜、生熟重量與烹調保留率",
+      "summary": "把重量變化和營養素保留分開，避免把濃縮或吸水誤認為生成營養。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "recipe yield"
+      ],
+      "example": "32_recipe_yield.py"
+    },
+    {
+      "id": "64-budget-and-access",
+      "group": "planning",
+      "title": "預算、採買與可持續的飲食規劃",
+      "summary": "把價格、可食部、保存和時間放入規劃，避免理想清單脫離生活。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "budget and access"
+      ]
+    },
+    {
+      "id": "65-diary-completeness",
+      "group": "planning",
+      "title": "飲食日誌：紀錄完整性比小數位更重要",
+      "summary": "辨認部分紀錄、缺值與日間變異，避免偽造完整一天。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "diary completeness"
+      ],
+      "example": "33_diary_missingness.py"
+    },
+    {
+      "id": "66-uncertainty-ranges",
+      "group": "planning",
+      "title": "份量與資料誤差：用範圍而非假精準",
+      "summary": "區分情境界限、量測誤差與統計信賴區間。",
+      "tags": [
+        "把飲食問題變成可觀察的紀錄",
+        "uncertainty ranges"
+      ]
+    },
+    {
+      "id": "67-appetite-and-regulation",
+      "group": "activity",
+      "title": "食慾、飽足與能量調節：多條訊號共同作用",
+      "summary": "區分生理、環境與行為因素，不以意志力解釋全部飲食。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "appetite and regulation"
+      ],
+      "example": "34_appetite_and_energy.py"
+    },
+    {
+      "id": "68-body-composition-measurement",
+      "group": "activity",
+      "title": "體重與身體組成：測量的是什麼",
+      "summary": "理解短期波動、測量方法與用途，避免單一數字取代健康評估。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "body composition measurement"
+      ]
+    },
+    {
+      "id": "69-energy-density-and-portions",
+      "group": "activity",
+      "title": "等能量份量與能量密度：一個維度的控制",
+      "summary": "觀察不同食物的份量差，不把等能量當成等飽足或等健康。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "energy density and portions"
+      ],
+      "example": "35_isoenergy_portion.py"
+    },
+    {
+      "id": "70-habit-and-context",
+      "group": "activity",
+      "title": "飲食行為與習慣：可觀察、可調整的實作",
+      "summary": "以具體情境和回饋做小型學習，避免把紀錄變成懲罰。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "habit and context"
+      ]
+    },
+    {
+      "id": "71-sports-nutrition",
+      "group": "activity",
+      "title": "運動營養：強度、時間與飲食背景",
+      "summary": "先建立活動情境，再理解能量、醣、蛋白質、水分與電解質。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "sports nutrition"
+      ],
+      "example": "36_sports_record.py"
+    },
+    {
+      "id": "72-recovery-and-low-energy",
+      "group": "activity",
+      "title": "恢復、能量可用性與需要轉介的訊號",
+      "summary": "理解恢復是系統問題，避免只用體重或蛋白質判斷。",
+      "tags": [
+        "食慾、身體組成與活動",
+        "recovery and low energy"
+      ]
+    },
+    {
+      "id": "73-pregnancy-and-lactation",
+      "group": "lifespan",
+      "title": "備孕、孕期與哺乳：需求改變與來源查核",
+      "summary": "用生命階段選參考值，結合葉酸、鐵、碘與食品安全的基本問題。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "pregnancy and lactation"
+      ],
+      "example": "37_life_stage_reference.py"
+    },
+    {
+      "id": "74-infant-complementary-feeding",
+      "group": "lifespan",
+      "title": "嬰幼兒餵食與副食品：成人餐盤不能直接縮小",
+      "summary": "理解餵食階段、質地、營養與安全，學習如何查專門指南。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "infant complementary feeding"
+      ]
+    },
+    {
+      "id": "75-children-and-adolescents",
+      "group": "lifespan",
+      "title": "兒童與青少年：生長、學校與食物環境",
+      "summary": "將生長與日常生活納入營養學，不套成人減重目標。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "children and adolescents"
+      ],
+      "example": "38_allergen_scope.py"
+    },
+    {
+      "id": "76-older-adults",
+      "group": "lifespan",
+      "title": "高齡營養：功能、食慾、咀嚼與多重用藥",
+      "summary": "把維持功能與可進食性放在核心，不把長者都套同一餐盤。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "older adults"
+      ]
+    },
+    {
+      "id": "77-restricted-and-fortified",
+      "group": "lifespan",
+      "title": "植物飲食、過敏與強化食品的生命階段應用",
+      "summary": "交叉檢查多重限制，避免一項替代解決一個問題卻製造未知。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "restricted and fortified"
+      ],
+      "example": "39_fortified_foods.py"
+    },
+    {
+      "id": "78-clinical-boundaries",
+      "group": "lifespan",
+      "title": "臨床營養、特殊飲食與專業合作",
+      "summary": "辨認一般健康教育何時不足，準備能幫助專業評估的資料。",
+      "tags": [
+        "生命階段與不同飲食需要",
+        "clinical boundaries"
+      ]
+    },
+    {
+      "id": "79-absolute-relative-risk",
+      "group": "evidence",
+      "title": "研究效果：相對風險、絕對風險與時間",
+      "summary": "用虛構計數手算效果，避免被相對百分比放大印象。",
+      "tags": [
+        "補充品、研究與風險",
+        "absolute relative risk"
+      ],
+      "example": "40_relative_absolute_risk.py"
+    },
+    {
+      "id": "80-bias-and-confounding",
+      "group": "evidence",
+      "title": "混雜、反向因果與營養測量誤差",
+      "summary": "讀懂飲食研究常見限制，保留既不盲信也不全盤否定的判斷。",
+      "tags": [
+        "補充品、研究與風險",
+        "bias and confounding"
+      ]
+    },
+    {
+      "id": "81-upper-level-scope",
+      "group": "evidence",
+      "title": "上限的來源範圍：不是把所有數字直接相加",
+      "summary": "以folic acid示例做來源篩選，保留形式、單位與地區。",
+      "tags": [
+        "補充品、研究與風險",
+        "upper level scope"
+      ],
+      "example": "41_ul_source_scope.py"
+    },
+    {
+      "id": "82-interactions",
+      "group": "evidence",
+      "title": "營養素、補充品與藥物交互作用",
+      "summary": "以完整清單和專業協調處理風險，不靠自然或水溶性標籤。",
+      "tags": [
+        "補充品、研究與風險",
+        "interactions"
+      ]
+    },
+    {
+      "id": "83-supplement-audit",
+      "group": "evidence",
+      "title": "補充品審核：身份、含量、證據與成本",
+      "summary": "把產品宣稱變成可查核欄位，品質和效果各自確認。",
+      "tags": [
+        "補充品、研究與風險",
+        "supplement audit"
+      ],
+      "example": "42_supplement_audit.py"
+    },
+    {
+      "id": "84-evidence-decision",
+      "group": "evidence",
+      "title": "把研究變成判斷：一頁證據地圖",
+      "summary": "整合研究、官方指南、適用性與未知，形成可更新結論。",
+      "tags": [
+        "補充品、研究與風險",
+        "evidence decision"
+      ]
+    },
+    {
+      "id": "85-food-hazards",
+      "group": "safety",
+      "title": "食品安全：危害、暴露與風險",
+      "summary": "分清微生物、化學、物理與過敏原問題，不用營養標示代替安全。",
+      "tags": [
+        "食品安全與食物過敏",
+        "food hazards"
+      ],
+      "example": "43_food_safety_records.py"
+    },
+    {
+      "id": "86-clean-and-separate",
+      "group": "safety",
+      "title": "清潔、生熟分離與廚房流程",
+      "summary": "從接觸路徑找問題，避免只盯最後一次加熱。",
+      "tags": [
+        "食品安全與食物過敏",
+        "clean and separate"
+      ]
+    },
+    {
+      "id": "87-allergens-and-cross-contact",
+      "group": "safety",
+      "title": "食物過敏原、乳糖不耐與交叉接觸",
+      "summary": "區分免疫反應和消化不耐，讀懂地區清單與標示的限制。",
+      "tags": [
+        "食品安全與食物過敏",
+        "allergens and cross contact"
+      ],
+      "example": "44_cross_contact.py"
+    },
+    {
+      "id": "88-cooking-and-cold-chain",
+      "group": "safety",
+      "title": "烹調與冷鏈：溫度、時間、食物種類",
+      "summary": "理解為何不能用單一核心溫度或氣味證明所有食品安全。",
+      "tags": [
+        "食品安全與食物過敏",
+        "cooking and cold chain"
+      ]
+    },
+    {
+      "id": "89-storage-dates",
+      "group": "safety",
+      "title": "保存期限、開封與紀錄的不確定",
+      "summary": "把包裝日期放回實際保存條件，不把期限當獨立保證。",
+      "tags": [
+        "食品安全與食物過敏",
+        "storage dates"
+      ],
+      "example": "45_storage_uncertainty.py"
+    },
+    {
+      "id": "90-risk-groups-and-prevention",
+      "group": "safety",
+      "title": "高風險族群與食品安全的整合",
+      "summary": "把孕期、幼兒、長者與免疫低下者的食物風險背景納入選擇。",
+      "tags": [
+        "食品安全與食物過敏",
+        "risk groups and prevention"
+      ]
+    },
+    {
+      "id": "91-evidence-case",
+      "group": "practice",
+      "title": "整合案例：審核一則營養新聞",
+      "summary": "從標題回到問題、原始計數與適用性，完成一頁查核紀錄。",
+      "tags": [
+        "整合案例與可重現交付",
+        "evidence case"
+      ],
+      "example": "46_evidence_case.py"
+    },
+    {
+      "id": "92-label-case",
+      "group": "practice",
+      "title": "整合案例：一瓶飲料的標示審核",
+      "summary": "同時處理份量、總糖、自由糖、鈉與每日參考分母。",
+      "tags": [
+        "整合案例與可重現交付",
+        "label case"
+      ]
+    },
+    {
+      "id": "93-diary-report-case",
+      "group": "practice",
+      "title": "整合案例：三天部分飲食紀錄報告",
+      "summary": "生成CSV、SVG與JSON，把資料身份、缺漏與解讀一起交付。",
+      "tags": [
+        "整合案例與可重現交付",
+        "diary report case"
+      ],
+      "example": "47_case_report.py"
+    },
+    {
+      "id": "94-measurement-troubleshooting",
+      "group": "practice",
+      "title": "常見錯誤排查：數字合理不代表問題定義正確",
+      "summary": "依單位、基準、形式、來源與時間逐步找到錯誤。",
+      "tags": [
+        "整合案例與可重現交付",
+        "measurement troubleshooting"
+      ]
+    },
+    {
+      "id": "95-complete-project",
+      "group": "practice",
+      "title": "完整專題：可重現的飲食資料分析交付",
+      "summary": "串起資料契約、計算、測試、圖表與限制，完成獨立專題。",
+      "tags": [
+        "整合案例與可重現交付",
+        "complete project"
+      ],
+      "example": "48_complete_report.py"
+    },
+    {
+      "id": "96-exercises-and-references",
+      "group": "practice",
+      "title": "綜合習題、版本速查與後續閱讀",
+      "summary": "回收全課的重要判斷，將更新規則和參考入口留在同一處。",
+      "tags": [
+        "整合案例與可重現交付",
+        "exercises and references"
+      ]
+    }
+  ]
+}
