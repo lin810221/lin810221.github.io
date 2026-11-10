@@ -1,0 +1,13 @@
+{
+  "synthetic": true,
+  "checked": "2026-11-10",
+  "population": "Fictional adult teaching examples, not patient data",
+  "missing": "null/blank = unknown, never normal or zero",
+  "bp": "7 days x 2 periods x 2 slots; all retained by default; first-day exclusion is explicit, not an optimization",
+  "limits": [
+    "No diagnosis or triage",
+    "No personal PREVENT calculation",
+    "No drug choice/dose",
+    "No extrapolation from US guidance to Taiwan"
+  ]
+}

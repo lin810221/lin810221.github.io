@@ -8,7 +8,9 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有十三個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有十四個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+
+新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -74,6 +76,12 @@ LearningNote/
 │   ├── examples/              32 個入口、實際引擎、虛構資料與驗收
 │   └── examples.zip           含依賴鎖版與資料的完整下載包
 ├── exercise-science/          運動科學與訓練原理：動作、適應、安排與觀察
+│   ├── index.html
+│   ├── course.json
+│   ├── chapters/              96份可編輯課文
+│   ├── assets/                課程資料與12個互動實驗
+│   └── examples/              48份離線Python範例、虛構資料與測試
+├── metabolic-health/          代謝健康與慢性病預防：量測、器官與整合預防
 │   ├── index.html
 │   ├── course.json
 │   ├── chapters/              96份可編輯課文
@@ -213,4 +221,16 @@ python tools/build.py nutrition
 py -3.15 -m unittest discover -s exercise-science/examples -p test_examples.py -v
 py -3.15 exercise-science/examples/48_complete_project.py --output my-exercise-report
 python tools/build.py exercise-science
+```
+
+## 代謝健康與慢性病預防
+
+入口：[metabolic-health/index.html](metabolic-health/index.html)。[離線程式、資料與公式說明](metabolic-health/examples/README.md)。包含代謝調節、體位、血糖、第二型糖尿病預防、血壓血脂、心血管風險、MASLD、腎臟、生活與環境、台灣預防保健、證據與整合專題。核心與課內進階均已納入；回連營養、運動與統計既有課程。
+
+截至2026-11-10查核正式指南與生效狀態，草案與2027未來規則另列；單位、分析物、量測程序、族群與用途一起說明。Python3.15.2、標準函式庫，虛構資料不作個人診斷、藥物或PREVENT預測。網頁閱讀與KaTeX均可離線。
+
+```powershell
+py -3.15 -m unittest discover -s metabolic-health/examples -p test_examples.py -v
+py -3.15 metabolic-health/examples/48_complete_project.py --output my-metabolic-report
+python tools/build.py metabolic-health
 ```

@@ -1,0 +1,49 @@
+/* DOM acceptance for educational arithmetic and reader behavior; no visual claim. */
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {parseHTML,Event,HTMLElement} from '../.qa/vendor/linkedom.mjs';
+import {parse} from '../.qa/vendor/acorn.mjs';
+import katex from '../.qa/vendor/katex.mjs';
+const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
+for(const file of ['assets/reader.js','metabolic-health/assets/overview.js','metabolic-health/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,14);assert.equal(home.querySelectorAll('a[href="metabolic-health/index.html"]').length,1);
+const {window,document}=parseHTML(await read('metabolic-health/index.html')),q=s=>document.querySelector(s),location={hash:''};
+const previous=JSON.stringify({completed:['01-exercise-science-map'],notes:{'01-exercise-science-map':'preserve exercise'}}),storage=new Map([['learning-notes:exercise-science:v1',previous]]);
+HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
+q('#search-dialog').showModal=function(){this.open=true;};q('#search-dialog').close=function(){this.open=false;};
+Object.assign(globalThis,{window,document,location,requestAnimationFrame:fn=>fn(),localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,value)}});
+await import(new URL('metabolic-health/assets/course-data.js',root).href);await import(new URL('metabolic-health/assets/overview.js',root).href);await import(new URL('assets/reader.js',root).href);
+assert.equal(document.querySelectorAll('.chapter-link').length,96);assert.equal(document.querySelectorAll('.module-row').length,16);assert.equal(document.querySelectorAll('.metabolic-lab').length,12);
+const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);assert.equal(ids.length,new Set(ids).size);
+for(const control of document.querySelectorAll('.metabolic-lab input,.metabolic-lab select'))assert.ok(q(`label[for="${control.id}"]`));
+for(const plot of document.querySelectorAll('.metabolic-chart')){assert.equal(plot.getAttribute('role'),'img');assert.ok(q('#'+plot.getAttribute('aria-labelledby')));assert.ok(!plot.innerHTML.includes('NaN'));}
+assert.equal(document.querySelectorAll('.metabolic-lab [data-status="error"]').length,0);assert.ok(q('#quick-start').textContent.includes('課內進階'));
+const lab=window.MetabolicLab,input=id=>q(id).dispatchEvent(new Event('input')),near=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
+function choose(id,value){const options=[...q(id).querySelectorAll('option')];assert.ok(options.some(o=>o.value===value));for(const o of options)o.selected=o.value===value;q(id).dispatchEvent(new Event('change'));}
+assert.equal(lab.toy(0).at(-1).state,0);assert.equal(lab.toy(10,0).at(-1).state,50);assert.ok(lab.toy().at(-1).state<lab.toy()[4].state);assert.throws(()=>lab.toy(10,1.1));
+q('#balance-input').value='';input('#balance-input');assert.equal(q('#metabolic-out-1').dataset.status,'error');assert.equal(q('#metabolic-plot-1').innerHTML,'');q('#balance-input').value='10';input('#balance-input');
+near(lab.body().bmi,70/2.89);near(lab.body().waistHeight,.5);assert.throws(()=>lab.body(70,0));
+near(lab.units(180).value,10);near(lab.units(1,'creatinine').value,88.4);near(lab.units(lab.units(150,'triglycerides').value,'triglycerides','fromSI').value,150);assert.throws(()=>lab.units(30,'lp_a'));choose('#unit-analyte','creatinine');q('#unit-value').value='1';input('#unit-value');assert.ok(q('#metabolic-out-3').textContent.includes('88.400 µmol/L'));choose('#unit-direction','fromSI');assert.ok(q('#metabolic-out-3').textContent.includes('µmol/L ≈'));
+near(lab.a1c(48,'IFCC'),6.54304);near(lab.a1c(lab.a1c(6.5),'IFCC'),6.5);assert.throws(()=>lab.a1c(1));choose('#a1c-source','IFCC');q('#a1c-value').value='48';input('#a1c-value');assert.ok(q('#metabolic-out-4').textContent.includes('6.543 NGSP %'));
+assert.equal(lab.bp().valid,27);assert.equal(lab.bp().expected,28);assert.equal(lab.bp().complete,null);assert.equal(lab.bp(false).valid,28);near(lab.bp(false).complete,126.5);assert.equal(lab.bp(true,true).valid,23);assert.equal(lab.bp(true,true).expected,24);choose('#bp-first','exclude');assert.ok(q('#metabolic-out-5').textContent.includes('有效 23／排定 24'));assert.ok(q('#metabolic-plot-5 title').textContent.includes('n=3/4'));choose('#bp-missing','complete');assert.ok(!q('#metabolic-out-5').textContent.includes('未知'));
+assert.equal(lab.nonhdl(),150);assert.throws(()=>lab.nonhdl(100,101));q('#nonhdl-hdl').value='300';input('#nonhdl-hdl');assert.equal(q('#metabolic-out-6').dataset.status,'error');q('#nonhdl-hdl').value='50';input('#nonhdl-hdl');
+near(lab.fib4(),1.5);assert.equal(lab.fib4(50,30,25,200,false),null);assert.throws(()=>lab.fib4(17));assert.throws(()=>lab.fib4(50,30,0));choose('#fib-context','acute');assert.ok(q('#metabolic-out-7').textContent.includes('未知'));
+assert.equal(lab.acr(),30);assert.equal(lab.acr(0),0);assert.throws(()=>lab.acr(30,0));
+near(lab.risk().rr,.7);near(lab.risk().arr,.03);near(lab.risk().number,100/3);assert.equal(lab.risk(0,100,0,100).rr,null);assert.equal(lab.risk(0,100,0,100).number,null);assert.equal(lab.risk(10,100,20,100).direction,'增加');assert.throws(()=>lab.risk(101,100));q('#risk-e1').value='1001';input('#risk-e1');assert.equal(q('#metabolic-out-9').dataset.status,'error');assert.equal(q('#metabolic-plot-9').innerHTML,'');q('#risk-e1').value='70';input('#risk-e1');
+near(lab.screening().ppv,90/585);assert.ok(lab.screening(10000,.1).ppv>lab.screening().ppv);assert.equal(lab.screening(10000,0,.9,1).ppv,null);near(Object.entries(lab.screening()).filter(([k])=>['tp','fp','tn','fn'].includes(k)).reduce((a,[,v])=>a+v,0),10000);choose('#bp-first','keep');q('#screen-prev').value='10';input('#screen-prev');assert.ok(q('#metabolic-out-10').textContent.includes('66.667%'));
+assert.equal(lab.ageScope(79,10),true);assert.equal(lab.ageScope(80,10),false);assert.equal(lab.ageScope(59,30),true);assert.equal(lab.ageScope(60,30),false);assert.equal(lab.ageScope(29,10),false);assert.throws(()=>lab.ageScope(45.5));choose('#prevent-horizon','30');q('#prevent-age').value='65';input('#prevent-age');assert.ok(q('#metabolic-out-11').textContent.includes('不在範圍內'));assert.ok(q('#metabolic-out-11').textContent.includes('沒有產生'));
+near(lab.assumed().difference,.01);near(lab.assumed(.2,.8).difference,.04);assert.throws(()=>lab.assumed(.9,2));q('#effect-baseline').value='90';input('#effect-baseline');q('#effect-rr').value='2';input('#effect-rr');assert.equal(q('#metabolic-out-12').dataset.status,'error');assert.equal(q('#metabolic-plot-12').innerHTML,'');
+for(const fn of [()=>lab.body(NaN),()=>lab.units(Infinity),()=>lab.a1c(true),()=>lab.acr(-1),()=>lab.screening(0),()=>lab.screening(100,.1,1.1),()=>lab.risk(1.5),()=>lab.ageScope(45,20),()=>lab.assumed(-.1)])assert.throws(fn);
+function navigate(id){location.hash='#'+id;window.dispatchEvent(new Event('hashchange'));}
+let equations=0,examples=0;
+for(const lesson of window.COURSE.lessons){
+  navigate(lesson.id);assert.equal(q('.lesson-header h1').textContent,lesson.title);assert.equal(document.querySelectorAll('.chapter-link[aria-current="page"]').length,1);assert.ok(document.querySelectorAll('.toc-links a').length>=4);
+  for(const el of document.querySelectorAll('.math-block,.math-source')){const tex=el.textContent.trim().replace(/^\$\$\s*|\s*\$\$$/g,'').replace(/^\$|\$$/g,'');katex.renderToString(tex,{displayMode:el.classList.contains('math-block'),throwOnError:true,strict:'error'});equations++;}
+  if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}
+}
+assert.equal(examples,48);assert.ok(equations>=10);assert.deepEqual(window.COURSE.groups.map(g=>window.COURSE.lessons.filter(l=>l.group===g.id).length),Array(16).fill(6));
+navigate('01-metabolic-health-map');q('#complete-lesson').click();q('#lesson-notes').value='mmol/mol與mmol/L分開；未知不補正常。';input('#lesson-notes');navigate('07-homeostasis');assert.ok(q('.lesson-kicker').textContent.includes('CHAPTER 02'));assert.ok(q('.lesson-kicker').textContent.includes('UNIT 01 OF 6'));navigate('01-metabolic-health-map');assert.equal(q('#lesson-notes').value,'mmol/mol與mmol/L分開；未知不補正常。');assert.equal(q('#progress-count').textContent,'1 / 96');assert.equal(storage.get('learning-notes:exercise-science:v1'),previous);
+q('#open-search').click();for(const term of ['HbA1c','722','MASLD','UACR','PREVENT','胰島素']){q('#search-input').value=term;input('#search-input');assert.ok(document.querySelectorAll('.search-result').length>0,term);}q('#close-search').click();q('#menu-toggle').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'true');q('#sidebar-shade').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'false');
+navigate('overview');assert.equal(document.querySelectorAll('.metabolic-lab').length,12);assert.equal(document.querySelectorAll('.metabolic-lab [data-status="error"]').length,0);assert.ok(q('#metabolic-out-5').textContent.includes('有效 27／排定 28'));assert.ok(q('#metabolic-out-11').textContent.includes('在範圍內'));assert.ok(q('#metabolic-out-10').textContent.includes('15.385%'));
+const css=await read('metabolic-health/assets/course.css'),styleDoc=parseHTML('<html><head><style>'+css+'</style></head></html>').document;assert.ok(styleDoc.querySelector('style').sheet.cssRules.length>20);
+export const report={syntax:'PASS',units:96,chapters:16,examples,equations,labs:'12 labs: arithmetic, units, missing, age/horizon, zero, error clearing and remount PASS',reader:'TOC, ZIP, search, notes, progress, chapter reset, menu PASS',isolation:'exercise preserved',limit:'DOM emulation; real-browser layout not verified'};

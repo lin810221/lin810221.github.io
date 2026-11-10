@@ -1,0 +1,41 @@
+{
+  "checked": "2026-11-10",
+  "baseline": [
+    {
+      "id": "ada2026",
+      "status": "published",
+      "region": "US",
+      "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926"
+    },
+    {
+      "id": "ckm2026",
+      "status": "published",
+      "region": "US",
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+    },
+    {
+      "id": "lipid2026",
+      "status": "published",
+      "region": "US",
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-on-the-management-of-dyslipidemia"
+    },
+    {
+      "id": "kdigo2024",
+      "status": "published; 2027 focused update is draft",
+      "region": "international",
+      "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/"
+    },
+    {
+      "id": "aga2026",
+      "status": "published",
+      "region": "US",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41812830/"
+    },
+    {
+      "id": "tw_older_bp2026",
+      "status": "published online 2026-10-24",
+      "region": "Taiwan, older adults",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42926177/"
+    }
+  ]
+}

@@ -1,0 +1,1118 @@
+{
+  "slug": "metabolic-health",
+  "title": "代謝健康與慢性病預防完整教學",
+  "shortTitle": "代謝健康與慢性病預防",
+  "updated": "2026-11-10",
+  "baseline": "ADA / CKM / Lipids 2026 · KDIGO 2024 · Python 3.15.2",
+  "footerLabel": "METABOLIC HEALTH · MEASURE, CONNECT & PREVENT",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 胰島素、HbA1c、722、non-HDL、MASLD、UACR或PREVENT。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "代謝健康與預防的問題",
+      "description": "學科地圖、風險群聚、證據、篩檢與數值。"
+    },
+    {
+      "id": "metabolism",
+      "number": "02",
+      "title": "身體如何調節能量",
+      "description": "器官分工、胰島素、脂肪組織與CKM連結。"
+    },
+    {
+      "id": "body",
+      "number": "03",
+      "title": "體位、脂肪與體重調節",
+      "description": "BMI、腰圍、組成、維持與新肥胖框架。"
+    },
+    {
+      "id": "glucose",
+      "number": "04",
+      "title": "血糖、HbA1c與檢驗",
+      "description": "空腹、OGTT、確認、干擾與監測差異。"
+    },
+    {
+      "id": "prevention",
+      "number": "05",
+      "title": "第二型糖尿病預防",
+      "description": "DPP、生活介入、特定族群與長期支持。"
+    },
+    {
+      "id": "pressure",
+      "number": "06",
+      "title": "血壓與血管健康",
+      "description": "正確量測、722、診斷情境與個別照護。"
+    },
+    {
+      "id": "lipids",
+      "number": "07",
+      "title": "血脂與脂蛋白",
+      "description": "LDL、non-HDL、TG、apoB、Lp(a)與2026指南。"
+    },
+    {
+      "id": "cardiovascular",
+      "number": "08",
+      "title": "心血管風險與共同決策",
+      "description": "絕對風險、PREVENT範圍、校準與初次／再次預防。"
+    },
+    {
+      "id": "liver",
+      "number": "09",
+      "title": "MASLD與肝臟健康",
+      "description": "新命名、病因、纖維化評估與最新照護路徑。"
+    },
+    {
+      "id": "kidney",
+      "number": "10",
+      "title": "腎臟與代謝循環",
+      "description": "eGFR、UACR、慢性確認、索引與KDIGO。"
+    },
+    {
+      "id": "nutrition",
+      "number": "11",
+      "title": "從飲食到可行預防",
+      "description": "型態、替代、鈉糖纖維、外食與維持。"
+    },
+    {
+      "id": "lifestyle",
+      "number": "12",
+      "title": "活動、睡眠與壓力",
+      "description": "有氧肌力、久坐、晝夜節律與行為支持。"
+    },
+    {
+      "id": "environment",
+      "number": "13",
+      "title": "菸酒、資源與環境",
+      "description": "暴露、支持、社會條件與群體預防。"
+    },
+    {
+      "id": "lifespan",
+      "number": "14",
+      "title": "生命階段與預防保健",
+      "description": "兒少、孕哺、長者、公費篩檢與專業合作。"
+    },
+    {
+      "id": "evidence",
+      "number": "15",
+      "title": "量測、篩檢與風險判讀",
+      "description": "預測值、變異、平均回歸、效果與替代終點。"
+    },
+    {
+      "id": "practice",
+      "number": "16",
+      "title": "整合案例與可重現報告",
+      "description": "版本審核、觀察摘要、排錯、專題與解答。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-metabolic-health-map",
+      "group": "foundations",
+      "title": "代謝健康在看什麼：從器官到生活",
+      "summary": "建立全課地圖，分開身體調節、風險因子、疾病和預防。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "metabolic health map"
+      ],
+      "example": "01_first_observation.py"
+    },
+    {
+      "id": "02-prevention-levels",
+      "group": "foundations",
+      "title": "預防、篩檢與治療：各自在做什麼",
+      "summary": "理解降低風險、提早發現和已確診照護的不同目的。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "prevention levels"
+      ]
+    },
+    {
+      "id": "03-criteria-and-context",
+      "group": "foundations",
+      "title": "五種標準：定義、診斷、目標、資格與模型",
+      "summary": "先辨認一個門檻回答什麼，避免相近數字互相替代。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "criteria and context"
+      ],
+      "example": "02_source_status.py"
+    },
+    {
+      "id": "04-evidence-and-outcomes",
+      "group": "foundations",
+      "title": "證據、因果與真正關心的結果",
+      "summary": "分清機制、生物標記、疾病事件與生活品質。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "evidence and outcomes"
+      ]
+    },
+    {
+      "id": "05-measurement-language",
+      "group": "foundations",
+      "title": "量測語言：單位、樣本、時間與未知",
+      "summary": "讓每個數字保留原意，避免資料表看似完整卻已改變概念。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "measurement language"
+      ],
+      "example": "03_missing_context.py"
+    },
+    {
+      "id": "06-learning-and-safety",
+      "group": "foundations",
+      "title": "學習路線與專業合作",
+      "summary": "知道教材能幫忙什麼，哪些問題需要臨床背景。",
+      "tags": [
+        "代謝健康與預防的問題",
+        "learning and safety"
+      ]
+    },
+    {
+      "id": "07-homeostasis",
+      "group": "metabolism",
+      "title": "恆定、回饋與代謝彈性",
+      "summary": "從輸入、利用、儲存與調節理解數值為何會變動。",
+      "tags": [
+        "身體如何調節能量",
+        "homeostasis"
+      ],
+      "example": "04_feedback_analogy.py"
+    },
+    {
+      "id": "08-organ-network",
+      "group": "metabolism",
+      "title": "肝、肌肉、脂肪、胰臟與腎臟的分工",
+      "summary": "把器官串成網絡，不以單一血液指標替代全部功能。",
+      "tags": [
+        "身體如何調節能量",
+        "organ network"
+      ]
+    },
+    {
+      "id": "09-insulin-resistance",
+      "group": "metabolism",
+      "title": "胰島素作用與阻抗：不是只有高血糖",
+      "summary": "理解分泌、敏感性和代償，分清研究指標與臨床判斷。",
+      "tags": [
+        "身體如何調節能量",
+        "insulin resistance"
+      ],
+      "example": "05_homa_research.py"
+    },
+    {
+      "id": "10-beta-cells",
+      "group": "metabolism",
+      "title": "β細胞、分泌與糖尿病類型",
+      "summary": "把分泌能力與組織敏感性連起來，不將所有高血糖當同一原因。",
+      "tags": [
+        "身體如何調節能量",
+        "beta cells"
+      ]
+    },
+    {
+      "id": "11-adipose-and-inflammation",
+      "group": "metabolism",
+      "title": "脂肪組織、發炎與異位脂肪",
+      "summary": "理解脂肪是有功能的組織，不用排毒或單一標記解釋慢性風險。",
+      "tags": [
+        "身體如何調節能量",
+        "adipose and inflammation"
+      ],
+      "example": "06_mechanism_versus_outcome.py"
+    },
+    {
+      "id": "12-ckm-connections",
+      "group": "metabolism",
+      "title": "CKM連結：心臟、腎臟與代謝互相影響",
+      "summary": "用2026正式框架理解多重風險，不把器官問題切成無關清單。",
+      "tags": [
+        "身體如何調節能量",
+        "ckm connections"
+      ]
+    },
+    {
+      "id": "13-bmi-and-context",
+      "group": "body",
+      "title": "BMI：怎麼算，以及不能回答什麼",
+      "summary": "學會算術與台灣成人分類，分開篩查工具和臨床肥胖判斷。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "bmi and context"
+      ],
+      "example": "07_bmi_arithmetic.py"
+    },
+    {
+      "id": "14-waist-and-fat",
+      "group": "body",
+      "title": "腰圍、內臟脂肪與量測位置",
+      "summary": "理解分布的重要性，將測量標準與影像、風險分開。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "waist and fat"
+      ]
+    },
+    {
+      "id": "15-body-composition",
+      "group": "body",
+      "title": "身體組成：脂肪、肌肉與水分",
+      "summary": "把體重變化拆成不同可能，不從一天或一台機器判全部結果。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "body composition"
+      ],
+      "example": "08_waist_and_height.py"
+    },
+    {
+      "id": "16-weight-regulation",
+      "group": "body",
+      "title": "能量平衡與體重調節：不是單純意志力",
+      "summary": "把守恆、食慾、支出與環境放在同一框架。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "weight regulation"
+      ]
+    },
+    {
+      "id": "17-long-term-maintenance",
+      "group": "body",
+      "title": "體重維持、復胖與長期支持",
+      "summary": "用可持續的觀察理解維持，不把短期下降當結束。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "long term maintenance"
+      ],
+      "example": "09_weight_trend.py"
+    },
+    {
+      "id": "18-clinical-obesity-framework",
+      "group": "body",
+      "title": "2025臨床肥胖框架與台灣分類",
+      "summary": "讀懂新概念，分清委員會框架、既有標準和個人評估。",
+      "tags": [
+        "體位、脂肪與體重調節",
+        "clinical obesity framework"
+      ]
+    },
+    {
+      "id": "19-glucose-units",
+      "group": "glucose",
+      "title": "血糖單位：mg/dL與mmol/L",
+      "summary": "從葡萄糖換算開始，保留分析物、樣本與精度。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "glucose units"
+      ],
+      "example": "10_glucose_units.py"
+    },
+    {
+      "id": "20-diagnostic-criteria",
+      "group": "glucose",
+      "title": "糖尿病診斷：數字和確認條件一起讀",
+      "summary": "列出非孕期正式標準，同時保留典型症狀和重複確認。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "diagnostic criteria"
+      ]
+    },
+    {
+      "id": "21-a1c-standardization",
+      "group": "glucose",
+      "title": "HbA1c：NGSP百分比與IFCC標準",
+      "summary": "理解糖化血色素的尺度，不把換算當個人平均血糖或確診。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "a1c standardization"
+      ],
+      "example": "11_a1c_units.py"
+    },
+    {
+      "id": "22-a1c-interference",
+      "group": "glucose",
+      "title": "貧血、血紅素變異與HbA1c干擾",
+      "summary": "分開分析方法干擾和身體狀況改變，不自行校正出一個真值。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "a1c interference"
+      ]
+    },
+    {
+      "id": "23-monitoring-versus-diagnosis",
+      "group": "glucose",
+      "title": "家用血糖、CGM與實驗室：用途不同",
+      "summary": "理解指尖和間質液監測，不將漂亮曲線當所有疾病的檢驗。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "monitoring versus diagnosis"
+      ],
+      "example": "12_test_protocol.py"
+    },
+    {
+      "id": "24-prediabetes-definitions",
+      "group": "glucose",
+      "title": "糖尿病前期與風險：不是突然變成另一種人",
+      "summary": "讀懂界線、不同定義與確認，不把篩查標籤當確定命運。",
+      "tags": [
+        "血糖、HbA1c與檢驗",
+        "prediabetes definitions"
+      ]
+    },
+    {
+      "id": "25-dpp-trial",
+      "group": "prevention",
+      "title": "DPP：預防第二型糖尿病的代表試驗",
+      "summary": "從隨機試驗理解效果、受試者與追蹤時間。",
+      "tags": [
+        "第二型糖尿病預防",
+        "dpp trial"
+      ],
+      "example": "13_absolute_risk.py"
+    },
+    {
+      "id": "26-effect-and-time",
+      "group": "prevention",
+      "title": "降低多少風險：相對、絕對與時間",
+      "summary": "把效果還原成共同分母，才知道對決策意味什麼。",
+      "tags": [
+        "第二型糖尿病預防",
+        "effect and time"
+      ]
+    },
+    {
+      "id": "27-structured-lifestyle",
+      "group": "prevention",
+      "title": "結構化生活介入：目標背後的條件",
+      "summary": "把ADA2026建議放回適用族群與支持方式。",
+      "tags": [
+        "第二型糖尿病預防",
+        "structured lifestyle"
+      ],
+      "example": "14_weight_change_context.py"
+    },
+    {
+      "id": "28-medication-prevention",
+      "group": "prevention",
+      "title": "預防藥物與生活方式：如何理解選項",
+      "summary": "認識特定情境的藥物預防，而不把教材變成開藥規則。",
+      "tags": [
+        "第二型糖尿病預防",
+        "medication prevention"
+      ]
+    },
+    {
+      "id": "29-support-and-followup",
+      "group": "prevention",
+      "title": "讓預防計畫能持續：家庭、回顧與資源",
+      "summary": "用可行行動與回饋支持長期改變。",
+      "tags": [
+        "第二型糖尿病預防",
+        "support and followup"
+      ],
+      "example": "15_prevention_program.py"
+    },
+    {
+      "id": "30-maintenance-and-recovery",
+      "group": "prevention",
+      "title": "維持與重新開始：預防不是一次考試",
+      "summary": "用長期視角處理中斷、反覆與支持需求。",
+      "tags": [
+        "第二型糖尿病預防",
+        "maintenance and recovery"
+      ]
+    },
+    {
+      "id": "31-home-measurement",
+      "group": "pressure",
+      "title": "居家血壓：從正確量測到722",
+      "summary": "讓姿勢、時機、設備與次數成為資料的一部分。",
+      "tags": [
+        "血壓與血管健康",
+        "home measurement"
+      ],
+      "example": "16_bp_available_mean.py"
+    },
+    {
+      "id": "32-measurement-settings",
+      "group": "pressure",
+      "title": "診間、居家與動態血壓：為何不能混算",
+      "summary": "比較不同場景的量測目的與白袍、隱蔽現象。",
+      "tags": [
+        "血壓與血管健康",
+        "measurement settings"
+      ]
+    },
+    {
+      "id": "33-missing-and-exclusion",
+      "group": "pressure",
+      "title": "血壓平均：缺漏、首日與資料品質",
+      "summary": "用同一份資料展示可用平均與完整性是不同問題。",
+      "tags": [
+        "血壓與血管健康",
+        "missing and exclusion"
+      ],
+      "example": "17_bp_exclusion_rule.py"
+    },
+    {
+      "id": "34-definitions-and-targets",
+      "group": "pressure",
+      "title": "血壓定義、治療起點與目標值",
+      "summary": "同一數字在不同問題下，可能有不同意義。",
+      "tags": [
+        "血壓與血管健康",
+        "definitions and targets"
+      ]
+    },
+    {
+      "id": "35-variation-and-repeat",
+      "group": "pressure",
+      "title": "血壓波動：重測能回答什麼",
+      "summary": "分辨自然變異、程序差異與值得處理的訊號。",
+      "tags": [
+        "血壓與血管健康",
+        "variation and repeat"
+      ],
+      "example": "18_repeat_variation.py"
+    },
+    {
+      "id": "36-bp-shared-care",
+      "group": "pressure",
+      "title": "血壓照護：生活、藥物與耐受",
+      "summary": "把多日觀察帶進共同決策，而不是由網頁選治療。",
+      "tags": [
+        "血壓與血管健康",
+        "bp shared care"
+      ]
+    },
+    {
+      "id": "37-particles-and-nonhdl",
+      "group": "lipids",
+      "title": "血脂不只一個膽固醇：粒子與non-HDL",
+      "summary": "理解運輸系統，並計算non-HDL-C。",
+      "tags": [
+        "血脂與脂蛋白",
+        "particles and nonhdl"
+      ],
+      "example": "19_non_hdl.py"
+    },
+    {
+      "id": "38-ldl-and-causality",
+      "group": "lipids",
+      "title": "LDL與動脈粥狀硬化：機轉、標記與結果",
+      "summary": "區分生物學角色和把檢驗值變成治療建議的證據。",
+      "tags": [
+        "血脂與脂蛋白",
+        "ldl and causality"
+      ]
+    },
+    {
+      "id": "39-ldl-methods",
+      "group": "lipids",
+      "title": "LDL怎麼來：歷史估算與現代方法",
+      "summary": "辨認報告方法，避免把Friedewald當成2026預設。",
+      "tags": [
+        "血脂與脂蛋白",
+        "ldl methods"
+      ],
+      "example": "20_historical_ldl.py"
+    },
+    {
+      "id": "40-triglycerides",
+      "group": "lipids",
+      "title": "三酸甘油酯：情境與次級原因",
+      "summary": "看懂TG為何變動，以及它不等於另一種LDL。",
+      "tags": [
+        "血脂與脂蛋白",
+        "triglycerides"
+      ]
+    },
+    {
+      "id": "41-apob-and-lpa",
+      "group": "lipids",
+      "title": "apoB與Lp(a)：補充資訊與單位陷阱",
+      "summary": "理解粒子訊息，也知道哪些單位沒有固定換算。",
+      "tags": [
+        "血脂與脂蛋白",
+        "apob and lpa"
+      ],
+      "example": "21_lipid_specific_units.py"
+    },
+    {
+      "id": "42-lipid-guideline-2026",
+      "group": "lipids",
+      "title": "2026血脂指南：更新了什麼，如何使用",
+      "summary": "追蹤正式版本、適用範圍與共同決策。",
+      "tags": [
+        "血脂與脂蛋白",
+        "lipid guideline 2026"
+      ]
+    },
+    {
+      "id": "43-absolute-risk",
+      "group": "cardiovascular",
+      "title": "心血管絕對風險：分母、事件與期限",
+      "summary": "用假設基線風險學習算術，不輸出個人預測。",
+      "tags": [
+        "心血管風險與共同決策",
+        "absolute risk"
+      ],
+      "example": "22_risk_baselines.py"
+    },
+    {
+      "id": "44-continuous-risk",
+      "group": "cardiovascular",
+      "title": "風險是連續的：不要只數紅字",
+      "summary": "從門檻分類回到多因子和生命歷程。",
+      "tags": [
+        "心血管風險與共同決策",
+        "continuous risk"
+      ]
+    },
+    {
+      "id": "45-prevent-scope",
+      "group": "cardiovascular",
+      "title": "PREVENT：先辨認輸出與適用年齡",
+      "summary": "十年、三十年與ASCVD、CVD、HF各有範圍。",
+      "tags": [
+        "心血管風險與共同決策",
+        "prevent scope"
+      ],
+      "example": "23_prevent_age_scope.py"
+    },
+    {
+      "id": "46-calibration-and-endpoints",
+      "group": "cardiovascular",
+      "title": "模型校準與終點：數字準確代表什麼",
+      "summary": "分清排序、機率與能否改善照護。",
+      "tags": [
+        "心血管風險與共同決策",
+        "calibration and endpoints"
+      ]
+    },
+    {
+      "id": "47-shared-decision",
+      "group": "cardiovascular",
+      "title": "共同決策：把效益、負擔與偏好放在一起",
+      "summary": "從「分數多少」走向「這個選擇解決什麼問題」。",
+      "tags": [
+        "心血管風險與共同決策",
+        "shared decision"
+      ],
+      "example": "24_shared_decision.py"
+    },
+    {
+      "id": "48-primary-secondary",
+      "group": "cardiovascular",
+      "title": "初次與再次事件預防：不能套同一張表",
+      "summary": "理解已有疾病與尚未發生事件的不同照護脈絡。",
+      "tags": [
+        "心血管風險與共同決策",
+        "primary secondary"
+      ]
+    },
+    {
+      "id": "49-steatotic-liver-names",
+      "group": "liver",
+      "title": "SLD、MASLD與MASH：名稱背後的問題",
+      "summary": "從脂肪沉積走到病因、發炎與纖維化。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "steatotic liver names"
+      ],
+      "example": "25_liver_source_context.py"
+    },
+    {
+      "id": "50-hepatic-metabolism",
+      "group": "liver",
+      "title": "肝臟如何連結血糖、脂質與脂肪",
+      "summary": "理解器官分工，避免把脂肪肝簡化為吃油太多。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "hepatic metabolism"
+      ]
+    },
+    {
+      "id": "51-fib4-arithmetic",
+      "group": "liver",
+      "title": "FIB-4：公式、單位與用途限制",
+      "summary": "學會計算，但不讓一個數字自動診斷纖維化。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "fib4 arithmetic"
+      ],
+      "example": "26_fib4_arithmetic.py"
+    },
+    {
+      "id": "52-noninvasive-assessment",
+      "group": "liver",
+      "title": "非侵入肝臟評估：兩階段路徑",
+      "summary": "認識彈性、血液標記與不確定區域。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "noninvasive assessment"
+      ]
+    },
+    {
+      "id": "53-liver-care-options",
+      "group": "liver",
+      "title": "MASLD照護：生活、共病與新治療",
+      "summary": "使用現行資訊，不再沿用「脂肪肝沒有藥」的過時概括。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "liver care options"
+      ],
+      "example": "27_liver_followup.py"
+    },
+    {
+      "id": "54-liver-longitudinal-care",
+      "group": "liver",
+      "title": "肝臟追蹤：趨勢、其他病因與共同風險",
+      "summary": "不要把一個肝指數當作全部追蹤結果。",
+      "tags": [
+        "MASLD與肝臟健康",
+        "liver longitudinal care"
+      ]
+    },
+    {
+      "id": "55-creatinine-measurement",
+      "group": "kidney",
+      "title": "肌酸酐：從檢驗濃度到腎功能線索",
+      "summary": "分清血清與尿液，也理解非腎臟因素。",
+      "tags": [
+        "腎臟與代謝循環",
+        "creatinine measurement"
+      ],
+      "example": "28_creatinine_units.py"
+    },
+    {
+      "id": "56-egfr-and-chronicity",
+      "group": "kidney",
+      "title": "eGFR與慢性腎病：一次異常不等於慢性",
+      "summary": "理解估算、不確定性和至少三個月的慢性條件。",
+      "tags": [
+        "腎臟與代謝循環",
+        "egfr and chronicity"
+      ]
+    },
+    {
+      "id": "57-urine-acr",
+      "group": "kidney",
+      "title": "UACR：用尿液比值看白蛋白資訊",
+      "summary": "從同一檢體、濃度與單位開始。",
+      "tags": [
+        "腎臟與代謝循環",
+        "urine acr"
+      ],
+      "example": "29_urine_acr.py"
+    },
+    {
+      "id": "58-repeat-urine-testing",
+      "group": "kidney",
+      "title": "尿液變異與確認：陽性後問什麼",
+      "summary": "把暫時變化、方法與持續性放回判讀。",
+      "tags": [
+        "腎臟與代謝循環",
+        "repeat urine testing"
+      ]
+    },
+    {
+      "id": "59-gfr-body-surface-area",
+      "group": "kidney",
+      "title": "eGFR的1.73：索引與去索引",
+      "summary": "用單位拆解體表面積轉換，不自動產生劑量。",
+      "tags": [
+        "腎臟與代謝循環",
+        "gfr body surface area"
+      ],
+      "example": "30_gfr_indexing.py"
+    },
+    {
+      "id": "60-kidney-guideline-status",
+      "group": "kidney",
+      "title": "腎臟照護與KDIGO：正式版、草案和個別化",
+      "summary": "以2024正式版為基礎，辨認2027更新仍在草案階段。",
+      "tags": [
+        "腎臟與代謝循環",
+        "kidney guideline status"
+      ]
+    },
+    {
+      "id": "61-dietary-patterns",
+      "group": "nutrition",
+      "title": "飲食型態：看整體組合與替代",
+      "summary": "把預防從單一超級食物，移向可持續的飲食結構。",
+      "tags": [
+        "從飲食到可行預防",
+        "dietary patterns"
+      ],
+      "example": "31_pattern_observation.py"
+    },
+    {
+      "id": "62-fats-and-substitution",
+      "group": "nutrition",
+      "title": "脂肪品質與替代：減少後拿什麼補上",
+      "summary": "不要只問少吃多少，也要問比較的是哪個選項。",
+      "tags": [
+        "從飲食到可行預防",
+        "fats and substitution"
+      ]
+    },
+    {
+      "id": "63-sodium-labels",
+      "group": "nutrition",
+      "title": "鈉與食鹽：讀標示的算術",
+      "summary": "分清毫克、克、每份和總份數。",
+      "tags": [
+        "從飲食到可行預防",
+        "sodium labels"
+      ],
+      "example": "32_sodium_equivalent.py"
+    },
+    {
+      "id": "64-fiber-sugars-and-gi",
+      "group": "nutrition",
+      "title": "纖維、糖與GI：單一數字不能評分整餐",
+      "summary": "區分食物結構、游離糖與血糖反應。",
+      "tags": [
+        "從飲食到可行預防",
+        "fiber sugars and gi"
+      ]
+    },
+    {
+      "id": "65-weight-maintenance-observations",
+      "group": "nutrition",
+      "title": "體重維持與飲食紀錄：觀察而不責備",
+      "summary": "用趨勢和情境學習，避免以每天變化評價努力。",
+      "tags": [
+        "從飲食到可行預防",
+        "weight maintenance observations"
+      ],
+      "example": "33_maintenance_observations.py"
+    },
+    {
+      "id": "66-access-and-eating-out",
+      "group": "nutrition",
+      "title": "外食、預算與慢性病：把選擇做得可行",
+      "summary": "從日常限制出發設計能持續的改變。",
+      "tags": [
+        "從飲食到可行預防",
+        "access and eating out"
+      ]
+    },
+    {
+      "id": "67-physical-activity",
+      "group": "lifestyle",
+      "title": "身體活動與代謝：不只消耗熱量",
+      "summary": "理解一般活動方向與適用條件。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "physical activity"
+      ],
+      "example": "34_activity_equivalence.py"
+    },
+    {
+      "id": "68-strength-and-sitting",
+      "group": "lifestyle",
+      "title": "肌力、久坐與日常功能",
+      "summary": "把訓練與整天的活動分布一起看。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "strength and sitting"
+      ]
+    },
+    {
+      "id": "69-sleep-observation",
+      "group": "lifestyle",
+      "title": "睡眠：時數、品質與規律",
+      "summary": "從觀察走向值得詢問的問題，不用睡眠分數診斷。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "sleep observation"
+      ],
+      "example": "35_sleep_observations.py"
+    },
+    {
+      "id": "70-circadian-and-osa",
+      "group": "lifestyle",
+      "title": "晝夜節律、輪班與睡眠呼吸中止",
+      "summary": "分清生活安排與需要專業評估的睡眠問題。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "circadian and osa"
+      ]
+    },
+    {
+      "id": "71-stress-and-context",
+      "group": "lifestyle",
+      "title": "壓力、情緒與代謝：觀察連結，不責怪個人",
+      "summary": "把行為、身體反應與生活資源放在同一張圖。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "stress and context"
+      ],
+      "example": "36_stress_context.py"
+    },
+    {
+      "id": "72-integrating-habits",
+      "group": "lifestyle",
+      "title": "把飲食、活動與睡眠整合成可行計畫",
+      "summary": "不要用互相衝突的目標增加生活負擔。",
+      "tags": [
+        "活動、睡眠與壓力",
+        "integrating habits"
+      ]
+    },
+    {
+      "id": "73-tobacco-exposure",
+      "group": "environment",
+      "title": "菸草、尼古丁與心代謝風險",
+      "summary": "把吸菸、二手暴露與產品差異分開記錄。",
+      "tags": [
+        "菸酒、資源與環境",
+        "tobacco exposure"
+      ],
+      "example": "37_tobacco_record.py"
+    },
+    {
+      "id": "74-cessation-support",
+      "group": "environment",
+      "title": "戒菸支持：依賴、反覆與照護",
+      "summary": "把戒菸當成可獲支持的照護過程。",
+      "tags": [
+        "菸酒、資源與環境",
+        "cessation support"
+      ]
+    },
+    {
+      "id": "75-alcohol-arithmetic",
+      "group": "environment",
+      "title": "酒精量怎麼算：容量、濃度與純酒精",
+      "summary": "用明確單位記錄，不把算式變成安全飲酒額度。",
+      "tags": [
+        "菸酒、資源與環境",
+        "alcohol arithmetic"
+      ],
+      "example": "38_alcohol_units.py"
+    },
+    {
+      "id": "76-alcohol-and-care",
+      "group": "environment",
+      "title": "酒精、肝臟與依賴：風險不只在熱量",
+      "summary": "分清暴露紀錄、疾病評估與需要支持的戒減過程。",
+      "tags": [
+        "菸酒、資源與環境",
+        "alcohol and care"
+      ]
+    },
+    {
+      "id": "77-social-determinants",
+      "group": "environment",
+      "title": "社會條件：為何不能只談個人選擇",
+      "summary": "把收入、時間、居住和照護可近性放進預防。",
+      "tags": [
+        "菸酒、資源與環境",
+        "social determinants"
+      ],
+      "example": "39_social_context.py"
+    },
+    {
+      "id": "78-population-prevention",
+      "group": "environment",
+      "title": "群體預防：政策、場域與公平",
+      "summary": "從一個人的行動，走向讓更多人能受益的環境。",
+      "tags": [
+        "菸酒、資源與環境",
+        "population prevention"
+      ]
+    },
+    {
+      "id": "79-population-boundaries",
+      "group": "lifespan",
+      "title": "兒少、成人與特殊族群：不要外推同一界線",
+      "summary": "先確認指南在談誰，再理解數字。",
+      "tags": [
+        "生命階段與預防保健",
+        "population boundaries"
+      ],
+      "example": "40_life_stage_context.py"
+    },
+    {
+      "id": "80-pregnancy-aging",
+      "group": "lifespan",
+      "title": "孕產與高齡：生命階段改變照護問題",
+      "summary": "把生理變化、功能、藥物與長期預防一起考慮。",
+      "tags": [
+        "生命階段與預防保健",
+        "pregnancy aging"
+      ]
+    },
+    {
+      "id": "81-taiwan-preventive-care",
+      "group": "lifespan",
+      "title": "台灣成人預防保健：資格不等於追蹤計畫",
+      "summary": "分開公費頻率、檢查項目與個人醫療需要。",
+      "tags": [
+        "生命階段與預防保健",
+        "taiwan preventive care"
+      ],
+      "example": "41_screening_policy.py"
+    },
+    {
+      "id": "82-screening-followup",
+      "group": "lifespan",
+      "title": "健檢前後：篩檢、確認與後續行動",
+      "summary": "用流程看報告，而不是只收集紅字。",
+      "tags": [
+        "生命階段與預防保健",
+        "screening followup"
+      ]
+    },
+    {
+      "id": "83-medication-and-chronicity",
+      "group": "lifespan",
+      "title": "病史、藥物與時間：讓摘要有臨床背景",
+      "summary": "把日期和既往資訊放回檢驗解釋。",
+      "tags": [
+        "生命階段與預防保健",
+        "medication and chronicity"
+      ],
+      "example": "42_chronicity_context.py"
+    },
+    {
+      "id": "84-clinical-conversation",
+      "group": "lifespan",
+      "title": "帶著問題就醫：常規回顧與急症辨識",
+      "summary": "讓學習幫助溝通，同時知道網頁工具的界限。",
+      "tags": [
+        "生命階段與預防保健",
+        "clinical conversation"
+      ]
+    },
+    {
+      "id": "85-screening-bayes",
+      "group": "evidence",
+      "title": "篩檢預測值：陽性不等於已患病",
+      "summary": "用預期人數理解基線盛行率如何改變結果。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "screening bayes"
+      ],
+      "example": "43_screening_bayes.py"
+    },
+    {
+      "id": "86-screening-benefit-harm",
+      "group": "evidence",
+      "title": "偽陽性、偽陰性與過度診斷",
+      "summary": "從測得準不準，走到做篩檢是否有淨效益。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "screening benefit harm"
+      ]
+    },
+    {
+      "id": "87-variation-and-thresholds",
+      "group": "evidence",
+      "title": "量測誤差與生物變異：跨線可能意味什麼",
+      "summary": "把儀器、採樣與個人波動分開思考。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "variation and thresholds"
+      ],
+      "example": "44_variation_and_thresholds.py"
+    },
+    {
+      "id": "88-regression-to-mean",
+      "group": "evidence",
+      "title": "平均回歸：為何第二次可能自然較接近一般值",
+      "summary": "避免把極端值後的改變全算成介入功勞。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "regression to mean"
+      ]
+    },
+    {
+      "id": "89-risk-effect-calculation",
+      "group": "evidence",
+      "title": "RR、ARR與NNT：用整數人數驗算",
+      "summary": "讓每個百分比都有分母，並處理零事件與傷害。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "risk effect calculation"
+      ],
+      "example": "45_absolute_relative_effects.py"
+    },
+    {
+      "id": "90-surrogates-and-causality",
+      "group": "evidence",
+      "title": "替代終點與臨床結果：數值改善後還要問什麼",
+      "summary": "把機轉、關聯與介入證據接起來。",
+      "tags": [
+        "量測、篩檢與風險判讀",
+        "surrogates and causality"
+      ]
+    },
+    {
+      "id": "91-observation-dashboard",
+      "group": "practice",
+      "title": "整合案例：一份不假裝診斷的觀察摘要",
+      "summary": "把血壓、體位、檢驗、單位與未知資訊整理到一起。",
+      "tags": [
+        "整合案例與可重現報告",
+        "observation dashboard"
+      ],
+      "example": "46_report_audit.py"
+    },
+    {
+      "id": "92-source-version-audit",
+      "group": "practice",
+      "title": "來源與版本審核：正式、草案與未來生效",
+      "summary": "建立一個可以更新而不混淆時點的來源表。",
+      "tags": [
+        "整合案例與可重現報告",
+        "source version audit"
+      ]
+    },
+    {
+      "id": "93-reproducible-report",
+      "group": "practice",
+      "title": "輸出CSV、SVG與JSON：可重跑的學習報告",
+      "summary": "用Python標準函式庫連結原始資料、圖與算術。",
+      "tags": [
+        "整合案例與可重現報告",
+        "reproducible report"
+      ],
+      "example": "47_report_preview.py"
+    },
+    {
+      "id": "94-troubleshooting",
+      "group": "practice",
+      "title": "排錯：單位、缺漏、輸入與環境",
+      "summary": "遇到錯誤先找資料條件，不用編造合理數字。",
+      "tags": [
+        "整合案例與可重現報告",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "95-capstone",
+      "group": "practice",
+      "title": "整合專題：從虛構資料到可審核摘要",
+      "summary": "完成一次資料、程式、圖表與證據的連結。",
+      "tags": [
+        "整合案例與可重現報告",
+        "capstone"
+      ],
+      "example": "48_complete_project.py"
+    },
+    {
+      "id": "96-exercises-and-references",
+      "group": "practice",
+      "title": "總複習、解答與後續閱讀",
+      "summary": "用跨章問題檢查概念是否真正接起來。",
+      "tags": [
+        "整合案例與可重現報告",
+        "exercises and references"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+id,population,prevalence,sensitivity,specificity,synthetic
+low_prevalence,10000,0.01,0.9,0.95,True
+higher_prevalence,10000,0.1,0.9,0.95,True

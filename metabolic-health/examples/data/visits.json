@@ -1,0 +1,158 @@
+[
+  {
+    "synthetic": true,
+    "date": "2026-02-10",
+    "height_cm": 170,
+    "weight_kg": 70.0,
+    "context": {
+      "age_years": 45,
+      "fasting_status": "fictional_reported",
+      "medications": null,
+      "symptoms": null,
+      "not_a_real_person": true
+    },
+    "labs": {
+      "glucose": {
+        "value": 98,
+        "unit": "mg/dL"
+      },
+      "total_cholesterol": {
+        "value": 200,
+        "unit": "mg/dL"
+      },
+      "hdl": {
+        "value": 50,
+        "unit": "mg/dL"
+      },
+      "tg": {
+        "value": 150,
+        "unit": "mg/dL"
+      },
+      "a1c": {
+        "value": 5.5,
+        "unit": "NGSP_percent"
+      },
+      "creatinine": {
+        "value": 1.0,
+        "unit": "mg/dL"
+      }
+    }
+  },
+  {
+    "synthetic": true,
+    "date": "2026-05-10",
+    "height_cm": 170,
+    "weight_kg": 69.5,
+    "context": {
+      "age_years": 45,
+      "fasting_status": "fictional_reported",
+      "medications": null,
+      "symptoms": null,
+      "not_a_real_person": true
+    },
+    "labs": {
+      "glucose": {
+        "value": 100,
+        "unit": "mg/dL"
+      },
+      "total_cholesterol": {
+        "value": 197,
+        "unit": "mg/dL"
+      },
+      "hdl": {
+        "value": 51,
+        "unit": "mg/dL"
+      },
+      "tg": {
+        "value": 145,
+        "unit": "mg/dL"
+      },
+      "a1c": {
+        "value": 5.6,
+        "unit": "NGSP_percent"
+      },
+      "creatinine": {
+        "value": 1.0,
+        "unit": "mg/dL"
+      }
+    }
+  },
+  {
+    "synthetic": true,
+    "date": "2026-08-10",
+    "height_cm": 170,
+    "weight_kg": 69.0,
+    "context": {
+      "age_years": 45,
+      "fasting_status": "fictional_reported",
+      "medications": null,
+      "symptoms": null,
+      "not_a_real_person": true
+    },
+    "labs": {
+      "glucose": {
+        "value": 102,
+        "unit": "mg/dL"
+      },
+      "total_cholesterol": {
+        "value": 194,
+        "unit": "mg/dL"
+      },
+      "hdl": {
+        "value": null,
+        "unit": "mg/dL"
+      },
+      "tg": {
+        "value": 140,
+        "unit": "mg/dL"
+      },
+      "a1c": {
+        "value": 5.7,
+        "unit": "NGSP_percent"
+      },
+      "creatinine": {
+        "value": 1.0,
+        "unit": "mg/dL"
+      }
+    }
+  },
+  {
+    "synthetic": true,
+    "date": "2026-11-10",
+    "height_cm": 170,
+    "weight_kg": 68.5,
+    "context": {
+      "age_years": 45,
+      "fasting_status": "fictional_reported",
+      "medications": null,
+      "symptoms": null,
+      "not_a_real_person": true
+    },
+    "labs": {
+      "glucose": {
+        "value": 104,
+        "unit": "mg/dL"
+      },
+      "total_cholesterol": {
+        "value": 191,
+        "unit": "mg/dL"
+      },
+      "hdl": {
+        "value": 53,
+        "unit": "mg/dL"
+      },
+      "tg": {
+        "value": 135,
+        "unit": "mg/dL"
+      },
+      "a1c": {
+        "value": 5.8,
+        "unit": "NGSP_percent"
+      },
+      "creatinine": {
+        "value": 1.0,
+        "unit": "mg/dL"
+      }
+    }
+  }
+]
