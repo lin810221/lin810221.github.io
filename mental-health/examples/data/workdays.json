@@ -1,0 +1,34 @@
+[
+  {
+    "id": "A",
+    "synthetic": true,
+    "available_minutes": 240,
+    "planned_task_minutes": [
+      90,
+      60,
+      30
+    ],
+    "overhead_minutes": 30
+  },
+  {
+    "id": "B",
+    "synthetic": true,
+    "available_minutes": 240,
+    "planned_task_minutes": [
+      90,
+      60,
+      null
+    ],
+    "overhead_minutes": 30
+  },
+  {
+    "id": "C",
+    "synthetic": true,
+    "available_minutes": 180,
+    "planned_task_minutes": [
+      90,
+      120
+    ],
+    "overhead_minutes": 30
+  }
+]

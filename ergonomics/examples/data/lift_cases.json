@@ -1,0 +1,47 @@
+[
+  {
+    "id": "baseline",
+    "synthetic": true,
+    "inputs": {
+      "load_kg": 12,
+      "h_cm": 25,
+      "v_cm": 75,
+      "d_cm": 50,
+      "a_deg": 0,
+      "fm": 0.94,
+      "cm": 1,
+      "conditions_verified": true
+    },
+    "assumptions": "Teaching case: representative 1 lift/min, short-duration class with sufficient recovery, V=75cm, formally classified good coupling; not complete task assessment"
+  },
+  {
+    "id": "farther",
+    "synthetic": true,
+    "inputs": {
+      "load_kg": 12,
+      "h_cm": 50,
+      "v_cm": 75,
+      "d_cm": 50,
+      "a_deg": 0,
+      "fm": 0.94,
+      "cm": 1,
+      "conditions_verified": true
+    },
+    "assumptions": "Teaching case: representative 1 lift/min, short-duration class with sufficient recovery, V=75cm, formally classified good coupling; not complete task assessment"
+  },
+  {
+    "id": "unknown",
+    "synthetic": true,
+    "inputs": {
+      "load_kg": 12,
+      "h_cm": 25,
+      "v_cm": 75,
+      "d_cm": 50,
+      "a_deg": 0,
+      "fm": null,
+      "cm": 1,
+      "conditions_verified": false
+    },
+    "assumptions": "Teaching case: representative 1 lift/min, short-duration class with sufficient recovery, V=75cm, formally classified good coupling; not complete task assessment"
+  }
+]

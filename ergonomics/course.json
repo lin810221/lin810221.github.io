@@ -1,0 +1,1118 @@
+{
+  "slug": "ergonomics",
+  "title": "肌肉骨骼健康與人體工學完整教學",
+  "shortTitle": "肌肉骨骼健康與人體工學",
+  "updated": "2026-11-13",
+  "baseline": "NIOSH RNLE 2021修訂 · 正式資料2026查核 · Python 3.15.2",
+  "footerLabel": "ERGONOMICS · UNDERSTAND, ADAPT & VERIFY",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 力矩、肌腱、腰背、螢幕、RNLE、ART、振動或人因預防。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "任務、人與環境的學科地圖",
+      "description": "人體工學、危害暴露、證據、法規與課程分工。"
+    },
+    {
+      "id": "anatomy",
+      "number": "02",
+      "title": "肌肉骨骼與神經基礎",
+      "description": "骨、關節、肌肉、肌腱韌帶、神經與功能。"
+    },
+    {
+      "id": "mechanics",
+      "number": "03",
+      "title": "動作、力與組織負荷",
+      "description": "外力矩、槓桿、接觸、應力應變與時間模型。"
+    },
+    {
+      "id": "pain",
+      "number": "04",
+      "title": "疼痛、病況與照護界線",
+      "description": "疼痛科學、功能、影像、恢復與及時評估。"
+    },
+    {
+      "id": "assessment",
+      "number": "05",
+      "title": "如何觀察工作與人的差異",
+      "description": "任務分析、人體計測、抽樣、頻率與不確定。"
+    },
+    {
+      "id": "workstation",
+      "number": "06",
+      "title": "桌椅、螢幕與輸入設備",
+      "description": "支撐、淨空、配置、鍵鼠、視線與可調性。"
+    },
+    {
+      "id": "digital",
+      "number": "07",
+      "title": "筆電、視覺與坐站工作",
+      "description": "分離設備、字體視角、反光、變化與遠距。"
+    },
+    {
+      "id": "upperlimb",
+      "number": "08",
+      "title": "肩頸與上肢任務",
+      "description": "伸取、手腕、接觸、重複、工具與症狀脈絡。"
+    },
+    {
+      "id": "lowerbody",
+      "number": "09",
+      "title": "下背、髖膝與日常動作",
+      "description": "彎腰、站走、地面、支撐與身體條件。"
+    },
+    {
+      "id": "lifting",
+      "number": "10",
+      "title": "搬抬與RNLE原理",
+      "description": "工作設計、正式公式、兩端、表格與適用限制。"
+    },
+    {
+      "id": "repetition",
+      "number": "11",
+      "title": "重複作業與工具選用",
+      "description": "動作頻率、施力、抓握、ART／MAC／RAPP／KIM。"
+    },
+    {
+      "id": "environment",
+      "number": "12",
+      "title": "推拉、振動與物理環境",
+      "description": "外功、輪具、HAV與WBV、照明地面與協作。"
+    },
+    {
+      "id": "controls",
+      "number": "13",
+      "title": "改善設計與參與式追蹤",
+      "description": "控制層級、工程與組織、前後比較、台灣計畫。"
+    },
+    {
+      "id": "adaptation",
+      "number": "14",
+      "title": "不同身體、場域與合理調整",
+      "description": "生命階段、骨健康、共用遠距、可近性與復工。"
+    },
+    {
+      "id": "evidence",
+      "number": "15",
+      "title": "量測、風險工具與資訊判讀",
+      "description": "主觀尺度、缺漏、因果、方法效度與版本。"
+    },
+    {
+      "id": "practice",
+      "number": "16",
+      "title": "可重跑的人因觀察專題",
+      "description": "資料契約、報告、排錯、實作與綜合解答。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-ergonomics-map",
+      "group": "foundations",
+      "title": "人體工學：讓任務與環境適合人",
+      "summary": "從工作目標、人的差異與環境，建立完整學科地圖。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "ergonomics map"
+      ],
+      "example": "01_task_person_environment.py"
+    },
+    {
+      "id": "02-task-and-person",
+      "group": "foundations",
+      "title": "工作任務與人的能力：適配而非排名",
+      "summary": "理解身體差異、工作需求與可調整的條件。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "task and person"
+      ]
+    },
+    {
+      "id": "03-hazard-exposure-outcome",
+      "group": "foundations",
+      "title": "危害、暴露、症狀與疾病：四個不同層次",
+      "summary": "讓觀察與推論各有位置。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "hazard exposure outcome"
+      ],
+      "example": "02_hazard_exposure_outcome.py"
+    },
+    {
+      "id": "04-standards-and-jurisdictions",
+      "group": "foundations",
+      "title": "法規、指南、工具與公式：用途和地區先說清楚",
+      "summary": "把台灣責任、國際方法和教材模型分開閱讀。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "standards and jurisdictions"
+      ]
+    },
+    {
+      "id": "05-evidence-and-privacy",
+      "group": "foundations",
+      "title": "證據、參與與隱私：改善需要使用者的聲音",
+      "summary": "用可追溯資訊和尊重的合作方式學習。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "evidence and privacy"
+      ],
+      "example": "03_version_audit.py"
+    },
+    {
+      "id": "06-learning-routes",
+      "group": "foundations",
+      "title": "完整路線與跨課分工",
+      "summary": "從基礎走向實作，同時知道哪些問題需其他專業。",
+      "tags": [
+        "任務、人與環境的學科地圖",
+        "learning routes"
+      ]
+    },
+    {
+      "id": "07-bone-and-remodeling",
+      "group": "anatomy",
+      "title": "骨骼：支撐、造血、礦物與適應",
+      "summary": "把骨看成活的組織，不只是一根固定支架。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "bone and remodeling"
+      ],
+      "example": "04_bone_context.py"
+    },
+    {
+      "id": "08-joints-and-movement",
+      "group": "anatomy",
+      "title": "關節與軟骨：活動、穩定與整個關節",
+      "summary": "理解動作方向，避免把關節只當磨損零件。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "joints and movement"
+      ]
+    },
+    {
+      "id": "09-muscle-actions",
+      "group": "anatomy",
+      "title": "肌肉與控制：用力不一定會縮短",
+      "summary": "分清收縮、動作和外部觀察。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "muscle actions"
+      ],
+      "example": "05_muscle_action.py"
+    },
+    {
+      "id": "10-tendons-and-ligaments",
+      "group": "anatomy",
+      "title": "肌腱、韌帶與筋膜：角色不同，不能混稱",
+      "summary": "理解傳力、限制與負荷適應。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "tendons and ligaments"
+      ]
+    },
+    {
+      "id": "11-nerves-and-sensation",
+      "group": "anatomy",
+      "title": "神經、感覺與動作：麻痛無力各代表什麼",
+      "summary": "理解訊號和症狀描述，不在網頁完成定位診斷。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "nerves and sensation"
+      ],
+      "example": "06_nerve_observation.py"
+    },
+    {
+      "id": "12-functional-anatomy",
+      "group": "anatomy",
+      "title": "把人體放回任務：從拿杯到搬箱",
+      "summary": "用功能鏈連結結構，而不是背完名詞就結束。",
+      "tags": [
+        "肌肉骨骼與神經基礎",
+        "functional anatomy"
+      ]
+    },
+    {
+      "id": "13-forces-and-moments",
+      "group": "mechanics",
+      "title": "力、重量與力矩：先把單位說清楚",
+      "summary": "從kg、N與N·m開始，建立能手算的基礎。",
+      "tags": [
+        "動作、力與組織負荷",
+        "forces and moments"
+      ],
+      "example": "07_external_moment.py"
+    },
+    {
+      "id": "14-levers-and-internal-forces",
+      "group": "mechanics",
+      "title": "槓桿、平衡與內力：模型少了哪些未知",
+      "summary": "不要把外部照片變成看似精確的組織受力。",
+      "tags": [
+        "動作、力與組織負荷",
+        "levers and internal forces"
+      ]
+    },
+    {
+      "id": "15-pressure-and-contact",
+      "group": "mechanics",
+      "title": "接觸、面積與壓力：同樣的力如何分布",
+      "summary": "分開外部均勻接觸模型與真實局部組織。",
+      "tags": [
+        "動作、力與組織負荷",
+        "pressure and contact"
+      ],
+      "example": "08_pressure_and_area.py"
+    },
+    {
+      "id": "16-stress-and-strain",
+      "group": "mechanics",
+      "title": "應力、應變與材料假設",
+      "summary": "知道形變是什麼，也知道為何不能直接推人體損傷。",
+      "tags": [
+        "動作、力與組織負荷",
+        "stress and strain"
+      ]
+    },
+    {
+      "id": "17-time-dependent-response",
+      "group": "mechanics",
+      "title": "時間效應：蠕變、鬆弛與任意模型",
+      "summary": "看懂時間曲線，也知道何時只是教學類比。",
+      "tags": [
+        "動作、力與組織負荷",
+        "time dependent response"
+      ],
+      "example": "09_relaxation_analogy.py"
+    },
+    {
+      "id": "18-mechanical-model-limits",
+      "group": "mechanics",
+      "title": "從力學到工作改善：可計算與仍未知",
+      "summary": "把公式放在適當層次，避免虛假精確。",
+      "tags": [
+        "動作、力與組織負荷",
+        "mechanical model limits"
+      ]
+    },
+    {
+      "id": "19-pain-and-nociception",
+      "group": "pain",
+      "title": "疼痛與傷害感受：真實經驗，不是精確損傷尺",
+      "summary": "以IASP定義理解生物、心理與社會脈絡。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "pain and nociception"
+      ],
+      "example": "10_pain_description.py"
+    },
+    {
+      "id": "20-acute-persistent-and-context",
+      "group": "pain",
+      "title": "急性與持續不適：時間、功能和原因",
+      "summary": "認識分類用途，不用時間一刀切所有處理。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "acute persistent and context"
+      ]
+    },
+    {
+      "id": "21-imaging-and-symptoms",
+      "group": "pain",
+      "title": "影像、姿勢與症狀：相關不等於唯一病因",
+      "summary": "知道檢查回答什麼，以及哪些結論需要更多資料。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "imaging and symptoms"
+      ],
+      "example": "11_imaging_context.py"
+    },
+    {
+      "id": "22-function-and-recovery",
+      "group": "pain",
+      "title": "功能、活動與恢復：可調整，不是硬撐",
+      "summary": "把生活目標和工作支持放回照護。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "function and recovery"
+      ]
+    },
+    {
+      "id": "23-when-to-seek-help",
+      "group": "pain",
+      "title": "何時需要醫療：急性與進展訊號",
+      "summary": "辨認需要適時評估的資訊，不製作自測安全證書。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "when to seek help"
+      ],
+      "example": "12_help_context.py"
+    },
+    {
+      "id": "24-guideline-versions",
+      "group": "pain",
+      "title": "臨床指南的版本與範圍：2026真的改了什麼",
+      "summary": "分清更新、撤回、方法和不同地區的照護背景。",
+      "tags": [
+        "疼痛、病況與照護界線",
+        "guideline versions"
+      ]
+    },
+    {
+      "id": "25-task-analysis",
+      "group": "assessment",
+      "title": "任務分析：先知道實際在做什麼",
+      "summary": "用流程、物件、時間與使用者觀察建立問題。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "task analysis"
+      ],
+      "example": "13_observation_windows.py"
+    },
+    {
+      "id": "26-observation-and-measurement",
+      "group": "assessment",
+      "title": "觀察、量測與訪談：三者如何互補",
+      "summary": "把看到、量到與當事人說的資訊分開保存。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "observation and measurement"
+      ]
+    },
+    {
+      "id": "27-anthropometric-fit",
+      "group": "assessment",
+      "title": "人體計測與適配：百分位不是一個完整的人",
+      "summary": "從伸得到與容得下，理解多尺寸聯合設計。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "anthropometric fit"
+      ],
+      "example": "14_sample_geometry.py"
+    },
+    {
+      "id": "28-sampling-and-time",
+      "group": "assessment",
+      "title": "取樣、工作時間與恢復資訊",
+      "summary": "不讓全天平均掩蓋實際工作段。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "sampling and time"
+      ]
+    },
+    {
+      "id": "29-frequency-and-duty",
+      "group": "assessment",
+      "title": "頻率、工作比例與定義：同平均可能不同暴露",
+      "summary": "手算動作率，同時保留施力、節奏和未知。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "frequency and duty"
+      ],
+      "example": "15_action_frequency.py"
+    },
+    {
+      "id": "30-priorities-and-uncertainty",
+      "group": "assessment",
+      "title": "整理改善優先序：線索、需要與未知",
+      "summary": "用可說明理由的討論，取代自創健康總分。",
+      "tags": [
+        "如何觀察工作與人的差異",
+        "priorities and uncertainty"
+      ]
+    },
+    {
+      "id": "31-seat-and-support",
+      "group": "workstation",
+      "title": "椅子與足部支撐：先建立可用的基礎",
+      "summary": "從高度、深度、背部與活動空間開始。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "seat and support"
+      ],
+      "example": "16_seat_desk_context.py"
+    },
+    {
+      "id": "32-desk-clearance-height",
+      "group": "workstation",
+      "title": "桌面、手肘與下方淨空：不要各自獨立設定",
+      "summary": "以任務高度和可活動空間協調桌椅。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "desk clearance height"
+      ]
+    },
+    {
+      "id": "33-monitor-geometry",
+      "group": "workstation",
+      "title": "螢幕位置與視線：幾何參考，不是唯一角度",
+      "summary": "把水平距離、垂直差與實際視覺需要連起來。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "monitor geometry"
+      ],
+      "example": "17_monitor_geometry.py"
+    },
+    {
+      "id": "34-keyboard-and-palms",
+      "group": "workstation",
+      "title": "鍵盤、前臂與掌部：高度和距離一起看",
+      "summary": "讓輸入配置回應實際工作，不靠一個配件保證。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "keyboard and palms"
+      ]
+    },
+    {
+      "id": "35-mouse-and-reach",
+      "group": "workstation",
+      "title": "滑鼠與替代輸入：位置、大小與任務",
+      "summary": "先減少不必要伸取，再比較可行裝置。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "mouse and reach"
+      ],
+      "example": "18_mouse_reach.py"
+    },
+    {
+      "id": "36-configuration-workflow",
+      "group": "workstation",
+      "title": "完整工作站調整順序：一次改變後再回看",
+      "summary": "用可操作流程處理連動，而不是尋找完美照片。",
+      "tags": [
+        "桌椅、螢幕與輸入設備",
+        "configuration workflow"
+      ]
+    },
+    {
+      "id": "37-laptop-separation",
+      "group": "digital",
+      "title": "筆電和平板：螢幕與輸入綁在一起的取捨",
+      "summary": "理解可攜性和長時間工作的不同需求。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "laptop separation"
+      ],
+      "example": "19_laptop_configuration.py"
+    },
+    {
+      "id": "38-screens-and-documents",
+      "group": "digital",
+      "title": "多螢幕、文件與通訊：把高頻資訊放對地方",
+      "summary": "依任務頻率和可讀性安排，而非只追對稱。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "screens and documents"
+      ]
+    },
+    {
+      "id": "39-visual-angle",
+      "group": "digital",
+      "title": "字體、距離與視角：把可讀性說清楚",
+      "summary": "算的是幾何，不是字級或視力處方。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "visual angle"
+      ],
+      "example": "20_visual_angle.py"
+    },
+    {
+      "id": "40-lighting-and-glare",
+      "group": "digital",
+      "title": "照明、反光與視覺工作變化",
+      "summary": "看光從哪裡來、落在哪裡，而非只調一個亮度百分比。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "lighting and glare"
+      ]
+    },
+    {
+      "id": "41-sitting-standing-variation",
+      "group": "digital",
+      "title": "坐、站與活動變化：不要從一種固定換另一種",
+      "summary": "把姿勢選擇、任務安排與一般活動分開。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "sitting standing variation"
+      ],
+      "example": "21_activity_change_schedule.py"
+    },
+    {
+      "id": "42-remote-setup",
+      "group": "digital",
+      "title": "小空間與移動工作：在限制中找可行調整",
+      "summary": "把任務、時間和資源放進配置，而非責備家庭環境。",
+      "tags": [
+        "筆電、視覺與坐站工作",
+        "remote setup"
+      ]
+    },
+    {
+      "id": "43-shoulder-and-reaching",
+      "group": "upperlimb",
+      "title": "肩與伸取：位置、支撐和任務頻率",
+      "summary": "從常用物件的安排開始，不把肩痛全歸姿勢。",
+      "tags": [
+        "肩頸與上肢任務",
+        "shoulder and reaching"
+      ],
+      "example": "22_shoulder_reach.py"
+    },
+    {
+      "id": "44-neck-and-information",
+      "group": "upperlimb",
+      "title": "頸部與資訊配置：視覺、轉換和變化",
+      "summary": "避免把任何頸部角度當作疾病判定。",
+      "tags": [
+        "肩頸與上肢任務",
+        "neck and information"
+      ]
+    },
+    {
+      "id": "45-wrist-contact-and-force",
+      "group": "upperlimb",
+      "title": "手腕與接觸：角度之外還有施力",
+      "summary": "從裝置、表面和任務理解上肢負擔。",
+      "tags": [
+        "肩頸與上肢任務",
+        "wrist contact and force"
+      ],
+      "example": "23_wrist_context.py"
+    },
+    {
+      "id": "46-thumb-and-device-use",
+      "group": "upperlimb",
+      "title": "手指、拇指與精細操作：使用方式可以調整",
+      "summary": "把頻率、力、尺寸與可近性連在一起。",
+      "tags": [
+        "肩頸與上肢任務",
+        "thumb and device use"
+      ]
+    },
+    {
+      "id": "47-repeated-upper-limb",
+      "group": "upperlimb",
+      "title": "上肢重複作業：分布、峰值和恢復",
+      "summary": "用窗口資料理解平均和仍缺少的資訊。",
+      "tags": [
+        "肩頸與上肢任務",
+        "repeated upper limb"
+      ],
+      "example": "24_repeated_task_record.py"
+    },
+    {
+      "id": "48-upper-limb-followup",
+      "group": "upperlimb",
+      "title": "上肢不適的紀錄與協作",
+      "summary": "讓醫療、工作觀察與改善資料能互相連結。",
+      "tags": [
+        "肩頸與上肢任務",
+        "upper limb followup"
+      ]
+    },
+    {
+      "id": "49-back-in-tasks",
+      "group": "lowerbody",
+      "title": "下背與任務：物件、位置、時間與支持",
+      "summary": "把背部動作放回工作，不用彎腰兩個字結束分析。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "back in tasks"
+      ],
+      "example": "25_back_task_context.py"
+    },
+    {
+      "id": "50-bending-and-options",
+      "group": "lowerbody",
+      "title": "彎腰、蹲、跪與轉向：選項與限制",
+      "summary": "不同策略會改變不同部位需求。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "bending and options"
+      ]
+    },
+    {
+      "id": "51-standing-and-support",
+      "group": "lowerbody",
+      "title": "站立、足部與接觸：時間和支撐一起看",
+      "summary": "從地面與任務理解，不把站立當萬用解方。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "standing and support"
+      ],
+      "example": "26_lower_limb_support.py"
+    },
+    {
+      "id": "52-walking-floor-and-access",
+      "group": "lowerbody",
+      "title": "走動、地面與通道：不只是身體姿勢",
+      "summary": "把運送路徑和場地條件納入工作設計。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "walking floor and access"
+      ]
+    },
+    {
+      "id": "53-daily-variation",
+      "group": "lowerbody",
+      "title": "活動變化與恢復：看實際需求是否不同",
+      "summary": "用排程與缺漏資料理解安排的限制。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "daily variation"
+      ],
+      "example": "27_daily_variation.py"
+    },
+    {
+      "id": "54-everyday-loads",
+      "group": "lowerbody",
+      "title": "日常搬物、家務與照顧任務",
+      "summary": "把生活中的負荷也放回人、物與環境。",
+      "tags": [
+        "下背、髖膝與日常動作",
+        "everyday loads"
+      ]
+    },
+    {
+      "id": "55-rnle-equation",
+      "group": "lifting",
+      "title": "RNLE：RWL與LI怎麼算",
+      "summary": "完整列出公式，同時說明它不是每個人的搬重上限。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "rnle equation"
+      ],
+      "example": "28_rnle_factors.py"
+    },
+    {
+      "id": "56-rnle-geometry",
+      "group": "lifting",
+      "title": "RNLE幾何：H、V、D與A的量測點",
+      "summary": "從正式參考點和範圍出發，不硬截上限後繼續算。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "rnle geometry"
+      ]
+    },
+    {
+      "id": "57-origin-destination",
+      "group": "lifting",
+      "title": "起點、目的地與顯著控制：不能只看容易的一端",
+      "summary": "理解一個搬抬任務可能需要兩端評估。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "origin destination"
+      ],
+      "example": "29_rnle_endpoints.py"
+    },
+    {
+      "id": "58-frequency-coupling-duration",
+      "group": "lifting",
+      "title": "FM、CM與恢復：2021修訂的關鍵",
+      "summary": "正式表格、工時類別與更正內容一起讀。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "frequency coupling duration"
+      ]
+    },
+    {
+      "id": "59-rnle-applicability",
+      "group": "lifting",
+      "title": "RNLE適用性：哪些情境不能直接套",
+      "summary": "算公式之前先確認任務，不讓未知變理想。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "rnle applicability"
+      ],
+      "example": "30_rnle_applicability.py"
+    },
+    {
+      "id": "60-lifting-redesign",
+      "group": "lifting",
+      "title": "搬抬改善：把公式當線索，不讓分數取代設計",
+      "summary": "比較物件、位置、頻率、輔具與整體流程。",
+      "tags": [
+        "搬抬與RNLE原理",
+        "lifting redesign"
+      ]
+    },
+    {
+      "id": "61-repetition-patterns",
+      "group": "repetition",
+      "title": "重複、峰值與工作循環：平均之外的資訊",
+      "summary": "把頻率、施力與時序一起描述。",
+      "tags": [
+        "重複作業與工具選用",
+        "repetition patterns"
+      ],
+      "example": "31_repetition_blocks.py"
+    },
+    {
+      "id": "62-force-posture-duration",
+      "group": "repetition",
+      "title": "施力、姿勢和持續：不要各自孤立評價",
+      "summary": "理解工作條件如何共同形成需求。",
+      "tags": [
+        "重複作業與工具選用",
+        "force posture duration"
+      ]
+    },
+    {
+      "id": "63-hand-tools-and-grip",
+      "group": "repetition",
+      "title": "手工具、握柄與手套：依任務試用",
+      "summary": "從力、尺寸、精準與環境尋找改善。",
+      "tags": [
+        "重複作業與工具選用",
+        "hand tools and grip"
+      ],
+      "example": "32_tool_grip_context.py"
+    },
+    {
+      "id": "64-kim-and-posture-tools",
+      "group": "repetition",
+      "title": "KIM、RULA與REBA：版本和用途先於分數",
+      "summary": "介紹觀察工具，也保留訓練、授權和方法限制。",
+      "tags": [
+        "重複作業與工具選用",
+        "kim and posture tools"
+      ]
+    },
+    {
+      "id": "65-method-selection",
+      "group": "repetition",
+      "title": "ART、MAC、RAPP與DSE：選對問題",
+      "summary": "用工作類型與官方範圍選方法。",
+      "tags": [
+        "重複作業與工具選用",
+        "method selection"
+      ],
+      "example": "33_method_selection.py"
+    },
+    {
+      "id": "66-screening-versus-assessment",
+      "group": "repetition",
+      "title": "篩檢、觀察與完整評估：行動分級不是疾病機率",
+      "summary": "知道工具能協助什麼，以及仍需要哪些資訊。",
+      "tags": [
+        "重複作業與工具選用",
+        "screening versus assessment"
+      ]
+    },
+    {
+      "id": "67-push-pull-work",
+      "group": "environment",
+      "title": "推拉：力、位移和外在功",
+      "summary": "分清載重、手部施力與機械功。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "push pull work"
+      ],
+      "example": "34_pushing_work.py"
+    },
+    {
+      "id": "68-transport-and-people",
+      "group": "environment",
+      "title": "攜行、團隊搬運與人員轉移",
+      "summary": "不要把不同操作都當成同一個重量問題。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "transport and people"
+      ]
+    },
+    {
+      "id": "69-hand-arm-vibration",
+      "group": "environment",
+      "title": "手－手臂振動A(8)：加權、時間和單位",
+      "summary": "用已符合量測方法的輸入示範，不把手機數值當正式暴露。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "hand arm vibration"
+      ],
+      "example": "35_vibration_a8.py"
+    },
+    {
+      "id": "70-whole-body-vibration",
+      "group": "environment",
+      "title": "全身振動與乘坐設備：方法不同，不能混算",
+      "summary": "把座椅、地面、車輛與暴露類型分清。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "whole body vibration"
+      ]
+    },
+    {
+      "id": "71-physical-environment",
+      "group": "environment",
+      "title": "物理環境：照明、溫度、地面與設備",
+      "summary": "把身體周圍條件納入任務，不只盯關節。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "physical environment"
+      ],
+      "example": "36_environment_context.py"
+    },
+    {
+      "id": "72-integrated-environment-case",
+      "group": "environment",
+      "title": "整合場域案例：從取料到完成工作",
+      "summary": "練習看流程中的多個需求和改善取捨。",
+      "tags": [
+        "推拉、振動與物理環境",
+        "integrated environment case"
+      ]
+    },
+    {
+      "id": "73-control-hierarchy",
+      "group": "controls",
+      "title": "控制層級：先改任務的來源",
+      "summary": "從消除、工程、組織到個人裝備，理解不同改善的作用。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "control hierarchy"
+      ],
+      "example": "37_control_hierarchy.py"
+    },
+    {
+      "id": "74-engineering-redesign",
+      "group": "controls",
+      "title": "工程改善：從需求寫到驗收條件",
+      "summary": "把想買的產品轉為可以檢驗的工作需求。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "engineering redesign"
+      ]
+    },
+    {
+      "id": "75-before-after-arithmetic",
+      "group": "controls",
+      "title": "改善前後的算術：距離變化不是傷害降幅",
+      "summary": "區分模型輸出、暴露改變與健康成效。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "before after arithmetic"
+      ],
+      "example": "38_before_after_arithmetic.py"
+    },
+    {
+      "id": "76-organization-and-training",
+      "group": "controls",
+      "title": "組織、訓練與輪調：安排如何影響負荷",
+      "summary": "把工作節奏和資源視為設計的一部分。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "organization and training"
+      ]
+    },
+    {
+      "id": "77-participatory-followup",
+      "group": "controls",
+      "title": "參與式改善：讓使用者持續能說話",
+      "summary": "把提案、試用、回饋和修正形成可執行流程。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "participatory followup"
+      ],
+      "example": "39_participatory_followup.py"
+    },
+    {
+      "id": "78-taiwan-prevention-plan",
+      "group": "controls",
+      "title": "台灣人因預防：計畫、紀錄與現行條文",
+      "summary": "把課堂觀察與雇主的正式責任接起來。",
+      "tags": [
+        "改善設計與參與式追蹤",
+        "taiwan prevention plan"
+      ]
+    },
+    {
+      "id": "79-functional-needs",
+      "group": "adaptation",
+      "title": "不同身體與生命階段：以功能需求設計",
+      "summary": "避免平均成人模板遮住個別需求。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "functional needs"
+      ],
+      "example": "40_population_scope.py"
+    },
+    {
+      "id": "80-bone-and-joint-health",
+      "group": "adaptation",
+      "title": "骨與關節健康：影像、骨折風險與生活功能",
+      "summary": "認識骨鬆與骨關節炎，避免把它們混為單一磨損故事。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "bone and joint health"
+      ]
+    },
+    {
+      "id": "81-shared-workstation",
+      "group": "adaptation",
+      "title": "共用與遠距工作：調整如何交接",
+      "summary": "從一人的設定擴展到換人、換場域和資源分配。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "shared workstation"
+      ],
+      "example": "41_shared_workstation.py"
+    },
+    {
+      "id": "82-life-stage-context",
+      "group": "adaptation",
+      "title": "兒少、懷孕與照護情境：成人模板的限制",
+      "summary": "辨識不同生命階段需要個別調整的部分。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "life stage context"
+      ]
+    },
+    {
+      "id": "83-accessible-adjustments",
+      "group": "adaptation",
+      "title": "可近性與合理調整：讓任務可以參與",
+      "summary": "把控制、資訊、動線與支持放在同一張設計圖。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "accessible adjustments"
+      ],
+      "example": "42_accommodations.py"
+    },
+    {
+      "id": "84-return-to-work",
+      "group": "adaptation",
+      "title": "工作調整與復工：連接功能、任務和照護",
+      "summary": "不把診斷名稱直接轉成工作能力的單一判決。",
+      "tags": [
+        "不同身體、場域與合理調整",
+        "return to work"
+      ]
+    },
+    {
+      "id": "85-subjective-observations",
+      "group": "evidence",
+      "title": "主觀感受：原創0–10記錄能說什麼",
+      "summary": "尊重感受，同時保留尺度與推論的限制。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "subjective observations"
+      ],
+      "example": "43_original_discomfort_observations.py"
+    },
+    {
+      "id": "86-sampling-missing-and-noise",
+      "group": "evidence",
+      "title": "抽樣、缺漏與變動：沒有觀察到什麼",
+      "summary": "分清已知小計、可用平均和完整結果。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "sampling missing and noise"
+      ]
+    },
+    {
+      "id": "87-matched-comparisons",
+      "group": "evidence",
+      "title": "前後比較：條件匹配與因果的距離",
+      "summary": "改善看起來有效時，繼續問還有哪些事情改變。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "matched comparisons"
+      ],
+      "example": "44_matched_observations.py"
+    },
+    {
+      "id": "88-reliability-validity-and-scores",
+      "group": "evidence",
+      "title": "風險工具：一致性、效度與分數用途",
+      "summary": "理解為何分數相同不等於人和工作完全相同。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "reliability validity and scores"
+      ]
+    },
+    {
+      "id": "89-version-and-uncertainty",
+      "group": "evidence",
+      "title": "版本與不確定：最新頁面不一定是最新方法",
+      "summary": "把發布、更新、查核和方法改版拆開記錄。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "version and uncertainty"
+      ],
+      "example": "45_uncertainty_and_versions.py"
+    },
+    {
+      "id": "90-products-ai-and-claims",
+      "group": "evidence",
+      "title": "產品、AI姿勢分析與行銷：如何核對主張",
+      "summary": "從看似精準的數字回到資料、任務和驗證。",
+      "tags": [
+        "量測、風險工具與資訊判讀",
+        "products ai and claims"
+      ]
+    },
+    {
+      "id": "91-project-data",
+      "group": "practice",
+      "title": "專題資料：一個可以重跑的虛構工作站",
+      "summary": "認識資料檔、未知欄位和輸出能回答的問題。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "project data"
+      ],
+      "example": "46_report_audit.py"
+    },
+    {
+      "id": "92-data-contract-and-privacy",
+      "group": "practice",
+      "title": "資料契約：單位、狀態與必要性",
+      "summary": "讓不合規格的輸入在產生結論前被發現。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "data contract and privacy"
+      ]
+    },
+    {
+      "id": "93-reproducible-report",
+      "group": "practice",
+      "title": "可重跑報告：CSV、SVG與JSON一起核對",
+      "summary": "把數字、圖和來源留在同一個交付中。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "reproducible report"
+      ],
+      "example": "47_report_preview.py"
+    },
+    {
+      "id": "94-troubleshooting",
+      "group": "practice",
+      "title": "常見排錯：從輸入、公式到網頁",
+      "summary": "用可確認的小步驟找出問題，不以更改結果掩蓋錯誤。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "95-complete-capstone",
+      "group": "practice",
+      "title": "完整專題：從觀察到可回顧的改善提案",
+      "summary": "把課程概念、資料、算術與工作支持整合一次。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "complete capstone"
+      ],
+      "example": "48_complete_project.py"
+    },
+    {
+      "id": "96-exercises-and-references",
+      "group": "practice",
+      "title": "綜合練習、答案與正式來源地圖",
+      "summary": "用跨章案例檢查是否能選對問題與方法。",
+      "tags": [
+        "可重跑的人因觀察專題",
+        "exercises and references"
+      ]
+    }
+  ]
+}

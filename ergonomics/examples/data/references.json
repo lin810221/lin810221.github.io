@@ -1,0 +1,28 @@
+[
+  {
+    "name": "NIOSH RNLE",
+    "version": "94-110, Revised 9/2021",
+    "page_updated": "2026-10-28",
+    "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+  },
+  {
+    "name": "RNLE formal corrections",
+    "status": "2021 revised manual, short-duration recovery factor corrected to 1.0",
+    "url": "https://stacks.cdc.gov/view/cdc/110725"
+  },
+  {
+    "name": "HSE ART",
+    "status": "Repetitive upper-limb tasks, not DSE keyboard/mouse assessment",
+    "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+  },
+  {
+    "name": "Taiwan facilities rules 324-1",
+    "status": "Current article checked 2026-11-13; whole-regulation future provisions distinguished",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+  },
+  {
+    "name": "WHO chronic primary low back pain",
+    "version": "2023 formal guideline",
+    "url": "https://www.who.int/publications/i/item/9789240081789"
+  }
+]

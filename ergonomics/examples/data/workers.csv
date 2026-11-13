@@ -1,0 +1,13 @@
+id,reach_cm,clearance_need_cm,synthetic
+F01,52,56,true
+F02,54,57,true
+F03,56,58,true
+F04,58,59,true
+F05,60,60,true
+F06,62,61,true
+F07,64,62,true
+F08,66,63,true
+F09,68,64,true
+F10,70,65,true
+F11,,66,true
+F12,74,,true

@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/reader.js','metabolic-health/assets/overview.js','metabolic-health/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,14);assert.equal(home.querySelectorAll('a[href="metabolic-health/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,16);assert.equal(home.querySelectorAll('a[href="metabolic-health/index.html"]').length,1);
 const {window,document}=parseHTML(await read('metabolic-health/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['01-exercise-science-map'],notes:{'01-exercise-science-map':'preserve exercise'}}),storage=new Map([['learning-notes:exercise-science:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};

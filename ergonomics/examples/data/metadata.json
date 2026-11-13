@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "checked": "2026-11-13",
+  "scheduled_windows": 12,
+  "unit": "actions per observed minute; scheduled and observed durations distinct",
+  "scope": "Fictional anthropometry, observations and RNLE supplied-multiplier cases; no patient, tissue, actual workplace or compliance data"
+}

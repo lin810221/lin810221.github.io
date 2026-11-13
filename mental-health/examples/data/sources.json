@@ -1,0 +1,31 @@
+[
+  {
+    "name": "WHO mental health and work factsheets",
+    "checked": "2026-11-13",
+    "status": "official factsheets, not new clinical guidelines",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+  },
+  {
+    "name": "WHO stress skills guide",
+    "published": "2020-04-29",
+    "status": "official general self-help guide",
+    "url": "https://www.who.int/publications/i/item/9789240003927"
+  },
+  {
+    "name": "NICE NG222",
+    "published": "2022-06-29",
+    "reviewed": "2026-01-30",
+    "status": "formal existing recommendations, no update at review",
+    "url": "https://www.nice.org.uk/guidance/ng222"
+  },
+  {
+    "name": "NICE OCD update",
+    "status": "in development; 2026 consultation is not final publication",
+    "url": "https://www.nice.org.uk/guidance/indevelopment/gid-ng10435"
+  },
+  {
+    "name": "Taiwan 2026 counseling program",
+    "status": "2026 policy, not an individual eligibility decision",
+    "url": "https://www.mohw.gov.tw/cp-16-85046-1.html"
+  }
+]

@@ -8,9 +8,13 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有十四個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有十六個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
+
+新增 **[心理健康與壓力科學](mental-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-13查核WHO2026說明、現行NICE正式版與草案、HRV方法及台灣資源，核心與課內進階皆已納入。
+
+新增 **[肌肉骨骼健康與人體工學](ergonomics/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-13查核NIOSH RNLE2021修訂、HSE工具、台灣條文及2026正式臨床來源，含工作改善與證據專題。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -87,6 +91,12 @@ LearningNote/
 │   ├── chapters/              96份可編輯課文
 │   ├── assets/                課程資料與12個互動實驗
 │   └── examples/              48份離線Python範例、虛構資料與測試
+├── mental-health/             心理健康與壓力科學：經驗、技能、環境與支持
+│   ├── course.json            16章、96個閱讀單元
+│   ├── chapters/              可編輯原創教材、案例、練習與解答
+│   ├── assets/                離線資料與12個互動實驗
+│   ├── examples/              48份Python入口、五份合成資料與測試
+│   └── examples.zip           可獨立解壓執行的下載包
 ├── nutrition/                 營養學與飲食科學：原理、生活、證據與食安
 │   ├── index.html
 │   ├── course.json
@@ -99,6 +109,12 @@ LearningNote/
 │   ├── assets/overview.js     10個互動數值／圖形實驗
 │   ├── examples/              42個入口、模型、虛構CSV與驗收
 │   └── examples.zip           可獨立執行的完整下載包
+├── ergonomics/                肌肉骨骼健康與人體工學：身體、工作與環境改善
+│   ├── course.json            16章、96個閱讀單元
+│   ├── chapters/              可編輯原創教材、公式、案例與解答
+│   ├── assets/                離線資料與12個互動實驗
+│   ├── examples/              48份Python入口、五份合成資料與80項測試
+│   └── examples.zip           可獨立解壓執行的下載包
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -233,4 +249,28 @@ python tools/build.py exercise-science
 py -3.15 -m unittest discover -s metabolic-health/examples -p test_examples.py -v
 py -3.15 metabolic-health/examples/48_complete_project.py --output my-metabolic-report
 python tools/build.py metabolic-health
+```
+
+## 心理健康與壓力科學
+
+入口：[mental-health/index.html](mental-health/index.html)。[離線程式、資料與方法說明](mental-health/examples/README.md)。從壓力、情緒、注意與習慣，到日常技能、睡眠活動、人際與職場，接到常見困擾、照護、台灣資源、支持他人和證據專題。一般教育、專業照護與課內模型的用途分清；可以全程使用虛構案例，不需寫私人日記。
+
+截至2026-11-13查核，說明頁、正式指南、審查與草案分列；Python3.15.2只用標準函式庫。原創0–10觀察不是臨床量表，不提供診斷、危機預測或治療處方。閱讀、公式和預設實作完全離線。
+
+```powershell
+py -3.15 -m unittest discover -s mental-health/examples -p test_examples.py -v
+py -3.15 mental-health/examples/48_complete_project.py --output my-mental-learning-report
+python tools/build.py mental-health
+```
+
+## 肌肉骨骼健康與人體工學
+
+入口：[ergonomics/index.html](ergonomics/index.html)。[離線程式、資料與方法說明](ergonomics/examples/README.md)。從結構、力學、疼痛與工作觀察，到電腦工作、搬抬、重複、振動、工作設計、台灣預防計畫、不同需求與證據判讀。互動算術不代替個人診療、正式現場評估或合規認證。
+
+截至2026-11-13查核，RNLE標2021修訂與2026入口日期，台灣指引保留2014初版；現行條文、國外方法和臨床指南各標範圍。Python3.15.2只用標準函式庫，資料完全虛構；閱讀、公式與預設實作皆離線。
+
+```powershell
+py -3.15 -m unittest discover -s ergonomics/examples -p test_examples.py -v
+py -3.15 ergonomics/examples/48_complete_project.py --output my-ergo-learning-report
+python tools/build.py ergonomics
 ```

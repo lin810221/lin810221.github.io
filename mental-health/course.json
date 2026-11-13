@@ -1,0 +1,1118 @@
+{
+  "slug": "mental-health",
+  "title": "心理健康與壓力科學完整教學",
+  "shortTitle": "心理健康與壓力科學",
+  "updated": "2026-11-13",
+  "baseline": "WHO 2026查核 · NICE正式版／草案分列 · Python 3.15.2",
+  "footerLabel": "MENTAL HEALTH · NOTICE, UNDERSTAND & CONNECT",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 壓力、情緒、反芻、正念、職業耗竭、CBT或求助。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "心理健康的學科地圖",
+      "description": "連續狀態、功能、證據、生物心理社會與隱私。"
+    },
+    {
+      "id": "stress",
+      "number": "02",
+      "title": "壓力反應與恢復",
+      "description": "評估、神經內分泌、急慢性、個體差異與HRV。"
+    },
+    {
+      "id": "emotion",
+      "number": "03",
+      "title": "情緒與調節",
+      "description": "功能、命名、評估、重評、接納與反芻。"
+    },
+    {
+      "id": "cognition",
+      "number": "04",
+      "title": "注意力、思考與數位生活",
+      "description": "工作記憶、切換、偏誤、不確定與數位環境。"
+    },
+    {
+      "id": "behavior",
+      "number": "05",
+      "title": "學習、習慣與價值行動",
+      "description": "增強、迴避、習慣、小行動、價值與行為觀察。"
+    },
+    {
+      "id": "skills",
+      "number": "06",
+      "title": "日常調節技能與選擇",
+      "description": "定向、呼吸、放鬆、正念、自我慈悲與適配。"
+    },
+    {
+      "id": "lifestyle",
+      "number": "07",
+      "title": "睡眠、活動與生活節律",
+      "description": "睡眠調節、失眠、活動、飲食物質與輪班。"
+    },
+    {
+      "id": "relationships",
+      "number": "08",
+      "title": "人際、支持與界線",
+      "description": "連結、傾聽、表達、衝突、照顧與失落。"
+    },
+    {
+      "id": "work",
+      "number": "09",
+      "title": "職場心理健康與耗竭",
+      "description": "需求資源、職業現象、工時、組織與復工。"
+    },
+    {
+      "id": "anxiety",
+      "number": "10",
+      "title": "焦慮、恐慌與創傷的基本概念",
+      "description": "常見經驗、不同問題、迴避、創傷知情與求助。"
+    },
+    {
+      "id": "depression",
+      "number": "11",
+      "title": "低落、憂鬱與照護選項",
+      "description": "情緒興趣、功能、行動循環、鑑別與共同決策。"
+    },
+    {
+      "id": "care",
+      "number": "12",
+      "title": "評估、心理治療與台灣資源",
+      "description": "專業角色、療法、藥物概念、方案與初談。"
+    },
+    {
+      "id": "support",
+      "number": "13",
+      "title": "支持他人與安全連結",
+      "description": "對話、界線、直接關心、安全計畫與即時求助。"
+    },
+    {
+      "id": "lifespan",
+      "number": "14",
+      "title": "不同生命階段與可近性",
+      "description": "兒少、孕產、高齡、多元需求、文化與權益。"
+    },
+    {
+      "id": "evidence",
+      "number": "15",
+      "title": "量測、研究與資訊判讀",
+      "description": "次序尺度、缺漏、Bayes、效果量、因果與宣稱。"
+    },
+    {
+      "id": "practice",
+      "number": "16",
+      "title": "日記、資料與完整學習專題",
+      "description": "原創紀錄、隱私、CSV／SVG／JSON、排錯與解答。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "01-mental-health-map",
+      "group": "foundations",
+      "title": "心理健康：從經驗、功能到生活脈絡",
+      "summary": "先建立學科地圖，理解心理健康不只是一個情緒或分數。",
+      "tags": [
+        "心理健康的學科地圖",
+        "mental health map"
+      ],
+      "example": "01_first_observation.py"
+    },
+    {
+      "id": "02-distress-and-function",
+      "group": "foundations",
+      "title": "困擾、持續時間與功能：三個不同面向",
+      "summary": "用完整描述取代「正常不正常」的二選一。",
+      "tags": [
+        "心理健康的學科地圖",
+        "distress and function"
+      ]
+    },
+    {
+      "id": "03-biopsychosocial",
+      "group": "foundations",
+      "title": "生物、心理與社會：多層次解釋",
+      "summary": "用多條路徑理解困擾，不找一個包辦全部的原因。",
+      "tags": [
+        "心理健康的學科地圖",
+        "biopsychosocial"
+      ],
+      "example": "02_source_status.py"
+    },
+    {
+      "id": "04-science-and-claims",
+      "group": "foundations",
+      "title": "心理學如何知道：觀察、實驗與可重複",
+      "summary": "把直覺與研究問題連起來，學會判斷證據能說到哪裡。",
+      "tags": [
+        "心理健康的學科地圖",
+        "science and claims"
+      ]
+    },
+    {
+      "id": "05-privacy-and-choice",
+      "group": "foundations",
+      "title": "學習、同意與隱私：你可以選擇不記錄",
+      "summary": "讓紀錄幫助理解，而不是增加暴露或壓力。",
+      "tags": [
+        "心理健康的學科地圖",
+        "privacy and choice"
+      ],
+      "example": "03_privacy_and_context.py"
+    },
+    {
+      "id": "06-learning-routes",
+      "group": "foundations",
+      "title": "完整學習路線與跨課連結",
+      "summary": "知道先理解什麼、能練什麼，以及何時需要不同資源。",
+      "tags": [
+        "心理健康的學科地圖",
+        "learning routes"
+      ]
+    },
+    {
+      "id": "07-appraisal-and-coping",
+      "group": "stress",
+      "title": "壓力源、評估與因應：同一事件為何不同感受",
+      "summary": "把事件、意義、資源和反應分成可以討論的部分。",
+      "tags": [
+        "壓力反應與恢復",
+        "appraisal and coping"
+      ],
+      "example": "04_appraisal_case.py"
+    },
+    {
+      "id": "08-autonomic-and-hpa",
+      "group": "stress",
+      "title": "自主神經與HPA：身體如何參與壓力",
+      "summary": "理解系統與時間尺度，不把荷爾蒙當好壞標籤。",
+      "tags": [
+        "壓力反應與恢復",
+        "autonomic and hpa"
+      ]
+    },
+    {
+      "id": "09-acute-chronic-and-recovery",
+      "group": "stress",
+      "title": "急性、慢性與恢復：不要把反應全當傷害",
+      "summary": "看壓力反應的時程、需求與資源。",
+      "tags": [
+        "壓力反應與恢復",
+        "acute chronic and recovery"
+      ],
+      "example": "05_recovery_analogy.py"
+    },
+    {
+      "id": "10-interoception-and-symptoms",
+      "group": "stress",
+      "title": "身體感受與警覺：注意到不等於知道原因",
+      "summary": "分開感受、解釋與需要評估的身體問題。",
+      "tags": [
+        "壓力反應與恢復",
+        "interoception and symptoms"
+      ]
+    },
+    {
+      "id": "11-hrv-and-individual-differences",
+      "group": "stress",
+      "title": "HRV、穿戴與個體差異：哪些不能推論",
+      "summary": "學會看測量條件，而非用一個數字評斷壓力。",
+      "tags": [
+        "壓力反應與恢復",
+        "hrv and individual differences"
+      ],
+      "example": "06_hrv_context.py"
+    },
+    {
+      "id": "12-stress-case-formulation",
+      "group": "stress",
+      "title": "壓力案例地圖：把問題拆成可行部分",
+      "summary": "用原創工作案例連結來源、感受、資源與行動。",
+      "tags": [
+        "壓力反應與恢復",
+        "stress case formulation"
+      ]
+    },
+    {
+      "id": "13-emotion-components",
+      "group": "emotion",
+      "title": "情緒由什麼組成：感受、身體、評估與行動",
+      "summary": "把情緒理解成多面向經驗，而不是需要消滅的訊號。",
+      "tags": [
+        "情緒與調節",
+        "emotion components"
+      ],
+      "example": "07_emotion_components.py"
+    },
+    {
+      "id": "14-naming-and-context",
+      "group": "emotion",
+      "title": "辨認與命名情緒：增加描述的精度",
+      "summary": "從籠統的「不好」找到較貼近經驗的語言。",
+      "tags": [
+        "情緒與調節",
+        "naming and context"
+      ]
+    },
+    {
+      "id": "15-appraisal-and-reappraisal",
+      "group": "emotion",
+      "title": "重新評估：多找一種解釋，不強迫樂觀",
+      "summary": "以事實與可能性鬆開單一推論。",
+      "tags": [
+        "情緒與調節",
+        "appraisal and reappraisal"
+      ],
+      "example": "08_reappraisal_case.py"
+    },
+    {
+      "id": "16-acceptance-and-regulation",
+      "group": "emotion",
+      "title": "接納與調節：允許感受，仍能選行動",
+      "summary": "理解不同策略何時有用，而非追求永遠平靜。",
+      "tags": [
+        "情緒與調節",
+        "acceptance and regulation"
+      ]
+    },
+    {
+      "id": "17-rumination-and-suppression",
+      "group": "emotion",
+      "title": "反芻、壓抑與擔心：何時陷入循環",
+      "summary": "辨認思考是否帶來新資訊與可行下一步。",
+      "tags": [
+        "情緒與調節",
+        "rumination and suppression"
+      ],
+      "example": "09_rumination_and_action.py"
+    },
+    {
+      "id": "18-emotion-practice",
+      "group": "emotion",
+      "title": "情緒案例整合：從一則訊息到多個選項",
+      "summary": "在虛構情境中練習觀察、命名、重評與界線。",
+      "tags": [
+        "情緒與調節",
+        "emotion practice"
+      ]
+    },
+    {
+      "id": "19-attention-and-memory",
+      "group": "cognition",
+      "title": "注意力與工作記憶：為何不是同時做好一切",
+      "summary": "從資訊選擇、維持與提取理解日常分心。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "attention and memory"
+      ],
+      "example": "10_switching_time.py"
+    },
+    {
+      "id": "20-task-switching",
+      "group": "cognition",
+      "title": "任務切換與外部工具：降低記憶負擔",
+      "summary": "學會設計工作方式，而不是只要求更努力專心。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "task switching"
+      ]
+    },
+    {
+      "id": "21-automatic-thoughts",
+      "group": "cognition",
+      "title": "自動想法與認知偏誤：找假設，不替人貼標籤",
+      "summary": "辨認快速解釋如何影響行動。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "automatic thoughts"
+      ],
+      "example": "11_known_and_assumed.py"
+    },
+    {
+      "id": "22-uncertainty-and-problem-solving",
+      "group": "cognition",
+      "title": "不確定與問題解決：哪些能做，哪些暫時不知道",
+      "summary": "把反覆保證需求轉成具體資訊與行動。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "uncertainty and problem solving"
+      ]
+    },
+    {
+      "id": "23-worry-and-rumination",
+      "group": "cognition",
+      "title": "擔心與反芻的實作：從抽象追問到具體下一步",
+      "summary": "用問題的形式，檢查思考是否真的前進。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "worry and rumination"
+      ],
+      "example": "12_digital_schedule.py"
+    },
+    {
+      "id": "24-digital-attention",
+      "group": "cognition",
+      "title": "數位使用、注意力與界線：用途比總時數更完整",
+      "summary": "區分工作、連結、休閒與增加負擔的使用模式。",
+      "tags": [
+        "注意力、思考與數位生活",
+        "digital attention"
+      ]
+    },
+    {
+      "id": "25-reinforcement-and-avoidance",
+      "group": "behavior",
+      "title": "增強與迴避：短期舒服為何可能維持循環",
+      "summary": "從學習原理理解行為，不把習慣歸因於意志薄弱。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "reinforcement and avoidance"
+      ],
+      "example": "13_negative_reinforcement.py"
+    },
+    {
+      "id": "26-learning-in-context",
+      "group": "behavior",
+      "title": "線索、習慣與學習史：行為有自己的脈絡",
+      "summary": "讓行為描述可觀察，也保留人的需要與選擇。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "learning in context"
+      ]
+    },
+    {
+      "id": "27-habits-and-opportunities",
+      "group": "behavior",
+      "title": "習慣與機會：把行動做小、做清楚",
+      "summary": "用可觀察線索與可行範圍支持重複。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "habits and opportunities"
+      ],
+      "example": "14_habit_opportunities.py"
+    },
+    {
+      "id": "28-small-actions-and-activation",
+      "group": "behavior",
+      "title": "小行動與行為活化：不只等待心情變好",
+      "summary": "了解活動、回饋與低落的循環，以及一般練習和治療的差別。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "small actions and activation"
+      ]
+    },
+    {
+      "id": "29-values-and-goals",
+      "group": "behavior",
+      "title": "價值、目標與小步：想成為怎樣的行動者",
+      "summary": "把方向和一次可完成的任務分開。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "values and goals"
+      ],
+      "example": "15_values_and_actions.py"
+    },
+    {
+      "id": "30-behavior-observation",
+      "group": "behavior",
+      "title": "行為觀察與試行：把進步定義清楚",
+      "summary": "讓回顧幫助修方案，而不是製作自我考核。",
+      "tags": [
+        "學習、習慣與價值行動",
+        "behavior observation"
+      ]
+    },
+    {
+      "id": "31-grounding-and-choice",
+      "group": "skills",
+      "title": "定向與當下注意：給自己一個可選接點",
+      "summary": "學習簡短、可停止的外部注意方式。",
+      "tags": [
+        "日常調節技能與選擇",
+        "grounding and choice"
+      ],
+      "example": "16_grounding_choices.py"
+    },
+    {
+      "id": "32-relaxation-principles",
+      "group": "skills",
+      "title": "放鬆與肌肉覺察：練的是分辨與選擇",
+      "summary": "理解漸進式放鬆等技巧，而不追求最大收縮。",
+      "tags": [
+        "日常調節技能與選擇",
+        "relaxation principles"
+      ]
+    },
+    {
+      "id": "33-breathing-timing",
+      "group": "skills",
+      "title": "呼吸節奏：看週期，不追生理保證",
+      "summary": "用簡單算術理解可選節奏，保留自然呼吸與停止權。",
+      "tags": [
+        "日常調節技能與選擇",
+        "breathing timing"
+      ],
+      "example": "17_breathing_timing.py"
+    },
+    {
+      "id": "34-mindfulness-and-evidence",
+      "group": "skills",
+      "title": "正念、MBSR與MBCT：方法、課程與證據",
+      "summary": "把短暫注意練習與結構化臨床方案分開。",
+      "tags": [
+        "日常調節技能與選擇",
+        "mindfulness and evidence"
+      ]
+    },
+    {
+      "id": "35-self-compassion-and-preferences",
+      "group": "skills",
+      "title": "自我慈悲與偏好：減少額外責備",
+      "summary": "用較支持性的態度面對困難，同時保留責任與界線。",
+      "tags": [
+        "日常調節技能與選擇",
+        "self compassion and preferences"
+      ],
+      "example": "18_skill_preferences.py"
+    },
+    {
+      "id": "36-choosing-skills",
+      "group": "skills",
+      "title": "怎麼選日常技能：目的、負擔與回饋",
+      "summary": "整理一個可以試、可以停、可以換的工具箱。",
+      "tags": [
+        "日常調節技能與選擇",
+        "choosing skills"
+      ]
+    },
+    {
+      "id": "37-sleep-regulation",
+      "group": "lifestyle",
+      "title": "睡眠與心理健康：睡眠壓力、節律與機會",
+      "summary": "理解身體時間和生活安排，避免只看一個時數。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "sleep regulation"
+      ],
+      "example": "19_sleep_window.py"
+    },
+    {
+      "id": "38-insomnia-and-cbti",
+      "group": "lifestyle",
+      "title": "失眠與CBT-I：睡眠衛生不是全部治療",
+      "summary": "認識正式照護的結構，不自行設計睡眠限制。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "insomnia and cbti"
+      ]
+    },
+    {
+      "id": "39-activity-and-mood",
+      "group": "lifestyle",
+      "title": "身體活動與情緒：可近性和功能一起看",
+      "summary": "讓活動成為支持選項，而非情緒改善的義務。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "activity and mood"
+      ],
+      "example": "20_activity_observations.py"
+    },
+    {
+      "id": "40-food-substances",
+      "group": "lifestyle",
+      "title": "飲食、咖啡因與酒精：避免單一成分故事",
+      "summary": "把日常暴露、症狀與背景整理成可討論資訊。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "food substances"
+      ]
+    },
+    {
+      "id": "41-shift-and-routine",
+      "group": "lifestyle",
+      "title": "輪班、照顧責任與生活節律",
+      "summary": "從實際限制出發安排支持，不用標準作息責備人。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "shift and routine"
+      ],
+      "example": "21_routine_context.py"
+    },
+    {
+      "id": "42-integrated-daily-plan",
+      "group": "lifestyle",
+      "title": "整合日常安排：別讓健康目標互相衝突",
+      "summary": "把睡眠、活動、餐食和照護放在同一張時間表。",
+      "tags": [
+        "睡眠、活動與生活節律",
+        "integrated daily plan"
+      ]
+    },
+    {
+      "id": "43-connection-and-loneliness",
+      "group": "relationships",
+      "title": "社會連結與孤獨：人數之外的需要",
+      "summary": "理解主觀感受、客觀接觸與關係品質。",
+      "tags": [
+        "人際、支持與界線",
+        "connection and loneliness"
+      ],
+      "example": "22_support_network.py"
+    },
+    {
+      "id": "44-listening-and-validation",
+      "group": "relationships",
+      "title": "傾聽與回應：理解不等於同意所有推論",
+      "summary": "用詢問和反映，先知道對方需要什麼。",
+      "tags": [
+        "人際、支持與界線",
+        "listening and validation"
+      ]
+    },
+    {
+      "id": "45-assertiveness-and-boundaries",
+      "group": "relationships",
+      "title": "表達需要與界線：具體、尊重、可協調",
+      "summary": "把情境、影響、請求與限制說清楚。",
+      "tags": [
+        "人際、支持與界線",
+        "assertiveness and boundaries"
+      ],
+      "example": "23_assertive_boundary.py"
+    },
+    {
+      "id": "46-conflict-and-repair",
+      "group": "relationships",
+      "title": "衝突與修復：對事、對需求，也看關係安全",
+      "summary": "從勝負爭辯轉向可確認的互動。",
+      "tags": [
+        "人際、支持與界線",
+        "conflict and repair"
+      ]
+    },
+    {
+      "id": "47-caregiving-and-support",
+      "group": "relationships",
+      "title": "照顧責任：支持他人，也照顧自己的需要",
+      "summary": "看見時間、負擔、替代人力與可用資源。",
+      "tags": [
+        "人際、支持與界線",
+        "caregiving and support"
+      ],
+      "example": "24_caregiving_context.py"
+    },
+    {
+      "id": "48-grief-and-loss",
+      "group": "relationships",
+      "title": "失落與哀傷：容許不同路徑，也看需要",
+      "summary": "理解哀傷不是固定階段考試。",
+      "tags": [
+        "人際、支持與界線",
+        "grief and loss"
+      ]
+    },
+    {
+      "id": "49-demands-and-resources",
+      "group": "work",
+      "title": "工作需求與資源：壓力不是員工一人的問題",
+      "summary": "建立工作量、控制感、支持和公平的觀察框架。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "demands and resources"
+      ],
+      "example": "25_demand_resources.py"
+    },
+    {
+      "id": "50-burnout-definition",
+      "group": "work",
+      "title": "職業耗竭：ICD-11怎麼定義，又沒有說什麼",
+      "summary": "分清工作現象、一般疲倦與其他可能共存的問題。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "burnout definition"
+      ]
+    },
+    {
+      "id": "51-time-and-uncertainty",
+      "group": "work",
+      "title": "工時、優先序與未知任務：排程算術的界限",
+      "summary": "保留估計與缺漏，讓協調有具體依據。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "time and uncertainty"
+      ],
+      "example": "26_workday_missing.py"
+    },
+    {
+      "id": "52-control-fairness-and-safety",
+      "group": "work",
+      "title": "自主、角色、公平與不當對待",
+      "summary": "把難以量成分鐘的工作條件也說清楚。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "control fairness and safety"
+      ]
+    },
+    {
+      "id": "53-organizational-interventions",
+      "group": "work",
+      "title": "組織介入：從個人技巧走到工作設計",
+      "summary": "理解管理者、團隊與制度可以做的事。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "organizational interventions"
+      ],
+      "example": "27_organizational_actions.py"
+    },
+    {
+      "id": "54-adjustments-and-return",
+      "group": "work",
+      "title": "合理調整與復工：功能、同意與合作",
+      "summary": "把恢復工作看成可協調過程，而非一次考試。",
+      "tags": [
+        "職場心理健康與耗竭",
+        "adjustments and return"
+      ]
+    },
+    {
+      "id": "55-fear-and-anxiety",
+      "group": "anxiety",
+      "title": "害怕與焦慮：一般經驗和需要評估的困擾",
+      "summary": "從警覺的功能走到持續性與生活影響。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "fear and anxiety"
+      ],
+      "example": "28_anxiety_context.py"
+    },
+    {
+      "id": "56-anxiety-patterns",
+      "group": "anxiety",
+      "title": "GAD、社交焦慮、恐懼與OCD：不要混成一類",
+      "summary": "認識不同困擾的重點，避免用網路標籤替人分類。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "anxiety patterns"
+      ]
+    },
+    {
+      "id": "57-panic-and-body",
+      "group": "anxiety",
+      "title": "恐慌發作與身體症狀：不在網頁排除急症",
+      "summary": "分清一次發作、恐慌症和其他需要醫療評估的原因。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "panic and body"
+      ],
+      "example": "29_panic_not_diagnosis.py"
+    },
+    {
+      "id": "58-avoidance-and-treatment",
+      "group": "anxiety",
+      "title": "迴避、暴露與ERP：理解專業原理",
+      "summary": "介紹治療為何涉及學習，而不製作自行暴露工具。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "avoidance and treatment"
+      ]
+    },
+    {
+      "id": "59-trauma-informed",
+      "group": "anxiety",
+      "title": "創傷知情：選擇、安全與不強迫回述",
+      "summary": "理解創傷相關困擾，尊重當事人的步調。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "trauma informed"
+      ],
+      "example": "30_trauma_sensitive_choices.py"
+    },
+    {
+      "id": "60-anxiety-care",
+      "group": "anxiety",
+      "title": "焦慮照護與共同決策：生活支持、治療與回顧",
+      "summary": "把選項放回問題、偏好和證據。",
+      "tags": [
+        "焦慮、恐慌與創傷的基本概念",
+        "anxiety care"
+      ]
+    },
+    {
+      "id": "61-low-mood-and-depression",
+      "group": "depression",
+      "title": "低落與憂鬱：情緒、興趣與功能",
+      "summary": "理解持續改變，也避免把暫時難過和疾病混成一件事。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "low mood and depression"
+      ],
+      "example": "31_mood_function_record.py"
+    },
+    {
+      "id": "62-mood-assessment",
+      "group": "depression",
+      "title": "憂鬱評估：比症狀計數更完整",
+      "summary": "知道專業人員為何會問生活、病史與身體資訊。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "mood assessment"
+      ]
+    },
+    {
+      "id": "63-activity-and-low-mood",
+      "group": "depression",
+      "title": "低落與活動循環：重看支持和小步",
+      "summary": "把行動減少理解為需要支持的現象，而非懶惰。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "activity and low mood"
+      ],
+      "example": "32_activity_cycle.py"
+    },
+    {
+      "id": "64-differential-and-bipolar",
+      "group": "depression",
+      "title": "哀傷、壓力、雙相與其他問題：為何需要鑑別",
+      "summary": "用開放問題保留多種可能，不把所有低落都貼同一標籤。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "differential and bipolar"
+      ]
+    },
+    {
+      "id": "65-care-options-and-goals",
+      "group": "depression",
+      "title": "憂鬱照護選項：心理治療、醫療與生活支持",
+      "summary": "用需求、證據和偏好討論，而不是人人同一階梯。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "care options and goals"
+      ],
+      "example": "33_care_options_context.py"
+    },
+    {
+      "id": "66-review-and-recurrence",
+      "group": "depression",
+      "title": "照護回顧與再次困難：改善不是直線",
+      "summary": "把反覆、部分反應與持續支持納入計畫。",
+      "tags": [
+        "低落、憂鬱與照護選項",
+        "review and recurrence"
+      ]
+    },
+    {
+      "id": "67-when-to-seek-care",
+      "group": "care",
+      "title": "何時尋求專業：不必先證明自己夠嚴重",
+      "summary": "用持續性、功能、變化與安全理解需要。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "when to seek care"
+      ],
+      "example": "34_assessment_questions.py"
+    },
+    {
+      "id": "68-professional-roles",
+      "group": "care",
+      "title": "精神醫師、臨床心理師與諮商心理師",
+      "summary": "理解台灣證照與業務，避免用刻板分工選擇照護。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "professional roles"
+      ]
+    },
+    {
+      "id": "69-psychotherapy-methods",
+      "group": "care",
+      "title": "心理治療的原理：CBT、BA、IPT、ACT與DBT",
+      "summary": "用問題和證據理解方法，不把名稱變成療效保證。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "psychotherapy methods"
+      ],
+      "example": "35_shared_decision.py"
+    },
+    {
+      "id": "70-medication-literacy",
+      "group": "care",
+      "title": "心理健康藥物：作用、期待與共同監測",
+      "summary": "建立看懂選項的語言，不提供自行用藥規則。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "medication literacy"
+      ]
+    },
+    {
+      "id": "71-taiwan-resources",
+      "group": "care",
+      "title": "台灣心理支持資源：2026方案與社區入口",
+      "summary": "把現行補助、額外費用、地方資源和臨床需要分開。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "taiwan resources"
+      ],
+      "example": "36_taiwan_resources.py"
+    },
+    {
+      "id": "72-first-appointment",
+      "group": "care",
+      "title": "第一次預約與會談：如何準備、如何提問",
+      "summary": "讓專業合作從可理解的資訊和權益開始。",
+      "tags": [
+        "評估、心理治療與台灣資源",
+        "first appointment"
+      ]
+    },
+    {
+      "id": "73-supporting-someone",
+      "group": "support",
+      "title": "支持他人：先傾聽，再確認需要",
+      "summary": "把陪伴、實際協助與專業連結分開。",
+      "tags": [
+        "支持他人與安全連結",
+        "supporting someone"
+      ],
+      "example": "37_listening_response.py"
+    },
+    {
+      "id": "74-helping-without-labels",
+      "group": "support",
+      "title": "關心而不貼標籤：避免常見對話陷阱",
+      "summary": "讓語言增加連結，而非增加羞恥與孤立。",
+      "tags": [
+        "支持他人與安全連結",
+        "helping without labels"
+      ]
+    },
+    {
+      "id": "75-supporter-boundaries",
+      "group": "support",
+      "title": "支持者的界線：不必成為唯一救援者",
+      "summary": "讓陪伴可持續，也讓專業和社區資源加入。",
+      "tags": [
+        "支持他人與安全連結",
+        "supporter boundaries"
+      ],
+      "example": "38_support_boundaries.py"
+    },
+    {
+      "id": "76-asking-about-safety",
+      "group": "support",
+      "title": "談到自傷或自殺：直接關心，連結協助",
+      "summary": "一般教育著重回應與安全需求，不製作預測分數。",
+      "tags": [
+        "支持他人與安全連結",
+        "asking about safety"
+      ]
+    },
+    {
+      "id": "77-immediate-help",
+      "group": "support",
+      "title": "立即協助與台灣資源：知道如何連結",
+      "summary": "分清緊急醫療、危機支持與常規預約。",
+      "tags": [
+        "支持他人與安全連結",
+        "immediate help"
+      ],
+      "example": "39_immediate_help_context.py"
+    },
+    {
+      "id": "78-safety-planning-and-followup",
+      "group": "support",
+      "title": "專業安全計畫與後續支持：不是一張保證書",
+      "summary": "理解合作、資源和可更新計畫的用途。",
+      "tags": [
+        "支持他人與安全連結",
+        "safety planning and followup"
+      ]
+    },
+    {
+      "id": "79-children-and-families",
+      "group": "lifespan",
+      "title": "兒童與家庭：用發展和環境理解",
+      "summary": "成人教材不能直接變成兒童診斷或處方。",
+      "tags": [
+        "不同生命階段與可近性",
+        "children and families"
+      ],
+      "example": "40_population_scope.py"
+    },
+    {
+      "id": "80-adolescents-and-digital",
+      "group": "lifespan",
+      "title": "青少年、同儕與數位生活",
+      "summary": "兼顧自主、連結、保護與發展需求。",
+      "tags": [
+        "不同生命階段與可近性",
+        "adolescents and digital"
+      ]
+    },
+    {
+      "id": "81-perinatal-and-care",
+      "group": "lifespan",
+      "title": "孕產與照顧階段：心理需要與實際資源",
+      "summary": "將生理變化、照顧負擔與專屬照護放回脈絡。",
+      "tags": [
+        "不同生命階段與可近性",
+        "perinatal and care"
+      ],
+      "example": "41_life_stage_context.py"
+    },
+    {
+      "id": "82-older-adults",
+      "group": "lifespan",
+      "title": "高齡、失落與身體疾病：不要把困擾當必然",
+      "summary": "兼顧功能、認知、用藥、關係與尊重。",
+      "tags": [
+        "不同生命階段與可近性",
+        "older adults"
+      ]
+    },
+    {
+      "id": "83-neurodiversity-and-access",
+      "group": "lifespan",
+      "title": "神經多樣性、障礙與溝通可近性",
+      "summary": "讓支持配合人的需要，而非要求人人用同一方式。",
+      "tags": [
+        "不同生命階段與可近性",
+        "neurodiversity and access"
+      ],
+      "example": "42_accessible_support.py"
+    },
+    {
+      "id": "84-culture-stigma-and-rights",
+      "group": "lifespan",
+      "title": "文化、污名與權益：讓求助有尊嚴",
+      "summary": "理解人如何描述困擾，也避免群體標籤。",
+      "tags": [
+        "不同生命階段與可近性",
+        "culture stigma and rights"
+      ]
+    },
+    {
+      "id": "85-measurement-and-scales",
+      "group": "evidence",
+      "title": "心理量測與次序尺度：數字代表什麼",
+      "summary": "從操作化、信效度與原創日記的限制開始。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "measurement and scales"
+      ],
+      "example": "43_ordinal_missing.py"
+    },
+    {
+      "id": "86-missing-and-sampling",
+      "group": "evidence",
+      "title": "缺漏、抽樣與日記負擔：不知道不能補成沒有",
+      "summary": "讓紀錄呈現真實資訊量，避免漂亮但誤導的趨勢。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "missing and sampling"
+      ]
+    },
+    {
+      "id": "87-screening-bayes",
+      "group": "evidence",
+      "title": "篩檢Bayes：敏感度不是陽性後的機率",
+      "summary": "用虛構測試與期望人數理解基線影響。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "screening bayes"
+      ],
+      "example": "44_screening_bayes.py"
+    },
+    {
+      "id": "88-trials-and-outcomes",
+      "group": "evidence",
+      "title": "讀心理介入研究：比較組、結果與時間",
+      "summary": "從有效這兩個字，問到對誰、相比什麼、改善什麼。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "trials and outcomes"
+      ]
+    },
+    {
+      "id": "89-effect-size-and-causality",
+      "group": "evidence",
+      "title": "效果量與相關：算得出，不等於因果或臨床重要",
+      "summary": "手算同一結果的組間差，保留方法假設。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "effect size and causality"
+      ],
+      "example": "45_effects_and_causality.py"
+    },
+    {
+      "id": "90-claims-and-version-audit",
+      "group": "evidence",
+      "title": "宣稱與版本審核：最新不是只改年份",
+      "summary": "辨認說明頁、正式推薦、草案、方法文與政策。",
+      "tags": [
+        "量測、研究與資訊判讀",
+        "claims and version audit"
+      ]
+    },
+    {
+      "id": "91-diary-project",
+      "group": "practice",
+      "title": "原創日記專題：目的、欄位與選擇",
+      "summary": "學會整理觀察，不把紀錄當診斷。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "diary project"
+      ],
+      "example": "46_report_audit.py"
+    },
+    {
+      "id": "92-data-contract-and-privacy",
+      "group": "practice",
+      "title": "資料契約與隱私：用欄位保護解釋",
+      "summary": "讓每筆資料有狀態、單位、目的與限制。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "data contract and privacy"
+      ]
+    },
+    {
+      "id": "93-reproducible-report",
+      "group": "practice",
+      "title": "CSV、SVG與JSON：從資料到可重跑摘要",
+      "summary": "讓圖和算術可以回到原始輸入。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "reproducible report"
+      ],
+      "example": "47_report_preview.py"
+    },
+    {
+      "id": "94-troubleshooting",
+      "group": "practice",
+      "title": "排錯：環境、輸入、缺漏與錯誤結論",
+      "summary": "從資料條件找問題，不編造一個能通過的數字。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "95-capstone",
+      "group": "practice",
+      "title": "完整專題：原創案例、資料與證據一起交付",
+      "summary": "完成一次不過度推論的學習報告。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "capstone"
+      ],
+      "example": "48_complete_project.py"
+    },
+    {
+      "id": "96-exercises-and-references",
+      "group": "practice",
+      "title": "總複習、解答與來源路線",
+      "summary": "用跨章問題檢查是否把原理、技能、環境與照護接起來。",
+      "tags": [
+        "日記、資料與完整學習專題",
+        "exercises and references"
+      ]
+    }
+  ]
+}

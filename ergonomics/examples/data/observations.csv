@@ -1,0 +1,13 @@
+id,task,scheduled_minutes,actions,active_minutes,status,synthetic
+B01,fictional_assembly_A,10,80,6,observed,true
+B02,fictional_assembly_A,10,90,7,observed,true
+B03,fictional_assembly_A,10,100,8,observed,true
+B04,fictional_assembly_A,10,70,5,observed,true
+B05,fictional_assembly_A,10,85,6,observed,true
+B06,fictional_assembly_A,10,95,7,observed,true
+B07,fictional_assembly_A,10,90,7,observed,true
+B08,fictional_assembly_A,10,80,6,observed,true
+B09,fictional_assembly_A,10,100,8,observed,true
+B10,fictional_assembly_A,10,110,8,observed,true
+B11,fictional_assembly_A,10,90,7,observed,true
+B12,fictional_assembly_A,10,,,missing,true

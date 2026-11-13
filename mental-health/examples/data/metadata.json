@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "checked": "2026-11-13",
+  "scheduled_days": 14,
+  "scale": "Original 0..10 observation, not a validated clinical instrument",
+  "scope": "Fictional dates, subjective observations and planned tasks; no patient data, diagnosis, causal effects or risk scoring"
+}
