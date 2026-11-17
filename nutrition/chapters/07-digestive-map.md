@@ -2,6 +2,17 @@
 
 把攝取、消化、吸收與利用分開，避免將入口重量直接當吸收量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-digestive-route.svg" target="_blank" rel="noopener" aria-label="放大：食物走的管，與分泌走的路"><img src="assets/figures/04-digestive-route.svg" alt="食物流經食道胃小腸大腸，消化酵素與其他分泌參與處理；肝膽胰不是食物依序流入的管腔。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 04｜食物走的管，與分泌走的路</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用手沿食物流向追一次，再指出胃和小腸不同工作，說明食物不必先流進肝臟或胰臟才進入腸道。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從口腔到腸道
 
 口腔咀嚼並開始部分化學消化，食道輸送，胃攪拌與調節排空，小腸完成大量消化吸收，大腸處理剩餘物、水分與微生物活動。肝、膽與胰臟提供代謝與消化支持，不是所有器官都直接接觸食物。

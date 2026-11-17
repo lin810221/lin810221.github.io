@@ -2,6 +2,17 @@
 
 從地面與任務理解，不把站立當萬用解方。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-floor-support.svg" target="_blank" rel="noopener" aria-label="放大：足部、地面與整趟路徑"><img src="assets/figures/26-floor-support.svg" alt="推車路線包含轉彎與障礙，空間與地面需現場觀察；圖不根據鞋具或單一材質宣告合規。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜足部、地面與整趟路徑</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿足部支撐到地面列出時間、接觸和設備條件，說明長時間站立不只靠一種鞋墊；圖沒有固定個人耐受時長。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 站立也有不同條件
 
 原地、走動、跨步、倚靠與不同地面，需求可能不同。鞋具、工作高度、精準要求和身體條件也需觀察，不能只用站多久評價全部暴露。

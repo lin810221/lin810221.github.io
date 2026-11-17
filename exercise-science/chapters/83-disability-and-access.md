@@ -2,6 +2,17 @@
 
 把活動形式、設備與支持納入課程，不以標準成人步行資料代替所有人。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-access-professional.svg" target="_blank" rel="noopener" aria-label="放大：可及性、慢性病與專業合作"><img src="assets/figures/42-access-professional.svg" alt="入口與任務間的箭頭表示需消除參與障礙，非評估通過；疾病和藥物等條件仍需適當專業。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜可及性、慢性病與專業合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從入口追到任務，逐項找設備、動線、資訊與協助可能阻擋的地方；不要以一個障礙名稱推定所有使用者有相同能力或需求。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 可及性是實際條件
 
 場地、設備、交通、溝通和支持影響參與；能力與障礙狀況不同，活動可有輪椅移動、水中、機械或其他合適形式。先問個人目標與條件，不以缺少某種形式推論不能受益。

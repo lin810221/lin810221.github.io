@@ -2,6 +2,17 @@
 
 兼顧功能、認知、用藥、關係與尊重。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-care-life-events.svg" target="_blank" rel="noopener" aria-label="放大：生命事件與可用支持"><img src="assets/figures/41-care-life-events.svg" alt="照顧、孕產、高齡與失落可有不同負擔和資源，沒有用人生階段決定誰必然有困擾。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜生命事件與可用支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在高齡案例加入失落、身體疾病和支持條件，說明年齡不能單獨解釋所有感受，評估和資源仍重要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 高齡不是單一狀態
 
 功能、健康、社會支持和生活差異很大。持續低落不是年紀大的必然，也不能把所有記憶或集中問題簡單稱為失智；需要適當評估。

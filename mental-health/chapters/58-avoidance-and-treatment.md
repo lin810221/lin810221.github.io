@@ -2,6 +2,17 @@
 
 介紹治療為何涉及學習，而不製作自行暴露工具。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-body-interpretation.svg" target="_blank" rel="noopener" aria-label="放大：身體感受、解釋與迴避的關係"><img src="assets/figures/29-body-interpretation.svg" alt="感受與解釋可能互相影響；有其他醫療原因的可能，不能以循環圖宣告沒有急症。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜身體感受、解釋與迴避的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>辨識迴避在短期和長期的不同可能作用，再指出暴露與ERP需完整專業原理；圖不是自行安排強迫面對的操作單。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何迴避可能維持困擾
 
 某些迴避短期降低不適，可能減少接觸不同結果的機會，形成持續循環。但遠離真實危險、暴力或不合適環境也可能合理，不能一概要求「面對」。

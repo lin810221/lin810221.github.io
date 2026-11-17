@@ -2,6 +2,17 @@
 
 知道工具能協助什麼，以及仍需要哪些資訊。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-method-map.svg" target="_blank" rel="noopener" aria-label="放大：按問題選方法，不是讓方法替人診斷"><img src="assets/figures/33-method-map.svg" alt="DSE、上肢重複、人工搬運與推拉有不同方法入口；重疊範圍仍需正式文件和完整現場資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜按問題選方法，不是讓方法替人診斷</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分清原創觀察、篩檢、正式評估與疾病診斷，說明行動級別不是個人傷害機率；方法來源和完整資料仍重要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 篩檢的角色
 
 初步工具可幫助辨認需進一步了解的工作或改善線索，但未必涵蓋所有暴露、使用者和場域。沒有被標記不代表所有風險都不存在。

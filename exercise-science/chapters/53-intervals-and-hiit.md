@@ -2,6 +2,17 @@
 
 把結構寫清楚，不用HIIT標籤取代強度與恢復資訊。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-interval-review.svg" target="_blank" rel="noopener" aria-label="放大：間歇總時鐘與整週核對"><img src="assets/figures/27-interval-review.svg" alt="上排分工作恢復，下排分計畫完成未知；圖只整理時序，未將所有段落自動歸為同一強度。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜間歇總時鐘與整週核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿上排分別加總工作和恢復，再說出總時鐘能回答與不能回答什麼；恢復時心率仍高不等於整段都能算指定費力活動。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 每個段落要有定義
 
 工作時間、強度來源、恢復形式與時間、重複數、暖身與收尾都是條件。衝刺、較長高強度間歇和一般交替步行不同，不能因都分段就套同一生理結論。

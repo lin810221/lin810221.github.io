@@ -2,6 +2,17 @@
 
 理解運輸系統，並計算non-HDL-C。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-particle-vessel-wall.svg" target="_blank" rel="noopener" aria-label="放大：脂蛋白粒子與動脈壁"><img src="assets/figures/19-particle-vessel-wall.svg" alt="左側粒子與右側動脈壁示意不同尺度；斑塊是壁內過程，不是油脂把管腔簡單塗滿。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜脂蛋白粒子與動脈壁</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>辨識脂質核心、粒子與血中膽固醇量，再說明non-HDL-C是在同單位下的差值，不等於所有粒子數的直接計數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 脂質需要運輸
 
 膽固醇參與細胞膜與合成，三酸甘油酯是能量儲存形式。它們在血中藉脂蛋白運送；LDL、HDL、VLDL等描述不同粒子群，檢驗的膽固醇濃度不等於粒子總數，也不是所有脂質共用一個換算因子。

@@ -2,6 +2,17 @@
 
 用可檢查的算術理解替代研究，同時保留食物其他成分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-fat-substitution.svg" target="_blank" rel="noopener" aria-label="放大：替代需要保留比較條件"><img src="assets/figures/14-fat-substitution.svg" alt="油、堅果與魚作替代來源示意，等能量不保證其他營養與作用相同；Omega-3成員也需分開，箭頭不是通用食譜。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜替代需要保留比較條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿替代箭頭先說原本用什麼、改成什麼，再列等能量之外仍會改變的成分，避免把固定熱量當所有健康效果相同。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates">WHO：脂肪與醣類指南更新</a> · <a href="https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/">NIH ODS：Omega-3脂肪酸</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 固定什麼，改變什麼
 
 等能量比較固定能量，讓來源不同；等重量固定克數，能量未必相同。兩者回答不同問題。例：示例油100g有900kcal，10g為90kcal；示例堅果100g有590kcal，約15.25g才接近90kcal，不能直接用10g交換。

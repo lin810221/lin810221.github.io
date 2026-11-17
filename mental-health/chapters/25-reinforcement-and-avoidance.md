@@ -2,6 +2,17 @@
 
 從學習原理理解行為，不把習慣歸因於意志薄弱。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-avoidance-learning.svg" target="_blank" rel="noopener" aria-label="放大：短期鬆一口氣與長期選項"><img src="assets/figures/13-avoidance-learning.svg" alt="避開情境可能短期減輕不適，也可能減少後續機會；此為學習原理，不要求自行暴露。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜短期鬆一口氣與長期選項</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿箭頭指出短期結果和未來影響不是同一件事，再說明迴避也可能具有合理保護功能，不能一律要求面對所有情境。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 後果會影響行為
 
 操作制約描述行為與後果的關係。增強指行為更可能再次出現，懲罰指行為減少；正負指加入或移除，不是善惡。需要看實際後續行為，不能只憑意圖命名。

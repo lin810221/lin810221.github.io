@@ -2,6 +2,7 @@
 import ast
 import json
 import re
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -66,6 +67,19 @@ def validate_course(course_path):
     assert chapter_numbers == list(range(1, len(chapter_numbers) + 1)), f"Chapters must be numbered in order: {course_path.name}"
     for group in course["groups"]:
         assert any(lesson["group"] == group["id"] for lesson in course["lessons"]), f"Empty chapter: {group['id']}"
+    visuals = {figure["id"]: figure for figure in course.get("visuals", [])}
+    if visuals:
+        assert len(visuals) == len(course["visuals"]), "Duplicate figure catalog IDs"
+        for figure in visuals.values():
+            path = (course_path / figure["file"]).resolve()
+            assert path.is_relative_to(course_path.resolve()) and path.is_file()
+            svg = ET.fromstring(path.read_text(encoding="utf-8"))
+            assert svg.attrib.get("role") == "img"
+            elements = {el.attrib["id"]: el for el in svg.iter() if "id" in el.attrib}
+            for identifier in svg.attrib.get("aria-labelledby", "").split():
+                assert identifier in elements and "".join(elements[identifier].itertext()).strip()
+            assert svg.find("{http://www.w3.org/2000/svg}title") is not None
+            assert svg.find("{http://www.w3.org/2000/svg}desc") is not None
     link_count = math_count = code_count = 0
     for page in (ROOT / "index.html", course_path / "index.html"):
         parsed = InspectHTML()
@@ -74,9 +88,14 @@ def validate_course(course_path):
         link_count += local_links_exist(parsed.links, page.parent)
     for lesson in course["lessons"]:
         assert lesson["group"] in group_ids
+        assert isinstance(lesson.get("summary"), str) and lesson["summary"].strip(), f"Missing lesson summary: {lesson['id']}"
+        assert isinstance(lesson.get("tags"), list) and all(isinstance(tag, str) and tag.strip() for tag in lesson["tags"]), f"Invalid lesson tags: {lesson['id']}"
         assert not LEGACY_TITLE_NUMBER.match(lesson["title"]), f"Remove manual section numbering from title: {lesson['id']}"
         assert lesson["title"] == next(item["title"] for item in expected["lessons"] if item["id"] == lesson["id"]), f"Rebuild changed title: {lesson['id']}"
         assert len(lesson["text"]) > 1000, f"Missing substantial content: {lesson['id']}"
+        if visuals:
+            assert lesson.get("visual") in visuals, f"Missing lesson figure: {lesson['id']}"
+            assert visuals[lesson["visual"]]["file"] in lesson["html"]
         assert "<!-- example:" not in lesson["text"]
         assert lesson["text"].count("```") % 2 == 0
         parsed = InspectHTML()

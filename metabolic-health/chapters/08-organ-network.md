@@ -2,6 +2,17 @@
 
 把器官串成網絡，不以單一血液指標替代全部功能。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-organ-coordination.svg" target="_blank" rel="noopener" aria-label="放大：器官協作與負回饋"><img src="assets/figures/04-organ-coordination.svg" alt="肝、胰島、肌肉和腎以供應、感受、訊號及回應參與調節，功能關係圖不按器官位置排列，不表示直接管路。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 04｜器官協作與負回饋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別指出肝、肌肉、脂肪、胰島和腎的角色；把物質運送與內分泌訊號用不同箭頭表示，避免誤接管路。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 餐後的協作
 
 腸道吸收、肝臟處理與儲存、肌肉使用及儲備、脂肪組織儲能與訊號、胰臟激素共同參與。不是食物進血液後只有一條去向，也不是所有細胞攝糖都必須依同一胰島素路徑。

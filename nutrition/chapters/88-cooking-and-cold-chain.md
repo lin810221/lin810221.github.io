@@ -2,6 +2,17 @@
 
 理解為何不能用單一核心溫度或氣味證明所有食品安全。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-food-hazard-types.svg" target="_blank" rel="noopener" aria-label="放大：過敏、耐受與烹調問題分開"><img src="assets/figures/44-food-hazard-types.svg" alt="一盤料理需同時辨識配方接觸、時間溫度與耐受等不同問題，圖不暗示烹調能通用去除所有過敏原。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜過敏、耐受與烹調問題分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將溫度紀錄放入右側，列食品種類、中心位置、時間和單位，說明一個瞬間溫度或外觀不能代表整段處理歷史。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a> · <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies">FDA：食物過敏</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 溫度一定帶時間和對象
 
 不同食物、大小、製程和目的有不同加熱條件；中心與表面溫度也不同。食物溫度計及正確量測位置比只看外觀更有依據，但仍需配合該食物的官方條件與後續處理。

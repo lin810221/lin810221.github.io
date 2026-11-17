@@ -2,6 +2,17 @@
 
 理解創傷相關困擾，尊重當事人的步調。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-trauma-choice.svg" target="_blank" rel="noopener" aria-label="放大：創傷知情與共同決策：選擇保持可用"><img src="assets/figures/30-trauma-choice.svg" alt="多個入口允許當事人選擇談、先看資源、暫停或找專業支持，不強迫回述經驗。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜創傷知情與共同決策：選擇保持可用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出選擇、可預期和停止的位置，說明創傷知情不需要先要求對方詳細回述，也不把選擇暫停當不合作。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 經驗不必公開
 
 人可以有難受、警覺或迴避等反應，但不同人路徑不同。是否符合PTSD需完整評估，不是所有壓力事件都等同PTSD，也不是沒有某個描述就不值得協助。

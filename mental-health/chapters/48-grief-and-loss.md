@@ -2,6 +2,17 @@
 
 理解哀傷不是固定階段考試。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-care-grief.svg" target="_blank" rel="noopener" aria-label="放大：照顧與失落：需求沒有固定順序"><img src="assets/figures/24-care-grief.svg" alt="四條分支連到支持、實務需求、感受與回顧，沒有規定哀傷必須依序完成幾階段。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜照顧與失落：需求沒有固定順序</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在沒有固定階段的圖上指出失落後需求可以如何改變，說明不同路徑不等於做錯，也仍可依需要尋求協助。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 失落的形式
 
 失去重要的人、關係、健康、工作或期待，都可能帶來哀傷。文化、關係、情境與支持改變經驗，不能預設每人依同樣五個階段、同樣順序或期限前進。

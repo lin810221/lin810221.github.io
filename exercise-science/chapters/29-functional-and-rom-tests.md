@@ -2,6 +2,17 @@
 
 用適當任務觀察能力，先弄清是越高越好還是越低越好。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-baseline-change.svg" target="_blank" rel="noopener" aria-label="放大：基線、方向與未知觀察"><img src="assets/figures/15-baseline-change.svg" alt="時間線含一段缺漏並以虛線提示連接是假想，不當作實測；數值升降需依測試方向解讀。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜基線、方向與未知觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先替「完成時間」與「可用活動範圍」各寫改善方向，再看這條任意曲線；上升不一定都代表進步，必須保留原測試定義與條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 功能測試的任務性
 
 起身、步行、搬物、平衡等可描述特定能力，測試條件與人群很重要。一項測試不涵蓋所有生活功能；時間、支撐和輔具等若改變，結果也可能不再直接可比。

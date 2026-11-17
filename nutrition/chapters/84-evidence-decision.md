@@ -2,6 +2,17 @@
 
 整合研究、官方指南、適用性與未知，形成可更新結論。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-supplement-audit.svg" target="_blank" rel="noopener" aria-label="放大：補充品與一頁證據地圖"><img src="assets/figures/42-supplement-audit.svg" alt="產品經查證對照身份含量、族群結果及成本限制，放大鏡代表證據核對不是認證標章，也不推個人推薦。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜補充品與一頁證據地圖</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一項主張寫在查證圈中心，列出支持、限制與未知三欄，再說明如何避免只有有利證據的單向摘要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://www.fda.gov.tw/Tc/siteContent.aspx?sid=1776">TFDA：健康食品導覽</a> · <a href="https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/">NIH ODS：Omega-3脂肪酸</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 問題先清楚
 
 寫族群、介入、比較和結果，再加時間範圍。例：某族群以某食物替代另一食物，與維持原飲食比較，觀察哪項結果？「某成分好不好」太寬，容易讓不同研究被混在一起。

@@ -2,6 +2,17 @@
 
 正式表格、工時類別與更正內容一起讀。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-endpoints.svg" target="_blank" rel="noopener" aria-label="放大：起點、目的地與工時條件"><img src="assets/figures/29-endpoints.svg" alt="兩個手部位置有不同幾何與控制需求，頻率、抓握和恢復需另按正式方法確認，不平均LI當CLI。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜起點、目的地與工時條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在移動箭頭外補頻率、工時、抓握及恢復條件，回原課查2021更正；不能由一個把手或任意休息時間就選最佳倍率。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## FM不是隨便估一個折扣
 
 需依頻率、工時類別與V<75或V≥75查正式表，頻率一般取代表性15分鐘觀察。示例V75、1次/分鐘、短工時的FM為0.94，不能當所有工作固定值。

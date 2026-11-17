@@ -2,6 +2,17 @@
 
 成人教材不能直接變成兒童診斷或處方。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-development-context.svg" target="_blank" rel="noopener" aria-label="放大：兒少與家庭：把需要放在發展和環境中"><img src="assets/figures/40-development-context.svg" alt="不同尺寸人物表示發展與支持需求，並非成熟程度、能力或健康排名。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜兒少與家庭：把需要放在發展和環境中</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個兒少情境，加入家庭與學校支持，說明不能只縮小成人模板；圖上的尺寸不是能力或症狀分數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 表達方式不同
 
 兒童可能透過行為、身體、睡眠或遊戲表達困難，語言與發展階段影響理解。不能只以是否聽話評價心理健康，也不能由一次哭鬧直接判病名。

@@ -2,6 +2,17 @@
 
 用虛構計數手算效果，避免被相對百分比放大印象。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-risk-denominators.svg" target="_blank" rel="noopener" aria-label="放大：絕對、相對與共同分母"><img src="assets/figures/40-risk-denominators.svg" alt="兩組各100人的虛構點圖分別有10與5個事件，用於分清絕對與相對差異；不代表真實試驗、個人風險或因果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜絕對、相對與共同分母</strong>虛構100人點圖；實心是事件，空心是未事件，不代表風險等級。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先讀清共同分母與觀察期，再口述事件差5人和相對減半是兩種描述，說明為何不能只留較大的百分比。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 把原始事件數找回來
 
 假設同一追蹤期、同一不良事件，對照1000人有100件、介入1000人有80件。風險為10%與8%；相對風險0.8，相對降低20%，絕對降低2個百分點。不能把20%寫成少20個百分點。

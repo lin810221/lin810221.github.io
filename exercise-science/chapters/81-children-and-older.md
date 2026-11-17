@@ -2,6 +2,17 @@
 
 理解年齡相關需要，不將成人高負荷案例按比例縮放。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-lifespan-adaptation.svg" target="_blank" rel="noopener" aria-label="放大：生命階段與身體條件"><img src="assets/figures/41-lifespan-adaptation.svg" alt="三個非比例人形代表不同階段需要實際評估，不將大小畫成能力排序，也不給兒少、高齡或孕產固定負荷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜生命階段與身體條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較圖中的尺寸與生活需求，另外列發展、功能及監督；兒少不是縮小成人，年齡相同也不代表活動能力和支持條件完全相同。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 兒童與青少年
 
 CDC對6–17歲建議每日60分鐘以上中高強度活動，並在每週至少三天包含相應費力、肌肉與骨骼強化活動。玩耍、技能、愉快參與和監督很重要，不把成人估1RM百分比工具直接當兒童課表。

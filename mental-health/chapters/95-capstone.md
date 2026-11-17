@@ -2,6 +2,17 @@
 
 完成一次不過度推論的學習報告。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-complete-map.svg" target="_blank" rel="noopener" aria-label="放大：完整案例：經驗、條件、行動與證據"><img src="assets/figures/48-complete-map.svg" alt="一個虛構案例以多種可回顧線索連成圖，不計總健康分數；不同路徑仍可保留未知。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜完整案例：經驗、條件、行動與證據</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將案例放到四個位置，提出一項可行支持與一個尚待確認的問題；專題完成在於清楚推理，不是產生個人診斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 專題任務
 
 使用本課全部合成資料，輸出CSV、SVG、JSON，再寫一頁說明目的、欄位、缺漏、來源版本與可回答的問題。不得加入真實個人敏感資料到公開倉庫。

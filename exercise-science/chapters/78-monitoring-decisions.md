@@ -2,6 +2,17 @@
 
 建立不靠單一分數的回饋流程，保留真正需要專業處理的問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-monitor-model.svg" target="_blank" rel="noopener" aria-label="放大：描述模型、觀察與下一步"><img src="assets/figures/39-monitor-model.svg" alt="三條未校準曲線採同一任意基準，綠線為藍線減黃線的示例；不是實測疲勞、適應或傷害機率，決策需先核對資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜描述模型、觀察與下一步</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在採取調整前先列缺漏、任務改變、量法和其他可能原因，再決定需要補哪些觀察；不能因模型有上升下降便自動給出最佳課表。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個層次
 
 先確認資料是否完整、定義是否相同，再看描述趨勢與任務結果；最後才討論調整。程式能算比值，不代表已解決資料品質和適用性，也不代表數字越高越好。

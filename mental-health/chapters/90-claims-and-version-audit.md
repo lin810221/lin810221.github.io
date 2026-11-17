@@ -2,6 +2,17 @@
 
 辨認說明頁、正式推薦、草案、方法文與政策。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-association-effect.svg" target="_blank" rel="noopener" aria-label="放大：差異、關聯與因果：問題要分開"><img src="assets/figures/45-association-effect.svg" alt="左側代表同一量尺兩個虛構摘要，右側點為任意成對資料，兩者都不自動建立因果或臨床重要性。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜差異、關聯與因果：問題要分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為一則宣稱加上研究設計、來源版本和未知欄位，說明只改年份不算重新查核；圖中的任意點不是實測療效。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 日期至少有幾種
 
 研究資料時間、正式發布、頁面更新、政策期間與本課查核日可能不同。2026查到的舊指南仍應標原年份；網站頁尾更新也不等於附件或推薦剛改。

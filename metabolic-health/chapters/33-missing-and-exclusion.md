@@ -2,6 +2,17 @@
 
 用同一份資料展示可用平均與完整性是不同問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-bp-records.svg" target="_blank" rel="noopener" aria-label="放大：排定血壓位置與缺漏"><img src="assets/figures/17-bp-records.svg" alt="格子代表排定位置，不是全部有效讀值；問號為未知，不填0，也不以色彩宣告合規或確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜排定血壓位置與缺漏</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>數出排定位置與問號，說明可用平均、完整平均及排除首日規則有何不同，不挑讓結果最好看的版本。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 缺漏不是零
 
 未量到不能填0，也不能以昨天的數字補成今天。0會大幅拉低平均；前值補入則假裝沒有變化。課程輸出available_mean與complete_mean，前者用現有有效資料，後者只在所有排定位置有效時才有值。

@@ -2,6 +2,17 @@
 
 建立水溶性維生素觀念，理解B12來源與吸收的特殊性。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-vitamin-role.svg" target="_blank" rel="noopener" aria-label="放大：維生素D轉換與代謝輔因子"><img src="assets/figures/20-vitamin-role.svg" alt="日照皮膚來源及肝腎轉換作維生素D正常生理示意，B群的代謝參與和能量本身分開；不提供日照時間或個人劑量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜維生素D轉換與代謝輔因子</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將B群放在「協助反應」的位置，再指出食物能量來源與輔因子不同，不能由參與代謝直接推補充品能增加表現。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/">NIH ODS：維生素D</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## B群不是一種物質
 
 B1、B2、菸鹼素、B6、葉酸、B12等有各自功能與參考值，不能把「B群」當可比較的單一毫克數。參與能量代謝不等於本身提供4或9kcal；沒有缺乏時額外補充，也不能直接推論精神或表現必定提升。

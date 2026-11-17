@@ -2,6 +2,17 @@
 
 不把診斷名稱直接轉成工作能力的單一判決。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-access-return.svg" target="_blank" rel="noopener" aria-label="放大：可近性與復工：功能、任務和支持連接"><img src="assets/figures/42-access-return.svg" alt="具體調整連接工作者、實際任務及合適專業，沒有依單一診斷或網頁分數決定資格及時程。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜可近性與復工：功能、任務和支持連接</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把臨床資訊、工作需求和組織支持分開又連起來，說明復工日期不能只由診斷名或本課算式自動產生。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 臨床與工作資訊互補
 
 醫療評估關心症狀、病況、功能及照護；工作分析描述力、位置、時間、環境及支持。只有診斷名稱或一張姿勢照片都不足以決定所有任務是否適合，需要適當資訊連接兩邊。

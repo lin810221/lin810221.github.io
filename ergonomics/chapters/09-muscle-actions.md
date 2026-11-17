@@ -2,6 +2,17 @@
 
 分清收縮、動作和外部觀察。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-muscle-hierarchy.svg" target="_blank" rel="noopener" aria-label="放大：肌肉、肌束與力量傳遞"><img src="assets/figures/05-muscle-hierarchy.svg" alt="整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 05｜肌肉、肌束與力量傳遞</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>按整肌到肌纖維的層次追蹤，舉等長或離心情境說明用力不一定整塊縮短；宏觀動作不能只由一個肌節圖直接推算。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：肌肉</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從訊號到張力
 
 運動神經訊號、鈣離子調節與肌動蛋白／肌凝蛋白作用參與肌纖維張力。肌肉透過肌腱傳力，多肌群協同完成動作；一個關節動作不是單一肌肉獨自工作。

@@ -2,6 +2,17 @@
 
 實作食物葉酸與folic acid換算，避免把DFE當所有上限的分子。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-vitamin-sources.svg" target="_blank" rel="noopener" aria-label="放大：維生素來源、當量與評估"><img src="assets/figures/21-vitamin-sources.svg" alt="天然食物、強化和補充來源並列，提醒當量換算與上限的來源範圍不同；食物處理及狀態評估需另有資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜維生素來源、當量與評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先用三個來源分清原始葉酸形式與DFE，再說明比較指定來源的上限時，為何不能把當量值直接當原始folic acid量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先標化學形式
 
 食物天然folate與強化或補充品中的folic acid有不同利用背景。DFE是膳食葉酸當量，不是所有葉酸型態的原始重量；先記形式、來源和是否隨餐，再談換算。

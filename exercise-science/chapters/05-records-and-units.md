@@ -2,6 +2,17 @@
 
 建立後續範例的資料契約，防止算對數字卻用錯概念。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-record-status.svg" target="_blank" rel="noopener" aria-label="放大：完成、休息與未知分三種"><img src="assets/figures/03-record-status.svg" alt="原創紀錄表將已完成、明確休息與未記錄分開，未記錄不等於零；沒有把資料整理當運動許可。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜完成、休息與未知分三種</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>逐列指出「明確休息」和「未記錄」的差別，再替負荷、時間、次數各寫單位；若沒有觀察到，不要為了畫完整圖而填0。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 同名強度未必同一量
 
 負荷kg、%1RM、剩餘次數RIR、單組RPE、整堂session-RPE、心率與配速各描述不同事情。RPE更有不同量表；不能把Borg6–20直接放進session CR10欄位，也不能把%HRmax當%HRR。

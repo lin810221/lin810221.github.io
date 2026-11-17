@@ -2,6 +2,17 @@
 
 分清微生物、化學、物理與過敏原問題，不用營養標示代替安全。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-kitchen-separation.svg" target="_blank" rel="noopener" aria-label="放大：廚房動線與交叉污染"><img src="assets/figures/43-kitchen-separation.svg" alt="生食處理與即食清潔區以虛線分開，手器具汁液可造成污染；圖是流程設計概念，不代表區域顏色能保證安全。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜廚房動線與交叉污染</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出可能把危害帶到即食食物的手、器具或汁液，分開危害與實際暴露，說明外觀正常不能單獨保證食品安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/food-safety">WHO：食品安全</a> · <a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.cdc.gov/food-safety/prevention/index.html">CDC：預防食物中毒</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 食安與營養相連
 
 有營養的食物若受污染或不適當處理，仍可能造成疾病；低熱量也不代表安全。危害是可能造成傷害的因素，風險還取決於暴露、食物條件和食用者背景，不是有危害名稱就能判特定產品風險大小。

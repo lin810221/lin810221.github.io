@@ -2,6 +2,17 @@
 
 理解身體時間和生活安排，避免只看一個時數。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-sleep-processes.svg" target="_blank" rel="noopener" aria-label="放大：睡眠壓力與節律：兩個不同過程"><img src="assets/figures/19-sleep-processes.svg" alt="上方單調與波動線為任意概念曲線，表示睡眠壓力及節律不同；沒有實測刻度或個人睡眠限制。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜睡眠壓力與節律：兩個不同過程</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別追兩條曲線並說出它們不是同一過程，加入睡眠機會與環境條件；不能從任意曲線讀取自己的所需時數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle">NHLBI：睡眠與清醒週期</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 兩種調節方向
 
 清醒累積的睡眠需求與晝夜節律，共同參與睡眠安排；光線、作息、疾病與其他因素也會影響。不是想睡就一定睡得著，也不能從失眠責怪意志力。

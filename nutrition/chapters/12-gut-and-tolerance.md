@@ -2,6 +2,17 @@
 
 辨識發酵、症狀、益生菌與個人差異，不用一個菌相分數包辦健康。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-food-matrix.svg" target="_blank" rel="noopener" aria-label="放大：食物基質與腸道條件"><img src="assets/figures/06-food-matrix.svg" alt="營養成分被包在食物結構中，加工搭配及腸道條件影響釋出與利用；不把所有吸收效率設成固定比例。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜食物基質與腸道條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把食物結構、纖維與腸道耐受分開標示，解釋同一食材不同處理或份量，為何可能有不同感受與利用條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/">NIH ODS：鐵</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 腸道不是單一指標
 
 腸道微生物與飲食、藥物、環境、年齡等互相影響，部分纖維可被發酵並形成代謝產物。觀察到菌相差異，不足以單獨證明原因或哪個組合適合所有人；測量與分析方法也會改變結果。

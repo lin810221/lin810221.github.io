@@ -2,6 +2,17 @@
 
 一般教育著重回應與安全需求，不製作預測分數。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-support-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：支持網絡：不必只剩一個人"><img src="assets/figures/38-support-boundaries.svg" alt="當事人可連到親友、適當專業及即時醫療等支持，沒有把任何人設定為唯一全天候救援者。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜支持網絡：不必只剩一個人</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在網絡指出可直接關心安全並連結受訓協助的位置；這不是量表或保密承諾，立即情況依原課及當地醫療資源處理。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 可以認真而平靜地問
 
 如果擔心對方安全，可直接、尊重地詢問現在是否有傷害自己的想法或是否需要立即協助。不要把談話變成責備、辯論或要求保證；也不需追問方法細節來完成課程練習。

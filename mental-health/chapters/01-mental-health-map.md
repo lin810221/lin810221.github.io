@@ -2,6 +2,17 @@
 
 先建立學科地圖，理解心理健康不只是一個情緒或分數。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-experience-function.svg" target="_blank" rel="noopener" aria-label="放大：經驗、功能與生活是不同面向"><img src="assets/figures/01-experience-function.svg" alt="三個相交區域表示經驗、生活功能及脈絡互相影響；不是診斷三圈或嚴重度分級。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜經驗、功能與生活是不同面向</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿三個圈分開描述感受、生活功能和環境，選一個虛構情境放入交集；說明為何不能只靠感受強弱概括心理健康。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 心理健康在問什麼
 
 心理健康包含感受、思考、行動、人際與日常功能，也受生活條件影響。一個人可以有壓力，同時維持一些有意義的活動；也可能外表如常，內在卻很辛苦。不能只以是否開心、工作效率或一次問卷代表全部狀態。

@@ -2,7 +2,7 @@
   "slug": "metabolic-health",
   "title": "代謝健康與慢性病預防完整教學",
   "shortTitle": "代謝健康與慢性病預防",
-  "updated": "2026-11-10",
+  "updated": "2026-11-16",
   "baseline": "ADA / CKM / Lipids 2026 · KDIGO 2024 · Python 3.15.2",
   "footerLabel": "METABOLIC HEALTH · MEASURE, CONNECT & PREVENT",
   "exampleBundle": "examples.zip",
@@ -115,7 +115,9 @@
         "代謝健康與預防的問題",
         "metabolic health map"
       ],
-      "example": "01_first_observation.py"
+      "example": "01_first_observation.py",
+      "visual": "mh01",
+      "visualTask": "先指出心、肝、胰島與腎的位置及代表功能，再說明為何一張血糖檢驗不能概括所有器官的代謝健康。"
     },
     {
       "id": "02-prevention-levels",
@@ -125,7 +127,9 @@
       "tags": [
         "代謝健康與預防的問題",
         "prevention levels"
-      ]
+      ],
+      "visual": "mh01",
+      "visualTask": "沿器官與生活之間的關係，分別舉出預防、篩檢及治療在問的問題；不要把三種行動當同一階段。"
     },
     {
       "id": "03-criteria-and-context",
@@ -136,7 +140,9 @@
         "代謝健康與預防的問題",
         "criteria and context"
       ],
-      "example": "02_source_status.py"
+      "example": "02_source_status.py",
+      "visual": "mh02",
+      "visualTask": "逐一辨識圖中五種用途，試把課文的同一數字放回原來問題；指出哪些頁面不能直接互相抄用界線。"
     },
     {
       "id": "04-evidence-and-outcomes",
@@ -146,7 +152,9 @@
       "tags": [
         "代謝健康與預防的問題",
         "evidence and outcomes"
-      ]
+      ],
+      "visual": "mh02",
+      "visualTask": "選一個研究結果，分開它觀察的指標、真正關心的健康結果與比較方式，說明圖中哪個框還需要補證據。"
     },
     {
       "id": "05-measurement-language",
@@ -157,7 +165,9 @@
         "代謝健康與預防的問題",
         "measurement language"
       ],
-      "example": "03_missing_context.py"
+      "example": "03_missing_context.py",
+      "visual": "mh03",
+      "visualTask": "沿時間軸指出一筆觀察需附哪些單位、檢體與時點資訊，再解釋問號為何不能直接補成零或正常。"
     },
     {
       "id": "06-learning-and-safety",
@@ -167,7 +177,9 @@
       "tags": [
         "代謝健康與預防的問題",
         "learning and safety"
-      ]
+      ],
+      "visual": "mh03",
+      "visualTask": "在時間軸旁分出學習、日常觀察和專業評估三種任務，寫出一個本課圖解仍不能替你回答的個人問題。"
     },
     {
       "id": "07-homeostasis",
@@ -178,7 +190,9 @@
         "身體如何調節能量",
         "homeostasis"
       ],
-      "example": "04_feedback_analogy.py"
+      "example": "04_feedback_analogy.py",
+      "visual": "mh04",
+      "visualTask": "先選一個需要維持的變數，再把肝、胰島與周邊組織接成回饋關係；指出圖中未畫出的時間與調節條件。"
     },
     {
       "id": "08-organ-network",
@@ -188,7 +202,9 @@
       "tags": [
         "身體如何調節能量",
         "organ network"
-      ]
+      ],
+      "visual": "mh04",
+      "visualTask": "分別指出肝、肌肉、脂肪、胰島和腎的角色；把物質運送與內分泌訊號用不同箭頭表示，避免誤接管路。"
     },
     {
       "id": "09-insulin-resistance",
@@ -199,7 +215,9 @@
         "身體如何調節能量",
         "insulin resistance"
       ],
-      "example": "05_homa_research.py"
+      "example": "05_homa_research.py",
+      "visual": "mh05",
+      "visualTask": "沿血液、受體和細胞內反應逐步讀圖，說明血糖處於某範圍為何仍不能保證每個組織的胰島素反應相同。"
     },
     {
       "id": "10-beta-cells",
@@ -209,7 +227,9 @@
       "tags": [
         "身體如何調節能量",
         "beta cells"
-      ]
+      ],
+      "visual": "mh05",
+      "visualTask": "把β細胞的分泌能力與靶組織反應分成兩個問題，再說明為何不能由這張概念圖判定糖尿病類型。"
     },
     {
       "id": "11-adipose-and-inflammation",
@@ -220,7 +240,9 @@
         "身體如何調節能量",
         "adipose and inflammation"
       ],
-      "example": "06_mechanism_versus_outcome.py"
+      "example": "06_mechanism_versus_outcome.py",
+      "visual": "mh06",
+      "visualTask": "先在三角形外補上脂肪組織及其訊號，分清正常儲存、發炎及異位脂肪，不把體表外觀當細胞診斷。"
     },
     {
       "id": "12-ckm-connections",
@@ -230,7 +252,9 @@
       "tags": [
         "身體如何調節能量",
         "ckm connections"
-      ]
+      ],
+      "visual": "mh06",
+      "visualTask": "沿心、腎與代謝之間的雙向箭頭各說一種可能連結，並指出這是整合框架，不能當個人的固定疾病進程。"
     },
     {
       "id": "13-bmi-and-context",
@@ -241,7 +265,9 @@
         "體位、脂肪與體重調節",
         "bmi and context"
       ],
-      "example": "07_bmi_arithmetic.py"
+      "example": "07_bmi_arithmetic.py",
+      "visual": "mh07",
+      "visualTask": "先指出BMI使用的身高與體重屬於哪種外部資料，再說明圖中皮下與內部區室哪些資訊無法由BMI直接看見。"
     },
     {
       "id": "14-waist-and-fat",
@@ -251,7 +277,9 @@
       "tags": [
         "體位、脂肪與體重調節",
         "waist and fat"
-      ]
+      ],
+      "visual": "mh07",
+      "visualTask": "辨識皮下和內臟周圍兩個區室，回到課文核對腰圍量測位置；不要把一圈外部尺寸當成精密脂肪影像。"
     },
     {
       "id": "15-body-composition",
@@ -262,7 +290,9 @@
         "體位、脂肪與體重調節",
         "body composition"
       ],
-      "example": "08_waist_and_height.py"
+      "example": "08_waist_and_height.py",
+      "visual": "mh08",
+      "visualTask": "在兩個相同總長度中指出組成差異，說明體液與不同測量方法如何影響結果，不將體重當唯一身體組成資料。"
     },
     {
       "id": "16-weight-regulation",
@@ -272,7 +302,9 @@
       "tags": [
         "體位、脂肪與體重調節",
         "weight regulation"
-      ]
+      ],
+      "visual": "mh08",
+      "visualTask": "從組成條回到一段時間的供應、使用與調節，列出至少兩種影響體重的條件，避免把能量平衡只解讀成意志力。"
     },
     {
       "id": "17-long-term-maintenance",
@@ -283,7 +315,9 @@
         "體位、脂肪與體重調節",
         "long term maintenance"
       ],
-      "example": "09_weight_trend.py"
+      "example": "09_weight_trend.py",
+      "visual": "mh09",
+      "visualTask": "沿資源、回顧、調整與重新開始的環，說明維持為何需要長期支持，並找出圖中沒有承諾的體重下降速度。"
     },
     {
       "id": "18-clinical-obesity-framework",
@@ -293,7 +327,9 @@
       "tags": [
         "體位、脂肪與體重調節",
         "clinical obesity framework"
-      ]
+      ],
+      "visual": "mh09",
+      "visualTask": "把臨床框架和台灣分類各自放回用途，指出需要哪些功能、病史與情境；不要用支持圖取代正式評估。"
     },
     {
       "id": "19-glucose-units",
@@ -304,7 +340,9 @@
         "血糖、HbA1c與檢驗",
         "glucose units"
       ],
-      "example": "10_glucose_units.py"
+      "example": "10_glucose_units.py",
+      "visual": "mh10",
+      "visualTask": "指出兩支試管代表的質量與物質量濃度，先核對是同一物質，再說明為何不能把換算因子套到所有檢驗。"
     },
     {
       "id": "20-diagnostic-criteria",
@@ -314,7 +352,9 @@
       "tags": [
         "血糖、HbA1c與檢驗",
         "diagnostic criteria"
-      ]
+      ],
+      "visual": "mh10",
+      "visualTask": "在試管旁補上檢體、空腹或其他時點與確認條件，說明換算完成為何仍不等於已完成糖尿病診斷。"
     },
     {
       "id": "21-a1c-standardization",
@@ -325,7 +365,9 @@
         "血糖、HbA1c與檢驗",
         "a1c standardization"
       ],
-      "example": "11_a1c_units.py"
+      "example": "11_a1c_units.py",
+      "visual": "mh11",
+      "visualTask": "分清紅血球、血紅素與糖化訊息，再辨識NGSP和IFCC是同指標的尺度，不把它當單次血糖換單位。"
     },
     {
       "id": "22-a1c-interference",
@@ -335,7 +377,9 @@
       "tags": [
         "血糖、HbA1c與檢驗",
         "a1c interference"
-      ]
+      ],
+      "visual": "mh11",
+      "visualTask": "在圖旁列紅血球周轉、血紅素變異及檢驗方法，說明為何把HbA1c換成另一尺度仍不能消除干擾。"
     },
     {
       "id": "23-monitoring-versus-diagnosis",
@@ -346,7 +390,9 @@
         "血糖、HbA1c與檢驗",
         "monitoring versus diagnosis"
       ],
-      "example": "12_test_protocol.py"
+      "example": "12_test_protocol.py",
+      "visual": "mh12",
+      "visualTask": "辨識家用血糖、CGM與實驗室各提供什麼時間與檢體資訊，再說明為何監測用途不能直接替代確認診斷。"
     },
     {
       "id": "24-prediabetes-definitions",
@@ -356,7 +402,9 @@
       "tags": [
         "血糖、HbA1c與檢驗",
         "prediabetes definitions"
-      ]
+      ],
+      "visual": "mh12",
+      "visualTask": "在三種介面旁標示「觀察」與「確認」的問題，解釋糖尿病前期是風險與定義脈絡，不是一瞬間變成另一種人。"
     },
     {
       "id": "25-dpp-trial",
@@ -367,7 +415,9 @@
         "第二型糖尿病預防",
         "dpp trial"
       ],
-      "example": "13_absolute_risk.py"
+      "example": "13_absolute_risk.py",
+      "visual": "mh13",
+      "visualTask": "先指認兩組的分母、比較內容和期限，再回原文閱讀DPP的適用族群；不要把示例點數當試驗真實結果。"
     },
     {
       "id": "26-effect-and-time",
@@ -377,7 +427,9 @@
       "tags": [
         "第二型糖尿病預防",
         "effect and time"
-      ]
+      ],
+      "visual": "mh13",
+      "visualTask": "用相同分母的標記點解釋相對與絕對差異，並說出缺少期限或事件定義時，為何不能直接比較兩個百分比。"
     },
     {
       "id": "27-structured-lifestyle",
@@ -388,7 +440,9 @@
         "第二型糖尿病預防",
         "structured lifestyle"
       ],
-      "example": "14_weight_change_context.py"
+      "example": "14_weight_change_context.py",
+      "visual": "mh14",
+      "visualTask": "沿生活介入路徑補上參與條件、支持和追蹤，說明結構化計畫為何不能只剩一個個人目標數字。"
     },
     {
       "id": "28-medication-prevention",
@@ -398,7 +452,9 @@
       "tags": [
         "第二型糖尿病預防",
         "medication prevention"
-      ]
+      ],
+      "visual": "mh14",
+      "visualTask": "比較兩條可以並行的路，指出藥物選項仍需適用條件與共同決策；不要從路徑長短推療效或自行用藥。"
     },
     {
       "id": "29-support-and-followup",
@@ -409,7 +465,9 @@
         "第二型糖尿病預防",
         "support and followup"
       ],
-      "example": "15_prevention_program.py"
+      "example": "15_prevention_program.py",
+      "visual": "mh15",
+      "visualTask": "依圖把家庭、資源和回顧責任放進計畫，說明哪些支持讓預防能持續，而不是只要求個人保持動機。"
     },
     {
       "id": "30-maintenance-and-recovery",
@@ -419,7 +477,9 @@
       "tags": [
         "第二型糖尿病預防",
         "maintenance and recovery"
-      ]
+      ],
+      "visual": "mh15",
+      "visualTask": "在重新開始處列一項可以回顧的障礙與調整，解釋預防為何不是一次考試，也不因一段中斷就失去價值。"
     },
     {
       "id": "31-home-measurement",
@@ -430,7 +490,9 @@
         "血壓與血管健康",
         "home measurement"
       ],
-      "example": "16_bp_available_mean.py"
+      "example": "16_bp_available_mean.py",
+      "visual": "mh16",
+      "visualTask": "指出背部、雙腳、手臂支撐和袖帶，再補安靜休息與不交談等條件，說明一個讀值為何需要完整量測程序。"
     },
     {
       "id": "32-measurement-settings",
@@ -440,7 +502,9 @@
       "tags": [
         "血壓與血管健康",
         "measurement settings"
-      ]
+      ],
+      "visual": "mh16",
+      "visualTask": "以同一張坐姿圖為起點，列診間、居家與動態血壓在時段與程序的差異，說明不能把不同情境直接混算。"
     },
     {
       "id": "33-missing-and-exclusion",
@@ -451,7 +515,9 @@
         "血壓與血管健康",
         "missing and exclusion"
       ],
-      "example": "17_bp_exclusion_rule.py"
+      "example": "17_bp_exclusion_rule.py",
+      "visual": "mh17",
+      "visualTask": "數出排定位置與問號，說明可用平均、完整平均及排除首日規則有何不同，不挑讓結果最好看的版本。"
     },
     {
       "id": "34-definitions-and-targets",
@@ -461,7 +527,9 @@
       "tags": [
         "血壓與血管健康",
         "definitions and targets"
-      ]
+      ],
+      "visual": "mh17",
+      "visualTask": "在紀錄格外分開定義、治療起點與目標三種用途，說明即使平均可算，也不能不看族群與情境套同一門檻。"
     },
     {
       "id": "35-variation-and-repeat",
@@ -472,7 +540,9 @@
         "血壓與血管健康",
         "variation and repeat"
       ],
-      "example": "18_repeat_variation.py"
+      "example": "18_repeat_variation.py",
+      "visual": "mh18",
+      "visualTask": "沿四個時點先說觀察，再列可能的量測條件與生物變動，解釋第二次改變為何不一定證明某措施造成效果。"
     },
     {
       "id": "36-bp-shared-care",
@@ -482,7 +552,9 @@
       "tags": [
         "血壓與血管健康",
         "bp shared care"
-      ]
+      ],
+      "visual": "mh18",
+      "visualTask": "把生活條件、藥物與耐受的問題放在回顧時點，說明重測只是照護資訊的一部分，不是自行停藥或調藥的指令。"
     },
     {
       "id": "37-particles-and-nonhdl",
@@ -493,7 +565,9 @@
         "血脂與脂蛋白",
         "particles and nonhdl"
       ],
-      "example": "19_non_hdl.py"
+      "example": "19_non_hdl.py",
+      "visual": "mh19",
+      "visualTask": "辨識脂質核心、粒子與血中膽固醇量，再說明non-HDL-C是在同單位下的差值，不等於所有粒子數的直接計數。"
     },
     {
       "id": "38-ldl-and-causality",
@@ -503,7 +577,9 @@
       "tags": [
         "血脂與脂蛋白",
         "ldl and causality"
-      ]
+      ],
+      "visual": "mh19",
+      "visualTask": "追粒子與血管壁過程的關係，分清機制、標記及臨床結果；不要把圖當個人血管影像或斑塊量測。"
     },
     {
       "id": "39-ldl-methods",
@@ -514,7 +590,9 @@
         "血脂與脂蛋白",
         "ldl methods"
       ],
-      "example": "20_historical_ldl.py"
+      "example": "20_historical_ldl.py",
+      "visual": "mh20",
+      "visualTask": "對照環狀與脂肪酸相關結構，指出LDL估算所需的是哪些明確檢驗與方法，不把任何脂質數字都當相同物質。"
     },
     {
       "id": "40-triglycerides",
@@ -524,7 +602,9 @@
       "tags": [
         "血脂與脂蛋白",
         "triglycerides"
-      ]
+      ],
+      "visual": "mh20",
+      "visualTask": "辨認三酸甘油酯的不同角色，再列採樣、代謝與次級原因的背景，說明一個數字不能直接解釋全部原因。"
     },
     {
       "id": "41-apob-and-lpa",
@@ -535,7 +615,9 @@
         "血脂與脂蛋白",
         "apob and lpa"
       ],
-      "example": "21_lipid_specific_units.py"
+      "example": "21_lipid_specific_units.py",
+      "visual": "mh21",
+      "visualTask": "先指出粒子外的蛋白相關結構，再區分apoB所提供資訊、所載膽固醇與Lp(a)單位，說明為何不應用固定係數互換。"
     },
     {
       "id": "42-lipid-guideline-2026",
@@ -545,7 +627,9 @@
       "tags": [
         "血脂與脂蛋白",
         "lipid guideline 2026"
-      ]
+      ],
+      "visual": "mh21",
+      "visualTask": "把圖中指標放回2026血脂指南所說的用途與適用條件，辨認哪些是補充資訊，不能從圖推人人每次必測全套。"
     },
     {
       "id": "43-absolute-risk",
@@ -556,7 +640,9 @@
         "心血管風險與共同決策",
         "absolute risk"
       ],
-      "example": "22_risk_baselines.py"
+      "example": "22_risk_baselines.py",
+      "visual": "mh22",
+      "visualTask": "先填族群、事件和期限，再解釋這些定義不同時，為何兩個相同百分比仍不是同一個心血管問題。"
     },
     {
       "id": "44-continuous-risk",
@@ -566,7 +652,9 @@
       "tags": [
         "心血管風險與共同決策",
         "continuous risk"
-      ]
+      ],
+      "visual": "mh22",
+      "visualTask": "把連續風險和表格紅字分開，說明為何不能只數超線項目；圖中沒有設一條通用的個人安全線。"
     },
     {
       "id": "45-prevent-scope",
@@ -577,7 +665,9 @@
         "心血管風險與共同決策",
         "prevent scope"
       ],
-      "example": "23_prevent_age_scope.py"
+      "example": "23_prevent_age_scope.py",
+      "visual": "mh23",
+      "visualTask": "依序指出PREVENT輸出前需問的事件、期限與適用背景，說明只通過年齡條件為何不等於完整資格已確認。"
     },
     {
       "id": "46-calibration-and-endpoints",
@@ -587,7 +677,9 @@
       "tags": [
         "心血管風險與共同決策",
         "calibration and endpoints"
-      ]
+      ],
+      "visual": "mh23",
+      "visualTask": "在正式模型與結果之間補上校準和終點定義，說明支援中文或小數位多，為何不證明台灣族群已驗證。"
     },
     {
       "id": "47-shared-decision",
@@ -598,7 +690,9 @@
         "心血管風險與共同決策",
         "shared decision"
       ],
-      "example": "24_shared_decision.py"
+      "example": "24_shared_decision.py",
+      "visual": "mh24",
+      "visualTask": "在兩側寫下效益及不確定性、負擔和偏好各一項，說明共同決策需要什麼資訊，不能由單一檢驗值自動決定。"
     },
     {
       "id": "48-primary-secondary",
@@ -608,7 +702,9 @@
       "tags": [
         "心血管風險與共同決策",
         "primary secondary"
-      ]
+      ],
+      "visual": "mh24",
+      "visualTask": "把初次與再次事件的背景分開放在圖旁，說明同一數字在不同病史下不一定有相同照護用途。"
     },
     {
       "id": "49-steatotic-liver-names",
@@ -619,7 +715,9 @@
         "MASLD與肝臟健康",
         "steatotic liver names"
       ],
-      "example": "25_liver_source_context.py"
+      "example": "25_liver_source_context.py",
+      "visual": "mh25",
+      "visualTask": "辨識肝細胞內脂質與細胞外基質兩種位置，回到SLD、MASLD、MASH的定義，避免只憑一個脂肪圖就互換名稱。"
     },
     {
       "id": "50-hepatic-metabolism",
@@ -629,7 +727,9 @@
       "tags": [
         "MASLD與肝臟健康",
         "hepatic metabolism"
-      ]
+      ],
+      "visual": "mh25",
+      "visualTask": "由肝臟連到細胞內處理，再補血糖和脂質供應的箭頭；說明肝參與多條代謝，不能只把它叫排毒器。"
     },
     {
       "id": "51-fib4-arithmetic",
@@ -640,7 +740,9 @@
         "MASLD與肝臟健康",
         "fib4 arithmetic"
       ],
-      "example": "26_fib4_arithmetic.py"
+      "example": "26_fib4_arithmetic.py",
+      "visual": "mh26",
+      "visualTask": "找出FIB-4之前必須核對的年齡、單位與檢驗背景，說明公式算出一個數值為何仍不能自己判定肝纖維化。"
     },
     {
       "id": "52-noninvasive-assessment",
@@ -650,7 +752,9 @@
       "tags": [
         "MASLD與肝臟健康",
         "noninvasive assessment"
-      ]
+      ],
+      "visual": "mh26",
+      "visualTask": "沿第一階段到進一步檢查的路徑，指出哪裡需要完整背景和專業判斷，不把兩階段圖變成人人相同檢查清單。"
     },
     {
       "id": "53-liver-care-options",
@@ -661,7 +765,9 @@
         "MASLD與肝臟健康",
         "liver care options"
       ],
-      "example": "27_liver_followup.py"
+      "example": "27_liver_followup.py",
+      "visual": "mh27",
+      "visualTask": "在選項討論處加入生活、共病和治療適用性的問題，說明不能因一張肝臟圖就推所有人相同的照護選擇。"
     },
     {
       "id": "54-liver-longitudinal-care",
@@ -671,7 +777,9 @@
       "tags": [
         "MASLD與肝臟健康",
         "liver longitudinal care"
-      ]
+      ],
+      "visual": "mh27",
+      "visualTask": "沿多個時點列需要持續確認的來源、其他病因和共同風險，解釋數字變動不必然只來自單一生活改變。"
     },
     {
       "id": "55-creatinine-measurement",
@@ -682,7 +790,9 @@
         "腎臟與代謝循環",
         "creatinine measurement"
       ],
-      "example": "28_creatinine_units.py"
+      "example": "28_creatinine_units.py",
+      "visual": "mh28",
+      "visualTask": "指出肌肉等來源、血中濃度和腎臟處理三個層次，說明肌酸酐改變為何仍需生成、方法與臨床背景。"
     },
     {
       "id": "56-egfr-and-chronicity",
@@ -692,7 +802,9 @@
       "tags": [
         "腎臟與代謝循環",
         "egfr and chronicity"
-      ]
+      ],
+      "visual": "mh28",
+      "visualTask": "把eGFR和持續性各放在圖旁，解釋一次觀察不等於慢性，也不能從濃度一個箭頭直接推完整腎臟狀態。"
     },
     {
       "id": "57-urine-acr",
@@ -703,7 +815,9 @@
         "腎臟與代謝循環",
         "urine acr"
       ],
-      "example": "29_urine_acr.py"
+      "example": "29_urine_acr.py",
+      "visual": "mh29",
+      "visualTask": "先在同一杯中辨識白蛋白與肌酸酐，再說明mg/L除以g/L為何得到mg/g，不能把不同單位數值直接相除。"
     },
     {
       "id": "58-repeat-urine-testing",
@@ -713,7 +827,9 @@
       "tags": [
         "腎臟與代謝循環",
         "repeat urine testing"
-      ]
+      ],
+      "visual": "mh29",
+      "visualTask": "比較兩杯的稀釋概念後，列採樣及生物變異，說明比值提供資訊但仍需確認，並非一次陽性即可確診。"
     },
     {
       "id": "59-gfr-body-surface-area",
@@ -724,7 +840,9 @@
         "腎臟與代謝循環",
         "gfr body surface area"
       ],
-      "example": "30_gfr_indexing.py"
+      "example": "30_gfr_indexing.py",
+      "visual": "mh30",
+      "visualTask": "在標準面積與個人體表面積之間標示轉換，說明去索引後數字改變為何不是腎功能突然改善。"
     },
     {
       "id": "60-kidney-guideline-status",
@@ -734,7 +852,9 @@
       "tags": [
         "腎臟與代謝循環",
         "kidney guideline status"
-      ]
+      ],
+      "visual": "mh30",
+      "visualTask": "把正式指南、草案和個別化照護分開標記，說明即使面積換算正確，仍不能代替正式版次及適用背景的核對。"
     },
     {
       "id": "61-dietary-patterns",
@@ -745,7 +865,9 @@
         "從飲食到可行預防",
         "dietary patterns"
       ],
-      "example": "31_pattern_observation.py"
+      "example": "31_pattern_observation.py",
+      "visual": "mh31",
+      "visualTask": "在兩盤中各標食物來源與整體組合，再說明飲食型態為何不能只靠一種營養素高低判斷。"
     },
     {
       "id": "62-fats-and-substitution",
@@ -755,7 +877,9 @@
       "tags": [
         "從飲食到可行預防",
         "fats and substitution"
-      ]
+      ],
+      "visual": "mh31",
+      "visualTask": "指出被減少及被替代的內容，先寫是否等能量等假設，說明「少吃某脂肪」仍需回答用什麼補上的問題。"
     },
     {
       "id": "63-sodium-labels",
@@ -766,7 +890,9 @@
         "從飲食到可行預防",
         "sodium labels"
       ],
-      "example": "32_sodium_equivalent.py"
+      "example": "32_sodium_equivalent.py",
+      "visual": "mh32",
+      "visualTask": "先指認每份、每包和每100的分母，再分鈉mg與食鹽g；說明為何不能看到兩個數字就直接相加比較。"
     },
     {
       "id": "64-fiber-sugars-and-gi",
@@ -776,7 +902,9 @@
       "tags": [
         "從飲食到可行預防",
         "fiber sugars and gi"
-      ]
+      ],
+      "visual": "mh32",
+      "visualTask": "從標示框走到整餐，補纖維、來源和組合等資訊，解釋GI只是一個維度，不能變成個人的血糖預測器。"
     },
     {
       "id": "65-weight-maintenance-observations",
@@ -787,7 +915,9 @@
         "從飲食到可行預防",
         "weight maintenance observations"
       ],
-      "example": "33_maintenance_observations.py"
+      "example": "33_maintenance_observations.py",
+      "visual": "mh33",
+      "visualTask": "分出已知、明確零與未知三種紀錄，再說明如何用資料回顧體重維持，而不從缺漏推測個人動機或責任。"
     },
     {
       "id": "66-access-and-eating-out",
@@ -797,7 +927,9 @@
       "tags": [
         "從飲食到可行預防",
         "access and eating out"
-      ]
+      ],
+      "visual": "mh33",
+      "visualTask": "在紀錄格外補外食、預算和可取得食物的限制，說明一份可行計畫為何不能只寫理想選擇。"
     },
     {
       "id": "67-physical-activity",
@@ -808,7 +940,9 @@
         "活動、睡眠與壓力",
         "physical activity"
       ],
-      "example": "34_activity_equivalence.py"
+      "example": "34_activity_equivalence.py",
+      "visual": "mh34",
+      "visualTask": "沿肌肉與供應箭頭說明身體活動除了熱量還涉及哪些調節，並指出圖中沒有計算個人葡萄糖下降幅度。"
     },
     {
       "id": "68-strength-and-sitting",
@@ -818,7 +952,9 @@
       "tags": [
         "活動、睡眠與壓力",
         "strength and sitting"
-      ]
+      ],
+      "visual": "mh34",
+      "visualTask": "把肌力、久坐時間與日常功能分成三個可觀察問題，說明只看單次運動不能代表整天活動型態。"
     },
     {
       "id": "69-sleep-observation",
@@ -829,7 +965,9 @@
         "活動、睡眠與壓力",
         "sleep observation"
       ],
-      "example": "35_sleep_observations.py"
+      "example": "35_sleep_observations.py",
+      "visual": "mh35",
+      "visualTask": "在時鐘旁分開時數、品質與規律，說明為何一次穿戴分數或單一時數不能完整描述睡眠。"
     },
     {
       "id": "70-circadian-and-osa",
@@ -839,7 +977,9 @@
       "tags": [
         "活動、睡眠與壓力",
         "circadian and osa"
-      ]
+      ],
+      "visual": "mh35",
+      "visualTask": "把光照、輪班與睡眠呼吸問題放在不同位置，辨識節律和呼吸相關機制不能只用「睡不夠」概括。"
     },
     {
       "id": "71-stress-and-context",
@@ -850,7 +990,9 @@
         "活動、睡眠與壓力",
         "stress and context"
       ],
-      "example": "36_stress_context.py"
+      "example": "36_stress_context.py",
+      "visual": "mh36",
+      "visualTask": "在需求、環境與支持三處各寫一個具體條件，說明壓力和代謝的連結為何不能變成對個人的責怪。"
     },
     {
       "id": "72-integrating-habits",
@@ -860,7 +1002,9 @@
       "tags": [
         "活動、睡眠與壓力",
         "integrating habits"
-      ]
+      ],
+      "visual": "mh36",
+      "visualTask": "把飲食、活動與睡眠接到可行計畫，列一個小調整和一個需協調的資源，避免用單一習慣數字替整體生活評分。"
     },
     {
       "id": "73-tobacco-exposure",
@@ -871,7 +1015,9 @@
         "菸酒、資源與環境",
         "tobacco exposure"
       ],
-      "example": "37_tobacco_record.py"
+      "example": "37_tobacco_record.py",
+      "visual": "mh37",
+      "visualTask": "分清菸草、尼古丁與其他暴露資訊，說明心代謝風險不能只由一個名稱或一張符號圖算出個人機率。"
     },
     {
       "id": "74-cessation-support",
@@ -881,7 +1027,9 @@
       "tags": [
         "菸酒、資源與環境",
         "cessation support"
-      ]
+      ],
+      "visual": "mh37",
+      "visualTask": "沿暴露到支持的箭頭加入依賴、反覆與照護選項，說明為何需要可取得的協助，而不是只要求意志力。"
     },
     {
       "id": "75-alcohol-arithmetic",
@@ -892,7 +1040,9 @@
         "菸酒、資源與環境",
         "alcohol arithmetic"
       ],
-      "example": "38_alcohol_units.py"
+      "example": "38_alcohol_units.py",
+      "visual": "mh38",
+      "visualTask": "指出容量、ABV比例和密度三項，說明百分比為何需先轉成比例，並辨識瓶子大小不是純酒精量。"
     },
     {
       "id": "76-alcohol-and-care",
@@ -902,7 +1052,9 @@
       "tags": [
         "菸酒、資源與環境",
         "alcohol and care"
-      ]
+      ],
+      "visual": "mh38",
+      "visualTask": "在瓶子旁加入飲用時間、肝病、用藥及依賴等背景，說明相同總量為何仍不能概括全部風險或照護需要。"
     },
     {
       "id": "77-social-determinants",
@@ -913,7 +1065,9 @@
         "菸酒、資源與環境",
         "social determinants"
       ],
-      "example": "39_social_context.py"
+      "example": "39_social_context.py",
+      "visual": "mh39",
+      "visualTask": "由個人往外逐層找家庭、社區、場域與制度，列一個會改變實際選擇的障礙，說明不能只談個人努力。"
     },
     {
       "id": "78-population-prevention",
@@ -923,7 +1077,9 @@
       "tags": [
         "菸酒、資源與環境",
         "population prevention"
-      ]
+      ],
+      "visual": "mh39",
+      "visualTask": "選一個群體預防措施，標出它作用在哪一層，再問公平、可取得性及真正結果，不把覆蓋率當全部健康成效。"
     },
     {
       "id": "79-population-boundaries",
@@ -934,7 +1090,9 @@
         "生命階段與預防保健",
         "population boundaries"
       ],
-      "example": "40_life_stage_context.py"
+      "example": "40_life_stage_context.py",
+      "visual": "mh40",
+      "visualTask": "先指出各人物代表不同情境，再列原資料需要哪些族群與方法條件；說明成人界線不能直接縮小套兒少。"
     },
     {
       "id": "80-pregnancy-aging",
@@ -944,7 +1102,9 @@
       "tags": [
         "生命階段與預防保健",
         "pregnancy aging"
-      ]
+      ],
+      "visual": "mh40",
+      "visualTask": "把孕產和高齡照護問題各列一項，說明生命階段改變的是哪些需求，不能由人物年齡圖推相同治療目標。"
     },
     {
       "id": "81-taiwan-preventive-care",
@@ -955,7 +1115,9 @@
         "生命階段與預防保健",
         "taiwan preventive care"
       ],
-      "example": "41_screening_policy.py"
+      "example": "41_screening_policy.py",
+      "visual": "mh41",
+      "visualTask": "把公費資格放在入口，再列哪些內容需依台灣現行方案查核；說明符合資格仍不等於所有個人照護需求已涵蓋。"
     },
     {
       "id": "82-screening-followup",
@@ -965,7 +1127,9 @@
       "tags": [
         "生命階段與預防保健",
         "screening followup"
-      ]
+      ],
+      "visual": "mh41",
+      "visualTask": "從檢查後沿箭頭補上確認、回顧及必要照護，說明篩檢結果為何不能只留在一張紅字清單。"
     },
     {
       "id": "83-medication-and-chronicity",
@@ -976,7 +1140,9 @@
         "生命階段與預防保健",
         "medication and chronicity"
       ],
-      "example": "42_chronicity_context.py"
+      "example": "42_chronicity_context.py",
+      "visual": "mh42",
+      "visualTask": "依摘要各列補時間、病史與藥物等背景，指出哪一欄目前未知，說明為何不應默認沒有用藥或沒有病史。"
     },
     {
       "id": "84-clinical-conversation",
@@ -986,7 +1152,9 @@
       "tags": [
         "生命階段與預防保健",
         "clinical conversation"
-      ]
+      ],
+      "visual": "mh42",
+      "visualTask": "把常規回顧問題和需要即時評估的情境分開列出；說明這張摘要圖不能代替專業判定個人緊急程度。"
     },
     {
       "id": "85-screening-bayes",
@@ -997,7 +1165,9 @@
         "量測、篩檢與風險判讀",
         "screening bayes"
       ],
-      "example": "43_screening_bayes.py"
+      "example": "43_screening_bayes.py",
+      "visual": "mh43",
+      "visualTask": "先指出敏感度與PPV各自使用哪些格子作分母，再說明為何90%敏感度不能讀成每個陽性者90%有病。"
     },
     {
       "id": "86-screening-benefit-harm",
@@ -1007,7 +1177,9 @@
       "tags": [
         "量測、篩檢與風險判讀",
         "screening benefit harm"
-      ]
+      ],
+      "visual": "mh43",
+      "visualTask": "分別找偽陽性、偽陰性與超出此四格的過度診斷問題，說明篩檢效益傷害不能只看陽性數。"
     },
     {
       "id": "87-variation-and-thresholds",
@@ -1018,7 +1190,9 @@
         "量測、篩檢與風險判讀",
         "variation and thresholds"
       ],
-      "example": "44_variation_and_thresholds.py"
+      "example": "44_variation_and_thresholds.py",
+      "visual": "mh44",
+      "visualTask": "先分儀器或程序誤差與真實生物變動，再說明觀察跨過某界線為何仍需方法和確認背景。"
     },
     {
       "id": "88-regression-to-mean",
@@ -1028,7 +1202,9 @@
       "tags": [
         "量測、篩檢與風險判讀",
         "regression to mean"
-      ]
+      ],
+      "visual": "mh44",
+      "visualTask": "沿第一次到第四次說明選極端值後可能發生的平均回歸，指出哪些額外設計才有助辨識介入和其他原因。"
     },
     {
       "id": "89-risk-effect-calculation",
@@ -1039,7 +1215,9 @@
         "量測、篩檢與風險判讀",
         "risk effect calculation"
       ],
-      "example": "45_absolute_relative_effects.py"
+      "example": "45_absolute_relative_effects.py",
+      "visual": "mh45",
+      "visualTask": "對照相同分母與期限的事件點，先說絕對差再說相對差，辨識NNT仍需時間、事件及研究假設。"
     },
     {
       "id": "90-surrogates-and-causality",
@@ -1049,7 +1227,9 @@
       "tags": [
         "量測、篩檢與風險判讀",
         "surrogates and causality"
-      ]
+      ],
+      "visual": "mh45",
+      "visualTask": "在事件點之外另標血壓或檢驗等替代指標，說明數值改善後還需要什麼臨床結果與因果證據。"
     },
     {
       "id": "91-observation-dashboard",
@@ -1060,7 +1240,9 @@
         "整合案例與可重現報告",
         "observation dashboard"
       ],
-      "example": "46_report_audit.py"
+      "example": "46_report_audit.py",
+      "visual": "mh46",
+      "visualTask": "分辨原始觀察、算術衍生與缺漏，指出症狀等背景未知時，為何不能只靠摘要判定糖尿病、CKD或其他病況。"
     },
     {
       "id": "92-source-version-audit",
@@ -1070,7 +1252,9 @@
       "tags": [
         "整合案例與可重現報告",
         "source version audit"
-      ]
+      ],
+      "visual": "mh46",
+      "visualTask": "在摘要旁加入來源、版本和生效狀態，說明正式文件、草案與未來規則為何不能只按網頁日期混為一談。"
     },
     {
       "id": "93-reproducible-report",
@@ -1081,7 +1265,9 @@
         "整合案例與可重現報告",
         "reproducible report"
       ],
-      "example": "47_report_preview.py"
+      "example": "47_report_preview.py",
+      "visual": "mh47",
+      "visualTask": "從資料表挑一個值追到圖和來源摘要，說明可重跑交付需要什麼一致性，以及哪些健康結論仍沒有被證明。"
     },
     {
       "id": "94-troubleshooting",
@@ -1091,7 +1277,9 @@
       "tags": [
         "整合案例與可重現報告",
         "troubleshooting"
-      ]
+      ],
+      "visual": "mh47",
+      "visualTask": "依單位、缺漏、輸入和方法逐項找可能錯誤，說明圖看起來平順或檔案成功產生，為何仍不保證問題定義正確。"
     },
     {
       "id": "95-capstone",
@@ -1102,7 +1290,9 @@
         "整合案例與可重現報告",
         "capstone"
       ],
-      "example": "48_complete_project.py"
+      "example": "48_complete_project.py",
+      "visual": "mh48",
+      "visualTask": "沿專題路徑指出每一步的資料與條件，至少列一個保留未知的欄位和一項不能從虛構摘要產生的個人結論。"
     },
     {
       "id": "96-exercises-and-references",
@@ -1112,7 +1302,1040 @@
       "tags": [
         "整合案例與可重現報告",
         "exercises and references"
-      ]
+      ],
+      "visual": "mh48",
+      "visualTask": "不看程式先口述單位、分母、期限與適用條件的檢核順序，再選一張本課圖說明其簡化和不能回答的問題。"
     }
+  ],
+  "contentBaselineDate": "2026-11-10",
+  "visualUpdated": "2026-11-16",
+  "visuals": [
+    {
+      "id": "mh01",
+      "file": "assets/figures/01-metabolic-map.svg",
+      "title": "代謝健康：器官與預防的地圖",
+      "description": "用心、肝、胰島、腎與周邊組織建立位置與照護關係，不從器官圖診斷個人。",
+      "group": "foundations",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh02",
+      "file": "assets/figures/02-criteria-layers.svg",
+      "title": "同一數字背後的不同用途",
+      "description": "定義、診斷、治療目標、服務資格與預測模型是不同頁面，不可因數字相似便互換。",
+      "group": "foundations",
+      "kind": "用途對照圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh03",
+      "file": "assets/figures/03-measurement-time.svg",
+      "title": "一個數字要帶著時間與未知",
+      "description": "數字來自有時間、方法及缺漏的觀察，未知位置不是零，也不因學習路線完成便可自我確診。",
+      "group": "foundations",
+      "kind": "時間與缺漏圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh04",
+      "file": "assets/figures/04-organ-coordination.svg",
+      "title": "器官協作與負回饋",
+      "description": "肝、胰島、肌肉和腎以供應、感受、訊號及回應參與調節，功能關係圖不按器官位置排列，不表示直接管路。",
+      "group": "metabolism",
+      "kind": "器官協作圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh05",
+      "file": "assets/figures/05-insulin-response.svg",
+      "title": "胰島訊號與靶細胞反應",
+      "description": "血中訊號、受體與組織回應不是同一個量，分泌可能代償，示意不提供HOMA界線或個人診斷。",
+      "group": "metabolism",
+      "kind": "細胞訊號圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh06",
+      "file": "assets/figures/06-ckm-links.svg",
+      "title": "脂肪組織與心腎代謝的互相連結",
+      "description": "CKM以心、腎、代謝及共同條件理解，雙向箭頭表示互動，不表示每人都依相同順序發病。",
+      "group": "metabolism",
+      "kind": "器官網絡圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh07",
+      "file": "assets/figures/07-abdominal-compartments.svg",
+      "title": "體表量測與腹部脂肪區室",
+      "description": "腹部橫斷示意區分皮下及內部區室，體表尺寸不能直接顯示脂肪位置或個人器官狀態。",
+      "group": "body",
+      "kind": "區室剖面圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh08",
+      "file": "assets/figures/08-composition-balance.svg",
+      "title": "體重、身體組成與時間",
+      "description": "兩條等長示例條呈現不同組成，顏色不是正常異常，並未表示特定人的比例或理想體脂。",
+      "group": "body",
+      "kind": "組成比較圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh09",
+      "file": "assets/figures/09-long-term-support.svg",
+      "title": "維持與重新調整的支持環",
+      "description": "環狀支持圖強調資源和反覆回顧，不畫保證下降的體重曲線，也不把框架分類當個人責備。",
+      "group": "body",
+      "kind": "支持迴路圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh10",
+      "file": "assets/figures/10-glucose-sample.svg",
+      "title": "血糖：濃度單位與確認條件",
+      "description": "同一物質可用質量或物質量濃度表達，換算不取代檢體、時間與確認程序。",
+      "group": "glucose",
+      "kind": "檢體與單位圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh11",
+      "file": "assets/figures/11-a1c-background.svg",
+      "title": "紅血球、糖化與HbA1c背景",
+      "description": "紅血球與血紅素糖化提供一段時間的訊息，壽命、變異及方法會影響；圖不畫固定個人平均血糖。",
+      "group": "glucose",
+      "kind": "紅血球機制圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh12",
+      "file": "assets/figures/12-monitoring-interfaces.svg",
+      "title": "家用、連續與實驗室的不同介面",
+      "description": "裝置圖比較監測與確認的介面，未提供任何裝置讀值、診斷門檻或個人風險。",
+      "group": "glucose",
+      "kind": "裝置介面圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh13",
+      "file": "assets/figures/13-trial-denominators.svg",
+      "title": "研究比較：同分母、同期限",
+      "description": "兩群標記點只示範事件計數，並非DPP試驗實際比例或個人的預測結果。",
+      "group": "prevention",
+      "kind": "研究分母圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh14",
+      "file": "assets/figures/14-parallel-options.svg",
+      "title": "結構化介入與適合條件下的選項",
+      "description": "並列路徑表示支持可組合，並非生活方式和藥物互相排斥，也不表示每人的效果順序。",
+      "group": "prevention",
+      "kind": "選項路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh15",
+      "file": "assets/figures/15-followup-support.svg",
+      "title": "家庭、資源與持續回顧",
+      "description": "參與者與家庭、照護資源之間雙向溝通，重新開始是計畫調整的一部分，圖不評個人是否成功。",
+      "group": "prevention",
+      "kind": "持續支持圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh16",
+      "file": "assets/figures/16-bp-position.svg",
+      "title": "居家血壓的支撐與量測條件",
+      "description": "坐姿、背部、手臂與袖帶的關係示意；完整程序、時點和722安排以課文及來源為準。",
+      "group": "pressure",
+      "kind": "量測配置圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "國健署：居家722與量測條件",
+          "url": "https://www.hpa.gov.tw/5020/20223/n"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh17",
+      "file": "assets/figures/17-bp-records.svg",
+      "title": "排定血壓位置與缺漏",
+      "description": "格子代表排定位置，不是全部有效讀值；問號為未知，不填0，也不以色彩宣告合規或確診。",
+      "group": "pressure",
+      "kind": "記錄完整度圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "國健署：居家722與量測條件",
+          "url": "https://www.hpa.gov.tw/5020/20223/n"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh18",
+      "file": "assets/figures/18-repeat-bp.svg",
+      "title": "波動、重測與照護回顧",
+      "description": "相對高度為虛構觀察，無正常異常線；重測提供資訊，但不能單由走向選擇個人處方。",
+      "group": "pressure",
+      "kind": "重測時間圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "國健署：居家722與量測條件",
+          "url": "https://www.hpa.gov.tw/5020/20223/n"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh19",
+      "file": "assets/figures/19-particle-vessel-wall.svg",
+      "title": "脂蛋白粒子與動脈壁",
+      "description": "左側粒子與右側動脈壁示意不同尺度；斑塊是壁內過程，不是油脂把管腔簡單塗滿。",
+      "group": "lipids",
+      "kind": "粒子與血管壁圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh20",
+      "file": "assets/figures/20-cholesterol-triglyceride.svg",
+      "title": "膽固醇與三酸甘油酯的不同量",
+      "description": "化學形狀只作家族概念，不是精確分子模型；兩類檢驗不能共用一套不明換算。",
+      "group": "lipids",
+      "kind": "脂質結構概念圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh21",
+      "file": "assets/figures/21-apob-lpa.svg",
+      "title": "粒子、apoB與Lp(a)的資訊層次",
+      "description": "蛋白與粒子的示意用於辨識資訊，不表示實際大小；Lp(a)質量與粒子濃度不可固定互換。",
+      "group": "lipids",
+      "kind": "粒子標記圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh22",
+      "file": "assets/figures/22-absolute-event-definition.svg",
+      "title": "絕對風險必須有三個標籤",
+      "description": "標記點展示事件與分母的關係，僅為假想資料，不含任何個人風險模型。",
+      "group": "cardiovascular",
+      "kind": "事件與分母圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh23",
+      "file": "assets/figures/23-model-scope.svg",
+      "title": "模型輸出前先過適用性問題",
+      "description": "示意模型需核對族群、資料、事件與期限，不重建PREVENT係數，也不提供風險結果。",
+      "group": "cardiovascular",
+      "kind": "模型範圍圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh24",
+      "file": "assets/figures/24-shared-care-balance.svg",
+      "title": "共同決策：效益、負擔與背景",
+      "description": "天平用於提醒需要一起討論的面向，不表示存在可相加的個人醫療總分。",
+      "group": "cardiovascular",
+      "kind": "共同決策示意圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh25",
+      "file": "assets/figures/25-liver-fat-fibrosis.svg",
+      "title": "肝內脂質與纖維化不是同義詞",
+      "description": "肝臟、肝細胞與細胞外基質在不同尺度；示意不按真實比例，也不供個人分期。",
+      "group": "liver",
+      "kind": "肝組織機制圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：脂肪肝機制背景（原頁沿用舊名）",
+          "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh26",
+      "file": "assets/figures/26-liver-assessment.svg",
+      "title": "線索、第一階段與進一步確認",
+      "description": "路徑只顯示評估分層的目的，不放個人門檻或把FIB-4算術畫成確診。",
+      "group": "liver",
+      "kind": "評估路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：脂肪肝機制背景（原頁沿用舊名）",
+          "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh27",
+      "file": "assets/figures/27-liver-followup.svg",
+      "title": "肝臟照護的時間與共同風險",
+      "description": "多時點追蹤代表持續整合資訊，不保證指標單調改善，也不能從趨勢排除其他病因。",
+      "group": "liver",
+      "kind": "照護時間圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：脂肪肝機制背景（原頁沿用舊名）",
+          "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash"
+        },
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh28",
+      "file": "assets/figures/28-creatinine-context.svg",
+      "title": "肌酸酐：來源、血中濃度與腎臟處理",
+      "description": "示意分開生成來源與清除背景，血中濃度不是實測腎小球流量，也不單獨判慢性。",
+      "group": "kidney",
+      "kind": "來源與濃度圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        },
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh29",
+      "file": "assets/figures/29-uacr-same-sample.svg",
+      "title": "UACR：同一尿液檢體的比值",
+      "description": "兩杯僅示稀釋及成分，不表示病況；白蛋白與尿肌酸酐必須來自同檢體並對齊單位。",
+      "group": "kidney",
+      "kind": "檢體比值圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh30",
+      "file": "assets/figures/30-gfr-area-index.svg",
+      "title": "索引與去索引：改變的是分母",
+      "description": "面積方框不表示腎臟大小；換算只改表達，不能跨單位套CKD分層或自行配藥。",
+      "group": "kidney",
+      "kind": "標準化面積圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh31",
+      "file": "assets/figures/31-food-pattern-replacement.svg",
+      "title": "飲食型態與替代：先說保留什麼",
+      "description": "兩個餐盤只是組合示意，不表示固定比例或個人份量；替代需有清楚比較條件。",
+      "group": "nutrition",
+      "kind": "餐食替代圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：健康飲食",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh32",
+      "file": "assets/figures/32-salt-gi-labels.svg",
+      "title": "標示分母與整餐背景",
+      "description": "標示表格與餐食是兩個尺度，鈉和食鹽單位不同，GI也不能單獨評整餐或預測個人血糖。",
+      "group": "nutrition",
+      "kind": "標示與餐食圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：健康飲食",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh33",
+      "file": "assets/figures/33-diary-access.svg",
+      "title": "飲食觀察、未知與可取得資源",
+      "description": "紀錄格與環境共同構成可行性，問號為缺漏而非不努力，圖不對個人飲食打健康分數。",
+      "group": "nutrition",
+      "kind": "記錄與情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：健康飲食",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh34",
+      "file": "assets/figures/34-muscle-activity.svg",
+      "title": "肌肉活動、供應與代謝訊號",
+      "description": "肌肉圖強調主動工作與多系統供應，箭頭不等於固定耗能，也不提供個人運動處方。",
+      "group": "lifestyle",
+      "kind": "肌肉與供應圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：身體活動",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh35",
+      "file": "assets/figures/35-sleep-circadian.svg",
+      "title": "睡眠與晝夜：時間之外還有品質",
+      "description": "時鐘代表節律與時間安排，不是睡眠分期或疾病診斷圖，也不給每人同一需求。",
+      "group": "lifestyle",
+      "kind": "節律與情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh36",
+      "file": "assets/figures/36-habits-support.svg",
+      "title": "壓力、習慣與支持一起規劃",
+      "description": "多面向連線表示彼此關聯與資源限制，不宣告單一心理狀態必然造成代謝病。",
+      "group": "lifestyle",
+      "kind": "支持網絡圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh37",
+      "file": "assets/figures/37-tobacco-support.svg",
+      "title": "菸草暴露、依賴與照護支持",
+      "description": "符號表示暴露及支持需求，不以圖中色彩判個人風險，也不把反覆戒除視為道德失敗。",
+      "group": "environment",
+      "kind": "暴露與支持圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh38",
+      "file": "assets/figures/38-alcohol-volume.svg",
+      "title": "酒精：容量、濃度與時間型態",
+      "description": "瓶子示意提醒容量不是酒精克數；計算暴露不等於有安全配額，圖不鼓勵開始飲酒。",
+      "group": "environment",
+      "kind": "容量與暴露圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：酒精與健康",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/alcohol"
+        },
+        {
+          "title": "NIDDK：脂肪肝機制背景（原頁沿用舊名）",
+          "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh39",
+      "file": "assets/figures/39-social-layers.svg",
+      "title": "個人選擇外面的環境層",
+      "description": "同心範圍表示資源與制度影響，不代表每層固定權重，也不以平均政策效果推個人結果。",
+      "group": "environment",
+      "kind": "環境層次圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "WHO：健康飲食",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh40",
+      "file": "assets/figures/40-life-stage-boundaries.svg",
+      "title": "生命階段與適用族群",
+      "description": "人物大小只為辨識情境，不是兒少、成人或長者的能力比例，界線不得直接外推。",
+      "group": "lifespan",
+      "kind": "生命階段圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：胰島素阻抗與正常調節",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh41",
+      "file": "assets/figures/41-screening-door.svg",
+      "title": "服務資格、檢查與後續不是同一扇門",
+      "description": "入口圖只表示流程分工，不列新的資格門檻，不能把公費資格等同個人追蹤已完成。",
+      "group": "lifespan",
+      "kind": "預防保健路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "國健署：居家722與量測條件",
+          "url": "https://www.hpa.gov.tw/5020/20223/n"
+        },
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh42",
+      "file": "assets/figures/42-clinical-summary.svg",
+      "title": "把病史、時間與問題帶進對話",
+      "description": "摘要是溝通工具，未知不填成沒有；常規回顧與急性問題需分開處理。",
+      "group": "lifespan",
+      "kind": "就醫溝通圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：腎臟構造與功能",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh43",
+      "file": "assets/figures/43-screening-four-cells.svg",
+      "title": "篩檢四格：分母不一樣",
+      "description": "四格只表示結果分類，沒有真實檢驗效能或個人診斷；預測值還依族群基線。",
+      "group": "evidence",
+      "kind": "篩檢分母圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh44",
+      "file": "assets/figures/44-measurement-regression.svg",
+      "title": "變異、跨線與平均回歸",
+      "description": "相對高度及虛線為假想比較，不是臨床門檻，也不代表第二次較接近一般值必有介入效果。",
+      "group": "evidence",
+      "kind": "量測變異圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "國健署：居家722與量測條件",
+          "url": "https://www.hpa.gov.tw/5020/20223/n"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh45",
+      "file": "assets/figures/45-effect-endpoint.svg",
+      "title": "事件計數與替代指標的距離",
+      "description": "兩組點為假想事件示例，不是臨床試驗實測；指標改變不直接等於事件按同幅改變。",
+      "group": "evidence",
+      "kind": "事件與替代終點圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NHLBI：動脈粥狀硬化的血管壁過程",
+          "url": "https://www.nhlbi.nih.gov/health/atherosclerosis"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh46",
+      "file": "assets/figures/46-observation-summary.svg",
+      "title": "觀察、衍生值與來源狀態",
+      "description": "摘要保留未知欄位及時間，圖不做診斷；版本標示須區分正式、草案與未來生效。",
+      "group": "practice",
+      "kind": "摘要與資料品質圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh47",
+      "file": "assets/figures/47-report-artifacts.svg",
+      "title": "資料表、圖與來源應能互相核對",
+      "description": "三種產物代表資料、視覺與說明，並不表示可重現就已證明臨床真實、因果或個人診斷。",
+      "group": "practice",
+      "kind": "報告產物圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh48",
+      "file": "assets/figures/48-capstone-review.svg",
+      "title": "從資料到可審核的整合概念圖",
+      "description": "專題需交代問題、觀察、算術、來源及未知，圖不以完成度替個人下健康判決。",
+      "group": "practice",
+      "kind": "整合學習路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "AHA：2026 CKM正式指南入口",
+          "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome"
+        },
+        {
+          "title": "NIDDK：A1C檢驗與紅血球背景",
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test"
+        },
+        {
+          "title": "NIDDK：UACR與GFR的用途及單位",
+          "url": "https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    }
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/read-tasks.md",
+    "study/sources.md",
+    "study-pack.zip"
   ]
 }

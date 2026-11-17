@@ -2,6 +2,17 @@
 
 分清用力意圖、實際速度與機械功率，避免一律慢做或一律快做。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-force-velocity.svg" target="_blank" rel="noopener" aria-label="放大：力量、速度與輸出的關係"><img src="assets/figures/09-force-velocity.svg" alt="兩條任意形狀曲線區分力與功率概念，不具實測刻度或個人適用參數，也不把疲勞簡化為單一曲線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜力量、速度與輸出的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別找到力與功率兩條線，說明任務若優先快速動作，和只比最高外部負荷問的問題不同；此示意沒有可直接取用的個人數字。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 向心力量與速度
 
 在控制的肌肉實驗中，向心速度與可產力有關；真實舉重還有加速、負荷、技術和器材。不能以簡單曲線精算個人每種動作的最佳負荷，也不將離心、等長直接當同一支曲線。

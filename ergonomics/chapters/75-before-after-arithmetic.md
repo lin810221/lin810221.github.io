@@ -2,6 +2,17 @@
 
 區分模型輸出、暴露改變與健康成效。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-before-after.svg" target="_blank" rel="noopener" aria-label="放大：改善前後：先看條件是不是同一個"><img src="assets/figures/38-before-after.svg" alt="兩個外力作用位置示意，改距離可能改模型結果，但不是傷害風險等比例下降；其他條件需列明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜改善前後：先看條件是不是同一個</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩情境列出哪些條件宣告相同、哪些仍未知，說明LI或外力矩差異不能直接叫受傷風險減少同百分比。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 同一問題的兩個設計
 
 虛構搬抬在其他RNLE條件相同時，水平距離由50cm改為25cm。HM由0.5變1，因此算式中的建議重量限值提高一倍，同負重的LI減半。這是公式中的關係，不代表疾病減少一半。

@@ -2,6 +2,17 @@
 
 區分情境界限、量測誤差與統計信賴區間。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-diary-uncertainty.svg" target="_blank" rel="noopener" aria-label="放大：日誌完整性與不確定範圍"><img src="assets/figures/33-diary-uncertainty.svg" alt="日曆有紀錄與未知格，份量和資料來源誤差需另列；缺漏不是零，也不能以小數位消除未量到的資訊。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜日誌完整性與不確定範圍</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在有紀錄格旁畫份量上下範圍，指出它和未記錄是不同不確定來源，不能用補一個平均值宣稱全都量到了。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不確定來自哪裡
 
 份量估計、食物資料差異、準備方式、回憶漏記與營養素缺值是不同來源。把它們全部包成±10%沒有依據；應先記每一假設，再選能支持的方法。

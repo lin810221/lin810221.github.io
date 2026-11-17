@@ -2,7 +2,7 @@
   "slug": "ergonomics",
   "title": "肌肉骨骼健康與人體工學完整教學",
   "shortTitle": "肌肉骨骼健康與人體工學",
-  "updated": "2026-11-13",
+  "updated": "2026-11-16",
   "baseline": "NIOSH RNLE 2021修訂 · 正式資料2026查核 · Python 3.15.2",
   "footerLabel": "ERGONOMICS · UNDERSTAND, ADAPT & VERIFY",
   "exampleBundle": "examples.zip",
@@ -115,7 +115,9 @@
         "任務、人與環境的學科地圖",
         "ergonomics map"
       ],
-      "example": "01_task_person_environment.py"
+      "example": "01_task_person_environment.py",
+      "visual": "er01",
+      "visualTask": "先在人、任務和環境各指出一項可調條件，說明適配不是要求所有身體達到同一尺寸，也不是只靠姿勢提醒。"
     },
     {
       "id": "02-task-and-person",
@@ -125,7 +127,9 @@
       "tags": [
         "任務、人與環境的學科地圖",
         "task and person"
-      ]
+      ],
+      "visual": "er01",
+      "visualTask": "比較同一任務對兩位使用者可能的不同需求，再指出設備和流程可改的位置；圖的交集不能拿來替人排名。"
     },
     {
       "id": "03-hazard-exposure-outcome",
@@ -136,7 +140,9 @@
         "任務、人與環境的學科地圖",
         "hazard exposure outcome"
       ],
-      "example": "02_hazard_exposure_outcome.py"
+      "example": "02_hazard_exposure_outcome.py",
+      "visual": "er02",
+      "visualTask": "把工作來源、實際暴露、症狀和疾病分開，找出哪些箭頭仍需額外證據；不能從某個分數直接認定個人職業病。"
     },
     {
       "id": "04-standards-and-jurisdictions",
@@ -146,7 +152,9 @@
       "tags": [
         "任務、人與環境的學科地圖",
         "standards and jurisdictions"
-      ]
+      ],
+      "visual": "er02",
+      "visualTask": "先指出想回答的問題，再選法規、指南或工具，保留地區和版本；同一數字名稱不能直接在不同制度間互換。"
     },
     {
       "id": "05-evidence-and-privacy",
@@ -157,7 +165,9 @@
         "任務、人與環境的學科地圖",
         "evidence and privacy"
       ],
-      "example": "03_version_audit.py"
+      "example": "03_version_audit.py",
+      "visual": "er03",
+      "visualTask": "從觀察和使用者回饋各提出一項資訊，說明需要同意與最少蒐集；人因改善不能只靠一張不含脈絡的照片。"
     },
     {
       "id": "06-learning-routes",
@@ -167,7 +177,9 @@
       "tags": [
         "任務、人與環境的學科地圖",
         "learning routes"
-      ]
+      ],
+      "visual": "er03",
+      "visualTask": "把自己的學習問題放進工作地圖，辨識此課與運動、照護的不同分工；不把跨課連結當本課已完成個人評估。"
     },
     {
       "id": "07-bone-and-remodeling",
@@ -178,7 +190,9 @@
         "肌肉骨骼與神經基礎",
         "bone and remodeling"
       ],
-      "example": "04_bone_context.py"
+      "example": "04_bone_context.py",
+      "visual": "er04",
+      "visualTask": "先找到骨端、軟骨和關節腔，再說明骨是有細胞、改建與造血等角色的組織；這張圖省略骨髓及重塑細節，需回課文補上。"
     },
     {
       "id": "08-joints-and-movement",
@@ -188,7 +202,9 @@
       "tags": [
         "肌肉骨骼與神經基礎",
         "joints and movement"
-      ]
+      ],
+      "visual": "er04",
+      "visualTask": "沿骨端到關節囊辨識不同構造，說明軟骨、滑膜和滑液不能互稱；關節聲音也不能由圖直接推個人磨損程度。"
     },
     {
       "id": "09-muscle-actions",
@@ -199,7 +215,9 @@
         "肌肉骨骼與神經基礎",
         "muscle actions"
       ],
-      "example": "05_muscle_action.py"
+      "example": "05_muscle_action.py",
+      "visual": "er05",
+      "visualTask": "按整肌到肌纖維的層次追蹤，舉等長或離心情境說明用力不一定整塊縮短；宏觀動作不能只由一個肌節圖直接推算。"
     },
     {
       "id": "10-tendons-and-ligaments",
@@ -209,7 +227,9 @@
       "tags": [
         "肌肉骨骼與神經基礎",
         "tendons and ligaments"
-      ]
+      ],
+      "visual": "er05",
+      "visualTask": "先指出肌肉端的力量傳遞，再回課文分清肌腱、韌帶和筋膜；本圖省略骨間韌帶，不把所有連接都當同一種繩子。"
     },
     {
       "id": "11-nerves-and-sensation",
@@ -220,7 +240,9 @@
         "肌肉骨骼與神經基礎",
         "nerves and sensation"
       ],
-      "example": "06_nerve_observation.py"
+      "example": "06_nerve_observation.py",
+      "visual": "er06",
+      "visualTask": "沿神經元輸入與軸突追訊號，區分神經元和整條神經；感覺改變仍有多種可能，不能從一般圖自行定位麻痛無力。"
     },
     {
       "id": "12-functional-anatomy",
@@ -230,7 +252,9 @@
       "tags": [
         "肌肉骨骼與神經基礎",
         "functional anatomy"
-      ]
+      ],
+      "visual": "er06",
+      "visualTask": "把拿杯情境的感覺回饋、肌肉控制和環境加入圖旁，說明神經和肌骨需要協作；圖上箭頭不測個人握力或承重。"
     },
     {
       "id": "13-forces-and-moments",
@@ -241,7 +265,9 @@
         "動作、力與組織負荷",
         "forces and moments"
       ],
-      "example": "07_external_moment.py"
+      "example": "07_external_moment.py",
+      "visual": "er07",
+      "visualTask": "先找力、轉軸和垂直力臂，分清kg、N及N·m；同重量位置改變會影響外力矩，不等於組織負荷與風險同幅變化。"
     },
     {
       "id": "14-levers-and-internal-forces",
@@ -251,7 +277,9 @@
       "tags": [
         "動作、力與組織負荷",
         "levers and internal forces"
-      ]
+      ],
+      "visual": "er07",
+      "visualTask": "在圖上補一個尚未畫出的支持力或肌肉作用，說明平衡需要更多資訊；不能把單一外力矩直接稱腰椎或肌腱實際內力。"
     },
     {
       "id": "15-pressure-and-contact",
@@ -262,7 +290,9 @@
         "動作、力與組織負荷",
         "pressure and contact"
       ],
-      "example": "08_pressure_and_area.py"
+      "example": "08_pressure_and_area.py",
+      "visual": "er08",
+      "visualTask": "比較兩個接觸面積並保留同一外力條件，說明平均壓力和局部峰值不同；沒有圖中顏色代表的個人安全門檻。"
     },
     {
       "id": "16-stress-and-strain",
@@ -272,7 +302,9 @@
       "tags": [
         "動作、力與組織負荷",
         "stress and strain"
-      ]
+      ],
+      "visual": "er08",
+      "visualTask": "區分外部接觸面和材料截面，說出應力、應變各需什麼量測與假設；這張接觸圖不能直接替代組織材料測試。"
     },
     {
       "id": "17-time-dependent-response",
@@ -283,7 +315,9 @@
         "動作、力與組織負荷",
         "time dependent response"
       ],
-      "example": "09_relaxation_analogy.py"
+      "example": "09_relaxation_analogy.py",
+      "visual": "er09",
+      "visualTask": "先指出橫縱軸都是任意示意，再分清鬆弛與蠕變需什麼控制條件；不能從曲線讀自己的恢復天數或受傷機率。"
     },
     {
       "id": "18-mechanical-model-limits",
@@ -293,7 +327,9 @@
       "tags": [
         "動作、力與組織負荷",
         "mechanical model limits"
-      ]
+      ],
+      "visual": "er09",
+      "visualTask": "選一個圖未包含的任務、內力或個人條件，說明計算可用來比較假設而非保證人體結果；未知資料不能靠曲線補齊。"
     },
     {
       "id": "19-pain-and-nociception",
@@ -304,7 +340,9 @@
         "疼痛、病況與照護界線",
         "pain and nociception"
       ],
-      "example": "10_pain_description.py"
+      "example": "10_pain_description.py",
+      "visual": "er10",
+      "visualTask": "把疼痛經驗和傷害感受分開，指出兩者可有關聯卻不是同一個精密刻度；保留真實感受，也不直接推損傷大小。"
     },
     {
       "id": "20-acute-persistent-and-context",
@@ -314,7 +352,9 @@
       "tags": [
         "疼痛、病況與照護界線",
         "acute persistent and context"
-      ]
+      ],
+      "visual": "er10",
+      "visualTask": "同時描述時間、功能和情境，不把急性或持續不適自動配唯一原因；如果有新變化，圖不能代替適當照護評估。"
     },
     {
       "id": "21-imaging-and-symptoms",
@@ -325,7 +365,9 @@
         "疼痛、病況與照護界線",
         "imaging and symptoms"
       ],
-      "example": "11_imaging_context.py"
+      "example": "11_imaging_context.py",
+      "visual": "er11",
+      "visualTask": "分別提出影像、實際任務和功能能回答的問題，說明相關不等於唯一病因；不靠姿勢照片直接解釋所有不適。"
     },
     {
       "id": "22-function-and-recovery",
@@ -335,7 +377,9 @@
       "tags": [
         "疼痛、病況與照護界線",
         "function and recovery"
-      ]
+      ],
+      "visual": "er11",
+      "visualTask": "在功能需要卡列一項可調任務與一項需回顧的支持，說明恢復不是單靠忍耐，也不是等完全無感覺才談參與。"
     },
     {
       "id": "23-when-to-seek-help",
@@ -346,7 +390,9 @@
         "疼痛、病況與照護界線",
         "when to seek help"
       ],
-      "example": "12_help_context.py"
+      "example": "12_help_context.py",
+      "visual": "er12",
+      "visualTask": "從圖中指出及時評估不依網頁分數，回原課讀具體例子及限制；沒有列到的情況也不能自動宣告安全。"
     },
     {
       "id": "24-guideline-versions",
@@ -356,7 +402,9 @@
       "tags": [
         "疼痛、病況與照護界線",
         "guideline versions"
-      ]
+      ],
+      "visual": "er12",
+      "visualTask": "選一項臨床或工作來源，分開出版、修訂、入口更新與查核日；不能把外國指南的不同範圍直接當本地工作配置規定。"
     },
     {
       "id": "25-task-analysis",
@@ -367,7 +415,9 @@
         "如何觀察工作與人的差異",
         "task analysis"
       ],
-      "example": "13_observation_windows.py"
+      "example": "13_observation_windows.py",
+      "visual": "er13",
+      "visualTask": "先定義一個任務段與觀察窗，列力、位置、次數和環境各需哪些資訊；不要把工位名稱當完整暴露描述。"
     },
     {
       "id": "26-observation-and-measurement",
@@ -377,7 +427,9 @@
       "tags": [
         "如何觀察工作與人的差異",
         "observation and measurement"
-      ]
+      ],
+      "visual": "er13",
+      "visualTask": "分別寫觀察、量測與訪談提供的資訊，指出哪一項仍未知；畫面看起來正常不能代替使用者功能與回饋。"
     },
     {
       "id": "27-anthropometric-fit",
@@ -388,7 +440,9 @@
         "如何觀察工作與人的差異",
         "anthropometric fit"
       ],
-      "example": "14_sample_geometry.py"
+      "example": "14_sample_geometry.py",
+      "visual": "er14",
+      "visualTask": "以同一虛構使用者同時檢查伸取和淨空，說明分別合適不保證合起來可用；缺項不能默認符合或不符合。"
     },
     {
       "id": "28-sampling-and-time",
@@ -398,7 +452,9 @@
       "tags": [
         "如何觀察工作與人的差異",
         "sampling and time"
-      ]
+      ],
+      "visual": "er14",
+      "visualTask": "補上抽樣時段、班別和恢復資訊，指出兩個幾何條件不能代表完整工作時間；樣本比例也不等於所有人的適用率。"
     },
     {
       "id": "29-frequency-and-duty",
@@ -409,7 +465,9 @@
         "如何觀察工作與人的差異",
         "frequency and duty"
       ],
-      "example": "15_action_frequency.py"
+      "example": "15_action_frequency.py",
+      "visual": "er15",
+      "visualTask": "用相同總次數但不同集中方式比較兩段任務，說明動作頻率與活動比例的分母不同；缺資料不能當充分休息。"
     },
     {
       "id": "30-priorities-and-uncertainty",
@@ -419,7 +477,9 @@
       "tags": [
         "如何觀察工作與人的差異",
         "priorities and uncertainty"
-      ]
+      ],
+      "visual": "er15",
+      "visualTask": "在任務線上圈出需先查的未知和可改善來源，再加入工作者功能需要；不把平均值當成已排好所有改善優先序。"
     },
     {
       "id": "31-seat-and-support",
@@ -430,7 +490,9 @@
         "桌椅、螢幕與輸入設備",
         "seat and support"
       ],
-      "example": "16_seat_desk_context.py"
+      "example": "16_seat_desk_context.py",
+      "visual": "er16",
+      "visualTask": "依序指出足部、座面和背部支撐，說明座高改變後仍要看桌面及鍵鼠；不以圖固定每個人同一尺寸。"
     },
     {
       "id": "32-desk-clearance-height",
@@ -440,7 +502,9 @@
       "tags": [
         "桌椅、螢幕與輸入設備",
         "desk clearance height"
-      ]
+      ],
+      "visual": "er16",
+      "visualTask": "沿桌下陰影找腿部活動需要，指出桌高與手肘、座位和設備的連動；有一項尺寸可調不等於整個工作站適配。"
     },
     {
       "id": "33-monitor-geometry",
@@ -451,7 +515,9 @@
         "桌椅、螢幕與輸入設備",
         "monitor geometry"
       ],
-      "example": "17_monitor_geometry.py"
+      "example": "17_monitor_geometry.py",
+      "visual": "er17",
+      "visualTask": "指出眼睛與螢幕的參考點，區分水平距離、垂直差和實際可讀性；圖不把螢幕上緣或角度變成每人共同健康界線。"
     },
     {
       "id": "34-keyboard-and-palms",
@@ -461,7 +527,9 @@
       "tags": [
         "桌椅、螢幕與輸入設備",
         "keyboard and palms"
-      ]
+      ],
+      "visual": "er17",
+      "visualTask": "沿前臂到鍵盤的路徑看高度、距離與支撐，說明只調螢幕可能仍留下輸入限制；不要求手腕長時間固定一個角度。"
     },
     {
       "id": "35-mouse-and-reach",
@@ -472,7 +540,9 @@
         "桌椅、螢幕與輸入設備",
         "mouse and reach"
       ],
-      "example": "18_mouse_reach.py"
+      "example": "18_mouse_reach.py",
+      "visual": "er18",
+      "visualTask": "找出滑鼠相對鍵盤和身體的位置，提出一個能試用的調整並保留裝置偏好；不把某種形狀當萬用解方。"
     },
     {
       "id": "36-configuration-workflow",
@@ -482,7 +552,9 @@
       "tags": [
         "桌椅、螢幕與輸入設備",
         "configuration workflow"
-      ]
+      ],
+      "visual": "er18",
+      "visualTask": "按支撐、桌面、視覺和輸入走一遍調整，再回看新限制；流程要隨實際使用回饋修正，不是一次設定永久認證。"
     },
     {
       "id": "37-laptop-separation",
@@ -493,7 +565,9 @@
         "筆電、視覺與坐站工作",
         "laptop separation"
       ],
-      "example": "19_laptop_configuration.py"
+      "example": "19_laptop_configuration.py",
+      "visual": "er19",
+      "visualTask": "比較綁定與分離配置能改變什麼、還缺哪些設備與支撐；不把外接一件配件就當已完成所有使用條件。"
     },
     {
       "id": "38-screens-and-documents",
@@ -503,7 +577,9 @@
       "tags": [
         "筆電、視覺與坐站工作",
         "screens and documents"
-      ]
+      ],
+      "visual": "er19",
+      "visualTask": "把高頻主畫面、低頻副畫面和文件加入配置，依任務頻率安排；兩台螢幕不一定要對稱，也不直接推個人頸部負荷。"
     },
     {
       "id": "39-visual-angle",
@@ -514,7 +590,9 @@
         "筆電、視覺與坐站工作",
         "visual angle"
       ],
-      "example": "20_visual_angle.py"
+      "example": "20_visual_angle.py",
+      "visual": "er20",
+      "visualTask": "先找字高和距離，再用圖比較視角如何改變；螢幕CSS字級和實體字高不同，不能由三角形當視力檢查或通用字體處方。"
     },
     {
       "id": "40-lighting-and-glare",
@@ -524,7 +602,9 @@
       "tags": [
         "筆電、視覺與坐站工作",
         "lighting and glare"
-      ]
+      ],
+      "visual": "er20",
+      "visualTask": "在圖旁另標光源和可能反射路徑，說明調位置後要確認文字和紙本仍可讀；圖未提供單一亮度設定或照度法規值。"
     },
     {
       "id": "41-sitting-standing-variation",
@@ -535,7 +615,9 @@
         "筆電、視覺與坐站工作",
         "sitting standing variation"
       ],
-      "example": "21_activity_change_schedule.py"
+      "example": "21_activity_change_schedule.py",
+      "visual": "er21",
+      "visualTask": "比較三種狀態的任務需求與變化機會，不把同一固定坐姿換成同一固定站姿就當完成；圖沒有所有人的通用坐站比例。"
     },
     {
       "id": "42-remote-setup",
@@ -545,7 +627,9 @@
       "tags": [
         "筆電、視覺與坐站工作",
         "remote setup"
-      ]
+      ],
+      "visual": "er21",
+      "visualTask": "在受限空間選一個可行變化並加入支撐、動線和設備限制；不要求讀者完全複製同一間理想辦公室。"
     },
     {
       "id": "43-shoulder-and-reaching",
@@ -556,7 +640,9 @@
         "肩頸與上肢任務",
         "shoulder and reaching"
       ],
-      "example": "22_shoulder_reach.py"
+      "example": "22_shoulder_reach.py",
+      "visual": "er22",
+      "visualTask": "找常用物件與較遠位置，說明縮短伸取可能如何改變外在需求，同時確認頻率和其他支撐；不由示意圖計肩部組織內力。"
     },
     {
       "id": "44-neck-and-information",
@@ -566,7 +652,9 @@
       "tags": [
         "肩頸與上肢任務",
         "neck and information"
-      ]
+      ],
+      "visual": "er22",
+      "visualTask": "把高頻資訊和轉換方向加進配置，指出反光或字太小也會改變姿勢；不是只靠固定頸角處理所有不適。"
     },
     {
       "id": "45-wrist-contact-and-force",
@@ -577,7 +665,9 @@
         "肩頸與上肢任務",
         "wrist contact and force"
       ],
-      "example": "23_wrist_context.py"
+      "example": "23_wrist_context.py",
+      "visual": "er23",
+      "visualTask": "在前臂到手部的圖上指出接觸、施力與時間都需記錄，不能只用單一手腕角度判定病因或安全。"
     },
     {
       "id": "46-thumb-and-device-use",
@@ -587,7 +677,9 @@
       "tags": [
         "肩頸與上肢任務",
         "thumb and device use"
-      ]
+      ],
+      "visual": "er23",
+      "visualTask": "比較短確認和長篇輸入的不同任務需求，再提出可選設備或支撐；不用手機外觀直接診斷拇指或手部問題。"
     },
     {
       "id": "47-repeated-upper-limb",
@@ -598,7 +690,9 @@
         "肩頸與上肢任務",
         "repeated upper limb"
       ],
-      "example": "24_repeated_task_record.py"
+      "example": "24_repeated_task_record.py",
+      "visual": "er24",
+      "visualTask": "在時間線標出頻率、峰值和變化，說明平均相同也可能不同暴露；鍵鼠DSE不能因重複二字就直接套ART。"
     },
     {
       "id": "48-upper-limb-followup",
@@ -608,7 +702,9 @@
       "tags": [
         "肩頸與上肢任務",
         "upper limb followup"
-      ]
+      ],
+      "visual": "er24",
+      "visualTask": "為一個上肢不適案例補任務、時間、功能及回饋欄位，指出仍需的協作；缺漏不補0，也不從一段影片確定病因。"
     },
     {
       "id": "49-back-in-tasks",
@@ -619,7 +715,9 @@
         "下背、髖膝與日常動作",
         "back in tasks"
       ],
-      "example": "25_back_task_context.py"
+      "example": "25_back_task_context.py",
+      "visual": "er25",
+      "visualTask": "指出物件位置、重量、時間和支持如何改變下背任務，說明圖不是腰椎內力估算，也不把所有感受只歸一個姿勢。"
     },
     {
       "id": "50-bending-and-options",
@@ -629,7 +727,9 @@
       "tags": [
         "下背、髖膝與日常動作",
         "bending and options"
-      ]
+      ],
+      "visual": "er25",
+      "visualTask": "列出彎腰、蹲跪或轉向可受哪些環境和個人條件限制；不把一種示意選項當每人所有任務的完美姿勢。"
     },
     {
       "id": "51-standing-and-support",
@@ -640,7 +740,9 @@
         "下背、髖膝與日常動作",
         "standing and support"
       ],
-      "example": "26_lower_limb_support.py"
+      "example": "26_lower_limb_support.py",
+      "visual": "er26",
+      "visualTask": "沿足部支撐到地面列出時間、接觸和設備條件，說明長時間站立不只靠一種鞋墊；圖沒有固定個人耐受時長。"
     },
     {
       "id": "52-walking-floor-and-access",
@@ -650,7 +752,9 @@
       "tags": [
         "下背、髖膝與日常動作",
         "walking floor and access"
-      ]
+      ],
+      "visual": "er26",
+      "visualTask": "走完整條虛構路線指出轉彎、障礙、光線和維護需求；直線的一小段不能代表整個搬運通道。"
     },
     {
       "id": "53-daily-variation",
@@ -661,7 +765,9 @@
         "下背、髖膝與日常動作",
         "daily variation"
       ],
-      "example": "27_daily_variation.py"
+      "example": "27_daily_variation.py",
+      "visual": "er27",
+      "visualTask": "比較兩個工作段是否真的改變同一部位的需求，說明變換名稱不等於充分恢復；排程算術不能當個人休息處方。"
     },
     {
       "id": "54-everyday-loads",
@@ -671,7 +777,9 @@
       "tags": [
         "下背、髖膝與日常動作",
         "everyday loads"
-      ]
+      ],
+      "visual": "er27",
+      "visualTask": "區分一般物件和協助人員移位的條件，指出後者需要合適輔具與受訓協作；不把人當穩定箱子套RNLE。"
     },
     {
       "id": "55-rnle-equation",
@@ -682,7 +790,9 @@
         "搬抬與RNLE原理",
         "rnle equation"
       ],
-      "example": "28_rnle_factors.py"
+      "example": "28_rnle_factors.py",
+      "visual": "er28",
+      "visualTask": "先在側視和俯視圖找到參考點，說明RWL與LI需要完整適用和表格條件；23kg不是個人或通用法定限重。"
     },
     {
       "id": "56-rnle-geometry",
@@ -692,7 +802,9 @@
       "tags": [
         "搬抬與RNLE原理",
         "rnle geometry"
-      ]
+      ],
+      "visual": "er28",
+      "visualTask": "分別指H、V和A，再另畫起終手高之差D；H不從腰量，A不是脊柱扭角，圖的線長不提供可直接代入的實測數值。"
     },
     {
       "id": "57-origin-destination",
@@ -703,7 +815,9 @@
         "搬抬與RNLE原理",
         "origin destination"
       ],
-      "example": "29_rnle_endpoints.py"
+      "example": "29_rnle_endpoints.py",
+      "visual": "er29",
+      "visualTask": "比較兩端的手高、水平距離與目的端控制，指出為何不能只挑較容易的一端，也不能平均LI就叫多任務完整指標。"
     },
     {
       "id": "58-frequency-coupling-duration",
@@ -713,7 +827,9 @@
       "tags": [
         "搬抬與RNLE原理",
         "frequency coupling duration"
-      ]
+      ],
+      "visual": "er29",
+      "visualTask": "在移動箭頭外補頻率、工時、抓握及恢復條件，回原課查2021更正；不能由一個把手或任意休息時間就選最佳倍率。"
     },
     {
       "id": "59-rnle-applicability",
@@ -724,7 +840,9 @@
         "搬抬與RNLE原理",
         "rnle applicability"
       ],
-      "example": "30_rnle_applicability.py"
+      "example": "30_rnle_applicability.py",
+      "visual": "er30",
+      "visualTask": "選出哪些情境不能直接套本課RNLE算術，說明不適用不是把上限截斷後繼續算；未知倍率也不補成1。"
     },
     {
       "id": "60-lifting-redesign",
@@ -734,7 +852,9 @@
       "tags": [
         "搬抬與RNLE原理",
         "lifting redesign"
-      ]
+      ],
+      "visual": "er30",
+      "visualTask": "提出一個減少不必要轉運或改物件位置的方案，再指出可能增加頻率或其他新問題；LI變化不是受傷機率變化。"
     },
     {
       "id": "61-repetition-patterns",
@@ -745,7 +865,9 @@
         "重複作業與工具選用",
         "repetition patterns"
       ],
-      "example": "31_repetition_blocks.py"
+      "example": "31_repetition_blocks.py",
+      "visual": "er31",
+      "visualTask": "用不同集中方式標記相同次數，指出平均之外還缺峰值、順序和恢復；圖不能直接轉成正式重複作業分數。"
     },
     {
       "id": "62-force-posture-duration",
@@ -755,7 +877,9 @@
       "tags": [
         "重複作業與工具選用",
         "force posture duration"
-      ]
+      ],
+      "visual": "er31",
+      "visualTask": "為每段補施力、位置和持續資料，說明三者不是獨立互不影響的項目；不要任意平均不同工具分數變總風險。"
     },
     {
       "id": "63-hand-tools-and-grip",
@@ -766,7 +890,9 @@
         "重複作業與工具選用",
         "hand tools and grip"
       ],
-      "example": "32_tool_grip_context.py"
+      "example": "32_tool_grip_context.py",
+      "visual": "er32",
+      "visualTask": "比較兩個握持情境的接觸和操作條件，說明不是握柄看起來較粗就對每人更好，也不能用把手存在直接判良好耦合。"
     },
     {
       "id": "64-kim-and-posture-tools",
@@ -776,7 +902,9 @@
       "tags": [
         "重複作業與工具選用",
         "kim and posture tools"
-      ]
+      ],
+      "visual": "er32",
+      "visualTask": "把工具操作問題和正式KIM、RULA、REBA等方法分開，核對版本與適用範圍；本圖沒有重建或改寫正式完整評分表。"
     },
     {
       "id": "65-method-selection",
@@ -787,7 +915,9 @@
         "重複作業與工具選用",
         "method selection"
       ],
-      "example": "33_method_selection.py"
+      "example": "33_method_selection.py",
+      "visual": "er33",
+      "visualTask": "先說任務是鍵鼠、上肢重複、搬抬或推拉，再選對問題；不能因為有重複就把ART直接拿來評鍵鼠DSE。"
     },
     {
       "id": "66-screening-versus-assessment",
@@ -797,7 +927,9 @@
       "tags": [
         "重複作業與工具選用",
         "screening versus assessment"
-      ]
+      ],
+      "visual": "er33",
+      "visualTask": "分清原創觀察、篩檢、正式評估與疾病診斷，說明行動級別不是個人傷害機率；方法來源和完整資料仍重要。"
     },
     {
       "id": "67-push-pull-work",
@@ -808,7 +940,9 @@
         "推拉、振動與物理環境",
         "push pull work"
       ],
-      "example": "34_pushing_work.py"
+      "example": "34_pushing_work.py",
+      "visual": "er34",
+      "visualTask": "指出外力方向、位移和時間，再列啟動力、坡度及人體內部工作等未提供資料；不能把J或W直接換個人代謝或安全限力。"
     },
     {
       "id": "68-transport-and-people",
@@ -818,7 +952,9 @@
       "tags": [
         "推拉、振動與物理環境",
         "transport and people"
-      ]
+      ],
+      "visual": "er34",
+      "visualTask": "把攜行、團隊搬運和協助移位分開，指出人員參與能力和設備需要；不要把團隊人數直接平均成每人必然相同負荷。"
     },
     {
       "id": "69-hand-arm-vibration",
@@ -829,7 +965,9 @@
         "推拉、振動與物理環境",
         "hand arm vibration"
       ],
-      "example": "35_vibration_a8.py"
+      "example": "35_vibration_a8.py",
+      "visual": "er35",
+      "visualTask": "先指手工具接觸，再說HAV需已頻率加權三軸合成和實際觸發時間；多段依平方時間關係處理，不直接算術平均。"
     },
     {
       "id": "70-whole-body-vibration",
@@ -839,7 +977,9 @@
       "tags": [
         "推拉、振動與物理環境",
         "whole body vibration"
-      ]
+      ],
+      "visual": "er35",
+      "visualTask": "比較乘坐設備與手工具的不同暴露，說明相同m/s²不代表方法和法規界線相同；本課HAV算術不等於完整WBV評估。"
     },
     {
       "id": "71-physical-environment",
@@ -850,7 +990,9 @@
         "推拉、振動與物理環境",
         "physical environment"
       ],
-      "example": "36_environment_context.py"
+      "example": "36_environment_context.py",
+      "visual": "er36",
+      "visualTask": "從圖中選一個環境條件補到任務，說明看不清、地面或輪具問題也會改變操作；不把它們全部歸給姿勢不標準。"
     },
     {
       "id": "72-integrated-environment-case",
@@ -860,7 +1002,9 @@
       "tags": [
         "推拉、振動與物理環境",
         "integrated environment case"
-      ]
+      ],
+      "visual": "er36",
+      "visualTask": "將不同工作段各配合適資料與方法，再列整體改善及新需求；不要把四種方法分數平均就宣稱完成全場評估。"
     },
     {
       "id": "73-control-hierarchy",
@@ -871,7 +1015,9 @@
         "改善設計與參與式追蹤",
         "control hierarchy"
       ],
-      "example": "37_control_hierarchy.py"
+      "example": "37_control_hierarchy.py",
+      "visual": "er37",
+      "visualTask": "先指出可消除或改變的來源，再說訓練與個人裝備能做及不能代替的部分；不把發教材當所有預防已完成。"
     },
     {
       "id": "74-engineering-redesign",
@@ -881,7 +1027,9 @@
       "tags": [
         "改善設計與參與式追蹤",
         "engineering redesign"
-      ]
+      ],
+      "visual": "er37",
+      "visualTask": "把想買的設備改寫成具體任務需求和試用驗收條件，列一個新風險與回顧；產品名稱不能代替人與任務適配。"
     },
     {
       "id": "75-before-after-arithmetic",
@@ -892,7 +1040,9 @@
         "改善設計與參與式追蹤",
         "before after arithmetic"
       ],
-      "example": "38_before_after_arithmetic.py"
+      "example": "38_before_after_arithmetic.py",
+      "visual": "er38",
+      "visualTask": "在兩情境列出哪些條件宣告相同、哪些仍未知，說明LI或外力矩差異不能直接叫受傷風險減少同百分比。"
     },
     {
       "id": "76-organization-and-training",
@@ -902,7 +1052,9 @@
       "tags": [
         "改善設計與參與式追蹤",
         "organization and training"
-      ]
+      ],
+      "visual": "er38",
+      "visualTask": "把輪調、維護與訓練放進比較條件，說明不同工位若需求相同未必增加恢復；方法分類恢復不是所有工作休息處方。"
     },
     {
       "id": "77-participatory-followup",
@@ -913,7 +1065,9 @@
         "改善設計與參與式追蹤",
         "participatory followup"
       ],
-      "example": "39_participatory_followup.py"
+      "example": "39_participatory_followup.py",
+      "visual": "er39",
+      "visualTask": "在回顧圖指出不同使用者和班別的聲音，補責任與時間；簽名同意或多數喜歡不代表每項需求永久解決。"
     },
     {
       "id": "78-taiwan-prevention-plan",
@@ -923,7 +1077,9 @@
       "tags": [
         "改善設計與參與式追蹤",
         "taiwan prevention plan"
-      ]
+      ],
+      "visual": "er39",
+      "visualTask": "將分析、辨識、改善和成效記錄對回台灣現行條文，說明本圖不替代正式執行；門檻與保存要求仍要讀原課和主管機關來源。"
     },
     {
       "id": "79-functional-needs",
@@ -934,7 +1090,9 @@
         "不同身體、場域與合理調整",
         "functional needs"
       ],
-      "example": "40_population_scope.py"
+      "example": "40_population_scope.py",
+      "visual": "er40",
+      "visualTask": "比較兩位虛構使用者時，除了身高再列視覺、裝備和功能需求；兩項幾何符合不等於全人口或健康保證。"
     },
     {
       "id": "80-bone-and-joint-health",
@@ -944,7 +1102,9 @@
       "tags": [
         "不同身體、場域與合理調整",
         "bone and joint health"
-      ]
+      ],
+      "visual": "er40",
+      "visualTask": "把骨關節狀況、影像和功能分開，說明不能只靠聲音或骨密度一項判活動能力；有特定需求應適當專業合作。"
     },
     {
       "id": "81-shared-workstation",
@@ -955,7 +1115,9 @@
         "不同身體、場域與合理調整",
         "shared workstation"
       ],
-      "example": "41_shared_workstation.py"
+      "example": "41_shared_workstation.py",
+      "visual": "er41",
+      "visualTask": "指出共用時需要重新確認哪些設定、說明和維護，保留隱私；可調不表示換人就自動適用，也不需要公開病史才討論。"
     },
     {
       "id": "82-life-stage-context",
@@ -965,7 +1127,9 @@
       "tags": [
         "不同身體、場域與合理調整",
         "life stage context"
-      ]
+      ],
+      "visual": "er41",
+      "visualTask": "說明兒少、孕期和照顧者的任務可能怎樣不同，成人模板不能直接縮放；不把23kg或任意體重比例當通用限重。"
     },
     {
       "id": "83-accessible-adjustments",
@@ -976,7 +1140,9 @@
         "不同身體、場域與合理調整",
         "accessible adjustments"
       ],
-      "example": "42_accommodations.py"
+      "example": "42_accommodations.py",
+      "visual": "er42",
+      "visualTask": "選一個操作或資訊障礙，提出可試用調整並保留當事人參與；符合單一尺寸或無障礙標示不代表全部任務完成。"
     },
     {
       "id": "84-return-to-work",
@@ -986,7 +1152,9 @@
       "tags": [
         "不同身體、場域與合理調整",
         "return to work"
-      ]
+      ],
+      "visual": "er42",
+      "visualTask": "把臨床資訊、工作需求和組織支持分開又連起來，說明復工日期不能只由診斷名或本課算式自動產生。"
     },
     {
       "id": "85-subjective-observations",
@@ -997,7 +1165,9 @@
         "量測、風險工具與資訊判讀",
         "subjective observations"
       ],
-      "example": "43_original_discomfort_observations.py"
+      "example": "43_original_discomfort_observations.py",
+      "visual": "er43",
+      "visualTask": "比較明確記0和沒有填寫，說明原創0–10觀察沒有診斷門檻；尊重感受不等於可以把差兩分直接叫臨床效果。"
     },
     {
       "id": "86-sampling-missing-and-noise",
@@ -1007,7 +1177,9 @@
       "tags": [
         "量測、風險工具與資訊判讀",
         "sampling missing and noise"
-      ]
+      ],
+      "visual": "er43",
+      "visualTask": "把觀察窗和缺漏段畫在時間線，說明可用分母與全排定時間不同；未知段不能補0也不能直接叫休息。"
     },
     {
       "id": "87-matched-comparisons",
@@ -1018,7 +1190,9 @@
         "量測、風險工具與資訊判讀",
         "matched comparisons"
       ],
-      "example": "44_matched_observations.py"
+      "example": "44_matched_observations.py",
+      "visual": "er44",
+      "visualTask": "為前後差異列出共同變動及未配對條件，說明兩次數字不同不直接證明唯一原因，也要看是否有新危害。"
     },
     {
       "id": "88-reliability-validity-and-scores",
@@ -1028,7 +1202,9 @@
       "tags": [
         "量測、風險工具與資訊判讀",
         "reliability validity and scores"
-      ]
+      ],
+      "visual": "er44",
+      "visualTask": "分清一致性與效度，指出正式工具的級別不能任意平均或改百分比變成個人傷害機率；再用授權和有效性亦是兩件事。"
     },
     {
       "id": "89-version-and-uncertainty",
@@ -1039,7 +1215,9 @@
         "量測、風險工具與資訊判讀",
         "version and uncertainty"
       ],
-      "example": "45_uncertainty_and_versions.py"
+      "example": "45_uncertainty_and_versions.py",
+      "visual": "er45",
+      "visualTask": "分別寫正式方法年分、頁面更新和查核日，說明圖解更新不等於公式或指南全部改版；未知不靠新年份填補。"
     },
     {
       "id": "90-products-ai-and-claims",
@@ -1049,7 +1227,9 @@
       "tags": [
         "量測、風險工具與資訊判讀",
         "products ai and claims"
-      ]
+      ],
+      "visual": "er45",
+      "visualTask": "從影像點位到暴露、預測及因果逐層提問，列一項驗證和隱私需求；能畫關節點不代表能判誰即將受傷。"
     },
     {
       "id": "91-project-data",
@@ -1060,7 +1240,9 @@
         "可重跑的人因觀察專題",
         "project data"
       ],
-      "example": "46_report_audit.py"
+      "example": "46_report_audit.py",
+      "visual": "er46",
+      "visualTask": "先指出虛構觀察、尺寸與搬抬案例各能回答什麼，辨識故意留下的未知；不能把不同表直接拼成人員健康結論。"
     },
     {
       "id": "92-data-contract-and-privacy",
@@ -1070,7 +1252,9 @@
       "tags": [
         "可重跑的人因觀察專題",
         "data contract and privacy"
-      ]
+      ],
+      "visual": "er46",
+      "visualTask": "為一列標上單位、時間窗和狀態，說明動作數、活動分鐘與觀察分鐘不同；輸入通過契約也不證明現場真實或合規。"
     },
     {
       "id": "93-reproducible-report",
@@ -1081,7 +1265,9 @@
         "可重跑的人因觀察專題",
         "reproducible report"
       ],
-      "example": "47_report_preview.py"
+      "example": "47_report_preview.py",
+      "visual": "er47",
+      "visualTask": "將圖中未知與來源狀態對回原始觀察，說明報告可重跑與檔案雜湊不等於資料真實、工作安全或個人健康已證明。"
     },
     {
       "id": "94-troubleshooting",
@@ -1091,7 +1277,9 @@
       "tags": [
         "可重跑的人因觀察專題",
         "troubleshooting"
-      ]
+      ],
+      "visual": "er47",
+      "visualTask": "遇到錯誤依來源、單位、範圍和假設逐一排查，說明超方法上限要保留不適用；不能裁成上限讓報告看起來完整。"
     },
     {
       "id": "95-complete-capstone",
@@ -1102,7 +1290,9 @@
         "可重跑的人因觀察專題",
         "complete capstone"
       ],
-      "example": "48_complete_project.py"
+      "example": "48_complete_project.py",
+      "visual": "er48",
+      "visualTask": "從圖中提出一項具體工作改變、所需資料和回顧責任，說明完整專題不是把所有未知補成最好條件或個人限重。"
     },
     {
       "id": "96-exercises-and-references",
@@ -1112,7 +1302,1079 @@
       "tags": [
         "可重跑的人因觀察專題",
         "exercises and references"
-      ]
+      ],
+      "visual": "er48",
+      "visualTask": "依工作、證據、方法和行動口述全課關係，再回原課核對答案；能指出哪裡仍需專業和現場資訊，比湊出安全百分比重要。"
     }
+  ],
+  "contentBaselineDate": "2026-11-13",
+  "visualUpdated": "2026-11-16",
+  "visuals": [
+    {
+      "id": "er01",
+      "file": "assets/figures/01-person-task-environment.svg",
+      "title": "人、任務與環境的適配",
+      "description": "三區相交表示工作設計要同時考慮人、任務和環境；面積無量尺，不用來評人能力。",
+      "group": "foundations",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er02",
+      "file": "assets/figures/02-levels-and-methods.svg",
+      "title": "危害到行動：工具不等於結論",
+      "description": "危害、暴露、感受與疾病為不同層次；選方法還要確認問題、地區和用途，不把分數當診斷。",
+      "group": "foundations",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er03",
+      "file": "assets/figures/03-participation-privacy.svg",
+      "title": "改善也需要人的聲音",
+      "description": "觀察、訪談、資源和回顧圍繞具體任務協作，個資最小化，不靠一張照片代表全部工作。",
+      "group": "foundations",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er04",
+      "file": "assets/figures/04-joint.svg",
+      "title": "骨與關節的活動界面",
+      "description": "兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。",
+      "group": "anatomy",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/18-joint.svg",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NCI：關節",
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/articulations.html"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "er05",
+      "file": "assets/figures/05-muscle-hierarchy.svg",
+      "title": "肌肉、肌束與力量傳遞",
+      "description": "整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。",
+      "group": "anatomy",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/19-muscle-hierarchy.svg",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NCI：肌肉",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "er06",
+      "file": "assets/figures/06-neuron.svg",
+      "title": "神經訊息與動作的連接",
+      "description": "一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。",
+      "group": "anatomy",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/22-neuron.svg",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "er07",
+      "file": "assets/figures/07-external-moment.svg",
+      "title": "外力、轉軸與垂直力臂",
+      "description": "圖只顯示平面單一外力與力矩參考，其他外力、內力和三維動作省略，不能推傷害機率。",
+      "group": "mechanics",
+      "kind": "力學示意",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er08",
+      "file": "assets/figures/08-contact-area.svg",
+      "title": "接觸面積和平均壓力",
+      "description": "同力不同接觸面積的均勻模型，壓力與材料截面應力的問題不同，沒有人體損傷界線。",
+      "group": "mechanics",
+      "kind": "接觸示意",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er09",
+      "file": "assets/figures/09-time-model.svg",
+      "title": "時間變化模型不等於人體恢復",
+      "description": "任意曲線僅示時間相關行為，沒有組織、年齡、症狀或傷害校準，不當成治療或癒合時程。",
+      "group": "mechanics",
+      "kind": "任意模型圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er10",
+      "file": "assets/figures/10-pain-context.svg",
+      "title": "感受、功能與情境：不只一條損傷尺",
+      "description": "人位於感受、功能、時間及照護需求的共同脈絡，沒有將痛分數直接換成組織破壞量。",
+      "group": "pain",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er11",
+      "file": "assets/figures/11-image-task.svg",
+      "title": "影像、任務與功能各回答一部分",
+      "description": "三張不同資料卡可互補，但任何單一卡都不能唯一決定症狀原因或個人活動範圍。",
+      "group": "pain",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er12",
+      "file": "assets/figures/12-care-and-scope.svg",
+      "title": "照護訊號與來源範圍分開看",
+      "description": "情境需要適當評估，來源需核日期與適用範圍；不是自動風險分級或排除所有急症的清單。",
+      "group": "pain",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er13",
+      "file": "assets/figures/13-task-record.svg",
+      "title": "任務觀察要留下時間與脈絡",
+      "description": "觀察卡整理任務、時間、狀態和使用者回饋，不測疾病或替代現場完整評估。",
+      "group": "assessment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er14",
+      "file": "assets/figures/14-fit-sample.svg",
+      "title": "兩條適配條件要同時確認",
+      "description": "虛構樣本同時看伸取與淨空，符合兩條只是部分幾何適配；缺漏與族群代表性仍需說明。",
+      "group": "assessment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er15",
+      "file": "assets/figures/15-task-timing.svg",
+      "title": "同平均，時間分布仍可不同",
+      "description": "區塊顯示不同任務時間或未知狀態，不給正式評分；平均次數無法取代完整循環與優先需求。",
+      "group": "assessment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er16",
+      "file": "assets/figures/16-chair-desk.svg",
+      "title": "支撐、桌面與腿部空間一起調整",
+      "description": "側面工作站是相對位置示意，支撐、桌面和腿部空間互相關聯，不是一張所有人相同的姿勢處方。",
+      "group": "workstation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er17",
+      "file": "assets/figures/17-screen-and-input.svg",
+      "title": "視線、螢幕與輸入要協調",
+      "description": "工作站幾何僅供比較位置，眼鏡、文字、任務及支撐需求會影響配置，不指定唯一頸部角度。",
+      "group": "workstation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "OSHA：螢幕與視覺配置",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er18",
+      "file": "assets/figures/18-mouse-layout.svg",
+      "title": "常用輸入區與調整回顧",
+      "description": "鍵盤與滑鼠在同一工作區示意，位置和任務需要一起試用；沒有裝置能單靠名稱保證所有人適合。",
+      "group": "workstation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er19",
+      "file": "assets/figures/19-laptop-information.svg",
+      "title": "筆電綁定與多種資訊位置",
+      "description": "左側筆電將螢幕輸入綁定，右側外接輸入可分開調整；只是配置選項，不保證任務與小空間皆適用。",
+      "group": "digital",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "OSHA：螢幕與視覺配置",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er20",
+      "file": "assets/figures/20-angle-glare.svg",
+      "title": "可讀性：尺寸、距離與反光都要看",
+      "description": "兩個視覺三角形表示不同距離與字高的關係，亮面反光是另一問題；圖不是視力或字級處方。",
+      "group": "digital",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "OSHA：螢幕與視覺配置",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er21",
+      "file": "assets/figures/21-variation-space.svg",
+      "title": "坐、站、走動與可行空間",
+      "description": "三個不同姿勢角色代表可選工作變化，不規定固定比例，也不因換站立就宣告所有問題已解決。",
+      "group": "digital",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er22",
+      "file": "assets/figures/22-reach-frequency.svg",
+      "title": "伸取與資訊配置：先看常用任務",
+      "description": "俯視工作區比較較近與較遠物件，距離只是部分條件，頻率、視覺、支撐及身體需求仍需確認。",
+      "group": "upperlimb",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "OSHA：螢幕與視覺配置",
+          "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er23",
+      "file": "assets/figures/23-hand-contact.svg",
+      "title": "手腕、接觸與輸入選擇",
+      "description": "前臂、接觸邊緣與手持設備的簡化關係，角度不是唯一條件；位置、施力和時間需要一起觀察。",
+      "group": "upperlimb",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er24",
+      "file": "assets/figures/24-upper-limb-pattern.svg",
+      "title": "重複上肢工作與後續觀察",
+      "description": "不同時間片段可能有不同力、位置與恢復，觀察卡把任務與感受脈絡連接，不給疾病風險總分。",
+      "group": "upperlimb",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er25",
+      "file": "assets/figures/25-back-object.svg",
+      "title": "身體、物件和選項：距離之外還有條件",
+      "description": "簡化手部和箱子位置顯示外在需求可改，未畫完整人體力學，不指定人人相同的彎腰方式。",
+      "group": "lowerbody",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er26",
+      "file": "assets/figures/26-floor-support.svg",
+      "title": "足部、地面與整趟路徑",
+      "description": "推車路線包含轉彎與障礙，空間與地面需現場觀察；圖不根據鞋具或單一材質宣告合規。",
+      "group": "lowerbody",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er27",
+      "file": "assets/figures/27-changes-and-care.svg",
+      "title": "活動變化與照顧任務的差異",
+      "description": "任務名稱不同不保證充分恢復，搬物與搬人的可變性也不同；需合適設備、協作與方法。",
+      "group": "lowerbody",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er28",
+      "file": "assets/figures/28-rnle-reference.svg",
+      "title": "RNLE：先辨參考點，再談公式",
+      "description": "H由兩內踝中點至雙手握點中點地面投影；V是手部離地高度；A是負重位置相對正中矢狀面的角，不是脊柱扭轉角。",
+      "group": "lifting",
+      "kind": "量測參考圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er29",
+      "file": "assets/figures/29-endpoints.svg",
+      "title": "起點、目的地與工時條件",
+      "description": "兩個手部位置有不同幾何與控制需求，頻率、抓握和恢復需另按正式方法確認，不平均LI當CLI。",
+      "group": "lifting",
+      "kind": "搬抬路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er30",
+      "file": "assets/figures/30-applicability-redesign.svg",
+      "title": "公式有邊界，改善要回到任務",
+      "description": "同一搬運流程包含不同工作段，方法適用、未知和改善需分開，不把任意倍率補成1完成報告。",
+      "group": "lifting",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er31",
+      "file": "assets/figures/31-repetition-time.svg",
+      "title": "重複、施力與持續的共同觀察",
+      "description": "同一總次數可分散或集中，需記定義、力與姿勢等條件；時間區塊無疾病與安全色帶。",
+      "group": "repetition",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er32",
+      "file": "assets/figures/32-grip-tool.svg",
+      "title": "握柄、手套和任務：一起試用",
+      "description": "兩種假想握持接觸表示幾何不同，未標健康門檻；力、摩擦、尺寸及工作條件需與使用者核對。",
+      "group": "repetition",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er33",
+      "file": "assets/figures/33-method-map.svg",
+      "title": "按問題選方法，不是讓方法替人診斷",
+      "description": "DSE、上肢重複、人工搬運與推拉有不同方法入口；重疊範圍仍需正式文件和完整現場資料。",
+      "group": "repetition",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er34",
+      "file": "assets/figures/34-push-and-transport.svg",
+      "title": "推拉、路線與協作是整個任務",
+      "description": "箭頭是虛構推車路線，啟動、持續、坡度與設備需要另觀察；不是由外功算安全限力。",
+      "group": "environment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er35",
+      "file": "assets/figures/35-vibration-types.svg",
+      "title": "HAV與WBV：同單位也不是同方法",
+      "description": "左側手工具接觸，右側乘坐設備接觸；輸入、軸向權重與時間方法不同，不能直接混算。",
+      "group": "environment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "HSE：手臂振動",
+          "url": "https://www.hse.gov.uk/vibration/hav/index.htm"
+        },
+        {
+          "title": "HSE：WBV",
+          "url": "https://www.hse.gov.uk/vibration/wbv/regulations.htm"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er36",
+      "file": "assets/figures/36-environment-route.svg",
+      "title": "物理環境與流程：把任務走完",
+      "description": "工作流程可能跨取料、組裝和運送，照明、地面、維護及空間都需確認，不能由新設備名字推適配。",
+      "group": "environment",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "HSE：推拉評估",
+          "url": "https://www.hse.gov.uk/msd/pushpull/index.htm"
+        },
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er37",
+      "file": "assets/figures/37-controls-design.svg",
+      "title": "來源改善與工程驗收",
+      "description": "工作可從取消不必要轉運、設計支撐及組織條件改善；工程試用要確認使用者與新風險。",
+      "group": "controls",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er38",
+      "file": "assets/figures/38-before-after.svg",
+      "title": "改善前後：先看條件是不是同一個",
+      "description": "兩個外力作用位置示意，改距離可能改模型結果，但不是傷害風險等比例下降；其他條件需列明。",
+      "group": "controls",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        },
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er39",
+      "file": "assets/figures/39-participation-plan.svg",
+      "title": "參與、改善、紀錄與再評估",
+      "description": "循環表示工作者、維護、主管和專業可協作回顧，不是只簽名一次的合規證明。",
+      "group": "controls",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er40",
+      "file": "assets/figures/40-body-differences.svg",
+      "title": "不同身體與功能：不只用平均尺寸",
+      "description": "不同可達與淨空條件是有限的幾何需求，還需功能、骨關節條件及使用者回饋；不以年齡判能力。",
+      "group": "adaptation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er41",
+      "file": "assets/figures/41-shared-and-life-stage.svg",
+      "title": "共用與生命階段：調整要能交接",
+      "description": "一套設備可有不同使用者和調整需求，不能把成人公式或一次設定套所有兒少、孕期及照顧情境。",
+      "group": "adaptation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er42",
+      "file": "assets/figures/42-access-return.svg",
+      "title": "可近性與復工：功能、任務和支持連接",
+      "description": "具體調整連接工作者、實際任務及合適專業，沒有依單一診斷或網頁分數決定資格及時程。",
+      "group": "adaptation",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er43",
+      "file": "assets/figures/43-unknown-record.svg",
+      "title": "原創感受與缺漏：不是臨床分級",
+      "description": "兩種記錄卡區分明確零與未知，主觀資料仍需時間與功能背景，不設疾病門檻或個人排行。",
+      "group": "evidence",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "IASP：疼痛定義",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        },
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er44",
+      "file": "assets/figures/44-comparison-validity.svg",
+      "title": "比較條件、工具一致性與效度",
+      "description": "同一資料可能有多種解釋，重現、有效測量、適用範圍與因果是不同要求，不平均序位分數當機率。",
+      "group": "evidence",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er45",
+      "file": "assets/figures/45-version-claims.svg",
+      "title": "版本與AI姿勢宣稱：先問證據是哪一層",
+      "description": "影像點位、測量、暴露與健康結論不同，日期也有正式修訂及入口更新之分，不用精密外觀替代驗證。",
+      "group": "evidence",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        },
+        {
+          "title": "HSE：ART用途限制",
+          "url": "https://www.hse.gov.uk/msd/uld/art/faq.htm"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er46",
+      "file": "assets/figures/46-project-inputs.svg",
+      "title": "原創資料與契約：一列代表什麼",
+      "description": "虛構記錄包含排定時間、已觀察數據、狀態及來源；不是員工健康病歷或完整現場評分。",
+      "group": "practice",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "OSHA：多種工作參考姿勢",
+          "url": "https://www.osha.gov/etools/computer-workstations/positions"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er47",
+      "file": "assets/figures/47-report-and-check.svg",
+      "title": "報告圖、數字與來源一起核對",
+      "description": "同一虛構觀察可產表格、圖與說明，問號仍為未知；來源雜湊只核檔案一致，不核真實性或工作安全。",
+      "group": "practice",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "er48",
+      "file": "assets/figures/48-capstone-review.svg",
+      "title": "從觀察到改善：留下可審核的下一步",
+      "description": "工作、資料、方法與回顧形成概念圖，要求說明條件與未知，不以最後一個總分取代參與和現場驗證。",
+      "group": "practice",
+      "kind": "工作情境圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIOSH：人體工學",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+        },
+        {
+          "title": "NIOSH：RNLE入口與正式手冊",
+          "url": "https://www.cdc.gov/niosh/ergonomics/about/rnle.html"
+        },
+        {
+          "title": "台灣設施規則324-1條",
+          "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&flno=324-1"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    }
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/read-tasks.md",
+    "study/sources.md",
+    "study-pack.zip"
   ]
 }

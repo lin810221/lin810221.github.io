@@ -2,6 +2,17 @@
 
 讀懂一包不一定等於一份，依實際吃的量計算。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-label-serving.svg" target="_blank" rel="noopener" aria-label="放大：一份、一包與每100的關係"><img src="assets/figures/28-label-serving.svg" alt="包裝與標示並列，先找每份大小與包裝份數，再核對每100基準及地區規則，不把不同制度視為相同門檻。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜一份、一包與每100的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出包裝和每份欄的不同，若吃了部分包裝需取得哪些資訊，再說明不能一包直接算一份或忽略小數份數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765">TFDA：四歲以上每日參考值</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 標示的三個數字
 
 每份重量、每包份數與每份營養各有角色。假設每份30g、一包2.5份、每份鈉180mg，整包75g且鈉450mg；吃45g是1.5份，鈉270mg。份數可有小數，不能四捨五入成整數份再算。

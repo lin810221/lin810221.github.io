@@ -2,6 +2,17 @@
 
 閱讀台灣餐盤口訣，理解用途與需要調整的情境。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-food-groups-plate.svg" target="_blank" rel="noopener" aria-label="放大：六大類食物與餐盤觀察"><img src="assets/figures/25-food-groups-plate.svg" alt="盤內外示意全穀雜糧、蔬菜、水果、豆魚蛋肉、乳品及油脂堅果種子，非精確比例，不是每人相同處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜六大類食物與餐盤觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先辨原創圖和官方餐盤口訣的用途，再指出手勢與份量的誤差，以及過敏、植物飲食或咀嚼限制時需評估的替代功能。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 圖像在協助什麼
 
 我的餐盤用容易記住的食物比例與手勢，協助一般民眾安排多樣來源；它不是營養素分析儀，也不是每個人完全相同的處方。手掌、拳頭和餐盤大小都有差異，不能當實驗室精確克數。

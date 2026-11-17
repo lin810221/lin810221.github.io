@@ -2,6 +2,17 @@
 
 讓觀察與推論各有位置。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-levels-and-methods.svg" target="_blank" rel="noopener" aria-label="放大：危害到行動：工具不等於結論"><img src="assets/figures/02-levels-and-methods.svg" alt="危害、暴露、感受與疾病為不同層次；選方法還要確認問題、地區和用途，不把分數當診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜危害到行動：工具不等於結論</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把工作來源、實際暴露、症狀和疾病分開，找出哪些箭頭仍需額外證據；不能從某個分數直接認定個人職業病。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 危害是可能造成問題的條件
 
 高施力、重複、接觸、振動、受限姿勢等可成為評估線索。看到一項危害，不等於已證明某人受傷；沒在短片看到，也不表示整天不存在。

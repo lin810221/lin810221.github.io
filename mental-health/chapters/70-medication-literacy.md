@@ -2,6 +2,17 @@
 
 建立看懂選項的語言，不提供自行用藥規則。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-care-monitoring.svg" target="_blank" rel="noopener" aria-label="放大：方法、醫療與共同監測"><img src="assets/figures/35-care-monitoring.svg" alt="方法原理與具體個人安排不同，目標、偏好、效果與負擔要在照護中持續回顧。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜方法、醫療與共同監測</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在監測區分想了解的效果與負擔，寫一個要和專業確認的問題；圖不提供劑量，也不指示自行停藥或換藥。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 類別與用途
 
 抗憂鬱藥、抗焦慮相關藥物、情緒穩定藥與抗精神病藥等，有不同機轉與適用情境；名稱不表示只用於字面那一種問題。具體選擇需病史、身體、交互作用和偏好評估。

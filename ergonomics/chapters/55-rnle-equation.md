@@ -2,6 +2,17 @@
 
 完整列出公式，同時說明它不是每個人的搬重上限。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-rnle-reference.svg" target="_blank" rel="noopener" aria-label="放大：RNLE：先辨參考點，再談公式"><img src="assets/figures/28-rnle-reference.svg" alt="H由兩內踝中點至雙手握點中點地面投影；V是手部離地高度；A是負重位置相對正中矢狀面的角，不是脊柱扭轉角。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜RNLE：先辨參考點，再談公式</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先在側視和俯視圖找到參考點，說明RWL與LI需要完整適用和表格條件；23kg不是個人或通用法定限重。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 工作設計方法
 
 RNLE針對符合條件的雙手人工搬抬，使用幾何、頻率、工時與耦合等因素。它不是把任何物件重量輸入就完成，也不是個人體能測試。

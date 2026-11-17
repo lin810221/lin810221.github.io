@@ -2,6 +2,17 @@
 
 讓不合規格的輸入在產生結論前被發現。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-project-inputs.svg" target="_blank" rel="noopener" aria-label="放大：原創資料與契約：一列代表什麼"><img src="assets/figures/46-project-inputs.svg" alt="虛構記錄包含排定時間、已觀察數據、狀態及來源；不是員工健康病歷或完整現場評分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜原創資料與契約：一列代表什麼</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為一列標上單位、時間窗和狀態，說明動作數、活動分鐘與觀察分鐘不同；輸入通過契約也不證明現場真實或合規。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 定義一列的意義
 
 觀察檔每列是一段已排定的觀察窗，不是每個員工或完整一天。scheduled_minutes、actions、active_minutes和status各有定義，不能把活動分鐘當完整觀察分鐘，也不能把unknown寫成observed卻留下空數字。

@@ -2,6 +2,17 @@
 
 從整體模式讀研究，而非將名稱當保證效果的品牌。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-density-denominators.svg" target="_blank" rel="noopener" aria-label="放大：營養密度的分母與整體飲食"><img src="assets/figures/26-density-denominators.svg" alt="同一食物以每100克、每份及每100千卡比較可有不同排序，整體飲食型態需看多種食物與時間而非單一分母。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜營養密度的分母與整體飲食</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把兩種食物接成一個虛構飲食組合，說明飲食型態的長期證據與單項營養密度不同，不能只依一張排序圖判優劣。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 模式是一組特徵
 
 地中海、DASH和植物為主等名稱常指一群食物組合與研究定義，版本不完全一致。先看實際食物、份量、比較組和遵從方式，再看結果；不能只憑名稱認定每份市售餐盒等同研究介入。

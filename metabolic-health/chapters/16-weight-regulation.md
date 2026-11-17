@@ -2,6 +2,17 @@
 
 把守恆、食慾、支出與環境放在同一框架。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-composition-balance.svg" target="_blank" rel="noopener" aria-label="放大：體重、身體組成與時間"><img src="assets/figures/08-composition-balance.svg" alt="兩條等長示例條呈現不同組成，顏色不是正常異常，並未表示特定人的比例或理想體脂。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜體重、身體組成與時間</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從組成條回到一段時間的供應、使用與調節，列出至少兩種影響體重的條件，避免把能量平衡只解讀成意志力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 守恆與調節不衝突
 
 長期儲存變化與能量進出有關，但進出量本身會隨體重、活動、食慾和環境調整。說存在能量平衡，不代表已知道某人為何吃或消耗多少，也不能用意志力解釋全部。

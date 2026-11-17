@@ -2,6 +2,17 @@
 
 先辨認一個門檻回答什麼，避免相近數字互相替代。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-criteria-layers.svg" target="_blank" rel="noopener" aria-label="放大：同一數字背後的不同用途"><img src="assets/figures/02-criteria-layers.svg" alt="定義、診斷、治療目標、服務資格與預測模型是不同頁面，不可因數字相似便互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜同一數字背後的不同用途</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>逐一辨識圖中五種用途，試把課文的同一數字放回原來問題；指出哪些頁面不能直接互相抄用界線。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 名稱相近但用途不同
 
 代謝症候群是一組風險構成條件；糖尿病或高血壓有各自診斷；用藥目標依風險與健康調整；公費計畫有行政資格；風險模型則估指定期間與結果。五者不能只因都含數字就混成同一張表。

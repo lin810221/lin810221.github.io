@@ -2,6 +2,17 @@
 
 分清含量、吸收和利用，理解同餐、加工與個體差異。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-food-matrix.svg" target="_blank" rel="noopener" aria-label="放大：食物基質與腸道條件"><img src="assets/figures/06-food-matrix.svg" alt="營養成分被包在食物結構中，加工搭配及腸道條件影響釋出與利用；不把所有吸收效率設成固定比例。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜食物基質與腸道條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出基質內的成分與外層結構，再列兩項可能改變釋出或吸收的條件，說明圖不能直接給個人利用率百分比。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/">NIH ODS：鐵</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 含量不是唯一資訊
 
 食物基質包括結構、纖維、其他成分與加工狀態，會影響消化和可得性。某營養素含量高，不代表個人實際吸收一定同比高；反過來也不能因吸收率較低就將整種食物判成沒有價值。

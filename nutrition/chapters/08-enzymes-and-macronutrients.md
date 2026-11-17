@@ -2,6 +2,17 @@
 
 理解分解需要什麼，分清胃酸、酵素與膽汁的工作。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-digestive-route.svg" target="_blank" rel="noopener" aria-label="放大：食物走的管，與分泌走的路"><img src="assets/figures/04-digestive-route.svg" alt="食物流經食道胃小腸大腸，消化酵素與其他分泌參與處理；肝膽胰不是食物依序流入的管腔。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 04｜食物走的管，與分泌走的路</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖旁另畫消化液來源的虛線，將酵素、胃酸和膽汁的角色分開，解釋為何一種消化液不能包辦三大營養素。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不同成分有不同路徑
 
 澱粉由相關酵素分解到可吸收單位；蛋白質經蛋白酶處理成胜肽與胺基酸；脂肪需乳化與脂肪酶等作用。膽汁協助脂肪處理，本身不是將所有成分都水解的通用酵素。胃酸也不等於能單獨完成所有消化。

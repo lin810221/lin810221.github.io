@@ -2,6 +2,17 @@
 
 比較物件、位置、頻率、輔具與整體流程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-applicability-redesign.svg" target="_blank" rel="noopener" aria-label="放大：公式有邊界，改善要回到任務"><img src="assets/figures/30-applicability-redesign.svg" alt="同一搬運流程包含不同工作段，方法適用、未知和改善需分開，不把任意倍率補成1完成報告。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜公式有邊界，改善要回到任務</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>提出一個減少不必要轉運或改物件位置的方案，再指出可能增加頻率或其他新問題；LI變化不是受傷機率變化。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 可改的變項
 
 取消不必要搬動、減少負荷、調整高度和距離、改善物件耦合、使用適當輔具與重設流程，都可成為選項。訓練能補充，不能取代來源改善。

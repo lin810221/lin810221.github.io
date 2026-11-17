@@ -2,6 +2,17 @@
 
 用功能鏈連結結構，而不是背完名詞就結束。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-neuron.svg" target="_blank" rel="noopener" aria-label="放大：神經訊息與動作的連接"><img src="assets/figures/06-neuron.svg" alt="一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 06｜神經訊息與動作的連接</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把拿杯情境的感覺回饋、肌肉控制和環境加入圖旁，說明神經和肌骨需要協作；圖上箭頭不測個人握力或承重。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 任務需要多部位合作
 
 拿杯包含視覺定位、伸取、抓握、肩肘腕活動與身體支撐；搬箱還涉及負荷位置、腳步、地面和其他條件。不能只看手腕或下背一個角度就代表全部需求。

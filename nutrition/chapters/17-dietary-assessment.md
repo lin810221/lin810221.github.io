@@ -2,6 +2,17 @@
 
 比較觀察工具的用途，分清部分記錄與習慣攝取。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-assessment-reference.svg" target="_blank" rel="noopener" aria-label="放大：飲食觀察與參考值用途"><img src="assets/figures/09-assessment-reference.svg" alt="日曆的已知與未知觀察對照不同參考值用途，未記錄不是零；需要量評估、規劃及上限不可共用同一門檻。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜飲食觀察與參考值用途</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找日曆中的問號，說明回憶、日誌與重複觀察各可能漏掉什麼，再指出未填不能直接變成零攝取。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 常用方法
 
 24小時回憶、食物日誌、秤重紀錄與頻率問卷捕捉不同資訊。回憶有遺漏，記錄可能改變原行為，頻率問卷依賴食品清單與份量假設。沒有一種工具在所有目的都完美，應依個人討論、研究群體或長期模式選擇。

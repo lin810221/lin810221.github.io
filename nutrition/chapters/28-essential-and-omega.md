@@ -2,6 +2,17 @@
 
 分清化學形式、食物與補充品，避免用魚油總重量代替有效成分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-fat-substitution.svg" target="_blank" rel="noopener" aria-label="放大：替代需要保留比較條件"><img src="assets/figures/14-fat-substitution.svg" alt="油、堅果與魚作替代來源示意，等能量不保證其他營養與作用相同；Omega-3成員也需分開，箭頭不是通用食譜。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜替代需要保留比較條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以魚和植物來源為例，將ALA、EPA、DHA的名稱分開，說明同屬Omega-3不代表克數能直接當完全等效替換。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates">WHO：脂肪與醣類指南更新</a> · <a href="https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/">NIH ODS：Omega-3脂肪酸</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 必需與轉換
 
 亞麻油酸與α-次亞麻油酸ALA是必需脂肪酸；ALA與EPA、DHA都屬Omega-3，但不是相同分子。ALA可轉換成較長鏈形式，效率有限且有個體差異，不能把1g ALA直接記為1g DHA。

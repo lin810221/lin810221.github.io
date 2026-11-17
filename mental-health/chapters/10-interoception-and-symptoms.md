@@ -2,6 +2,17 @@
 
 分開感受、解釋與需要評估的身體問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-stress-time.svg" target="_blank" rel="noopener" aria-label="放大：反應與時間：沒有一條通用病程曲線"><img src="assets/figures/05-stress-time.svg" alt="三段虛構時間線有不同事件與回顧位置，只表示可能的時間結構，不預測症狀或恢復。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 05｜反應與時間：沒有一條通用病程曲線</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在時間線另標一個身體感受觀察和一個原因未知的位置；說明注意到症狀與已經查明病因，為何是不同層次。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 內在感覺
 
 心跳、呼吸、肌肉與腸胃感受都可進入注意。注意放在哪裡，可能改變感受顯著度；但感覺是真實經驗，不應被一句「都是想太多」否定。

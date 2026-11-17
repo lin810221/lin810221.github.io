@@ -2,6 +2,17 @@
 
 讓回顧幫助修方案，而不是製作自我考核。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-values-compass.svg" target="_blank" rel="noopener" aria-label="放大：價值像方向，目標像可回顧的站點"><img src="assets/figures/15-values-compass.svg" alt="羅盤方向代表所重視的行動品質，站點是具體目標；不以分數評價一個人的價值。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜價值像方向，目標像可回顧的站點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個站點寫出可觀察行動與觀察時間，保留未記錄和條件改變；自我觀察不用變成健康或人格排名。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先定義觀察
 
 什麼算開始、哪些情境有機會、是否可選擇跳過？清楚定義可減少事後挑數字，但不能把人的生活壓成僵硬規則。主觀品質與負擔也可用文字保留。

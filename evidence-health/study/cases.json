@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "scope": "全部是原創教學情境，不對應真實產品、病人或研究結果。未知欄位保留null，不自行補成最佳條件。",
+  "updated": "2026-11-16",
+  "trial": {
+    "outcome": "預先指定的不良事件",
+    "horizonMonths": 12,
+    "intervention": {
+      "events": 30,
+      "n": 1000
+    },
+    "comparator": {
+      "events": 40,
+      "n": 1000
+    },
+    "allocationConcealmentDetails": null,
+    "protocolRecord": null,
+    "funding": null,
+    "targetPopulationDetails": null,
+    "expected": {
+      "rr": 0.75,
+      "rd": -0.01,
+      "nntBenefitPoint": 100
+    },
+    "limitations": [
+      "點估計不證明效益已確立",
+      "需讀區間、偏差、重要結果、適用及傷害",
+      "未知執行細節不能評為低偏差"
+    ]
+  },
+  "attrition": {
+    "intervention": {
+      "knownEvents": 15,
+      "assigned": 100,
+      "missingOutcomes": 10
+    },
+    "comparator": {
+      "knownEvents": 20,
+      "assigned": 100,
+      "missingOutcomes": 5
+    },
+    "expectedRDExtremes": [
+      -0.1,
+      0.05
+    ],
+    "note": "極端結果假設的界限，不是信賴區間或對缺失者的預測。"
+  },
+  "observational": {
+    "syntheticDataType": "虛構病歷分析的摘要，非個人病歷",
+    "exposureDefinition": "出院後六個月內曾參加服務，與從未參加比較",
+    "reportedAdjustedRR": 0.7,
+    "participationDates": null,
+    "baselineSeverityCompleteness": null,
+    "lossToFollowUp": null,
+    "note": "需檢查時間零點、不死時間、混雜與選擇，未知不直接判為已證實有偏或無偏；沒有足夠原始資料重估因果效果。"
+  },
+  "diagnosis": {
+    "n": 10000,
+    "prevalence": 0.01,
+    "sensitivity": 0.9,
+    "specificity": 0.95,
+    "expected": {
+      "tp": 90,
+      "fn": 10,
+      "fp": 495,
+      "tn": 9405,
+      "ppv": 0.15384615384615385
+    },
+    "note": "期望頻率；若改輸入可有小數人數，先不四捨五入再算比例。"
+  },
+  "meta": {
+    "model": "共同log(RR)，反變異數加權；常態近似95%區間",
+    "independenceAssumed": true,
+    "studies": [
+      {
+        "id": "A",
+        "rr": 0.8,
+        "seLogRR": 0.1
+      },
+      {
+        "id": "B",
+        "rr": 1.0,
+        "seLogRR": 0.2
+      },
+      {
+        "id": "C",
+        "rr": 1.2,
+        "seLogRR": 0.15
+      }
+    ],
+    "betweenStudyVariance": null,
+    "note": "未估計隨機效果、τ²或預測區間。"
+  },
+  "evidenceBriefTemplate": {
+    "question": null,
+    "searchDate": null,
+    "sources": [],
+    "population": null,
+    "comparison": null,
+    "outcomeAndTime": null,
+    "effectAndInterval": null,
+    "biasConcerns": [],
+    "certaintyByOutcome": [],
+    "applicability": null,
+    "benefitHarmAndBurden": null,
+    "unknowns": [],
+    "nextReviewTrigger": null
+  }
+}

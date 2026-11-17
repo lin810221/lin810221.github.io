@@ -2,6 +2,17 @@
 
 把反覆、部分反應與持續支持納入計畫。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-care-network.svg" target="_blank" rel="noopener" aria-label="放大：照護目標與回顧：可有多條路"><img src="assets/figures/33-care-network.svg" alt="不同支持連到功能與生活目標，回顧可以調整，不是所有人都先後依同一治療順序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜照護目標與回顧：可有多條路</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在回顧位置加一個新的需要或再次困難，說明改善可以有波動；不把一次反覆當所有努力無效。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 結果可以不同步
 
 睡眠、精力、興趣與功能未必同時改變；短期波動也可能受生活與量測影響。不能以單日心情宣告全部治好或全部無效，仍需按計畫回顧。

@@ -2,6 +2,17 @@
 
 用一般到特定的準備理解課程結構，避免把熱身當疲勞競賽。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-movement-patterns.svg" target="_blank" rel="noopener" aria-label="放大：蹲與髖主導：先描述可觀察差異"><img src="assets/figures/17-movement-patterns.svg" alt="兩個簡化人形比較動作模式，沒有精密角度、外力及個人安全判定；不是跟做指令。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜蹲與髖主導：先描述可觀察差異</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以這兩種模式當假想課程內容，列出熟悉化、暖身、順序與保護條件；圖只給構造關係，不代表任何讀者可以直接開始相同負荷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 暖身在準備什麼
 
 一般活動提高準備程度，特定練習熟悉即將執行的動作與負荷。內容依環境、任務、起點和個人情況調整；固定出汗或固定十分鐘不是所有人的充分條件，也不能保證完全預防傷害。

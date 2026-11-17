@@ -2,6 +2,17 @@
 
 不將肌肥大鎖死一個神奇次數，先理解負荷和接近完成極限。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-weekly-distribution.svg" target="_blank" rel="noopener" aria-label="放大：週頻率與總量是兩個問題"><img src="assets/figures/20-weekly-distribution.svg" alt="兩排虛構日曆顯示頻率可不同，但未提供每次組數與負荷，不能直接宣稱週總量相等。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜週頻率與總量是兩個問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在每個工作格旁另註負荷、次數與努力，不要把較多工作日自動翻成較高有效努力；同一排法可有不同實際訓練內容。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 次數區間是安排工具
 
 常見區間可協助選負荷和記錄，但不能把第八次叫增肌、第十二次叫完全不同系統。研究中多種負荷可支持肌肥大，還需看努力、組數、經驗與測量；較高負荷對最大力量的特異性又不同。

@@ -2,6 +2,17 @@
 
 理解需求受環境和個人影響，不開固定飲水或產品配額。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-heat-loss.svg" target="_blank" rel="noopener" aria-label="放大：產熱、蒸發與環境條件"><img src="assets/figures/44-heat-loss.svg" alt="體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 44｜產熱、蒸發與環境條件</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在汗液蒸發旁另寫水鹽流失與實際任務條件，並把裝備、供應和支援分開；圖不提供個人喝水量，也不以衣服濕度算補水劑量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.training.seer.cancer.gov/melanoma/anatomy/layers.html">NCI：皮膚層次</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 水分和電解質
 
 活動時間、環境、出汗、飲食與健康會影響安排；喝越多不必然越好，也不因一般短活動就必需運動飲料。某些疾病或藥物背景需專門協調，不能用全民每小時固定量涵蓋。

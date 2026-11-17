@@ -2,6 +2,17 @@
 
 用原創工作案例連結來源、感受、資源與行動。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-rr-interval.svg" target="_blank" rel="noopener" aria-label="放大：心搏間隔變化與情境"><img src="assets/figures/06-rr-interval.svg" alt="兩列節點代表虛構心搏時點，間隔可能不同；不是心電圖、HRV檢測或焦慮診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜心搏間隔變化與情境</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把事件、資源、身體和行動各加到圖旁作案例地圖；辨識哪些已觀察、哪些只是可能解釋，不能讓一個HRV數字取代整體。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://doi.org/10.1152/ajpheart.00041.2026">2026 HRV原方法資料</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先寫觀察
 
 虛構學員小安有兩個新增任務、期限不變，這週睡眠機會也變少。這是可討論的觀察；「我天生扛不住壓力」是更廣的評價，沒有由這幾筆資訊證實。

@@ -2,6 +2,17 @@
 
 把預防從單一超級食物，移向可持續的飲食結構。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-food-pattern-replacement.svg" target="_blank" rel="noopener" aria-label="放大：飲食型態與替代：先說保留什麼"><img src="assets/figures/31-food-pattern-replacement.svg" alt="兩個餐盤只是組合示意，不表示固定比例或個人份量；替代需有清楚比較條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜飲食型態與替代：先說保留什麼</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩盤中各標食物來源與整體組合，再說明飲食型態為何不能只靠一種營養素高低判斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何看型態
 
 人吃的是食物與餐點組合。地中海型、DASH等有各自研究背景，不能只選其中一個食材就宣稱複製全部效果；文化、成本、可得性和個人需求也會改變實作方式。

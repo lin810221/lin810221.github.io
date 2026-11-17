@@ -2,6 +2,17 @@
 
 理解台灣證照與業務，避免用刻板分工選擇照護。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-professional-collaboration.svg" target="_blank" rel="noopener" aria-label="放大：求助、角色與合作"><img src="assets/figures/34-professional-collaboration.svg" alt="當事人可依需要接觸合適專業，角色與資格要依當地制度確認；圖不替代轉介或診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜求助、角色與合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較專業角色的合作位置而非互相取代，提醒具體資格與服務依當地制度確認；原課的台灣來源仍是細節入口。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 精神醫療
 
 精神科醫師是醫師，可進行相應醫療評估與藥物等照護。心理困擾也可能先透過其他醫療或社區資源連結，依需要轉介，不是每個人都必須同一入口。

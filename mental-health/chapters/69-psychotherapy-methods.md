@@ -2,6 +2,17 @@
 
 用問題和證據理解方法，不把名稱變成療效保證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-care-monitoring.svg" target="_blank" rel="noopener" aria-label="放大：方法、醫療與共同監測"><img src="assets/figures/35-care-monitoring.svg" alt="方法原理與具體個人安排不同，目標、偏好、效果與負擔要在照護中持續回顧。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜方法、醫療與共同監測</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一種治療的原理、完整程序和研究結果分成不同問題，指出為何一張概念圖不能等同受訓後的專業實施。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## CBT與BA
 
 CBT探索想法、行為、情緒與情境的關係，透過共同理解和練習處理困擾；不是強迫樂觀。BA重視活動、功能與回饋循環，也不是用忙碌壓過感受。

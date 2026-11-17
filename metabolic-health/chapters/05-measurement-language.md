@@ -2,6 +2,17 @@
 
 讓每個數字保留原意，避免資料表看似完整卻已改變概念。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-measurement-time.svg" target="_blank" rel="noopener" aria-label="放大：一個數字要帶著時間與未知"><img src="assets/figures/03-measurement-time.svg" alt="數字來自有時間、方法及缺漏的觀察，未知位置不是零，也不因學習路線完成便可自我確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜一個數字要帶著時間與未知</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿時間軸指出一筆觀察需附哪些單位、檢體與時點資訊，再解釋問號為何不能直接補成零或正常。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 單位不是裝飾
 
 mg/dL與mmol/L換算依分析物；膽固醇、TG和葡萄糖係數不同。HbA1c的mmol/mol又不是血糖mmol/L，Lp(a)也沒有可泛用的質量與莫耳固定換算。

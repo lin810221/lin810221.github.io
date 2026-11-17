@@ -2,6 +2,17 @@
 
 辨認部分紀錄、缺值與日間變異，避免偽造完整一天。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-diary-uncertainty.svg" target="_blank" rel="noopener" aria-label="放大：日誌完整性與不確定範圍"><img src="assets/figures/33-diary-uncertainty.svg" alt="日曆有紀錄與未知格，份量和資料來源誤差需另列；缺漏不是零，也不能以小數位消除未量到的資訊。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜日誌完整性與不確定範圍</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出問號格，分開「確定沒吃」與「沒有紀錄」，再說明有效天數和排定天數為何不能在平均中任意互換。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 本課日誌的範圍
 
 diary.csv是三天的部分食物觀察，不是完整菜單、減重方案或能量目標。標題、報告和圖都會重複標明partial observations；不能把這些小計當讀者應達成的日量。

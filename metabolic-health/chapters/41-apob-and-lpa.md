@@ -2,6 +2,17 @@
 
 理解粒子訊息，也知道哪些單位沒有固定換算。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-apob-lpa.svg" target="_blank" rel="noopener" aria-label="放大：粒子、apoB與Lp(a)的資訊層次"><img src="assets/figures/21-apob-lpa.svg" alt="蛋白與粒子的示意用於辨識資訊，不表示實際大小；Lp(a)質量與粒子濃度不可固定互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜粒子、apoB與Lp(a)的資訊層次</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出粒子外的蛋白相關結構，再區分apoB所提供資訊、所載膽固醇與Lp(a)單位，說明為何不應用固定係數互換。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## apoB在描述什麼
 
 多種致粥狀硬化脂蛋白各帶有apoB，因此apoB可補充粒子相關訊息。它與LDL-C、non-HDL-C相關，但不是同一量：每個粒子攜帶膽固醇量可不同，所以代謝情境下可能出現不一致。

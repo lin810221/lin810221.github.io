@@ -2,6 +2,17 @@
 
 用流程看報告，而不是只收集紅字。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-screening-door.svg" target="_blank" rel="noopener" aria-label="放大：服務資格、檢查與後續不是同一扇門"><img src="assets/figures/41-screening-door.svg" alt="入口圖只表示流程分工，不列新的資格門檻，不能把公費資格等同個人追蹤已完成。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜服務資格、檢查與後續不是同一扇門</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從檢查後沿箭頭補上確認、回顧及必要照護，說明篩檢結果為何不能只留在一張紅字清單。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 篩檢之前先問目的
 
 要找哪種疾病或風險、適用哪些人、陽性後怎麼辦、陰性有何限制？不必要檢查可能帶來偽陽性、焦慮、成本與後續處置。檢查越多不必然越健康，應看整體效益與傷害。

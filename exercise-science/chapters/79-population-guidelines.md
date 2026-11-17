@@ -2,6 +2,17 @@
 
 區分健康活動方向、訓練最佳化與個人醫療安排。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-population-context.svg" target="_blank" rel="noopener" aria-label="放大：同一活動建議，要帶上族群與情境"><img src="assets/figures/40-population-context.svg" alt="四個脈絡卡分年齡、目標、發展與支持；沒有以成人數字縮比例套用所有人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜同一活動建議，要帶上族群與情境</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找到四張脈絡卡，再回課文區分WHO不同族群建議；不能把成人分鐘、阻力目標與其他生命階段直接混成同一個通用門檻。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 指南按族群閱讀
 
 成人、兒少、長者、孕哺及疾病或身心障礙者有各自適用背景。WHO2020有分群，CDC與台灣入口也有宣導資料；不同機構的年齡分段和呈現可能不同，不能把某分組無聲改成另一個。

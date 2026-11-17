@@ -2,6 +2,17 @@
 
 用需求、證據和偏好討論，而不是人人同一階梯。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-care-network.svg" target="_blank" rel="noopener" aria-label="放大：照護目標與回顧：可有多條路"><img src="assets/figures/33-care-network.svg" alt="不同支持連到功能與生活目標，回顧可以調整，不是所有人都先後依同一治療順序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜照護目標與回顧：可有多條路</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先把照護目標放中間，再比較選項與負擔，說明圖沒有安排任何人的藥物或治療順序，仍需共同討論。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先確認目標
 
 可能是減輕困擾、恢復日常功能、處理風險或改善生活品質。選項依嚴重度、病史、過去反應、共病與偏好，不能只根據某一次分數決定。

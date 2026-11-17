@@ -2,6 +2,17 @@
 
 把分子層級接回動作，理解收縮不必然等於整條肌肉縮短。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-sarcomere.svg" target="_blank" rel="noopener" aria-label="放大：肌節、滑動與收縮情境"><img src="assets/figures/07-sarcomere.svg" alt="Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊，不是肌絲消失或自身縮短。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 07｜肌節、滑動與收縮情境</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指認兩條Z線、粗肌絲與細肌絲，再說出鈣與ATP在原課文的角色；注意滑動改變重疊，不代表肌絲本身縮短或消失。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從肌肉到肌節
 
 肌肉由多層組織與肌纖維構成，纖維內有肌原纖維和重複肌節。肌動蛋白與肌凝蛋白互動形成張力；滑動模型不是兩種絲本身變短，而是相對滑動。

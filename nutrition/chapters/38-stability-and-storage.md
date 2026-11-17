@@ -2,6 +2,17 @@
 
 把食物基質、製程與來源限定連起來，不用一個係數描述全部損失。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-fat-soluble-vitamins.svg" target="_blank" rel="noopener" aria-label="放大：脂溶性維生素與吸收條件"><img src="assets/figures/19-fat-soluble-vitamins.svg" alt="脂質相關聚集體作吸收環境概念，維生素來源及原始單位仍需辨識，圖不計算個人可利用率或補充量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜脂溶性維生素與吸收條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿圖指出食物來源、吸收條件及保存是不同問題，再列一項補充品判讀需回查的資訊，避免以脂溶性直接推越多越好。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/">NIH ODS：維生素A</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/">NIH ODS：維生素E</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 溶解性不是完整命運
 
 脂溶性維生素的消化吸收與脂質過程相關，但不同食物基質、處理和生理情況會影響利用。不能因某食物脂肪少就判完全吸收不了，也不能因含脂肪就宣稱全部吸收。醫療中的吸收障礙另需評估。

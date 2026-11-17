@@ -2,6 +2,17 @@
 
 知道專業人員為何會問生活、病史與身體資訊。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-mood-function.svg" target="_blank" rel="noopener" aria-label="放大：情緒、興趣與功能不是同一條尺"><img src="assets/figures/31-mood-function.svg" alt="三個獨立觀察區域沒有症狀總分，時間和情境需另記錄，不能從圖直接判憂鬱。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜情緒、興趣與功能不是同一條尺</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>補上時間、身體及生活背景，指出症狀計數以外的資訊；不用這張沒有尺度的圖自行確診或排除需要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 評估不是只對清單
 
 症狀、持續、嚴重度、功能、過去發作、照護反應、偏好與支持，都可能影響理解。量表可作部分溝通或監測，不能取代對話、病史與適用判斷。

@@ -2,6 +2,17 @@
 
 建立判讀框架，不把單篇研究、顯著性或最新年份當萬用答案。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-evidence-dates.svg" target="_blank" rel="noopener" aria-label="放大：指南日期與證據範圍"><img src="assets/figures/02-evidence-dates.svg" alt="時間線標正式指南發布年份，查核日不把舊指南改名；不同來源回答不同族群與任務問題。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜指南日期與證據範圍</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一則訓練研究放在時間線旁，另外標出研究族群、比較和結果；說明為何平均改善不等於每位使用者都得到同樣效果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不同研究回答不同問題
 
 機制研究解釋可能過程，試驗比較指定介入，觀察研究描述長期關係，回顧整合既有資料。肌肉蛋白合成等急性指標、肌肉大小和長期功能是不同終點；機制合理不等於已證明每種課表的實際效果。

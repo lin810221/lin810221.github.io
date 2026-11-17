@@ -2,6 +2,17 @@
 
 分開頻率本身和頻率帶來的總量、疲勞與可行性變化。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-weekly-distribution.svg" target="_blank" rel="noopener" aria-label="放大：週頻率與總量是兩個問題"><img src="assets/figures/20-weekly-distribution.svg" alt="兩排虛構日曆顯示頻率可不同，但未提供每次組數與負荷，不能直接宣稱週總量相等。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜週頻率與總量是兩個問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>數出兩排安排的頻率，再指出圖沒有提供每次組數；要說等週量必須先補齊同肌群的直接組、動作及其他比較條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三個不同頻率
 
 到場天數、阻力訓練天數與某肌群每週受訓次數不同。全身課和分部位課不能只看每週去幾天；一份清楚計畫需同時列各肌群和實際工作量。

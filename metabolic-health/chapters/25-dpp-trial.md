@@ -2,6 +2,17 @@
 
 從隨機試驗理解效果、受試者與追蹤時間。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-trial-denominators.svg" target="_blank" rel="noopener" aria-label="放大：研究比較：同分母、同期限"><img src="assets/figures/13-trial-denominators.svg" alt="兩群標記點只示範事件計數，並非DPP試驗實際比例或個人的預測結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜研究比較：同分母、同期限</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指認兩組的分母、比較內容和期限，再回原文閱讀DPP的適用族群；不要把示例點數當試驗真實結果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 研究回答的問題
 
 DPP招募有較高糖尿病風險的成人，比較密集生活方式介入、metformin與安慰劑。這不是所有年齡、所有體位的一般人口試驗，也不是第一型糖尿病預防試驗。隨機分派降低已知與未知混雜，但不能讓結果自動適用每一個人。

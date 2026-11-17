@@ -2,6 +2,17 @@
 
 分清載重、手部施力與機械功。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-push-and-transport.svg" target="_blank" rel="noopener" aria-label="放大：推拉、路線與協作是整個任務"><img src="assets/figures/34-push-and-transport.svg" alt="箭頭是虛構推車路線，啟動、持續、坡度與設備需要另觀察；不是由外功算安全限力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜推拉、路線與協作是整個任務</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出外力方向、位移和時間，再列啟動力、坡度及人體內部工作等未提供資料；不能把J或W直接換個人代謝或安全限力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 車上重量不是手部力
 
 輪具、地面、坡度、起步、持續、轉向與維護都可能改變需求。不能拿載重kg直接當手部N，也不能只由體重判可推多少。

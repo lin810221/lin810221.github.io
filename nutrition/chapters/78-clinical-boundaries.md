@@ -2,6 +2,17 @@
 
 辨認一般健康教育何時不足，準備能幫助專業評估的資料。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-restrictions-support.svg" target="_blank" rel="noopener" aria-label="放大：飲食限制、替代與專業合作"><img src="assets/figures/39-restrictions-support.svg" alt="同一餐可能有過敏、強化、質地及臨床限制，需求不等於單純刪除某類；示意不要求所有人採相同限制。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜飲食限制、替代與專業合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從質地、疾病與用藥中選一個情境，列出需要營養或醫療專業確認的條件，指出一般教學和個人臨床處方的界線。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/">NIH ODS：維生素D</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一般指南與治療飲食
 
 糖尿病、腎臟病、消化吸收疾病、食物過敏及其他狀況，可能需要依疾病階段、藥物和檢驗調整。一般健康群體指南不是疾病處方，不能從一個網路門檻自動得出限制量。

@@ -2,6 +2,17 @@
 
 從看似精準的數字回到資料、任務和驗證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-version-claims.svg" target="_blank" rel="noopener" aria-label="放大：版本與AI姿勢宣稱：先問證據是哪一層"><img src="assets/figures/45-version-claims.svg" alt="影像點位、測量、暴露與健康結論不同，日期也有正式修訂及入口更新之分，不用精密外觀替代驗證。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜版本與AI姿勢宣稱：先問證據是哪一層</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從影像點位到暴露、預測及因果逐層提問，列一項驗證和隱私需求；能畫關節點不代表能判誰即將受傷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先翻譯宣稱
 
 「改善姿勢90%」的分母是什麼？是某角度辨識率、使用者滿意度、模型分數還是疾病發生？未說任務、族群、比較與時間，就不能把百分比理解成健康保證。

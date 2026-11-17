@@ -2,6 +2,17 @@
 
 以事實與可能性鬆開單一推論。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-alternative-meanings.svg" target="_blank" rel="noopener" aria-label="放大：同一觀察可以有多個待查解釋"><img src="assets/figures/08-alternative-meanings.svg" alt="訊息未回覆的原創案例，分開事實和可能解釋，再保留可選行動；不強迫樂觀。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜同一觀察可以有多個待查解釋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出可觀察事實，再提出至少兩個仍需查核的解釋；重新評估不等於把不安全情境一律想成好事。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 事件與解釋
 
 同事未回非緊急訊息是觀察，「他認為我很糟」是對原因的推測。解釋可能影響情緒與行動，但不是所有不適都只是想法造成；工作制度和互動也可能真的有問題。

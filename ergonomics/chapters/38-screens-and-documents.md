@@ -2,6 +2,17 @@
 
 依任務頻率和可讀性安排，而非只追對稱。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-laptop-information.svg" target="_blank" rel="noopener" aria-label="放大：筆電綁定與多種資訊位置"><img src="assets/figures/19-laptop-information.svg" alt="左側筆電將螢幕輸入綁定，右側外接輸入可分開調整；只是配置選項，不保證任務與小空間皆適用。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜筆電綁定與多種資訊位置</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把高頻主畫面、低頻副畫面和文件加入配置，依任務頻率安排；兩台螢幕不一定要對稱，也不直接推個人頸部負荷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 哪個資訊最常看
 
 主要螢幕和偶爾參考的內容，安排可能不同。若雙螢幕同樣常用，需看視線、轉動與桌面；不是所有情境都把一台固定正中、另一台任意放側面。

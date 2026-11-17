@@ -2,7 +2,7 @@
   "slug": "exercise-science",
   "title": "運動科學與訓練原理完整教學",
   "shortTitle": "運動科學與訓練原理",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "baseline": "ACSM 2026 / WHO 2020 / Python 3.15.2",
   "footerLabel": "EXERCISE SCIENCE · MOVE, ADAPT & UNDERSTAND",
   "exampleBundle": "examples.zip",
@@ -115,7 +115,9 @@
         "運動科學的問題與證據",
         "exercise science map"
       ],
-      "example": "01_first_training_record.py"
+      "example": "01_first_training_record.py",
+      "visual": "ex01",
+      "visualTask": "先指出三個圈的交集，再各舉一個健康、能力與表現的問題；說明為何同一測試結果不能自動代表三個目標都改善。"
     },
     {
       "id": "02-goals-and-specificity",
@@ -125,7 +127,9 @@
       "tags": [
         "運動科學的問題與證據",
         "goals and specificity"
-      ]
+      ],
+      "visual": "ex01",
+      "visualTask": "替虛構的初學者與有專項目標者各選一個圈，說出兩者可重疊但訓練優先順序不同的理由，避免把競技需求推給每個人。"
     },
     {
       "id": "03-guidelines-and-editions",
@@ -136,7 +140,9 @@
         "運動科學的問題與證據",
         "guidelines and editions"
       ],
-      "example": "02_guideline_context.py"
+      "example": "02_guideline_context.py",
+      "visual": "ex02",
+      "visualTask": "沿時間線分別找到WHO2020與ACSM2026，說出發布日期和今天查核不是同一件事，並在原課文確認各自的適用族群。"
     },
     {
       "id": "04-evidence-and-causality",
@@ -146,7 +152,9 @@
       "tags": [
         "運動科學的問題與證據",
         "evidence and causality"
-      ]
+      ],
+      "visual": "ex02",
+      "visualTask": "把一則訓練研究放在時間線旁，另外標出研究族群、比較和結果；說明為何平均改善不等於每位使用者都得到同樣效果。"
     },
     {
       "id": "05-records-and-units",
@@ -157,7 +165,9 @@
         "運動科學的問題與證據",
         "records and units"
       ],
-      "example": "03_units_and_missing.py"
+      "example": "03_units_and_missing.py",
+      "visual": "ex03",
+      "visualTask": "逐列指出「明確休息」和「未記錄」的差別，再替負荷、時間、次數各寫單位；若沒有觀察到，不要為了畫完整圖而填0。"
     },
     {
       "id": "06-learning-and-screening",
@@ -167,7 +177,9 @@
       "tags": [
         "運動科學的問題與證據",
         "learning and screening"
-      ]
+      ],
+      "visual": "ex03",
+      "visualTask": "先指出表格缺少哪些身體狀況、任務與專業資訊，再說明為什麼表格填完仍不等於已完成運動前評估或取得醫療許可。"
     },
     {
       "id": "07-movement-map",
@@ -178,7 +190,9 @@
         "動作與生物力學",
         "movement map"
       ],
-      "example": "04_force_and_angle.py"
+      "example": "04_force_and_angle.py",
+      "visual": "ex04",
+      "visualTask": "先依三個切面說出分左右、前後、上下的不同，再選一個日常動作描述觀察方向；不要把圖上的平面直接當安全動作角度。"
     },
     {
       "id": "08-joints-and-tissues",
@@ -188,7 +202,9 @@
       "tags": [
         "動作與生物力學",
         "joints and tissues"
-      ]
+      ],
+      "visual": "ex04",
+      "visualTask": "用切面圖指出關節及周圍組織可能以不同方向承受需求，再列任務、時間與耐受條件，說明為何單張平面圖無法判組織負荷。"
     },
     {
       "id": "09-force-and-torque",
@@ -199,7 +215,9 @@
         "動作與生物力學",
         "force and torque"
       ],
-      "example": "05_lever_arm.py"
+      "example": "05_lever_arm.py",
+      "visual": "ex05",
+      "visualTask": "先找到支點、外力與垂直力臂，再想像把同一外力移近支點；說出改變的是哪個外部量，不把力矩變化直接當受傷機率。"
     },
     {
       "id": "10-levers-and-equilibrium",
@@ -209,7 +227,9 @@
       "tags": [
         "動作與生物力學",
         "levers and equilibrium"
-      ]
+      ],
+      "visual": "ex05",
+      "visualTask": "在槓桿圖上補一個能抵銷外力矩的假想力，說明平衡需要列出全部力與位置；一張姿勢照片不能提供這些完整條件。"
     },
     {
       "id": "11-work-and-power",
@@ -220,7 +240,9 @@
         "動作與生物力學",
         "work and power"
       ],
-      "example": "06_work_and_power.py"
+      "example": "06_work_and_power.py",
+      "visual": "ex06",
+      "visualTask": "沿圖指出外力與位移的方向，再把完成時間另列；解釋相同外功在不同時間完成為何功率不同，並區分機械功和代謝消耗。"
     },
     {
       "id": "12-motion-analysis",
@@ -230,7 +252,9 @@
       "tags": [
         "動作與生物力學",
         "motion analysis"
-      ]
+      ],
+      "visual": "ex06",
+      "visualTask": "把這張外部模型和真實動作並排，列出影像看得到的位移與看不到的外力、速度和人體模型；不要由姿勢外觀補出未知數據。"
     },
     {
       "id": "13-sarcomere-and-fibers",
@@ -241,7 +265,9 @@
         "肌肉與神經適應",
         "sarcomere and fibers"
       ],
-      "example": "07_fiber_context.py"
+      "example": "07_fiber_context.py",
+      "visual": "ex07",
+      "visualTask": "先指認兩條Z線、粗肌絲與細肌絲，再說出鈣與ATP在原課文的角色；注意滑動改變重疊，不代表肌絲本身縮短或消失。"
     },
     {
       "id": "14-contraction-types",
@@ -251,7 +277,9 @@
       "tags": [
         "肌肉與神經適應",
         "contraction types"
-      ]
+      ],
+      "visual": "ex07",
+      "visualTask": "用圖想像有張力但整體長度不變，以及出力時被拉長兩種情境；把肌絲活動和整塊肌肉的向心、等長、離心分開描述。"
     },
     {
       "id": "15-motor-units",
@@ -262,7 +290,9 @@
         "肌肉與神經適應",
         "motor units"
       ],
-      "example": "08_neural_versus_size.py"
+      "example": "08_neural_versus_size.py",
+      "visual": "ex08",
+      "visualTask": "從紫色神經元沿分支逐條追到肌纖維，再說出募集更多運動單位和增加單個動作電位高度有何不同，不以三條示意線當實際數量。"
     },
     {
       "id": "16-muscle-architecture",
@@ -272,7 +302,9 @@
       "tags": [
         "肌肉與神經適應",
         "muscle architecture"
-      ]
+      ],
+      "visual": "ex08",
+      "visualTask": "在肌纖維旁加上長度與排列的註記，說明肌肉架構與神經募集是不同層次；不能只由肌肉外形推某個角度的個人力量。"
     },
     {
       "id": "17-force-velocity",
@@ -283,7 +315,9 @@
         "肌肉與神經適應",
         "force velocity"
       ],
-      "example": "09_concentric_speed.py"
+      "example": "09_concentric_speed.py",
+      "visual": "ex09",
+      "visualTask": "分別找到力與功率兩條線，說明任務若優先快速動作，和只比最高外部負荷問的問題不同；此示意沒有可直接取用的個人數字。"
     },
     {
       "id": "18-adaptation-and-fatigue",
@@ -293,7 +327,9 @@
       "tags": [
         "肌肉與神經適應",
         "adaptation and fatigue"
-      ]
+      ],
+      "visual": "ex09",
+      "visualTask": "把一次訓練後的表現變化寫在圖外，列出疲勞、熟悉化和長期適應等不同解釋；曲線本身沒有證明變化來自哪一種機制。"
     },
     {
       "id": "19-energy-systems",
@@ -304,7 +340,9 @@
         "能量系統與心肺生理",
         "energy systems"
       ],
-      "example": "10_cardiac_output.py"
+      "example": "10_cardiac_output.py",
+      "visual": "ex10",
+      "visualTask": "在同一時間位置指向三條曲線，說明它們可以共同參與；不要把交點當所有人固定切換秒數，並補上強度與持續時間條件。"
     },
     {
       "id": "20-cardiorespiratory-system",
@@ -314,7 +352,9 @@
       "tags": [
         "能量系統與心肺生理",
         "cardiorespiratory system"
-      ]
+      ],
+      "visual": "ex10",
+      "visualTask": "在氧化路徑旁補肺、血液、心臟與組織的供應鏈，區分能量生成、氧運送及肌肉使用，避免只用呼吸快慢代表全部供能。"
     },
     {
       "id": "21-vo2-and-units",
@@ -325,7 +365,9 @@
         "能量系統與心肺生理",
         "vo2 and units"
       ],
-      "example": "11_oxygen_units.py"
+      "example": "11_oxygen_units.py",
+      "visual": "ex11",
+      "visualTask": "沿逐步測試曲線找最高觀察值，另外列測試方式和是否符合最大值判定；不要因圖線變平就替自己的穿戴估值改名VO2max。"
     },
     {
       "id": "22-thresholds-and-zones",
@@ -335,7 +377,9 @@
       "tags": [
         "能量系統與心肺生理",
         "thresholds and zones"
-      ]
+      ],
+      "visual": "ex11",
+      "visualTask": "看虛線與曲線的關係，再說出乳酸、通氣及其他區間方法需要各自量測與定義；同名區間不能憑圖上的位置直接互換。"
     },
     {
       "id": "23-met-energy",
@@ -346,7 +390,9 @@
         "能量系統與心肺生理",
         "met energy"
       ],
-      "example": "12_met_arithmetic.py"
+      "example": "12_met_arithmetic.py",
+      "visual": "ex12",
+      "visualTask": "用手指出總量中要扣除的是哪個基準，說出時間和單位必須一致；不要把MET名目估值當成手環實測或個人的精準熱量。"
     },
     {
       "id": "24-adaptation-time-course",
@@ -356,7 +402,9 @@
       "tags": [
         "能量系統與心肺生理",
         "adaptation time course"
-      ]
+      ],
+      "visual": "ex12",
+      "visualTask": "在圖旁新增訓練前後兩次條件欄，列時間、任務與供應等變因；相同帳面差額不能直接證明耐力適應或恢復已完成。"
     },
     {
       "id": "25-measurement-basics",
@@ -367,7 +415,9 @@
         "測量與適能評估",
         "measurement basics"
       ],
-      "example": "13_paired_repeatability.py"
+      "example": "13_paired_repeatability.py",
+      "visual": "ex13",
+      "visualTask": "比較兩群點的分散而非只挑最高值，再說出信度與效度不同；量具每次偏同一方向仍可能很一致，不能因此稱已排除測量誤差。"
     },
     {
       "id": "26-standardized-testing",
@@ -377,7 +427,9 @@
       "tags": [
         "測量與適能評估",
         "standardized testing"
-      ]
+      ],
+      "visual": "ex13",
+      "visualTask": "在兩次測試旁填相同的器材、暖身、時間與熟悉化條件，指出圖中未畫出的變因；前後差異只有在可比較條件下才較容易解讀。"
     },
     {
       "id": "27-strength-tests",
@@ -388,7 +440,9 @@
         "測量與適能評估",
         "strength tests"
       ],
-      "example": "14_test_conditions.py"
+      "example": "14_test_conditions.py",
+      "visual": "ex14",
+      "visualTask": "先指出完成重量與次數是觀察資料，再找估計公式需要的輸入與適用條件；估計1RM不會因為印出小數位就成為直接實測。"
     },
     {
       "id": "28-endurance-tests",
@@ -398,7 +452,9 @@
       "tags": [
         "測量與適能評估",
         "endurance tests"
-      ]
+      ],
+      "visual": "ex14",
+      "visualTask": "把實驗室測試、場地測試與穿戴估值分三欄，說明各測到或推得什麼；即使名字相近，也不可把未知方法的輸出混在同一前後比較。"
     },
     {
       "id": "29-functional-and-rom-tests",
@@ -409,7 +465,9 @@
         "測量與適能評估",
         "functional and rom tests"
       ],
-      "example": "15_change_direction.py"
+      "example": "15_change_direction.py",
+      "visual": "ex15",
+      "visualTask": "先替「完成時間」與「可用活動範圍」各寫改善方向，再看這條任意曲線；上升不一定都代表進步，必須保留原測試定義與條件。"
     },
     {
       "id": "30-baseline-and-decisions",
@@ -419,7 +477,9 @@
       "tags": [
         "測量與適能評估",
         "baseline and decisions"
-      ]
+      ],
+      "visual": "ex15",
+      "visualTask": "圈出未知段，說明可用資料的趨勢和完整趨勢不是同一結論；建立基線還需重複觀察、方法與是否可比較，不能直接補上理想值。"
     },
     {
       "id": "31-resistance-variables",
@@ -430,7 +490,9 @@
         "阻力訓練的基本工程",
         "resistance variables"
       ],
-      "example": "16_relative_load.py"
+      "example": "16_relative_load.py",
+      "visual": "ex16",
+      "visualTask": "沿第一排逐一指出負荷、組次與努力程度，說出它們不能互相代替；相同重量也可能因個人能力與任務而有不同內在要求。"
     },
     {
       "id": "32-exercise-selection",
@@ -440,7 +502,9 @@
       "tags": [
         "阻力訓練的基本工程",
         "exercise selection"
-      ]
+      ],
+      "visual": "ex16",
+      "visualTask": "沿第二排為虛構目標挑一種可行模式，再列器材、技能和支持限制；不要只因名稱熱門就假設它對所有目標肌群都同樣合適。"
     },
     {
       "id": "33-technique-and-instruction",
@@ -451,7 +515,9 @@
         "阻力訓練的基本工程",
         "technique and instruction"
       ],
-      "example": "17_exercise_identity.py"
+      "example": "17_exercise_identity.py",
+      "visual": "ex17",
+      "visualTask": "先描述圖中髖、膝與軀幹相對位置，不使用「看起來錯」代替觀察；再列影像沒有提供的負荷、速度和個人條件，避免直接診斷。"
     },
     {
       "id": "34-warmup-and-order",
@@ -461,7 +527,9 @@
       "tags": [
         "阻力訓練的基本工程",
         "warmup and order"
-      ]
+      ],
+      "visual": "ex17",
+      "visualTask": "以這兩種模式當假想課程內容，列出熟悉化、暖身、順序與保護條件；圖只給構造關係，不代表任何讀者可以直接開始相同負荷。"
     },
     {
       "id": "35-sets-rest-and-volume",
@@ -472,7 +540,9 @@
         "阻力訓練的基本工程",
         "sets rest and volume"
       ],
-      "example": "18_volume_load.py"
+      "example": "18_volume_load.py",
+      "visual": "ex18",
+      "visualTask": "在上排指出工作組和休息不能都算成同一種工作量，再說明次數、負荷與努力條件仍未顯示；總時鐘不是完整的肌群劑量。"
     },
     {
       "id": "36-resistance-session",
@@ -482,7 +552,9 @@
       "tags": [
         "阻力訓練的基本工程",
         "resistance session"
-      ]
+      ],
+      "visual": "ex18",
+      "visualTask": "逐項把計畫轉成已完成、未完成與未知，另寫實際任務；只有寫在課表上的組不能自動當完成，未記錄也不能當明確休息。"
     },
     {
       "id": "37-hypertrophy-mechanisms",
@@ -493,7 +565,9 @@
         "肌肥大與訓練劑量",
         "hypertrophy mechanisms"
       ],
-      "example": "19_direct_sets.py"
+      "example": "19_direct_sets.py",
+      "visual": "ex19",
+      "visualTask": "先指出兩個截面只是概念比較，再列長期組織增長、短期水分與量測差異三種解釋；不能把運動後圍度增加直接當肌肥大。"
     },
     {
       "id": "38-weekly-sets",
@@ -503,7 +577,9 @@
       "tags": [
         "肌肥大與訓練劑量",
         "weekly sets"
-      ]
+      ],
+      "visual": "ex19",
+      "visualTask": "在截面圖外補上每週直接組、可恢復性與觀察期間，說出為何增加組數不代表每人都同幅增長，也不能把示意面積當劑量曲線。"
     },
     {
       "id": "39-frequency-and-distribution",
@@ -514,7 +590,9 @@
         "肌肥大與訓練劑量",
         "frequency and distribution"
       ],
-      "example": "20_frequency_volume.py"
+      "example": "20_frequency_volume.py",
+      "visual": "ex20",
+      "visualTask": "數出兩排安排的頻率，再指出圖沒有提供每次組數；要說等週量必須先補齊同肌群的直接組、動作及其他比較條件。"
     },
     {
       "id": "40-load-and-repetition-range",
@@ -524,7 +602,9 @@
       "tags": [
         "肌肥大與訓練劑量",
         "load and repetition range"
-      ]
+      ],
+      "visual": "ex20",
+      "visualTask": "在每個工作格旁另註負荷、次數與努力，不要把較多工作日自動翻成較高有效努力；同一排法可有不同實際訓練內容。"
     },
     {
       "id": "41-failure-rir-rpe",
@@ -535,7 +615,9 @@
         "肌肥大與訓練劑量",
         "failure rir rpe"
       ],
-      "example": "21_rir_scale.py"
+      "example": "21_rir_scale.py",
+      "visual": "ex21",
+      "visualTask": "先各用一句話說上排和下排在問什麼，再指出為何必須說清使用的是哪種RPE；不能把兩把無單位刻度硬對齊成換算表。"
     },
     {
       "id": "42-hypertrophy-plan-review",
@@ -545,7 +627,9 @@
       "tags": [
         "肌肥大與訓練劑量",
         "hypertrophy plan review"
-      ]
+      ],
+      "visual": "ex21",
+      "visualTask": "把量表估計與完成組次、進步、生活負擔並列，說明回顧計畫不能只追逐更高努力感；圖上沒有保證肌肥大或傷害的門檻。"
     },
     {
       "id": "43-maximal-strength",
@@ -556,7 +640,9 @@
         "肌力、功率與速度",
         "maximal strength"
       ],
-      "example": "22_estimated_one_rm.py"
+      "example": "22_estimated_one_rm.py",
+      "visual": "ex22",
+      "visualTask": "分別說出最大肌力測試與快速完成指定任務要觀察什麼，再指出圖沒有個人能力、技巧與方法；不能由曲線位置自動估出1RM。"
     },
     {
       "id": "44-power-training",
@@ -566,7 +652,9 @@
       "tags": [
         "肌力、功率與速度",
         "power training"
-      ]
+      ],
+      "visual": "ex22",
+      "visualTask": "在圖上選一個假想任務比較力和速度需求，而不是選一個通用最佳重量；功率訓練仍須合適阻力、技術、條件和監督。"
     },
     {
       "id": "45-impulse-and-jump",
@@ -577,7 +665,9 @@
         "肌力、功率與速度",
         "impulse and jump"
       ],
-      "example": "23_impulse.py"
+      "example": "23_impulse.py",
+      "visual": "ex23",
+      "visualTask": "沿曲線指出峰值與面積是不同訊息，說明施力持續時間也重要；圖沒有完整人體條件，不能直接由陰影推跳躍高度。"
     },
     {
       "id": "46-plyometrics",
@@ -587,7 +677,9 @@
       "tags": [
         "肌力、功率與速度",
         "plyometrics"
-      ]
+      ],
+      "visual": "ex23",
+      "visualTask": "把接觸、離地和再接觸另標在時間軸上，再列場地、技術與進階條件；不把較高峰值或更多接觸次數一律當更好或更安全。"
     },
     {
       "id": "47-speed-agility",
@@ -598,7 +690,9 @@
         "肌力、功率與速度",
         "speed agility"
       ],
-      "example": "24_speed_and_pace.py"
+      "example": "24_speed_and_pace.py",
+      "visual": "ex24",
+      "visualTask": "先指出預定路線和看到線索後選路的差別，再說明加速、轉向和決策不是同一測試；不要把走完某條線就稱所有敏捷能力相同。"
     },
     {
       "id": "48-power-strength-integration",
@@ -608,7 +702,9 @@
       "tags": [
         "肌力、功率與速度",
         "power strength integration"
-      ]
+      ],
+      "visual": "ex24",
+      "visualTask": "以兩條路線分別寫力量、速度與反應的目標，選與目標一致的觀察；圖沒有提供優先順序的通用答案，更不是立即跟跑的指令。"
     },
     {
       "id": "49-endurance-map",
@@ -619,7 +715,9 @@
         "有氧與耐力訓練",
         "endurance map"
       ],
-      "example": "25_running_pace.py"
+      "example": "25_running_pace.py",
+      "visual": "ex25",
+      "visualTask": "先指出有無恢復段，再說出圖中沒有給出的強度、模式與任務；不能只看交替色塊就認定是HIIT，也不能只看連續色塊判中等。"
     },
     {
       "id": "50-intensity-language",
@@ -629,7 +727,9 @@
       "tags": [
         "有氧與耐力訓練",
         "intensity language"
-      ]
+      ],
+      "visual": "ex25",
+      "visualTask": "為同一個工作格另寫談話測試或指定RPE語言，說明相同分鐘可能具有不同內在要求；圖未給通用個人心率區或強度許可。"
     },
     {
       "id": "51-heart-rate-reserve",
@@ -640,7 +740,9 @@
         "有氧與耐力訓練",
         "heart rate reserve"
       ],
-      "example": "26_heart_rate_reserve.py"
+      "example": "26_heart_rate_reserve.py",
+      "visual": "ex26",
+      "visualTask": "先找到靜息與最大值的來源，說出HRmax百分比和HRR百分比的分母不同；若最大值只是公式估計，不能把它改稱實測。"
     },
     {
       "id": "52-continuous-and-base",
@@ -650,7 +752,9 @@
       "tags": [
         "有氧與耐力訓練",
         "continuous and base"
-      ]
+      ],
+      "visual": "ex26",
+      "visualTask": "把日常活動另畫在時間軸，註明模式、強度語言和完成時間；沒有高心率並不表示所有日常活動都沒有價值，也不能只靠心率分類。"
     },
     {
       "id": "53-intervals-and-hiit",
@@ -661,7 +765,9 @@
         "有氧與耐力訓練",
         "intervals and hiit"
       ],
-      "example": "27_interval_clock.py"
+      "example": "27_interval_clock.py",
+      "visual": "ex27",
+      "visualTask": "沿上排分別加總工作和恢復，再說出總時鐘能回答與不能回答什麼；恢復時心率仍高不等於整段都能算指定費力活動。"
     },
     {
       "id": "54-endurance-plan-review",
@@ -671,7 +777,9 @@
       "tags": [
         "有氧與耐力訓練",
         "endurance plan review"
-      ]
+      ],
+      "visual": "ex27",
+      "visualTask": "用下排核對計畫、實際完成及未知，另列品質、恢復與生活時間；週量數字相同，也不保證內容和可持續性完全相同。"
     },
     {
       "id": "55-fitt-and-goals",
@@ -682,7 +790,9 @@
         "課表設計與漸進",
         "fitt and goals"
       ],
-      "example": "28_fitt_record.py"
+      "example": "28_fitt_record.py",
+      "visual": "ex28",
+      "visualTask": "先用一句話寫中心目標，再指出四個外圈各提供什麼資訊；只寫每週幾次而沒有模式與強度，仍不足以描述一份可理解的計畫。"
     },
     {
       "id": "56-progressive-overload",
@@ -692,7 +802,9 @@
       "tags": [
         "課表設計與漸進",
         "progressive overload"
-      ]
+      ],
+      "visual": "ex28",
+      "visualTask": "挑一個外圈改變，再說明其他條件如何需要重新核對；漸進可透過不同維度，不把每次加重當唯一規則或所有人的固定步幅。"
     },
     {
       "id": "57-autoregulation",
@@ -703,7 +815,9 @@
         "課表設計與漸進",
         "autoregulation"
       ],
-      "example": "29_progression_observation.py"
+      "example": "29_progression_observation.py",
+      "visual": "ex29",
+      "visualTask": "指出階梯中的平台與進展，再列原課文自我調節需要的完成情況、努力及條件；平台不是自動證明失敗，也不是每次都必須調高。"
     },
     {
       "id": "58-weekly-scheduling",
@@ -713,7 +827,9 @@
       "tags": [
         "課表設計與漸進",
         "weekly scheduling"
-      ]
+      ],
+      "visual": "ex29",
+      "visualTask": "把一週可用時間標在階梯之外，說明優先目標、其他課程和恢復如何限制安排；不能只把每個單項建議直接塞滿整個星期。"
     },
     {
       "id": "59-periodization",
@@ -724,7 +840,9 @@
         "課表設計與漸進",
         "periodization"
       ],
-      "example": "30_periodization_example.py"
+      "example": "30_periodization_example.py",
+      "visual": "ex30",
+      "visualTask": "沿區塊找優先與維持的角色，另列回顧時要看的表現、疲勞與生活條件；不把區塊的顏色當每人必須照做的週期。"
     },
     {
       "id": "60-program-review",
@@ -734,7 +852,9 @@
       "tags": [
         "課表設計與漸進",
         "program review"
-      ]
+      ],
+      "visual": "ex30",
+      "visualTask": "在每個回顧格寫目標、劑量、可行性與回饋四個問題，確認課表仍回答原任務；有複雜名稱不等於比簡單可持續計畫更合適。"
     },
     {
       "id": "61-concurrent-evidence",
@@ -745,7 +865,9 @@
         "混合訓練與運動專項",
         "concurrent evidence"
       ],
-      "example": "31_concurrent_schedule.py"
+      "example": "31_concurrent_schedule.py",
+      "visual": "ex31",
+      "visualTask": "先確認兩排除了順序外還缺少哪些比較條件，再說出並行效果不能只憑兩種運動同週出現就判互相抵銷；結果需對準目標。"
     },
     {
       "id": "62-sequence-and-spacing",
@@ -755,7 +877,9 @@
       "tags": [
         "混合訓練與運動專項",
         "sequence and spacing"
-      ]
+      ],
+      "visual": "ex31",
+      "visualTask": "替一個虛構優先目標挑選要先觀察的品質，再討論順序和間隔；圖沒有給所有人相同的排法，也沒有承諾任意間隔能消除干擾。"
     },
     {
       "id": "63-circuit-structure",
@@ -766,7 +890,9 @@
         "混合訓練與運動專項",
         "circuit structure"
       ],
-      "example": "32_circuit_clock.py"
+      "example": "32_circuit_clock.py",
+      "visual": "ex32",
+      "visualTask": "沿每個站分工作與換站，寫負荷、動作與努力條件；即使總分鐘相同，也不能宣稱已得到相同有氧或阻力訓練劑量。"
     },
     {
       "id": "64-team-and-repeated-efforts",
@@ -776,7 +902,9 @@
       "tags": [
         "混合訓練與運動專項",
         "team and repeated efforts"
-      ]
+      ],
+      "visual": "ex32",
+      "visualTask": "把專項比賽的回合與技能需求標在下排，再列圖未表示的決策、對手及動作；不把一組任意間歇自動當成專項體能等效。"
     },
     {
       "id": "65-skill-transfer",
@@ -787,7 +915,9 @@
         "混合訓練與運動專項",
         "skill transfer"
       ],
-      "example": "33_specificity_map.py"
+      "example": "33_specificity_map.py",
+      "visual": "ex33",
+      "visualTask": "在兩個圈各寫實際任務和共同需求，再指出至少一項不同之處；箭頭是需要觀察的遷移，不是只要訓練變強就保證專項表現改進。"
     },
     {
       "id": "66-mixed-program-case",
@@ -797,7 +927,9 @@
       "tags": [
         "混合訓練與運動專項",
         "mixed program case"
-      ]
+      ],
+      "visual": "ex33",
+      "visualTask": "替時間有限的虛構角色把最優先目標放右圈，刪去無法支持該問題的安排，並保留回顧；不要把兩份完整課表簡單相加當混合計畫。"
     },
     {
       "id": "67-mobility-and-flexibility",
@@ -808,7 +940,9 @@
         "活動度、平衡與技能",
         "mobility and flexibility"
       ],
-      "example": "34_rom_record.py"
+      "example": "34_rom_record.py",
+      "visual": "ex34",
+      "visualTask": "先找相同參考點再比較兩個位置，列主動、被動、量具與時點；不要把不同量法的角度放在一起，或把弧線端點當個人安全限制。"
     },
     {
       "id": "68-stretching-methods",
@@ -818,7 +952,9 @@
       "tags": [
         "活動度、平衡與技能",
         "stretching methods"
-      ]
+      ],
+      "visual": "ex34",
+      "visualTask": "在位置圖旁分別寫靜態與動態方法的時間特徵，再回到任務目的；圖只解釋位置比較，不要求讀者把身體拉到某個終點。"
     },
     {
       "id": "69-balance-and-stability",
@@ -829,7 +965,9 @@
         "活動度、平衡與技能",
         "balance and stability"
       ],
-      "example": "35_balance_repeatability.py"
+      "example": "35_balance_repeatability.py",
+      "visual": "ex35",
+      "visualTask": "先指出支持面，再列視覺、前庭與本體感覺的線索，說明平衡是多系統整合；不用閉眼或單腳挑戰來替圖中的箭頭證明。"
     },
     {
       "id": "70-core-and-control",
@@ -839,7 +977,9 @@
       "tags": [
         "活動度、平衡與技能",
         "core and control"
-      ]
+      ],
+      "visual": "ex35",
+      "visualTask": "在圖上補出軀幹與四肢共同影響任務的關係，說明穩定不是把身體全部鎖死，也不能由一條肌肉或一個姿勢直接判控制能力。"
     },
     {
       "id": "71-motor-learning",
@@ -850,7 +990,9 @@
         "活動度、平衡與技能",
         "motor learning"
       ],
-      "example": "36_skill_learning.py"
+      "example": "36_skill_learning.py",
+      "visual": "ex36",
+      "visualTask": "先分練習期和隔一段時間再測，說出為何即時回饋下做得好不等於保留已成立；圖中的斷開不是可以補成最佳表現的空白。"
     },
     {
       "id": "72-movement-integration",
@@ -860,7 +1002,9 @@
       "tags": [
         "活動度、平衡與技能",
         "movement integration"
-      ]
+      ],
+      "visual": "ex36",
+      "visualTask": "替再測區分活動度、力量與技能各寫一項觀察，說明多種能力如何接到任務；不能因其中一項改善就宣稱全部功能都已同步改進。"
     },
     {
       "id": "73-internal-external-load",
@@ -871,7 +1015,9 @@
         "紀錄、疲勞與恢復",
         "internal external load"
       ],
-      "example": "37_session_load.py"
+      "example": "37_session_load.py",
+      "visual": "ex37",
+      "visualTask": "把同一堂虛構課的外部時間與指定session-RPE放不同欄，再說出相乘僅是所述摘要；它不是精確生理劑量，也不能換成其他RPE量表。"
     },
     {
       "id": "74-daily-weekly-records",
@@ -881,7 +1027,9 @@
       "tags": [
         "紀錄、疲勞與恢復",
         "daily weekly records"
-      ]
+      ],
+      "visual": "ex37",
+      "visualTask": "沿兩欄逐日標完成、明確休息與缺漏，說明可用週小計和完整週總量不同；反應未填不能自動當零，也不把計畫當實際完成。"
     },
     {
       "id": "75-recovery-and-doms",
@@ -892,7 +1040,9 @@
         "紀錄、疲勞與恢復",
         "recovery and doms"
       ],
-      "example": "38_rolling_missing.py"
+      "example": "38_rolling_missing.py",
+      "visual": "ex38",
+      "visualTask": "先分DOMS感覺、當下表現與組織適應三個問題，再沿圖列生活條件；沒有酸痛不代表沒有訓練效果，有酸痛也不證明有效增長。"
     },
     {
       "id": "76-sleep-and-support",
@@ -902,7 +1052,9 @@
       "tags": [
         "紀錄、疲勞與恢復",
         "sleep and support"
-      ]
+      ],
+      "visual": "ex38",
+      "visualTask": "替睡眠、工作壓力和支持各寫可觀察資訊，將未知保留；圖提供討論架構，不能用一晚數字自動推完整恢復或開新訓練劑量。"
     },
     {
       "id": "77-acwr-and-models",
@@ -913,7 +1065,9 @@
         "紀錄、疲勞與恢復",
         "acwr and models"
       ],
-      "example": "39_acwr_limit.py"
+      "example": "39_acwr_limit.py",
+      "visual": "ex39",
+      "visualTask": "逐條說出曲線由假設產生，不是模型直接量到了身體狀態；ACWR或fitness-fatigue摘要不自動提供個人傷害機率和安全區間。"
     },
     {
       "id": "78-monitoring-decisions",
@@ -923,7 +1077,9 @@
       "tags": [
         "紀錄、疲勞與恢復",
         "monitoring decisions"
-      ]
+      ],
+      "visual": "ex39",
+      "visualTask": "在採取調整前先列缺漏、任務改變、量法和其他可能原因，再決定需要補哪些觀察；不能因模型有上升下降便自動給出最佳課表。"
     },
     {
       "id": "79-population-guidelines",
@@ -934,7 +1090,9 @@
         "生命階段與可及性",
         "population guidelines"
       ],
-      "example": "40_population_scope.py"
+      "example": "40_population_scope.py",
+      "visual": "ex40",
+      "visualTask": "先找到四張脈絡卡，再回課文區分WHO不同族群建議；不能把成人分鐘、阻力目標與其他生命階段直接混成同一個通用門檻。"
     },
     {
       "id": "80-beginners-and-return",
@@ -944,7 +1102,9 @@
       "tags": [
         "生命階段與可及性",
         "beginners and return"
-      ]
+      ],
+      "visual": "ex40",
+      "visualTask": "為一位中斷後回復的虛構角色填經驗、功能與支持，列哪些仍未知；不因曾經完成某負荷就假設現在可立刻回到相同需求。"
     },
     {
       "id": "81-children-and-older",
@@ -955,7 +1115,9 @@
         "生命階段與可及性",
         "children and older"
       ],
-      "example": "41_age_context.py"
+      "example": "41_age_context.py",
+      "visual": "ex41",
+      "visualTask": "比較圖中的尺寸與生活需求，另外列發展、功能及監督；兒少不是縮小成人，年齡相同也不代表活動能力和支持條件完全相同。"
     },
     {
       "id": "82-pregnancy-postpartum",
@@ -965,7 +1127,9 @@
       "tags": [
         "生命階段與可及性",
         "pregnancy postpartum"
-      ]
+      ],
+      "visual": "ex41",
+      "visualTask": "把孕期與產後情境放在圖外另開條件欄，說出期間、症狀與專業資訊不能省略；一般活動方向不是任何個人都能直接照做的處方。"
     },
     {
       "id": "83-disability-and-access",
@@ -976,7 +1140,9 @@
         "生命階段與可及性",
         "disability and access"
       ],
-      "example": "42_accessible_record.py"
+      "example": "42_accessible_record.py",
+      "visual": "ex42",
+      "visualTask": "從入口追到任務，逐項找設備、動線、資訊與協助可能阻擋的地方；不要以一個障礙名稱推定所有使用者有相同能力或需求。"
     },
     {
       "id": "84-chronic-conditions",
@@ -986,7 +1152,9 @@
       "tags": [
         "生命階段與可及性",
         "chronic conditions"
-      ]
+      ],
+      "visual": "ex42",
+      "visualTask": "在參與任務旁補病況、藥物、個人目標和專業協作欄，說明一般課程資料不足以開疾病運動處方；保留當事人需求和未知資訊。"
     },
     {
       "id": "85-screening-and-signals",
@@ -997,7 +1165,9 @@
         "風險、環境與支持條件",
         "screening and signals"
       ],
-      "example": "43_screening_information.py"
+      "example": "43_screening_information.py",
+      "visual": "ex43",
+      "visualTask": "先逐卡列目前已知與未知，說明為何缺少警訊資料不能當作沒有警訊；這張圖不能取代正式運動前評估或替讀者發綠燈。"
     },
     {
       "id": "86-pain-and-load",
@@ -1007,7 +1177,9 @@
       "tags": [
         "風險、環境與支持條件",
         "pain and load"
-      ]
+      ],
+      "visual": "ex43",
+      "visualTask": "把疼痛感受、功能與任務分開描述，再說明單一角度或分數不能定位全部病因；尊重感受，同時保留必要評估與其他可能解釋。"
     },
     {
       "id": "87-heat-air-and-environment",
@@ -1018,7 +1190,9 @@
         "風險、環境與支持條件",
         "heat air and environment"
       ],
-      "example": "44_environment_context.py"
+      "example": "44_environment_context.py",
+      "visual": "ex44",
+      "visualTask": "沿產熱到散熱找出環境會影響的環節，另列濕度、空氣品質和場地資料；流汗不是已充分降溫的保證，也不能把圖當戶外許可。"
     },
     {
       "id": "88-hydration-and-support",
@@ -1028,7 +1202,9 @@
       "tags": [
         "風險、環境與支持條件",
         "hydration and support"
-      ]
+      ],
+      "visual": "ex44",
+      "visualTask": "在汗液蒸發旁另寫水鹽流失與實際任務條件，並把裝備、供應和支援分開；圖不提供個人喝水量，也不以衣服濕度算補水劑量。"
     },
     {
       "id": "89-nutrition-and-supplements",
@@ -1039,7 +1215,9 @@
         "風險、環境與支持條件",
         "nutrition and supplements"
       ],
-      "example": "45_recovery_nutrition.py"
+      "example": "45_recovery_nutrition.py",
+      "visual": "ex45",
+      "visualTask": "沿供應與需求那條線列原課文的時間、活動和飲食條件，再將補充品主張放到證據欄；知道生理機制不表示每個產品都有效。"
     },
     {
       "id": "90-sustainable-participation",
@@ -1049,7 +1227,9 @@
       "tags": [
         "風險、環境與支持條件",
         "sustainable participation"
-      ]
+      ],
+      "visual": "ex45",
+      "visualTask": "從生活安排與支持兩側提出可調整問題，讓持續參與不只剩意志力；圖中的箭頭不是員工或運動者的健康排名與責任歸咎。"
     },
     {
       "id": "91-evidence-case",
@@ -1060,7 +1240,9 @@
         "整合案例與完整專題",
         "evidence case"
       ],
-      "example": "46_evidence_audit.py"
+      "example": "46_evidence_audit.py",
+      "visual": "ex46",
+      "visualTask": "把一則虛構訓練建議放在前三格，圈出族群、比較與結果；不要因引用了肌肉機制或指南名稱就認定該建議已對準每個人的需求。"
     },
     {
       "id": "92-program-case",
@@ -1070,7 +1252,9 @@
       "tags": [
         "整合案例與完整專題",
         "program case"
-      ]
+      ],
+      "visual": "ex46",
+      "visualTask": "沿後三格比對兩份課表的動作、負荷、工作恢復與完成條件；名稱或總分鐘相同，不足以證明劑量和結果相同，未知項要留下。"
     },
     {
       "id": "93-data-report-case",
@@ -1081,7 +1265,9 @@
         "整合案例與完整專題",
         "data report case"
       ],
-      "example": "47_report_preview.py"
+      "example": "47_report_preview.py",
+      "visual": "ex47",
+      "visualTask": "從左欄逐項追到中欄的分母，指出四週虛構紀錄有哪裡缺漏；已知小計不能改叫完整總量，報告圖也不能宣稱個人健康結果。"
     },
     {
       "id": "94-troubleshooting",
@@ -1091,7 +1277,9 @@
       "tags": [
         "整合案例與完整專題",
         "troubleshooting"
-      ]
+      ],
+      "visual": "ex47",
+      "visualTask": "遇到合理卻可疑的數字，依次查原始單位、定義、來源和算術；圖中的流程沒有讓錯誤資料自動變真，也不能用漂亮圖表補完未知。"
     },
     {
       "id": "95-complete-project",
@@ -1102,7 +1290,9 @@
         "整合案例與完整專題",
         "complete project"
       ],
-      "example": "48_complete_project.py"
+      "example": "48_complete_project.py",
+      "visual": "ex48",
+      "visualTask": "沿四張卡把一份虛構訓練資料專題的問題、資料、算術與限制串起來；能重跑只支持交付一致，不等於得到了個人最佳課表。"
     },
     {
       "id": "96-exercises-and-references",
@@ -1112,7 +1302,995 @@
       "tags": [
         "整合案例與完整專題",
         "exercises and references"
-      ]
+      ],
+      "visual": "ex48",
+      "visualTask": "選前三章與後三章各一個主題放入四張卡，口述它們的共同單位、條件和未解問題；綜合答案應能分清模型、觀察及專業分工。"
     }
+  ],
+  "contentBaselineDate": "2026-11-09",
+  "visualUpdated": "2026-11-16",
+  "visuals": [
+    {
+      "id": "ex01",
+      "file": "assets/figures/01-goals.svg",
+      "title": "健康、能力與表現的交集",
+      "description": "三個重疊區表示健康、能力、表現可相關但不能完全互換；沒有把圓面積當實測效果。",
+      "group": "foundations",
+      "kind": "關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex02",
+      "file": "assets/figures/02-evidence-dates.svg",
+      "title": "指南日期與證據範圍",
+      "description": "時間線標正式指南發布年份，查核日不把舊指南改名；不同來源回答不同族群與任務問題。",
+      "group": "foundations",
+      "kind": "時間圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex03",
+      "file": "assets/figures/03-record-status.svg",
+      "title": "完成、休息與未知分三種",
+      "description": "原創紀錄表將已完成、明確休息與未記錄分開，未記錄不等於零；沒有把資料整理當運動許可。",
+      "group": "foundations",
+      "kind": "紀錄圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex04",
+      "file": "assets/figures/04-planes.svg",
+      "title": "動作平面與解剖方向",
+      "description": "三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。",
+      "group": "mechanics",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/61-planes.svg",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "ex05",
+      "file": "assets/figures/05-moment-arm.svg",
+      "title": "力、支點與垂直力臂",
+      "description": "外力作用點到轉軸的幾何及垂直距離決定簡化力矩；此圖不計個人關節、肌肉或肌腱內力。",
+      "group": "mechanics",
+      "kind": "力學圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex06",
+      "file": "assets/figures/06-work-power.svg",
+      "title": "位移、外功與時間",
+      "description": "兩個箱子位置示意外力沿位移作功，完成相同外功所需時間影響平均外功率；不估人體代謝效率。",
+      "group": "mechanics",
+      "kind": "力學圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex07",
+      "file": "assets/figures/07-sarcomere.svg",
+      "title": "肌節、滑動與收縮情境",
+      "description": "Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊，不是肌絲消失或自身縮短。",
+      "group": "muscle",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/20-sarcomere.svg",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "ex08",
+      "file": "assets/figures/08-motor-unit.svg",
+      "title": "神經元到多個肌纖維",
+      "description": "一個運動神經元分支支配多個肌纖維，構成運動單位；圖中數量為示意，不是實際肌肉的固定纖維數。",
+      "group": "muscle",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex09",
+      "file": "assets/figures/09-force-velocity.svg",
+      "title": "力量、速度與輸出的關係",
+      "description": "兩條任意形狀曲線區分力與功率概念，不具實測刻度或個人適用參數，也不把疲勞簡化為單一曲線。",
+      "group": "muscle",
+      "kind": "關係曲線",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex10",
+      "file": "assets/figures/10-energy-overlap.svg",
+      "title": "三種供能路徑重疊參與",
+      "description": "三條曲線只表共同參與及相對角色可改變，不是各路徑的實測百分比，沒有固定秒數切換線。",
+      "group": "physiology",
+      "kind": "重疊曲線",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        },
+        {
+          "title": "NHLBI：呼吸及氣體交換",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits"
+        },
+        {
+          "title": "NHLBI：心臟血流",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex11",
+      "file": "assets/figures/11-vo2-threshold.svg",
+      "title": "氧攝取曲線與方法條件",
+      "description": "假想逐步測試曲線示意觀察VO2peak或VO2max所需方法背景，虛線不代表實測個人閾值或訓練區。",
+      "group": "physiology",
+      "kind": "測試示意",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NHLBI：呼吸及氣體交換",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits"
+        },
+        {
+          "title": "NHLBI：心臟血流",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex12",
+      "file": "assets/figures/12-gross-net.svg",
+      "title": "總支出、基準與淨量",
+      "description": "以三塊示意區分gross總支出、基準及net差額，圖塊面積不是實際比例；估值依基準和任務而變。",
+      "group": "physiology",
+      "kind": "量的分解圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "NHLBI：呼吸及氣體交換",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex13",
+      "file": "assets/figures/13-repeated-measurement.svg",
+      "title": "重複量測：集中、誤差與標準化",
+      "description": "兩群虛構點呈現測量分散程度，集中不等於量到正確概念；位置無實際量測單位或臨床判定線。",
+      "group": "assessment",
+      "kind": "散點示意",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex14",
+      "file": "assets/figures/14-measured-estimated.svg",
+      "title": "實測、估計與結果來源",
+      "description": "左為完成任務的觀察，右為公式或裝置估計；框內曲線只是模型符號，不表示裝置已量得同一生理量。",
+      "group": "assessment",
+      "kind": "資料來源圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NHLBI：呼吸及氣體交換",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex15",
+      "file": "assets/figures/15-baseline-change.svg",
+      "title": "基線、方向與未知觀察",
+      "description": "時間線含一段缺漏並以虛線提示連接是假想，不當作實測；數值升降需依測試方向解讀。",
+      "group": "assessment",
+      "kind": "紀錄曲線",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex16",
+      "file": "assets/figures/16-resistance-variables.svg",
+      "title": "阻力訓練的不同維度",
+      "description": "兩排卡帶分開外部阻力、次數組數、努力與動作選擇；長度只是版面安排，不代表等效劑量。",
+      "group": "resistance",
+      "kind": "變數圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex17",
+      "file": "assets/figures/17-movement-patterns.svg",
+      "title": "蹲與髖主導：先描述可觀察差異",
+      "description": "兩個簡化人形比較動作模式，沒有精密角度、外力及個人安全判定；不是跟做指令。",
+      "group": "resistance",
+      "kind": "動作模式圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex18",
+      "file": "assets/figures/18-sets-rest.svg",
+      "title": "組、休息與實際完成的時鐘",
+      "description": "訓練時鐘分暖身、工作組、休息及紀錄；計畫、完成與未知分開，區塊長度為版面示意。",
+      "group": "resistance",
+      "kind": "時鐘圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex19",
+      "file": "assets/figures/19-hypertrophy-measure.svg",
+      "title": "組織截面與短期表現分開",
+      "description": "兩個不同大小的假想截面表示測量問題，不是某項訓練造成的實測增長或個人效果百分比。",
+      "group": "hypertrophy",
+      "kind": "組織比較圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex20",
+      "file": "assets/figures/20-weekly-distribution.svg",
+      "title": "週頻率與總量是兩個問題",
+      "description": "兩排虛構日曆顯示頻率可不同，但未提供每次組數與負荷，不能直接宣稱週總量相等。",
+      "group": "hypertrophy",
+      "kind": "週曆圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex21",
+      "file": "assets/figures/21-effort-scales.svg",
+      "title": "RIR、RPE與計畫回顧",
+      "description": "兩條沒有數字的不同量尺強調方法需先定義，不表示任意RIR和RPE點位可以直接互換。",
+      "group": "hypertrophy",
+      "kind": "量尺比較圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex22",
+      "file": "assets/figures/22-strength-power.svg",
+      "title": "最大肌力與快速施力的任務差異",
+      "description": "任意曲線提示力、速度與功率有不同問題定義，沒有固定通用最佳負荷或個人1RM推定值。",
+      "group": "strengthpower",
+      "kind": "任務關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex23",
+      "file": "assets/figures/23-impulse.svg",
+      "title": "力—時間曲線與衝量",
+      "description": "任意力時間圖以陰影示意同一方向的積分概念，不是測力板資料，未計完整人體運動或落地條件。",
+      "group": "strengthpower",
+      "kind": "力時間圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex24",
+      "file": "assets/figures/24-agility-route.svg",
+      "title": "預定變向與反應式敏捷",
+      "description": "兩條示意路線區分預先知道方向與看線索後反應，不表示指定跑法、速度或個人可安全完成。",
+      "group": "strengthpower",
+      "kind": "路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex25",
+      "file": "assets/figures/25-endurance-modes.svg",
+      "title": "持續與間歇：方式和強度分開",
+      "description": "兩排虛構時鐘區分持續與交替安排，區塊長度不表示健康效益或實際生理劑量等效。",
+      "group": "endurance",
+      "kind": "時鐘圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "NHLBI：呼吸及氣體交換",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex26",
+      "file": "assets/figures/26-heart-rate-context.svg",
+      "title": "心率分母、保留量與觀察",
+      "description": "平行線示意靜息與最大心率背景，未提供數字或個人區間；保留量不是任何方法下相同的百分比。",
+      "group": "endurance",
+      "kind": "量測關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "NHLBI：心臟血流",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex27",
+      "file": "assets/figures/27-interval-review.svg",
+      "title": "間歇總時鐘與整週核對",
+      "description": "上排分工作恢復，下排分計畫完成未知；圖只整理時序，未將所有段落自動歸為同一強度。",
+      "group": "endurance",
+      "kind": "時鐘與紀錄圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex28",
+      "file": "assets/figures/28-fitt.svg",
+      "title": "FITT連接目標，而非四個孤立數字",
+      "description": "中心目標與頻率、強度、時間、模式相連，線代表規劃關係，不表示生理因果係數或個人課表。",
+      "group": "programming",
+      "kind": "規劃關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex29",
+      "file": "assets/figures/29-progress-review.svg",
+      "title": "雙重漸進與回顧節點",
+      "description": "假想階梯含維持平台及回顧節點，沒有給固定個人加重規則；變化需可比較觀察。",
+      "group": "programming",
+      "kind": "進度圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex30",
+      "file": "assets/figures/30-periodization-review.svg",
+      "title": "區塊、維持與回顧",
+      "description": "兩排虛構區塊表示優先目標及維持可以不同，不宣稱固定區塊長度、減量幅度或每人必需週期化。",
+      "group": "programming",
+      "kind": "區塊時序圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex31",
+      "file": "assets/figures/31-concurrent-order.svg",
+      "title": "並行訓練與順序的比較條件",
+      "description": "兩排顛倒順序的虛構安排呈現比較問題，間隔及區塊寬度不是通用建議，也不宣稱一定相互抵銷。",
+      "group": "concurrent",
+      "kind": "課序比較圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex32",
+      "file": "assets/figures/32-circuit-rounds.svg",
+      "title": "循環站與反覆回合的時序",
+      "description": "虛構站次與回合分出工作及轉換，沒有以總時鐘判有氧、肌力或專項劑量等效。",
+      "group": "concurrent",
+      "kind": "任務時序圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex33",
+      "file": "assets/figures/33-skill-transfer.svg",
+      "title": "訓練與目標任務之間的遷移",
+      "description": "兩個不同情境由待驗證箭頭連接，圖不表示任何體能進步必然完整轉移到專項結果。",
+      "group": "concurrent",
+      "kind": "遷移關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex34",
+      "file": "assets/figures/34-rom-context.svg",
+      "title": "活動範圍與伸展方法的參考點",
+      "description": "同一肢段的兩個示意位置及未標數字的弧線，提示ROM需明確量法；圖不給安全角度或動作處方。",
+      "group": "movement",
+      "kind": "位置比較圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex35",
+      "file": "assets/figures/35-balance-control.svg",
+      "title": "支持面、感覺訊息與軀幹控制",
+      "description": "簡化人形與支持面強調感覺、肢體和軀幹協調，虛線不是個人實測重心或平衡風險界線。",
+      "group": "movement",
+      "kind": "動作控制圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIDCD：平衡的正常功能",
+          "url": "https://www.nidcd.nih.gov/health/balance-disorders"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        },
+        {
+          "title": "NCI：骨骼肌構造",
+          "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex36",
+      "file": "assets/figures/36-learning-retention.svg",
+      "title": "練習表現、保留與遷移",
+      "description": "假想練習曲線與隔段再測分開，不把當下進步直接叫長期學習，也不把不同任務數值混成同尺度。",
+      "group": "movement",
+      "kind": "學習時間圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex37",
+      "file": "assets/figures/37-load-records.svg",
+      "title": "內外負荷與完整紀錄",
+      "description": "任務與反應分兩邊，箭頭只代表需一起理解，不提供生理轉換係數；紀錄狀態保留未知。",
+      "group": "monitoring",
+      "kind": "紀錄對照圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex38",
+      "file": "assets/figures/38-recovery-context.svg",
+      "title": "恢復受到任務與生活共同影響",
+      "description": "睡眠、工作壓力、任務及支持與恢復討論相連，不把線條長短當影響量，也不由酸痛推療效。",
+      "group": "monitoring",
+      "kind": "恢復關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "NCI：神經組織",
+          "url": "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex39",
+      "file": "assets/figures/39-monitor-model.svg",
+      "title": "描述模型、觀察與下一步",
+      "description": "三條未校準曲線採同一任意基準，綠線為藍線減黃線的示例；不是實測疲勞、適應或傷害機率，決策需先核對資料。",
+      "group": "monitoring",
+      "kind": "模型曲線",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex40",
+      "file": "assets/figures/40-population-context.svg",
+      "title": "同一活動建議，要帶上族群與情境",
+      "description": "四個脈絡卡分年齡、目標、發展與支持；沒有以成人數字縮比例套用所有人。",
+      "group": "populations",
+      "kind": "情境對照圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex41",
+      "file": "assets/figures/41-lifespan-adaptation.svg",
+      "title": "生命階段與身體條件",
+      "description": "三個非比例人形代表不同階段需要實際評估，不將大小畫成能力排序，也不給兒少、高齡或孕產固定負荷。",
+      "group": "populations",
+      "kind": "生命階段圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex42",
+      "file": "assets/figures/42-access-professional.svg",
+      "title": "可及性、慢性病與專業合作",
+      "description": "入口與任務間的箭頭表示需消除參與障礙，非評估通過；疾病和藥物等條件仍需適當專業。",
+      "group": "populations",
+      "kind": "可及性路徑圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex43",
+      "file": "assets/figures/43-screen-pain.svg",
+      "title": "資料、感受與專業評估的界線",
+      "description": "四張資訊卡把資料不足、個人感受、功能和必要評估分開，不以紅綠燈或單一疼痛分數發運動許可。",
+      "group": "risk",
+      "kind": "資訊界線圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "IASP：疼痛定義及個人經驗",
+          "url": "https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex44",
+      "file": "assets/figures/44-heat-loss.svg",
+      "title": "產熱、蒸發與環境條件",
+      "description": "體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。",
+      "group": "risk",
+      "kind": "構造圖",
+      "note": "本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。",
+      "reusedFrom": "anatomy-physiology/assets/figures/15-heat-loss.svg",
+      "sources": [
+        {
+          "title": "NCI：皮膚層次",
+          "url": "https://www.training.seer.cancer.gov/melanoma/anatomy/layers.html"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 510
+    },
+    {
+      "id": "ex45",
+      "file": "assets/figures/45-participation-support.svg",
+      "title": "營養、生活支持與持續參與",
+      "description": "中心參與目標與能量供應、生活安排、支持和證據相連，不將某補充品當所有問題的解答。",
+      "group": "risk",
+      "kind": "支持關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex46",
+      "file": "assets/figures/46-advice-plan-audit.svg",
+      "title": "建議和課表：先對準原問題",
+      "description": "兩條原創審核路徑整理主張、條件及觀察，不將流程完成等同建議有效或課表適合個人。",
+      "group": "practice",
+      "kind": "審核流程圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex47",
+      "file": "assets/figures/47-report-trace.svg",
+      "title": "從原始紀錄追到可用摘要",
+      "description": "三欄將資料、摘要與解讀範圍分開，箭頭代表可追溯來源而非生理因果；沒有以未知當零。",
+      "group": "practice",
+      "kind": "資料追溯圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "ex48",
+      "file": "assets/figures/48-project-map.svg",
+      "title": "完整專題：把任務、資料與限制連起來",
+      "description": "四個專題面向互相核對：問題、資料、方法和交付；完成教學專題不等於個人訓練處方或醫療證明。",
+      "group": "practice",
+      "kind": "整合地圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "ACSM：2026健康成人阻力訓練更新",
+          "url": "https://acsm.org/resistance-training-guidelines-update-2026/"
+        },
+        {
+          "title": "WHO：2020身體活動與久坐正式指南",
+          "url": "https://www.who.int/publications/i/item/9789240015128"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    }
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/read-tasks.md",
+    "study/sources.md",
+    "study-pack.zip"
   ]
 }

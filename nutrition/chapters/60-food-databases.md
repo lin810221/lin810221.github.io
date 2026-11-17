@@ -2,6 +2,17 @@
 
 理解檢驗、標示與調查資料的差異，建立可更新的查詢紀錄。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-energy-provenance.svg" target="_blank" rel="noopener" aria-label="放大：從食品狀態到能量重建"><img src="assets/figures/30-energy-provenance.svg" alt="食物資料的生熟與版本連到能量重建，係數、其他成分和修整可影響差異，圖不將差異直接判成錯誤。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜從食品狀態到能量重建</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出原始食品的生熟狀態和資料版本，說明同名食物可能需要哪些匹配資訊，才能避免把資料庫數字當固定不變真值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 相同名稱不保證同一筆食物
 
 品種、產地、可食部、生熟、含水量、烹調和品牌都可能改變組成。搜尋到米飯或豆腐後，先核對描述與基準，不因名稱最像就直接取第一筆。產品配方更新也可能使舊標示失去適用性。

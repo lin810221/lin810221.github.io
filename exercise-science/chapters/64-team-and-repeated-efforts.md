@@ -2,6 +2,17 @@
 
 將技術、決策與身體能力放在同一張需求分析表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-circuit-rounds.svg" target="_blank" rel="noopener" aria-label="放大：循環站與反覆回合的時序"><img src="assets/figures/32-circuit-rounds.svg" alt="虛構站次與回合分出工作及轉換，沒有以總時鐘判有氧、肌力或專項劑量等效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜循環站與反覆回合的時序</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把專項比賽的回合與技能需求標在下排，再列圖未表示的決策、對手及動作；不把一組任意間歇自動當成專項體能等效。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 比賽不是一種穩定活動
 
 球類與團隊任務常含加速、減速、變向、對抗、等待和決策，平均心率或總距離會掩蓋結構。練習和比賽也未必同需求，需要看位置、規則與實際參與。

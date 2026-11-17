@@ -2,6 +2,17 @@
 
 把測試協定寫成可重複步驟，避免只記最後結果。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-repeated-measurement.svg" target="_blank" rel="noopener" aria-label="放大：重複量測：集中、誤差與標準化"><img src="assets/figures/13-repeated-measurement.svg" alt="兩群虛構點呈現測量分散程度，集中不等於量到正確概念；位置無實際量測單位或臨床判定線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜重複量測：集中、誤差與標準化</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩次測試旁填相同的器材、暖身、時間與熟悉化條件，指出圖中未畫出的變因；前後差異只有在可比較條件下才較容易解讀。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 測試前固定條件
 
 記任務、器材、暖身、環境、時間、先前活動、指令和休息；負重動作還需ROM與判定成功標準。固定不是要求生活完全相同，而是知道哪些條件一致，哪些可能改變結果。

@@ -2,6 +2,17 @@
 
 辨認需要適時評估的資訊，不製作自測安全證書。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-care-and-scope.svg" target="_blank" rel="noopener" aria-label="放大：照護訊號與來源範圍分開看"><img src="assets/figures/12-care-and-scope.svg" alt="情境需要適當評估，來源需核日期與適用範圍；不是自動風險分級或排除所有急症的清單。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜照護訊號與來源範圍分開看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從圖中指出及時評估不依網頁分數，回原課讀具體例子及限制；沒有列到的情況也不能自動宣告安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不等網頁完成分析
 
 背痛伴新發排尿或大小便控制異常、會陰或肛門周圍感覺改變、明顯或惡化的腿部無力等，應立即尋求醫療評估。重大事故後疼痛、急劇變化或其他嚴重身體不適也需按情境及時處理。

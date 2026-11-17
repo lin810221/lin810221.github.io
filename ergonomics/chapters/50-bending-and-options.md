@@ -2,6 +2,17 @@
 
 不同策略會改變不同部位需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-back-object.svg" target="_blank" rel="noopener" aria-label="放大：身體、物件和選項：距離之外還有條件"><img src="assets/figures/25-back-object.svg" alt="簡化手部和箱子位置顯示外在需求可改，未畫完整人體力學，不指定人人相同的彎腰方式。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜身體、物件和選項：距離之外還有條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>列出彎腰、蹲跪或轉向可受哪些環境和個人條件限制；不把一種示意選項當每人所有任務的完美姿勢。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 沒有單一全能動作
 
 蹲下、髖部彎曲、步伐轉向、使用支撐或輔具，可能各有用途。膝髖功能、物件大小、空間和工作高度影響可行性，不能把一種策略套給所有人。

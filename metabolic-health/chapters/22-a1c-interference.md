@@ -2,6 +2,17 @@
 
 分開分析方法干擾和身體狀況改變，不自行校正出一個真值。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-a1c-background.svg" target="_blank" rel="noopener" aria-label="放大：紅血球、糖化與HbA1c背景"><img src="assets/figures/11-a1c-background.svg" alt="紅血球與血紅素糖化提供一段時間的訊息，壽命、變異及方法會影響；圖不畫固定個人平均血糖。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜紅血球、糖化與HbA1c背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖旁列紅血球周轉、血紅素變異及檢驗方法，說明為何把HbA1c換成另一尺度仍不能消除干擾。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 方法依賴的干擾
 
 某些血紅素變異或衍生物對不同方法的影響不同，NGSP2026更新表可查具體方法。不能只因有某變異就認定所有儀器同方向偏差，也不能套一個通用加減係數。

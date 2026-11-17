@@ -2,6 +2,17 @@
 
 分清生活安排與需要專業評估的睡眠問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-sleep-circadian.svg" target="_blank" rel="noopener" aria-label="放大：睡眠與晝夜：時間之外還有品質"><img src="assets/figures/35-sleep-circadian.svg" alt="時鐘代表節律與時間安排，不是睡眠分期或疾病診斷圖，也不給每人同一需求。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜睡眠與晝夜：時間之外還有品質</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把光照、輪班與睡眠呼吸問題放在不同位置，辨識節律和呼吸相關機制不能只用「睡不夠」概括。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 節律是時間的組織
 
 光線、作息與活動協助身體安排日夜功能。輪班、跨時區或不規律時程可能帶來困難，但並非每位輪班者都已患代謝疾病。預防要考慮工作制度與休息可近性，不能只要求個人早睡。

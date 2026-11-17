@@ -2,6 +2,17 @@
 
 把看到、量到與當事人說的資訊分開保存。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-task-record.svg" target="_blank" rel="noopener" aria-label="放大：任務觀察要留下時間與脈絡"><img src="assets/figures/13-task-record.svg" alt="觀察卡整理任務、時間、狀態和使用者回饋，不測疾病或替代現場完整評估。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜任務觀察要留下時間與脈絡</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別寫觀察、量測與訪談提供的資訊，指出哪一項仍未知；畫面看起來正常不能代替使用者功能與回饋。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 觀察回答外部行為
 
 可看設備位置、動作、接觸和流程。攝影角度、遮擋與取樣影響結果；衣物輪廓也不等於骨骼角度，不能因軟體畫線就說已精確量到所有關節。

@@ -2,6 +2,17 @@
 
 認識不同困擾的重點，避免用網路標籤替人分類。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-anxiety-context.svg" target="_blank" rel="noopener" aria-label="放大：害怕、預期與功能：分開描述"><img src="assets/figures/28-anxiety-context.svg" alt="當下事件和未來預期可伴隨身體、思想及行動改變，圖不分類診斷，也不依圖排除醫療問題。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜害怕、預期與功能：分開描述</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出不同焦慮或強迫相關問題需要各自評估，不能由同一身體輪廓或一個「擔心」詞把所有問題混成一類。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 問題焦點不同
 
 廣泛焦慮可能涉及多領域難以控制的擔心；社交焦慮常關乎被評價的情境；特定恐懼涉及特定對象或情境。這些是概念介紹，不是依一件行為對號入座。

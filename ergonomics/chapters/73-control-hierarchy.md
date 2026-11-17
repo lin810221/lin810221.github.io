@@ -2,6 +2,17 @@
 
 從消除、工程、組織到個人裝備，理解不同改善的作用。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-controls-design.svg" target="_blank" rel="noopener" aria-label="放大：來源改善與工程驗收"><img src="assets/figures/37-controls-design.svg" alt="工作可從取消不必要轉運、設計支撐及組織條件改善；工程試用要確認使用者與新風險。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜來源改善與工程驗收</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出可消除或改變的來源，再說訓練與個人裝備能做及不能代替的部分；不把發教材當所有預防已完成。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 消除不必要的工作段
 
 若零件能直接送到使用點，可減少反覆轉運。先問這段搬運是否必要，再研究怎樣搬，通常能發現流程選項。消除並非取消服務或把工作轉給看不見的人，要檢查整條流程。

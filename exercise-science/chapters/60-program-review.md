@@ -2,6 +2,17 @@
 
 把完整計畫轉成一組可以逐項檢查的問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-periodization-review.svg" target="_blank" rel="noopener" aria-label="放大：區塊、維持與回顧"><img src="assets/figures/30-periodization-review.svg" alt="兩排虛構區塊表示優先目標及維持可以不同，不宣稱固定區塊長度、減量幅度或每人必需週期化。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜區塊、維持與回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在每個回顧格寫目標、劑量、可行性與回饋四個問題，確認課表仍回答原任務；有複雜名稱不等於比簡單可持續計畫更合適。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四層查核
 
 先問目標與適用背景，再看動作和任務、量與強度、最後是紀錄和調整。若任何層缺資料，就清楚列待查，不因表格完整或作者有名就省略推理。

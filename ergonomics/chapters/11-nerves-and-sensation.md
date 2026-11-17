@@ -2,6 +2,17 @@
 
 理解訊號和症狀描述，不在網頁完成定位診斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-neuron.svg" target="_blank" rel="noopener" aria-label="放大：神經訊息與動作的連接"><img src="assets/figures/06-neuron.svg" alt="一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 06｜神經訊息與動作的連接</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿神經元輸入與軸突追訊號，區分神經元和整條神經；感覺改變仍有多種可能，不能從一般圖自行定位麻痛無力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 神經參與感覺與控制
 
 周邊神經傳遞不同感覺與運動訊號，神經根、周邊路徑和其他組織可能涉及不同情境。麻、刺、痛與力氣改變不是完全相同資訊，描述起始、分布與變化有助評估。

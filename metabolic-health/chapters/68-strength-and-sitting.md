@@ -2,6 +2,17 @@
 
 把訓練與整天的活動分布一起看。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-muscle-activity.svg" target="_blank" rel="noopener" aria-label="放大：肌肉活動、供應與代謝訊號"><img src="assets/figures/34-muscle-activity.svg" alt="肌肉圖強調主動工作與多系統供應，箭頭不等於固定耗能，也不提供個人運動處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜肌肉活動、供應與代謝訊號</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把肌力、久坐時間與日常功能分成三個可觀察問題，說明只看單次運動不能代表整天活動型態。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity">WHO：身體活動</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 肌肉不只是外觀
 
 骨骼肌參與動作、葡萄糖利用與日常功能。肌力訓練的價值包含維持能力與功能，不應只以體重是否下降衡量。阻力形式可以多樣，但需依技能、設備、疾病與負荷耐受調整。

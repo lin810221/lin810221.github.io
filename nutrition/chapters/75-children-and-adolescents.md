@@ -2,6 +2,17 @@
 
 將生長與日常生活納入營養學，不套成人減重目標。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-lifespan-functions.svg" target="_blank" rel="noopener" aria-label="放大：成長與高齡：功能和環境一起看"><img src="assets/figures/38-lifespan-functions.svg" alt="不同生命階段的食物與功能示意，生長、學校、家庭、咀嚼與支持可影響需求，不用年齡一項決定全部飲食。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜成長與高齡：功能和環境一起看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由兒少與學校情境列出成長、活動和食物環境的問題，說明平均年齡建議仍需保留發展與個體差異。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a> · <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies">FDA：食物過敏</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 生長改變評估方式
 
 成長期需要支持發育與活動，參考值有年齡與性別等條件；不能把成人固定克數、BMI分類或能量削減方案直接搬過來。生長曲線與臨床評估也不是只看單次體重。

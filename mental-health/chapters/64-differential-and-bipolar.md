@@ -2,6 +2,17 @@
 
 用開放問題保留多種可能，不把所有低落都貼同一標籤。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-activation-support.svg" target="_blank" rel="noopener" aria-label="放大：低落、活動與支持的可能循環"><img src="assets/figures/32-activation-support.svg" alt="活動減少、機會減少及低落可互相影響，可加入支持和可行小步；不保證人人同一原因。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜低落、活動與支持的可能循環</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>列出這張循環未涵蓋的睡眠、身體、哀傷或其他狀態資訊，說明為何鑑別需要專業，不能由相似感受套同一標籤。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 表面相似，背景不同
 
 失落、睡眠不足、身體疾病、物質或不同心理疾病，都可能有低落與集中困難。它們也可共存；發生在壓力後不等於已排除憂鬱，哀傷也不能被簡單當病或完全忽略。

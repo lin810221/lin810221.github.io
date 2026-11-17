@@ -2,6 +2,17 @@
 
 分清毫克、克、每份和總份數。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-salt-gi-labels.svg" target="_blank" rel="noopener" aria-label="放大：標示分母與整餐背景"><img src="assets/figures/32-salt-gi-labels.svg" alt="標示表格與餐食是兩個尺度，鈉和食鹽單位不同，GI也不能單獨評整餐或預測個人血糖。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜標示分母與整餐背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指認每份、每包和每100的分母，再分鈉mg與食鹽g；說明為何不能看到兩個數字就直接相加比較。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 鈉不是只有鹹味
 
 加工、調味與餐飲都可能提供鈉；吃起來不特別鹹也不代表含量低。需要看食物組合與標示，不能只檢查餐桌上有沒有加鹽。一般飲食方向和有特定疾病者的個別限制仍需分開。

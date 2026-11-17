@@ -2,6 +2,17 @@
 
 把戒菸當成可獲支持的照護過程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-tobacco-support.svg" target="_blank" rel="noopener" aria-label="放大：菸草暴露、依賴與照護支持"><img src="assets/figures/37-tobacco-support.svg" alt="符號表示暴露及支持需求，不以圖中色彩判個人風險，也不把反覆戒除視為道德失敗。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜菸草暴露、依賴與照護支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿暴露到支持的箭頭加入依賴、反覆與照護選項，說明為何需要可取得的協助，而不是只要求意志力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只是意志力
 
 尼古丁依賴、戒斷、習慣線索與環境會影響停止使用。只說「知道有害就別抽」無法處理這些條件。行為支持與適當藥物等可由受訓人員共同評估，依個人健康、偏好與產品情境選擇。

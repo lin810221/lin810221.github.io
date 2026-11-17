@@ -2,6 +2,17 @@
 
 從一人的設定擴展到換人、換場域和資源分配。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-shared-and-life-stage.svg" target="_blank" rel="noopener" aria-label="放大：共用與生命階段：調整要能交接"><img src="assets/figures/41-shared-and-life-stage.svg" alt="一套設備可有不同使用者和調整需求，不能把成人公式或一次設定套所有兒少、孕期及照顧情境。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜共用與生命階段：調整要能交接</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出共用時需要重新確認哪些設定、說明和維護，保留隱私；可調不表示換人就自動適用，也不需要公開病史才討論。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 共用造成的新問題
 
 固定工位可逐步微調，共用桌則要在每次換人後重新確認椅子、支撐、顯示與輸入設備。若設定記號或記憶功能只服務一人，仍需確保其他人能理解和使用。

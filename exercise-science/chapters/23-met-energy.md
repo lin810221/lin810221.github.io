@@ -2,6 +2,17 @@
 
 用標準成人MET驗算，同時保留估計、年齡和活動體系的差別。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-gross-net.svg" target="_blank" rel="noopener" aria-label="放大：總支出、基準與淨量"><img src="assets/figures/12-gross-net.svg" alt="以三塊示意區分gross總支出、基準及net差額，圖塊面積不是實際比例；估值依基準和任務而變。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜總支出、基準與淨量</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用手指出總量中要扣除的是哪個基準，說出時間和單位必須一致；不要把MET名目估值當成手環實測或個人的精準熱量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 標準不是個人量測
 
 成人Compendium的標準MET使用3.5mL O₂/kg/min作基準，2024成人資料主要適用19–59歲；高齡與輪椅體系另有基準。不能因都寫MET就跨體系無聲套同一換算。

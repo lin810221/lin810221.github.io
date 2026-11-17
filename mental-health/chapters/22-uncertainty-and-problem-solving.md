@@ -2,6 +2,17 @@
 
 把反覆保證需求轉成具體資訊與行動。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-thought-versus-fact.svg" target="_blank" rel="noopener" aria-label="放大：事實、假設與可查證問題"><img src="assets/figures/11-thought-versus-fact.svg" alt="三張並列卡區分觀察、解釋與下一個問題，沒有把一種想法直接變成人格標籤。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜事實、假設與可查證問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在可查證問題和無法立即消除的不確定之間畫界線，選一個可行行動；不是所有未知都必須現在獲得保證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不確定不等於災難
 
 結果未知時，注意容易集中在威脅可能性。可以承認不知道，卻不必把最壞情境當既定事實；也不能用「一定沒事」提供無根據保證。

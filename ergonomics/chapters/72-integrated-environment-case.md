@@ -2,6 +2,17 @@
 
 練習看流程中的多個需求和改善取捨。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-environment-route.svg" target="_blank" rel="noopener" aria-label="放大：物理環境與流程：把任務走完"><img src="assets/figures/36-environment-route.svg" alt="工作流程可能跨取料、組裝和運送，照明、地面、維護及空間都需確認，不能由新設備名字推適配。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜物理環境與流程：把任務走完</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將不同工作段各配合適資料與方法，再列整體改善及新需求；不要把四種方法分數平均就宣稱完成全場評估。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 虛構場景
 
 工作者從低架取料，搬到組裝桌，再用有振動的工具處理，最後推車送出。這包含不同工作段，不能只用搬抬一次的LI代表全部暴露。

@@ -2,6 +2,17 @@
 
 建立可靠的食物向量加總，同一餐的各營養素可能有不同完整性。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-meal-observation.svg" target="_blank" rel="noopener" aria-label="放大：一餐的可見來源與未知項目"><img src="assets/figures/31-meal-observation.svg" alt="餐盤旁列食品重量、醬料油飲料及外食資料，已知小計與完整總量不同；視覺盤子不保證觀察完整。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜一餐的可見來源與未知項目</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指盤上看得到的食物，再列盤外可能缺的成分，說明加總已知項為何不能自動叫做整餐完整營養量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從單項到一餐
 
 每個食物先依實際量換算，再按相同營養素和單位相加。示例穀物150g蛋白3.9g、豆腐150g蛋白12g，加蔬菜150g蛋白3g，已知總量18.9g；不能把食物重量直接當營養素重量。

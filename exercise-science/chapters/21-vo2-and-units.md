@@ -2,6 +2,17 @@
 
 理解絕對與相對耗氧，區分實測最大與測到的峰值。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-vo2-threshold.svg" target="_blank" rel="noopener" aria-label="放大：氧攝取曲線與方法條件"><img src="assets/figures/11-vo2-threshold.svg" alt="假想逐步測試曲線示意觀察VO2peak或VO2max所需方法背景，虛線不代表實測個人閾值或訓練區。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜氧攝取曲線與方法條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿逐步測試曲線找最高觀察值，另外列測試方式和是否符合最大值判定；不要因圖線變平就替自己的穿戴估值改名VO2max。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a> · <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow">NHLBI：心臟血流</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 同一量的兩種表達
 
 絕對耗氧常用L/min或mL/min，相對體重用mL/kg/min。2500mL/min除70kg約35.71mL/kg/min；分母改變會影響相對值，即使絕對值不變也可能不同。

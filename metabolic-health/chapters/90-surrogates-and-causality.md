@@ -2,6 +2,17 @@
 
 把機轉、關聯與介入證據接起來。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-effect-endpoint.svg" target="_blank" rel="noopener" aria-label="放大：事件計數與替代指標的距離"><img src="assets/figures/45-effect-endpoint.svg" alt="兩組點為假想事件示例，不是臨床試驗實測；指標改變不直接等於事件按同幅改變。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜事件計數與替代指標的距離</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在事件點之外另標血壓或檢驗等替代指標，說明數值改善後還需要什麼臨床結果與因果證據。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先看量到哪一層
 
 體外反應、短期生物標記、器官影像、症狀、功能和死亡是不同層次。某產品使某指標改變，結論先停在真正測到的結果，不能自動推到預防所有慢性病。

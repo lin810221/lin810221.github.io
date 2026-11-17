@@ -2,6 +2,17 @@
 
 用給定假設數值計算，不把年齡公式當實測最大心率。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-heart-rate-context.svg" target="_blank" rel="noopener" aria-label="放大：心率分母、保留量與觀察"><img src="assets/figures/26-heart-rate-context.svg" alt="平行線示意靜息與最大心率背景，未提供數字或個人區間；保留量不是任何方法下相同的百分比。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜心率分母、保留量與觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找到靜息與最大值的來源，說出HRmax百分比和HRR百分比的分母不同；若最大值只是公式估計，不能把它改稱實測。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow">NHLBI：心臟血流</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不同分母
 
 %HRmax是相對最大心率，%HRR則使用最大減休息的儲備。休息60、最大180時，60%HRmax為108；60%HRR則132。兩個60%不是同一強度，不應只寫60%心率。

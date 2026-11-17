@@ -2,6 +2,17 @@
 
 讀懂飲食研究常見限制，保留既不盲信也不全盤否定的判斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-risk-denominators.svg" target="_blank" rel="noopener" aria-label="放大：絕對、相對與共同分母"><img src="assets/figures/40-risk-denominators.svg" alt="兩組各100人的虛構點圖分別有10與5個事件，用於分清絕對與相對差異；不代表真實試驗、個人風險或因果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜絕對、相對與共同分母</strong>虛構100人點圖；實心是事件，空心是未事件，不代表風險等級。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩組旁加入可能不同的原始條件，列出混雜、反向因果或量測誤差的一項例子，說明點圖差異本身不能完成因果識別。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 混雜是什麼
 
 吃某食物的人也可能有不同收入、活動、吸菸或就醫習慣；若這些與結果相關，觀察關係不全是食物效果。統計調整能處理部分已測因素，不能保證所有未知混雜消失。

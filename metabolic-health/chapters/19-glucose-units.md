@@ -2,6 +2,17 @@
 
 從葡萄糖換算開始，保留分析物、樣本與精度。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-glucose-sample.svg" target="_blank" rel="noopener" aria-label="放大：血糖：濃度單位與確認條件"><img src="assets/figures/10-glucose-sample.svg" alt="同一物質可用質量或物質量濃度表達，換算不取代檢體、時間與確認程序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜血糖：濃度單位與確認條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出兩支試管代表的質量與物質量濃度，先核對是同一物質，再說明為何不能把換算因子套到所有檢驗。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 兩種表達
 
 血糖常用mg/dL或mmol/L，臨床教學可用18作近似係數：126mg/dL約7.0mmol/L。這不是所有檢驗共用的換算，膽固醇與TG係數不同，胰島素單位更不能直接套。

@@ -2,6 +2,17 @@
 
 把吸菸、二手暴露與產品差異分開記錄。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-tobacco-support.svg" target="_blank" rel="noopener" aria-label="放大：菸草暴露、依賴與照護支持"><img src="assets/figures/37-tobacco-support.svg" alt="符號表示暴露及支持需求，不以圖中色彩判個人風險，也不把反覆戒除視為道德失敗。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜菸草暴露、依賴與照護支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分清菸草、尼古丁與其他暴露資訊，說明心代謝風險不能只由一個名稱或一張符號圖算出個人機率。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只一個暴露標籤
 
 可燃菸草、其他菸草與尼古丁產品各有成分和風險；「沒有燃燒」不等於無害。吸菸會影響心血管及多種疾病，二手暴露也值得處理。不能只用體重較低或某項檢驗較好抵銷菸草風險。

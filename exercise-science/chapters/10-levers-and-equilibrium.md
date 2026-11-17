@@ -2,6 +2,17 @@
 
 把力矩放回簡化模型，分開靜態與動態問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-moment-arm.svg" target="_blank" rel="noopener" aria-label="放大：力、支點與垂直力臂"><img src="assets/figures/05-moment-arm.svg" alt="外力作用點到轉軸的幾何及垂直距離決定簡化力矩；此圖不計個人關節、肌肉或肌腱內力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 05｜力、支點與垂直力臂</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在槓桿圖上補一個能抵銷外力矩的假想力，說明平衡需要列出全部力與位置；一張姿勢照片不能提供這些完整條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 靜態平衡的前提
 
 若模型是靜止且沒有角加速度，可討論合力與合力矩平衡；動作加速或減速時，還需慣性與加速度。不要把靜態單關節圖直接套到跳躍或快速舉重。

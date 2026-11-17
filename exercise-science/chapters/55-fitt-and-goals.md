@@ -2,6 +2,17 @@
 
 將頻率、強度、時間、型態連到結果，再加入量、漸進與實際完成。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-fitt.svg" target="_blank" rel="noopener" aria-label="放大：FITT連接目標，而非四個孤立數字"><img src="assets/figures/28-fitt.svg" alt="中心目標與頻率、強度、時間、模式相連，線代表規劃關係，不表示生理因果係數或個人課表。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜FITT連接目標，而非四個孤立數字</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先用一句話寫中心目標，再指出四個外圈各提供什麼資訊；只寫每週幾次而沒有模式與強度，仍不足以描述一份可理解的計畫。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個欄位各問什麼
 
 Frequency多久一次，Intensity用何種強度定義，Time每次多久，Type做什麼任務。寫每週兩次不夠，還需知道是阻力、有氧還是某肌群；寫強度8也需量表和問題。

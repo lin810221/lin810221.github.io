@@ -2,6 +2,17 @@
 
 用明示係數計算能量，分清可利用碳水、纖維與標示值。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-energy-factors.svg" target="_blank" rel="noopener" aria-label="放大：能量係數與支出不是同一張表"><img src="assets/figures/07-energy-factors.svg" alt="常用4、4、9係數估算三大營養素來源能量；不同成分、制度與人體支出有各自條件，不能直接當個人需要量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜能量係數與支出不是同一張表</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先讀清三欄共同單位，說出這些係數乘的是哪種克數，再指出纖維等成分或制度不同時為何需回查適用規則。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 常用生理能量係數
 
 蛋白質與一般可利用碳水常用4kcal/g，脂肪9，酒精7。它們是常用估算係數，不是所有食品分子測量值都完全一樣。纖維、糖醇與有機酸等還有其他處理方式，實際標示應依適用法規與資料。

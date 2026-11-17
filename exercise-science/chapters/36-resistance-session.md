@@ -2,6 +2,17 @@
 
 把選動作、技術、工作組和紀錄串成可檢查流程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-sets-rest.svg" target="_blank" rel="noopener" aria-label="放大：組、休息與實際完成的時鐘"><img src="assets/figures/18-sets-rest.svg" alt="訓練時鐘分暖身、工作組、休息及紀錄；計畫、完成與未知分開，區塊長度為版面示意。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜組、休息與實際完成的時鐘</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>逐項把計畫轉成已完成、未完成與未知，另寫實際任務；只有寫在課表上的組不能自動當完成，未記錄也不能當明確休息。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 開始前列條件
 
 目標、當天可用時間、器材、已知限制與目前狀況先記；有疾病或症狀背景時按適用流程確認。完成清單不是安全許可，沒症狀紀錄也不能自動當已確認沒有症狀。

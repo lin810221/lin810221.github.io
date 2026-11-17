@@ -2,6 +2,17 @@
 
 分清工作現象、一般疲倦與其他可能共存的問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-work-resources.svg" target="_blank" rel="noopener" aria-label="放大：工作需求與資源：一起看設計"><img src="assets/figures/25-work-resources.svg" alt="兩個平台並列表示需求和可用資源，沒有提供JD-R量表、耗竭診斷或員工承受力分數。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜工作需求與資源：一起看設計</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>區分工作相關耗竭概念、一般疲勞和醫療評估，說明這張工作條件圖不能替ICD定義打分或排除其他困擾。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 正式分類的定位
 
 WHO在ICD-11把burn-out描述為職業現象，並非分類為疾病；它特指未能有效處理的慢性工作壓力相關脈絡。這不表示困擾不真實，也不是說任何問題都只需休假。

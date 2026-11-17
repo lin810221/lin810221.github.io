@@ -2,6 +2,17 @@
 
 用長期視角處理中斷、反覆與支持需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-followup-support.svg" target="_blank" rel="noopener" aria-label="放大：家庭、資源與持續回顧"><img src="assets/figures/15-followup-support.svg" alt="參與者與家庭、照護資源之間雙向溝通，重新開始是計畫調整的一部分，圖不評個人是否成功。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜家庭、資源與持續回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在重新開始處列一項可以回顧的障礙與調整，解釋預防為何不是一次考試，也不因一段中斷就失去價值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 介入後的生活仍會變
 
 換工作、照顧家人、受傷或輪班，都會改變可行行動。曾經達成目標後又反覆，不等於原先努力無效；體重調節、環境與長期習慣會共同作用。預防計畫應預先設計維持支持，而不是達成一次數字就結案。

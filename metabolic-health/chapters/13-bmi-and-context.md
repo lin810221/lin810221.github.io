@@ -2,6 +2,17 @@
 
 學會算術與台灣成人分類，分開篩查工具和臨床肥胖判斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-abdominal-compartments.svg" target="_blank" rel="noopener" aria-label="放大：體表量測與腹部脂肪區室"><img src="assets/figures/07-abdominal-compartments.svg" alt="腹部橫斷示意區分皮下及內部區室，體表尺寸不能直接顯示脂肪位置或個人器官狀態。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜體表量測與腹部脂肪區室</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出BMI使用的身高與體重屬於哪種外部資料，再說明圖中皮下與內部區室哪些資訊無法由BMI直接看見。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 公式與單位
 
 $$

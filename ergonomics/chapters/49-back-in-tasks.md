@@ -2,6 +2,17 @@
 
 把背部動作放回工作，不用彎腰兩個字結束分析。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-back-object.svg" target="_blank" rel="noopener" aria-label="放大：身體、物件和選項：距離之外還有條件"><img src="assets/figures/25-back-object.svg" alt="簡化手部和箱子位置顯示外在需求可改，未畫完整人體力學，不指定人人相同的彎腰方式。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜身體、物件和選項：距離之外還有條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出物件位置、重量、時間和支持如何改變下背任務，說明圖不是腰椎內力估算，也不把所有感受只歸一個姿勢。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 下背不是孤立一點
 
 髖、膝、腳步、軀幹和物件位置可共同參與拿取與搬運。外觀姿勢只是部分資訊，重量、距離、速度、頻率與支撐也影響任務。

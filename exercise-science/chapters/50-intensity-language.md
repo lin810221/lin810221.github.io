@@ -2,6 +2,17 @@
 
 區分絕對和相對強度，讓容易、很累等語言有清楚背景。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-endurance-modes.svg" target="_blank" rel="noopener" aria-label="放大：持續與間歇：方式和強度分開"><img src="assets/figures/25-endurance-modes.svg" alt="兩排虛構時鐘區分持續與交替安排，區塊長度不表示健康效益或實際生理劑量等效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜持續與間歇：方式和強度分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為同一個工作格另寫談話測試或指定RPE語言，說明相同分鐘可能具有不同內在要求；圖未給通用個人心率區或強度許可。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 絕對與相對
 
 絕對強度描述活動成本或外在任務，相對強度看個人的能力與感受。同速度對不同人可能容易或吃力；標準MET與個人最大能力百分比不是同一尺度，不能只因活動名相同就判感受。

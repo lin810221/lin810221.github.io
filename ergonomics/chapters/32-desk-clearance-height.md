@@ -2,6 +2,17 @@
 
 以任務高度和可活動空間協調桌椅。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-chair-desk.svg" target="_blank" rel="noopener" aria-label="放大：支撐、桌面與腿部空間一起調整"><img src="assets/figures/16-chair-desk.svg" alt="側面工作站是相對位置示意，支撐、桌面和腿部空間互相關聯，不是一張所有人相同的姿勢處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜支撐、桌面與腿部空間一起調整</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿桌下陰影找腿部活動需要，指出桌高與手肘、座位和設備的連動；有一項尺寸可調不等於整個工作站適配。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 作業高度不同
 
 鍵鼠、手寫、精細組裝與較大施力的需求不完全相同。手肘與前臂位置可作參考，但不是所有工作都套同一桌高；視覺、支撐與工具也要一起看。

@@ -2,6 +2,17 @@
 
 從警覺的功能走到持續性與生活影響。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-anxiety-context.svg" target="_blank" rel="noopener" aria-label="放大：害怕、預期與功能：分開描述"><img src="assets/figures/28-anxiety-context.svg" alt="當下事件和未來預期可伴隨身體、思想及行動改變，圖不分類診斷，也不依圖排除醫療問題。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜害怕、預期與功能：分開描述</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分當下事件、預期和功能影響，說明有焦慮經驗不自動等於特定診斷，持續困擾也不必等到圖中某門檻才求助。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 警覺的角色
 
 害怕常連到眼前威脅，焦慮較常涉及預期與不確定，但生活經驗會交錯。偶爾焦慮並不等於疾病，也不能只因有功能就忽略嚴重困擾。

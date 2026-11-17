@@ -2,6 +2,17 @@
 
 從「分數多少」走向「這個選擇解決什麼問題」。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-shared-care-balance.svg" target="_blank" rel="noopener" aria-label="放大：共同決策：效益、負擔與背景"><img src="assets/figures/24-shared-care-balance.svg" alt="天平用於提醒需要一起討論的面向，不表示存在可相加的個人醫療總分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜共同決策：效益、負擔與背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩側寫下效益及不確定性、負擔和偏好各一項，說明共同決策需要什麼資訊，不能由單一檢驗值自動決定。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先確認決策問題
 
 是需要補足量測、進一步評估，還是比較預防選項？有無既往事件與器官疾病，會改變問題。若基線風險、期限或結果不清楚，先補資訊，不要急著用單一百分比決定全部照護。

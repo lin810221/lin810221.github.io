@@ -2,6 +2,17 @@
 
 辨認報告方法，避免把Friedewald當成2026預設。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-cholesterol-triglyceride.svg" target="_blank" rel="noopener" aria-label="放大：膽固醇與三酸甘油酯的不同量"><img src="assets/figures/20-cholesterol-triglyceride.svg" alt="化學形狀只作家族概念，不是精確分子模型；兩類檢驗不能共用一套不明換算。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜膽固醇與三酸甘油酯的不同量</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>對照環狀與脂肪酸相關結構，指出LDL估算所需的是哪些明確檢驗與方法，不把任何脂質數字都當相同物質。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先問測量或估算
 
 報告上的LDL-C可能來自不同估算式或檢驗方法。比較前要確認採血條件、三酸甘油酯、LDL範圍和方法；同一名稱不保證誤差特性相同。一般血脂檢查可依情境採空腹或非空腹，不是所有抽血都必須空腹。

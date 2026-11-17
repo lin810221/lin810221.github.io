@@ -2,6 +2,17 @@
 
 讓輸入配置回應實際工作，不靠一個配件保證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-screen-and-input.svg" target="_blank" rel="noopener" aria-label="放大：視線、螢幕與輸入要協調"><img src="assets/figures/17-screen-and-input.svg" alt="工作站幾何僅供比較位置，眼鏡、文字、任務及支撐需求會影響配置，不指定唯一頸部角度。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜視線、螢幕與輸入要協調</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿前臂到鍵盤的路徑看高度、距離與支撐，說明只調螢幕可能仍留下輸入限制；不要求手腕長時間固定一個角度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先看放在哪裡
 
 鍵盤與常用區域應和身體、滑鼠及任務協調，避免長時間遠伸或被迫抬肩。參考的中立位置是起點，不是要求手腕永遠固定、不能移動。

@@ -2,6 +2,17 @@
 
 從脂肪沉積走到病因、發炎與纖維化。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-liver-fat-fibrosis.svg" target="_blank" rel="noopener" aria-label="放大：肝內脂質與纖維化不是同義詞"><img src="assets/figures/25-liver-fat-fibrosis.svg" alt="肝臟、肝細胞與細胞外基質在不同尺度；示意不按真實比例，也不供個人分期。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜肝內脂質與纖維化不是同義詞</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>辨識肝細胞內脂質與細胞外基質兩種位置，回到SLD、MASLD、MASH的定義，避免只憑一個脂肪圖就互換名稱。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何有新名稱
 
 脂肪性肝病以SLD作為上位概念，MASLD強調肝脂肪沉積與心代謝條件的連結；MASH指相應的脂肪性肝炎脈絡。這些名詞不是單純把所有舊NAFLD資料改字，研究納入標準和病因仍需核對。

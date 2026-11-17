@@ -2,6 +2,17 @@
 
 讓圖表保留資料原意，不把空格當成已確認沒有訓練。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-load-records.svg" target="_blank" rel="noopener" aria-label="放大：內外負荷與完整紀錄"><img src="assets/figures/37-load-records.svg" alt="任務與反應分兩邊，箭頭只代表需一起理解，不提供生理轉換係數；紀錄狀態保留未知。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜內外負荷與完整紀錄</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿兩欄逐日標完成、明確休息與缺漏，說明可用週小計和完整週總量不同；反應未填不能自動當零，也不把計畫當實際完成。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 最小日誌
 
 日期、任務、時間、強度定義、實際完成和反應是基本欄位；依目標可加動作、ROM、RIR、配速或功率。不是每個人都要記所有數字，先選能回答問題的資訊。

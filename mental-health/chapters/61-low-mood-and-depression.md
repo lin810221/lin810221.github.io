@@ -2,6 +2,17 @@
 
 理解持續改變，也避免把暫時難過和疾病混成一件事。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-mood-function.svg" target="_blank" rel="noopener" aria-label="放大：情緒、興趣與功能不是同一條尺"><img src="assets/figures/31-mood-function.svg" alt="三個獨立觀察區域沒有症狀總分，時間和情境需另記錄，不能從圖直接判憂鬱。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜情緒、興趣與功能不是同一條尺</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別描述低落、興趣和生活功能，再說明它們可能不同步；一般低落與需要評估的情境不能只靠一圈顏色區分。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只悲傷
 
 興趣或愉悅下降、精力、睡眠、食慾、集中和日常功能等都可能相關，表現也有個體差異。不是每人都以哭泣呈現，也不能由外表活躍排除困擾。

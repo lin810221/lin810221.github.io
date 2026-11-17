@@ -2,6 +2,17 @@
 
 把喜好、資源與回饋納入原理，不用羞辱和極端疲勞當成效標準。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-participation-support.svg" target="_blank" rel="noopener" aria-label="放大：營養、生活支持與持續參與"><img src="assets/figures/45-participation-support.svg" alt="中心參與目標與能量供應、生活安排、支持和證據相連，不將某補充品當所有問題的解答。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜營養、生活支持與持續參與</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從生活安排與支持兩側提出可調整問題，讓持續參與不只剩意志力；圖中的箭頭不是員工或運動者的健康排名與責任歸咎。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 計畫需要能實際存在
 
 工作、照顧、交通、費用、設備和喜好都影響持續性。最複雜或研究平均最佳化方案，若長期無法完成，實際劑量便不同；先確認可行性，不將困難全歸給意志力。

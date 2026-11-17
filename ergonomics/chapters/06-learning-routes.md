@@ -2,6 +2,17 @@
 
 從基礎走向實作，同時知道哪些問題需其他專業。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-participation-privacy.svg" target="_blank" rel="noopener" aria-label="放大：改善也需要人的聲音"><img src="assets/figures/03-participation-privacy.svg" alt="觀察、訪談、資源和回顧圍繞具體任務協作，個資最小化，不靠一張照片代表全部工作。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜改善也需要人的聲音</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把自己的學習問題放進工作地圖，辨識此課與運動、照護的不同分工；不把跨課連結當本課已完成個人評估。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 基礎與照護
 
 第1–4章補人體、力與疼痛。肌肉骨骼不是脆弱機器的簡單比喻，組織會適應，症狀也有多重脈絡；急性或進展問題需適當醫療協助。

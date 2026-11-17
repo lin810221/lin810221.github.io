@@ -2,6 +2,17 @@
 
 算的是幾何，不是字級或視力處方。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-angle-glare.svg" target="_blank" rel="noopener" aria-label="放大：可讀性：尺寸、距離與反光都要看"><img src="assets/figures/20-angle-glare.svg" alt="兩個視覺三角形表示不同距離與字高的關係，亮面反光是另一問題；圖不是視力或字級處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜可讀性：尺寸、距離與反光都要看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找字高和距離，再用圖比較視角如何改變；螢幕CSS字級和實體字高不同，不能由三角形當視力檢查或通用字體處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 高度和距離的關係
 
 同樣實體文字高度，距離較遠時視角較小。教材以高度h、距離d算：

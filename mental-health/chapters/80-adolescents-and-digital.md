@@ -2,6 +2,17 @@
 
 兼顧自主、連結、保護與發展需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-development-context.svg" target="_blank" rel="noopener" aria-label="放大：兒少與家庭：把需要放在發展和環境中"><img src="assets/figures/40-development-context.svg" alt="不同尺寸人物表示發展與支持需求，並非成熟程度、能力或健康排名。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜兒少與家庭：把需要放在發展和環境中</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為青少年案例補上同儕、用途與數位環境，說明相同時數不一定相同經驗；讓當事人意願和隱私仍可被討論。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 發展與關係
 
 身分、同儕、家庭和學校期待，會影響青少年的選擇與感受。不能把所有變化都說成叛逆，也不能從成人標準直接判定成熟與否。

@@ -2,6 +2,17 @@
 
 避免平均成人模板遮住個別需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-body-differences.svg" target="_blank" rel="noopener" aria-label="放大：不同身體與功能：不只用平均尺寸"><img src="assets/figures/40-body-differences.svg" alt="不同可達與淨空條件是有限的幾何需求，還需功能、骨關節條件及使用者回饋；不以年齡判能力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜不同身體與功能：不只用平均尺寸</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩位虛構使用者時，除了身高再列視覺、裝備和功能需求；兩項幾何符合不等於全人口或健康保證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 身體差異不只身高
 
 肢段比例、關節活動、力量、視覺、疼痛、輔具、穿戴及經驗都可能影響操作。同身高不保證相同伸取與淨空；樣本尺寸也不能代表所有文化、年齡與工作族群。

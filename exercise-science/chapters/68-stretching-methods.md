@@ -2,6 +2,17 @@
 
 把短期準備、長期柔軟度與表現目的分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-rom-context.svg" target="_blank" rel="noopener" aria-label="放大：活動範圍與伸展方法的參考點"><img src="assets/figures/34-rom-context.svg" alt="同一肢段的兩個示意位置及未標數字的弧線，提示ROM需明確量法；圖不給安全角度或動作處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜活動範圍與伸展方法的參考點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在位置圖旁分別寫靜態與動態方法的時間特徵，再回到任務目的；圖只解釋位置比較，不要求讀者把身體拉到某個終點。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 方法在做什麼
 
 靜態維持某位置，動態以控制的移動經過範圍，其他方法還有主動收縮與外在協助等。名稱不同，實際強度、時間、肌群與姿勢也不同，不能只用伸展一詞把全部視為相同。

@@ -2,6 +2,17 @@
 
 整理一個可以試、可以停、可以換的工具箱。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-kindness-preference.svg" target="_blank" rel="noopener" aria-label="放大：自我回應與方法偏好"><img src="assets/figures/18-kindness-preference.svg" alt="自責不是唯一回應，技能選擇還要看目的、負擔及當事人偏好；沒有規定每人都喜歡同一方法。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜自我回應與方法偏好</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩種方法的目的、負擔與偏好，選出可試行和回顧的方式；選擇不用某技能也不是個人失敗。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先問目的
 
 需要穩定注意、處理實際任務、取得支持，還是尋求評估？呼吸、重評、問題解決和協調工作，回應不同需要；沒有一項技巧可承擔全部照護。

@@ -2,6 +2,17 @@
 
 先確認指南在談誰，再理解數字。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-life-stage-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：生命階段與適用族群"><img src="assets/figures/40-life-stage-boundaries.svg" alt="人物大小只為辨識情境，不是兒少、成人或長者的能力比例，界線不得直接外推。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜生命階段與適用族群</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出各人物代表不同情境，再列原資料需要哪些族群與方法條件；說明成人界線不能直接縮小套兒少。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 成人規則不是全齡規則
 
 台灣一般成人BMI界線、成人血壓或PREVENT年齡範圍，都有明確族群。兒童成長、青春期、孕哺和其他特殊情境需要不同評估；不能只因公式能輸入就認為適用。

@@ -2,6 +2,17 @@
 
 學會看測量條件，而非用一個數字評斷壓力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-rr-interval.svg" target="_blank" rel="noopener" aria-label="放大：心搏間隔變化與情境"><img src="assets/figures/06-rr-interval.svg" alt="兩列節點代表虛構心搏時點，間隔可能不同；不是心電圖、HRV檢測或焦慮診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜心搏間隔變化與情境</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出心率與相鄰心搏間隔變化不是同一件事，再列圖中未提供的呼吸、活動與量測條件；不能由節點排法診斷壓力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://doi.org/10.1152/ajpheart.00041.2026">2026 HRV原方法資料</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## HRV量到什麼
 
 心率變異涉及心搏間隔的變化，不是平均心率本身。不同指標、紀錄長度與訊號處理有不同意義；PPG脈搏變異不應無條件等同ECG取得的HRV。

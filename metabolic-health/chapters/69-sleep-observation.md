@@ -2,6 +2,17 @@
 
 從觀察走向值得詢問的問題，不用睡眠分數診斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-sleep-circadian.svg" target="_blank" rel="noopener" aria-label="放大：睡眠與晝夜：時間之外還有品質"><img src="assets/figures/35-sleep-circadian.svg" alt="時鐘代表節律與時間安排，不是睡眠分期或疾病診斷圖，也不給每人同一需求。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜睡眠與晝夜：時間之外還有品質</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在時鐘旁分開時數、品質與規律，說明為何一次穿戴分數或單一時數不能完整描述睡眠。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 睡眠與調節相連
 
 睡眠涉及恢復、神經內分泌、情緒與日常行為，可能與食慾、血壓和血糖調節交織。單一機轉不代表少睡一小時必然讓某個人的血糖上升固定值；個體與生活條件不同。

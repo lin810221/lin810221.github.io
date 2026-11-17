@@ -2,6 +2,17 @@
 
 了解活動、回饋與低落的循環，以及一般練習和治療的差別。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-small-step.svg" target="_blank" rel="noopener" aria-label="放大：小步與機會：讓行動可被辨認"><img src="assets/figures/14-small-step.svg" alt="階梯表示可選的小步而非療效或規定速度，環境和支持影響是否可行。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜小步與機會：讓行動可被辨認</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個虛構低落情境的小行動，補上時間、支持和可退出方式；圖不要求先感覺好，也不把小步當完整治療。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 行動與情緒會互相影響
 
 低落時興趣、精力與活動可能減少，較少接觸有意義的事又可能加深困難。這是可理解的循環，不表示當事人故意不努力；疼痛、資源和其他疾病也可能參與。

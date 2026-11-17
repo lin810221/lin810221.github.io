@@ -2,6 +2,17 @@
 
 把份量、來源、纖維與健康情境放在一起，不讓單一標籤決定飲食。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-fiber-context.svg" target="_blank" rel="noopener" aria-label="放大：纖維、腸道與耐受的關係"><img src="assets/figures/12-fiber-context.svg" alt="腸腔內不同纖維與菌相、含水及個體條件互動；線段不代表單一纖維化學式，也不保證固定效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜纖維、腸道與耐受的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖旁加入虛構份量與時間條件，說明某種食物有纖維不代表人人可無限制增加，生活判斷仍需看整體飲食與耐受。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240073593">WHO：醣類攝取指南</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 檢查三個常見說法
 
 「水果糖和汽水完全一樣」忽略基質與營養；「無糖就是零碳水」混淆總糖與澱粉/其他成分；「不甜就不含糖」混淆感官與化學。先拆定義，再用標示和食物資料回答，避免以一個詞做整體判定。

@@ -2,6 +2,17 @@
 
 讀懂新概念，分清委員會框架、既有標準和個人評估。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-long-term-support.svg" target="_blank" rel="noopener" aria-label="放大：維持與重新調整的支持環"><img src="assets/figures/09-long-term-support.svg" alt="環狀支持圖強調資源和反覆回顧，不畫保證下降的體重曲線，也不把框架分類當個人責備。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜維持與重新調整的支持環</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把臨床框架和台灣分類各自放回用途，指出需要哪些功能、病史與情境；不要用支持圖取代正式評估。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 新框架想解決什麼
 
 只靠BMI可能未充分反映脂肪與功能，所以2025 Lancet Commission提出以過度脂肪及相關影響區分狀態。preclinical與clinical obesity不是用兩個新BMI數字切開。

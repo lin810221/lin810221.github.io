@@ -2,6 +2,17 @@
 
 同一數字在不同問題下，可能有不同意義。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-bp-records.svg" target="_blank" rel="noopener" aria-label="放大：排定血壓位置與缺漏"><img src="assets/figures/17-bp-records.svg" alt="格子代表排定位置，不是全部有效讀值；問號為未知，不填0，也不以色彩宣告合規或確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜排定血壓位置與缺漏</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在紀錄格外分開定義、治療起點與目標三種用途，說明即使平均可算，也不能不看族群與情境套同一門檻。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三個問題分開問
 
 第一是是否符合某套診斷定義；第二是何時考慮藥物；第三是照護後希望達成什麼目標。後兩者還受整體風險、共病、年齡、耐受與偏好影響。將任一數字寫成全人口的開藥線，會漏掉這些步驟。

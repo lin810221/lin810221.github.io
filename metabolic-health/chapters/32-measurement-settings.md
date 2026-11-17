@@ -2,6 +2,17 @@
 
 比較不同場景的量測目的與白袍、隱蔽現象。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-bp-position.svg" target="_blank" rel="noopener" aria-label="放大：居家血壓的支撐與量測條件"><img src="assets/figures/16-bp-position.svg" alt="坐姿、背部、手臂與袖帶的關係示意；完整程序、時點和722安排以課文及來源為準。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜居家血壓的支撐與量測條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以同一張坐姿圖為起點，列診間、居家與動態血壓在時段與程序的差異，說明不能把不同情境直接混算。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三種資料來源
 
 診間血壓是特定就醫環境的觀察；居家血壓由受訓後的日常量測提供多次資料；動態血壓監測則由設備按設定時段記錄日間與夜間。三者各有程序和判讀依據，不是同一變數多測幾次就能隨意合併。

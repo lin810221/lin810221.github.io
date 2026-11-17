@@ -2,6 +2,17 @@
 
 用2026回顧理解共同訓練，保留目標、方法和族群差異。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-concurrent-order.svg" target="_blank" rel="noopener" aria-label="放大：並行訓練與順序的比較條件"><img src="assets/figures/31-concurrent-order.svg" alt="兩排顛倒順序的虛構安排呈現比較問題，間隔及區塊寬度不是通用建議，也不宣稱一定相互抵銷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜並行訓練與順序的比較條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先確認兩排除了順序外還缺少哪些比較條件，再說出並行效果不能只憑兩種運動同週出現就判互相抵銷；結果需對準目標。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 並行的定義
 
 同一時期安排有氧與阻力，可同堂、同日或不同日。相對只做其中一項，訓練時間、總負荷與結果可能不同；不能以同時練兩種就認定力量必掉或肌肉長不出來。

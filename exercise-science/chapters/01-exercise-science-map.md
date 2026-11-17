@@ -2,6 +2,17 @@
 
 建立全課地圖，分開身體活動、運動、訓練和競技表現。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-goals.svg" target="_blank" rel="noopener" aria-label="放大：健康、能力與表現的交集"><img src="assets/figures/01-goals.svg" alt="三個重疊區表示健康、能力、表現可相關但不能完全互換；沒有把圓面積當實測效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜健康、能力與表現的交集</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出三個圈的交集，再各舉一個健康、能力與表現的問題；說明為何同一測試結果不能自動代表三個目標都改善。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個不同層次
 
 身體活動包含通勤、工作、家務與休閒中消耗能量的動作；運動通常更有計畫，訓練則以反覆刺激和恢復改變能力。競技還包含技能、策略和情境。同樣流汗，不表示四個層次都達到相同目的；坐得少與跑得快也是不同結果。

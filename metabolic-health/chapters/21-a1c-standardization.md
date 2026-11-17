@@ -2,6 +2,17 @@
 
 理解糖化血色素的尺度，不把換算當個人平均血糖或確診。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-a1c-background.svg" target="_blank" rel="noopener" aria-label="放大：紅血球、糖化與HbA1c背景"><img src="assets/figures/11-a1c-background.svg" alt="紅血球與血紅素糖化提供一段時間的訊息，壽命、變異及方法會影響；圖不畫固定個人平均血糖。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜紅血球、糖化與HbA1c背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分清紅血球、血紅素與糖化訊息，再辨識NGSP和IFCC是同指標的尺度，不把它當單次血糖換單位。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 指標在描述什麼
 
 HbA1c反映血紅素糖化相關資訊，與一段時間的血糖暴露有關，但受紅血球與方法影響。不是每個人精準相同的平均血糖，也不是單次指尖值的另一種單位。

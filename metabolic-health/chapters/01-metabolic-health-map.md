@@ -2,6 +2,17 @@
 
 建立全課地圖，分開身體調節、風險因子、疾病和預防。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-metabolic-map.svg" target="_blank" rel="noopener" aria-label="放大：代謝健康：器官與預防的地圖"><img src="assets/figures/01-metabolic-map.svg" alt="用心、肝、胰島、腎與周邊組織建立位置與照護關係，不從器官圖診斷個人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜代謝健康：器官與預防的地圖</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出心、肝、胰島與腎的位置及代表功能，再說明為何一張血糖檢驗不能概括所有器官的代謝健康。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 代謝不是只指燃燒熱量
 
 代謝包含能量與物質的分解、合成、儲存和調節，涉及肝臟、肌肉、脂肪、胰臟、腎臟和血管等。體重或單一血糖都只描述部分資訊，不能獨自代表全部代謝健康。

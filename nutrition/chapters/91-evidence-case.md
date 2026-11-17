@@ -2,6 +2,17 @@
 
 從標題回到問題、原始計數與適用性，完成一頁查核紀錄。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-news-label-case.svg" target="_blank" rel="noopener" aria-label="放大：營養新聞與產品標示互相核對"><img src="assets/figures/46-news-label-case.svg" alt="新聞或廣告的主張和實際產品標示並列，追分母、對象、時間與來源，不因產品名字相同就外推原料或研究效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜營養新聞與產品標示互相核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將新聞的主要主張寫在左頁，找比較對象和結果期限，再說明缺少研究設計或分母時，不能只摘錄醒目百分比。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 案例資料
 
 虛構新聞宣稱「某飲品讓不良事件少20%」。底稿是對照1000人100件、介入1000人80件、追蹤一年；沒有提供信賴區間，也尚未確認隨機與依從性。這些數字只用於學習，不代表真實產品研究。

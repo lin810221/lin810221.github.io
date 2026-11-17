@@ -2,6 +2,17 @@
 
 把阻力、有氧、技能與生活放到同一張時間表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-progress-review.svg" target="_blank" rel="noopener" aria-label="放大：雙重漸進與回顧節點"><img src="assets/figures/29-progress-review.svg" alt="假想階梯含維持平台及回顧節點，沒有給固定個人加重規則；變化需可比較觀察。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜雙重漸進與回顧節點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一週可用時間標在階梯之外，說明優先目標、其他課程和恢復如何限制安排；不能只把每個單項建議直接塞滿整個星期。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只看健身房時間
 
 球類、搬運、通勤、照顧工作與其他活動也可能帶來壓力。週表先列固定條件和主要目標，再安排不同任務，避免把未記錄部分假設成完全休息。

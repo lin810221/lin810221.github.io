@@ -2,6 +2,17 @@
 
 從輸入、利用、儲存與調節理解數值為何會變動。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-organ-coordination.svg" target="_blank" rel="noopener" aria-label="放大：器官協作與負回饋"><img src="assets/figures/04-organ-coordination.svg" alt="肝、胰島、肌肉和腎以供應、感受、訊號及回應參與調節，功能關係圖不按器官位置排列，不表示直接管路。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 04｜器官協作與負回饋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先選一個需要維持的變數，再把肝、胰島與周邊組織接成回饋關係；指出圖中未畫出的時間與調節條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 動態而非固定不動
 
 身體透過多種訊號調節內在狀態，進食、活動、睡眠和疾病會影響觀察。恆定不是每分鐘數字一樣，也不是越平越健康；短期反應和長期狀態需分開看。

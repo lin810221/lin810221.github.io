@@ -2,6 +2,17 @@
 
 用詢問和反映，先知道對方需要什麼。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-social-connection.svg" target="_blank" rel="noopener" aria-label="放大：連結的品質：不只數有幾個人"><img src="assets/figures/22-social-connection.svg" alt="不同連線代表可取得的陪伴、實務協助或專業資源，線長與節點數不是孤獨量表。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜連結的品質：不只數有幾個人</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一條連線寫一句傾聽和確認需要的回應，區分理解感受與同意所有推論；也保留對方不想談的選擇。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先取得談話意願
 
 可以問現在是否適合談、希望被聽還是一起找方法。對方可以拒絕或改時間，支持不是逼迫告白，也不是把你想知道的細節全部問完。

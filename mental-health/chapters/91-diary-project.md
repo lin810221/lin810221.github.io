@@ -2,6 +2,17 @@
 
 學會整理觀察，不把紀錄當診斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-diary-privacy.svg" target="_blank" rel="noopener" aria-label="放大：日記欄位：先問用途，再決定收多少"><img src="assets/figures/46-diary-privacy.svg" alt="虛構記錄卡保留目的、時間、選擇和缺漏，身份欄不需要填入；不是要求公開日記。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜日記欄位：先問用途，再決定收多少</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出日記目的和欄位，選一項可省略的私人資訊；虛構資料也能學習，不用把記錄完成當治療或安全保證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先說目的
 
 本課用14天虛構原創0–10觀察，學資料與假設，不代表真實受試者或臨床工具。可在不輸入任何私人經驗下完成全部專題，並了解怎麼提出更清楚問題。

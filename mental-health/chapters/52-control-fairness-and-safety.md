@@ -2,6 +2,17 @@
 
 把難以量成分鐘的工作條件也說清楚。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-work-time.svg" target="_blank" rel="noopener" aria-label="放大：時間帳本與工作條件"><img src="assets/figures/26-work-time.svg" alt="已知安排與未知需求並列，時間差額不是心理容量；公平、自主和角色條件不能全縮成分鐘。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜時間帳本與工作條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在帳本外補上自主、角色與公平資訊，指出它們為何不能完全換成分鐘；資料算術和組織責任需要一起討論。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 角色清楚度
 
 不知道要對誰負責、彼此衝突的要求或評價標準不清，可能增加不確定。清楚任務、決策權和溝通管道，是組織可以改善的部分，不只是員工想法問題。

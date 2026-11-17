@@ -2,6 +2,17 @@
 
 看壓力反應的時程、需求與資源。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-stress-time.svg" target="_blank" rel="noopener" aria-label="放大：反應與時間：沒有一條通用病程曲線"><img src="assets/figures/05-stress-time.svg" alt="三段虛構時間線有不同事件與回顧位置，只表示可能的時間結構，不預測症狀或恢復。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 05｜反應與時間：沒有一條通用病程曲線</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較單次和反覆需求的時間結構，指出恢復條件與支持可能不同；不要把每一次短期反應都當成已造成長期傷害。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 急性動員可以有功能
 
 面對挑戰時提高警覺與動員，有助準備行動。反應本身不是失敗；問題還在是否合宜、能否恢復、是否影響生活，以及需求是否長期超出資源。

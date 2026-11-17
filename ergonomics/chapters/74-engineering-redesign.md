@@ -2,6 +2,17 @@
 
 把想買的產品轉為可以檢驗的工作需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-controls-design.svg" target="_blank" rel="noopener" aria-label="放大：來源改善與工程驗收"><img src="assets/figures/37-controls-design.svg" alt="工作可從取消不必要轉運、設計支撐及組織條件改善；工程試用要確認使用者與新風險。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜來源改善與工程驗收</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把想買的設備改寫成具體任務需求和試用驗收條件，列一個新風險與回顧；產品名稱不能代替人與任務適配。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先寫需求
 
 不要只寫「買人體工學椅」，應寫哪些工作需要支撐、誰使用、桌面和腳下有何限制、可調範圍及換人使用方式。產品名稱不會自動證明適配；幾個獨立尺寸合適，也不保證同時使用合適。

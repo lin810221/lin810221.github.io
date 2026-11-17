@@ -2,6 +2,17 @@
 
 分清測量和預測，不要求初學者靠最大試舉理解原理。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-measured-estimated.svg" target="_blank" rel="noopener" aria-label="放大：實測、估計與結果來源"><img src="assets/figures/14-measured-estimated.svg" alt="左為完成任務的觀察，右為公式或裝置估計；框內曲線只是模型符號，不表示裝置已量得同一生理量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜實測、估計與結果來源</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出完成重量與次數是觀察資料，再找估計公式需要的輸入與適用條件；估計1RM不會因為印出小數位就成為直接實測。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 1RM的定義
 
 在指定動作、技術與ROM下可完成一次的最大外負荷，是任務相關的測試。它不是任何角度、器材或日子的固定能力；測試需要熟悉、合適流程與保護，個人適用性不能由網頁判斷。

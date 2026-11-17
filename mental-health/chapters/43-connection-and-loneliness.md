@@ -2,6 +2,17 @@
 
 理解主觀感受、客觀接觸與關係品質。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-social-connection.svg" target="_blank" rel="noopener" aria-label="放大：連結的品質：不只數有幾個人"><img src="assets/figures/22-social-connection.svg" alt="不同連線代表可取得的陪伴、實務協助或專業資源，線長與節點數不是孤獨量表。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜連結的品質：不只數有幾個人</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分開接觸人數、關係品質與主觀孤獨，說明有很多節點也不代表需要已被滿足；不由圖判誰社交能力好壞。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不是同一件事
 
 獨處、社交接觸少與感到孤獨不同。有人享受獨處，有人在很多人中仍感不到理解；不能只用朋友數或訊息量測量全部連結。

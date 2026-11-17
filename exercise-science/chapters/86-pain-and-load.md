@@ -2,6 +2,17 @@
 
 分清一般訓練反應和需要評估的問題，不把教材變成復健處方。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-screen-pain.svg" target="_blank" rel="noopener" aria-label="放大：資料、感受與專業評估的界線"><img src="assets/figures/43-screen-pain.svg" alt="四張資訊卡把資料不足、個人感受、功能和必要評估分開，不以紅綠燈或單一疼痛分數發運動許可。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜資料、感受與專業評估的界線</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把疼痛感受、功能與任務分開描述，再說明單一角度或分數不能定位全部病因；尊重感受，同時保留必要評估與其他可能解釋。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義及個人經驗</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 用力感、DOMS與疼痛
 
 一般疲勞、延遲痠痛與活動中急性不適是不同情境；僅用分數不足以判原因。不能把所有痠痛叫傷害，也不能把所有疼痛都說練過就好，需要看時序、位置、功能與背景。

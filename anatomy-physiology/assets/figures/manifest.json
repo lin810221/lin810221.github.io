@@ -1,0 +1,514 @@
+[
+  {
+    "id": "f01",
+    "file": "assets/figures/01-body-map.svg",
+    "title": "人體系統位置導覽",
+    "description": "正面人體概念圖，腦在頭部、肺在胸腔兩側、心臟在兩肺間偏人體左、肝在人體右上腹；不精確比例。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f02",
+    "file": "assets/figures/02-levels.svg",
+    "title": "從分子到系統",
+    "description": "分子構成細胞，細胞與基質構成組織，組織構成器官，器官協作成系統。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f03",
+    "file": "assets/figures/03-feedback.svg",
+    "title": "穩態的負回饋",
+    "description": "偏離經感受與整合引發反應，反應減少原本偏離；穩態是動態調節而非數字永遠固定。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f04",
+    "file": "assets/figures/04-molecules.svg",
+    "title": "生理使用的分子",
+    "description": "水提供溶劑與熱特性，離子參與電與滲透，蛋白質提供結構及作用，脂質參與膜與能量。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f05",
+    "file": "assets/figures/05-fluid-spaces.svg",
+    "title": "細胞內外與體液空間",
+    "description": "細胞膜分開細胞內外，細胞外液含組織液及血漿，空間之間交換但不是單一水槽。",
+    "kind": "區室圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f06",
+    "file": "assets/figures/06-gradient.svg",
+    "title": "濃度差與淨移動",
+    "description": "左右區室有濃度差，示意溶質順梯度的淨移動；實際水移動需另看有效溶質與膜。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f07",
+    "file": "assets/figures/07-cell.svg",
+    "title": "一般有核細胞",
+    "description": "一般化有核細胞的膜、核、細胞質與胞器；不是所有人體細胞都具有圖中全部構造，成熟紅血球為例外。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f08",
+    "file": "assets/figures/08-membrane.svg",
+    "title": "膜、通道與幫浦",
+    "description": "磷脂雙層、跨膜通道和能量耦合幫浦的關係；箭頭為教學運輸方向，不表示所有粒子都能自由通過。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f09",
+    "file": "assets/figures/09-cell-cycle.svg",
+    "title": "細胞週期與分化",
+    "description": "生長、DNA複製、分裂與細胞分化相連但不同；成熟細胞的分裂能力各異。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f10",
+    "file": "assets/figures/10-tissues.svg",
+    "title": "四大組織對照",
+    "description": "上皮覆蓋與交換、結締組織支持與運輸、肌肉產生張力、神經組織傳遞與整合。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f11",
+    "file": "assets/figures/11-epithelium.svg",
+    "title": "上皮的頂端與基底",
+    "description": "上皮細胞頂端面朝腔或外界，基底面連接基底膜，下方結締組織可供應營養；不是所有上皮皆為單層柱狀。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f12",
+    "file": "assets/figures/12-membranes.svg",
+    "title": "不同層次的膜",
+    "description": "細胞膜是細胞邊界，黏膜襯通外界管道，漿膜襯體腔及包覆器官，滑膜與關節腔相關。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f13",
+    "file": "assets/figures/13-skin.svg",
+    "title": "皮膚與皮下組織",
+    "description": "由表及深：無血管的表皮、有結締組織血管神經的真皮、其下皮下組織；圖不按厚度比例。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f14",
+    "file": "assets/figures/14-skin-appendages.svg",
+    "title": "毛囊、皮脂腺與汗腺",
+    "description": "毛囊位於皮膚內，皮脂腺與毛囊相關，汗腺有導管通向表面；不是排出所有代謝廢物的主路。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f15",
+    "file": "assets/figures/15-heat-loss.svg",
+    "title": "散熱是交換過程",
+    "description": "體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f16",
+    "file": "assets/figures/16-skeleton.svg",
+    "title": "中軸與附肢骨架",
+    "description": "正面骨架簡化圖：中軸支持保護，附肢連接並參與移動；不以固定骨數判個人正常與否。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f17",
+    "file": "assets/figures/17-bone-section.svg",
+    "title": "長骨的構造與活組織",
+    "description": "長骨示意含緻密骨、鬆質骨與骨髓空間；外形不是所有骨的共同模板，骨持續改建。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f18",
+    "file": "assets/figures/18-joint.svg",
+    "title": "滑液關節的邊界與活動",
+    "description": "兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f19",
+    "file": "assets/figures/19-muscle-hierarchy.svg",
+    "title": "肌肉內部的層級",
+    "description": "整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。",
+    "kind": "層級圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f20",
+    "file": "assets/figures/20-sarcomere.svg",
+    "title": "肌節與肌絲滑動",
+    "description": "Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊，不是肌絲消失或自身縮短。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f21",
+    "file": "assets/figures/21-nmj.svg",
+    "title": "從神經到骨骼肌張力",
+    "description": "運動神經釋放訊號，肌膜興奮導致細胞內鈣增加，鈣使肌絲交互作用；ATP參與橫橋循環與恢復。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f22",
+    "file": "assets/figures/22-neuron.svg",
+    "title": "神經元不是一整條神經",
+    "description": "一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f23",
+    "file": "assets/figures/23-action-potential.svg",
+    "title": "動作電位的時間順序",
+    "description": "示意去極化、再極化與短暫後電位；無實測刻度，不以波峰高低推個人感覺強度。",
+    "kind": "時間圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f24",
+    "file": "assets/figures/24-synapse.svg",
+    "title": "化學突觸與整合",
+    "description": "突觸前釋放傳遞物質跨間隙作用於後膜受體，訊息轉換而非細胞融合；非所有突觸均為化學突觸。",
+    "kind": "放大圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f25",
+    "file": "assets/figures/25-brain.svg",
+    "title": "腦的主要區域",
+    "description": "側面示意大腦、小腦、腦幹及與脊髓的連接；非影像定位圖，不把複雜功能歸成單一小點。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f26",
+    "file": "assets/figures/26-reflex.svg",
+    "title": "反射弧與上行訊息",
+    "description": "感受器經傳入路徑到中樞整合，再由傳出路徑影響效應器；訊息也可向腦傳遞，不必先有意識決策才反應。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f27",
+    "file": "assets/figures/27-autonomic.svg",
+    "title": "體神經與自律路徑",
+    "description": "體神經運動路徑至骨骼肌；自律路徑經神經節至心肌、平滑肌及腺體，效果依器官及受體而異。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f28",
+    "file": "assets/figures/28-eye.svg",
+    "title": "光學路徑與神經路徑",
+    "description": "眼球剖面概念：角膜與水晶體折光，視網膜感光，視神經傳訊；瞳孔是虹膜中央開口。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f29",
+    "file": "assets/figures/29-ear.svg",
+    "title": "外耳、中耳、內耳",
+    "description": "聲音經耳道、鼓膜、聽小骨到耳蝸；耳蝸毛細胞轉換訊號，前庭結構參與平衡而非聽覺主路。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f30",
+    "file": "assets/figures/30-sensory-integration.svg",
+    "title": "感覺是整合，不是單一路徑",
+    "description": "視覺、前庭、本體感覺共同支持平衡；風味也整合味覺嗅覺與其他感受。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f31",
+    "file": "assets/figures/31-endocrine-map.svg",
+    "title": "內分泌器官與血液訊號",
+    "description": "主要腺體位置圖：下視丘腦下垂體、甲狀腺副甲狀腺、腎上腺與胰島；只選代表器官，並非完整名錄。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f32",
+    "file": "assets/figures/32-hormone-axis.svg",
+    "title": "內分泌軸與例外",
+    "description": "代表性下視丘—腦下垂體前葉—周邊腺軸及負回饋；後葉及醛固酮等不能硬套相同控制鏈。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f33",
+    "file": "assets/figures/33-glucose-loop.svg",
+    "title": "餐後與空腹的訊號分工",
+    "description": "餐後與空腹的血糖調節：胰島訊號透過肝、肌肉及脂肪等改變利用與儲存；不是單一開關。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f34",
+    "file": "assets/figures/34-blood.svg",
+    "title": "血液的四類重要成分",
+    "description": "血漿運輸、紅血球氣體運輸、白血球防禦、血小板止血，並不是每類都是完整有核細胞。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f35",
+    "file": "assets/figures/35-lymph.svg",
+    "title": "組織液、淋巴與回流",
+    "description": "血管與組織液交換，部分液體進淋巴經淋巴結回到靜脈；不宣稱固定比例或所有微血管靜脈端持續大量回吸。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f36",
+    "file": "assets/figures/36-immune.svg",
+    "title": "先天與適應性免疫協作",
+    "description": "屏障與先天反應、抗原呈現、T/B細胞、抗體及記憶互相協作，並非兩套完全獨立防線。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f37",
+    "file": "assets/figures/37-heart.svg",
+    "title": "心臟四腔與房室瓣",
+    "description": "右心房到右心室經三尖瓣，左心房到左心室經二尖瓣；患者右心位於圖左，兩側由中隔分隔。",
+    "kind": "構造關係圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f38",
+    "file": "assets/figures/38-circulation.svg",
+    "title": "肺循環與體循環連成一圈",
+    "description": "右心室經肺動脈到肺毛細血管，經肺靜脈到左心，再經體循環回右心；動靜脈以離心回心命名。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f39",
+    "file": "assets/figures/39-conduction.svg",
+    "title": "心臟傳導與收縮順序",
+    "description": "竇房結、心房、房室結延遲、希氏束束支浦肯野系統及心室形成順序，神經與激素調節而非每拍從腦發令。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f40",
+    "file": "assets/figures/40-airway.svg",
+    "title": "呼吸道與胸腔",
+    "description": "氣管分成支氣管，肺內分支通向末端肺泡；肺位於胸腔，膈肌在下方，肺本身不是主動拉開的肌肉。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f41",
+    "file": "assets/figures/41-alveolus.svg",
+    "title": "肺泡與微血管交換",
+    "description": "氧從肺泡跨薄屏障進血，二氧化碳反向；兩者沿各自分壓梯度，氣道空氣不直接成為血液。",
+    "kind": "放大圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f42",
+    "file": "assets/figures/42-ventilation.svg",
+    "title": "吸氣與安靜呼氣對照",
+    "description": "安靜吸氣膈肌收縮向下胸腔容積增加，壓差使空氣進入；安靜呼氣主要由彈性回縮促成。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f43",
+    "file": "assets/figures/43-digestive.svg",
+    "title": "消化管的連通路徑",
+    "description": "食道到胃、小腸、大腸及肛門相連，分泌消化及吸收有區域分工，並非所有營養在胃吸收。",
+    "kind": "構造關係圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f44",
+    "file": "assets/figures/44-villus.svg",
+    "title": "小腸絨毛的吸收界面",
+    "description": "絨毛表面上皮通過後，營養進入微血管或乳糜管等路徑；圖只畫代表性分工，不是所有脂質的唯一規則。",
+    "kind": "剖面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f45",
+    "file": "assets/figures/45-liver-pancreas.svg",
+    "title": "肝膽胰與十二指腸",
+    "description": "肝製膽汁，膽囊儲存濃縮，膽道與胰外分泌導管通往十二指腸；食物不流進肝膽胰。",
+    "kind": "管路圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f46",
+    "file": "assets/figures/46-metabolism.svg",
+    "title": "能量轉換與ATP",
+    "description": "營養原料經代謝釋能，部分能量耦合ATP再用於細胞工作並產熱；ATP不是長期食物儲存倉。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f47",
+    "file": "assets/figures/47-temperature.svg",
+    "title": "產熱、散熱與回饋",
+    "description": "體溫受產熱、環境交換及中樞調節影響；37度不是每次測量、部位與時段的固定值。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f48",
+    "file": "assets/figures/48-exercise.svg",
+    "title": "活動時的多系統協作",
+    "description": "活動需求改變時，神經、肌肉、心肺、代謝與皮膚協作；這是概念關係而非個人訓練處方。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f49",
+    "file": "assets/figures/49-urinary.svg",
+    "title": "腎臟與尿路",
+    "description": "兩腎形成尿液，輸尿管至膀胱儲存，再由尿道排出；輸尿管與尿道不同，位置不按比例。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f50",
+    "file": "assets/figures/50-nephron.svg",
+    "title": "腎元的濾過、回收與分泌",
+    "description": "血漿部分水溶質濾入管腔，小管與血液間回收及分泌，最後排出；示意箭頭表示物質方向，非所有微血管細節。",
+    "kind": "路徑圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f51",
+    "file": "assets/figures/51-fluid-hormones.svg",
+    "title": "水鹽與酸鹼的分工",
+    "description": "ADH保水、醛固酮鈉鉀調節與肺腎酸鹼機制分開；不由此計算個人飲水或補充處方。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f52",
+    "file": "assets/figures/52-reproductive.svg",
+    "title": "生殖構造與運送路徑",
+    "description": "左為精子產生成熟與運送的連通示意，右為卵巢輸卵管子宮子宮頸陰道；不把尿道口與陰道口混用。",
+    "kind": "構造關係圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f53",
+    "file": "assets/figures/53-cycle.svg",
+    "title": "卵巢與子宮內膜的階段",
+    "description": "卵巢濾泡發展、排卵、黃體及子宮內膜變化透過激素互相關聯；不用固定28天推個人排卵。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f54",
+    "file": "assets/figures/54-placenta.svg",
+    "title": "胎盤的兩套循環與交換",
+    "description": "母體與胎兒血液一般保持分隔，在胎盤跨界交換物質；不是把母體動脈直接接到胎兒靜脈。",
+    "kind": "交換圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f55",
+    "file": "assets/figures/55-lifespan.svg",
+    "title": "生命階段中的身體變化",
+    "description": "成長、成熟與老化改變結構和調節餘裕，群體趨勢不能代替個人功能。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f56",
+    "file": "assets/figures/56-standing.svg",
+    "title": "站起來時的壓力調節",
+    "description": "姿勢改變影響回流與血壓，壓力感受與中樞調節可改變心血管反應；並非個人暈眩診斷流程。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f57",
+    "file": "assets/figures/57-integrated-traffic.svg",
+    "title": "吃進、吸入、運送與排出",
+    "description": "消化吸收與呼吸交換透過循環連到細胞，二氧化碳及其他代謝物走不同排出路徑。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f58",
+    "file": "assets/figures/58-evidence.svg",
+    "title": "圖、量測與診斷不是同一件事",
+    "description": "構造示意用於理解、真實影像需專業判讀、量測有方法與誤差、診斷需情境及證據。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f59",
+    "file": "assets/figures/59-model.svg",
+    "title": "模型、證據與生活問題",
+    "description": "提出問題、選用模型、觀察與修正能促進理解；相關、可重現算術與個人診斷各有不同要求。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f60",
+    "file": "assets/figures/60-capstone.svg",
+    "title": "跨系統概念圖練習",
+    "description": "把一個生活情境連到位置、物質路徑、控制訊號、回饋、時間及不確定性，形成可口述的概念地圖。",
+    "kind": "機制圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f61",
+    "file": "assets/figures/61-planes.svg",
+    "title": "解剖切面：切的是哪個方向",
+    "description": "三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。",
+    "kind": "切面圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f62",
+    "file": "assets/figures/62-cavities.svg",
+    "title": "體腔與膈肌分界",
+    "description": "正面概念圖顯示顱腔、沿脊柱的椎管、胸腔、腹腔與骨盆腔。脊柱投影與胸腹器官在不同深度，非同一切面。",
+    "kind": "位置圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f63",
+    "file": "assets/figures/63-vulva-openings.svg",
+    "title": "外陰與不同開口",
+    "description": "外陰外部概念圖，陰蒂相關構造、尿道口與陰道口分開標示；尿液不由陰道口正常排出，非精密比例。",
+    "kind": "構造圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  },
+  {
+    "id": "f64",
+    "file": "assets/figures/64-heart-wall.svg",
+    "title": "心壁與心包不是同一層",
+    "description": "心內膜、心肌、心外膜構成心壁的常用分層，外側心包囊另有層次及空間關係。此圖非比例。",
+    "kind": "層次圖",
+    "note": "原創概念示意，非比例；箭頭意義依圖內文字。"
+  }
+]

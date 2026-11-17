@@ -2,6 +2,17 @@
 
 把守恆、動態與測量分開，不將一天的差值當長期體脂預測。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-portion-range.svg" target="_blank" rel="noopener" aria-label="放大：份量的範圍，比假精準更有用"><img src="assets/figures/08-portion-range.svg" alt="三個不同碗量代表估計的不確定範圍，不是測得的熱量或體重預測；長時間變化還有身體調節及資料條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜份量的範圍，比假精準更有用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把同一份量估計延伸成數日的虛構情境，指出能量差、時間和體重調節之間還缺哪些條件，不能畫成固定減重直線。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 守恆關係與估計不同
 
 身體能量儲存變化依能量進出，但實際攝取、吸收、支出和組成難精準量。數學守恆不代表每個估計都準，也不表示行為調整可以忽略。體重是質量，包含水、肝醣、腸道內容與不同組織，不等於單一能量倉庫。

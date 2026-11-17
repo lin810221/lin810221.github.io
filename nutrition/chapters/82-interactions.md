@@ -2,6 +2,17 @@
 
 以完整清單和專業協調處理風險，不靠自然或水溶性標籤。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-upper-limit-sources.svg" target="_blank" rel="noopener" aria-label="放大：來源限定的上限與交互作用"><img src="assets/figures/41-upper-limit-sources.svg" alt="食物、補充品和藥物並列，來源形式及交互作用各需核對；上限不是把名稱相似的所有數字相加，無個人劑量建議。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜來源限定的上限與交互作用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將食物、補充品和藥物各列成一欄，指出需要專業確認的交互作用資訊，不把兩項都有營養成分就當可以任意搭配。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 交互作用不只重複成分
 
 補充品可能影響藥物作用、吸收或代謝，也可能與其他成分重疊。天然不保證安全；同一成分在不同形式、劑量與疾病背景下，問題可能不同。

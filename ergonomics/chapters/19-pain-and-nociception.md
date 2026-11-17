@@ -2,6 +2,17 @@
 
 以IASP定義理解生物、心理與社會脈絡。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-pain-context.svg" target="_blank" rel="noopener" aria-label="放大：感受、功能與情境：不只一條損傷尺"><img src="assets/figures/10-pain-context.svg" alt="人位於感受、功能、時間及照護需求的共同脈絡，沒有將痛分數直接換成組織破壞量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜感受、功能與情境：不只一條損傷尺</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把疼痛經驗和傷害感受分開，指出兩者可有關聯卻不是同一個精密刻度；保留真實感受，也不直接推損傷大小。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 疼痛是個人經驗
 
 疼痛受多層次因素影響，當事人的描述值得尊重。無法完整口語表達也不代表沒有疼痛；不能以外表或工作表現否定經驗。

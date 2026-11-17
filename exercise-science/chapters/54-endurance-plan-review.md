@@ -2,6 +2,17 @@
 
 將持續與間歇放回整週，分開計畫、完成和反應。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-interval-review.svg" target="_blank" rel="noopener" aria-label="放大：間歇總時鐘與整週核對"><img src="assets/figures/27-interval-review.svg" alt="上排分工作恢復，下排分計畫完成未知；圖只整理時序，未將所有段落自動歸為同一強度。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜間歇總時鐘與整週核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用下排核對計畫、實際完成及未知，另列品質、恢復與生活時間；週量數字相同，也不保證內容和可持續性完全相同。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 週結構先看目標
 
 日常健康、初次完成距離與競賽表現有不同需求。列主要任務、各次目的、總時間與強度定義；不只寫一週跑幾次或總里程，也不把群體指南當競賽最佳化的完整課表。

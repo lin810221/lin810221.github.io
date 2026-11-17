@@ -2,6 +2,17 @@
 
 對照現行台灣規範與國際名稱，標示生效日和適用食品。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-label-serving.svg" target="_blank" rel="noopener" aria-label="放大：一份、一包與每100的關係"><img src="assets/figures/28-label-serving.svg" alt="包裝與標示並列，先找每份大小與包裝份數，再核對每100基準及地區規則，不把不同制度視為相同門檻。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜一份、一包與每100的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在標示頁上標出地區規則的位置，解釋為何看到相同單位仍須核對修整、欄位及制度，不能任意混套台灣和其他地區。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765">TFDA：四歲以上每日參考值</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 本課台灣基線
 
 一般包裝食品營養標示採2022-06-23修正、2024-07-01施行的規範作查核基線；不是網站更新到2026就把生效日改成2026。2026-11-09重新查核後仍應保留原始公告與適用範圍。

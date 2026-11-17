@@ -2,6 +2,17 @@
 
 理解降低風險、提早發現和已確診照護的不同目的。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-metabolic-map.svg" target="_blank" rel="noopener" aria-label="放大：代謝健康：器官與預防的地圖"><img src="assets/figures/01-metabolic-map.svg" alt="用心、肝、胰島、腎與周邊組織建立位置與照護關係，不從器官圖診斷個人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜代謝健康：器官與預防的地圖</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿器官與生活之間的關係，分別舉出預防、篩檢及治療在問的問題；不要把三種行動當同一階段。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 預防是不同時間尺度
 
 降低暴露或改善可行生活條件，可在疾病前發揮作用；對高風險群的特定計畫又有不同背景。已確診後預防併發症和再次事件，也不是一般健康者照抄同一方案。

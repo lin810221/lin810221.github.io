@@ -2,6 +2,17 @@
 
 分開公費頻率、檢查項目與個人醫療需要。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-screening-door.svg" target="_blank" rel="noopener" aria-label="放大：服務資格、檢查與後續不是同一扇門"><img src="assets/figures/41-screening-door.svg" alt="入口圖只表示流程分工，不列新的資格門檻，不能把公費資格等同個人追蹤已完成。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜服務資格、檢查與後續不是同一扇門</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把公費資格放在入口，再列哪些內容需依台灣現行方案查核；說明符合資格仍不等於所有個人照護需求已涵蓋。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 已生效的制度
 
 2025-01-01起成人預防保健擴大：一般30–39歲每5年一次、40–64歲每3年一次、65歲以上每年一次；55歲以上原住民與35歲以上小兒麻痺患者有每年一次等規定。本文依2026國健署正式說明，實際資格仍以官方與院所確認為準。

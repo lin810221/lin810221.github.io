@@ -2,6 +2,17 @@
 
 讓姿勢、時機、設備與次數成為資料的一部分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-bp-position.svg" target="_blank" rel="noopener" aria-label="放大：居家血壓的支撐與量測條件"><img src="assets/figures/16-bp-position.svg" alt="坐姿、背部、手臂與袖帶的關係示意；完整程序、時點和722安排以課文及來源為準。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜居家血壓的支撐與量測條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出背部、雙腳、手臂支撐和袖帶，再補安靜休息與不交談等條件，說明一個讀值為何需要完整量測程序。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 數字來自一個程序
 
 收縮壓是心室收縮射血時較高的動脈壓，舒張壓是心臟舒張期間較低的壓力，單位mmHg。血壓受心輸出與血管阻力、體液和神經內分泌等調節；心跳次數不等於血壓，兩者不能以一個固定係數互換。袖帶讀值需放回量測程序，才有可比較的意義。

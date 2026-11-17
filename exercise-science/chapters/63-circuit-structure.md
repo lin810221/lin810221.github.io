@@ -2,6 +2,17 @@
 
 算清站點、過渡和恢復，分開有氧、阻力與技能目的。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-circuit-rounds.svg" target="_blank" rel="noopener" aria-label="放大：循環站與反覆回合的時序"><img src="assets/figures/32-circuit-rounds.svg" alt="虛構站次與回合分出工作及轉換，沒有以總時鐘判有氧、肌力或專項劑量等效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜循環站與反覆回合的時序</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿每個站分工作與換站，寫負荷、動作與努力條件；即使總分鐘相同，也不能宣稱已得到相同有氧或阻力訓練劑量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一種結構多種用途
 
 循環把多個站點或任務串起來，可為方便、綜合活動或特定訓練。名字本身不保證每肌群刺激、心肺強度或技能品質；需看站點內容、阻力、努力和休息。

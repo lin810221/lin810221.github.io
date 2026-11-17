@@ -2,6 +2,17 @@
 
 理解餵食階段、質地、營養與安全，學習如何查專門指南。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-pregnancy-infant.svg" target="_blank" rel="noopener" aria-label="放大：生命階段：需求與餵食情境會改變"><img src="assets/figures/37-pregnancy-infant.svg" alt="成人餐盤與發展情境並列，孕哺與嬰幼兒有不同需求及照護條件，圖不提供個人補充劑量或餵食處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜生命階段：需求與餵食情境會改變</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出右側發展情境，說明為何嬰幼兒不能直接縮小成人餐盤，質地、照護、過敏與發展條件需各自查核。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://www.cdc.gov/food-safety/foods/pregnant-women.html">CDC：孕期食物安全</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 嬰兒有獨立需要
 
 母乳、嬰兒配方和一般乳品／植物飲不是可任意互換的產品。一般成人餐盤、NRV與本課虛構日誌不適用嬰兒，需要按月齡、發展和健康狀況查餵食指南，早產或疾病又有其他考量。

@@ -2,6 +2,17 @@
 
 建立一個可以更新而不混淆時點的來源表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-observation-summary.svg" target="_blank" rel="noopener" aria-label="放大：觀察、衍生值與來源狀態"><img src="assets/figures/46-observation-summary.svg" alt="摘要保留未知欄位及時間，圖不做診斷；版本標示須區分正式、草案與未來生效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜觀察、衍生值與來源狀態</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在摘要旁加入來源、版本和生效狀態，說明正式文件、草案與未來規則為何不能只按網頁日期混為一談。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 至少四種日期
 
 研究發生或資料收集時間、正式發布時間、政策生效時間和本課查核日，可能不同。2026-11-10看到的資料不代表都在2026年新發布，頁面重新上線也不等於研究剛完成。

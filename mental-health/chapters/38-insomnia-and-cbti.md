@@ -2,6 +2,17 @@
 
 認識正式照護的結構，不自行設計睡眠限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-sleep-processes.svg" target="_blank" rel="noopener" aria-label="放大：睡眠壓力與節律：兩個不同過程"><img src="assets/figures/19-sleep-processes.svg" alt="上方單調與波動線為任意概念曲線，表示睡眠壓力及節律不同；沒有實測刻度或個人睡眠限制。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜睡眠壓力與節律：兩個不同過程</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出睡眠衛生、失眠評估與完整CBT-I的範圍不同，圖不提供自動縮短在床時間或個人睡眠處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle">NHLBI：睡眠與清醒週期</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先理解困擾
 
 入睡、維持睡眠或過早醒來的問題，需結合機會、持續時間與日間影響。一次睡不好不等同失眠疾患；反覆困擾也可能需要找其他睡眠或身體因素。

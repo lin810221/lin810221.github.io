@@ -2,6 +2,17 @@
 
 從資料條件找問題，不編造一個能通過的數字。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-reading.svg" target="_blank" rel="noopener" aria-label="放大：圖表與來源：可核對，不代替理解"><img src="assets/figures/47-report-reading.svg" alt="同一份虛構資料連到表格、圖與說明，缺漏與來源仍需保留；檔案格式不是療效證據。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜圖表與來源：可核對，不代替理解</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>遇到出乎預期的結果，依目的、輸入、缺漏、單位和來源逐項排查；不要為了讓圖完整而補0或改成理想值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 環境找不到模組
 
 完整解壓examples、共用模組和data，從examples執行；不要只複製編號腳本。程式無第三方依賴，可指定已安裝3.15.2執行檔，不需要改全系統環境。

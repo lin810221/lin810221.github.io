@@ -2,6 +2,17 @@
 
 分清固定測試、食用份量和個人反應，正確使用血糖指標。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-grain-matrix.svg" target="_blank" rel="noopener" aria-label="放大：穀粒結構與加工：GI之外的資訊"><img src="assets/figures/11-grain-matrix.svg" alt="穀粒的麩皮胚乳胚芽概念剖面，配合加工與餐食條件理解，不把全穀或某個GI值直接換成個人血糖曲線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜穀粒結構與加工：GI之外的資訊</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出食物結構可影響處理的哪些條件，再將GI、實際份量和餐食搭配分開，說明圖不能直接預測個人血糖。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240073593">WHO：醣類攝取指南</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## GI在測什麼
 
 GI比較特定測試條件下，含指定可利用碳水量食品與參照物的血糖反應。它不是糖含量，也不是完整營養評分；食物品種、加工、熟度與研究方法會影響。未知GI不能從營養標示計算出來。

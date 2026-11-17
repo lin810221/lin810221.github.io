@@ -2,6 +2,17 @@
 
 理解可攜性和長時間工作的不同需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-laptop-information.svg" target="_blank" rel="noopener" aria-label="放大：筆電綁定與多種資訊位置"><img src="assets/figures/19-laptop-information.svg" alt="左側筆電將螢幕輸入綁定，右側外接輸入可分開調整；只是配置選項，不保證任務與小空間皆適用。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜筆電綁定與多種資訊位置</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較綁定與分離配置能改變什麼、還缺哪些設備與支撐；不把外接一件配件就當已完成所有使用條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 幾何上的連動
 
 筆電螢幕與鍵盤連在一起，調高螢幕也會改變鍵盤；平板又有閱讀、觸控和支撐的不同需求。不能只要求使用者一邊抬高手、一邊維持視線。

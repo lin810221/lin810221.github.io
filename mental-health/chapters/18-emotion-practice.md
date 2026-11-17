@@ -2,6 +2,17 @@
 
 在虛構情境中練習觀察、命名、重評與界線。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-rumination-loop.svg" target="_blank" rel="noopener" aria-label="放大：反覆追問與可以打開的出口"><img src="assets/figures/09-rumination-loop.svg" alt="抽象反覆追問可能維持循環，具體資訊、支持或小步可提供另一方向；不是責怪有困擾的人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜反覆追問與可以打開的出口</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把訊息案例分成事實、推測、感受和行動，沿圖提出一個可驗證的小步；不把「停止想」當成唯一答案。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 第一版故事
 
 小安傳出工作問題兩小時未收到回應，開始想「我是不是問得很笨」，接著反覆查看手機，難以完成手邊任務。案例不假定對方動機，也不把小安的感受判成錯誤。

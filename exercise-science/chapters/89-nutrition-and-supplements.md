@@ -2,6 +2,17 @@
 
 將普通飲食和恢復放在前面，不以補充品取代訓練與評估。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-participation-support.svg" target="_blank" rel="noopener" aria-label="放大：營養、生活支持與持續參與"><img src="assets/figures/45-participation-support.svg" alt="中心參與目標與能量供應、生活安排、支持和證據相連，不將某補充品當所有問題的解答。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜營養、生活支持與持續參與</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿供應與需求那條線列原課文的時間、活動和飲食條件，再將補充品主張放到證據欄；知道生理機制不表示每個產品都有效。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 必要營養基礎
 
 能量、醣類、蛋白質、液體和微量營養支持活動與恢復，實際需要受任務和個人背景影響。運動者不等於都需相同高蛋白或補給量，使用食物、強化產品與補充品也需看來源和份量。

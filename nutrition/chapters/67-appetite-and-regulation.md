@@ -2,6 +2,17 @@
 
 區分生理、環境與行為因素，不以意志力解釋全部飲食。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-appetite-body.svg" target="_blank" rel="noopener" aria-label="放大：食慾訊號與身體組成"><img src="assets/figures/34-appetite-body.svg" alt="腸道、中樞和環境共同影響食慾，體重變化還含不同組成與測量條件，不把所有結果都歸個人意志。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜食慾訊號與身體組成</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿腸道、中樞與環境的線路說一個可能影響食慾的條件，再指出圖是關係示意，不能直接由食慾推某種激素水平。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a> · <a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 食慾是系統的結果
 
 消化道、腦部、能量儲存與多種訊號參與調節，食物體積、組成、口感、可得性與情境也有影響。沒有單一營養素能對所有人保證固定飽足時間；生理機制與自由生活下的實際攝取是不同層次。

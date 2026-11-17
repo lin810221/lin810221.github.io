@@ -2,6 +2,17 @@
 
 算公式之前先確認任務，不讓未知變理想。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-applicability-redesign.svg" target="_blank" rel="noopener" aria-label="放大：公式有邊界，改善要回到任務"><img src="assets/figures/30-applicability-redesign.svg" alt="同一搬運流程包含不同工作段，方法適用、未知和改善需分開，不把任意倍率補成1完成報告。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜公式有邊界，改善要回到任務</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選出哪些情境不能直接套本課RNLE算術，說明不適用不是把上限截斷後繼續算；未知倍率也不補成1。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 任務類型
 
 指定條件的雙手人工搬抬，和單手、坐跪姿、受限空間、不穩定負荷、抱搬人、推拉或大量其他非搬抬工作不同。不可只因有重量就使用RNLE。

@@ -2,6 +2,17 @@
 
 把數字、圖和來源留在同一個交付中。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-and-check.svg" target="_blank" rel="noopener" aria-label="放大：報告圖、數字與來源一起核對"><img src="assets/figures/47-report-and-check.svg" alt="同一虛構觀察可產表格、圖與說明，問號仍為未知；來源雜湊只核檔案一致，不核真實性或工作安全。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜報告圖、數字與來源一起核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將圖中未知與來源狀態對回原始觀察，說明報告可重跑與檔案雜湊不等於資料真實、工作安全或個人健康已證明。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三種產物
 
 reporting.py產生task_observations.csv、task_observations.svg與report.json。CSV保留各時段狀態，SVG只畫動作數及未知，JSON記摘要、假設、範圍與5個來源檔案雜湊。圖沒有傷害機率或疾病門檻。

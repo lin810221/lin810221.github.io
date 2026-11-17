@@ -2,6 +2,17 @@
 
 用可行行動與回饋支持長期改變。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-followup-support.svg" target="_blank" rel="noopener" aria-label="放大：家庭、資源與持續回顧"><img src="assets/figures/15-followup-support.svg" alt="參與者與家庭、照護資源之間雙向溝通，重新開始是計畫調整的一部分，圖不評個人是否成功。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜家庭、資源與持續回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>依圖把家庭、資源和回顧責任放進計畫，說明哪些支持讓預防能持續，而不是只要求個人保持動機。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 把目標變成行動
 
 「改善代謝」太抽象；「工作日午餐多選一份可取得的蔬菜」較容易觀察。行動仍要因個人飲食、資源及醫療限制調整。本課不從合成資料決定每人該吃多少，而是示範把目的、行動、觀察與回顧分欄。

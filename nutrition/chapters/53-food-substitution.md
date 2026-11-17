@@ -2,6 +2,17 @@
 
 比較不同組合的營養與資料完整性，不輸出單一健康排行榜。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-substitution-function.svg" target="_blank" rel="noopener" aria-label="放大：食物替代先看要保留的功能"><img src="assets/figures/27-substitution-function.svg" alt="乳品和植物來源示意替代比較，需查蛋白質、鈣、強化及限制，圖不宣告所有植物飲等同乳品或所有素食相同。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜食物替代先看要保留的功能</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿箭頭先說原食物提供的功能，再指出替代品須查的兩項成分，解釋只刪掉某類或只看相似顏色為何不夠。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a> · <a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 替代的目標
 
 替代可能為過敏、宗教、價格、便利、營養或口味。先寫要保留的是蛋白質、鈣、能量、料理功能還是某種限制；很少有替代品在所有維度完全相同。

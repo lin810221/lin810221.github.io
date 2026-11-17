@@ -2,6 +2,17 @@
 
 把價格、可食部、保存和時間放入規劃，避免理想清單脫離生活。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-recipe-yield.svg" target="_blank" rel="noopener" aria-label="放大：生熟重量、產率與採買"><img src="assets/figures/32-recipe-yield.svg" alt="原料進鍋後水分及重量可改變，產率與營養保留率不同，規劃還需成本及可取得條件；示意碗量不是實測比例。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜生熟重量、產率與採買</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在同一食譜加入價格、可取得與保存條件，說明最低單價不能單獨決定可持續規劃，還要看實際可食量與浪費。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 比價格先對基準
 
 一包價格不等於每100g可食部價格；骨、皮、液體和廢棄損失會改變可食量。若比較每份蛋白質成本，還需具體含量和實際份量；便宜或昂貴都不能單獨代表營養品質。

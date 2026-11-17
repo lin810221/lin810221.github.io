@@ -2,6 +2,17 @@
 
 用生命階段選參考值，結合葉酸、鐵、碘與食品安全的基本問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-pregnancy-infant.svg" target="_blank" rel="noopener" aria-label="放大：生命階段：需求與餵食情境會改變"><img src="assets/figures/37-pregnancy-infant.svg" alt="成人餐盤與發展情境並列，孕哺與嬰幼兒有不同需求及照護條件，圖不提供個人補充劑量或餵食處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜生命階段：需求與餵食情境會改變</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先把孕期與哺乳視為不同情境，說明需要核對哪些正式來源與個人條件，不能只把一般餐盤的每格無條件放大。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://www.cdc.gov/food-safety/foods/pregnant-women.html">CDC：孕期食物安全</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不是簡單吃兩人份
 
 孕期與哺乳有不同生理需求，還受孕程、原有健康、飲食與其他條件影響。不能把成人標示2000kcal或60g蛋白直接當孕哺需要，也不把每項營養素都一律加倍。

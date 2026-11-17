@@ -2,6 +2,17 @@
 
 用三餐分配觀察資料，同時區分研究問題與自動最佳化。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-protein-distribution.svg" target="_blank" rel="noopener" aria-label="放大：一日分布與整體供應"><img src="assets/figures/18-protein-distribution.svg" alt="三個餐次及其食物示意協助對照總量、分布、來源與缺漏；不是固定餐次或每餐蛋白質目標，也不診斷植物飲食不足。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜一日分布與整體供應</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先沿三餐說明總量與餐次分布分別能回答什麼，再指出若有一餐未記錄，完整一日總量不能直接由已知餐次代替。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先確認全日紀錄
 
 若三餐記錄10、15、35g，和20、20、20g，總量都是60g；不同分布是另一個變數。沒有夜間點心、飲料與補充品的紀錄，就不能保證總量完整。數字的來源和缺漏要先確認。

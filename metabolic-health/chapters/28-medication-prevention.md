@@ -2,6 +2,17 @@
 
 認識特定情境的藥物預防，而不把教材變成開藥規則。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-parallel-options.svg" target="_blank" rel="noopener" aria-label="放大：結構化介入與適合條件下的選項"><img src="assets/figures/14-parallel-options.svg" alt="並列路徑表示支持可組合，並非生活方式和藥物互相排斥，也不表示每人的效果順序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜結構化介入與適合條件下的選項</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩條可以並行的路，指出藥物選項仍需適用條件與共同決策；不要從路徑長短推療效或自行用藥。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何討論藥物
 
 某些高風險成人的糖尿病預防可由臨床人員評估藥物選項；ADA2026依受試者特徵與證據說明適用考量。藥物、生活支持與其他風險管理可以並行，並非用了藥就不需要生活照護，也不是只要自律就一定不需藥物。

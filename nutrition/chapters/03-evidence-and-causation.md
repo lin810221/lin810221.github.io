@@ -2,6 +2,17 @@
 
 理解研究能回答什麼，為之後保健宣稱與飲食型態建立判讀方法。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-evidence-structure.svg" target="_blank" rel="noopener" aria-label="放大：觀察到關係，還要找替代解釋"><img src="assets/figures/02-evidence-structure.svg" alt="飲食和結果之間有觀察關係，其他因素可能同時影響兩者；箭頭表示待檢驗的可能路徑，不宣告因果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜觀察到關係，還要找替代解釋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找飲食與結果，再沿紫色箭頭說一個可能的共同原因；解釋為何同時出現還不能直接證明飲食造成全部差異。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不同證據的用途
 
 機制研究說明可能如何作用，觀察研究探索長期關係，隨機試驗比較特定介入。每種設計有優勢與限制，不能因有細胞機制就宣稱食用某劑量能降低人體疾病；也不能因觀察相關不完美就忽略所有長期證據。

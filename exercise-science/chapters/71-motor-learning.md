@@ -2,6 +2,17 @@
 
 區分當下做得較好和真的學會，讓練習目標可檢查。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-learning-retention.svg" target="_blank" rel="noopener" aria-label="放大：練習表現、保留與遷移"><img src="assets/figures/36-learning-retention.svg" alt="假想練習曲線與隔段再測分開，不把當下進步直接叫長期學習，也不把不同任務數值混成同尺度。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜練習表現、保留與遷移</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分練習期和隔一段時間再測，說出為何即時回饋下做得好不等於保留已成立；圖中的斷開不是可以補成最佳表現的空白。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 表現與學習
 
 當下得到提示後做得更好，可能是暫時表現；是否學會還可看後續無提示的保留，以及改變情境的遷移。練習與測試的時程和條件不同，不能只看結束那一次。

@@ -2,6 +2,17 @@
 
 把ADA2026建議放回適用族群與支持方式。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-parallel-options.svg" target="_blank" rel="noopener" aria-label="放大：結構化介入與適合條件下的選項"><img src="assets/figures/14-parallel-options.svg" alt="並列路徑表示支持可組合，並非生活方式和藥物互相排斥，也不表示每人的效果順序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜結構化介入與適合條件下的選項</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿生活介入路徑補上參與條件、支持和追蹤，說明結構化計畫為何不能只剩一個個人目標數字。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 誰的建議
 
 ADA2026針對過重或肥胖、第二型糖尿病高風險成人，建議轉介至有證據的預防計畫，包含至少5–7%體重下降與每週至少150分鐘中等強度活動等方向。這不是全人口都需減重，也不是兒少、孕婦或體重偏低者的通用處方。

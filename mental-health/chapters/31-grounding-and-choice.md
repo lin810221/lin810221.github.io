@@ -2,6 +2,17 @@
 
 學習簡短、可停止的外部注意方式。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-grounding-choice.svg" target="_blank" rel="noopener" aria-label="放大：定向與覺察：有多種可選接點"><img src="assets/figures/16-grounding-choice.svg" alt="人可把注意轉向眼前物件、支撐或環境，也可停止練習；不是強迫閉眼或回述創傷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜定向與覺察：有多種可選接點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出一個不必閉眼或回述經驗的注意接點，再標示可以停止或改方法的位置；圖不要求讀者立即做身體練習。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 定向在做什麼
 
 把注意帶回此刻環境，可提供從困住的想法稍微抽離的接點。它不是否認感受，也不是保證立刻消除焦慮；目的是較能知道自己身在何處、接著想做什麼。

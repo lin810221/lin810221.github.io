@@ -2,6 +2,17 @@
 
 讀懂界線、不同定義與確認，不把篩查標籤當確定命運。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-monitoring-interfaces.svg" target="_blank" rel="noopener" aria-label="放大：家用、連續與實驗室的不同介面"><img src="assets/figures/12-monitoring-interfaces.svg" alt="裝置圖比較監測與確認的介面，未提供任何裝置讀值、診斷門檻或個人風險。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜家用、連續與實驗室的不同介面</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在三種介面旁標示「觀察」與「確認」的問題，解釋糖尿病前期是風險與定義脈絡，不是一瞬間變成另一種人。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 常見範圍
 
 ADA2026一般非孕期糖前期包括FPG100–125mg/dL、75g OGTT兩小時140–199、A1c5.7–6.4%等。不同檢驗反映不同面向，找出的群體不完全相同；WHO等體系也可能使用不同IFG定義。

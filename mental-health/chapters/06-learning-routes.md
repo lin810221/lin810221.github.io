@@ -2,6 +2,17 @@
 
 知道先理解什麼、能練什麼，以及何時需要不同資源。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-choice-and-privacy.svg" target="_blank" rel="noopener" aria-label="放大：學習可以有不同入口"><img src="assets/figures/03-choice-and-privacy.svg" alt="同一學習者可選閱讀、虛構案例或自願記錄；路徑是選擇，沒有強迫蒐集或必填個人資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜學習可以有不同入口</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從課程閱讀、虛構案例和選讀實作選一條可行路線，再指出何處需要跨課閱讀；不用把三條路全做才算開始學習。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 基礎篇
 
 第1–5章說明心理健康、壓力、情緒、認知和學習。每個理論搭配原創日常情境，練習區分可觀察事實、解釋與行動，不把一般反應直接疾病化。

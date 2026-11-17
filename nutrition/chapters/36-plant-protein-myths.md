@@ -2,6 +2,17 @@
 
 把總量、品質、其他營養與實際生活合在一起。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-protein-distribution.svg" target="_blank" rel="noopener" aria-label="放大：一日分布與整體供應"><img src="assets/figures/18-protein-distribution.svg" alt="三個餐次及其食物示意協助對照總量、分布、來源與缺漏；不是固定餐次或每餐蛋白質目標，也不診斷植物飲食不足。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜一日分布與整體供應</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在三餐加入兩種植物來源，討論整體胺基酸供應與強化食物的資料需求，不把單一食物的限制當整份飲食必定缺乏。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 植物為主不等於完全純素
 
 以植物食物為主可涵蓋多種飲食模式，完全不含動物來源又是較明確的限制。談研究前先看定義、食物品質和比較組；大量精製點心與多樣豆類全穀不能只因都植物來源而視為同一模式。

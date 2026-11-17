@@ -2,6 +2,17 @@
 
 理解飲料與食物水分、活動及健康背景，辨認體積和質量的差別。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-water-compartments.svg" target="_blank" rel="noopener" aria-label="放大：水分區室與整合礦物質評估"><img src="assets/figures/24-water-compartments.svg" alt="細胞內外水與離子區室連到攝取流失及調節，區室比例為概念而非個人固定值，完整評估需來源與背景。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜水分區室與整合礦物質評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先把細胞內、血漿與組織液分開，再加入食物及飲料來源，說明只數水杯為何不能決定個人全部補水需要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 水從哪裡來
 
 總水分包含飲水、其他飲料與食物中的水，不等於只計白開水杯數。需要受活動、環境、生命階段及健康狀況影響；一個固定杯數不能完整表示所有人的需要，疾病限水也不是一般工具能處理。

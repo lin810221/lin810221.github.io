@@ -2,6 +2,17 @@
 
 不要只問少吃多少，也要問比較的是哪個選項。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-food-pattern-replacement.svg" target="_blank" rel="noopener" aria-label="放大：飲食型態與替代：先說保留什麼"><img src="assets/figures/31-food-pattern-replacement.svg" alt="兩個餐盤只是組合示意，不表示固定比例或個人份量；替代需有清楚比較條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜飲食型態與替代：先說保留什麼</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出被減少及被替代的內容，先寫是否等能量等假設，說明「少吃某脂肪」仍需回答用什麼補上的問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 營養素不是抽空存在
 
 在總能量類似的比較中，減少某類脂肪後通常會由其他來源替代。以不飽和脂肪替代部分飽和脂肪，與改成精製澱粉或添加糖，不是同一介入。單說「低脂」無法交代飲食全貌。

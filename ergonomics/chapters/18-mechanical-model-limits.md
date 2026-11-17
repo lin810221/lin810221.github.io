@@ -2,6 +2,17 @@
 
 把公式放在適當層次，避免虛假精確。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-time-model.svg" target="_blank" rel="noopener" aria-label="放大：時間變化模型不等於人體恢復"><img src="assets/figures/09-time-model.svg" alt="任意曲線僅示時間相關行為，沒有組織、年齡、症狀或傷害校準，不當成治療或癒合時程。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜時間變化模型不等於人體恢復</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個圖未包含的任務、內力或個人條件，說明計算可用來比較假設而非保證人體結果；未知資料不能靠曲線補齊。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四種常見量
 
 力用N，力矩用N·m，功用J，平均功率用W。即使N·m和J在量綱有關，描述的物理問題也不同；力矩不能直接讀成代謝熱量。

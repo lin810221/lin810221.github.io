@@ -2,6 +2,17 @@
 
 分清暴露紀錄、疾病評估與需要支持的戒減過程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-alcohol-volume.svg" target="_blank" rel="noopener" aria-label="放大：酒精：容量、濃度與時間型態"><img src="assets/figures/38-alcohol-volume.svg" alt="瓶子示意提醒容量不是酒精克數；計算暴露不等於有安全配額，圖不鼓勵開始飲酒。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜酒精：容量、濃度與時間型態</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在瓶子旁加入飲用時間、肝病、用藥及依賴等背景，說明相同總量為何仍不能概括全部風險或照護需要。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/alcohol">WHO：酒精與健康</a> · <a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 酒精不是只有能量
 
 酒精與肝臟、血壓、癌症、傷害及其他健康問題相關；風險受量、型態和情境影響。不能因某酒款糖較少就宣稱無害，也不能以運動消耗估算抵銷其他傷害。

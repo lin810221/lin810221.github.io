@@ -2,6 +2,17 @@
 
 理解動作方向，避免把關節只當磨損零件。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-joint.svg" target="_blank" rel="noopener" aria-label="放大：骨與關節的活動界面"><img src="assets/figures/04-joint.svg" alt="兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 04｜骨與關節的活動界面</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿骨端到關節囊辨識不同構造，說明軟骨、滑膜和滑液不能互稱；關節聲音也不能由圖直接推個人磨損程度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/skeletal/articulations.html">NCI：關節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 關節的結構
 
 滑液關節有關節面、軟骨、關節囊與滑液等結構，周圍肌肉、肌腱和韌帶共同參與活動與穩定。不同關節形狀帶來不同動作，不是所有部位都適合相同角度和負荷。

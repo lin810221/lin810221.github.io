@@ -2,6 +2,17 @@
 
 理解容易持續的活動如何支持長期參與，不把低強度當完全無效。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-heart-rate-context.svg" target="_blank" rel="noopener" aria-label="放大：心率分母、保留量與觀察"><img src="assets/figures/26-heart-rate-context.svg" alt="平行線示意靜息與最大心率背景，未提供數字或個人區間；保留量不是任何方法下相同的百分比。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜心率分母、保留量與觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把日常活動另畫在時間軸，註明模式、強度語言和完成時間；沒有高心率並不表示所有日常活動都沒有價值，也不能只靠心率分類。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow">NHLBI：心臟血流</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 基礎量的用途
 
 可維持的活動讓人累積任務經驗與相關刺激，也較易融入生活。容易並非任何情況都足夠最佳化競技，卻不表示沒有健康或學習價值；一般活動與高表現目標需要分別評估。

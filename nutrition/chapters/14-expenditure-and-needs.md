@@ -2,6 +2,17 @@
 
 理解休息代謝、活動、食物熱效應與成長，而不把估計值當精確處方。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-energy-factors.svg" target="_blank" rel="noopener" aria-label="放大：能量係數與支出不是同一張表"><img src="assets/figures/07-energy-factors.svg" alt="常用4、4、9係數估算三大營養素來源能量；不同成分、制度與人體支出有各自條件，不能直接當個人需要量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜能量係數與支出不是同一張表</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把食物能量移到輸入端，再在紙上另畫身體的維持、活動與其他支出，解釋為何這三欄不能直接算你的需要量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 支出的組成
 
 休息/基礎代謝、活動和食物熱效應常是分類，成長、孕哺和疾病又有不同考量。基礎代謝與休息代謝測量條件不同；活動也包含走路、工作與非運動動作，不能只把健身App數字當全部。

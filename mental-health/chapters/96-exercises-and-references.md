@@ -2,6 +2,17 @@
 
 用跨章問題檢查是否把原理、技能、環境與照護接起來。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-complete-map.svg" target="_blank" rel="noopener" aria-label="放大：完整案例：經驗、條件、行動與證據"><img src="assets/figures/48-complete-map.svg" alt="一個虛構案例以多種可回顧線索連成圖，不計總健康分數；不同路徑仍可保留未知。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜完整案例：經驗、條件、行動與證據</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>不看圖中文字，依經驗、條件、行動和證據重述學習地圖，再回原課核對答案；不需要先完成所有程式才能理解。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 六個核心問題
 
 負增強為何不等於責罵？重評為何不等於強迫樂觀？呼吸後HRV增加為何不證明疾病改善？職業耗竭為何不能包辦所有疲累？三次補助為何不等於足夠療程？缺漏為何不能填0？先用自己的話寫答案。

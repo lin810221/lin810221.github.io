@@ -2,6 +2,17 @@
 
 用排程與缺漏資料理解安排的限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-changes-and-care.svg" target="_blank" rel="noopener" aria-label="放大：活動變化與照顧任務的差異"><img src="assets/figures/27-changes-and-care.svg" alt="任務名稱不同不保證充分恢復，搬物與搬人的可變性也不同；需合適設備、協作與方法。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜活動變化與照顧任務的差異</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩個工作段是否真的改變同一部位的需求，說明變換名稱不等於充分恢復；排程算術不能當個人休息處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 變化可以有不同目的
 
 減少持續姿勢、改變肌群需求、處理視覺或注意負擔，可能需要不同安排。不是所有任務切換都算同一恢復，也不是所有等待都沒有負荷。

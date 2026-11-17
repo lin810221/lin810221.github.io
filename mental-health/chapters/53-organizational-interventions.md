@@ -2,6 +2,17 @@
 
 理解管理者、團隊與制度可以做的事。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-work-design.svg" target="_blank" rel="noopener" aria-label="放大：個人、團隊與組織的不同介入位置"><img src="assets/figures/27-work-design.svg" alt="三個嵌套區域表示工作調整需多層支持，個人技能不能代替尚未處理的組織條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜個人、團隊與組織的不同介入位置</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一個介入放到正確層次，再指出仍需誰和什麼資源；不把放鬆課程等同完成工作危害改善。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多層次支持
 
 WHO正式工作指南談組織改善、管理者訓練、工作者支持與復工等。2026事實表是更新說明，正式指南仍標2022，不能把兩者年份混成一份新指南。

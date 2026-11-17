@@ -2,6 +2,17 @@
 
 把生理變化、功能、藥物與長期預防一起考慮。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/40-life-stage-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：生命階段與適用族群"><img src="assets/figures/40-life-stage-boundaries.svg" alt="人物大小只為辨識情境，不是兒少、成人或長者的能力比例，界線不得直接外推。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 40｜生命階段與適用族群</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把孕產和高齡照護問題各列一項，說明生命階段改變的是哪些需求，不能由人物年齡圖推相同治療目標。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 孕產不是一般成人外推
 
 妊娠血糖、血壓、體重與藥物有專屬評估。非孕期ADA診斷表不能直接當妊娠糖尿病的完整流程；成人減重目標也不是孕期建議。既往妊娠相關問題可影響後續風險討論，但追蹤需依專屬指南與醫療計畫。

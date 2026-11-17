@@ -2,6 +2,17 @@
 
 理解增肌是長期結果，不以痠痛、泵感或急性訊號當保證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-hypertrophy-measure.svg" target="_blank" rel="noopener" aria-label="放大：組織截面與短期表現分開"><img src="assets/figures/19-hypertrophy-measure.svg" alt="兩個不同大小的假想截面表示測量問題，不是某項訓練造成的實測增長或個人效果百分比。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜組織截面與短期表現分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出兩個截面只是概念比較，再列長期組織增長、短期水分與量測差異三種解釋；不能把運動後圍度增加直接當肌肥大。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 什麼是肌肥大
 
 肌肉大小的增加涉及組織成分與結構改變，不能簡化成每次先撕裂再越痛越大。阻力刺激、足夠支持條件和時間共同相關；一次運動後的暫時腫脹與長期肌肉增長不同。

@@ -2,6 +2,17 @@
 
 用明確單位記錄，不把算式變成安全飲酒額度。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-alcohol-volume.svg" target="_blank" rel="noopener" aria-label="放大：酒精：容量、濃度與時間型態"><img src="assets/figures/38-alcohol-volume.svg" alt="瓶子示意提醒容量不是酒精克數；計算暴露不等於有安全配額，圖不鼓勵開始飲酒。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜酒精：容量、濃度與時間型態</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出容量、ABV比例和密度三項，說明百分比為何需先轉成比例，並辨識瓶子大小不是純酒精量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/alcohol">WHO：酒精與健康</a> · <a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 容量不是酒精量
 
 一杯大小和酒精濃度不同，不能只寫「一杯」。ABV是酒精體積百分比；5%需用0.05，並非5。酒款、容器與倒入量不明時，應保留估計範圍或未知。

@@ -2,6 +2,17 @@
 
 以明確的維生素D換算理解單位，分開攝取、血中濃度和建議。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-vitamin-role.svg" target="_blank" rel="noopener" aria-label="放大：維生素D轉換與代謝輔因子"><img src="assets/figures/20-vitamin-role.svg" alt="日照皮膚來源及肝腎轉換作維生素D正常生理示意，B群的代謝參與和能量本身分開；不提供日照時間或個人劑量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜維生素D轉換與代謝輔因子</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿圖分清來源、肝與腎的轉換，再將μg和IU視為單位問題，說明圖並未給你需要曬多久或補充多少的處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/">NIH ODS：維生素D</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一個可固定換算的例子
 
 維生素D的1μg等於40IU，所以10μg是400IU，1000IU是25μg。這個固定係數只適用維生素D的該單位體系，不能變成所有維生素的IU通則；IU代表生物活性定義，不是通用質量單位。

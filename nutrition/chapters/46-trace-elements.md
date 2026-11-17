@@ -2,6 +2,17 @@
 
 建立微量元素的來源、變異與上限概念，避免以單一食物固定補量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-sodium-trace.svg" target="_blank" rel="noopener" aria-label="放大：元素、化合物與單位別混用"><img src="assets/figures/23-sodium-trace.svg" alt="NaCl提醒鈉與食鹽不是相同質量，微量元素仍有來源需要及上限條件；圖不提供個人補充或法規門檻。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜元素、化合物與單位別混用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把碘、鋅和硒列為不同元素，從來源需要與上限三面各提一個資料問題，不把微量需求誤解成可忽略或越多越好。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a> · <a href="https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765">TFDA：四歲以上每日參考值</a> · <a href="https://www.nationalacademies.org/read/25353/chapter/2">NASEM：2019鈉鉀DRIs與CDRR</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 微量描述需要的尺度
 
 碘參與甲狀腺激素，鋅參與多種酵素與生長免疫相關過程，硒也有特定生理角色。需要量小不代表不重要，也不表示濃縮產品越多越好；不同元素不能共享同一安全範圍。

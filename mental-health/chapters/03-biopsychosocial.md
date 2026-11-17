@@ -2,6 +2,17 @@
 
 用多條路徑理解困擾，不找一個包辦全部的原因。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-layers.svg" target="_blank" rel="noopener" aria-label="放大：多層解釋可以同時成立"><img src="assets/figures/02-layers.svg" alt="一個人位於身體、心理及社會條件的共同脈絡；各層不互相排除，也不由相關直接確定因果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜多層解釋可以同時成立</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用一個工作期限案例，分別指出身體、評估與環境可能的連結；不要把最內圈當唯一真因，也不要用生物解釋否定經驗。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 生物層面
 
 神經、內分泌、遺傳、睡眠、身體疾病與物質等可以參與心理經驗，但沒有一個血液或腦圖數字能概括所有人。描述身體機轉，也不代表心理困擾只是某種物質不足。

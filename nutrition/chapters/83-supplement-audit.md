@@ -2,6 +2,17 @@
 
 把產品宣稱變成可查核欄位，品質和效果各自確認。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-supplement-audit.svg" target="_blank" rel="noopener" aria-label="放大：補充品與一頁證據地圖"><img src="assets/figures/42-supplement-audit.svg" alt="產品經查證對照身份含量、族群結果及成本限制，放大鏡代表證據核對不是認證標章，也不推個人推薦。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜補充品與一頁證據地圖</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從產品瓶子走到證據頁，依序問身份含量、實際研究結果與成本，說明品牌或機制圖不能直接代替人體效益證據。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://www.fda.gov.tw/Tc/siteContent.aspx?sid=1776">TFDA：健康食品導覽</a> · <a href="https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/">NIH ODS：Omega-3脂肪酸</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 五個基本問題
 
 產品到底是什麼、每份與每日多少、為哪個需要使用、研究是否對應、可能風險與替代是什麼。先有明確問題，再看產品；不以廣告情緒、價格或總毫克數當證據。

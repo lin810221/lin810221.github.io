@@ -2,6 +2,17 @@
 
 理解短期波動、測量方法與用途，避免單一數字取代健康評估。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-appetite-body.svg" target="_blank" rel="noopener" aria-label="放大：食慾訊號與身體組成"><img src="assets/figures/34-appetite-body.svg" alt="腸道、中樞和環境共同影響食慾，體重變化還含不同組成與測量條件，不把所有結果都歸個人意志。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜食慾訊號與身體組成</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖下另畫脂肪、肌肉與水三類組成，說明體重和組成測量不同，短期數字變化不能一律當脂肪增加或減少。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a> · <a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 體重不是只有脂肪
 
 水分、肝醣、腸胃內容和組織都影響測值。一天變動不能全部當脂肪變化，更不能以固定熱量差直接反推當天脂肪增減。時間、衣物和儀器條件也應一致記錄。

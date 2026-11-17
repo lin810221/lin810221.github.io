@@ -2,6 +2,17 @@
 
 用Python標準函式庫連結原始資料、圖與算術。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-artifacts.svg" target="_blank" rel="noopener" aria-label="放大：資料表、圖與來源應能互相核對"><img src="assets/figures/47-report-artifacts.svg" alt="三種產物代表資料、視覺與說明，並不表示可重現就已證明臨床真實、因果或個人診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜資料表、圖與來源應能互相核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從資料表挑一個值追到圖和來源摘要，說明可重跑交付需要什麼一致性，以及哪些健康結論仍沒有被證明。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三種輸出各司其職
 
 CSV保留訪視算術摘要，SVG呈現每日可用血壓觀察，JSON包含範圍、來源、缺漏與雜湊。圖的標題說明為虛構觀察與有效筆數，不畫診斷或治療目標線；少一筆的那天仍明示有效n/4。

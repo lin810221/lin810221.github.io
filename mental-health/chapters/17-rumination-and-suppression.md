@@ -2,6 +2,17 @@
 
 辨認思考是否帶來新資訊與可行下一步。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-rumination-loop.svg" target="_blank" rel="noopener" aria-label="放大：反覆追問與可以打開的出口"><img src="assets/figures/09-rumination-loop.svg" alt="抽象反覆追問可能維持循環，具體資訊、支持或小步可提供另一方向；不是責怪有困擾的人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜反覆追問與可以打開的出口</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿循環追蹤短暫變化與再次不確定，再指出哪裡能加入具體問題或支持；不要用這張圖替某人貼上反芻標籤。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 重複思考不都相同
 
 反芻常反覆追問過去與自我，擔心常圍繞未來可能；它們也會重疊。名稱不是診斷，重點是是否耗時、難以抽離及影響功能。

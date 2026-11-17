@@ -2,6 +2,17 @@
 
 把契約、計算、檢查和限制交給下一位閱讀者。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-project-map.svg" target="_blank" rel="noopener" aria-label="放大：完整專題：把任務、資料與限制連起來"><img src="assets/figures/48-project-map.svg" alt="四個專題面向互相核對：問題、資料、方法和交付；完成教學專題不等於個人訓練處方或醫療證明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜完整專題：把任務、資料與限制連起來</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿四張卡把一份虛構訓練資料專題的問題、資料、算術與限制串起來；能重跑只支持交付一致，不等於得到了個人最佳課表。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 專題任務
 
 用隨課虛構資料產出獨立報告，不為真人設計最佳課表。驗收重點是同輸入可重現、未知保留、來源清楚、模型不越界；閱讀examples/README後執行48_complete_project.py。

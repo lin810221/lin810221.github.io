@@ -2,6 +2,17 @@
 
 依單位、基準、形式、來源與時間逐步找到錯誤。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-diary-case-audit.svg" target="_blank" rel="noopener" aria-label="放大：飲食報告從原始紀錄核對"><img src="assets/figures/47-diary-case-audit.svg" alt="原始紀錄連到資料核對，缺漏、零值與定義要分開；審核的目的是確認可支持什麼，不強迫所有欄位都有結論。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜飲食報告從原始紀錄核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿核對箭頭依序檢查單位、食品狀態與分母，提出一個即使數值合理仍可能答錯問題的例子，並保留待查條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.python.org/downloads/release/python-3152/">Python3.15.2正式發布</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 第一層：輸入
 
 檢查g／mg／μg、g／mL、每份／每100、生／熟、可食部／購買重與乾粉／沖泡後。千倍錯誤、份數錯位與密度假設，是比小數修整更優先的問題；負值、非有限數與零分母應拒絕。

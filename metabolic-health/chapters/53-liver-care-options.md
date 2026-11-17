@@ -2,6 +2,17 @@
 
 使用現行資訊，不再沿用「脂肪肝沒有藥」的過時概括。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-liver-followup.svg" target="_blank" rel="noopener" aria-label="放大：肝臟照護的時間與共同風險"><img src="assets/figures/27-liver-followup.svg" alt="多時點追蹤代表持續整合資訊，不保證指標單調改善，也不能從趨勢排除其他病因。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜肝臟照護的時間與共同風險</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在選項討論處加入生活、共病和治療適用性的問題，說明不能因一張肝臟圖就推所有人相同的照護選擇。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先定義照護目的
 
 減少心代謝風險、改善肝臟疾病及處理其他病因，是相連但不同的目的。適用選項取決於是否MASH、纖維化程度、共病與當地核准；影像見脂肪不能直接決定用哪項藥。

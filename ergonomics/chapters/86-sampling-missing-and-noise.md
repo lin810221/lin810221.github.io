@@ -2,6 +2,17 @@
 
 分清已知小計、可用平均和完整結果。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-unknown-record.svg" target="_blank" rel="noopener" aria-label="放大：原創感受與缺漏：不是臨床分級"><img src="assets/figures/43-unknown-record.svg" alt="兩種記錄卡區分明確零與未知，主觀資料仍需時間與功能背景，不設疾病門檻或個人排行。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜原創感受與缺漏：不是臨床分級</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把觀察窗和缺漏段畫在時間線，說明可用分母與全排定時間不同；未知段不能補0也不能直接叫休息。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 分母跟著問題走
 
 虛構任務原排12段、共120分鐘，實際11段有資料、共110分鐘。990次除110得到已觀察時段9次／分鐘；不能除120假裝漏掉那段動作數為0，也不能把9寫成完整班次值。

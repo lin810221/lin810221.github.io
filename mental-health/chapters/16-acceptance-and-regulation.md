@@ -2,6 +2,17 @@
 
 理解不同策略何時有用，而非追求永遠平靜。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-alternative-meanings.svg" target="_blank" rel="noopener" aria-label="放大：同一觀察可以有多個待查解釋"><img src="assets/figures/08-alternative-meanings.svg" alt="訊息未回覆的原創案例，分開事實和可能解釋，再保留可選行動；不強迫樂觀。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜同一觀察可以有多個待查解釋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找到圖中可以保留感受仍選行動的位置，說明接納與調節不要求先把感覺消除，也不代表必須接受不當對待。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 調節不等於壓掉
 
 調節可發生在情境選擇、注意、解釋與反應等不同環節。目標可能是維持功能、保護關係或朝價值行動，不一定是立刻把感受降到最低。

@@ -2,6 +2,17 @@
 
 理解任務如何改變需求，不把更晃當所有目標都更好。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-balance-control.svg" target="_blank" rel="noopener" aria-label="放大：支持面、感覺訊息與軀幹控制"><img src="assets/figures/35-balance-control.svg" alt="簡化人形與支持面強調感覺、肢體和軀幹協調，虛線不是個人實測重心或平衡風險界線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜支持面、感覺訊息與軀幹控制</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出支持面，再列視覺、前庭與本體感覺的線索，說明平衡是多系統整合；不用閉眼或單腳挑戰來替圖中的箭頭證明。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nidcd.nih.gov/health/balance-disorders">NIDCD：平衡的正常功能</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多個系統共同工作
 
 視覺、前庭、體感、肌力與控制共同支持姿勢和動態任務。單腳站、移動、轉身和搬物有不同需求；一個靜態成績不直接表示所有生活場景能力。

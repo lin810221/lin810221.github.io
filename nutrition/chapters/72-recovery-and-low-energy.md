@@ -2,6 +2,17 @@
 
 理解恢復是系統問題，避免只用體重或蛋白質判斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-activity-recovery.svg" target="_blank" rel="noopener" aria-label="放大：活動、飲食供應與恢復支持"><img src="assets/figures/36-activity-recovery.svg" alt="食物供應與活動需求、恢復及生活支持相連，圖不計算個人低能量可用性或用單一症狀判定病況。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜活動、飲食供應與恢復支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把恢復、能量供應與生活條件分開列出，說明持續功能或健康問題需要哪些適當合作，不靠一個圖中箭頭完成診斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 恢復不只一杯飲品
 
 睡眠、訓練負荷、總能量、醣類、蛋白質、液體和生活壓力都可能影響恢復。單次補充不替代整體飲食與安排；疲倦、表現下降等也可能有多種原因。

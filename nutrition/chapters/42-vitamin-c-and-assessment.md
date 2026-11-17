@@ -2,6 +2,17 @@
 
 把水溶性維生素放回食物與紀錄，避免以單一症狀自我診斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-vitamin-sources.svg" target="_blank" rel="noopener" aria-label="放大：維生素來源、當量與評估"><img src="assets/figures/21-vitamin-sources.svg" alt="天然食物、強化和補充來源並列，提醒當量換算與上限的來源範圍不同；食物處理及狀態評估需另有資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜維生素來源、當量與評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以水果與蔬菜為例補上保存或加熱條件，分清成分含量和身體狀態評估，不能由一次吃到食物就證明全部微量營養充足。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 維生素C的角色
 
 維生素C參與膠原蛋白等合成，並可促進非血基質鐵吸收。功能機制不是高量補充治療所有疾病的證據；正常需要、缺乏治療與特定疾病研究應分開閱讀。

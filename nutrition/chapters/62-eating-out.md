@@ -2,6 +2,17 @@
 
 用情境與限制安排選擇，避免只用熱量排序餐點。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-meal-observation.svg" target="_blank" rel="noopener" aria-label="放大：一餐的可見來源與未知項目"><img src="assets/figures/31-meal-observation.svg" alt="餐盤旁列食品重量、醬料油飲料及外食資料，已知小計與完整總量不同；視覺盤子不保證觀察完整。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜一餐的可見來源與未知項目</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把虛構外食資訊放進右欄，指出店家標示和實際吃的量如何對齊，資料不明時保留未知，不靠餐名猜完整數值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 外食資訊有哪些
 
 包裝標示、店家公開資料、可觀察份量和一般資料庫，品質與適用範圍不同。先記資料來自哪裡、是否同款及準備方式；沒有資料的醬料或油不是0，而是待估或未知。

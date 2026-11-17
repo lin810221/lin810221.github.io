@@ -2,6 +2,17 @@
 
 用單位拆解體表面積轉換，不自動產生劑量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-gfr-area-index.svg" target="_blank" rel="noopener" aria-label="放大：索引與去索引：改變的是分母"><img src="assets/figures/30-gfr-area-index.svg" alt="面積方框不表示腎臟大小；換算只改表達，不能跨單位套CKD分層或自行配藥。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜索引與去索引：改變的是分母</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在標準面積與個人體表面積之間標示轉換，說明去索引後數字改變為何不是腎功能突然改善。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 索引的意義
 
 常見eGFR以mL/min/1.73m²表示，是對標準體表面積的索引值，便於評估與分層。mL/min則是另一種表達；兩者數字不能不看單位就互相比較。

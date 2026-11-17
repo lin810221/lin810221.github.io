@@ -2,6 +2,17 @@
 
 追蹤正式版本、適用範圍與共同決策。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-apob-lpa.svg" target="_blank" rel="noopener" aria-label="放大：粒子、apoB與Lp(a)的資訊層次"><img src="assets/figures/21-apob-lpa.svg" alt="蛋白與粒子的示意用於辨識資訊，不表示實際大小；Lp(a)質量與粒子濃度不可固定互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜粒子、apoB與Lp(a)的資訊層次</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把圖中指標放回2026血脂指南所說的用途與適用條件，辨認哪些是補充資訊，不能從圖推人人每次必測全套。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 正式更新的時間
 
 2026年3月發布ACC/AHA血脂指南，取代2018版本。它是美國多學會臨床指南，不是台灣主管機關公告。教材截至2026-11-10使用正式2026版本，同時保留地區差異與後續更新入口。

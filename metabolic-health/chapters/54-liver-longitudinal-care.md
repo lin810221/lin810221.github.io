@@ -2,6 +2,17 @@
 
 不要把一個肝指數當作全部追蹤結果。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-liver-followup.svg" target="_blank" rel="noopener" aria-label="放大：肝臟照護的時間與共同風險"><img src="assets/figures/27-liver-followup.svg" alt="多時點追蹤代表持續整合資訊，不保證指標單調改善，也不能從趨勢排除其他病因。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜肝臟照護的時間與共同風險</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿多個時點列需要持續確認的來源、其他病因和共同風險，解釋數字變動不必然只來自單一生活改變。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 趨勢需要一致方法
 
 不同日期的ALT、AST或影像，需保留單位、方法、近期疾病、用藥與採樣條件。若同時更換方法或發生急性疾病，變化可能不只來自慢性肝病。觀察摘要可以指出差異，不能直接宣稱某生活改變逆轉了疾病。

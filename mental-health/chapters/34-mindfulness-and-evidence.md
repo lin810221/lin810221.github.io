@@ -2,6 +2,17 @@
 
 把短暫注意練習與結構化臨床方案分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-breath-options.svg" target="_blank" rel="noopener" aria-label="放大：呼吸相位與注意：示意不是指令"><img src="assets/figures/17-breath-options.svg" alt="兩段圓弧代表相位先後，沒有目標秒數、憋氣或個人HRV保證，方法應符合舒適與偏好。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜呼吸相位與注意：示意不是指令</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>區分一次注意練習、完整課程及臨床效果證據，說明注意回來不是清空思想；這張圖不代表所有正念方法都相同。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 正念的基本方向
 
 以較不急於評判的態度注意當下經驗，可以包含外在感官、動作、呼吸或想法。不是讓腦中一片空白，也不是要求永遠不分心；注意離開再回來也是一種觀察。

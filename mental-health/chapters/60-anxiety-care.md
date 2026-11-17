@@ -2,6 +2,17 @@
 
 把選項放回問題、偏好和證據。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-trauma-choice.svg" target="_blank" rel="noopener" aria-label="放大：創傷知情與共同決策：選擇保持可用"><img src="assets/figures/30-trauma-choice.svg" alt="多個入口允許當事人選擇談、先看資源、暫停或找專業支持，不強迫回述經驗。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜創傷知情與共同決策：選擇保持可用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把生活支持、心理治療和醫療選項放到共同討論中，列一個要問專業的問題，不用流程圖替人選固定療程。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先釐清需要
 
 困擾形式、持續、功能、身體與物質背景、過去照護及個人偏好，會影響選項。不是每個焦慮都走同一路徑，也不需先自行完成一串自助測驗。

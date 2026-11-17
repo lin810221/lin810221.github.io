@@ -2,6 +2,17 @@
 
 把身體周圍條件納入任務，不只盯關節。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-environment-route.svg" target="_blank" rel="noopener" aria-label="放大：物理環境與流程：把任務走完"><img src="assets/figures/36-environment-route.svg" alt="工作流程可能跨取料、組裝和運送，照明、地面、維護及空間都需確認，不能由新設備名字推適配。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜物理環境與流程：把任務走完</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從圖中選一個環境條件補到任務，說明看不清、地面或輪具問題也會改變操作；不把它們全部歸給姿勢不標準。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 條件會改變操作
 
 看不清、太冷、通道窄、輪具卡住或桌面不穩，都可能改變用力與姿勢。這些不應全歸成個人動作不標準，改善可從來源和維護開始。

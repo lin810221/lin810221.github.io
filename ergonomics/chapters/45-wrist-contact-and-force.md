@@ -2,6 +2,17 @@
 
 從裝置、表面和任務理解上肢負擔。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-hand-contact.svg" target="_blank" rel="noopener" aria-label="放大：手腕、接觸與輸入選擇"><img src="assets/figures/23-hand-contact.svg" alt="前臂、接觸邊緣與手持設備的簡化關係，角度不是唯一條件；位置、施力和時間需要一起觀察。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜手腕、接觸與輸入選擇</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在前臂到手部的圖上指出接觸、施力與時間都需記錄，不能只用單一手腕角度判定病因或安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多個維度一起看
 
 手腕位置、抓握與按鍵力、硬邊接觸、持續和重複，都可能重要。看起來直不代表完全沒有負擔，偏離某參考也不自動等於已患疾病。

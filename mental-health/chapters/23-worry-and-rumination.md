@@ -2,6 +2,17 @@
 
 用問題的形式，檢查思考是否真的前進。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-digital-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：資訊入口、通知與可調整界線"><img src="assets/figures/12-digital-boundaries.svg" alt="裝置、任務與休息界線示意；用途、時點和生活需要比單一總時數更完整。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜資訊入口、通知與可調整界線</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把抽象追問改寫成一項具體可做或可問的事，再說明何時仍需接受未知；圖沒有保證一次整理就能消除擔心。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 看循環帶來什麼
 
 同一問題重複很多次，可能只有短暫安心，未增加資訊。可以問這一輪思考讓我更知道該做什麼嗎，還是只增加自責與疲勞？不需要計算一個「反芻病分數」。

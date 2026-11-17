@@ -2,6 +2,17 @@
 
 知道檢查回答什麼，以及哪些結論需要更多資料。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-image-task.svg" target="_blank" rel="noopener" aria-label="放大：影像、任務與功能各回答一部分"><img src="assets/figures/11-image-task.svg" alt="三張不同資料卡可互補，但任何單一卡都不能唯一決定症狀原因或個人活動範圍。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜影像、任務與功能各回答一部分</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別提出影像、實際任務和功能能回答的問題，說明相關不等於唯一病因；不靠姿勢照片直接解釋所有不適。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 影像是結構資訊
 
 它可在適當情境協助評估，但影像描述、疼痛與功能不是完全同一量。是否檢查，需考慮臨床問題與是否會改變處置，不是每個不適都要先拍完整套影像。

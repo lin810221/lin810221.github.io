@@ -2,6 +2,17 @@
 
 理解估算、不確定性和至少三個月的慢性條件。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-creatinine-context.svg" target="_blank" rel="noopener" aria-label="放大：肌酸酐：來源、血中濃度與腎臟處理"><img src="assets/figures/28-creatinine-context.svg" alt="示意分開生成來源與清除背景，血中濃度不是實測腎小球流量，也不單獨判慢性。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜肌酸酐：來源、血中濃度與腎臟處理</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把eGFR和持續性各放在圖旁，解釋一次觀察不等於慢性，也不能從濃度一個箭頭直接推完整腎臟狀態。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## eGFR是估算
 
 常用公式依肌酸酐、cystatin C或組合等估計濾過率，必須知道公式版本和適用族群。成人公式不能直接套兒童；急性快速變化時，穩態假設也可能不成立。不同方法結果不可當成完全同一測量。

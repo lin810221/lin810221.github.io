@@ -2,6 +2,17 @@
 
 把攝取紀錄和臨床問題分開，完成一份可查核的微量營養摘要。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-water-compartments.svg" target="_blank" rel="noopener" aria-label="放大：水分區室與整合礦物質評估"><img src="assets/figures/24-water-compartments.svg" alt="細胞內外水與離子區室連到攝取流失及調節，區室比例為概念而非個人固定值，完整評估需來源與背景。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜水分區室與整合礦物質評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿圖列出已知資料與尚缺條件，說明礦物質評估怎樣連到來源及調節，不用一個平均數替代多種元素和未知資料。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先建資料字典
 
 每個欄位寫名稱、單位、食物基準、來源及缺值規則。鈉mg、鹽g、鐵mg和碘μg不能不經轉換混加。資料庫沒有某礦物質時，保留未知及已知小計，不把空格當零製造看似完整總量。

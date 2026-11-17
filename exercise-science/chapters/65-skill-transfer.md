@@ -2,6 +2,17 @@
 
 明確對應測試，不因身體能力進步就自動宣稱技術已提高。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-skill-transfer.svg" target="_blank" rel="noopener" aria-label="放大：訓練與目標任務之間的遷移"><img src="assets/figures/33-skill-transfer.svg" alt="兩個不同情境由待驗證箭頭連接，圖不表示任何體能進步必然完整轉移到專項結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜訓練與目標任務之間的遷移</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩個圈各寫實際任務和共同需求，再指出至少一項不同之處；箭頭是需要觀察的遷移，不是只要訓練變強就保證專項表現改進。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 能力與技能
 
 力量、耐力和速度可支持任務，但技術、知覺、決策與環境也重要。舉重更重或跑更久不直接等於球類得分更多；是否遷移要以相應任務觀察。

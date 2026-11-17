@@ -2,6 +2,17 @@
 
 理解工作條件如何共同形成需求。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-repetition-time.svg" target="_blank" rel="noopener" aria-label="放大：重複、施力與持續的共同觀察"><img src="assets/figures/31-repetition-time.svg" alt="同一總次數可分散或集中，需記定義、力與姿勢等條件；時間區塊無疾病與安全色帶。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜重複、施力與持續的共同觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為每段補施力、位置和持續資料，說明三者不是獨立互不影響的項目；不要任意平均不同工具分數變總風險。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 力需要定義
 
 峰值、平均、持續、初始或動態力不是同一量，手指按壓也不同於全身推拉。主觀費力可提供訊息，但不能直接當成牛頓實測。

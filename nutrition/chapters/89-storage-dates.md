@@ -2,6 +2,17 @@
 
 把包裝日期放回實際保存條件，不把期限當獨立保證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-cold-chain-history.svg" target="_blank" rel="noopener" aria-label="放大：保存日期與冷鏈歷史"><img src="assets/figures/45-cold-chain-history.svg" alt="從製備運送保存到食用的時間軸，任何未取得條件都保留未知；日期、開封及特定族群情境不可互相代替。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜保存日期與冷鏈歷史</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿時間軸標出開封、保存及離開冷藏的可能未知段，說明保存日期為何不能自動保證任何處理條件下都安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.cdc.gov/food-safety/prevention/index.html">CDC：預防食物中毒</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/food-safety">WHO：食品安全</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 期限有前提
 
 產品期限依指定包裝、保存和使用條件建立；開封、溫度失控或污染可能改變情況。日期名稱與法律意義也隨地區與產品不同，不能把國外best before字義一律套到台灣所有標示。

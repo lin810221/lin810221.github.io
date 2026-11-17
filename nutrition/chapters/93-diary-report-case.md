@@ -2,6 +2,17 @@
 
 生成CSV、SVG與JSON，把資料身份、缺漏與解讀一起交付。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-diary-case-audit.svg" target="_blank" rel="noopener" aria-label="放大：飲食報告從原始紀錄核對"><img src="assets/figures/47-diary-case-audit.svg" alt="原始紀錄連到資料核對，缺漏、零值與定義要分開；審核的目的是確認可支持什麼，不強迫所有欄位都有結論。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜飲食報告從原始紀錄核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找三天資料的已知和未知，再口述可以報的已知小計及不能報的完整總量，說明圖不作個人需要量或疾病判斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://www.python.org/downloads/release/python-3152/">Python3.15.2正式發布</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 輸入有哪些
 
 十筆虛構食物、三天部分日誌、明示來源的參考表與metadata，全部本機可讀。不下載個人健康資料，也不假裝是台灣飲食調查；每一列份量和單位都可追溯。

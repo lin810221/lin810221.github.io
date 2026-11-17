@@ -2,6 +2,17 @@
 
 把血壓、體位、檢驗、單位與未知資訊整理到一起。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-observation-summary.svg" target="_blank" rel="noopener" aria-label="放大：觀察、衍生值與來源狀態"><img src="assets/figures/46-observation-summary.svg" alt="摘要保留未知欄位及時間，圖不做診斷；版本標示須區分正式、草案與未來生效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜觀察、衍生值與來源狀態</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分辨原始觀察、算術衍生與缺漏，指出症狀等背景未知時，為何不能只靠摘要判定糖尿病、CKD或其他病況。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 案例資料的來源
 
 本課提供完全虛構的四次訪視與28個排定血壓位置，不含真實病人資料。虛構人約45歲、身高170cm，有幾筆體重及檢驗，其中一筆HDL缺少；用藥與症狀等背景未知，不可自行補成沒有。

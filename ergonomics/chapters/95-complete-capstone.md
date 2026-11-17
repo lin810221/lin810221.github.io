@@ -2,6 +2,17 @@
 
 把課程概念、資料、算術與工作支持整合一次。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-capstone-review.svg" target="_blank" rel="noopener" aria-label="放大：從觀察到改善：留下可審核的下一步"><img src="assets/figures/48-capstone-review.svg" alt="工作、資料、方法與回顧形成概念圖，要求說明條件與未知，不以最後一個總分取代參與和現場驗證。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜從觀察到改善：留下可審核的下一步</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從圖中提出一項具體工作改變、所需資料和回顧責任，說明完整專題不是把所有未知補成最好條件或個人限重。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 準備與手算
 
 下載完整範例，讀資料說明，先算110分鐘990次的可用頻率、三個搬抬情境的已知與未知，再檢查兩項尺寸條件如何同時成立。寫下單位、分母、假設，才執行48_complete_project.py。

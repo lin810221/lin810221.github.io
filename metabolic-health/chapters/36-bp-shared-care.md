@@ -2,6 +2,17 @@
 
 把多日觀察帶進共同決策，而不是由網頁選治療。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-repeat-bp.svg" target="_blank" rel="noopener" aria-label="放大：波動、重測與照護回顧"><img src="assets/figures/18-repeat-bp.svg" alt="相對高度為虛構觀察，無正常異常線；重測提供資訊，但不能單由走向選擇個人處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜波動、重測與照護回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把生活條件、藥物與耐受的問題放在回顧時點，說明重測只是照護資訊的一部分，不是自行停藥或調藥的指令。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 照護有多個面向
 
 飲食型態、鈉攝取、活動、睡眠、菸酒及其他健康條件都與血壓管理有關；藥物可在適當情境降低風險。這些選項應整合，不把生活改變當作延後必要治療的理由，也不把用藥視為個人失敗。

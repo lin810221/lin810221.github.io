@@ -2,6 +2,17 @@
 
 不要用互相衝突的目標增加生活負擔。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-habits-support.svg" target="_blank" rel="noopener" aria-label="放大：壓力、習慣與支持一起規劃"><img src="assets/figures/36-habits-support.svg" alt="多面向連線表示彼此關聯與資源限制，不宣告單一心理狀態必然造成代謝病。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜壓力、習慣與支持一起規劃</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把飲食、活動與睡眠接到可行計畫，列一個小調整和一個需協調的資源，避免用單一習慣數字替整體生活評分。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 目標會互相影響
 
 為了晨間高強度訓練而犧牲睡眠，或為了快速減重而營養不足，可能偏離健康目的。飲食、活動和睡眠應放在同一週行程討論，兼顧恢復、工作與照護限制，而不是各自追最大值。

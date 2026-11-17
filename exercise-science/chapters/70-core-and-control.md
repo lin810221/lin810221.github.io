@@ -2,6 +2,17 @@
 
 把核心概念放回任務，不用單一腹肌動作處理所有問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-balance-control.svg" target="_blank" rel="noopener" aria-label="放大：支持面、感覺訊息與軀幹控制"><img src="assets/figures/35-balance-control.svg" alt="簡化人形與支持面強調感覺、肢體和軀幹協調，虛線不是個人實測重心或平衡風險界線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜支持面、感覺訊息與軀幹控制</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖上補出軀幹與四肢共同影響任務的關係，說明穩定不是把身體全部鎖死，也不能由一條肌肉或一個姿勢直接判控制能力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nidcd.nih.gov/health/balance-disorders">NIDCD：平衡的正常功能</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 核心不是一塊肌肉
 
 軀幹及周邊多個組織參與產力、傳力、呼吸和控制。不同搬運、旋轉、跑步與負重任務有不同策略，不能以一個平板時間完整描述所有軀幹能力。

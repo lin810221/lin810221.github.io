@@ -40,7 +40,13 @@ def main():
         for path in (folder / "assets").rglob("*"):
             if path.is_file() and path.suffix.lower() in ASSET_SUFFIXES:
                 selected.add(path.relative_to(ROOT))
-        selected.add(Path(folder.name) / "examples" / "README.md")
+        if (folder / "examples" / "README.md").is_file():
+            selected.add(Path(folder.name) / "examples" / "README.md")
+        for resource in course.get("learningResources", []):
+            target = (folder / resource).resolve()
+            if not target.is_relative_to(folder.resolve()) or not target.is_file():
+                raise ValueError(f"Invalid learning resource: {resource}")
+            selected.add(target.relative_to(ROOT))
         if course.get("exampleBundle"):
             selected.add(Path(folder.name) / course["exampleBundle"])
         else:

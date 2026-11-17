@@ -2,6 +2,17 @@
 
 先建立學科地圖，分清營養素、食物、飲食型態與健康結果。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-food-components.svg" target="_blank" rel="noopener" aria-label="放大：從食物看營養成分"><img src="assets/figures/01-food-components.svg" alt="食物圖示和營養成分並列，提醒食物是多種成分及基質的組合，不是一種食物只提供一種營養素。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜從食物看營養成分</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選圖中的穀物和乳品各一項，口述它可能同時提供的不同成分，再說明為何不能用單一營養素代替整體飲食。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個分析層次
 
 蛋白質、維生素等是營養素；米飯、豆腐是包含多種成分的食物；一天到數月的組合形成飲食型態；健康結果還受活動、睡眠、疾病、環境與資源影響。單一成分研究不能無條件變成整份食物或整種生活的結論。

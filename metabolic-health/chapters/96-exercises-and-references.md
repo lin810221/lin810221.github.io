@@ -2,6 +2,17 @@
 
 用跨章問題檢查概念是否真正接起來。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-capstone-review.svg" target="_blank" rel="noopener" aria-label="放大：從資料到可審核的整合概念圖"><img src="assets/figures/48-capstone-review.svg" alt="專題需交代問題、觀察、算術、來源及未知，圖不以完成度替個人下健康判決。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜從資料到可審核的整合概念圖</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>不看程式先口述單位、分母、期限與適用條件的檢核順序，再選一張本課圖說明其簡化和不能回答的問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 六個核心問題
 
 代謝症候群分類與心血管機率有何差別？HbA1c為何不能與血糖的mmol/L混用？血壓可用平均與完整平均有何不同？FIB-4為何不是肝硬化診斷？一次eGFR異常為何不足以判慢性？篩檢敏感度為何不是PPV？先寫下自己的答案再回讀相應章。

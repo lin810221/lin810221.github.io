@@ -1,0 +1,2056 @@
+{
+  "slug": "anatomy-physiology",
+  "title": "人體解剖與生理學完整教學",
+  "shortTitle": "人體解剖與生理學",
+  "updated": "2026-11-16",
+  "baseline": "NIH官方基礎資料 · 2026-11-16查核 · 圖解優先",
+  "footerLabel": "ANATOMY & PHYSIOLOGY · SEE, TRACE & UNDERSTAND",
+  "searchHint": "試試 穩態、細胞膜、骨、反射、肺泡、腎元、胎盤或免疫。",
+  "groups": [
+    {
+      "id": "map",
+      "number": "01",
+      "title": "人體地圖、方向與穩態",
+      "description": "從位置、尺度與回饋學會讀人體。"
+    },
+    {
+      "id": "chemistry",
+      "number": "02",
+      "title": "水、分子與生理化學",
+      "description": "必要化學以生活機制理解，不需程式。"
+    },
+    {
+      "id": "cells",
+      "number": "03",
+      "title": "細胞、膜與訊息",
+      "description": "辨識構造、運輸、訊號及更新。"
+    },
+    {
+      "id": "tissues",
+      "number": "04",
+      "title": "組織與身體的邊界",
+      "description": "四大組織、上皮、基質與各種膜。"
+    },
+    {
+      "id": "skin",
+      "number": "05",
+      "title": "皮膚與體表功能",
+      "description": "屏障、附屬構造、感覺與熱交換。"
+    },
+    {
+      "id": "skeleton",
+      "number": "06",
+      "title": "骨、關節與支持系統",
+      "description": "骨架位置、活骨組織、重塑與連接。"
+    },
+    {
+      "id": "muscles",
+      "number": "07",
+      "title": "肌肉與動作產生",
+      "description": "肌肉層級、肌節、神經肌接點與張力。"
+    },
+    {
+      "id": "neurons",
+      "number": "08",
+      "title": "神經細胞與訊息傳遞",
+      "description": "神經元、膜電位、突觸和資訊編碼。"
+    },
+    {
+      "id": "nervous",
+      "number": "09",
+      "title": "腦、脊髓與調節路徑",
+      "description": "中樞、周邊、反射與自律神經。"
+    },
+    {
+      "id": "senses",
+      "number": "10",
+      "title": "視覺、聽覺與其他感覺",
+      "description": "從物理刺激到神經訊號及整合。"
+    },
+    {
+      "id": "endocrine",
+      "number": "11",
+      "title": "內分泌與激素調節",
+      "description": "腺體、受體、內分泌軸與血糖控制。"
+    },
+    {
+      "id": "blood",
+      "number": "12",
+      "title": "血液、淋巴與免疫",
+      "description": "運輸、止血、組織液回流及免疫協作。"
+    },
+    {
+      "id": "cardio",
+      "number": "13",
+      "title": "心臟、血管與循環",
+      "description": "追蹤血流、傳導、血壓與微循環。"
+    },
+    {
+      "id": "respiration",
+      "number": "14",
+      "title": "呼吸與氣體交換",
+      "description": "氣道、肺泡、壓差、氣體運輸與控制。"
+    },
+    {
+      "id": "digestive",
+      "number": "15",
+      "title": "消化、吸收與肝膽胰",
+      "description": "一條食物通路與多條分泌運送路。"
+    },
+    {
+      "id": "energy",
+      "number": "16",
+      "title": "代謝、能量與體溫",
+      "description": "從ATP與供應調節連到活動和散熱。"
+    },
+    {
+      "id": "renal",
+      "number": "17",
+      "title": "腎臟、水鹽與酸鹼",
+      "description": "血路、濾液、尿路與肺腎協作。"
+    },
+    {
+      "id": "reproductive",
+      "number": "18",
+      "title": "生殖、發育與胎盤",
+      "description": "構造、配子、週期及母胎交換。"
+    },
+    {
+      "id": "integration",
+      "number": "19",
+      "title": "生命階段與跨系統協作",
+      "description": "成長、站立、進食與活動的整合。"
+    },
+    {
+      "id": "practice",
+      "number": "20",
+      "title": "讀圖、證據與整合練習",
+      "description": "指認、追路徑、修正誤解與概念圖。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-body-map",
+      "group": "map",
+      "title": "從整個人開始：解剖學與生理學",
+      "summary": "先知道器官在哪，再問它為何能完成工作。",
+      "visual": "f01",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "body map"
+      ]
+    },
+    {
+      "id": "002-orientation",
+      "group": "map",
+      "title": "人體左右、方向與切面：先把視角對準",
+      "summary": "閱讀任何人體圖以前，先問方向以誰為準。",
+      "visual": "f01",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "orientation"
+      ],
+      "extraVisuals": [
+        "f61"
+      ]
+    },
+    {
+      "id": "003-levels",
+      "group": "map",
+      "title": "分子、細胞、組織、器官與系統",
+      "summary": "辨識尺度，才能知道一段解釋回答到哪裡。",
+      "visual": "f02",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "levels"
+      ]
+    },
+    {
+      "id": "004-compartments",
+      "group": "map",
+      "title": "體腔、器官與系統邊界",
+      "summary": "身體有分隔，也有跨邊界的連接。",
+      "visual": "f02",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "compartments"
+      ],
+      "extraVisuals": [
+        "f62"
+      ]
+    },
+    {
+      "id": "005-homeostasis",
+      "group": "map",
+      "title": "穩態：不是所有數字都固定",
+      "summary": "理解變數、感受、整合與反應的關係。",
+      "visual": "f03",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "homeostasis"
+      ]
+    },
+    {
+      "id": "006-positive-feedback",
+      "group": "map",
+      "title": "正回饋與前饋：有時反應會放大",
+      "summary": "用對照理解不同控制方式，避免把每個箭頭都叫負回饋。",
+      "visual": "f03",
+      "tags": [
+        "人體地圖、方向與穩態",
+        "positive feedback"
+      ]
+    },
+    {
+      "id": "007-water",
+      "group": "chemistry",
+      "title": "水與分子作用：身體的反應環境",
+      "summary": "不用先背大量化學式，也能理解水的重要性。",
+      "visual": "f04",
+      "tags": [
+        "水、分子與生理化學",
+        "water"
+      ]
+    },
+    {
+      "id": "008-proteins-and-ph",
+      "group": "chemistry",
+      "title": "蛋白質、酵素與酸鹼環境",
+      "summary": "形狀與環境如何影響反應。",
+      "visual": "f04",
+      "tags": [
+        "水、分子與生理化學",
+        "proteins and ph"
+      ]
+    },
+    {
+      "id": "009-fluid-compartments",
+      "group": "chemistry",
+      "title": "細胞內液、組織液與血漿",
+      "summary": "把體液畫成有邊界的空間。",
+      "visual": "f05",
+      "tags": [
+        "水、分子與生理化學",
+        "fluid compartments"
+      ]
+    },
+    {
+      "id": "010-electrolytes",
+      "group": "chemistry",
+      "title": "電解質：不只是運動飲料裡的鹽",
+      "summary": "離子分布連到電位、張力與體液。",
+      "visual": "f05",
+      "tags": [
+        "水、分子與生理化學",
+        "electrolytes"
+      ]
+    },
+    {
+      "id": "011-diffusion",
+      "group": "chemistry",
+      "title": "擴散：隨機運動與淨方向",
+      "summary": "分子一直在動，為什麼仍能說有方向？",
+      "visual": "f06",
+      "tags": [
+        "水、分子與生理化學",
+        "diffusion"
+      ]
+    },
+    {
+      "id": "012-osmosis",
+      "group": "chemistry",
+      "title": "滲透與張力：追蹤的是水",
+      "summary": "水的移動不能只看一個含糊的「濃度」。",
+      "visual": "f06",
+      "tags": [
+        "水、分子與生理化學",
+        "osmosis"
+      ]
+    },
+    {
+      "id": "013-organelles",
+      "group": "cells",
+      "title": "一般細胞：膜、核與胞器的分工",
+      "summary": "把細胞當成有組織的活動空間。",
+      "visual": "f07",
+      "tags": [
+        "細胞、膜與訊息",
+        "organelles"
+      ]
+    },
+    {
+      "id": "014-gene-expression",
+      "group": "cells",
+      "title": "遺傳資訊與蛋白質表現",
+      "summary": "同一個人的細胞為何能做不同工作？",
+      "visual": "f07",
+      "tags": [
+        "細胞、膜與訊息",
+        "gene expression"
+      ]
+    },
+    {
+      "id": "015-membrane-transport",
+      "group": "cells",
+      "title": "膜運輸：通道、載體與幫浦",
+      "summary": "看懂穿過膜需要哪些條件。",
+      "visual": "f08",
+      "tags": [
+        "細胞、膜與訊息",
+        "membrane transport"
+      ]
+    },
+    {
+      "id": "016-receptors",
+      "group": "cells",
+      "title": "細胞如何接收與回應訊號",
+      "summary": "訊號到達不代表所有細胞都做同一件事。",
+      "visual": "f08",
+      "tags": [
+        "細胞、膜與訊息",
+        "receptors"
+      ]
+    },
+    {
+      "id": "017-cell-cycle",
+      "group": "cells",
+      "title": "細胞分裂、檢查與更新",
+      "summary": "數量增加和功能成熟是不同過程。",
+      "visual": "f09",
+      "tags": [
+        "細胞、膜與訊息",
+        "cell cycle"
+      ]
+    },
+    {
+      "id": "018-cell-death-repair",
+      "group": "cells",
+      "title": "細胞死亡、回收與組織修復",
+      "summary": "身體的維持包含移除與重建。",
+      "visual": "f09",
+      "tags": [
+        "細胞、膜與訊息",
+        "cell death repair"
+      ]
+    },
+    {
+      "id": "019-four-tissues",
+      "group": "tissues",
+      "title": "四大組織：不是四個互不往來的抽屜",
+      "summary": "用功能、排列與基質認識組織。",
+      "visual": "f10",
+      "tags": [
+        "組織與身體的邊界",
+        "four tissues"
+      ]
+    },
+    {
+      "id": "020-connective-tissue",
+      "group": "tissues",
+      "title": "結締組織：基質也在決定功能",
+      "summary": "從柔軟到堅硬，並不是同一種填充物。",
+      "visual": "f10",
+      "tags": [
+        "組織與身體的邊界",
+        "connective tissue"
+      ]
+    },
+    {
+      "id": "021-epithelial-polarity",
+      "group": "tissues",
+      "title": "上皮：頂端、基底與選擇性交換",
+      "summary": "同一個細胞的兩面可以有不同任務。",
+      "visual": "f11",
+      "tags": [
+        "組織與身體的邊界",
+        "epithelial polarity"
+      ]
+    },
+    {
+      "id": "022-glands",
+      "group": "tissues",
+      "title": "腺體：分泌物往哪裡去",
+      "summary": "內分泌與外分泌的差別首先是路徑。",
+      "visual": "f11",
+      "tags": [
+        "組織與身體的邊界",
+        "glands"
+      ]
+    },
+    {
+      "id": "023-body-membranes",
+      "group": "tissues",
+      "title": "黏膜、漿膜、滑膜與細胞膜",
+      "summary": "同一個「膜」字，可能差一整個尺度。",
+      "visual": "f12",
+      "tags": [
+        "組織與身體的邊界",
+        "body membranes"
+      ]
+    },
+    {
+      "id": "024-tissue-repair",
+      "group": "tissues",
+      "title": "組織修復與觀察：不要只憑一張圖判斷",
+      "summary": "從結構回到時間、供應與功能。",
+      "visual": "f12",
+      "tags": [
+        "組織與身體的邊界",
+        "tissue repair"
+      ]
+    },
+    {
+      "id": "025-skin-layers",
+      "group": "skin",
+      "title": "皮膚層次：表皮、真皮與其下組織",
+      "summary": "先分清層次，才能理解屏障與供應。",
+      "visual": "f13",
+      "tags": [
+        "皮膚與體表功能",
+        "skin layers"
+      ]
+    },
+    {
+      "id": "026-barrier",
+      "group": "skin",
+      "title": "皮膚屏障：阻擋、保水與選擇性",
+      "summary": "不是完全密封，也不是什麼都能穿透。",
+      "visual": "f13",
+      "tags": [
+        "皮膚與體表功能",
+        "barrier"
+      ]
+    },
+    {
+      "id": "027-appendages",
+      "group": "skin",
+      "title": "毛囊、皮脂與汗腺：不同的分泌路",
+      "summary": "沿導管看它通往哪裡。",
+      "visual": "f14",
+      "tags": [
+        "皮膚與體表功能",
+        "appendages"
+      ]
+    },
+    {
+      "id": "028-skin-sensation",
+      "group": "skin",
+      "title": "皮膚感覺與觸覺：從刺激到知覺",
+      "summary": "感受到什麼，不只由表面形狀決定。",
+      "visual": "f14",
+      "tags": [
+        "皮膚與體表功能",
+        "skin sensation"
+      ]
+    },
+    {
+      "id": "029-skin-temperature",
+      "group": "skin",
+      "title": "皮膚血流、汗與熱交換",
+      "summary": "分清熱送到表面，和真正離開身體。",
+      "visual": "f15",
+      "tags": [
+        "皮膚與體表功能",
+        "skin temperature"
+      ]
+    },
+    {
+      "id": "030-skin-repair",
+      "group": "skin",
+      "title": "皮膚修復：時間、深度與整體條件",
+      "summary": "理解正常過程，不用一張圖給傷口分級。",
+      "visual": "f15",
+      "tags": [
+        "皮膚與體表功能",
+        "skin repair"
+      ]
+    },
+    {
+      "id": "031-skeletal-map",
+      "group": "skeleton",
+      "title": "骨架地圖：中軸與附肢",
+      "summary": "知道位置與連接，比先背數量更有用。",
+      "visual": "f16",
+      "tags": [
+        "骨、關節與支持系統",
+        "skeletal map"
+      ]
+    },
+    {
+      "id": "032-axial-appendicular",
+      "group": "skeleton",
+      "title": "脊柱、胸廓與肢帶的連接",
+      "summary": "支持與活動通常是共同需求。",
+      "visual": "f16",
+      "tags": [
+        "骨、關節與支持系統",
+        "axial appendicular"
+      ]
+    },
+    {
+      "id": "033-bone-tissue",
+      "group": "skeleton",
+      "title": "骨組織：緻密骨、鬆質骨與骨髓",
+      "summary": "硬度不代表沒有細胞和交換。",
+      "visual": "f17",
+      "tags": [
+        "骨、關節與支持系統",
+        "bone tissue"
+      ]
+    },
+    {
+      "id": "034-bone-remodeling",
+      "group": "skeleton",
+      "title": "骨生長與重塑：形成與吸收的協調",
+      "summary": "骨組織會隨時間改變。",
+      "visual": "f17",
+      "tags": [
+        "骨、關節與支持系統",
+        "bone remodeling"
+      ]
+    },
+    {
+      "id": "035-synovial-joint",
+      "group": "skeleton",
+      "title": "滑液關節：骨端之間還有什麼",
+      "summary": "看懂軟骨、關節腔與關節囊。",
+      "visual": "f18",
+      "tags": [
+        "骨、關節與支持系統",
+        "synovial joint"
+      ]
+    },
+    {
+      "id": "036-tendon-ligament",
+      "group": "skeleton",
+      "title": "肌腱、韌帶與關節活動的限制",
+      "summary": "連接對象不同，功能也不能只靠一條線概括。",
+      "visual": "f18",
+      "tags": [
+        "骨、關節與支持系統",
+        "tendon ligament"
+      ]
+    },
+    {
+      "id": "037-muscle-layers",
+      "group": "muscles",
+      "title": "肌肉、肌束、肌纖維與肌節",
+      "summary": "由肉眼構造一路放大。",
+      "visual": "f19",
+      "tags": [
+        "肌肉與動作產生",
+        "muscle layers"
+      ]
+    },
+    {
+      "id": "038-muscle-types",
+      "group": "muscles",
+      "title": "骨骼肌、心肌與平滑肌的比較",
+      "summary": "功能相似，不代表控制完全相同。",
+      "visual": "f19",
+      "tags": [
+        "肌肉與動作產生",
+        "muscle types"
+      ]
+    },
+    {
+      "id": "039-sliding-filament",
+      "group": "muscles",
+      "title": "肌絲滑動：縮短的是哪個距離",
+      "summary": "蛋白質沒有因收縮而消失。",
+      "visual": "f20",
+      "tags": [
+        "肌肉與動作產生",
+        "sliding filament"
+      ]
+    },
+    {
+      "id": "040-muscle-force",
+      "group": "muscles",
+      "title": "張力、長度與速度：不是一顆開關",
+      "summary": "理解肌肉作用的條件，而非直接算個人能力。",
+      "visual": "f20",
+      "tags": [
+        "肌肉與動作產生",
+        "muscle force"
+      ]
+    },
+    {
+      "id": "041-neuromuscular-junction",
+      "group": "muscles",
+      "title": "神經肌接點與鈣：從訊號到張力",
+      "summary": "沿著訊號、電位、鈣與肌絲四個層次追蹤。",
+      "visual": "f21",
+      "tags": [
+        "肌肉與動作產生",
+        "neuromuscular junction"
+      ]
+    },
+    {
+      "id": "042-motor-unit",
+      "group": "muscles",
+      "title": "運動單位、募集與疲勞",
+      "summary": "整塊肌肉如何調整輸出。",
+      "visual": "f21",
+      "tags": [
+        "肌肉與動作產生",
+        "motor unit"
+      ]
+    },
+    {
+      "id": "043-neuron-glia",
+      "group": "neurons",
+      "title": "神經元、膠細胞與神經",
+      "summary": "三個相關名詞不是同義詞。",
+      "visual": "f22",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "neuron glia"
+      ]
+    },
+    {
+      "id": "044-myelin",
+      "group": "neurons",
+      "title": "軸突、髓鞘與訊息方向",
+      "summary": "包覆不是讓訊號消失，而是改變傳播條件。",
+      "visual": "f22",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "myelin"
+      ]
+    },
+    {
+      "id": "045-resting-potential",
+      "group": "neurons",
+      "title": "靜止膜電位：安靜不等於沒有工作",
+      "summary": "用兩側離子分布理解電位。",
+      "visual": "f23",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "resting potential"
+      ]
+    },
+    {
+      "id": "046-action-potential",
+      "group": "neurons",
+      "title": "動作電位：時間順序與全有全無",
+      "summary": "不要把波峰直接當感覺或力量。",
+      "visual": "f23",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "action potential"
+      ]
+    },
+    {
+      "id": "047-chemical-synapse",
+      "group": "neurons",
+      "title": "化學突觸：訊息如何跨細胞",
+      "summary": "訊息經轉換，不是整顆細胞通過去。",
+      "visual": "f24",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "chemical synapse"
+      ]
+    },
+    {
+      "id": "048-neural-coding",
+      "group": "neurons",
+      "title": "神經整合與可塑性",
+      "summary": "學習不是只有增加某一顆神經元。",
+      "visual": "f24",
+      "tags": [
+        "神經細胞與訊息傳遞",
+        "neural coding"
+      ]
+    },
+    {
+      "id": "049-cns-map",
+      "group": "nervous",
+      "title": "腦、脊髓與中樞神經系統",
+      "summary": "先找主要區域，再保留網路協作。",
+      "visual": "f25",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "cns map"
+      ]
+    },
+    {
+      "id": "050-meninges-csf",
+      "group": "nervous",
+      "title": "腦膜、腦脊髓液與保護界面",
+      "summary": "保護不只是外面有一層硬骨。",
+      "visual": "f25",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "meninges csf"
+      ]
+    },
+    {
+      "id": "051-spinal-reflex",
+      "group": "nervous",
+      "title": "脊髓與反射：不必先想好才反應",
+      "summary": "辨識傳入、中樞整合及傳出。",
+      "visual": "f26",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "spinal reflex"
+      ]
+    },
+    {
+      "id": "052-peripheral-pathways",
+      "group": "nervous",
+      "title": "周邊神經、感覺與運動路徑",
+      "summary": "同一條神經可含不同功能纖維。",
+      "visual": "f26",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "peripheral pathways"
+      ]
+    },
+    {
+      "id": "053-autonomic-control",
+      "group": "nervous",
+      "title": "自律神經：器官與受體比開關比喻重要",
+      "summary": "交感、副交感不是全身相反的兩個總開關。",
+      "visual": "f27",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "autonomic control"
+      ]
+    },
+    {
+      "id": "054-brain-body-behavior",
+      "group": "nervous",
+      "title": "腦、身體與行為的整合",
+      "summary": "把睡眠、情緒與動作連回多層機制。",
+      "visual": "f27",
+      "tags": [
+        "腦、脊髓與調節路徑",
+        "brain body behavior"
+      ]
+    },
+    {
+      "id": "055-eye-optics",
+      "group": "senses",
+      "title": "視覺：從光線到視網膜",
+      "summary": "先分清光的路徑和神經的路徑。",
+      "visual": "f28",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "eye optics"
+      ]
+    },
+    {
+      "id": "056-visual-pathway",
+      "group": "senses",
+      "title": "視網膜到腦：看見是處理的結果",
+      "summary": "不是眼球拍一張照片就完成知覺。",
+      "visual": "f28",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "visual pathway"
+      ]
+    },
+    {
+      "id": "057-hearing",
+      "group": "senses",
+      "title": "聽覺：振動如何變成訊號",
+      "summary": "耳道、鼓膜、聽小骨與耳蝸各有工作。",
+      "visual": "f29",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "hearing"
+      ]
+    },
+    {
+      "id": "058-vestibular",
+      "group": "senses",
+      "title": "前庭：頭部轉動與直線加速度",
+      "summary": "耳朵內的聽覺與平衡構造不同。",
+      "visual": "f29",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "vestibular"
+      ]
+    },
+    {
+      "id": "059-balance-integration",
+      "group": "senses",
+      "title": "平衡、本體感覺與視覺整合",
+      "summary": "穩定姿勢來自多種訊息。",
+      "visual": "f30",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "balance integration"
+      ]
+    },
+    {
+      "id": "060-taste-smell",
+      "group": "senses",
+      "title": "味覺、嗅覺與風味",
+      "summary": "舌頭沒有互斥的甜酸苦鹹地圖。",
+      "visual": "f30",
+      "tags": [
+        "視覺、聽覺與其他感覺",
+        "taste smell"
+      ]
+    },
+    {
+      "id": "061-endocrine-map",
+      "group": "endocrine",
+      "title": "內分泌地圖：腺體、血液與靶細胞",
+      "summary": "訊息能走很遠，但要有接收條件。",
+      "visual": "f31",
+      "tags": [
+        "內分泌與激素調節",
+        "endocrine map"
+      ]
+    },
+    {
+      "id": "062-thyroid-adrenal",
+      "group": "endocrine",
+      "title": "甲狀腺、副甲狀腺與腎上腺",
+      "summary": "鄰近或同名不代表相同功能。",
+      "visual": "f31",
+      "tags": [
+        "內分泌與激素調節",
+        "thyroid adrenal"
+      ]
+    },
+    {
+      "id": "063-pituitary-axis",
+      "group": "endocrine",
+      "title": "下視丘與腦下垂體：前後葉分開看",
+      "summary": "常見控制軸是一個模型，不是所有激素的唯一路線。",
+      "visual": "f32",
+      "tags": [
+        "內分泌與激素調節",
+        "pituitary axis"
+      ]
+    },
+    {
+      "id": "064-hormone-feedback",
+      "group": "endocrine",
+      "title": "激素回饋、節律與量測時間",
+      "summary": "一個數字不能代表整天所有作用。",
+      "visual": "f32",
+      "tags": [
+        "內分泌與激素調節",
+        "hormone feedback"
+      ]
+    },
+    {
+      "id": "065-insulin-glucagon",
+      "group": "endocrine",
+      "title": "胰島與血糖：餐後、空腹的協調",
+      "summary": "不要把胰島素畫成所有細胞唯一的鑰匙。",
+      "visual": "f33",
+      "tags": [
+        "內分泌與激素調節",
+        "insulin glucagon"
+      ]
+    },
+    {
+      "id": "066-hormones-context",
+      "group": "endocrine",
+      "title": "生長、壓力與激素：避免單一故事",
+      "summary": "激素是調節網路的一部分，不是好壞排行榜。",
+      "visual": "f33",
+      "tags": [
+        "內分泌與激素調節",
+        "hormones context"
+      ]
+    },
+    {
+      "id": "067-blood-components",
+      "group": "blood",
+      "title": "血漿、紅白血球與血小板",
+      "summary": "血液不只是運氧的紅色水。",
+      "visual": "f34",
+      "tags": [
+        "血液、淋巴與免疫",
+        "blood components"
+      ]
+    },
+    {
+      "id": "068-hematopoiesis-clotting",
+      "group": "blood",
+      "title": "造血、止血與凝血",
+      "summary": "細胞產生與血管破損反應是不同過程。",
+      "visual": "f34",
+      "tags": [
+        "血液、淋巴與免疫",
+        "hematopoiesis clotting"
+      ]
+    },
+    {
+      "id": "069-lymph-return",
+      "group": "blood",
+      "title": "組織液與淋巴：回流和免疫的路",
+      "summary": "不是把身體所有東西都排到體外的排毒管。",
+      "visual": "f35",
+      "tags": [
+        "血液、淋巴與免疫",
+        "lymph return"
+      ]
+    },
+    {
+      "id": "070-lymph-organs",
+      "group": "blood",
+      "title": "淋巴結、脾臟與胸腺的分工",
+      "summary": "位置相近的免疫名詞，不要互相替代。",
+      "visual": "f35",
+      "tags": [
+        "血液、淋巴與免疫",
+        "lymph organs"
+      ]
+    },
+    {
+      "id": "071-innate-adaptive",
+      "group": "blood",
+      "title": "先天與適應性免疫：合作的網路",
+      "summary": "不是第一關完全失敗才啟動第二關。",
+      "visual": "f36",
+      "tags": [
+        "血液、淋巴與免疫",
+        "innate adaptive"
+      ]
+    },
+    {
+      "id": "072-immune-memory",
+      "group": "blood",
+      "title": "免疫記憶、疫苗原理與耐受",
+      "summary": "辨識、反應與不亂反應都重要。",
+      "visual": "f36",
+      "tags": [
+        "血液、淋巴與免疫",
+        "immune memory"
+      ]
+    },
+    {
+      "id": "073-heart-structure",
+      "group": "cardio",
+      "title": "心臟位置、心壁與四個腔室",
+      "summary": "先分人體左右，再分心腔與心壁。",
+      "visual": "f37",
+      "tags": [
+        "心臟、血管與循環",
+        "heart structure"
+      ],
+      "extraVisuals": [
+        "f64"
+      ]
+    },
+    {
+      "id": "074-valves-coronary",
+      "group": "cardio",
+      "title": "四瓣膜、心音與冠狀循環",
+      "summary": "血流方向來自壓力關係及構造。",
+      "visual": "f37",
+      "tags": [
+        "心臟、血管與循環",
+        "valves coronary"
+      ]
+    },
+    {
+      "id": "075-double-circulation",
+      "group": "cardio",
+      "title": "雙循環：一滴血完整走一圈",
+      "summary": "名稱看離心回心，不以氧含量定義。",
+      "visual": "f38",
+      "tags": [
+        "心臟、血管與循環",
+        "double circulation"
+      ]
+    },
+    {
+      "id": "076-vessels-microcirculation",
+      "group": "cardio",
+      "title": "血管與微循環：送達、交換和回流",
+      "summary": "不同血管不是同一根管改個名字。",
+      "visual": "f38",
+      "tags": [
+        "心臟、血管與循環",
+        "vessels microcirculation"
+      ]
+    },
+    {
+      "id": "077-cardiac-cycle",
+      "group": "cardio",
+      "title": "心搏、傳導與心輸出",
+      "summary": "電活動先後與機械泵血要分開。",
+      "visual": "f39",
+      "tags": [
+        "心臟、血管與循環",
+        "cardiac cycle"
+      ]
+    },
+    {
+      "id": "078-blood-pressure-control",
+      "group": "cardio",
+      "title": "血壓調節：心、血管、腎與神經",
+      "summary": "一個變數的維持，需要多種時間尺度。",
+      "visual": "f39",
+      "tags": [
+        "心臟、血管與循環",
+        "blood pressure control"
+      ]
+    },
+    {
+      "id": "079-respiratory-map",
+      "group": "respiration",
+      "title": "氣道、肺葉、胸膜與膈肌",
+      "summary": "追氣道時，不要走進血管。",
+      "visual": "f40",
+      "tags": [
+        "呼吸與氣體交換",
+        "respiratory map"
+      ]
+    },
+    {
+      "id": "080-ventilation-mechanics",
+      "group": "respiration",
+      "title": "吸氣與呼氣：容積改變帶來壓差",
+      "summary": "呼吸自動，仍有骨骼肌工作。",
+      "visual": "f40",
+      "tags": [
+        "呼吸與氣體交換",
+        "ventilation mechanics"
+      ]
+    },
+    {
+      "id": "081-alveolar-exchange",
+      "group": "respiration",
+      "title": "肺泡與分壓：氣體跨薄壁交換",
+      "summary": "氧與二氧化碳有各自的淨方向。",
+      "visual": "f41",
+      "tags": [
+        "呼吸與氣體交換",
+        "alveolar exchange"
+      ]
+    },
+    {
+      "id": "082-gas-transport",
+      "group": "respiration",
+      "title": "氧與二氧化碳的血中運送",
+      "summary": "氧不是血液唯一要處理的氣體。",
+      "visual": "f41",
+      "tags": [
+        "呼吸與氣體交換",
+        "gas transport"
+      ]
+    },
+    {
+      "id": "083-volumes-ventilation",
+      "group": "respiration",
+      "title": "肺容積、死腔與有效通氣",
+      "summary": "一分鐘吸入多少，不等於全部到交換界面。",
+      "visual": "f42",
+      "tags": [
+        "呼吸與氣體交換",
+        "volumes ventilation"
+      ]
+    },
+    {
+      "id": "084-breathing-control",
+      "group": "respiration",
+      "title": "呼吸控制：化學訊息、中樞與肌肉",
+      "summary": "意識可參與，但不是每次都要刻意思考。",
+      "visual": "f42",
+      "tags": [
+        "呼吸與氣體交換",
+        "breathing control"
+      ]
+    },
+    {
+      "id": "085-gut-route",
+      "group": "digestive",
+      "title": "食物通路：從口腔到肛門",
+      "summary": "把消化管與附屬器官分兩條線。",
+      "visual": "f43",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "gut route"
+      ]
+    },
+    {
+      "id": "086-gut-wall",
+      "group": "digestive",
+      "title": "消化管壁、蠕動與神經控制",
+      "summary": "管壁是多層活組織，不是光滑水管。",
+      "visual": "f43",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "gut wall"
+      ]
+    },
+    {
+      "id": "087-digestion-absorption",
+      "group": "digestive",
+      "title": "消化與吸收：分解後還要跨界",
+      "summary": "化學切小與進入體內運送不是同一個步驟。",
+      "visual": "f44",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "digestion absorption"
+      ]
+    },
+    {
+      "id": "088-intestine-microbes",
+      "group": "digestive",
+      "title": "大腸、水分、微生物與排便",
+      "summary": "大腸不是只存垃圾的終點袋。",
+      "visual": "f44",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "intestine microbes"
+      ]
+    },
+    {
+      "id": "089-bile-pancreatic-ducts",
+      "group": "digestive",
+      "title": "肝、膽囊與胰臟：三個器官、多條路",
+      "summary": "膽汁不是脂肪酶，胰島也不走消化導管。",
+      "visual": "f45",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "bile pancreatic ducts"
+      ]
+    },
+    {
+      "id": "090-liver-portal",
+      "group": "digestive",
+      "title": "肝門脈與肝的多重工作",
+      "summary": "處理、儲存、合成與轉換，比「排毒」更精確。",
+      "visual": "f45",
+      "tags": [
+        "消化、吸收與肝膽胰",
+        "liver portal"
+      ]
+    },
+    {
+      "id": "091-atp-turnover",
+      "group": "energy",
+      "title": "ATP與能量耦合：細胞的持續周轉",
+      "summary": "不是把食物熱量全裝進一顆電池。",
+      "visual": "f46",
+      "tags": [
+        "代謝、能量與體溫",
+        "atp turnover"
+      ]
+    },
+    {
+      "id": "092-pathways",
+      "group": "energy",
+      "title": "醣、脂肪與胺基酸代謝的連結",
+      "summary": "不同原料能交會，但不能隨意互換所有功能。",
+      "visual": "f46",
+      "tags": [
+        "代謝、能量與體溫",
+        "pathways"
+      ]
+    },
+    {
+      "id": "093-heat-balance",
+      "group": "energy",
+      "title": "熱平衡：產熱和散熱一起看",
+      "summary": "體溫的變化是多種交換的結果。",
+      "visual": "f47",
+      "tags": [
+        "代謝、能量與體溫",
+        "heat balance"
+      ]
+    },
+    {
+      "id": "094-thermoregulation",
+      "group": "energy",
+      "title": "體溫控制與行為：不只一支溫度計",
+      "summary": "整合感受、反應與環境。",
+      "visual": "f47",
+      "tags": [
+        "代謝、能量與體溫",
+        "thermoregulation"
+      ]
+    },
+    {
+      "id": "095-fed-fasting",
+      "group": "energy",
+      "title": "餐後與空腹：供應、儲存與動員",
+      "summary": "身體不是每餐後完全重置的容器。",
+      "visual": "f48",
+      "tags": [
+        "代謝、能量與體溫",
+        "fed fasting"
+      ]
+    },
+    {
+      "id": "096-activity-recovery",
+      "group": "energy",
+      "title": "活動與恢復：心肺、肌肉及散熱的協作",
+      "summary": "不把一個感受直接當全部系統的儀表。",
+      "visual": "f48",
+      "tags": [
+        "代謝、能量與體溫",
+        "activity recovery"
+      ]
+    },
+    {
+      "id": "097-urinary-map",
+      "group": "renal",
+      "title": "腎臟、輸尿管、膀胱與尿道",
+      "summary": "先追尿路，再看血液如何參與。",
+      "visual": "f49",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "urinary map"
+      ]
+    },
+    {
+      "id": "098-urination",
+      "group": "renal",
+      "title": "膀胱與排尿：儲存和釋放的協調",
+      "summary": "不只是容器裝滿後被動漏出。",
+      "visual": "f49",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "urination"
+      ]
+    },
+    {
+      "id": "099-nephron",
+      "group": "renal",
+      "title": "腎元：血路、濾液與小管",
+      "summary": "濾過只是起點，不是最後排出量。",
+      "visual": "f50",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "nephron"
+      ]
+    },
+    {
+      "id": "100-tubular-processing",
+      "group": "renal",
+      "title": "回收、分泌與尿液濃縮",
+      "summary": "跨哪個邊界、往哪裡，必須說清楚。",
+      "visual": "f50",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "tubular processing"
+      ]
+    },
+    {
+      "id": "101-adh-raas",
+      "group": "renal",
+      "title": "ADH、醛固酮與水鹽調節",
+      "summary": "兩條訊號路，別畫成一顆腎臟製造全部。",
+      "visual": "f51",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "adh raas"
+      ]
+    },
+    {
+      "id": "102-acid-base",
+      "group": "renal",
+      "title": "酸鹼：緩衝、肺與腎一起工作",
+      "summary": "不是喝一杯東西就把全身改成同一種酸鹼。",
+      "visual": "f51",
+      "tags": [
+        "腎臟、水鹽與酸鹼",
+        "acid base"
+      ]
+    },
+    {
+      "id": "103-sperm-route",
+      "group": "reproductive",
+      "title": "睪丸、副睪、導管與腺體",
+      "summary": "產生、成熟、運送和分泌液體是不同工作。",
+      "visual": "f52",
+      "tags": [
+        "生殖、發育與胎盤",
+        "sperm route"
+      ]
+    },
+    {
+      "id": "104-ovary-uterus",
+      "group": "reproductive",
+      "title": "卵巢、輸卵管、子宮與外陰",
+      "summary": "內部通路和外部開口需分開指認。",
+      "visual": "f52",
+      "tags": [
+        "生殖、發育與胎盤",
+        "ovary uterus"
+      ],
+      "extraVisuals": [
+        "f63"
+      ]
+    },
+    {
+      "id": "105-gametes",
+      "group": "reproductive",
+      "title": "配子、減數分裂與受精",
+      "summary": "細胞數目、染色體與發育階段要分清。",
+      "visual": "f53",
+      "tags": [
+        "生殖、發育與胎盤",
+        "gametes"
+      ]
+    },
+    {
+      "id": "106-menstrual-cycle",
+      "group": "reproductive",
+      "title": "月經週期：卵巢、激素與內膜一起看",
+      "summary": "用階段理解，不做固定28天時鐘。",
+      "visual": "f53",
+      "tags": [
+        "生殖、發育與胎盤",
+        "menstrual cycle"
+      ]
+    },
+    {
+      "id": "107-placental-exchange",
+      "group": "reproductive",
+      "title": "胎盤：兩套循環與物質交換",
+      "summary": "母胎相連，不表示血液直接成同一池。",
+      "visual": "f54",
+      "tags": [
+        "生殖、發育與胎盤",
+        "placental exchange"
+      ]
+    },
+    {
+      "id": "108-development-birth",
+      "group": "reproductive",
+      "title": "胚胎發育、出生與哺乳的轉換",
+      "summary": "一個系統改變，常需要其他系統一起適應。",
+      "visual": "f54",
+      "tags": [
+        "生殖、發育與胎盤",
+        "development birth"
+      ]
+    },
+    {
+      "id": "109-growth-aging",
+      "group": "integration",
+      "title": "成長、成熟與老化：不是同一成人模板",
+      "summary": "群體趨勢與個人功能要分開。",
+      "visual": "f55",
+      "tags": [
+        "生命階段與跨系統協作",
+        "growth aging"
+      ]
+    },
+    {
+      "id": "110-reserve-context",
+      "group": "integration",
+      "title": "生理餘裕、變異與個體差異",
+      "summary": "能維持平時，不等於任何情境都相同。",
+      "visual": "f55",
+      "tags": [
+        "生命階段與跨系統協作",
+        "reserve context"
+      ]
+    },
+    {
+      "id": "111-standing-feedback",
+      "group": "integration",
+      "title": "站起來的一刻：壓力感受與回心血",
+      "summary": "把負回饋從抽象圖放回生活。",
+      "visual": "f56",
+      "tags": [
+        "生命階段與跨系統協作",
+        "standing feedback"
+      ]
+    },
+    {
+      "id": "112-meal-coordination",
+      "group": "integration",
+      "title": "吃完一餐：消化、循環與內分泌",
+      "summary": "追三種不同箭頭，不接錯管路。",
+      "visual": "f56",
+      "tags": [
+        "生命階段與跨系統協作",
+        "meal coordination"
+      ]
+    },
+    {
+      "id": "113-gas-nutrient-waste",
+      "group": "integration",
+      "title": "氧、營養與代謝物：供應和移除的地圖",
+      "summary": "每個細胞不是直接連到肺或胃的獨立水管。",
+      "visual": "f57",
+      "tags": [
+        "生命階段與跨系統協作",
+        "gas nutrient waste"
+      ]
+    },
+    {
+      "id": "114-integrated-case",
+      "group": "integration",
+      "title": "生活整合案例：走路、喝水、進食與休息",
+      "summary": "用條件和時間把多系統連起來。",
+      "visual": "f57",
+      "tags": [
+        "生命階段與跨系統協作",
+        "integrated case"
+      ]
+    },
+    {
+      "id": "115-read-anatomy-images",
+      "group": "practice",
+      "title": "如何讀示意、切片與醫學影像",
+      "summary": "圖畫得漂亮，不代表它可回答所有問題。",
+      "visual": "f58",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "read anatomy images"
+      ]
+    },
+    {
+      "id": "116-measurements-uncertainty",
+      "group": "practice",
+      "title": "量測、參考值與未知：資料也要讀圖例",
+      "summary": "同一名稱的數字，可能來自不同條件。",
+      "visual": "f58",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "measurements uncertainty"
+      ]
+    },
+    {
+      "id": "117-evaluate-claims",
+      "group": "practice",
+      "title": "健康資訊、因果與產品宣稱",
+      "summary": "懂機制之後，還要問有沒有適用證據。",
+      "visual": "f59",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "evaluate claims"
+      ]
+    },
+    {
+      "id": "118-source-dates",
+      "group": "practice",
+      "title": "官方資料、授權與日期怎麼看",
+      "summary": "最新查核，不等於把所有基礎知識改叫新版。",
+      "visual": "f59",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "source dates"
+      ]
+    },
+    {
+      "id": "119-concept-map-project",
+      "group": "practice",
+      "title": "完整圖解專題：把一個生活情境講清楚",
+      "summary": "交付概念圖、讀圖說明和未解問題，完全不需程式。",
+      "visual": "f60",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "concept map project"
+      ]
+    },
+    {
+      "id": "120-review-and-answers",
+      "group": "practice",
+      "title": "綜合複習：構造、路徑與回饋",
+      "summary": "用十個核心問題檢查是否能跨系統理解。",
+      "visual": "f60",
+      "tags": [
+        "讀圖、證據與整合練習",
+        "review and answers"
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "f01",
+      "file": "assets/figures/01-body-map.svg",
+      "title": "人體系統位置導覽",
+      "description": "正面人體概念圖，腦在頭部、肺在胸腔兩側、心臟在兩肺間偏人體左、肝在人體右上腹；不精確比例。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "map"
+    },
+    {
+      "id": "f02",
+      "file": "assets/figures/02-levels.svg",
+      "title": "從分子到系統",
+      "description": "分子構成細胞，細胞與基質構成組織，組織構成器官，器官協作成系統。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "map"
+    },
+    {
+      "id": "f03",
+      "file": "assets/figures/03-feedback.svg",
+      "title": "穩態的負回饋",
+      "description": "偏離經感受與整合引發反應，反應減少原本偏離；穩態是動態調節而非數字永遠固定。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "map"
+    },
+    {
+      "id": "f04",
+      "file": "assets/figures/04-molecules.svg",
+      "title": "生理使用的分子",
+      "description": "水提供溶劑與熱特性，離子參與電與滲透，蛋白質提供結構及作用，脂質參與膜與能量。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "chemistry"
+    },
+    {
+      "id": "f05",
+      "file": "assets/figures/05-fluid-spaces.svg",
+      "title": "細胞內外與體液空間",
+      "description": "細胞膜分開細胞內外，細胞外液含組織液及血漿，空間之間交換但不是單一水槽。",
+      "kind": "區室圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "chemistry"
+    },
+    {
+      "id": "f06",
+      "file": "assets/figures/06-gradient.svg",
+      "title": "濃度差與淨移動",
+      "description": "左右區室有濃度差，示意溶質順梯度的淨移動；實際水移動需另看有效溶質與膜。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "chemistry"
+    },
+    {
+      "id": "f07",
+      "file": "assets/figures/07-cell.svg",
+      "title": "一般有核細胞",
+      "description": "一般化有核細胞的膜、核、細胞質與胞器；不是所有人體細胞都具有圖中全部構造，成熟紅血球為例外。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cells"
+    },
+    {
+      "id": "f08",
+      "file": "assets/figures/08-membrane.svg",
+      "title": "膜、通道與幫浦",
+      "description": "磷脂雙層、跨膜通道和能量耦合幫浦的關係；箭頭為教學運輸方向，不表示所有粒子都能自由通過。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cells"
+    },
+    {
+      "id": "f09",
+      "file": "assets/figures/09-cell-cycle.svg",
+      "title": "細胞週期與分化",
+      "description": "生長、DNA複製、分裂與細胞分化相連但不同；成熟細胞的分裂能力各異。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cells"
+    },
+    {
+      "id": "f10",
+      "file": "assets/figures/10-tissues.svg",
+      "title": "四大組織對照",
+      "description": "上皮覆蓋與交換、結締組織支持與運輸、肌肉產生張力、神經組織傳遞與整合。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "tissues"
+    },
+    {
+      "id": "f11",
+      "file": "assets/figures/11-epithelium.svg",
+      "title": "上皮的頂端與基底",
+      "description": "上皮細胞頂端面朝腔或外界，基底面連接基底膜，下方結締組織可供應營養；不是所有上皮皆為單層柱狀。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "tissues"
+    },
+    {
+      "id": "f12",
+      "file": "assets/figures/12-membranes.svg",
+      "title": "不同層次的膜",
+      "description": "細胞膜是細胞邊界，黏膜襯通外界管道，漿膜襯體腔及包覆器官，滑膜與關節腔相關。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "tissues"
+    },
+    {
+      "id": "f13",
+      "file": "assets/figures/13-skin.svg",
+      "title": "皮膚與皮下組織",
+      "description": "由表及深：無血管的表皮、有結締組織血管神經的真皮、其下皮下組織；圖不按厚度比例。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skin"
+    },
+    {
+      "id": "f14",
+      "file": "assets/figures/14-skin-appendages.svg",
+      "title": "毛囊、皮脂腺與汗腺",
+      "description": "毛囊位於皮膚內，皮脂腺與毛囊相關，汗腺有導管通向表面；不是排出所有代謝廢物的主路。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skin"
+    },
+    {
+      "id": "f15",
+      "file": "assets/figures/15-heat-loss.svg",
+      "title": "散熱是交換過程",
+      "description": "體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skin"
+    },
+    {
+      "id": "f16",
+      "file": "assets/figures/16-skeleton.svg",
+      "title": "中軸與附肢骨架",
+      "description": "正面骨架簡化圖：中軸支持保護，附肢連接並參與移動；不以固定骨數判個人正常與否。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skeleton"
+    },
+    {
+      "id": "f17",
+      "file": "assets/figures/17-bone-section.svg",
+      "title": "長骨的構造與活組織",
+      "description": "長骨示意含緻密骨、鬆質骨與骨髓空間；外形不是所有骨的共同模板，骨持續改建。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skeleton"
+    },
+    {
+      "id": "f18",
+      "file": "assets/figures/18-joint.svg",
+      "title": "滑液關節的邊界與活動",
+      "description": "兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "skeleton"
+    },
+    {
+      "id": "f19",
+      "file": "assets/figures/19-muscle-hierarchy.svg",
+      "title": "肌肉內部的層級",
+      "description": "整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。",
+      "kind": "層級圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "muscles"
+    },
+    {
+      "id": "f20",
+      "file": "assets/figures/20-sarcomere.svg",
+      "title": "肌節與肌絲滑動",
+      "description": "Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊，不是肌絲消失或自身縮短。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "muscles"
+    },
+    {
+      "id": "f21",
+      "file": "assets/figures/21-nmj.svg",
+      "title": "從神經到骨骼肌張力",
+      "description": "運動神經釋放訊號，肌膜興奮導致細胞內鈣增加，鈣使肌絲交互作用；ATP參與橫橋循環與恢復。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "muscles"
+    },
+    {
+      "id": "f22",
+      "file": "assets/figures/22-neuron.svg",
+      "title": "神經元不是一整條神經",
+      "description": "一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "neurons"
+    },
+    {
+      "id": "f23",
+      "file": "assets/figures/23-action-potential.svg",
+      "title": "動作電位的時間順序",
+      "description": "示意去極化、再極化與短暫後電位；無實測刻度，不以波峰高低推個人感覺強度。",
+      "kind": "時間圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "neurons"
+    },
+    {
+      "id": "f24",
+      "file": "assets/figures/24-synapse.svg",
+      "title": "化學突觸與整合",
+      "description": "突觸前釋放傳遞物質跨間隙作用於後膜受體，訊息轉換而非細胞融合；非所有突觸均為化學突觸。",
+      "kind": "放大圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "neurons"
+    },
+    {
+      "id": "f25",
+      "file": "assets/figures/25-brain.svg",
+      "title": "腦的主要區域",
+      "description": "側面示意大腦、小腦、腦幹及與脊髓的連接；非影像定位圖，不把複雜功能歸成單一小點。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "nervous"
+    },
+    {
+      "id": "f26",
+      "file": "assets/figures/26-reflex.svg",
+      "title": "反射弧與上行訊息",
+      "description": "感受器經傳入路徑到中樞整合，再由傳出路徑影響效應器；訊息也可向腦傳遞，不必先有意識決策才反應。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "nervous"
+    },
+    {
+      "id": "f27",
+      "file": "assets/figures/27-autonomic.svg",
+      "title": "體神經與自律路徑",
+      "description": "體神經運動路徑至骨骼肌；自律路徑經神經節至心肌、平滑肌及腺體，效果依器官及受體而異。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "nervous"
+    },
+    {
+      "id": "f28",
+      "file": "assets/figures/28-eye.svg",
+      "title": "光學路徑與神經路徑",
+      "description": "眼球剖面概念：角膜與水晶體折光，視網膜感光，視神經傳訊；瞳孔是虹膜中央開口。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "senses"
+    },
+    {
+      "id": "f29",
+      "file": "assets/figures/29-ear.svg",
+      "title": "外耳、中耳、內耳",
+      "description": "聲音經耳道、鼓膜、聽小骨到耳蝸；耳蝸毛細胞轉換訊號，前庭結構參與平衡而非聽覺主路。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "senses"
+    },
+    {
+      "id": "f30",
+      "file": "assets/figures/30-sensory-integration.svg",
+      "title": "感覺是整合，不是單一路徑",
+      "description": "視覺、前庭、本體感覺共同支持平衡；風味也整合味覺嗅覺與其他感受。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "senses"
+    },
+    {
+      "id": "f31",
+      "file": "assets/figures/31-endocrine-map.svg",
+      "title": "內分泌器官與血液訊號",
+      "description": "主要腺體位置圖：下視丘腦下垂體、甲狀腺副甲狀腺、腎上腺與胰島；只選代表器官，並非完整名錄。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "endocrine"
+    },
+    {
+      "id": "f32",
+      "file": "assets/figures/32-hormone-axis.svg",
+      "title": "內分泌軸與例外",
+      "description": "代表性下視丘—腦下垂體前葉—周邊腺軸及負回饋；後葉及醛固酮等不能硬套相同控制鏈。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "endocrine"
+    },
+    {
+      "id": "f33",
+      "file": "assets/figures/33-glucose-loop.svg",
+      "title": "餐後與空腹的訊號分工",
+      "description": "餐後與空腹的血糖調節：胰島訊號透過肝、肌肉及脂肪等改變利用與儲存；不是單一開關。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "endocrine"
+    },
+    {
+      "id": "f34",
+      "file": "assets/figures/34-blood.svg",
+      "title": "血液的四類重要成分",
+      "description": "血漿運輸、紅血球氣體運輸、白血球防禦、血小板止血，並不是每類都是完整有核細胞。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "blood"
+    },
+    {
+      "id": "f35",
+      "file": "assets/figures/35-lymph.svg",
+      "title": "組織液、淋巴與回流",
+      "description": "血管與組織液交換，部分液體進淋巴經淋巴結回到靜脈；不宣稱固定比例或所有微血管靜脈端持續大量回吸。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "blood"
+    },
+    {
+      "id": "f36",
+      "file": "assets/figures/36-immune.svg",
+      "title": "先天與適應性免疫協作",
+      "description": "屏障與先天反應、抗原呈現、T/B細胞、抗體及記憶互相協作，並非兩套完全獨立防線。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "blood"
+    },
+    {
+      "id": "f37",
+      "file": "assets/figures/37-heart.svg",
+      "title": "心臟四腔與房室瓣",
+      "description": "右心房到右心室經三尖瓣，左心房到左心室經二尖瓣；患者右心位於圖左，兩側由中隔分隔。",
+      "kind": "構造關係圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cardio"
+    },
+    {
+      "id": "f38",
+      "file": "assets/figures/38-circulation.svg",
+      "title": "肺循環與體循環連成一圈",
+      "description": "右心室經肺動脈到肺毛細血管，經肺靜脈到左心，再經體循環回右心；動靜脈以離心回心命名。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cardio"
+    },
+    {
+      "id": "f39",
+      "file": "assets/figures/39-conduction.svg",
+      "title": "心臟傳導與收縮順序",
+      "description": "竇房結、心房、房室結延遲、希氏束束支浦肯野系統及心室形成順序，神經與激素調節而非每拍從腦發令。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cardio"
+    },
+    {
+      "id": "f40",
+      "file": "assets/figures/40-airway.svg",
+      "title": "呼吸道與胸腔",
+      "description": "氣管分成支氣管，肺內分支通向末端肺泡；肺位於胸腔，膈肌在下方，肺本身不是主動拉開的肌肉。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "respiration"
+    },
+    {
+      "id": "f41",
+      "file": "assets/figures/41-alveolus.svg",
+      "title": "肺泡與微血管交換",
+      "description": "氧從肺泡跨薄屏障進血，二氧化碳反向；兩者沿各自分壓梯度，氣道空氣不直接成為血液。",
+      "kind": "放大圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "respiration"
+    },
+    {
+      "id": "f42",
+      "file": "assets/figures/42-ventilation.svg",
+      "title": "吸氣與安靜呼氣對照",
+      "description": "安靜吸氣膈肌收縮向下胸腔容積增加，壓差使空氣進入；安靜呼氣主要由彈性回縮促成。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "respiration"
+    },
+    {
+      "id": "f43",
+      "file": "assets/figures/43-digestive.svg",
+      "title": "消化管的連通路徑",
+      "description": "食道到胃、小腸、大腸及肛門相連，分泌消化及吸收有區域分工，並非所有營養在胃吸收。",
+      "kind": "構造關係圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "digestive"
+    },
+    {
+      "id": "f44",
+      "file": "assets/figures/44-villus.svg",
+      "title": "小腸絨毛的吸收界面",
+      "description": "絨毛表面上皮通過後，營養進入微血管或乳糜管等路徑；圖只畫代表性分工，不是所有脂質的唯一規則。",
+      "kind": "剖面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "digestive"
+    },
+    {
+      "id": "f45",
+      "file": "assets/figures/45-liver-pancreas.svg",
+      "title": "肝膽胰與十二指腸",
+      "description": "肝製膽汁，膽囊儲存濃縮，膽道與胰外分泌導管通往十二指腸；食物不流進肝膽胰。",
+      "kind": "管路圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "digestive"
+    },
+    {
+      "id": "f46",
+      "file": "assets/figures/46-metabolism.svg",
+      "title": "能量轉換與ATP",
+      "description": "營養原料經代謝釋能，部分能量耦合ATP再用於細胞工作並產熱；ATP不是長期食物儲存倉。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "energy"
+    },
+    {
+      "id": "f47",
+      "file": "assets/figures/47-temperature.svg",
+      "title": "產熱、散熱與回饋",
+      "description": "體溫受產熱、環境交換及中樞調節影響；37度不是每次測量、部位與時段的固定值。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "energy"
+    },
+    {
+      "id": "f48",
+      "file": "assets/figures/48-exercise.svg",
+      "title": "活動時的多系統協作",
+      "description": "活動需求改變時，神經、肌肉、心肺、代謝與皮膚協作；這是概念關係而非個人訓練處方。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "energy"
+    },
+    {
+      "id": "f49",
+      "file": "assets/figures/49-urinary.svg",
+      "title": "腎臟與尿路",
+      "description": "兩腎形成尿液，輸尿管至膀胱儲存，再由尿道排出；輸尿管與尿道不同，位置不按比例。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "renal"
+    },
+    {
+      "id": "f50",
+      "file": "assets/figures/50-nephron.svg",
+      "title": "腎元的濾過、回收與分泌",
+      "description": "血漿部分水溶質濾入管腔，小管與血液間回收及分泌，最後排出；示意箭頭表示物質方向，非所有微血管細節。",
+      "kind": "路徑圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "renal"
+    },
+    {
+      "id": "f51",
+      "file": "assets/figures/51-fluid-hormones.svg",
+      "title": "水鹽與酸鹼的分工",
+      "description": "ADH保水、醛固酮鈉鉀調節與肺腎酸鹼機制分開；不由此計算個人飲水或補充處方。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "renal"
+    },
+    {
+      "id": "f52",
+      "file": "assets/figures/52-reproductive.svg",
+      "title": "生殖構造與運送路徑",
+      "description": "左為精子產生成熟與運送的連通示意，右為卵巢輸卵管子宮子宮頸陰道；不把尿道口與陰道口混用。",
+      "kind": "構造關係圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "reproductive"
+    },
+    {
+      "id": "f53",
+      "file": "assets/figures/53-cycle.svg",
+      "title": "卵巢與子宮內膜的階段",
+      "description": "卵巢濾泡發展、排卵、黃體及子宮內膜變化透過激素互相關聯；不用固定28天推個人排卵。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "reproductive"
+    },
+    {
+      "id": "f54",
+      "file": "assets/figures/54-placenta.svg",
+      "title": "胎盤的兩套循環與交換",
+      "description": "母體與胎兒血液一般保持分隔，在胎盤跨界交換物質；不是把母體動脈直接接到胎兒靜脈。",
+      "kind": "交換圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "reproductive"
+    },
+    {
+      "id": "f55",
+      "file": "assets/figures/55-lifespan.svg",
+      "title": "生命階段中的身體變化",
+      "description": "成長、成熟與老化改變結構和調節餘裕，群體趨勢不能代替個人功能。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "integration"
+    },
+    {
+      "id": "f56",
+      "file": "assets/figures/56-standing.svg",
+      "title": "站起來時的壓力調節",
+      "description": "姿勢改變影響回流與血壓，壓力感受與中樞調節可改變心血管反應；並非個人暈眩診斷流程。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "integration"
+    },
+    {
+      "id": "f57",
+      "file": "assets/figures/57-integrated-traffic.svg",
+      "title": "吃進、吸入、運送與排出",
+      "description": "消化吸收與呼吸交換透過循環連到細胞，二氧化碳及其他代謝物走不同排出路徑。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "integration"
+    },
+    {
+      "id": "f58",
+      "file": "assets/figures/58-evidence.svg",
+      "title": "圖、量測與診斷不是同一件事",
+      "description": "構造示意用於理解、真實影像需專業判讀、量測有方法與誤差、診斷需情境及證據。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "practice"
+    },
+    {
+      "id": "f59",
+      "file": "assets/figures/59-model.svg",
+      "title": "模型、證據與生活問題",
+      "description": "提出問題、選用模型、觀察與修正能促進理解；相關、可重現算術與個人診斷各有不同要求。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "practice"
+    },
+    {
+      "id": "f60",
+      "file": "assets/figures/60-capstone.svg",
+      "title": "跨系統概念圖練習",
+      "description": "把一個生活情境連到位置、物質路徑、控制訊號、回饋、時間及不確定性，形成可口述的概念地圖。",
+      "kind": "機制圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "practice"
+    },
+    {
+      "id": "f61",
+      "file": "assets/figures/61-planes.svg",
+      "title": "解剖切面：切的是哪個方向",
+      "description": "三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。",
+      "kind": "切面圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "map"
+    },
+    {
+      "id": "f62",
+      "file": "assets/figures/62-cavities.svg",
+      "title": "體腔與膈肌分界",
+      "description": "正面概念圖顯示顱腔、沿脊柱的椎管、胸腔、腹腔與骨盆腔。脊柱投影與胸腹器官在不同深度，非同一切面。",
+      "kind": "位置圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "map"
+    },
+    {
+      "id": "f63",
+      "file": "assets/figures/63-vulva-openings.svg",
+      "title": "外陰與不同開口",
+      "description": "外陰外部概念圖，陰蒂相關構造、尿道口與陰道口分開標示；尿液不由陰道口正常排出，非精密比例。",
+      "kind": "構造圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "reproductive"
+    },
+    {
+      "id": "f64",
+      "file": "assets/figures/64-heart-wall.svg",
+      "title": "心壁與心包不是同一層",
+      "description": "心內膜、心肌、心外膜構成心壁的常用分層，外側心包囊另有層次及空間關係。此圖非比例。",
+      "kind": "層次圖",
+      "note": "原創概念示意，非比例；箭頭意義依圖內文字。",
+      "group": "cardio"
+    }
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/workbook.md",
+    "study/answers.md",
+    "study/glossary.csv",
+    "study/sources.md",
+    "study-pack.zip"
+  ]
+}

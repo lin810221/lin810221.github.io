@@ -2,6 +2,17 @@
 
 手算動作率，同時保留施力、節奏和未知。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-task-timing.svg" target="_blank" rel="noopener" aria-label="放大：同平均，時間分布仍可不同"><img src="assets/figures/15-task-timing.svg" alt="區塊顯示不同任務時間或未知狀態，不給正式評分；平均次數無法取代完整循環與優先需求。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜同平均，時間分布仍可不同</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用相同總次數但不同集中方式比較兩段任務，說明動作頻率與活動比例的分母不同；缺資料不能當充分休息。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 分子與分母
 
 定義動作90次、觀察10分鐘，平均9次/觀察分鐘；若其中7分鐘屬指定活動，活動比例70%。這兩個量回答不同問題，不把活動分鐘與全部觀察時間混用。

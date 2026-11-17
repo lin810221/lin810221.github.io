@@ -2,6 +2,17 @@
 
 從正式參考點和範圍出發，不硬截上限後繼續算。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-rnle-reference.svg" target="_blank" rel="noopener" aria-label="放大：RNLE：先辨參考點，再談公式"><img src="assets/figures/28-rnle-reference.svg" alt="H由兩內踝中點至雙手握點中點地面投影；V是手部離地高度；A是負重位置相對正中矢狀面的角，不是脊柱扭轉角。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜RNLE：先辨參考點，再談公式</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別指H、V和A，再另畫起終手高之差D；H不從腰量，A不是脊柱扭角，圖的線長不提供可直接代入的實測數值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 水平與垂直
 
 H由兩內踝中點至手握中點垂直投影的水平距離量測，不從腰椎量。H≤25cm用HM=1，25<H≤63用25/H；超過63不把它截成63後宣稱適用，教材直接拒算。

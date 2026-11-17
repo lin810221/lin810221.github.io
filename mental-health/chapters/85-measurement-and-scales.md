@@ -2,6 +2,17 @@
 
 從操作化、信效度與原創日記的限制開始。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-ordinal-missing.svg" target="_blank" rel="noopener" aria-label="放大：原創感受記錄：順序、缺漏與零"><img src="assets/figures/43-ordinal-missing.svg" alt="短刻度是原創教學記錄，問號是缺漏，不設正常異常、診斷或安全色帶。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜原創感受記錄：順序、缺漏與零</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先說明刻度只描述原創記錄的順序，再指出同樣差一分未必是相同感受差；不能任意定義輕中重疾病。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 概念需要測量方式
 
 自填、訪談、行為、生理和他人觀察各量到不同切面。信度關乎一致性，效度關乎對特定用途的證據；不能只因問卷看起來正式就保證適用所有語言和族群。

@@ -2,6 +2,17 @@
 
 十年、三十年與ASCVD、CVD、HF各有範圍。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-model-scope.svg" target="_blank" rel="noopener" aria-label="放大：模型輸出前先過適用性問題"><img src="assets/figures/23-model-scope.svg" alt="示意模型需核對族群、資料、事件與期限，不重建PREVENT係數，也不提供風險結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜模型輸出前先過適用性問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>依序指出PREVENT輸出前需問的事件、期限與適用背景，說明只通過年齡條件為何不等於完整資格已確認。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 模型家族不是一個百分比
 
 PREVENT可提供不同結果與期限。總心血管疾病CVD、ASCVD與心衰竭HF的事件定義不同；2026血脂脈絡使用PREVENT-ASCVD，2025美國血壓脈絡相關評估使用PREVENT-CVD，不能把數字或處置條件交叉套用。

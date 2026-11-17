@@ -2,6 +2,17 @@
 
 避免把極端值後的改變全算成介入功勞。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-measurement-regression.svg" target="_blank" rel="noopener" aria-label="放大：變異、跨線與平均回歸"><img src="assets/figures/44-measurement-regression.svg" alt="相對高度及虛線為假想比較，不是臨床門檻，也不代表第二次較接近一般值必有介入效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜變異、跨線與平均回歸</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿第一次到第四次說明選極端值後可能發生的平均回歸，指出哪些額外設計才有助辨識介入和其他原因。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先從選人方式看
 
 若只挑某次數值特別高的人，部分高值可能包含暫時波動或誤差。下次即使沒有有效介入，也可能較接近其通常狀態；這是平均回歸的常見來源，不代表疾病一定不存在。

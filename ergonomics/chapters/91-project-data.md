@@ -2,6 +2,17 @@
 
 認識資料檔、未知欄位和輸出能回答的問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-project-inputs.svg" target="_blank" rel="noopener" aria-label="放大：原創資料與契約：一列代表什麼"><img src="assets/figures/46-project-inputs.svg" alt="虛構記錄包含排定時間、已觀察數據、狀態及來源；不是員工健康病歷或完整現場評分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜原創資料與契約：一列代表什麼</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出虛構觀察、尺寸與搬抬案例各能回答什麼，辨識故意留下的未知；不能把不同表直接拼成人員健康結論。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 場景與範圍
 
 所有資料都是教學合成，不含真實員工或病人。觀察一個虛構組裝任務的12段時間、12名虛構使用者兩項尺寸，以及3個搬抬算術案例。不同資料表各回答有限問題，不能連成個人健康病歷。

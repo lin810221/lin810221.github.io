@@ -2,6 +2,17 @@
 
 同時處理份量、總糖、自由糖、鈉與每日參考分母。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-news-label-case.svg" target="_blank" rel="noopener" aria-label="放大：營養新聞與產品標示互相核對"><img src="assets/figures/46-news-label-case.svg" alt="新聞或廣告的主張和實際產品標示並列，追分母、對象、時間與來源，不因產品名字相同就外推原料或研究效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜營養新聞與產品標示互相核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從右頁指出每份和整瓶的關係，再回查配方及宣稱來源，說明總糖欄、產品名稱與自由糖或人體效果不能直接等號。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 虛構標示
 
 假設飲料每份250mL、一瓶600mL，每份總糖20g、鈉100mg，成分細節不足。整瓶為2.4份，總糖48g、鈉240mg；吃喝的實際量與標示一份不同。

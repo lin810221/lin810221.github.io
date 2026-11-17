@@ -2,6 +2,17 @@
 
 從目標、強度和可持續時間理解有氧安排，不只累積里程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-endurance-modes.svg" target="_blank" rel="noopener" aria-label="放大：持續與間歇：方式和強度分開"><img src="assets/figures/25-endurance-modes.svg" alt="兩排虛構時鐘區分持續與交替安排，區塊長度不表示健康效益或實際生理劑量等效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜持續與間歇：方式和強度分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出有無恢復段，再說出圖中沒有給出的強度、模式與任務；不能只看交替色塊就認定是HIIT，也不能只看連續色塊判中等。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 耐力不是一種固定速度
 
 支持日常活動、完成5km、長時間騎車與反覆球類回合，需求不同。有氧供能、經濟性、可維持強度、技能和策略共同影響結果，不能只用週里程或最大耗氧排名所有任務。

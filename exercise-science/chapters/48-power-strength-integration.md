@@ -2,6 +2,17 @@
 
 把力量基礎、快速任務與專項技能連起來，避免同時追所有數字。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-agility-route.svg" target="_blank" rel="noopener" aria-label="放大：預定變向與反應式敏捷"><img src="assets/figures/24-agility-route.svg" alt="兩條示意路線區分預先知道方向與看線索後反應，不表示指定跑法、速度或個人可安全完成。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜預定變向與反應式敏捷</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以兩條路線分別寫力量、速度與反應的目標，選與目標一致的觀察；圖沒有提供優先順序的通用答案，更不是立即跟跑的指令。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先排優先順序
 
 最大力量、功率與技能可共同訓練，但時間和恢復有限。先寫近期主要結果與支持任務，不把某個最大舉重值當所有運動表現的充分條件。

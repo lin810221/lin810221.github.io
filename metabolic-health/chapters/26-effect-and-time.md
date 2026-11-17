@@ -2,6 +2,17 @@
 
 把效果還原成共同分母，才知道對決策意味什麼。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-trial-denominators.svg" target="_blank" rel="noopener" aria-label="放大：研究比較：同分母、同期限"><img src="assets/figures/13-trial-denominators.svg" alt="兩群標記點只示範事件計數，並非DPP試驗實際比例或個人的預測結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜研究比較：同分母、同期限</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用相同分母的標記點解釋相對與絕對差異，並說出缺少期限或事件定義時，為何不能直接比較兩個百分比。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先固定結果與期限
 
 問「有效嗎」之前，先問要降低什麼事件、觀察多久、參加者原本風險多高。同樣寫下降20%，可能指血糖數值、疾病發生率或死亡風險，三者不可互換。累積風險是指定期限內發生事件的人數比例；發生率則以人時當分母。

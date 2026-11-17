@@ -2,6 +2,17 @@
 
 手算同一結果的組間差，保留方法假設。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-association-effect.svg" target="_blank" rel="noopener" aria-label="放大：差異、關聯與因果：問題要分開"><img src="assets/figures/45-association-effect.svg" alt="左側代表同一量尺兩個虛構摘要，右側點為任意成對資料，兩者都不自動建立因果或臨床重要性。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜差異、關聯與因果：問題要分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先區分原始差、標準化效果和關聯，說明可算出的統計量不自動代表個人改善或臨床重要性，也不證明唯一因果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 原始差和標準化差
 
 兩個獨立虛構組使用相同結果，先看平均差及方向，再以合併標準差標準化：

@@ -2,6 +2,17 @@
 
 把座椅、地面、車輛與暴露類型分清。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-vibration-types.svg" target="_blank" rel="noopener" aria-label="放大：HAV與WBV：同單位也不是同方法"><img src="assets/figures/35-vibration-types.svg" alt="左側手工具接觸，右側乘坐設備接觸；輸入、軸向權重與時間方法不同，不能直接混算。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜HAV與WBV：同單位也不是同方法</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較乘坐設備與手工具的不同暴露，說明相同m/s²不代表方法和法規界線相同；本課HAV算術不等於完整WBV評估。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/vibration/hav/index.htm">HSE：手臂振動</a> · <a href="https://www.hse.gov.uk/vibration/wbv/regulations.htm">HSE：WBV</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 接觸與來源
 
 車輛、設備與地面可透過座位、腳或其他接觸傳遞振動；路況、速度、懸吊、座椅調整與維護都可能影響。不能只憑車型或座椅品牌判定實際暴露。

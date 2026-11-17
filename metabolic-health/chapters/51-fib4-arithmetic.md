@@ -2,6 +2,17 @@
 
 學會計算，但不讓一個數字自動診斷纖維化。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-liver-assessment.svg" target="_blank" rel="noopener" aria-label="放大：線索、第一階段與進一步確認"><img src="assets/figures/26-liver-assessment.svg" alt="路徑只顯示評估分層的目的，不放個人門檻或把FIB-4算術畫成確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜線索、第一階段與進一步確認</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出FIB-4之前必須核對的年齡、單位與檢驗背景，說明公式算出一個數值為何仍不能自己判定肝纖維化。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 公式需要四個輸入
 
 FIB-4使用年齡（歲）、AST與ALT（U/L）以及血小板（10^9/L）：

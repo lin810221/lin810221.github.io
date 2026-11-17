@@ -2,6 +2,17 @@
 
 從必需胺基酸和蛋白質周轉建立概念，不把蛋白質等同肌肉。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-protein-chain.svg" target="_blank" rel="noopener" aria-label="放大：蛋白質、消化率與限制胺基酸"><img src="assets/figures/16-protein-chain.svg" alt="不同胺基酸串聯作蛋白質概念，消化及參考模式影響品質評估；相對不足不是零，也不是成品或個人結果的直接分數。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜蛋白質、消化率與限制胺基酸</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出鏈上不同顏色代表不同胺基酸種類，說明蛋白質除了供能還有什麼作用，並保留消化及全身利用的步驟。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從小單位到功能
 
 胺基酸以肽鍵組成蛋白質，不同序列與折疊形成酵素、運輸、結構、免疫等功能。人體蛋白質持續合成與分解；飲食蛋白質提供胺基酸，不是整塊食物蛋白質直接搬到肌肉。

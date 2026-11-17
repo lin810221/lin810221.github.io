@@ -2,6 +2,17 @@
 
 建立一份可說明理由的選擇表，不以動作名氣決定必要性。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-resistance-variables.svg" target="_blank" rel="noopener" aria-label="放大：阻力訓練的不同維度"><img src="assets/figures/16-resistance-variables.svg" alt="兩排卡帶分開外部阻力、次數組數、努力與動作選擇；長度只是版面安排，不代表等效劑量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜阻力訓練的不同維度</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿第二排為虛構目標挑一種可行模式，再列器材、技能和支持限制；不要只因名稱熱門就假設它對所有目標肌群都同樣合適。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 選擇的四個問題
 
 目標是什麼、要練哪種任務或肌群、有哪些設備與時間、目前是否能控制並耐受？多關節和單關節、自由重量與機械都有用途，不存在所有目標都必須使用同一動作的規則。

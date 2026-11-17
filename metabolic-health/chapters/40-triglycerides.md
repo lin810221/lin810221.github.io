@@ -2,6 +2,17 @@
 
 看懂TG為何變動，以及它不等於另一種LDL。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-cholesterol-triglyceride.svg" target="_blank" rel="noopener" aria-label="放大：膽固醇與三酸甘油酯的不同量"><img src="assets/figures/20-cholesterol-triglyceride.svg" alt="化學形狀只作家族概念，不是精確分子模型；兩類檢驗不能共用一套不明換算。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜膽固醇與三酸甘油酯的不同量</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>辨認三酸甘油酯的不同角色，再列採樣、代謝與次級原因的背景，說明一個數字不能直接解釋全部原因。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## TG和膽固醇不同
 
 三酸甘油酯包含甘油與脂肪酸，是重要能量形式；膽固醇則有不同結構與功能。兩者即使都用mg/dL，換成mmol/L的係數也不同。把血脂通通除以同一數字，會產生系統性錯誤。

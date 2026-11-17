@@ -2,6 +2,17 @@
 
 理解力量受神經控制與練習影響，不以早期進步直接量化增肌。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-motor-unit.svg" target="_blank" rel="noopener" aria-label="放大：神經元到多個肌纖維"><img src="assets/figures/08-motor-unit.svg" alt="一個運動神經元分支支配多個肌纖維，構成運動單位；圖中數量為示意，不是實際肌肉的固定纖維數。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜神經元到多個肌纖維</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從紫色神經元沿分支逐條追到肌纖維，再說出募集更多運動單位和增加單個動作電位高度有何不同，不以三條示意線當實際數量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 運動單位
 
 運動神經元與其支配的肌纖維構成運動單位。增加力需求時，招募與放電等控制共同參與；不是一塊肌肉只有開和關兩種狀態，也不能從外在重量直接數出招募了多少單位。

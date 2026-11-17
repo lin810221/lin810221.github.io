@@ -2,6 +2,17 @@
 
 尊重感受，同時保留尺度與推論的限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-unknown-record.svg" target="_blank" rel="noopener" aria-label="放大：原創感受與缺漏：不是臨床分級"><img src="assets/figures/43-unknown-record.svg" alt="兩種記錄卡區分明確零與未知，主觀資料仍需時間與功能背景，不設疾病門檻或個人排行。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜原創感受與缺漏：不是臨床分級</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較明確記0和沒有填寫，說明原創0–10觀察沒有診斷門檻；尊重感受不等於可以把差兩分直接叫臨床效果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 感受值得記錄
 
 不適、疲勞及工作困難能提示需要討論的問題，主觀並不表示虛假。記錄時說清在什麼工作、何時、哪個部位與對功能的影響，讓數字有脈絡；不以分數要求證明疼痛是真的。

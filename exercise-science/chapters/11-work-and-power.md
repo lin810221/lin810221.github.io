@@ -2,6 +2,17 @@
 
 知道kg-reps、J、W和kcal不能直接互換。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-work-power.svg" target="_blank" rel="noopener" aria-label="放大：位移、外功與時間"><img src="assets/figures/06-work-power.svg" alt="兩個箱子位置示意外力沿位移作功，完成相同外功所需時間影響平均外功率；不估人體代謝效率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜位移、外功與時間</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿圖指出外力與位移的方向，再把完成時間另列；解釋相同外功在不同時間完成為何功率不同，並區分機械功和代謝消耗。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三個不同的量
 
 功涉及力沿位移的累積，功率是做功速率；代謝能量則是身體消耗的化學能。等長保持外在位移接近零，不代表沒有肌肉用力或代謝需求；外在正功也未涵蓋全身全部能量。

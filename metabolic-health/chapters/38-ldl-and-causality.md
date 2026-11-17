@@ -2,6 +2,17 @@
 
 區分生物學角色和把檢驗值變成治療建議的證據。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-particle-vessel-wall.svg" target="_blank" rel="noopener" aria-label="放大：脂蛋白粒子與動脈壁"><img src="assets/figures/19-particle-vessel-wall.svg" alt="左側粒子與右側動脈壁示意不同尺度；斑塊是壁內過程，不是油脂把管腔簡單塗滿。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜脂蛋白粒子與動脈壁</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>追粒子與血管壁過程的關係，分清機制、標記及臨床結果；不要把圖當個人血管影像或斑塊量測。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從粒子到血管
 
 含apoB脂蛋白進入並滯留血管壁，與發炎、泡沫細胞和斑塊形成相關。動脈粥狀硬化經時間累積，不能由一次抽血重建全部過程。LDL-C反映一類粒子攜帶的膽固醇量，不是血管內斑塊體積的直接量測。

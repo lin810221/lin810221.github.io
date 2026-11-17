@@ -2,6 +2,17 @@
 
 把想變強轉成可觀察問題，理解適應和測試為何需要對上任務。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-goals.svg" target="_blank" rel="noopener" aria-label="放大：健康、能力與表現的交集"><img src="assets/figures/01-goals.svg" alt="三個重疊區表示健康、能力、表現可相關但不能完全互換；沒有把圓面積當實測效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜健康、能力與表現的交集</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>替虛構的初學者與有專項目標者各選一個圈，說出兩者可重疊但訓練優先順序不同的理由，避免把競技需求推給每個人。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先寫結果再選方法
 
 把變健康、變強拆成具體結果，例如某固定任務的力量、相同條件下跑步時間，或能持續參與活動。結果要有單位、測法和觀察期間；不要用體重同時代替肌肉、健康、技能和所有表現。

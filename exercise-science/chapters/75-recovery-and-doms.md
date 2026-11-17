@@ -2,6 +2,17 @@
 
 分清一般訓練反應、警訊與長期問題，不用痠痛判進步。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-recovery-context.svg" target="_blank" rel="noopener" aria-label="放大：恢復受到任務與生活共同影響"><img src="assets/figures/38-recovery-context.svg" alt="睡眠、工作壓力、任務及支持與恢復討論相連，不把線條長短當影響量，也不由酸痛推療效。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜恢復受到任務與生活共同影響</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分DOMS感覺、當下表現與組織適應三個問題，再沿圖列生活條件；沒有酸痛不代表沒有訓練效果，有酸痛也不證明有效增長。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## DOMS的基本概念
 
 不熟悉或新奇負荷後可能出現延遲痠痛，和活動中急性疼痛不同。它不是乳酸留在肌肉幾天造成，也不等於越痠增肌越多；舊ACSM宣導的概念可參考，但其中舊活動量數字不作本課最新基線。

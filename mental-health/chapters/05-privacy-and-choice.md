@@ -2,6 +2,17 @@
 
 讓紀錄幫助理解，而不是增加暴露或壓力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-choice-and-privacy.svg" target="_blank" rel="noopener" aria-label="放大：學習可以有不同入口"><img src="assets/figures/03-choice-and-privacy.svg" alt="同一學習者可選閱讀、虛構案例或自願記錄；路徑是選擇，沒有強迫蒐集或必填個人資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜學習可以有不同入口</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從同一個人沿三條學習入口追蹤，指出不願記錄私人日記時仍能怎樣完成核心練習，並說明同意與退出為何要保留。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不需交出私人經驗
 
 可以用本課虛構案例完成所有練習，不必分享診斷、創傷、身分或他人資料。跳過某項身體注意或寫作也可以；沒有完成不表示抗拒或不努力。

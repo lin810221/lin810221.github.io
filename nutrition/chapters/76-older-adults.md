@@ -2,6 +2,17 @@
 
 把維持功能與可進食性放在核心，不把長者都套同一餐盤。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-lifespan-functions.svg" target="_blank" rel="noopener" aria-label="放大：成長與高齡：功能和環境一起看"><img src="assets/figures/38-lifespan-functions.svg" alt="不同生命階段的食物與功能示意，生長、學校、家庭、咀嚼與支持可影響需求，不用年齡一項決定全部飲食。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜成長與高齡：功能和環境一起看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由功能與支持一欄補上咀嚼、食慾、用藥及取得食物的條件，解釋高齡營養不能只由年齡直接刪減食物。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a> · <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies">FDA：食物過敏</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 年齡不是唯一條件
 
 活動、肌肉功能、疾病、牙口、吞嚥、獨居與取得食物能力，都影響飲食。相同年齡的人可能有很不同限制，參考值是起點，不能替代功能與健康評估。

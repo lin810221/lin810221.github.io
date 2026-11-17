@@ -2,6 +2,17 @@
 
 在有限時間內安排混合課，不把一項研究順序當普遍禁忌。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-concurrent-order.svg" target="_blank" rel="noopener" aria-label="放大：並行訓練與順序的比較條件"><img src="assets/figures/31-concurrent-order.svg" alt="兩排顛倒順序的虛構安排呈現比較問題，間隔及區塊寬度不是通用建議，也不宣稱一定相互抵銷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜並行訓練與順序的比較條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>替一個虛構優先目標挑選要先觀察的品質，再討論順序和間隔；圖沒有給所有人相同的排法，也沒有承諾任意間隔能消除干擾。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 順序的直接影響
 
 先做的任務可能改變後面當下表現，疲勞、時間與技能共同影響；這與長期適應的比較不同。不能因後面負重較低就說多年力量成長必被阻斷。

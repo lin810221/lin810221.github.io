@@ -2,6 +2,17 @@
 
 不要把不同操作都當成同一個重量問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-push-and-transport.svg" target="_blank" rel="noopener" aria-label="放大：推拉、路線與協作是整個任務"><img src="assets/figures/34-push-and-transport.svg" alt="箭頭是虛構推車路線，啟動、持續、坡度與設備需要另觀察；不是由外功算安全限力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜推拉、路線與協作是整個任務</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把攜行、團隊搬運和協助移位分開，指出人員參與能力和設備需要；不要把團隊人數直接平均成每人必然相同負荷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 攜行與搬起不同
 
 距離、視線、抓握、路徑、地面與持續會影響攜行；一次起放公式不等於整段運送評估。工作分段要有意義，也要保留彼此連結。

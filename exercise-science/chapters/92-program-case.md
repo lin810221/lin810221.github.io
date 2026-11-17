@@ -2,6 +2,17 @@
 
 比較量、努力、ROM、時鐘與結果，指出無法推論的部分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-advice-plan-audit.svg" target="_blank" rel="noopener" aria-label="放大：建議和課表：先對準原問題"><img src="assets/figures/46-advice-plan-audit.svg" alt="兩條原創審核路徑整理主張、條件及觀察，不將流程完成等同建議有效或課表適合個人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜建議和課表：先對準原問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿後三格比對兩份課表的動作、負荷、工作恢復與完成條件；名稱或總分鐘相同，不足以證明劑量和結果相同，未知項要留下。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 案例資料
 
 A在同動作完成3×8×40kg，B完成3×10×35kg；A為960、B為1050kg-reps。B表面量較高，但兩份未提供RIR、ROM、休息、經驗與長期結果，所以不能只依噸數判誰更有效。

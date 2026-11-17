@@ -1,0 +1,121 @@
+﻿中文,English,學習用簡釋
+實證健康,Evidence-based health,結合最佳可用研究、專業判斷、情境及人的目標與價值。
+可查證問題,Answerable question,說明對象、比較、結果與時間，讓查找與判讀有明確目標。
+PICO,Population Intervention Comparator Outcome,以族群、介入、比較與結果整理問題，仍需補用途和時間。
+PECO,Population Exposure Comparator Outcome,將介入改讀暴露，適合許多觀察研究問題。
+病人重要結果,Patient-important outcome,直接連到感受、功能、存活與生活負擔等重要經驗的結果。
+替代終點,Surrogate endpoint,以某指標代替重要健康結果，其關聯不能自動證明介入效益。
+複合終點,Composite endpoint,合併多種事件成一項結果，仍需看各成分重要性與數量。
+研究計畫書,Protocol,事前說明研究問題、設計、結果與執行方式的文件。
+分析計畫,Statistical analysis plan,具體規劃分析方法、族群、比較、缺失處理與敏感度分析。
+事前登錄,Prospective registration,在適當時間公開研究計畫，以便對照後續執行與報告。
+MeSH,Medical Subject Headings,NLM主題詞系統，可配自由文字改善搜尋，不保證找到全部證據。
+布林運算,Boolean operators,用AND、OR與NOT組合搜尋集合，括號和資料庫語法會影響結果。
+灰色文獻,Grey literature,未經一般期刊出版途徑流通的研究資料，需依來源查核。
+DOI,Digital Object Identifier,追溯數位研究物件的識別碼，存在DOI不等於結論正確。
+預印本,Preprint,常在正式同行審查前公開的稿件，版本與後續修訂需追蹤。
+橫斷研究,Cross-sectional study,在某時點或窗口觀察暴露與結果，時間方向通常難確定。
+世代研究,Cohort study,依清楚起點追蹤群體，觀察後續事件與比較條件。
+病例對照研究,Case-control study,依結果狀態抽樣，分析過去暴露，抽樣方式影響可估尺度。
+隨機試驗,Randomized trial,以隨機機制分配介入，後續執行及失訪仍可能造成偏差。
+隨機抽樣,Random sampling,從母群體抽取樣本的機制，與隨機分配介入不同。
+隨機分配,Random allocation,由隨機序列決定研究介入，與是否代表全人口分開。
+分配隱藏,Allocation concealment,分配確定前避免預知下一個分配，以減少選擇操弄。
+盲法,Blinding,分配後讓相關角色不知道介入身分，角色與可行性需分別說明。
+估計目標,Estimand,清楚定義要估的效果，包括族群、介入、結果及介入後事件策略。
+意向治療,Intention-to-treat,依原分配策略比較的重要原則，不等於缺失結果已自動處理。
+依方案效果,Per-protocol effect,關心遵循指定方案的效果，不能只刪不遵循者就消除偏差。
+介入後事件,Intercurrent event,介入後影響結果解釋或存在的事件，需事前規劃策略。
+失訪,Loss to follow-up,追蹤中無法取得後續結果，需說明數量、原因與影響。
+群集試驗,Cluster-randomized trial,以群體分配介入，分析需考慮群內相依與設計。
+交叉試驗,Crossover trial,同一人按順序接受不同條件，注意時期與殘留效果。
+非劣性,Non-inferiority,在事前合理界值下評估是否未劣於過多，不是未顯著即可宣告。
+時間零點,Time zero,資格、分配或暴露分類與追蹤起點需一致對齊的時間。
+不死時間偏差,Immortal time bias,錯誤分類一段必須存活才能取得暴露身分的時間而扭曲比較。
+新使用者設計,New-user design,從介入開始前後的明確起點納入，避免只觀察已耐受者。
+主動比較組,Active comparator,選擇同樣有介入理由的另一策略，協助改善可比性但不保證無混雜。
+混雜,Confounding,暴露與結果的共同原因使比較混入其他因果路徑。
+資訊偏差,Information bias,資料取得或量測的系統性錯誤影響效果估計。
+錯分,Misclassification,將暴露或結果分類錯誤，其影響方向不一定相同。
+選擇偏差,Selection bias,納入、留在研究或進入分析的機制扭曲目標比較。
+傾向分數,Propensity score,在已量測條件下接受某介入的機率模型，不包含未量測混雜保證。
+反事實,Counterfactual,同一單位在不同介入條件下本會出現的結果，無法同時直接觀察。
+可交換性,Exchangeability,在相關條件下比較組可代表彼此的反事實結果，屬識別要求。
+正值性,Positivity,所關心的條件組合中，待比較介入需有適當可能性與資料支持。
+一致性,Consistency,觀察到的介入與清楚定義策略相符，結果才能對應相關反事實。
+DAG,Directed acyclic graph,用無迴圈的有向圖明示因果假設，箭頭不是由相關自動證實。
+碰撞點,Collider,一條路徑上由兩個箭頭指入的共同結果，條件化可能打開偏差路徑。
+中介,Mediator,位於某介入到結果因果路徑上的變數，調整會改變效果問題。
+反向因果,Reverse causation,結果或其早期過程反過來影響暴露，使觀察關聯的方向不同。
+敏感度分析,Sensitivity analysis,在不同合理假設或分析條件下檢查結論會如何改變。
+負向對照,Negative control,用理論上不應有特定效果的對照協助發現偏差，仍需假設。
+風險,Risk,指定族群與追蹤時間內發生事件的人數比例。
+發生率,Incidence rate,事件數除以在風險人時等暴露時間，與累積風險不同。
+勝算,Odds,事件機率與未事件機率的比值，不是機率本身。
+相對風險,Risk ratio,兩組指定時間風險的比值，無效線為1。
+勝算比,Odds ratio,兩組勝算的比值，不可在常見結果下直接當相對風險。
+風險差,Risk difference,兩組風險相減，需說明相減方向、時間與結果。
+百分點,Percentage point,兩個百分比的絕對相減單位，與相對百分比變化不同。
+需治療人數,Number needed to treat,指定比較與時間下，一件額外有利結果對應的人數點估計。
+基線風險,Baseline risk,比較條件下的預期風險，會影響相同相對效果的絕對大小。
+平均差,Mean difference,在相同量尺上比較平均結果，需保留單位與方向。
+標準化平均差,Standardized mean difference,以標準差尺度表示平均差，量尺與變異差異影響解讀。
+最小重要差異,Minimal important difference,與人們認為有意義的改變相關的參考，依情境與方法而異。
+標準差,Standard deviation,描述個體資料分散程度，不等於估計值精確度。
+標準誤,Standard error,描述估計量抽樣變異的尺度，與標準差不同。
+截尾,Censoring,在事件時間分析中只知事件時間部分資訊，需相應假設與方法。
+在險人數,Number at risk,某時點仍受觀察且尚未發生相應事件的人數。
+危險比,Hazard ratio,比較瞬時事件率的比值，不等於整段累積風險比。
+校準,Calibration,預測機率與觀察頻率的相符程度，需在目標情境評估。
+區辨能力,Discrimination,模型區分不同結果者的能力，不能代替校準或效益。
+信賴區間,Confidence interval,依方法與假設產生的效果相容範圍，頻率解釋不等於參數後驗機率。
+P值,P-value,指定統計模型與虛無假設下，觀察到相當或更極端結果的機率度量。
+檢定力,Statistical power,指定真實效果與設計條件下拒絕虛無假設的機率。
+多重比較,Multiple comparisons,進行許多檢定或探索時，偶然發現及選擇性報告的問題增加。
+交互作用,Interaction,不同條件下效果差異需在指定尺度直接評估，非只比各自P值。
+等效,Equivalence,依事前合理上下界判斷效果是否落在等效範圍，需要相應設計與分析。
+指標檢測,Index test,要評估的檢測或判別程序，閾值與用途需清楚。
+參考標準,Reference standard,用以判斷目標狀態的參考方法，並非必然沒有誤差。
+敏感度,Sensitivity,有目標狀態者中，檢測陽性的比例。
+特異度,Specificity,無目標狀態者中，檢測陰性的比例。
+陽性預測值,Positive predictive value,陽性者中真正有目標狀態的比例，受盛行率影響。
+陰性預測值,Negative predictive value,陰性者中真正無目標狀態的比例，分母是陰性者。
+概似比,Likelihood ratio,指定檢測結果在有病與無病者中的出現機率之比。
+ROC曲線,Receiver operating characteristic curve,描述不同閾值的敏感度與偽陽性率關係，需看目標用途。
+疾病譜偏差,Spectrum effect and bias,納入的疾病嚴重度與無病者狀態改變準確度及外推。
+驗證偏差,Verification bias,接受參考標準的機制與檢測或狀態相關，使準確度估計偏移。
+提前診斷偏差,Lead-time bias,只因較早知道診斷而延長診斷後時間，未必延長壽命。
+長度偏差,Length bias,病程較慢者較可能被定期篩檢捕捉，扭曲觀察到的存活比較。
+過度診斷,Overdiagnosis,偵測到在其餘生涯不會造成症狀或死亡的病變，與假陽性不同。
+系統性回顧,Systematic review,依事前明確方法搜尋、選擇、評估並綜合研究，不保證高確定性。
+範疇回顧,Scoping review,描述一個領域的證據分布、概念與缺口，目的與效果估計不同。
+統合分析,Meta-analysis,以統計方法綜合可比研究的估計，合併模型與資料品質都重要。
+森林圖,Forest plot,呈現各研究點估計、區間及可能的合併結果，需要先認效果尺度。
+共同效果模型,Common-effect model,以研究共享某底層效果為工作假設，常使用反變異數加權。
+隨機效果模型,Random-effects model,允許底層效果在研究間變動，需估計異質性與模型不確定性。
+異質性,Heterogeneity,研究特徵與真實效果可能不同，統計量不能概括全部差異。
+預測區間,Prediction interval,在模型與可交換性假設下描述新研究真實效果範圍的不確定性。
+漏斗圖,Funnel plot,以效果與精確度等關係查看小型研究差異，非單一發表偏差檢定。
+證據確定性,Certainty of evidence,對一個重要結果的證據體所支持效果判斷之信心程度。
+建議強度,Strength of recommendation,綜合效益傷害、價值、資源及可行性等形成，與確定性不同。
+利益衝突,Conflict of interest,次要利益可能影響主要職責的情境，揭露有助評估但非真假裁決。
+共同決策,Shared decision making,專業與當事人共同討論證據、選項、目標及偏好以形成決定。
+決策輔助工具,Patient decision aid,協助了解選項與價值取捨的工具，其品質需依正式標準檢查。
+N-of-1試驗,N-of-1 trial,在適合條件下對同一人有計畫比較策略，與任意前後日記不同。
+外部驗證,External validation,在與開發不同且明確描述的資料評估模型，仍需看情境距離。
+影響研究,Impact study,評估使用工具或策略對流程及實際結果的影響，不只看預測性能。
+真實世界資料,Real-world data,日常照護等來源的資料，代表性、品質與因果問題需另判。
+證據摘要,Evidence brief,把問題、來源、效果、偏差、確定性、適用及未知整理成可更新交付物。
+需傷害人數,Number needed to harm,指定比較、結果與時間下，增加一件不良結果所對應人數的點估計。
+GRADE,Grading of Recommendations Assessment Development and Evaluation,對重要結果的證據體作透明確定性判斷，並區分形成建議時的其他考量。
+RoB 2,Risk of Bias 2,針對隨機試驗特定結果的偏差風險工具，需選適合設計與效果目標的版本。
+ROBINS-I,Risk Of Bias In Non-randomized Studies of Interventions,評估非隨機介入研究特定結果的偏差；2016正式版與V2草案分開記錄。
+CONSORT,Consolidated Standards of Reporting Trials,隨機試驗報告規範；本課使用2025更新，不能把報告符合度當偏差總分。
+SPIRIT,Standard Protocol Items Recommendations for Interventional Trials,隨機試驗計畫書報告規範，本課對照2025更新與後續實際報告。
+PRISMA,Preferred Reporting Items for Systematic reviews and Meta-Analyses,系統性回顧的報告規範；主聲明2020，不等於一份回顧已搜尋完整或低偏差。
+STROBE,Strengthening the Reporting of Observational Studies in Epidemiology,觀察研究報告規範，幫助找資料，不能取代對研究設計與因果假設的判斷。
+STARD,Standards for Reporting Diagnostic Accuracy Studies,診斷準確度報告規範；需連同檢測用途、參考標準與完整納入流程閱讀。
+TRIPOD+AI,Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis + Artificial Intelligence,2024預測模型報告更新，涵蓋回歸與機器學習；完整報告不保證有效或有益。
+PROBAST+AI,Prediction model Risk Of Bias ASsessment Tool + Artificial Intelligence,2025預測模型品質、偏差及適用性評估更新，與TRIPOD報告用途分開。
+IPDAS,International Patient Decision Aid Standards,病人決策輔助工具的品質標準，2026有5.0更新，不是一般指南評分。
+結果摘要表,Summary of Findings,把重要結果、比較風險、效果區間及證據確定性與理由放在一起閱讀的摘要。

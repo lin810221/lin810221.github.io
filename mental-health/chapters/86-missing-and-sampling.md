@@ -2,6 +2,17 @@
 
 讓紀錄呈現真實資訊量，避免漂亮但誤導的趨勢。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-ordinal-missing.svg" target="_blank" rel="noopener" aria-label="放大：原創感受記錄：順序、缺漏與零"><img src="assets/figures/43-ordinal-missing.svg" alt="短刻度是原創教學記錄，問號是缺漏，不設正常異常、診斷或安全色帶。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜原創感受記錄：順序、缺漏與零</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較明確記為0和完全未記錄的格子，說明分母與可用平均如何改變；不願記錄也不能被判成沒有困擾。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 零、未做與未記不同
 
 0可能是一次明確評分，False可能是明確未做，None則代表未知。若漏記發生在最忙或最難受時，已觀察平均可能偏向另一種情境，不能假定隨機缺漏。

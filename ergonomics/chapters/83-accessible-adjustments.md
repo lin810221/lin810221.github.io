@@ -2,6 +2,17 @@
 
 把控制、資訊、動線與支持放在同一張設計圖。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-access-return.svg" target="_blank" rel="noopener" aria-label="放大：可近性與復工：功能、任務和支持連接"><img src="assets/figures/42-access-return.svg" alt="具體調整連接工作者、實際任務及合適專業，沒有依單一診斷或網頁分數決定資格及時程。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜可近性與復工：功能、任務和支持連接</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個操作或資訊障礙，提出可試用調整並保留當事人參與；符合單一尺寸或無障礙標示不代表全部任務完成。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先確認目標功能
 
 工作者需要完成什麼、哪些步驟目前受阻、哪些支持有用？輪椅進入、腳下淨空、控制可達性、視覺資訊或操作力可能各有要求。單一無障礙標示不能替所有任務作保證。

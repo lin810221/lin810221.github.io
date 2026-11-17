@@ -2,6 +2,17 @@
 
 讓每個百分比都有分母，並處理零事件與傷害。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-effect-endpoint.svg" target="_blank" rel="noopener" aria-label="放大：事件計數與替代指標的距離"><img src="assets/figures/45-effect-endpoint.svg" alt="兩組點為假想事件示例，不是臨床試驗實測；指標改變不直接等於事件按同幅改變。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜事件計數與替代指標的距離</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>對照相同分母與期限的事件點，先說絕對差再說相對差，辨識NNT仍需時間、事件及研究假設。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 固定期限的計算
 
 對照與介入需有共同結果、可比較族群與期限。令對照風險p0、介入p1：

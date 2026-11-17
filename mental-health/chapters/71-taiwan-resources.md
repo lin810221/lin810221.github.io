@@ -2,6 +2,17 @@
 
 把現行補助、額外費用、地方資源和臨床需要分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-appointment-resources.svg" target="_blank" rel="noopener" aria-label="放大：找到入口，準備你希望討論的問題"><img src="assets/figures/36-appointment-resources.svg" alt="地圖為無地址的概念入口：正式資源、預約、需求和問題；實際聯絡方式依原課可查來源。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜找到入口，準備你希望討論的問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在概念地圖找正式入口和可近性資訊，再回原課查當地服務；不把本圖當即時開放、補助資格或地址保證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 中央2026方案
 
 115年青壯世代心理健康支持方案期間為2026-01-01至12-31，中央公告以15–45歲及相應國籍／健保資格等條件說明，每人補助3次個別心理諮商。113–114年曾用過者，115年仍可再用；實際資格、名額和預約向官方與合作機構確認。

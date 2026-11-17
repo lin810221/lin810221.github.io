@@ -2,6 +2,17 @@
 
 分清血清與尿液，也理解非腎臟因素。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/28-creatinine-context.svg" target="_blank" rel="noopener" aria-label="放大：肌酸酐：來源、血中濃度與腎臟處理"><img src="assets/figures/28-creatinine-context.svg" alt="示意分開生成來源與清除背景，血中濃度不是實測腎小球流量，也不單獨判慢性。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 28｜肌酸酐：來源、血中濃度與腎臟處理</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出肌肉等來源、血中濃度和腎臟處理三個層次，說明肌酸酐改變為何仍需生成、方法與臨床背景。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 濃度不是濾過率
 
 腎元包括腎絲球濾過與腎小管重吸收、分泌等環節。腎臟不只是把血液「洗乾淨」，也參與體液、電解質、酸鹼與內分泌調節。腎絲球過濾率描述濾過的流量，尿量與它不是同一量；有尿不代表所有腎臟功能正常，尿液濃淡也不能直接換算GFR。

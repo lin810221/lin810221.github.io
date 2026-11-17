@@ -2,6 +2,17 @@
 
 以具體情境和回饋做小型學習，避免把紀錄變成懲罰。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-density-habit.svg" target="_blank" rel="noopener" aria-label="放大：等能量份量與日常選擇情境"><img src="assets/figures/35-density-habit.svg" alt="大小不同的食物作能量密度概念，不提供真實等量換算；等能量只固定一個維度，習慣還受環境與機會影響。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜等能量份量與日常選擇情境</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為其中一個選擇補上時間、可取得和實際機會，解釋飲食習慣要觀察哪些條件，而不是只從一次選擇評價意志。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 把抽象目標改成行動
 
 與其寫吃得健康，可寫在某個可行時段準備一項可取得的食物、閱讀一張標示或確認飲料份量。行動可觀察，結果則需要時間和背景，不保證一次調整就帶來指定健康效果。

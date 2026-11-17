@@ -2,6 +2,17 @@
 
 以數學區間理解修整，清楚分開法規的零標示條件。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-oil-mixture-zero.svg" target="_blank" rel="noopener" aria-label="放大：油脂混合與標示零的讀法"><img src="assets/figures/15-oil-mixture-zero.svg" alt="同一油脂可含多類脂肪酸，圖例不表示真實百分比；標示零也要回到制度修整及份量，不能推完全不存在。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜油脂混合與標示零的讀法</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先區分左邊實際食品、中央分類與右邊標示，再說明某欄為0還需哪些法規及份量條件，才能解釋數值的範圍。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三種不同的零
 
 真實測量為零、低於檢出或定量界限、依規則可標0，是不同狀態。再加上資料根本沒有提供，至少有四種資訊情境。資料表應保留狀態欄位，不能全部塞入數字0後期待下游還原。

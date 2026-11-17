@@ -2,6 +2,17 @@
 
 整合測試、實際完成與生活條件，不由單次分數自動改課表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-baseline-change.svg" target="_blank" rel="noopener" aria-label="放大：基線、方向與未知觀察"><img src="assets/figures/15-baseline-change.svg" alt="時間線含一段缺漏並以虛線提示連接是假想，不當作實測；數值升降需依測試方向解讀。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜基線、方向與未知觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>圈出未知段，說明可用資料的趨勢和完整趨勢不是同一結論；建立基線還需重複觀察、方法與是否可比較，不能直接補上理想值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 基線不是一個永恆常數
 
 初始觀察受狀態和方法影響，必要時重複確認。訓練日誌、功能測試和主觀反應是不同資訊，應並列而非任意加權成一個總健康分數。

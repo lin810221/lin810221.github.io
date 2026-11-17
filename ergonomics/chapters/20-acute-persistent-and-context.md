@@ -2,6 +2,17 @@
 
 認識分類用途，不用時間一刀切所有處理。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-pain-context.svg" target="_blank" rel="noopener" aria-label="放大：感受、功能與情境：不只一條損傷尺"><img src="assets/figures/10-pain-context.svg" alt="人位於感受、功能、時間及照護需求的共同脈絡，沒有將痛分數直接換成組織破壞量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜感受、功能與情境：不只一條損傷尺</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>同時描述時間、功能和情境，不把急性或持續不適自動配唯一原因；如果有新變化，圖不能代替適當照護評估。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 時間是資訊之一
 
 新發、反覆、持續或近期加劇，會影響評估問題。慢性原發下背痛有特定臨床框架，不能把所有長久背痛都放進同一類，急性與特定疾病也可能需要不同照護。

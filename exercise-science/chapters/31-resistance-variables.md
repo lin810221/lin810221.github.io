@@ -2,6 +2,17 @@
 
 先建立完整紀錄，再討論肌力、肌肥大或功能目標。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-resistance-variables.svg" target="_blank" rel="noopener" aria-label="放大：阻力訓練的不同維度"><img src="assets/figures/16-resistance-variables.svg" alt="兩排卡帶分開外部阻力、次數組數、努力與動作選擇；長度只是版面安排，不代表等效劑量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜阻力訓練的不同維度</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿第一排逐一指出負荷、組次與努力程度，說出它們不能互相代替；相同重量也可能因個人能力與任務而有不同內在要求。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 負荷與努力分開
 
 外在負荷kg和%1RM描述阻力，RIR與相關RPE描述接近可完成次數的感受。同樣%1RM的人和動作未必能做同次數；同樣RIR也不代表使用相同kg。

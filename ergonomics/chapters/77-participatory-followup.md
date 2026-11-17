@@ -2,6 +2,17 @@
 
 把提案、試用、回饋和修正形成可執行流程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-participation-plan.svg" target="_blank" rel="noopener" aria-label="放大：參與、改善、紀錄與再評估"><img src="assets/figures/39-participation-plan.svg" alt="循環表示工作者、維護、主管和專業可協作回顧，不是只簽名一次的合規證明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜參與、改善、紀錄與再評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在回顧圖指出不同使用者和班別的聲音，補責任與時間；簽名同意或多數喜歡不代表每項需求永久解決。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 誰需要參與
 
 實際工作者、主管、採購、維護、職安衛及必要專業人員掌握不同資訊。包含換班、不同身體尺寸、臨時支援與有調整需求的人，才能避免只用單一示範者代表全部使用者。

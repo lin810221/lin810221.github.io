@@ -2,6 +2,17 @@
 
 用趨勢和情境學習，避免以每天變化評價努力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-diary-access.svg" target="_blank" rel="noopener" aria-label="放大：飲食觀察、未知與可取得資源"><img src="assets/figures/33-diary-access.svg" alt="紀錄格與環境共同構成可行性，問號為缺漏而非不努力，圖不對個人飲食打健康分數。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜飲食觀察、未知與可取得資源</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分出已知、明確零與未知三種紀錄，再說明如何用資料回顧體重維持，而不從缺漏推測個人動機或責任。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 短期體重有多個來源
 
 水分、肝醣、腸內容物、量測時機與長期組織變化都影響體重。一天增加不等於全是脂肪；未經評估的快速下降也不一定是健康進步。固定條件有助比較，但不需為了資料完整而增加焦慮。

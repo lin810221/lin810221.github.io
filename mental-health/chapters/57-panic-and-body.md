@@ -2,6 +2,17 @@
 
 分清一次發作、恐慌症和其他需要醫療評估的原因。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-body-interpretation.svg" target="_blank" rel="noopener" aria-label="放大：身體感受、解釋與迴避的關係"><img src="assets/figures/29-body-interpretation.svg" alt="感受與解釋可能互相影響；有其他醫療原因的可能，不能以循環圖宣告沒有急症。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜身體感受、解釋與迴避的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿感受與解釋的箭頭提出可能關係，同時列出仍需評估的原因；不能用「像恐慌」自行排除急性身體問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 發作是什麼概念
 
 恐慌發作可包含突然強烈恐懼與身體感受，恐慌症則有更完整評估條件。一次發作不直接等於恐慌症，其他疾病與物質也可能造成相似表現。

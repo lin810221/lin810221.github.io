@@ -2,6 +2,17 @@
 
 區分食物結構、游離糖與血糖反應。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-salt-gi-labels.svg" target="_blank" rel="noopener" aria-label="放大：標示分母與整餐背景"><img src="assets/figures/32-salt-gi-labels.svg" alt="標示表格與餐食是兩個尺度，鈉和食鹽單位不同，GI也不能單獨評整餐或預測個人血糖。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜標示分母與整餐背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從標示框走到整餐，補纖維、來源和組合等資訊，解釋GI只是一個維度，不能變成個人的血糖預測器。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 碳水不是同一種食物
 
 全穀、豆類、水果、含糖飲料和精製點心都可能含碳水，但纖維、結構、營養密度與食用方式不同。只把碳水克數當食物好壞，會遺漏來源與替代；完全排除某類也可能增加營養與可行性負擔。

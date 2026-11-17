@@ -2,6 +2,17 @@
 
 知道教材、教練、測試和醫療評估各能處理什麼問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-record-status.svg" target="_blank" rel="noopener" aria-label="放大：完成、休息與未知分三種"><img src="assets/figures/03-record-status.svg" alt="原創紀錄表將已完成、明確休息與未記錄分開，未記錄不等於零；沒有把資料整理當運動許可。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜完成、休息與未知分三種</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出表格缺少哪些身體狀況、任務與專業資訊，再說明為什麼表格填完仍不等於已完成運動前評估或取得醫療許可。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從零學習的順序
 
 先讀動作、肌肉與供能，再學測試、阻力和有氧，最後整合計畫與監測。程式是可選驗算，閱讀網頁不需Python；所有必要術語在課內介紹，課內進階並非還沒製作的另一門課。

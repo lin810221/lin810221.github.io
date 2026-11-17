@@ -2,6 +2,17 @@
 
 用已符合量測方法的輸入示範，不把手機數值當正式暴露。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/35-vibration-types.svg" target="_blank" rel="noopener" aria-label="放大：HAV與WBV：同單位也不是同方法"><img src="assets/figures/35-vibration-types.svg" alt="左側手工具接觸，右側乘坐設備接觸；輸入、軸向權重與時間方法不同，不能直接混算。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 35｜HAV與WBV：同單位也不是同方法</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指手工具接觸，再說HAV需已頻率加權三軸合成和實際觸發時間；多段依平方時間關係處理，不直接算術平均。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/vibration/hav/index.htm">HSE：手臂振動</a> · <a href="https://www.hse.gov.uk/vibration/wbv/regulations.htm">HSE：WBV</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 輸入先符合方法
 
 a_hv是相應頻率加權的三軸合成振動值，單位m/s²；不是任意加速度或單軸未加權手機讀值。T為實際振動暴露時間，不直接用整個班表。

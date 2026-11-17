@@ -2,6 +2,17 @@
 
 從有效這兩個字，問到對誰、相比什麼、改善什麼。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-screening-grid.svg" target="_blank" rel="noopener" aria-label="放大：虛構篩檢四格：先找分母"><img src="assets/figures/44-screening-grid.svg" alt="假想一萬人例子：目標狀態500人，真陽性400、偽陰性100、偽陽性950、真陰性8550；非真實工具效能。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜虛構篩檢四格：先找分母</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用四格指出研究中的對照、結果和時間仍需另看；虛構篩檢算術不是任何量表的實測效能，更不用於安全預測。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 族群和介入
 
 一般自助、確診族群、特定工作或不同年齡，不能隨意互換。老師訓練、接觸時數、練習與支持不同，也可能讓同名方案實際內容不同。

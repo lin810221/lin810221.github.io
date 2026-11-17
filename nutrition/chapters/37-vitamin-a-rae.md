@@ -2,6 +2,17 @@
 
 建立脂溶性維生素地圖，實作維生素A的形式限定換算。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-fat-soluble-vitamins.svg" target="_blank" rel="noopener" aria-label="放大：脂溶性維生素與吸收條件"><img src="assets/figures/19-fat-soluble-vitamins.svg" alt="脂質相關聚集體作吸收環境概念，維生素來源及原始單位仍需辨識，圖不計算個人可利用率或補充量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜脂溶性維生素與吸收條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分清脂溶性維生素名稱和圖中的脂質環境，再說明RAE等單位為何需要保留特定來源，不能任意混同一個原始克數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/">NIH ODS：維生素A</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/">NIH ODS：維生素E</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 功能與來源地圖
 
 維生素A參與視覺和細胞分化，E具有抗氧化相關功能，K參與凝血等蛋白的活化。脂溶性描述溶解與運輸特性，不代表三者功能、儲存或毒性相同。D另有專節，不能把四種全都套同一上限。

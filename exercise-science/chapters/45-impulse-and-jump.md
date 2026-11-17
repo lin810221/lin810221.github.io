@@ -2,6 +2,17 @@
 
 從力時關係理解起跳，不把高度直接當整段產力能力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-impulse.svg" target="_blank" rel="noopener" aria-label="放大：力—時間曲線與衝量"><img src="assets/figures/23-impulse.svg" alt="任意力時間圖以陰影示意同一方向的積分概念，不是測力板資料，未計完整人體運動或落地條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜力—時間曲線與衝量</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿曲線指出峰值與面積是不同訊息，說明施力持續時間也重要；圖沒有完整人體條件，不能直接由陰影推跳躍高度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 力與時間
 
 $$

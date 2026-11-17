@@ -2,6 +2,17 @@
 
 把生活目標和工作支持放回照護。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-image-task.svg" target="_blank" rel="noopener" aria-label="放大：影像、任務與功能各回答一部分"><img src="assets/figures/11-image-task.svg" alt="三張不同資料卡可互補，但任何單一卡都不能唯一決定症狀原因或個人活動範圍。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜影像、任務與功能各回答一部分</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在功能需要卡列一項可調任務與一項需回顧的支持，說明恢復不是單靠忍耐，也不是等完全無感覺才談參與。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 恢復有多個面向
 
 症狀、能力、信心、睡眠與工作條件可能不同步。一次比較舒服不等於全部修復，當天較難也不必然表示新增組織損傷；要看整體變化與臨床背景。

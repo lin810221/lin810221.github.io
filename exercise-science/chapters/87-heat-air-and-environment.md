@@ -2,6 +2,17 @@
 
 把環境加入負荷判讀，不因配速相同就假設生理需求相同。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-heat-loss.svg" target="_blank" rel="noopener" aria-label="放大：產熱、蒸發與環境條件"><img src="assets/figures/44-heat-loss.svg" alt="體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 44｜產熱、蒸發與環境條件</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿產熱到散熱找出環境會影響的環節，另列濕度、空氣品質和場地資料；流汗不是已充分降溫的保證，也不能把圖當戶外許可。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.training.seer.cancer.gov/melanoma/anatomy/layers.html">NCI：皮膚層次</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 環境改變反應
 
 溫度、濕度、日照、風、空氣品質與海拔等可能改變任務需求。相同速度和時間不保證相同內在反應，近期適應與個人健康也有影響；不能只看一個氣溫判所有人可做高強度。

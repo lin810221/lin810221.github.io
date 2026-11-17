@@ -2,6 +2,17 @@
 
 先減少不必要伸取，再比較可行裝置。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-mouse-layout.svg" target="_blank" rel="noopener" aria-label="放大：常用輸入區與調整回顧"><img src="assets/figures/18-mouse-layout.svg" alt="鍵盤與滑鼠在同一工作區示意，位置和任務需要一起試用；沒有裝置能單靠名稱保證所有人適合。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜常用輸入區與調整回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出滑鼠相對鍵盤和身體的位置，提出一個能試用的調整並保留裝置偏好；不把某種形狀當萬用解方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 常用裝置的位置
 
 過遠或被物件隔開，可能增加持續伸取。全尺寸鍵盤的配置也可能影響滑鼠位置，需看數字輸入與其他工作，不是每人都應換同一款鍵盤。

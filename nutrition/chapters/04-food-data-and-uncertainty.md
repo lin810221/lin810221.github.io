@@ -2,6 +2,17 @@
 
 認識可食重量、生熟、每份與資料版本，建立可信的計算輸入。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-evidence-structure.svg" target="_blank" rel="noopener" aria-label="放大：觀察到關係，還要找替代解釋"><img src="assets/figures/02-evidence-structure.svg" alt="飲食和結果之間有觀察關係，其他因素可能同時影響兩者；箭頭表示待檢驗的可能路徑，不宣告因果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜觀察到關係，還要找替代解釋</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖旁標出實際量到、估計與未知的欄位，說明食物資料不完整時，哪條箭頭不能靠填零或猜值補成證據。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cochrane.org/evidence">Cochrane：健康證據與白話摘要</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 每個數字都有基準
 
 每100g、每100mL與每份不是同一件事，生、熟、瀝乾、帶皮或可食部也不同。食品資料庫可能來自化驗、估算或廠商標示；品牌配方和水分會變。讀取時保留食品ID、狀態、來源與版本，不只抄名稱和熱量。

@@ -2,6 +2,17 @@
 
 讓支持配合人的需要，而非要求人人用同一方式。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-access-channels.svg" target="_blank" rel="noopener" aria-label="放大：可近的溝通與有尊嚴的求助"><img src="assets/figures/42-access-channels.svg" alt="四種溝通與環境條件並列，沒有把差異畫成缺陷或用單一方法要求所有人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜可近的溝通與有尊嚴的求助</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出可用溝通方式及一項環境調整，說明差異不等於缺陷，調整應依實際需要而非用標籤決定全部安排。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 需求不只診斷名稱
 
 注意、感官、溝通、學習或行動差異，可影響環境適配與服務取得。某個偏好不直接診斷ADHD或自閉症，已知診斷也不代表每人需求相同。

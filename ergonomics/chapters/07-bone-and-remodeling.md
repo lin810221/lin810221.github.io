@@ -2,6 +2,17 @@
 
 把骨看成活的組織，不只是一根固定支架。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-joint.svg" target="_blank" rel="noopener" aria-label="放大：骨與關節的活動界面"><img src="assets/figures/04-joint.svg" alt="兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 04｜骨與關節的活動界面</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找到骨端、軟骨和關節腔，再說明骨是有細胞、改建與造血等角色的組織；這張圖省略骨髓及重塑細節，需回課文補上。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/skeletal/articulations.html">NCI：關節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 骨的功能
 
 骨骼提供支撐、保護與肌肉附著，也參與造血及礦物儲存等。緻密骨與海綿骨有不同結構，形狀與內部組織共同影響功能，不是只有外觀看起來粗細。

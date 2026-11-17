@@ -2,6 +2,17 @@
 
 示範規則如何支持討論，不讓程式直接替真人加量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-progress-review.svg" target="_blank" rel="noopener" aria-label="放大：雙重漸進與回顧節點"><img src="assets/figures/29-progress-review.svg" alt="假想階梯含維持平台及回顧節點，沒有給固定個人加重規則；變化需可比較觀察。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜雙重漸進與回顧節點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出階梯中的平台與進展，再列原課文自我調節需要的完成情況、努力及條件；平台不是自動證明失敗，也不是每次都必須調高。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 規則不是生理定律
 
 雙重漸進可先在指定區間追次數，再考慮負荷；自我調節則使用當下反應等資訊。不同目標與情境有不同方法，不能以一個達標條件取代技術、耐受和健康背景。

@@ -2,6 +2,17 @@
 
 辨認一般健康訓練與疾病相關安排的界線，準備有用的溝通資料。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-access-professional.svg" target="_blank" rel="noopener" aria-label="放大：可及性、慢性病與專業合作"><img src="assets/figures/42-access-professional.svg" alt="入口與任務間的箭頭表示需消除參與障礙，非評估通過；疾病和藥物等條件仍需適當專業。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜可及性、慢性病與專業合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在參與任務旁補病況、藥物、個人目標和專業協作欄，說明一般課程資料不足以開疾病運動處方；保留當事人需求和未知資訊。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 有疾病不等於不能活動
 
 許多慢性健康狀況下仍可有適合的活動；但疾病階段、症狀、治療、藥物與目標影響安排。一般健康成人的阻力最佳化數字不是疾病處方，也不靠一張禁忌表涵蓋所有情況。

@@ -2,6 +2,17 @@
 
 從每組力竭、神奇頻率與最新研究標題回到證據。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-advice-plan-audit.svg" target="_blank" rel="noopener" aria-label="放大：建議和課表：先對準原問題"><img src="assets/figures/46-advice-plan-audit.svg" alt="兩條原創審核路徑整理主張、條件及觀察，不將流程完成等同建議有效或課表適合個人。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜建議和課表：先對準原問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一則虛構訓練建議放在前三格，圈出族群、比較與結果；不要因引用了肌肉機制或指南名稱就認定該建議已對準每個人的需求。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 虛構主張
 
 某貼文說「2026證實每組不力竭就沒用，所有人一週六天最好」。先拆成族群、結果、比較、劑量、期間和來源；年份新不代表主張被支持，也不能以見證補完缺漏。

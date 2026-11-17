@@ -2,6 +2,17 @@
 
 用可持續的觀察理解維持，不把短期下降當結束。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-long-term-support.svg" target="_blank" rel="noopener" aria-label="放大：維持與重新調整的支持環"><img src="assets/figures/09-long-term-support.svg" alt="環狀支持圖強調資源和反覆回顧，不畫保證下降的體重曲線，也不把框架分類當個人責備。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜維持與重新調整的支持環</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿資源、回顧、調整與重新開始的環，說明維持為何需要長期支持，並找出圖中沒有承諾的體重下降速度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 變化和維持不同
 
 某段時間下降不保證長期維持，生活條件、生理反應與支持都可能改變。復胖不是道德失敗，也不必把每次波動都視為計畫完全無效。

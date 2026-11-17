@@ -2,6 +2,17 @@
 
 分清鐵的形式、吸收影響與檢驗限制，不把疲倦等於缺鐵。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-mineral-functions.svg" target="_blank" rel="noopener" aria-label="放大：骨、血液與礦物質的多重角色"><img src="assets/figures/22-mineral-functions.svg" alt="骨與紅血球作鈣磷鎂和鐵的代表性關係，吸收運送儲存及評估分開；不把骨密度或血紅素當全部營養狀態。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜骨、血液與礦物質的多重角色</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿吸收、運送與儲存分出鐵的不同資訊，再說明血基質與非血基質來源、發炎及檢驗條件為何需要另外保留。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a> · <a href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/">NIH ODS：鎂</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 形式與運輸
 
 鐵是血紅素和肌紅素等的重要成分，參與氧運送及其他代謝。動物性食物可含血基質與非血基質鐵，植物及強化來源主要為非血基質鐵。總鐵克數不是吸收量，不能對所有食物套單一比例。

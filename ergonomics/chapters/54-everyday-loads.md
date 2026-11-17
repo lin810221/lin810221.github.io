@@ -2,6 +2,17 @@
 
 把生活中的負荷也放回人、物與環境。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-changes-and-care.svg" target="_blank" rel="noopener" aria-label="放大：活動變化與照顧任務的差異"><img src="assets/figures/27-changes-and-care.svg" alt="任務名稱不同不保證充分恢復，搬物與搬人的可變性也不同；需合適設備、協作與方法。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜活動變化與照顧任務的差異</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>區分一般物件和協助人員移位的條件，指出後者需要合適輔具與受訓協作；不把人當穩定箱子套RNLE。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 情境很多樣
 
 採買、整理、背包、家務和照顧都有不同物件、頻率、地面與可用幫助。不能只因在家就忽略需求，也不能把所有生活物件套進同一職業搬抬公式。

@@ -2,6 +2,17 @@
 
 把運送路徑和場地條件納入工作設計。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-floor-support.svg" target="_blank" rel="noopener" aria-label="放大：足部、地面與整趟路徑"><img src="assets/figures/26-floor-support.svg" alt="推車路線包含轉彎與障礙，空間與地面需現場觀察；圖不根據鞋具或單一材質宣告合規。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜足部、地面與整趟路徑</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>走完整條虛構路線指出轉彎、障礙、光線和維護需求；直線的一小段不能代表整個搬運通道。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/pushpull/index.htm">HSE：推拉評估</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 路徑改變需求
 
 距離、坡度、門檻、轉角、地面摩擦、空間和視線會影響攜行或推拉。只記箱子重量，沒有說從哪到哪，資料仍不完整。

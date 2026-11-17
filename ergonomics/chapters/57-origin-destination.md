@@ -2,6 +2,17 @@
 
 理解一個搬抬任務可能需要兩端評估。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-endpoints.svg" target="_blank" rel="noopener" aria-label="放大：起點、目的地與工時條件"><img src="assets/figures/29-endpoints.svg" alt="兩個手部位置有不同幾何與控制需求，頻率、抓握和恢復需另按正式方法確認，不平均LI當CLI。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜起點、目的地與工時條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩端的手高、水平距離與目的端控制，指出為何不能只挑較容易的一端，也不能平均LI就叫多任務完整指標。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何終點也重要
 
 若目的地需顯著控制負荷，例如較精確定位，手冊要求起點和目的地都評估。不是永遠只用起點，也不是所有搬運都能用同一端代表。

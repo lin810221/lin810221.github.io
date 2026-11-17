@@ -2,6 +2,17 @@
 
 用任務需求理解跳躍與快速轉換，不以跳箱高度排名能力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-impulse.svg" target="_blank" rel="noopener" aria-label="放大：力—時間曲線與衝量"><img src="assets/figures/23-impulse.svg" alt="任意力時間圖以陰影示意同一方向的積分概念，不是測力板資料，未計完整人體運動或落地條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜力—時間曲線與衝量</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把接觸、離地和再接觸另標在時間軸上，再列場地、技術與進階條件；不把較高峰值或更多接觸次數一律當更好或更安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 什麼是增強式概念
 
 利用快速伸張後縮短的任務訓練相關能力，涉及肌肉、肌腱與神經控制。連續小跳、跳躍和投擲等需求不同；不是名稱相同就可直接用同次數與高度交換。

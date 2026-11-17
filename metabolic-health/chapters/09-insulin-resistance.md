@@ -2,6 +2,17 @@
 
 理解分泌、敏感性和代償，分清研究指標與臨床判斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-insulin-response.svg" target="_blank" rel="noopener" aria-label="放大：胰島訊號與靶細胞反應"><img src="assets/figures/05-insulin-response.svg" alt="血中訊號、受體與組織回應不是同一個量，分泌可能代償，示意不提供HOMA界線或個人診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 05｜胰島訊號與靶細胞反應</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿血液、受體和細胞內反應逐步讀圖，說明血糖處於某範圍為何仍不能保證每個組織的胰島素反應相同。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 激素與組織反應
 
 胰島素參與葡萄糖利用、儲存與其他代謝調節；組織對訊號反應不同時，分泌可能代償。血糖仍在某範圍不代表每個過程都相同，胰島素較高也不能脫離情境直接診斷。

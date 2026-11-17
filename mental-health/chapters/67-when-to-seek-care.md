@@ -2,6 +2,17 @@
 
 用持續性、功能、變化與安全理解需要。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/34-professional-collaboration.svg" target="_blank" rel="noopener" aria-label="放大：求助、角色與合作"><img src="assets/figures/34-professional-collaboration.svg" alt="當事人可依需要接觸合適專業，角色與資格要依當地制度確認；圖不替代轉介或診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 34｜求助、角色與合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出能開始求助的不同入口，說出一項你希望得到的協助；不必先自我診斷，也不以圖判誰有資格。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 可以先來了解
 
 想釐清困擾、需要支持或不知道從哪開始，都能向合適資源詢問。求助不是軟弱，也不是先完成所有自助技巧才有資格。

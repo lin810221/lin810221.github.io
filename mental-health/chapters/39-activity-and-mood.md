@@ -2,6 +2,17 @@
 
 讓活動成為支持選項，而非情緒改善的義務。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-daily-support.svg" target="_blank" rel="noopener" aria-label="放大：活動、飲食、物質與生活支持"><img src="assets/figures/20-daily-support.svg" alt="人處在多種日常條件中，圖表示可能互相影響，不用單一成分或行為解釋所有情緒。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜活動、飲食、物質與生活支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以一個可近的活動情境說明環境和功能的重要性，避免只用步數或時長比較情緒效果，也不以圖推個人訓練量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle">NHLBI：睡眠與清醒週期</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 活動不只消耗能量
 
 活動與功能、心肺、睡眠、社會連結和心理健康相關，但不同介入、族群與結果各有條件。不能保證某次活動立刻改善情緒，也不能把活動當作所有疾病的替代治療。

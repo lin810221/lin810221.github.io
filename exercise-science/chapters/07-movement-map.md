@@ -2,6 +2,17 @@
 
 用結構語言描述動作，不以單一外觀判定每個人的最佳姿勢。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-planes.svg" target="_blank" rel="noopener" aria-label="放大：動作平面與解剖方向"><img src="assets/figures/04-planes.svg" alt="三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 04｜動作平面與解剖方向</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先依三個切面說出分左右、前後、上下的不同，再選一個日常動作描述觀察方向；不要把圖上的平面直接當安全動作角度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先找參與結構
 
 骨提供支架，關節允許並限制相對移動，肌肉經肌腱施力，神經協調控制。韌帶、軟骨等也有角色；肌肉不是只向一個方向拉一根骨頭。完整動作需看多關節與任務。

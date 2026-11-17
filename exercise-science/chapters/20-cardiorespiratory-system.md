@@ -2,6 +2,17 @@
 
 把通氣、循環與氧利用連起來，不把喘或心率當全部適能。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-energy-overlap.svg" target="_blank" rel="noopener" aria-label="放大：三種供能路徑重疊參與"><img src="assets/figures/10-energy-overlap.svg" alt="三條曲線只表共同參與及相對角色可改變，不是各路徑的實測百分比，沒有固定秒數切換線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜三種供能路徑重疊參與</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在氧化路徑旁補肺、血液、心臟與組織的供應鏈，區分能量生成、氧運送及肌肉使用，避免只用呼吸快慢代表全部供能。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a> · <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow">NHLBI：心臟血流</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 氧輸送的路徑
 
 空氣進入肺，氧經交換進入血液，由循環運送到組織，再由細胞利用。通氣、心輸出、血液攜氧與肌肉利用都重要；多吸幾口氣不能自動解決所有限制，單一心率也不是全部表現。

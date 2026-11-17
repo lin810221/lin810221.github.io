@@ -2,6 +2,17 @@
 
 理解系統變化的用途，分開一般健康成人與競賽準備。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-periodization-review.svg" target="_blank" rel="noopener" aria-label="放大：區塊、維持與回顧"><img src="assets/figures/30-periodization-review.svg" alt="兩排虛構區塊表示優先目標及維持可以不同，不宣稱固定區塊長度、減量幅度或每人必需週期化。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜區塊、維持與回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿區塊找優先與維持的角色，另列回顧時要看的表現、疲勞與生活條件；不把區塊的顏色當每人必須照做的週期。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 週期化在改什麼
 
 按時間安排目標、量、強度或任務，可有線性、波動、區塊等形式。名稱不是效果保證，研究中是否同總量、族群與期間都影響比較；不能只因圖表漂亮就說更科學。

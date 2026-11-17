@@ -1,0 +1,1650 @@
+[
+  {
+    "id": "ebh-01",
+    "file": "assets/figures/01-evidence-decisions.svg",
+    "title": "證據、專業與人的選擇",
+    "description": "三個相互連結的面向圍繞具體決策；研究提供比較資訊，專業判適用，當事人的目標與負擔參與選擇。",
+    "note": "連線表示共同參與決策，不表示三者有固定權重或分數。",
+    "kind": "研究關係圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：研究問題、納入標準與結果選擇",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03",
+        "version": "線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新"
+      },
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      }
+    ],
+    "lessons": [
+      "001-evidence-map",
+      "002-question-types"
+    ]
+  },
+  {
+    "id": "ebh-02",
+    "file": "assets/figures/02-pico-outcomes.svg",
+    "title": "從PICO走到重要結果",
+    "description": "P族群、I介入或E暴露、C比較及O結果共同限定問題；右側區分機制、替代指標與病人重要結果，箭頭非療效保證。",
+    "note": "箭頭是待檢查的證據鏈；機制成立不保證重要健康結果改善。",
+    "kind": "研究關係圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：研究問題、納入標準與結果選擇",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03",
+        "version": "線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新"
+      },
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      }
+    ],
+    "lessons": [
+      "003-pico",
+      "004-outcome-priority"
+    ]
+  },
+  {
+    "id": "ebh-03",
+    "file": "assets/figures/03-question-time.svg",
+    "title": "問題、族群與追蹤時間",
+    "description": "同一介入的研究問題可使用不同起點與結果時間；五步判讀以提出問題、找到研究、評估、應用及回顧形成可更新循環。",
+    "note": "橫向代表時間順序，不是發病、存活或療效的實測曲線。",
+    "kind": "研究關係圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：研究問題、納入標準與結果選擇",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03",
+        "version": "線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新"
+      },
+      {
+        "title": "Cochrane：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "線上章節；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "005-time-population",
+      "006-learning-route"
+    ]
+  },
+  {
+    "id": "ebh-04",
+    "file": "assets/figures/04-paper-search.svg",
+    "title": "把論文拆成能核對的層次",
+    "description": "左側原創論文輪廓分成摘要、方法、結果與討論，右側多個同義詞先取聯集再交集，不把檢索排序當證據評分。",
+    "note": "頁面與集合為概念示意；摘要和搜尋命中均不等於品質保證。",
+    "kind": "研究關係圖",
+    "group": "finding",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NLM：PubMed User Guide",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+        "version": "頁面最近更新2026-09-30；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "線上章節；2026-11-16查核"
+      },
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      }
+    ],
+    "lessons": [
+      "007-paper-map",
+      "008-search-strategy"
+    ]
+  },
+  {
+    "id": "ebh-05",
+    "file": "assets/figures/05-mesh-registration.svg",
+    "title": "搜尋詞與登錄的兩條線索",
+    "description": "搜尋詞以主題詞與自由詞相互補充，登錄資料的時間戳先於收案或結果分析才支持事前規劃，兩者不是同一種索引。",
+    "note": "登錄需查實際時間與歷史；有登錄編號不代表一定為事前登錄。",
+    "kind": "研究關係圖",
+    "group": "finding",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NLM：PubMed User Guide",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+        "version": "頁面最近更新2026-09-30；2026-11-16查核"
+      },
+      {
+        "title": "ClinicalTrials.gov：登錄欄位定義",
+        "url": "https://clinicaltrials.gov/policy/protocol-definitions",
+        "version": "官方搜尋摘要可讀；本次直接開啟主要為JS外殼"
+      },
+      {
+        "title": "ClinicalTrials.gov：政策常見問題",
+        "url": "https://clinicaltrials.gov/policy/faq",
+        "version": "2026-11-16查核；美國登錄制度，非全球統一規則"
+      }
+    ],
+    "lessons": [
+      "009-pubmed-mesh",
+      "010-registries"
+    ]
+  },
+  {
+    "id": "ebh-06",
+    "file": "assets/figures/06-version-log.svg",
+    "title": "來源版本與搜尋紀錄",
+    "description": "一項研究可能有計畫、預印本、正式報告、更正與多篇追蹤報告；搜尋紀錄保留查詢和去重關係，不把多報告當多研究。",
+    "note": "這是可能的版本關係；DOI與同行審查都不是結論永久有效的印章。",
+    "kind": "研究關係圖",
+    "group": "finding",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NLM：PubMed User Guide",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+        "version": "頁面最近更新2026-09-30；2026-11-16查核"
+      },
+      {
+        "title": "Crossref：Crossmark與出版狀態",
+        "url": "https://www.crossref.org/services/crossmark/",
+        "version": "2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "線上章節；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "011-source-trace",
+      "012-search-record"
+    ]
+  },
+  {
+    "id": "ebh-07",
+    "file": "assets/figures/07-design-snapshot.svg",
+    "title": "設計先看方向，橫斷先看同時",
+    "description": "研究設計依分配、起點與量測順序區分；橫斷研究在同一時點測暴露與結果，圖中的關係線不是因果方向。",
+    "note": "分類不是品質排名；設計仍須配合問題及實際執行條件。",
+    "kind": "研究關係圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：分析流行病學的研究設計",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html",
+        "version": "歷史教學頁，archive；非2026新指南"
+      },
+      {
+        "title": "Cochrane：非隨機介入研究",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-24",
+        "version": "線上章節；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "013-design-map",
+      "014-cross-sectional"
+    ]
+  },
+  {
+    "id": "ebh-08",
+    "file": "assets/figures/08-cohort-casecontrol.svg",
+    "title": "世代與病例對照：從哪裡抽樣",
+    "description": "上方世代研究從符合資格人群及暴露分類追蹤事件，下方病例對照依結果狀態抽樣再比較暴露；回溯抽資料不等於病例對照。",
+    "note": "箭頭表示研究比較與資料方向，不是證明暴露造成事件。",
+    "kind": "研究關係圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：分析流行病學的研究設計",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html",
+        "version": "歷史教學頁，archive；非2026新指南"
+      },
+      {
+        "title": "Cochrane：非隨機介入研究",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-24",
+        "version": "線上章節；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "015-cohort",
+      "016-case-control"
+    ]
+  },
+  {
+    "id": "ebh-09",
+    "file": "assets/figures/09-trial-review.svg",
+    "title": "試驗分配與回顧整合不同層次",
+    "description": "上方研究者隨機分派後追蹤兩組，下方多份報告需先辨識是否屬於不同研究；回顧有明確篩選與評估，不只是把數字加總。",
+    "note": "隨機分派支持比較的起點；回顧的名稱與合併大小不自動保證可信。",
+    "kind": "研究關係圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      },
+      {
+        "title": "Cochrane：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "線上章節；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：隨機試驗結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-08",
+        "version": "RoB 2概念；不重製正式工具"
+      }
+    ],
+    "lessons": [
+      "017-trial-map",
+      "018-review-types"
+    ]
+  },
+  {
+    "id": "ebh-10",
+    "file": "assets/figures/10-allocation-roles.svg",
+    "title": "分配前隱藏，分配後分角色看盲法",
+    "description": "時間線以收案及分配為界，分配隱藏防止選人，盲法檢查參與者、照護者與評估者是否知組別，兩者不能互換。",
+    "note": "時間線是概念；不可由報告寫隨機或雙盲就推定程序完全成功。",
+    "kind": "研究關係圖",
+    "group": "trials",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      },
+      {
+        "title": "Cochrane：隨機試驗結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-08",
+        "version": "RoB 2概念；不重製正式工具"
+      },
+      {
+        "title": "RoB 2：官方版本與適用設計",
+        "url": "https://www.riskofbias.info/welcome/rob-2-0-tool",
+        "version": "平行試驗2019-08-22；群集與交叉版2021-03-18修訂"
+      }
+    ],
+    "lessons": [
+      "019-randomization",
+      "020-concealment-blinding"
+    ]
+  },
+  {
+    "id": "ebh-11",
+    "file": "assets/figures/11-estimand-events.svg",
+    "title": "介入後事件與缺失結果要分開",
+    "description": "每人先有分配，之後可能繼續、停用或轉換；停用後結果仍可能被量到，問號才表示結果未知。",
+    "note": "分支是可能的路徑；停用是事件，資料缺失是未觀察到結果，概念不同。",
+    "kind": "研究關係圖",
+    "group": "trials",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "FDA：ICH E9(R1)估計目標與敏感度分析",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/e9r1-statistical-principles-clinical-trials-addendum-estimands-and-sensitivity-analysis-clinical",
+        "version": "FDA正式指引2021-05；與ICH原文件日期分開"
+      },
+      {
+        "title": "Cochrane：隨機試驗結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-08",
+        "version": "RoB 2概念；不重製正式工具"
+      }
+    ],
+    "lessons": [
+      "021-estimands",
+      "022-adherence"
+    ]
+  },
+  {
+    "id": "ebh-12",
+    "file": "assets/figures/12-attrition-design.svg",
+    "title": "失訪分母與特殊設計",
+    "description": "虛構試驗每組100人，觀察到80與90人，事件8與9，未知20與10；失訪者結果不能補零，特殊設計還需確認分析單位。",
+    "note": "矩形長度只表示這個虛構分母；沒有替未知者指定事件或非事件。",
+    "kind": "研究關係圖",
+    "group": "trials",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CONSORT／SPIRIT：正式發表版本",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "CONSORT 2025與SPIRIT 2025"
+      },
+      {
+        "title": "FDA：ICH E9(R1)估計目標與敏感度分析",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/e9r1-statistical-principles-clinical-trials-addendum-estimands-and-sensitivity-analysis-clinical",
+        "version": "FDA正式指引2021-05；與ICH原文件日期分開"
+      },
+      {
+        "title": "Cochrane：隨機試驗結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-08",
+        "version": "RoB 2概念；不重製正式工具"
+      },
+      {
+        "title": "RoB 2：官方版本與適用設計",
+        "url": "https://www.riskofbias.info/welcome/rob-2-0-tool",
+        "version": "平行試驗2019-08-22；群集與交叉版2021-03-18修訂"
+      }
+    ],
+    "lessons": [
+      "023-missing-outcomes",
+      "024-special-trials"
+    ]
+  },
+  {
+    "id": "ebh-13",
+    "file": "assets/figures/13-time-zero.svg",
+    "title": "時間零點：不能讓未來資格偷渡",
+    "description": "錯誤示例把起點到開始介入的存活時間歸給未來使用者，正確設計需對齊資格、策略及追蹤起點，而非任意刪除早期事件。",
+    "note": "黃色段為錯誤歸類的等待時間；不表示介入具有保護作用。",
+    "kind": "研究關係圖",
+    "group": "observational",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán等：時間零點與不死時間偏差",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27237061/",
+        "version": "方法原論文2016"
+      },
+      {
+        "title": "Hernán與Robins：明確定義目標試驗",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26994063/",
+        "version": "方法原論文2016，非新年度指南"
+      },
+      {
+        "title": "Ray：新使用者設計",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14585769/",
+        "version": "方法原論文2003"
+      }
+    ],
+    "lessons": [
+      "025-time-zero",
+      "026-active-comparator"
+    ]
+  },
+  {
+    "id": "ebh-14",
+    "file": "assets/figures/14-confounding-measurement.svg",
+    "title": "共同原因與量測是不同問題",
+    "description": "共同原因C同時影響介入A與結果Y，形成後門路徑；另一側同一狀態經不同量測方式變成不同紀錄，調整不會修復所有錯分。",
+    "note": "DAG箭頭是因果假設；右側是量測流程，非同一種統計偏差。",
+    "kind": "研究關係圖",
+    "group": "observational",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：非隨機研究結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25",
+        "version": "正式ROBINS-I 2016；V2另列草案"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If作者入口",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "書目2020；持續更新入口，非聲稱2026新版"
+      },
+      {
+        "title": "CDC：分析流行病學的研究設計",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html",
+        "version": "歷史教學頁，archive；非2026新指南"
+      }
+    ],
+    "lessons": [
+      "027-confounding",
+      "028-measurement-bias"
+    ]
+  },
+  {
+    "id": "ebh-15",
+    "file": "assets/figures/15-selection-adjustment.svg",
+    "title": "選中誰與加權後的比較",
+    "description": "原始母群經參與及追蹤流程只留下部分人；傾向分數權重改變分析中的代表程度，不能創造原本不存在的比較資料。",
+    "note": "點大小僅代表示意權重，不代表個人價值；選擇可能產生也可能沒有偏差。",
+    "kind": "研究關係圖",
+    "group": "observational",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：非隨機介入研究",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-24",
+        "version": "線上章節；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：非隨機研究結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25",
+        "version": "正式ROBINS-I 2016；V2另列草案"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If作者入口",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "書目2020；持續更新入口，非聲稱2026新版"
+      }
+    ],
+    "lessons": [
+      "029-selection-bias",
+      "030-adjustment"
+    ]
+  },
+  {
+    "id": "ebh-16",
+    "file": "assets/figures/16-counterfactual-dag.svg",
+    "title": "反事實與可檢查的因果假設",
+    "description": "同一個人在同一比較窗只能觀察某一策略下的結果；另一策略結果為反事實。DAG用方向明確的箭頭記錄假設而非資料自動生成真相。",
+    "note": "兩分支不是把一個人真的複製；反事實圖不提供個人的確定治療反應。",
+    "kind": "研究關係圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán與Robins：Causal Inference What If作者入口",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "書目2020；持續更新入口，非聲稱2026新版"
+      },
+      {
+        "title": "Hernán與Robins：明確定義目標試驗",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26994063/",
+        "version": "方法原論文2016，非新年度指南"
+      }
+    ],
+    "lessons": [
+      "031-potential-outcomes",
+      "032-dag"
+    ]
+  },
+  {
+    "id": "ebh-17",
+    "file": "assets/figures/17-collider-mediator.svg",
+    "title": "碰撞點與中介：調整會改問題",
+    "description": "左側碰撞點C同受A與Y影響，限制C可能打開本來關閉的路徑；右側中介M位於A到Y路徑，調整M不再是同一總效果問題。",
+    "note": "C與M的角色取決於指定DAG和估計目標，不是變數永遠固定的標籤。",
+    "kind": "研究關係圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán與Robins：Causal Inference What If作者入口",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "書目2020；持續更新入口，非聲稱2026新版"
+      },
+      {
+        "title": "Cochrane：非隨機研究結果的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-25",
+        "version": "正式ROBINS-I 2016；V2另列草案"
+      }
+    ],
+    "lessons": [
+      "033-collider",
+      "034-mediator"
+    ]
+  },
+  {
+    "id": "ebh-18",
+    "file": "assets/figures/18-causal-checks.svg",
+    "title": "時間順序、反向因果與多種檢查",
+    "description": "上方疾病早期變化可能先改變行為，再被記成暴露與後來診斷相關；下方不同敏感度及對照問題檢查假設，不會自動把觀察變隨機。",
+    "note": "方向為特定假說；不同檢查提供相互補充的資訊，不是投票決定因果。",
+    "kind": "研究關係圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán與Robins：Causal Inference What If作者入口",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "書目2020；持續更新入口，非聲稱2026新版"
+      },
+      {
+        "title": "Hernán等：時間零點與不死時間偏差",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27237061/",
+        "version": "方法原論文2016"
+      },
+      {
+        "title": "Hernán與Robins：明確定義目標試驗",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26994063/",
+        "version": "方法原論文2016，非新年度指南"
+      }
+    ],
+    "lessons": [
+      "035-reverse-causation",
+      "036-triangulation"
+    ]
+  },
+  {
+    "id": "ebh-19",
+    "file": "assets/figures/19-risk-table.svg",
+    "title": "從共同人數重建二乘二表",
+    "description": "表中兩組各1000人，介入30人事件970人未事件，對照40人事件960人未事件；所有人都完整追蹤一年，事件是不理想結果。",
+    "note": "四格是人數，橫列各1000人；風險與率不可互換，失訪不算無事件。",
+    "kind": "共同分母表",
+    "group": "binary",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC流行病學原理：疾病頻率",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+        "version": "封存教材，第三課第2節；非2026新版"
+      },
+      {
+        "title": "CDC流行病學原理：關聯量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html",
+        "version": "封存教材，第三課第5節；非2026新版"
+      },
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      }
+    ],
+    "lessons": [
+      "037-risk-rate",
+      "038-two-by-two"
+    ]
+  },
+  {
+    "id": "ebh-20",
+    "file": "assets/figures/20-relative-absolute.svg",
+    "title": "相對與絕對：兩種不同分母",
+    "description": "共同零點與相同比例軸的風險長條顯示介入3%對照4%，相對風險0.75、絕對差1個百分點；NNT100僅為點估計。",
+    "note": "長條從0起算，兩組分母相同；OR另按事件勝算計算，不能把相對25%讀成少25個百分點。",
+    "kind": "風險長條圖",
+    "group": "binary",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      },
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      },
+      {
+        "title": "CDC流行病學原理：關聯量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html",
+        "version": "封存教材，第三課第5節；非2026新版"
+      }
+    ],
+    "lessons": [
+      "039-rr-or",
+      "040-rd-nnt"
+    ]
+  },
+  {
+    "id": "ebh-21",
+    "file": "assets/figures/21-baseline-bars.svg",
+    "title": "基線風險與效果的時間框架",
+    "description": "四條共同人數及共同時間的長條，高基線對照400介入300、低基線對照40介入30，皆每10000人一年內事件數；RR可外推是教學假設。",
+    "note": "橫軸為每10000人的一年事件數；高低基線是虛構族群，不是個人分類或建議。",
+    "kind": "共同分母比較圖",
+    "group": "binary",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      },
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      },
+      {
+        "title": "CDC流行病學原理：疾病頻率",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+        "version": "封存教材，第三課第2節；非2026新版"
+      }
+    ],
+    "lessons": [
+      "041-baseline-risk",
+      "042-risk-context"
+    ]
+  },
+  {
+    "id": "ebh-22",
+    "file": "assets/figures/22-scale-distribution.svg",
+    "title": "量尺、平均與分散各說一件事",
+    "description": "同一功能量尺下，A組48、50、52與B組20、50、80皆平均50，點的位置保留個人分散；不同分析目標不能只看平均判斷。",
+    "note": "點為虛構個人值，非研究效益；量尺方向和界值需依具體來源，不能用SD當SE。",
+    "kind": "分布點圖",
+    "group": "outcomes",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      },
+      {
+        "title": "NIST：平均數信賴界限",
+        "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "version": "工程統計基礎教材；查核2026-11-16"
+      },
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      }
+    ],
+    "lessons": [
+      "043-scales",
+      "044-mean-difference"
+    ]
+  },
+  {
+    "id": "ebh-23",
+    "file": "assets/figures/23-smd-survival.svg",
+    "title": "標準化分母與存活的在險集合",
+    "description": "左半顯示相同平均差2分除以SD10或5得到0.2或0.4；右半五人追蹤在第2月事件、第3月截尾、第5月再事件，階梯降到約0.533。",
+    "note": "左右兩半為不同結果尺度，不能合併；左柱僅表標準化差，右刻痕為截尾而非事件。",
+    "kind": "標準化與存活雙圖",
+    "group": "outcomes",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      },
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      }
+    ],
+    "lessons": [
+      "045-standardized-effects",
+      "046-survival"
+    ]
+  },
+  {
+    "id": "ebh-24",
+    "file": "assets/figures/24-hazard-calibration.svg",
+    "title": "時間效果與預測不能互相代替",
+    "description": "左側任意時間曲線提醒早晚效果可變，單一HR需模型假設；右側校準示意以觀察對預測機率，綠線偏離理想參考線，不代表個人診斷。",
+    "note": "左圖無實測刻度，不估治療效益；右圖是百分比軸的虛構示意，虛線為預測與觀察機率相等的參考。",
+    "kind": "時間與校準雙圖",
+    "group": "outcomes",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第6章：效果量與估計",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-06",
+        "version": "線上章節；查核2026-11-16，章節日期與全書更新分開"
+      },
+      {
+        "title": "TRIPOD+AI原始聲明",
+        "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+        "version": "2024原始報告規範；主頁403，已查核官方索引摘要，不據此增加細項規定"
+      },
+      {
+        "title": "原作者方法論：預測模型的外部驗證",
+        "url": "https://www.bmj.com/content/384/bmj-2023-074820",
+        "version": "2024方法論；官方索引可讀，僅引用校準、區辨與外部驗證的公開摘要"
+      }
+    ],
+    "lessons": [
+      "047-hazard-ratio",
+      "048-prediction"
+    ]
+  },
+  {
+    "id": "ebh-25",
+    "file": "assets/figures/25-confidence-intervals.svg",
+    "title": "點估計、區間與無差異線",
+    "description": "三個虛構差量估計及95%區間，A負2且負4至0、B負2且負2.5至負1.5、C零且負3至3；無差異值為0，展示精確度與方向。",
+    "note": "橫軸是任意差量，線為虛構95%區間，圓點為估計；比量無效值應為1而非本圖0。",
+    "kind": "效果區間圖",
+    "group": "uncertainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NIST：檢定與信賴區間",
+        "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc15.htm",
+        "version": "工程統計基礎教材；查核2026-11-16"
+      },
+      {
+        "title": "NIST：平均數信賴界限",
+        "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "version": "工程統計基礎教材；查核2026-11-16"
+      },
+      {
+        "title": "ASA：P值與統計顯著性聲明",
+        "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "version": "2016-03-07正式聲明；非2026聲明"
+      },
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      }
+    ],
+    "lessons": [
+      "049-confidence-intervals",
+      "050-p-values"
+    ]
+  },
+  {
+    "id": "ebh-26",
+    "file": "assets/figures/26-precision-multiplicity.svg",
+    "title": "有效資訊與多次比較各有條件",
+    "description": "左圖在獨立同變異假設下比較100與400樣本的相對區間寬；右圖20個分析機會中高亮一個被選結果，並非觀察到的真假研究。",
+    "note": "左僅為平方根規律示意；右亮點無診斷意義，至少一次誤判的64%算例另需獨立且所有虛無為真。",
+    "kind": "精確度與分析機會圖",
+    "group": "uncertainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NIST：平均數信賴界限",
+        "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "version": "工程統計基礎教材；查核2026-11-16"
+      },
+      {
+        "title": "FDA：臨床試驗的多重終點",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/multiple-endpoints-clinical-trials",
+        "version": "2022-10正式指引；非台灣法規"
+      },
+      {
+        "title": "ASA：P值與統計顯著性聲明",
+        "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "version": "2016-03-07正式聲明；非2026聲明"
+      }
+    ],
+    "lessons": [
+      "051-power-precision",
+      "052-multiple-testing"
+    ]
+  },
+  {
+    "id": "ebh-27",
+    "file": "assets/figures/27-subgroup-equivalence.svg",
+    "title": "亞組差異與等效不是星號遊戲",
+    "description": "左半相同RR點估計但區間寬度不同，不代表有交互作用；右半差量區間跨零卻不一定落在事前等效範圍，所有界值僅為任意教學尺度。",
+    "note": "兩半量數不同，不能合併；右綠帶是虛構事前界值，並非臨床安全或療效門檻。",
+    "kind": "亞組與界值雙圖",
+    "group": "uncertainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "FDA：臨床試驗的多重終點",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/multiple-endpoints-clinical-trials",
+        "version": "2022-10正式指引；非台灣法規"
+      },
+      {
+        "title": "FDA：非劣性臨床試驗",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/non-inferiority-clinical-trials",
+        "version": "2016-11正式指引；用於方法概念，不設定臨床界值"
+      },
+      {
+        "title": "NIST：檢定與信賴區間",
+        "url": "https://itl.nist.gov/div898/handbook/prc/section1/prc15.htm",
+        "version": "工程統計基礎教材；查核2026-11-16"
+      },
+      {
+        "title": "ASA：P值與統計顯著性聲明",
+        "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+        "version": "2016-03-07正式聲明；非2026聲明"
+      }
+    ],
+    "lessons": [
+      "053-subgroups",
+      "054-equivalence"
+    ]
+  },
+  {
+    "id": "ebh-28",
+    "file": "assets/figures/28-diagnostic-table.svg",
+    "title": "診斷四格：先認參考狀況",
+    "description": "虛構10000人皆完成參考判定，100人有目標狀況、9900人沒有；指標陽性包含90位真陽和495位假陽，陰性包含10位假陰和9405位真陰。",
+    "note": "列是指標檢測結果，欄是參考狀況；假設無未確定或缺失，真實研究仍需查納入與驗證流程。",
+    "kind": "診斷二乘二表",
+    "group": "diagnosis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "FDA：診斷檢測結果的統計報告",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
+        "version": "2007-03-13正式指引；查核日不代表新版"
+      },
+      {
+        "title": "STARD診斷準確度報告規範",
+        "url": "https://equator-network.org/reporting-guidelines/stard/",
+        "version": "STARD 2015；AI延伸另列，報告規範不是品質工具"
+      }
+    ],
+    "lessons": [
+      "055-diagnostic-design",
+      "056-sensitivity-specificity"
+    ]
+  },
+  {
+    "id": "ebh-29",
+    "file": "assets/figures/29-natural-frequencies.svg",
+    "title": "自然頻率：沿分支找正確分母",
+    "description": "10000人先依1%目標狀況比例分成100與9900，再以90%敏感度及95%特異度拆四格；把90真陽與495假陽合為585陽性後計算PPV15.38%。",
+    "note": "箭頭拆的是同一批人的條件人數；這是期望人數算例，性能與前機率可外推僅為假設。",
+    "kind": "自然頻率樹",
+    "group": "diagnosis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "FDA：診斷檢測結果的統計報告",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
+        "version": "2007-03-13正式指引；查核日不代表新版"
+      },
+      {
+        "title": "UK NSC：篩檢原則",
+        "url": "https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening",
+        "version": "手冊更新2025-07-11；英國計畫原則，不作台灣適用建議"
+      },
+      {
+        "title": "STARD診斷準確度報告規範",
+        "url": "https://equator-network.org/reporting-guidelines/stard/",
+        "version": "STARD 2015；AI延伸另列，報告規範不是品質工具"
+      }
+    ],
+    "lessons": [
+      "057-predictive-values",
+      "058-likelihood-ratios"
+    ]
+  },
+  {
+    "id": "ebh-30",
+    "file": "assets/figures/30-threshold-verification.svg",
+    "title": "閾值取捨與沒有完成的驗證",
+    "description": "左側ROC以假陽性比例對敏感度，A敏感90%特異95%、B98%和80%，曲線僅連接示意；右側900位指標陰性中100參考未知，不可直接算真陰。",
+    "note": "左為虛構點與任意示意連線，不能用線形估AUC；右未知不是陰性，兩半不來自同一個研究。",
+    "kind": "ROC與驗證雙圖",
+    "group": "diagnosis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "FDA：診斷檢測結果的統計報告",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
+        "version": "2007-03-13正式指引；查核日不代表新版"
+      },
+      {
+        "title": "STARD診斷準確度報告規範",
+        "url": "https://equator-network.org/reporting-guidelines/stard/",
+        "version": "STARD 2015；AI延伸另列，報告規範不是品質工具"
+      }
+    ],
+    "lessons": [
+      "059-thresholds",
+      "060-diagnostic-bias"
+    ]
+  },
+  {
+    "id": "ebh-31",
+    "file": "assets/figures/31-lead-time.svg",
+    "title": "共同時間線：更早知道不自動延壽",
+    "description": "兩條原創時間線共同從第0年起算，症狀發現於第6年、篩檢發現於第2年，皆第9年死亡；診斷後存活從3變7年但生命長度未改。",
+    "note": "橫軸為虛構年數，兩條黃點對齊同一死亡時點；這是提前診斷偏差示例，不否定所有篩檢效益。",
+    "kind": "共同起點時間線",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NCI：篩檢統計的意義",
+        "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+        "version": "基礎科普頁；查核2026-11-16；圖與案例由本課原創"
+      },
+      {
+        "title": "NCI：癌症篩檢概論PDQ",
+        "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+        "version": "持續維護的專業科普頁；查核2026-11-16，不使用個別篩檢年齡建議"
+      },
+      {
+        "title": "UK NSC：篩檢原則",
+        "url": "https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening",
+        "version": "手冊更新2025-07-11；英國計畫原則，不作台灣適用建議"
+      }
+    ],
+    "lessons": [
+      "061-screening-program",
+      "062-lead-time"
+    ]
+  },
+  {
+    "id": "ebh-32",
+    "file": "assets/figures/32-length-overdiagnosis.svg",
+    "title": "被篩中的窗口與被命名的狀況",
+    "description": "上半同一組定期篩檢時點穿過長短可偵測窗口，長窗口較易被碰到；下半區分參考標準下無狀況的假陽與有狀況但未篩檢終生不致傷害的過度診斷。",
+    "note": "窗口長度無實測比例，紫線只是時間點；過度診斷非當下即可確知的個人標籤。",
+    "kind": "窗口時間與分類圖",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NCI：癌症篩檢概論PDQ",
+        "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+        "version": "持續維護的專業科普頁；查核2026-11-16，不使用個別篩檢年齡建議"
+      },
+      {
+        "title": "NCI：篩檢統計的意義",
+        "url": "https://www.cancer.gov/about-cancer/screening/research/what-screening-statistics-mean",
+        "version": "基礎科普頁；查核2026-11-16；圖與案例由本課原創"
+      },
+      {
+        "title": "UK NSC：商業健康篩檢考量",
+        "url": "https://www.gov.uk/government/publications/uk-nsc-commercial-screening-test-considerations/nhs-and-commercial-health-screening-tests-important-considerations",
+        "version": "2023-11-21；英國情境，作資訊判讀"
+      }
+    ],
+    "lessons": [
+      "063-length-bias",
+      "064-overdiagnosis"
+    ]
+  },
+  {
+    "id": "ebh-33",
+    "file": "assets/figures/33-screening-results.svg",
+    "title": "把整個計畫放回共同分母",
+    "description": "虛構同期間各10000人比較，目標疾病死亡對照50邀請40，其他死亡950和952，總死亡1000和992；點差與未知區間分開，還需後續負擔資料。",
+    "note": "表中死亡人數相容於加總，非真實計畫成效；沒有區間和方法資訊，不證明確定效益或傷害。",
+    "kind": "完整結果資訊表",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NCI：癌症篩檢概論PDQ",
+        "url": "https://www.cancer.gov/about-cancer/screening/hp-screening-overview-pdq",
+        "version": "持續維護的專業科普頁；查核2026-11-16，不使用個別篩檢年齡建議"
+      },
+      {
+        "title": "UK NSC：篩檢原則",
+        "url": "https://www.gov.uk/guidance/principles-of-population-screening/principles-of-screening",
+        "version": "手冊更新2025-07-11；英國計畫原則，不作台灣適用建議"
+      },
+      {
+        "title": "UK NSC：商業健康篩檢考量",
+        "url": "https://www.gov.uk/government/publications/uk-nsc-commercial-screening-test-considerations/nhs-and-commercial-health-screening-tests-important-considerations",
+        "version": "2023-11-21；英國情境，作資訊判讀"
+      },
+      {
+        "title": "Cochrane第15章：結果解釋",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "線上章節；查核2026-11-16"
+      }
+    ],
+    "lessons": [
+      "065-screening-endpoints",
+      "066-screening-decision"
+    ]
+  },
+  {
+    "id": "ebh-34",
+    "file": "assets/figures/34-review-plan-search.svg",
+    "title": "回顧計畫與多來源搜尋",
+    "description": "左側先寫問題、納入與追蹤規則並留下變更日期，右側原創搜尋示意連到文獻資料庫、研究登錄與其他報告引用；不是只依免費全文決定納入。",
+    "note": "箭頭表示搜尋工作路徑而非因果；圖只列來源類型，未宣稱三類已涵蓋所有回顧。",
+    "kind": "回顧工作路徑圖",
+    "group": "reviews",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第4章：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "章節更新2024-09；全書更新紀錄另列"
+      },
+      {
+        "title": "Cochrane第5章：資料蒐集",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05",
+        "version": "線上章節；查核2026-11-16"
+      },
+      {
+        "title": "PRISMA 2020報告規範",
+        "url": "https://www.prisma-statement.org/prisma-2020",
+        "version": "PRISMA 2020；未複製官方流程圖或宣稱為品質評分"
+      }
+    ],
+    "lessons": [
+      "067-review-question",
+      "068-review-search"
+    ]
+  },
+  {
+    "id": "ebh-35",
+    "file": "assets/figures/35-records-reports-studies.svg",
+    "title": "紀錄、報告、研究：逐層核對",
+    "description": "虛構200紀錄去重50後150初篩，排130後欲取20報告，2未取得，18評估排10後留8份，實際來自3研究；箭頭顯示資訊追溯不是獨立樣本倍增。",
+    "note": "數字可加總，流程為本課原創簡圖，非官方PRISMA模板；排除理由與擷取決策仍需原始紀錄。",
+    "kind": "篩選與研究連結圖",
+    "group": "reviews",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第4章：搜尋與研究篩選",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+        "version": "章節更新2024-09；全書更新紀錄另列"
+      },
+      {
+        "title": "Cochrane第5章：資料蒐集",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05",
+        "version": "線上章節；查核2026-11-16"
+      },
+      {
+        "title": "PRISMA 2020報告規範",
+        "url": "https://www.prisma-statement.org/prisma-2020",
+        "version": "PRISMA 2020；未複製官方流程圖或宣稱為品質評分"
+      }
+    ],
+    "lessons": [
+      "069-study-selection",
+      "070-extraction"
+    ]
+  },
+  {
+    "id": "ebh-36",
+    "file": "assets/figures/36-bias-missing-evidence.svg",
+    "title": "結果層級偏差與缺失證據",
+    "description": "左半同一試驗的死亡與自陳功能需分別評估偏差；右半虛構漏斗點和待查問號提醒不對稱可有多種原因，不能由留白推定被隱藏結果。",
+    "note": "左右評估層次不同；右圖只示意精確度高低，無數據刻度，不據此檢定或校正發表偏差。",
+    "kind": "結果偏差與證據可得圖",
+    "group": "reviews",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane第8章：隨機試驗的偏差風險",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-08",
+        "version": "使用RoB 2的結果層級觀點；查核2026-11-16"
+      },
+      {
+        "title": "Cochrane第13章：缺失證據造成的偏差",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-13",
+        "version": "線上章節與ROB-ME概念；查核2026-11-16"
+      },
+      {
+        "title": "RoB 2官方版本與適用設計",
+        "url": "https://www.riskofbias.info/welcome/rob-2-0-tool",
+        "version": "平行個別隨機版2019-08-22；群集與交叉修訂版2021-03-18"
+      },
+      {
+        "title": "ROBINS-I V2官方草案狀態",
+        "url": "https://www.riskofbias.info/welcome/robins-i-v2",
+        "version": "2025-11-20仍為草案；正式ROBINS-I 2016另行辨識"
+      }
+    ],
+    "lessons": [
+      "071-risk-of-bias",
+      "072-missing-evidence"
+    ]
+  },
+  {
+    "id": "ebh-37",
+    "file": "assets/figures/37-forest.svg",
+    "title": "森林圖：點、區間與權重",
+    "description": "三個虛構研究的RR與log標準誤轉成95%區間；方塊面積依反變異數，菱形表示共同效果近似區間，橫軸採對數刻度。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "森林圖",
+    "group": "synthesis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：統合分析",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+        "version": "線上現行章；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "073-forest-plots",
+      "074-pooling"
+    ]
+  },
+  {
+    "id": "ebh-38",
+    "file": "assets/figures/38-variation.svg",
+    "title": "研究內誤差與研究間差異",
+    "description": "上層三條線為不同研究的示例區間，下層長帶提醒平均效果與新情境效果不同；長度為概念示意，並非估計出的預測區間。",
+    "note": "概念圖，橫軸任意效果尺度；不是實測數值或可讀取的區間。",
+    "kind": "異質性示意",
+    "group": "synthesis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：統合分析",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+        "version": "線上現行章；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "075-random-effects",
+      "076-heterogeneity"
+    ]
+  },
+  {
+    "id": "ebh-39",
+    "file": "assets/figures/39-evidence-network.svg",
+    "title": "直接、間接與持續更新的證據",
+    "description": "三個介入節點有直接比較連線；虛線是待檢查的間接資訊，不表示因果DAG。下方時間點表示搜尋更新，而非看到新結果才決定是否納入。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "證據網絡與時間線",
+    "group": "synthesis",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：網絡統合分析",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-11",
+        "version": "章引用6.5／2024；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：活系統性回顧",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-21",
+        "version": "本章引用6.5.1／2026"
+      },
+      {
+        "title": "Cochrane：個人參與者資料",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-26",
+        "version": "線上現行章；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "077-advanced-synthesis",
+      "078-synthesis-check"
+    ]
+  },
+  {
+    "id": "ebh-40",
+    "file": "assets/figures/40-certainty.svg",
+    "title": "同一比較，不同結果的確定性",
+    "description": "每一列是獨立結果及其證據體，問號表示仍需理由與資料。圖未替任何結果分級，也沒有把五領域加成一個數字。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "結果層級證據表",
+    "group": "certainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：結果摘要與證據確定性",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+        "version": "章修訂2023，引用6.5／2024；另有6.5.1更正紀錄"
+      },
+      {
+        "title": "GRADEpro：GRADE Book過渡說明",
+        "url": "https://help.gradepro.org/support/solutions/articles/204000075707",
+        "version": "官方Book逐步發布；查核2026-11-16，不宣稱已全數取代舊手冊"
+      }
+    ],
+    "lessons": [
+      "079-grade",
+      "080-downgrading"
+    ]
+  },
+  {
+    "id": "ebh-41",
+    "file": "assets/figures/41-summary.svg",
+    "title": "相對效果要連回基線風險",
+    "description": "同一虛構相對風險0.75分別作用在每千人40與每千人4的基線情境，得到10與1的絕對差；需假設相對效果可適用且時間相同。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "共同尺度風險圖",
+    "group": "certainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：結果摘要與證據確定性",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+        "version": "章修訂2023，引用6.5／2024；另有6.5.1更正紀錄"
+      },
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "081-upgrading",
+      "082-summary-findings"
+    ]
+  },
+  {
+    "id": "ebh-42",
+    "file": "assets/figures/42-decision-framework.svg",
+    "title": "確定性、可行性與人的價值",
+    "description": "中央的決策由證據、負擔、價值與資源共同構成；節點距離和箭頭沒有量尺，不是可自動給建議強度的演算法。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "證據到決策圖",
+    "group": "certainty",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：結果摘要與證據確定性",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+        "version": "章修訂2023，引用6.5／2024；另有6.5.1更正紀錄"
+      },
+      {
+        "title": "AGREE Enterprise：AGREE II",
+        "url": "https://www.agreetrust.org/resource-centre/agree-ii/",
+        "version": "官方現行入口；不重製原工具題庫"
+      },
+      {
+        "title": "OHRI：決策輔助工具標準",
+        "url": "https://decisionaid.ohri.ca/IPDAS/using.html",
+        "version": "IPDAS 5.0／BMJ 2026；非舊域名"
+      }
+    ],
+    "lessons": [
+      "083-evidence-to-decision",
+      "084-guideline-quality"
+    ]
+  },
+  {
+    "id": "ebh-43",
+    "file": "assets/figures/43-reporting-map.svg",
+    "title": "用對報告規範，另做可信度判斷",
+    "description": "五份文件依研究用途排列：試驗計畫、試驗結果、觀察、診斷與回顧。每一份只提示可追查資訊，沒有計分、背書或重製原工具清單。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "研究文件圖",
+    "group": "transparency",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "SPIRIT–CONSORT：正式聲明",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "SPIRIT 2025／CONSORT 2025"
+      },
+      {
+        "title": "STROBE：用途及限制",
+        "url": "https://www.strobe-statement.org/",
+        "version": "報告規範；不是研究品質評分工具"
+      },
+      {
+        "title": "EQUATOR：STARD 2015",
+        "url": "https://equator-network.org/reporting-guidelines/stard/",
+        "version": "STARD 2015；2026-11-16查核"
+      },
+      {
+        "title": "PRISMA：官方聲明與擴充",
+        "url": "https://www.prisma-statement.org/",
+        "version": "PRISMA 2020；擴充另依用途核對"
+      }
+    ],
+    "lessons": [
+      "085-reporting",
+      "086-other-reporting"
+    ]
+  },
+  {
+    "id": "ebh-44",
+    "file": "assets/figures/44-registration.svg",
+    "title": "沿時間比對預先計畫與實際結果",
+    "description": "登錄、收案、資料鎖定及發表以先後排列；上方計畫線與下方結果線分開，差異需說明理由與時間，不把任何修訂自動判成不當行為。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "研究登錄時間線",
+    "group": "transparency",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "ICMJE：臨床試驗登錄",
+        "url": "https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/clinical-trial-registration.html",
+        "version": "現行政策；2026-11-16查核"
+      },
+      {
+        "title": "ICMJE：關係、活動與利益衝突",
+        "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/author-responsibilities--conflicts-of-interest.html",
+        "version": "現行建議；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "087-registration-switching",
+      "088-conflicts"
+    ]
+  },
+  {
+    "id": "ebh-45",
+    "file": "assets/figures/45-version-trail.svg",
+    "title": "資料到報告：保持可追查的版本鏈",
+    "description": "三個文件節點對應原始狀態、可重現處理及報告，更正以回連表示；鎖頭提醒分享需經授權，雜湊一致只證明檔案一致。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "資料與版本圖",
+    "group": "transparency",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "ICMJE：更正與版本控制",
+        "url": "https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html",
+        "version": "現行建議；2026-11-16查核"
+      },
+      {
+        "title": "ICMJE：關係、活動與利益衝突",
+        "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/author-responsibilities--conflicts-of-interest.html",
+        "version": "現行建議；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "089-open-research",
+      "090-corrections"
+    ]
+  },
+  {
+    "id": "ebh-46",
+    "file": "assets/figures/46-applicability.svg",
+    "title": "平均效果如何到達不同情境",
+    "description": "左側研究族群連到右側兩個不同條件的人群；線條表示需評估的外推，不是已測得的個人效果；基線、照護與追蹤時間須對齊。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "研究外推圖",
+    "group": "application",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：不良效果",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-19",
+        "version": "線上現行章；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "091-applicability",
+      "092-benefit-harm"
+    ]
+  },
+  {
+    "id": "ebh-47",
+    "file": "assets/figures/47-balanced-frequency.svg",
+    "title": "同一千人的效益與傷害要分開說",
+    "description": "虛構每千人比較：對照疾病事件40、介入30，嚴重傷害對照2、介入4；兩種結果分開呈現，不能把人數相減作淨效益分數。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "自然頻率比較",
+    "group": "application",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：不良效果",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-19",
+        "version": "線上現行章；2026-11-16查核"
+      },
+      {
+        "title": "OHRI：決策輔助工具標準",
+        "url": "https://decisionaid.ohri.ca/IPDAS/using.html",
+        "version": "IPDAS 5.0／BMJ 2026；非舊域名"
+      },
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "093-shared-decisions",
+      "094-risk-communication"
+    ]
+  },
+  {
+    "id": "ebh-48",
+    "file": "assets/figures/48-n-of-one.svg",
+    "title": "一個人的比較，也要有設計與紀錄",
+    "description": "六個觀察期以A與B交替示意，問號為缺漏；色塊不是任何藥物建議，時間、順序、殘留與安全需先規劃，日記不自動成試驗。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "個人比較時間線",
+    "group": "application",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "英國OHID：N-of-1比較研究",
+        "url": "https://www.gov.uk/guidance/n-of-1-study-comparative-studies",
+        "version": "2020指引，引用AHRQ 2014；非2026新版"
+      },
+      {
+        "title": "OHRI：決策輔助工具標準",
+        "url": "https://decisionaid.ohri.ca/IPDAS/using.html",
+        "version": "IPDAS 5.0／BMJ 2026；非舊域名"
+      }
+    ],
+    "lessons": [
+      "095-n-of-one",
+      "096-decision-record"
+    ]
+  },
+  {
+    "id": "ebh-49",
+    "file": "assets/figures/49-claims-chain.svg",
+    "title": "機制、人體結果與新聞是不同層次",
+    "description": "左側分子符號、中央人體樣本與右側新聞文件由箭頭相連；每一箭頭都是待核對的證據步驟，不能由機制直接跳到有效或安全。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "健康宣稱證據鏈",
+    "group": "claims",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NIH NCCIH：理解研究",
+        "url": "https://www.nccih.nih.gov/health/know-science",
+        "version": "科普方法入口；2026-11-16查核"
+      },
+      {
+        "title": "NIH ODS：保健品研究與宣稱",
+        "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/",
+        "version": "美國一般資訊；不套用為台灣法規"
+      }
+    ],
+    "lessons": [
+      "097-news",
+      "098-supplement-claims"
+    ]
+  },
+  {
+    "id": "ebh-50",
+    "file": "assets/figures/50-axes-and-verification.svg",
+    "title": "同一差異與不同圖軸，讀法可能被改變",
+    "description": "兩個長條圖均為虛構30與40，但左側從0、右側從25開始；兩種畫法須清楚揭露刻度。下方對照來源與AI摘要，摘要不代替原研究。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "圖軸與資訊查核",
+    "group": "claims",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NIH NCCIH：理解研究",
+        "url": "https://www.nccih.nih.gov/health/know-science",
+        "version": "科普方法入口；2026-11-16查核"
+      },
+      {
+        "title": "ICMJE：作者使用AI",
+        "url": "https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html",
+        "version": "現行建議；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "099-relative-framing",
+      "100-ai-research"
+    ]
+  },
+  {
+    "id": "ebh-51",
+    "file": "assets/figures/51-validation.svg",
+    "title": "模型分數、外部驗證與臨床影響分開",
+    "description": "左側示例預測曲線與右側不同場域代表驗證；最下方結果框另問使用模型後的效益與傷害。曲線任意，不是特定醫療產品性能。",
+    "note": "左圖為任意預測與觀察關係示意，沒有實測刻度。",
+    "kind": "模型驗證示意",
+    "group": "claims",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "TRIPOD：預測模型與LLM報告",
+        "url": "https://www.tripod-statement.org/",
+        "version": "TRIPOD+AI 2024及TRIPOD-LLM官方入口"
+      },
+      {
+        "title": "PROBAST+AI原始方法文",
+        "url": "https://doi.org/10.1136/bmj-2024-082505",
+        "version": "BMJ 2025；出版平台403，索引確認正式文與用途，不重製工具"
+      },
+      {
+        "title": "FDA：真實世界資料與證據",
+        "url": "https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence",
+        "version": "現行定義及正式文件入口；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "101-medical-ai",
+      "102-real-world-data"
+    ]
+  },
+  {
+    "id": "ebh-52",
+    "file": "assets/figures/52-case-study.svg",
+    "title": "專題：先核分母，再檢查設計與因果",
+    "description": "左側是虛構隨機比較30／1000對40／1000；右側觀察研究保留未量測混雜與時間零點的問號。兩邊資料不能混成同一因果結論。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "研究案例比較圖",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      },
+      {
+        "title": "SPIRIT–CONSORT：正式聲明",
+        "url": "https://www.consort-spirit.org/published-statements",
+        "version": "SPIRIT 2025／CONSORT 2025"
+      },
+      {
+        "title": "FDA：真實世界資料與證據",
+        "url": "https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence",
+        "version": "現行定義及正式文件入口；2026-11-16查核"
+      }
+    ],
+    "lessons": [
+      "103-trial-case",
+      "104-observational-case"
+    ]
+  },
+  {
+    "id": "ebh-53",
+    "file": "assets/figures/53-diagnosis-synthesis.svg",
+    "title": "專題：不要把兩種分母混成結論",
+    "description": "左側自然頻率示意為虛構一萬人，陽性90真陽與495假陽；右側森林圖提醒獨立結果、異質性及證據確定性需另評估。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "診斷與合併判讀圖",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "EQUATOR：STARD 2015",
+        "url": "https://equator-network.org/reporting-guidelines/stard/",
+        "version": "STARD 2015；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：統合分析",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+        "version": "線上現行章；2026-11-16查核"
+      },
+      {
+        "title": "Cochrane：結果摘要與證據確定性",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+        "version": "章修訂2023，引用6.5／2024；另有6.5.1更正紀錄"
+      }
+    ],
+    "lessons": [
+      "105-diagnostic-case",
+      "106-review-case"
+    ]
+  },
+  {
+    "id": "ebh-54",
+    "file": "assets/figures/54-brief.svg",
+    "title": "交付一頁摘要：主張與根據逐項相連",
+    "description": "左側來源文件連到中央提取資料與右側摘要；問號保留未知及更新觸發條件。對照線表示證據追溯，不能用漂亮版面補齊未知。",
+    "note": "原創教學示意；非真實研究或醫療建議。",
+    "kind": "證據摘要追溯圖",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Cochrane：解讀結果與結論",
+        "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+        "version": "章修訂2023，引用6.5／2024；2026-11-16查核"
+      },
+      {
+        "title": "ICMJE：更正與版本控制",
+        "url": "https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html",
+        "version": "現行建議；2026-11-16查核"
+      },
+      {
+        "title": "OHRI：決策輔助工具標準",
+        "url": "https://decisionaid.ohri.ca/IPDAS/using.html",
+        "version": "IPDAS 5.0／BMJ 2026；非舊域名"
+      }
+    ],
+    "lessons": [
+      "107-evidence-brief",
+      "108-review-references"
+    ]
+  }
+]

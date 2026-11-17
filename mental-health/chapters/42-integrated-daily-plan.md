@@ -2,6 +2,17 @@
 
 把睡眠、活動、餐食和照護放在同一張時間表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-routine-ledger.svg" target="_blank" rel="noopener" aria-label="放大：一天的安排：已知、需要和未知"><img src="assets/figures/21-routine-ledger.svg" alt="三段安排代表虛構工作、照顧與休息機會，問號段未知；不把排程等同生理容量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜一天的安排：已知、需要和未知</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在同一張安排圖中檢查目標是否互相擠壓，保留未知任務與可協調位置；不要把完整排程誤當個人能量保證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle">NHLBI：睡眠與清醒週期</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 目標可能彼此競爭
 
 為了早起活動而長期減少睡眠、為了打卡而忽略疼痛，可能偏離原本需要。先看整天與整週的負擔，而不是各項都追最大值。

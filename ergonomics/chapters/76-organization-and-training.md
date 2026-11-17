@@ -2,6 +2,17 @@
 
 把工作節奏和資源視為設計的一部分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/38-before-after.svg" target="_blank" rel="noopener" aria-label="放大：改善前後：先看條件是不是同一個"><img src="assets/figures/38-before-after.svg" alt="兩個外力作用位置示意，改距離可能改模型結果，但不是傷害風險等比例下降；其他條件需列明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 38｜改善前後：先看條件是不是同一個</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把輪調、維護與訓練放進比較條件，說明不同工位若需求相同未必增加恢復；方法分類恢復不是所有工作休息處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 工作不是孤立姿勢
 
 相同設備在不同產量、人力、維修、休息可用性及交班下，可能有不同暴露。工作者即使知道要調整，也可能因目標或工具限制做不到。問題記錄應包含這些條件，避免只留下個人責備。

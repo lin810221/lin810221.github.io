@@ -2,6 +2,17 @@
 
 把姿勢選擇、任務安排與一般活動分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-variation-space.svg" target="_blank" rel="noopener" aria-label="放大：坐、站、走動與可行空間"><img src="assets/figures/21-variation-space.svg" alt="三個不同姿勢角色代表可選工作變化，不規定固定比例，也不因換站立就宣告所有問題已解決。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜坐、站、走動與可行空間</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較三種狀態的任務需求與變化機會，不把同一固定坐姿換成同一固定站姿就當完成；圖沒有所有人的通用坐站比例。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 坐站桌提供選項
 
 能調高不代表已調合適，站立也不是人人都該長時間維持。每種配置仍要看視覺、輸入、足部、地面、任務與功能，避免把久坐問題改成整天僵站。

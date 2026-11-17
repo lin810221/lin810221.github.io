@@ -2,6 +2,17 @@
 
 從接觸路徑找問題，避免只盯最後一次加熱。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-kitchen-separation.svg" target="_blank" rel="noopener" aria-label="放大：廚房動線與交叉污染"><img src="assets/figures/43-kitchen-separation.svg" alt="生食處理與即食清潔區以虛線分開，手器具汁液可造成污染；圖是流程設計概念，不代表區域顏色能保證安全。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜廚房動線與交叉污染</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿兩區的工作順序提出一項生熟分離及清潔安排，說明只把砧板換顏色而不處理接觸路徑，為何仍可能留下問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/food-safety">WHO：食品安全</a> · <a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.cdc.gov/food-safety/prevention/index.html">CDC：預防食物中毒</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 接觸路徑
 
 手、刀具、砧板、抹布、容器和冰箱滴液都可能把原料中的微生物帶到即食食物。只把主菜煮熟，不能處理之後又用髒器具接觸的問題；流程需要由前到後看。

@@ -2,6 +2,17 @@
 
 遇到錯誤先找資料條件，不用編造合理數字。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-artifacts.svg" target="_blank" rel="noopener" aria-label="放大：資料表、圖與來源應能互相核對"><img src="assets/figures/47-report-artifacts.svg" alt="三種產物代表資料、視覺與說明，並不表示可重現就已證明臨床真實、因果或個人診斷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜資料表、圖與來源應能互相核對</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>依單位、缺漏、輸入和方法逐項找可能錯誤，說明圖看起來平順或檔案成功產生，為何仍不保證問題定義正確。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 執行環境
 
 先在examples目錄執行，確認python版本。下載包保留核心模組與data資料夾，不要只複製單一編號腳本。程式沒有額外pip依賴；若本機預設python不同，可指定正式安裝的執行檔，但不要改全系統路徑來遷就一份範例。

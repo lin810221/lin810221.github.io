@@ -2,6 +2,17 @@
 
 不要把外部照片變成看似精確的組織受力。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-external-moment.svg" target="_blank" rel="noopener" aria-label="放大：外力、轉軸與垂直力臂"><img src="assets/figures/07-external-moment.svg" alt="圖只顯示平面單一外力與力矩參考，其他外力、內力和三維動作省略，不能推傷害機率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜外力、轉軸與垂直力臂</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖上補一個尚未畫出的支持力或肌肉作用，說明平衡需要更多資訊；不能把單一外力矩直接稱腰椎或肌腱實際內力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 平衡的概念
 
 靜態理想模型可用合力與合力矩平衡理解。選轉軸和已知力可幫助列式，但必須知道支點、方向和其他條件；動作中的加速度會帶入額外問題。

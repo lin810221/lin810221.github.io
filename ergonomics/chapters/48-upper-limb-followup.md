@@ -2,6 +2,17 @@
 
 讓醫療、工作觀察與改善資料能互相連結。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-upper-limb-pattern.svg" target="_blank" rel="noopener" aria-label="放大：重複上肢工作與後續觀察"><img src="assets/figures/24-upper-limb-pattern.svg" alt="不同時間片段可能有不同力、位置與恢復，觀察卡把任務與感受脈絡連接，不給疾病風險總分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜重複上肢工作與後續觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為一個上肢不適案例補任務、時間、功能及回饋欄位，指出仍需的協作；缺漏不補0，也不從一段影片確定病因。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 描述而不定案
 
 記不適位置、何時出現、哪些活動受影響、麻或力氣是否改變，以及近期工作和健康變化。不要先把所有資訊塞進某一個已猜好的病名。

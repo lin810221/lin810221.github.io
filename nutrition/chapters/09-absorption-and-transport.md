@@ -2,6 +2,17 @@
 
 從腸壁到身體運輸，理解濃度、質量和容量不是同一件事。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-gut-liver-lymph.svg" target="_blank" rel="noopener" aria-label="放大：吸收後的血液與淋巴分路"><img src="assets/figures/05-gut-liver-lymph.svg" alt="跨腸上皮後，物質依特性進入血路或淋巴等路徑，門脈連到肝；肝參與代謝，不是所有物質先同一方式處理。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 05｜吸收後的血液與淋巴分路</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>追兩種顏色的路徑，說明「食品中有多少」與「跨過上皮多少」不同，再指出血路與淋巴路不能一律混成一條。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 營養素進入哪裡
 
 許多水溶性分解產物經腸道進入門脈循環，脂質處理後有淋巴等運輸途徑；脂溶性維生素與膳食脂肪吸收有關。這是整體路徑概念，不表示所有分子都遵循一模一樣的速度或比例。

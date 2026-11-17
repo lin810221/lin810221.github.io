@@ -2,6 +2,17 @@
 
 從食物到飲食，理解類別、份量與可替代條件。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-food-groups-plate.svg" target="_blank" rel="noopener" aria-label="放大：六大類食物與餐盤觀察"><img src="assets/figures/25-food-groups-plate.svg" alt="盤內外示意全穀雜糧、蔬菜、水果、豆魚蛋肉、乳品及油脂堅果種子，非精確比例，不是每人相同處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜六大類食物與餐盤觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在盤內外各指出六大類食物，再說明有出現某類與實際攝取到適合份量不同，不能只靠六個勾就判飲食完整。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 六大類的名稱
 
 全穀雜糧、豆魚蛋肉、乳品、蔬菜、水果、油脂與堅果種子，是台灣飲食指南常用架構。同一食物含多種營養素，分類依規劃用途形成，不是說穀物只有醣、豆類只有蛋白質。

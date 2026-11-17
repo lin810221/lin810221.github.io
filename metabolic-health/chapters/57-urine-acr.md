@@ -2,6 +2,17 @@
 
 從同一檢體、濃度與單位開始。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-uacr-same-sample.svg" target="_blank" rel="noopener" aria-label="放大：UACR：同一尿液檢體的比值"><img src="assets/figures/29-uacr-same-sample.svg" alt="兩杯僅示稀釋及成分，不表示病況；白蛋白與尿肌酸酐必須來自同檢體並對齊單位。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜UACR：同一尿液檢體的比值</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先在同一杯中辨識白蛋白與肌酸酐，再說明mg/L除以g/L為何得到mg/g，不能把不同單位數值直接相除。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何用比值
 
 單次尿液白蛋白濃度會受尿液稀釋影響，以同一檢體的尿肌酸酐作比值可提供不同資訊。它仍有生物與採樣變異，不是完全不受其他因素影響，也不等於24小時尿蛋白的直接測量。

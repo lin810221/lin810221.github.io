@@ -2,6 +2,17 @@
 
 用流程、物件、時間與使用者觀察建立問題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-task-record.svg" target="_blank" rel="noopener" aria-label="放大：任務觀察要留下時間與脈絡"><img src="assets/figures/13-task-record.svg" alt="觀察卡整理任務、時間、狀態和使用者回饋，不測疾病或替代現場完整評估。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜任務觀察要留下時間與脈絡</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先定義一個任務段與觀察窗，列力、位置、次數和環境各需哪些資訊；不要把工位名稱當完整暴露描述。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 描述一個工作段
 
 寫任務目的、起終點、工具、物件、地點與協作，不只拍最彎的一秒。準備、等待、清理和異常狀況可能帶來不同暴露，也不能全部歸成休息。

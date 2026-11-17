@@ -2,6 +2,17 @@
 
 把情緒理解成多面向經驗，而不是需要消滅的訊號。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-emotion-components.svg" target="_blank" rel="noopener" aria-label="放大：情緒經驗的四個連結"><img src="assets/figures/07-emotion-components.svg" alt="感受、身體、評估與行動傾向互相影響，不把情緒簡化為一個腦區或固定顏色。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜情緒經驗的四個連結</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿四個區塊各說一個可能觀察，不把四者強制同時或同程度出現；描述情緒時保留情境和個別差異。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個觀察角度
 
 主觀感受、身體反應、對事件的評估及行動傾向可能交互影響，也未必依固定順序發生。擔心可以伴隨肩緊、反覆查訊息和不確定想法；沒有一個面向可完整代表全部情緒。

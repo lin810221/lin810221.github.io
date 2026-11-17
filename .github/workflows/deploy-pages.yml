@@ -73,6 +73,18 @@ jobs:
       - name: Test deep learning gradients, architectures, generation, and complete projects
         run: python -m unittest discover -s deep-learning/examples -p test_examples.py -v
 
+      - name: Verify visual anatomy materials and standalone learning bundle
+        run: python -m unittest discover -s tools -p test_anatomy_materials.py -v
+
+      - name: Verify health diagrams, reading tasks and standalone visual bundles
+        run: python -m unittest discover -s tools -p test_health_visuals.py -v
+
+      - name: Verify evidence course diagrams, provenance and offline study bundle
+        run: python -m unittest discover -s tools -p test_evidence_materials.py -v
+
+      - name: Verify sleep diagrams, time definitions and standalone study bundle
+        run: python -m unittest discover -s tools -p test_sleep_materials.py -v
+
       - name: Prepare publishable website
         run: python tools/prepare_pages.py --target pages
 

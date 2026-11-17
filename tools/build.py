@@ -14,6 +14,33 @@ from pygments.formatters import HtmlFormatter
 
 ROOT = Path(__file__).resolve().parents[1]
 
+def build_study_bundle(course_path, catalog):
+    """Package non-code learning materials without requiring an examples folder."""
+    bundle = catalog.get("studyBundle")
+    if not bundle:
+        return
+    if not re.fullmatch(r"[a-zA-Z0-9_-]+\.zip", bundle):
+        raise ValueError("Study bundle must be a ZIP filename")
+    selected = set()
+    for item in catalog.get("studyFiles", []):
+        source = (course_path / item).resolve()
+        if not source.is_relative_to(course_path.resolve()) or not source.exists():
+            raise ValueError(f"Invalid study resource: {item}")
+        for path in ([source] if source.is_file() else source.rglob("*")):
+            if path.is_file() and path.suffix in {".md", ".csv", ".json", ".svg", ".txt"}:
+                if not path.resolve().is_relative_to(course_path.resolve()):
+                    raise ValueError("Study resource escapes its course")
+                if not any(part.startswith(".") for part in path.relative_to(course_path.resolve()).parts):
+                    selected.add(path)
+    if not selected:
+        raise ValueError("Study bundle cannot be empty")
+    with zipfile.ZipFile(course_path / bundle, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for path in sorted(selected):
+            relative = path.relative_to(course_path.resolve())
+            info = zipfile.ZipInfo("study-pack/" + relative.as_posix(), date_time=(2026, 11, 16, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            archive.writestr(info, path.read_bytes())
+
 class InlineMath(InlineProcessor):
     def handleMatch(self, match, data):
         element = ET.Element("span", {"class": "math-source"})
@@ -78,6 +105,7 @@ def build(course_path):
                     info = zipfile.ZipInfo("examples/" + relative.as_posix(), date_time=(2026, 10, 29, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_DEFLATED
                     archive.writestr(info, example_path.read_bytes())
+    build_study_bundle(course_path, catalog)
     style = HtmlFormatter(style="github-dark").get_style_defs(".codehilite")
     (ROOT / "assets" / "syntax.css").write_text(style, encoding="utf-8")
     print(f"Built {course_path.name}: {len(catalog['lessons'])} units / {count:,} source characters")

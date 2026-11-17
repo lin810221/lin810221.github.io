@@ -2,6 +2,17 @@
 
 從一個人的行動，走向讓更多人能受益的環境。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-social-layers.svg" target="_blank" rel="noopener" aria-label="放大：個人選擇外面的環境層"><img src="assets/figures/39-social-layers.svg" alt="同心範圍表示資源與制度影響，不代表每層固定權重，也不以平均政策效果推個人結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜個人選擇外面的環境層</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個群體預防措施，標出它作用在哪一層，再問公平、可取得性及真正結果，不把覆蓋率當全部健康成效。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 個人與群體互相補充
 
 臨床照護處理個別風險與疾病；群體政策則可能改變食物、菸草暴露、活動空間與服務可近性。兩者不是互斥，不應把所有責任交給個人，也不因有政策就忽略個別需求。

@@ -2,6 +2,17 @@
 
 分清更新、撤回、方法和不同地區的照護背景。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-care-and-scope.svg" target="_blank" rel="noopener" aria-label="放大：照護訊號與來源範圍分開看"><img src="assets/figures/12-care-and-scope.svg" alt="情境需要適當評估，來源需核日期與適用範圍；不是自動風險分級或排除所有急症的清單。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜照護訊號與來源範圍分開看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一項臨床或工作來源，分開出版、修訂、入口更新與查核日；不能把外國指南的不同範圍直接當本地工作配置規定。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/">IASP：疼痛定義</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## WHO2023的範圍
 
 慢性原發下背痛正式指南針對成人與高齡者，重視基層與社區整合照護；明確不涵蓋工作場所介入、手術和其他侵入性治療。不能把它當辦公桌配置標準，也不適用所有背痛。

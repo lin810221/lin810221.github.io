@@ -2,6 +2,17 @@
 
 把方向和一次可完成的任務分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-values-compass.svg" target="_blank" rel="noopener" aria-label="放大：價值像方向，目標像可回顧的站點"><img src="assets/figures/15-values-compass.svg" alt="羅盤方向代表所重視的行動品質，站點是具體目標；不以分數評價一個人的價值。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜價值像方向，目標像可回顧的站點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別指出方向和具體站點，為同一價值設兩個不同可行目標；不把未達一個目標解釋成這個人沒有價值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 價值是方向
 
 尊重、關心、學習等可作行動方向，不是一次完成就永遠達標的任務。它由本人探索，不由課程指定；也可能在不同需要間取捨。

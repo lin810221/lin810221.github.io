@@ -2,6 +2,17 @@
 
 區分免疫反應和消化不耐，讀懂地區清單與標示的限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-food-hazard-types.svg" target="_blank" rel="noopener" aria-label="放大：過敏、耐受與烹調問題分開"><img src="assets/figures/44-food-hazard-types.svg" alt="一盤料理需同時辨識配方接觸、時間溫度與耐受等不同問題，圖不暗示烹調能通用去除所有過敏原。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜過敏、耐受與烹調問題分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分配方過敏原、交叉接觸和乳糖不耐等不同問題，說明它們不能只由食物名稱或有沒有煮熟一項判斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-16-43376-1.html">衛福部：台灣過敏原標示</a> · <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies">FDA：食物過敏</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 過敏與不耐不同
 
 食物過敏涉及免疫系統，乳糖不耐涉及乳糖消化等問題；無乳糖不等於沒有乳蛋白，也不自動適合乳品過敏者。不能因某食物讓人不舒服就自行歸為同一機制。

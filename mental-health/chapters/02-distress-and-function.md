@@ -2,6 +2,17 @@
 
 用完整描述取代「正常不正常」的二選一。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-experience-function.svg" target="_blank" rel="noopener" aria-label="放大：經驗、功能與生活是不同面向"><img src="assets/figures/01-experience-function.svg" alt="三個相交區域表示經驗、生活功能及脈絡互相影響；不是診斷三圈或嚴重度分級。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜經驗、功能與生活是不同面向</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出困擾、時間和功能可能不同步的例子，再說明這張沒有刻度的圖為何不能判誰夠嚴重或決定求助資格。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 感受多強
 
 困擾可以是緊繃、低落、易怒、擔心或難以集中。主觀強度有溝通價值，但同一個6分不代表每個人相同經驗；填分數的時機和理解也會影響結果。低分更不能單獨證明沒有需要協助的問題。

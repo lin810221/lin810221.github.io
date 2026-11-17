@@ -2,6 +2,17 @@
 
 把事件、意義、資源和反應分成可以討論的部分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-appraisal-body.svg" target="_blank" rel="noopener" aria-label="放大：壓力評估與兩條反應路徑"><img src="assets/figures/04-appraisal-body.svg" alt="事件評估與資源連到中樞整合，圖分開自律神經與HPA代表路徑；兩者互相調節，不代表固定激素值。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 04｜壓力評估與兩條反應路徑</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先讀左側事件，再找右側尚未確認的資訊；分別提出一種因應與一項環境改善，不把壓力一律解釋成想錯或脆弱。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet">NIMH：壓力與焦慮</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://training.seer.cancer.gov/anatomy/endocrine/glands/pituitary.html">NCI：腦下垂體與下視丘</a> · <a href="https://training.seer.cancer.gov/anatomy/endocrine/glands/adrenal.html">NCI：腎上腺皮質與髓質</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 壓力不是單一物件
 
 壓力源可以是期限、變動或衝突；評估涉及它意味什麼、有哪些資源；反應可能出現在身體、情緒與行動。同一事件不同經驗，不代表誰比較脆弱，可能是資源與過去經驗不同。

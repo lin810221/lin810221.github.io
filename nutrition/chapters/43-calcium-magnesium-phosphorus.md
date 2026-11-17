@@ -2,6 +2,17 @@
 
 認識礦物質的多重角色，分開攝取、體內調節與測量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-mineral-functions.svg" target="_blank" rel="noopener" aria-label="放大：骨、血液與礦物質的多重角色"><img src="assets/figures/22-mineral-functions.svg" alt="骨與紅血球作鈣磷鎂和鐵的代表性關係，吸收運送儲存及評估分開；不把骨密度或血紅素當全部營養狀態。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜骨、血液與礦物質的多重角色</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出骨的示意後補上鈣鎂磷還有其他功能，說明單看骨骼外形或某一飲食來源，不能直接判個人整體礦物質狀態。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a> · <a href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/">NIH ODS：鎂</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只構成骨頭
 
 鈣參與骨骼與牙齒結構，也與神經肌肉等功能相關；鎂參與多種酵素和能量代謝。骨骼是動態組織，磷也參與細胞能量與結構。不能把某一礦物質單獨吃多等同整體骨骼健康。

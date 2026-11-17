@@ -2,6 +2,17 @@
 
 把頻率、施力與時序一起描述。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/31-repetition-time.svg" target="_blank" rel="noopener" aria-label="放大：重複、施力與持續的共同觀察"><img src="assets/figures/31-repetition-time.svg" alt="同一總次數可分散或集中，需記定義、力與姿勢等條件；時間區塊無疾病與安全色帶。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 31｜重複、施力與持續的共同觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用不同集中方式標記相同次數，指出平均之外還缺峰值、順序和恢復；圖不能直接轉成正式重複作業分數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 定義動作和循環
 
 一件產品可需要多個抓握，一個循環可包含左右不同活動。正式工具有定義，原創觀察也需明示，不能用容易取得的產量直接代替手部頻率。

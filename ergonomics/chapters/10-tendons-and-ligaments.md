@@ -2,6 +2,17 @@
 
 理解傳力、限制與負荷適應。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/05-muscle-hierarchy.svg" target="_blank" rel="noopener" aria-label="放大：肌肉、肌束與力量傳遞"><img src="assets/figures/05-muscle-hierarchy.svg" alt="整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 05｜肌肉、肌束與力量傳遞</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出肌肉端的力量傳遞，再回課文分清肌腱、韌帶和筋膜；本圖省略骨間韌帶，不把所有連接都當同一種繩子。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：肌肉</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 結構的分工
 
 肌腱主要連結肌肉與骨、傳遞張力；韌帶常連結骨與骨、參與關節限制與穩定。筋膜等結締組織也有不同層次與功能，不宜把所有疼痛都籠統稱筋太緊。

@@ -2,6 +2,17 @@
 
 辨認快速解釋如何影響行動。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-thought-versus-fact.svg" target="_blank" rel="noopener" aria-label="放大：事實、假設與可查證問題"><img src="assets/figures/11-thought-versus-fact.svg" alt="三張並列卡區分觀察、解釋與下一個問題，沒有把一種想法直接變成人格標籤。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜事實、假設與可查證問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先把一句話拆成可觀察內容和推論，再問能補哪項資訊；認識認知偏誤不等於拿術語評價別人的人格。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 自動不等於故意
 
 有些解釋很快出現，如「一次出錯等於永遠不行」。它可能連到過去經驗與目前擔心，不需因此責怪自己。想法不是命令，也不是全部都需要逐句辯論。

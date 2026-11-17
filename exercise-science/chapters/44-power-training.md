@@ -2,6 +2,17 @@
 
 把力量和速度連起來，不將爆發力等同動作做得很累。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-strength-power.svg" target="_blank" rel="noopener" aria-label="放大：最大肌力與快速施力的任務差異"><img src="assets/figures/22-strength-power.svg" alt="任意曲線提示力、速度與功率有不同問題定義，沒有固定通用最佳負荷或個人1RM推定值。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜最大肌力與快速施力的任務差異</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖上選一個假想任務比較力和速度需求，而不是選一個通用最佳重量；功率訓練仍須合適阻力、技術、條件和監督。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 功率與最大力量不同
 
 功率涉及在時間內完成機械功，最大力量則關注可產生或對抗的力。更強可能提供基礎，但不自動保證更快的專項表現；需要相應任務與速度的練習和測量。

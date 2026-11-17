@@ -2,6 +2,17 @@
 
 認識彈性、血液標記與不確定區域。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-liver-assessment.svg" target="_blank" rel="noopener" aria-label="放大：線索、第一階段與進一步確認"><img src="assets/figures/26-liver-assessment.svg" alt="路徑只顯示評估分層的目的，不放個人門檻或把FIB-4算術畫成確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜線索、第一階段與進一步確認</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿第一階段到進一步檢查的路徑，指出哪裡需要完整背景和專業判斷，不把兩階段圖變成人人相同檢查清單。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 為何不是所有人直接同一檢查
 
 臨床路徑先依背景、風險與初步指標分層，再決定是否需要其他評估。2026 AGA與2024 EASL將FIB-4等初步工具和後續非侵入檢查連結，目的是提高辨識重要纖維化的效率，不是用便宜公式取代所有診察。

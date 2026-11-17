@@ -2,6 +2,17 @@
 
 把情境、影響、請求與限制說清楚。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：界線和衝突：具體表達可協調部分"><img src="assets/figures/23-boundaries.svg" alt="兩個人之間保留各自需要與共享討論區，不把界線當威脅，也不忽略關係安全。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜界線和衝突：具體表達可協調部分</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把界線寫成可提供的時間、行為和限制，說出尊重與拒絕可以並存；不要承諾自己必須全天候獨力處理。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 界線在描述什麼
 
 界線可說明可提供的時間、可以接受的互動與需要的安排。不是控制他人的所有行為，也不是非得等生氣到極點才說。

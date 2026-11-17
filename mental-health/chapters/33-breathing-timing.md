@@ -2,6 +2,17 @@
 
 用簡單算術理解可選節奏，保留自然呼吸與停止權。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-breath-options.svg" target="_blank" rel="noopener" aria-label="放大：呼吸相位與注意：示意不是指令"><img src="assets/figures/17-breath-options.svg" alt="兩段圓弧代表相位先後，沒有目標秒數、憋氣或個人HRV保證，方法應符合舒適與偏好。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜呼吸相位與注意：示意不是指令</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>只沿圓弧分辨吸與呼的時間概念，指出圖沒有規定秒數、深度或HRV目標；不需跟圖調整自己的呼吸。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 舒適先於數字
 
 若想試，可採自然、輕柔且不勉強的呼吸；不需深吸、憋氣或追某個最低頻率。感到頭暈、不適或更焦慮時可回到自然呼吸，也能改看外界物件或停止。

@@ -2,6 +2,17 @@
 
 從勝負爭辯轉向可確認的互動。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/23-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：界線和衝突：具體表達可協調部分"><img src="assets/figures/23-boundaries.svg" alt="兩個人之間保留各自需要與共享討論區，不把界線當威脅，也不忽略關係安全。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 23｜界線和衝突：具體表達可協調部分</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿共享討論區把衝突分成具體事件、需要和下一步，另指出不安全或不當對待需要不同支持，不強迫當事人修復所有關係。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 衝突有不同來源
 
 資訊不清、需要不同、資源不足與不公平，都可能帶來衝突。不能只說雙方各退一步就能處理所有情況；霸凌、暴力與脅迫不是一般意見不合。

@@ -2,6 +2,17 @@
 
 檢查醣類、纖維與係數，不用簡化算式作合規認證。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/30-energy-provenance.svg" target="_blank" rel="noopener" aria-label="放大：從食品狀態到能量重建"><img src="assets/figures/30-energy-provenance.svg" alt="食物資料的生熟與版本連到能量重建，係數、其他成分和修整可影響差異，圖不將差異直接判成錯誤。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 30｜從食品狀態到能量重建</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由左側原始成分追到能量重建，列兩個可能影響差異的條件，說明不能只用4／4／9算出的數字強迫完全等於標示。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 4／4／9的條件
 
 蛋白質4、可利用碳水4、脂肪9是常用教學係數；纖維、糖醇、酒精、有機酸等可能需要另外處理。若資料中的碳水已含纖維，又將纖維能量再加一次，就會重複計算。

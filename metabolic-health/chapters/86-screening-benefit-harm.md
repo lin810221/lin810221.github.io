@@ -2,6 +2,17 @@
 
 從測得準不準，走到做篩檢是否有淨效益。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/43-screening-four-cells.svg" target="_blank" rel="noopener" aria-label="放大：篩檢四格：分母不一樣"><img src="assets/figures/43-screening-four-cells.svg" alt="四格只表示結果分類，沒有真實檢驗效能或個人診斷；預測值還依族群基線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 43｜篩檢四格：分母不一樣</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別找偽陽性、偽陰性與超出此四格的過度診斷問題，說明篩檢效益傷害不能只看陽性數。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/professionals/advanced-search/quick-reference-uacr-gfr">NIDDK：UACR與GFR的用途及單位</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 偽陽性與偽陰性
 
 偽陽性可能導致焦慮、額外檢查和成本；偽陰性可能造成錯誤安心與延後處理。提高敏感度可能改變特異度，但實際取捨依方法和目的。任何「百分之百排除」的聲稱都應查核條件。

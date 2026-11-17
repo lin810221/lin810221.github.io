@@ -2,6 +2,17 @@
 
 讓語言增加連結，而非增加羞恥與孤立。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-support-dialogue.svg" target="_blank" rel="noopener" aria-label="放大：支持對話：先理解，再確認需要"><img src="assets/figures/37-support-dialogue.svg" alt="兩個人以原創短句互相確認，不急著貼診斷或替對方決定行動。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜支持對話：先理解，再確認需要</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把一個貼標籤或強迫樂觀的回應改成具體關心，分開觀察和推測；圖中短句只是示範，不要求每人照稿說。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不用比較痛苦
 
 「別人更慘」不會讓眼前困難消失，也可能讓人不敢再談。可以承認自己不完全懂，仍願意聽，問什麼支持較合適。

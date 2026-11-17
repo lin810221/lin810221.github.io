@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "updated": "2026-11-17",
+  "scope": "全部為原創虛構教學資料，非真實病歷、產品性能或個人作息建議。",
+  "architecture": {
+    "durationMinutes": 480,
+    "segments": [
+      [
+        "W",
+        20
+      ],
+      [
+        "N1",
+        10
+      ],
+      [
+        "N2",
+        30
+      ],
+      [
+        "N3",
+        40
+      ],
+      [
+        "N2",
+        20
+      ],
+      [
+        "REM",
+        20
+      ],
+      [
+        "W",
+        5
+      ],
+      [
+        "N1",
+        5
+      ],
+      [
+        "N2",
+        30
+      ],
+      [
+        "N3",
+        25
+      ],
+      [
+        "N2",
+        20
+      ],
+      [
+        "REM",
+        30
+      ],
+      [
+        "N2",
+        35
+      ],
+      [
+        "N3",
+        15
+      ],
+      [
+        "N2",
+        20
+      ],
+      [
+        "REM",
+        35
+      ],
+      [
+        "W",
+        10
+      ],
+      [
+        "N1",
+        5
+      ],
+      [
+        "N2",
+        35
+      ],
+      [
+        "REM",
+        40
+      ],
+      [
+        "N2",
+        15
+      ],
+      [
+        "REM",
+        10
+      ],
+      [
+        "W",
+        5
+      ]
+    ],
+    "expected": {
+      "W": 40,
+      "N1": 20,
+      "N2": 205,
+      "N3": 80,
+      "REM": 135,
+      "tst": 440
+    },
+    "note": "分類區塊不是原始EEG或個人的正常範本；與diary是不同夜晚。"
+  },
+  "diary": {
+    "bedAndAttempt": "23:00",
+    "out": "07:00",
+    "dayOffset": 1,
+    "solMinutes": 30,
+    "wasoMinutes": 40,
+    "terminalMinutes": 20,
+    "wasoExcludesTerminal": true,
+    "expected": {
+      "tib": 480,
+      "tst": 390,
+      "se": 0.8125,
+      "sleepPeriodMidpointMinute": 185
+    },
+    "note": "上床與嘗試同時；WASO不含最後醒後，避免重扣。"
+  },
+  "week": {
+    "rows": [
+      {
+        "date": "2026-11-02",
+        "bed": "23:00",
+        "out": "07:00",
+        "dayOffset": 1,
+        "sol": 30,
+        "waso": 40,
+        "terminal": 20,
+        "tib": 480,
+        "tst": 390,
+        "mid": 185
+      },
+      {
+        "date": "2026-11-03",
+        "bed": "23:30",
+        "out": "07:00",
+        "dayOffset": 1,
+        "sol": 20,
+        "waso": 30,
+        "terminal": 20,
+        "tib": 450,
+        "tst": 380,
+        "mid": 195
+      },
+      {
+        "date": "2026-11-04",
+        "bed": "00:00",
+        "out": "07:00",
+        "dayOffset": 0,
+        "sol": 15,
+        "waso": 30,
+        "terminal": 15,
+        "tib": 420,
+        "tst": 360,
+        "mid": 210
+      },
+      null,
+      {
+        "date": "2026-11-06",
+        "bed": "23:00",
+        "out": "07:30",
+        "dayOffset": 1,
+        "sol": 25,
+        "waso": 40,
+        "terminal": 25,
+        "tib": 510,
+        "tst": 420,
+        "mid": 195
+      },
+      {
+        "date": "2026-11-07",
+        "bed": "23:30",
+        "out": "07:30",
+        "dayOffset": 1,
+        "sol": 20,
+        "waso": 40,
+        "terminal": 20,
+        "tib": 480,
+        "tst": 400,
+        "mid": 210
+      },
+      {
+        "date": "2026-11-08",
+        "bed": "23:20",
+        "out": "07:00",
+        "dayOffset": 1,
+        "sol": 20,
+        "waso": 30,
+        "terminal": 20,
+        "tib": 460,
+        "tst": 390,
+        "mid": 190
+      }
+    ],
+    "missingDate": "2026-11-05",
+    "midpointDefinition": "入睡至最後醒來區間的中點鐘點，不是已睡片段的加權重心。",
+    "expected": {
+      "n": 6,
+      "missing": 1,
+      "sumTib": 2800,
+      "sumTst": 2340,
+      "meanTst": 390,
+      "pooledSE": 0.8357142857142857
+    },
+    "dateMeaning": "date是離床所在日；上床日期需按dayOffset回推，並非所有bed都在同一列date當天。"
+  },
+  "caffeine": {
+    "initialMg": 100,
+    "hours": 10,
+    "halfLifeHours": 5,
+    "expectedRemainingMg": 25,
+    "note": "未校準的一階消退例，不表示口服吸收、個人半衰期、建議劑量或安全門檻。"
+  },
+  "breathing": {
+    "events": 36,
+    "sleepHours": 6,
+    "methodMonitoringHours": 8,
+    "expected": {
+      "ahi": 6,
+      "rei": 4.5
+    },
+    "note": "假想已評分的相同事件數，只示範分母差異，不給病情分級或診斷。"
+  },
+  "wearable": {
+    "positive": "sleep",
+    "tp": 90,
+    "fn": 10,
+    "fp": 40,
+    "tn": 60,
+    "epochSeconds": 30,
+    "expected": {
+      "referenceSleepMinutes": 50,
+      "deviceSleepMinutes": 65,
+      "totalMinutes": 100,
+      "sensitivity": 0.9,
+      "specificity": 0.6,
+      "accuracy": 0.75
+    },
+    "algorithmVersion": null,
+    "note": "不是真實裝置驗證，不包含NREM或REM分類性能。"
+  },
+  "timeZone": {
+    "departureLocal": "2026-11-10T22:00",
+    "fromOffsetMinutes": 480,
+    "toOffsetMinutes": -300,
+    "elapsedMinutes": 720,
+    "expectedArrivalLocal": "2026-11-10T21:00",
+    "phaseMarker": null,
+    "note": "固定偏移的純換算，不查城市夏令時間，也不代表生理適應完成或實際航班。"
+  },
+  "evidenceCardTemplate": {
+    "question": null,
+    "sourceAndVersion": null,
+    "population": null,
+    "comparison": null,
+    "outcomeAndTime": null,
+    "effectAndUncertainty": null,
+    "biasAndApplicability": null,
+    "unknowns": [],
+    "nextReviewTrigger": null
+  }
+}

@@ -2,6 +2,17 @@
 
 改善看起來有效時，繼續問還有哪些事情改變。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-comparison-validity.svg" target="_blank" rel="noopener" aria-label="放大：比較條件、工具一致性與效度"><img src="assets/figures/44-comparison-validity.svg" alt="同一資料可能有多種解釋，重現、有效測量、適用範圍與因果是不同要求，不平均序位分數當機率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜比較條件、工具一致性與效度</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>為前後差異列出共同變動及未配對條件，說明兩次數字不同不直接證明唯一原因，也要看是否有新危害。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先說比較問題
 
 是比較伸取距離、單位時間動作、主觀感受、工作功能還是疾病發生？每種結果需要不同測量、時間與推論。一次工位調整後的照片，不能回答一年疾病發生率。

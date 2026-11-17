@@ -2,6 +2,17 @@
 
 理解為何分數相同不等於人和工作完全相同。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-comparison-validity.svg" target="_blank" rel="noopener" aria-label="放大：比較條件、工具一致性與效度"><img src="assets/figures/44-comparison-validity.svg" alt="同一資料可能有多種解釋，重現、有效測量、適用範圍與因果是不同要求，不平均序位分數當機率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜比較條件、工具一致性與效度</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分清一致性與效度，指出正式工具的級別不能任意平均或改百分比變成個人傷害機率；再用授權和有效性亦是兩件事。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一致不等於正確
 
 觀察者反覆量出相近結果，說明某種重現性；是否測到想測的概念、能否支持特定行動，仍需效度與適用證據。量錯同一個角度也可能非常一致，訓練與定義都重要。

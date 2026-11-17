@@ -2,6 +2,17 @@
 
 讀懂台灣五類素食標示，避免把植物五辛素直接翻成vegan。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-substitution-function.svg" target="_blank" rel="noopener" aria-label="放大：食物替代先看要保留的功能"><img src="assets/figures/27-substitution-function.svg" alt="乳品和植物來源示意替代比較，需查蛋白質、鈣、強化及限制，圖不宣告所有植物飲等同乳品或所有素食相同。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜食物替代先看要保留的功能</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用圖中來源欄分清素食分類、配方與強化資訊，列出不能從食品名稱直接知道的條件，避免把所有植物來源視為同一種。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a> · <a href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/">NIH ODS：鈣</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 名稱有地區定義
 
 台灣素食標示包括全素／純素、蛋素、奶素、奶蛋素及植物五辛素。植物五辛素有其五辛和原料標示條件，也可能含乳或蛋並另行揭露；不能因看到植物兩字就認定完全不含動物來源。

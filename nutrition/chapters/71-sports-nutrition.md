@@ -2,6 +2,17 @@
 
 先建立活動情境，再理解能量、醣、蛋白質、水分與電解質。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-activity-recovery.svg" target="_blank" rel="noopener" aria-label="放大：活動、飲食供應與恢復支持"><img src="assets/figures/36-activity-recovery.svg" alt="食物供應與活動需求、恢復及生活支持相連，圖不計算個人低能量可用性或用單一症狀判定病況。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜活動、飲食供應與恢復支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先說活動強度、時間與背景可能改變哪些需求，再指出食物來源圖不能直接給每個人的運動營養劑量或補充方案。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 運動不是一種固定情境
 
 散步、短時間阻力訓練、長時間耐力或高溫活動，需求與限制不同。一般成人、競技運動者與有疾病者不能套同一補給表；研究對象與訓練型態要先標清楚。

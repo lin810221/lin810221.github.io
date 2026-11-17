@@ -2,6 +2,17 @@
 
 將生理變化、照顧負擔與專屬照護放回脈絡。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-care-life-events.svg" target="_blank" rel="noopener" aria-label="放大：生命事件與可用支持"><img src="assets/figures/41-care-life-events.svg" alt="照顧、孕產、高齡與失落可有不同負擔和資源，沒有用人生階段決定誰必然有困擾。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜生命事件與可用支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>區分孕產和照顧階段的身體、實務與心理需要，指出哪項可尋求協助；不把困擾視為理所當然或個人失格。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不是只看荷爾蒙
 
 孕產可能同時涉及身體、睡眠、關係、經濟與期待改變。不能把所有困擾一句歸為正常，也不能要求為了孩子永遠保持快樂。

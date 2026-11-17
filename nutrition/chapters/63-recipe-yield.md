@@ -2,6 +2,17 @@
 
 把重量變化和營養素保留分開，避免把濃縮或吸水誤認為生成營養。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-recipe-yield.svg" target="_blank" rel="noopener" aria-label="放大：生熟重量、產率與採買"><img src="assets/figures/32-recipe-yield.svg" alt="原料進鍋後水分及重量可改變，產率與營養保留率不同，規劃還需成本及可取得條件；示意碗量不是實測比例。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜生熟重量、產率與採買</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿原料、烹調和成品三段列各自重量，說明水分變化為何不等於營養憑空增加，並把產率與保留率分開。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 兩個比例
 
 產率Y是熟重除生重；保留率R是烹調後保留的某營養素比例。吸水可能讓每100g濃度降低，但總量未必降低；失水也可能使每100g濃度提高，不代表創造了營養素。

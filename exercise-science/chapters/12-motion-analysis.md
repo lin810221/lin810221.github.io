@@ -2,6 +2,17 @@
 
 把影片、器材與動作變化放進同一份可查核紀錄。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-work-power.svg" target="_blank" rel="noopener" aria-label="放大：位移、外功與時間"><img src="assets/figures/06-work-power.svg" alt="兩個箱子位置示意外力沿位移作功，完成相同外功所需時間影響平均外功率；不估人體代謝效率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜位移、外功與時間</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把這張外部模型和真實動作並排，列出影像看得到的位移與看不到的外力、速度和人體模型；不要由姿勢外觀補出未知數據。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 影片的可見與不可見
 
 可觀察節段角度、軌跡、節奏和重複的一致性；攝影角度、鏡頭和遮擋可能扭曲判讀。影片沒有直接提供肌肉張力、關節接觸力或組織損傷，動作分析需承認資料層次。

@@ -2,6 +2,17 @@
 
 知道教材能幫忙什麼，哪些問題需要臨床背景。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-measurement-time.svg" target="_blank" rel="noopener" aria-label="放大：一個數字要帶著時間與未知"><img src="assets/figures/03-measurement-time.svg" alt="數字來自有時間、方法及缺漏的觀察，未知位置不是零，也不因學習路線完成便可自我確診。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜一個數字要帶著時間與未知</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在時間軸旁分出學習、日常觀察和專業評估三種任務，寫出一個本課圖解仍不能替你回答的個人問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 從原理到觀察
 
 先讀器官、體位與檢驗，再學各風險因子和生活預防，最後完成報告。網頁閱讀不需Python，公式與術語從零介紹；課內進階都已在本課，不把必要基礎推給未來課程。

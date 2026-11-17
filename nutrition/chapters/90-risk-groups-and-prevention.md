@@ -2,6 +2,17 @@
 
 把孕期、幼兒、長者與免疫低下者的食物風險背景納入選擇。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-cold-chain-history.svg" target="_blank" rel="noopener" aria-label="放大：保存日期與冷鏈歷史"><img src="assets/figures/45-cold-chain-history.svg" alt="從製備運送保存到食用的時間軸，任何未取得條件都保留未知；日期、開封及特定族群情境不可互相代替。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜保存日期與冷鏈歷史</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在同一時間軸加入特定族群與食品資訊，指出需要更審慎查核的條件，不能用聞起來正常或重新加熱作通用補救。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789241594639">WHO：食品安全五要點手冊</a> · <a href="https://www.cdc.gov/food-safety/prevention/index.html">CDC：預防食物中毒</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/food-safety">WHO：食品安全</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 族群改變後果
 
 CDC列孕婦、未滿5歲幼兒、65歲以上長者及免疫功能較弱者為需特別注意食源疾病的群體。這是風險溝通與預防背景，不表示群體中的每人相同，或其他人沒有風險。

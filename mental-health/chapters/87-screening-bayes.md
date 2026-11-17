@@ -2,6 +2,17 @@
 
 用虛構測試與期望人數理解基線影響。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-screening-grid.svg" target="_blank" rel="noopener" aria-label="放大：虛構篩檢四格：先找分母"><img src="assets/figures/44-screening-grid.svg" alt="假想一萬人例子：目標狀態500人，真陽性400、偽陰性100、偽陽性950、真陰性8550；非真實工具效能。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜虛構篩檢四格：先找分母</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先圈出所有陽性，再指出PPV分母；比較敏感度的分母，不能把80%敏感度直接說成陽性者的個人診斷機率。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個結果
 
 真陽性、偽陽性、真陰性與偽陰性，依目標狀態與測試結果交叉。敏感度問有目標狀態者多少陽性；PPV問所有陽性中多少真的有，分母不同。

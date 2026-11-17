@@ -2,6 +2,17 @@
 
 介紹觀察工具，也保留訓練、授權和方法限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-grip-tool.svg" target="_blank" rel="noopener" aria-label="放大：握柄、手套和任務：一起試用"><img src="assets/figures/32-grip-tool.svg" alt="兩種假想握持接觸表示幾何不同，未標健康門檻；力、摩擦、尺寸及工作條件需與使用者核對。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜握柄、手套和任務：一起試用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把工具操作問題和正式KIM、RULA、REBA等方法分開，核對版本與適用範圍；本圖沒有重建或改寫正式完整評分表。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 姿勢與任務工具
 
 RULA和REBA是特定觀察方法，分組、因子和行動層級需要依正式程序理解。它們不是疾病診斷、個人傷害百分比，也不能用一次最高照片代表所有時段。

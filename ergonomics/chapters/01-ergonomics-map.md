@@ -2,6 +2,17 @@
 
 從工作目標、人的差異與環境，建立完整學科地圖。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-person-task-environment.svg" target="_blank" rel="noopener" aria-label="放大：人、任務與環境的適配"><img src="assets/figures/01-person-task-environment.svg" alt="三區相交表示工作設計要同時考慮人、任務和環境；面積無量尺，不用來評人能力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜人、任務與環境的適配</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先在人、任務和環境各指出一項可調條件，說明適配不是要求所有身體達到同一尺寸，也不是只靠姿勢提醒。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只是坐姿
 
 人體工學研究人如何與工具、任務、環境和組織互動。身體負荷、資訊呈現、流程和工作安排都在範圍內；本課以肌肉骨骼健康為主線，但不把所有問題縮成腰背是否挺直。

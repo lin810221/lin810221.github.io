@@ -2,6 +2,17 @@
 
 把收入、時間、居住和照護可近性放進預防。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-social-layers.svg" target="_blank" rel="noopener" aria-label="放大：個人選擇外面的環境層"><img src="assets/figures/39-social-layers.svg" alt="同心範圍表示資源與制度影響，不代表每層固定權重，也不以平均政策效果推個人結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜個人選擇外面的環境層</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由個人往外逐層找家庭、社區、場域與制度，列一個會改變實際選擇的障礙，說明不能只談個人努力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO：健康飲食</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 選擇受到環境限制
 
 食物取得、交通、輪班、居住安全、照顧責任和醫療費用，都可能影響日常行動。相同建議在不同環境的可行性不同；不能從未達目標反推一個人不重視健康。

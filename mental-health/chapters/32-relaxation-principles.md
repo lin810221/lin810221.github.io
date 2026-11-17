@@ -2,6 +2,17 @@
 
 理解漸進式放鬆等技巧，而不追求最大收縮。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/16-grounding-choice.svg" target="_blank" rel="noopener" aria-label="放大：定向與覺察：有多種可選接點"><img src="assets/figures/16-grounding-choice.svg" alt="人可把注意轉向眼前物件、支撐或環境，也可停止練習；不是強迫閉眼或回述創傷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 16｜定向與覺察：有多種可選接點</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把感覺到肌肉張力和診斷受傷分開，說明放鬆可用於分辨與選擇；不舒服時可停止，不以成功放鬆評能力。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 放鬆技巧的種類
 
 肌肉放鬆、呼吸、想像與注意方法各有不同操作與證據。名稱相近不等於同一介入，研究族群、比較與練習支持也不同，不能只看「放鬆」兩字保證療效。

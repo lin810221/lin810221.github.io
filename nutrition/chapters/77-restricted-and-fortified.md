@@ -2,6 +2,17 @@
 
 交叉檢查多重限制，避免一項替代解決一個問題卻製造未知。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-restrictions-support.svg" target="_blank" rel="noopener" aria-label="放大：飲食限制、替代與專業合作"><img src="assets/figures/39-restrictions-support.svg" alt="同一餐可能有過敏、強化、質地及臨床限制，需求不等於單純刪除某類；示意不要求所有人採相同限制。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜飲食限制、替代與專業合作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分開植物飲食、過敏與強化三種資訊，說明替代來源要保留哪些成分功能，不能只因名稱相近就認為缺口自動補上。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?id=51208&amp;sid=13694">TFDA：素食與植物肉標示</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/">NIH ODS：維生素B12</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/">NIH ODS：維生素D</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 限制可能同時存在
 
 植物飲食、奶過敏、咀嚼問題、宗教與預算可交疊；只用一個標籤分類不足以規劃。先列不能使用的來源、需要保留的營養功能與可取得選項，再看生命階段。

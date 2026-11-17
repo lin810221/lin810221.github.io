@@ -2,7 +2,7 @@
   "slug": "mental-health",
   "title": "心理健康與壓力科學完整教學",
   "shortTitle": "心理健康與壓力科學",
-  "updated": "2026-11-13",
+  "updated": "2026-11-16",
   "baseline": "WHO 2026查核 · NICE正式版／草案分列 · Python 3.15.2",
   "footerLabel": "MENTAL HEALTH · NOTICE, UNDERSTAND & CONNECT",
   "exampleBundle": "examples.zip",
@@ -115,7 +115,9 @@
         "心理健康的學科地圖",
         "mental health map"
       ],
-      "example": "01_first_observation.py"
+      "example": "01_first_observation.py",
+      "visual": "mh01",
+      "visualTask": "沿三個圈分開描述感受、生活功能和環境，選一個虛構情境放入交集；說明為何不能只靠感受強弱概括心理健康。"
     },
     {
       "id": "02-distress-and-function",
@@ -125,7 +127,9 @@
       "tags": [
         "心理健康的學科地圖",
         "distress and function"
-      ]
+      ],
+      "visual": "mh01",
+      "visualTask": "先指出困擾、時間和功能可能不同步的例子，再說明這張沒有刻度的圖為何不能判誰夠嚴重或決定求助資格。"
     },
     {
       "id": "03-biopsychosocial",
@@ -136,7 +140,9 @@
         "心理健康的學科地圖",
         "biopsychosocial"
       ],
-      "example": "02_source_status.py"
+      "example": "02_source_status.py",
+      "visual": "mh02",
+      "visualTask": "用一個工作期限案例，分別指出身體、評估與環境可能的連結；不要把最內圈當唯一真因，也不要用生物解釋否定經驗。"
     },
     {
       "id": "04-science-and-claims",
@@ -146,7 +152,9 @@
       "tags": [
         "心理健康的學科地圖",
         "science and claims"
-      ]
+      ],
+      "visual": "mh02",
+      "visualTask": "把圖中每條可能關聯先寫成問題，說明還需要哪種比較或觀察；區分能想出機制、能觀察相關和已辨識因果。"
     },
     {
       "id": "05-privacy-and-choice",
@@ -157,7 +165,9 @@
         "心理健康的學科地圖",
         "privacy and choice"
       ],
-      "example": "03_privacy_and_context.py"
+      "example": "03_privacy_and_context.py",
+      "visual": "mh03",
+      "visualTask": "從同一個人沿三條學習入口追蹤，指出不願記錄私人日記時仍能怎樣完成核心練習，並說明同意與退出為何要保留。"
     },
     {
       "id": "06-learning-routes",
@@ -167,7 +177,9 @@
       "tags": [
         "心理健康的學科地圖",
         "learning routes"
-      ]
+      ],
+      "visual": "mh03",
+      "visualTask": "從課程閱讀、虛構案例和選讀實作選一條可行路線，再指出何處需要跨課閱讀；不用把三條路全做才算開始學習。"
     },
     {
       "id": "07-appraisal-and-coping",
@@ -178,7 +190,9 @@
         "壓力反應與恢復",
         "appraisal and coping"
       ],
-      "example": "04_appraisal_case.py"
+      "example": "04_appraisal_case.py",
+      "visual": "mh04",
+      "visualTask": "先讀左側事件，再找右側尚未確認的資訊；分別提出一種因應與一項環境改善，不把壓力一律解釋成想錯或脆弱。"
     },
     {
       "id": "08-autonomic-and-hpa",
@@ -188,7 +202,9 @@
       "tags": [
         "壓力反應與恢復",
         "autonomic and hpa"
-      ]
+      ],
+      "visual": "mh04",
+      "visualTask": "把感受、神經反應與激素路徑分開敘述，說明事件評估如何可能與身體連動；不能由這張概念圖推個人皮質醇數值。"
     },
     {
       "id": "09-acute-chronic-and-recovery",
@@ -199,7 +215,9 @@
         "壓力反應與恢復",
         "acute chronic and recovery"
       ],
-      "example": "05_recovery_analogy.py"
+      "example": "05_recovery_analogy.py",
+      "visual": "mh05",
+      "visualTask": "比較單次和反覆需求的時間結構，指出恢復條件與支持可能不同；不要把每一次短期反應都當成已造成長期傷害。"
     },
     {
       "id": "10-interoception-and-symptoms",
@@ -209,7 +227,9 @@
       "tags": [
         "壓力反應與恢復",
         "interoception and symptoms"
-      ]
+      ],
+      "visual": "mh05",
+      "visualTask": "在時間線另標一個身體感受觀察和一個原因未知的位置；說明注意到症狀與已經查明病因，為何是不同層次。"
     },
     {
       "id": "11-hrv-and-individual-differences",
@@ -220,7 +240,9 @@
         "壓力反應與恢復",
         "hrv and individual differences"
       ],
-      "example": "06_hrv_context.py"
+      "example": "06_hrv_context.py",
+      "visual": "mh06",
+      "visualTask": "先指出心率與相鄰心搏間隔變化不是同一件事，再列圖中未提供的呼吸、活動與量測條件；不能由節點排法診斷壓力。"
     },
     {
       "id": "12-stress-case-formulation",
@@ -230,7 +252,9 @@
       "tags": [
         "壓力反應與恢復",
         "stress case formulation"
-      ]
+      ],
+      "visual": "mh06",
+      "visualTask": "把事件、資源、身體和行動各加到圖旁作案例地圖；辨識哪些已觀察、哪些只是可能解釋，不能讓一個HRV數字取代整體。"
     },
     {
       "id": "13-emotion-components",
@@ -241,7 +265,9 @@
         "情緒與調節",
         "emotion components"
       ],
-      "example": "07_emotion_components.py"
+      "example": "07_emotion_components.py",
+      "visual": "mh07",
+      "visualTask": "沿四個區塊各說一個可能觀察，不把四者強制同時或同程度出現；描述情緒時保留情境和個別差異。"
     },
     {
       "id": "14-naming-and-context",
@@ -251,7 +277,9 @@
       "tags": [
         "情緒與調節",
         "naming and context"
-      ]
+      ],
+      "visual": "mh07",
+      "visualTask": "選擇更具體的情緒詞並配上情境，指出命名協助描述而非決定誰應有何感受；圈與顏色沒有正常異常含義。"
     },
     {
       "id": "15-appraisal-and-reappraisal",
@@ -262,7 +290,9 @@
         "情緒與調節",
         "appraisal and reappraisal"
       ],
-      "example": "08_reappraisal_case.py"
+      "example": "08_reappraisal_case.py",
+      "visual": "mh08",
+      "visualTask": "先指出可觀察事實，再提出至少兩個仍需查核的解釋；重新評估不等於把不安全情境一律想成好事。"
     },
     {
       "id": "16-acceptance-and-regulation",
@@ -272,7 +302,9 @@
       "tags": [
         "情緒與調節",
         "acceptance and regulation"
-      ]
+      ],
+      "visual": "mh08",
+      "visualTask": "找到圖中可以保留感受仍選行動的位置，說明接納與調節不要求先把感覺消除，也不代表必須接受不當對待。"
     },
     {
       "id": "17-rumination-and-suppression",
@@ -283,7 +315,9 @@
         "情緒與調節",
         "rumination and suppression"
       ],
-      "example": "09_rumination_and_action.py"
+      "example": "09_rumination_and_action.py",
+      "visual": "mh09",
+      "visualTask": "沿循環追蹤短暫變化與再次不確定，再指出哪裡能加入具體問題或支持；不要用這張圖替某人貼上反芻標籤。"
     },
     {
       "id": "18-emotion-practice",
@@ -293,7 +327,9 @@
       "tags": [
         "情緒與調節",
         "emotion practice"
-      ]
+      ],
+      "visual": "mh09",
+      "visualTask": "把訊息案例分成事實、推測、感受和行動，沿圖提出一個可驗證的小步；不把「停止想」當成唯一答案。"
     },
     {
       "id": "19-attention-and-memory",
@@ -304,7 +340,9 @@
         "注意力、思考與數位生活",
         "attention and memory"
       ],
-      "example": "10_switching_time.py"
+      "example": "10_switching_time.py",
+      "visual": "mh10",
+      "visualTask": "比較需要留在腦中與可放外部清單的資訊，說明工作記憶和注意不是同時無限處理所有事情的容器。"
     },
     {
       "id": "20-task-switching",
@@ -314,7 +352,9 @@
       "tags": [
         "注意力、思考與數位生活",
         "task switching"
-      ]
+      ],
+      "visual": "mh10",
+      "visualTask": "在清單標出切換前需留下的狀態與下一步，區分虛構切換時間假設和通用心理學常數，不以圖保證效率。"
     },
     {
       "id": "21-automatic-thoughts",
@@ -325,7 +365,9 @@
         "注意力、思考與數位生活",
         "automatic thoughts"
       ],
-      "example": "11_known_and_assumed.py"
+      "example": "11_known_and_assumed.py",
+      "visual": "mh11",
+      "visualTask": "先把一句話拆成可觀察內容和推論，再問能補哪項資訊；認識認知偏誤不等於拿術語評價別人的人格。"
     },
     {
       "id": "22-uncertainty-and-problem-solving",
@@ -335,7 +377,9 @@
       "tags": [
         "注意力、思考與數位生活",
         "uncertainty and problem solving"
-      ]
+      ],
+      "visual": "mh11",
+      "visualTask": "在可查證問題和無法立即消除的不確定之間畫界線，選一個可行行動；不是所有未知都必須現在獲得保證。"
     },
     {
       "id": "23-worry-and-rumination",
@@ -346,7 +390,9 @@
         "注意力、思考與數位生活",
         "worry and rumination"
       ],
-      "example": "12_digital_schedule.py"
+      "example": "12_digital_schedule.py",
+      "visual": "mh12",
+      "visualTask": "把抽象追問改寫成一項具體可做或可問的事，再說明何時仍需接受未知；圖沒有保證一次整理就能消除擔心。"
     },
     {
       "id": "24-digital-attention",
@@ -356,7 +402,9 @@
       "tags": [
         "注意力、思考與數位生活",
         "digital attention"
-      ]
+      ],
+      "visual": "mh12",
+      "visualTask": "沿裝置到任務的入口辨識用途、時點與可協調的界線，不把相同使用時數推成相同心理效果或責任。"
     },
     {
       "id": "25-reinforcement-and-avoidance",
@@ -367,7 +415,9 @@
         "學習、習慣與價值行動",
         "reinforcement and avoidance"
       ],
-      "example": "13_negative_reinforcement.py"
+      "example": "13_negative_reinforcement.py",
+      "visual": "mh13",
+      "visualTask": "沿箭頭指出短期結果和未來影響不是同一件事，再說明迴避也可能具有合理保護功能，不能一律要求面對所有情境。"
     },
     {
       "id": "26-learning-in-context",
@@ -377,7 +427,9 @@
       "tags": [
         "學習、習慣與價值行動",
         "learning in context"
-      ]
+      ],
+      "visual": "mh13",
+      "visualTask": "把線索、行為和後果分開標出，加入資源與學習史；同樣行為在不同脈絡可能有不同功能，不能只看表面命名。"
     },
     {
       "id": "27-habits-and-opportunities",
@@ -388,7 +440,9 @@
         "學習、習慣與價值行動",
         "habits and opportunities"
       ],
-      "example": "14_habit_opportunities.py"
+      "example": "14_habit_opportunities.py",
+      "visual": "mh14",
+      "visualTask": "把目標改成可辨認的線索、機會和一次小行動，指出未做、未記錄與沒有機會的差別，不用完成率判意志。"
     },
     {
       "id": "28-small-actions-and-activation",
@@ -398,7 +452,9 @@
       "tags": [
         "學習、習慣與價值行動",
         "small actions and activation"
-      ]
+      ],
+      "visual": "mh14",
+      "visualTask": "選一個虛構低落情境的小行動，補上時間、支持和可退出方式；圖不要求先感覺好，也不把小步當完整治療。"
     },
     {
       "id": "29-values-and-goals",
@@ -409,7 +465,9 @@
         "學習、習慣與價值行動",
         "values and goals"
       ],
-      "example": "15_values_and_actions.py"
+      "example": "15_values_and_actions.py",
+      "visual": "mh15",
+      "visualTask": "分別指出方向和具體站點，為同一價值設兩個不同可行目標；不把未達一個目標解釋成這個人沒有價值。"
     },
     {
       "id": "30-behavior-observation",
@@ -419,7 +477,9 @@
       "tags": [
         "學習、習慣與價值行動",
         "behavior observation"
-      ]
+      ],
+      "visual": "mh15",
+      "visualTask": "選一個站點寫出可觀察行動與觀察時間，保留未記錄和條件改變；自我觀察不用變成健康或人格排名。"
     },
     {
       "id": "31-grounding-and-choice",
@@ -430,7 +490,9 @@
         "日常調節技能與選擇",
         "grounding and choice"
       ],
-      "example": "16_grounding_choices.py"
+      "example": "16_grounding_choices.py",
+      "visual": "mh16",
+      "visualTask": "指出一個不必閉眼或回述經驗的注意接點，再標示可以停止或改方法的位置；圖不要求讀者立即做身體練習。"
     },
     {
       "id": "32-relaxation-principles",
@@ -440,7 +502,9 @@
       "tags": [
         "日常調節技能與選擇",
         "relaxation principles"
-      ]
+      ],
+      "visual": "mh16",
+      "visualTask": "把感覺到肌肉張力和診斷受傷分開，說明放鬆可用於分辨與選擇；不舒服時可停止，不以成功放鬆評能力。"
     },
     {
       "id": "33-breathing-timing",
@@ -451,7 +515,9 @@
         "日常調節技能與選擇",
         "breathing timing"
       ],
-      "example": "17_breathing_timing.py"
+      "example": "17_breathing_timing.py",
+      "visual": "mh17",
+      "visualTask": "只沿圓弧分辨吸與呼的時間概念，指出圖沒有規定秒數、深度或HRV目標；不需跟圖調整自己的呼吸。"
     },
     {
       "id": "34-mindfulness-and-evidence",
@@ -461,7 +527,9 @@
       "tags": [
         "日常調節技能與選擇",
         "mindfulness and evidence"
-      ]
+      ],
+      "visual": "mh17",
+      "visualTask": "區分一次注意練習、完整課程及臨床效果證據，說明注意回來不是清空思想；這張圖不代表所有正念方法都相同。"
     },
     {
       "id": "35-self-compassion-and-preferences",
@@ -472,7 +540,9 @@
         "日常調節技能與選擇",
         "self compassion and preferences"
       ],
-      "example": "18_skill_preferences.py"
+      "example": "18_skill_preferences.py",
+      "visual": "mh18",
+      "visualTask": "把對困難的回應改寫成承認、理解與一個可選小步，說明減少額外責備不等於否認責任或假裝沒有問題。"
     },
     {
       "id": "36-choosing-skills",
@@ -482,7 +552,9 @@
       "tags": [
         "日常調節技能與選擇",
         "choosing skills"
-      ]
+      ],
+      "visual": "mh18",
+      "visualTask": "比較兩種方法的目的、負擔與偏好，選出可試行和回顧的方式；選擇不用某技能也不是個人失敗。"
     },
     {
       "id": "37-sleep-regulation",
@@ -493,7 +565,9 @@
         "睡眠、活動與生活節律",
         "sleep regulation"
       ],
-      "example": "19_sleep_window.py"
+      "example": "19_sleep_window.py",
+      "visual": "mh19",
+      "visualTask": "分別追兩條曲線並說出它們不是同一過程，加入睡眠機會與環境條件；不能從任意曲線讀取自己的所需時數。"
     },
     {
       "id": "38-insomnia-and-cbti",
@@ -503,7 +577,9 @@
       "tags": [
         "睡眠、活動與生活節律",
         "insomnia and cbti"
-      ]
+      ],
+      "visual": "mh19",
+      "visualTask": "指出睡眠衛生、失眠評估與完整CBT-I的範圍不同，圖不提供自動縮短在床時間或個人睡眠處方。"
     },
     {
       "id": "39-activity-and-mood",
@@ -514,7 +590,9 @@
         "睡眠、活動與生活節律",
         "activity and mood"
       ],
-      "example": "20_activity_observations.py"
+      "example": "20_activity_observations.py",
+      "visual": "mh20",
+      "visualTask": "以一個可近的活動情境說明環境和功能的重要性，避免只用步數或時長比較情緒效果，也不以圖推個人訓練量。"
     },
     {
       "id": "40-food-substances",
@@ -524,7 +602,9 @@
       "tags": [
         "睡眠、活動與生活節律",
         "food substances"
-      ]
+      ],
+      "visual": "mh20",
+      "visualTask": "找出飲食、咖啡因與酒精可能需要觀察的時間及用途，不把某成分直接當所有心理問題的唯一原因。"
     },
     {
       "id": "41-shift-and-routine",
@@ -535,7 +615,9 @@
         "睡眠、活動與生活節律",
         "shift and routine"
       ],
-      "example": "21_routine_context.py"
+      "example": "21_routine_context.py",
+      "visual": "mh21",
+      "visualTask": "辨識輪班和照顧責任如何限制作息機會，再指出哪些是個人可調、哪些需要資源協調；不把不規律全部歸因意志。"
     },
     {
       "id": "42-integrated-daily-plan",
@@ -545,7 +627,9 @@
       "tags": [
         "睡眠、活動與生活節律",
         "integrated daily plan"
-      ]
+      ],
+      "visual": "mh21",
+      "visualTask": "在同一張安排圖中檢查目標是否互相擠壓，保留未知任務與可協調位置；不要把完整排程誤當個人能量保證。"
     },
     {
       "id": "43-connection-and-loneliness",
@@ -556,7 +640,9 @@
         "人際、支持與界線",
         "connection and loneliness"
       ],
-      "example": "22_support_network.py"
+      "example": "22_support_network.py",
+      "visual": "mh22",
+      "visualTask": "分開接觸人數、關係品質與主觀孤獨，說明有很多節點也不代表需要已被滿足；不由圖判誰社交能力好壞。"
     },
     {
       "id": "44-listening-and-validation",
@@ -566,7 +652,9 @@
       "tags": [
         "人際、支持與界線",
         "listening and validation"
-      ]
+      ],
+      "visual": "mh22",
+      "visualTask": "選一條連線寫一句傾聽和確認需要的回應，區分理解感受與同意所有推論；也保留對方不想談的選擇。"
     },
     {
       "id": "45-assertiveness-and-boundaries",
@@ -577,7 +665,9 @@
         "人際、支持與界線",
         "assertiveness and boundaries"
       ],
-      "example": "23_assertive_boundary.py"
+      "example": "23_assertive_boundary.py",
+      "visual": "mh23",
+      "visualTask": "把界線寫成可提供的時間、行為和限制，說出尊重與拒絕可以並存；不要承諾自己必須全天候獨力處理。"
     },
     {
       "id": "46-conflict-and-repair",
@@ -587,7 +677,9 @@
       "tags": [
         "人際、支持與界線",
         "conflict and repair"
-      ]
+      ],
+      "visual": "mh23",
+      "visualTask": "沿共享討論區把衝突分成具體事件、需要和下一步，另指出不安全或不當對待需要不同支持，不強迫當事人修復所有關係。"
     },
     {
       "id": "47-caregiving-and-support",
@@ -598,7 +690,9 @@
         "人際、支持與界線",
         "caregiving and support"
       ],
-      "example": "24_caregiving_context.py"
+      "example": "24_caregiving_context.py",
+      "visual": "mh24",
+      "visualTask": "將照顧責任分成實務、情感和資源，為照顧者也保留支持；不用一條連線要求某人承擔全部照顧工作。"
     },
     {
       "id": "48-grief-and-loss",
@@ -608,7 +702,9 @@
       "tags": [
         "人際、支持與界線",
         "grief and loss"
-      ]
+      ],
+      "visual": "mh24",
+      "visualTask": "在沒有固定階段的圖上指出失落後需求可以如何改變，說明不同路徑不等於做錯，也仍可依需要尋求協助。"
     },
     {
       "id": "49-demands-and-resources",
@@ -619,7 +715,9 @@
         "職場心理健康與耗竭",
         "demands and resources"
       ],
-      "example": "25_demand_resources.py"
+      "example": "25_demand_resources.py",
+      "visual": "mh25",
+      "visualTask": "分別列需求和可用資源，指出哪一項需要工作設計或主管協調；不把壓力全部變成員工個人的調節責任。"
     },
     {
       "id": "50-burnout-definition",
@@ -629,7 +727,9 @@
       "tags": [
         "職場心理健康與耗竭",
         "burnout definition"
-      ]
+      ],
+      "visual": "mh25",
+      "visualTask": "區分工作相關耗竭概念、一般疲勞和醫療評估，說明這張工作條件圖不能替ICD定義打分或排除其他困擾。"
     },
     {
       "id": "51-time-and-uncertainty",
@@ -640,7 +740,9 @@
         "職場心理健康與耗竭",
         "time and uncertainty"
       ],
-      "example": "26_workday_missing.py"
+      "example": "26_workday_missing.py",
+      "visual": "mh26",
+      "visualTask": "先把可用時間、已知任務和未知需求分開，說明為何不能把未知工作當0，也不能用排程差額診斷職業耗竭。"
     },
     {
       "id": "52-control-fairness-and-safety",
@@ -650,7 +752,9 @@
       "tags": [
         "職場心理健康與耗竭",
         "control fairness and safety"
-      ]
+      ],
+      "visual": "mh26",
+      "visualTask": "在帳本外補上自主、角色與公平資訊，指出它們為何不能完全換成分鐘；資料算術和組織責任需要一起討論。"
     },
     {
       "id": "53-organizational-interventions",
@@ -661,7 +765,9 @@
         "職場心理健康與耗竭",
         "organizational interventions"
       ],
-      "example": "27_organizational_actions.py"
+      "example": "27_organizational_actions.py",
+      "visual": "mh27",
+      "visualTask": "把一個介入放到正確層次，再指出仍需誰和什麼資源；不把放鬆課程等同完成工作危害改善。"
     },
     {
       "id": "54-adjustments-and-return",
@@ -671,7 +777,9 @@
       "tags": [
         "職場心理健康與耗竭",
         "adjustments and return"
-      ]
+      ],
+      "visual": "mh27",
+      "visualTask": "依功能、同意和實際任務提出可回顧的調整，說明復工不是只看診斷名稱，也不是要求完全沒有感受才能參與。"
     },
     {
       "id": "55-fear-and-anxiety",
@@ -682,7 +790,9 @@
         "焦慮、恐慌與創傷的基本概念",
         "fear and anxiety"
       ],
-      "example": "28_anxiety_context.py"
+      "example": "28_anxiety_context.py",
+      "visual": "mh28",
+      "visualTask": "先分當下事件、預期和功能影響，說明有焦慮經驗不自動等於特定診斷，持續困擾也不必等到圖中某門檻才求助。"
     },
     {
       "id": "56-anxiety-patterns",
@@ -692,7 +802,9 @@
       "tags": [
         "焦慮、恐慌與創傷的基本概念",
         "anxiety patterns"
-      ]
+      ],
+      "visual": "mh28",
+      "visualTask": "指出不同焦慮或強迫相關問題需要各自評估，不能由同一身體輪廓或一個「擔心」詞把所有問題混成一類。"
     },
     {
       "id": "57-panic-and-body",
@@ -703,7 +815,9 @@
         "焦慮、恐慌與創傷的基本概念",
         "panic and body"
       ],
-      "example": "29_panic_not_diagnosis.py"
+      "example": "29_panic_not_diagnosis.py",
+      "visual": "mh29",
+      "visualTask": "沿感受與解釋的箭頭提出可能關係，同時列出仍需評估的原因；不能用「像恐慌」自行排除急性身體問題。"
     },
     {
       "id": "58-avoidance-and-treatment",
@@ -713,7 +827,9 @@
       "tags": [
         "焦慮、恐慌與創傷的基本概念",
         "avoidance and treatment"
-      ]
+      ],
+      "visual": "mh29",
+      "visualTask": "辨識迴避在短期和長期的不同可能作用，再指出暴露與ERP需完整專業原理；圖不是自行安排強迫面對的操作單。"
     },
     {
       "id": "59-trauma-informed",
@@ -724,7 +840,9 @@
         "焦慮、恐慌與創傷的基本概念",
         "trauma informed"
       ],
-      "example": "30_trauma_sensitive_choices.py"
+      "example": "30_trauma_sensitive_choices.py",
+      "visual": "mh30",
+      "visualTask": "指出選擇、可預期和停止的位置，說明創傷知情不需要先要求對方詳細回述，也不把選擇暫停當不合作。"
     },
     {
       "id": "60-anxiety-care",
@@ -734,7 +852,9 @@
       "tags": [
         "焦慮、恐慌與創傷的基本概念",
         "anxiety care"
-      ]
+      ],
+      "visual": "mh30",
+      "visualTask": "把生活支持、心理治療和醫療選項放到共同討論中，列一個要問專業的問題，不用流程圖替人選固定療程。"
     },
     {
       "id": "61-low-mood-and-depression",
@@ -745,7 +865,9 @@
         "低落、憂鬱與照護選項",
         "low mood and depression"
       ],
-      "example": "31_mood_function_record.py"
+      "example": "31_mood_function_record.py",
+      "visual": "mh31",
+      "visualTask": "分別描述低落、興趣和生活功能，再說明它們可能不同步；一般低落與需要評估的情境不能只靠一圈顏色區分。"
     },
     {
       "id": "62-mood-assessment",
@@ -755,7 +877,9 @@
       "tags": [
         "低落、憂鬱與照護選項",
         "mood assessment"
-      ]
+      ],
+      "visual": "mh31",
+      "visualTask": "補上時間、身體及生活背景，指出症狀計數以外的資訊；不用這張沒有尺度的圖自行確診或排除需要。"
     },
     {
       "id": "63-activity-and-low-mood",
@@ -766,7 +890,9 @@
         "低落、憂鬱與照護選項",
         "activity and low mood"
       ],
-      "example": "32_activity_cycle.py"
+      "example": "32_activity_cycle.py",
+      "visual": "mh32",
+      "visualTask": "沿循環找一個可被支持的小行動，將環境限制也標出；不要把活動減少一律解釋為不努力或僅靠意志處理。"
     },
     {
       "id": "64-differential-and-bipolar",
@@ -776,7 +902,9 @@
       "tags": [
         "低落、憂鬱與照護選項",
         "differential and bipolar"
-      ]
+      ],
+      "visual": "mh32",
+      "visualTask": "列出這張循環未涵蓋的睡眠、身體、哀傷或其他狀態資訊，說明為何鑑別需要專業，不能由相似感受套同一標籤。"
     },
     {
       "id": "65-care-options-and-goals",
@@ -787,7 +915,9 @@
         "低落、憂鬱與照護選項",
         "care options and goals"
       ],
-      "example": "33_care_options_context.py"
+      "example": "33_care_options_context.py",
+      "visual": "mh33",
+      "visualTask": "先把照護目標放中間，再比較選項與負擔，說明圖沒有安排任何人的藥物或治療順序，仍需共同討論。"
     },
     {
       "id": "66-review-and-recurrence",
@@ -797,7 +927,9 @@
       "tags": [
         "低落、憂鬱與照護選項",
         "review and recurrence"
-      ]
+      ],
+      "visual": "mh33",
+      "visualTask": "在回顧位置加一個新的需要或再次困難，說明改善可以有波動；不把一次反覆當所有努力無效。"
     },
     {
       "id": "67-when-to-seek-care",
@@ -808,7 +940,9 @@
         "評估、心理治療與台灣資源",
         "when to seek care"
       ],
-      "example": "34_assessment_questions.py"
+      "example": "34_assessment_questions.py",
+      "visual": "mh34",
+      "visualTask": "找出能開始求助的不同入口，說出一項你希望得到的協助；不必先自我診斷，也不以圖判誰有資格。"
     },
     {
       "id": "68-professional-roles",
@@ -818,7 +952,9 @@
       "tags": [
         "評估、心理治療與台灣資源",
         "professional roles"
-      ]
+      ],
+      "visual": "mh34",
+      "visualTask": "比較專業角色的合作位置而非互相取代，提醒具體資格與服務依當地制度確認；原課的台灣來源仍是細節入口。"
     },
     {
       "id": "69-psychotherapy-methods",
@@ -829,7 +965,9 @@
         "評估、心理治療與台灣資源",
         "psychotherapy methods"
       ],
-      "example": "35_shared_decision.py"
+      "example": "35_shared_decision.py",
+      "visual": "mh35",
+      "visualTask": "把一種治療的原理、完整程序和研究結果分成不同問題，指出為何一張概念圖不能等同受訓後的專業實施。"
     },
     {
       "id": "70-medication-literacy",
@@ -839,7 +977,9 @@
       "tags": [
         "評估、心理治療與台灣資源",
         "medication literacy"
-      ]
+      ],
+      "visual": "mh35",
+      "visualTask": "在監測區分想了解的效果與負擔，寫一個要和專業確認的問題；圖不提供劑量，也不指示自行停藥或換藥。"
     },
     {
       "id": "71-taiwan-resources",
@@ -850,7 +990,9 @@
         "評估、心理治療與台灣資源",
         "taiwan resources"
       ],
-      "example": "36_taiwan_resources.py"
+      "example": "36_taiwan_resources.py",
+      "visual": "mh36",
+      "visualTask": "在概念地圖找正式入口和可近性資訊，再回原課查當地服務；不把本圖當即時開放、補助資格或地址保證。"
     },
     {
       "id": "72-first-appointment",
@@ -860,7 +1002,9 @@
       "tags": [
         "評估、心理治療與台灣資源",
         "first appointment"
-      ]
+      ],
+      "visual": "mh36",
+      "visualTask": "為第一次會談準備一項目的、問題和需要的支持，保留不想透露的資訊；不用先寫完所有私人歷史才能開始。"
     },
     {
       "id": "73-supporting-someone",
@@ -871,7 +1015,9 @@
         "支持他人與安全連結",
         "supporting someone"
       ],
-      "example": "37_listening_response.py"
+      "example": "37_listening_response.py",
+      "visual": "mh37",
+      "visualTask": "指出詢問意願、傾聽與確認需要的位置，再提出一個可以提供的具體協助；支持不必先替對方找唯一原因。"
     },
     {
       "id": "74-helping-without-labels",
@@ -881,7 +1027,9 @@
       "tags": [
         "支持他人與安全連結",
         "helping without labels"
-      ]
+      ],
+      "visual": "mh37",
+      "visualTask": "把一個貼標籤或強迫樂觀的回應改成具體關心，分開觀察和推測；圖中短句只是示範，不要求每人照稿說。"
     },
     {
       "id": "75-supporter-boundaries",
@@ -892,7 +1040,9 @@
         "支持他人與安全連結",
         "supporter boundaries"
       ],
-      "example": "38_support_boundaries.py"
+      "example": "38_support_boundaries.py",
+      "visual": "mh38",
+      "visualTask": "把可提供時間、限制與其他支持放回網絡，說明關心可以有界線；不應把自己變成唯一且永久待命的人。"
     },
     {
       "id": "76-asking-about-safety",
@@ -902,7 +1052,9 @@
       "tags": [
         "支持他人與安全連結",
         "asking about safety"
-      ]
+      ],
+      "visual": "mh38",
+      "visualTask": "在網絡指出可直接關心安全並連結受訓協助的位置；這不是量表或保密承諾，立即情況依原課及當地醫療資源處理。"
     },
     {
       "id": "77-immediate-help",
@@ -913,7 +1065,9 @@
         "支持他人與安全連結",
         "immediate help"
       ],
-      "example": "39_immediate_help_context.py"
+      "example": "39_immediate_help_context.py",
+      "visual": "mh39",
+      "visualTask": "指出立即醫療和後續照護的不同目的，再回原課查看已核對的台灣資源；圖不提供新號碼，也不依日記宣告安全。"
     },
     {
       "id": "78-safety-planning-and-followup",
@@ -923,7 +1077,9 @@
       "tags": [
         "支持他人與安全連結",
         "safety planning and followup"
-      ]
+      ],
+      "visual": "mh39",
+      "visualTask": "說明安全計畫需專業及情境，不是填完清單就保證安全；後續支持可回顧而不取代當下即時需要。"
     },
     {
       "id": "79-children-and-families",
@@ -934,7 +1090,9 @@
         "不同生命階段與可近性",
         "children and families"
       ],
-      "example": "40_population_scope.py"
+      "example": "40_population_scope.py",
+      "visual": "mh40",
+      "visualTask": "選一個兒少情境，加入家庭與學校支持，說明不能只縮小成人模板；圖上的尺寸不是能力或症狀分數。"
     },
     {
       "id": "80-adolescents-and-digital",
@@ -944,7 +1102,9 @@
       "tags": [
         "不同生命階段與可近性",
         "adolescents and digital"
-      ]
+      ],
+      "visual": "mh40",
+      "visualTask": "為青少年案例補上同儕、用途與數位環境，說明相同時數不一定相同經驗；讓當事人意願和隱私仍可被討論。"
     },
     {
       "id": "81-perinatal-and-care",
@@ -955,7 +1115,9 @@
         "不同生命階段與可近性",
         "perinatal and care"
       ],
-      "example": "41_life_stage_context.py"
+      "example": "41_life_stage_context.py",
+      "visual": "mh41",
+      "visualTask": "區分孕產和照顧階段的身體、實務與心理需要，指出哪項可尋求協助；不把困擾視為理所當然或個人失格。"
     },
     {
       "id": "82-older-adults",
@@ -965,7 +1127,9 @@
       "tags": [
         "不同生命階段與可近性",
         "older adults"
-      ]
+      ],
+      "visual": "mh41",
+      "visualTask": "在高齡案例加入失落、身體疾病和支持條件，說明年齡不能單獨解釋所有感受，評估和資源仍重要。"
     },
     {
       "id": "83-neurodiversity-and-access",
@@ -976,7 +1140,9 @@
         "不同生命階段與可近性",
         "neurodiversity and access"
       ],
-      "example": "42_accessible_support.py"
+      "example": "42_accessible_support.py",
+      "visual": "mh42",
+      "visualTask": "找出可用溝通方式及一項環境調整，說明差異不等於缺陷，調整應依實際需要而非用標籤決定全部安排。"
     },
     {
       "id": "84-culture-stigma-and-rights",
@@ -986,7 +1152,9 @@
       "tags": [
         "不同生命階段與可近性",
         "culture stigma and rights"
-      ]
+      ],
+      "visual": "mh42",
+      "visualTask": "在求助路徑指出文化、污名和權益可能的障礙，再提出一個尊重自主的替代入口；不能用群體刻板印象評個人。"
     },
     {
       "id": "85-measurement-and-scales",
@@ -997,7 +1165,9 @@
         "量測、研究與資訊判讀",
         "measurement and scales"
       ],
-      "example": "43_ordinal_missing.py"
+      "example": "43_ordinal_missing.py",
+      "visual": "mh43",
+      "visualTask": "先說明刻度只描述原創記錄的順序，再指出同樣差一分未必是相同感受差；不能任意定義輕中重疾病。"
     },
     {
       "id": "86-missing-and-sampling",
@@ -1007,7 +1177,9 @@
       "tags": [
         "量測、研究與資訊判讀",
         "missing and sampling"
-      ]
+      ],
+      "visual": "mh43",
+      "visualTask": "比較明確記為0和完全未記錄的格子，說明分母與可用平均如何改變；不願記錄也不能被判成沒有困擾。"
     },
     {
       "id": "87-screening-bayes",
@@ -1018,7 +1190,9 @@
         "量測、研究與資訊判讀",
         "screening bayes"
       ],
-      "example": "44_screening_bayes.py"
+      "example": "44_screening_bayes.py",
+      "visual": "mh44",
+      "visualTask": "先圈出所有陽性，再指出PPV分母；比較敏感度的分母，不能把80%敏感度直接說成陽性者的個人診斷機率。"
     },
     {
       "id": "88-trials-and-outcomes",
@@ -1028,7 +1202,9 @@
       "tags": [
         "量測、研究與資訊判讀",
         "trials and outcomes"
-      ]
+      ],
+      "visual": "mh44",
+      "visualTask": "用四格指出研究中的對照、結果和時間仍需另看；虛構篩檢算術不是任何量表的實測效能，更不用於安全預測。"
     },
     {
       "id": "89-effect-size-and-causality",
@@ -1039,7 +1215,9 @@
         "量測、研究與資訊判讀",
         "effect size and causality"
       ],
-      "example": "45_effects_and_causality.py"
+      "example": "45_effects_and_causality.py",
+      "visual": "mh45",
+      "visualTask": "先區分原始差、標準化效果和關聯，說明可算出的統計量不自動代表個人改善或臨床重要性，也不證明唯一因果。"
     },
     {
       "id": "90-claims-and-version-audit",
@@ -1049,7 +1227,9 @@
       "tags": [
         "量測、研究與資訊判讀",
         "claims and version audit"
-      ]
+      ],
+      "visual": "mh45",
+      "visualTask": "為一則宣稱加上研究設計、來源版本和未知欄位，說明只改年份不算重新查核；圖中的任意點不是實測療效。"
     },
     {
       "id": "91-diary-project",
@@ -1060,7 +1240,9 @@
         "日記、資料與完整學習專題",
         "diary project"
       ],
-      "example": "46_report_audit.py"
+      "example": "46_report_audit.py",
+      "visual": "mh46",
+      "visualTask": "先指出日記目的和欄位，選一項可省略的私人資訊；虛構資料也能學習，不用把記錄完成當治療或安全保證。"
     },
     {
       "id": "92-data-contract-and-privacy",
@@ -1070,7 +1252,9 @@
       "tags": [
         "日記、資料與完整學習專題",
         "data contract and privacy"
-      ]
+      ],
+      "visual": "mh46",
+      "visualTask": "把未知、錯誤和明確零分別放入資料欄位，說明契約可保護解釋與隱私；欄位通過驗證仍不代表資料真實或健康。"
     },
     {
       "id": "93-reproducible-report",
@@ -1081,7 +1265,9 @@
         "日記、資料與完整學習專題",
         "reproducible report"
       ],
-      "example": "47_report_preview.py"
+      "example": "47_report_preview.py",
+      "visual": "mh47",
+      "visualTask": "把表格與圖中的未知對起來，說明可重跑與圖好看不等於心理或臨床效果；讀圖時仍要回到原始資料。"
     },
     {
       "id": "94-troubleshooting",
@@ -1091,7 +1277,9 @@
       "tags": [
         "日記、資料與完整學習專題",
         "troubleshooting"
-      ]
+      ],
+      "visual": "mh47",
+      "visualTask": "遇到出乎預期的結果，依目的、輸入、缺漏、單位和來源逐項排查；不要為了讓圖完整而補0或改成理想值。"
     },
     {
       "id": "95-capstone",
@@ -1102,7 +1290,9 @@
         "日記、資料與完整學習專題",
         "capstone"
       ],
-      "example": "48_complete_project.py"
+      "example": "48_complete_project.py",
+      "visual": "mh48",
+      "visualTask": "將案例放到四個位置，提出一項可行支持與一個尚待確認的問題；專題完成在於清楚推理，不是產生個人診斷。"
     },
     {
       "id": "96-exercises-and-references",
@@ -1112,7 +1302,1044 @@
       "tags": [
         "日記、資料與完整學習專題",
         "exercises and references"
-      ]
+      ],
+      "visual": "mh48",
+      "visualTask": "不看圖中文字，依經驗、條件、行動和證據重述學習地圖，再回原課核對答案；不需要先完成所有程式才能理解。"
     }
+  ],
+  "contentBaselineDate": "2026-11-13",
+  "visualUpdated": "2026-11-16",
+  "visuals": [
+    {
+      "id": "mh01",
+      "file": "assets/figures/01-experience-function.svg",
+      "title": "經驗、功能與生活是不同面向",
+      "description": "三個相交區域表示經驗、生活功能及脈絡互相影響；不是診斷三圈或嚴重度分級。",
+      "group": "foundations",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh02",
+      "file": "assets/figures/02-layers.svg",
+      "title": "多層解釋可以同時成立",
+      "description": "一個人位於身體、心理及社會條件的共同脈絡；各層不互相排除，也不由相關直接確定因果。",
+      "group": "foundations",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh03",
+      "file": "assets/figures/03-choice-and-privacy.svg",
+      "title": "學習可以有不同入口",
+      "description": "同一學習者可選閱讀、虛構案例或自願記錄；路徑是選擇，沒有強迫蒐集或必填個人資料。",
+      "group": "foundations",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh04",
+      "file": "assets/figures/04-appraisal-body.svg",
+      "title": "壓力評估與兩條反應路徑",
+      "description": "事件評估與資源連到中樞整合，圖分開自律神經與HPA代表路徑；兩者互相調節，不代表固定激素值。",
+      "group": "stress",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：壓力與焦慮",
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+        },
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NCI：腦下垂體與下視丘",
+          "url": "https://training.seer.cancer.gov/anatomy/endocrine/glands/pituitary.html"
+        },
+        {
+          "title": "NCI：腎上腺皮質與髓質",
+          "url": "https://training.seer.cancer.gov/anatomy/endocrine/glands/adrenal.html"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh05",
+      "file": "assets/figures/05-stress-time.svg",
+      "title": "反應與時間：沒有一條通用病程曲線",
+      "description": "三段虛構時間線有不同事件與回顧位置，只表示可能的時間結構，不預測症狀或恢復。",
+      "group": "stress",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：壓力與焦慮",
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+        },
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh06",
+      "file": "assets/figures/06-rr-interval.svg",
+      "title": "心搏間隔變化與情境",
+      "description": "兩列節點代表虛構心搏時點，間隔可能不同；不是心電圖、HRV檢測或焦慮診斷。",
+      "group": "stress",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "2026 HRV原方法資料",
+          "url": "https://doi.org/10.1152/ajpheart.00041.2026"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh07",
+      "file": "assets/figures/07-emotion-components.svg",
+      "title": "情緒經驗的四個連結",
+      "description": "感受、身體、評估與行動傾向互相影響，不把情緒簡化為一個腦區或固定顏色。",
+      "group": "emotion",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh08",
+      "file": "assets/figures/08-alternative-meanings.svg",
+      "title": "同一觀察可以有多個待查解釋",
+      "description": "訊息未回覆的原創案例，分開事實和可能解釋，再保留可選行動；不強迫樂觀。",
+      "group": "emotion",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh09",
+      "file": "assets/figures/09-rumination-loop.svg",
+      "title": "反覆追問與可以打開的出口",
+      "description": "抽象反覆追問可能維持循環，具體資訊、支持或小步可提供另一方向；不是責怪有困擾的人。",
+      "group": "emotion",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh10",
+      "file": "assets/figures/10-attention-workspace.svg",
+      "title": "注意與外部工具：把工作移到看得見的地方",
+      "description": "同一人面對多項任務，外部清單可以保存線索；示意不量測工作記憶容量。",
+      "group": "cognition",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh11",
+      "file": "assets/figures/11-thought-versus-fact.svg",
+      "title": "事實、假設與可查證問題",
+      "description": "三張並列卡區分觀察、解釋與下一個問題，沒有把一種想法直接變成人格標籤。",
+      "group": "cognition",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh12",
+      "file": "assets/figures/12-digital-boundaries.svg",
+      "title": "資訊入口、通知與可調整界線",
+      "description": "裝置、任務與休息界線示意；用途、時點和生活需要比單一總時數更完整。",
+      "group": "cognition",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh13",
+      "file": "assets/figures/13-avoidance-learning.svg",
+      "title": "短期鬆一口氣與長期選項",
+      "description": "避開情境可能短期減輕不適，也可能減少後續機會；此為學習原理，不要求自行暴露。",
+      "group": "behavior",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh14",
+      "file": "assets/figures/14-small-step.svg",
+      "title": "小步與機會：讓行動可被辨認",
+      "description": "階梯表示可選的小步而非療效或規定速度，環境和支持影響是否可行。",
+      "group": "behavior",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh15",
+      "file": "assets/figures/15-values-compass.svg",
+      "title": "價值像方向，目標像可回顧的站點",
+      "description": "羅盤方向代表所重視的行動品質，站點是具體目標；不以分數評價一個人的價值。",
+      "group": "behavior",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh16",
+      "file": "assets/figures/16-grounding-choice.svg",
+      "title": "定向與覺察：有多種可選接點",
+      "description": "人可把注意轉向眼前物件、支撐或環境，也可停止練習；不是強迫閉眼或回述創傷。",
+      "group": "skills",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh17",
+      "file": "assets/figures/17-breath-options.svg",
+      "title": "呼吸相位與注意：示意不是指令",
+      "description": "兩段圓弧代表相位先後，沒有目標秒數、憋氣或個人HRV保證，方法應符合舒適與偏好。",
+      "group": "skills",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh18",
+      "file": "assets/figures/18-kindness-preference.svg",
+      "title": "自我回應與方法偏好",
+      "description": "自責不是唯一回應，技能選擇還要看目的、負擔及當事人偏好；沒有規定每人都喜歡同一方法。",
+      "group": "skills",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh19",
+      "file": "assets/figures/19-sleep-processes.svg",
+      "title": "睡眠壓力與節律：兩個不同過程",
+      "description": "上方單調與波動線為任意概念曲線，表示睡眠壓力及節律不同；沒有實測刻度或個人睡眠限制。",
+      "group": "lifestyle",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NHLBI：睡眠與清醒週期",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh20",
+      "file": "assets/figures/20-daily-support.svg",
+      "title": "活動、飲食、物質與生活支持",
+      "description": "人處在多種日常條件中，圖表示可能互相影響，不用單一成分或行為解釋所有情緒。",
+      "group": "lifestyle",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NHLBI：睡眠與清醒週期",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh21",
+      "file": "assets/figures/21-routine-ledger.svg",
+      "title": "一天的安排：已知、需要和未知",
+      "description": "三段安排代表虛構工作、照顧與休息機會，問號段未知；不把排程等同生理容量。",
+      "group": "lifestyle",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NHLBI：睡眠與清醒週期",
+          "url": "https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle"
+        },
+        {
+          "title": "WHO：工作與心理健康",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh22",
+      "file": "assets/figures/22-social-connection.svg",
+      "title": "連結的品質：不只數有幾個人",
+      "description": "不同連線代表可取得的陪伴、實務協助或專業資源，線長與節點數不是孤獨量表。",
+      "group": "relationships",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh23",
+      "file": "assets/figures/23-boundaries.svg",
+      "title": "界線和衝突：具體表達可協調部分",
+      "description": "兩個人之間保留各自需要與共享討論區，不把界線當威脅，也不忽略關係安全。",
+      "group": "relationships",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh24",
+      "file": "assets/figures/24-care-grief.svg",
+      "title": "照顧與失落：需求沒有固定順序",
+      "description": "四條分支連到支持、實務需求、感受與回顧，沒有規定哀傷必須依序完成幾階段。",
+      "group": "relationships",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh25",
+      "file": "assets/figures/25-work-resources.svg",
+      "title": "工作需求與資源：一起看設計",
+      "description": "兩個平台並列表示需求和可用資源，沒有提供JD-R量表、耗竭診斷或員工承受力分數。",
+      "group": "work",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：工作與心理健康",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh26",
+      "file": "assets/figures/26-work-time.svg",
+      "title": "時間帳本與工作條件",
+      "description": "已知安排與未知需求並列，時間差額不是心理容量；公平、自主和角色條件不能全縮成分鐘。",
+      "group": "work",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：工作與心理健康",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+        },
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh27",
+      "file": "assets/figures/27-work-design.svg",
+      "title": "個人、團隊與組織的不同介入位置",
+      "description": "三個嵌套區域表示工作調整需多層支持，個人技能不能代替尚未處理的組織條件。",
+      "group": "work",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：工作與心理健康",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh28",
+      "file": "assets/figures/28-anxiety-context.svg",
+      "title": "害怕、預期與功能：分開描述",
+      "description": "當下事件和未來預期可伴隨身體、思想及行動改變，圖不分類診斷，也不依圖排除醫療問題。",
+      "group": "anxiety",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：壓力與焦慮",
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh29",
+      "file": "assets/figures/29-body-interpretation.svg",
+      "title": "身體感受、解釋與迴避的關係",
+      "description": "感受與解釋可能互相影響；有其他醫療原因的可能，不能以循環圖宣告沒有急症。",
+      "group": "anxiety",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：壓力與焦慮",
+          "url": "https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh30",
+      "file": "assets/figures/30-trauma-choice.svg",
+      "title": "創傷知情與共同決策：選擇保持可用",
+      "description": "多個入口允許當事人選擇談、先看資源、暫停或找專業支持，不強迫回述經驗。",
+      "group": "anxiety",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh31",
+      "file": "assets/figures/31-mood-function.svg",
+      "title": "情緒、興趣與功能不是同一條尺",
+      "description": "三個獨立觀察區域沒有症狀總分，時間和情境需另記錄，不能從圖直接判憂鬱。",
+      "group": "depression",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh32",
+      "file": "assets/figures/32-activation-support.svg",
+      "title": "低落、活動與支持的可能循環",
+      "description": "活動減少、機會減少及低落可互相影響，可加入支持和可行小步；不保證人人同一原因。",
+      "group": "depression",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh33",
+      "file": "assets/figures/33-care-network.svg",
+      "title": "照護目標與回顧：可有多條路",
+      "description": "不同支持連到功能與生活目標，回顧可以調整，不是所有人都先後依同一治療順序。",
+      "group": "depression",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh34",
+      "file": "assets/figures/34-professional-collaboration.svg",
+      "title": "求助、角色與合作",
+      "description": "當事人可依需要接觸合適專業，角色與資格要依當地制度確認；圖不替代轉介或診斷。",
+      "group": "care",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh35",
+      "file": "assets/figures/35-care-monitoring.svg",
+      "title": "方法、醫療與共同監測",
+      "description": "方法原理與具體個人安排不同，目標、偏好、效果與負擔要在照護中持續回顧。",
+      "group": "care",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh36",
+      "file": "assets/figures/36-appointment-resources.svg",
+      "title": "找到入口，準備你希望討論的問題",
+      "description": "地圖為無地址的概念入口：正式資源、預約、需求和問題；實際聯絡方式依原課可查來源。",
+      "group": "care",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh37",
+      "file": "assets/figures/37-support-dialogue.svg",
+      "title": "支持對話：先理解，再確認需要",
+      "description": "兩個人以原創短句互相確認，不急著貼診斷或替對方決定行動。",
+      "group": "support",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh38",
+      "file": "assets/figures/38-support-boundaries.svg",
+      "title": "支持網絡：不必只剩一個人",
+      "description": "當事人可連到親友、適當專業及即時醫療等支持，沒有把任何人設定為唯一全天候救援者。",
+      "group": "support",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh39",
+      "file": "assets/figures/39-immediate-followup.svg",
+      "title": "即時協助與後續支持是不同工作",
+      "description": "即時醫療與後續支持並列，依當下情境連結；無風險評分或保證安全的檢核清單。",
+      "group": "support",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh40",
+      "file": "assets/figures/40-development-context.svg",
+      "title": "兒少與家庭：把需要放在發展和環境中",
+      "description": "不同尺寸人物表示發展與支持需求，並非成熟程度、能力或健康排名。",
+      "group": "lifespan",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh41",
+      "file": "assets/figures/41-care-life-events.svg",
+      "title": "生命事件與可用支持",
+      "description": "照顧、孕產、高齡與失落可有不同負擔和資源，沒有用人生階段決定誰必然有困擾。",
+      "group": "lifespan",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh42",
+      "file": "assets/figures/42-access-channels.svg",
+      "title": "可近的溝通與有尊嚴的求助",
+      "description": "四種溝通與環境條件並列，沒有把差異畫成缺陷或用單一方法要求所有人。",
+      "group": "lifespan",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh43",
+      "file": "assets/figures/43-ordinal-missing.svg",
+      "title": "原創感受記錄：順序、缺漏與零",
+      "description": "短刻度是原創教學記錄，問號是缺漏，不設正常異常、診斷或安全色帶。",
+      "group": "evidence",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh44",
+      "file": "assets/figures/44-screening-grid.svg",
+      "title": "虛構篩檢四格：先找分母",
+      "description": "假想一萬人例子：目標狀態500人，真陽性400、偽陰性100、偽陽性950、真陰性8550；非真實工具效能。",
+      "group": "evidence",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "NIMH：心理治療",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh45",
+      "file": "assets/figures/45-association-effect.svg",
+      "title": "差異、關聯與因果：問題要分開",
+      "description": "左側代表同一量尺兩個虛構摘要，右側點為任意成對資料，兩者都不自動建立因果或臨床重要性。",
+      "group": "evidence",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh46",
+      "file": "assets/figures/46-diary-privacy.svg",
+      "title": "日記欄位：先問用途，再決定收多少",
+      "description": "虛構記錄卡保留目的、時間、選擇和缺漏，身份欄不需要填入；不是要求公開日記。",
+      "group": "practice",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh47",
+      "file": "assets/figures/47-report-reading.svg",
+      "title": "圖表與來源：可核對，不代替理解",
+      "description": "同一份虛構資料連到表格、圖與說明，缺漏與來源仍需保留；檔案格式不是療效證據。",
+      "group": "practice",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    },
+    {
+      "id": "mh48",
+      "file": "assets/figures/48-complete-map.svg",
+      "title": "完整案例：經驗、條件、行動與證據",
+      "description": "一個虛構案例以多種可回顧線索連成圖，不計總健康分數；不同路徑仍可保留未知。",
+      "group": "practice",
+      "kind": "概念關係圖",
+      "note": "原創概念示意，非比例；顏色輔助辨識，不代表正常異常。",
+      "sources": [
+        {
+          "title": "WHO：壓力問答",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/stress"
+        },
+        {
+          "title": "NIMH：照顧心理健康",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "width": 860,
+      "height": 520
+    }
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/read-tasks.md",
+    "study/sources.md",
+    "study-pack.zip"
   ]
 }

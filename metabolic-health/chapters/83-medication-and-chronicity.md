@@ -2,6 +2,17 @@
 
 把日期和既往資訊放回檢驗解釋。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-clinical-summary.svg" target="_blank" rel="noopener" aria-label="放大：把病史、時間與問題帶進對話"><img src="assets/figures/42-clinical-summary.svg" alt="摘要是溝通工具，未知不填成沒有；常規回顧與急性問題需分開處理。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜把病史、時間與問題帶進對話</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>依摘要各列補時間、病史與藥物等背景，指出哪一欄目前未知，說明為何不應默認沒有用藥或沒有病史。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 相同數字可能不同情境
 
 今天首次異常、過去多次持續異常、治療後改變或急性病中觀察，不能視為同一案例。慢性腎病的持續性、糖尿病的確認條件和血壓多次量測各有規則，不能統一成「兩次異常都確診」。

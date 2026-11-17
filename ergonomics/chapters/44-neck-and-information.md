@@ -2,6 +2,17 @@
 
 避免把任何頸部角度當作疾病判定。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-reach-frequency.svg" target="_blank" rel="noopener" aria-label="放大：伸取與資訊配置：先看常用任務"><img src="assets/figures/22-reach-frequency.svg" alt="俯視工作區比較較近與較遠物件，距離只是部分條件，頻率、視覺、支撐及身體需求仍需確認。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜伸取與資訊配置：先看常用任務</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把高頻資訊和轉換方向加進配置，指出反光或字太小也會改變姿勢；不是只靠固定頸角處理所有不適。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 頭頸在配合任務
 
 看細字、對談、文件與螢幕會帶來不同位置。視覺不清或配置不便，可能讓人持續前伸或轉向；不是只要求記得縮下巴就能解決全部問題。

@@ -2,6 +2,17 @@
 
 列出非孕期正式標準，同時保留典型症狀和重複確認。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-glucose-sample.svg" target="_blank" rel="noopener" aria-label="放大：血糖：濃度單位與確認條件"><img src="assets/figures/10-glucose-sample.svg" alt="同一物質可用質量或物質量濃度表達，換算不取代檢體、時間與確認程序。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜血糖：濃度單位與確認條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在試管旁補上檢體、空腹或其他時點與確認條件，說明換算完成為何仍不等於已完成糖尿病診斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 非孕期的主要條件
 
 ADA2026採HbA1c≥6.5%、空腹血漿葡萄糖≥126mg/dL、75g OGTT兩小時≥200mg/dL等；隨機血糖≥200需典型高血糖症狀或危象背景。空腹通常指至少八小時未攝熱量，妊娠標準另看。

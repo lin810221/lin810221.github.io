@@ -2,6 +2,17 @@
 
 以2026查核基線建立主線，分清發布年、查核日和研究截止日。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-evidence-dates.svg" target="_blank" rel="noopener" aria-label="放大：指南日期與證據範圍"><img src="assets/figures/02-evidence-dates.svg" alt="時間線標正式指南發布年份，查核日不把舊指南改名；不同來源回答不同族群與任務問題。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜指南日期與證據範圍</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿時間線分別找到WHO2020與ACSM2026，說出發布日期和今天查核不是同一件事，並在原課文確認各自的適用族群。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a> · <a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 健康活動與訓練最佳化
 
 WHO2020正式指南處理不同族群的活動與久坐，2026更新說明頁不代表整套指南改名2026。一般成人有氧方向為每週150–300分鐘中等或75–150分鐘費力活動，或相當組合，另有肌力要求；一些活動比完全沒有好。

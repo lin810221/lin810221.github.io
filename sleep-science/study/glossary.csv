@@ -1,0 +1,121 @@
+﻿中文,English,學習用簡釋
+睡眠,Sleep,由神經系統主動調節的狀態，含多種階段，並非全身停止工作。
+清醒,Wakefulness,與環境互動及維持反應的狀態，仍會有程度與時間變化。
+睏倦,Sleepiness,傾向入睡或難維持清醒的經驗，與疲勞不是同一件事。
+疲勞,Fatigue,精神或身體耗竭感，不一定等於當下容易入睡。
+睡眠機會,Sleep opportunity,生活安排與條件容許睡眠的時段，不等於實際睡著時間。
+睡眠時長,Sleep duration,指定窗口內已睡著的時間，需說明資料來源與定義。
+睡眠品質,Sleep quality,包含主觀感受、連續性與功能等面向，不能只用一個階段比例概括。
+睡眠規律,Sleep regularity,睡醒安排在不同日子的穩定程度，依所用指標有不同含義。
+睡眠時機,Sleep timing,睡眠相對鐘點、生活需求與生物相位的位置。
+晝夜節律,Circadian rhythm,約24小時的內生節律，會受到環境與行為訊號調整。
+同步,Entrainment,內生節律與外在週期建立相對穩定的時間關係。
+授時因子,Zeitgeber,能調整生物時鐘的外在時間訊號，作用依系統與條件不同。
+週期,Period,節律完成一輪所需時間，與相位在時間軸上的位置不同。
+相位,Phase,節律中某一位置或標記的時間，需說明用何種標記。
+振幅,Amplitude,節律變化幅度，須依量測或模型定義，不是健康總分。
+晨晚型,Chronotype,睡醒偏好與生物時機的個體差異，不自動等同疾病。
+視交叉上核,Suprachiasmatic nucleus,下視丘的主要晝夜協調結構，接收光相關訊息並連到多種輸出。
+內在光敏視網膜神經節細胞,Intrinsically photosensitive retinal ganglion cell,含黑視素並整合光訊息的視網膜細胞，參與非視覺光反應。
+黑視素,Melanopsin,某些視網膜神經節細胞的光敏分子，並非光反應的唯一參與者。
+轉錄轉譯回饋迴路,Transcription-translation feedback loop,時鐘分子相互調節形成節律的一種核心架構，圖常省略許多細節。
+時鐘基因,Clock gene,參與分子節律調節的基因，單一變異不能概括一個人的睡眠。
+周邊時鐘,Peripheral clock,器官與組織中的節律系統，與中樞協調但不必同時達峰。
+褪黑激素,Melatonin,與暗期和時間訊息相關的激素，內生節律與外用製劑是不同問題。
+暗光褪黑激素起始點,Dim-light melatonin onset,在特定暗光採樣條件下界定的相位標記，需方法與評估。
+核心體溫最低點,Core body temperature minimum,核心體溫節律的一個相位位置，非皮膚溫度或一般單次量測可直接替代。
+相位反應曲線,Phase response curve,描述刺激在不同生物相位下可能造成的相位改變，非通用鐘點處方。
+相位提前,Phase advance,相位標記相對原來出現在較早時間，需說明參照。
+相位延後,Phase delay,相位標記相對原來出現在較晚時間，與單晚晚睡不完全同義。
+自由運行,Free-running rhythm,缺少有效外在同步時，節律依內生週期持續移動的現象。
+睡眠壓力,Homeostatic sleep pressure,與先前清醒和睡眠歷史相關的調節概念，不是一支可直接讀值的儀表。
+腺苷,Adenosine,與睡眠恆定調節相關的分子，局部動態不能簡化為全腦單一濃度。
+食慾素,Orexin or hypocretin,參與清醒穩定等功能的神經肽，名稱不代表只調節食慾。
+腹外側視前區,Ventrolateral preoptic area,睡眠調節相關神經區域之一，簡圖不包含全部細胞與路徑。
+上行清醒系統,Ascending arousal systems,多個腦區與訊號共同支持清醒，並非只有一個開關。
+非快速動眼睡眠,Non-rapid eye movement sleep,包含N1、N2、N3等專業分類，與REM交替形成一夜結構。
+N1,NREM stage N1,常見於清醒向睡眠轉換的階段，需結合專業訊號判讀。
+N2,NREM stage N2,非快速動眼睡眠的一個階段，不能由單一手錶動作訊號直接確定。
+N3,NREM stage N3,與慢波活動相關的階段，不應把其比例當成普遍健康成績。
+快速動眼睡眠,Rapid eye movement sleep,具有特定腦活動、眼動與肌張力關係的睡眠狀態。
+腦電圖,Electroencephalography,記錄頭皮等位置的電位變化，需區分訊號、雜訊與判讀。
+眼電圖,Electrooculography,利用電位變化記錄眼動相關訊息，與腦電訊號分工不同。
+肌電圖,Electromyography,記錄肌肉電活動相關訊息，可參與睡眠狀態或事件判讀。
+多項生理睡眠檢查,Polysomnography,同時記錄多種生理訊號，再依方法與臨床問題綜合判讀。
+評分片段,Scoring epoch,依規則將紀錄切成片段作分類；本課原創例不重製正式評分條文。
+睡眠圖,Hypnogram,以時間軸呈現階段分類的圖，垂直位置不是健康高低分數。
+微覺醒,Arousal,專業訊號中的短暫變化概念，不必等同本人記得醒來。
+覺醒,Awakening,由睡眠轉為清醒的事件或時段，與訊號微覺醒需分別定義。
+睡眠慣性,Sleep inertia,醒後一段反應與主觀清醒尚未恢復的現象，大小依情境而異。
+小睡,Nap,主睡眠之外的睡眠段，作用與後續睡眠取決於時機、長度及個體。
+恢復睡眠,Recovery sleep,睡眠不足後的睡眠改變，不代表所有功能可按時數一次補回。
+睡眠不足,Sleep deficiency,睡眠量、時間、品質或疾病等條件不足以支持需要的廣泛概念。
+部分睡眠限制,Partial sleep restriction,研究中減少部分睡眠機會的設計，與臨床CBT-I時段調整分開。
+完全睡眠剝奪,Total sleep deprivation,在指定期間維持不睡的研究或暴露條件，本課不安排此實驗。
+記憶鞏固,Memory consolidation,記憶形成後的穩定與整合過程，睡眠作用依任務與設計判讀。
+警覺維持,Vigilance,持續注意並適當反應的能力，主觀不睏不保證表現未下降。
+微睡眠,Microsleep,短暫進入睡眠的現象，可與重要任務或駕駛安全有關。
+類淋巴清除假說,Glymphatic hypothesis,腦液體與物質運送研究的框架，不等於已證實的人體排毒療法。
+雙向關係,Bidirectional relationship,睡眠與另一狀態可能互相影響，仍需證據區分因果路徑。
+睡眠日誌,Sleep diary,依明確欄位記錄主觀時間與情境，記不清楚需保留未知。
+在床時間,Time in bed,依日誌定義的上床到離床時段，不自動等於睡眠機會或已睡時間。
+入睡潛伏期,Sleep onset latency,從指定嘗試睡眠起點到入睡的時間，起點需明確。
+入睡後清醒時間,Wake after sleep onset,入睡後的清醒加總，是否包含最後醒後需看該方法定義。
+最後醒後時間,Terminal wakefulness,最後醒來到離床的清醒時段，若已列入WASO便不能重扣。
+總睡眠時間,Total sleep time,在指定窗口已睡時間的加總，來源與估計方式需說明。
+睡眠效率,Sleep efficiency,某一定義下總睡眠時間除以在床等分母，不能單獨診斷或排治療。
+睡眠期間,Sleep period,由睡眠開始到最後睡眠結束的區間，可能包含其間覺醒。
+睡眠中點,Midsleep,睡眠區間的時間位置，需註明採開始終點或其他方法。
+圓形平均,Circular mean,將鐘點放在圓周上平均的方法，適合處理午夜邊界。
+平均向量長度,Mean resultant length,描述圓形資料方向集中程度，接近零時平均方向可能未定義。
+缺失資料,Missing data,本應取得但目前不知道的資料，不能自動補成0或理想值。
+明確零,Explicit zero,確定在定義窗口沒有該數量，與不知道數量不同。
+活動紀錄法,Actigraphy,以活動訊號估計睡醒等模式，安靜清醒與睡眠可能混淆。
+光體積描記,Photoplethysmography,以光訊號估計血容量變化相關資訊，不直接記錄腦波。
+加速度計,Accelerometer,量測加速度的感測器，可提供動作資訊，不能單獨判定睡眠階段。
+驗證,Validation,在明確目標情境與參考下評估推論表現，不等於永久適用認證。
+參考判讀,Reference assessment,用於比較裝置或方法的判讀，流程、誤差與盲法仍要交代。
+睡眠為陽性,Sleep-positive convention,錯分表中先把睡眠定義成陽性，指標意義才不會顛倒。
+睡眠敏感度,Sleep sensitivity,參考睡眠片段中被裝置判睡的比例，不等於清醒判讀能力。
+清醒特異度,Wake specificity,參考清醒片段中被判醒的比例，與總準確度不同。
+總準確度,Overall accuracy,全部可比較片段中判對的比例，受睡醒分布影響。
+偽陽性睡眠,False-positive sleep,參考清醒卻被裝置判睡的片段，可使估計睡眠偏長。
+偽陰性睡眠,False-negative sleep,參考睡眠卻被判醒的片段，與偽陽性的分母不同。
+演算法版本,Algorithm version,影響感測轉推論的規則或模型版本，更新可能改變分數意義。
+追蹤焦慮,Orthosomnia,過度追求裝置理想睡眠數字的問題概念，分數不能取代生活功能。
+半衰期,Half-life,在指定消退模型與條件下，數量降為一半所需時間，不是個人固定值。
+一階消退,First-order elimination,消退速度與當時量成比例的模型，不包含所有吸收與代謝細節。
+鎮靜,Sedation,較少清醒或反應的狀態，不自動等於正常睡眠結構或恢復。
+條件化喚起,Conditioned arousal,床或睡眠情境逐漸與清醒、擔心等反應連結的維持機制。
+失眠認知行為治療,Cognitive behavioral therapy for insomnia,結合多種行為與認知組件及評估追蹤的循證照護，不只是衛教。
+刺激控制,Stimulus control,CBT-I中調整床與睡眠關係的組件，需結合個別條件與完整照護。
+睡眠限制治療,Sleep restriction therapy,CBT-I中有評估與監測的時段調整方法，本課不由效率產生個人處方。
+數位CBT-I,Digital CBT-I,以數位方式提供CBT-I的形式，內容、支援與證據依產品及族群判讀。
+共同決策,Shared decision making,結合證據、專業與當事人目標、偏好和負擔來討論選擇。
+共存失眠與睡眠呼吸中止,Comorbid insomnia and sleep apnea,兩種問題可以共存，不能只靠一個診斷排除另一個。
+阻塞型睡眠呼吸中止,Obstructive sleep apnea,睡眠中上氣道阻塞相關的呼吸問題，需依臨床與檢查綜合評估。
+中樞型睡眠呼吸中止,Central sleep apnea,呼吸驅動等調節相關事件，與上氣道阻塞的機制不同。
+低通氣,Hypoventilation,通氣不足的問題，不能只用單一裝置氧氣數字直接確診。
+呼吸中止事件,Apnea,依方法定義的呼吸事件，需區分努力、訊號及判讀條件。
+低通氣事件,Hypopnea,依規則定義的呼吸減少事件，判讀門檻與訊號來源需交代。
+呼吸中止低通氣指數,Apnea-hypopnea index,依已睡時間為分母的每小時已評分事件數，數字不代替完整評估。
+呼吸事件指數,Respiratory event index,依特定方法監測時間作分母的事件頻率，非必然等同原始錄製時長。
+氧氣去飽和指數,Oxygen desaturation index,每小時指定幅度的去飽和事件數，需說明定義、分母與訊號品質。
+居家睡眠呼吸中止檢測,Home sleep apnea testing,特定適用條件下的檢測途徑，不是所有人都能替代完整PSG。
+正壓呼吸治療,Positive airway pressure,以正壓支持呼吸的一類照護，模式與設定需要適當評估及追蹤。
+口腔裝置,Oral appliance,某些睡眠呼吸問題的照護選項，適用、製作與追蹤需專業評估。
+不寧腿症候群,Restless legs syndrome,有特定症狀與時機特徵的問題，與單純抽筋或裝置肢動分數不同。
+週期性肢體動作,Periodic limb movements of sleep,睡眠中的特定動作記錄概念，不自動等於需要治療的疾病。
+猝睡症,Narcolepsy,涉及日間嗜睡及特定生理特徵的專業診斷，不只是偶爾睡不足。
+猝倒,Cataplexy,常與情緒相關的短暫肌力下降概念，需與其他原因鑑別。
+多次入睡潛伏期檢查,Multiple sleep latency test,在特定準備與流程下評估入睡傾向等特徵，不能只看單一秒數。
+異睡症,Parasomnia,與睡眠或轉換相關的行為與經驗問題類別，不可只憑一次影片定性。
+REM睡眠行為障礙,REM sleep behavior disorder,與REM肌張力及行為相關的問題，需要專業判斷與安全評估。
+延遲睡醒相位障礙,Delayed sleep-wake phase disorder,相位延後與生活需求、困擾或功能相關的障礙，不等同所有晚型。
+提前睡醒相位障礙,Advanced sleep-wake phase disorder,睡醒相位過早並與問題及功能相連的情況，需完整評估。
+非24小時睡醒障礙,Non-24-hour sleep-wake rhythm disorder,睡醒節律持續漂移、無法穩定同步的問題，不能只看一天。
+不規則睡醒節律障礙,Irregular sleep-wake rhythm disorder,睡醒缺少明顯整合主段的節律問題，需看照護、活動與身體條件。
+輪班工作障礙,Shift work disorder,輪班相關睡眠及清醒困擾的專業問題，不代表所有輪班者都有此障礙。
+時差障礙,Jet lag disorder,跨時區後生物相位與當地生活時間的錯位問題，與旅途疲勞分開。
+UTC偏移,UTC offset,某一時刻當地鐘點與UTC的時間差，不自動包含城市夏令時間規則。
+節律錯位,Circadian misalignment,生物相位與外在安排或行為時間關係不匹配，需說明比較的系統。

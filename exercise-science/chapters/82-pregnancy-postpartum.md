@@ -2,6 +2,17 @@
 
 分開健康族群活動指南與需要產檢團隊評估的情況。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-lifespan-adaptation.svg" target="_blank" rel="noopener" aria-label="放大：生命階段與身體條件"><img src="assets/figures/41-lifespan-adaptation.svg" alt="三個非比例人形代表不同階段需要實際評估，不將大小畫成能力排序，也不給兒少、高齡或孕產固定負荷。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜生命階段與身體條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把孕期與產後情境放在圖外另開條件欄，說出期間、症狀與專業資訊不能省略；一般活動方向不是任何個人都能直接照做的處方。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 適用範圍
 
 健康孕期和產後活動有益處，CDC提供每週至少150分鐘中等有氧活動等方向；但需看孕程、既有活動、症狀、產後恢復與醫療條件。不是所有人同時、同方式恢復原強度。

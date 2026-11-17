@@ -2,6 +2,17 @@
 
 理解活動空間、組織受力與漸進適應，不追求人人相同的角度。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/04-planes.svg" target="_blank" rel="noopener" aria-label="放大：動作平面與解剖方向"><img src="assets/figures/04-planes.svg" alt="三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。" width="860" height="510" loading="lazy"></a><figcaption><strong>圖 04｜動作平面與解剖方向</strong>本學習空間原創解剖圖再用，非比例；按本單元任務閱讀。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>用切面圖指出關節及周圍組織可能以不同方向承受需求，再列任務、時間與耐受條件，說明為何單張平面圖無法判組織負荷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 結構影響可用動作
 
 不同關節的構造、個人體段比例、活動度和控制能力，會影響動作策略。手腳長度不同，完成同一任務的外觀可能不同；單一標準照片不能直接當每人必須複製的形狀。

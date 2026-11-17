@@ -2,6 +2,17 @@
 
 用完整變數與長期觀察檢查計畫，不靠痠痛和一次體重變化。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-effort-scales.svg" target="_blank" rel="noopener" aria-label="放大：RIR、RPE與計畫回顧"><img src="assets/figures/21-effort-scales.svg" alt="兩條沒有數字的不同量尺強調方法需先定義，不表示任意RIR和RPE點位可以直接互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜RIR、RPE與計畫回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把量表估計與完成組次、進步、生活負擔並列，說明回顧計畫不能只追逐更高努力感；圖上沒有保證肌肥大或傷害的門檻。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 計畫的結構
 
 列目標肌群、動作、週量與分配、負荷或努力、休息、ROM和實際完成。檢查是否有某些肌群重複堆量、某些目標沒有對應；不能只看動作數多就稱完整。

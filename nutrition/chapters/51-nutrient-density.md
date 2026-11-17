@@ -2,6 +2,17 @@
 
 用三種分母比較食物，理解每個指標看見與漏掉什麼。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-density-denominators.svg" target="_blank" rel="noopener" aria-label="放大：營養密度的分母與整體飲食"><img src="assets/figures/26-density-denominators.svg" alt="同一食物以每100克、每份及每100千卡比較可有不同排序，整體飲食型態需看多種食物與時間而非單一分母。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜營養密度的分母與整體飲食</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選圖中一種食物，以三種分母各說一個可回答的問題，解釋為何比較前要先對齊重量、份量或能量基準。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 分母會改變問題
 
 每100g方便同重量比較，每份接近實際使用，每100kcal描述相對能量的某營養素。三者都合理，但答案可能不同；高含水食物每100g能量低，不等於所有用途都更適合。

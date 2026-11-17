@@ -2,6 +2,17 @@
 
 用窗口資料理解平均和仍缺少的資訊。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-upper-limb-pattern.svg" target="_blank" rel="noopener" aria-label="放大：重複上肢工作與後續觀察"><img src="assets/figures/24-upper-limb-pattern.svg" alt="不同時間片段可能有不同力、位置與恢復，觀察卡把任務與感受脈絡連接，不給疾病風險總分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜重複上肢工作與後續觀察</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在時間線標出頻率、峰值和變化，說明平均相同也可能不同暴露；鍵鼠DSE不能因重複二字就直接套ART。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 循環的定義
 
 一次循環可能包含多個動作，也可能左右手不同。先說計數方式和哪隻手、哪個工作段，不能把產品數直接當手部動作數。

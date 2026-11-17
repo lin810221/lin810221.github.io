@@ -2,6 +2,17 @@
 
 看光從哪裡來、落在哪裡，而非只調一個亮度百分比。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-angle-glare.svg" target="_blank" rel="noopener" aria-label="放大：可讀性：尺寸、距離與反光都要看"><img src="assets/figures/20-angle-glare.svg" alt="兩個視覺三角形表示不同距離與字高的關係，亮面反光是另一問題；圖不是視力或字級處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜可讀性：尺寸、距離與反光都要看</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在圖旁另標光源和可能反射路徑，說明調位置後要確認文字和紙本仍可讀；圖未提供單一亮度設定或照度法規值。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.osha.gov/etools/computer-workstations/components/monitors">OSHA：螢幕與視覺配置</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 光與任務
 
 紙本、螢幕、精細作業可能有不同需求；窗光、燈具、反射與陰影會影響視覺。不能拿一個通用照度數字解決所有工作，也不能把螢幕亮度百分比當實測亮度。

@@ -2,6 +2,17 @@
 
 把日常暴露、症狀與背景整理成可討論資訊。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/20-daily-support.svg" target="_blank" rel="noopener" aria-label="放大：活動、飲食、物質與生活支持"><img src="assets/figures/20-daily-support.svg" alt="人處在多種日常條件中，圖表示可能互相影響，不用單一成分或行為解釋所有情緒。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 20｜活動、飲食、物質與生活支持</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>找出飲食、咖啡因與酒精可能需要觀察的時間及用途，不把某成分直接當所有心理問題的唯一原因。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle">NHLBI：睡眠與清醒週期</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 飲食是整體
 
 營養、食物可近性、進食規律與身體疾病都可能影響生活。某種食物或補充品不能只憑神經傳導物質機轉宣稱治療憂鬱；缺乏症、疾病與個別需要需適當評估。

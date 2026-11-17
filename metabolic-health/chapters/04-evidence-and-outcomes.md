@@ -2,6 +2,17 @@
 
 分清機制、生物標記、疾病事件與生活品質。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/02-criteria-layers.svg" target="_blank" rel="noopener" aria-label="放大：同一數字背後的不同用途"><img src="assets/figures/02-criteria-layers.svg" alt="定義、診斷、治療目標、服務資格與預測模型是不同頁面，不可因數字相似便互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 02｜同一數字背後的不同用途</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>選一個研究結果，分開它觀察的指標、真正關心的健康結果與比較方式，說明圖中哪個框還需要補證據。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四個層次
 
 細胞機制可說明可能如何作用，血中標記描述某些狀態，疾病事件與功能則更接近實際結果。標記下降不自動證明死亡或心肌梗塞減少，也不表示沒有其他傷害。

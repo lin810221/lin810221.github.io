@@ -2,6 +2,17 @@
 
 讓行為描述可觀察，也保留人的需要與選擇。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/13-avoidance-learning.svg" target="_blank" rel="noopener" aria-label="放大：短期鬆一口氣與長期選項"><img src="assets/figures/13-avoidance-learning.svg" alt="避開情境可能短期減輕不適，也可能減少後續機會；此為學習原理，不要求自行暴露。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 13｜短期鬆一口氣與長期選項</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把線索、行為和後果分開標出，加入資源與學習史；同樣行為在不同脈絡可能有不同功能，不能只看表面命名。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 線索可以很細
 
 時間、地點、情緒、某個通知或社交情境，都可能與行動連結。古典制約著重刺激間關聯，操作制約著重行動後果；真實生活可能同時涉及兩者，不需硬塞成單一模型。

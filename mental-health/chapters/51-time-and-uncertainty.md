@@ -2,6 +2,17 @@
 
 保留估計與缺漏，讓協調有具體依據。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/26-work-time.svg" target="_blank" rel="noopener" aria-label="放大：時間帳本與工作條件"><img src="assets/figures/26-work-time.svg" alt="已知安排與未知需求並列，時間差額不是心理容量；公平、自主和角色條件不能全縮成分鐘。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 26｜時間帳本與工作條件</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先把可用時間、已知任務和未知需求分開，說明為何不能把未知工作當0，也不能用排程差額診斷職業耗竭。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a> · <a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 計畫不同於實測
 
 估計90分鐘的任務可能因資訊不足而改變。應分原估計、實際、等待與突發，不把計畫當成精確能力測試；同事間也可能任務條件不同。

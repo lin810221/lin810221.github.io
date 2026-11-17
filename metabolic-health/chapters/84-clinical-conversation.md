@@ -2,6 +2,17 @@
 
 讓學習幫助溝通，同時知道網頁工具的界限。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/42-clinical-summary.svg" target="_blank" rel="noopener" aria-label="放大：把病史、時間與問題帶進對話"><img src="assets/figures/42-clinical-summary.svg" alt="摘要是溝通工具，未知不填成沒有；常規回顧與急性問題需分開處理。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 42｜把病史、時間與問題帶進對話</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把常規回顧問題和需要即時評估的情境分開列出；說明這張摘要圖不能代替專業判定個人緊急程度。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一份實用摘要
 
 寫主要困擾、症狀起始與變化、既往疾病、目前藥物補充品、原始報告和量測程序。把自己的推論和觀察分欄，例如「上週開始頭暈」是觀察，「一定是降壓藥」是待確認假設。

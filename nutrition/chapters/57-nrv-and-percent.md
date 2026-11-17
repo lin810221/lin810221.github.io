@@ -2,6 +2,17 @@
 
 實作台灣四歲以上一般標示NRV，糖與反式脂肪保留無基準。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/29-percent-claims.svg" target="_blank" rel="noopener" aria-label="放大：每日參考值百分比與宣稱"><img src="assets/figures/29-percent-claims.svg" alt="產品量除通用參考分母得到百分比，與個人需要及產品健康宣稱的證據是不同問題，不設健康評分或推薦。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 29｜每日參考值百分比與宣稱</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先讀分數的分子和分母，說明百分比到底比較哪個基準，再指出為何100%不能當每個人的精確個人需要量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f639251744443617765">TFDA：四歲以上每日參考值</a> · <a href="https://www.mohw.gov.tw/cp-5269-70142-1.html">衛福部：現行包裝食品營養標示修正</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 六個一般分母
 
 台灣一般四歲以上標示每日參考值：熱量2000kcal、蛋白質60g、脂肪60g、飽和脂肪18g、碳水化合物300g、鈉2000mg。這些是標示用途，不替每位讀者指定全日需要，也不直接當各年齡RDA。

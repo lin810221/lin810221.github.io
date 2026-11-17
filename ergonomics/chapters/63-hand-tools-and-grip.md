@@ -2,6 +2,17 @@
 
 從力、尺寸、精準與環境尋找改善。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-grip-tool.svg" target="_blank" rel="noopener" aria-label="放大：握柄、手套和任務：一起試用"><img src="assets/figures/32-grip-tool.svg" alt="兩種假想握持接觸表示幾何不同，未標健康門檻；力、摩擦、尺寸及工作條件需與使用者核對。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜握柄、手套和任務：一起試用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較兩個握持情境的接觸和操作條件，說明不是握柄看起來較粗就對每人更好，也不能用把手存在直接判良好耦合。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 抓握不是只有直徑
 
 力握、精細捏取與不同工作方向有不同需要。握柄長度、表面、重量、按壓、方向和手套都可能影響；沒有一個通用尺寸保證所有人適合。

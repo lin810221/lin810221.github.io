@@ -2,6 +2,17 @@
 
 把體重變化拆成不同可能，不從一天或一台機器判全部結果。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-composition-balance.svg" target="_blank" rel="noopener" aria-label="放大：體重、身體組成與時間"><img src="assets/figures/08-composition-balance.svg" alt="兩條等長示例條呈現不同組成，顏色不是正常異常，並未表示特定人的比例或理想體脂。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜體重、身體組成與時間</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在兩個相同總長度中指出組成差異，說明體液與不同測量方法如何影響結果，不將體重當唯一身體組成資料。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 體重的組成
 
 脂肪、肌肉、水分、肝醣和腸胃內容等都影響測值。短期變動不能全當脂肪增減，也不能用固定熱量除數精算每一天改變；時間、衣物和設備條件需一致。

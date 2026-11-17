@@ -2,6 +2,17 @@
 
 分清纖維的物理化學性質，不把所有纖維當同一種補充劑。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-fiber-context.svg" target="_blank" rel="noopener" aria-label="放大：纖維、腸道與耐受的關係"><img src="assets/figures/12-fiber-context.svg" alt="腸腔內不同纖維與菌相、含水及個體條件互動；線段不代表單一纖維化學式，也不保證固定效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜纖維、腸道與耐受的關係</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將腸腔中的線段當不同纖維，列出溶解性、發酵性或其他特徵可回答的不同問題，不把所有纖維視為同一物。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240073593">WHO：醣類攝取指南</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多個維度
 
 可溶/不可溶、黏性與發酵性不是完全同義分類。不同纖維可影響糞便、腸道發酵、飽足與特定代謝結果，效果依種類與攝取方式；一個「纖維g」總數不足以描述全部機制。

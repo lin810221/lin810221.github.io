@@ -2,6 +2,17 @@
 
 理解脂肪是有功能的組織，不用排毒或單一標記解釋慢性風險。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/06-ckm-links.svg" target="_blank" rel="noopener" aria-label="放大：脂肪組織與心腎代謝的互相連結"><img src="assets/figures/06-ckm-links.svg" alt="CKM以心、腎、代謝及共同條件理解，雙向箭頭表示互動，不表示每人都依相同順序發病。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 06｜脂肪組織與心腎代謝的互相連結</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先在三角形外補上脂肪組織及其訊號，分清正常儲存、發炎及異位脂肪，不把體表外觀當細胞診斷。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a> · <a href="https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work">NIDDK：腎臟構造與功能</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 脂肪不只是倉庫
 
 脂肪組織參與儲能、訊號與其他生理功能；分布、細胞和器官背景與健康相關。內臟與皮下脂肪不能只以外觀精確區分，腰圍也不是直接影像量測。

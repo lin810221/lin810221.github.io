@@ -2,6 +2,17 @@
 
 親手計算比值，理解為何不提供傷害安全區或自動準備分數。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-monitor-model.svg" target="_blank" rel="noopener" aria-label="放大：描述模型、觀察與下一步"><img src="assets/figures/39-monitor-model.svg" alt="三條未校準曲線採同一任意基準，綠線為藍線減黃線的示例；不是實測疲勞、適應或傷害機率，決策需先核對資料。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜描述模型、觀察與下一步</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>逐條說出曲線由假設產生，不是模型直接量到了身體狀態；ACWR或fitness-fatigue摘要不自動提供個人傷害機率和安全區間。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 比值的定義先清楚
 
 本課用當週負荷除以前四個完整週平均，當週不混入分母，稱uncoupled示例。另一些文獻使用不同視窗、加權或包含當週，數字不能不加說明就比較。

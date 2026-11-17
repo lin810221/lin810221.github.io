@@ -2,6 +2,17 @@
 
 把儀器、採樣與個人波動分開思考。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/44-measurement-regression.svg" target="_blank" rel="noopener" aria-label="放大：變異、跨線與平均回歸"><img src="assets/figures/44-measurement-regression.svg" alt="相對高度及虛線為假想比較，不是臨床門檻，也不代表第二次較接近一般值必有介入效果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 44｜變異、跨線與平均回歸</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先分儀器或程序誤差與真實生物變動，再說明觀察跨過某界線為何仍需方法和確認背景。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test">NIDDK：A1C檢驗與紅血球背景</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 至少三種來源
 
 程序和採樣差異、分析誤差、個人短期生物變異，都可能影響觀察。不同檢驗還有自己的干擾，如HbA1c受紅血球狀態影響。小數位多不代表誤差小，更不能將兩個相近讀值的差全部視為病情變化。

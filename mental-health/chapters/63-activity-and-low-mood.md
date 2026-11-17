@@ -2,6 +2,17 @@
 
 把行動減少理解為需要支持的現象，而非懶惰。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/32-activation-support.svg" target="_blank" rel="noopener" aria-label="放大：低落、活動與支持的可能循環"><img src="assets/figures/32-activation-support.svg" alt="活動減少、機會減少及低落可互相影響，可加入支持和可行小步；不保證人人同一原因。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 32｜低落、活動與支持的可能循環</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿循環找一個可被支持的小行動，將環境限制也標出；不要把活動減少一律解釋為不努力或僅靠意志處理。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 難開始的原因可能多重
 
 精力、興趣、睡眠、疼痛、環境和期待，都可能讓一件小事變難。不能從做不到推斷不在乎；需要縮小任務、降低門檻或更多專業支持。

@@ -2,6 +2,17 @@
 
 理解不必每組力竭，也不把精確RIR數字當已證實的全民最佳值。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/21-effort-scales.svg" target="_blank" rel="noopener" aria-label="放大：RIR、RPE與計畫回顧"><img src="assets/figures/21-effort-scales.svg" alt="兩條沒有數字的不同量尺強調方法需先定義，不表示任意RIR和RPE點位可以直接互換。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 21｜RIR、RPE與計畫回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先各用一句話說上排和下排在問什麼，再指出為何必須說清使用的是哪種RPE；不能把兩把無單位刻度硬對齊成換算表。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 力竭先定義
 
 指定動作與技術下無法再完成向心重複，和主觀不想再做、姿勢不符或單純感到累不同。研究的結束規則若不同，不能都用力竭一詞視為相同介入。

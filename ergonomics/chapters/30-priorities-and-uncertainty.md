@@ -2,6 +2,17 @@
 
 用可說明理由的討論，取代自創健康總分。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/15-task-timing.svg" target="_blank" rel="noopener" aria-label="放大：同平均，時間分布仍可不同"><img src="assets/figures/15-task-timing.svg" alt="區塊顯示不同任務時間或未知狀態，不給正式評分；平均次數無法取代完整循環與優先需求。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 15｜同平均，時間分布仍可不同</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在任務線上圈出需先查的未知和可改善來源，再加入工作者功能需要；不把平均值當成已排好所有改善優先序。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多個線索並列
 
 重複、力、接觸、時間、使用者困難和可行改善可以放同一表，但不同量不能任意相加成傷害機率。沒有依據的加權不會因表格整齊就變成正式評估。

@@ -2,6 +2,17 @@
 
 理解器官分工，避免把脂肪肝簡化為吃油太多。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/25-liver-fat-fibrosis.svg" target="_blank" rel="noopener" aria-label="放大：肝內脂質與纖維化不是同義詞"><img src="assets/figures/25-liver-fat-fibrosis.svg" alt="肝臟、肝細胞與細胞外基質在不同尺度；示意不按真實比例，也不供個人分期。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 25｜肝內脂質與纖維化不是同義詞</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由肝臟連到細胞內處理，再補血糖和脂質供應的箭頭；說明肝參與多條代謝，不能只把它叫排毒器。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash">NIDDK：脂肪肝機制背景（原頁沿用舊名）</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 肝臟是調節中心
 
 肝臟在進食與空腹時參與肝醣儲存、葡萄糖供應、脂肪酸處理與脂蛋白運送。胰島素等訊號、脂肪組織釋放及飲食來源一起影響流量。不是只有吃進的油會到肝臟，也不是所有糖都立即變成肝脂肪。

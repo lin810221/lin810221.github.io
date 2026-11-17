@@ -2,6 +2,17 @@
 
 生成CSV、SVG和JSON，將缺漏與資料身份一起交付。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-trace.svg" target="_blank" rel="noopener" aria-label="放大：從原始紀錄追到可用摘要"><img src="assets/figures/47-report-trace.svg" alt="三欄將資料、摘要與解讀範圍分開，箭頭代表可追溯來源而非生理因果；沒有以未知當零。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜從原始紀錄追到可用摘要</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>從左欄逐項追到中欄的分母，指出四週虛構紀錄有哪裡缺漏；已知小計不能改叫完整總量，報告圖也不能宣稱個人健康結果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 輸入契約
 
 28天虛構日誌，每天一筆狀態；九組虛構阻力紀錄；配對測試、來源和metadata。這些不是推薦四週訓練或真實群體調查，不藉由更改synthetic字樣冒充觀測。

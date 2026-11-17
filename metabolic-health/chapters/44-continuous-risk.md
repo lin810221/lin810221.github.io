@@ -2,6 +2,17 @@
 
 從門檻分類回到多因子和生命歷程。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-absolute-event-definition.svg" target="_blank" rel="noopener" aria-label="放大：絕對風險必須有三個標籤"><img src="assets/figures/22-absolute-event-definition.svg" alt="標記點展示事件與分母的關係，僅為假想資料，不含任何個人風險模型。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜絕對風險必須有三個標籤</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把連續風險和表格紅字分開，說明為何不能只數超線項目；圖中沒有設一條通用的個人安全線。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 門檻方便分類
 
 篩檢或診斷常需界線以安排下一步，但生物風險未必在界線處突然跳變。血壓相差1 mmHg、血糖相差1 mg/dL，不能單靠跨線就宣稱健康狀態天差地遠；量測誤差和確認條件也必須考慮。

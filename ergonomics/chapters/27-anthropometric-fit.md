@@ -2,6 +2,17 @@
 
 從伸得到與容得下，理解多尺寸聯合設計。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-fit-sample.svg" target="_blank" rel="noopener" aria-label="放大：兩條適配條件要同時確認"><img src="assets/figures/14-fit-sample.svg" alt="虛構樣本同時看伸取與淨空，符合兩條只是部分幾何適配；缺漏與族群代表性仍需說明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜兩條適配條件要同時確認</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>以同一虛構使用者同時檢查伸取和淨空，說明分別合適不保證合起來可用；缺項不能默認符合或不符合。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 伸取和淨空方向不同
 
 按鈕太遠，較短伸取能力者可能困難；空間太小，較大淨空需要者可能受限。設計要先知道是哪種限制，不是所有尺寸都取平均。

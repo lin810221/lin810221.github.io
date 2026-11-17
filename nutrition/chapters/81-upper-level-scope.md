@@ -2,6 +2,17 @@
 
 以folic acid示例做來源篩選，保留形式、單位與地區。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/41-upper-limit-sources.svg" target="_blank" rel="noopener" aria-label="放大：來源限定的上限與交互作用"><img src="assets/figures/41-upper-limit-sources.svg" alt="食物、補充品和藥物並列，來源形式及交互作用各需核對；上限不是把名稱相似的所有數字相加，無個人劑量建議。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 41｜來源限定的上限與交互作用</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出每個數字來自哪種來源和原始形式，再說明指定來源上限為何不能混進所有食物或直接使用不同當量數字。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/">NIH ODS：葉酸與DFE</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a> · <a href="https://ods.od.nih.gov/factsheets/WYNTK-Consumer/">NIH ODS：補充品須知</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 上限需要完整名稱
 
 UL的適用年齡、化學形式、來源和地區不可省略。某些值針對總攝取，某些只針對補充、藥物或強化來源；同樣標μg也不保證可直接加總。

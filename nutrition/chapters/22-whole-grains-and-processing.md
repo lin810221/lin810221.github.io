@@ -2,6 +2,17 @@
 
 理解保留結構與食物成分的差異，避免單靠顏色和加工標籤判斷。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/11-grain-matrix.svg" target="_blank" rel="noopener" aria-label="放大：穀粒結構與加工：GI之外的資訊"><img src="assets/figures/11-grain-matrix.svg" alt="穀粒的麩皮胚乳胚芽概念剖面，配合加工與餐食條件理解，不把全穀或某個GI值直接換成個人血糖曲線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 11｜穀粒結構與加工：GI之外的資訊</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>由外到內指出麩皮、胚乳和胚芽，說明精製可能移除哪些部分，再辨識加工方式和食品名稱不一定完全等價。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240073593">WHO：醣類攝取指南</a> · <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works">NIDDK：消化系統如何運作</a> · <a href="https://www.mohw.gov.tw/cp-2704-41108-1.html">衛福部：我的餐盤</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 穀物的不同部分
 
 全穀保留相應的麩皮、胚芽與胚乳組成，精製會改變纖維和部分營養成分；強化可補回特定營養素，但不代表完全恢復所有結構。深色、粗粒或包裝寫多穀，不必然等於足量全穀，需看配方與標示。

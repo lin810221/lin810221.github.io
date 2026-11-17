@@ -2,6 +2,17 @@
 
 用假設基線風險學習算術，不輸出個人預測。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/22-absolute-event-definition.svg" target="_blank" rel="noopener" aria-label="放大：絕對風險必須有三個標籤"><img src="assets/figures/22-absolute-event-definition.svg" alt="標記點展示事件與分母的關係，僅為假想資料，不含任何個人風險模型。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 22｜絕對風險必須有三個標籤</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先填族群、事件和期限，再解釋這些定義不同時，為何兩個相同百分比仍不是同一個心血管問題。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 風險需要一句完整話
 
 「未來十年發生某一指定事件的機率」才是一個定義較完整的風險。事件可以是ASCVD、心衰竭或較廣的心血管疾病，不能只剩一個百分比。時間越長、事件定義越廣，數值可能不同，不能直接比較。

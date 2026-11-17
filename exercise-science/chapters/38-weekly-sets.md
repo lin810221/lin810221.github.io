@@ -2,6 +2,17 @@
 
 讀懂2026較高週量的證據，不把十組當全民起跑門檻。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/19-hypertrophy-measure.svg" target="_blank" rel="noopener" aria-label="放大：組織截面與短期表現分開"><img src="assets/figures/19-hypertrophy-measure.svg" alt="兩個不同大小的假想截面表示測量問題，不是某項訓練造成的實測增長或個人效果百分比。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 19｜組織截面與短期表現分開</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在截面圖外補上每週直接組、可恢復性與觀察期間，說出為何增加組數不代表每人都同幅增長，也不能把示意面積當劑量曲線。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先定義一組
 
 計畫組、完成工作組、暖身組和特定肌群參與並不完全相同。記動作、努力與計數法，才知道所謂每週十組是在算什麼；不同研究或教練的組數未必直接相容。

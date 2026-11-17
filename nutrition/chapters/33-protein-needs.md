@@ -2,6 +2,17 @@
 
 把不同來源的係數保留完整背景，避免競賽式比較誰的數字最大。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/17-protein-sources.svg" target="_blank" rel="noopener" aria-label="放大：需要量與食物來源的連接"><img src="assets/figures/17-protein-sources.svg" alt="不同蛋白質食物來源並列，營養組成及需要量情境不同，圖不把每種食物畫成同體積等蛋白或固定個人劑量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 17｜需要量與食物來源的連接</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出需要量估計要保留哪些身體與任務條件，再說為何一個每公斤基準不能無條件套到所有年齡及臨床背景。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/">NIH ODS：運動表現與補充品</a> · <a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4248&amp;pid=12285">國健署：國人膳食營養素參考攝取量第八版</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先分清用途
 
 營養參考值針對健康群體建立，運動共識針對活動與訓練情境，臨床營養則可能涉及疾病與治療。它們回答不同問題。美國成人RDA常以0.8g/kg表示，運動資料可討論較高範圍，不能因此把其中任何一個設成全民唯一數字。

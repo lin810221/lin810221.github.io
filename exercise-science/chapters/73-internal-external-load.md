@@ -2,6 +2,17 @@
 
 用一致量表描述整堂感受，知道AU不是不同運動的精準等價劑量。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-load-records.svg" target="_blank" rel="noopener" aria-label="放大：內外負荷與完整紀錄"><img src="assets/figures/37-load-records.svg" alt="任務與反應分兩邊，箭頭只代表需一起理解，不提供生理轉換係數；紀錄狀態保留未知。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜內外負荷與完整紀錄</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把同一堂虛構課的外部時間與指定session-RPE放不同欄，再說出相乘僅是所述摘要；它不是精確生理劑量，也不能換成其他RPE量表。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://www.who.int/publications/i/item/9789240015128">WHO：2020身體活動與久坐正式指南</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 內外負荷
 
 重量、次數、距離與時長是外在描述，主觀感受與心率等反映部分內在反應。相同外在量可有不同感受，兩者都值得記，不必強迫轉成同一生理單位。

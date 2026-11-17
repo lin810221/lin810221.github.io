@@ -2,6 +2,17 @@
 
 區分工作、連結、休閒與增加負擔的使用模式。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/12-digital-boundaries.svg" target="_blank" rel="noopener" aria-label="放大：資訊入口、通知與可調整界線"><img src="assets/figures/12-digital-boundaries.svg" alt="裝置、任務與休息界線示意；用途、時點和生活需要比單一總時數更完整。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 12｜資訊入口、通知與可調整界線</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿裝置到任務的入口辨識用途、時點與可協調的界線，不把相同使用時數推成相同心理效果或責任。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 時間不是全部
 
 同樣兩小時，工作協作、聯絡家人與反覆瀏覽令人不安內容，情境不同。不能從螢幕總分鐘直接診斷成癮、憂鬱或注意力疾病，也不能以低時數保證沒有困擾。

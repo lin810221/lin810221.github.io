@@ -8,13 +8,15 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有十六個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有十九個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
 
 新增 **[心理健康與壓力科學](mental-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-13查核WHO2026說明、現行NICE正式版與草案、HRV方法及台灣資源，核心與課內進階皆已納入。
 
 新增 **[肌肉骨骼健康與人體工學](ergonomics/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-13查核NIOSH RNLE2021修訂、HSE工具、台灣條文及2026正式臨床來源，含工作改善與證據專題。
+
+新增 **[人體解剖與生理學](anatomy-physiology/index.html)**：20章、120單元、64張原創中文圖解、8個互動讀圖活動，附120題學習單、完整解答與100個中英名詞。以構造、機制、生活情境為主線，不設程式配額；2026-11-16核對官方基礎資料。
 
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
@@ -115,6 +117,13 @@ LearningNote/
 │   ├── assets/                離線資料與12個互動實驗
 │   ├── examples/              48份Python入口、五份合成資料與80項測試
 │   └── examples.zip           可獨立解壓執行的下載包
+├── anatomy-physiology/        人體解剖與生理學：圖解優先，不需程式
+│   ├── course.json            20章、120單元與圖解索引
+│   ├── chapters/              每單元均有圖解、情境、自測與理由
+│   ├── assets/figures/        64張原創中文SVG，放大與離線閱讀
+│   ├── assets/overview.js     8個互動讀圖、路徑與自測活動
+│   ├── study/                學習單、答案、名詞與來源
+│   └── study-pack.zip        圖解與紙筆練習下載包
 └── tools/                     教材編譯與驗證工具
 ```
 
@@ -274,3 +283,66 @@ py -3.15 -m unittest discover -s ergonomics/examples -p test_examples.py -v
 py -3.15 ergonomics/examples/48_complete_project.py --output my-ergo-learning-report
 python tools/build.py ergonomics
 ```
+
+## 人體解剖與生理學：圖解學習
+
+入口：[anatomy-physiology/index.html](anatomy-physiology/index.html)。從細胞、組織、位置與穩態到各器官系統，用可放大的中文圖、剖面、物質路徑、回饋及生活情境教學。核心與課內進階皆已納入，章內單元從01重新編號。
+
+[圖解與練習包](anatomy-physiology/study-pack.zip)包含64張SVG、120題學習單及解答、100個中英名詞與來源。讀者不需Python或其他環境；少數簡式為選讀，沒有個人健康計算或診斷評分。圖解非比例，專業影像與個人照護另有方法。
+
+健康系列的圖解優先原則見[課程製作規範](COURSE_AUTHORING.md)。人體解剖課採圖解主線，既有五門健康課也於2026-11-16補入逐單元示意圖與讀圖任務；原文、範例與進度識別碼保留。來源查核日為2026-11-16，不代表原頁全部當年出版。
+
+```powershell
+python tools/build.py anatomy-physiology
+python -m unittest discover -s tools -p test_anatomy_materials.py -v
+python tools/validate.py
+```
+
+
+## 健康系列圖解補強（2026-11-16）
+
+營養學、運動科學、代謝健康、心理健康與人體工學，每門新增48張本機SVG及96個逐單元讀圖任務，共240張圖、480個任務。每章三張圖，同一圖在兩個單元有不同問題；原有課文、章節順序、筆記和進度識別碼保留。240張中234張為這次新繪、6張為本學習空間的原創解剖圖再用，各圖記錄來源。
+
+圖解包含餐盤與消化吸收、肌肉收縮與供能、器官回饋與量測、壓力與情緒循環，以及工作站、搬抬和接觸受力。課程總覽可依章節篩圖，圖可另開放大；課文有中文圖說、替代文字和讀圖任務。圖稿與任務可離線使用，不需安裝Python；原範例與互動實驗保留為輔助。
+
+| 課程 | 圖解學習包 | 讀圖任務 |
+| --- | --- | --- |
+| [營養學與飲食科學](nutrition/index.html#overview/health-visuals) | [下載](nutrition/study-pack.zip) | [任務](nutrition/study/read-tasks.md) |
+| [運動科學與訓練原理](exercise-science/index.html#overview/health-visuals) | [下載](exercise-science/study-pack.zip) | [任務](exercise-science/study/read-tasks.md) |
+| [代謝健康與慢性病預防](metabolic-health/index.html#overview/health-visuals) | [下載](metabolic-health/study-pack.zip) | [任務](metabolic-health/study/read-tasks.md) |
+| [心理健康與壓力科學](mental-health/index.html#overview/health-visuals) | [下載](mental-health/study-pack.zip) | [任務](mental-health/study/read-tasks.md) |
+| [肌肉骨骼健康與人體工學](ergonomics/index.html#overview/health-visuals) | [下載](ergonomics/study-pack.zip) | [任務](ergonomics/study/read-tasks.md) |
+
+解壓後保留study-pack內的study和assets資料夾。學習包包含圖與任務，不包含完整網站或全部課文。每張圖的適用範圍、簡化與再用記錄見圖說和各課study/sources.md；圖解查核日不取代原課指南、套件與資料的基準日期。
+
+補強驗證：`python -m unittest discover -s tools -p test_health_visuals.py -v`。閱讀器驗證同時覆蓋圖解篩選、逐單元映射、放大連結、重進總覽與筆記進度隔離。
+
+
+## 實證健康與醫學研究判讀
+
+新增[完整圖解課程](evidence-health/index.html)：18章、108單元、54張原創中文SVG、9個互動判讀活動、108題學習單與解析、120個中英名詞。從零補足必要統計與方法，不需要安裝Python或提供私人健康資料。
+
+主線包含PICO與搜尋、研究設計、隨機試驗、觀察研究與因果、二元與連續結果、信賴區間與多重比較、診斷與篩檢、系統性回顧、森林圖與異質性、GRADE與指南、報告與研究誠信、共同決策，以及新聞、保健品、AI與真實世界資料。最後用原創試驗、觀察、診斷與回顧案例完成一頁證據摘要。
+
+互動活動涵蓋問題拆解、相對與絕對風險、效果精確度、自然頻率、失訪極端情境、共同效果森林圖、DAG、確定性概念與自測。空白、零分母、無法估計、數值界限與假設分開處理，不產生自動GRADE評級或個人醫療建議。
+
+查核2026-11-16：CONSORT／SPIRIT 2025、PRISMA 2020、RoB 2正式文件、IPDAS 5.0（2026）與官方方法資料。ROBINS-I V2 2025-11-20仍是草案；Cochrane6.5.1更新紀錄與入口6.5/2024的差異、GRADE Book漸進更新，以及來源存取限制均另記，不虛構統一年版。
+
+原稿在evidence-health/chapters，圖稿在assets/figures，學習單、解析、名詞、來源及原創案例在study。[下載離線學習包](evidence-health/study-pack.zip)，解壓後保持study-pack內相對路徑。學習包不包含完整網站閱讀器，完整課程仍可由本機index.html離線開啟。
+
+驗證：`python tools/build.py evidence-health`、`python tools/validate.py`、`python -m unittest discover -s tools -p test_evidence_materials.py -v`，以及tools/test-evidence-reader.mjs與全站閱讀器回歸。
+
+
+## 睡眠科學與晝夜節律
+
+新增[完整圖解課程](sleep-science/index.html)：18章、108單元、54張原創中文SVG、10個互動學習活動、108份含情境學習單與解析、120個中英名詞。延續暗色、離線、可放大圖解與LaTeX，核心學習不需寫程式或提供私人睡眠資料。
+
+從睡眠階段、腦與身體、睡眠壓力、分子及晝夜時鐘，走到光照、生命階段、記憶情緒代謝、日誌與穿戴；再介紹失眠、呼吸及其他睡眠問題、節律障礙、輪班、時差與研究宣稱。必要條件在課內補足，與解剖、心理、代謝及實證健康課另作跨課閱讀。
+
+互動包含虛構睡眠圖、S/C模型、生物相位、跨日與清醒段日誌、缺失與圓形時間、半衰期、AHI／REI分母、穿戴錯分表、固定UTC偏移換算與原創自測。數字、模型值及分數不轉成個人診斷、光照／睡眠限制處方或裝置設定。
+
+2026-11-17查核：AASM2026輪班工作障礙與成人失眠合併治療正式指南、VA/DoD2025失眠／OSA、2025中樞型呼吸事件、2026穿戴科技立場，以及NIH基礎資料。成人2015、兒少2016與AAP2022等正式資料保留原年份；出版、草案、會議摘要、線上發表與存取限制分開記錄。
+
+原稿在sleep-science/chapters，圖稿在assets/figures，練習、解析、名詞、來源與原創案例在study。[下載離線學習包](sleep-science/study-pack.zip)，保留study-pack內相對路徑。學習包是圖與練習，不包含完整網站閱讀器，也不會同步網頁筆記。
+
+驗證：`python tools/build.py sleep-science`、`python tools/validate.py`、`python -m unittest discover -s tools -p test_sleep_materials.py -v`，以及tools/test-sleep-reader.mjs與全站閱讀器回歸。

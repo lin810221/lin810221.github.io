@@ -2,6 +2,17 @@
 
 理解身體差異、工作需求與可調整的條件。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/01-person-task-environment.svg" target="_blank" rel="noopener" aria-label="放大：人、任務與環境的適配"><img src="assets/figures/01-person-task-environment.svg" alt="三區相交表示工作設計要同時考慮人、任務和環境；面積無量尺，不用來評人能力。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 01｜人、任務與環境的適配</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>比較同一任務對兩位使用者可能的不同需求，再指出設備和流程可改的位置；圖的交集不能拿來替人排名。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.osha.gov/etools/computer-workstations/positions">OSHA：多種工作參考姿勢</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 任務有多個維度
 
 重量、施力、伸取距離、頻率、持續時間、精細度、視覺與注意需求都可能重要。同樣十公斤，在不同高度、距離、地面與時間下，不是完全相同任務。

@@ -2,6 +2,17 @@
 
 把行為、身體反應與生活資源放在同一張圖。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/36-habits-support.svg" target="_blank" rel="noopener" aria-label="放大：壓力、習慣與支持一起規劃"><img src="assets/figures/36-habits-support.svg" alt="多面向連線表示彼此關聯與資源限制，不宣告單一心理狀態必然造成代謝病。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 36｜壓力、習慣與支持一起規劃</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在需求、環境與支持三處各寫一個具體條件，說明壓力和代謝的連結為何不能變成對個人的責怪。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance">NIDDK：胰島素阻抗與正常調節</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 多條路徑共同作用
 
 壓力可能影響睡眠、飲食、活動、物質使用與身體反應，但不是每個紅字都由壓力造成。單一皮質醇故事無法解釋全部慢性病，也不能保證放鬆練習取代必要治療。

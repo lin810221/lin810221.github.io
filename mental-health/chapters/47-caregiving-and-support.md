@@ -2,6 +2,17 @@
 
 看見時間、負擔、替代人力與可用資源。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-care-grief.svg" target="_blank" rel="noopener" aria-label="放大：照顧與失落：需求沒有固定順序"><img src="assets/figures/24-care-grief.svg" alt="四條分支連到支持、實務需求、感受與回顧，沒有規定哀傷必須依序完成幾階段。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜照顧與失落：需求沒有固定順序</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將照顧責任分成實務、情感和資源，為照顧者也保留支持；不用一條連線要求某人承擔全部照顧工作。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 付出與負擔可同時存在
 
 照顧可能有意義，也可能疲累、挫折或需要休息。感到負擔不等於不愛對方；能力與資源有限是可討論的現實。

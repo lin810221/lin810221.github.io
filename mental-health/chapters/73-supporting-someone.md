@@ -2,6 +2,17 @@
 
 把陪伴、實際協助與專業連結分開。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/37-support-dialogue.svg" target="_blank" rel="noopener" aria-label="放大：支持對話：先理解，再確認需要"><img src="assets/figures/37-support-dialogue.svg" alt="兩個人以原創短句互相確認，不急著貼診斷或替對方決定行動。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 37｜支持對話：先理解，再確認需要</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出詢問意願、傾聽與確認需要的位置，再提出一個可以提供的具體協助；支持不必先替對方找唯一原因。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 支持的起點
 
 可以從觀察與關心開始：「最近看你很辛苦，現在適合談嗎？」尊重對方不談或換時間，不要求證明困擾，也不以你見過更糟的事否定經驗。

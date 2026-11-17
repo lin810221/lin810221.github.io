@@ -2,6 +2,17 @@
 
 從結構和食品分類理解醣類，先把總量與子項分清楚。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-carbohydrate-families.svg" target="_blank" rel="noopener" aria-label="放大：醣類結構與糖來源的兩個問題"><img src="assets/figures/10-carbohydrate-families.svg" alt="鏈狀單位代表醣類結構概念，水果與糖罐提醒總糖、添加糖和自由糖需依來源及規範定義，不能由總糖一欄倒推出。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜醣類結構與糖來源的兩個問題</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先用鏈長與連接辨識醣類家族的概念，再指出圖中水果和糖罐不是全部醣類，不能只按甜不甜判定營養組成。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/publications/i/item/9789240073593">WHO：醣類攝取指南</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a> · <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">WHO健康飲食：2026更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 不只是一種糖
 
 單醣、雙醣、寡醣與多醣有不同結構，食物還含纖維和其他成分。消化成葡萄糖相關單位不表示所有醣類食物有相同吸收、營養或飽足；完整穀物、豆類、水果和含糖飲料不能只用一句「都變糖」視為等價。

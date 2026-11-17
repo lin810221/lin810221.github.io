@@ -2,6 +2,17 @@
 
 用可觀察線索與可行範圍支持重複。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/14-small-step.svg" target="_blank" rel="noopener" aria-label="放大：小步與機會：讓行動可被辨認"><img src="assets/figures/14-small-step.svg" alt="階梯表示可選的小步而非療效或規定速度，環境和支持影響是否可行。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 14｜小步與機會：讓行動可被辨認</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把目標改成可辨認的線索、機會和一次小行動，指出未做、未記錄與沒有機會的差別，不用完成率判意志。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 習慣不是固定天數
 
 行動是否容易在某線索後啟動，與情境、複雜度和經驗有關。沒有一個人人適用的21天或其他固定期限；中斷也不代表所有學習歸零。

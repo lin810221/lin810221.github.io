@@ -2,6 +2,17 @@
 
 把恢復工作看成可協調過程，而非一次考試。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/27-work-design.svg" target="_blank" rel="noopener" aria-label="放大：個人、團隊與組織的不同介入位置"><img src="assets/figures/27-work-design.svg" alt="三個嵌套區域表示工作調整需多層支持，個人技能不能代替尚未處理的組織條件。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 27｜個人、團隊與組織的不同介入位置</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>依功能、同意和實際任務提出可回顧的調整，說明復工不是只看診斷名稱，也不是要求完全沒有感受才能參與。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work">WHO：工作與心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 回到工作有多種需求
 
 症狀、功能、工作內容、治療安排和資源會影響可行性。不能只問「好了沒」，也不能用診斷名稱決定所有人能力。需要時由本人、照護和適當工作支持合作。

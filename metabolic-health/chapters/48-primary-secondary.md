@@ -2,6 +2,17 @@
 
 理解已有疾病與尚未發生事件的不同照護脈絡。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/24-shared-care-balance.svg" target="_blank" rel="noopener" aria-label="放大：共同決策：效益、負擔與背景"><img src="assets/figures/24-shared-care-balance.svg" alt="天平用於提醒需要一起討論的面向，不表示存在可相加的個人醫療總分。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 24｜共同決策：效益、負擔與背景</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把初次與再次事件的背景分開放在圖旁，說明同一數字在不同病史下不一定有相同照護用途。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a> · <a href="https://www.nhlbi.nih.gov/health/atherosclerosis">NHLBI：動脈粥狀硬化的血管壁過程</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 一級預防的問題
 
 尚無已知相關臨床事件時，常需結合風險因素與適用工具討論如何降低首次事件。這仍可能涉及高風險疾病或家族背景；沒有發生過心肌梗塞，不代表所有人都是低風險。

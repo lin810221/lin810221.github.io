@@ -2,6 +2,17 @@
 
 比較安排的目的與代價，不輸出唯一最佳週表。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/33-skill-transfer.svg" target="_blank" rel="noopener" aria-label="放大：訓練與目標任務之間的遷移"><img src="assets/figures/33-skill-transfer.svg" alt="兩個不同情境由待驗證箭頭連接，圖不表示任何體能進步必然完整轉移到專項結果。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 33｜訓練與目標任務之間的遷移</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>替時間有限的虛構角色把最優先目標放右圈，刪去無法支持該問題的安排，並保留回顧；不要把兩份完整課表簡單相加當混合計畫。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 案例設定
 
 虛構成人可用三個時段，希望維持日常活動與學習阻力基本技能；沒有個人健康資料，不開實際處方。先把健康活動、技能和其他生活活動分欄，找需要補的資訊。

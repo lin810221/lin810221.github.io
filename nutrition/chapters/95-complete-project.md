@@ -2,6 +2,17 @@
 
 串起資料契約、計算、測試、圖表與限制，完成獨立專題。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/48-project-review.svg" target="_blank" rel="noopener" aria-label="放大：資料、圖與解釋一起交付"><img src="assets/figures/48-project-review.svg" alt="資料表、觀察圖和說明來源三份成果相互核對，保留假設與未知；圖柱為任意示意，不表示真實營養量或疾病機率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 48｜資料、圖與解釋一起交付</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將完整專題的資料、圖和說明各配到一個核對問題，指出來源或缺漏不一致時應先查哪裡，不把成功產出當健康認證。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://fdc.nal.usda.gov/data-documentation/">USDA FoodData Central資料說明</a> · <a href="https://www.python.org/downloads/release/python-3152/">Python3.15.2正式發布</a> · <a href="https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx">NIH ODS：營養參考值的不同用途</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 專題任務
 
 使用隨課虛構食物與部分日誌，交付可重跑報告；評量重點是來源、單位、缺值、參考範圍與可重現，不是為真人開菜單。先讀examples/README與模型限制，再執行48_complete_report.py。

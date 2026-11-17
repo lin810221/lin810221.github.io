@@ -2,6 +2,17 @@
 
 把課堂觀察與雇主的正式責任接起來。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-participation-plan.svg" target="_blank" rel="noopener" aria-label="放大：參與、改善、紀錄與再評估"><img src="assets/figures/39-participation-plan.svg" alt="循環表示工作者、維護、主管和專業可協作回顧，不是只簽名一次的合規證明。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜參與、改善、紀錄與再評估</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>將分析、辨識、改善和成效記錄對回台灣現行條文，說明本圖不替代正式執行；門檻與保存要求仍要讀原課和主管機關來源。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0060009&amp;flno=324-1">台灣設施規則324-1條</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 先辨識法規層次
 
 職安法第6條及設施規則第324-1條是本課查核的重要入口。外國工具、建議距離與英國行動值可以幫助理解方法，不能直接當成台灣同一條文的法定界線。適用行業、工作與個別義務仍需看現行規定。

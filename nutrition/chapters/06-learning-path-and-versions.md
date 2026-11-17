@@ -2,6 +2,17 @@
 
 從零安排閱讀，明確標示本課的正式基線、虛構資料與可驗證範圍。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/03-units-food-record.svg" target="_blank" rel="noopener" aria-label="放大：先把食物與分母連起來"><img src="assets/figures/03-units-food-record.svg" alt="可食重量接到帶有每100克或每份定義的食品資料，單位與版本需要同時保存，圖不預測吸收或需要量。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 03｜先把食物與分母連起來</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿圖從實際食物到資料版本，列出開始學習時先要確認的兩項條件，說明更新日期不能代替食品與數據定義。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/">NIH ODS：維生素D</a> · <a href="https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/">NIH ODS：維生素A</a> · <a href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?cid=42305&amp;id=f639057139719594572">TFDA：食品營養標示指引手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 三條入口
 
 完整路線依十六章順序；想先看生活應用，可讀食物類別、標示與外食，再回補消化和營養素；偏資料者可先跑單位、份量、缺值與報告。每章六單元，章內編號重新從01開始，穩定網址與筆記獨立保存。

@@ -2,6 +2,17 @@
 
 分清緊急醫療、危機支持與常規預約。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/39-immediate-followup.svg" target="_blank" rel="noopener" aria-label="放大：即時協助與後續支持是不同工作"><img src="assets/figures/39-immediate-followup.svg" alt="即時醫療與後續支持並列，依當下情境連結；無風險評分或保證安全的檢核清單。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 39｜即時協助與後續支持是不同工作</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>指出立即醫療和後續照護的不同目的，再回原課查看已核對的台灣資源；圖不提供新號碼，也不依日記宣告安全。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a> · <a href="https://www.nimh.nih.gov/health/topics/psychotherapies">NIMH：心理治療</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 當下緊急情境
 
 若有人已受傷、正在發生危險或無法維持當下安全，應立即尋求所在地緊急醫療或急診，不等線上測驗、補助名額或一般門診。支持者在自身安全允許下可陪伴並協助聯絡受訓人員。

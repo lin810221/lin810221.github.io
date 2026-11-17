@@ -2,6 +2,17 @@
 
 把發布、更新、查核和方法改版拆開記錄。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/45-version-claims.svg" target="_blank" rel="noopener" aria-label="放大：版本與AI姿勢宣稱：先問證據是哪一層"><img src="assets/figures/45-version-claims.svg" alt="影像點位、測量、暴露與健康結論不同，日期也有正式修訂及入口更新之分，不用精密外觀替代驗證。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 45｜版本與AI姿勢宣稱：先問證據是哪一層</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>分別寫正式方法年分、頁面更新和查核日，說明圖解更新不等於公式或指南全部改版；未知不靠新年份填補。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a> · <a href="https://www.hse.gov.uk/msd/uld/art/faq.htm">HSE：ART用途限制</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 四種日期
 
 正式方法發布日期、文件修訂日期、入口網頁更新與本課查核日期不同。NIOSH入口2026更新，不能因此把RNLE公式叫2026新版；現行引用手冊仍需標Revised9/2021。

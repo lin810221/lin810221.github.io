@@ -2,6 +2,17 @@
 
 分辨自然變異、程序差異與值得處理的訊號。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/18-repeat-bp.svg" target="_blank" rel="noopener" aria-label="放大：波動、重測與照護回顧"><img src="assets/figures/18-repeat-bp.svg" alt="相對高度為虛構觀察，無正常異常線；重測提供資訊，但不能單由走向選擇個人處方。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 18｜波動、重測與照護回顧</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>沿四個時點先說觀察，再列可能的量測條件與生物變動，解釋第二次改變為何不一定證明某措施造成效果。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.hpa.gov.tw/5020/20223/n">國健署：居家722與量測條件</a> · <a href="https://professional.heart.org/en/science-news/2026-guideline-for-the-prevention-detection-evaluation-and-management-of-ckm-syndrome">AHA：2026 CKM正式指南入口</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 讀值本來會變
 
 血壓受活動、情緒、睡眠、疼痛、藥物和時段影響。連續兩次不同，不代表一定一筆錯誤，也不能立刻歸因為血管變差。先檢查休息、姿勢、袖帶、間隔與記錄，再看多日模式。

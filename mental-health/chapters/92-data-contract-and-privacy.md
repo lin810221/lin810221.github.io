@@ -2,6 +2,17 @@
 
 讓每筆資料有狀態、單位、目的與限制。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/46-diary-privacy.svg" target="_blank" rel="noopener" aria-label="放大：日記欄位：先問用途，再決定收多少"><img src="assets/figures/46-diary-privacy.svg" alt="虛構記錄卡保留目的、時間、選擇和缺漏，身份欄不需要填入；不是要求公開日記。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 46｜日記欄位：先問用途，再決定收多少</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>把未知、錯誤和明確零分別放入資料欄位，說明契約可保護解釋與隱私；欄位通過驗證仍不代表資料真實或健康。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.who.int/news-room/questions-and-answers/item/stress">WHO：壓力問答</a> · <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">NIMH：照顧心理健康</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 日期與連續位置
 
 資料要求14個唯一、連續、依序的排定日，不只是檔案有14列。缺漏仍保留位置，這樣圖與平均才知道少了哪天；不把未知日直接刪掉改成新時間線。

@@ -2,6 +2,17 @@
 
 依層次查找問題，不因程式成功就停止思考。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/47-report-trace.svg" target="_blank" rel="noopener" aria-label="放大：從原始紀錄追到可用摘要"><img src="assets/figures/47-report-trace.svg" alt="三欄將資料、摘要與解讀範圍分開，箭頭代表可追溯來源而非生理因果；沒有以未知當零。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 47｜從原始紀錄追到可用摘要</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>遇到合理卻可疑的數字，依次查原始單位、定義、來源和算術；圖中的流程沒有讓錯誤資料自動變真，也不能用漂亮圖表補完未知。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://acsm.org/resistance-training-guidelines-update-2026/">ACSM：2026健康成人阻力訓練更新</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 單位層
 
 kg不是N，kg-reps不是J，W不是kcal；L/min與mL/kg/min需質量與1000倍轉換，配速與速度互為不同表示。先驗分母、時間和距離，再追小數誤差；負值、NaN與零分母應拒絕。

@@ -2,6 +2,17 @@
 
 看懂時間曲線，也知道何時只是教學類比。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/09-time-model.svg" target="_blank" rel="noopener" aria-label="放大：時間變化模型不等於人體恢復"><img src="assets/figures/09-time-model.svg" alt="任意曲線僅示時間相關行為，沒有組織、年齡、症狀或傷害校準，不當成治療或癒合時程。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 09｜時間變化模型不等於人體恢復</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先指出橫縱軸都是任意示意，再分清鬆弛與蠕變需什麼控制條件；不能從曲線讀自己的恢復天數或受傷機率。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 兩個概念
 
 在理想材料討論中，持續應力下形變隨時間增加可稱蠕變；固定形變下應力隨時間改變可談鬆弛。需說明控制的是什麼，不把兩者或肌肉疲勞混稱同一現象。

@@ -2,6 +2,17 @@
 
 從kg、N與N·m開始，建立能手算的基礎。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/07-external-moment.svg" target="_blank" rel="noopener" aria-label="放大：外力、轉軸與垂直力臂"><img src="assets/figures/07-external-moment.svg" alt="圖只顯示平面單一外力與力矩參考，其他外力、內力和三維動作省略，不能推傷害機率。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 07｜外力、轉軸與垂直力臂</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>先找力、轉軸和垂直力臂，分清kg、N及N·m；同重量位置改變會影響外力矩，不等於組織負荷與風險同幅變化。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://www.cdc.gov/niosh/ergonomics/about/index.html">NIOSH：人體工學</a> · <a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html">NIOSH：RNLE入口與正式手冊</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 質量和力不同
 
 kg是質量，N是力。教材以g=9.80665 m/s²計算重力近似：10kg約98.07N。不能把kg數值直接當N，也不能把秤上的質量等同某條肌腱承受的力。

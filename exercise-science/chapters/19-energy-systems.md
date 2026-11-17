@@ -2,6 +2,17 @@
 
 理解磷酸原、醣解與氧化供能，不用固定秒數切換開關。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/10-energy-overlap.svg" target="_blank" rel="noopener" aria-label="放大：三種供能路徑重疊參與"><img src="assets/figures/10-energy-overlap.svg" alt="三條曲線只表共同參與及相對角色可改變，不是各路徑的實測百分比，沒有固定秒數切換線。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 10｜三種供能路徑重疊參與</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在同一時間位置指向三條曲線，說明它們可以共同參與；不要把交點當所有人固定切換秒數，並補上強度與持續時間條件。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://www.nhlbi.nih.gov/health/lungs/breathing-benefits">NHLBI：呼吸及氣體交換</a> · <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow">NHLBI：心臟血流</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## ATP是直接能量媒介
 
 肌肉活動和相關運輸需要ATP，身體透過多條路徑再合成。磷酸原提供快速支持，醣解與氧化路徑也參與；不是前十秒只有一條，再突然切換到另一條，比例受強度、時間、恢復與訓練等影響。

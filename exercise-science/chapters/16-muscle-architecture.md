@@ -2,6 +2,17 @@
 
 知道角度和組織結構會影響產力，不把單一曲線直接套到全身動作。
 
+<!-- health-visual:start -->
+## 圖解閱讀 {#visual-reading}
+
+<figure class="health-figure"><a href="assets/figures/08-motor-unit.svg" target="_blank" rel="noopener" aria-label="放大：神經元到多個肌纖維"><img src="assets/figures/08-motor-unit.svg" alt="一個運動神經元分支支配多個肌纖維，構成運動單位；圖中數量為示意，不是實際肌肉的固定纖維數。" width="860" height="520" loading="lazy"></a><figcaption><strong>圖 08｜神經元到多個肌纖維</strong>原創概念示意，非比例；顏色輔助辨識，不代表正常異常。</figcaption></figure>
+
+<div class="health-read-task"><strong>讀圖任務：</strong>在肌纖維旁加上長度與排列的註記，說明肌肉架構與神經募集是不同層次；不能只由肌肉外形推某個角度的個人力量。</div>
+
+<p class="health-figure-sources">圖解依據：<a href="https://training.seer.cancer.gov/anatomy/muscular/structure.html">NCI：骨骼肌構造</a> · <a href="https://training.seer.cancer.gov/anatomy/nervous/tissue.html">NCI：神經組織</a>。圖解查核2026-11-16；機構頁、方法與原課指南的版本分開。<a href="study/read-tasks.md">全部讀圖任務</a> · <a href="study-pack.zip">下載圖解學習包</a></p>
+
+<!-- health-visual:end -->
+
 ## 長度與張力
 
 肌節中絲的重疊、被動結構及其他條件影響張力；整條肌肉和多關節動作又有不同幾何。不能把體外一段肌纖維的長度張力圖，直接當某人的膝角與力量公式。
