@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const f of ['assets/reader.js','anatomy-physiology/assets/overview.js','anatomy-physiology/assets/course-data.js'])parse(await read(f),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,19);assert.equal(home.querySelectorAll('a[href="anatomy-physiology/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,21);assert.equal(home.querySelectorAll('a[href="anatomy-physiology/index.html"]').length,1);
 const {window,document}=parseHTML(await read('anatomy-physiology/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['001-ergonomics-map'],notes:{'001-ergonomics-map':'preserve other course'}}),storage=new Map([['learning-notes:ergonomics:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};

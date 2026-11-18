@@ -1,0 +1,398 @@
+{
+  "provenance": "本檔所有數字、清單與群體皆為原創虛構教學資料。各案例獨立，不代表任何真實社區、疾病、疫苗、患者或疫情。查核2026-11-17。",
+  "frequency": {
+    "population": 1000,
+    "existing": 100,
+    "newCases": 45,
+    "personYears": 810,
+    "periodYears": 1,
+    "personTimeComponents": [
+      {
+        "outcome": "首次發病",
+        "people": 45,
+        "atRiskYearsEach": 0.5
+      },
+      {
+        "outcome": "未發病但因其他原因死亡",
+        "people": 90,
+        "atRiskYearsEach": 0.25
+      },
+      {
+        "outcome": "無病且存活至一年末",
+        "people": 765,
+        "atRiskYearsEach": 1
+      }
+    ],
+    "expected": {
+      "atRisk": 900,
+      "prevalence": 0.1,
+      "risk": 0.05,
+      "ratePerPersonYear": 0.05555555555555555
+    },
+    "conditions": "基線無病封閉世代、每人一年發病或死亡結局均查明、無失訪。45人在0.5年首次發病、90人在0.25年因其他原因死亡，765人無病追滿一年；人時22.5+22.5+765=810。45/900是此含競爭死亡情境的實際一年首次發病比例，不是移除死亡的假想風險。未提供年底全人口既有個案所需的轉歸。"
+  },
+  "association": {
+    "a": 40,
+    "b": 160,
+    "c": 20,
+    "d": 180,
+    "expected": {
+      "rr": 2,
+      "rd": 0.1,
+      "or": 2.25
+    },
+    "sampling": "同一追蹤期世代；不是病例對照抽樣。"
+  },
+  "standardization": {
+    "a": [
+      {
+        "events": 20,
+        "n": 1000
+      },
+      {
+        "events": 80,
+        "n": 1000
+      }
+    ],
+    "b": [
+      {
+        "events": 36,
+        "n": 2400
+      },
+      {
+        "events": 36,
+        "n": 600
+      }
+    ],
+    "weights": [
+      0.8,
+      0.2
+    ],
+    "expected": {
+      "crudeA": 0.05,
+      "crudeB": 0.024,
+      "adjustedA": 0.032,
+      "adjustedB": 0.024
+    },
+    "conditions": "僅兩個年齡層、同一定義結果與期間。標準化不宣稱識別因果。"
+  },
+  "simpson": {
+    "e": [
+      {
+        "recovered": 81,
+        "n": 90
+      },
+      {
+        "recovered": 12,
+        "n": 20
+      }
+    ],
+    "u": [
+      {
+        "recovered": 19,
+        "n": 20
+      },
+      {
+        "recovered": 63,
+        "n": 90
+      }
+    ],
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "expected": {
+      "crudeE": 0.8454545454545455,
+      "crudeU": 0.7454545454545455,
+      "adjustedE": 0.75,
+      "adjustedU": 0.825
+    },
+    "outcome": "康復；與其他發病例不同。"
+  },
+  "surveillance": {
+    "lineList": [
+      {
+        "id": "S01",
+        "onsetDay": 2,
+        "reportDay": 3
+      },
+      {
+        "id": "S02",
+        "onsetDay": 3,
+        "reportDay": 4
+      },
+      {
+        "id": "S03",
+        "onsetDay": 3,
+        "reportDay": 5
+      },
+      {
+        "id": "S04",
+        "onsetDay": 4,
+        "reportDay": 5
+      },
+      {
+        "id": "S05",
+        "onsetDay": 4,
+        "reportDay": 6
+      },
+      {
+        "id": "S06",
+        "onsetDay": 4,
+        "reportDay": 5
+      },
+      {
+        "id": "S07",
+        "onsetDay": 4,
+        "reportDay": 6
+      },
+      {
+        "id": "S08",
+        "onsetDay": 4,
+        "reportDay": 5
+      },
+      {
+        "id": "S09",
+        "onsetDay": 5,
+        "reportDay": 6
+      },
+      {
+        "id": "S10",
+        "onsetDay": 5,
+        "reportDay": 7
+      },
+      {
+        "id": "S11",
+        "onsetDay": 5,
+        "reportDay": 6
+      },
+      {
+        "id": "S12",
+        "onsetDay": 5,
+        "reportDay": 7
+      },
+      {
+        "id": "S13",
+        "onsetDay": 5,
+        "reportDay": 6
+      },
+      {
+        "id": "S14",
+        "onsetDay": 5,
+        "reportDay": 7
+      },
+      {
+        "id": "S15",
+        "onsetDay": 5,
+        "reportDay": 6
+      },
+      {
+        "id": "S16",
+        "onsetDay": 5,
+        "reportDay": 7
+      },
+      {
+        "id": "S17",
+        "onsetDay": 5,
+        "reportDay": 6
+      },
+      {
+        "id": "S18",
+        "onsetDay": 6,
+        "reportDay": 7
+      },
+      {
+        "id": "S19",
+        "onsetDay": 6,
+        "reportDay": 8
+      },
+      {
+        "id": "S20",
+        "onsetDay": 6,
+        "reportDay": 7
+      },
+      {
+        "id": "S21",
+        "onsetDay": 6,
+        "reportDay": 8
+      },
+      {
+        "id": "S22",
+        "onsetDay": 6,
+        "reportDay": 7
+      },
+      {
+        "id": "S23",
+        "onsetDay": 6,
+        "reportDay": 8
+      },
+      {
+        "id": "S24",
+        "onsetDay": 6,
+        "reportDay": 7
+      },
+      {
+        "id": "S25",
+        "onsetDay": 7,
+        "reportDay": 8
+      },
+      {
+        "id": "S26",
+        "onsetDay": 7,
+        "reportDay": 9
+      },
+      {
+        "id": "S27",
+        "onsetDay": 7,
+        "reportDay": 8
+      },
+      {
+        "id": "S28",
+        "onsetDay": 7,
+        "reportDay": 9
+      },
+      {
+        "id": "S29",
+        "onsetDay": 8,
+        "reportDay": 9
+      },
+      {
+        "id": "S30",
+        "onsetDay": 8,
+        "reportDay": 10
+      },
+      {
+        "id": "S31",
+        "onsetDay": 9,
+        "reportDay": 10
+      },
+      {
+        "id": "S32",
+        "onsetDay": null,
+        "reportDay": 8
+      },
+      {
+        "id": "S33",
+        "onsetDay": null,
+        "reportDay": 9
+      },
+      {
+        "id": "S34",
+        "onsetDay": null,
+        "reportDay": 10
+      }
+    ],
+    "knownOnsetCounts": [
+      0,
+      1,
+      2,
+      5,
+      9,
+      7,
+      4,
+      2,
+      1,
+      0
+    ],
+    "onsetUnknown": 3,
+    "total": 34,
+    "conditions": "日為教學日而非真實日期；未知發病日不填0，也不放入一個新日期。"
+  },
+  "completeness": {
+    "present": 24,
+    "expected": 30,
+    "fraction": 0.8,
+    "meaning": "獨立原創表格必要欄位的完整率；不是監測敏感度或發生率。"
+  },
+  "outbreakMeal": {
+    "a": 18,
+    "b": 12,
+    "c": 6,
+    "d": 24,
+    "expected": {
+      "riskE": 0.6,
+      "riskU": 0.2,
+      "rr": 3,
+      "rd": 0.4,
+      "or": 6
+    },
+    "conditions": "固定聚餐世代；尚未提供共食混雜、檢體與環境資訊。"
+  },
+  "sir": {
+    "population": 1000,
+    "s0": 990,
+    "i0": 10,
+    "r0": 0,
+    "beta": 0.3,
+    "gamma": 0.1,
+    "days": 80,
+    "stepDays": 0.1,
+    "expected": {
+      "basicReproduction": 3,
+      "initialEffectiveReproduction": 2.97
+    },
+    "conditions": "封閉、均質接觸、固定參數、無人口變化或疫苗等；不可作真實預測。"
+  },
+  "vaccine": {
+    "vCases": 20,
+    "vTotal": 1000,
+    "uCases": 80,
+    "uTotal": 1000,
+    "expected": {
+      "ve": 0.75,
+      "arr": 0.06
+    },
+    "conditions": "相同終點與追蹤的虛構比較，沒有任何品牌資料或個人保護承諾。"
+  },
+  "screening": {
+    "n": 10000,
+    "sensitivity": 0.9,
+    "specificity": 0.95,
+    "scenarios": [
+      {
+        "prevalence": 0.01,
+        "tp": 90,
+        "fn": 10,
+        "fp": 495,
+        "tn": 9405
+      },
+      {
+        "prevalence": 0.1,
+        "tp": 900,
+        "fn": 100,
+        "fp": 450,
+        "tn": 8550
+      }
+    ],
+    "conditions": "參照狀態與測試條件固定的預期人數；不能代表整個篩檢計畫效益。"
+  },
+  "equity": {
+    "baseline": {
+      "worse": 0.4,
+      "better": 0.1,
+      "gap": 0.3,
+      "ratio": 4
+    },
+    "later": {
+      "worse": 0.2,
+      "better": 0.04,
+      "gap": 0.16,
+      "ratio": 5
+    },
+    "conditions": "固定群體與不良結果；絕對與相對尺度可往不同方向。"
+  },
+  "economics": {
+    "costA": 100000,
+    "effectA": 1000,
+    "costB": 120000,
+    "effectB": 1010,
+    "expected": {
+      "deltaCost": 20000,
+      "deltaEffect": 10,
+      "icer": 2000
+    },
+    "costUnit": "任意成本單位",
+    "effectUnit": "QALY",
+    "conditions": "相同觀點、目標人口、時間範圍與基準年；不指定地區門檻、不作自動決策。"
+  }
+}

@@ -85,6 +85,12 @@ jobs:
       - name: Verify sleep diagrams, time definitions and standalone study bundle
         run: python -m unittest discover -s tools -p test_sleep_materials.py -v
 
+      - name: Verify population denominators, public-health diagrams and standalone study bundle
+        run: python -m unittest discover -s tools -p test_public_materials.py -v
+
+      - name: Verify first-aid versions, learning scenarios, diagrams and standalone bundle
+        run: python -m unittest discover -s tools -p test_first_aid_materials.py -v
+
       - name: Prepare publishable website
         run: python tools/prepare_pages.py --target pages
 

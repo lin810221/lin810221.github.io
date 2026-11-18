@@ -115,7 +115,9 @@ def validate_course(course_path):
     font_urls = re.findall(r"url\(([^)]+)\)", css)
     for url in font_urls:
         assert (ROOT / "assets" / "vendor" / "katex" / url.strip('"\'')).is_file(), f"Missing offline font: {url}"
-    assert math_count >= (6 if course_path.name == "langgraph" else 4)
+    minimum_math = course.get("minimumDisplayEquations", 6 if course_path.name == "langgraph" else 4)
+    assert type(minimum_math) is int and minimum_math >= 0, "Invalid display equation requirement"
+    assert math_count >= minimum_math
     print(f"PASS {course_path.name}: {len(course['lessons'])} units, {code_count} linked examples, {link_count} local links, {len(font_urls)} offline fonts, {math_count} display equations")
 
 

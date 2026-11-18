@@ -1,0 +1,1717 @@
+[
+  {
+    "id": "public-01",
+    "file": "assets/figures/01-population-boundaries.svg",
+    "title": "人口邊界與共同健康條件",
+    "description": "左側點陣表示有明確居住與時間邊界的社區，標色點只是已辨認個案；右側服務、環境和制度共同接到人口，公共衛生也關注未就醫者。",
+    "note": "點不對應實際居民；箭頭表示可能的行動位置，非已證實效果。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：核心公共衛生功能的整合應用",
+        "url": "https://www.who.int/publications/i/item/9789240088306",
+        "version": "正式手冊2024-01-30；12功能框架，非全球統一國內法"
+      },
+      {
+        "title": "CDC：現場流行病學的定義",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/defining-field-epi.html",
+        "version": "現行網頁2024-08-08；現場方法教材，不是即時疫情資料"
+      }
+    ],
+    "lessons": [
+      "001-population-health",
+      "002-public-functions"
+    ]
+  },
+  {
+    "id": "public-02",
+    "file": "assets/figures/02-life-course-population.svg",
+    "title": "生命歷程與人口分布的改變",
+    "description": "上方由出生、成長、工作至高齡的時間帶表示條件可累積並有轉折；下方兩條任意分布示意整體曝露往較低方向移動，高風險尾端仍可另外照護。",
+    "note": "分布為任意概念曲線；位置改變不代表已量得某政策療效。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康公平的社會決定因素世界報告",
+        "url": "https://www.who.int/publications/i/item/9789240107588",
+        "version": "正式全球報告2025-05-06；2026-11-17查核"
+      },
+      {
+        "title": "Rose：個人的疾病與人口的疾病",
+        "url": "https://academic.oup.com/ije/article/14/1/32/694724",
+        "version": "原始概念文章1985；公開摘要可讀，非2026研究"
+      }
+    ],
+    "lessons": [
+      "003-health-determinants",
+      "004-prevention-paradox"
+    ]
+  },
+  {
+    "id": "public-03",
+    "file": "assets/figures/03-public-action-cycle.svg",
+    "title": "問題、機制、行動與回顧",
+    "description": "四個節點依序連接描述問題、提出機制、評估行動與執行追蹤，回饋線回到問題；中央的分母、族群和公平提醒每一步都需要清楚定義。",
+    "note": "迴圈表示工作回饋；順序可重疊，不是等研究完才保護健康。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "foundations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場流行病學的定義",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/defining-field-epi.html",
+        "version": "現行網頁2024-08-08；現場方法教材，不是即時疫情資料"
+      },
+      {
+        "title": "CDC：公共衛生行動方法",
+        "url": "https://www.cdc.gov/violence-prevention/about/about-the-public-health-approach-to-violence-prevention.html",
+        "version": "現行官方方法頁；暴力預防情境，不擅自轉為所有介入效果"
+      }
+    ],
+    "lessons": [
+      "005-public-action",
+      "006-learning-map"
+    ]
+  },
+  {
+    "id": "public-04",
+    "file": "assets/figures/04-prevalence-risk.svg",
+    "title": "同一人口的快照與追蹤",
+    "description": "左方1000人的基線人口中100名既有個案為時點盛行率分子；右方先排除既有病例後的900人追蹤一年發生45名新病例，兩個分母與時間不同。",
+    "note": "兩個比例均需病例定義；快照不能單獨分出新發與病程長短。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "measures",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：疾病頻率與風險量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+        "version": "Principles of Epidemiology第三版歷史教學存檔；不稱2026新版"
+      },
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "現行網頁2024-08-08；人、時、地及資料呈現"
+      }
+    ],
+    "lessons": [
+      "007-prevalence",
+      "008-incidence-risk"
+    ]
+  },
+  {
+    "id": "public-05",
+    "file": "assets/figures/05-person-time-mortality.svg",
+    "title": "人時與死亡分母各自回答問題",
+    "description": "左側四條風險中追蹤時間示意加入、發病與失訪如何影響人時加總；右側死亡率以人口時間為分母，致死比例以相應病例為分母，兩者不可互換。",
+    "note": "左圖無數值刻度；截尾的統計假設、病因與追蹤終點需另核對。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "measures",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：疾病頻率與風險量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+        "version": "Principles of Epidemiology第三版歷史教學存檔；不稱2026新版"
+      },
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "現行網頁2024-08-08；人、時、地及資料呈現"
+      }
+    ],
+    "lessons": [
+      "009-person-time",
+      "010-mortality"
+    ]
+  },
+  {
+    "id": "public-06",
+    "file": "assets/figures/06-burden-measure-map.svg",
+    "title": "健康損失與服務需求的不同問題",
+    "description": "上方兩段條形示意DALY由早逝損失YLL與非致死健康損失YLD相加；下方三個視窗分別對應既有病例、未來新發與人口時間，沒有把所有健康問題縮成一個排名。",
+    "note": "條形長度為概念，非實際DALY或權重；現代YLD採盛行觀點。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "measures",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：GHE2023疾病負擔方法",
+        "url": "https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf",
+        "version": "正式技術文件2026年9月；估計年2000–2023，版本GHE/2026.3"
+      },
+      {
+        "title": "CDC：疾病頻率與風險量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+        "version": "Principles of Epidemiology第三版歷史教學存檔；不稱2026新版"
+      }
+    ],
+    "lessons": [
+      "011-burden",
+      "012-measure-case"
+    ]
+  },
+  {
+    "id": "public-07",
+    "file": "assets/figures/07-demographic-pyramid.svg",
+    "title": "人口結構先於粗率比較",
+    "description": "左側人、時、地三個標籤連到有邊界的資料視窗；右側左右兩組人口金字塔條形共用年齡層，提醒人口組成會影響服務量與粗率，條寬為虛構人數。",
+    "note": "圖不代表真實地區或性別分布；生命表使用年齡別死亡風險。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "descriptive",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "現行網頁2024-08-08；人、時、地及資料呈現"
+      },
+      {
+        "title": "WHO：GHE2023生命表方法",
+        "url": "https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_lifetable_methods.pdf",
+        "version": "現行2000–2023方法文件；估計年與公布年分開"
+      }
+    ],
+    "lessons": [
+      "013-person-time-place",
+      "014-demography"
+    ]
+  },
+  {
+    "id": "public-08",
+    "file": "assets/figures/08-curve-and-area.svg",
+    "title": "發病時間與小區域的分母",
+    "description": "左方以發病日繪十天的31名已知病例，另外3名發病日未知保留在圖外；右側兩個地區同有2例，但人口100與1000帶來不同粗比例，小數也更不穩定。",
+    "note": "所有人數虛構；柱形不能單憑形狀證明傳播途徑或來源。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "descriptive",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "現行網頁2024-08-08；人、時、地及資料呈現"
+      }
+    ],
+    "lessons": [
+      "015-epidemic-curves",
+      "016-spatial-data"
+    ]
+  },
+  {
+    "id": "public-09",
+    "file": "assets/figures/09-standardize-trends.svg",
+    "title": "同一標準人口與同一比較口徑",
+    "description": "左側A與B的年輕及年長層風險各自連到共同80比20權重；標準化後A3.2%與B2.4%。右方斷開的趨勢線提醒定義改版處不能直接接成生物趨勢。",
+    "note": "左例為兩個年齡層虛構風險；標準化值是假想共同組成的摘要。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "descriptive",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC／NCHS：年齡調整",
+        "url": "https://www.cdc.gov/nchs/hus/sources-definitions/age-adjustment.htm",
+        "version": "網頁更新2026-09-16；所用美國標準人口仍為2000年"
+      },
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "現行網頁2024-08-08；人、時、地及資料呈現"
+      }
+    ],
+    "lessons": [
+      "017-standardization",
+      "018-trends"
+    ]
+  },
+  {
+    "id": "public-10",
+    "file": "assets/figures/10-snapshot-cohort.svg",
+    "title": "橫斷快照與世代追蹤的時間",
+    "description": "上方單一垂直線表示橫斷調查量測當時曝露與健康狀態；下方兩條追蹤線從共同基線出發，到相同結果期間，比較設計需保留抽樣與失訪。",
+    "note": "時間方向表示觀察結構，非已證實因果；回溯資料也可建立世代。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "STROBE：觀察研究報告與適用範圍",
+        "url": "https://www.strobe-statement.org/checklists/",
+        "version": "原始聲明2007；官方現行入口，報告指南不等於品質評分"
+      }
+    ],
+    "lessons": [
+      "019-cross-sectional",
+      "020-cohort"
+    ]
+  },
+  {
+    "id": "public-11",
+    "file": "assets/figures/11-sampling-randomization.svg",
+    "title": "病例對照抽樣與群集隨機",
+    "description": "左方由共同來源人口抽病例與適當對照，再比較先前曝露；右方以學校為群集分派策略，每校學生相依，不能把人數當獨立學校數。",
+    "note": "病例對照左圖是抽樣邏輯；右圖配色是分派策略，不是個人效果。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "CONSORT2025：隨機試驗報告聲明",
+        "url": "https://www.bmj.com/content/389/bmj-2024-081123",
+        "version": "正式2025-04-14；DOI年份2024不等於出版年"
+      }
+    ],
+    "lessons": [
+      "021-case-control",
+      "022-trials"
+    ]
+  },
+  {
+    "id": "public-12",
+    "file": "assets/figures/12-design-levels.svg",
+    "title": "個人、區域與政策的比較層級",
+    "description": "左側個人點陣向上彙整成地區平均，聚合後的關聯不能直接還原個人關係；右側政策時間線有實施與比較區，評估需先說明未介入時的反事實。",
+    "note": "圖不提供真實政策效果；需檢查共同趨勢、同時事件與資料變化。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "designs",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      }
+    ],
+    "lessons": [
+      "023-ecological",
+      "024-design-selection"
+    ]
+  },
+  {
+    "id": "public-13",
+    "file": "assets/figures/13-table-and-risks.svg",
+    "title": "同一二乘二表的風險與勝算",
+    "description": "左側固定列為曝露狀態、欄為結果，40、160、20、180合計400人；右側同期間風險20%與10%，RR為2而OR為2.25，兩個量數含義不同。",
+    "note": "表為完整世代資料；若是病例對照抽樣，列比例不代表人口風險。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "associations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：關聯量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html",
+        "version": "Principles of Epidemiology第三版存檔；與現行Field Manual交叉核對"
+      },
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      }
+    ],
+    "lessons": [
+      "025-two-by-two",
+      "026-relative-risk"
+    ]
+  },
+  {
+    "id": "public-14",
+    "file": "assets/figures/14-effect-and-control-sampling.svg",
+    "title": "絕對效應與對照抽樣設計",
+    "description": "左側同兩組風險同時展示相差10百分點與倍數2，效應尺度回答不同問題；右側三個風險集合在不同時間抽對照，同一人可能再次被抽或後來發病。",
+    "note": "對照抽樣要與來源病例風險相連；OR詮釋不只有罕見疾病近似。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "associations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：關聯量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html",
+        "version": "Principles of Epidemiology第三版存檔；與現行Field Manual交叉核對"
+      },
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      }
+    ],
+    "lessons": [
+      "027-absolute-effects",
+      "028-case-control-or"
+    ]
+  },
+  {
+    "id": "public-15",
+    "file": "assets/figures/15-interval-and-scales.svg",
+    "title": "點估計、區間與基準風險",
+    "description": "左側三條任意信賴區間共用RR無效值1的參照線，寬度反映精度而非偏差大小；右側兩組不同基準風險同為RR2，絕對差異卻是10與1百分點。",
+    "note": "左側區間為概念位置、不供重算；pp表示百分點，結果有明確時間。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "associations",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：關聯量數",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html",
+        "version": "Principles of Epidemiology第三版存檔；與現行Field Manual交叉核對"
+      },
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      }
+    ],
+    "lessons": [
+      "029-uncertainty",
+      "030-association-case"
+    ]
+  },
+  {
+    "id": "public-16",
+    "file": "assets/figures/16-selection-classification.svg",
+    "title": "誰被留下，與誰被量錯",
+    "description": "左方來源人口經就醫與追蹤條件形成分析樣本，選入可同時受曝露與結果影響；右方參照狀態與紀錄狀態有四種配對，錯分方向需看機制。",
+    "note": "漏斗不代表真實抽樣比例；錯分可能朝不同方向，非固定偏向無效。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "bias",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "STROBE：觀察研究報告與適用範圍",
+        "url": "https://www.strobe-statement.org/checklists/",
+        "version": "原始聲明2007；官方現行入口，報告指南不等於品質評分"
+      }
+    ],
+    "lessons": [
+      "031-selection-bias",
+      "032-information-bias"
+    ]
+  },
+  {
+    "id": "public-17",
+    "file": "assets/figures/17-missing-confounding.svg",
+    "title": "未知保留空白，共同原因保留位置",
+    "description": "左側30個欄位中24有值、6未知，完整率80%只描述欄位；右側共同原因C同時指向曝露E和結果Y，後門路徑與缺失問題需分別思考。",
+    "note": "方格為欄位而非人口；DAG箭頭是假設因果關係，不能由相關矩陣自動證明。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "bias",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      }
+    ],
+    "lessons": [
+      "033-missingness",
+      "034-confounding"
+    ]
+  },
+  {
+    "id": "public-18",
+    "file": "assets/figures/18-precision-bias-audit.svg",
+    "title": "集中不等於接近目標",
+    "description": "左側靶心為目標量，兩群重複估計點分別呈現集中但偏移與分散但較居中的概念；右方沿選人、量測、分析三段追蹤可能偏差，不能只看樣本量。",
+    "note": "靶圖是概念，不是研究結果的數值分布；未知偏差需列方向條件。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "bias",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      },
+      {
+        "title": "STROBE：觀察研究報告與適用範圍",
+        "url": "https://www.strobe-statement.org/checklists/",
+        "version": "原始聲明2007；官方現行入口，報告指南不等於品質評分"
+      }
+    ],
+    "lessons": [
+      "035-precision-validity",
+      "036-bias-audit"
+    ]
+  },
+  {
+    "id": "public-19",
+    "file": "assets/figures/19-counterfactual-dags.svg",
+    "title": "潛在結果與三種因果位置",
+    "description": "左側同一人分到介入與未介入兩個潛在結果分支，但現實只能觀察其中之一；右側三小圖分別呈現共同原因、中介與碰撞點，調整策略因此不同。",
+    "note": "DAG由時間與學科假設建立；總效果、直接效果與選擇問題要先區分。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      },
+      {
+        "title": "Hernán等：明確目標試驗與時間偏差",
+        "url": "https://doi.org/10.1016/j.jclinepi.2016.04.014",
+        "version": "原始方法2016；部分PMC存取有驗證限制，不宣稱全文全部可讀"
+      }
+    ],
+    "lessons": [
+      "037-counterfactual",
+      "038-causal-diagrams"
+    ]
+  },
+  {
+    "id": "public-20",
+    "file": "assets/figures/20-simpson-modification.svg",
+    "title": "分層後的組成與效應尺度",
+    "description": "左側虛構治療E與U在年輕及年長層的恢復比例各自不同，合併比例受年齡組成影響；右側差與比兩種尺度提醒效果修飾需先指定量數。",
+    "note": "左例結果是恢復而非疾病；分層解除組成混合，不自動證明因果。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      },
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "現行網頁2024-08-08；設計、比較及限制"
+      }
+    ],
+    "lessons": [
+      "039-stratification",
+      "040-effect-modification"
+    ]
+  },
+  {
+    "id": "public-21",
+    "file": "assets/figures/21-time-zero-sensitivity.svg",
+    "title": "時間零點與剩餘未知",
+    "description": "上方資格、策略指定與追蹤起點對齊同一垂直線；下方若依未來完成療程才定組別，就把必須存活的前段誤歸組別。右方問號格表示未量混雜仍要敏感度評估。",
+    "note": "對齊可避免設計自製偏差；資料不足與未量混雜仍不會自動消失。",
+    "kind": "人口、時間與研究方法圖",
+    "group": "causal",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Hernán等：明確目標試驗與時間偏差",
+        "url": "https://doi.org/10.1016/j.jclinepi.2016.04.014",
+        "version": "原始方法2016；部分PMC存取有驗證限制，不宣稱全文全部可讀"
+      },
+      {
+        "title": "Hernán等：目標試驗時間零點的對齊",
+        "url": "https://www.bmj.com/content/392/bmj-2025-084909.short",
+        "version": "正式方法2026-01-12；公開摘要，出版者全文403"
+      },
+      {
+        "title": "Hernán與Robins：Causal Inference What If",
+        "url": "https://miguelhernan.org/whatifbook",
+        "version": "作者現行入口指向2026-08-19版；完整PDF過大未全讀，書目引用2020"
+      }
+    ],
+    "lessons": [
+      "041-target-trial",
+      "042-causal-limits"
+    ]
+  },
+  {
+    "id": "public-22",
+    "file": "assets/figures/22-surveillance-cycle.svg",
+    "title": "監測是把訊號送回行動的循環",
+    "description": "左側從資料蒐集、分析、解釋到行動與回饋形成循環，右側不同監測方式各有取樣與偵測位置；箭頭表示資訊流而非必然因果。",
+    "note": "循環為工作流程；右側不是效能排名，各方法可能並用。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "surveillance",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：公共衛生監測系統評估",
+        "url": "https://www.cdc.gov/MMWR/PREVIEW/MMWRHTML/rr5013a1.htm",
+        "version": "正式方法指南2001；查核2026-11-17，非2026新版"
+      },
+      {
+        "title": "CDC：調查資料蒐集與管理",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/data-collection-management.html",
+        "version": "Field Epidemiology Manual現行網頁；原創教學清單不含真人資料"
+      }
+    ],
+    "lessons": [
+      "043-surveillance-cycle",
+      "044-surveillance-types"
+    ]
+  },
+  {
+    "id": "public-23",
+    "file": "assets/figures/23-definition-backfill.svg",
+    "title": "定義與回補會改變同一條曲線",
+    "description": "左側同一病例定義版本依人、地、時與臨床檢驗條件選入資料，右側發病週與資料截點形成回補矩陣；較近期間尚未完整。",
+    "note": "矩陣數字為虛構累積資料；無標示的格子不是零病例。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "surveillance",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：公共衛生監測系統評估",
+        "url": "https://www.cdc.gov/MMWR/PREVIEW/MMWRHTML/rr5013a1.htm",
+        "version": "正式方法指南2001；查核2026-11-17，非2026新版"
+      },
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "官方章節網頁2024；圖形與數字為本課原創"
+      }
+    ],
+    "lessons": [
+      "045-case-definitions",
+      "046-reporting-delays"
+    ]
+  },
+  {
+    "id": "public-24",
+    "file": "assets/figures/24-surveillance-reference.svg",
+    "title": "系統表現與公開數字的口徑",
+    "description": "左側以參照狀態和監測報告組成二乘二表，右側公開統計必須附病例分類、日期種類、地區與截點；沒有真實地區病例數。",
+    "note": "表中用分類名稱而非實際人數；右側欄位需逐資料集核對。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "surveillance",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：公共衛生監測系統評估",
+        "url": "https://www.cdc.gov/MMWR/PREVIEW/MMWRHTML/rr5013a1.htm",
+        "version": "正式方法指南2001；查核2026-11-17，非2026新版"
+      },
+      {
+        "title": "臺灣CDC：傳染病統計資料查詢系統",
+        "url": "https://nidss.cdc.gov.tw/",
+        "version": "現行資料入口2026-11-17查核；資料隨調查修正，本課不嵌入即時疫情數字"
+      },
+      {
+        "title": "臺灣CDC：開放資料平台",
+        "url": "https://data.cdc.gov.tw/",
+        "version": "現行資料入口；各資料集之更新、欄位與使用條件分別核對"
+      }
+    ],
+    "lessons": [
+      "047-surveillance-performance",
+      "048-taiwan-data"
+    ]
+  },
+  {
+    "id": "public-25",
+    "file": "assets/figures/25-infection-timelines.svg",
+    "title": "傳播路徑與不同的時間起點",
+    "description": "上方感染鏈把來源、離開、環境路徑與易感宿主連接；下方由感染起點分別標出症狀開始和開始具有傳染力，兩個等待區間可以不同。",
+    "note": "箭頭是可能路徑；時間軸非比例，此例存在症狀前傳播窗口。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "transmission",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：流行病學原理第三版",
+        "url": "https://stacks.cdc.gov/view/cdc/6914/cdc_6914_DS1.pdf",
+        "version": "第三版2006，2012教材更新；作基礎定義，不當作現行法規"
+      },
+      {
+        "title": "CDC：設計現場介入",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/interventions.html",
+        "version": "官方方法章節；實際介入依事件與當地權責"
+      }
+    ],
+    "lessons": [
+      "049-infection-chain",
+      "050-infection-timelines"
+    ]
+  },
+  {
+    "id": "public-26",
+    "file": "assets/figures/26-sir-flows.svg",
+    "title": "SIR：人數流動與再生數的條件",
+    "description": "三個狀態以感染與移出流量連接，封閉人口中S加I加R守恆；下方R0與Rt的關係只限本圖均勻混合、固定參數的玩具模型。",
+    "note": "三格是人數狀態，箭頭標每單位時間流量；無出生、死亡與外來輸入。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "transmission",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Kermack與McKendrick：傳染病數學理論原始文獻",
+        "url": "https://doi.org/10.1098/rspa.1927.0118",
+        "version": "原始模型1927；本課另寫封閉人口SIR玩具模型，不宣稱已校準真實疫情"
+      },
+      {
+        "title": "Cori等：時間變動再生數的原始方法",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24043437/",
+        "version": "American Journal of Epidemiology 2013，DOI10.1093/aje/kwt133；不是即時疫情估計"
+      }
+    ],
+    "lessons": [
+      "051-reproduction",
+      "052-sir-model"
+    ]
+  },
+  {
+    "id": "public-27",
+    "file": "assets/figures/27-network-layers.svg",
+    "title": "接觸異質性與多層防護",
+    "description": "左側網絡中連線數不同，中央節點連結多個群體；右側把來源、環境和宿主作成三個防護位置，不能將節點顏色視為已知感染。",
+    "note": "接觸圖非真實社群；防護依病原、場域、可行性與公平條件設計。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "transmission",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "Kermack與McKendrick：傳染病數學理論原始文獻",
+        "url": "https://doi.org/10.1098/rspa.1927.0118",
+        "version": "原始模型1927；本課另寫封閉人口SIR玩具模型，不宣稱已校準真實疫情"
+      },
+      {
+        "title": "CDC：設計現場介入",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/interventions.html",
+        "version": "官方方法章節；實際介入依事件與當地權責"
+      },
+      {
+        "title": "WHO：環境健康",
+        "url": "https://www.who.int/health-topics/environmental-health",
+        "version": "現行官方主題入口；危害、曝露與可歸因負擔分開"
+      }
+    ],
+    "lessons": [
+      "053-heterogeneity",
+      "054-control-layers"
+    ]
+  },
+  {
+    "id": "public-28",
+    "file": "assets/figures/28-outbreak-records.svg",
+    "title": "調查在時間線與資料清單之間前進",
+    "description": "左側十日發病曲線有三十一名已知日期病例，另有三名日期未知；右側調查工作在確認、搜尋、比較與行動間往返，並非等所有研究完成才保護人。",
+    "note": "柱高為逐日已知發病數；未知日期不塞進第十一日，零也不等於疫情結束。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "outbreak",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場調查的進行",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/field-investigation.html",
+        "version": "官方現行網頁；教材章節與頁面日期分列，查核2026-11-17"
+      },
+      {
+        "title": "CDC：調查資料蒐集與管理",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/data-collection-management.html",
+        "version": "Field Epidemiology Manual現行網頁；原創教學清單不含真人資料"
+      },
+      {
+        "title": "CDC：描述流行病學資料",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html",
+        "version": "官方章節網頁2024；圖形與數字為本課原創"
+      }
+    ],
+    "lessons": [
+      "055-outbreak-steps",
+      "056-line-list"
+    ]
+  },
+  {
+    "id": "public-29",
+    "file": "assets/figures/29-meal-cohort.svg",
+    "title": "聚餐比較：每組都有生病與未生病",
+    "description": "固定參與者世代中吃某食物者十八病十二未病，未吃者六病二十四未病；圖示各組三十人，風險為60%與20%，差異本身不證明來源。",
+    "note": "所有數字為原創；比較同一追蹤期間，沒有用人時作分母。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "outbreak",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：現場分析性研究設計",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html",
+        "version": "官方方法章節；不依網址存取年宣稱新版教科書"
+      },
+      {
+        "title": "CDC：現場調查的進行",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/field-investigation.html",
+        "version": "官方現行網頁；教材章節與頁面日期分列，查核2026-11-17"
+      }
+    ],
+    "lessons": [
+      "057-attack-rates",
+      "058-analytic-investigation"
+    ]
+  },
+  {
+    "id": "public-30",
+    "file": "assets/figures/30-evidence-triangle.svg",
+    "title": "疫情證據是互相核對的三條線",
+    "description": "三角形三端分別為流行病學、實驗室和環境調查，中央保留待解問題；右側短枝樹僅示意樣本相近，不證明誰感染誰。",
+    "note": "線表示證據整合或相近分枝；無真實序列、比例尺或傳播方向。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "outbreak",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：流行病學與實驗室合作",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/epi-lab-collaboration.html",
+        "version": "官方章節；實驗室、採樣與調查證據共同判讀"
+      },
+      {
+        "title": "CDC：現場調查的進行",
+        "url": "https://www.cdc.gov/field-epi-manual/php/chapters/field-investigation.html",
+        "version": "官方現行網頁；教材章節與頁面日期分列，查核2026-11-17"
+      }
+    ],
+    "lessons": [
+      "059-lab-genomics",
+      "060-outbreak-report"
+    ]
+  },
+  {
+    "id": "public-31",
+    "file": "assets/figures/31-immune-trial.svg",
+    "title": "免疫記憶與可比較的疫苗終點",
+    "description": "左側抗原接觸、免疫記憶與後續反應為原理示意，右側虛構兩組各千人的同終點風險為2%和8%；抗體量測和臨床保護不是同一結果。",
+    "note": "免疫形狀非比例；數字為原創試驗式案例，不是接種時程或個人建議。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "vaccines-amr",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：疫苗免疫的基本原理",
+        "url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-1-principles-of-vaccination.html",
+        "version": "Pink Book第14版2021、網頁2024；只用免疫原理，不提供現行接種時程"
+      },
+      {
+        "title": "WHO：疫苗效力、效果與保護",
+        "url": "https://www.who.int/news-room/feature-stories/detail/vaccine-efficacy-effectiveness-and-protection",
+        "version": "官方說明2025-03-10；不同終點、時間與族群分開"
+      }
+    ],
+    "lessons": [
+      "061-vaccine-mechanisms",
+      "062-vaccine-effect"
+    ]
+  },
+  {
+    "id": "public-32",
+    "file": "assets/figures/32-coverage-safety.svg",
+    "title": "群體保護與安全訊號分別查證",
+    "description": "左側連結中的保護分布可能改變傳播路徑，右側接種後事件依時間、背景發生與比較研究作因果評估；顏色不等於百分之百防感染。",
+    "note": "護表示概念上的保護狀態；接種後事件不自動等於疫苗造成。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "vaccines-amr",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：疫苗效力、效果與保護",
+        "url": "https://www.who.int/news-room/feature-stories/detail/vaccine-efficacy-effectiveness-and-protection",
+        "version": "官方說明2025-03-10；不同終點、時間與族群分開"
+      },
+      {
+        "title": "WHO：疫苗安全問答",
+        "url": "https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety",
+        "version": "官方說明2025-09-23；接種後事件與疫苗所致反應分開"
+      },
+      {
+        "title": "WHO：接種後不良事件因果評估",
+        "url": "https://www.who.int/publications/i/item/9789241516990",
+        "version": "第二版2019更新，出版入口2021；不重製正式分類表或個人評估表"
+      }
+    ],
+    "lessons": [
+      "063-herd-immunity",
+      "064-vaccine-safety"
+    ]
+  },
+  {
+    "id": "public-33",
+    "file": "assets/figures/33-program-amr.svg",
+    "title": "免疫服務與抗藥性需要跨系統工作",
+    "description": "左側由服務可近、供應與完成接種構成計畫路徑，右側病原在選擇壓力與傳播間形成抗藥性問題；減少不必要使用與確保必要治療都重要。",
+    "note": "病原圓點為選擇與擴散示意，不是人體變得抗藥或真實培養結果。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "vaccines-amr",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：Immunization Agenda 2030",
+        "url": "https://www.who.int/publications/m/item/immunization-agenda-2030-a-global-strategy-to-leave-no-one-behind",
+        "version": "全球策略2020、實施期2021–2030；正式策略與執行更新分開"
+      },
+      {
+        "title": "WHO：全球抗生素抗藥性監測報告2025",
+        "url": "https://www.who.int/publications/i/item/9789240116337",
+        "version": "正式報告2025；監測資料年份、參與機構與樣本選擇需另看"
+      },
+      {
+        "title": "WHO：One Health共同行動計畫延長至2029",
+        "url": "https://www.who.int/news/item/14-08-2026-quadripartite-collaboration-extends-the-one-health-joint-plan-of-action-to-2029",
+        "version": "正式公告2026-08-14；延長實施期，不虛構一份全新2026版框架"
+      }
+    ],
+    "lessons": [
+      "065-immunization-programs",
+      "066-antimicrobial-resistance"
+    ]
+  },
+  {
+    "id": "public-34",
+    "file": "assets/figures/34-screening-reference.svg",
+    "title": "從疾病自然史到檢測二乘二表",
+    "description": "上方疾病自然史將可偵測無症狀期與臨床出現分開，下方檢測結果需要和參照狀態比較；篩檢陽性不是確診，陰性也不是永久沒有風險。",
+    "note": "自然史非比例、不是每種疾病皆有相同窗口；TP等定義依參照標準。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：篩檢計畫簡明指南",
+        "url": "https://www.who.int/publications/i/item/9789289054782",
+        "version": "WHO歐洲2020-02-06指南；不自動等於臺灣各疾病篩檢政策"
+      },
+      {
+        "title": "WHO：何時適合篩檢與如何執行",
+        "url": "https://www.who.int/europe/publications/i/item/screening-when-is-it-appropriate-and-how-can-we-get-it-right",
+        "version": "WHO歐洲政策簡報2020-02-10；評估整個計畫而非單次檢測"
+      }
+    ],
+    "lessons": [
+      "067-screening-purpose",
+      "068-test-accuracy"
+    ]
+  },
+  {
+    "id": "public-35",
+    "file": "assets/figures/35-prediction-lead-time.svg",
+    "title": "陽性預測值與提早診斷分開解讀",
+    "description": "左側同樣敏感度90%特異度95%且一萬人的案例，盛行率不同造成陽性中的真陽比例改變；右側提早診斷若不延後死亡，存活期仍可能變長。",
+    "note": "左側色塊使用相同計數比例；右側僅示前置時間偏差，非真實存活資料。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：篩檢計畫簡明指南",
+        "url": "https://www.who.int/publications/i/item/9789289054782",
+        "version": "WHO歐洲2020-02-06指南；不自動等於臺灣各疾病篩檢政策"
+      },
+      {
+        "title": "WHO：何時適合篩檢與如何執行",
+        "url": "https://www.who.int/europe/publications/i/item/screening-when-is-it-appropriate-and-how-can-we-get-it-right",
+        "version": "WHO歐洲政策簡報2020-02-10；評估整個計畫而非單次檢測"
+      }
+    ],
+    "lessons": [
+      "069-predictive-values",
+      "070-screening-biases"
+    ]
+  },
+  {
+    "id": "public-36",
+    "file": "assets/figures/36-screening-pathway.svg",
+    "title": "篩檢是一條需能走完的服務路徑",
+    "description": "六個環節由邀請、檢測、確認到治療、追蹤和結果評估，各處都可能有可近性與品質缺口；以全程結果判斷價值，而非只數發出多少檢測。",
+    "note": "箭頭表示服務流程；每段要看資料與公平，不是所有人都必須接受篩檢。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "screening",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：篩檢計畫簡明指南",
+        "url": "https://www.who.int/publications/i/item/9789289054782",
+        "version": "WHO歐洲2020-02-06指南；不自動等於臺灣各疾病篩檢政策"
+      },
+      {
+        "title": "WHO：何時適合篩檢與如何執行",
+        "url": "https://www.who.int/europe/publications/i/item/screening-when-is-it-appropriate-and-how-can-we-get-it-right",
+        "version": "WHO歐洲政策簡報2020-02-10；評估整個計畫而非單次檢測"
+      }
+    ],
+    "lessons": [
+      "071-screening-programs",
+      "072-screening-equity"
+    ]
+  },
+  {
+    "id": "public-37",
+    "file": "assets/figures/37-life-course-ncd.svg",
+    "title": "共同條件沿生命歷程累積",
+    "description": "上方從環境、服務和社會條件連到多種風險與健康結果，下方人生時間線以不同窗口示意累積與支持；箭頭非命定，也不是每人相同路徑。",
+    "note": "人生階段非比例；風險可以改變，不把早年條件解讀成不可逆命運。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "chronic",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：非傳染病",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases",
+        "version": "現行官方說明；統計觀察年依頁面，查核2026-11-17"
+      },
+      {
+        "title": "WHO：將生命歷程方法落實的框架",
+        "url": "https://www.who.int/publications/i/item/9789240112575",
+        "version": "正式框架2025-07-03；不同生命階段、累積與跨代條件分開"
+      }
+    ],
+    "lessons": [
+      "073-ncd-burden",
+      "074-life-course"
+    ]
+  },
+  {
+    "id": "public-38",
+    "file": "assets/figures/38-safe-system-policy.svg",
+    "title": "安全系統與政策把保護放進環境",
+    "description": "左側道路以人行空間、穿越和速度管理位置示意安全系統，右側政策影響價格、供應、資訊與服務；不是只要求個人更小心。",
+    "note": "道路為非比例概念；政策圖不提供單一通用法規或稅率。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "chronic",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：道路交通傷害",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries",
+        "version": "現行官方安全系統說明；查核2026-11-17，不列動態死亡總數"
+      },
+      {
+        "title": "WHO：非傳染病建議介入第二版",
+        "url": "https://www.who.int/en/publications/i/item/9789240091078",
+        "version": "正式第二版2024；全球建議與在地成本、執行及公平評估分開"
+      }
+    ],
+    "lessons": [
+      "075-injury-prevention",
+      "076-behavior-policy"
+    ]
+  },
+  {
+    "id": "public-39",
+    "file": "assets/figures/39-population-support.svg",
+    "title": "群體心理支持與慢性病服務的連續性",
+    "description": "左側把生活條件、社會連結和服務支持共同放在人周圍，右側服務漏斗顯示被找到、能到達和持續照護不相同；面積不是實際資料比例。",
+    "note": "圖不計算心理疾病診斷或個人分數；漏斗用來找服務卡點。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "chronic",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：心理健康的群體回應",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+        "version": "官方頁2026-09-11；各引用報告保留原出版和觀察年"
+      },
+      {
+        "title": "WHO：社會連結的官方問答",
+        "url": "https://www.who.int/news-room/questions-and-answers/item/social-connection",
+        "version": "2025-06-30；孤獨與社會孤立不同，關聯不直接等於介入因果效果"
+      },
+      {
+        "title": "WHO：非傳染病",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases",
+        "version": "現行官方說明；統計觀察年依頁面，查核2026-11-17"
+      }
+    ],
+    "lessons": [
+      "077-mental-population",
+      "078-ncd-program"
+    ]
+  },
+  {
+    "id": "public-40",
+    "file": "assets/figures/40-exposure-air.svg",
+    "title": "從污染源到人體：危害與曝露不同",
+    "description": "左側源頭、環境、接觸和人體的路徑決定是否形成曝露，右側PM2.5概念圖區分環境濃度與人體吸入；粒子和肺形非比例，不是個人劑量預測。",
+    "note": "箭頭是可能曝露路徑；空氣測站濃度不直接等於每人的吸入劑量。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "environment",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：環境健康",
+        "url": "https://www.who.int/health-topics/environmental-health",
+        "version": "現行官方主題入口；危害、曝露與可歸因負擔分開"
+      },
+      {
+        "title": "WHO：全球空氣品質指南",
+        "url": "https://www.who.int/publications-detail-redirect/9789240034228",
+        "version": "正式指南2021；本課不將指南值當個人零風險閾值或臺灣法規"
+      }
+    ],
+    "lessons": [
+      "079-exposure-pathways",
+      "080-air-pollution"
+    ]
+  },
+  {
+    "id": "public-41",
+    "file": "assets/figures/41-water-control.svg",
+    "title": "供水與工作場所都需要多道控制",
+    "description": "左側供水從集水、處理到配送和使用的多重屏障，右側控制層級由消除到個人防護；兩者都強調在共同系統中減少曝露。",
+    "note": "屏障不是絕對安全保證；控制層級需依危害、可行性與實際維護判斷。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "environment",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：飲水品質指南第四版含三份增補",
+        "url": "https://www.who.int/publications/i/item/9789240121225",
+        "version": "正式出版2026-06-17；第四版納入第一、第二及第三增補，不只沿用2022版本"
+      },
+      {
+        "title": "WHO：食品安全",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/food-safety",
+        "version": "現行官方說明；系統性預防與監測，查核2026-11-17"
+      },
+      {
+        "title": "NIOSH：控制層級",
+        "url": "https://www.cdc.gov/niosh/topics/hierarchy/default.html",
+        "version": "官方頁2024-04-10；消除、替代、工程、行政與個人防護依危害與可行性"
+      }
+    ],
+    "lessons": [
+      "081-water-food",
+      "082-occupational-health"
+    ]
+  },
+  {
+    "id": "public-42",
+    "file": "assets/figures/42-heat-one-health.svg",
+    "title": "熱風險與One Health共同責任",
+    "description": "左側城市熱曝露與脆弱、調適條件交會，右側人、動物植物與環境以共同監測和行動連接；不把單一氣溫或物種當成完整風險。",
+    "note": "城市非實測熱地圖；乘號是交會概念，非可相乘的個人風險算式。",
+    "kind": "人口、傳播與資料機制示意",
+    "group": "environment",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：熱健康行動計畫第二版",
+        "url": "https://www.who.int/europe/publications/i/item/9789289062930",
+        "version": "正式指南2026-06-11；歐洲區域框架需依地區調整"
+      },
+      {
+        "title": "WHO等四方：One Health共同行動計畫",
+        "url": "https://www.who.int/publications/i/item/9789240059139",
+        "version": "原正式框架2022–2026；需連同2026延長公告閱讀"
+      },
+      {
+        "title": "WHO：One Health共同行動計畫延長至2029",
+        "url": "https://www.who.int/news/item/14-08-2026-quadripartite-collaboration-extends-the-one-health-joint-plan-of-action-to-2029",
+        "version": "正式公告2026-08-14；延長實施期，不虛構一份全新2026版框架"
+      }
+    ],
+    "lessons": [
+      "083-climate-health",
+      "084-one-health"
+    ]
+  },
+  {
+    "id": "public-43",
+    "file": "assets/figures/43-social-pathways.svg",
+    "title": "健康差異：從生活條件追到可改變的路徑",
+    "description": "左側三層位置表示政策制度、生活資源與健康機會；右側柱高為無刻度概念差異，不能只由差異本身判斷其是否不公平。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "equity",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康公平的社會決定因素世界報告",
+        "url": "https://www.who.int/publications/b/67293",
+        "version": "正式報告2025；2026-11-17查核官方書目與概要"
+      },
+      {
+        "title": "WHO：健康的社會決定因素",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/social-determinants-of-health",
+        "version": "官方事實頁；2026-11-17查核，非年度新指南"
+      }
+    ],
+    "lessons": [
+      "085-inequality-equity",
+      "086-social-gradient"
+    ]
+  },
+  {
+    "id": "public-44",
+    "file": "assets/figures/44-gap-community.svg",
+    "title": "差距的兩種尺度，與誰參與解釋",
+    "description": "左側同分母的兩組不利健康比例由40與10變為20與4；絕對差縮小而比值增加。右側雙向連線提醒居民參與指標解釋和行動。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "分層差距與參與圖",
+    "group": "equity",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康不平等監測手冊",
+        "url": "https://www.who.int/publications/b/31325",
+        "version": "方法手冊2013；簡單差值、比值與分層的基礎"
+      },
+      {
+        "title": "WHO：社區參與和全民健康覆蓋",
+        "url": "https://iris.who.int/bitstream/handle/10665/334379/9789240010529-eng.pdf",
+        "version": "正式健康促進指引2020；原創例子不重製原圖"
+      }
+    ],
+    "lessons": [
+      "087-equity-measures",
+      "088-community-engagement"
+    ]
+  },
+  {
+    "id": "public-45",
+    "file": "assets/figures/45-access-pathway.svg",
+    "title": "能理解，也要能走完服務路徑",
+    "description": "漏斗中的人數為虛構邀請到服務路徑，逐層流失有不同原因；下方回饋箭頭將語言、時間、交通及數位選項接回服務設計。",
+    "note": "數字為教學漏斗；各階段需要自己的分母與原因，不能只稱居民不配合。",
+    "kind": "公共衛生圖解",
+    "group": "equity",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康識能",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/health-literacy",
+        "version": "官方頁日期2025-12-22；個人與組織能力分開"
+      },
+      {
+        "title": "WHO：社區參與和全民健康覆蓋",
+        "url": "https://iris.who.int/bitstream/handle/10665/334379/9789240010529-eng.pdf",
+        "version": "正式健康促進指引2020；原創例子不重製原圖"
+      }
+    ],
+    "lessons": [
+      "089-health-literacy",
+      "090-equity-plan"
+    ]
+  },
+  {
+    "id": "public-46",
+    "file": "assets/figures/46-systems-primary-care.svg",
+    "title": "健康體系是連結，不是六座孤島",
+    "description": "周邊六個構面互相支援，中央是人口與整合服務；下方指出初級衛生保健還包括跨部門行動和社區參與，並非只指基層診間。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "systems",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：強化健康體系的行動框架",
+        "url": "https://www.who.int/publications/i/item/everybody-s-business----strengthening-health-systems-to-improve-health-outcomes",
+        "version": "正式框架2007-08-07；六個構面是分析工具而非全球唯一模型"
+      },
+      {
+        "title": "WHO：改善健康體系中的公共衛生",
+        "url": "https://www.who.int/publications/i/item/9789240122505",
+        "version": "正式指引2026-05-15；查核官方概要與書目"
+      },
+      {
+        "title": "WHO／UNICEF：初級衛生保健操作框架",
+        "url": "https://qualityhealthservices.who.int/quality-toolkit/qt-catalog-item/operational-framework-for-primary-health-care---transforming-vision-into-action",
+        "version": "正式框架2020；與狹義基層診療分開"
+      }
+    ],
+    "lessons": [
+      "091-health-systems",
+      "092-primary-care"
+    ]
+  },
+  {
+    "id": "public-47",
+    "file": "assets/figures/47-coverage-financing.svg",
+    "title": "覆蓋兩個面向，籌資三個功能",
+    "description": "左側兩軸是服務與財務保護的概念空間，沒有國家排名；右側資金由籌集進入風險池，再透過購買服務，反向資訊支援問責。",
+    "note": "框架圖無刻度、不畫真實國家；UHC不是所有服務免費或單純納保率。",
+    "kind": "公共衛生圖解",
+    "group": "systems",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO／世界銀行：2025全民健康覆蓋全球監測",
+        "url": "https://www.who.int/teams/health-financing-and-economics/global-monitoring-report/2025",
+        "version": "正式報告2025-12-05；2025更新指標，摘要另於2026-05-25刊出"
+      },
+      {
+        "title": "世界銀行：2025全民健康覆蓋全球監測報告",
+        "url": "https://www.worldbank.org/en/topic/universalhealthcoverage/publication/2025-global-monitoring-report-gmr",
+        "version": "共同發布2025報告；服務資料至2023、財務保護至2022，版本不可混接"
+      }
+    ],
+    "lessons": [
+      "093-universal-coverage",
+      "094-financing"
+    ]
+  },
+  {
+    "id": "public-48",
+    "file": "assets/figures/48-taiwan-performance.svg",
+    "title": "臺灣制度分工與服務品質的完整路徑",
+    "description": "上方健保、公共衛生與在地服務以並列角色接到共同服務協作，不表示上下從屬；下方結構、過程、結果與公平為四種檢查面向，提醒就診量不等於品質或健康結果。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "systems",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "臺灣健保署：全民健康保險簡介",
+        "url": "https://www.nhi.gov.tw/ch/cp-3153-f49da-2456-1.html",
+        "version": "官方入口更新2026-02-26；列有2025–2026版簡介，不以出版年當所有統計資料年"
+      },
+      {
+        "title": "WHO：改善健康體系中的公共衛生",
+        "url": "https://www.who.int/publications/i/item/9789240122505",
+        "version": "正式指引2026-05-15；查核官方概要與書目"
+      },
+      {
+        "title": "WHO／UNICEF：初級衛生保健操作框架",
+        "url": "https://qualityhealthservices.who.int/quality-toolkit/qt-catalog-item/operational-framework-for-primary-health-care---transforming-vision-into-action",
+        "version": "正式框架2020；與狹義基層診療分開"
+      }
+    ],
+    "lessons": [
+      "095-taiwan-system",
+      "096-system-performance"
+    ]
+  },
+  {
+    "id": "public-49",
+    "file": "assets/figures/49-logic-model.svg",
+    "title": "行動鏈的每一支箭頭都需要理由",
+    "description": "上方政策討論迴路可回到問題界定；下方投入、活動、產出與結果相連，虛線表示假設及外部脈絡會影響整條鏈。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "policy",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：政策分析框架",
+        "url": "https://stacks.cdc.gov/view/cdc/25335/cdc_25335_DS1.pdf",
+        "version": "官方政策方法文件；不將美國機關職掌等同臺灣法律"
+      },
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      }
+    ],
+    "lessons": [
+      "097-policy-cycle",
+      "098-logic-model"
+    ]
+  },
+  {
+    "id": "public-50",
+    "file": "assets/figures/50-implementation-evaluation.svg",
+    "title": "落地是否完成，與是否造成改變分開",
+    "description": "左側人員、場地和流程影響服務能否交付；右側虛構比較趨勢提示反事實評估，介入後下降並不自動全是政策效果。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "執行流程與反事實比較圖",
+    "group": "policy",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康執行研究實務指南",
+        "url": "https://tdr.who.int/home/our-work/global-engagement/9789241506212",
+        "version": "方法手冊2013-11-28；研究執行障礙與策略，不是年度療效指南"
+      },
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      }
+    ],
+    "lessons": [
+      "099-implementation",
+      "100-policy-evaluation"
+    ]
+  },
+  {
+    "id": "public-51",
+    "file": "assets/figures/51-incremental-plane.svg",
+    "title": "ICER之前，先看增量成本與效果的象限",
+    "description": "橫軸為增量效果、縱軸為增量成本，四象限各有不同解釋；右上角示例多花20000成本單位、多10QALY，斜率2000不是通用給付門檻。",
+    "note": "增量坐標為示意；不設支付意願線，不推算臺灣或個人給付決定。",
+    "kind": "成本效果平面",
+    "group": "policy",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "NICE：經濟評估方法",
+        "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2/",
+        "version": "PMG36現行方法章，2026-11-17查核；英國參考案例不作臺灣給付門檻"
+      },
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      }
+    ],
+    "lessons": [
+      "101-economic-evaluation",
+      "102-decision-priorities"
+    ]
+  },
+  {
+    "id": "public-52",
+    "file": "assets/figures/52-all-hazards-coordination.svg",
+    "title": "多種危害，需要共同的應變能力",
+    "description": "左側感染、熱害與停電等事件可產生不同需求；中央協調中心連接現場、醫療與後勤資訊，連線為協作與資源流而非單一機關包辦所有工作。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "emergencies",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：健康緊急事件與災害風險管理框架",
+        "url": "https://www.who.int/publications/i/item/9789241516181",
+        "version": "正式框架2019；全災害、全循環而非僅感染事件"
+      },
+      {
+        "title": "WHO：公共衛生緊急應變作業中心與事件管理",
+        "url": "https://www.who.int/emergencies/operations/",
+        "version": "官方現行作業概述；2026-11-17查核"
+      },
+      {
+        "title": "WHO：公共衛生應變作業中心框架第二版書目",
+        "url": "https://www.who.int/publications/b/84435",
+        "version": "官方索引列2026及ISBN9789240125865；直開內容不完整，未宣稱已讀第二版全文"
+      }
+    ],
+    "lessons": [
+      "103-preparedness",
+      "104-incident-response"
+    ]
+  },
+  {
+    "id": "public-53",
+    "file": "assets/figures/53-two-governance-timelines.svg",
+    "title": "IHR修正與大流行協定是不同時間線",
+    "description": "上方IHR的2024修正接到2025多數締約方生效及2026附錄更新；下方協定2025通過，但截至2026年11月PABS仍在協商，不能把提交目標畫成已完成。",
+    "note": "虛線為未來目標；查核2026-11-17，不把所有國家適用日期畫成一樣。",
+    "kind": "制度版本雙時間線",
+    "group": "emergencies",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：IHR整合文本與國別附錄",
+        "url": "https://apps.who.int/gb/bd/pdf_files/IHR_2014-2022-2024-en.pdf",
+        "version": "2005規則含2014／2022／2024修正；2026-06-19說明及附錄更新，非另訂2026條約"
+      },
+      {
+        "title": "WHO：PABS附錄協商的2026年11月正式進度",
+        "url": "https://www.who.int/news/item/13-11-2026-member-states-reiterate-commitment-to-finalize-pandemic-agreement-pabs-annex-by-may-2027",
+        "version": "2026-11-13官方新聞；仍在協商，目標2027年5月提交WHA審議"
+      },
+      {
+        "title": "WHO：大流行協定政府間工作小組",
+        "url": "https://www.who.int/about/governance/world-health-assembly/intergovernmental-working-group-on-the-who-pandemic-agreement",
+        "version": "官方工作小組及會議入口；2026-11-17查核現行談判狀態"
+      }
+    ],
+    "lessons": [
+      "105-ihr",
+      "106-pandemic-agreement"
+    ]
+  },
+  {
+    "id": "public-54",
+    "file": "assets/figures/54-cooperation-learning.svg",
+    "title": "跨境合作與事後檢討都要接回能力",
+    "description": "左側檢測、物資與資訊的雙向路徑呈現合作；右側準備、應變、檢討與改善循環需有負責人及期限，不能在報告出版時終止。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "emergencies",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：IHR整合文本與國別附錄",
+        "url": "https://apps.who.int/gb/bd/pdf_files/IHR_2014-2022-2024-en.pdf",
+        "version": "2005規則含2014／2022／2024修正；2026-06-19說明及附錄更新，非另訂2026條約"
+      },
+      {
+        "title": "WHO：PABS附錄協商的2026年11月正式進度",
+        "url": "https://www.who.int/news/item/13-11-2026-member-states-reiterate-commitment-to-finalize-pandemic-agreement-pabs-annex-by-may-2027",
+        "version": "2026-11-13官方新聞；仍在協商，目標2027年5月提交WHA審議"
+      },
+      {
+        "title": "WHO：事後檢討指南",
+        "url": "https://iris.who.int/bitstream/handle/10665/311537/WHO-WHE-CPI-2019.4-eng.pdf",
+        "version": "正式指南2019；集體學習與操作改善，非懲處名單"
+      },
+      {
+        "title": "WHO：健康緊急事件與災害風險管理框架",
+        "url": "https://www.who.int/publications/i/item/9789241516181",
+        "version": "正式框架2019；全災害、全循環而非僅感染事件"
+      }
+    ],
+    "lessons": [
+      "107-global-health",
+      "108-recovery-learning"
+    ]
+  },
+  {
+    "id": "public-55",
+    "file": "assets/figures/55-ethics-data.svg",
+    "title": "公共利益與資料權利一起設計",
+    "description": "左側不同強度的行動需依必要性、有效性與替代方案逐步論證；右側資料從蒐集、使用到分享與刪除皆有治理，不能只在蒐集時勾選一次同意。",
+    "note": "倫理檢核圖，不代表已判斷任何措施符合特定地區法律。",
+    "kind": "公共衛生圖解",
+    "group": "ethics",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：公共衛生監測倫理指南",
+        "url": "https://www.who.int/publications/i/item/9789241512657",
+        "version": "正式指南2017-06-19；倫理與國內法律適用另行判斷"
+      },
+      {
+        "title": "WHO：公共衛生緊急事件風險溝通指南",
+        "url": "https://www.who.int/activities/communicating-risk-in-public-health-emergencies/communicating-risk-in-public-health-emergencies",
+        "version": "WHO風險溝通指南，2017出版；部分官方索引標2018，保留書目差異"
+      }
+    ],
+    "lessons": [
+      "109-public-health-ethics",
+      "110-privacy-governance"
+    ]
+  },
+  {
+    "id": "public-56",
+    "file": "assets/figures/56-communication-feedback.svg",
+    "title": "溝通是回饋迴路，更新需要留下理由",
+    "description": "已知、未知與可行行動分開組成訊息，居民疑問與服務障礙回到調查和修訂；錯誤訊息的更正須提供可核對替代解釋，而非只貼真假標籤。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "ethics",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：公共衛生緊急事件風險溝通指南",
+        "url": "https://www.who.int/activities/communicating-risk-in-public-health-emergencies/communicating-risk-in-public-health-emergencies",
+        "version": "WHO風險溝通指南，2017出版；部分官方索引標2018，保留書目差異"
+      },
+      {
+        "title": "WHO：健康識能",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/health-literacy",
+        "version": "官方頁日期2025-12-22；個人與組織能力分開"
+      },
+      {
+        "title": "WHO：社區參與和全民健康覆蓋",
+        "url": "https://iris.who.int/bitstream/handle/10665/334379/9789240010529-eng.pdf",
+        "version": "正式健康促進指引2020；原創例子不重製原圖"
+      }
+    ],
+    "lessons": [
+      "111-risk-communication",
+      "112-misinformation"
+    ]
+  },
+  {
+    "id": "public-57",
+    "file": "assets/figures/57-ai-accountability.svg",
+    "title": "AI輸出進入行動前，還需要驗證與問責",
+    "description": "上方資料、模型與服務使用是不同階段，下方偏差監測及人工覆核回到修訂；高準確度不能取代外部驗證、群體公平與實際公共利益評估。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "ethics",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "WHO：大型多模態模型的倫理與治理",
+        "url": "https://www.who.int/publications/i/item/9789240084759",
+        "version": "原始發布新聞2024-01-18；目前出版索引日期2025-03-25，非2026新版"
+      },
+      {
+        "title": "WHO：公共衛生監測倫理指南",
+        "url": "https://www.who.int/publications/i/item/9789241512657",
+        "version": "正式指南2017-06-19；倫理與國內法律適用另行判斷"
+      },
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      }
+    ],
+    "lessons": [
+      "113-ai-public-health",
+      "114-transparent-reporting"
+    ]
+  },
+  {
+    "id": "public-58",
+    "file": "assets/figures/58-profile-outbreak.svg",
+    "title": "專題：社區分母與疫情時間不能混用",
+    "description": "左側基線1000人中100人已有疾病，新發45人來自900名無病者，人時另計810；右側發病日已知31人以每日柱狀表示，另3人未知不塞入零病例日。",
+    "note": "兩個獨立虛構案例；柱高對應人數，不是真實疫情或季節預測。",
+    "kind": "公共衛生圖解",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：流行病學原理教學入口",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/index.html",
+        "version": "歷史第三版教材及官方封存入口；核心定義用途，不作當期疫情數據"
+      },
+      {
+        "title": "WHO：健康不平等監測手冊",
+        "url": "https://www.who.int/publications/b/31325",
+        "version": "方法手冊2013；簡單差值、比值與分層的基礎"
+      }
+    ],
+    "lessons": [
+      "115-community-profile",
+      "116-outbreak-case"
+    ]
+  },
+  {
+    "id": "public-59",
+    "file": "assets/figures/59-screening-allocation.svg",
+    "title": "專題：篩檢結果接到追蹤與資源",
+    "description": "低盛行率例中一萬人預期真陽性90、偽陽性495，兩者皆會進入陽性後續路徑；另一側成本效果比較需連同預算、容量與公平，而非看到陽性就等於健康改善。",
+    "note": "僅為期望人數與決策路徑；不是任何檢驗或篩檢計畫的推薦。",
+    "kind": "公共衛生圖解",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：流行病學原理教學入口",
+        "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/index.html",
+        "version": "歷史第三版教材及官方封存入口；核心定義用途，不作當期疫情數據"
+      },
+      {
+        "title": "NICE：經濟評估方法",
+        "url": "https://www.nice.org.uk/process/pmg36/chapter/economic-evaluation-2/",
+        "version": "PMG36現行方法章，2026-11-17查核；英國參考案例不作臺灣給付門檻"
+      },
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      }
+    ],
+    "lessons": [
+      "117-screening-case",
+      "118-policy-case"
+    ]
+  },
+  {
+    "id": "public-60",
+    "file": "assets/figures/60-portfolio-review.svg",
+    "title": "交付：可查核、可更新的人口健康提案",
+    "description": "人口、量測、比較與行動四種資訊接到有版本的提案，回饋與新證據再連回修訂；每條連線表示需要說明的依據，未知不能被漂亮的圖遮住。",
+    "note": "原創概念示意；箭頭代表本圖標示的關係，並非已識別的政策因果效果。",
+    "kind": "公共衛生圖解",
+    "group": "practice",
+    "width": 860,
+    "height": 520,
+    "sources": [
+      {
+        "title": "CDC：2024計畫評估框架正式報告",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7306a1.htm",
+        "version": "MMWR2024-09-26；六步驟、標準及貫穿行動，非1999舊版"
+      },
+      {
+        "title": "WHO：健康不平等監測手冊",
+        "url": "https://www.who.int/publications/b/31325",
+        "version": "方法手冊2013；簡單差值、比值與分層的基礎"
+      },
+      {
+        "title": "WHO：公共衛生監測倫理指南",
+        "url": "https://www.who.int/publications/i/item/9789241512657",
+        "version": "正式指南2017-06-19；倫理與國內法律適用另行判斷"
+      }
+    ],
+    "lessons": [
+      "119-capstone",
+      "120-review-resources"
+    ]
+  }
+]

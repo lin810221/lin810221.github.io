@@ -1,0 +1,141 @@
+﻿中文,English,學習用簡釋
+公共衛生,public health,透過有組織的共同努力預防疾病、延長生命並促進人口健康。
+人口健康,population health,同時關注一群人的健康結果、分布與造成差異的條件。
+健康促進,health promotion,增進人們與社區掌握健康及其決定因素的能力與條件。
+初級預防,primary prevention,在疾病發生前減少風險或阻止其開始的策略。
+次級預防,secondary prevention,在適當疾病自然史位置早期發現並提供有效後續照護。
+三級預防,tertiary prevention,已有疾病時減少併發、失能與不必要健康損失。
+預防悖論,prevention paradox,對人口有大效益的措施，對每位參與者的平均直接效益可能較小。
+盛行率,prevalence,指定時點或期間既有個案在相應人口中的比例，需交代定義。
+累積發生風險,cumulative incidence,指定期間內，基線處於風險集合者成為新個案的機率估計。
+發生率,incidence rate,新個案數除以相應風險集合累積的可觀察人時。
+人時,person-time,每個人仍處風險中且被觀察的時間加總，單位如人年。
+致死比例,case fatality proportion,適當期間或病例群中死於該病者的比例，受追蹤與病例定義影響。
+生命損失年,years of life lost,依死亡年齡與標準參照壽命計算的過早死亡負擔。
+失能調整生命年,disability-adjusted life year,YLL與YLD之和，彙整過早死亡及非致死健康損失。
+描述流行病學,descriptive epidemiology,依人、時、地描述健康事件的分布，形成後續可查證問題。
+人口金字塔,population pyramid,按年齡與人口分類呈現結構的圖，不能直接視為個人命運。
+生命表,life table,用年齡別死亡與存活資訊描述特定人口的存活經驗或合成情境。
+流行曲線,epidemic curve,依發病或其他明確日期分組的事件數圖，需要固定時間間距。
+生態謬誤,ecological fallacy,把群體層次的關聯直接套成個人層次的關係。
+年齡標準化,age standardization,用共同年齡結構或標準率提高指定比較的可比性。
+標準化死亡比,standardized mortality ratio,觀察死亡數除以依標準年齡別率推算的預期死亡數。
+橫斷研究,cross-sectional study,在指定時間截面量測曝露與結果，時間順序常有限。
+世代研究,cohort study,沿定義清楚的時間起點與風險集合追蹤結果。
+病例對照研究,case-control study,由病例及適當來源的控制組回看曝露，需保留抽樣設計。
+控制組,control group,提供合宜比較的群體；病例對照中應代表病例來源的曝露經驗。
+群集隨機試驗,cluster randomized trial,以學校、社區等群集而非個人作隨機分派單位。
+自然實驗,natural experiment,利用政策或外部變化形成的比較，需要明確識別條件。
+群體層次研究,ecological study,以地區或群體的彙整曝露與結果為分析單位。
+風險比,risk ratio,兩組同一定義期間風險的比值，需指定分子組與參照組。
+率比,rate ratio,兩組人時發生率的比值，與風險比並不普遍相同。
+勝算比,odds ratio,兩組結果或曝露勝算的比值，解釋需連同研究抽樣設計。
+風險差,risk difference,兩組風險相減，常以百分點或每固定人數呈現。
+可歸因分率,attributable fraction,在因果與其他假設成立下，歸因於指定曝露的結果比例。
+信賴區間,confidence interval,在重複抽樣程序下具有指定涵蓋性質的區間，非無偏保證。
+抽樣變異,sampling variability,重複取得樣本時，估計量因抽樣而變動的程度。
+選擇偏差,selection bias,進入、留在或被納入分析的機制使比較偏離目標。
+資訊偏差,information bias,曝露、結果或其他變數的量測方式使估計偏離目標。
+錯誤分類,misclassification,把實際狀態分到不相符的類別，方向與程度依條件而異。
+回憶偏差,recall bias,不同群體回憶或報告過去曝露的方式不同造成的資訊偏差。
+失訪,loss to follow-up,追蹤中無法持續取得個體結果，可能同時影響精度與效度。
+混雜,confounding,共同原因等機制使觀察比較混入目標曝露以外的差異。
+缺失資料,missing data,應有但未觀察到的值，不能無條件改填為零。
+反事實,counterfactual,同一目標單位在另一介入條件下的潛在結果概念。
+有向無環圖,directed acyclic graph,用無迴圈箭頭表達假設的因果結構，不由資料自動證實。
+中介變數,mediator,位於曝露到結果的某條因果路徑上，是否調整取決於目標效果。
+碰撞點,collider,兩支箭頭共同指向的變數；對其條件化可能開啟偏差路徑。
+效果修飾,effect modification,效果隨第三變數不同而改變，需指定相對或絕對尺度。
+目標試驗,target trial,先界定理想試驗規格，再評估觀察資料能否模擬其比較。
+不死時間偏差,immortal time bias,曝露分類使用必須先存活的追蹤時間，使比較的時間起點失配。
+公共衛生監測,public health surveillance,持續且系統地蒐集、分析、解釋與傳遞資料以支持行動。
+被動監測,passive surveillance,依例行報告機制收到個案或事件資料。
+主動監測,active surveillance,由系統主動尋訪或查詢來源以取得事件資料。
+哨點監測,sentinel surveillance,透過選定場所或來源追蹤趨勢，不自動代表全人口。
+症候群監測,syndromic surveillance,利用較早或未確診的症狀與代理訊號追蹤異常。
+病例定義,case definition,用一致的臨床、實驗室、人時地等條件分類監測或研究個案。
+通報延遲,reporting delay,從事件發生到被系統收到或發布之間的時間差。
+感染鏈,chain of infection,把病原、來源、出口、傳播途徑、入口與易感宿主連起來。
+潛伏期,incubation period,從感染到症狀開始的時間，不同於變得具有傳染性的時間。
+潛隱期,latent period,從感染到開始具有傳染性的時間；不等於出現症狀的潛伏期。
+世代間隔,generation interval,感染來源與其造成的次級感染之間的感染時間差。
+序列間隔,serial interval,有傳播關係個案之間的症狀開始時間差，可受症狀時點影響。
+基本再生數,basic reproduction number,在指定理想易感條件和接觸環境中，一名感染者的平均次級感染數。
+有效再生數,effective reproduction number,在當時易感與接觸條件下的平均次級感染數，依方法與時間估計。
+疫情調查,outbreak investigation,整合時間、人地、分析比較、實驗室與環境資料以控制事件。
+個案清單,line list,以每列一個案、每欄一明確欄位整理的調查資料。
+攻擊比例,attack proportion,特定群聚期間與風險集合中的新發病比例，屬風險而非人時率。
+次級攻擊比例,secondary attack proportion,明確界定接觸者與期間後，接觸者中次級個案的比例。
+假說生成,hypothesis generation,從描述與訪談提出能被後續證據檢查的可能解釋。
+基因體監測,genomic surveillance,將病原序列資訊與時間、人地及監測資料整合。
+多證據交叉核對,triangulation,利用限制不同的證據來源檢查解釋的一致性與衝突。
+疫苗效力,vaccine efficacy,在指定試驗條件、終點與追蹤中估計的相對保護效果。
+疫苗效果,vaccine effectiveness,在實際使用與特定研究條件下估計的保護效果。
+免疫記憶,immune memory,先前抗原經驗使後續反應具有特定改變，不等於所有終點永久受保護。
+群體保護,herd protection,因傳播機會改變使未直接受保護者也可能受益的群體現象。
+接種後不良事件,adverse event following immunization,接種後發生的健康事件，時間先後本身不證明因果。
+抗微生物藥物抗藥性,antimicrobial resistance,微生物對原可有效的藥物反應降低，涉及人畜環境與使用條件。
+抗微生物藥物管理,antimicrobial stewardship,以適當使用、監測與系統措施改善治療並減少不必要藥物壓力。
+篩檢,screening,對未因該問題就診者提供檢測或評估以辨識需後續處理者。
+敏感度,sensitivity,依參照標準有疾病者中，檢測呈陽性的比例。
+特異度,specificity,依參照標準無疾病者中，檢測呈陰性的比例。
+陽性預測值,positive predictive value,檢測陽性者中依參照標準有疾病的比例。
+陰性預測值,negative predictive value,檢測陰性者中依參照標準無疾病的比例。
+前置時間偏差,lead-time bias,診斷提前使診斷後存活時間延長，即使死亡時間未改變。
+過度診斷,overdiagnosis,發現原本不會在一生中造成症狀或死亡的疾病，可能導致不必要介入。
+非傳染病,noncommunicable disease,通常不透過人際感染傳播的疾病群，常受長期環境與社會條件影響。
+生命歷程,life course,關注早期到高齡累積、關鍵期與跨代條件如何影響健康。
+共同風險因素,shared risk factors,同時影響多種疾病的曝露或條件，政策可能產生多重效益。
+安全系統,safe system,道路傷害預防中承認人會犯錯，以系統設計降低嚴重後果。
+涵蓋率,coverage,指定服務在合宜目標人口中實際被取得的比例，需清楚分母。
+健康老化,healthy ageing,發展與維持能支持高齡福祉的功能能力及環境條件。
+群體心理健康,population mental health,關注心理健康在群體中的分布、生活條件與公共支持。
+危害,hazard,具有造成傷害潛能的因素，不等於在特定曝露下必然發生傷害。
+曝露,exposure,與化學、物理、生物或社會因素接觸的程度、途徑與時間。
+劑量反應,dose-response relationship,曝露或劑量與結果頻率或程度之間的關係，需界定量測與證據。
+細懸浮微粒,fine particulate matter,依空氣動力直徑界定的PM2.5粒子群，量測與健康指標需保留單位與期間。
+控制層級,hierarchy of controls,從消除、替代、工程、行政到個人防護評估危害控制。
+氣候調適,climate adaptation,調整系統與行動以降低氣候影響下的健康脆弱性與損失。
+健康一體,One Health,協作處理人、動物、植物與生態系相互連結的健康問題。
+健康不平等,health inequality,不同群體之間可描述的健康或決定因素差異。
+健康不公平,health inequity,被判斷為可避免且不公正的健康差異，含規範與結構判斷。
+社會梯度,social gradient,健康沿社會位置呈系統性變化，不只分成最弱勢與其他人。
+交織性,intersectionality,不同權力與社會位置交互形成的經驗，不能只把類別分數相加。
+社區參與,community engagement,讓社區在問題界定、設計、執行與評估中有實質角色。
+健康識能,health literacy,取得、理解、評估與使用健康資訊和服務的能力與可支持條件。
+數位落差,digital divide,設備、連線、技能、語言與使用條件的差異造成的可近性落差。
+健康體系,health system,共同致力於促進、恢復或維持健康的組織、人員與行動。
+初級衛生保健,primary health care,涵蓋整合服務、多部門政策與人及社區參與的全社會取向。
+基層照護,primary care,提供初次接觸、連續、整合與以人為中心的個人照護。
+全民健康覆蓋,universal health coverage,人人能取得所需適當品質服務且不遭財務困難的目標。
+風險分攤,risk pooling,把財務風險集合共享，減少由個人健康需求直接承擔全部成本。
+災難性健康支出,catastrophic health spending,健康支出依指定指標超過家庭可負擔門檻，版本與分母需核對。
+醫療品質,quality of care,服務提高理想健康結果的程度，含有效、安全及以人為中心等面向。
+政策循環,policy cycle,用問題、形成、決策、執行與評估整理政策工作，實際過程常反覆。
+邏輯模式,logic model,把資源、活動、產出、近期結果與長期影響及假設連起來。
+改變理論,theory of change,解釋何種機制和條件使行動可能帶來目標改變。
+執行科學,implementation science,研究如何讓有依據的作法在真實情境中被採納、落實與維持。
+品質調整生命年,quality-adjusted life year,把生命年與健康相關效用結合的效果量，價值判斷與量測條件需交代。
+增量成本效果比,incremental cost-effectiveness ratio,兩方案成本差除以效果差，先辨象限再討論門檻與其他條件。
+預算影響,budget impact,特定付款者與期間內採用方案對實際支出的變化。
+全災害整備,all-hazards preparedness,以共通能力整備多種威脅，再按危害補充所需安排。
+事件管理,incident management,在事件中安排指揮、協調、資訊、資源與責任的系統。
+國際衛生條例,International Health Regulations,規範跨境公共衛生事件的能力、資訊與應對等國際法律框架，版本因締約方而異。
+國際關注公共衛生緊急事件,public health emergency of international concern,IHR框架下由特定程序判斷的國際事件狀態，不等於所有疫情。
+大流行緊急狀態,pandemic emergency,2024IHR修正引入的概念，須依適用正式文本與程序理解。
+病原體獲取與利益分享,pathogen access and benefit sharing,以病原相關分享與公平利益安排為核心的制度議題，協定附件談判狀態另查。
+事後檢討,after action review,參與者在事件後系統檢視做了什麼、為何及如何改善的學習程序。
+比例原則,proportionality,公共措施的限制與風險、目的、效果和替代手段之間需相稱。
+最小侵害,least restrictive means,在能達到正當公共目標的可行作法中評估對權利侵害較小者。
+資料最小化,data minimization,只蒐集和保留明確目的所需的資料，減少不必要曝露與風險。
+風險溝通,risk communication,交換風險、未知、選項與回饋的雙向過程，不只單向發公告。
+資訊流行病,infodemic,資訊過多及真假混雜使人難以找到可信指引並採取合宜行動。
+演算法偏差,algorithmic bias,資料、目標、模型或部署造成系統性不利差異，需檢視真實用途。
+問責,accountability,決策者需說明理由、接受檢查、回應影響並有改正機制。
+社區健康剖面,community health profile,整合人口、健康、服務與生活條件並保留資料限制的社區摘要。
+需求評估,needs assessment,結合資料、經驗與社區參與釐清健康需求與現有資源。
+過程評估,process evaluation,檢查行動是否、如何及為誰被執行，與健康效果評估分開。
+結果評估,outcome evaluation,檢視目標結果的變化，因果歸因另需合宜比較設計。
+證據卡,evidence card,簡明記錄問題、來源、版本、結果、條件與待查事項的可更新摘要。
+敏感度分析,sensitivity analysis,有系統改變假設或參數，檢查結論依賴哪些條件。
+失能生存年,years lived with disability,依指定健康狀態的盛行量與失能權重估計的非致死健康損失，現行負擔方法另處理共病。

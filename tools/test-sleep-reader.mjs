@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/reader.js','sleep-science/assets/overview.js','sleep-science/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,19);assert.equal(home.querySelectorAll('a[href="sleep-science/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,21);assert.equal(home.querySelectorAll('a[href="sleep-science/index.html"]').length,1);
 const {window,document}=parseHTML(await read('sleep-science/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['001-evidence-map'],notes:{'001-evidence-map':'保留研究判讀課筆記'}}),storage=new Map([['learning-notes:evidence-health:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
