@@ -2,9 +2,33 @@
 
 由softmax CE的輸出梯度，推回兩層MLP並核對shape。
 
-## 固定row-vector記號
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
 
-X[N,d]，A1=XW1+b1，H=ReLU(A1)，Z=HW2+b2。W1[d,h]、W2[h,C]；CE對N筆mean。不要混淆PyTorchLinear儲存的轉置形狀，本章手工矩陣與實際公式完全對齊。
+![Forward與Backward的對應；反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。](assets/figures/review-02-networks.svg)
+
+> **圖解｜Forward與Backward的對應**：反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。
+
+**本單元讀圖任務**：讀完「矩陣反向傳播：一個batch如何一起求梯度」後，在圖上指出「Loss」的位置或對應關係；用本單元的一個例子說明它與「鏈式梯度」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
+## 固定 row-vector 記號
+
+每列是一筆樣本。輸入與兩層權重的形狀如下：
+
+$$
+X\in\mathbb{R}^{N\times d},\quad
+W_1\in\mathbb{R}^{d\times h},\quad
+W_2\in\mathbb{R}^{h\times C}.
+$$
+
+前向計算沿著同一套記號進行：
+
+$$
+A_1=XW_1+b_1,\quad H=\operatorname{ReLU}(A_1),\quad Z=HW_2+b_2.
+$$
+
+交叉熵對 $N$ 筆樣本取平均。PyTorch `Linear` 儲存轉置排列的權重；核對梯度時，要先對齊參數與手算矩陣的形狀。
 
 ## 輸出層的簡潔梯度
 
@@ -17,7 +41,7 @@ $$
 
 ## 經過ReLU再回第一層
 
-先傳D_H=D_ZW2ᵀ，再逐元素乘A1>0的導數。weights梯度是輸入轉置乘local delta，bias是batch加總。這些式子的shape本身提供檢查，若需要隨意reshape才能相乘，多半記號已錯位。
+先傳 $D_H=D_ZW_2^\top$，再逐元素乘上 $A_1>0$ 的指示函數。weights梯度是輸入轉置乘local delta，bias是batch加總。這些式子的shape本身提供檢查，若需要隨意reshape才能相乘，多半記號已錯位。
 
 $$
 D_{A_1}=(D_ZW_2^T)\odot1[A_1>0],\quad

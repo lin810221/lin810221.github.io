@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![資料更新與可重現交付；刪除和更新需同步索引與快取；以固定案例檢查改動，不只看單次回答。](assets/figures/review-08-practice.svg)
+
+> **圖解｜資料更新與可重現交付**：刪除和更新需同步索引與快取；以固定案例檢查改動，不只看單次回答。
+
+**本單元讀圖任務**：讀完「接上真正模型與部署：教學網站、API 與金鑰」後，在圖上指出「索引版本」的位置或對應關係；用本單元的一個例子說明它與「模型設定」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先確認兩種不同成品
 
 目前個人網站提供課程、互動示範與範例下載，全部是靜態檔案。GitHub Pages 可服務這些 HTML、CSS 與 JavaScript；它不會直接執行本章的 Python 查詢流程。要讓訪客真正上傳私人文件並呼叫模型，需要另外的後端服務。[GitHub Pages 概述](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)

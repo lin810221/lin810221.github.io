@@ -2,6 +2,16 @@
 
 用型別、裝飾器與回傳模型，建立可以被探索和呼叫的搜尋工具。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![HostClient與Server的責任；MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜HostClient與Server的責任**：MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。
+
+**本單元讀圖任務**：讀完「建立第一個 Python MCP Server」後，在圖上指出「外部系統」的位置或對應關係；用本單元的一個例子說明它與「Host應用」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先建立乾淨環境
 
 將下載包解壓後，進入 `examples`。Windows 可用下列命令，不必先啟用虛擬環境；macOS／Linux 將 `.venv\Scripts\python.exe` 換成 `.venv/bin/python`。安裝需要網路，範例預設執行不需要模型服務。

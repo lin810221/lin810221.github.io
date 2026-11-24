@@ -2,6 +2,16 @@
 
 避免模型、輸入、標籤與臨時 Tensor 分散在不同裝置。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Autograd沿計算圖傳遞梯度；梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。](assets/figures/review-02-grad.svg)
+
+> **圖解｜Autograd沿計算圖傳遞梯度**：梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。
+
+**本單元讀圖任務**：讀完「Device 與資料搬移：CPU 跑通，再使用 GPU」後，在圖上指出「反向梯度」的位置或對應關係；用本單元的一個例子說明它與「輸入x」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 裝置是一份契約
 
 Tensor 在哪個 device，決定運算在哪裡進行。將 model 移到 CUDA，不會自動移動後續 DataLoader 送出的 CPU batch。特徵與標籤都要搬；模型 forward 中臨時建立的 zeros 也要與輸入相容。registered buffer 會隨 model.to 移動，普通 Python 屬性中的 Tensor 不會因此自動管理。

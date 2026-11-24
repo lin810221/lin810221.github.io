@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![三家服務的共同介面；訊息、工具與串流欄位依供應商API核對；以應用程式內部契約降低切換時的差異。](assets/figures/review-02-parameters.svg)
+
+> **圖解｜三家服務的共同介面**：訊息、工具與串流欄位依供應商API核對；以應用程式內部契約降低切換時的差異。
+
+**本單元讀圖任務**：讀完「Temperature、Top-p 與生成變化」後，在圖上指出「Gemini」的位置或對應關係；用本單元的一個例子說明它與「Claude」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Temperature 在改變什麼？
 
 模型對下一個 token 產生相對分數 logits。教學上可用帶溫度的 softmax 將它轉成分布：
@@ -40,6 +52,6 @@ OpenAI 和 Claude 也不能把舊文章中的所有採樣參數直接套到新�
 
 先固定任務、資料集與模型，只調一個變因，評估內容多樣性與錯誤率。資料抽取若仍出錯，優先改善 schema、來源與驗證；創作任務則可評估多個候選，而不是只看一次輸出。
 
-**練習：**以同一組 logits 分別計算 T=0.3 與 T=1.5，確認分布總和為 1。再降低 top-p，觀察有幾個候選被保留。
+**練習：**以同一組 logits 分別計算 $T=0.3$ 與 $T=1.5$，確認分布總和為 1。再降低 top-p，觀察有幾個候選被保留。
 
 官方來源：[Gemini generation parameters](https://ai.google.dev/gemini-api/docs/text-generation)、[OpenAI reasoning compatibility](https://developers.openai.com/api/docs/guides/reasoning)。

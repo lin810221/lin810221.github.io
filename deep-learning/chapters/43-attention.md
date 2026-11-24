@@ -2,6 +2,16 @@
 
 用一個小矩陣手算權重，理解內容相依的資訊聚合。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。](assets/figures/review-08-attention.svg)
+
+> **圖解｜Attention用內容混合資訊**：分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。
+
+**本單元讀圖任務**：讀完「Attention：Query、Key、Value與縮放內積」後，在圖上指出「Query」的位置或對應關係；用本單元的一個例子說明它與「Keys」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 從固定摘要到選擇性讀取
 
 Query表示目前想找的條件，Key提供可比對特徵，Value是要被聚合的內容。它們可以由相同或不同資料透過可學投影取得。Attention是加權讀取機制，不等於神經模型的完整推理或人類注意力。

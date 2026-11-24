@@ -84,7 +84,9 @@
       "tags": [
         "緒論",
         "statistics definition"
-      ]
+      ],
+      "visual": "review-01-introduction",
+      "visualTask": "讀完「統計學的定義：從問題到不確定性」後，在圖上指出「目標母體」的位置或對應關係；用本單元的一個例子說明它與「抽樣框」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-statistics-branches",
@@ -94,7 +96,9 @@
       "tags": [
         "緒論",
         "statistics branches"
-      ]
+      ],
+      "visual": "review-01-introduction",
+      "visualTask": "讀完「統計學的分類：描述、推論與應用」後，在圖上指出「抽樣框」的位置或對應關係；用本單元的一個例子說明它與「實際樣本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-key-terms",
@@ -104,7 +108,9 @@
       "tags": [
         "緒論",
         "key terms"
-      ]
+      ],
+      "visual": "review-01-introduction",
+      "visualTask": "讀完「名詞解釋：變數、母體、樣本與統計量」後，在圖上指出「實際樣本」的位置或對應關係；用本單元的一個例子說明它與「統計量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-data-and-scales",
@@ -115,7 +121,9 @@
         "緒論",
         "data and scales"
       ],
-      "example": "01_data_types.py"
+      "example": "01_data_types.py",
+      "visual": "review-01-introduction",
+      "visualTask": "讀完「統計資料的性質、種類與衡量尺度」後，在圖上指出「統計量」的位置或對應關係；用本單元的一個例子說明它與「推論目標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-exercises-introduction",
@@ -125,7 +133,9 @@
       "tags": [
         "緒論",
         "exercises introduction"
-      ]
+      ],
+      "visual": "review-01-introduction",
+      "visualTask": "讀完「緒論習題與詳解」後，在圖上指出「推論目標」的位置或對應關係；用本單元的一個例子說明它與「目標母體」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-categorical-tables",
@@ -135,7 +145,9 @@
       "tags": [
         "統計資料的整理與圖表",
         "categorical tables"
-      ]
+      ],
+      "visual": "review-02-tables",
+      "visualTask": "讀完「屬質資料：表格法與圖示法」後，在圖上指出「類別計數」的位置或對應關係；用本單元的一個例子說明它與「相對次數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-quantitative-tables",
@@ -146,7 +158,9 @@
         "統計資料的整理與圖表",
         "quantitative tables"
       ],
-      "example": "02_tables_histogram.py"
+      "example": "02_tables_histogram.py",
+      "visual": "review-02-tables",
+      "visualTask": "讀完「屬量資料：次數分配、直方圖與累積圖」後，在圖上指出「相對次數」的位置或對應關係；用本單元的一個例子說明它與「直方圖」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-distribution-shapes",
@@ -156,7 +170,9 @@
       "tags": [
         "統計資料的整理與圖表",
         "distribution shapes"
-      ]
+      ],
+      "visual": "review-02-tables",
+      "visualTask": "讀完「次數分配的型態：對稱、偏態、J型與U型」後，在圖上指出「直方圖」的位置或對應關係；用本單元的一個例子說明它與「分布形態」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-exercises-tables",
@@ -166,7 +182,9 @@
       "tags": [
         "統計資料的整理與圖表",
         "exercises tables"
-      ]
+      ],
+      "visual": "review-02-tables",
+      "visualTask": "讀完「圖表習題與詳解」後，在圖上指出「分布形態」的位置或對應關係；用本單元的一個例子說明它與「資料單位」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-central-tendency",
@@ -177,7 +195,9 @@
         "統計量數之測量",
         "central tendency"
       ],
-      "example": "03_descriptive.py"
+      "example": "03_descriptive.py",
+      "visual": "review-03-descriptive",
+      "visualTask": "讀完「集中趨勢：平均、中位、分位與眾數」後，在圖上指出「最小值」的位置或對應關係；用本單元的一個例子說明它與「Q1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-dispersion",
@@ -187,7 +207,9 @@
       "tags": [
         "統計量數之測量",
         "dispersion"
-      ]
+      ],
+      "visual": "review-03-descriptive",
+      "visualTask": "讀完「差異量數：全距、四分位差、平均差與標準差」後，在圖上指出「Q1」的位置或對應關係；用本單元的一個例子說明它與「中位數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-standardization-outliers",
@@ -197,7 +219,9 @@
       "tags": [
         "統計量數之測量",
         "standardization outliers"
-      ]
+      ],
+      "visual": "review-03-descriptive",
+      "visualTask": "讀完「平均與標準差的應用：Z分數、界限與離群值」後，在圖上指出「中位數」的位置或對應關係；用本單元的一個例子說明它與「Q3」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-exercises-descriptive",
@@ -207,7 +231,9 @@
       "tags": [
         "統計量數之測量",
         "exercises descriptive"
-      ]
+      ],
+      "visual": "review-03-descriptive",
+      "visualTask": "讀完「量數習題與詳解」後，在圖上指出「Q3」的位置或對應關係；用本單元的一個例子說明它與「最大值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-probability-rules",
@@ -218,7 +244,9 @@
         "機率及機率分配",
         "probability rules"
       ],
-      "example": "04_probability_bayes.py"
+      "example": "04_probability_bayes.py",
+      "visual": "review-04-probability",
+      "visualTask": "讀完「機率概論：測度、性質與運算法則」後，在圖上指出「隨機變數」的位置或對應關係；用本單元的一個例子說明它與「可能取值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-random-variables",
@@ -229,7 +257,9 @@
         "機率及機率分配",
         "random variables"
       ],
-      "example": "05_random_variable.py"
+      "example": "05_random_variable.py",
+      "visual": "review-04-probability",
+      "visualTask": "讀完「隨機變數及離散、連續機率分配」後，在圖上指出「可能取值」的位置或對應關係；用本單元的一個例子說明它與「機率或密度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-expectation-variance",
@@ -239,7 +269,9 @@
       "tags": [
         "機率及機率分配",
         "expectation variance"
-      ]
+      ],
+      "visual": "review-04-probability",
+      "visualTask": "讀完「期望值與變異數的性質：總和與相依」後，在圖上指出「機率或密度」的位置或對應關係；用本單元的一個例子說明它與「期望值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-discrete-families",
@@ -250,7 +282,9 @@
         "機率及機率分配",
         "discrete families"
       ],
-      "example": "06_discrete_distributions.py"
+      "example": "06_discrete_distributions.py",
+      "visual": "review-04-probability",
+      "visualTask": "讀完「常用離散分配：均等、二項、超幾何與Poisson」後，在圖上指出「期望值」的位置或對應關係；用本單元的一個例子說明它與「變異數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-continuous-families",
@@ -261,7 +295,9 @@
         "機率及機率分配",
         "continuous families"
       ],
-      "example": "07_normal_approximation.py"
+      "example": "07_normal_approximation.py",
+      "visual": "review-04-probability",
+      "visualTask": "讀完「連續均勻、常態與二項的常態近似」後，在圖上指出「變異數」的位置或對應關係；用本單元的一個例子說明它與「隨機變數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-exercises-probability",
@@ -271,7 +307,9 @@
       "tags": [
         "機率及機率分配",
         "exercises probability"
-      ]
+      ],
+      "visual": "review-04-probability",
+      "visualTask": "讀完「機率與分配習題詳解」後，在圖上指出「隨機變數」的位置或對應關係；用本單元的一個例子說明它與「可能取值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-sampling-basics",
@@ -281,7 +319,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "sampling basics"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「抽樣的基本概念：抽樣誤差與非抽樣誤差」後，在圖上指出「母體分布」的位置或對應關係；用本單元的一個例子說明它與「重複抽樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-sampling-designs",
@@ -292,7 +332,9 @@
         "抽樣及抽樣分配",
         "sampling designs"
       ],
-      "example": "08_sampling_designs.py"
+      "example": "08_sampling_designs.py",
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「四種抽樣方法：簡單、分層、群集與系統」後，在圖上指出「重複抽樣」的位置或對應關係；用本單元的一個例子說明它與「每次樣本平均」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-sampling-distribution",
@@ -302,7 +344,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "sampling distribution"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「統計量與抽樣分配：資料分布以外的另一張圖」後，在圖上指出「每次樣本平均」的位置或對應關係；用本單元的一個例子說明它與「抽樣分布」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-mean-sampling",
@@ -313,7 +357,9 @@
         "抽樣及抽樣分配",
         "mean sampling"
       ],
-      "example": "09_sampling_distribution.py"
+      "example": "09_sampling_distribution.py",
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「樣本平均數的抽樣分配與中央極限定理」後，在圖上指出「抽樣分布」的位置或對應關係；用本單元的一個例子說明它與「標準誤」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-student-t",
@@ -324,7 +370,9 @@
         "抽樣及抽樣分配",
         "student t"
       ],
-      "example": "10_sampling_pivots.py"
+      "example": "10_sampling_pivots.py",
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「t分配的特性與機率計算」後，在圖上指出「標準誤」的位置或對應關係；用本單元的一個例子說明它與「母體分布」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-proportion-sampling",
@@ -334,7 +382,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "proportion sampling"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「樣本比例的抽樣分配」後，在圖上指出「母體分布」的位置或對應關係；用本單元的一個例子說明它與「重複抽樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-chi-square-sampling",
@@ -344,7 +394,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "chi square sampling"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「樣本變異數與卡方抽樣分配」後，在圖上指出「重複抽樣」的位置或對應關係；用本單元的一個例子說明它與「每次樣本平均」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-f-distribution",
@@ -354,7 +406,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "f distribution"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「F分配：兩個獨立變異估計的比例」後，在圖上指出「每次樣本平均」的位置或對應關係；用本單元的一個例子說明它與「抽樣分布」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-exercises-sampling",
@@ -364,7 +418,9 @@
       "tags": [
         "抽樣及抽樣分配",
         "exercises sampling"
-      ]
+      ],
+      "visual": "review-05-sampling",
+      "visualTask": "讀完「抽樣與抽樣分配習題詳解」後，在圖上指出「抽樣分布」的位置或對應關係；用本單元的一個例子說明它與「標準誤」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-mean-confidence",
@@ -375,7 +431,9 @@
         "區間估計",
         "mean confidence"
       ],
-      "example": "11_mean_intervals.py"
+      "example": "11_mean_intervals.py",
+      "visual": "review-06-intervals",
+      "visualTask": "讀完「母體平均數區間估計：已知σ、未知σ與流程」後，在圖上指出「固定母體參數」的位置或對應關係；用本單元的一個例子說明它與「樣本1區間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-proportion-confidence",
@@ -386,7 +444,9 @@
         "區間估計",
         "proportion confidence"
       ],
-      "example": "12_proportion_intervals.py"
+      "example": "12_proportion_intervals.py",
+      "visual": "review-06-intervals",
+      "visualTask": "讀完「母體比例區間：Wald、Wilson與精確法」後，在圖上指出「樣本1區間」的位置或對應關係；用本單元的一個例子說明它與「樣本2區間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-planning-sample-size",
@@ -397,7 +457,9 @@
         "區間估計",
         "planning sample size"
       ],
-      "example": "13_sample_size.py"
+      "example": "13_sample_size.py",
+      "visual": "review-06-intervals",
+      "visualTask": "讀完「樣本大小的決定：誤差、信賴與可行性」後，在圖上指出「樣本2區間」的位置或對應關係；用本單元的一個例子說明它與「樣本3區間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-variance-confidence",
@@ -408,7 +470,9 @@
         "區間估計",
         "variance confidence"
       ],
-      "example": "14_variance_interval.py"
+      "example": "14_variance_interval.py",
+      "visual": "review-06-intervals",
+      "visualTask": "讀完「母體變異數與標準差的區間」後，在圖上指出「樣本3區間」的位置或對應關係；用本單元的一個例子說明它與「重複程序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-exercises-intervals",
@@ -418,7 +482,9 @@
       "tags": [
         "區間估計",
         "exercises intervals"
-      ]
+      ],
+      "visual": "review-06-intervals",
+      "visualTask": "讀完「區間估計習題詳解」後，在圖上指出「重複程序」的位置或對應關係；用本單元的一個例子說明它與「固定母體參數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-testing-foundations",
@@ -429,7 +495,9 @@
         "假設檢定",
         "testing foundations"
       ],
-      "example": "15_testing_power.py"
+      "example": "15_testing_power.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「假設檢定、誤差、拒絕區與檢定力」後，在圖上指出「虛無假設」的位置或對應關係；用本單元的一個例子說明它與「檢定統計量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-one-mean-test",
@@ -440,7 +508,9 @@
         "假設檢定",
         "one mean test"
       ],
-      "example": "16_one_sample_t.py"
+      "example": "16_one_sample_t.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「母體平均數檢定：大樣本與小樣本」後，在圖上指出「檢定統計量」的位置或對應關係；用本單元的一個例子說明它與「觀察值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-one-proportion-test",
@@ -451,7 +521,9 @@
         "假設檢定",
         "one proportion test"
       ],
-      "example": "17_one_proportion.py"
+      "example": "17_one_proportion.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「母體比例檢定：二項精確與常態近似」後，在圖上指出「觀察值」的位置或對應關係；用本單元的一個例子說明它與「尾端機率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-one-variance-test",
@@ -462,7 +534,9 @@
         "假設檢定",
         "one variance test"
       ],
-      "example": "18_one_variance.py"
+      "example": "18_one_variance.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「母體變異數檢定：卡方參照與敏感度」後，在圖上指出「尾端機率」的位置或對應關係；用本單元的一個例子說明它與「決策規則」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-two-means",
@@ -473,7 +547,9 @@
         "假設檢定",
         "two means"
       ],
-      "example": "19_welch_test.py"
+      "example": "19_welch_test.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「兩母體平均數：大樣本、Welch、pooled與成對」後，在圖上指出「決策規則」的位置或對應關係；用本單元的一個例子說明它與「虛無假設」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-two-proportions",
@@ -484,7 +560,9 @@
         "假設檢定",
         "two proportions"
       ],
-      "example": "21_two_proportions.py"
+      "example": "21_two_proportions.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「兩母體比例檢定與差異區間」後，在圖上指出「虛無假設」的位置或對應關係；用本單元的一個例子說明它與「檢定統計量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-two-variances",
@@ -495,7 +573,9 @@
         "假設檢定",
         "two variances"
       ],
-      "example": "22_variance_comparison.py"
+      "example": "22_variance_comparison.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「兩母體變異數：F檢定與穩健替代」後，在圖上指出「檢定統計量」的位置或對應關係；用本單元的一個例子說明它與「觀察值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-chi-square-tests",
@@ -506,7 +586,9 @@
         "假設檢定",
         "chi square tests"
       ],
-      "example": "23_chi_square.py"
+      "example": "23_chi_square.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「卡方檢定：獨立性、齊一性與適合度」後，在圖上指出「觀察值」的位置或對應關係；用本單元的一個例子說明它與「尾端機率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-exercises-testing",
@@ -517,7 +599,9 @@
         "假設檢定",
         "exercises testing"
       ],
-      "example": "20_paired_test.py"
+      "example": "20_paired_test.py",
+      "visual": "review-07-testing",
+      "visualTask": "讀完「假設檢定習題詳解：方向、配對與結論」後，在圖上指出「尾端機率」的位置或對應關係；用本單元的一個例子說明它與「決策規則」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-anova-introduction",
@@ -527,7 +611,9 @@
       "tags": [
         "變異數分析",
         "anova introduction"
-      ]
+      ],
+      "visual": "review-08-anova",
+      "visualTask": "讀完「變異數分析概論：用變異比較平均」後，在圖上指出「組A」的位置或對應關係；用本單元的一個例子說明它與「組B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-one-way-anova",
@@ -538,7 +624,9 @@
         "變異數分析",
         "one way anova"
       ],
-      "example": "25_anova.py"
+      "example": "25_anova.py",
+      "visual": "review-08-anova",
+      "visualTask": "讀完「單因子ANOVA：平方和、自由度與Welch」後，在圖上指出「組B」的位置或對應關係；用本單元的一個例子說明它與「組C」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-multiple-comparisons",
@@ -549,7 +637,9 @@
         "變異數分析",
         "multiple comparisons"
       ],
-      "example": "26_posthoc.py"
+      "example": "26_posthoc.py",
+      "visual": "review-08-anova",
+      "visualTask": "讀完「多重比較：Tukey、Games–Howell與Holm」後，在圖上指出「組C」的位置或對應關係；用本單元的一個例子說明它與「組內分散」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-two-factor-additive",
@@ -560,7 +650,9 @@
         "變異數分析",
         "two factor additive"
       ],
-      "example": "27_two_factor_additive.py"
+      "example": "27_two_factor_additive.py",
+      "visual": "review-08-anova",
+      "visualTask": "讀完「二因子無交互作用模型：加法效果」後，在圖上指出「組內分散」的位置或對應關係；用本單元的一個例子說明它與「組間中心差」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-two-factor-interaction",
@@ -571,7 +663,9 @@
         "變異數分析",
         "two factor interaction"
       ],
-      "example": "28_two_factor_interaction.py"
+      "example": "28_two_factor_interaction.py",
+      "visual": "review-08-anova",
+      "visualTask": "讀完「二因子含交互作用：效果依情境改變」後，在圖上指出「組間中心差」的位置或對應關係；用本單元的一個例子說明它與「組A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-exercises-anova",
@@ -581,7 +675,9 @@
       "tags": [
         "變異數分析",
         "exercises anova"
-      ]
+      ],
+      "visual": "review-08-anova",
+      "visualTask": "讀完「ANOVA習題詳解：從平方和到條件效果」後，在圖上指出「組A」的位置或對應關係；用本單元的一個例子說明它與「組B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "49-correlation",
@@ -592,7 +688,9 @@
         "相關與迴歸分析",
         "correlation"
       ],
-      "example": "29_correlation.py"
+      "example": "29_correlation.py",
+      "visual": "review-09-regression",
+      "visualTask": "讀完「概論及相關分析：Pearson與Spearman」後，在圖上指出「觀察點」的位置或對應關係；用本單元的一個例子說明它與「迴歸線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "50-linear-regression",
@@ -603,7 +701,9 @@
         "相關與迴歸分析",
         "linear regression"
       ],
-      "example": "30_regression.py"
+      "example": "30_regression.py",
+      "visual": "review-09-regression",
+      "visualTask": "讀完「直線迴歸模式：係數、最小平方與殘差」後，在圖上指出「迴歸線」的位置或對應關係；用本單元的一個例子說明它與「殘差」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "51-regression-inference",
@@ -614,7 +714,9 @@
         "相關與迴歸分析",
         "regression inference"
       ],
-      "example": "31_diagnostics.py"
+      "example": "31_diagnostics.py",
+      "visual": "review-09-regression",
+      "visualTask": "讀完「迴歸統計推論：SE、區間、診斷與預測」後，在圖上指出「殘差」的位置或對應關係；用本單元的一個例子說明它與「平均關係」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "52-exercises-regression",
@@ -624,7 +726,9 @@
       "tags": [
         "相關與迴歸分析",
         "exercises regression"
-      ]
+      ],
+      "visual": "review-09-regression",
+      "visualTask": "讀完「相關與迴歸習題詳解」後，在圖上指出「平均關係」的位置或對應關係；用本單元的一個例子說明它與「推論條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "53-python-workflow",
@@ -635,7 +739,9 @@
         "問卷調查分析與Python實作",
         "python workflow"
       ],
-      "example": "32_questionnaire_scoring.py"
+      "example": "32_questionnaire_scoring.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「基本操作：環境、欄位字典與可重現分析」後，在圖上指出「題項1」的位置或對應關係；用本單元的一個例子說明它與「題項2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "54-questionnaire-design",
@@ -645,7 +751,9 @@
       "tags": [
         "問卷調查分析與Python實作",
         "questionnaire design"
-      ]
+      ],
+      "visual": "review-10-survey",
+      "visualTask": "讀完「問卷調查與應用：從構念到題目」後，在圖上指出「題項2」的位置或對應關係；用本單元的一個例子說明它與「潛在因素」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "55-reliability-validity",
@@ -656,7 +764,9 @@
         "問卷調查分析與Python實作",
         "reliability validity"
       ],
-      "example": "33_reliability.py"
+      "example": "33_reliability.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「信度與效度：alpha不是量表合格證」後，在圖上指出「潛在因素」的位置或對應關係；用本單元的一個例子說明它與「信度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "56-survey-description",
@@ -666,7 +776,9 @@
       "tags": [
         "問卷調查分析與Python實作",
         "survey description"
-      ]
+      ],
+      "visual": "review-10-survey",
+      "visualTask": "讀完「敘述統計與交叉分析：先了解回覆者」後，在圖上指出「信度」的位置或對應關係；用本單元的一個例子說明它與「效度證據」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "57-factor-analysis",
@@ -677,7 +789,9 @@
         "問卷調查分析與Python實作",
         "factor analysis"
       ],
-      "example": "34_factor_analysis.py"
+      "example": "34_factor_analysis.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「因素分析：探索結構、KMO、Bartlett與旋轉」後，在圖上指出「效度證據」的位置或對應關係；用本單元的一個例子說明它與「題項1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "58-survey-contingency",
@@ -688,7 +802,9 @@
         "問卷調查分析與Python實作",
         "survey contingency"
       ],
-      "example": "35_survey_crosstab.py"
+      "example": "35_survey_crosstab.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「交叉表：列百分比、期望數與關聯」後，在圖上指出「題項1」的位置或對應關係；用本單元的一個例子說明它與「題項2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "59-survey-one-sample",
@@ -699,7 +815,9 @@
         "問卷調查分析與Python實作",
         "survey one sample"
       ],
-      "example": "36_survey_one_t.py"
+      "example": "36_survey_one_t.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「單一樣本t：合成量表分數與基準值」後，在圖上指出「題項2」的位置或對應關係；用本單元的一個例子說明它與「潛在因素」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "60-survey-independent",
@@ -710,7 +828,9 @@
         "問卷調查分析與Python實作",
         "survey independent"
       ],
-      "example": "37_survey_independent_t.py"
+      "example": "37_survey_independent_t.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「獨立樣本t：兩類回覆者的平均差」後，在圖上指出「潛在因素」的位置或對應關係；用本單元的一個例子說明它與「信度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "61-survey-paired",
@@ -721,7 +841,9 @@
         "問卷調查分析與Python實作",
         "survey paired"
       ],
-      "example": "38_survey_paired_t.py"
+      "example": "38_survey_paired_t.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「成對樣本t：按ID對齊前後測」後，在圖上指出「信度」的位置或對應關係；用本單元的一個例子說明它與「效度證據」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "62-survey-anova",
@@ -732,7 +854,9 @@
         "問卷調查分析與Python實作",
         "survey anova"
       ],
-      "example": "39_survey_anova_posthoc.py"
+      "example": "39_survey_anova_posthoc.py",
+      "visual": "review-10-survey",
+      "visualTask": "讀完「單因子變異數分析：三組合成量表分數」後，在圖上指出「效度證據」的位置或對應關係；用本單元的一個例子說明它與「題項1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "63-survey-posthoc",
@@ -742,7 +866,9 @@
       "tags": [
         "問卷調查分析與Python實作",
         "survey posthoc"
-      ]
+      ],
+      "visual": "review-10-survey",
+      "visualTask": "讀完「事後比較：從整體差異到三對區間」後，在圖上指出「題項1」的位置或對應關係；用本單元的一個例子說明它與「題項2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "64-exercises-survey",
@@ -752,7 +878,9 @@
       "tags": [
         "問卷調查分析與Python實作",
         "exercises survey"
-      ]
+      ],
+      "visual": "review-10-survey",
+      "visualTask": "讀完「問卷分析習題詳解：從原始題項到報告」後，在圖上指出「題項2」的位置或對應關係；用本單元的一個例子說明它與「潛在因素」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "65-worked-solutions",
@@ -763,7 +891,9 @@
         "解答、附錄與完整專題",
         "worked solutions"
       ],
-      "example": "24_goodness_of_fit.py"
+      "example": "24_goodness_of_fit.py",
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「補充習題解答：計算、選法與合理結論」後，在圖上指出「資料字典」的位置或對應關係；用本單元的一個例子說明它與「方法條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "66-distribution-tables",
@@ -773,7 +903,9 @@
       "tags": [
         "解答、附錄與完整專題",
         "distribution tables"
-      ]
+      ],
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「分配表、尾向與常用切點」後，在圖上指出「方法條件」的位置或對應關係；用本單元的一個例子說明它與「數值與圖表」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "67-method-selector",
@@ -783,7 +915,9 @@
       "tags": [
         "解答、附錄與完整專題",
         "method selector"
-      ]
+      ],
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「方法選擇與分析報告檢核表」後，在圖上指出「數值與圖表」的位置或對應關係；用本單元的一個例子說明它與「解釋限制」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "68-robust-resampling",
@@ -793,7 +927,9 @@
       "tags": [
         "解答、附錄與完整專題",
         "robust resampling"
-      ]
+      ],
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「延伸：非參數、重抽樣、缺失與多元模型」後，在圖上指出「解釋限制」的位置或對應關係；用本單元的一個例子說明它與「可重現紀錄」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "69-capstone",
@@ -804,7 +940,9 @@
         "解答、附錄與完整專題",
         "capstone"
       ],
-      "example": "40_capstone.py"
+      "example": "40_capstone.py",
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「完整專題：從問卷CSV到可重現JSON報告」後，在圖上指出「可重現紀錄」的位置或對應關係；用本單元的一個例子說明它與「資料字典」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "70-reference",
@@ -814,7 +952,142 @@
       "tags": [
         "解答、附錄與完整專題",
         "reference"
-      ]
+      ],
+      "visual": "review-11-appendices",
+      "visualTask": "讀完「符號、公式、版本與原目錄對照速查」後，在圖上指出「資料字典」的位置或對應關係；用本單元的一個例子說明它與「方法條件」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-introduction",
+      "file": "assets/figures/review-01-introduction.svg",
+      "title": "從母體到樣本再到推論",
+      "alt": "從母體到樣本再到推論；大樣本不能自動補回未涵蓋的母體；參數固定未知，統計量隨抽樣改變。",
+      "caption": "大樣本不能自動補回未涵蓋的母體；參數固定未知，統計量隨抽樣改變。",
+      "group": "introduction",
+      "kind": "population",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-tables",
+      "file": "assets/figures/review-02-tables.svg",
+      "title": "表格與圖形描述同一份資料",
+      "alt": "表格與圖形描述同一份資料；柱狀圖與直方圖的資料尺度不同；分組與分母會改變視覺解讀。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "柱狀圖與直方圖的資料尺度不同；分組與分母會改變視覺解讀。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "tables",
+      "kind": "histogram",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-descriptive",
+      "file": "assets/figures/review-03-descriptive.svg",
+      "title": "中心、分散與離群的關係",
+      "alt": "中心、分散與離群的關係；圖使用原創五數摘要，非任何實測母體；離群候選需回查資料與情境。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖使用原創五數摘要，非任何實測母體；離群候選需回查資料與情境。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "descriptive",
+      "kind": "boxplot",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-probability",
+      "file": "assets/figures/review-04-probability.svg",
+      "title": "機率分布描述隨機結果",
+      "alt": "機率分布描述隨機結果；連續密度高度不等於單點機率；分布假設與參數決定問題。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "連續密度高度不等於單點機率；分布假設與參數決定問題。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "probability",
+      "kind": "distribution",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-sampling",
+      "file": "assets/figures/review-05-sampling.svg",
+      "title": "樣本統計量有自己的分布",
+      "alt": "樣本統計量有自己的分布；標準差描述觀察差異，標準誤描述估計變動；圖為教學模型，不是萬用常態保證。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "標準差描述觀察差異，標準誤描述估計變動；圖為教學模型，不是萬用常態保證。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "sampling",
+      "kind": "sampling",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-intervals",
+      "file": "assets/figures/review-06-intervals.svg",
+      "title": "信賴區間的長期覆蓋",
+      "alt": "信賴區間的長期覆蓋；參數固定，區間隨不同樣本改變；特定區間不能以頻率學派解釋成參數機率。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "參數固定，區間隨不同樣本改變；特定區間不能以頻率學派解釋成參數機率。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "intervals",
+      "kind": "interval",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-testing",
+      "file": "assets/figures/review-07-testing.svg",
+      "title": "假設檢定的參照分布",
+      "alt": "假設檢定的參照分布；p值不是虛無假設為真的機率；效果量、區間與檢定條件一起報告。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "p值不是虛無假設為真的機率；效果量、區間與檢定條件一起報告。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "testing",
+      "kind": "tails",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-anova",
+      "file": "assets/figures/review-08-anova.svg",
+      "title": "組內與組間變異",
+      "alt": "組內與組間變異；ANOVA比較變異分解，不等於每組都互不相同；事後比較需處理多重性與設計假設。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "ANOVA比較變異分解，不等於每組都互不相同；事後比較需處理多重性與設計假設。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "anova",
+      "kind": "anova",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-09-regression",
+      "file": "assets/figures/review-09-regression.svg",
+      "title": "相關與迴歸的問題不同",
+      "alt": "相關與迴歸的問題不同；相關或迴歸係數不直接代表因果效果；外推、殘差與研究設計皆需檢查。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "相關或迴歸係數不直接代表因果效果；外推、殘差與研究設計皆需檢查。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "regression",
+      "kind": "regression",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-10-survey",
+      "file": "assets/figures/review-10-survey.svg",
+      "title": "問卷測量與潛在構念",
+      "alt": "問卷測量與潛在構念；高一致性不自動證明量到正確構念；反向題、遺漏及量尺設定需保存。",
+      "caption": "高一致性不自動證明量到正確構念；反向題、遺漏及量尺設定需保存。",
+      "group": "survey",
+      "kind": "factors",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-11-appendices",
+      "file": "assets/figures/review-11-appendices.svg",
+      "title": "從資料到完整統計報告",
+      "alt": "從資料到完整統計報告；保留問題、比較、分母與不確定性；不用單一p值取代完整判斷。",
+      "caption": "保留問題、比較、分母與不確定性；不用單一p值取代完整判斷。",
+      "group": "appendices",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "applied-statistics-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "applied-statistics-study.zip"
   ]
 }

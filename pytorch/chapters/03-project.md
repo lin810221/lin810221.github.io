@@ -2,6 +2,16 @@
 
 整理入口、資料、設定與產出，避免程式只在目前工作目錄能執行。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。](assets/figures/review-01-start.svg)
+
+> **圖解｜Tensor的shape與dtype**：相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。
+
+**本單元讀圖任務**：讀完「專案與執行方式：從 Notebook 到可重現腳本」後，在圖上指出「dtype」的位置或對應關係；用本單元的一個例子說明它與「device」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一個小型工程的邊界
 
 Notebook 適合逐步觀察；正式訓練還需要可重新啟動的腳本。核心邏輯放模組，入口只負責讀取參數、呼叫功能與印出摘要。重新執行檔案應建立新的模型，而不是依賴 Notebook 上一格殘留的 optimizer 或梯度。

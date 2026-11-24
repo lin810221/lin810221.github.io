@@ -4,6 +4,8 @@ import argparse
 import json
 import re
 import zipfile
+import shutil
+import subprocess
 from pathlib import Path
 import markdown
 from markdown.extensions import Extension
@@ -41,48 +43,68 @@ def build_study_bundle(course_path, catalog):
             info.compress_type = zipfile.ZIP_DEFLATED
             archive.writestr(info, path.read_bytes())
 
-class InlineMath(InlineProcessor):
-    def handleMatch(self, match, data):
-        element = ET.Element("span", {"class": "math-source"})
-        from markdown.util import AtomicString
-        element.text = AtomicString("$" + match.group(1) + "$")
-        return element, match.start(0), match.end(0)
+def assert_readable(text, label):
+    """UTF-8 can faithfully contain already-lost ASCII question marks."""
+    prose = re.sub(r"(`{3,}|~{3,})[^\n]*\n.*?\1[^\n]*", "", text, flags=re.S)
+    prose = re.sub(r"`[^`\n]*`", "", prose)
+    if re.search(r"\?{3,}|\ufffd", prose):
+        raise ValueError(f"Damaged text in {label}: replacement characters/question-mark runs")
 
-class DisplayMath(Preprocessor):
+
+def math_markup(tex, display=False):
+    tag = "div" if display else "span"
+    cls = "math-block" if display else "math-source"
+    delimiter = "$$" if display else "$"
+    return f'<{tag} class="{cls}" data-tex="{html.escape(tex, quote=True)}" data-display="{str(display).lower()}">{delimiter}{html.escape(tex)}{delimiter}</{tag}><!--math-end-->'
+
+
+def summary_math(summary):
+    pattern = re.compile(r'(?<![\\$])\$(?!\$)([^\n$]+?)\$(?!\$)|\\\((.*?)\\\)')
+    parts=[];start=0
+    for match in pattern.finditer(summary):
+        parts.append(html.escape(summary[start:match.start()]))
+        parts.append(math_markup(next(v for v in match.groups() if v is not None)))
+        start=match.end()
+    parts.append(html.escape(summary[start:]));return ''.join(parts)
+
+
+class ProtectedMath(Preprocessor):
+    """Stash TeX BEFORE tables/escaping; leave fenced and inline code intact."""
+    def markup(self, tex, display):
+        return math_markup(tex,display)
+
     def run(self, lines):
-        result, buffer, in_code, in_math = [], [], False, False
-        for line in lines:
-            if line.strip().startswith("```"):
-                in_code = not in_code
-            if not in_code and line.strip() == "$$":
-                if not in_math:
-                    in_math = True
-                    buffer = []
-                else:
-                    rendered = '<div class="math-block">$$\n' + html.escape("\n".join(buffer)) + '\n$$</div>'
-                    result.extend(["", self.md.htmlStash.store(rendered), ""])
-                    in_math = False
-            elif in_math:
-                buffer.append(line)
-            else:
-                result.append(line)
-        if in_math:
-            raise ValueError("Unclosed display math")
-        return result
+        text = "\n".join(lines)
+        # Fences have priority over math, including code examples containing $$.
+        pieces = re.split(r"((?:^`{3,}[^\n]*\n.*?^`{3,}[^\n]*$)|(?:^~{3,}[^\n]*\n.*?^~{3,}[^\n]*$))", text, flags=re.M|re.S)
+        pattern = re.compile(r"(?P<code>`+)(?P<codebody>[^\n]*?)(?P=code)|(?<!\\)\$\$(?P<dollarblock>.*?)\$\$|\\\[(?P<bracketblock>.*?)\\\]|\\\((?P<paren>.*?)\\\)|(?<![\\$])\$(?!\$)(?P<inline>[^\n$]+?)(?<!\\)\$(?!\$)", re.S)
+        def replace(match):
+            if match.group('code') is not None:return match.group()
+            display = match.group('dollarblock') is not None or match.group('bracketblock') is not None
+            tex = next(v for v in [match.group('dollarblock'),match.group('bracketblock'),match.group('paren'),match.group('inline')] if v is not None).strip()
+            stored = self.md.htmlStash.store(self.markup(tex,display))
+            return '\n\n'+stored+'\n\n' if display else stored
+        for i in range(0,len(pieces),2):
+            pieces[i]=pattern.sub(replace,pieces[i])
+            if re.search(r"(?<!\\)\$\$|\\\[",re.sub(r'`+[^\n]*?`+','',pieces[i])):
+                raise ValueError('Unclosed display math delimiter')
+        return ''.join(pieces).split('\n')
 
 class MathExtension(Extension):
     def extendMarkdown(self, md):
-        md.preprocessors.register(DisplayMath(md), "display_math", 27)
-        md.inlinePatterns.register(InlineMath(r"(?<!\\)\$(?!\$)([^\n$]+?)(?<!\\)\$(?!\$)", md), "inline_math", 185)
+        md.preprocessors.register(ProtectedMath(md), "protected_math", 27)
 
 def build(course_path):
     catalog = json.loads((course_path / "course.json").read_text(encoding="utf-8"))
     count = 0
     for lesson in catalog["lessons"]:
         source = (course_path / "chapters" / (lesson["id"] + ".md")).read_text(encoding="utf-8")
+        assert_readable(lesson['title']+'\n'+lesson['summary'], lesson['id']+' metadata')
+        assert_readable(source, lesson['id'])
         source = re.sub(r"<!-- example:([a-zA-Z0-9_]+\.py) -->", lambda m: "```python\n" + (course_path / "examples" / m.group(1)).read_text(encoding="utf-8").rstrip() + "\n```", source)
         md = markdown.Markdown(extensions=["fenced_code", "tables", "toc", "attr_list", "codehilite", MathExtension()], extension_configs={"codehilite": {"guess_lang": False}, "toc": {"permalink": False}})
         lesson["html"] = md.convert(source)
+        lesson['summaryHTML'] = summary_math(lesson['summary'])
         languages = iter(re.findall(r"^```([^\s`]*)", source, re.M)[::2])
         lesson["html"] = re.sub(r'<div class="codehilite">', lambda _: '<div class="codehilite" data-language="' + html.escape(next(languages, "code"), quote=True) + '">', lesson["html"])
         lesson["text"] = source
@@ -113,9 +135,14 @@ def build(course_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("subjects", nargs="*", help="Subject folders; default: all courses")
+    parser.add_argument('--require-prerender',action='store_true',help='Fail if Node is unavailable for static KaTeX rendering')
     args = parser.parse_args()
     names = args.subjects or [p.parent.name for p in sorted(ROOT.glob("*/course.json"))]
     for name in names:
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", name):
             parser.error(f"Invalid subject folder: {name}")
         build(ROOT / name)
+    if shutil.which('node'):
+        subprocess.run(['node',str(ROOT/'tools/render_math_cli.mjs'),*names],check=True,cwd=ROOT)
+    elif args.require_prerender:
+        raise RuntimeError('Node is required for publishable, pre-rendered mathematics')

@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-providers.svg)
+
+> **圖解｜取樣分布與參數**：圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Claude：Messages API 從零實作」後，在圖上指出「取樣」的位置或對應關係；用本單元的一個例子說明它與「logits」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Messages 的基本契約
 
 Claude Messages API 使用頂層 system、max_tokens 與 messages。messages 主要包含 user / assistant 回合；system 指令不是隨便新增一筆 role=system 就完成。

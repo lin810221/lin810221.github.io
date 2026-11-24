@@ -2,6 +2,16 @@
 
 畫出控制流程與資料邊界，理解誰持有模型、連線及外部權限。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![HostClient與Server的責任；MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜HostClient與Server的責任**：MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。
+
+**本單元讀圖任務**：讀完「Host、Client、Server：資料如何穿過系統」後，在圖上指出「MCP Client」的位置或對應關係；用本單元的一個例子說明它與「協定訊息」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 角色與實體不是一對一
 
 Host 是使用者操作的 AI 應用，例如桌面助理、IDE 或你自己的網頁後端。Client 是 Host 內部用來連接某個 MCP Server 的元件。一個 Host 可以管理多個 Client；Server 則可以服務多個 Host。角色描述責任，不能直接等同於一個 Python 檔案或一台機器。

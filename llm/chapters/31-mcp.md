@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![成本、速度與可靠性；Token單位依模型與Tokenizer，不直接等於字數；比較相同工作量，保存實際使用量與條件。](assets/figures/review-07-engineering.svg)
+
+> **圖解｜成本、速度與可靠性**：Token單位依模型與Tokenizer，不直接等於字數；比較相同工作量，保存實際使用量與條件。
+
+**本單元讀圖任務**：讀完「MCP：讓 Agent 連接外部能力」後，在圖上指出「輸入Token」的位置或對應關係；用本單元的一個例子說明它與「輸出Token」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## MCP 解決的整合問題
 
 完整實作請接著閱讀 [MCP 與工具整合課程](../mcp/index.html)：以 2026-11-03 查核的 MCP 2026-07-28、官方 Python SDK 2.3.0，深入工具契約、MRTR、授權、審核與部署；本單元保留 LLM 服務整合的觀念導覽。

@@ -2,6 +2,16 @@
 
 理解指標的分母、尺度與負分數，避免只報一個數字。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![樹與集成如何分割空間；深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。](assets/figures/review-05-evaluation.svg)
+
+> **圖解｜樹與集成如何分割空間**：深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。
+
+**本單元讀圖任務**：讀完「回歸評估：MAE、RMSE、R²與殘差單位」後，在圖上指出「左分支」的位置或對應關係；用本單元的一個例子說明它與「右分支」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 誤差必須有單位
 
 若y是分鐘，MAE與RMSE也以分鐘解讀；MSE單位是分鐘平方。不同target尺度的MSE不能直接比較。多目標回歸需說明每個輸出的權重與單位，不能隨便平均金額與比例而假裝同一代價。
@@ -23,7 +33,7 @@ $$
 
 ## 手算與目前API
 
-y=[1,2,3]、pred=[1,2,5]，MAE=2/3、MSE=4/3、RMSE=sqrt(4/3)，R²=1-4/2=-1。本課使用root_mean_squared_error，不以舊版MSE squared=False介面作主線。指標函式先驗證同shape，避免[N,1]與[N]的隱含廣播。
+$y=[1,2,3]$、pred=[1,2,5]，$\operatorname{MAE}=2/3$、$\operatorname{MSE}=4/3$、$\operatorname{RMSE}=\sqrt{4/3}$，R²=1-4/2=-1。本課使用root_mean_squared_error，不以舊版MSE squared=False介面作主線。指標函式先驗證同shape，避免[N,1]與[N]的隱含廣播。
 
 ## 殘差分布與百分比陷阱
 

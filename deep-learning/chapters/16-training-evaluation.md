@@ -2,6 +2,16 @@
 
 先讓每個step做正確的事，再讓validation與test回答不同問題。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![目標函數與資料契約；logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。](assets/figures/review-03-objectives.svg)
+
+> **圖解｜目標函數與資料契約**：logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。
+
+**本單元讀圖任務**：讀完「訓練與評估的角色：梯度、模式與選模」後，在圖上指出「樣本權重」的位置或對應關係；用本單元的一個例子說明它與「有效分母」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一次更新的生命週期
 
 model.train設定模組行為；zero_grad清緩衝；forward計算logits；loss.backward累積導數；optimizer.step更新參數。它們彼此不互相代辦。每批日誌使用detach後Python值，避免容器長期保留計算圖。

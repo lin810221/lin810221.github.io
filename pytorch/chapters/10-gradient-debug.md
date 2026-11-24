@@ -2,6 +2,16 @@
 
 以可手算與數值差分的實驗，區分圖被切斷、梯度為零與數值不穩。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Autograd沿計算圖傳遞梯度；梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。](assets/figures/review-02-grad.svg)
+
+> **圖解｜Autograd沿計算圖傳遞梯度**：梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。
+
+**本單元讀圖任務**：讀完「梯度除錯：chain rule、gradcheck 與 in-place 操作」後，在圖上指出「損失L」的位置或對應關係；用本單元的一個例子說明它與「反向梯度」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 梯度為 None 與零不一樣
 
 None 常表示還沒 backward、不是被追蹤的 leaf、路徑沒用到該參數或剛被 zero_grad 清除。零可能是正確導數，例如 ReLU 負區間。先檢查 requires_grad、is_leaf、grad_fn 與 loss 是否真的連到該參數，再調 learning rate。

@@ -2,6 +2,16 @@
 
 將一筆資料的特徵、答案與來源定義清楚，避免切分和前處理洩漏。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「Dataset 與資料切分：先決定樣本，再談模型」後，在圖上指出「原始樣本」的位置或對應關係；用本單元的一個例子說明它與「Dataset取樣」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一筆樣本的契約
 
 本課分類樣本是 `(features[F], label[])`：特徵 float32、標籤 long 純量。Dataset.__len__ 回傳筆數，__getitem__ 依 index 回傳一筆。不要在這一層先加 batch 維度，否則 DataLoader 堆疊後容易多出 `[N,1,F]`。文字任務則可以先回傳不同長度 token list，再由 collate 處理。

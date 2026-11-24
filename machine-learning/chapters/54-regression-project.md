@@ -2,6 +2,16 @@
 
 將分類流程的資料邊界延伸到連續目標，核對負scoring與殘差。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![成品部署與資料漂移；部署需要相同前處理與label map；分數分布變化是線索，品質需真值。](assets/figures/review-09-engineering.svg)
+
+> **圖解｜成品部署與資料漂移**：部署需要相同前處理與label map；分數分布變化是線索，品質需真值。
+
+**本單元讀圖任務**：讀完「完整回歸專題：基準、搜尋與原單位評估」後，在圖上指出「訓練版本」的位置或對應關係；用本單元的一個例子說明它與「保存管線」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 任務與基準
 
 使用make_regression產生5特徵、3個有訊號的連續target，加固定noise。先切train/test，train內CV選Ridge alpha；dummy以train mean預測。這是資料生成已知的完整示範，不模擬特定金額／醫療結果，誤差單位就是合成target單位。
@@ -38,7 +48,7 @@ print('dummy MAE',mean_absolute_error(d,baseline.predict(b)))
 
 ## 練習與解答
 
-把noise由8改40，RMSE通常變大，但不同seed有限樣本不必完全單調；它描述問題難度變化，不是Ridge版本退步。解答：比較時固定同一資料，若要研究noise影響，設多seed與明確實驗。若val出現y=0，不直接使用MAPE而不解釋，改合適單位誤差與域值策略。
+把noise由8改40，RMSE通常變大，但不同seed有限樣本不必完全單調；它描述問題難度變化，不是Ridge版本退步。解答：比較時固定同一資料，若要研究noise影響，設多seed與明確實驗。若val出現$y=0$，不直接使用MAPE而不解釋，改合適單位誤差與域值策略。
 
 ## 官方來源與延伸閱讀
 

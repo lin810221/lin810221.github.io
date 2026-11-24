@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![從字詞到上下文表示；詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。](assets/figures/review-03-sentences.svg)
+
+> **圖解｜從字詞到上下文表示**：詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。
+
+**本單元讀圖任務**：讀完「Pooling、Attention Mask 與正規化」後，在圖上指出「查表向量」的位置或對應關係；用本單元的一個例子說明它與「上下文混合」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Pooling 是一個有影響的選擇
 
 Transformer 輸出每個位置的 hidden state，但許多任務需要每段只有一個向量。Pooling 把序列壓成固定形狀，可以取 CLS、平均、最大值、末個有效位置，或依模型使用特定模組。

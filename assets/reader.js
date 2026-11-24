@@ -62,6 +62,7 @@
   function overview() {
     if (course.slug && typeof window.renderCourseOverview === 'function' && window.renderCourseOverview.courseSlug === course.slug) {
       window.renderCourseOverview({course, saved, escapeHTML, main:$('#main'), toc:$('#page-toc'), footer});
+      appendFigureAtlas();
       return;
     }
     const last = saved.last || course.lessons[0].id;
@@ -74,6 +75,15 @@
     }).join('')}</div></section><div class="reading-note" id="before-start"><strong>開始之前</strong><br>基礎章節只需要 Python；需要 API Key 的模型範例會明確註明。建議邊閱讀、邊修改程式，將「看得懂」變成「做得到」。<br>範例驗證基準：LangGraph ${course.baseline}。新版功能另作說明，每個單元附官方來源。</div>${footer}`;
     $('#page-toc').innerHTML = `<h2 class="toc-label">本頁導覽</h2><div class="toc-links"><a href="#overview/intro">關於這份教學</a><a href="#overview/try-it">互動流程示範</a><a href="#overview/roadmap">學習路線</a><a href="#overview/before-start">開始之前</a></div><div class="toc-tip"><p>學習，不需要一次完成。</p><p>每個單元都可以留下自己的筆記，完成後勾選，讓理解一步步累積。</p><p><kbd>Ctrl</kbd> + <kbd>K</kbd> 搜尋教學</p><p><a href="examples/README.md">Python 範例說明 ↗</a></p></div>`;
     initLab();
+    appendFigureAtlas();
+  }
+  function appendFigureAtlas() {
+    if (course.visualPresentation !== 'chapter') return;
+    const section = document.createElement('section');
+    section.id = 'chapter-figures';
+    section.innerHTML = `<div class="section-header"><h2>章節圖解</h2><span>READ · TRACE · EXPLAIN</span></div><p>每章用一張圖整理核心關係。進入單元後，依讀圖任務說明圖中的箭頭、座標或比較條件。</p><p><a href="${escapeHTML(course.studyBundle)}" download>下載章節圖解與讀圖練習 ↓</a></p><div class="review-gallery">${course.visuals.map(v => `<a href="#${course.lessons.find(l => l.visual === v.id).id}"><img src="${escapeHTML(v.file)}" alt="${escapeHTML(v.alt)}" loading="lazy"><strong>${escapeHTML(v.title)}</strong><span>${escapeHTML(v.caption)}</span></a>`).join('')}</div>`;
+    const end = $('#main .page-footer');
+    if (end) end.before(section); else $('#main').append(section);
   }
   function initLab() {
     let step = 0;
@@ -104,7 +114,7 @@
     const group = course.groups.find(g => g.id === lesson.group);
     const position = lessonPositions.get(lesson.id);
     const completed = saved.completed.includes(lesson.id);
-    $('#main').innerHTML = `<header class="lesson-header"><div class="lesson-breadcrumb"><a href="#overview">${escapeHTML(course.shortTitle || 'LangGraph')}</a><span>/</span>${escapeHTML(position.chapterLabel)} · ${escapeHTML(group.title)}<span>/</span>單元 ${position.number}</div><div class="lesson-kicker">${escapeHTML(position.chapterKicker)} <span>／ UNIT ${position.number} OF ${position.count}</span></div><h1>${escapeHTML(lesson.title)}</h1><p class="lesson-summary">${escapeHTML(lesson.summary)}</p><div class="lesson-meta"><span>約 ${lesson.minutes} 分鐘閱讀</span>${lesson.tags.map(tag => `<span class="tag">${escapeHTML(tag)}</span>`).join('')}<span>${completed ? '✓ 已完成' : '按自己的步調閱讀'}</span></div></header><article class="lesson-content">${lesson.html}</article>${lesson.example ? `<div class="example-download"><div><strong>本單元可執行範例</strong><span class="mono">examples/${escapeHTML(lesson.example)}</span></div><a class="secondary-button" href="examples/${escapeHTML(lesson.example)}" download>下載 Python 範例 ↓</a></div>` : ''}<section class="notes-box"><div class="notes-heading"><label for="lesson-notes">寫下你的理解</label><span id="note-status">${storageOK ? '自動儲存於此瀏覽器' : '目前無法儲存，離開頁面前請自行備份'}</span></div><textarea id="lesson-notes" placeholder="有什麼想法、疑問，或值得記住的細節？"></textarea></section><div class="completion-row"><button class="complete-button" id="complete-lesson" aria-pressed="${completed}">${completed ? '✓ 已完成本單元' : '○ 標記本單元已完成'}</button><p>理解需要練習，進度不需要趕。</p></div><nav class="lesson-pagination" aria-label="單元切換">${index > 0 ? `<a class="pagination-link previous" href="#${course.lessons[index - 1].id}"><small>← 上一單元 · ${escapeHTML(unitLabel(course.lessons[index - 1]))}</small><strong>${escapeHTML(course.lessons[index - 1].title)}</strong></a>` : '<a class="pagination-link previous" href="#overview"><small>← 回到課程</small><strong>課程總覽</strong></a>'}${index < course.lessons.length - 1 ? `<a class="pagination-link next" href="#${course.lessons[index + 1].id}"><small>下一單元 · ${escapeHTML(unitLabel(course.lessons[index + 1]))} →</small><strong>${escapeHTML(course.lessons[index + 1].title)}</strong></a>` : '<a class="pagination-link next" href="#overview"><small>回顧你的學習 →</small><strong>回到學習路線</strong></a>'}</nav>${footer}`;
+    $('#main').innerHTML = `<header class="lesson-header"><div class="lesson-breadcrumb"><a href="#overview">${escapeHTML(course.shortTitle || 'LangGraph')}</a><span>/</span>${escapeHTML(position.chapterLabel)} · ${escapeHTML(group.title)}<span>/</span>單元 ${position.number}</div><div class="lesson-kicker">${escapeHTML(position.chapterKicker)} <span>／ UNIT ${position.number} OF ${position.count}</span></div><h1>${escapeHTML(lesson.title)}</h1><p class="lesson-summary">${lesson.summaryHTML || escapeHTML(lesson.summary)}</p><div class="lesson-meta"><span>約 ${lesson.minutes} 分鐘閱讀</span>${lesson.tags.map(tag => `<span class="tag">${escapeHTML(tag)}</span>`).join('')}<span>${completed ? '✓ 已完成' : '按自己的步調閱讀'}</span></div></header><article class="lesson-content">${lesson.html}</article>${lesson.example ? `<div class="example-download"><div><strong>本單元可執行範例</strong><span class="mono">examples/${escapeHTML(lesson.example)}</span></div><a class="secondary-button" href="examples/${escapeHTML(lesson.example)}" download>下載 Python 範例 ↓</a></div>` : ''}<section class="notes-box"><div class="notes-heading"><label for="lesson-notes">寫下你的理解</label><span id="note-status">${storageOK ? '自動儲存於此瀏覽器' : '目前無法儲存，離開頁面前請自行備份'}</span></div><textarea id="lesson-notes" placeholder="有什麼想法、疑問，或值得記住的細節？"></textarea></section><div class="completion-row"><button class="complete-button" id="complete-lesson" aria-pressed="${completed}">${completed ? '✓ 已完成本單元' : '○ 標記本單元已完成'}</button><p>理解需要練習，進度不需要趕。</p></div><nav class="lesson-pagination" aria-label="單元切換">${index > 0 ? `<a class="pagination-link previous" href="#${course.lessons[index - 1].id}"><small>← 上一單元 · ${escapeHTML(unitLabel(course.lessons[index - 1]))}</small><strong>${escapeHTML(course.lessons[index - 1].title)}</strong></a>` : '<a class="pagination-link previous" href="#overview"><small>← 回到課程</small><strong>課程總覽</strong></a>'}${index < course.lessons.length - 1 ? `<a class="pagination-link next" href="#${course.lessons[index + 1].id}"><small>下一單元 · ${escapeHTML(unitLabel(course.lessons[index + 1]))} →</small><strong>${escapeHTML(course.lessons[index + 1].title)}</strong></a>` : '<a class="pagination-link next" href="#overview"><small>回顧你的學習 →</small><strong>回到學習路線</strong></a>'}</nav>${footer}`;
     if (lesson.example && course.exampleBundle) {
       const download = $('.example-download a');
       download.setAttribute('href',course.exampleBundle);
@@ -127,6 +137,20 @@
       toast(persisted ? (nowComplete ? '已記錄這一步的累積。' : '已更新閱讀進度。') : '目前無法儲存進度，重新開啟後可能遺失。');
     });
     document.querySelectorAll('.lesson-content table').forEach(table => { const wrapper = document.createElement('div'); wrapper.className = 'table-scroll'; wrapper.tabIndex = 0; wrapper.setAttribute('role', 'region'); wrapper.setAttribute('aria-label','表格，可橫向捲動'); table.before(wrapper); wrapper.append(table); });
+    document.querySelectorAll('.lesson-content img[src*="/review-"]').forEach(image => {
+      const link = document.createElement('a');
+      link.className = 'review-figure-link';
+      link.href = image.getAttribute('src');
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', `放大圖解：${image.alt}`);
+      image.before(link);
+      link.append(image);
+      const hint = document.createElement('span');
+      hint.className = 'review-figure-hint';
+      hint.textContent = '點選圖解可放大 ↗';
+      link.append(hint);
+    });
     document.querySelectorAll('.lesson-content .codehilite, .lesson-content > pre').forEach(block => {
       const pre = block.tagName === 'PRE' ? block : block.querySelector('pre');
       if (!pre) return;
@@ -143,7 +167,9 @@
       });
     });
     document.querySelectorAll('.lesson-content a[href^="https://"]').forEach(link => { link.target = '_blank'; link.rel = 'noopener noreferrer'; });
-    if (typeof window.renderMathInElement === 'function') {
+    if (window.LearningNotesMath) {
+      window.LearningNotesMath.render($('#main'));
+    } else if (typeof window.renderMathInElement === 'function') {
       window.renderMathInElement($('.lesson-content'), {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}],throwOnError:false,trust:false,ignoredTags:['script','noscript','style','textarea','pre','code']});
     }
     const headings = [...document.querySelectorAll('.lesson-content h2, .lesson-content h3')];

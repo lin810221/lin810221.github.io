@@ -2,6 +2,16 @@
 
 將可變設定集中管理，明確拒絕錯誤輸入與覆蓋既有檔案。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。](assets/figures/review-06-engineering.svg)
+
+> **圖解｜Checkpoint與精確續訓**：只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。
+
+**本單元讀圖任務**：讀完「Config、CLI 與產物：讓實驗可以交給未來的自己」後，在圖上指出「RNG狀態」的位置或對應關係；用本單元的一個例子說明它與「資料順序」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 可調參數需要有定義
 
 epochs是完整訓練預算，batch_size是每批樣本上限，lr是optimizer使用的步長；seed描述特定隨機起點。不要讓相同變數名在不同函式代表不同單位。Config使用dataclass，validate對正整數尺寸、有限正lr、dropout範圍與類別數做檢查。

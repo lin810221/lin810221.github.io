@@ -1,0 +1,7 @@
+# Latest stable direct dependencies verified 2026-11-24.
+# Complete CPU baseline: Python 3.15.2, no model/data downloads.
+torch==2.15.0
+transformers==5.24.0
+tokenizers==0.23.3
+safetensors==0.8.0
+numpy==2.5.5

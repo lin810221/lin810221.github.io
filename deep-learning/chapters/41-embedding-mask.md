@@ -2,6 +2,16 @@
 
 把詞表、特殊ID與有效長度寫成可測契約。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![序列模型的時間依賴；RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。](assets/figures/review-07-sequence.svg)
+
+> **圖解｜序列模型的時間依賴**：RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。
+
+**本單元讀圖任務**：讀完「Embedding、Padding與Mask：索引如何成為表示」後，在圖上指出「輸出」的位置或對應關係；用本單元的一個例子說明它與「輸入x1」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 查表而不是連續數值
 
 token ID是離散索引，Embedding(V,D)回傳對應列，輸入long[N,T]→[N,T,D]。ID3不表示比ID2語意多一單位，不能直接當普通float特徵。詞表版本、PAD／UNK與清理規則是模型的一部分。

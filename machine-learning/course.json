@@ -81,7 +81,9 @@
         "fit",
         "predict"
       ],
-      "example": "01_first_pipeline.py"
+      "example": "01_first_pipeline.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「機器學習全貌：從資料到可以驗證的預測」後，在圖上指出「任務定義」的位置或對應關係；用本單元的一個例子說明它與「資料與標籤」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-environment",
@@ -94,7 +96,9 @@
         "venv",
         "NumPy",
         "SciPy"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「最新版環境與工具：建立可重現的scikit-learn專案」後，在圖上指出「資料與標籤」的位置或對應關係；用本單元的一個例子說明它與「切分」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-problem-definition",
@@ -106,7 +110,9 @@
         "regression",
         "ranking",
         "target"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「問題定義：分類、回歸、排序與非監督學習」後，在圖上指出「切分」的位置或對應關係；用本單元的一個例子說明它與「訓練」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-mathematics",
@@ -118,7 +124,9 @@
         "probability",
         "expectation",
         "distribution"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「必要數學：向量、矩陣、機率與條件分布」後，在圖上指出「訓練」的位置或對應關係；用本單元的一個例子說明它與「保留集評估」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-risk",
@@ -130,7 +138,9 @@
         "empirical risk",
         "generalization",
         "regularization"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「損失、經驗風險與泛化：模型到底在最小化什麼」後，在圖上指出「保留集評估」的位置或對應關係；用本單元的一個例子說明它與「任務定義」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-data-contract",
@@ -143,7 +153,9 @@
         "features",
         "missing",
         "data quality"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「資料探索與schema：一欄數字背後的意義」後，在圖上指出「任務定義」的位置或對應關係；用本單元的一個例子說明它與「資料與標籤」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-splitting",
@@ -156,7 +168,9 @@
         "GroupKFold",
         "TimeSeriesSplit"
       ],
-      "example": "02_split.py"
+      "example": "02_split.py",
+      "visual": "review-02-data",
+      "visualTask": "讀完「資料切分：IID、分層、群組與時間」後，在圖上指出「原始資料」的位置或對應關係；用本單元的一個例子說明它與「訓練切分」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-leakage",
@@ -168,7 +182,9 @@
         "Pipeline",
         "fit_transform",
         "ColumnTransformer"
-      ]
+      ],
+      "visual": "review-02-data",
+      "visualTask": "讀完「資料洩漏與Pipeline：把fit放在正確的地方」後，在圖上指出「訓練切分」的位置或對應關係；用本單元的一個例子說明它與「fit前處理」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-missing",
@@ -181,7 +197,9 @@
         "SimpleImputer",
         "indicator"
       ],
-      "example": "03_preprocessing.py"
+      "example": "03_preprocessing.py",
+      "visual": "review-02-data",
+      "visualTask": "讀完「缺失值：刪除、補值與缺失指標」後，在圖上指出「fit前處理」的位置或對應關係；用本單元的一個例子說明它與「模型fit」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-scaling",
@@ -193,7 +211,9 @@
         "RobustScaler",
         "normalization",
         "units"
-      ]
+      ],
+      "visual": "review-02-data",
+      "visualTask": "讀完「尺度與分布轉換：StandardScaler、RobustScaler與單位」後，在圖上指出「模型fit」的位置或對應關係；用本單元的一個例子說明它與「保留資料transform」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-categories",
@@ -206,7 +226,9 @@
         "cardinality",
         "encoding"
       ],
-      "example": "04_categories.py"
+      "example": "04_categories.py",
+      "visual": "review-02-data",
+      "visualTask": "讀完「類別編碼：One-Hot、未知值與高基數」後，在圖上指出「保留資料transform」的位置或對應關係；用本單元的一個例子說明它與「原始資料」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-features",
@@ -218,7 +240,9 @@
         "feature selection",
         "interaction",
         "leakage"
-      ]
+      ],
+      "visual": "review-02-data",
+      "visualTask": "讀完「特徵工程與選擇：讓訊號可用，讓洩漏可見」後，在圖上指出「原始資料」的位置或對應關係；用本單元的一個例子說明它與「訓練切分」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-linear-regression",
@@ -231,7 +255,9 @@
         "least squares",
         "residual"
       ],
-      "example": "05_linear_regression.py"
+      "example": "05_linear_regression.py",
+      "visual": "review-03-linear",
+      "visualTask": "讀完「線性回歸：從最小平方法到係數與殘差」後，在圖上指出「輸入x」的位置或對應關係；用本單元的一個例子說明它與「預測線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-regularization",
@@ -246,7 +272,9 @@
         "L1",
         "L2"
       ],
-      "example": "06_regularization.py"
+      "example": "06_regularization.py",
+      "visual": "review-03-linear",
+      "visualTask": "讀完「Ridge、Lasso與Elastic Net：用限制換取穩定性」後，在圖上指出「預測線」的位置或對應關係；用本單元的一個例子說明它與「觀察值」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-logistic",
@@ -260,7 +288,9 @@
         "C",
         "l1_ratio"
       ],
-      "example": "07_logistic.py"
+      "example": "07_logistic.py",
+      "visual": "review-03-linear",
+      "visualTask": "讀完「Logistic Regression：機率、Log loss與決策邊界」後，在圖上指出「觀察值」的位置或對應關係；用本單元的一個例子說明它與「殘差」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-target-types",
@@ -272,7 +302,9 @@
         "multilabel",
         "OneVsRestClassifier",
         "softmax"
-      ]
+      ],
+      "visual": "review-03-linear",
+      "visualTask": "讀完「二元、多類與多標籤：不要讓答案格式決定錯任務」後，在圖上指出「殘差」的位置或對應關係；用本單元的一個例子說明它與「損失」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-sgd",
@@ -284,7 +316,9 @@
         "gradient descent",
         "learning rate",
         "SGDClassifier"
-      ]
+      ],
+      "visual": "review-03-linear",
+      "visualTask": "讀完「梯度下降與SGD：步長、mini-batch與正則化」後，在圖上指出「損失」的位置或對應關係；用本單元的一個例子說明它與「輸入x」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-knn",
@@ -297,7 +331,9 @@
         "distance",
         "curse of dimensionality"
       ],
-      "example": "08_knn.py"
+      "example": "08_knn.py",
+      "visual": "review-03-linear",
+      "visualTask": "讀完「k近鄰：距離、投票與維度的代價」後，在圖上指出「輸入x」的位置或對應關係；用本單元的一個例子說明它與「預測線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-naive-bayes",
@@ -310,7 +346,9 @@
         "GaussianNB",
         "smoothing"
       ],
-      "example": "09_naive_bayes.py"
+      "example": "09_naive_bayes.py",
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「Naive Bayes：條件獨立、平滑與文字分類」後，在圖上指出「特徵空間」的位置或對應關係；用本單元的一個例子說明它與「類別0」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-svm",
@@ -325,7 +363,9 @@
         "RBF",
         "gamma"
       ],
-      "example": "10_svm.py"
+      "example": "10_svm.py",
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「SVM與Kernel：margin、C與非線性邊界」後，在圖上指出「類別0」的位置或對應關係；用本單元的一個例子說明它與「類別1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-trees",
@@ -338,7 +378,9 @@
         "entropy",
         "split"
       ],
-      "example": "11_tree.py"
+      "example": "11_tree.py",
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「決策樹：分裂、Gini、Entropy與可讀規則」後，在圖上指出「類別1」的位置或對應關係；用本單元的一個例子說明它與「決策邊界」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-tree-control",
@@ -350,7 +392,9 @@
         "min_samples_leaf",
         "ccp_alpha",
         "pruning"
-      ]
+      ],
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「控制樹的複雜度：深度、葉大小與剪枝」後，在圖上指出「決策邊界」的位置或對應關係；用本單元的一個例子說明它與「門檻」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-forests",
@@ -363,7 +407,9 @@
         "bootstrap",
         "OOB"
       ],
-      "example": "12_random_forest.py"
+      "example": "12_random_forest.py",
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「Bagging與Random Forest：多棵樹如何降低變異」後，在圖上指出「門檻」的位置或對應關係；用本單元的一個例子說明它與「特徵空間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-boosting",
@@ -376,7 +422,9 @@
         "learning_rate",
         "AdaBoost"
       ],
-      "example": "13_boosting.py"
+      "example": "13_boosting.py",
+      "visual": "review-04-nonlinear",
+      "visualTask": "讀完「Boosting：逐步修正錯誤與Histogram Gradient Boosting」後，在圖上指出「特徵空間」的位置或對應關係；用本單元的一個例子說明它與「類別0」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-baselines",
@@ -389,7 +437,9 @@
         "comparison",
         "selection"
       ],
-      "example": "14_compare.py"
+      "example": "14_compare.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「建立基準與公平比較：先知道複雜度換來什麼」後，在圖上指出「根節點」的位置或對應關係；用本單元的一個例子說明它與「分割條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-classification-metrics",
@@ -405,7 +455,9 @@
         "AP",
         "PR"
       ],
-      "example": "15_classification_metrics.py"
+      "example": "15_classification_metrics.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「分類評估：混淆矩陣、ROC、PR與不平衡」後，在圖上指出「分割條件」的位置或對應關係；用本單元的一個例子說明它與「左分支」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-regression-metrics",
@@ -419,7 +471,9 @@
         "residual",
         "regression metrics"
       ],
-      "example": "16_regression_metrics.py"
+      "example": "16_regression_metrics.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「回歸評估：MAE、RMSE、R²與殘差單位」後，在圖上指出「左分支」的位置或對應關係；用本單元的一個例子說明它與「右分支」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-cross-validation",
@@ -432,7 +486,9 @@
         "StratifiedKFold",
         "scoring"
       ],
-      "example": "17_cross_validation.py"
+      "example": "17_cross_validation.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「交叉驗證：每折重學、分數變異與scoring方向」後，在圖上指出「右分支」的位置或對應關係；用本單元的一個例子說明它與「葉節點預測」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-search",
@@ -445,7 +501,9 @@
         "hyperparameter",
         "CV"
       ],
-      "example": "18_search.py"
+      "example": "18_search.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「超參數搜尋：Grid、Random與完整Pipeline」後，在圖上指出「葉節點預測」的位置或對應關係；用本單元的一個例子說明它與「根節點」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-nested-cv",
@@ -458,7 +516,9 @@
         "outer fold",
         "inner fold"
       ],
-      "example": "19_nested_cv.py"
+      "example": "19_nested_cv.py",
+      "visual": "review-05-evaluation",
+      "visualTask": "讀完「Nested CV：評估整個選模程序」後，在圖上指出「根節點」的位置或對應關係；用本單元的一個例子說明它與「分割條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-imbalance",
@@ -471,7 +531,9 @@
         "resampling",
         "balanced accuracy"
       ],
-      "example": "20_imbalance.py"
+      "example": "20_imbalance.py",
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「不平衡學習：class weight、抽樣與成本」後，在圖上指出「資料分布」的位置或對應關係；用本單元的一個例子說明它與「群集A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-calibration",
@@ -484,7 +546,9 @@
         "Brier",
         "isotonic"
       ],
-      "example": "21_calibration.py"
+      "example": "21_calibration.py",
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「機率校準：可靠度圖、Brier與Sigmoid／Isotonic」後，在圖上指出「群集A」的位置或對應關係；用本單元的一個例子說明它與「群集B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-thresholds",
@@ -498,7 +562,9 @@
         "FP",
         "FN"
       ],
-      "example": "22_threshold.py"
+      "example": "22_threshold.py",
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「決策門檻：成本、容量與TunedThresholdClassifierCV」後，在圖上指出「群集B」的位置或對應關係；用本單元的一個例子說明它與「異常候選」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-learning-curves",
@@ -512,7 +578,9 @@
         "underfit",
         "overfit"
       ],
-      "example": "23_learning_curve.py"
+      "example": "23_learning_curve.py",
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「學習曲線與偏差變異：如何判斷下一步」後，在圖上指出「異常候選」的位置或對應關係；用本單元的一個例子說明它與「驗證用途」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-uncertainty",
@@ -524,7 +592,9 @@
         "bootstrap",
         "confidence interval",
         "robustness"
-      ]
+      ],
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「不確定性與穩健比較：bootstrap、變異與區間」後，在圖上指出「驗證用途」的位置或對應關係；用本單元的一個例子說明它與「資料分布」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-error-analysis",
@@ -537,7 +607,9 @@
         "slice",
         "confusion",
         "drift"
-      ]
+      ],
+      "visual": "review-06-reliability",
+      "visualTask": "讀完「錯誤分析與子群：找出平均分數掩蓋的問題」後，在圖上指出「資料分布」的位置或對應關係；用本單元的一個例子說明它與「群集A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-unsupervised",
@@ -550,7 +622,9 @@
         "density",
         "GMM",
         "EM"
-      ]
+      ],
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「非監督學習全貌：結構、表示與密度」後，在圖上指出「訓練折」的位置或對應關係；用本單元的一個例子說明它與「驗證折」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-kmeans",
@@ -564,7 +638,9 @@
         "k-means++",
         "n_init"
       ],
-      "example": "24_kmeans.py"
+      "example": "24_kmeans.py",
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「KMeans：指派、更新、初始化與群數」後，在圖上指出「驗證折」的位置或對應關係；用本單元的一個例子說明它與「超參數選擇」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-density-clustering",
@@ -578,7 +654,9 @@
         "eps",
         "min_samples"
       ],
-      "example": "25_density.py"
+      "example": "25_density.py",
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「階層與密度分群：DBSCAN、HDBSCAN與噪音」後，在圖上指出「超參數選擇」的位置或對應關係；用本單元的一個例子說明它與「重訓」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-pca",
@@ -592,7 +670,9 @@
         "explained variance",
         "reconstruction"
       ],
-      "example": "26_pca.py"
+      "example": "26_pca.py",
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「PCA：中心化、主方向與重建誤差」後，在圖上指出「重訓」的位置或對應關係；用本單元的一個例子說明它與「最終測試」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-manifold",
@@ -605,7 +685,9 @@
         "manifold",
         "UMAP",
         "visualization"
-      ]
+      ],
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「非線性降維與視覺化：t-SNE、Isomap與UMAP邊界」後，在圖上指出「最終測試」的位置或對應關係；用本單元的一個例子說明它與「訓練折」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-anomaly",
@@ -619,7 +701,9 @@
         "outlier",
         "contamination"
       ],
-      "example": "27_anomaly.py"
+      "example": "27_anomaly.py",
+      "visual": "review-07-unsupervised",
+      "visualTask": "讀完「異常偵測：Isolation Forest、LOF與novelty」後，在圖上指出「訓練折」的位置或對應關係；用本單元的一個例子說明它與「驗證折」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-text-features",
@@ -632,7 +716,9 @@
         "text",
         "tokenization",
         "sparse"
-      ]
+      ],
+      "visual": "review-08-applications",
+      "visualTask": "讀完「文字特徵工程：TF-IDF、n-gram與分類管線」後，在圖上指出「預測機率」的位置或對應關係；用本單元的一個例子說明它與「觀察頻率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-tabular-design",
@@ -645,7 +731,9 @@
         "Poisson",
         "Tweedie",
         "target transform"
-      ]
+      ],
+      "visual": "review-08-applications",
+      "visualTask": "讀完「表格建模設計：類別、比例、計數與目標變換」後，在圖上指出「觀察頻率」的位置或對應關係；用本單元的一個例子說明它與「校準曲線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-inspection",
@@ -659,7 +747,9 @@
         "ICE",
         "SHAP"
       ],
-      "example": "28_inspection.py"
+      "example": "28_inspection.py",
+      "visual": "review-08-applications",
+      "visualTask": "讀完「模型解釋：係數、Permutation、PDP與局部說明」後，在圖上指出「校準曲線」的位置或對應關係；用本單元的一個例子說明它與「門檻」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-robustness",
@@ -672,7 +762,9 @@
         "noise",
         "sensitivity",
         "data validation"
-      ]
+      ],
+      "visual": "review-08-applications",
+      "visualTask": "讀完「資料品質與穩健性：離群值、雜訊與敏感性實驗」後，在圖上指出「門檻」的位置或對應關係；用本單元的一個例子說明它與「作業量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-incremental",
@@ -684,7 +776,9 @@
         "SGDClassifier",
         "MiniBatchKMeans",
         "streaming"
-      ]
+      ],
+      "visual": "review-08-applications",
+      "visualTask": "讀完「增量與大型資料：partial_fit、MiniBatch與串流」後，在圖上指出「作業量」的位置或對應關係；用本單元的一個例子說明它與「預測機率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-responsible-use",
@@ -696,7 +790,9 @@
         "fairness",
         "privacy",
         "limitations"
-      ]
+      ],
+      "visual": "review-08-applications",
+      "visualTask": "讀完「分布、隱私與公平：模型進入真實世界的限制」後，在圖上指出「預測機率」的位置或對應關係；用本單元的一個例子說明它與「觀察頻率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "49-persistence",
@@ -710,7 +806,9 @@
         "artifact",
         "Pipeline"
       ],
-      "example": "29_persistence.py"
+      "example": "29_persistence.py",
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「模型保存與版本：交付完整Pipeline」後，在圖上指出「訓練版本」的位置或對應關係；用本單元的一個例子說明它與「保存管線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "50-inference-contract",
@@ -723,7 +821,9 @@
         "classes",
         "predict_proba",
         "validation"
-      ]
+      ],
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「推論介面：欄位名稱、機率與決策的一致性」後，在圖上指出「保存管線」的位置或對應關係；用本單元的一個例子說明它與「推論輸入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "51-performance",
@@ -736,7 +836,9 @@
         "batch",
         "n_jobs",
         "threadpoolctl"
-      ]
+      ],
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「效能與資源：稀疏、batch、平行與量測」後，在圖上指出「推論輸入」的位置或對應關係；用本單元的一個例子說明它與「品質抽樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "52-monitoring",
@@ -748,7 +850,9 @@
         "monitoring",
         "drift",
         "retraining"
-      ]
+      ],
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「實驗、監控與重訓：讓結果有完整脈絡」後，在圖上指出「品質抽樣」的位置或對應關係；用本單元的一個例子說明它與「更新或回退」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "53-classification-project",
@@ -762,7 +866,9 @@
         "threshold",
         "artifact"
       ],
-      "example": "30_capstone.py"
+      "example": "30_capstone.py",
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「完整分類專題：混合欄位、CV、門檻與最終測試」後，在圖上指出「更新或回退」的位置或對應關係；用本單元的一個例子說明它與「訓練版本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "54-regression-project",
@@ -775,7 +881,9 @@
         "DummyRegressor",
         "MAE",
         "RMSE"
-      ]
+      ],
+      "visual": "review-09-engineering",
+      "visualTask": "讀完「完整回歸專題：基準、搜尋與原單位評估」後，在圖上指出「訓練版本」的位置或對應關係；用本單元的一個例子說明它與「保存管線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "55-clustering-project",
@@ -787,7 +895,9 @@
         "KMeans",
         "silhouette",
         "stability"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「完整分群專題：表示、穩定性與新樣本指派」後，在圖上指出「資料稽核」的位置或對應關係；用本單元的一個例子說明它與「基準模型」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "56-model-choice",
@@ -798,7 +908,9 @@
         "estimator selection",
         "model comparison",
         "model map"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「如何選模型：從問題、資料與限制走向候選」後，在圖上指出「基準模型」的位置或對應關係；用本單元的一個例子說明它與「公平比較」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "57-modern-api",
@@ -811,7 +923,9 @@
         "l1_ratio",
         "FrozenEstimator",
         "metadata routing"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「1.9版API與遷移：新教材如何避免舊寫法落差」後，在圖上指出「公平比較」的位置或對應關係；用本單元的一個例子說明它與「錯例切片」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "58-bridges",
@@ -824,7 +938,9 @@
         "RAG",
         "deep learning",
         "connections"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「與PyTorch、Embedding及RAG銜接」後，在圖上指出「錯例切片」的位置或對應關係；用本單元的一個例子說明它與「報告與成品」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "59-exercises",
@@ -836,7 +952,9 @@
         "answers",
         "practice",
         "validation"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「整合練習與解答：自己完成一次可靠學習流程」後，在圖上指出「報告與成品」的位置或對應關係；用本單元的一個例子說明它與「資料稽核」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "60-reference",
@@ -848,7 +966,131 @@
         "glossary",
         "1.9.1",
         "checklist"
-      ]
+      ],
+      "visual": "review-10-next",
+      "visualTask": "讀完「速查、名詞與版本：回來查找你的下一步」後，在圖上指出「資料稽核」的位置或對應關係；用本單元的一個例子說明它與「基準模型」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "從問題到可驗證的預測",
+      "alt": "從問題到可驗證的預測；預測目標和業務決策分開；先固定資料邊界，再比較模型。",
+      "caption": "預測目標和業務決策分開；先固定資料邊界，再比較模型。",
+      "group": "foundations",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-data",
+      "file": "assets/figures/review-02-data.svg",
+      "title": "Pipeline把前處理留在訓練邊界",
+      "alt": "Pipeline把前處理留在訓練邊界；標準化與補值只用訓練資料估計；所有模型使用相同的評估邊界。",
+      "caption": "標準化與補值只用訓練資料估計；所有模型使用相同的評估邊界。",
+      "group": "data",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-linear",
+      "file": "assets/figures/review-03-linear.svg",
+      "title": "回歸線與殘差",
+      "alt": "回歸線與殘差；殘差是觀察值減預測值；低訓練誤差不等於新資料準確。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "殘差是觀察值減預測值；低訓練誤差不等於新資料準確。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "linear",
+      "kind": "regression",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-nonlinear",
+      "file": "assets/figures/review-04-nonlinear.svg",
+      "title": "分類邊界與錯誤代價",
+      "alt": "分類邊界與錯誤代價；機率與分類門檻是不同物件；不平衡資料需看每類分母。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "機率與分類門檻是不同物件；不平衡資料需看每類分母。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "nonlinear",
+      "kind": "classification",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-evaluation",
+      "file": "assets/figures/review-05-evaluation.svg",
+      "title": "樹與集成如何分割空間",
+      "alt": "樹與集成如何分割空間；深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。",
+      "caption": "深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。",
+      "group": "evaluation",
+      "kind": "tree",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-reliability",
+      "file": "assets/figures/review-06-reliability.svg",
+      "title": "無監督學習看見資料結構",
+      "alt": "無監督學習看見資料結構；群集不自動等於真實類別；距離、尺度與群數會改變結果。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "群集不自動等於真實類別；距離、尺度與群數會改變結果。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "reliability",
+      "kind": "scatter",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-unsupervised",
+      "file": "assets/figures/review-07-unsupervised.svg",
+      "title": "交叉驗證與選模的隔離",
+      "alt": "交叉驗證與選模的隔離；最終測試不參與反覆調參；群組或時間資料需要相符切分。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "最終測試不參與反覆調參；群組或時間資料需要相符切分。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "unsupervised",
+      "kind": "folds",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-applications",
+      "file": "assets/figures/review-08-applications.svg",
+      "title": "排序能力與機率校準",
+      "alt": "排序能力與機率校準；準確率不直接表示機率已校準；校準與門檻使用開發資料選擇。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "準確率不直接表示機率已校準；校準與門檻使用開發資料選擇。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "applications",
+      "kind": "calibration",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-09-engineering",
+      "file": "assets/figures/review-09-engineering.svg",
+      "title": "成品部署與資料漂移",
+      "alt": "成品部署與資料漂移；部署需要相同前處理與label map；分數分布變化是線索，品質需真值。",
+      "caption": "部署需要相同前處理與label map；分數分布變化是線索，品質需真值。",
+      "group": "engineering",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-10-next",
+      "file": "assets/figures/review-10-next.svg",
+      "title": "完整機器學習專題",
+      "alt": "完整機器學習專題；資料、指標、模型與版本同時交付；相關性或高分不自動識別因果。",
+      "caption": "資料、指標、模型與版本同時交付；相關性或高分不自動識別因果。",
+      "group": "next",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "machine-learning-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "machine-learning-study.zip"
   ]
 }

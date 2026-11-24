@@ -2,6 +2,16 @@
 
 以4、4、2筆microbatch，驗證一次大batch更新的數值等價條件。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。](assets/figures/review-06-engineering.svg)
+
+> **圖解｜Checkpoint與精確續訓**：只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。
+
+**本單元讀圖任務**：讀完「梯度累積：有效batch與不等長尾批的正確加權」後，在圖上指出「模型狀態」的位置或對應關係；用本單元的一個例子說明它與「Optimizer」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 為什麼累積梯度
 
 記憶體不足放完整batch時，可將同一有效群組分成microbatch，逐個backward，最後只step一次。zero_grad在群組開始，不在每個microbatch。若每個microbatch都step，那是多次小batch更新，與同一點計算大batch梯度不同。

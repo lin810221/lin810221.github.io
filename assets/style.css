@@ -26,3 +26,22 @@ dialog{color:var(--text);background:#171d18;border:1px solid #41513c;border-radi
 .dl-art{color:#b3d9c4;background:radial-gradient(ellipse at 50% 50%,#b3d9c410,transparent 72%),#17221c}
 
 .statistics-art{color:#dcc7a3;background:radial-gradient(ellipse at 50% 50%,#dcc7a310,transparent 72%),#211f18}
+
+.vision-art{color:#a6ddce;background:radial-gradient(ellipse at 50% 50%,#a6ddce10,transparent 72%),#15221e}
+
+.transformer-art{color:#c8b5e5;background:radial-gradient(ellipse at 50% 50%,#c8b5e510,transparent 72%),#1d1a25}
+/* Mathematical content keeps its own font metrics and can scroll on small screens. */
+.math-source { display: inline-block; max-width: 100%; vertical-align: middle; overflow-x: auto; overflow-y: hidden; }
+.math-block { overflow-x: auto; overflow-y: hidden; padding: .7rem .3rem; margin: 1.4rem 0; }
+.math-block .katex-display { margin: .3em 0; }
+.lesson-summary .katex { font-size: 1em; }
+[data-math-error="true"] { color: #ffbc95; border: 1px solid currentColor; padding: .5rem; }
+.lesson-content img[src*="/review-"] { display: block; width: 100%; height: auto; border: 1px solid var(--border, #344335); border-radius: 12px; margin: 1.4rem 0; }
+.review-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin: 24px 0 60px; }
+.review-gallery a { display: flex; flex-direction: column; gap: 12px; color: inherit; text-decoration: none; padding: 16px; border: 1px solid var(--border, #344335); border-radius: 12px; }
+.review-gallery img { width: 100%; height: auto; border-radius: 8px; }
+.review-gallery strong { font-size: 1.1rem; }
+.review-gallery span { color: var(--muted, #b0bcb0); font-size: .9rem; line-height: 1.8; }
+.review-figure-link { display: block; cursor: zoom-in; }
+.review-figure-hint { display: block; margin-top: -.6rem; margin-bottom: 1rem; color: var(--accent); font-size: .85rem; }
+@media(max-width: 700px) { .review-gallery { grid-template-columns: 1fr; } .math-source .katex { font-size: 1em; } }

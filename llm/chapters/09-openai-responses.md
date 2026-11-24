@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-providers.svg)
+
+> **圖解｜取樣分布與參數**：圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「OpenAI：Responses API 從零實作」後，在圖上指出「logits」的位置或對應關係；用本單元的一個例子說明它與「溫度調整」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先確定你在使用哪個介面
 
 本章使用 Responses API，REST endpoint 是 `/v1/responses`。Chat Completions、Realtime 和 Agent 服務有各自的 schema，不能把它們的參數與回應解析混在一起。

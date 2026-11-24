@@ -2,6 +2,16 @@
 
 理解cell state、忘記與讀寫門，以及框架公式的細節。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![序列模型的時間依賴；RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。](assets/figures/review-07-sequence.svg)
+
+> **圖解｜序列模型的時間依賴**：RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。
+
+**本單元讀圖任務**：讀完「LSTM與GRU：用gate控制更新與記憶」後，在圖上指出「狀態h2」的位置或對應關係；用本單元的一個例子說明它與「輸出」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## LSTM的狀態分工
 
 LSTM以forget、input、output gates控制cell路徑。候選g由tanh，c把前記憶與新候選加總，h再由output gate讀出。gate是由輸入與舊hidden學出的0..1值，不是手工固定的開關。

@@ -2,6 +2,16 @@
 
 用六筆樣本追蹤每個 batch，理解尾批與多程序的條件。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「DataLoader：batch、shuffle、workers 與 Windows」後，在圖上指出「Dataset取樣」的位置或對應關係；用本單元的一個例子說明它與「Sampler順序」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Dataset 與 DataLoader 的分工
 
 Dataset 定義單筆內容，DataLoader 決定索引順序、批次、collate 與載入程序。batch_size=4、資料六筆時，預設兩批大小為 4、2。drop_last=True 則只留下第一批。訓練是否丟尾批要有理由；驗證通常保留所有樣本，否則指標分母與資料覆蓋會改變。
@@ -27,7 +37,7 @@ pin_memory 主要用於主機到 GPU 搬移；CPU 主線先不開。persistent_w
 
 ## 練習與解答
 
-N=10、batch_size=4，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；「[完整訓練迴圈：每一步都知道在更新什麼](#20-training-loop)」會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
+$N=10$、batch_size=4，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；「[完整訓練迴圈：每一步都知道在更新什麼](#20-training-loop)」會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
 
 ## 完整可執行範例
 

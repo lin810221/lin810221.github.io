@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-providers.svg)
+
+> **圖解｜取樣分布與參數**：圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Gemini：工具、思考與舊 API 遷移」後，在圖上指出「重新正規化」的位置或對應關係；用本單元的一個例子說明它與「取樣」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 舊文章為什麼看起來不一樣？
 
 Gemini generateContent 常出現在既有專案與教學中。它仍是受支援的原始介面，但和本課使用的 Interactions 不是同一套 request / response schema。

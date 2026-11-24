@@ -2,6 +2,16 @@
 
 實際建立 named dense 與 sparse vectors，分清本機 SDK 與遠端服務的責任。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![混合檢索與融合排序；不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。](assets/figures/review-05-qdrant.svg)
+
+> **圖解｜混合檢索與融合排序**：不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。
+
+**本單元讀圖任務**：讀完「Qdrant Collection 與 Local：先建立正確的向量空間」後，在圖上指出「關鍵字排名」的位置或對應關係；用本單元的一個例子說明它與「向量排名」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Collection 的契約
 
 Collection 定義向量名稱、維度、distance 及相關設定。每個 point 有 ID、vector 與 payload。本課 dense 為八維 cosine，lexical 為固定詞彙表的 sparse vector；兩者屬於同一 point，可以在 Query API 中分別召回。既有 collection 啟動時需檢查設定，不能只因名字存在就假定可用。

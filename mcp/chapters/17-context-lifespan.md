@@ -2,6 +2,16 @@
 
 管理每次請求與整個服務的資源，避免阻塞、共用身分與連線洩漏。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![ToolsResourcesPrompts三種入口；三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。](assets/figures/review-03-contracts.svg)
+
+> **圖解｜ToolsResourcesPrompts三種入口**：三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。
+
+**本單元讀圖任務**：讀完「非同步、Context 與 Lifespan」後，在圖上指出「Resources資料」的位置或對應關係；用本單元的一個例子說明它與「Prompts模板」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先分清楚兩種生命週期
 
 請求生命週期包含這次參數、進度、取消與已驗證主體；應用生命週期則包含資料庫 pool、HTTP client 或共用模型。前者不能隨意放進全域變數，後者不適合每次呼叫都重新建立。Lifespan 用來取得並清理服務資源，Context 用來提供當前請求環境。

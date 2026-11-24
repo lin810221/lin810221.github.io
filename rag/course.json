@@ -65,7 +65,9 @@
       "tags": [
         "RAG",
         "Grounding"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「RAG 是什麼：讓回答有可以檢查的依據」後，在圖上指出「原始文件」的位置或對應關係；用本單元的一個例子說明它與「切塊與建索引」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-choose-architecture",
@@ -75,7 +77,9 @@
       "tags": [
         "架構",
         "決策"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「先選對問題：RAG、長上下文、微調與資料庫」後，在圖上指出「切塊與建索引」的位置或對應關係；用本單元的一個例子說明它與「使用者問題」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-pipeline",
@@ -85,7 +89,9 @@
       "tags": [
         "Pipeline",
         "索引"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「把流程拆開：建索引與回答問題」後，在圖上指出「使用者問題」的位置或對應關係；用本單元的一個例子說明它與「檢索與組織」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-environment-first-run",
@@ -96,7 +102,9 @@
         "Python",
         "離線"
       ],
-      "example": "01_first_rag.py"
+      "example": "01_first_rag.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「環境準備與第一個離線 RAG」後，在圖上指出「檢索與組織」的位置或對應關係；用本單元的一個例子說明它與「有引用的回答」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-data-contracts",
@@ -106,7 +114,9 @@
       "tags": [
         "Schema",
         "Metadata"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「資料契約：Document、Chunk、Hit 與 Answer」後，在圖上指出「有引用的回答」的位置或對應關係；用本單元的一個例子說明它與「原始文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-parsing",
@@ -117,7 +127,9 @@
         "PDF",
         "OCR"
       ],
-      "example": "02_ingestion.py"
+      "example": "02_ingestion.py",
+      "visual": "review-02-ingestion",
+      "visualTask": "讀完「文件解析：PDF、OCR、HTML 與表格」後，在圖上指出「文件A」的位置或對應關係；用本單元的一個例子說明它與「段落邊界」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-cleaning-lineage",
@@ -127,7 +139,9 @@
       "tags": [
         "清理",
         "Lineage"
-      ]
+      ],
+      "visual": "review-02-ingestion",
+      "visualTask": "讀完「文字清理與資料血緣：保留事實的每一步」後，在圖上指出「段落邊界」的位置或對應關係；用本單元的一個例子說明它與「Chunk 1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-chunking",
@@ -138,7 +152,9 @@
         "Chunking",
         "LaTeX"
       ],
-      "example": "03_chunking.py"
+      "example": "03_chunking.py",
+      "visual": "review-02-ingestion",
+      "visualTask": "讀完「Chunking：大小、重疊與邊界的取捨」後，在圖上指出「Chunk 1」的位置或對應關係；用本單元的一個例子說明它與「Chunk 2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-structure-parent-child",
@@ -148,7 +164,9 @@
       "tags": [
         "Parent–Child",
         "結構"
-      ]
+      ],
+      "visual": "review-02-ingestion",
+      "visualTask": "讀完「結構感知、Parent–Child 與上下文補充」後，在圖上指出「Chunk 2」的位置或對應關係；用本單元的一個例子說明它與「來源offset」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-versioned-ingestion",
@@ -158,7 +176,9 @@
       "tags": [
         "版本",
         "Upsert"
-      ]
+      ],
+      "visual": "review-02-ingestion",
+      "visualTask": "讀完「版本、增量匯入與刪除：讓知識跟著資料更新」後，在圖上指出「來源offset」的位置或對應關係；用本單元的一個例子說明它與「文件A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-bm25",
@@ -169,7 +189,9 @@
         "BM25",
         "Sparse"
       ],
-      "example": "04_bm25.py"
+      "example": "04_bm25.py",
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「稀疏檢索：從詞元、TF–IDF 到 BM25」後，在圖上指出「字面詞彙」的位置或對應關係；用本單元的一個例子說明它與「語意向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-vectors",
@@ -180,7 +202,9 @@
         "Embedding",
         "LaTeX"
       ],
-      "example": "05_vector_math.py"
+      "example": "05_vector_math.py",
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「向量與相似度：把 cosine 真正算懂」後，在圖上指出「語意向量」的位置或對應關係；用本單元的一個例子說明它與「候選集合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-embedding-models",
@@ -191,7 +215,9 @@
         "API",
         "多語"
       ],
-      "example": "13_openai_embeddings.py"
+      "example": "13_openai_embeddings.py",
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「Embedding 模型與 API：語言、維度與一致性」後，在圖上指出「候選集合」的位置或對應關係；用本單元的一個例子說明它與「融合排序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-vector-indexes",
@@ -201,7 +227,9 @@
       "tags": [
         "HNSW",
         "pgvector"
-      ]
+      ],
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「向量索引與資料庫：Exact、HNSW、pgvector」後，在圖上指出「融合排序」的位置或對應關係；用本單元的一個例子說明它與「檢索驗收」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-permissions-filters",
@@ -212,7 +240,9 @@
         "ACL",
         "Filter"
       ],
-      "example": "06_filters_sqlite.py"
+      "example": "06_filters_sqlite.py",
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「Metadata Filter 與權限：先限定能看的資料」後，在圖上指出「檢索驗收」的位置或對應關係；用本單元的一個例子說明它與「字面詞彙」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-hybrid-rrf",
@@ -223,7 +253,9 @@
         "Hybrid",
         "RRF"
       ],
-      "example": "07_rrf.py"
+      "example": "07_rrf.py",
+      "visual": "review-03-retrieval",
+      "visualTask": "讀完「Hybrid Search 與 RRF：融合不同檢索訊號」後，在圖上指出「字面詞彙」的位置或對應關係；用本單元的一個例子說明它與「語意向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-reranking",
@@ -234,7 +266,9 @@
         "Reranker",
         "Cross-encoder"
       ],
-      "example": "08_reranking.py"
+      "example": "08_reranking.py",
+      "visual": "review-04-context",
+      "visualTask": "讀完「Reranking：把相關候選排到真正需要的位置」後，在圖上指出「全體文件」的位置或對應關係；用本單元的一個例子說明它與「初步候選」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-mmr-diversity",
@@ -244,7 +278,9 @@
       "tags": [
         "MMR",
         "多樣性"
-      ]
+      ],
+      "visual": "review-04-context",
+      "visualTask": "讀完「MMR 與多樣性：避免五段證據都在說同一句話」後，在圖上指出「初步候選」的位置或對應關係；用本單元的一個例子說明它與「重排序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-query-transformation",
@@ -255,7 +291,9 @@
         "Query Rewrite",
         "HyDE"
       ],
-      "example": "09_query_expansion.py"
+      "example": "09_query_expansion.py",
+      "visual": "review-04-context",
+      "visualTask": "讀完「Query Transformation：改寫、Multi-query 與 HyDE」後，在圖上指出「重排序」的位置或對應關係；用本單元的一個例子說明它與「去重與過濾」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-multilingual-domain",
@@ -265,7 +303,9 @@
       "tags": [
         "繁體中文",
         "領域"
-      ]
+      ],
+      "visual": "review-04-context",
+      "visualTask": "讀完「跨語言與領域詞彙：中文、英文、型號與單位」後，在圖上指出「去重與過濾」的位置或對應關係；用本單元的一個例子說明它與「Context」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-context-budget",
@@ -276,7 +316,9 @@
         "Context",
         "Budget"
       ],
-      "example": "10_context_citations.py"
+      "example": "10_context_citations.py",
+      "visual": "review-04-context",
+      "visualTask": "讀完「Context Engineering：預算、排序與證據封裝」後，在圖上指出「Context」的位置或對應關係；用本單元的一個例子說明它與「全體文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-grounded-generation",
@@ -286,7 +328,9 @@
       "tags": [
         "Citations",
         "拒答"
-      ]
+      ],
+      "visual": "review-04-context",
+      "visualTask": "讀完「Grounded Generation：引用、拒答與答案檢查」後，在圖上指出「全體文件」的位置或對應關係；用本單元的一個例子說明它與「初步候選」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-conversational-rag",
@@ -297,7 +341,9 @@
         "Conversation",
         "Memory"
       ],
-      "example": "15_conversation.py"
+      "example": "15_conversation.py",
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「Conversational RAG：追問、歷史與記憶」後，在圖上指出「回答主張」的位置或對應關係；用本單元的一個例子說明它與「引用ID」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-structured-data",
@@ -307,7 +353,9 @@
       "tags": [
         "SQL",
         "Structured"
-      ]
+      ],
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「SQL、結構化檢索與 Text-to-SQL 的分工」後，在圖上指出「引用ID」的位置或對應關係；用本單元的一個例子說明它與「檢索片段」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-tables-multimodal",
@@ -317,7 +365,9 @@
       "tags": [
         "Tables",
         "Multimodal"
-      ]
+      ],
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「表格與多模態 RAG：保留列欄、圖像與單位」後，在圖上指出「檢索片段」的位置或對應關係；用本單元的一個例子說明它與「原文位置」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-agentic-rag",
@@ -327,7 +377,9 @@
       "tags": [
         "Agentic RAG",
         "LangGraph"
-      ]
+      ],
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「Agentic RAG 與 LangGraph：有界的搜尋迴圈」後，在圖上指出「原文位置」的位置或對應關係；用本單元的一個例子說明它與「版本與權限」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-graph-hierarchical-rag",
@@ -337,7 +389,9 @@
       "tags": [
         "GraphRAG",
         "RAPTOR"
-      ]
+      ],
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「GraphRAG、RAPTOR 與進階架構的選擇」後，在圖上指出「版本與權限」的位置或對應關係；用本單元的一個例子說明它與「回答主張」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-managed-rag",
@@ -347,7 +401,9 @@
       "tags": [
         "File Search",
         "供應商"
-      ]
+      ],
+      "visual": "review-05-advanced",
+      "visualTask": "讀完「自建與託管 RAG：OpenAI、Gemini、Claude 如何搭配」後，在圖上指出「回答主張」的位置或對應關係；用本單元的一個例子說明它與「引用ID」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-evaluation-dataset",
@@ -357,7 +413,9 @@
       "tags": [
         "Dataset",
         "Qrels"
-      ]
+      ],
+      "visual": "review-06-evaluation",
+      "visualTask": "讀完「評估資料集：問題、標準答案與 Qrels」後，在圖上指出「使用者A」的位置或對應關係；用本單元的一個例子說明它與「使用者B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-retrieval-metrics",
@@ -368,7 +426,9 @@
         "Metrics",
         "LaTeX"
       ],
-      "example": "11_evaluation.py"
+      "example": "11_evaluation.py",
+      "visual": "review-06-evaluation",
+      "visualTask": "讀完「檢索指標：Precision、Recall、MRR 與 nDCG」後，在圖上指出「使用者B」的位置或對應關係；用本單元的一個例子說明它與「公開文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-answer-evaluation",
@@ -378,7 +438,9 @@
       "tags": [
         "Faithfulness",
         "Evals"
-      ]
+      ],
+      "visual": "review-06-evaluation",
+      "visualTask": "讀完「答案評估：正確性、忠實度、引用與拒答」後，在圖上指出「公開文件」的位置或對應關係；用本單元的一個例子說明它與「部門文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-experiments",
@@ -388,7 +450,9 @@
       "tags": [
         "Ablation",
         "實驗"
-      ]
+      ],
+      "visual": "review-06-evaluation",
+      "visualTask": "讀完「實驗與消融：知道是哪個改動帶來進步」後，在圖上指出「部門文件」的位置或對應關係；用本單元的一個例子說明它與「受限文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-rag-security",
@@ -398,7 +462,9 @@
       "tags": [
         "安全",
         "Prompt Injection"
-      ]
+      ],
+      "visual": "review-06-evaluation",
+      "visualTask": "讀完「RAG 安全：Prompt Injection、資料外洩與授權」後，在圖上指出「受限文件」的位置或對應關係；用本單元的一個例子說明它與「使用者A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-service-architecture",
@@ -408,7 +474,9 @@
       "tags": [
         "API",
         "Production"
-      ]
+      ],
+      "visual": "review-07-production",
+      "visualTask": "讀完「正式服務架構：API、背景匯入與索引版本」後，在圖上指出「召回證據」的位置或對應關係；用本單元的一個例子說明它與「排序品質」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-updates-cache",
@@ -419,7 +487,9 @@
         "Cache",
         "Lifecycle"
       ],
-      "example": "12_incremental.py"
+      "example": "12_incremental.py",
+      "visual": "review-07-production",
+      "visualTask": "讀完「更新、刪除與快取：避免舊答案持續出現」後，在圖上指出「排序品質」的位置或對應關係；用本單元的一個例子說明它與「引用支持」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-cost-latency",
@@ -429,7 +499,9 @@
       "tags": [
         "Cost",
         "Latency"
-      ]
+      ],
+      "visual": "review-07-production",
+      "visualTask": "讀完「成本與延遲：用數據分配檢索與生成預算」後，在圖上指出「引用支持」的位置或對應關係；用本單元的一個例子說明它與「回答正確」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-observability",
@@ -439,7 +511,9 @@
       "tags": [
         "Tracing",
         "Monitoring"
-      ]
+      ],
+      "visual": "review-07-production",
+      "visualTask": "讀完「Observability：讓每個答案都能追查與重現」後，在圖上指出「回答正確」的位置或對應關係；用本單元的一個例子說明它與「拒答政策」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-debugging",
@@ -449,7 +523,9 @@
       "tags": [
         "Debugging",
         "回歸"
-      ]
+      ],
+      "visual": "review-07-production",
+      "visualTask": "讀完「故障診斷：從錯答案回到最早出錯的階段」後，在圖上指出「拒答政策」的位置或對應關係；用本單元的一個例子說明它與「召回證據」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-capstone",
@@ -460,7 +536,9 @@
         "Capstone",
         "實作"
       ],
-      "example": "16_capstone.py"
+      "example": "16_capstone.py",
+      "visual": "review-08-practice",
+      "visualTask": "讀完「完整專案：從文件到可查證的知識助理」後，在圖上指出「文件版本」的位置或對應關係；用本單元的一個例子說明它與「索引版本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-live-and-deployment",
@@ -471,7 +549,9 @@
         "部署",
         "Live RAG"
       ],
-      "example": "14_live_rag.py"
+      "example": "14_live_rag.py",
+      "visual": "review-08-practice",
+      "visualTask": "讀完「接上真正模型與部署：教學網站、API 與金鑰」後，在圖上指出「索引版本」的位置或對應關係；用本單元的一個例子說明它與「模型設定」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-exercises",
@@ -481,7 +561,9 @@
       "tags": [
         "Exercises",
         "驗收"
-      ]
+      ],
+      "visual": "review-08-practice",
+      "visualTask": "讀完「分級練習與解答：從會跑到能解釋失敗」後，在圖上指出「模型設定」的位置或對應關係；用本單元的一個例子說明它與「評估集合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-reference",
@@ -491,7 +573,109 @@
       "tags": [
         "Reference",
         "參數"
-      ]
+      ],
+      "visual": "review-08-practice",
+      "visualTask": "讀完「速查表、名詞與官方資料路線」後，在圖上指出「評估集合」的位置或對應關係；用本單元的一個例子說明它與「發布與回退」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "RAG的離線與查詢兩條路",
+      "alt": "RAG的離線與查詢兩條路；建索引和回答是兩個不同階段；回答需連回檢索證據與原始來源。",
+      "caption": "建索引和回答是兩個不同階段；回答需連回檢索證據與原始來源。",
+      "group": "foundations",
+      "kind": "fork",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-ingestion",
+      "file": "assets/figures/review-02-ingestion.svg",
+      "title": "切塊、重疊與來源位置",
+      "alt": "切塊、重疊與來源位置；重疊保留邊界上下文，也增加索引與重複證據；chunk需保存文件版本、頁碼或位置。",
+      "caption": "重疊保留邊界上下文，也增加索引與重複證據；chunk需保存文件版本、頁碼或位置。",
+      "group": "ingestion",
+      "kind": "chunks",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-retrieval",
+      "file": "assets/figures/review-03-retrieval.svg",
+      "title": "關鍵字與向量檢索看見不同關係",
+      "alt": "關鍵字與向量檢索看見不同關係；BM25和向量分數不一定在相同尺度；相似度高仍需核對問題與文件是否真正相關。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "BM25和向量分數不一定在相同尺度；相似度高仍需核對問題與文件是否真正相關。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "retrieval",
+      "kind": "scatter",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-context",
+      "file": "assets/figures/review-04-context.svg",
+      "title": "先取候選，再精細排序",
+      "alt": "先取候選，再精細排序；初步未召回的證據，後段重排無法憑空補回；候選數、延遲與證據品質一起衡量。",
+      "caption": "初步未召回的證據，後段重排無法憑空補回；候選數、延遲與證據品質一起衡量。",
+      "group": "context",
+      "kind": "funnel",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-advanced",
+      "file": "assets/figures/review-05-advanced.svg",
+      "title": "引用必須可追溯到證據",
+      "alt": "引用必須可追溯到證據；引用存在不等於主張受到支持；沒有足夠證據時保留不確定性或拒答。",
+      "caption": "引用存在不等於主張受到支持；沒有足夠證據時保留不確定性或拒答。",
+      "group": "advanced",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-evaluation",
+      "file": "assets/figures/review-06-evaluation.svg",
+      "title": "權限先決定可見證據",
+      "alt": "權限先決定可見證據；查詢權限限制候選集合，不能只在畫面隱藏；索引、快取、引用與下載採一致的隔離規則。",
+      "caption": "查詢權限限制候選集合，不能只在畫面隱藏；索引、快取、引用與下載採一致的隔離規則。",
+      "group": "evaluation",
+      "kind": "matrix",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-production",
+      "file": "assets/figures/review-07-production.svg",
+      "title": "RAG評估分成檢索與回答",
+      "alt": "RAG評估分成檢索與回答；先知道相關證據的分母，再算Recall@k；同時保留無答案、衝突與過期資料案例。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "先知道相關證據的分母，再算Recall@k；同時保留無答案、衝突與過期資料案例。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "production",
+      "kind": "bars",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-practice",
+      "file": "assets/figures/review-08-practice.svg",
+      "title": "資料更新與可重現交付",
+      "alt": "資料更新與可重現交付；刪除和更新需同步索引與快取；以固定案例檢查改動，不只看單次回答。",
+      "caption": "刪除和更新需同步索引與快取；以固定案例檢查改動，不只看單次回答。",
+      "group": "practice",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "rag-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "rag-study.zip"
   ]
 }

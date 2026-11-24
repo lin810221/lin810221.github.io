@@ -94,7 +94,7 @@ for (const lesson of course.lessons) {
   for (const element of doc.querySelectorAll('.math-source, .math-block')) {
     const source = element.textContent.trim();
     const display = element.classList.contains('math-block');
-    const tex = display ? source.slice(2,-2).trim() : source.slice(1,-1);
+    const tex = element.getAttribute('data-tex') ?? (display ? source.slice(2,-2).trim() : source.slice(1,-1));
     const output = katex.renderToString(tex, {displayMode:display, throwOnError:true, trust:false});
     assert.ok(output.includes('class="katex'));
     equationCount++;

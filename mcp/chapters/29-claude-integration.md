@@ -2,6 +2,16 @@
 
 辨識產品層差異，使用當前 MCP toolset 配置，而非混用舊版 beta 範例。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![stdio與HTTP的傳輸邊界；傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。](assets/figures/review-05-hosts.svg)
+
+> **圖解｜stdio與HTTP的傳輸邊界**：傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。
+
+**本單元讀圖任務**：讀完「Claude 整合：API Connector、桌面與開發工具」後，在圖上指出「工作階段」的位置或對應關係；用本單元的一個例子說明它與「Client程序」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先問使用的是哪個產品
 
 Claude Messages API 的遠端 MCP Connector、桌面 Host 與開發工具的本機配置，是不同整合面。前者由雲端服務連遠端工具，後者可由本機程序啟動 stdio。即使使用相同模型，也不能把一個產品的設定檔直接當成另一個 API 的參數。

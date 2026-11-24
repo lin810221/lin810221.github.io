@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![檢查點、記憶與執行緒；thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。](assets/figures/review-04-memory.svg)
+
+> **圖解｜檢查點、記憶與執行緒**：thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。
+
+**本單元讀圖任務**：讀完「Streaming、Async 與前端事件」後，在圖上指出「恢復執行」的位置或對應關係；用本單元的一個例子說明它與「輸入」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Streaming 不是只顯示 token
 
 執行長流程時，前端需要知道正在檢索、等待工具或等待人審核。LangGraph 可以傳出不同層次的進度。先決定 UI 需要什麼，再選事件模式。

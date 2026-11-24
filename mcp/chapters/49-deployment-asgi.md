@@ -2,6 +2,16 @@
 
 從本機測試走向服務部署，明確處理路由、資源、HTTPS 與身分注入。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![完整工具整合的交付；保存協定與SDK基準，列出已執行的條件；消費者需要可理解的結果和錯誤處理。](assets/figures/review-09-production.svg)
+
+> **圖解｜完整工具整合的交付**：保存協定與SDK基準，列出已執行的條件；消費者需要可理解的結果和錯誤處理。
+
+**本單元讀圖任務**：讀完「部署 ASGI：反向代理、認證與服務生命週期」後，在圖上指出「功能規格」的位置或對應關係；用本單元的一個例子說明它與「型別化工具」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Server 與 ASGI 應用
 
 `streamable_http_app()` 產生 ASGI app，可以交給 Uvicorn 或掛在既有服務。路徑要和 Client 配置一致，尤其掛載到另一個前綴時，避免變成 /mcp/mcp。ASGI lifespan 必須正確進入，才能管理 SDK 與你的資料庫／HTTP pool。

@@ -2,6 +2,16 @@
 
 保存前處理、模型、門檻與schema，重啟後用相同原始資料核對。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![成品部署與資料漂移；部署需要相同前處理與label map；分數分布變化是線索，品質需真值。](assets/figures/review-09-engineering.svg)
+
+> **圖解｜成品部署與資料漂移**：部署需要相同前處理與label map；分數分布變化是線索，品質需真值。
+
+**本單元讀圖任務**：讀完「模型保存與版本：交付完整Pipeline」後，在圖上指出「訓練版本」的位置或對應關係；用本單元的一個例子說明它與「保存管線」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 模型產物包含什麼
 
 classifier係數不足以重現預測；還需imputer統計、scaler、category詞表、欄位schema、classes順序、threshold、訓練設定與套件版本。完整Pipeline把多項狀態放在一起，但任意外部清理函式與資料定義仍需記錄。

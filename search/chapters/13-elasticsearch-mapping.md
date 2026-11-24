@@ -2,6 +2,16 @@
 
 把文件契約轉成可檢查的 Mapping，避免動態型別猜測累積成遷移問題。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![向量距離與語意候選；Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-elastic.svg)
+
+> **圖解｜向量距離與語意候選**：Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Elasticsearch Mapping：text、keyword 與向量欄位」後，在圖上指出「向量編碼」的位置或對應關係；用本單元的一個例子說明它與「距離定義」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Index 是查詢結構也是管理單位
 
 Elasticsearch index 包含 mapping、設定與 shards。欄位用 text 才能經過分析，用 keyword 保留精確值供 Filter、排序與聚合。數字、日期與 bool 應使用明確型別。本課設定 dynamic=strict，未宣告欄位會失敗，讓 schema 變更在匯入時被看見，而不是默默生成不一致資料。

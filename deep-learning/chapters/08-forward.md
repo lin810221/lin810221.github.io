@@ -2,6 +2,16 @@
 
 用固定維度追蹤中間表示、共享參數與記憶體成本。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Forward與Backward的對應；反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。](assets/figures/review-02-networks.svg)
+
+> **圖解｜Forward與Backward的對應**：反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。
+
+**本單元讀圖任務**：讀完「Forward與參數帳本：每一層到底計算什麼」後，在圖上指出「Hidden表示」的位置或對應關係；用本單元的一個例子說明它與「輸出logits」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 將網路寫成資料流
 
 本課表格MLP為4→24→24→2，每個hidden之後ReLU。輸入X[N,4]，中間[N,24]兩次，最後logits[N,2]。模型每層參數共享於batch所有樣本，不會因N變大就產生新weights。forward回傳logits，loss在訓練流程外計算。
@@ -30,7 +40,7 @@ for name,value in model.state_dict().items():
 
 ## 常見錯誤
 
-每次forward新建Linear會重新初始化且不在原optimizer；普通list放層未正確註冊；無參數squeeze可在N=1時刪batch；Flatten將batch也合併會把不同樣本混在一起。這些都可能讓loss看似能算，學習含義卻改變。
+每次forward新建Linear會重新初始化且不在原optimizer；普通list放層未正確註冊；無參數squeeze可在$N=1$時刪batch；Flatten將batch也合併會把不同樣本混在一起。這些都可能讓loss看似能算，學習含義卻改變。
 
 ## 練習與解答
 

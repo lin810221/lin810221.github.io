@@ -2,6 +2,16 @@
 
 把同一份文件的不同表示放入 named vectors，以每路 Filter 和 RRF 組成混合查詢。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![混合檢索與融合排序；不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。](assets/figures/review-05-qdrant.svg)
+
+> **圖解｜混合檢索與融合排序**：不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。
+
+**本單元讀圖任務**：讀完「Qdrant Dense＋Sparse：實際執行兩路召回與融合」後，在圖上指出「融合與重排」的位置或對應關係；用本單元的一個例子說明它與「最終top-k」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Dense 與 Sparse 各保留什麼
 
 Dense 用固定長度浮點向量表達特徵；Sparse 以非零維度索引與權重表示詞或學得的特徵。本例詞彙表由 fixture 固定建立，權重只是 term frequency。它不是完整 BM25、也不是學習式 sparse model，方便檢查詞項重疊與兩路融合的機制。

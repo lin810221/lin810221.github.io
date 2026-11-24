@@ -2,6 +2,16 @@
 
 讀懂GPU記憶體與計時，避免用錯誤量測做效能決策。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「CUDA實務：非同步、OOM、allocated與reserved」後，在圖上指出「資料等待」的位置或對應關係；用本單元的一個例子說明它與「傳輸」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 非同步如何影響觀察
 
 GPU運算常以非同步方式提交，Python函式回傳不表示裝置已算完。只用perf_counter包一次forward，可能主要量到排程開銷。錯誤也可能在較晚同步點才浮現。除錯時可使用官方建議的同步設定縮小位置，但不應把除錯同步模式當正式效能結果。

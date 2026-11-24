@@ -2,9 +2,19 @@
 
 用可驗收的題目檢查理解，依序練資料、梯度、訓練與工程產物。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![完整PyTorch工程交付；範例、測試與需求檔保持一致；未執行硬體與後端另列條件。](assets/figures/review-08-finish.svg)
+
+> **圖解｜完整PyTorch工程交付**：範例、測試與需求檔保持一致；未執行硬體與後端另列條件。
+
+**本單元讀圖任務**：讀完「整合練習與解答：從看懂到獨立寫出」後，在圖上指出「執行說明」的位置或對應關係；用本單元的一個例子說明它與「訓練主線」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 第一組：shape與微分
 
-題1：pred[5,1]、target[5]的MSE為何不對？解答：廣播成[5,5]，逐筆契約應相同shape。加入assert，測batch_size=1與大於1。題2：x=2,w=3,t=8，L=(wx-t)²，導數是-8；SGD lr=.1更新w=3.8。用Tensor核對，並確認backward之前／之後／step之後各狀態。
+題1：pred[5,1]、target[5]的MSE為何不對？解答：廣播成[5,5]，逐筆契約應相同shape。加入assert，測batch_size=1與大於1。題2：$x=2,w=3,t=8$，$L=(wx-t)^2$，導數是-8；SGD lr=.1更新$w=3.8$。用Tensor核對，並確認backward之前／之後／step之後各狀態。
 
 題3：對同一loss backward兩次為何可能失敗？解答：中間保存量已釋放；重新forward建立新圖。如果只是想累積兩批梯度，每批新forward，群組開始才zero_grad，無需保留上一批完整圖。
 

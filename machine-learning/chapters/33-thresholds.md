@@ -2,13 +2,23 @@
 
 讓接受／拒絕規則在適當資料上選擇，並隨模型一起保存。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![無監督學習看見資料結構；群集不自動等於真實類別；距離、尺度與群數會改變結果。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-06-reliability.svg)
+
+> **圖解｜無監督學習看見資料結構**：群集不自動等於真實類別；距離、尺度與群數會改變結果。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「決策門檻：成本、容量與TunedThresholdClassifierCV」後，在圖上指出「群集B」的位置或對應關係；用本單元的一個例子說明它與「異常候選」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 預測機率不等於最後行動
 
 模型給P(Y=1|x)，決策規則才決定是否處理。threshold .5是一個常見預設，不代表任何成本、稀有比例或容量下都最佳。把門檻當超參數：可以在獨立val或內部CV選，不能直接看最終test挑。
 
 ## 手算成本曲線
 
-y=[1,1,0,0]、scores=[.9,.4,.8,.1]。FN成本5、FP成本1：threshold .5時FN1+FP1，成本6；threshold .4時TP2、FP1、FN0，成本1。因此更低threshold在這份validation更合適。相同成本時本課選較低門檻作固定tie-break，並明確記錄。
+$y=[1,1,0,0]$、scores=[.9,.4,.8,.1]。FN成本5、FP成本1：threshold .5時FN1+FP1，成本6；threshold .4時TP2、FP1、FN0，成本1。因此更低threshold在這份validation更合適。相同成本時本課選較低門檻作固定tie-break，並明確記錄。
 
 $$
 C(t)=c_{FN}\,FN(t)+c_{FP}\,FP(t)

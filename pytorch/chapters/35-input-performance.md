@@ -2,6 +2,16 @@
 
 區分讀檔、轉換、搬移與模型計算的瓶頸。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。](assets/figures/review-06-engineering.svg)
+
+> **圖解｜Checkpoint與精確續訓**：只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。
+
+**本單元讀圖任務**：讀完「輸入管線與記憶體：先量測，再增加workers」後，在圖上指出「恢復執行」的位置或對應關係；用本單元的一個例子說明它與「模型狀態」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 慢在等資料還是算模型
 
 把時間分成取得batch、CPU前處理、host-to-device搬移、forward/backward與optimizer。GPU利用率低可能是資料不足，也可能模型本來很小、同步太頻繁。只看工作管理員一個百分比，無法決定該加worker還是加batch。

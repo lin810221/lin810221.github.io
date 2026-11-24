@@ -2,6 +2,16 @@
 
 從目標函數到實際更新，理解正則化尺度與參數分組。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「L1、L2與weight decay：限制哪一種複雜度」後，在圖上指出「正則化」的位置或對應關係；用本單元的一個例子說明它與「正規化」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 在目標加入偏好
 
 L2偏好較小係數，L1有促使部分係數零的幾何效果。它們限制特定參數化下的解，換一種等價重參數化不一定保留同樣懲罰。深網路有尺度對稱性與normalization，因此不能只用weight norm當普遍函數複雜度。

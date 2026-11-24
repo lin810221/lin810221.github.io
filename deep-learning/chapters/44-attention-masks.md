@@ -2,6 +2,16 @@
 
 用擾動未來value的實驗，驗證能看見的位置是否符合任務。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。](assets/figures/review-08-attention.svg)
+
+> **圖解｜Attention用內容混合資訊**：分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。
+
+**本單元讀圖任務**：讀完「Self、Cross與Causal Mask：防止未來資訊滲漏」後，在圖上指出「Keys」的位置或對應關係；用本單元的一個例子說明它與「分數」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 來源與可見範圍
 
 self-attention的Q/K/V來自同一序列，cross-attention的Q來自一段、K/V來自另一來源。能否看未來由任務決定：整句分類可全可見，下一token預測通常限制key位置j<=query位置i。名稱本身不會替你加mask。

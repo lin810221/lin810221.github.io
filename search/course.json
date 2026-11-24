@@ -78,7 +78,9 @@
       "tags": [
         "搜尋系統的全貌",
         "scope and overlap"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「這門課的位置：把搜尋做成可靠的系統」後，在圖上指出「文件匯入」的位置或對應關係；用本單元的一個例子說明它與「清理與索引」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-source-index-query",
@@ -88,7 +90,9 @@
       "tags": [
         "搜尋系統的全貌",
         "source index query"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「來源、索引與查詢服務：資料走過哪幾層」後，在圖上指出「清理與索引」的位置或對應關係；用本單元的一個例子說明它與「查詢輸入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-versions-and-environment",
@@ -98,7 +102,9 @@
       "tags": [
         "搜尋系統的全貌",
         "versions and environment"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「版本、環境與可重現執行」後，在圖上指出「查詢輸入」的位置或對應關係；用本單元的一個例子說明它與「候選與排序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-first-fts",
@@ -109,7 +115,9 @@
         "搜尋系統的全貌",
         "first fts"
       ],
-      "example": "01_first_fts.py"
+      "example": "01_first_fts.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「第一次全文搜尋：建立、寫入與查詢」後，在圖上指出「候選與排序」的位置或對應關係；用本單元的一個例子說明它與「結果與證據」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-schema-and-identifiers",
@@ -119,7 +127,9 @@
       "tags": [
         "搜尋系統的全貌",
         "schema and identifiers"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「文件契約：ID、租戶、版本與表示配方」後，在圖上指出「結果與證據」的位置或對應關係；用本單元的一個例子說明它與「文件匯入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-query-intent-and-plan",
@@ -129,7 +139,9 @@
       "tags": [
         "搜尋系統的全貌",
         "query intent and plan"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「查詢意圖與計畫：代碼、文字與語意各走哪條路」後，在圖上指出「文件匯入」的位置或對應關係；用本單元的一個例子說明它與「清理與索引」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-inverted-index-positions",
@@ -140,7 +152,9 @@
         "全文檢索與倒排索引",
         "inverted index positions"
       ],
-      "example": "03_postings.py"
+      "example": "03_postings.py",
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「倒排索引與位置：詞如何指向文件」後，在圖上指出「詞A」的位置或對應關係；用本單元的一個例子說明它與「詞B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-analyzers-and-chinese",
@@ -151,7 +165,9 @@
         "全文檢索與倒排索引",
         "analyzers and chinese"
       ],
-      "example": "02_analyzers.py"
+      "example": "02_analyzers.py",
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「正規化與中文斷詞：搜尋品質的第一道門」後，在圖上指出「詞B」的位置或對應關係；用本單元的一個例子說明它與「詞C」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-bm25-scoring",
@@ -162,7 +178,9 @@
         "全文檢索與倒排索引",
         "bm25 scoring"
       ],
-      "example": "04_bm25.py"
+      "example": "04_bm25.py",
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「BM25：詞頻、稀有度與文件長度如何影響名次」後，在圖上指出「詞C」的位置或對應關係；用本單元的一個例子說明它與「文件1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-boolean-phrase-filter",
@@ -173,7 +191,9 @@
         "全文檢索與倒排索引",
         "boolean phrase filter"
       ],
-      "example": "05_literal_queries.py"
+      "example": "05_literal_queries.py",
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「布林、短語與 Filter：相關性與資格分開判斷」後，在圖上指出「文件1」的位置或對應關係；用本單元的一個例子說明它與「文件2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-fields-synonyms-fuzzy",
@@ -183,7 +203,9 @@
       "tags": [
         "全文檢索與倒排索引",
         "fields synonyms fuzzy"
-      ]
+      ],
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「欄位、同義詞與模糊匹配：增加召回也要控制誤召回」後，在圖上指出「文件2」的位置或對應關係；用本單元的一個例子說明它與「詞A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-fts-query-and-maintenance",
@@ -193,7 +215,9 @@
       "tags": [
         "全文檢索與倒排索引",
         "fts query and maintenance"
-      ]
+      ],
+      "visual": "review-02-lexical",
+      "visualTask": "讀完「FTS5 實作整理：同步、排序與查詢限制」後，在圖上指出「詞A」的位置或對應關係；用本單元的一個例子說明它與「詞B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-elasticsearch-mapping",
@@ -204,7 +228,9 @@
         "Elasticsearch 搜尋工程",
         "elasticsearch mapping"
       ],
-      "example": "06_elastic_mapping.py"
+      "example": "06_elastic_mapping.py",
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「Elasticsearch Mapping：text、keyword 與向量欄位」後，在圖上指出「向量編碼」的位置或對應關係；用本單元的一個例子說明它與「距離定義」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-elasticsearch-analyzers",
@@ -214,7 +240,9 @@
       "tags": [
         "Elasticsearch 搜尋工程",
         "elasticsearch analyzers"
-      ]
+      ],
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「Elasticsearch Analyzer：索引分析與查詢分析」後，在圖上指出「距離定義」的位置或對應關係；用本單元的一個例子說明它與「候選索引」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-query-dsl-and-aggregation",
@@ -225,7 +253,9 @@
         "Elasticsearch 搜尋工程",
         "query dsl and aggregation"
       ],
-      "example": "07_elastic_query.py"
+      "example": "07_elastic_query.py",
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「Query DSL、Filter 與 Aggregation：查詢也要有邊界」後，在圖上指出「候選索引」的位置或對應關係；用本單元的一個例子說明它與「最近鄰」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-bulk-refresh-and-version",
@@ -236,7 +266,9 @@
         "Elasticsearch 搜尋工程",
         "bulk refresh and version"
       ],
-      "example": "08_bulk_refresh.py"
+      "example": "08_bulk_refresh.py",
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「Bulk、Refresh 與版本：寫入成功多久能搜尋」後，在圖上指出「最近鄰」的位置或對應關係；用本單元的一個例子說明它與「任務相關性」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-pit-pagination-and-routing",
@@ -247,7 +279,9 @@
         "Elasticsearch 搜尋工程",
         "pit pagination and routing"
       ],
-      "example": "09_pagination.py"
+      "example": "09_pagination.py",
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「PIT、search_after 與 Routing：穩定走過大量結果」後，在圖上指出「任務相關性」的位置或對應關係；用本單元的一個例子說明它與「向量編碼」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-elasticsearch-and-opensearch",
@@ -257,7 +291,9 @@
       "tags": [
         "Elasticsearch 搜尋工程",
         "elasticsearch and opensearch"
-      ]
+      ],
+      "visual": "review-03-elastic",
+      "visualTask": "讀完「Elasticsearch 與 OpenSearch：選型與相容性的界線」後，在圖上指出「向量編碼」的位置或對應關係；用本單元的一個例子說明它與「距離定義」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-distance-and-exact-baseline",
@@ -268,7 +304,9 @@
         "向量索引與 ANN",
         "distance and exact baseline"
       ],
-      "example": "10_exact_vectors.py"
+      "example": "10_exact_vectors.py",
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「向量契約與 Exact 基準：先定義什麼叫鄰近」後，在圖上指出「全體向量」的位置或對應關係；用本單元的一個例子說明它與「候選區域」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-faiss-flat",
@@ -279,7 +317,9 @@
         "向量索引與 ANN",
         "faiss flat"
       ],
-      "example": "11_faiss_flat.py"
+      "example": "11_faiss_flat.py",
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「Faiss Flat：真正的全量向量檢索」後，在圖上指出「候選區域」的位置或對應關係；用本單元的一個例子說明它與「圖或分群」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-faiss-hnsw",
@@ -290,7 +330,9 @@
         "向量索引與 ANN",
         "faiss hnsw"
       ],
-      "example": "12_faiss_hnsw.py"
+      "example": "12_faiss_hnsw.py",
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「HNSW：圖結構、建置成本與搜尋廣度」後，在圖上指出「圖或分群」的位置或對應關係；用本單元的一個例子說明它與「擴展預算」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-ivf-pq-and-quantization",
@@ -301,7 +343,9 @@
         "向量索引與 ANN",
         "ivf pq and quantization"
       ],
-      "example": "13_faiss_ivfpq.py"
+      "example": "13_faiss_ivfpq.py",
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「IVF-PQ：分桶與壓縮帶來什麼誤差」後，在圖上指出「擴展預算」的位置或對應關係；用本單元的一個例子說明它與「近似鄰居」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-filtering-and-candidate-budget",
@@ -312,7 +356,9 @@
         "向量索引與 ANN",
         "filtering and candidate budget"
       ],
-      "example": "14_filter_candidates.py"
+      "example": "14_filter_candidates.py",
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「向量 Filter 與候選預算：先過濾還是後過濾」後，在圖上指出「近似鄰居」的位置或對應關係；用本單元的一個例子說明它與「全體向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-ann-tuning-experiment",
@@ -322,7 +368,9 @@
       "tags": [
         "向量索引與 ANN",
         "ann tuning experiment"
-      ]
+      ],
+      "visual": "review-04-vectors",
+      "visualTask": "讀完「ANN 調參實驗：固定資料，分開品質、延遲與容量」後，在圖上指出「全體向量」的位置或對應關係；用本單元的一個例子說明它與「候選區域」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-collections-and-local",
@@ -333,7 +381,9 @@
         "Qdrant 向量資料庫",
         "collections and local"
       ],
-      "example": "15_qdrant_local.py"
+      "example": "15_qdrant_local.py",
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Qdrant Collection 與 Local：先建立正確的向量空間」後，在圖上指出「關鍵字排名」的位置或對應關係；用本單元的一個例子說明它與「向量排名」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-payload-filtering",
@@ -344,7 +394,9 @@
         "Qdrant 向量資料庫",
         "payload filtering"
       ],
-      "example": "16_qdrant_filters.py"
+      "example": "16_qdrant_filters.py",
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Payload、型別與索引：每條向量查詢的資料資格」後，在圖上指出「向量排名」的位置或對應關係；用本單元的一個例子說明它與「過濾」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-query-points-and-prefetch",
@@ -354,7 +406,9 @@
       "tags": [
         "Qdrant 向量資料庫",
         "query points and prefetch"
-      ]
+      ],
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Query Points 與 Prefetch：候選、輸出與成本」後，在圖上指出「過濾」的位置或對應關係；用本單元的一個例子說明它與「融合與重排」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-dense-sparse-fusion",
@@ -365,7 +419,9 @@
         "Qdrant 向量資料庫",
         "dense sparse fusion"
       ],
-      "example": "17_qdrant_hybrid.py"
+      "example": "17_qdrant_hybrid.py",
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Qdrant Dense＋Sparse：實際執行兩路召回與融合」後，在圖上指出「融合與重排」的位置或對應關係；用本單元的一個例子說明它與「最終top-k」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-upsert-delete-persistence",
@@ -376,7 +432,9 @@
         "Qdrant 向量資料庫",
         "upsert delete persistence"
       ],
-      "example": "18_qdrant_updates.py"
+      "example": "18_qdrant_updates.py",
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Upsert、刪除與 Local 持久化：不把成功回應當版本保護」後，在圖上指出「最終top-k」的位置或對應關係；用本單元的一個例子說明它與「關鍵字排名」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-server-snapshots-and-replicas",
@@ -387,7 +445,9 @@
         "Qdrant 向量資料庫",
         "server snapshots and replicas"
       ],
-      "example": "19_qdrant_persistence.py"
+      "example": "19_qdrant_persistence.py",
+      "visual": "review-05-qdrant",
+      "visualTask": "讀完「Qdrant Server：Payload Index、複本與 Snapshot 的邊界」後，在圖上指出「關鍵字排名」的位置或對應關係；用本單元的一個例子說明它與「向量排名」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-postgres-schema-and-fts",
@@ -398,7 +458,9 @@
         "PostgreSQL 與 pgvector",
         "postgres schema and fts"
       ],
-      "example": "20_pg_schema.py"
+      "example": "20_pg_schema.py",
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「PostgreSQL Schema 與全文索引：讓搜尋靠近關聯資料」後，在圖上指出「全文引擎」的位置或對應關係；用本單元的一個例子說明它與「向量引擎」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-pgvector-operators",
@@ -409,7 +471,9 @@
         "PostgreSQL 與 pgvector",
         "pgvector operators"
       ],
-      "example": "21_pg_query.py"
+      "example": "21_pg_query.py",
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「pgvector 距離運算子與 Operator Class」後，在圖上指出「向量引擎」的位置或對應關係；用本單元的一個例子說明它與「關聯資料庫」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-pgvector-ann-and-iterative",
@@ -419,7 +483,9 @@
       "tags": [
         "PostgreSQL 與 pgvector",
         "pgvector ann and iterative"
-      ]
+      ],
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「pgvector HNSW、IVFFlat 與 Iterative Scan」後，在圖上指出「關聯資料庫」的位置或對應關係；用本單元的一個例子說明它與「全文引擎」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-explain-and-query-plans",
@@ -429,7 +495,9 @@
       "tags": [
         "PostgreSQL 與 pgvector",
         "explain and query plans"
-      ]
+      ],
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「EXPLAIN：確認資料庫實際做了什麼」後，在圖上指出「全文引擎」的位置或對應關係；用本單元的一個例子說明它與「向量引擎」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-rls-and-connection-pools",
@@ -440,7 +508,9 @@
         "PostgreSQL 與 pgvector",
         "rls and connection pools"
       ],
-      "example": "22_pg_roles.py"
+      "example": "22_pg_roles.py",
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「RLS、角色與連線池：資料隔離不只一個 WHERE」後，在圖上指出「向量引擎」的位置或對應關係；用本單元的一個例子說明它與「關聯資料庫」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-transactions-and-dual-store",
@@ -450,7 +520,9 @@
       "tags": [
         "PostgreSQL 與 pgvector",
         "transactions and dual store"
-      ]
+      ],
+      "visual": "review-06-postgres",
+      "visualTask": "讀完「單庫交易與雙庫同步：何時需要 Outbox」後，在圖上指出「關聯資料庫」的位置或對應關係；用本單元的一個例子說明它與「全文引擎」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-sparse-retrieval",
@@ -460,7 +532,9 @@
       "tags": [
         "混合搜尋與品質評估",
         "sparse retrieval"
-      ]
+      ],
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「Sparse Retrieval：BM25、詞頻與學習式稀疏表示」後，在圖上指出「身份範圍」的位置或對應關係；用本單元的一個例子說明它與「可見文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-reciprocal-rank-fusion",
@@ -471,7 +545,9 @@
         "混合搜尋與品質評估",
         "reciprocal rank fusion"
       ],
-      "example": "23_rrf.py"
+      "example": "23_rrf.py",
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「RRF：不用混比分數，也能融合多路排名」後，在圖上指出「可見文件」的位置或對應關係；用本單元的一個例子說明它與「查詢過濾」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-score-normalization",
@@ -482,7 +558,9 @@
         "混合搜尋與品質評估",
         "score normalization"
       ],
-      "example": "24_linear_fusion.py"
+      "example": "24_linear_fusion.py",
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「線性融合與分數校準：何時分數才可以相加」後，在圖上指出「查詢過濾」的位置或對應關係；用本單元的一個例子說明它與「候選排序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-diversity-and-reranking",
@@ -492,7 +570,9 @@
       "tags": [
         "混合搜尋與品質評估",
         "diversity and reranking"
-      ]
+      ],
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「去重、多樣性與 Reranking：前幾名不能只有同一份文件」後，在圖上指出「候選排序」的位置或對應關係；用本單元的一個例子說明它與「回傳欄位」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-qrels-and-metrics",
@@ -503,7 +583,9 @@
         "混合搜尋與品質評估",
         "qrels and metrics"
       ],
-      "example": "25_evaluation.py"
+      "example": "25_evaluation.py",
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「Qrels、Recall、MRR 與 nDCG：別把兩種正確混在一起」後，在圖上指出「回傳欄位」的位置或對應關係；用本單元的一個例子說明它與「身份範圍」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-multilingual-and-feedback",
@@ -513,7 +595,9 @@
       "tags": [
         "混合搜尋與品質評估",
         "multilingual and feedback"
-      ]
+      ],
+      "visual": "review-07-hybrid",
+      "visualTask": "讀完「多語、日誌與回饋：找到品質退化的切片」後，在圖上指出「身份範圍」的位置或對應關係；用本單元的一個例子說明它與「可見文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-etl-and-bulk-ingestion",
@@ -523,7 +607,9 @@
       "tags": [
         "資料生命週期與一致性",
         "etl and bulk ingestion"
-      ]
+      ],
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「ETL 與批次匯入：讓錯誤可重跑、可對帳」後，在圖上指出「資料更新」的位置或對應關係；用本單元的一個例子說明它與「索引寫入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-monotonic-revisions",
@@ -534,7 +620,9 @@
         "資料生命週期與一致性",
         "monotonic revisions"
       ],
-      "example": "26_versioned_ingest.py"
+      "example": "26_versioned_ingest.py",
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「Revision 與冪等 Upsert：相同重送，過期拒絕」後，在圖上指出「索引寫入」的位置或對應關係；用本單元的一個例子說明它與「可見性延遲」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-tombstones-and-deletion",
@@ -544,7 +632,9 @@
       "tags": [
         "資料生命週期與一致性",
         "tombstones and deletion"
-      ]
+      ],
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「Tombstone 與刪除傳播：查不到不等於清除完成」後，在圖上指出「可見性延遲」的位置或對應關係；用本單元的一個例子說明它與「查詢驗證」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-outbox-and-checkpoint",
@@ -555,7 +645,9 @@
         "資料生命週期與一致性",
         "outbox and checkpoint"
       ],
-      "example": "27_outbox_replay.py"
+      "example": "27_outbox_replay.py",
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「Outbox、Checkpoint 與當機重播」後，在圖上指出「查詢驗證」的位置或對應關係；用本單元的一個例子說明它與「刪除確認」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-generation-cutover",
@@ -566,7 +658,9 @@
         "資料生命週期與一致性",
         "generation cutover"
       ],
-      "example": "28_generation_cutover.py"
+      "example": "28_generation_cutover.py",
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「Generation、切換與回復：新索引先驗收再上線」後，在圖上指出「刪除確認」的位置或對應關係；用本單元的一個例子說明它與「資料更新」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-embedding-recipe-migration",
@@ -576,7 +670,9 @@
       "tags": [
         "資料生命週期與一致性",
         "embedding recipe migration"
-      ]
+      ],
+      "visual": "review-08-lifecycle",
+      "visualTask": "讀完「表示配方遷移：維度相同也需要版本切換」後，在圖上指出「資料更新」的位置或對應關係；用本單元的一個例子說明它與「索引寫入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "49-segments-wal-and-consistency",
@@ -586,7 +682,9 @@
       "tags": [
         "效能、容量與維運",
         "segments wal and consistency"
-      ]
+      ],
+      "visual": "review-09-operations",
+      "visualTask": "讀完「Segment、Refresh、WAL 與複本：四種不同的承諾」後，在圖上指出「相關文件」的位置或對應關係；用本單元的一個例子說明它與「Recall@k」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "50-capacity-planning",
@@ -597,7 +695,9 @@
         "效能、容量與維運",
         "capacity planning"
       ],
-      "example": "29_capacity.py"
+      "example": "29_capacity.py",
+      "visual": "review-09-operations",
+      "visualTask": "讀完「容量估算：原向量、量化、圖與複本都要算」後，在圖上指出「Recall@k」的位置或對應關係；用本單元的一個例子說明它與「排序指標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "51-benchmark-and-tail-latency",
@@ -608,7 +708,9 @@
         "效能、容量與維運",
         "benchmark and tail latency"
       ],
-      "example": "30_benchmark.py"
+      "example": "30_benchmark.py",
+      "visual": "review-09-operations",
+      "visualTask": "讀完「Benchmark、p50 與 p95：量測一個可比較的工作負載」後，在圖上指出「排序指標」的位置或對應關係；用本單元的一個例子說明它與「p95延遲」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "52-shards-routing-and-cache",
@@ -618,7 +720,9 @@
       "tags": [
         "效能、容量與維運",
         "shards routing and cache"
-      ]
+      ],
+      "visual": "review-09-operations",
+      "visualTask": "讀完「分片、租戶與快取：速度不能打破資料邊界」後，在圖上指出「p95延遲」的位置或對應關係；用本單元的一個例子說明它與「資源用量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "53-backup-and-rebuild",
@@ -628,7 +732,9 @@
       "tags": [
         "效能、容量與維運",
         "backup and rebuild"
-      ]
+      ],
+      "visual": "review-09-operations",
+      "visualTask": "讀完「備份、還原與重建：真正測一次才能知道能否恢復」後，在圖上指出「資源用量」的位置或對應關係；用本單元的一個例子說明它與「相關文件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "54-monitoring-and-failure-playbook",
@@ -638,7 +744,9 @@
       "tags": [
         "效能、容量與維運",
         "monitoring and failure playbook"
-      ]
+      ],
+      "visual": "review-09-operations",
+      "visualTask": "讀完「監控、SLO 與升級排錯：從症狀找到故障層」後，在圖上指出「相關文件」的位置或對應關係；用本單元的一個例子說明它與「Recall@k」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "55-engine-selection",
@@ -648,7 +756,9 @@
       "tags": [
         "整合專題與驗收交付",
         "engine selection"
-      ]
+      ],
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「引擎選型：從需求矩陣決定，不從排行榜決定」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「多種索引」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "56-catalog-project",
@@ -659,7 +769,9 @@
         "整合專題與驗收交付",
         "catalog project"
       ],
-      "example": "31_catalog_project.py"
+      "example": "31_catalog_project.py",
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「完整專題：可更新、可隔離的商品混合搜尋」後，在圖上指出「多種索引」的位置或對應關係；用本單元的一個例子說明它與「公平評估」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "57-acceptance-and-delivery",
@@ -670,7 +782,9 @@
         "整合專題與驗收交付",
         "acceptance and delivery"
       ],
-      "example": "32_delivery_report.py"
+      "example": "32_delivery_report.py",
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「驗收與交付：產出能重建的搜尋專案」後，在圖上指出「公平評估」的位置或對應關係；用本單元的一個例子說明它與「故障恢復」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "58-optional-service-lab",
@@ -680,7 +794,9 @@
       "tags": [
         "整合專題與驗收交付",
         "optional service lab"
-      ]
+      ],
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「服務整合實驗：Elasticsearch 與 PostgreSQL 的下一步」後，在圖上指出「故障恢復」的位置或對應關係；用本單元的一個例子說明它與「成品與限制」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "59-exercises-and-solutions",
@@ -690,7 +806,9 @@
       "tags": [
         "整合專題與驗收交付",
         "exercises and solutions"
-      ]
+      ],
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「綜合習題與詳解：用故障案例檢查理解」後，在圖上指出「成品與限制」的位置或對應關係；用本單元的一個例子說明它與「資料契約」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "60-reference-and-versions",
@@ -700,7 +818,131 @@
       "tags": [
         "整合專題與驗收交付",
         "reference and versions"
-      ]
+      ],
+      "visual": "review-10-delivery",
+      "visualTask": "讀完「版本矩陣、官方文件與後續路線」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「多種索引」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "搜尋系統的兩條資料路徑",
+      "alt": "搜尋系統的兩條資料路徑；索引期和查詢期需使用相容的分析規則；回傳結果同時保留文件版本與來源。",
+      "caption": "索引期和查詢期需使用相容的分析規則；回傳結果同時保留文件版本與來源。",
+      "group": "foundations",
+      "kind": "fork",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-lexical",
+      "file": "assets/figures/review-02-lexical.svg",
+      "title": "倒排索引把詞連到文件",
+      "alt": "倒排索引把詞連到文件；詞頻、文件長度與稀有度有不同角色；分詞與正規化會改變哪些文件被命中。",
+      "caption": "詞頻、文件長度與稀有度有不同角色；分詞與正規化會改變哪些文件被命中。",
+      "group": "lexical",
+      "kind": "matrix",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-elastic",
+      "file": "assets/figures/review-03-elastic.svg",
+      "title": "向量距離與語意候選",
+      "alt": "向量距離與語意候選；Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "elastic",
+      "kind": "scatter",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-vectors",
+      "file": "assets/figures/review-04-vectors.svg",
+      "title": "ANN用搜尋預算換取召回",
+      "alt": "ANN用搜尋預算換取召回；近似不代表每次找回精確top-k；用精確參照計算Recall並量測延遲。",
+      "caption": "近似不代表每次找回精確top-k；用精確參照計算Recall並量測延遲。",
+      "group": "vectors",
+      "kind": "tree",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-qdrant",
+      "file": "assets/figures/review-05-qdrant.svg",
+      "title": "混合檢索與融合排序",
+      "alt": "混合檢索與融合排序；不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。",
+      "caption": "不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。",
+      "group": "qdrant",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-postgres",
+      "file": "assets/figures/review-06-postgres.svg",
+      "title": "資料庫與搜尋引擎的取捨",
+      "alt": "資料庫與搜尋引擎的取捨；功能、過濾、交易及維運能力需按需求比較；不因能存向量就假設所有搜尋功能相同。",
+      "caption": "功能、過濾、交易及維運能力需按需求比較；不因能存向量就假設所有搜尋功能相同。",
+      "group": "postgres",
+      "kind": "compare",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-hybrid",
+      "file": "assets/figures/review-07-hybrid.svg",
+      "title": "篩選與多租戶查詢",
+      "alt": "篩選與多租戶查詢；過濾時機會影響召回與安全；租戶隔離涵蓋索引、快取和回傳。",
+      "caption": "過濾時機會影響召回與安全；租戶隔離涵蓋索引、快取和回傳。",
+      "group": "hybrid",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-lifecycle",
+      "file": "assets/figures/review-08-lifecycle.svg",
+      "title": "更新刪除與索引一致性",
+      "alt": "更新刪除與索引一致性；來源與索引可能有不同可見時點；刪除需考慮備份、快取與重建流程。",
+      "caption": "來源與索引可能有不同可見時點；刪除需考慮備份、快取與重建流程。",
+      "group": "lifecycle",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-09-operations",
+      "file": "assets/figures/review-09-operations.svg",
+      "title": "搜尋品質與效能的分母",
+      "alt": "搜尋品質與效能的分母；固定查詢集合、真值與索引版本再比較；平均延遲不足以說明尾端請求。",
+      "caption": "固定查詢集合、真值與索引版本再比較；平均延遲不足以說明尾端請求。",
+      "group": "operations",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-10-delivery",
+      "file": "assets/figures/review-10-delivery.svg",
+      "title": "可回放的搜尋專題",
+      "alt": "可回放的搜尋專題；資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。",
+      "caption": "資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。",
+      "group": "delivery",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "search-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "search-study.zip"
   ]
 }

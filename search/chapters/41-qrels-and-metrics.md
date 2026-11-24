@@ -2,6 +2,16 @@
 
 同時量測 ANN 是否接近 Exact，以及搜尋結果是否真的相關。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![篩選與多租戶查詢；過濾時機會影響召回與安全；租戶隔離涵蓋索引、快取和回傳。](assets/figures/review-07-hybrid.svg)
+
+> **圖解｜篩選與多租戶查詢**：過濾時機會影響召回與安全；租戶隔離涵蓋索引、快取和回傳。
+
+**本單元讀圖任務**：讀完「Qrels、Recall、MRR 與 nDCG：別把兩種正確混在一起」後，在圖上指出「回傳欄位」的位置或對應關係；用本單元的一個例子說明它與「身份範圍」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 兩份不同的答案
 
 ANN 的 ground truth 是相同表示、metric 與資格內的 Exact top-k；搜尋品質的 qrels 是人或受控流程標註的 query-document relevance。前者滿分不代表後者滿分。表示不合任務時，Exact 找到的鄰居可能仍無關。

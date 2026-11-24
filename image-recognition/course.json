@@ -1,0 +1,1878 @@
+{
+  "slug": "image-recognition",
+  "title": "影像辨識完整教學",
+  "shortTitle": "影像辨識",
+  "updated": "2026-11-23",
+  "baseline": "PyTorch 2.15.0 · TorchVision 0.29.2 · OpenCV 5.1",
+  "footerLabel": "THE COMPUTER VISION FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/sources.md",
+    "study/versions.json"
+  ],
+  "searchHint": "搜尋像素、CNN、ViT、IoU、AP或分割…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從第一張影像開始",
+      "description": "辨識任務、安裝環境、像素張量與讀圖座標。"
+    },
+    {
+      "id": "processing",
+      "number": "02",
+      "title": "影像處理與空間運算",
+      "description": "色彩、縮放、濾波、邊緣與形態學。"
+    },
+    {
+      "id": "data",
+      "number": "03",
+      "title": "影像資料與標註工程",
+      "description": "資料契約、群組切分、共同增強與批次。"
+    },
+    {
+      "id": "classification",
+      "number": "04",
+      "title": "訓練第一個影像分類器",
+      "description": "特徵、CNN、完整訓練、評估與失敗定位。"
+    },
+    {
+      "id": "transfer",
+      "number": "05",
+      "title": "預訓練與遷移學習",
+      "description": "權重、前處理、凍結解凍、增強與不平衡。"
+    },
+    {
+      "id": "transformers",
+      "number": "06",
+      "title": "ViT與視覺表示學習",
+      "description": "Patch、Attention、自監督、檢索與異常。"
+    },
+    {
+      "id": "detection",
+      "number": "07",
+      "title": "從分類到物件偵測",
+      "description": "框座標、模型家族、定位損失與NMS。"
+    },
+    {
+      "id": "detection-eval",
+      "number": "08",
+      "title": "偵測評估與錯誤分析",
+      "description": "一對一匹配、AP、COCO與定位錯誤。"
+    },
+    {
+      "id": "segmentation",
+      "number": "09",
+      "title": "像素分割與多尺度模型",
+      "description": "遮罩、U-Net、損失、IoU與Dice。"
+    },
+    {
+      "id": "advanced",
+      "number": "10",
+      "title": "進階視覺與影片",
+      "description": "實例全景、提示式模型、開放詞彙、姿態與追蹤。"
+    },
+    {
+      "id": "reliability",
+      "number": "11",
+      "title": "可靠性與負責任使用",
+      "description": "域改變、校準、解釋、切片、隱私與權利。"
+    },
+    {
+      "id": "deployment",
+      "number": "12",
+      "title": "模型交付與部署驗收",
+      "description": "前後處理契約、ONNX、數值一致性與效能。"
+    },
+    {
+      "id": "projects",
+      "number": "13",
+      "title": "四條專題與真實資料導入",
+      "description": "分類、定位、分割、檢索與資料稽核。"
+    },
+    {
+      "id": "reference",
+      "number": "14",
+      "title": "整理知識與持續學習",
+      "description": "數學、速查、除錯、術語、路線與來源。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-task-map",
+      "title": "從影像到辨識任務",
+      "group": "foundations",
+      "summary": "先把輸入、輸出、標註與錯誤成本寫清楚，再決定需要分類、偵測或分割。",
+      "tags": [
+        "電腦視覺",
+        "分類",
+        "物件偵測",
+        "語意分割",
+        "任務定義"
+      ],
+      "visual": "cv01",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：從影像到辨識任務。"
+    },
+    {
+      "id": "002-environment",
+      "title": "環境版本與第一張影像",
+      "group": "foundations",
+      "summary": "建立獨立環境，確認解譯器與套件版本，再產生完全不需下載的第一張影像。",
+      "tags": [
+        "Python",
+        "版本鎖定",
+        "Pillow",
+        "CPU",
+        "環境排錯"
+      ],
+      "visual": "cv02",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：環境版本與第一張影像。",
+      "example": "01_image_io.py"
+    },
+    {
+      "id": "003-pixel-tensors",
+      "title": "像素張量與數值範圍",
+      "group": "foundations",
+      "summary": "同一張影像可以有多種張量表示；形狀、dtype、範圍與通道順序必須一起寫進契約。",
+      "tags": [
+        "HWC",
+        "CHW",
+        "NCHW",
+        "dtype",
+        "正規化",
+        "mask"
+      ],
+      "visual": "cv02",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：像素張量與數值範圍。"
+    },
+    {
+      "id": "004-image-io",
+      "title": "讀圖方向透明度與色彩",
+      "group": "foundations",
+      "summary": "解碼並不是把副檔名改成陣列；先處理方向、模式、透明度與失敗狀態，才能得到一致輸入。",
+      "tags": [
+        "Pillow",
+        "EXIF",
+        "RGB",
+        "BGR",
+        "alpha",
+        "影像解碼"
+      ],
+      "visual": "cv03",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：讀圖方向透明度與色彩。",
+      "example": "01_image_io.py"
+    },
+    {
+      "id": "005-geometry",
+      "title": "座標與幾何轉換",
+      "group": "foundations",
+      "summary": "把陣列索引、像素邊界與模型框座標分開，讓縮放、裁切、翻轉都能同步改動標註。",
+      "tags": [
+        "XYXY",
+        "半開區間",
+        "裁切",
+        "水平翻轉",
+        "座標轉換"
+      ],
+      "visual": "cv04",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：座標與幾何轉換。"
+    },
+    {
+      "id": "006-foundation-exercises",
+      "title": "影像入門練習與解析",
+      "group": "foundations",
+      "summary": "用一組有明確答案的資料契約題，驗收影像形狀、讀圖政策與幾何操作是否真的一致。",
+      "tags": [
+        "習題",
+        "資料契約",
+        "EXIF",
+        "dtype",
+        "座標驗證"
+      ],
+      "visual": "cv02",
+      "visualTask": "先指出圖中的輸入與輸出，再用本單元的術語描述它們；檢查尺寸、軸順序與座標是否一致。 本頁主題：影像入門練習與解析。"
+    },
+    {
+      "id": "007-color",
+      "title": "RGB灰階與色彩空間",
+      "group": "processing",
+      "summary": "把顏色理解成帶有編碼與範圍的座標，實際比較灰階、HSV 與照明改變造成的資訊差異。",
+      "tags": [
+        "RGB",
+        "灰階",
+        "HSV",
+        "色彩空間",
+        "照明"
+      ],
+      "visual": "cv03",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：RGB灰階與色彩空間。",
+      "example": "02_color_spaces.py"
+    },
+    {
+      "id": "008-resize",
+      "title": "縮放插值與長寬比",
+      "group": "processing",
+      "summary": "縮放會改變訊號與幾何；學會選擇插值、處理長寬比，並把影像與標註一起映射。",
+      "tags": [
+        "Resize",
+        "插值",
+        "反混疊",
+        "letterbox",
+        "長寬比"
+      ],
+      "visual": "cv04",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：縮放插值與長寬比。",
+      "example": "03_resize_coordinates.py"
+    },
+    {
+      "id": "009-filtering",
+      "title": "濾波卷積與邊界",
+      "group": "processing",
+      "summary": "從九個數字的加權和開始，理解平滑、銳化、相關與卷積，以及為什麼邊界條件會改變答案。",
+      "tags": [
+        "卷積",
+        "互相關",
+        "filter2D",
+        "kernel",
+        "padding",
+        "高斯濾波"
+      ],
+      "visual": "cv07",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：濾波卷積與邊界。",
+      "example": "04_filter_edges.py"
+    },
+    {
+      "id": "010-edges",
+      "title": "梯度邊緣與閾值",
+      "group": "processing",
+      "summary": "用有正負號的差分量測局部變化，再區分邊緣偵測、區域閾值與物件答案。",
+      "tags": [
+        "Sobel",
+        "梯度",
+        "Canny",
+        "threshold",
+        "閾值選擇"
+      ],
+      "visual": "cv03",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：梯度邊緣與閾值。",
+      "example": "04_filter_edges.py"
+    },
+    {
+      "id": "011-morphology",
+      "title": "二值化連通元件與形態學",
+      "group": "processing",
+      "summary": "把像素集合變成可量測區域，並理解連通性、腐蝕與膨脹如何改變計數與面積。",
+      "tags": [
+        "二值遮罩",
+        "連通元件",
+        "腐蝕",
+        "膨脹",
+        "開運算",
+        "閉運算"
+      ],
+      "visual": "cv17",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：二值化連通元件與形態學。",
+      "example": "05_morphology.py"
+    },
+    {
+      "id": "012-processing-exercises",
+      "title": "影像處理練習與解析",
+      "group": "processing",
+      "summary": "用手算、反例與比較實驗，驗收色彩、縮放、濾波、邊緣及連通元件流程。",
+      "tags": [
+        "習題",
+        "色彩",
+        "插值",
+        "濾波",
+        "連通性",
+        "實驗設計"
+      ],
+      "visual": "cv04",
+      "visualTask": "追蹤像素或框經處理後的變化；說明哪些資訊被保留、哪些不可逆，以及本單元方法的適用條件。 本頁主題：影像處理練習與解析。"
+    },
+    {
+      "id": "013-annotations",
+      "title": "資料標註與資料契約",
+      "group": "data",
+      "summary": "先定義答案的含義與合法結構，再設計標註、稽核與模型介面，避免把不同任務的 ID 規則混用。",
+      "tags": [
+        "標註",
+        "資料契約",
+        "class mapping",
+        "XYXY",
+        "ignore label",
+        "資料版本"
+      ],
+      "visual": "cv05",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：資料標註與資料契約。"
+    },
+    {
+      "id": "014-splitting",
+      "title": "群組切分與資料洩漏",
+      "group": "data",
+      "summary": "用未見資料回答部署問題；先隔離相依群組與重複來源，再做增強、統計估計與模型選擇。",
+      "tags": [
+        "資料切分",
+        "群組",
+        "資料洩漏",
+        "train val test",
+        "近重複",
+        "時間切分"
+      ],
+      "visual": "cv05",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：群組切分與資料洩漏。",
+      "example": "06_group_split.py"
+    },
+    {
+      "id": "015-datasets",
+      "title": "自訂Dataset與影像稽核",
+      "group": "data",
+      "summary": "把固定切分清單轉成可檢查的樣本介面，將資料損壞、模式與標籤問題擋在訓練之前。",
+      "tags": [
+        "Dataset",
+        "manifest",
+        "資料稽核",
+        "影像載入",
+        "class mapping"
+      ],
+      "visual": "cv06",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：自訂Dataset與影像稽核。"
+    },
+    {
+      "id": "016-transforms",
+      "title": "增強與共同隨機幾何",
+      "group": "data",
+      "summary": "增強必須同時尊重影像幾何與標籤語意；用 transforms v2 共同變換影像、框與遮罩。",
+      "tags": [
+        "資料增強",
+        "transforms v2",
+        "tv_tensors",
+        "boxes",
+        "masks",
+        "標籤一致"
+      ],
+      "visual": "cv06",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：增強與共同隨機幾何。",
+      "example": "07_joint_transforms.py"
+    },
+    {
+      "id": "017-loaders",
+      "title": "DataLoader批次與可重現性",
+      "group": "data",
+      "summary": "將樣本組成適合任務的批次，先在單進程跑對，再逐步處理 worker、隨機狀態與效能。",
+      "tags": [
+        "DataLoader",
+        "collate",
+        "num_workers",
+        "seed",
+        "Windows",
+        "可重現"
+      ],
+      "visual": "cv05",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：DataLoader批次與可重現性。"
+    },
+    {
+      "id": "018-data-exercises",
+      "title": "資料工程練習與解析",
+      "group": "data",
+      "summary": "把標註、切分、Dataset、增強與批次串成可驗收流程，避免「程式會跑」掩蓋錯誤資料。",
+      "tags": [
+        "習題",
+        "資料洩漏",
+        "標註契約",
+        "增強",
+        "DataLoader",
+        "資料驗收"
+      ],
+      "visual": "cv06",
+      "visualTask": "沿影像和標註的路徑讀圖，指出必須共同改變的欄位，以及需要隔離的來源群組。 本頁主題：資料工程練習與解析。"
+    },
+    {
+      "id": "019-features",
+      "title": "從影像特徵建立第一條基準",
+      "group": "classification",
+      "summary": "先有可檢查的基準，才能知道複雜模型改善了什麼。特徵是把影像轉成可比較的數字；顏色比例、面積、長寬比、梯度方向直方圖，都在保留某些資訊的同時丟掉另一些資訊。",
+      "tags": [
+        "baseline",
+        "HOG",
+        "特徵",
+        "資料洩漏"
+      ],
+      "visual": "cv01",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：從影像特徵建立第一條基準。"
+    },
+    {
+      "id": "020-cnn",
+      "title": "CNN如何看見局部與空間",
+      "group": "classification",
+      "summary": "卷積神經網路把相同的小型濾波器移到不同位置，學習可重用的局部特徵；較深的層再把它們組成較大的結構。",
+      "tags": [
+        "CNN",
+        "卷積",
+        "感受野",
+        "shape"
+      ],
+      "visual": "cv07",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：CNN如何看見局部與空間。",
+      "example": "08_convolution.py"
+    },
+    {
+      "id": "021-training",
+      "title": "從零訓練影像分類器",
+      "group": "classification",
+      "summary": "完整訓練不是只呼叫backward；它包含資料來源、目標格式、更新順序、驗證邊界及可重現的紀錄。",
+      "tags": [
+        "training",
+        "CrossEntropyLoss",
+        "logits",
+        "AdamW"
+      ],
+      "visual": "cv08",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：從零訓練影像分類器。",
+      "example": "09_train_classifier.py"
+    },
+    {
+      "id": "022-classification-metrics",
+      "title": "準確率之外的分類評估",
+      "group": "classification",
+      "summary": "分類評估要先決定樣本是什麼、類別代表什麼，以及哪種錯誤代價較高，再計算分數。",
+      "tags": [
+        "precision",
+        "recall",
+        "F1",
+        "macro",
+        "混淆矩陣"
+      ],
+      "visual": "cv10",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：準確率之外的分類評估。",
+      "example": "10_classification_metrics.py"
+    },
+    {
+      "id": "023-training-diagnosis",
+      "title": "模型學不動時如何逐步定位",
+      "group": "classification",
+      "summary": "除錯要把「資料是否正確」「梯度是否更新」「模型是否能擬合」「是否泛化」拆成可觀察的問題。",
+      "tags": [
+        "debug",
+        "overfit batch",
+        "NaN",
+        "BatchNorm"
+      ],
+      "visual": "cv08",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：模型學不動時如何逐步定位。"
+    },
+    {
+      "id": "024-classification-exercises",
+      "title": "分類實作練習與完整解析",
+      "group": "classification",
+      "summary": "本章練習把shape、訓練與評估連成一個完整決策，先自行計算，再核對解答。",
+      "tags": [
+        "exercises",
+        "CNN",
+        "驗收",
+        "classification"
+      ],
+      "visual": "cv07",
+      "visualTask": "說出模型在此階段收到什麼、輸出什麼；用本單元算例核對shape、狀態或評估分母。 本頁主題：分類實作練習與完整解析。"
+    },
+    {
+      "id": "025-resnet",
+      "title": "殘差網路與骨幹特徵",
+      "group": "transfer",
+      "summary": "骨幹負責把像素轉成多層特徵，任務頭再把特徵轉成類別、框或遮罩；ResNet是理解這種分工的好起點。",
+      "tags": [
+        "ResNet",
+        "backbone",
+        "residual",
+        "FPN"
+      ],
+      "visual": "cv09",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：殘差網路與骨幹特徵。",
+      "example": "11_resnet_contract.py"
+    },
+    {
+      "id": "026-pretrained-weights",
+      "title": "預訓練權重與前處理配方",
+      "group": "transfer",
+      "summary": "預訓練模型包含權重、輸入配方、標籤對照與訓練資料背景；只拿到一個pth檔並不足以重現預測。",
+      "tags": [
+        "weights",
+        "preprocessing",
+        "Normalize",
+        "license"
+      ],
+      "visual": "cv09",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：預訓練權重與前處理配方。"
+    },
+    {
+      "id": "027-fine-tuning",
+      "title": "凍結解凍與分層微調",
+      "group": "transfer",
+      "summary": "微調是在保留已有表示與適應新資料之間取捨，凍結策略則決定哪些參數和狀態能改變。",
+      "tags": [
+        "fine tuning",
+        "freeze",
+        "BatchNorm",
+        "param groups"
+      ],
+      "visual": "cv09",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：凍結解凍與分層微調。",
+      "example": "11_resnet_contract.py"
+    },
+    {
+      "id": "028-augmentation",
+      "title": "增強如何保留標籤語意",
+      "group": "transfer",
+      "summary": "資料增強是提出一個假設：改變某些影像條件後，目標語意仍維持。假設錯了，增強會直接製造錯標。",
+      "tags": [
+        "augmentation",
+        "Mixup",
+        "CutMix",
+        "標籤語意"
+      ],
+      "visual": "cv06",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：增強如何保留標籤語意。"
+    },
+    {
+      "id": "029-imbalance",
+      "title": "不平衡資料與決策門檻",
+      "group": "transfer",
+      "summary": "不平衡會同時影響訓練訊號、指標解讀與部署誤報量，三者需要分開處理。",
+      "tags": [
+        "imbalance",
+        "threshold",
+        "focal loss",
+        "precision"
+      ],
+      "visual": "cv10",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：不平衡資料與決策門檻。"
+    },
+    {
+      "id": "030-transfer-exercises",
+      "title": "遷移學習練習與解析",
+      "group": "transfer",
+      "summary": "本章驗收不只要求程式能建立模型，還要求能說明權重、前處理、可訓練參數與決策條件。",
+      "tags": [
+        "exercises",
+        "transfer",
+        "augmentation",
+        "成本"
+      ],
+      "visual": "cv10",
+      "visualTask": "指出哪些參數、狀態或目標在改變，並解釋為何相同前處理與獨立驗證仍然必要。 本頁主題：遷移學習練習與解析。"
+    },
+    {
+      "id": "031-patches",
+      "title": "把影像切成Patch與Token",
+      "group": "transformers",
+      "summary": "Vision Transformer將影像分成小區塊，再把每塊轉成token，讓序列模型處理空間資料。",
+      "tags": [
+        "ViT",
+        "patch",
+        "token",
+        "position"
+      ],
+      "visual": "cv11",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：把影像切成Patch與Token。",
+      "example": "12_patches_attention.py"
+    },
+    {
+      "id": "032-attention",
+      "title": "影像Attention與計算成本",
+      "group": "transformers",
+      "summary": "Self-attention依內容決定不同token之間如何混合資訊，讓一個區域能直接參考較遠位置。",
+      "tags": [
+        "attention",
+        "QKV",
+        "complexity",
+        "MultiheadAttention"
+      ],
+      "visual": "cv12",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：影像Attention與計算成本。"
+    },
+    {
+      "id": "033-vit",
+      "title": "ViT與階層式視覺架構",
+      "group": "transformers",
+      "summary": "完整ViT除了patch投影與attention，還包括位置資訊、正規化、MLP、殘差路徑及任務輸出。",
+      "tags": [
+        "ViT",
+        "Swin",
+        "ConvNeXt",
+        "LayerNorm"
+      ],
+      "visual": "cv12",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：ViT與階層式視覺架構。"
+    },
+    {
+      "id": "034-self-supervised",
+      "title": "自監督視覺表示如何學習",
+      "group": "transformers",
+      "summary": "自監督把資料本身轉成學習訊號，能減少人工標籤需求，但不等於不需要資料品質或驗證。",
+      "tags": [
+        "self-supervised",
+        "contrastive",
+        "MAE",
+        "DINO",
+        "collapse"
+      ],
+      "visual": "cv11",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：自監督視覺表示如何學習。"
+    },
+    {
+      "id": "035-visual-representations",
+      "title": "用視覺Embedding做檢索與異常比較",
+      "group": "transformers",
+      "summary": "分類頭之外的特徵可以用來比較影像，但相似度所代表的語意取決於模型學過什麼。",
+      "tags": [
+        "visual embedding",
+        "retrieval",
+        "cosine",
+        "anomaly"
+      ],
+      "visual": "cv12",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：用視覺Embedding做檢索與異常比較。",
+      "example": "24_visual_retrieval.py"
+    },
+    {
+      "id": "036-transformer-exercises",
+      "title": "視覺表示練習與解析",
+      "group": "transformers",
+      "summary": "本章練習檢查token形狀、成本與表示評估，不以模型名稱替代推理。",
+      "tags": [
+        "exercises",
+        "ViT",
+        "representation",
+        "版本"
+      ],
+      "visual": "cv11",
+      "visualTask": "先計算圖中的空間或序列維度，再說明表示保留的資訊與成本；不要把示意連結當成已學得的語意。 本頁主題：視覺表示練習與解析。"
+    },
+    {
+      "id": "037-boxes",
+      "title": "框格式與座標邊界",
+      "group": "detection",
+      "summary": "從框的語意、座標格式與影像邊界開始，手算轉換、縮放與IoU。",
+      "tags": [
+        "XYXY",
+        "XYWH",
+        "座標",
+        "IoU"
+      ],
+      "visual": "cv13",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：框格式與座標邊界。",
+      "example": "13_iou_nms.py"
+    },
+    {
+      "id": "038-detection-targets",
+      "title": "偵測資料與共同轉換",
+      "group": "detection",
+      "summary": "建立每張圖不同物件數的target，讓幾何轉換同步作用於影像、框與遮罩。",
+      "tags": [
+        "tv_tensors",
+        "transforms v2",
+        "collate_fn",
+        "targets"
+      ],
+      "visual": "cv06",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：偵測資料與共同轉換。",
+      "example": "07_joint_transforms.py"
+    },
+    {
+      "id": "039-detector-families",
+      "title": "兩階段密集預測與集合預測",
+      "group": "detection",
+      "summary": "用候選框如何產生、正負例如何分配與重複如何消除，比較三類偵測架構。",
+      "tags": [
+        "Faster R-CNN",
+        "RetinaNet",
+        "DETR",
+        "anchors"
+      ],
+      "visual": "cv14",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：兩階段密集預測與集合預測。"
+    },
+    {
+      "id": "040-detection-losses",
+      "title": "分類定位與匹配損失",
+      "group": "detection",
+      "summary": "分解偵測損失，辨認正負例分配、框迴歸與多項損失的尺度。",
+      "tags": [
+        "Focal Loss",
+        "Smooth L1",
+        "GIoU",
+        "matching"
+      ],
+      "visual": "cv14",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：分類定位與匹配損失。"
+    },
+    {
+      "id": "041-nms",
+      "title": "信心門檻與非極大值抑制",
+      "group": "detection",
+      "summary": "區分分數過濾、class-aware NMS與匹配門檻，手算保留與抑制的框。",
+      "tags": [
+        "NMS",
+        "threshold",
+        "class-aware",
+        "duplicates"
+      ],
+      "visual": "cv13",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：信心門檻與非極大值抑制。",
+      "example": "13_iou_nms.py"
+    },
+    {
+      "id": "042-detection-exercises",
+      "title": "物件偵測練習與解析",
+      "group": "detection",
+      "summary": "用完整錯誤案例串起框格式、成對轉換、責任分配與NMS。",
+      "tags": [
+        "偵測習題",
+        "資料契約",
+        "手算",
+        "答案"
+      ],
+      "visual": "cv14",
+      "visualTask": "核對框、類別與分數的意義；區分框邊界、模型輸出、抑制規則與真值匹配。 本頁主題：物件偵測練習與解析。"
+    },
+    {
+      "id": "043-matching",
+      "title": "一對一匹配與重複預測",
+      "group": "detection-eval",
+      "summary": "依分數、影像與類別逐筆配對，辨認TP、FP、FN以及重複框。",
+      "tags": [
+        "matching",
+        "TP",
+        "FP",
+        "FN"
+      ],
+      "visual": "cv15",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：一對一匹配與重複預測。",
+      "example": "14_detection_ap.py"
+    },
+    {
+      "id": "044-precision-recall",
+      "title": "PR曲線與AP的計算",
+      "group": "detection-eval",
+      "summary": "由分數排序手算累積precision與recall，區分工作門檻和整條曲線的AP。",
+      "tags": [
+        "PR curve",
+        "AP",
+        "ranking",
+        "插值"
+      ],
+      "visual": "cv16",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：PR曲線與AP的計算。",
+      "example": "14_detection_ap.py"
+    },
+    {
+      "id": "045-coco-map",
+      "title": "COCO評估與mAP定義",
+      "group": "detection-eval",
+      "summary": "讀懂AP50、AP75、IoU平均與大小切片，保存可重算的正式評估設定。",
+      "tags": [
+        "COCOeval",
+        "mAP",
+        "AP50",
+        "maxDets"
+      ],
+      "visual": "cv16",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：COCO評估與mAP定義。"
+    },
+    {
+      "id": "046-localization-errors",
+      "title": "小物件遮擋與定位錯誤",
+      "group": "detection-eval",
+      "summary": "將錯誤拆成類別、定位、重複、背景與漏檢，用切片實驗選擇改善方向。",
+      "tags": [
+        "small objects",
+        "occlusion",
+        "error analysis",
+        "TIDE"
+      ],
+      "visual": "cv15",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：小物件遮擋與定位錯誤。"
+    },
+    {
+      "id": "047-detection-training",
+      "title": "偵測微調的實作契約",
+      "group": "detection-eval",
+      "summary": "逐步確認模型初始化、資料、loss字典與推論輸出，辨認離線驗證和真正微調。",
+      "tags": [
+        "FasterRCNN",
+        "train eval",
+        "weights",
+        "fine-tuning"
+      ],
+      "visual": "cv14",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：偵測微調的實作契約。",
+      "example": "15_detector_contract.py"
+    },
+    {
+      "id": "048-evaluation-exercises",
+      "title": "偵測評估練習與解析",
+      "group": "detection-eval",
+      "summary": "以手算與報告審查，確認評估器真的量到你要的偵測能力。",
+      "tags": [
+        "評估習題",
+        "AP答案",
+        "誤報",
+        "報告"
+      ],
+      "visual": "cv16",
+      "visualTask": "依排序追蹤TP／FP與分母變化，分開教學算例與正式COCO設定，說明一個重複或定位錯誤的影響。 本頁主題：偵測評估練習與解析。"
+    },
+    {
+      "id": "049-segmentation-tasks",
+      "title": "像素分類與分割任務",
+      "group": "segmentation",
+      "summary": "從每個像素的答案出發，分清二元、多類、多標籤、語意與實例分割。",
+      "tags": [
+        "semantic segmentation",
+        "logits",
+        "mask",
+        "pixel"
+      ],
+      "visual": "cv17",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：像素分類與分割任務。"
+    },
+    {
+      "id": "050-mask-data",
+      "title": "遮罩格式與ignore_index",
+      "group": "segmentation",
+      "summary": "保存類別ID與忽略區域，避免色彩圖、插值和正規化破壞遮罩語意。",
+      "tags": [
+        "Mask",
+        "ignore_index",
+        "nearest",
+        "palette"
+      ],
+      "visual": "cv17",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：遮罩格式與ignore_index。",
+      "example": "16_mask_pipeline.py"
+    },
+    {
+      "id": "051-unet",
+      "title": "U-Net與多尺度跳接",
+      "group": "segmentation",
+      "summary": "逐層追蹤空間解析度與通道，理解編碼器、解碼器和skip如何重建像素答案。",
+      "tags": [
+        "U-Net",
+        "encoder decoder",
+        "skip connection",
+        "shape"
+      ],
+      "visual": "cv18",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：U-Net與多尺度跳接。"
+    },
+    {
+      "id": "052-segmentation-loss",
+      "title": "交叉熵Dice與損失設計",
+      "group": "segmentation",
+      "summary": "辨認logits與mask的相容格式，手算soft Dice並處理背景、空類與忽略區域。",
+      "tags": [
+        "CrossEntropy",
+        "Dice loss",
+        "BCEWithLogits",
+        "ignore"
+      ],
+      "visual": "cv18",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：交叉熵Dice與損失設計。"
+    },
+    {
+      "id": "053-segmentation-metrics",
+      "title": "IoU與Dice的分母",
+      "group": "segmentation",
+      "summary": "從像素集合計算重疊，分清逐圖、逐類與全資料聚合，以及空集合政策。",
+      "tags": [
+        "IoU",
+        "Dice",
+        "mIoU",
+        "macro micro"
+      ],
+      "visual": "cv17",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：IoU與Dice的分母。",
+      "example": "18_segmentation_metrics.py"
+    },
+    {
+      "id": "054-segmentation-exercises",
+      "title": "分割練習與解析",
+      "group": "segmentation",
+      "summary": "從張量形狀、遮罩轉換到指標分母，找出容易讓分割成績失真的錯誤。",
+      "tags": [
+        "分割習題",
+        "mask答案",
+        "ignore",
+        "驗收"
+      ],
+      "visual": "cv18",
+      "visualTask": "指出每個像素的類別及忽略區，追蹤空間對齊，並核對損失或指標的分母政策。 本頁主題：分割練習與解析。"
+    },
+    {
+      "id": "055-instance-panoptic",
+      "title": "實例與全景分割",
+      "group": "advanced",
+      "summary": "將像素類別與物件身分分開，理解things、stuff、Mask R-CNN與panoptic交付。",
+      "tags": [
+        "instance segmentation",
+        "panoptic",
+        "Mask R-CNN",
+        "PQ"
+      ],
+      "visual": "cv17",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：實例與全景分割。"
+    },
+    {
+      "id": "056-prompt-segmentation",
+      "title": "提示式基礎模型與SAM",
+      "group": "advanced",
+      "summary": "區分幾何提示、概念提示與影片追蹤，設計不偷看答案的互動分割評估。",
+      "tags": [
+        "SAM",
+        "SAM 2",
+        "SAM 3.1",
+        "promptable segmentation"
+      ],
+      "visual": "cv19",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：提示式基礎模型與SAM。"
+    },
+    {
+      "id": "057-open-vocabulary",
+      "title": "開放詞彙與零樣本辨識",
+      "group": "advanced",
+      "summary": "用圖文相似度理解零樣本分類，辨認候選詞、未知拒答與定位能力的界線。",
+      "tags": [
+        "CLIP",
+        "zero-shot",
+        "open-vocabulary",
+        "Grounding DINO"
+      ],
+      "visual": "cv19",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：開放詞彙與零樣本辨識。"
+    },
+    {
+      "id": "058-keypoints",
+      "title": "關鍵點姿態與標註可見性",
+      "group": "advanced",
+      "summary": "建立關鍵點順序、可見性與翻轉對照，分清像素距離、OKS與真實姿態。",
+      "tags": [
+        "keypoints",
+        "pose",
+        "visibility",
+        "OKS"
+      ],
+      "visual": "cv20",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：關鍵點姿態與標註可見性。"
+    },
+    {
+      "id": "059-tracking",
+      "title": "追蹤與影片中的資料邊界",
+      "group": "advanced",
+      "summary": "從逐幀偵測到跨幀身分關聯，理解遮擋、ID切換、時間戳與影片評估。",
+      "tags": [
+        "tracking",
+        "ByteTrack",
+        "ID switch",
+        "HOTA"
+      ],
+      "visual": "cv20",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：追蹤與影片中的資料邊界。"
+    },
+    {
+      "id": "060-advanced-exercises",
+      "title": "進階視覺練習與解析",
+      "group": "advanced",
+      "summary": "以任務選擇和流程審查，整合實例、提示、開放詞彙、關鍵點與追蹤。",
+      "tags": [
+        "進階習題",
+        "SAM版本",
+        "zero-shot",
+        "追蹤答案"
+      ],
+      "visual": "cv19",
+      "visualTask": "辨認本任務新增的輸入、標註與輸出，說明模型能力與仍需外部資料驗證的部分。 本頁主題：進階視覺練習與解析。"
+    },
+    {
+      "id": "061-distribution-shift",
+      "title": "分布改變與域外輸入",
+      "group": "reliability",
+      "summary": "從資料分布與任務邊界出發，分開判斷輸入改變、性能下降及未知類別，設計可以定位原因的視覺壓力測試。",
+      "tags": [
+        "distribution shift",
+        "OOD",
+        "域外",
+        "資料漂移",
+        "捷徑",
+        "WILDS"
+      ],
+      "visual": "cv21",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：分布改變與域外輸入。",
+      "example": "20_shift_slices.py"
+    },
+    {
+      "id": "062-calibration",
+      "title": "信心分數校準與拒答",
+      "group": "reliability",
+      "summary": "明確區分class-1機率、預測類別信心與命中率，手算兩種ECE，並把溫度校準和人工複核量一起驗收。",
+      "tags": [
+        "calibration",
+        "ECE",
+        "temperature scaling",
+        "拒答",
+        "coverage",
+        "risk"
+      ],
+      "visual": "cv22",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：信心分數校準與拒答。",
+      "example": "19_calibration.py"
+    },
+    {
+      "id": "063-explanations",
+      "title": "解釋熱圖與捷徑學習",
+      "group": "reliability",
+      "summary": "由Grad-CAM的加權計算理解熱圖，再用參數隨機化、遮蔽和背景替換檢查模型是否依賴捷徑。",
+      "tags": [
+        "Grad-CAM",
+        "saliency",
+        "解釋",
+        "捷徑學習",
+        "randomization",
+        "因果"
+      ],
+      "visual": "cv21",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：解釋熱圖與捷徑學習。"
+    },
+    {
+      "id": "064-slice-evaluation",
+      "title": "分群切片公平性與不確定性",
+      "group": "reliability",
+      "summary": "用任務分母、來源群組及不確定性理解切片差異，避免整體平均值與大量相關影格製造虛假的可靠性。",
+      "tags": [
+        "slice",
+        "公平性",
+        "bootstrap",
+        "Wilson",
+        "群組",
+        "不確定性",
+        "分母"
+      ],
+      "visual": "cv21",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：分群切片公平性與不確定性。"
+    },
+    {
+      "id": "065-privacy",
+      "title": "影像隱私授權與生物辨識",
+      "group": "reliability",
+      "summary": "從影像資料生命週期安排最小收集、授權、存取與刪除，再分辨人臉偵測、驗證與識別的不同任務成本。",
+      "tags": [
+        "隱私",
+        "授權",
+        "biometrics",
+        "生物辨識",
+        "最小化",
+        "EXIF",
+        "FMR"
+      ],
+      "visual": "cv22",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：影像隱私授權與生物辨識。"
+    },
+    {
+      "id": "066-reliability-exercises",
+      "title": "可靠性練習與解析",
+      "group": "reliability",
+      "summary": "用六個可手算與可稽核的案例，整合漂移診斷、兩種ECE、拒答負載、熱圖檢查、群組不確定性及影像資料生命週期。",
+      "tags": [
+        "練習",
+        "解析",
+        "可靠性",
+        "ECE",
+        "群組bootstrap",
+        "隱私",
+        "驗收"
+      ],
+      "visual": "cv22",
+      "visualTask": "分開圖中可觀察的結果與推論；指出缺少什麼分母、真值或外部條件，才不能做更強的主張。 本頁主題：可靠性練習與解析。"
+    },
+    {
+      "id": "067-artifacts",
+      "title": "模型成品與前後處理契約",
+      "group": "deployment",
+      "summary": "可部署成品不是只有一份權重；還必須讓另一個人知道如何把原始影像轉成模型輸入，再把輸出轉成正確結果。",
+      "tags": [
+        "artifact",
+        "contract",
+        "preprocessing",
+        "hash"
+      ],
+      "visual": "cv23",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：模型成品與前後處理契約。"
+    },
+    {
+      "id": "068-onnx-export",
+      "title": "使用現行ONNX路徑匯出模型",
+      "group": "deployment",
+      "summary": "ONNX把模型運算表示成可由其他runtime執行的圖；匯出成功只證明轉換可完成，還要驗證數值、形狀與完整前後處理。",
+      "tags": [
+        "ONNX",
+        "dynamo",
+        "dynamic_shapes",
+        "export"
+      ],
+      "visual": "cv23",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：使用現行ONNX路徑匯出模型。",
+      "example": "21_export_onnx.py"
+    },
+    {
+      "id": "069-runtime-parity",
+      "title": "數值一致性與部署驗收",
+      "group": "deployment",
+      "summary": "部署驗收要比較同一個函數、同一份輸入與同一個後處理政策，才知道差異發生在哪裡。",
+      "tags": [
+        "parity",
+        "rtol",
+        "atol",
+        "regression test"
+      ],
+      "visual": "cv23",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：數值一致性與部署驗收。",
+      "example": "21_export_onnx.py"
+    },
+    {
+      "id": "070-performance",
+      "title": "延遲吞吐記憶體與量化",
+      "group": "deployment",
+      "summary": "速度需要先定義量測範圍與條件，才能把數字轉成部署決策。",
+      "tags": [
+        "latency",
+        "throughput",
+        "p95",
+        "quantization"
+      ],
+      "visual": "cv24",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：延遲吞吐記憶體與量化。",
+      "example": "22_benchmark.py"
+    },
+    {
+      "id": "071-monitoring",
+      "title": "上線監測與資料迴流",
+      "group": "deployment",
+      "summary": "上線後會變的是相機、照明、產品、使用者與流程，模型監測需要能區分這些來源。",
+      "tags": [
+        "monitoring",
+        "drift",
+        "feedback",
+        "rollback"
+      ],
+      "visual": "cv24",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：上線監測與資料迴流。"
+    },
+    {
+      "id": "072-deployment-exercises",
+      "title": "部署驗收練習與解析",
+      "group": "deployment",
+      "summary": "本章把前處理、匯出、速度與監測放在同一份交付中，目標是另一個人可以重現並判斷限制。",
+      "tags": [
+        "exercises",
+        "deployment",
+        "ONNX",
+        "驗收"
+      ],
+      "visual": "cv23",
+      "visualTask": "從原始影像走到輸出，指出本單元必須保存或實測的契約，並標明量測範圍。 本頁主題：部署驗收練習與解析。"
+    },
+    {
+      "id": "073-classification-project",
+      "title": "專題：從影像到分類報告",
+      "group": "projects",
+      "summary": "本專題以可從零執行的小型分類器，完成資料生成、訓練、獨立驗證、錯誤切片與成品契約。",
+      "tags": [
+        "project",
+        "classification",
+        "synthetic",
+        "report"
+      ],
+      "visual": "cv25",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：專題：從影像到分類報告。",
+      "example": "09_train_classifier.py"
+    },
+    {
+      "id": "074-detection-project",
+      "title": "專題：單物件定位到多物件偵測",
+      "group": "projects",
+      "summary": "先完成受限制的單物件定位，再理解一般偵測器多出的物件數、類別、背景與匹配問題。",
+      "tags": [
+        "project",
+        "detection",
+        "localization",
+        "SmoothL1"
+      ],
+      "visual": "cv25",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：專題：單物件定位到多物件偵測。",
+      "example": "23_train_locator.py"
+    },
+    {
+      "id": "075-segmentation-project",
+      "title": "專題：可訓練的像素分割",
+      "group": "projects",
+      "summary": "分割專題把每個像素變成分類目標，特別重視幾何對齊、類別ID與分母政策。",
+      "tags": [
+        "project",
+        "segmentation",
+        "mask",
+        "IoU",
+        "Dice"
+      ],
+      "visual": "cv25",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：專題：可訓練的像素分割。",
+      "example": "17_train_segmenter.py"
+    },
+    {
+      "id": "076-retrieval-project",
+      "title": "專題：相似影像與異常稽核",
+      "group": "projects",
+      "summary": "這個專題用已訓練的分類器產生向量，建立可解釋的影像鄰居查詢，並檢查相似度的限制。",
+      "tags": [
+        "project",
+        "retrieval",
+        "anomaly",
+        "embedding"
+      ],
+      "visual": "cv26",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：專題：相似影像與異常稽核。",
+      "example": "24_visual_retrieval.py"
+    },
+    {
+      "id": "077-data-audit-project",
+      "title": "專題：真實資料導入與品質稽核",
+      "group": "projects",
+      "summary": "從教學合成資料換成真實影像時，第一步是建立資料契約與稽核，避免把來源問題誤判為模型能力。",
+      "tags": [
+        "project",
+        "audit",
+        "manifest",
+        "annotation",
+        "leakage"
+      ],
+      "visual": "cv26",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：專題：真實資料導入與品質稽核。"
+    },
+    {
+      "id": "078-project-exercises",
+      "title": "完整專題驗收與延伸實驗",
+      "group": "projects",
+      "summary": "專題完成的判準是資料到輸出的路徑可重現、錯誤可追溯、限制可說明，而不是只得到一個漂亮分數。",
+      "tags": [
+        "exercises",
+        "capstone",
+        "deliverable",
+        "report"
+      ],
+      "visual": "cv26",
+      "visualTask": "沿專題資料流逐步對照命令與成品，指出真值、保留集、指標及版本紀錄的位置。 本頁主題：完整專題驗收與延伸實驗。"
+    },
+    {
+      "id": "079-math-review",
+      "title": "視覺任務必要的數學回顧",
+      "group": "reference",
+      "summary": "用影像的形狀、局部加權和、機率與梯度，建立讀懂模型及指標所需的最小數學工具。",
+      "tags": [
+        "數學回顧",
+        "張量",
+        "卷積",
+        "softmax",
+        "梯度",
+        "集合"
+      ],
+      "visual": "cv27",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：視覺任務必要的數學回顧。"
+    },
+    {
+      "id": "080-formula-sheet",
+      "title": "形狀座標與指標速查",
+      "group": "reference",
+      "summary": "把公式連同輸入契約、分母與適用條件一起保存，避免同名指標其實採不同計算協定。",
+      "tags": [
+        "速查",
+        "XYXY",
+        "IoU",
+        "Dice",
+        "AP",
+        "precision",
+        "recall"
+      ],
+      "visual": "cv27",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：形狀座標與指標速查。"
+    },
+    {
+      "id": "081-troubleshooting",
+      "title": "環境與模型故障排查",
+      "group": "reference",
+      "summary": "從解譯器、資料、前處理與輸出契約逐層縮小問題，用最小可重現案例取代盲目換模型。",
+      "tags": [
+        "排錯",
+        "環境",
+        "NMS",
+        "CUDA",
+        "loss",
+        "ONNX",
+        "效能"
+      ],
+      "visual": "cv28",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：環境與模型故障排查。"
+    },
+    {
+      "id": "082-glossary",
+      "title": "中英術語與任務對照",
+      "group": "reference",
+      "summary": "以簡短定義與常見混淆建立詞彙地圖，查詞時同時確認資料角色、任務與評估條件。",
+      "tags": [
+        "術語",
+        "glossary",
+        "電腦視覺",
+        "模型評估",
+        "部署"
+      ],
+      "visual": "cv27",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：中英術語與任務對照。"
+    },
+    {
+      "id": "083-learning-paths",
+      "title": "學習路線與完整驗收",
+      "group": "reference",
+      "summary": "依學習目標安排閱讀與實作順序，最後交付能重現、能解釋失敗且有清楚使用界線的視覺實驗。",
+      "tags": [
+        "學習路線",
+        "專題",
+        "驗收",
+        "分類",
+        "分割",
+        "定位",
+        "交付"
+      ],
+      "visual": "cv28",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：學習路線與完整驗收。"
+    },
+    {
+      "id": "084-references",
+      "title": "版本來源與持續更新",
+      "group": "reference",
+      "summary": "將查核日期、穩定版、相容選擇與真正執行的檢查分開，讓教材更新可以被驗證與重現。",
+      "tags": [
+        "版本",
+        "來源",
+        "更新",
+        "授權",
+        "重現",
+        "驗證紀錄"
+      ],
+      "visual": "cv28",
+      "visualTask": "選本單元的一個概念，沿圖尋找相應任務或除錯分支，說明下一步需要什麼證據。 本頁主題：版本來源與持續更新。"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "cv01",
+      "file": "assets/figures/01-task-outputs.svg",
+      "title": "先辨識任務，再選擇輸出",
+      "alt": "左側一張兩人物影像，右側分成分類分數、兩個人物框與人物像素遮罩三種輸出。",
+      "description": "左側一張兩人物影像，右側分成分類分數、兩個人物框與人物像素遮罩三種輸出。",
+      "caption": "讀圖時先說出輸出的單位，再決定需要整張標籤、框或遮罩。",
+      "group": "foundations",
+      "sources": [
+        {
+          "title": "Torchvision models and weights",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv02",
+      "file": "assets/figures/02-tensor-layout.svg",
+      "title": "HWC 與 CHW：軸順序和數值範圍是兩件事",
+      "alt": "三色通道由HWC影像陣列重排成CHW三個平面，並分開標註uint8和float32範圍，批次後為NCHW。",
+      "description": "三色通道由HWC影像陣列重排成CHW三個平面，並分開標註uint8和float32範圍，批次後為NCHW。",
+      "caption": "重排軸不等於除以255；使用前同時核對shape、dtype、值域。",
+      "group": "foundations",
+      "sources": [
+        {
+          "title": "Torchvision transforms v2",
+          "url": "https://docs.pytorch.org/vision/stable/transforms.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv03",
+      "file": "assets/figures/03-channels-color.svg",
+      "title": "通道順序與色彩資訊",
+      "alt": "左邊展示R240、G80、B40的像素及BGR重排；右邊用三種灰階強度說明單通道會失去色彩差異。",
+      "description": "左邊展示R240、G80、B40的像素及BGR重排；右邊用三種灰階強度說明單通道會失去色彩差異。",
+      "caption": "先核對讀檔API的通道順序；灰階是資訊壓縮，不是免費的增強。",
+      "group": "processing",
+      "sources": [
+        {
+          "title": "Torchvision transforms v2",
+          "url": "https://docs.pytorch.org/vision/stable/transforms.html"
+        },
+        {
+          "title": "OpenCV color conversions",
+          "url": "https://docs.opencv.org/4.x/de/d25/imgproc_color_conversions.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv04",
+      "file": "assets/figures/04-letterbox.svg",
+      "title": "等比例縮放、補邊與框座標",
+      "alt": "左圖400乘200的影像含100,50到260,140框，右圖縮放0.75並上下補75後新框75,112.5到195,180。",
+      "description": "左圖400乘200的影像含100,50到260,140框，右圖縮放0.75並上下補75後新框75,112.5到195,180。",
+      "caption": "補邊後，框必須同時縮放和平移；部署反投影需使用同一組參數。",
+      "group": "processing",
+      "sources": [
+        {
+          "title": "Torchvision transforms v2",
+          "url": "https://docs.pytorch.org/vision/stable/transforms.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv05",
+      "file": "assets/figures/05-group-splits.svg",
+      "title": "影像資料的切分邊界",
+      "alt": "三個來源群組各有三張近似影像，分別完整進入訓練驗證測試，紅色虛線指出同來源跨組的洩漏。",
+      "description": "三個來源群組各有三張近似影像，分別完整進入訓練驗證測試，紅色虛線指出同來源跨組的洩漏。",
+      "caption": "逐張隨機分割不能保證獨立；先選正確的來源群組，再檢查重複影像。",
+      "group": "data",
+      "sources": [
+        {
+          "title": "scikit-learn grouped splitting",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv06",
+      "file": "assets/figures/06-paired-transforms.svg",
+      "title": "幾何增強要同步變換標註",
+      "alt": "兩個十乘六方格展示左側三乘三遮罩與框，水平翻轉後移到右側，框由1,2,4,5變成6,2,9,5。",
+      "description": "兩個十乘六方格展示左側三乘三遮罩與框，水平翻轉後移到右側，框由1,2,4,5變成6,2,9,5。",
+      "caption": "先驗證轉換後框和mask仍覆蓋同一物件，再開始長時間訓練。",
+      "group": "data",
+      "sources": [
+        {
+          "title": "Torchvision transforms v2",
+          "url": "https://docs.pytorch.org/vision/stable/transforms.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv07",
+      "file": "assets/figures/07-convolution.svg",
+      "title": "卷積層：局部運算與參數共享",
+      "alt": "左側三乘三輸入與邊緣kernel逐項相乘得到負二，右側三乘三視窗在五乘五影像上滑動得到三乘三輸出。",
+      "description": "左側三乘三輸入與邊緣kernel逐項相乘得到負二，右側三乘三視窗在五乘五影像上滑動得到三乘三輸出。",
+      "caption": "用手算核對一個位置，才能區分stride、padding、通道數與模型參數。",
+      "group": "classification",
+      "sources": [
+        {
+          "title": "PyTorch Conv2d",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv08",
+      "file": "assets/figures/08-training-state.svg",
+      "title": "從logits、損失到參數更新",
+      "alt": "影像經CNN產生logits，與真實標籤形成損失，反向傳播回模型；下方區分train與eval加inference_mode。",
+      "description": "影像經CNN產生logits，與真實標籤形成損失，反向傳播回模型；下方區分train與eval加inference_mode。",
+      "caption": "分類CrossEntropyLoss接收logits，不要在前面重複套softmax。",
+      "group": "classification",
+      "sources": [
+        {
+          "title": "PyTorch training tutorial",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv09",
+      "file": "assets/figures/09-transfer-stages.svg",
+      "title": "遷移學習：凍結與微調的邊界",
+      "alt": "一條淺中深backbone串接新分類頭，第一階段固定backbone，只更新分類頭，第二階段可解除深層凍結。",
+      "description": "一條淺中深backbone串接新分類頭，第一階段固定backbone，只更新分類頭，第二階段可解除深層凍結。",
+      "caption": "除了requires_grad，還要確認optimizer包含哪些參數、BatchNorm正在train還是eval。",
+      "group": "transfer",
+      "sources": [
+        {
+          "title": "Torchvision models and weights",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv10",
+      "file": "assets/figures/10-imbalance-threshold.svg",
+      "title": "類別不平衡與決策閾值",
+      "alt": "兩種樣本分數分布與可移動閾值，旁側指出提高閾值會減少陽性預測與Recall，Precision不保證單調。",
+      "description": "兩種樣本分數分布與可移動閾值，旁側指出提高閾值會減少陽性預測與Recall，Precision不保證單調。",
+      "caption": "訓練的取樣策略、分數校準與最後閾值是不同的控制位置。",
+      "group": "transfer",
+      "sources": [
+        {
+          "title": "scikit-learn decision threshold",
+          "url": "https://scikit-learn.org/stable/modules/classification_threshold.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv11",
+      "file": "assets/figures/11-patch-tokens.svg",
+      "title": "ViT：從二維影像到token序列",
+      "alt": "十六個編號patch經共享線性投影變成token列，列中包含可選CLS及位置資訊。",
+      "description": "十六個編號patch經共享線性投影變成token列，列中包含可選CLS及位置資訊。",
+      "caption": "說出patch內資料如何展平、投影到D維，以及位置資訊在哪裡加入。",
+      "group": "transformers",
+      "sources": [
+        {
+          "title": "ViT original paper",
+          "url": "https://arxiv.org/abs/2010.11929"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv12",
+      "file": "assets/figures/12-cnn-attention.svg",
+      "title": "CNN與Attention如何連接影像位置",
+      "alt": "左側五乘五方格中的中心只連接局部三乘三鄰域，右側六個token全連接，其中一個token連到全部位置。",
+      "description": "左側五乘五方格中的中心只連接局部三乘三鄰域，右側六個token全連接，其中一個token連到全部位置。",
+      "caption": "同時比較連接範圍、參數共享、序列長度與運算成本，而非只比較模型名稱。",
+      "group": "transformers",
+      "sources": [
+        {
+          "title": "ViT original paper",
+          "url": "https://arxiv.org/abs/2010.11929"
+        },
+        {
+          "title": "PyTorch Conv2d",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv13",
+      "file": "assets/figures/13-bbox-contract.svg",
+      "title": "Bounding box：座標格式必須寫清楚",
+      "alt": "一個位在400乘240影像中的框，XYXY100,60,300,180，改寫為XYWH100,60,200,120及中心正規化0.5四次。",
+      "description": "一個位在400乘240影像中的框，XYXY100,60,300,180，改寫為XYWH100,60,200,120及中心正規化0.5四次。",
+      "caption": "模型、資料標註、增強與評估必須共用相同的座標格式和邊界規則。",
+      "group": "detection",
+      "sources": [
+        {
+          "title": "Torchvision transforms v2",
+          "url": "https://docs.pytorch.org/vision/stable/transforms.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv14",
+      "file": "assets/figures/14-detector-families.svg",
+      "title": "偵測器的設計家族",
+      "alt": "三列並排流程分別展示候選區域兩階段、密集位置單階段與object queries集合預測，最後的重複處理方式不同。",
+      "description": "三列並排流程分別展示候選區域兩階段、密集位置單階段與object queries集合預測，最後的重複處理方式不同。",
+      "caption": "讀一個偵測器時，追蹤輸入、候選表示、匹配方式、損失與推論後處理。",
+      "group": "detection",
+      "sources": [
+        {
+          "title": "DETR original paper",
+          "url": "https://arxiv.org/abs/2005.12872"
+        },
+        {
+          "title": "Torchvision models and weights",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv15",
+      "file": "assets/figures/15-matching-duplicates.svg",
+      "title": "偵測評估：一對一配對與重複框",
+      "alt": "一個真值框旁有兩個重疊預測和一個遠離預測，按分數先配A為TP、B因重複為FP、C無配對為FP。",
+      "description": "一個真值框旁有兩個重疊預測和一個遠離預測，按分數先配A為TP、B因重複為FP、C無配對為FP。",
+      "caption": "先以分數排序再匹配；同一真值被兩個預測覆蓋，不代表得到兩次TP。",
+      "group": "detection-eval",
+      "sources": [
+        {
+          "title": "COCO evaluation implementation",
+          "url": "https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv16",
+      "file": "assets/figures/16-precision-recall-ap.svg",
+      "title": "從排序、Precision／Recall到AP",
+      "alt": "兩個GT和TPFP TP排序產生Recall0.5,0.5,1及Precision1,0.5,2/3，插值面積為1/2加1/3等於5/6。",
+      "description": "兩個GT和TPFP TP排序產生Recall0.5,0.5,1及Precision1,0.5,2/3，插值面積為1/2加1/3等於5/6。",
+      "caption": "相同預測在不同插值、IoU與平均規則下有不同AP，報告時列出協定。",
+      "group": "detection-eval",
+      "sources": [
+        {
+          "title": "COCO evaluation implementation",
+          "url": "https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv17",
+      "file": "assets/figures/17-segmentation-tasks.svg",
+      "title": "像素標籤與物件身分",
+      "alt": "三個相同雙人物場景分別顯示同類同色語意分割、人物各色實例分割和帶背景區域的全景分割。",
+      "description": "三個相同雙人物場景分別顯示同類同色語意分割、人物各色實例分割和帶背景區域的全景分割。",
+      "caption": "先判斷需要「類別」或「個體身分」；不要直接把彩色調色盤當成連續迴歸目標。",
+      "group": "segmentation",
+      "sources": [
+        {
+          "title": "COCO evaluation implementation",
+          "url": "https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py"
+        },
+        {
+          "title": "Torchvision models and weights",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv18",
+      "file": "assets/figures/18-unet-skip.svg",
+      "title": "U-Net：空間尺度、skip與像素輸出",
+      "alt": "五層U形路徑顯示H W縮到二分之一與四分之一後再回升，上方skip跳接對應解析度並concat。",
+      "description": "五層U形路徑顯示H W縮到二分之一與四分之一後再回升，上方skip跳接對應解析度並concat。",
+      "caption": "逐層寫出空間尺寸，並檢查下採樣遇到奇數邊長時，skip如何對齊。",
+      "group": "segmentation",
+      "sources": [
+        {
+          "title": "U-Net original paper",
+          "url": "https://arxiv.org/abs/1505.04597"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv19",
+      "file": "assets/figures/19-prompted-vs-recognition.svg",
+      "title": "分得出區域，不代表已認得類別",
+      "alt": "左側在人物上加點提示產生區域mask，右側兩個實例已分開但類別仍是另一個需要驗證的輸出。",
+      "description": "左側在人物上加點提示產生區域mask，右側兩個實例已分開但類別仍是另一個需要驗證的輸出。",
+      "caption": "把mask選擇、類別辨識、追蹤身分和自然語言解釋分開驗收。",
+      "group": "advanced",
+      "sources": [
+        {
+          "title": "SAM 2 original paper",
+          "url": "https://arxiv.org/abs/2408.00714"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv20",
+      "file": "assets/figures/20-tracking.svg",
+      "title": "影片追蹤：框是位置，ID是跨幀關係",
+      "alt": "連續三幀裡兩個人物框移動，青色ID7和黃色ID9保持一致，下方軌跡展示跨幀關聯。",
+      "description": "連續三幀裡兩個人物框移動，青色ID7和黃色ID9保持一致，下方軌跡展示跨幀關聯。",
+      "caption": "區分偵測漏掉、定位偏移與ID換錯；三種錯誤的修正方法不同。",
+      "group": "advanced",
+      "sources": [
+        {
+          "title": "SORT original paper",
+          "url": "https://arxiv.org/abs/1602.00763"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv21",
+      "file": "assets/figures/21-distribution-shift.svg",
+      "title": "分布偏移與切片評估",
+      "alt": "左側明亮固定視角的人物幾何圖與右側低光斜角圖對照，下方指出需依相機光線距離切片並檢查樣本數。",
+      "description": "左側明亮固定視角的人物幾何圖與右側低光斜角圖對照，下方指出需依相機光線距離切片並檢查樣本數。",
+      "caption": "對比每個切片的錯誤率和樣本數；區分輸入變化與真實性能下降。",
+      "group": "reliability",
+      "sources": [
+        {
+          "title": "WILDS benchmark original paper",
+          "url": "https://arxiv.org/abs/2012.07421"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv22",
+      "file": "assets/figures/22-calibration.svg",
+      "title": "校準與正確率是不同的問題",
+      "alt": "可靠度圖的四個點位在對角線下方表示過度自信，右側logits除以正溫度後argmax仍相同。",
+      "description": "可靠度圖的四個點位在對角線下方表示過度自信，右側logits除以正溫度後argmax仍相同。",
+      "caption": "先看信心是否代表實際命中頻率，再決定能否用閾值自動接受預測。",
+      "group": "reliability",
+      "sources": [
+        {
+          "title": "Calibration original paper",
+          "url": "https://arxiv.org/abs/1706.04599"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv23",
+      "file": "assets/figures/23-pipeline-contract.svg",
+      "title": "部署契約：前處理、模型與後處理一起保存",
+      "alt": "前處理模型後處理三段依序串接，下方manifest包含輸入契約類別順序正規化座標版本校驗值測試樣本。",
+      "description": "前處理模型後處理三段依序串接，下方manifest包含輸入契約類別順序正規化座標版本校驗值測試樣本。",
+      "caption": "遇到匯出前後結果不同，先比對輸入張量，再比對logits，最後比對後處理。",
+      "group": "deployment",
+      "sources": [
+        {
+          "title": "PyTorch ONNX export",
+          "url": "https://docs.pytorch.org/docs/stable/onnx.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv24",
+      "file": "assets/figures/24-latency.svg",
+      "title": "延遲的分母與計時邊界",
+      "alt": "時間條按7毫秒讀取11毫秒前處理18毫秒模型6毫秒後處理8毫秒傳輸拆分，端到端共50毫秒。",
+      "description": "時間條按7毫秒讀取11毫秒前處理18毫秒模型6毫秒後處理8毫秒傳輸拆分，端到端共50毫秒。",
+      "caption": "寫下從哪個事件開始到哪個事件結束，再比較不同部署方案。",
+      "group": "deployment",
+      "sources": [
+        {
+          "title": "PyTorch benchmarking",
+          "url": "https://docs.pytorch.org/tutorials/recipes/recipes/benchmark.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv25",
+      "file": "assets/figures/25-project-pipelines.svg",
+      "title": "把分類、偵測與分割各做成一個專題",
+      "alt": "商品分類使用整張類別和混淆矩陣，偵測使用框類別和AP，表面分割使用像素類別和IoU Dice。",
+      "description": "商品分類使用整張類別和混淆矩陣，偵測使用框類別和AP，表面分割使用像素類別和IoU Dice。",
+      "caption": "改變任務時，連標註成本、評估單位與失敗成本一起改變。",
+      "group": "projects",
+      "sources": [
+        {
+          "title": "Torchvision models and weights",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        },
+        {
+          "title": "COCO evaluation implementation",
+          "url": "https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv26",
+      "file": "assets/figures/26-reproducibility.svg",
+      "title": "專題交付：讓下一個人能檢查每一步",
+      "alt": "六張卡片沿流程列出資料manifest訓練設定模型artifact部署測試失敗案例評估證據並用箭頭相連。",
+      "description": "六張卡片沿流程列出資料manifest訓練設定模型artifact部署測試失敗案例評估證據並用箭頭相連。",
+      "caption": "每個測試數字都應能回到資料版本、模型版本、評估設定與原始案例。",
+      "group": "projects",
+      "sources": [
+        {
+          "title": "PyTorch reproducibility",
+          "url": "https://docs.pytorch.org/docs/stable/notes/randomness.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv27",
+      "file": "assets/figures/27-tensor-metric-map.svg",
+      "title": "張量、損失與評估指標的對照",
+      "alt": "分類偵測分割三欄分別對應logits boxes或像素張量，並列出相關損失和F1 AP IoU Dice評估路徑。",
+      "description": "分類偵測分割三欄分別對應logits boxes或像素張量，並列出相關損失和F1 AP IoU Dice評估路徑。",
+      "caption": "指標名稱相同仍可能有不同資料物件與平均方式；先核對形狀和分母。",
+      "group": "reference",
+      "sources": [
+        {
+          "title": "Torchvision models",
+          "url": "https://docs.pytorch.org/vision/stable/models.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    },
+    {
+      "id": "cv28",
+      "file": "assets/figures/28-debug-tree.svg",
+      "title": "除錯路線：先證明資料與更新真的成立",
+      "alt": "頂端詢問單一小批次能否過擬合，不能時檢查形狀標籤loss梯度，可以時檢查群組切分前處理與泛化切片。",
+      "description": "頂端詢問單一小批次能否過擬合，不能時檢查形狀標籤loss梯度，可以時檢查群組切分前處理與泛化切片。",
+      "caption": "先縮小問題再擴大模型；驗證資料不因除錯而變成訓練資料。",
+      "group": "reference",
+      "sources": [
+        {
+          "title": "PyTorch optimization tutorial",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        }
+      ],
+      "checked": "2026-11-23",
+      "original": true
+    }
+  ]
+}

@@ -2,6 +2,16 @@
 
 用具體形狀推算廣播，理解向量化何時正確、何時會意外放大資料。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。](assets/figures/review-01-start.svg)
+
+> **圖解｜Tensor的shape與dtype**：相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。
+
+**本單元讀圖任務**：讀完「運算與 Broadcasting：從逐元素到矩陣乘法」後，在圖上指出「樣本軸N」的位置或對應關係；用本單元的一個例子說明它與「特徵軸D」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 逐元素與線性代數
 
 `a*b` 是逐元素乘法，`a@b` 是矩陣乘法。輸入 `[N,F]` 與權重 `[F,C]` 矩陣乘積為 `[N,C]`，每一項是 F 個特徵的加權和。若兩邊同為 `[N,F]`，逐元素相乘不會幫你聚合 feature；你還需要決定 sum 的軸。

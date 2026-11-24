@@ -2,9 +2,19 @@
 
 將相同殘差送入不同目標，觀察大誤差受到多少懲罰。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![目標函數與資料契約；logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。](assets/figures/review-03-objectives.svg)
+
+> **圖解｜目標函數與資料契約**：logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。
+
+**本單元讀圖任務**：讀完「回歸損失：MSE、MAE與Huber的梯度偏好」後，在圖上指出「回歸目標」的位置或對應關係；用本單元的一個例子說明它與「單標籤分類」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 殘差與單位
 
-e=prediction-target，MSE平均平方、MAE平均絕對值。MSE的梯度隨誤差變大，MAE除了零點約定外為符號。目標單位、尺度與outlier來源都會影響選擇，不能只說一個loss永遠較穩健。
+$e=\operatorname{prediction}-\operatorname{target}$，MSE平均平方、MAE平均絕對值。MSE的梯度隨誤差變大，MAE除了零點約定外為符號。目標單位、尺度與outlier來源都會影響選擇，不能只說一個loss永遠較穩健。
 
 $$
 L_{MSE}=\frac1N\sum_i e_i^2,\qquad L_{MAE}=\frac1N\sum_i|e_i|
@@ -20,7 +30,7 @@ $$
 
 ## 手算同一批
 
-pred=[0,2,5]、target=[1,2,3]，殘差[-1,0,2]。MSE=5/3，MAE=1，Huber(delta1)=2/3。第7例同時輸出每個prediction的梯度，核對mean分母。大錯誤會在不同目標中有不同更新影響。
+pred=[0,2,5]、target=[1,2,3]，殘差[-1,0,2]。$\operatorname{MSE}=5/3$，$\operatorname{MAE}=1$，Huber(delta1)=2/3。第7例同時輸出每個prediction的梯度，核對mean分母。大錯誤會在不同目標中有不同更新影響。
 
 ## Loss與評估指標
 

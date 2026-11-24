@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![分支與狀態合併；平行分支可能更新同一欄位，需明確合併規則；append與覆寫代表不同狀態語意。](assets/figures/review-02-graph.svg)
+
+> **圖解｜分支與狀態合併**：平行分支可能更新同一欄位，需明確合併規則；append與覆寫代表不同狀態語意。
+
+**本單元讀圖任務**：讀完「Node、Edge 與 Super-step」後，在圖上指出「分析節點」的位置或對應關係；用本單元的一個例子說明它與「Reducer合併」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 建立、編譯、執行是三個階段
 
 `StateGraph(...)` 與 `add_node` 在建立藍圖；`compile()` 產生 runnable；`invoke()`、`stream()`、`ainvoke()` 才開始一輪執行。把這三個階段分清楚，才不會在 import 檔案時意外呼叫付費模型。

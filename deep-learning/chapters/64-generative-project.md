@@ -2,13 +2,23 @@
 
 比較AE、VAE、GAN、Diffusion與Flow Matching實際做的運算及各自的驗收條件。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![把模型原理組成專題；固定基準後一次改一個因素；合成範例不當真實世界benchmark。](assets/figures/review-11-projects.svg)
+
+> **圖解｜把模型原理組成專題**：固定基準後一次改一個因素；合成範例不當真實世界benchmark。
+
+**本單元讀圖任務**：讀完「專題四：用低維生成實驗檢驗你的理解」後，在圖上指出「錯例分析」的位置或對應關係；用本單元的一個例子說明它與「可重現交付」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 五個入口，各有不同問題
 
 第34至38例各自執行AE、β-VAE、GAN、1D DDPM與1D Flow Matching。AE／VAE用二維曲線資料；GAN用二維平移Gaussian；DDPM用一維雙峰；Flow用一維目標Gaussian。這些資料並不相同，不能直接把各例loss排成排行榜。目的是看清目標、梯度及採樣如何連接。
 
 ## 先驗證不依賴「好看」的契約
 
-AE重建loss應有限並在固定資料上下降；VAE的KL在μ=0、logvar=0時應為0；GAN的D step不更新G、G step能穿過D對G求導。Diffusion檢查alpha_bar乘積、q_sample閉式公式和每步posterior variance；Flow檢查端點、target velocity與Euler步進。這些都可用已知值測試，比肉眼挑好看的樣本更可靠。
+AE重建loss應有限並在固定資料上下降；VAE的KL在$\mu =0$、logvar=0時應為0；GAN的D step不更新G、G step能穿過D對G求導。Diffusion檢查alpha_bar乘積、q_sample閉式公式和每步posterior variance；Flow檢查端點、target velocity與Euler步進。這些都可用已知值測試，比肉眼挑好看的樣本更可靠。
 
 ## 採樣必須真的執行
 

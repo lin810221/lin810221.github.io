@@ -2,6 +2,16 @@
 
 使用明確的工具允許清單，區分 Gemini CLI 與 API 的工具執行責任。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![stdio與HTTP的傳輸邊界；傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。](assets/figures/review-05-hosts.svg)
+
+> **圖解｜stdio與HTTP的傳輸邊界**：傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。
+
+**本單元讀圖任務**：讀完「Gemini 整合：CLI 設定與模型 Adapter」後，在圖上指出「Client程序」的位置或對應關係；用本單元的一個例子說明它與「stdio通道」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## CLI 和 API 是兩條不同路線
 
 Gemini CLI 是已提供 Host 功能的工具，可管理 MCP Server、工具清單與確認流程。使用 Gemini API 自建應用時，則需要知道由哪一層管理 Client、函式轉換與呼叫結果。不能因 CLI 能讀資源，就假設任何 API 呼叫都會自動讀取 MCP Resource。

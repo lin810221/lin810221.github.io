@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-providers.svg)
+
+> **圖解｜取樣分布與參數**：圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「OpenAI：工具、JSON 與 Agent 能力」後，在圖上指出「溫度調整」的位置或對應關係；用本單元的一個例子說明它與「候選過濾」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Function Calling 的請求形狀
 
 在 Responses API 中，函式工具以 type、name、description 和 parameters 定義。這段只是工具宣告，不會執行 Python：

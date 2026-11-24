@@ -2,6 +2,16 @@
 
 真正處理collate、pack、train/val/test與最後有效state。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![序列模型的時間依賴；RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。](assets/figures/review-07-sequence.svg)
+
+> **圖解｜序列模型的時間依賴**：RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。
+
+**本單元讀圖任務**：讀完「變長序列完整專案：Embedding到GRU分類」後，在圖上指出「輸入x1」的位置或對應關係；用本單元的一個例子說明它與「狀態h1」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 可知答案的任務
 
 生成240筆，長度2..7，token1..8，答案為最後token>=5。144train、48val、48test。直接看最後ID已有完美規則，所以此專題不是為GRU證明優勢，而是讓你核對變長資料、表示與更新是否正確。

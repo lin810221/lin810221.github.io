@@ -2,6 +2,16 @@
 
 從positive pairs、negative candidates到可微分的InfoNCE目標。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。](assets/figures/review-08-attention.svg)
+
+> **圖解｜Attention用內容混合資訊**：分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。
+
+**本單元讀圖任務**：讀完「表示與對比學習：讓相似的定義來自任務」後，在圖上指出「Values」的位置或對應關係；用本單元的一個例子說明它與「Query」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 學相似之前先定義相似
 
 同一影像不同合理增強、同意句或相同實體可作positive，但規則要符合任務。不相關不一定是真negative，同topic不同樣本也可能false negative。標註／增強選擇定義表示偏好，loss本身不會替你理解哪些關係有用。

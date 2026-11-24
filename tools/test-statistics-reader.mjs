@@ -48,7 +48,7 @@ for(const lesson of window.COURSE.lessons){
   for(const a of document.querySelectorAll('.toc-links a'))assert.ok(document.getElementById(a.getAttribute('href').split('/')[1]));
   if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}
   const {document:doc}=parseHTML(`<!doctype html><html><body>${lesson.html}</body></html>`);
-  for(const element of doc.querySelectorAll('.math-source,.math-block')){const text=element.textContent.trim(),display=element.classList.contains('math-block'),tex=display?text.slice(2,-2).trim():text.slice(1,-1);assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;}
+  for(const element of doc.querySelectorAll('.math-source,.math-block')){const text=element.textContent.trim(),display=element.classList.contains('math-block'),tex=element.getAttribute('data-tex') ?? (display?text.slice(2,-2).trim():text.slice(1,-1));assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;}
 }
 assert.equal(examples,40);assert.ok(equations>=25);
 assert.equal(window.COURSE.lessons[0].title,'統計學的定義：從問題到不確定性');

@@ -1,59 +1,629 @@
 {
-  "slug":"llm",
-  "title":"LLM 服務與 AI Agents 完整教學",
-  "shortTitle":"LLM & Agents",
-  "updated":"2026-10-29",
-  "footerLabel":"LLM SERVICES & AGENTS",
-  "exampleBundle":"examples.zip",
-  "searchHint":"試試 temperature、Gemini、工具呼叫、Claude 或 Agent。",
-  "groups":[
-    {"id":"foundations","number":"01","title":"理解模型與服務","description":"從模型、Token 到第一個 API 請求。"},
-    {"id":"parameters","number":"02","title":"讀懂功能與參數","description":"採樣、輸出預算、推理和對話歷史。"},
-    {"id":"providers","number":"03","title":"三大供應商實戰","description":"OpenAI、Gemini、Claude 的介面與差異。"},
-    {"id":"interaction","number":"04","title":"讓模型可靠互動","description":"Prompt、JSON、工具、串流與錯誤處理。"},
-    {"id":"capabilities","number":"05","title":"探索服務能力","description":"多模態、即時語音、RAG、搜尋與快取。"},
-    {"id":"agents","number":"06","title":"親手打造 AI Agent","description":"從工具迴圈到記憶、SDK 與工作流程。"},
-    {"id":"engineering","number":"07","title":"建立可維運的系統","description":"MCP、權限、評估、成本與部署。"},
-    {"id":"practice","number":"08","title":"完整專案與練習","description":"把所學組合成可驗證的知識助理。"}
+  "slug": "llm",
+  "title": "LLM 服務與 AI Agents 完整教學",
+  "shortTitle": "LLM & Agents",
+  "updated": "2026-10-29",
+  "footerLabel": "LLM SERVICES & AGENTS",
+  "exampleBundle": "examples.zip",
+  "searchHint": "試試 temperature、Gemini、工具呼叫、Claude 或 Agent。",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "理解模型與服務",
+      "description": "從模型、Token 到第一個 API 請求。"
+    },
+    {
+      "id": "parameters",
+      "number": "02",
+      "title": "讀懂功能與參數",
+      "description": "採樣、輸出預算、推理和對話歷史。"
+    },
+    {
+      "id": "providers",
+      "number": "03",
+      "title": "三大供應商實戰",
+      "description": "OpenAI、Gemini、Claude 的介面與差異。"
+    },
+    {
+      "id": "interaction",
+      "number": "04",
+      "title": "讓模型可靠互動",
+      "description": "Prompt、JSON、工具、串流與錯誤處理。"
+    },
+    {
+      "id": "capabilities",
+      "number": "05",
+      "title": "探索服務能力",
+      "description": "多模態、即時語音、RAG、搜尋與快取。"
+    },
+    {
+      "id": "agents",
+      "number": "06",
+      "title": "親手打造 AI Agent",
+      "description": "從工具迴圈到記憶、SDK 與工作流程。"
+    },
+    {
+      "id": "engineering",
+      "number": "07",
+      "title": "建立可維運的系統",
+      "description": "MCP、權限、評估、成本與部署。"
+    },
+    {
+      "id": "practice",
+      "number": "08",
+      "title": "完整專案與練習",
+      "description": "把所學組合成可驗證的知識助理。"
+    }
   ],
-  "lessons":[
-    {"id":"01-service-map","group":"foundations","title":"LLM、聊天產品與 API：先畫出地圖","summary":"分清模型、供應商、聊天介面、API 和 Agent，知道每一層負責什麼。","tags":["入門","服務地圖"]},
-    {"id":"02-tokens-context","group":"foundations","title":"Token、上下文與生成的基本原理","summary":"從 next-token prediction 理解上下文、訓練、推論與知識時效。","tags":["Token","Context"]},
-    {"id":"03-environment","group":"foundations","title":"環境、金鑰、HTTP 與 SDK","summary":"準備 Python、隔離環境與憑證，區分離線演練和真正的付費呼叫。","tags":["Python","API Key"]},
-    {"id":"04-first-request","group":"foundations","title":"第一個請求：輸入、輸出與結束狀態","summary":"建立最小請求，讀懂 HTTP 狀態、內容區塊和生成結果。","tags":["HTTP","實作"]},
-    {"id":"05-parameter-map","group":"parameters","title":"功能參數的七個分類","summary":"將模型、指令、預算、採樣、格式、工具與執行設定分開理解。","tags":["參數","對照"]},
-    {"id":"06-sampling","group":"parameters","title":"Temperature、Top-p 與生成變化","summary":"用分布與程式理解採樣，分辨教學模型和供應商實作。","tags":["採樣","LaTeX"],"example":"04_sampling.py"},
-    {"id":"07-thinking-budgets","group":"parameters","title":"推理、Thinking 與 Token 預算","summary":"控制推理深度、可見答案和最大輸出，避免只得到空白或截斷結果。","tags":["Reasoning","Thinking"]},
-    {"id":"08-conversation-state","group":"parameters","title":"訊息角色、多輪對話與狀態保存","summary":"分清歷史、伺服器狀態和應用記憶，保留工具及簽章資訊。","tags":["Messages","State"]},
-    {"id":"09-openai-responses","group":"providers","title":"OpenAI：Responses API 從零實作","summary":"建立 Responses 請求，解析 output items、usage 與 incomplete 狀態。","tags":["OpenAI","Responses"],"example":"01_openai.py"},
-    {"id":"10-openai-tools","group":"providers","title":"OpenAI：工具、JSON 與 Agent 能力","summary":"理解 function_call、call_id、Structured Outputs 與代管工具的邊界。","tags":["OpenAI","Tools"]},
-    {"id":"11-gemini-interactions","group":"providers","title":"Gemini：Interactions API 實戰","summary":"使用目前官方的新專案介面，理解 steps、generation_config 和狀態串接。","tags":["Gemini","Interactions"],"example":"02_gemini.py"},
-    {"id":"12-gemini-migration","group":"providers","title":"Gemini：工具、思考與舊 API 遷移","summary":"對照 generateContent 與 Interactions，處理 function_result、簽章和採樣差異。","tags":["Gemini","遷移"]},
-    {"id":"13-claude-messages","group":"providers","title":"Claude：Messages API 從零實作","summary":"理解 system、content blocks、max_tokens、stop_reason 與版本標頭。","tags":["Claude","Messages"],"example":"03_claude.py"},
-    {"id":"14-claude-thinking","group":"providers","title":"Claude：Thinking、工具與結構化輸出","summary":"區分 adaptive thinking 與舊 budget_tokens，使用正確的結果及格式協定。","tags":["Claude","Thinking"]},
-    {"id":"15-provider-comparison","group":"providers","title":"三家功能參數完整對照與選型","summary":"比較 API 欄位、狀態、工具、推理與能力，避免把同名參數當成相同行為。","tags":["比較","選型"]},
-    {"id":"16-prompt-design","group":"interaction","title":"Prompt、指令層級與上下文工程","summary":"把任務、資料、限制和驗收條件寫清楚，建立可比較的提示版本。","tags":["Prompt","Context"]},
-    {"id":"17-structured-output","group":"interaction","title":"JSON Schema、結構化輸出與驗證","summary":"分開語法、schema 和事實正確性，處理拒答、截斷與業務規則。","tags":["JSON","Schema"],"example":"05_structured.py"},
-    {"id":"18-tool-protocol","group":"interaction","title":"Function Calling 的完整生命週期","summary":"從工具定義、模型請求到執行與回傳，用明確契約控制動作。","tags":["Function Calling","協定"]},
-    {"id":"19-streaming","group":"interaction","title":"Streaming、事件解析與前端顯示","summary":"區分文字增量、工具參數、結束事件與使用量，避免拼出錯誤答案。","tags":["SSE","Streaming"],"example":"07_events.py"},
-    {"id":"20-errors-async","group":"interaction","title":"Async、重試、速率限制與逾時","summary":"判斷哪些失敗值得重試，管理併發、取消和多層等待。","tags":["Async","Retry"]},
-    {"id":"21-multimodal","group":"capabilities","title":"圖片、PDF、影片與文件理解","summary":"理解內容區塊、檔案上傳、影像預算和引用定位，分清理解與生成。","tags":["Multimodal","文件"]},
-    {"id":"22-audio-realtime","group":"capabilities","title":"語音、轉錄、TTS 與即時對話","summary":"從錄音檔到雙向語音，認識 VAD、打斷、WebSocket 和短效憑證。","tags":["Audio","Realtime"]},
-    {"id":"23-embeddings-rag","group":"capabilities","title":"Embeddings 與可追溯的 RAG","summary":"切塊、檢索、重排、引用與拒答，讓模型依據你的資料回答。","tags":["Embeddings","RAG"],"example":"08_rag.py"},
-    {"id":"24-hosted-tools","group":"capabilities","title":"搜尋、Grounding 與代管工具","summary":"比較網路搜尋、檔案搜尋、程式執行和電腦操作，釐清誰在執行。","tags":["Search","Grounding"]},
-    {"id":"25-cache-batch","group":"capabilities","title":"Prompt Cache、Batch 與非同步工作","summary":"區分前綴快取、答案快取和批次任務，避免錯估效能與記憶。","tags":["Cache","Batch"]},
-    {"id":"26-agent-model","group":"agents","title":"AI Agent 到底是什麼？","summary":"用目標、工具、狀態和控制迴圈理解 Agent，判斷何時值得使用。","tags":["Agent","觀念"]},
-    {"id":"27-agent-loop","group":"agents","title":"親手寫一個有界工具 Agent","summary":"不靠框架也能理解工具迴圈，加入白名單、輸入驗證與停止條件。","tags":["Agent","實作"],"example":"06_agent.py"},
-    {"id":"28-agent-sdks","group":"agents","title":"供應商 SDK、Agents SDK 與轉接層","summary":"比較原始 API、OpenAI Agents SDK、Google ADK、Claude Agent SDK 和代管 Agent。","tags":["SDK","架構"]},
-    {"id":"29-agent-memory","group":"agents","title":"Agent 的短期記憶、長期記憶與檢索","summary":"建立有使用者範圍的資料保存，區分聊天歷史、偏好和工作狀態。","tags":["Memory","SQLite"],"example":"10_memory.py"},
-    {"id":"30-workflows","group":"agents","title":"Workflow、多 Agent 與 LangGraph 串接","summary":"決定固定流程、模型選路和協作的邊界，連回已學過的 LangGraph。","tags":["LangGraph","Multi-agent"]},
-    {"id":"31-mcp","group":"engineering","title":"MCP：讓 Agent 連接外部能力","summary":"理解 Host、Client、Server、工具與授權，區分 MCP、工具呼叫和 Agent 協作。","tags":["MCP","工具整合"]},
-    {"id":"32-approval-security","group":"engineering","title":"權限、Prompt Injection 與人工審核","summary":"把提案和執行分開，核准綁定具體內容，處理重試與重複動作。","tags":["人工審核","權限"],"example":"11_approval.py"},
-    {"id":"33-evaluation","group":"engineering","title":"測試、Evals 與可觀測性","summary":"分開編排測試與模型品質，量測工具選擇、拒答、引用及成本。","tags":["Evals","Testing"]},
-    {"id":"34-cost-routing","group":"engineering","title":"成本、延遲、預算與模型路由","summary":"用實際 usage 而非字數估價，設計品質門檻與可驗證的路由。","tags":["成本","Routing"],"example":"09_cost.py"},
-    {"id":"35-production","group":"engineering","title":"API 服務、部署與資料生命週期","summary":"從本機腳本走向多使用者服務，管理憑證、背景工作、資料保存及版本。","tags":["部署","Production"]},
-    {"id":"36-capstone","group":"practice","title":"完整專案：可切換供應商的知識助理","summary":"整合檢索、模型轉接、引用檢查與人工審核，從離線基線逐步接上服務。","tags":["完整專案","整合"],"example":"12_capstone.py"},
-    {"id":"37-exercises","group":"practice","title":"動手練習、解答與能力檢查","summary":"完成七項具體任務，以可觀察的行為檢查自己是否真的理解。","tags":["練習","解答"]},
-    {"id":"38-reference","group":"practice","title":"API 速查、詞彙與官方閱讀地圖","summary":"整理日常開發的查詢入口、版本核對清單與後續學習路線。","tags":["速查","官方資源"]}
+  "lessons": [
+    {
+      "id": "01-service-map",
+      "group": "foundations",
+      "title": "LLM、聊天產品與 API：先畫出地圖",
+      "summary": "分清模型、供應商、聊天介面、API 和 Agent，知道每一層負責什麼。",
+      "tags": [
+        "入門",
+        "服務地圖"
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「LLM、聊天產品與 API：先畫出地圖」後，在圖上指出「任務輸入」的位置或對應關係；用本單元的一個例子說明它與「訊息與模型」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "02-tokens-context",
+      "group": "foundations",
+      "title": "Token、上下文與生成的基本原理",
+      "summary": "從 next-token prediction 理解上下文、訓練、推論與知識時效。",
+      "tags": [
+        "Token",
+        "Context"
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「Token、上下文與生成的基本原理」後，在圖上指出「訊息與模型」的位置或對應關係；用本單元的一個例子說明它與「請求參數」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "03-environment",
+      "group": "foundations",
+      "title": "環境、金鑰、HTTP 與 SDK",
+      "summary": "準備 Python、隔離環境與憑證，區分離線演練和真正的付費呼叫。",
+      "tags": [
+        "Python",
+        "API Key"
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「環境、金鑰、HTTP 與 SDK」後，在圖上指出「請求參數」的位置或對應關係；用本單元的一個例子說明它與「回應解析」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "04-first-request",
+      "group": "foundations",
+      "title": "第一個請求：輸入、輸出與結束狀態",
+      "summary": "建立最小請求，讀懂 HTTP 狀態、內容區塊和生成結果。",
+      "tags": [
+        "HTTP",
+        "實作"
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「第一個請求：輸入、輸出與結束狀態」後，在圖上指出「回應解析」的位置或對應關係；用本單元的一個例子說明它與「任務驗收」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "05-parameter-map",
+      "group": "parameters",
+      "title": "功能參數的七個分類",
+      "summary": "將模型、指令、預算、採樣、格式、工具與執行設定分開理解。",
+      "tags": [
+        "參數",
+        "對照"
+      ],
+      "visual": "review-02-parameters",
+      "visualTask": "讀完「功能參數的七個分類」後，在圖上指出「OpenAI」的位置或對應關係；用本單元的一個例子說明它與「Gemini」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "06-sampling",
+      "group": "parameters",
+      "title": "Temperature、Top-p 與生成變化",
+      "summary": "用分布與程式理解採樣，分辨教學模型和供應商實作。",
+      "tags": [
+        "採樣",
+        "LaTeX"
+      ],
+      "example": "04_sampling.py",
+      "visual": "review-02-parameters",
+      "visualTask": "讀完「Temperature、Top-p 與生成變化」後，在圖上指出「Gemini」的位置或對應關係；用本單元的一個例子說明它與「Claude」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "07-thinking-budgets",
+      "group": "parameters",
+      "title": "推理、Thinking 與 Token 預算",
+      "summary": "控制推理深度、可見答案和最大輸出，避免只得到空白或截斷結果。",
+      "tags": [
+        "Reasoning",
+        "Thinking"
+      ],
+      "visual": "review-02-parameters",
+      "visualTask": "讀完「推理、Thinking 與 Token 預算」後，在圖上指出「Claude」的位置或對應關係；用本單元的一個例子說明它與「OpenAI」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "08-conversation-state",
+      "group": "parameters",
+      "title": "訊息角色、多輪對話與狀態保存",
+      "summary": "分清歷史、伺服器狀態和應用記憶，保留工具及簽章資訊。",
+      "tags": [
+        "Messages",
+        "State"
+      ],
+      "visual": "review-02-parameters",
+      "visualTask": "讀完「訊息角色、多輪對話與狀態保存」後，在圖上指出「OpenAI」的位置或對應關係；用本單元的一個例子說明它與「Gemini」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "09-openai-responses",
+      "group": "providers",
+      "title": "OpenAI：Responses API 從零實作",
+      "summary": "建立 Responses 請求，解析 output items、usage 與 incomplete 狀態。",
+      "tags": [
+        "OpenAI",
+        "Responses"
+      ],
+      "example": "01_openai.py",
+      "visual": "review-03-providers",
+      "visualTask": "讀完「OpenAI：Responses API 從零實作」後，在圖上指出「logits」的位置或對應關係；用本單元的一個例子說明它與「溫度調整」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "10-openai-tools",
+      "group": "providers",
+      "title": "OpenAI：工具、JSON 與 Agent 能力",
+      "summary": "理解 function_call、call_id、Structured Outputs 與代管工具的邊界。",
+      "tags": [
+        "OpenAI",
+        "Tools"
+      ],
+      "visual": "review-03-providers",
+      "visualTask": "讀完「OpenAI：工具、JSON 與 Agent 能力」後，在圖上指出「溫度調整」的位置或對應關係；用本單元的一個例子說明它與「候選過濾」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "11-gemini-interactions",
+      "group": "providers",
+      "title": "Gemini：Interactions API 實戰",
+      "summary": "使用目前官方的新專案介面，理解 steps、generation_config 和狀態串接。",
+      "tags": [
+        "Gemini",
+        "Interactions"
+      ],
+      "example": "02_gemini.py",
+      "visual": "review-03-providers",
+      "visualTask": "讀完「Gemini：Interactions API 實戰」後，在圖上指出「候選過濾」的位置或對應關係；用本單元的一個例子說明它與「重新正規化」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "12-gemini-migration",
+      "group": "providers",
+      "title": "Gemini：工具、思考與舊 API 遷移",
+      "summary": "對照 generateContent 與 Interactions，處理 function_result、簽章和採樣差異。",
+      "tags": [
+        "Gemini",
+        "遷移"
+      ],
+      "visual": "review-03-providers",
+      "visualTask": "讀完「Gemini：工具、思考與舊 API 遷移」後，在圖上指出「重新正規化」的位置或對應關係；用本單元的一個例子說明它與「取樣」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "13-claude-messages",
+      "group": "providers",
+      "title": "Claude：Messages API 從零實作",
+      "summary": "理解 system、content blocks、max_tokens、stop_reason 與版本標頭。",
+      "tags": [
+        "Claude",
+        "Messages"
+      ],
+      "example": "03_claude.py",
+      "visual": "review-03-providers",
+      "visualTask": "讀完「Claude：Messages API 從零實作」後，在圖上指出「取樣」的位置或對應關係；用本單元的一個例子說明它與「logits」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "14-claude-thinking",
+      "group": "providers",
+      "title": "Claude：Thinking、工具與結構化輸出",
+      "summary": "區分 adaptive thinking 與舊 budget_tokens，使用正確的結果及格式協定。",
+      "tags": [
+        "Claude",
+        "Thinking"
+      ],
+      "visual": "review-03-providers",
+      "visualTask": "讀完「Claude：Thinking、工具與結構化輸出」後，在圖上指出「logits」的位置或對應關係；用本單元的一個例子說明它與「溫度調整」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "15-provider-comparison",
+      "group": "providers",
+      "title": "三家功能參數完整對照與選型",
+      "summary": "比較 API 欄位、狀態、工具、推理與能力，避免把同名參數當成相同行為。",
+      "tags": [
+        "比較",
+        "選型"
+      ],
+      "visual": "review-03-providers",
+      "visualTask": "讀完「三家功能參數完整對照與選型」後，在圖上指出「溫度調整」的位置或對應關係；用本單元的一個例子說明它與「候選過濾」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "16-prompt-design",
+      "group": "interaction",
+      "title": "Prompt、指令層級與上下文工程",
+      "summary": "把任務、資料、限制和驗收條件寫清楚，建立可比較的提示版本。",
+      "tags": [
+        "Prompt",
+        "Context"
+      ],
+      "visual": "review-04-interaction",
+      "visualTask": "讀完「Prompt、指令層級與上下文工程」後，在圖上指出「原始輸出」的位置或對應關係；用本單元的一個例子說明它與「JSON可解析」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "17-structured-output",
+      "group": "interaction",
+      "title": "JSON Schema、結構化輸出與驗證",
+      "summary": "分開語法、schema 和事實正確性，處理拒答、截斷與業務規則。",
+      "tags": [
+        "JSON",
+        "Schema"
+      ],
+      "example": "05_structured.py",
+      "visual": "review-04-interaction",
+      "visualTask": "讀完「JSON Schema、結構化輸出與驗證」後，在圖上指出「JSON可解析」的位置或對應關係；用本單元的一個例子說明它與「Schema符合」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "18-tool-protocol",
+      "group": "interaction",
+      "title": "Function Calling 的完整生命週期",
+      "summary": "從工具定義、模型請求到執行與回傳，用明確契約控制動作。",
+      "tags": [
+        "Function Calling",
+        "協定"
+      ],
+      "visual": "review-04-interaction",
+      "visualTask": "讀完「Function Calling 的完整生命週期」後，在圖上指出「Schema符合」的位置或對應關係；用本單元的一個例子說明它與「業務規則」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "19-streaming",
+      "group": "interaction",
+      "title": "Streaming、事件解析與前端顯示",
+      "summary": "區分文字增量、工具參數、結束事件與使用量，避免拼出錯誤答案。",
+      "tags": [
+        "SSE",
+        "Streaming"
+      ],
+      "example": "07_events.py",
+      "visual": "review-04-interaction",
+      "visualTask": "讀完「Streaming、事件解析與前端顯示」後，在圖上指出「業務規則」的位置或對應關係；用本單元的一個例子說明它與「外部真值」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "20-errors-async",
+      "group": "interaction",
+      "title": "Async、重試、速率限制與逾時",
+      "summary": "判斷哪些失敗值得重試，管理併發、取消和多層等待。",
+      "tags": [
+        "Async",
+        "Retry"
+      ],
+      "visual": "review-04-interaction",
+      "visualTask": "讀完「Async、重試、速率限制與逾時」後，在圖上指出「外部真值」的位置或對應關係；用本單元的一個例子說明它與「原始輸出」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "21-multimodal",
+      "group": "capabilities",
+      "title": "圖片、PDF、影片與文件理解",
+      "summary": "理解內容區塊、檔案上傳、影像預算和引用定位，分清理解與生成。",
+      "tags": [
+        "Multimodal",
+        "文件"
+      ],
+      "visual": "review-05-capabilities",
+      "visualTask": "讀完「圖片、PDF、影片與文件理解」後，在圖上指出「模型選工具」的位置或對應關係；用本單元的一個例子說明它與「驗證參數」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "22-audio-realtime",
+      "group": "capabilities",
+      "title": "語音、轉錄、TTS 與即時對話",
+      "summary": "從錄音檔到雙向語音，認識 VAD、打斷、WebSocket 和短效憑證。",
+      "tags": [
+        "Audio",
+        "Realtime"
+      ],
+      "visual": "review-05-capabilities",
+      "visualTask": "讀完「語音、轉錄、TTS 與即時對話」後，在圖上指出「驗證參數」的位置或對應關係；用本單元的一個例子說明它與「核對權限」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "23-embeddings-rag",
+      "group": "capabilities",
+      "title": "Embeddings 與可追溯的 RAG",
+      "summary": "切塊、檢索、重排、引用與拒答，讓模型依據你的資料回答。",
+      "tags": [
+        "Embeddings",
+        "RAG"
+      ],
+      "example": "08_rag.py",
+      "visual": "review-05-capabilities",
+      "visualTask": "讀完「Embeddings 與可追溯的 RAG」後，在圖上指出「核對權限」的位置或對應關係；用本單元的一個例子說明它與「執行工具」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "24-hosted-tools",
+      "group": "capabilities",
+      "title": "搜尋、Grounding 與代管工具",
+      "summary": "比較網路搜尋、檔案搜尋、程式執行和電腦操作，釐清誰在執行。",
+      "tags": [
+        "Search",
+        "Grounding"
+      ],
+      "visual": "review-05-capabilities",
+      "visualTask": "讀完「搜尋、Grounding 與代管工具」後，在圖上指出「執行工具」的位置或對應關係；用本單元的一個例子說明它與「回傳結果」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "25-cache-batch",
+      "group": "capabilities",
+      "title": "Prompt Cache、Batch 與非同步工作",
+      "summary": "區分前綴快取、答案快取和批次任務，避免錯估效能與記憶。",
+      "tags": [
+        "Cache",
+        "Batch"
+      ],
+      "visual": "review-05-capabilities",
+      "visualTask": "讀完「Prompt Cache、Batch 與非同步工作」後，在圖上指出「回傳結果」的位置或對應關係；用本單元的一個例子說明它與「模型選工具」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "26-agent-model",
+      "group": "agents",
+      "title": "AI Agent 到底是什麼？",
+      "summary": "用目標、工具、狀態和控制迴圈理解 Agent，判斷何時值得使用。",
+      "tags": [
+        "Agent",
+        "觀念"
+      ],
+      "visual": "review-06-agents",
+      "visualTask": "讀完「AI Agent 到底是什麼？」後，在圖上指出「開始請求」的位置或對應關係；用本單元的一個例子說明它與「文字片段」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "27-agent-loop",
+      "group": "agents",
+      "title": "親手寫一個有界工具 Agent",
+      "summary": "不靠框架也能理解工具迴圈，加入白名單、輸入驗證與停止條件。",
+      "tags": [
+        "Agent",
+        "實作"
+      ],
+      "example": "06_agent.py",
+      "visual": "review-06-agents",
+      "visualTask": "讀完「親手寫一個有界工具 Agent」後，在圖上指出「文字片段」的位置或對應關係；用本單元的一個例子說明它與「工具片段」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "28-agent-sdks",
+      "group": "agents",
+      "title": "供應商 SDK、Agents SDK 與轉接層",
+      "summary": "比較原始 API、OpenAI Agents SDK、Google ADK、Claude Agent SDK 和代管 Agent。",
+      "tags": [
+        "SDK",
+        "架構"
+      ],
+      "visual": "review-06-agents",
+      "visualTask": "讀完「供應商 SDK、Agents SDK 與轉接層」後，在圖上指出「工具片段」的位置或對應關係；用本單元的一個例子說明它與「完成訊號」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "29-agent-memory",
+      "group": "agents",
+      "title": "Agent 的短期記憶、長期記憶與檢索",
+      "summary": "建立有使用者範圍的資料保存，區分聊天歷史、偏好和工作狀態。",
+      "tags": [
+        "Memory",
+        "SQLite"
+      ],
+      "example": "10_memory.py",
+      "visual": "review-06-agents",
+      "visualTask": "讀完「Agent 的短期記憶、長期記憶與檢索」後，在圖上指出「完成訊號」的位置或對應關係；用本單元的一個例子說明它與「最終整理」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "30-workflows",
+      "group": "agents",
+      "title": "Workflow、多 Agent 與 LangGraph 串接",
+      "summary": "決定固定流程、模型選路和協作的邊界，連回已學過的 LangGraph。",
+      "tags": [
+        "LangGraph",
+        "Multi-agent"
+      ],
+      "visual": "review-06-agents",
+      "visualTask": "讀完「Workflow、多 Agent 與 LangGraph 串接」後，在圖上指出「最終整理」的位置或對應關係；用本單元的一個例子說明它與「開始請求」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "31-mcp",
+      "group": "engineering",
+      "title": "MCP：讓 Agent 連接外部能力",
+      "summary": "理解 Host、Client、Server、工具與授權，區分 MCP、工具呼叫和 Agent 協作。",
+      "tags": [
+        "MCP",
+        "工具整合"
+      ],
+      "visual": "review-07-engineering",
+      "visualTask": "讀完「MCP：讓 Agent 連接外部能力」後，在圖上指出「輸入Token」的位置或對應關係；用本單元的一個例子說明它與「輸出Token」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "32-approval-security",
+      "group": "engineering",
+      "title": "權限、Prompt Injection 與人工審核",
+      "summary": "把提案和執行分開，核准綁定具體內容，處理重試與重複動作。",
+      "tags": [
+        "人工審核",
+        "權限"
+      ],
+      "example": "11_approval.py",
+      "visual": "review-07-engineering",
+      "visualTask": "讀完「權限、Prompt Injection 與人工審核」後，在圖上指出「輸出Token」的位置或對應關係；用本單元的一個例子說明它與「重試次數」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "33-evaluation",
+      "group": "engineering",
+      "title": "測試、Evals 與可觀測性",
+      "summary": "分開編排測試與模型品質，量測工具選擇、拒答、引用及成本。",
+      "tags": [
+        "Evals",
+        "Testing"
+      ],
+      "visual": "review-07-engineering",
+      "visualTask": "讀完「測試、Evals 與可觀測性」後，在圖上指出「重試次數」的位置或對應關係；用本單元的一個例子說明它與「延遲分位」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "34-cost-routing",
+      "group": "engineering",
+      "title": "成本、延遲、預算與模型路由",
+      "summary": "用實際 usage 而非字數估價，設計品質門檻與可驗證的路由。",
+      "tags": [
+        "成本",
+        "Routing"
+      ],
+      "example": "09_cost.py",
+      "visual": "review-07-engineering",
+      "visualTask": "讀完「成本、延遲、預算與模型路由」後，在圖上指出「延遲分位」的位置或對應關係；用本單元的一個例子說明它與「品質檢查」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "35-production",
+      "group": "engineering",
+      "title": "API 服務、部署與資料生命週期",
+      "summary": "從本機腳本走向多使用者服務，管理憑證、背景工作、資料保存及版本。",
+      "tags": [
+        "部署",
+        "Production"
+      ],
+      "visual": "review-07-engineering",
+      "visualTask": "讀完「API 服務、部署與資料生命週期」後，在圖上指出「品質檢查」的位置或對應關係；用本單元的一個例子說明它與「輸入Token」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "36-capstone",
+      "group": "practice",
+      "title": "完整專案：可切換供應商的知識助理",
+      "summary": "整合檢索、模型轉接、引用檢查與人工審核，從離線基線逐步接上服務。",
+      "tags": [
+        "完整專案",
+        "整合"
+      ],
+      "example": "12_capstone.py",
+      "visual": "review-08-practice",
+      "visualTask": "讀完「完整專案：可切換供應商的知識助理」後，在圖上指出「任務規格」的位置或對應關係；用本單元的一個例子說明它與「模型適配」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "37-exercises",
+      "group": "practice",
+      "title": "動手練習、解答與能力檢查",
+      "summary": "完成七項具體任務，以可觀察的行為檢查自己是否真的理解。",
+      "tags": [
+        "練習",
+        "解答"
+      ],
+      "visual": "review-08-practice",
+      "visualTask": "讀完「動手練習、解答與能力檢查」後，在圖上指出「模型適配」的位置或對應關係；用本單元的一個例子說明它與「工具契約」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "38-reference",
+      "group": "practice",
+      "title": "API 速查、詞彙與官方閱讀地圖",
+      "summary": "整理日常開發的查詢入口、版本核對清單與後續學習路線。",
+      "tags": [
+        "速查",
+        "官方資源"
+      ],
+      "visual": "review-08-practice",
+      "visualTask": "讀完「API 速查、詞彙與官方閱讀地圖」後，在圖上指出「工具契約」的位置或對應關係；用本單元的一個例子說明它與「測試回放」的關係，再寫出一個適用條件或限制。"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "一個LLM請求經過哪些步驟",
+      "alt": "一個LLM請求經過哪些步驟；模型、服務與應用程式是不同層；API回應成功仍需檢查內容和停止原因。",
+      "caption": "模型、服務與應用程式是不同層；API回應成功仍需檢查內容和停止原因。",
+      "group": "foundations",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-parameters",
+      "file": "assets/figures/review-02-parameters.svg",
+      "title": "三家服務的共同介面",
+      "alt": "三家服務的共同介面；訊息、工具與串流欄位依供應商API核對；以應用程式內部契約降低切換時的差異。",
+      "caption": "訊息、工具與串流欄位依供應商API核對；以應用程式內部契約降低切換時的差異。",
+      "group": "parameters",
+      "kind": "compare",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-providers",
+      "file": "assets/figures/review-03-providers.svg",
+      "title": "取樣分布與參數",
+      "alt": "取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "providers",
+      "kind": "bars",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-interaction",
+      "file": "assets/figures/review-04-interaction.svg",
+      "title": "結構化輸出要分層驗證",
+      "alt": "結構化輸出要分層驗證；合法JSON不代表欄位內容正確；格式、業務與事實查核是三種不同驗收。",
+      "caption": "合法JSON不代表欄位內容正確；格式、業務與事實查核是三種不同驗收。",
+      "group": "interaction",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-capabilities",
+      "file": "assets/figures/review-05-capabilities.svg",
+      "title": "從工具呼叫到Agent",
+      "alt": "從工具呼叫到Agent；工具呼叫是提議，執行權限由應用程式控制；保存工具版本、結果及失敗處理。",
+      "caption": "工具呼叫是提議，執行權限由應用程式控制；保存工具版本、結果及失敗處理。",
+      "group": "capabilities",
+      "kind": "loop",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-agents",
+      "file": "assets/figures/review-06-agents.svg",
+      "title": "串流與中途停止",
+      "alt": "串流與中途停止；串流片段不一定是完整JSON或完整訊息；取消、超時與完成需有各自狀態。",
+      "caption": "串流片段不一定是完整JSON或完整訊息；取消、超時與完成需有各自狀態。",
+      "group": "agents",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-engineering",
+      "file": "assets/figures/review-07-engineering.svg",
+      "title": "成本、速度與可靠性",
+      "alt": "成本、速度與可靠性；Token單位依模型與Tokenizer，不直接等於字數；比較相同工作量，保存實際使用量與條件。",
+      "caption": "Token單位依模型與Tokenizer，不直接等於字數；比較相同工作量，保存實際使用量與條件。",
+      "group": "engineering",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-practice",
+      "file": "assets/figures/review-08-practice.svg",
+      "title": "Agent成品的資料與控制邊界",
+      "alt": "Agent成品的資料與控制邊界；預設離線測試與真實服務呼叫分開；版本、權限、成本和完成條件一起交付。",
+      "caption": "預設離線測試與真實服務呼叫分開；版本、權限、成本和完成條件一起交付。",
+      "group": "practice",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "llm-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "llm-study.zip"
   ]
 }

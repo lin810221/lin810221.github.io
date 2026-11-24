@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/health-visuals.js','assets/reader.js','metabolic-health/assets/overview.js','metabolic-health/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,21);assert.equal(home.querySelectorAll('a[href="metabolic-health/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,23);assert.equal(home.querySelectorAll('a[href="metabolic-health/index.html"]').length,1);
 const {window,document}=parseHTML(await read('metabolic-health/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['01-exercise-science-map'],notes:{'01-exercise-science-map':'preserve exercise'}}),storage=new Map([['learning-notes:exercise-science:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
@@ -38,7 +38,7 @@ function navigate(id){location.hash='#'+id;window.dispatchEvent(new Event('hashc
 let equations=0,examples=0;
 for(const lesson of window.COURSE.lessons){
   navigate(lesson.id);assert.equal(q('.lesson-header h1').textContent,lesson.title);assert.equal(document.querySelectorAll('.chapter-link[aria-current="page"]').length,1);assert.ok(document.querySelectorAll('.toc-links a').length>=4);
-  for(const el of document.querySelectorAll('.math-block,.math-source')){const tex=el.textContent.trim().replace(/^\$\$\s*|\s*\$\$$/g,'').replace(/^\$|\$$/g,'');katex.renderToString(tex,{displayMode:el.classList.contains('math-block'),throwOnError:true,strict:'error'});equations++;}
+  for(const el of document.querySelectorAll('.math-block,.math-source')){const tex=el.getAttribute('data-tex') ?? (el.textContent.trim().replace(/^\$\$\s*|\s*\$\$$/g,'').replace(/^\$|\$$/g,''));katex.renderToString(tex,{displayMode:el.classList.contains('math-block'),throwOnError:true,strict:'error'});equations++;}
   if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}
 }
 assert.equal(examples,48);assert.ok(equations>=10);assert.deepEqual(window.COURSE.groups.map(g=>window.COURSE.lessons.filter(l=>l.group===g.id).length),Array(16).fill(6));

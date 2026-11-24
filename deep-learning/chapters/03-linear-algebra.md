@@ -2,15 +2,33 @@
 
 把每個符號對到實際維度，讓之後的forward與backward有清楚契約。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![神經元把輸入轉成可學表示；參數透過loss梯度更新；輸入、目標與輸出shape先對齊。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜神經元把輸入轉成可學表示**：參數透過loss梯度更新；輸入、目標與輸出shape先對齊。
+
+**本單元讀圖任務**：讀完「必要線性代數：shape、內積與批次矩陣」後，在圖上指出「非線性」的位置或對應關係；用本單元的一個例子說明它與「預測」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 樣本與特徵軸
 
-X[N,d]每列是一筆，W[d,h]將d個輸入映射h個輸出，b[h]沿batch廣播。Z=XW+b得到[N,h]。PyTorch nn.Linear的weight儲存[h,d]，forward用其轉置；本課手算採W[d,h]，對照實作時明確分別，不混用兩種記號。
+每列代表一筆樣本，採用列向量的排列方式：
 
 $$
-Z_{i,j}=\sum_{k=1}^{d}X_{i,k}W_{k,j}+b_j
+X\in\mathbb{R}^{N\times d},\quad
+W\in\mathbb{R}^{d\times h},\quad
+b\in\mathbb{R}^{h},\qquad Z=XW+b\in\mathbb{R}^{N\times h}.
 $$
 
-若N=3,d=2,h=4，Z有12個數，W有8個參數，b有4個。batch大小改變不應改參數數量，因為相同規則套到每筆樣本。
+偏置 $b$ 沿著樣本軸廣播。PyTorch `nn.Linear` 的權重儲存形狀為 $h\times d$，計算時使用轉置；本課手算使用 $d\times h$，對照實作時要分清兩種排列。
+
+$$
+Z_{i,j}=\sum_{k=1}^{d}X_{i,k}W_{k,j}+b_j.
+$$
+
+若 $N=3,d=2,h=4$，輸出 $Z$ 有 12 個數，權重 $W$ 有 8 個參數，偏置 $b$ 有 4 個。改變 batch 大小不應改變參數數量，因為同一組規則套用到每筆樣本。
 
 ## 逐元素與矩陣運算
 
@@ -31,7 +49,9 @@ $$
 
 ## 練習與解答
 
-X[5,4]→W1[4,6]→ReLU→W2[6,2]得到[5,2]；參數含bias為4×6+6+6×2+2=44。若X乘上一個不相容[5,6]矩陣，不能靠reshape掩蓋。解答：重新確認樣本軸與feature軸，保持相同數量元素不等於保持資料意義。
+輸入 $X\in\mathbb{R}^{4\times3}$、權重 $W\in\mathbb{R}^{3\times2}$、偏置 $b\in\mathbb{R}^{2}$ 時，輸出與參數各有多少個數？
+
+**解答：**輸出形狀為 $4\times2$，共 8 個數；權重有 $3\times2=6$ 個參數，偏置有 2 個，共 8 個參數。若只把 batch 改成 10，輸出改成 $10\times2$，參數數量仍為 8。兩者在原例恰好相等，不代表輸出數量與參數數量是一回事。
 
 ## 原始論文與官方來源
 

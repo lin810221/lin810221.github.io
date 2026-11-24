@@ -2,6 +2,16 @@
 
 實作可重載的完整推論artifact，並區分它與可精確續訓的checkpoint。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![把模型原理組成專題；固定基準後一次改一個因素；合成範例不當真實世界benchmark。](assets/figures/review-11-projects.svg)
+
+> **圖解｜把模型原理組成專題**：固定基準後一次改一個因素；合成範例不當真實世界benchmark。
+
+**本單元讀圖任務**：讀完「交付模型：前處理、權重與推論契約一起保存」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「模型架構」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一個state_dict還少了什麼
 
 權重需要配對架構、特徵順序、類別意義與前處理。第42例將格式版本、kind、seed、epoch數、完整Torch build字串、state、train均值／尺度、schema與歷史放在同一artifact。MLP架構由kind對應到程式建構；要分享時也需附上對應程式與需求檔，不能只傳.pt。

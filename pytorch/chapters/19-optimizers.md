@@ -2,6 +2,16 @@
 
 理解更新規則、optimizer 狀態與參數清單，而非只調 learning rate。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。](assets/figures/review-04-training.svg)
+
+> **圖解｜Module把參數與forward組織起來**：train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。
+
+**本單元讀圖任務**：讀完「Optimizer：SGD、AdamW、param groups 與梯度清除」後，在圖上指出「輸入特徵」的位置或對應關係；用本單元的一個例子說明它與「Hidden層」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## optimizer 只管理交給它的參數
 
 建立 optimizer 時傳入 model.parameters，之後 forward 新建立的層不會自動加入。凍結參數可以先 requires_grad_(False)，再用 filter 組清單。解凍後確認 optimizer 是否包含它，不能只改旗標就期待更新。

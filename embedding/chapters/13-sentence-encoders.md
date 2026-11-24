@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![從字詞到上下文表示；詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。](assets/figures/review-03-sentences.svg)
+
+> **圖解｜從字詞到上下文表示**：詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。
+
+**本單元讀圖任務**：讀完「Sentence Embedding：Bi-encoder、Cross-encoder 與 Late Interaction」後，在圖上指出「Token ID」的位置或對應關係；用本單元的一個例子說明它與「查表向量」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 為什麼句子需要專門表示
 
 把句子每個詞直接平均，可能遺失否定、順序和關係。句向量模型希望把整段輸入轉成適合某種比較的固定長度表示，並用相應訓練資料讓幾何關係對應任務。

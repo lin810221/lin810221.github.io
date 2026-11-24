@@ -2,6 +2,16 @@
 
 整理使用時最常混淆的概念、官方來源與可執行基準，方便回來查閱。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![以假設與證據持續學習；讀論文分清楚架構、資料與計算預算；把觀察結果和因果歸因分開。](assets/figures/review-12-synthesis.svg)
+
+> **圖解｜以假設與證據持續學習**：讀論文分清楚架構、資料與計算預算；把觀察結果和因果歸因分開。
+
+**本單元讀圖任務**：讀完「術語、公式與版本速查：把整門課收進一張地圖」後，在圖上指出「提出問題」的位置或對應關係；用本單元的一個例子說明它與「手算或推導」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 版本與實測基準
 
 查核日期2026-10-30，採官方最新穩定版PyTorch2.15.0，實測Python3.11、torch2.15.0+cpu。需求檔固定torch==2.15.0，CPU安裝使用官方CPU index；+cpu為build標記。首次安裝需要網路，安裝完成後42個Python入口只用自產資料或包內fixture，不下載模型或資料。
@@ -12,7 +22,7 @@ parameter是optimizer可更新的模型狀態，buffer如BatchNorm running stati
 
 ## 常用公式與分母
 
-row-batch Linear為Z=XWᵀ+b，PyTorch Linear.weight shape為[out,in]。無權重、無忽略標籤的mean CE對logits梯度為(P−Y)/N；weighted CE須看實際分母。SGD更新θ−ηg，AdamW另有decoupled decay。KL非負但不對稱；β-VAE的β不等於1時，目標不再直接是標準ELBO負號。
+row-batch Linear為$Z=XW^\top+b$，PyTorch Linear.weight shape為[out,in]。無權重、無忽略標籤的mean CE對logits梯度為(P−Y)/N；weighted CE須看實際分母。SGD更新θ−ηg，AdamW另有decoupled decay。KL非負但不對稱；β-VAE的β不等於1時，目標不再直接是標準ELBO負號。
 
 $$
 \operatorname{Attention}(Q,K,V)=

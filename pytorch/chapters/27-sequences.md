@@ -2,6 +2,16 @@
 
 用小詞表練習token ID、PAD梯度與序列到類別的轉換。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![一個訓練步的狀態更新；驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。](assets/figures/review-05-practice.svg)
+
+> **圖解｜一個訓練步的狀態更新**：驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。
+
+**本單元讀圖任務**：讀完「序列實作：Embedding、mask pooling 與文字分類」後，在圖上指出「Loss」的位置或對應關係；用本單元的一個例子說明它與「Backward」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 從 token 到句子表示
 
 輸入tokens[N,T]為long索引，Embedding把它轉成[N,T,D]，mask去除PAD後對有效位置平均，再由Linear(D,C)分類。這條路徑可完整訓練，與呼叫外部Embedding API不同。模型從這份極小合成資料開始學參數，不包含預訓練語言理解。

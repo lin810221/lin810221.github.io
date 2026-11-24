@@ -2,6 +2,16 @@
 
 以明確預算搜尋合理空間，保存候選結果而非只看best_score。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![樹與集成如何分割空間；深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。](assets/figures/review-05-evaluation.svg)
+
+> **圖解｜樹與集成如何分割空間**：深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。
+
+**本單元讀圖任務**：讀完「超參數搜尋：Grid、Random與完整Pipeline」後，在圖上指出「葉節點預測」的位置或對應關係；用本單元的一個例子說明它與「根節點」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 參數與超參數
 
 fit學到的coef／tree splits是參數；C、alpha、depth、k等事先設定是超參數。選擇它們也在從資料學習，因此必須使用validation／train CV，最後以未參與選擇的資料評估。把搜尋叫自動化，不會消除選擇偏差。
@@ -20,7 +30,7 @@ C或alpha跨數量級時，選對數尺度比等差0到100常更合理。depth�
 
 ## 保留資料的角色
 
-本章只在train索引搜C=[.01,.1,1,10]，test_used=False。下一步可以用獨立val調threshold；若繼續用val挑更多模型，也要記錄它參與的決策。若要評估整套搜尋而沒有充足holdout，使用nested CV。
+本章只在train索引搜$C=[.01,.1,1,10]$，test_used=False。下一步可以用獨立val調threshold；若繼續用val挑更多模型，也要記錄它參與的決策。若要評估整套搜尋而沒有充足holdout，使用nested CV。
 
 ## 練習與解答
 

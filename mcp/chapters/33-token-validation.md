@@ -2,6 +2,16 @@
 
 驗證 Token 的目標與期限，將可信 claims 轉成 Server 內部 Principal。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![身份、授權與資源範圍；已認證不等於可存取所有資源；權限在執行處強制檢查，不依模型口頭保證。](assets/figures/review-06-security.svg)
+
+> **圖解｜身份、授權與資源範圍**：已認證不等於可存取所有資源；權限在執行處強制檢查，不依模型口頭保證。
+
+**本單元讀圖任務**：讀完「Token 驗證：簽章、issuer、audience 與主體」後，在圖上指出「資源歸屬」的位置或對應關係；用本單元的一個例子說明它與「工具執行」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 能解碼不代表可信
 
 JWT 的 payload 可以被讀出，但若未驗證簽章，任何人都可能偽造 subject 或 tenant。正式 verifier 應使用允許的演算法與受信任金鑰來源，驗證 issuer、audience、期限和必要 claims；不能根據 Token 自己寫的 alg 就無條件接受。

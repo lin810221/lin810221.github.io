@@ -2,6 +2,16 @@
 
 理解登入、取得 Token、發現 metadata 與使用 scope 的責任分工。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![身份、授權與資源範圍；已認證不等於可存取所有資源；權限在執行處強制檢查，不依模型口頭保證。](assets/figures/review-06-security.svg)
+
+> **圖解｜身份、授權與資源範圍**：已認證不等於可存取所有資源；權限在執行處強制檢查，不依模型口頭保證。
+
+**本單元讀圖任務**：讀完「OAuth 授權流程：Client、資源伺服器與身分服務」後，在圖上指出「授權範圍」的位置或對應關係；用本單元的一個例子說明它與「資源歸屬」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 三個角色不要混在一起
 
 Client 代表應用要求存取；Authorization Server 負責登入、同意與簽發 Token；MCP Server 是 Resource Server，驗證每個請求是否可存取。MCP Server 可以與身分服務部署在相近位置，但兩種責任仍然不同。

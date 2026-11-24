@@ -2,6 +2,16 @@
 
 釐清每次 forward 的圖、反向保存的中間量，以及跨 batch 的梯度狀態。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Autograd沿計算圖傳遞梯度；梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。](assets/figures/review-02-grad.svg)
+
+> **圖解｜Autograd沿計算圖傳遞梯度**：梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。
+
+**本單元讀圖任務**：讀完「計算圖生命週期與梯度累積：為什麼需要 zero_grad」後，在圖上指出「非線性」的位置或對應關係；用本單元的一個例子說明它與「損失L」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 三種狀態分開看
 
 參數是長期保存的 leaf；forward 建立本輪計算圖；`.grad` 是參數上的梯度緩衝。一般 backward 後會釋放用於反向計算的中間量，參數與已累積梯度仍存在。下一批 forward 建立新圖，但不會自動清除舊 grad。

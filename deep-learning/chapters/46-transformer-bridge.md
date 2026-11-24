@@ -2,6 +2,16 @@
 
 實際組合pre-norm causal block，建立通往完整模型課程的橋梁。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。](assets/figures/review-08-attention.svg)
+
+> **圖解｜Attention用內容混合資訊**：分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。
+
+**本單元讀圖任務**：讀完「一個Transformer Block：Attention、FFN、Norm與Residual」後，在圖上指出「Softmax」的位置或對應關係；用本單元的一個例子說明它與「Values」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 兩個主要子層
 
 Attention在位置間交換內容；逐位置FFN做非線性特徵轉換；residual保留直接路，norm調整指定feature統計。單一block不是完整語言模型，還缺輸入tokenization、embedding／位置策略、輸出head、訓練目標與生成流程。

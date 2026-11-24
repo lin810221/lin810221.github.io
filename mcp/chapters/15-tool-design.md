@@ -2,6 +2,16 @@
 
 讓工具容易被正確選用，同時維持可審查的業務邊界。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![ToolsResourcesPrompts三種入口；三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。](assets/figures/review-03-contracts.svg)
+
+> **圖解｜ToolsResourcesPrompts三種入口**：三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。
+
+**本單元讀圖任務**：讀完「工具命名、描述與 annotations」後，在圖上指出「Prompts模板」的位置或對應關係；用本單元的一個例子說明它與「Tools動作」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 名稱要能穩定路由
 
 工具名稱是 API 識別碼，title 是 UI 標籤，description 是用途說明。不要用一段中文標題直接當跨供應商路由鍵，也不要在模型回傳的名稱前後任意補字再猜原始工具。本課使用簡單的 snake_case 名稱，Host 另外保存伺服器與原始名稱的映射。

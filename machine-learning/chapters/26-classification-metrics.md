@@ -2,9 +2,19 @@
 
 用四筆手工分數算清楚precision、recall、F1及排序評估。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![樹與集成如何分割空間；深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。](assets/figures/review-05-evaluation.svg)
+
+> **圖解｜樹與集成如何分割空間**：深樹可擬合更多細節，也可能過擬合；集成需比較相同資料與預算。
+
+**本單元讀圖任務**：讀完「分類評估：混淆矩陣、ROC、PR與不平衡」後，在圖上指出「分割條件」的位置或對應關係；用本單元的一個例子說明它與「左分支」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先把四種情況列出來
 
-真正例且預測正為TP，真負例誤報正為FP，真正例漏掉為FN，兩者負為TN。sklearn confusion_matrix預設列是真值、欄是預測；類別順序要固定。accuracy=(TP+TN)/N對稀有事件可能被大量TN掩蓋。
+真正例且預測正為TP，真負例誤報正為FP，真正例漏掉為FN，兩者負為TN。sklearn confusion_matrix預設列是真值、欄是預測；類別順序要固定。$\operatorname{accuracy}=(TP+TN)/N$對稀有事件可能被大量TN掩蓋。
 
 $$
 \mathrm{Precision}=\frac{TP}{TP+FP},\quad
@@ -16,7 +26,7 @@ $$
 
 ## 手算範例
 
-y=[1,1,0,0]，scores=[.9,.4,.8,.1]，threshold=.5，TP=FP=FN=TN=1，precision=recall=F1=.5。threshold=.85只接受第一筆，precision=1、recall=.5。這些是固定分數的決策變化，不是重新訓練。
+$y=[1,1,0,0]$，scores=[.9,.4,.8,.1]，threshold=.5，$TP=FP=FN=TN=1$，$\operatorname{precision}=\operatorname{recall}=F1=.5$。threshold=.85只接受第一筆，$\operatorname{precision}=1$、$\operatorname{recall}=.5$。這些是固定分數的決策變化，不是重新訓練。
 
 ## ROC與PR
 

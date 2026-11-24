@@ -2,13 +2,23 @@
 
 將forward數值保存，再沿每條依賴路徑回傳導數。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Forward與Backward的對應；反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。](assets/figures/review-02-networks.svg)
+
+> **圖解｜Forward與Backward的對應**：反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。
+
+**本單元讀圖任務**：讀完「手算反向傳播：一個隱藏神經元的四個梯度」後，在圖上指出「輸出logits」的位置或對應關係；用本單元的一個例子說明它與「Loss」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 固定網路與數字
 
-x=2，w1=.3、b1=-.1，a=w1x+b1=.5，h=sigmoid(a)；輸出ŷ=w2h+b2，w2=-.7、b2=.2，target=.8。loss=.5(ŷ-target)²。先列這些中間值，再算導數，比直接展開所有指數更容易核對。
+$x=2$，$w1=.3$、$b1=-.1$，$a=w1x+b1=.5$，$h=\operatorname{sigmoid}(a)$；輸出$\hat y=w2h+b2$，$w2=-.7$、$b2=.2$，target=.8。loss=.5(ŷ-target)²。先列這些中間值，再算導數，比直接展開所有指數更容易核對。
 
 ## 從輸出往回
 
-令e=ŷ-target，則dL/dŷ=e。輸出層dL/dw2=eh，dL/db2=e；對hidden傳回eh的係數需注意是e×w2，不是再次乘h。sigmoid的局部導數h(1-h)，最後乘x得到w1梯度。
+令$e=\hat y-\operatorname{target}$，則$\frac{\partial L}{\partial\hat y}=e$。輸出層$\frac{\partial L}{\partial w_2}=eh$，$\frac{\partial L}{\partial b_2}=e$；對hidden傳回eh的係數需注意是e×w2，不是再次乘h。sigmoid的局部導數h(1-h)，最後乘x得到w1梯度。
 
 $$
 \delta_a=e\,w_2\,h(1-h),\quad
@@ -26,7 +36,7 @@ h已包含sigmoid結果，backward可直接用h(1-h)。大網路也會保存必�
 
 ## 練習與解答
 
-若w2=0，第一層透過這條路的梯度為0，但w2梯度eh仍可非零；下一步w2更新後又能傳訊號。若把loss的.5移除，全部導數乘2。解答：常數因子、mean分母與每條路徑都需一致，否則手算對照會整體差一倍或一個N。
+若$w2=0$，第一層透過這條路的梯度為0，但w2梯度eh仍可非零；下一步w2更新後又能傳訊號。若把loss的.5移除，全部導數乘2。解答：常數因子、mean分母與每條路徑都需一致，否則手算對照會整體差一倍或一個N。
 
 ## 完整可執行範例
 

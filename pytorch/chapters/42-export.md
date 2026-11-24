@@ -2,6 +2,16 @@
 
 將模型格式、shape限制與執行runtime分清楚，避免把匯出成功當部署完成。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「交付與匯出：state_dict、torch.export與ONNX入口」後，在圖上指出「資料等待」的位置或對應關係；用本單元的一個例子說明它與「傳輸」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先選交付對象
 
 同一Python程式重建模型可使用state_dict；需要可分析的運算圖則研究torch.export；跨runtime常會考慮ONNX與目標runtime的支援。格式檔案本身不包含完整服務：仍需前處理、欄位契約、版本、效能與監控。新教材以torch.export方向介紹圖匯出，TorchScript只用於辨認舊程式與遷移背景。

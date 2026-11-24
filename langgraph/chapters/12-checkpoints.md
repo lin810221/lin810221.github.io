@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![檢查點、記憶與執行緒；thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。](assets/figures/review-04-memory.svg)
+
+> **圖解｜檢查點、記憶與執行緒**：thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。
+
+**本單元讀圖任務**：讀完「Checkpoint 與 Thread 持久化」後，在圖上指出「輸入」的位置或對應關係；用本單元的一個例子說明它與「狀態A」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先分清三個名詞
 
 **Checkpointer** 是保存狀態的元件；**checkpoint** 是保存的執行快照；**thread** 是串起一系列相關執行與快照的識別空間。`thread_id` 告訴執行引擎要讀寫哪一條 thread。

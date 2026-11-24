@@ -2,6 +2,16 @@
 
 從行為、內容與互動目的，區分 MCP 的三種主要伺服器能力。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![HostClient與Server的責任；MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜HostClient與Server的責任**：MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。
+
+**本單元讀圖任務**：讀完「工具、資源、提示模板：選對暴露介面」後，在圖上指出「協定訊息」的位置或對應關係；用本單元的一個例子說明它與「MCP Server」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 工具是可以要求執行的能力
 
 Tool 有名稱、描述與輸入 Schema，可能還有輸出 Schema。`search_notes(query, limit)` 代表一項可執行查詢，`close_ticket(preview_id, idempotency_key)` 則代表有副作用的操作。工具可以唯讀，也可以寫入；是否寫入取決於實作與業務契約，而不是名稱看起來像不像查詢。

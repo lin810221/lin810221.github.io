@@ -2,6 +2,16 @@
 
 兩種獨立開關：模組行為與Autograd記錄，必須各自設定。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。](assets/figures/review-04-training.svg)
+
+> **圖解｜Module把參數與forward組織起來**：train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。
+
+**本單元讀圖任務**：讀完「驗證與推論：eval、no_grad、inference_mode」後，在圖上指出「輸出頭」的位置或對應關係；用本單元的一個例子說明它與「參數」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## eval 不是關閉梯度
 
 model.eval() 相當於將模組切到train(False)，使Dropout、BatchNorm等使用推論行為。一般Linear仍可建立計算圖，所以eval後output.requires_grad仍可能True。相反地，no_grad只改Autograd記錄，不會幫你關Dropout。正式驗證通常需要兩者。

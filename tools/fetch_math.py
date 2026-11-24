@@ -6,7 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "assets" / "vendor" / "katex"
-URL = "https://registry.npmjs.org/katex/-/katex-0.16.22.tgz"
+VERSION = "0.19.1"
+URL = f"https://registry.npmjs.org/katex/-/katex-{VERSION}.tgz"
 
 def main():
     data = urllib.request.urlopen(URL, timeout=45).read()
@@ -17,7 +18,7 @@ def main():
             if not member.isfile() or not member.name.startswith(prefix):
                 continue
             relative = Path(member.name[len(prefix):])
-            if relative.name not in {"katex.min.js", "katex.min.css", "auto-render.min.js"} and relative.suffix != ".woff2":
+            if relative.name not in {"katex.min.js", "katex.mjs", "katex.min.css", "auto-render.min.js"} and relative.suffix != ".woff2":
                 continue
             target = (DEST / relative).resolve()
             if not target.is_relative_to(DEST.resolve()):
@@ -33,7 +34,10 @@ def main():
     css = css_path.read_text(encoding="utf-8")
     css = re.sub(r',url\([^)]*\) format\("(?:woff|truetype)"\)', '', css)
     css_path.write_text(css, encoding="utf-8")
-    print(f"KaTeX 0.16.22: {count} assets downloaded")
+    qa = ROOT / ".qa" / "vendor"
+    if qa.is_dir():
+        (qa / "katex.mjs").write_bytes((DEST / "katex.mjs").read_bytes())
+    print(f"KaTeX {VERSION}: {count} assets downloaded")
 
 if __name__ == "__main__":
     main()

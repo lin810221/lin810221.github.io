@@ -2,6 +2,16 @@
 
 先理解資料平行的契約，再選配啟動CPU兩程序或真正多GPU。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「DDP與多GPU入門：rank、sampler、同步與分母」後，在圖上指出「後處理」的位置或對應關係；用本單元的一個例子說明它與「資料等待」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一個rank一份模型
 
 DistributedDataParallel通常每個程序持有完整模型、處理不同資料，backward時同步梯度。world_size是程序總數，rank是全域編號，local_rank常對應本機裝置。DDP不會自動替你切分Dataset，需DistributedSampler；每個epoch呼叫set_epoch，讓shuffle隨epoch改變。
@@ -26,7 +36,7 @@ torchrun --standalone --nproc-per-node=2 pytorch/examples/23_distributed.py --ru
 
 ## 延伸與練習
 
-DDP每rank保存完整模型，模型本身放不下時才進一步研究FSDP2、tensor/pipeline parallel與distributed checkpoint。它們有不同的分片、通訊與保存契約，不能只換類別名稱。練習N=10、world_size=3，說明為何sampler需要補樣本或丟資料；解答：不能整除，需明確決定策略並讓評估分母與覆蓋一致。
+DDP每rank保存完整模型，模型本身放不下時才進一步研究FSDP2、tensor/pipeline parallel與distributed checkpoint。它們有不同的分片、通訊與保存契約，不能只換類別名稱。練習$N=10$、world_size=3，說明為何sampler需要補樣本或丟資料；解答：不能整除，需明確決定策略並讓評估分母與覆蓋一致。
 
 ## 完整可執行範例
 

@@ -2,6 +2,16 @@
 
 讓停止條件與best checkpoint可解釋，也能在中斷後繼續。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。](assets/figures/review-04-training.svg)
+
+> **圖解｜Module把參數與forward組織起來**：train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。
+
+**本單元讀圖任務**：讀完「學習率排程、Early Stopping 與最佳模型」後，在圖上指出「狀態」的位置或對應關係；用本單元的一個例子說明它與「輸入特徵」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 排程需要知道更新單位
 
 StepLR可每幾個epoch降低lr；CosineAnnealingLR依設定週期變化；ReduceLROnPlateau依傳入指標決定。先決定scheduler.step以batch還是epoch為單位，T_max或step_size也要使用同一單位。一般參數更新後再呼叫排程；plateau則在完成驗證、取得指標後呼叫。

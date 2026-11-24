@@ -26,6 +26,13 @@ export function verifyReaderNumbering(){
       const expectedChapter=/^\d+$/.test(group.number)?`CHAPTER ${group.number}`:`APPENDIX${group.number==='附'?'':' '+group.number}`;
       assert.ok(kicker.includes(expectedChapter));assert.ok(kicker.includes(`UNIT ${pos.number} OF ${pos.count}`));assert.ok(q('.lesson-breadcrumb').textContent.endsWith('單元 '+pos.number));
       assert.equal(q('.lesson-header h1').textContent,unit.title);
+      if(course.visualPresentation==='chapter'){
+        const image=q('.lesson-content img[src*="/review-"]');
+        assert.ok(image,`${unit.id}: missing readable chapter illustration`);
+        assert.equal(image.parentElement.getAttribute('target'),'_blank');
+        assert.equal(image.parentElement.getAttribute('href'),image.getAttribute('src'));
+        assert.ok(image.parentElement.getAttribute('aria-label').includes('放大'));
+      }
       if(index){const prev=course.lessons[index-1];assert.equal(q('.pagination-link.previous').getAttribute('href'),'#'+prev.id);assert.ok(q('.pagination-link.previous small').textContent.includes(positions.get(prev.id).label));}
       if(index+1<course.lessons.length){const next=course.lessons[index+1];assert.equal(q('.pagination-link.next').getAttribute('href'),'#'+next.id);assert.ok(q('.pagination-link.next small').textContent.includes(positions.get(next.id).label));}
       boundaries++;

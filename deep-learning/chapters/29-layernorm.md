@@ -2,6 +2,16 @@
 
 比較批次相依性、affine參數與保存狀態，避免只背名稱。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「LayerNorm、GroupNorm與RMSNorm：正規化軸的選擇」後，在圖上指出「正則化」的位置或對應關係；用本單元的一個例子說明它與「正規化」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## LayerNorm依指定尾部維度
 
 對X[N,T,D]使用LayerNorm(D)，每個樣本每個token沿D算mean與variance。其他batch樣本改變不應影響此筆正規化，因此常見於序列架構；它不像BN需要running mean供eval使用。gamma／beta仍可學。

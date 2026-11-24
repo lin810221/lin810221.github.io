@@ -2,6 +2,16 @@
 
 建立隔離環境，知道安裝了哪個套件，以及硬體能力如何確認。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。](assets/figures/review-01-start.svg)
+
+> **圖解｜Tensor的shape與dtype**：相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。
+
+**本單元讀圖任務**：讀完「安裝最新版：Python、CPU、CUDA 與環境檢查」後，在圖上指出「特徵軸D」的位置或對應關係；用本單元的一個例子說明它與「dtype」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先分清三個版本
 
 Python 版本決定可安裝哪個 wheel；PyTorch 版本決定 API；GPU driver 與所選套件的 CUDA runtime 決定能否使用 GPU。`nvidia-smi` 顯示的 CUDA 相容能力，與 `torch.version.cuda` 顯示的套件建置 runtime，含義不同。CPU 版出現 `None` 是正常結果。

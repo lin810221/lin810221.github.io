@@ -92,7 +92,9 @@
         "representation",
         "architecture",
         "overview"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「深度學習全貌：讓特徵也成為可以學習的表示」後，在圖上指出「輸入特徵」的位置或對應關係；用本單元的一個例子說明它與「加權與bias」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-environment",
@@ -104,7 +106,9 @@
         "2.15.0",
         "CPU",
         "environment"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「最新版實作環境：CPU、版本與可重現入口」後，在圖上指出「加權與bias」的位置或對應關係；用本單元的一個例子說明它與「非線性」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-linear-algebra",
@@ -116,7 +120,9 @@
         "shape",
         "Jacobian",
         "linear algebra"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「必要線性代數：shape、內積與批次矩陣」後，在圖上指出「非線性」的位置或對應關係；用本單元的一個例子說明它與「預測」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-calculus",
@@ -128,7 +134,9 @@
         "gradient",
         "partial derivative",
         "calculus"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「導數、梯度與Chain Rule：從局部變化到整個模型」後，在圖上指出「預測」的位置或對應關係；用本單元的一個例子說明它與「損失」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-probability",
@@ -141,7 +149,9 @@
         "entropy",
         "cross entropy",
         "probability"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「機率與最大概似：為什麼這些loss合理」後，在圖上指出「損失」的位置或對應關係；用本單元的一個例子說明它與「輸入特徵」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-neuron",
@@ -154,7 +164,9 @@
         "activation",
         "Linear"
       ],
-      "example": "01_neuron.py"
+      "example": "01_neuron.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「第一個神經元：仿射、非線性與輸出含義」後，在圖上指出「輸入特徵」的位置或對應關係；用本單元的一個例子說明它與「加權與bias」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-mlp",
@@ -167,7 +179,9 @@
         "nonlinearity",
         "expressivity"
       ],
-      "example": "02_xor.py"
+      "example": "02_xor.py",
+      "visual": "review-02-networks",
+      "visualTask": "讀完「MLP與XOR：非線性如何改變可表示的規則」後，在圖上指出「輸入」的位置或對應關係；用本單元的一個例子說明它與「Hidden表示」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-forward",
@@ -179,7 +193,9 @@
         "parameter count",
         "shape",
         "activation memory"
-      ]
+      ],
+      "visual": "review-02-networks",
+      "visualTask": "讀完「Forward與參數帳本：每一層到底計算什麼」後，在圖上指出「Hidden表示」的位置或對應關係；用本單元的一個例子說明它與「輸出logits」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-scalar-backprop",
@@ -191,7 +207,9 @@
         "chain rule",
         "manual gradients"
       ],
-      "example": "03_scalar_backprop.py"
+      "example": "03_scalar_backprop.py",
+      "visual": "review-02-networks",
+      "visualTask": "讀完「手算反向傳播：一個隱藏神經元的四個梯度」後，在圖上指出「輸出logits」的位置或對應關係；用本單元的一個例子說明它與「Loss」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-matrix-backprop",
@@ -203,7 +221,9 @@
         "Jacobian",
         "softmax gradient"
       ],
-      "example": "04_matrix_backprop.py"
+      "example": "04_matrix_backprop.py",
+      "visual": "review-02-networks",
+      "visualTask": "讀完「矩陣反向傳播：一個batch如何一起求梯度」後，在圖上指出「Loss」的位置或對應關係；用本單元的一個例子說明它與「鏈式梯度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-gradient-check",
@@ -216,7 +236,9 @@
         "autograd",
         "double"
       ],
-      "example": "05_gradcheck.py"
+      "example": "05_gradcheck.py",
+      "visual": "review-02-networks",
+      "visualTask": "讀完「梯度檢查：有限差分、double與不可微邊界」後，在圖上指出「鏈式梯度」的位置或對應關係；用本單元的一個例子說明它與「輸入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-activations",
@@ -230,7 +252,9 @@
         "GELU",
         "SiLU"
       ],
-      "example": "06_activations.py"
+      "example": "06_activations.py",
+      "visual": "review-02-networks",
+      "visualTask": "讀完「Activation：Sigmoid、Tanh、ReLU、GELU與梯度」後，在圖上指出「輸入」的位置或對應關係；用本單元的一個例子說明它與「Hidden表示」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-regression-loss",
@@ -244,7 +268,9 @@
         "SmoothL1",
         "regression"
       ],
-      "example": "07_regression_losses.py"
+      "example": "07_regression_losses.py",
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「回歸損失：MSE、MAE與Huber的梯度偏好」後，在圖上指出「回歸目標」的位置或對應關係；用本單元的一個例子說明它與「單標籤分類」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-classification-loss",
@@ -257,7 +283,9 @@
         "logits",
         "reduction"
       ],
-      "example": "08_classification_losses.py"
+      "example": "08_classification_losses.py",
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「分類損失：Logits、BCE、Softmax CE與加權分母」後，在圖上指出「單標籤分類」的位置或對應關係；用本單元的一個例子說明它與「多標籤」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-data-boundaries",
@@ -269,7 +297,9 @@
         "leakage",
         "preprocessing",
         "train validation test"
-      ]
+      ],
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「資料與前處理：深度模型也需要訓練邊界」後，在圖上指出「多標籤」的位置或對應關係；用本單元的一個例子說明它與「樣本權重」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-training-evaluation",
@@ -282,7 +312,9 @@
         "inference_mode",
         "metrics"
       ],
-      "example": "09_training_loop.py"
+      "example": "09_training_loop.py",
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「訓練與評估的角色：梯度、模式與選模」後，在圖上指出「樣本權重」的位置或對應關係；用本單元的一個例子說明它與「有效分母」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-labels",
@@ -295,7 +327,9 @@
         "imbalance",
         "weighted loss"
       ],
-      "example": "10_imbalance.py"
+      "example": "10_imbalance.py",
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「標籤、權重與不平衡：訊號品質先於網路大小」後，在圖上指出「有效分母」的位置或對應關係；用本單元的一個例子說明它與「回歸目標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-capacity",
@@ -307,7 +341,9 @@
         "universal approximation",
         "inductive bias",
         "generalization"
-      ]
+      ],
+      "visual": "review-03-objectives",
+      "visualTask": "讀完「容量、深度與可學性：能表示不等於能學到」後，在圖上指出「回歸目標」的位置或對應關係；用本單元的一個例子說明它與「單標籤分類」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-sgd-momentum",
@@ -320,7 +356,9 @@
         "optimization",
         "learning rate"
       ],
-      "example": "11_sgd_momentum.py"
+      "example": "11_sgd_momentum.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「SGD與Momentum：沿梯度走，還要記住方向」後，在圖上指出「參數w1」的位置或對應關係；用本單元的一個例子說明它與「參數w2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-adamw",
@@ -333,7 +371,9 @@
         "weight decay",
         "bias correction"
       ],
-      "example": "12_adamw.py"
+      "example": "12_adamw.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「Adam與AdamW：自適應尺度與解耦衰減」後，在圖上指出「參數w2」的位置或對應關係；用本單元的一個例子說明它與「等高線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-schedules",
@@ -346,7 +386,9 @@
         "cosine",
         "early stopping"
       ],
-      "example": "13_schedules.py"
+      "example": "13_schedules.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「學習率與排程：warmup、下降、early stopping」後，在圖上指出「等高線」的位置或對應關係；用本單元的一個例子說明它與「梯度方向」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-initialization",
@@ -360,7 +402,9 @@
         "fan_in",
         "variance"
       ],
-      "example": "14_initialization.py"
+      "example": "14_initialization.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「初始化：對稱性、Xavier、He與訊號尺度」後，在圖上指出「梯度方向」的位置或對應關係；用本單元的一個例子說明它與「學習率」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-gradient-flow",
@@ -373,7 +417,9 @@
         "Jacobian",
         "residual"
       ],
-      "example": "15_gradient_flow.py"
+      "example": "15_gradient_flow.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「梯度消失與爆炸：長鏈、Jacobian與殘差路徑」後，在圖上指出「學習率」的位置或對應關係；用本單元的一個例子說明它與「參數w1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-gradient-control",
@@ -386,7 +432,9 @@
         "AMP",
         "numerical stability"
       ],
-      "example": "16_clipping_accumulation.py"
+      "example": "16_clipping_accumulation.py",
+      "visual": "review-04-optimization",
+      "visualTask": "讀完「梯度裁切、累積與精度：先維持目標再控制更新」後，在圖上指出「參數w1」的位置或對應關係；用本單元的一個例子說明它與「參數w2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-generalization",
@@ -398,7 +446,9 @@
         "overfitting",
         "bias variance",
         "learning curves"
-      ]
+      ],
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「過擬合與泛化：資料、容量與最佳化共同決定」後，在圖上指出「過擬合」的位置或對應關係；用本單元的一個例子說明它與「正則化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-weight-regularization",
@@ -411,7 +461,9 @@
         "weight decay",
         "regularization",
         "implicit bias"
-      ]
+      ],
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「L1、L2與weight decay：限制哪一種複雜度」後，在圖上指出「正則化」的位置或對應關係；用本單元的一個例子說明它與「正規化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-dropout",
@@ -424,7 +476,9 @@
         "train eval",
         "regularization"
       ],
-      "example": "17_dropout.py"
+      "example": "17_dropout.py",
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「Dropout：隨機遮蔽、期望與推論模式」後，在圖上指出「正規化」的位置或對應關係；用本單元的一個例子說明它與「過擬合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-batchnorm",
@@ -437,7 +491,9 @@
         "variance",
         "momentum"
       ],
-      "example": "18_batchnorm.py"
+      "example": "18_batchnorm.py",
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「BatchNorm：批次統計、running buffers與兩種variance」後，在圖上指出「過擬合」的位置或對應關係；用本單元的一個例子說明它與「正則化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-layernorm",
@@ -450,7 +506,9 @@
         "RMSNorm",
         "normalization"
       ],
-      "example": "19_layernorm.py"
+      "example": "19_layernorm.py",
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「LayerNorm、GroupNorm與RMSNorm：正規化軸的選擇」後，在圖上指出「正則化」的位置或對應關係；用本單元的一個例子說明它與「正規化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-augmentation",
@@ -463,7 +521,9 @@
         "invariance",
         "soft targets"
       ],
-      "example": "20_mixup.py"
+      "example": "20_mixup.py",
+      "visual": "review-05-regularization",
+      "visualTask": "讀完「資料增強與Mixup：先定義哪些變換保留答案」後，在圖上指出「正規化」的位置或對應關係；用本單元的一個例子說明它與「過擬合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-convolution",
@@ -476,7 +536,9 @@
         "kernel",
         "weight sharing"
       ],
-      "example": "21_convolution.py"
+      "example": "21_convolution.py",
+      "visual": "review-06-vision",
+      "visualTask": "讀完「卷積運算：局部感受、權重共享與cross-correlation」後，在圖上指出「影像區域」的位置或對應關係；用本單元的一個例子說明它與「共享Kernel」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-receptive-field",
@@ -489,7 +551,9 @@
         "padding",
         "dilation"
       ],
-      "example": "22_receptive_field.py"
+      "example": "22_receptive_field.py",
+      "visual": "review-06-vision",
+      "visualTask": "讀完「輸出尺寸與感受野：stride、padding、dilation」後，在圖上指出「共享Kernel」的位置或對應關係；用本單元的一個例子說明它與「特徵圖」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-pooling",
@@ -501,7 +565,9 @@
         "downsampling",
         "aliasing",
         "global average pooling"
-      ]
+      ],
+      "visual": "review-06-vision",
+      "visualTask": "讀完「Pooling與下採樣：資訊、等變性與aliasing」後，在圖上指出「特徵圖」的位置或對應關係；用本單元的一個例子說明它與「下採樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-cnn-training",
@@ -514,7 +580,9 @@
         "synthetic data",
         "training"
       ],
-      "example": "23_cnn.py"
+      "example": "23_cnn.py",
+      "visual": "review-06-vision",
+      "visualTask": "讀完「CNN完整訓練：從合成線條到可驗證分類」後，在圖上指出「下採樣」的位置或對應關係；用本單元的一個例子說明它與「高階表示」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-residual",
@@ -528,7 +596,9 @@
         "identity",
         "Jacobian"
       ],
-      "example": "24_residual.py"
+      "example": "24_residual.py",
+      "visual": "review-06-vision",
+      "visualTask": "讀完「Residual：學修正量，保留直接路徑」後，在圖上指出「高階表示」的位置或對應關係；用本單元的一個例子說明它與「影像區域」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-transfer",
@@ -541,7 +611,9 @@
         "pretraining",
         "fine tuning"
       ],
-      "example": "25_freezing.py"
+      "example": "25_freezing.py",
+      "visual": "review-06-vision",
+      "visualTask": "讀完「遷移學習：預訓練表示、凍結與領域差異」後，在圖上指出「影像區域」的位置或對應關係；用本單元的一個例子說明它與「共享Kernel」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-sequence-data",
@@ -553,7 +625,9 @@
         "time series",
         "causality",
         "lengths"
-      ]
+      ],
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「序列資料：時間、順序、長度與預測位置」後，在圖上指出「輸入x1」的位置或對應關係；用本單元的一個例子說明它與「狀態h1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-rnn",
@@ -566,7 +640,9 @@
         "hidden state",
         "unroll"
       ],
-      "example": "26_rnn.py"
+      "example": "26_rnn.py",
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「RNN：共享參數的遞迴與手動展開」後，在圖上指出「狀態h1」的位置或對應關係；用本單元的一個例子說明它與「輸入x2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-bptt",
@@ -578,7 +654,9 @@
         "truncated BPTT",
         "detach",
         "gradient flow"
-      ]
+      ],
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「BPTT：跨時間反向傳播與截斷」後，在圖上指出「輸入x2」的位置或對應關係；用本單元的一個例子說明它與「狀態h2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-gates",
@@ -591,7 +669,9 @@
         "gates",
         "cell state"
       ],
-      "example": "27_lstm_gru.py"
+      "example": "27_lstm_gru.py",
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「LSTM與GRU：用gate控制更新與記憶」後，在圖上指出「狀態h2」的位置或對應關係；用本單元的一個例子說明它與「輸出」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-embedding-mask",
@@ -605,7 +685,9 @@
         "pooling",
         "token IDs"
       ],
-      "example": "28_embedding_mask.py"
+      "example": "28_embedding_mask.py",
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「Embedding、Padding與Mask：索引如何成為表示」後，在圖上指出「輸出」的位置或對應關係；用本單元的一個例子說明它與「輸入x1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-sequence-training",
@@ -618,7 +700,9 @@
         "pack_padded_sequence",
         "collate"
       ],
-      "example": "29_sequence_project.py"
+      "example": "29_sequence_project.py",
+      "visual": "review-07-sequence",
+      "visualTask": "讀完「變長序列完整專案：Embedding到GRU分類」後，在圖上指出「輸入x1」的位置或對應關係；用本單元的一個例子說明它與「狀態h1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-attention",
@@ -631,7 +715,9 @@
         "scaled dot product",
         "softmax"
       ],
-      "example": "30_attention.py"
+      "example": "30_attention.py",
+      "visual": "review-08-attention",
+      "visualTask": "讀完「Attention：Query、Key、Value與縮放內積」後，在圖上指出「Query」的位置或對應關係；用本單元的一個例子說明它與「Keys」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-attention-masks",
@@ -644,7 +730,9 @@
         "causal mask",
         "padding mask"
       ],
-      "example": "31_causal_mask.py"
+      "example": "31_causal_mask.py",
+      "visual": "review-08-attention",
+      "visualTask": "讀完「Self、Cross與Causal Mask：防止未來資訊滲漏」後，在圖上指出「Keys」的位置或對應關係；用本單元的一個例子說明它與「分數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-multihead-position",
@@ -656,7 +744,9 @@
         "position encoding",
         "permutation",
         "attention"
-      ]
+      ],
+      "visual": "review-08-attention",
+      "visualTask": "讀完「Multi-head與位置資訊：多個子空間如何組合」後，在圖上指出「分數」的位置或對應關係；用本單元的一個例子說明它與「Softmax」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-transformer-bridge",
@@ -670,7 +760,9 @@
         "residual",
         "causality"
       ],
-      "example": "32_transformer_block.py"
+      "example": "32_transformer_block.py",
+      "visual": "review-08-attention",
+      "visualTask": "讀完「一個Transformer Block：Attention、FFN、Norm與Residual」後，在圖上指出「Softmax」的位置或對應關係；用本單元的一個例子說明它與「Values」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-contrastive",
@@ -683,7 +775,9 @@
         "representation",
         "temperature"
       ],
-      "example": "33_contrastive.py"
+      "example": "33_contrastive.py",
+      "visual": "review-08-attention",
+      "visualTask": "讀完「表示與對比學習：讓相似的定義來自任務」後，在圖上指出「Values」的位置或對應關係；用本單元的一個例子說明它與「Query」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-self-supervision",
@@ -695,7 +789,9 @@
         "pretraining",
         "masked prediction",
         "linear probe"
-      ]
+      ],
+      "visual": "review-08-attention",
+      "visualTask": "讀完「自監督、預訓練與微調：目標如何塑造表示」後，在圖上指出「Query」的位置或對應關係；用本單元的一個例子說明它與「Keys」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "49-autoencoder",
@@ -708,7 +804,9 @@
         "reconstruction",
         "latent"
       ],
-      "example": "34_autoencoder.py"
+      "example": "34_autoencoder.py",
+      "visual": "review-09-generative",
+      "visualTask": "讀完「Autoencoder：瓶頸、重建與表示限制」後，在圖上指出「乾淨資料」的位置或對應關係；用本單元的一個例子說明它與「少量噪音」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "50-vae",
@@ -721,7 +819,9 @@
         "reparameterization",
         "KL divergence"
       ],
-      "example": "35_vae.py"
+      "example": "35_vae.py",
+      "visual": "review-09-generative",
+      "visualTask": "讀完「VAE：重參數化、ELBO與Gaussian KL」後，在圖上指出「少量噪音」的位置或對應關係；用本單元的一個例子說明它與「更多噪音」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "51-gan",
@@ -735,7 +835,9 @@
         "non saturating",
         "detach"
       ],
-      "example": "36_gan.py"
+      "example": "36_gan.py",
+      "visual": "review-09-generative",
+      "visualTask": "讀完「GAN：交替對抗目標與梯度邊界」後，在圖上指出「更多噪音」的位置或對應關係；用本單元的一個例子說明它與「學得還原」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "52-diffusion",
@@ -748,7 +850,9 @@
         "epsilon prediction",
         "noise schedule"
       ],
-      "example": "37_diffusion.py"
+      "example": "37_diffusion.py",
+      "visual": "review-09-generative",
+      "visualTask": "讀完「Diffusion：加噪、epsilon預測與反向取樣」後，在圖上指出「學得還原」的位置或對應關係；用本單元的一個例子說明它與「新樣本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "53-flows",
@@ -761,7 +865,9 @@
         "ODE",
         "velocity field"
       ],
-      "example": "38_flow_matching.py"
+      "example": "38_flow_matching.py",
+      "visual": "review-09-generative",
+      "visualTask": "讀完「Flow Matching：學速度場與積分生成」後，在圖上指出「新樣本」的位置或對應關係；用本單元的一個例子說明它與「乾淨資料」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "54-generative-evaluation",
@@ -774,7 +880,9 @@
         "likelihood",
         "coverage",
         "diversity"
-      ]
+      ],
+      "visual": "review-09-generative",
+      "visualTask": "讀完「生成模型評估：重建、似然、分布與人類判斷」後，在圖上指出「乾淨資料」的位置或對應關係；用本單元的一個例子說明它與「少量噪音」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "55-training-failures",
@@ -786,7 +894,9 @@
         "overfit one batch",
         "NaN",
         "gradients"
-      ]
+      ],
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「模型沒有學到：從第一個失敗的數值開始查」後，在圖上指出「分布改變」的位置或對應關係；用本單元的一個例子說明它與「信心校準」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "56-reproducibility",
@@ -798,7 +908,9 @@
         "seed",
         "determinism",
         "ablation"
-      ]
+      ],
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「重現與隨機性：seed是實驗條件的一部分」後，在圖上指出「信心校準」的位置或對應關係；用本單元的一個例子說明它與「解釋假設」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "57-calibration-ood",
@@ -810,7 +922,9 @@
         "temperature scaling",
         "OOD",
         "Brier score"
-      ]
+      ],
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「信心、校準與分布外資料：高分不等於可靠」後，在圖上指出「解釋假設」的位置或對應關係；用本單元的一個例子說明它與「模型壓縮」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "58-saliency",
@@ -823,7 +937,9 @@
         "interpretability",
         "finite difference"
       ],
-      "example": "39_saliency.py"
+      "example": "39_saliency.py",
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「模型看哪裡：梯度敏感度與解釋的界線」後，在圖上指出「模型壓縮」的位置或對應關係；用本單元的一個例子說明它與「保留驗收」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "59-robustness",
@@ -835,7 +951,9 @@
         "distribution shift",
         "perturbation",
         "invariance"
-      ]
+      ],
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「穩健性：定義哪些改變應該不影響答案」後，在圖上指出「保留驗收」的位置或對應關係；用本單元的一個例子說明它與「分布改變」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "60-distillation",
@@ -849,7 +967,9 @@
         "temperature",
         "compression"
       ],
-      "example": "40_distillation.py"
+      "example": "40_distillation.py",
+      "visual": "review-10-reliability",
+      "visualTask": "讀完「知識蒸餾：讓小模型學標籤，也學老師的分布」後，在圖上指出「分布改變」的位置或對應關係；用本單元的一個例子說明它與「信心校準」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "61-tabular-project",
@@ -863,7 +983,9 @@
         "validation",
         "baseline"
       ],
-      "example": "41_tabular_project.py"
+      "example": "41_tabular_project.py",
+      "visual": "review-11-projects",
+      "visualTask": "讀完「專題一：非線性表格分類的完整實驗」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「模型架構」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "62-image-project",
@@ -875,7 +997,9 @@
         "CNN",
         "image",
         "shortcut learning"
-      ]
+      ],
+      "visual": "review-11-projects",
+      "visualTask": "讀完「專題二：CNN學到方向，還是記住位置」後，在圖上指出「模型架構」的位置或對應關係；用本單元的一個例子說明它與「訓練與驗證」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "63-sequence-project",
@@ -888,7 +1012,9 @@
         "packed sequence",
         "padding",
         "length"
-      ]
+      ],
+      "visual": "review-11-projects",
+      "visualTask": "讀完「專題三：變長序列、最後token與有效長度」後，在圖上指出「訓練與驗證」的位置或對應關係；用本單元的一個例子說明它與「錯例分析」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "64-generative-project",
@@ -901,7 +1027,9 @@
         "DDPM",
         "flow matching",
         "evaluation"
-      ]
+      ],
+      "visual": "review-11-projects",
+      "visualTask": "讀完「專題四：用低維生成實驗檢驗你的理解」後，在圖上指出「錯例分析」的位置或對應關係；用本單元的一個例子說明它與「可重現交付」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "65-model-choice",
@@ -913,7 +1041,9 @@
         "model card",
         "inductive bias",
         "budget"
-      ]
+      ],
+      "visual": "review-11-projects",
+      "visualTask": "讀完「選模型與寫模型卡：把假設留給下一位使用者」後，在圖上指出「可重現交付」的位置或對應關係；用本單元的一個例子說明它與「資料契約」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "66-artifacts",
@@ -927,7 +1057,9 @@
         "serialization",
         "schema"
       ],
-      "example": "42_checkpoint.py"
+      "example": "42_checkpoint.py",
+      "visual": "review-11-projects",
+      "visualTask": "讀完「交付模型：前處理、權重與推論契約一起保存」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「模型架構」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "67-experimentation",
@@ -939,7 +1071,9 @@
         "ablation",
         "baseline",
         "learning curves"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「研究式實驗：讓每個改動回答一個問題」後，在圖上指出「提出問題」的位置或對應關係；用本單元的一個例子說明它與「手算或推導」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "68-architecture-map",
@@ -953,7 +1087,9 @@
         "GNN",
         "Transformer",
         "generative"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「架構地圖：從CNN、Transformer到圖與生成模型」後，在圖上指出「手算或推導」的位置或對應關係；用本單元的一個例子說明它與「小型實驗」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "69-course-bridges",
@@ -966,7 +1102,9 @@
         "embedding",
         "RAG",
         "ML"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「接下來怎麼學：從深度學習走向各個獨立領域」後，在圖上指出「小型實驗」的位置或對應關係；用本單元的一個例子說明它與「反例檢查」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "70-math-exercises",
@@ -979,7 +1117,9 @@
         "backpropagation",
         "attention",
         "solutions"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「數學習題詳解：用數字檢查你是否真的理解」後，在圖上指出「反例檢查」的位置或對應關係；用本單元的一個例子說明它與「整理限制」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "71-implementation-exercises",
@@ -992,7 +1132,9 @@
         "invariants",
         "implementation",
         "solutions"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「實作挑戰詳解：讓錯誤在測試中暴露」後，在圖上指出「整理限制」的位置或對應關係；用本單元的一個例子說明它與「提出問題」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "72-reference",
@@ -1005,7 +1147,153 @@
         "version",
         "PyTorch",
         "quick reference"
-      ]
+      ],
+      "visual": "review-12-synthesis",
+      "visualTask": "讀完「術語、公式與版本速查：把整門課收進一張地圖」後，在圖上指出「提出問題」的位置或對應關係；用本單元的一個例子說明它與「手算或推導」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "神經元把輸入轉成可學表示",
+      "alt": "神經元把輸入轉成可學表示；參數透過loss梯度更新；輸入、目標與輸出shape先對齊。",
+      "caption": "參數透過loss梯度更新；輸入、目標與輸出shape先對齊。",
+      "group": "foundations",
+      "kind": "network",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-networks",
+      "file": "assets/figures/review-02-networks.svg",
+      "title": "Forward與Backward的對應",
+      "alt": "Forward與Backward的對應；反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。",
+      "caption": "反向傳播沿既有計算圖套鏈式法則；梯度檢查用有限差分提供數值參考。",
+      "group": "networks",
+      "kind": "graph",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-objectives",
+      "file": "assets/figures/review-03-objectives.svg",
+      "title": "目標函數與資料契約",
+      "alt": "目標函數與資料契約；logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。",
+      "caption": "logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。",
+      "group": "objectives",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-optimization",
+      "file": "assets/figures/review-04-optimization.svg",
+      "title": "最佳化沿損失地形更新",
+      "alt": "最佳化沿損失地形更新；圖為原創二次損失算例；動量、AdamW與排程有不同作用。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖為原創二次損失算例；動量、AdamW與排程有不同作用。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "optimization",
+      "kind": "contour",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-regularization",
+      "file": "assets/figures/review-05-regularization.svg",
+      "title": "泛化正則化與正規化",
+      "alt": "泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。",
+      "caption": "Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。",
+      "group": "regularization",
+      "kind": "compare",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-vision",
+      "file": "assets/figures/review-06-vision.svg",
+      "title": "卷積感受野與殘差路徑",
+      "alt": "卷積感受野與殘差路徑；卷積參數共享，但計算仍隨空間位置增加；殘差相加需對齊shape。",
+      "caption": "卷積參數共享，但計算仍隨空間位置增加；殘差相加需對齊shape。",
+      "group": "vision",
+      "kind": "convolution",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-sequence",
+      "file": "assets/figures/review-07-sequence.svg",
+      "title": "序列模型的時間依賴",
+      "alt": "序列模型的時間依賴；RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。",
+      "caption": "RNN沿時間傳狀態，BPTT沿時間回傳梯度；mask與有效長度不能省略。",
+      "group": "sequence",
+      "kind": "sequence",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-attention",
+      "file": "assets/figures/review-08-attention.svg",
+      "title": "Attention用內容混合資訊",
+      "alt": "Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。",
+      "caption": "分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。",
+      "group": "attention",
+      "kind": "attention",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-09-generative",
+      "file": "assets/figures/review-09-generative.svg",
+      "title": "生成模型的加噪與還原",
+      "alt": "生成模型的加噪與還原；圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。",
+      "caption": "圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。",
+      "group": "generative",
+      "kind": "diffusion",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-10-reliability",
+      "file": "assets/figures/review-10-reliability.svg",
+      "title": "可靠性解釋與壓縮",
+      "alt": "可靠性解釋與壓縮；熱圖不是因果證明；壓縮與部署後重新檢查任務品質。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "熱圖不是因果證明；壓縮與部署後重新檢查任務品質。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "reliability",
+      "kind": "calibration",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-11-projects",
+      "file": "assets/figures/review-11-projects.svg",
+      "title": "把模型原理組成專題",
+      "alt": "把模型原理組成專題；固定基準後一次改一個因素；合成範例不當真實世界benchmark。",
+      "caption": "固定基準後一次改一個因素；合成範例不當真實世界benchmark。",
+      "group": "projects",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-12-synthesis",
+      "file": "assets/figures/review-12-synthesis.svg",
+      "title": "以假設與證據持續學習",
+      "alt": "以假設與證據持續學習；讀論文分清楚架構、資料與計算預算；把觀察結果和因果歸因分開。",
+      "caption": "讀論文分清楚架構、資料與計算預算；把觀察結果和因果歸因分開。",
+      "group": "synthesis",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "deep-learning-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "deep-learning-study.zip"
   ]
 }

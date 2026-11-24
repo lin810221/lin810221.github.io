@@ -2,6 +2,16 @@
 
 不依賴 LLM，先證明工具、資源與提示模板可以正常互通。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![HostClient與Server的責任；MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜HostClient與Server的責任**：MCP提供工具與資料整合契約，不取代模型本身；模型提出使用需求，Host管理執行與信任。
+
+**本單元讀圖任務**：讀完「第一個 Client：探索、呼叫與檢查結果」後，在圖上指出「Host應用」的位置或對應關係；用本單元的一個例子說明它與「MCP Client」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Client 不是模型
 
 MCP Client 負責協定通訊，它不會自動理解自然語言，也不會自行選工具。本單元直接以 Python 決定要執行的操作，讓每個步驟都有固定輸入與預期輸出。後面在 Host 加入模型時，替換的是決策來源，而不是已驗證的工具契約。

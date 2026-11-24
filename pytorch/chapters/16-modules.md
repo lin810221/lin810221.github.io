@@ -2,6 +2,16 @@
 
 讓 optimizer、device 搬移與存檔都能找到真正需要管理的狀態。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「nn.Module：參數、buffer、子模組與 state_dict」後，在圖上指出「Collate批次」的位置或對應關係；用本單元的一個例子說明它與「模型輸入」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Module 管理的不只是 forward
 
 繼承 nn.Module 並呼叫 super().__init__，再將層指定為 self 的屬性。透過 `model(x)` 呼叫 forward，讓 hooks 與框架機制正常運作。不要平常直接用 model.forward(x) 來繞過這層入口。

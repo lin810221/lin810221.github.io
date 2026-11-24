@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有二十一個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有二十三個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
 
@@ -376,3 +376,40 @@ python tools/validate.py
 原稿在first-aid/chapters，圖在assets/figures，學習單、解析、名詞、來源與固定案例在study。[離線學習包](first-aid/study-pack.zip)含圖與練習，完整情境互動另在課程閱讀器使用。
 
 驗證：`python tools/build.py first-aid`、`python tools/validate.py`、`python -m unittest discover -s tools -p test_first_aid_materials.py -v`，以及tools/test-first-aid-reader.mjs與全站閱讀器回歸。
+
+
+## 影像辨識
+
+新增[完整課程](image-recognition/index.html)：14章、84單元、28張原創中文SVG、24份離線Python範例與8個互動實驗。主線從像素、色彩、座標與資料工程，走到CNN／ViT、分類、物件偵測、分割、可靠性與ONNX部署；含四條專題及真實資料稽核。每章單元重編、搜尋、筆記、進度與離線LaTeX沿用共用閱讀器。
+
+2026-11-23查核：PyTorch2.15.0、TorchVision0.29.2、OpenCV headless5.1.0.95、Pillow13.0.0、NumPy2.5.5；ONNX1.23.2／Script0.7.2／Runtime1.32.0。完整CPU相容環境使用Python3.13.13；這不是宣稱Python3.13是最新分支，ORT1.32目前沒有Windows cp315 wheel。新課的版本基準不自動更動其他課程。
+
+`image-recognition/chapters`為教材，`assets/figures`為中文圖，`examples`含共用核心、24個入口、鎖版需求與測試；[完整程式包](image-recognition/examples.zip)與[圖解學習包](image-recognition/study-pack.zip)可下載。安裝完成後，預設範例用原創合成影像、不下載資料或權重；網站本身不需安裝。分類、單物件定位與分割的教學結果不當成自然影像效能；COCO mAP與玩具AP分開。
+
+```powershell
+python -X utf8 tools/build.py image-recognition
+python -X utf8 tools/validate.py
+.qa/vision-current/Scripts/python.exe -X utf8 -m unittest discover -s image-recognition/examples -p test_examples.py -v
+python -X utf8 tools/prepare_pages.py --target pages
+```
+
+本機獨立環境建立與一般讀者命令見[範例README](image-recognition/examples/README.md)。閱讀器QA在`tools/test-vision-reader.mjs`，與其他課程一併由`tools/test-readers.mjs`執行。實測範圍見[驗證紀錄](image-recognition/examples/VERIFICATION.md)。
+
+
+## Transformer與LLM原理
+
+新增[完整課程](transformer/index.html)：16章、96單元、32張原創中文SVG、28份離線Python範例、10個互動實驗與110個術語。從條件機率、UTF8／BPE、Embedding、Q／K／V、位置與區塊，走到手寫GPT訓練、生成、KV Cache、GQA、推論效率、模型家族、後訓練、評估與可靠性。保留必要數學、手算、練習解析及完整專題；API操作連回LLM服務課，獨立微調工程仍為未來規劃。
+
+2026-11-24查核與CPU實測基準：Python3.15.2、PyTorch2.15.0、Transformers5.24.0、Tokenizers0.23.3、Safetensors0.8.0、NumPy2.5.5。新API採cache=／output.cache及TokenizersBackend；不沿用已棄用的Llama快取名稱。其他課程維持各自更新時的版本基準。
+
+原稿在transformer/chapters，圖在assets/figures，完整小模型與測試在examples；[程式下載包](transformer/examples.zip)含完整鎖版需求，[圖解學習包](transformer/study-pack.zip)含96份任務、解說與來源。安裝後預設不下載權重／語料、不呼叫API；原創短文法的生成與PPL只驗證教學機制，不作自然語言能力benchmark。
+
+```powershell
+python -X utf8 tools/build.py transformer
+python -X utf8 tools/validate.py
+.qa/transformer-latest/Scripts/python.exe -X utf8 -m unittest discover -s transformer/examples -p test_examples.py -v
+python -X utf8 -m unittest discover -s tools -p test_transformer_materials.py -v
+python -X utf8 tools/prepare_pages.py --target pages
+```
+
+一般讀者的環境與操作見[範例README](transformer/examples/README.md)，執行界線見[驗證紀錄](transformer/examples/VERIFICATION.md)。tools/test-transformer-reader.mjs檢查十個實驗及閱讀器，並接入全站獨立worker回歸。此次僅準備本機教材與發布檔，沒有推送或部署。

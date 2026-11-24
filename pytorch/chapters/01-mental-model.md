@@ -2,6 +2,16 @@
 
 把資料、參數、損失、梯度與更新連成一個可以追蹤的流程。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。](assets/figures/review-01-start.svg)
+
+> **圖解｜Tensor的shape與dtype**：相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。
+
+**本單元讀圖任務**：讀完「先看全貌：PyTorch 如何讓模型學習」後，在圖上指出「樣本軸N」的位置或對應關係；用本單元的一個例子說明它與「特徵軸D」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 從一個預測問題開始
 
 假設四個特徵描述一筆樣本，模型要選出三種類別之一。資料是 `x[N,4]`，答案是 `y[N]`，模型輸出 `logits[N,3]`。PyTorch 負責數值運算、自動微分與參數管理；你仍要決定資料代表什麼、哪些答案可以用來訓練，以及如何判斷成效。

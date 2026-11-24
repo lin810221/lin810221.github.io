@@ -2,13 +2,23 @@
 
 將重建與latent prior連起來，分清beta目標與報告指標。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![生成模型的加噪與還原；圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。](assets/figures/review-09-generative.svg)
+
+> **圖解｜生成模型的加噪與還原**：圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。
+
+**本單元讀圖任務**：讀完「VAE：重參數化、ELBO與Gaussian KL」後，在圖上指出「少量噪音」的位置或對應關係；用本單元的一個例子說明它與「更多噪音」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Encoder輸出分布參數
 
 VAE以q(z|x)近似latent posterior，常輸出mean與log variance；decoder描述p(x|z)，prior常標準normal。不是對同一latent任意加noise就自動等於VAE，必須有對應概率目標與推導。
 
 ## 重參數化
 
-z=μ+σ⊙ε，ε來自與可學參數無關的標準normal，使抽樣可寫成可微轉換。logvar是logσ²，所以std=exp(.5logvar)，漏掉.5會改分布。測試真的backward確認encoder與decoder梯度有限。
+$z=\mu+\sigma\odot\varepsilon$，ε來自與可學參數無關的標準normal，使抽樣可寫成可微轉換。logvar是logσ²，所以std=exp(.5logvar)，漏掉.5會改分布。測試真的backward確認encoder與decoder梯度有限。
 
 $$
 z=\mu+\exp(\tfrac12\log\sigma^2)\odot\epsilon,\quad\epsilon\sim\mathcal N(0,I)

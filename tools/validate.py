@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+from build import assert_readable
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY_TITLE_NUMBER = re.compile(r"^(?:\d+(?:-\d+)+|(?:習題|附錄)\s*[0-9A-Za-z]+)[\s\u3000]")
@@ -56,6 +57,7 @@ def validate_course(course_path):
     raw = data_path.read_text(encoding="utf-8")
     course = json.loads(raw.split("window.COURSE = ", 1)[1].rstrip().removesuffix(";"))
     expected = json.loads((course_path / "course.json").read_text(encoding="utf-8"))
+    assert_readable(json.dumps(expected,ensure_ascii=False),course_path.name+' catalog')
     assert len(course["lessons"]) == len(expected["lessons"])
     assert len({lesson["id"] for lesson in course["lessons"]}) == len(course["lessons"])
     source_ids = {path.stem for path in (course_path / "chapters").glob("*.md")}
@@ -87,6 +89,7 @@ def validate_course(course_path):
         assert len(parsed.ids) == len(set(parsed.ids)), f"Duplicate IDs in {page}"
         link_count += local_links_exist(parsed.links, page.parent)
     for lesson in course["lessons"]:
+        assert_readable(lesson['text'],course_path.name+'/'+lesson['id'])
         assert lesson["group"] in group_ids
         assert isinstance(lesson.get("summary"), str) and lesson["summary"].strip(), f"Missing lesson summary: {lesson['id']}"
         assert isinstance(lesson.get("tags"), list) and all(isinstance(tag, str) and tag.strip() for tag in lesson["tags"]), f"Invalid lesson tags: {lesson['id']}"

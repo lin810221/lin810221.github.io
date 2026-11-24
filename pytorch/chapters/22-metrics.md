@@ -2,6 +2,16 @@
 
 以混淆矩陣、基準模型與切分策略，判斷訓練成效是否可信。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。](assets/figures/review-04-training.svg)
+
+> **圖解｜Module把參數與forward組織起來**：train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。
+
+**本單元讀圖任務**：讀完「評估指標與資料洩漏：accuracy 之外要看什麼」後，在圖上指出「參數」的位置或對應關係；用本單元的一個例子說明它與「狀態」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先定義你真正關心的錯誤
 
 100筆只有5筆正例，全部預測負例就有95% accuracy，但正例recall是0。分類需看每類支持筆數、混淆矩陣及precision／recall；回歸需看MAE／RMSE、單位、殘差與不同子群。loss用於更新，業務指標用於評估，兩者不必同名。
@@ -36,7 +46,7 @@ print(matrix.diag().sum().float()/matrix.sum())
 
 ## 練習與解答
 
-二元分類TP=8、FP=2、FN=4，precision=.8、recall=2/3、F1約.7273。若提高接受門檻，precision是否一定上升？不保證個別資料上單調，需重新計數；通常只是改變取捨。下一次換資料時沿用同一門檻也需要再驗證，而非把0.5當普遍正確答案。
+二元分類TP=8、$FP=2$、$FN=4$，$\operatorname{precision}=.8$、$\operatorname{recall}=2/3$、F1約.7273。若提高接受門檻，precision是否一定上升？不保證個別資料上單調，需重新計數；通常只是改變取捨。下一次換資料時沿用同一門檻也需要再驗證，而非把0.5當普遍正確答案。
 
 ## 官方來源與延伸閱讀
 

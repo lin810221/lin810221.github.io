@@ -2,6 +2,16 @@
 
 理解什麼狀態能逐步更新，並防止前處理座標隨資料漂移。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![排序能力與機率校準；準確率不直接表示機率已校準；校準與門檻使用開發資料選擇。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-08-applications.svg)
+
+> **圖解｜排序能力與機率校準**：準確率不直接表示機率已校準；校準與門檻使用開發資料選擇。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「增量與大型資料：partial_fit、MiniBatch與串流」後，在圖上指出「作業量」的位置或對應關係；用本單元的一個例子說明它與「預測機率」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 批次fit與增量fit
 
 大資料不一定能一次放RAM，可以逐批讀取並更新支援partial_fit的模型，如SGDClassifier、部分NB與MiniBatchKMeans。一般RandomForest不是每批partial_fit；warm_start也不等同任意增量學習。先讀指定estimator契約，不依函式名稱想像它會保留所有狀態。

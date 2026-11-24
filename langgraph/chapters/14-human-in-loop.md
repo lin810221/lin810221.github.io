@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![檢查點、記憶與執行緒；thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。](assets/figures/review-04-memory.svg)
+
+> **圖解｜檢查點、記憶與執行緒**：thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。
+
+**本單元讀圖任務**：讀完「Human-in-the-loop：暫停與恢復」後，在圖上指出「Checkpoint」的位置或對應關係；用本單元的一個例子說明它與「狀態B」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 等待人的決策也是流程的一部分
 
 人工審核不是在 Python 裡 `input()` 等待，也不是把執行緒睡眠幾個小時。`interrupt(payload)` 會讓圖暫停，將需要決策的資料送回呼叫端；之後用相同 thread 載入進度並提供外部回覆。

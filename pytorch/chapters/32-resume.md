@@ -2,6 +2,16 @@
 
 實際比較連續訓練與存檔再恢復，明確界定可重現的範圍。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。](assets/figures/review-06-engineering.svg)
+
+> **圖解｜Checkpoint與精確續訓**：只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。
+
+**本單元讀圖任務**：讀完「續訓與完全重現：從第2輪接回第4輪」後，在圖上指出「Optimizer」的位置或對應關係；用本單元的一個例子說明它與「RNG狀態」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 續訓不只是再載權重
 
 AdamW有動量與step狀態，Dropout會用globalTorch RNG，shuffle loader用獨立Generator。若只存weights，下一輪資料順序與遮蔽都可能不同。範例先連續訓練4epoch，再訓練2epoch、實際寫檔載入、恢復到第4epoch，最後比較每個參數與history。

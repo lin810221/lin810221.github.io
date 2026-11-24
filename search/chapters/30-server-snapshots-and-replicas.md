@@ -2,6 +2,16 @@
 
 從 Local 走向服務前，先列出需要在真實部署驗證的行為。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![混合檢索與融合排序；不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。](assets/figures/review-05-qdrant.svg)
+
+> **圖解｜混合檢索與融合排序**：不同來源分數尺度不可直接相加假設等價；排名融合和學得重排是不同策略。
+
+**本單元讀圖任務**：讀完「Qdrant Server：Payload Index、複本與 Snapshot 的邊界」後，在圖上指出「關鍵字排名」的位置或對應關係；用本單元的一個例子說明它與「向量排名」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 將 Local 與 Server 設定分開
 
 正式 server 有 segments、HNSW、payload indexes、optimizers、WAL、shards 與 replicas；這些不能由 Local 的耗時或檔案格式推論。連線服務時改用受控 URL、API key、TLS 與 timeout，先確認 collection contract，再讀取健康狀態與計數。

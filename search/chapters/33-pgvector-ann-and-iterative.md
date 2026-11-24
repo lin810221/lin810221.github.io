@@ -2,6 +2,16 @@
 
 理解索引建置、查詢參數與 Filter 後候選不足，再用真實計畫驗證。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![資料庫與搜尋引擎的取捨；功能、過濾、交易及維運能力需按需求比較；不因能存向量就假設所有搜尋功能相同。](assets/figures/review-06-postgres.svg)
+
+> **圖解｜資料庫與搜尋引擎的取捨**：功能、過濾、交易及維運能力需按需求比較；不因能存向量就假設所有搜尋功能相同。
+
+**本單元讀圖任務**：讀完「pgvector HNSW、IVFFlat 與 Iterative Scan」後，在圖上指出「關聯資料庫」的位置或對應關係；用本單元的一個例子說明它與「全文引擎」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## HNSW 與 IVFFlat 的建置差異
 
 HNSW 以圖作近似查詢，有建置時間與記憶體成本；IVFFlat 需要代表性的資料分桶，lists 與 probes 影響候選範圍。pgvector 的 IVFFlat 與 Faiss IVF-PQ 不同：前者不能因名字有 IVF 就假定已使用 PQ 壓縮。索引、度量與型別支援應依 0.8.7 官方文件確認。

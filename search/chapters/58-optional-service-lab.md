@@ -2,6 +2,16 @@
 
 在自行啟動的隔離服務驗證配方，明確區分輸出請求與真正執行。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![可回放的搜尋專題；資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。](assets/figures/review-10-delivery.svg)
+
+> **圖解｜可回放的搜尋專題**：資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。
+
+**本單元讀圖任務**：讀完「服務整合實驗：Elasticsearch 與 PostgreSQL 的下一步」後，在圖上指出「故障恢復」的位置或對應關係；用本單元的一個例子說明它與「成品與限制」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先確認服務版本
 
 Elasticsearch 目標9.5.6、PostgreSQL18.6加pgvector0.8.7、Qdrant1.20.0。SDK 安裝成功不代表 server 已有對應功能；PostgreSQL 的 vector extension 還需由可安裝擴充的角色準備。這門課沒有替你啟動或修改遠端服務，所有 --live 入口都是明確選擇。

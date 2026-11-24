@@ -2,6 +2,16 @@
 
 先找出第一個失效的運算，再決定是否需要更高精度或不同公式。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Autograd沿計算圖傳遞梯度；梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。](assets/figures/review-02-grad.svg)
+
+> **圖解｜Autograd沿計算圖傳遞梯度**：梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。
+
+**本單元讀圖任務**：讀完「數值穩定性：NaN、Inf、mask 與精度」後，在圖上指出「輸入x」的位置或對應關係；用本單元的一個例子說明它與「線性轉換」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 問題可能比 backward 更早
 
 loss=NaN 的原因可以是輸入缺失、除以零、log(0)、overflow 或學習率太大。先查資料與 forward 中間量，再查梯度。用 `torch.isfinite(tensor).all()` 找第一個非有限值；只把最後 loss 的 NaN 改成零，會隱藏上游問題，也可能讓模型停止學習。
@@ -24,7 +34,7 @@ print(result)
 
 ## mask 要在危險運算之前
 
-如果先 `1/x` 得到 Inf，再用 mask 去掉結果，Autograd 仍可能遇到先前的無效運算。上述範例只對有效分母做除法。Padding 的平均也要以有效 token 數當分母，並拒絕整列全 mask；不能只填零後直接 mean 所有位置。
+如果先 $\frac1x$ 得到 Inf，再用 mask 去掉結果，Autograd 仍可能遇到先前的無效運算。上述範例只對有效分母做除法。Padding 的平均也要以有效 token 數當分母，並拒絕整列全 mask；不能只填零後直接 mean 所有位置。
 
 ## 精度與比較
 

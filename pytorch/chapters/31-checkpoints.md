@@ -2,6 +2,16 @@
 
 把模型、前處理與設定一起交付，區分推論權重與續訓狀態。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。](assets/figures/review-06-engineering.svg)
+
+> **圖解｜Checkpoint與精確續訓**：只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。
+
+**本單元讀圖任務**：讀完「儲存與載入：state_dict、map_location 與信任來源」後，在圖上指出「模型狀態」的位置或對應關係；用本單元的一個例子說明它與「Optimizer」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 保存什麼才足夠
 
 state_dict保存參數與persistent buffers，並不保存你任意寫的Python前處理或欄位意義。推論包至少要有模型設定、weights、train scaler、label mapping與版本。續訓另需optimizer、scheduler、scaler、RNG與進度。本課payload同時保存current model與best_model，兩者用途分開。

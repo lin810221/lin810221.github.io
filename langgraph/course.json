@@ -3,41 +3,469 @@
   "updated": "2026-10-29",
   "baseline": "1.1.9",
   "groups": [
-    {"id":"start","number":"01","title":"從零開始","description":"先理解問題，再寫第一張圖。"},
-    {"id":"graph","number":"02","title":"掌握圖的運作","description":"狀態、合併、執行與路由。"},
-    {"id":"agent","number":"03","title":"打造你的 Agent","description":"接上模型、工具與可靠的輸出。"},
-    {"id":"memory","number":"04","title":"讓流程記得與等待","description":"記憶、持久化、人工審核與串流。"},
-    {"id":"patterns","number":"05","title":"組合進階架構","description":"平行處理、子圖、RAG 與協作。"},
-    {"id":"production","number":"06","title":"從原型走向實務","description":"可靠性、測試、部署與完整專案。"}
+    {
+      "id": "start",
+      "number": "01",
+      "title": "從零開始",
+      "description": "先理解問題，再寫第一張圖。"
+    },
+    {
+      "id": "graph",
+      "number": "02",
+      "title": "掌握圖的運作",
+      "description": "狀態、合併、執行與路由。"
+    },
+    {
+      "id": "agent",
+      "number": "03",
+      "title": "打造你的 Agent",
+      "description": "接上模型、工具與可靠的輸出。"
+    },
+    {
+      "id": "memory",
+      "number": "04",
+      "title": "讓流程記得與等待",
+      "description": "記憶、持久化、人工審核與串流。"
+    },
+    {
+      "id": "patterns",
+      "number": "05",
+      "title": "組合進階架構",
+      "description": "平行處理、子圖、RAG 與協作。"
+    },
+    {
+      "id": "production",
+      "number": "06",
+      "title": "從原型走向實務",
+      "description": "可靠性、測試、部署與完整專案。"
+    }
   ],
   "lessons": [
-    {"id":"01-mental-model","group":"start","title":"LangGraph 解決什麼問題？","summary":"從普通函式到有狀態的工作流程，建立 Graph、Node、Edge 的心智模型。","tags":["觀念","架構"]},
-    {"id":"02-python-primer","group":"start","title":"必備的 Python 與型別基礎","summary":"字典、函式、TypedDict、Annotated 與 async，讀懂後面每一行程式。","tags":["Python","型別"]},
-    {"id":"03-environment","group":"start","title":"環境安裝與專案準備","summary":"建立虛擬環境、固定版本，區分離線核心範例與需要模型的範例。","tags":["安裝","環境"]},
-    {"id":"04-first-graph","group":"start","title":"寫出第一個 StateGraph","summary":"從空白檔案到可執行的圖，逐行理解建立、編譯與呼叫。","tags":["實作","StateGraph"],"example":"01_hello.py"},
-    {"id":"05-state-schema","group":"graph","title":"State：設計流程的資料契約","summary":"分清輸入、內部與輸出，讓每個節點只更新自己負責的欄位。","tags":["State","Schema"]},
-    {"id":"06-reducers","group":"graph","title":"Reducer：狀態究竟怎麼合併？","summary":"覆寫、累加、訊息合併，以及平行更新衝突的原因。","tags":["Reducer","Annotated"],"example":"02_reducers.py"},
-    {"id":"07-runtime","group":"graph","title":"Node、Edge 與 Super-step","summary":"用執行時間線看懂圖，區分編譯、節點呼叫與執行邊界。","tags":["Runtime","Super-step"]},
-    {"id":"08-routing-loops","group":"graph","title":"條件分支、循環與 Command","summary":"決定下一步，建立有明確停止條件的修正循環。","tags":["路由","Command"],"example":"03_routing.py"},
-    {"id":"09-messages-models","group":"agent","title":"Messages 與第一個模型節點","summary":"訊息角色、MessagesState、模型介接與串接方式。","tags":["Messages","LLM"]},
-    {"id":"10-tools-agent","group":"agent","title":"Tool Calling 與完整 Agent 迴圈","summary":"從工具 schema 到 ToolMessage，親手接出 model → tools → model。","tags":["Tools","Agent"],"example":"04_tools_agent.py"},
-    {"id":"11-context-output","group":"agent","title":"Context、設定與結構化輸出","summary":"讓使用者身分、依賴與模型判斷各自有正確的位置。","tags":["Runtime","Pydantic"]},
-    {"id":"12-checkpoints","group":"memory","title":"Checkpoint 與 Thread 持久化","summary":"把一次執行變成可持續的對話，讀取快照與歷史。","tags":["Checkpoint","Thread"],"example":"05_checkpoints.py"},
-    {"id":"13-memory","group":"memory","title":"短期記憶與跨對話的長期記憶","summary":"Checkpointer 和 Store 的差異，管理訊息長度與使用者資料。","tags":["Memory","Store"]},
-    {"id":"14-human-in-loop","group":"memory","title":"Human-in-the-loop：暫停與恢復","summary":"用 interrupt 與 Command(resume=...) 加入可恢復的人工審核。","tags":["Interrupt","人工審核"],"example":"06_approval.py"},
-    {"id":"15-replay-durability","group":"memory","title":"Time Travel、恢復與副作用","summary":"回到歷史分支，理解重播、冪等性與真正的持久執行。","tags":["Replay","冪等性"]},
-    {"id":"16-streaming-async","group":"memory","title":"Streaming、Async 與前端事件","summary":"從節點進度到模型 token，清楚區分不同版本的事件格式。","tags":["Streaming","Async"],"example":"07_streaming.py"},
-    {"id":"17-parallel-send","group":"patterns","title":"平行節點與 Send Map-Reduce","summary":"將多個任務分發給工作節點，再合併為穩定的結果。","tags":["Send","平行"],"example":"08_parallel.py"},
-    {"id":"18-subgraphs","group":"patterns","title":"Subgraph：把複雜圖拆成模組","summary":"共享狀態或明確轉換，用資料邊界控制子流程。","tags":["Subgraph","模組"],"example":"09_subgraph.py"},
-    {"id":"19-multi-agent","group":"patterns","title":"多 Agent 的協作架構","summary":"Router、Supervisor 與 Handoff 的選擇，先設計資訊與權限邊界。","tags":["Multi-agent","協作"]},
-    {"id":"20-rag","group":"patterns","title":"RAG：可追溯的檢索問答流程","summary":"查詢、檢索、驗證、回答與拒答，讓答案有文件依據。","tags":["RAG","檢索"]},
-    {"id":"21-functional-api","group":"patterns","title":"另一條路：Functional API","summary":"用 entrypoint 與 task 將一般 Python 控制流程帶入持久執行。","tags":["Functional","task"],"example":"10_functional.py"},
-    {"id":"22-reliability","group":"production","title":"錯誤、重試、逾時與快取","summary":"區分暫時失敗與業務結果，避免把錯誤判斷永久保留下來。","tags":["Retry","Cache"],"example":"11_retry_context.py"},
-    {"id":"23-testing-tracing","group":"production","title":"測試、除錯與可觀測性","summary":"分層驗證節點、路徑與恢復行為，把評估和單元測試分開。","tags":["pytest","Tracing"]},
-    {"id":"24-deployment","group":"production","title":"專案結構、API 與部署","summary":"從 Python 腳本走向服務，理解 Agent Server 和自建 API 的責任。","tags":["部署","API"]},
-    {"id":"25-capstone","group":"production","title":"完整專案：有審核的知識助理","summary":"整合檢索、拒答、checkpoint、人工修改與可驗證的最終答案。","tags":["完整實作","整合"],"example":"12_knowledge_assistant.py"},
-    {"id":"26-exercises","group":"production","title":"動手練習與參考解答","summary":"循序完成五個任務，以具體行為檢查自己的理解。","tags":["練習","解答"]},
-    {"id":"27-cheatsheet","group":"production","title":"API 速查與常見問題","summary":"查找 import、錯誤訊息、適用工具與排錯順序。","tags":["速查","FAQ"]},
-    {"id":"28-math-resources","group":"production","title":"數學觀點、詞彙與延伸閱讀","summary":"用狀態轉移與成本公式串起觀念，附官方文件與後續學習路線。","tags":["LaTeX","資源"]}
+    {
+      "id": "01-mental-model",
+      "group": "start",
+      "title": "LangGraph 解決什麼問題？",
+      "summary": "從普通函式到有狀態的工作流程，建立 Graph、Node、Edge 的心智模型。",
+      "tags": [
+        "觀念",
+        "架構"
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「LangGraph 解決什麼問題？」後，在圖上指出「輸入狀態」的位置或對應關係；用本單元的一個例子說明它與「節點讀取」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "02-python-primer",
+      "group": "start",
+      "title": "必備的 Python 與型別基礎",
+      "summary": "字典、函式、TypedDict、Annotated 與 async，讀懂後面每一行程式。",
+      "tags": [
+        "Python",
+        "型別"
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「必備的 Python 與型別基礎」後，在圖上指出「節點讀取」的位置或對應關係；用本單元的一個例子說明它與「回傳更新」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "03-environment",
+      "group": "start",
+      "title": "環境安裝與專案準備",
+      "summary": "建立虛擬環境、固定版本，區分離線核心範例與需要模型的範例。",
+      "tags": [
+        "安裝",
+        "環境"
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「環境安裝與專案準備」後，在圖上指出「回傳更新」的位置或對應關係；用本單元的一個例子說明它與「合併狀態」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "04-first-graph",
+      "group": "start",
+      "title": "寫出第一個 StateGraph",
+      "summary": "從空白檔案到可執行的圖，逐行理解建立、編譯與呼叫。",
+      "tags": [
+        "實作",
+        "StateGraph"
+      ],
+      "example": "01_hello.py",
+      "visual": "review-01-start",
+      "visualTask": "讀完「寫出第一個 StateGraph」後，在圖上指出「合併狀態」的位置或對應關係；用本單元的一個例子說明它與「決定路由」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "05-state-schema",
+      "group": "graph",
+      "title": "State：設計流程的資料契約",
+      "summary": "分清輸入、內部與輸出，讓每個節點只更新自己負責的欄位。",
+      "tags": [
+        "State",
+        "Schema"
+      ],
+      "visual": "review-02-graph",
+      "visualTask": "讀完「State：設計流程的資料契約」後，在圖上指出「共同輸入」的位置或對應關係；用本單元的一個例子說明它與「檢索節點」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "06-reducers",
+      "group": "graph",
+      "title": "Reducer：狀態究竟怎麼合併？",
+      "summary": "覆寫、累加、訊息合併，以及平行更新衝突的原因。",
+      "tags": [
+        "Reducer",
+        "Annotated"
+      ],
+      "example": "02_reducers.py",
+      "visual": "review-02-graph",
+      "visualTask": "讀完「Reducer：狀態究竟怎麼合併？」後，在圖上指出「檢索節點」的位置或對應關係；用本單元的一個例子說明它與「分析節點」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "07-runtime",
+      "group": "graph",
+      "title": "Node、Edge 與 Super-step",
+      "summary": "用執行時間線看懂圖，區分編譯、節點呼叫與執行邊界。",
+      "tags": [
+        "Runtime",
+        "Super-step"
+      ],
+      "visual": "review-02-graph",
+      "visualTask": "讀完「Node、Edge 與 Super-step」後，在圖上指出「分析節點」的位置或對應關係；用本單元的一個例子說明它與「Reducer合併」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "08-routing-loops",
+      "group": "graph",
+      "title": "條件分支、循環與 Command",
+      "summary": "決定下一步，建立有明確停止條件的修正循環。",
+      "tags": [
+        "路由",
+        "Command"
+      ],
+      "example": "03_routing.py",
+      "visual": "review-02-graph",
+      "visualTask": "讀完「條件分支、循環與 Command」後，在圖上指出「Reducer合併」的位置或對應關係；用本單元的一個例子說明它與「最後回覆」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "09-messages-models",
+      "group": "agent",
+      "title": "Messages 與第一個模型節點",
+      "summary": "訊息角色、MessagesState、模型介接與串接方式。",
+      "tags": [
+        "Messages",
+        "LLM"
+      ],
+      "visual": "review-03-agent",
+      "visualTask": "讀完「Messages 與第一個模型節點」後，在圖上指出「模型決策」的位置或對應關係；用本單元的一個例子說明它與「工具請求」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "10-tools-agent",
+      "group": "agent",
+      "title": "Tool Calling 與完整 Agent 迴圈",
+      "summary": "從工具 schema 到 ToolMessage，親手接出 model → tools → model。",
+      "tags": [
+        "Tools",
+        "Agent"
+      ],
+      "example": "04_tools_agent.py",
+      "visual": "review-03-agent",
+      "visualTask": "讀完「Tool Calling 與完整 Agent 迴圈」後，在圖上指出「工具請求」的位置或對應關係；用本單元的一個例子說明它與「工具執行」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "11-context-output",
+      "group": "agent",
+      "title": "Context、設定與結構化輸出",
+      "summary": "讓使用者身分、依賴與模型判斷各自有正確的位置。",
+      "tags": [
+        "Runtime",
+        "Pydantic"
+      ],
+      "visual": "review-03-agent",
+      "visualTask": "讀完「Context、設定與結構化輸出」後，在圖上指出「工具執行」的位置或對應關係；用本單元的一個例子說明它與「工具結果」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "12-checkpoints",
+      "group": "memory",
+      "title": "Checkpoint 與 Thread 持久化",
+      "summary": "把一次執行變成可持續的對話，讀取快照與歷史。",
+      "tags": [
+        "Checkpoint",
+        "Thread"
+      ],
+      "example": "05_checkpoints.py",
+      "visual": "review-04-memory",
+      "visualTask": "讀完「Checkpoint 與 Thread 持久化」後，在圖上指出「輸入」的位置或對應關係；用本單元的一個例子說明它與「狀態A」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "13-memory",
+      "group": "memory",
+      "title": "短期記憶與跨對話的長期記憶",
+      "summary": "Checkpointer 和 Store 的差異，管理訊息長度與使用者資料。",
+      "tags": [
+        "Memory",
+        "Store"
+      ],
+      "visual": "review-04-memory",
+      "visualTask": "讀完「短期記憶與跨對話的長期記憶」後，在圖上指出「狀態A」的位置或對應關係；用本單元的一個例子說明它與「Checkpoint」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "14-human-in-loop",
+      "group": "memory",
+      "title": "Human-in-the-loop：暫停與恢復",
+      "summary": "用 interrupt 與 Command(resume=...) 加入可恢復的人工審核。",
+      "tags": [
+        "Interrupt",
+        "人工審核"
+      ],
+      "example": "06_approval.py",
+      "visual": "review-04-memory",
+      "visualTask": "讀完「Human-in-the-loop：暫停與恢復」後，在圖上指出「Checkpoint」的位置或對應關係；用本單元的一個例子說明它與「狀態B」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "15-replay-durability",
+      "group": "memory",
+      "title": "Time Travel、恢復與副作用",
+      "summary": "回到歷史分支，理解重播、冪等性與真正的持久執行。",
+      "tags": [
+        "Replay",
+        "冪等性"
+      ],
+      "visual": "review-04-memory",
+      "visualTask": "讀完「Time Travel、恢復與副作用」後，在圖上指出「狀態B」的位置或對應關係；用本單元的一個例子說明它與「恢復執行」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "16-streaming-async",
+      "group": "memory",
+      "title": "Streaming、Async 與前端事件",
+      "summary": "從節點進度到模型 token，清楚區分不同版本的事件格式。",
+      "tags": [
+        "Streaming",
+        "Async"
+      ],
+      "example": "07_streaming.py",
+      "visual": "review-04-memory",
+      "visualTask": "讀完「Streaming、Async 與前端事件」後，在圖上指出「恢復執行」的位置或對應關係；用本單元的一個例子說明它與「輸入」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "17-parallel-send",
+      "group": "patterns",
+      "title": "平行節點與 Send Map-Reduce",
+      "summary": "將多個任務分發給工作節點，再合併為穩定的結果。",
+      "tags": [
+        "Send",
+        "平行"
+      ],
+      "example": "08_parallel.py",
+      "visual": "review-05-patterns",
+      "visualTask": "讀完「平行節點與 Send Map-Reduce」後，在圖上指出「待執行動作」的位置或對應關係；用本單元的一個例子說明它與「保存暫停點」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "18-subgraphs",
+      "group": "patterns",
+      "title": "Subgraph：把複雜圖拆成模組",
+      "summary": "共享狀態或明確轉換，用資料邊界控制子流程。",
+      "tags": [
+        "Subgraph",
+        "模組"
+      ],
+      "example": "09_subgraph.py",
+      "visual": "review-05-patterns",
+      "visualTask": "讀完「Subgraph：把複雜圖拆成模組」後，在圖上指出「保存暫停點」的位置或對應關係；用本單元的一個例子說明它與「人工檢視」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "19-multi-agent",
+      "group": "patterns",
+      "title": "多 Agent 的協作架構",
+      "summary": "Router、Supervisor 與 Handoff 的選擇，先設計資訊與權限邊界。",
+      "tags": [
+        "Multi-agent",
+        "協作"
+      ],
+      "visual": "review-05-patterns",
+      "visualTask": "讀完「多 Agent 的協作架構」後，在圖上指出「人工檢視」的位置或對應關係；用本單元的一個例子說明它與「同意或修改」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "20-rag",
+      "group": "patterns",
+      "title": "RAG：可追溯的檢索問答流程",
+      "summary": "查詢、檢索、驗證、回答與拒答，讓答案有文件依據。",
+      "tags": [
+        "RAG",
+        "檢索"
+      ],
+      "visual": "review-05-patterns",
+      "visualTask": "讀完「RAG：可追溯的檢索問答流程」後，在圖上指出「同意或修改」的位置或對應關係；用本單元的一個例子說明它與「恢復節點」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "21-functional-api",
+      "group": "patterns",
+      "title": "另一條路：Functional API",
+      "summary": "用 entrypoint 與 task 將一般 Python 控制流程帶入持久執行。",
+      "tags": [
+        "Functional",
+        "task"
+      ],
+      "example": "10_functional.py",
+      "visual": "review-05-patterns",
+      "visualTask": "讀完「另一條路：Functional API」後，在圖上指出「恢復節點」的位置或對應關係；用本單元的一個例子說明它與「待執行動作」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "22-reliability",
+      "group": "production",
+      "title": "錯誤、重試、逾時與快取",
+      "summary": "區分暫時失敗與業務結果，避免把錯誤判斷永久保留下來。",
+      "tags": [
+        "Retry",
+        "Cache"
+      ],
+      "example": "11_retry_context.py",
+      "visual": "review-06-production",
+      "visualTask": "讀完「錯誤、重試、逾時與快取」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「節點測試」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "23-testing-tracing",
+      "group": "production",
+      "title": "測試、除錯與可觀測性",
+      "summary": "分層驗證節點、路徑與恢復行為，把評估和單元測試分開。",
+      "tags": [
+        "pytest",
+        "Tracing"
+      ],
+      "visual": "review-06-production",
+      "visualTask": "讀完「測試、除錯與可觀測性」後，在圖上指出「節點測試」的位置或對應關係；用本單元的一個例子說明它與「失敗重試」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "24-deployment",
+      "group": "production",
+      "title": "專案結構、API 與部署",
+      "summary": "從 Python 腳本走向服務，理解 Agent Server 和自建 API 的責任。",
+      "tags": [
+        "部署",
+        "API"
+      ],
+      "visual": "review-06-production",
+      "visualTask": "讀完「專案結構、API 與部署」後，在圖上指出「失敗重試」的位置或對應關係；用本單元的一個例子說明它與「追蹤紀錄」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "25-capstone",
+      "group": "production",
+      "title": "完整專案：有審核的知識助理",
+      "summary": "整合檢索、拒答、checkpoint、人工修改與可驗證的最終答案。",
+      "tags": [
+        "完整實作",
+        "整合"
+      ],
+      "example": "12_knowledge_assistant.py",
+      "visual": "review-06-production",
+      "visualTask": "讀完「完整專案：有審核的知識助理」後，在圖上指出「追蹤紀錄」的位置或對應關係；用本單元的一個例子說明它與「交付驗收」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "26-exercises",
+      "group": "production",
+      "title": "動手練習與參考解答",
+      "summary": "循序完成五個任務，以具體行為檢查自己的理解。",
+      "tags": [
+        "練習",
+        "解答"
+      ],
+      "visual": "review-06-production",
+      "visualTask": "讀完「動手練習與參考解答」後，在圖上指出「交付驗收」的位置或對應關係；用本單元的一個例子說明它與「資料契約」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "27-cheatsheet",
+      "group": "production",
+      "title": "API 速查與常見問題",
+      "summary": "查找 import、錯誤訊息、適用工具與排錯順序。",
+      "tags": [
+        "速查",
+        "FAQ"
+      ],
+      "visual": "review-06-production",
+      "visualTask": "讀完「API 速查與常見問題」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「節點測試」的關係，再寫出一個適用條件或限制。"
+    },
+    {
+      "id": "28-math-resources",
+      "group": "production",
+      "title": "數學觀點、詞彙與延伸閱讀",
+      "summary": "用狀態轉移與成本公式串起觀念，附官方文件與後續學習路線。",
+      "tags": [
+        "LaTeX",
+        "資源"
+      ],
+      "visual": "review-06-production",
+      "visualTask": "讀完「數學觀點、詞彙與延伸閱讀」後，在圖上指出「節點測試」的位置或對應關係；用本單元的一個例子說明它與「失敗重試」的關係，再寫出一個適用條件或限制。"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-start",
+      "file": "assets/figures/review-01-start.svg",
+      "title": "從狀態到下一個節點",
+      "alt": "從狀態到下一個節點；節點回傳更新欄位，不直接替代整份狀態；條件邊根據當次狀態選擇後續路徑。",
+      "caption": "節點回傳更新欄位，不直接替代整份狀態；條件邊根據當次狀態選擇後續路徑。",
+      "group": "start",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-graph",
+      "file": "assets/figures/review-02-graph.svg",
+      "title": "分支與狀態合併",
+      "alt": "分支與狀態合併；平行分支可能更新同一欄位，需明確合併規則；append與覆寫代表不同狀態語意。",
+      "caption": "平行分支可能更新同一欄位，需明確合併規則；append與覆寫代表不同狀態語意。",
+      "group": "graph",
+      "kind": "fork",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-agent",
+      "file": "assets/figures/review-03-agent.svg",
+      "title": "有工具的Agent循環",
+      "alt": "有工具的Agent循環；需要工具時才走執行分支；完成時離開循環；工具結果是資料，仍需檢查參數、權限與失敗。",
+      "caption": "需要工具時才走執行分支；完成時離開循環；工具結果是資料，仍需檢查參數、權限與失敗。",
+      "group": "agent",
+      "kind": "loop",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-memory",
+      "file": "assets/figures/review-04-memory.svg",
+      "title": "檢查點、記憶與執行緒",
+      "alt": "檢查點、記憶與執行緒；thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。",
+      "caption": "thread識別一次連續對話或流程的狀態；長期記憶與執行中的checkpoint分開管理。",
+      "group": "memory",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-patterns",
+      "file": "assets/figures/review-05-patterns.svg",
+      "title": "暫停、審核與恢復",
+      "alt": "暫停、審核與恢復；恢復可能重跑節點前段，副作用需具冪等性；審核要對應明確的動作與參數。",
+      "caption": "恢復可能重跑節點前段，副作用需具冪等性；審核要對應明確的動作與參數。",
+      "group": "patterns",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-production",
+      "file": "assets/figures/review-06-production.svg",
+      "title": "可靠的完整工作流程",
+      "alt": "可靠的完整工作流程；測試狀態、路由與副作用，不能只看最終文字；將可重試錯誤和需人工處理的錯誤分開。",
+      "caption": "測試狀態、路由與副作用，不能只看最終文字；將可重試錯誤和需人工處理的錯誤分開。",
+      "group": "production",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "langgraph-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "langgraph-study.zip"
   ]
 }

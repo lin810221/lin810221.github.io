@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/reader.js','search/assets/overview.js','search/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,21);assert.equal(home.querySelectorAll('a[href="search/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,23);assert.equal(home.querySelectorAll('a[href="search/index.html"]').length,1);
 const {window,document}=parseHTML(await read('search/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['01-why-mcp'],notes:{'01-why-mcp':'preserve MCP'}}),storage=new Map([['learning-notes:mcp:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
@@ -39,7 +39,7 @@ function navigate(id){location.hash='#'+id;window.dispatchEvent(new Event('hashc
 let equations=0,examples=0;
 for(const lesson of window.COURSE.lessons){
   navigate(lesson.id);assert.equal(q('.lesson-header h1').textContent,lesson.title);assert.equal(document.querySelectorAll('.chapter-link[aria-current="page"]').length,1);assert.ok(document.querySelectorAll('.toc-links a').length>=4);
-  for(const element of document.querySelectorAll('.math-block')){const tex=element.textContent.trim().replace(/^\$\$\s*|\s*\$\$$/g,'');katex.renderToString(tex,{displayMode:true,throwOnError:true,strict:'error'});equations++;}
+  for(const element of document.querySelectorAll('.math-block')){const tex=element.getAttribute('data-tex') ?? (element.textContent.trim().replace(/^\$\$\s*|\s*\$\$$/g,''));katex.renderToString(tex,{displayMode:true,throwOnError:true,strict:'error'});equations++;}
   if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}
 }
 assert.equal(examples,32);assert.equal(equations,7);assert.deepEqual(window.COURSE.groups.map(g=>window.COURSE.lessons.filter(l=>l.group===g.id).length),Array(10).fill(6));

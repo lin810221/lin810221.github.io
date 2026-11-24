@@ -2,6 +2,16 @@
 
 把raw資料轉成固定契約，讓相同模型在不同入口有相同行為。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![成品部署與資料漂移；部署需要相同前處理與label map；分數分布變化是線索，品質需真值。](assets/figures/review-09-engineering.svg)
+
+> **圖解｜成品部署與資料漂移**：部署需要相同前處理與label map；分數分布變化是線索，品質需真值。
+
+**本單元讀圖任務**：讀完「推論介面：欄位名稱、機率與決策的一致性」後，在圖上指出「保存管線」的位置或對應關係；用本單元的一個例子說明它與「推論輸入」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先定義輸入
 
 完整專題接受records list，每筆恰含tenure_months、weekly_usage、support_tickets、plan。numeric允許有限數字或null，category允許非空字串或null；不接受Inf、數字字串與bool混作數值。這是教學的明確型態契約，真實服務可另定轉換政策並測試。

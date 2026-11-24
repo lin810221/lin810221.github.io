@@ -2,6 +2,16 @@
 
 理解head拆分、投影與順序訊號，再銜接完整Transformer。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Attention用內容混合資訊；分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。](assets/figures/review-08-attention.svg)
+
+> **圖解｜Attention用內容混合資訊**：分數矩陣每列對key軸正規化；causal遮罩限制可用資訊。
+
+**本單元讀圖任務**：讀完「Multi-head與位置資訊：多個子空間如何組合」後，在圖上指出「分數」的位置或對應關係；用本單元的一個例子說明它與「Softmax」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 多個head不是多個獨立答案
 
 各head有自己的投影與加權讀取，輸出concat後再投影回模型維度。它讓模型可在不同子空間建關係，但不保證每個head都學到人可命名的語法角色。head數與每head維度共同影響參數、計算與容量。

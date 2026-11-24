@@ -2,6 +2,16 @@
 
 理解單一端點、JSON／SSE 回應、Origin 與舊版傳輸的差異。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![一次協定互動的生命週期；請求ID用於對應回應，通知沒有一般回應；能力與版本需按雙方實際支援核對。](assets/figures/review-02-protocol.svg)
+
+> **圖解｜一次協定互動的生命週期**：請求ID用於對應回應，通知沒有一般回應；能力與版本需按雙方實際支援核對。
+
+**本單元讀圖任務**：讀完「Streamable HTTP：把工具提供給遠端 Client」後，在圖上指出「發送請求」的位置或對應關係；用本單元的一個例子說明它與「結束連線」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先看現代版的單一請求
 
 Server 提供一個 MCP endpoint，例如 `/mcp`。Client 對它送出 POST，回應可以是 JSON，也可以是這個請求專用的 SSE 串流。SSE 可以承載進度等訊息，最後回傳完成結果；使用串流不代表它是另一個 HTTP API，更不表示一定有持久 Session。

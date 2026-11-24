@@ -2,6 +2,16 @@
 
 建立受控的 multi_match 與精確 Filter，理解查詢、聚合與資料資格的作用範圍。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![向量距離與語意候選；Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-elastic.svg)
+
+> **圖解｜向量距離與語意候選**：Cosine、內積、L2的前提不同；換模型後的向量不能未驗證就混用。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Query DSL、Filter 與 Aggregation：查詢也要有邊界」後，在圖上指出「候選索引」的位置或對應關係；用本單元的一個例子說明它與「最近鄰」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 把相關性與資格寫在正確位置
 
 bool.must 可放 multi_match，title^2 提升標題；bool.filter 放 tenant、active 與 recipe 的精確條件。模型或使用者不能直接提供整份 DSL，否則可繞過欄位限制與資源預算。本課服務只接受 query、k，由可信主體產生租戶，再組出固定形狀的請求。

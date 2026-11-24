@@ -2,6 +2,16 @@
 
 整理本次查核來源、實測邊界與下一個可持續練習的方向。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![可回放的搜尋專題；資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。](assets/figures/review-10-delivery.svg)
+
+> **圖解｜可回放的搜尋專題**：資料、編碼器和索引設定一起版本化；本機示範不替代生產容量測試。
+
+**本單元讀圖任務**：讀完「版本矩陣、官方文件與後續路線」後，在圖上指出「資料契約」的位置或對應關係；用本單元的一個例子說明它與「多種索引」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 查核日期與版本
 
 本次於2026-11-05查核正式穩定版本：SQLite3.54.1／APSW3.54.1.0、Elasticsearch9.5.6／Python client9.5.1、Qdrant1.20.0／client1.20.0、Faiss CPU1.15.1、PostgreSQL18.6、pgvector extension0.8.7／Python adapter0.5.1、Psycopg3.3.8。Python3.11.6是此次本機驗證環境，不宣稱是最新Python。

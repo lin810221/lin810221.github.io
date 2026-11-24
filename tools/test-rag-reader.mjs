@@ -102,7 +102,7 @@ for(const lesson of course.lessons) {
   const {document:doc}=parseHTML(`<html><body>${lesson.html}</body></html>`);
   for(const element of doc.querySelectorAll('.math-source,.math-block')) {
     const text=element.textContent.trim(),display=element.classList.contains('math-block');
-    const tex=display?text.slice(2,-2).trim():text.slice(1,-1);
+    const tex=element.getAttribute('data-tex') ?? (display?text.slice(2,-2).trim():text.slice(1,-1));
     assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));
     equations++;
   }

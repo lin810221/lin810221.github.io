@@ -2,6 +2,16 @@
 
 用 float32 連續矩陣建立 IndexFlatIP，與 NumPy Exact 逐筆比較。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![ANN用搜尋預算換取召回；近似不代表每次找回精確top-k；用精確參照計算Recall並量測延遲。](assets/figures/review-04-vectors.svg)
+
+> **圖解｜ANN用搜尋預算換取召回**：近似不代表每次找回精確top-k；用精確參照計算Recall並量測延遲。
+
+**本單元讀圖任務**：讀完「Faiss Flat：真正的全量向量檢索」後，在圖上指出「候選區域」的位置或對應關係；用本單元的一個例子說明它與「圖或分群」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Flat 沒有近似捷徑
 
 IndexFlatIP 保存向量並對查詢計算內積；IndexFlatL2 使用平方 L2。它不需要 training，適合當真值與小型系統的基線。單次掃描成本隨 N×d 增加，批次計算、SIMD 與硬體會影響實際耗時；不要只用漸近式判斷小資料下哪個索引比較快。

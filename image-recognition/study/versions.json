@@ -1,0 +1,16 @@
+{
+  "checked": "2026-11-23",
+  "runtime": "Python 3.13.13 compatibility baseline",
+  "latestPythonDistinction": "Python 3.15 is newer; ORT1.32 Windows has no cp315 wheel",
+  "packages": {
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.5",
+    "Pillow": "13.0.0",
+    "opencv-python-headless": "5.1.0.95",
+    "onnx": "1.23.2",
+    "onnxscript": "0.7.2",
+    "onnxruntime": "1.32.0"
+  },
+  "verification": "Python完整範例包examples.zip內examples/VERIFICATION.md"
+}

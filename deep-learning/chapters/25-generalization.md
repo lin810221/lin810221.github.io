@@ -2,6 +2,16 @@
 
 用訓練與驗證曲線提出假設，避免把單一現象簡化成固定解法。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「過擬合與泛化：資料、容量與最佳化共同決定」後，在圖上指出「過擬合」的位置或對應關係；用本單元的一個例子說明它與「正則化」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Train好不是終點
 
 train loss低、val差，可能記住雜訊、資料少、來源偏移或切分不符合部署。train與val都差，可能容量、特徵、目標、label或optimizer問題。先確認資料邊界與數值流程，再根據證據改架構或正則化。

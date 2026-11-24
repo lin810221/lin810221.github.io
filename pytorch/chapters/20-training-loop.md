@@ -2,6 +2,16 @@
 
 從資料 batch 到指標累積，寫出可讀、可檢查的 train_epoch。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。](assets/figures/review-04-training.svg)
+
+> **圖解｜Module把參數與forward組織起來**：train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。
+
+**本單元讀圖任務**：讀完「完整訓練迴圈：每一步都知道在更新什麼」後，在圖上指出「Hidden層」的位置或對應關係；用本單元的一個例子說明它與「輸出頭」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 一輪 epoch 的定義
 
 本課一個 epoch 是 train loader 完整走過一次。每個 batch 先移device，清梯度，forward，計算scalar loss，backward，再step。model.train() 設定 Dropout／BatchNorm 等行為，它本身不會啟動 optimizer，也不會自動清除梯度。

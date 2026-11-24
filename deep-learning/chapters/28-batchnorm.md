@@ -2,6 +2,16 @@
 
 精確區分訓練正規化和推論統計，理解小batch與凍結的影響。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「BatchNorm：批次統計、running buffers與兩種variance」後，在圖上指出「過擬合」的位置或對應關係；用本單元的一個例子說明它與「正則化」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 沿哪些軸計算
 
 BatchNorm1d對feature/channel沿batch等適當軸估統計，BatchNorm2d對每channel聚合N與空間。它不是將每一筆的所有feature各自平均；LayerNorm下一單元使用不同軸。先看輸入layout與API，不從名字猜。
@@ -18,7 +28,7 @@ train使用當前batch統計並更新running；eval通常使用保存的running�
 
 ## 手算兩筆
 
-x=[[1,2],[3,4]]，每feature平均[2,3]；population variance各1，unbiased各2。初始running mean0、var1，momentum=.1後mean[.2,.3]、var[1.1,1.1]。第18例真正核對buffer與eval輸出，因此eval mean不需為0。
+$x=[[1,2],[3,4]]$，每feature平均[2,3]；population variance各1，unbiased各2。初始running mean0、var1，momentum=.1後mean[.2,.3]、var[1.1,1.1]。第18例真正核對buffer與eval輸出，因此eval mean不需為0。
 
 ## 小batch與遷移
 

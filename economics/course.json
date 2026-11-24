@@ -103,7 +103,9 @@
         "用經濟學思考",
         "economic questions"
       ],
-      "example": "01_opportunity_cost.py"
+      "example": "01_opportunity_cost.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「經濟學在問什麼：選擇、互動與制度」後，在圖上指出「資源限制」的位置或對應關係；用本單元的一個例子說明它與「選擇A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-scarcity-and-opportunity-cost",
@@ -113,7 +115,9 @@
       "tags": [
         "用經濟學思考",
         "scarcity and opportunity cost"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「稀少性、機會成本與邊際思考」後，在圖上指出「選擇A」的位置或對應關係；用本單元的一個例子說明它與「選擇B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-models-and-frontiers",
@@ -124,7 +128,9 @@
         "用經濟學思考",
         "models and frontiers"
       ],
-      "example": "02_ppf_and_models.py"
+      "example": "02_ppf_and_models.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「模型、PPF 與比較靜態：簡化如何幫助理解」後，在圖上指出「選擇B」的位置或對應關係；用本單元的一個例子說明它與「可行邊界」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-institutions-and-method",
@@ -134,7 +140,9 @@
       "tags": [
         "用經濟學思考",
         "institutions and method"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「制度、歷史與實證：效率之外還要問誰受益」後，在圖上指出「可行邊界」的位置或對應關係；用本單元的一個例子說明它與「機會成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-math-and-units",
@@ -145,7 +153,9 @@
         "用經濟學思考",
         "math and units"
       ],
-      "example": "03_units_and_rates.py"
+      "example": "03_units_and_rates.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「數學與單位：斜率、彈性、百分比與存量流量」後，在圖上指出「機會成本」的位置或對應關係；用本單元的一個例子說明它與「資源限制」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-learning-path-and-environment",
@@ -155,7 +165,9 @@
       "tags": [
         "用經濟學思考",
         "learning path and environment"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「學習路線、Python 與模型實驗規則」後，在圖上指出「資源限制」的位置或對應關係；用本單元的一個例子說明它與「選擇A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-supply-demand-equilibrium",
@@ -166,7 +178,9 @@
         "供需、彈性與市場干預",
         "supply demand equilibrium"
       ],
-      "example": "04_supply_and_demand.py"
+      "example": "04_supply_and_demand.py",
+      "visual": "review-02-markets",
+      "visualTask": "讀完「需求、供給與競爭均衡」後，在圖上指出「價格P」的位置或對應關係；用本單元的一個例子說明它與「數量Q」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-shifts-and-comparative-statics",
@@ -176,7 +190,9 @@
       "tags": [
         "供需、彈性與市場干預",
         "shifts and comparative statics"
-      ]
+      ],
+      "visual": "review-02-markets",
+      "visualTask": "讀完「曲線位移與沿線移動：怎麼判斷衝擊」後，在圖上指出「數量Q」的位置或對應關係；用本單元的一個例子說明它與「需求D」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-elasticity",
@@ -187,7 +203,9 @@
         "供需、彈性與市場干預",
         "elasticity"
       ],
-      "example": "05_elasticity.py"
+      "example": "05_elasticity.py",
+      "visual": "review-02-markets",
+      "visualTask": "讀完「彈性：用百分比衡量反應」後，在圖上指出「需求D」的位置或對應關係；用本單元的一個例子說明它與「供給S」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-revenue-and-other-elasticities",
@@ -197,7 +215,9 @@
       "tags": [
         "供需、彈性與市場干預",
         "revenue and other elasticities"
-      ]
+      ],
+      "visual": "review-02-markets",
+      "visualTask": "讀完「總收益、所得彈性與交叉彈性」後，在圖上指出「供給S」的位置或對應關係；用本單元的一個例子說明它與「均衡」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-tax-incidence",
@@ -208,7 +228,9 @@
         "供需、彈性與市場干預",
         "tax incidence"
       ],
-      "example": "06_tax_and_controls.py"
+      "example": "06_tax_and_controls.py",
+      "visual": "review-02-markets",
+      "visualTask": "讀完「從量稅、稅負歸宿與無謂損失」後，在圖上指出「均衡」的位置或對應關係；用本單元的一個例子說明它與「價格P」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-price-controls",
@@ -218,7 +240,9 @@
       "tags": [
         "供需、彈性與市場干預",
         "price controls"
-      ]
+      ],
+      "visual": "review-02-markets",
+      "visualTask": "讀完「價格上限、下限與配給：成交量之外的代價」後，在圖上指出「價格P」的位置或對應關係；用本單元的一個例子說明它與「數量Q」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-budget-sets",
@@ -229,7 +253,9 @@
         "消費者選擇與跨期決策",
         "budget sets"
       ],
-      "example": "07_consumer_budget.py"
+      "example": "07_consumer_budget.py",
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「預算限制與可行選擇」後，在圖上指出「商品X」的位置或對應關係；用本單元的一個例子說明它與「商品Y」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-preferences-and-utility",
@@ -239,7 +265,9 @@
       "tags": [
         "消費者選擇與跨期決策",
         "preferences and utility"
-      ]
+      ],
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「偏好、無異曲線與效用的意義」後，在圖上指出「商品Y」的位置或對應關係；用本單元的一個例子說明它與「預算線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-consumer-optimum",
@@ -250,7 +278,9 @@
         "消費者選擇與跨期決策",
         "consumer optimum"
       ],
-      "example": "08_hicks_decomposition.py"
+      "example": "08_hicks_decomposition.py",
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「消費者最適、需求與補償變動」後，在圖上指出「預算線」的位置或對應關係；用本單元的一個例子說明它與「可行組合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-income-substitution-effects",
@@ -260,7 +290,9 @@
       "tags": [
         "消費者選擇與跨期決策",
         "income substitution effects"
-      ]
+      ],
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「所得效果、替代效果與Giffen財」後，在圖上指出「可行組合」的位置或對應關係；用本單元的一個例子說明它與「跨期取捨」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-labor-leisure-choice",
@@ -271,7 +303,9 @@
         "消費者選擇與跨期決策",
         "labor leisure choice"
       ],
-      "example": "09_labor_leisure.py"
+      "example": "09_labor_leisure.py",
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「工作與休閒：工資上升為何不一定多工作」後，在圖上指出「跨期取捨」的位置或對應關係；用本單元的一個例子說明它與「商品X」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-intertemporal-and-risk",
@@ -281,7 +315,9 @@
       "tags": [
         "消費者選擇與跨期決策",
         "intertemporal and risk"
-      ]
+      ],
+      "visual": "review-03-consumers",
+      "visualTask": "讀完「跨期消費、儲蓄與風險」後，在圖上指出「商品X」的位置或對應關係；用本單元的一個例子說明它與「商品Y」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-production-functions",
@@ -292,7 +328,9 @@
         "生產、成本與完全競爭",
         "production functions"
       ],
-      "example": "10_production.py"
+      "example": "10_production.py",
+      "visual": "review-04-producers",
+      "visualTask": "讀完「生產函數與技術：投入如何變成產出」後，在圖上指出「產量Q」的位置或對應關係；用本單元的一個例子說明它與「成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-marginal-and-average-product",
@@ -302,7 +340,9 @@
       "tags": [
         "生產、成本與完全競爭",
         "marginal and average product"
-      ]
+      ],
+      "visual": "review-04-producers",
+      "visualTask": "讀完「邊際報酬、平均生產力與規模報酬」後，在圖上指出「成本」的位置或對應關係；用本單元的一個例子說明它與「邊際成本MC」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-cost-functions",
@@ -313,7 +353,9 @@
         "生產、成本與完全競爭",
         "cost functions"
       ],
-      "example": "11_cost_curves.py"
+      "example": "11_cost_curves.py",
+      "visual": "review-04-producers",
+      "visualTask": "讀完「固定、變動、平均與邊際成本」後，在圖上指出「邊際成本MC」的位置或對應關係；用本單元的一個例子說明它與「平均成本AC」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-cost-minimization-and-scale",
@@ -323,7 +365,9 @@
       "tags": [
         "生產、成本與完全競爭",
         "cost minimization and scale"
-      ]
+      ],
+      "visual": "review-04-producers",
+      "visualTask": "讀完「成本最小化、等產量與長期規模」後，在圖上指出「平均成本AC」的位置或對應關係；用本單元的一個例子說明它與「供給決策」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-perfect-competition",
@@ -334,7 +378,9 @@
         "生產、成本與完全競爭",
         "perfect competition"
       ],
-      "example": "12_competition_and_exit.py"
+      "example": "12_competition_and_exit.py",
+      "visual": "review-04-producers",
+      "visualTask": "讀完「完全競爭：價格接受者的供給決策」後，在圖上指出「供給決策」的位置或對應關係；用本單元的一個例子說明它與「產量Q」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-entry-exit-and-long-run",
@@ -344,7 +390,9 @@
       "tags": [
         "生產、成本與完全競爭",
         "entry exit and long run"
-      ]
+      ],
+      "visual": "review-04-producers",
+      "visualTask": "讀完「進入、退出與長期均衡」後，在圖上指出「產量Q」的位置或對應關係；用本單元的一個例子說明它與「成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-monopoly",
@@ -355,7 +403,9 @@
         "市場力量與賽局",
         "monopoly"
       ],
-      "example": "13_monopoly.py"
+      "example": "13_monopoly.py",
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「獨占：邊際收益、加價與福利」後，在圖上指出「玩家A」的位置或對應關係；用本單元的一個例子說明它與「玩家B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-price-discrimination",
@@ -365,7 +415,9 @@
       "tags": [
         "市場力量與賽局",
         "price discrimination"
-      ]
+      ],
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「差別取價、兩部費率與獨占性競爭」後，在圖上指出「玩家B」的位置或對應關係；用本單元的一個例子說明它與「策略1」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-cournot-and-bertrand",
@@ -376,7 +428,9 @@
         "市場力量與賽局",
         "cournot and bertrand"
       ],
-      "example": "14_cournot.py"
+      "example": "14_cournot.py",
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「寡占：Cournot數量競爭與Bertrand價格競爭」後，在圖上指出「策略1」的位置或對應關係；用本單元的一個例子說明它與「策略2」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-game-representation",
@@ -386,7 +440,9 @@
       "tags": [
         "市場力量與賽局",
         "game representation"
-      ]
+      ],
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「賽局的元素、最佳回應與優勢策略」後，在圖上指出「策略2」的位置或對應關係；用本單元的一個例子說明它與「報酬」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-nash-and-mixed-strategies",
@@ -397,7 +453,9 @@
         "市場力量與賽局",
         "nash and mixed strategies"
       ],
-      "example": "15_games.py"
+      "example": "15_games.py",
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「Nash均衡、混合策略與多重均衡」後，在圖上指出「報酬」的位置或對應關係；用本單元的一個例子說明它與「玩家A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-repeated-games-and-platforms",
@@ -407,7 +465,9 @@
       "tags": [
         "市場力量與賽局",
         "repeated games and platforms"
-      ]
+      ],
+      "visual": "review-05-strategy",
+      "visualTask": "讀完「重複互動、承諾與平台經濟」後，在圖上指出「玩家A」的位置或對應關係；用本單元的一個例子說明它與「玩家B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-welfare-and-efficiency",
@@ -418,7 +478,9 @@
         "市場失靈與公共政策",
         "welfare and efficiency"
       ],
-      "example": "16_welfare.py"
+      "example": "16_welfare.py",
+      "visual": "review-06-public",
+      "visualTask": "讀完「福利、剩餘與效率：市場結果如何評估」後，在圖上指出「私人邊際成本」的位置或對應關係；用本單元的一個例子說明它與「外部成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-public-goods-and-commons",
@@ -428,7 +490,9 @@
       "tags": [
         "市場失靈與公共政策",
         "public goods and commons"
-      ]
+      ],
+      "visual": "review-06-public",
+      "visualTask": "讀完「公共財、共有資源與搭便車」後，在圖上指出「外部成本」的位置或對應關係；用本單元的一個例子說明它與「社會邊際成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-externalities-and-pigou",
@@ -439,7 +503,9 @@
         "市場失靈與公共政策",
         "externalities and pigou"
       ],
-      "example": "17_externalities.py"
+      "example": "17_externalities.py",
+      "visual": "review-06-public",
+      "visualTask": "讀完「外部性、社會成本與Pigou稅」後，在圖上指出「社會邊際成本」的位置或對應關係；用本單元的一個例子說明它與「需求利益」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-property-rights-and-coase",
@@ -449,7 +515,9 @@
       "tags": [
         "市場失靈與公共政策",
         "property rights and coase"
-      ]
+      ],
+      "visual": "review-06-public",
+      "visualTask": "讀完「產權、談判與Coase：什麼條件下能內部化」後，在圖上指出「需求利益」的位置或對應關係；用本單元的一個例子說明它與「政策目標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-carbon-and-quantity-price",
@@ -460,7 +528,9 @@
         "市場失靈與公共政策",
         "carbon and quantity price"
       ],
-      "example": "18_abatement.py"
+      "example": "18_abatement.py",
+      "visual": "review-06-public",
+      "visualTask": "讀完「碳定價、總量管制與減排成本」後，在圖上指出「政策目標」的位置或對應關係；用本單元的一個例子說明它與「私人邊際成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-regulation-and-distribution",
@@ -470,7 +540,9 @@
       "tags": [
         "市場失靈與公共政策",
         "regulation and distribution"
-      ]
+      ],
+      "visual": "review-06-public",
+      "visualTask": "讀完「監理、政府失靈與分配敏感的政策設計」後，在圖上指出「私人邊際成本」的位置或對應關係；用本單元的一個例子說明它與「外部成本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-labor-demand-and-monopsony",
@@ -481,7 +553,9 @@
         "勞動、資訊與行為",
         "labor demand and monopsony"
       ],
-      "example": "19_labor_market.py"
+      "example": "19_labor_market.py",
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「勞動需求、工資與買方獨占」後，在圖上指出「交易前資訊」的位置或對應關係；用本單元的一個例子說明它與「契約設計」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-inequality-and-poverty",
@@ -491,7 +565,9 @@
       "tags": [
         "勞動、資訊與行為",
         "inequality and poverty"
-      ]
+      ],
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「所得分配、財富、不平等與貧窮」後，在圖上指出「契約設計」的位置或對應關係；用本單元的一個例子說明它與「行動選擇」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-risk-and-adverse-selection",
@@ -502,7 +578,9 @@
         "勞動、資訊與行為",
         "risk and adverse selection"
       ],
-      "example": "20_insurance.py"
+      "example": "20_insurance.py",
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「風險、保險與逆選擇」後，在圖上指出「行動選擇」的位置或對應關係；用本單元的一個例子說明它與「可觀察結果」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-principal-agent-and-signals",
@@ -512,7 +590,9 @@
       "tags": [
         "勞動、資訊與行為",
         "principal agent and signals"
-      ]
+      ],
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「委託代理、道德風險與訊號」後，在圖上指出「可觀察結果」的位置或對應關係；用本單元的一個例子說明它與「制度回饋」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-behavioral-economics",
@@ -523,7 +603,9 @@
         "勞動、資訊與行為",
         "behavioral economics"
       ],
-      "example": "21_behavioral_discounting.py"
+      "example": "21_behavioral_discounting.py",
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「行為經濟學：有限理性、參考點與現在偏誤」後，在圖上指出「制度回饋」的位置或對應關係；用本單元的一個例子說明它與「交易前資訊」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-micro-integration",
@@ -533,7 +615,9 @@
       "tags": [
         "勞動、資訊與行為",
         "micro integration"
-      ]
+      ],
+      "visual": "review-07-institutions",
+      "visualTask": "讀完「個體篇整合練習：模型變了，結論也可能變」後，在圖上指出「交易前資訊」的位置或對應關係；用本單元的一個例子說明它與「契約設計」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-gdp-and-value-added",
@@ -544,7 +628,9 @@
         "總體經濟怎麼測量",
         "gdp and value added"
       ],
-      "example": "22_gdp_accounting.py"
+      "example": "22_gdp_accounting.py",
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「GDP、最終產出與附加價值」後，在圖上指出「產出Y」的位置或對應關係；用本單元的一個例子說明它與「消費C」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-national-accounts-and-standards",
@@ -554,7 +640,9 @@
       "tags": [
         "總體經濟怎麼測量",
         "national accounts and standards"
-      ]
+      ],
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「國民帳、GNI與2025新統計標準」後，在圖上指出「消費C」的位置或對應關係；用本單元的一個例子說明它與「投資I」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-nominal-real-and-indexes",
@@ -565,7 +653,9 @@
         "總體經濟怎麼測量",
         "nominal real and indexes"
       ],
-      "example": "23_price_indexes.py"
+      "example": "23_price_indexes.py",
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「名目、實質、GDP平減與CPI」後，在圖上指出「投資I」的位置或對應關係；用本單元的一個例子說明它與「政府G」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-inflation-and-living-costs",
@@ -575,7 +665,9 @@
       "tags": [
         "總體經濟怎麼測量",
         "inflation and living costs"
-      ]
+      ],
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「通膨、生活成本與住宅：讀物價新聞」後，在圖上指出「政府G」的位置或對應關係；用本單元的一個例子說明它與「淨出口NX」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-unemployment-and-participation",
@@ -586,7 +678,9 @@
         "總體經濟怎麼測量",
         "unemployment and participation"
       ],
-      "example": "24_labor_statistics.py"
+      "example": "24_labor_statistics.py",
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「失業率、勞參率與就業人口比」後，在圖上指出「淨出口NX」的位置或對應關係；用本單元的一個例子說明它與「產出Y」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-macro-data-reading",
@@ -596,7 +690,9 @@
       "tags": [
         "總體經濟怎麼測量",
         "macro data reading"
-      ]
+      ],
+      "visual": "review-08-measurement",
+      "visualTask": "讀完「總體資料閱讀：頻率、季調、年率與修訂」後，在圖上指出「產出Y」的位置或對應關係；用本單元的一個例子說明它與「消費C」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "49-long-run-growth",
@@ -607,7 +703,9 @@
         "長期成長與發展",
         "long run growth"
       ],
-      "example": "25_growth_and_compounding.py"
+      "example": "25_growth_and_compounding.py",
+      "visual": "review-09-growth",
+      "visualTask": "讀完「長期成長、生活水準與複利」後，在圖上指出「人均資本k」的位置或對應關係；用本單元的一個例子說明它與「投資」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "50-productivity-and-human-capital",
@@ -617,7 +715,9 @@
       "tags": [
         "長期成長與發展",
         "productivity and human capital"
-      ]
+      ],
+      "visual": "review-09-growth",
+      "visualTask": "讀完「生產力、資本深化與人力資本」後，在圖上指出「投資」的位置或對應關係；用本單元的一個例子說明它與「折舊」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "51-solow-model",
@@ -628,7 +728,9 @@
         "長期成長與發展",
         "solow model"
       ],
-      "example": "26_solow_transition.py"
+      "example": "26_solow_transition.py",
+      "visual": "review-09-growth",
+      "visualTask": "讀完「Solow模型：儲蓄、折舊與資本動態」後，在圖上指出「折舊」的位置或對應關係；用本單元的一個例子說明它與「穩態」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "52-golden-rule-and-endogenous-growth",
@@ -638,7 +740,9 @@
       "tags": [
         "長期成長與發展",
         "golden rule and endogenous growth"
-      ]
+      ],
+      "visual": "review-09-growth",
+      "visualTask": "讀完「黃金律、消費與內生成長」後，在圖上指出「穩態」的位置或對應關係；用本單元的一個例子說明它與「技術與制度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "53-development-and-institutions",
@@ -649,7 +753,9 @@
         "長期成長與發展",
         "development and institutions"
       ],
-      "example": "27_growth_accounting.py"
+      "example": "27_growth_accounting.py",
+      "visual": "review-09-growth",
+      "visualTask": "讀完「經濟發展、制度與成長證據」後，在圖上指出「技術與制度」的位置或對應關係；用本單元的一個例子說明它與「人均資本k」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "54-sustainability-and-demography",
@@ -659,7 +765,9 @@
       "tags": [
         "長期成長與發展",
         "sustainability and demography"
-      ]
+      ],
+      "visual": "review-09-growth",
+      "visualTask": "讀完「成長、人口與環境限制」後，在圖上指出「人均資本k」的位置或對應關係；用本單元的一個例子說明它與「投資」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "55-money-and-banks",
@@ -670,7 +778,9 @@
         "貨幣、金融與銀行",
         "money and banks"
       ],
-      "example": "28_bank_balance_sheet.py"
+      "example": "28_bank_balance_sheet.py",
+      "visual": "review-10-money",
+      "visualTask": "讀完「貨幣、存款與銀行：先看資產負債表」後，在圖上指出「銀行資產」的位置或對應關係；用本單元的一個例子說明它與「貸款」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "56-credit-and-balance-sheets",
@@ -680,7 +790,9 @@
       "tags": [
         "貨幣、金融與銀行",
         "credit and balance sheets"
-      ]
+      ],
+      "visual": "review-10-money",
+      "visualTask": "讀完「放款、還本、結算與信用風險」後，在圖上指出「貸款」的位置或對應關係；用本單元的一個例子說明它與「準備資產」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "57-nominal-real-interest",
@@ -691,7 +803,9 @@
         "貨幣、金融與銀行",
         "nominal real interest"
       ],
-      "example": "29_fisher_rates.py"
+      "example": "29_fisher_rates.py",
+      "visual": "review-10-money",
+      "visualTask": "讀完「名目、實質利率與Fisher關係」後，在圖上指出「準備資產」的位置或對應關係；用本單元的一個例子說明它與「存款負債」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "58-central-bank-operations",
@@ -701,7 +815,9 @@
       "tags": [
         "貨幣、金融與銀行",
         "central bank operations"
-      ]
+      ],
+      "visual": "review-10-money",
+      "visualTask": "讀完「央行操作、政策利率與傳導」後，在圖上指出「存款負債」的位置或對應關係；用本單元的一個例子說明它與「權益」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "59-asset-prices-and-discounting",
@@ -712,7 +828,9 @@
         "貨幣、金融與銀行",
         "asset prices and discounting"
       ],
-      "example": "30_bond_prices.py"
+      "example": "30_bond_prices.py",
+      "visual": "review-10-money",
+      "visualTask": "讀完「資產價格、債券與折現」後，在圖上指出「權益」的位置或對應關係；用本單元的一個例子說明它與「銀行資產」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "60-financial-stability",
@@ -722,7 +840,9 @@
       "tags": [
         "貨幣、金融與銀行",
         "financial stability"
-      ]
+      ],
+      "visual": "review-10-money",
+      "visualTask": "讀完「槓桿、危機與金融穩定」後，在圖上指出「銀行資產」的位置或對應關係；用本單元的一個例子說明它與「貸款」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "61-business-cycles-and-adas",
@@ -733,7 +853,9 @@
         "景氣、需求與通膨",
         "business cycles and adas"
       ],
-      "example": "31_ad_as.py"
+      "example": "31_ad_as.py",
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「景氣、產出缺口與AD–AS」後，在圖上指出「物價水準」的位置或對應關係；用本單元的一個例子說明它與「實質產出」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "62-keynesian-and-classical",
@@ -743,7 +865,9 @@
       "tags": [
         "景氣、需求與通膨",
         "keynesian and classical"
-      ]
+      ],
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「Keynesian與古典基準：時間尺度與假設」後，在圖上指出「實質產出」的位置或對應關係；用本單元的一個例子說明它與「總需求AD」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "63-expenditure-multiplier",
@@ -754,7 +878,9 @@
         "景氣、需求與通膨",
         "expenditure multiplier"
       ],
-      "example": "32_multiplier.py"
+      "example": "32_multiplier.py",
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「支出乘數、租稅與進口漏出」後，在圖上指出「總需求AD」的位置或對應關係；用本單元的一個例子說明它與「總供給AS」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "64-is-lm-to-is-mp",
@@ -764,7 +890,9 @@
       "tags": [
         "景氣、需求與通膨",
         "is lm to is mp"
-      ]
+      ],
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「IS–LM與IS–MP：利率如何進入需求」後，在圖上指出「總供給AS」的位置或對應關係；用本單元的一個例子說明它與「景氣變動」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "65-is-mp-pc",
@@ -775,7 +903,9 @@
         "景氣、需求與通膨",
         "is mp pc"
       ],
-      "example": "33_is_mp_pc.py"
+      "example": "33_is_mp_pc.py",
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「IS–MP–PC：聯立需求、政策與通膨」後，在圖上指出「景氣變動」的位置或對應關係；用本單元的一個例子說明它與「物價水準」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "66-expectations-and-phillips",
@@ -785,7 +915,9 @@
       "tags": [
         "景氣、需求與通膨",
         "expectations and phillips"
-      ]
+      ],
+      "visual": "review-11-fluctuations",
+      "visualTask": "讀完「通膨預期與Phillips曲線」後，在圖上指出「物價水準」的位置或對應關係；用本單元的一個例子說明它與「實質產出」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "67-fiscal-policy",
@@ -796,7 +928,9 @@
         "財政與貨幣政策",
         "fiscal policy"
       ],
-      "example": "34_fiscal_scenarios.py"
+      "example": "34_fiscal_scenarios.py",
+      "visual": "review-12-policy",
+      "visualTask": "讀完「財政政策：支出、租稅與需求」後，在圖上指出「政策工具」的位置或對應關係；用本單元的一個例子說明它與「金融條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "68-tax-design-and-public-spending",
@@ -806,7 +940,9 @@
       "tags": [
         "財政與貨幣政策",
         "tax design and public spending"
-      ]
+      ],
+      "visual": "review-12-policy",
+      "visualTask": "讀完「稅制、公共支出與行為反應」後，在圖上指出「金融條件」的位置或對應關係；用本單元的一個例子說明它與「支出行為」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "69-debt-dynamics",
@@ -817,7 +953,9 @@
         "財政與貨幣政策",
         "debt dynamics"
       ],
-      "example": "35_debt_dynamics.py"
+      "example": "35_debt_dynamics.py",
+      "visual": "review-12-policy",
+      "visualTask": "讀完「赤字、債務與利率成長差」後，在圖上指出「支出行為」的位置或對應關係；用本單元的一個例子說明它與「產出與物價」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "70-stabilizers-and-rules",
@@ -827,7 +965,9 @@
       "tags": [
         "財政與貨幣政策",
         "stabilizers and rules"
-      ]
+      ],
+      "visual": "review-12-policy",
+      "visualTask": "讀完「自動穩定器、裁量政策與財政規則」後，在圖上指出「產出與物價」的位置或對應關係；用本單元的一個例子說明它與「評估回饋」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "71-monetary-rules",
@@ -838,7 +978,9 @@
         "財政與貨幣政策",
         "monetary rules"
       ],
-      "example": "36_policy_tradeoffs.py"
+      "example": "36_policy_tradeoffs.py",
+      "visual": "review-12-policy",
+      "visualTask": "讀完「貨幣政策規則、通膨目標與溝通」後，在圖上指出「評估回饋」的位置或對應關係；用本單元的一個例子說明它與「政策工具」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "72-policy-mix-and-evaluation",
@@ -848,7 +990,9 @@
       "tags": [
         "財政與貨幣政策",
         "policy mix and evaluation"
-      ]
+      ],
+      "visual": "review-12-policy",
+      "visualTask": "讀完「政策組合、衝擊診斷與不確定性」後，在圖上指出「政策工具」的位置或對應關係；用本單元的一個例子說明它與「金融條件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "73-comparative-advantage",
@@ -859,7 +1003,9 @@
         "國際貿易與開放經濟",
         "comparative advantage"
       ],
-      "example": "37_comparative_advantage.py"
+      "example": "37_comparative_advantage.py",
+      "visual": "review-13-international",
+      "visualTask": "讀完「比較利益、專業化與貿易利益」後，在圖上指出「國家A」的位置或對應關係；用本單元的一個例子說明它與「國家B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "74-trade-and-distribution",
@@ -869,7 +1015,9 @@
       "tags": [
         "國際貿易與開放經濟",
         "trade and distribution"
-      ]
+      ],
+      "visual": "review-13-international",
+      "visualTask": "讀完「要素、產業調整與貿易分配」後，在圖上指出「國家B」的位置或對應關係；用本單元的一個例子說明它與「商品X」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "75-tariffs-and-trade-policy",
@@ -880,7 +1028,9 @@
         "國際貿易與開放經濟",
         "tariffs and trade policy"
       ],
-      "example": "38_tariff.py"
+      "example": "38_tariff.py",
+      "visual": "review-13-international",
+      "visualTask": "讀完「關稅、配額與小國福利」後，在圖上指出「商品X」的位置或對應關係；用本單元的一個例子說明它與「商品Y」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "76-exchange-rates-and-parity",
@@ -890,7 +1040,9 @@
       "tags": [
         "國際貿易與開放經濟",
         "exchange rates and parity"
-      ]
+      ],
+      "visual": "review-13-international",
+      "visualTask": "讀完「匯率報價、實質匯率與利率平價」後，在圖上指出「商品Y」的位置或對應關係；用本單元的一個例子說明它與「比較利益」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "77-balance-of-payments",
@@ -901,7 +1053,9 @@
         "國際貿易與開放經濟",
         "balance of payments"
       ],
-      "example": "39_exchange_and_bop.py"
+      "example": "39_exchange_and_bop.py",
+      "visual": "review-13-international",
+      "visualTask": "讀完「國際收支、金融帳與國際投資部位」後，在圖上指出「比較利益」的位置或對應關係；用本單元的一個例子說明它與「國家A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "78-open-economy-trilemma",
@@ -911,7 +1065,9 @@
       "tags": [
         "國際貿易與開放經濟",
         "open economy trilemma"
-      ]
+      ],
+      "visual": "review-13-international",
+      "visualTask": "讀完「匯率制度、三難與開放經濟政策」後，在圖上指出「國家A」的位置或對應關係；用本單元的一個例子說明它與「國家B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "79-questions-and-identification",
@@ -922,7 +1078,9 @@
         "資料、證據與整合專題",
         "questions and identification"
       ],
-      "example": "40_evidence_and_identification.py"
+      "example": "40_evidence_and_identification.py",
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「經濟證據：描述、預測與因果」後，在圖上指出「研究問題」的位置或對應關係；用本單元的一個例子說明它與「資料版本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "80-ols-did-and-limitations",
@@ -932,7 +1090,9 @@
       "tags": [
         "資料、證據與整合專題",
         "ols did and limitations"
-      ]
+      ],
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「OLS與差中差：算式之外的識別條件」後，在圖上指出「資料版本」的位置或對應關係；用本單元的一個例子說明它與「會計與模型」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "81-vintages-and-revisions",
@@ -943,7 +1103,9 @@
         "資料、證據與整合專題",
         "vintages and revisions"
       ],
-      "example": "41_data_vintages.py"
+      "example": "41_data_vintages.py",
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「資料版本、修訂與前視偏差」後，在圖上指出「會計與模型」的位置或對應關係；用本單元的一個例子說明它與「識別假設」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "82-data-quality-and-official-sources",
@@ -953,7 +1115,9 @@
       "tags": [
         "資料、證據與整合專題",
         "data quality and official sources"
-      ]
+      ],
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「官方資料、資料品質與可重現分析」後，在圖上指出「識別假設」的位置或對應關係；用本單元的一個例子說明它與「結論限制」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "83-policy-capstone",
@@ -964,7 +1128,9 @@
         "資料、證據與整合專題",
         "policy capstone"
       ],
-      "example": "42_policy_report.py"
+      "example": "42_policy_report.py",
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「完整專題：一份可檢查的政策情境報告」後，在圖上指出「結論限制」的位置或對應關係；用本單元的一個例子說明它與「研究問題」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "84-exercises-and-references",
@@ -974,7 +1140,175 @@
       "tags": [
         "資料、證據與整合專題",
         "exercises and references"
-      ]
+      ],
+      "visual": "review-14-evidence",
+      "visualTask": "讀完「綜合習題、答案與版本速查」後，在圖上指出「研究問題」的位置或對應關係；用本單元的一個例子說明它與「資料版本」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "稀少資源與機會成本",
+      "alt": "稀少資源與機會成本；圖為原創生產可能線算例；模型結論依技術與資源假設成立。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖為原創生產可能線算例；模型結論依技術與資源假設成立。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "foundations",
+      "kind": "frontier",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-markets",
+      "file": "assets/figures/review-02-markets.svg",
+      "title": "供需與均衡的移動",
+      "alt": "供需與均衡的移動；線上移動與曲線移動是不同改變；價格管制需檢查約束是否真的生效。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "線上移動與曲線移動是不同改變；價格管制需檢查約束是否真的生效。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "markets",
+      "kind": "supply-demand",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-consumers",
+      "file": "assets/figures/review-03-consumers.svg",
+      "title": "預算限制與消費選擇",
+      "alt": "預算限制與消費選擇；價格與所得決定預算集合；選擇偏好與可行限制分開。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "價格與所得決定預算集合；選擇偏好與可行限制分開。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "consumers",
+      "kind": "budget",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-producers",
+      "file": "assets/figures/review-04-producers.svg",
+      "title": "產量、邊際成本與平均成本",
+      "alt": "產量、邊際成本與平均成本；短期、長期和固定成本角色不同；停產與退出不是同一條件。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "短期、長期和固定成本角色不同；停產與退出不是同一條件。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "producers",
+      "kind": "cost",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-strategy",
+      "file": "assets/figures/review-05-strategy.svg",
+      "title": "策略互動與最佳回應",
+      "alt": "策略互動與最佳回應；格內報酬是明示的教學假設；Nash均衡不保證社會總利益最大。",
+      "caption": "格內報酬是明示的教學假設；Nash均衡不保證社會總利益最大。",
+      "group": "strategy",
+      "kind": "payoff",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-public",
+      "file": "assets/figures/review-06-public.svg",
+      "title": "私人與社會成本的差距",
+      "alt": "私人與社會成本的差距；外部性需有影響他人的未內部化效果；政策比較需含資訊與執行成本。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "外部性需有影響他人的未內部化效果；政策比較需含資訊與執行成本。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "public",
+      "kind": "externality",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-institutions",
+      "file": "assets/figures/review-07-institutions.svg",
+      "title": "資訊與制度改變誘因",
+      "alt": "資訊與制度改變誘因；逆選擇和道德風險的時間與資訊不同；行為模型與實際證據分開。",
+      "caption": "逆選擇和道德風險的時間與資訊不同；行為模型與實際證據分開。",
+      "group": "institutions",
+      "kind": "gate",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-measurement",
+      "file": "assets/figures/review-08-measurement.svg",
+      "title": "國民所得的會計對照",
+      "alt": "國民所得的會計對照；恆等式是會計對照，不單獨識別因果；名目、實質與基期必須分清。",
+      "caption": "恆等式是會計對照，不單獨識別因果；名目、實質與基期必須分清。",
+      "group": "measurement",
+      "kind": "accounting",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-09-growth",
+      "file": "assets/figures/review-09-growth.svg",
+      "title": "資本累積與長期成長",
+      "alt": "資本累積與長期成長；圖為簡化成長模型，非國家預測；收斂結論依參數和假設成立。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖為簡化成長模型，非國家預測；收斂結論依參數和假設成立。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "growth",
+      "kind": "growth",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-10-money",
+      "file": "assets/figures/review-10-money.svg",
+      "title": "銀行資產負債與貨幣",
+      "alt": "銀行資產負債與貨幣；資產負債表需保持會計一致；不把簡單乘數算例當所有銀行實際行為。",
+      "caption": "資產負債表需保持會計一致；不把簡單乘數算例當所有銀行實際行為。",
+      "group": "money",
+      "kind": "balance",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-11-fluctuations",
+      "file": "assets/figures/review-11-fluctuations.svg",
+      "title": "總需求與供給的短期框架",
+      "alt": "總需求與供給的短期框架；圖為模型比較，不直接當現實因果識別；供給與需求衝擊的政策取捨不同。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "圖為模型比較，不直接當現實因果識別；供給與需求衝擊的政策取捨不同。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "fluctuations",
+      "kind": "supply-demand",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-12-policy",
+      "file": "assets/figures/review-12-policy.svg",
+      "title": "政策從工具到目標的傳導",
+      "alt": "政策從工具到目標的傳導；傳導有時間、預期和制度條件；政策宣告不等於效果已實現。",
+      "caption": "傳導有時間、預期和制度條件；政策宣告不等於效果已實現。",
+      "group": "policy",
+      "kind": "loop",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-13-international",
+      "file": "assets/figures/review-13-international.svg",
+      "title": "相對成本與貿易的取捨",
+      "alt": "相對成本與貿易的取捨；比較利益看機會成本，不只看絕對生產力；總體收益與分配效果需要分開分析。",
+      "caption": "比較利益看機會成本，不只看絕對生產力；總體收益與分配效果需要分開分析。",
+      "group": "international",
+      "kind": "trade",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-14-evidence",
+      "file": "assets/figures/review-14-evidence.svg",
+      "title": "經濟資料與可檢查的證據",
+      "alt": "經濟資料與可檢查的證據；資料修訂和口徑改變需保存metadata；相關、模型預測與已識別效果分開。",
+      "caption": "資料修訂和口徑改變需保存metadata；相關、模型預測與已識別效果分開。",
+      "group": "evidence",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "economics-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "economics-study.zip"
   ]
 }

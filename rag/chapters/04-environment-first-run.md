@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![RAG的離線與查詢兩條路；建索引和回答是兩個不同階段；回答需連回檢索證據與原始來源。](assets/figures/review-01-foundations.svg)
+
+> **圖解｜RAG的離線與查詢兩條路**：建索引和回答是兩個不同階段；回答需連回檢索證據與原始來源。
+
+**本單元讀圖任務**：讀完「環境準備與第一個離線 RAG」後，在圖上指出「檢索與組織」的位置或對應關係；用本單元的一個例子說明它與「有引用的回答」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 你需要什麼
 
 網頁閱讀不需要 Python、API Key 或開啟伺服器。若要執行程式，準備 Python 3.11 以上與一個終端機即可。這個課程的離線範例使用標準函式庫；`sqlite3` 是 Python 內建模組，適合本機教學。[Python sqlite3 文件](https://docs.python.org/3/library/sqlite3.html)

@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![結構化輸出要分層驗證；合法JSON不代表欄位內容正確；格式、業務與事實查核是三種不同驗收。](assets/figures/review-04-interaction.svg)
+
+> **圖解｜結構化輸出要分層驗證**：合法JSON不代表欄位內容正確；格式、業務與事實查核是三種不同驗收。
+
+**本單元讀圖任務**：讀完「Streaming、事件解析與前端顯示」後，在圖上指出「業務規則」的位置或對應關係；用本單元的一個例子說明它與「外部真值」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 串流是事件，不是一串任意文字
 
 許多 API 以 Server-Sent Events 回傳生成過程。HTTP chunk 和一個完整 SSE event 不是同一件事；一個 chunk 可能只有半個 JSON，也可能含有多個事件。

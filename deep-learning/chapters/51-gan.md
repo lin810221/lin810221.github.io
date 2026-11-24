@@ -2,6 +2,16 @@
 
 用低維分布實際更新兩個模型，避免把loss下降當收斂保證。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![生成模型的加噪與還原；圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。](assets/figures/review-09-generative.svg)
+
+> **圖解｜生成模型的加噪與還原**：圖為固定合成訊號的示意；訓練目標與取樣過程分開驗證。
+
+**本單元讀圖任務**：讀完「GAN：交替對抗目標與梯度邊界」後，在圖上指出「更多噪音」的位置或對應關係；用本單元的一個例子說明它與「學得還原」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 兩個模型與兩種資料
 
 generator把noise變fake，discriminator分真／假。原始minimax設計讓兩者目標相互牽動；實務常用non-saturating generator loss改善某些梯度。訓練不是一個固定單模型凸目標，震盪與mode collapse都是可能現象。

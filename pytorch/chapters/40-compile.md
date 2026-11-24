@@ -2,6 +2,16 @@
 
 理解編譯的條件與成本，區分數值正確、成功擷取及真正加速。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「torch.compile：圖擷取、graph break與效能驗證」後，在圖上指出「同步」的位置或對應關係；用本單元的一個例子說明它與「後處理」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## eager與compile的關係
 
 eager直接逐步執行Tensor操作，適合學習與除錯。torch.compile嘗試擷取並編譯可支援區段，預設常使用Inductor後端。它不是換一個函式就保證更快：首次編譯成本、shape變動、graph break與模型大小都會影響收益。

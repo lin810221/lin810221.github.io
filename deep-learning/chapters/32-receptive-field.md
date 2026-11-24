@@ -2,6 +2,16 @@
 
 推算每層看見哪些輸入，再用真實梯度支持範圍核對。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![卷積感受野與殘差路徑；卷積參數共享，但計算仍隨空間位置增加；殘差相加需對齊shape。](assets/figures/review-06-vision.svg)
+
+> **圖解｜卷積感受野與殘差路徑**：卷積參數共享，但計算仍隨空間位置增加；殘差相加需對齊shape。
+
+**本單元讀圖任務**：讀完「輸出尺寸與感受野：stride、padding、dilation」後，在圖上指出「共享Kernel」的位置或對應關係；用本單元的一個例子說明它與「特徵圖」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 先推輸出高寬
 
 單軸輸入H、kernelK、paddingP、strideS、dilationD，輸出由floor公式決定。dilation增加kernel取樣間距，參數數不必增加；stride降低輸出解析度。通道軸與空間軸分別追蹤，不把batch也算進Flatten feature。

@@ -2,6 +2,16 @@
 
 比較 Responses API 的 MCP 工具與自建 Client adapter，保留審核和結果控制。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![stdio與HTTP的傳輸邊界；傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。](assets/figures/review-05-hosts.svg)
+
+> **圖解｜stdio與HTTP的傳輸邊界**：傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。
+
+**本單元讀圖任務**：讀完「OpenAI 整合：遠端 MCP 與自行管理工具」後，在圖上指出「HTTP端點」的位置或對應關係；用本單元的一個例子說明它與「工作階段」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 兩條整合路線
 
 第一條是你的應用管理 MCP Client，把工具轉為模型接受的函式定義，自己處理呼叫與結果。它適合本機 stdio、內網系統、特殊驗證，以及需要完全掌握工具路由的情況。第二條是使用 Responses API 的 MCP 工具，讓服務連接可用的遠端 Server。

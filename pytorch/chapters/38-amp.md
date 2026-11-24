@@ -2,6 +2,16 @@
 
 使用目前API，先保留float32基準，再選配CUDA混合精度。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「混合精度AMP：autocast、GradScaler與clipping順序」後，在圖上指出「傳輸」的位置或對應關係；用本單元的一個例子說明它與「模型運算」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 不把整個模型盲目half
 
 autocast依運算選擇合適精度，搭配float32參數與必要的高精度運算。float16可能發生梯度underflow，GradScaler將loss放大後反向，再還原梯度供更新。bfloat16的動態範圍不同，是否需要scaler與裝置支援要依實際配置決定，不把所有低精度混為一談。

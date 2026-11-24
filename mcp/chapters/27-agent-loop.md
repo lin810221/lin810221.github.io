@@ -2,6 +2,16 @@
 
 讓模型提出呼叫，讓 Host 執行政策，讓 Server 維護事實。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![stdio與HTTP的傳輸邊界；傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。](assets/figures/review-05-hosts.svg)
+
+> **圖解｜stdio與HTTP的傳輸邊界**：傳輸模式改變程序、網路與身份管理需求；日誌與協定資料不要混在同一stdout。
+
+**本單元讀圖任務**：讀完「把 MCP 接進 Agent 控制迴圈」後，在圖上指出「Server程序」的位置或對應關係；用本單元的一個例子說明它與「HTTP端點」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Agent 多了哪一段
 
 前面的 Client 都由程式決定工具名稱與參數。加入模型後，模型成為呼叫提案的來源：Host 提供工具定義，模型回傳一個或多個呼叫，再由 Host 決定哪些可以執行。MCP Server 仍然保持相同契約，不需要知道模型品牌。

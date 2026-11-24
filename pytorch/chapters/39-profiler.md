@@ -2,6 +2,16 @@
 
 使用CPU事件與shape記錄建立分析方法，再延伸到GPU。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。](assets/figures/review-07-performance.svg)
+
+> **圖解｜效能比較要先定義邊界**：CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。
+
+**本單元讀圖任務**：讀完「Profiler：找瓶頸，而不是猜哪一行慢」後，在圖上指出「模型運算」的位置或對應關係；用本單元的一個例子說明它與「同步」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Profiler回答什麼問題
 
 它可以記錄算子時間、呼叫次數、shape與自訂區間，協助判斷時間集中在矩陣運算、資料搬移還是大量小操作。Profiler本身有額外成本，因此結果適合定位熱點，最終吞吐還要用獨立benchmark核對。開啟更多stack／memory選項會增加記錄量。

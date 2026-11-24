@@ -2,6 +2,16 @@
 
 把可接受的輸入寫清楚，避免將模型輸出直接視為可信參數。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![ToolsResourcesPrompts三種入口；三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。](assets/figures/review-03-contracts.svg)
+
+> **圖解｜ToolsResourcesPrompts三種入口**：三種入口的發現與使用方式不同；讀取資料不應暗中產生未聲明的副作用。
+
+**本單元讀圖任務**：讀完「輸入契約：JSON Schema、型別與限制」後，在圖上指出「Tools動作」的位置或對應關係；用本單元的一個例子說明它與「Resources資料」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Schema 是可被機器檢查的承諾
 
 工具輸入通常是 object，properties 描述欄位，required 描述哪些必填。型別還不夠：字串可能需要最小長度，數字需要範圍，選項需要 enum，物件可能需要禁止額外欄位。這些限制同時幫助模型產生參數，以及 Server 在執行前阻止無效輸入。

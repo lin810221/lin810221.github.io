@@ -2,6 +2,16 @@
 
 定義 PAD、有效位置與平均分母，讓不同長度序列能正確一起運算。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「Collate、Padding 與 mask：把變長資料變成 batch」後，在圖上指出「Sampler順序」的位置或對應關係；用本單元的一個例子說明它與「Collate批次」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 為什麼預設堆疊會失敗
 
 兩個 token list 長度分別 2 與 3，無法直接 stack 成一般矩形 Tensor。collate_fn 接收一批樣本 list，將內容整理成模型可接受的契約。本課使用 PAD=0，真實 token 從 1 開始，輸出 tokens[N,T]、mask[N,T] 與 labels[N]。

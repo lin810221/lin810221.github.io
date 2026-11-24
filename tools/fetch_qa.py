@@ -7,7 +7,7 @@ DEST = Path(__file__).resolve().parents[1] / ".qa" / "vendor"
 FILES = {
     "acorn.mjs": "https://cdn.jsdelivr.net/npm/acorn@8.15.0/dist/acorn.mjs",
     "linkedom.mjs": "https://cdn.jsdelivr.net/npm/linkedom@0.18.12/worker.js",
-    "katex.mjs": "https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.mjs",
+    "katex.mjs": "https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.mjs",
 }
 
 def download(item):

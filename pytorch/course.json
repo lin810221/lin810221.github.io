@@ -68,7 +68,9 @@
         "Tensor",
         "training"
       ],
-      "example": "01_tensors.py"
+      "example": "01_tensors.py",
+      "visual": "review-01-start",
+      "visualTask": "讀完「先看全貌：PyTorch 如何讓模型學習」後，在圖上指出「樣本軸N」的位置或對應關係；用本單元的一個例子說明它與「特徵軸D」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-installation",
@@ -80,7 +82,9 @@
         "venv",
         "CUDA",
         "2.15.0"
-      ]
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「安裝最新版：Python、CPU、CUDA 與環境檢查」後，在圖上指出「特徵軸D」的位置或對應關係；用本單元的一個例子說明它與「dtype」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-project",
@@ -91,7 +95,9 @@
         "Python",
         "CLI",
         "project"
-      ]
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「專案與執行方式：從 Notebook 到可重現腳本」後，在圖上指出「dtype」的位置或對應關係；用本單元的一個例子說明它與「device」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-tensors",
@@ -103,7 +109,9 @@
         "dtype",
         "device",
         "NumPy"
-      ]
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「Tensor 的數值契約：建立、dtype、device 與共享儲存」後，在圖上指出「device」的位置或對應關係；用本單元的一個例子說明它與「數值範圍」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-shapes",
@@ -115,7 +123,9 @@
         "indexing",
         "keepdim"
       ],
-      "example": "02_shapes.py"
+      "example": "02_shapes.py",
+      "visual": "review-01-start",
+      "visualTask": "讀完「Shape 與軸：索引、切片、維度變換與 reduction」後，在圖上指出「數值範圍」的位置或對應關係；用本單元的一個例子說明它與「樣本軸N」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-broadcasting",
@@ -126,7 +136,9 @@
         "broadcasting",
         "matmul",
         "vectorization"
-      ]
+      ],
+      "visual": "review-01-start",
+      "visualTask": "讀完「運算與 Broadcasting：從逐元素到矩陣乘法」後，在圖上指出「樣本軸N」的位置或對應關係；用本單元的一個例子說明它與「特徵軸D」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-views",
@@ -140,7 +152,9 @@
         "detach",
         "clone"
       ],
-      "example": "03_views.py"
+      "example": "03_views.py",
+      "visual": "review-02-grad",
+      "visualTask": "讀完「Views、stride 與資料共享：reshape 為何有時複製」後，在圖上指出「輸入x」的位置或對應關係；用本單元的一個例子說明它與「線性轉換」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-autograd",
@@ -152,7 +166,9 @@
         "backward",
         "requires_grad"
       ],
-      "example": "04_autograd.py"
+      "example": "04_autograd.py",
+      "visual": "review-02-grad",
+      "visualTask": "讀完「Autograd：從手算偏導數到 backward」後，在圖上指出「線性轉換」的位置或對應關係；用本單元的一個例子說明它與「非線性」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-graph-lifecycle",
@@ -164,7 +180,9 @@
         "retain_graph",
         "graph",
         "gradient accumulation"
-      ]
+      ],
+      "visual": "review-02-grad",
+      "visualTask": "讀完「計算圖生命週期與梯度累積：為什麼需要 zero_grad」後，在圖上指出「非線性」的位置或對應關係；用本單元的一個例子說明它與「損失L」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-gradient-debug",
@@ -176,7 +194,9 @@
         "anomaly",
         "in-place",
         "chain rule"
-      ]
+      ],
+      "visual": "review-02-grad",
+      "visualTask": "讀完「梯度除錯：chain rule、gradcheck 與 in-place 操作」後，在圖上指出「損失L」的位置或對應關係；用本單元的一個例子說明它與「反向梯度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-devices",
@@ -188,7 +208,9 @@
         "CUDA",
         "to",
         "buffer"
-      ]
+      ],
+      "visual": "review-02-grad",
+      "visualTask": "讀完「Device 與資料搬移：CPU 跑通，再使用 GPU」後，在圖上指出「反向梯度」的位置或對應關係；用本單元的一個例子說明它與「輸入x」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-numerics",
@@ -201,7 +223,9 @@
         "isfinite",
         "precision",
         "mask"
-      ]
+      ],
+      "visual": "review-02-grad",
+      "visualTask": "讀完「數值穩定性：NaN、Inf、mask 與精度」後，在圖上指出「輸入x」的位置或對應關係；用本單元的一個例子說明它與「線性轉換」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-datasets",
@@ -213,7 +237,9 @@
         "split",
         "leakage",
         "preprocessing"
-      ]
+      ],
+      "visual": "review-03-building",
+      "visualTask": "讀完「Dataset 與資料切分：先決定樣本，再談模型」後，在圖上指出「原始樣本」的位置或對應關係；用本單元的一個例子說明它與「Dataset取樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-dataloader",
@@ -226,7 +252,9 @@
         "num_workers",
         "Windows"
       ],
-      "example": "05_dataloader.py"
+      "example": "05_dataloader.py",
+      "visual": "review-03-building",
+      "visualTask": "讀完「DataLoader：batch、shuffle、workers 與 Windows」後，在圖上指出「Dataset取樣」的位置或對應關係；用本單元的一個例子說明它與「Sampler順序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-collate",
@@ -239,7 +267,9 @@
         "mask",
         "sequence"
       ],
-      "example": "06_collate.py"
+      "example": "06_collate.py",
+      "visual": "review-03-building",
+      "visualTask": "讀完「Collate、Padding 與 mask：把變長資料變成 batch」後，在圖上指出「Sampler順序」的位置或對應關係；用本單元的一個例子說明它與「Collate批次」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-modules",
@@ -253,7 +283,9 @@
         "buffer",
         "state_dict"
       ],
-      "example": "07_modules.py"
+      "example": "07_modules.py",
+      "visual": "review-03-building",
+      "visualTask": "讀完「nn.Module：參數、buffer、子模組與 state_dict」後，在圖上指出「Collate批次」的位置或對應關係；用本單元的一個例子說明它與「模型輸入」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-layers",
@@ -266,7 +298,9 @@
         "Embedding",
         "Dropout",
         "BatchNorm"
-      ]
+      ],
+      "visual": "review-03-building",
+      "visualTask": "讀完「常用層與 shape：Linear、Conv2d、Embedding 與正規化」後，在圖上指出「模型輸入」的位置或對應關係；用本單元的一個例子說明它與「原始樣本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-losses",
@@ -279,7 +313,9 @@
         "MSELoss",
         "logits"
       ],
-      "example": "08_losses.py"
+      "example": "08_losses.py",
+      "visual": "review-03-building",
+      "visualTask": "讀完「損失函數的資料契約：CE、BCE 與 MSE」後，在圖上指出「原始樣本」的位置或對應關係；用本單元的一個例子說明它與「Dataset取樣」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-optimizers",
@@ -291,7 +327,9 @@
         "AdamW",
         "param groups",
         "weight decay"
-      ]
+      ],
+      "visual": "review-04-training",
+      "visualTask": "讀完「Optimizer：SGD、AdamW、param groups 與梯度清除」後，在圖上指出「輸入特徵」的位置或對應關係；用本單元的一個例子說明它與「Hidden層」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-training-loop",
@@ -304,7 +342,9 @@
         "metrics",
         "zero_grad"
       ],
-      "example": "09_training_loop.py"
+      "example": "09_training_loop.py",
+      "visual": "review-04-training",
+      "visualTask": "讀完「完整訓練迴圈：每一步都知道在更新什麼」後，在圖上指出「Hidden層」的位置或對應關係；用本單元的一個例子說明它與「輸出頭」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-evaluation",
@@ -317,7 +357,9 @@
         "inference_mode",
         "Dropout"
       ],
-      "example": "10_evaluation.py"
+      "example": "10_evaluation.py",
+      "visual": "review-04-training",
+      "visualTask": "讀完「驗證與推論：eval、no_grad、inference_mode」後，在圖上指出「輸出頭」的位置或對應關係；用本單元的一個例子說明它與「參數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-metrics",
@@ -330,7 +372,9 @@
         "precision",
         "recall",
         "leakage"
-      ]
+      ],
+      "visual": "review-04-training",
+      "visualTask": "讀完「評估指標與資料洩漏：accuracy 之外要看什麼」後，在圖上指出「參數」的位置或對應關係；用本單元的一個例子說明它與「狀態」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-scheduling",
@@ -341,7 +385,9 @@
         "scheduler",
         "early stopping",
         "best checkpoint"
-      ]
+      ],
+      "visual": "review-04-training",
+      "visualTask": "讀完「學習率排程、Early Stopping 與最佳模型」後，在圖上指出「狀態」的位置或對應關係；用本單元的一個例子說明它與「輸入特徵」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-regression",
@@ -354,7 +400,9 @@
         "MSE",
         "SGD"
       ],
-      "example": "11_regression.py"
+      "example": "11_regression.py",
+      "visual": "review-04-training",
+      "visualTask": "讀完「第一個完整回歸：讓 Linear 學會一條直線」後，在圖上指出「輸入特徵」的位置或對應關係；用本單元的一個例子說明它與「Hidden層」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-classification",
@@ -368,7 +416,9 @@
         "val",
         "test"
       ],
-      "example": "12_classification.py"
+      "example": "12_classification.py",
+      "visual": "review-05-practice",
+      "visualTask": "讀完「表格分類專案：資料、MLP、驗證與測試」後，在圖上指出「清除梯度」的位置或對應關係；用本單元的一個例子說明它與「Forward」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-cnn",
@@ -381,7 +431,9 @@
         "NCHW",
         "images"
       ],
-      "example": "13_cnn.py"
+      "example": "13_cnn.py",
+      "visual": "review-05-practice",
+      "visualTask": "讀完「CNN 實作：從 NCHW 到可訓練的影像分類器」後，在圖上指出「Forward」的位置或對應關係；用本單元的一個例子說明它與「Loss」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-sequences",
@@ -394,7 +446,9 @@
         "pooling",
         "padding_idx"
       ],
-      "example": "14_sequences.py"
+      "example": "14_sequences.py",
+      "visual": "review-05-practice",
+      "visualTask": "讀完「序列實作：Embedding、mask pooling 與文字分類」後，在圖上指出「Loss」的位置或對應關係；用本單元的一個例子說明它與「Backward」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-transfer",
@@ -407,7 +461,9 @@
         "requires_grad",
         "optimizer"
       ],
-      "example": "15_freezing.py"
+      "example": "15_freezing.py",
+      "visual": "review-05-practice",
+      "visualTask": "讀完「凍結與遷移學習：參數不更新，模組仍有模式」後，在圖上指出「Backward」的位置或對應關係；用本單元的一個例子說明它與「Optimizer step」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-custom-data",
@@ -419,7 +475,9 @@
         "JSON",
         "validation",
         "data contract"
-      ]
+      ],
+      "visual": "review-05-practice",
+      "visualTask": "讀完「自訂檔案資料：解析、驗證與前處理邊界」後，在圖上指出「Optimizer step」的位置或對應關係；用本單元的一個例子說明它與「清除梯度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-debugging",
@@ -431,7 +489,9 @@
         "overfit batch",
         "hooks",
         "gradient norm"
-      ]
+      ],
+      "visual": "review-05-practice",
+      "visualTask": "讀完「訓練除錯實務：一個batch、hooks與梯度診斷」後，在圖上指出「清除梯度」的位置或對應關係；用本單元的一個例子說明它與「Forward」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-checkpoints",
@@ -444,7 +504,9 @@
         "weights_only",
         "map_location"
       ],
-      "example": "16_checkpoints.py"
+      "example": "16_checkpoints.py",
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「儲存與載入：state_dict、map_location 與信任來源」後，在圖上指出「模型狀態」的位置或對應關係；用本單元的一個例子說明它與「Optimizer」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-resume",
@@ -457,7 +519,9 @@
         "RNG",
         "optimizer state"
       ],
-      "example": "17_resume.py"
+      "example": "17_resume.py",
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「續訓與完全重現：從第2輪接回第4輪」後，在圖上指出「Optimizer」的位置或對應關係；用本單元的一個例子說明它與「RNG狀態」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-configuration",
@@ -469,7 +533,9 @@
         "argparse",
         "CLI",
         "artifacts"
-      ]
+      ],
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「Config、CLI 與產物：讓實驗可以交給未來的自己」後，在圖上指出「RNG狀態」的位置或對應關係；用本單元的一個例子說明它與「資料順序」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-reproducibility",
@@ -482,7 +548,9 @@
         "deterministic",
         "reproducibility"
       ],
-      "example": "18_seeds.py"
+      "example": "18_seeds.py",
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「隨機種子與可重現性：seed能保證什麼」後，在圖上指出「資料順序」的位置或對應關係；用本單元的一個例子說明它與「恢復執行」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-input-performance",
@@ -494,7 +562,9 @@
         "DataLoader",
         "pin_memory",
         "prefetch"
-      ]
+      ],
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「輸入管線與記憶體：先量測，再增加workers」後，在圖上指出「恢復執行」的位置或對應關係；用本單元的一個例子說明它與「模型狀態」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-accumulation",
@@ -506,7 +576,9 @@
         "microbatch",
         "weighted loss"
       ],
-      "example": "19_accumulation.py"
+      "example": "19_accumulation.py",
+      "visual": "review-06-engineering",
+      "visualTask": "讀完「梯度累積：有效batch與不等長尾批的正確加權」後，在圖上指出「模型狀態」的位置或對應關係；用本單元的一個例子說明它與「Optimizer」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-cuda-memory",
@@ -519,7 +591,9 @@
         "memory",
         "async",
         "benchmark"
-      ]
+      ],
+      "visual": "review-07-performance",
+      "visualTask": "讀完「CUDA實務：非同步、OOM、allocated與reserved」後，在圖上指出「資料等待」的位置或對應關係；用本單元的一個例子說明它與「傳輸」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-amp",
@@ -533,7 +607,9 @@
         "float16",
         "bfloat16"
       ],
-      "example": "20_amp.py"
+      "example": "20_amp.py",
+      "visual": "review-07-performance",
+      "visualTask": "讀完「混合精度AMP：autocast、GradScaler與clipping順序」後，在圖上指出「傳輸」的位置或對應關係；用本單元的一個例子說明它與「模型運算」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-profiler",
@@ -545,7 +621,9 @@
         "record_function",
         "performance"
       ],
-      "example": "21_profiler.py"
+      "example": "21_profiler.py",
+      "visual": "review-07-performance",
+      "visualTask": "讀完「Profiler：找瓶頸，而不是猜哪一行慢」後，在圖上指出「模型運算」的位置或對應關係；用本單元的一個例子說明它與「同步」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-compile",
@@ -558,7 +636,9 @@
         "Inductor",
         "graph break"
       ],
-      "example": "22_compile.py"
+      "example": "22_compile.py",
+      "visual": "review-07-performance",
+      "visualTask": "讀完「torch.compile：圖擷取、graph break與效能驗證」後，在圖上指出「同步」的位置或對應關係；用本單元的一個例子說明它與「後處理」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-distributed",
@@ -572,7 +652,9 @@
         "rank",
         "FSDP"
       ],
-      "example": "23_distributed.py"
+      "example": "23_distributed.py",
+      "visual": "review-07-performance",
+      "visualTask": "讀完「DDP與多GPU入門：rank、sampler、同步與分母」後，在圖上指出「後處理」的位置或對應關係；用本單元的一個例子說明它與「資料等待」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-export",
@@ -584,7 +666,9 @@
         "ONNX",
         "TorchScript",
         "deployment"
-      ]
+      ],
+      "visual": "review-07-performance",
+      "visualTask": "讀完「交付與匯出：state_dict、torch.export與ONNX入口」後，在圖上指出「資料等待」的位置或對應關係；用本單元的一個例子說明它與「傳輸」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-testing",
@@ -596,7 +680,9 @@
         "unittest",
         "assert_close",
         "gradcheck"
-      ]
+      ],
+      "visual": "review-08-finish",
+      "visualTask": "讀完「有意義的PyTorch測試：shape、梯度、續訓與數值等價」後，在圖上指出「訓練主線」的位置或對應關係；用本單元的一個例子說明它與「數值測試」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-experiments",
@@ -608,7 +694,9 @@
         "logging",
         "model card",
         "artifacts"
-      ]
+      ],
+      "visual": "review-08-finish",
+      "visualTask": "讀完「實驗管理：記錄、比較、資源與模型卡」後，在圖上指出「數值測試」的位置或對應關係；用本單元的一個例子說明它與「保存與還原」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-failure-guide",
@@ -621,7 +709,9 @@
         "NaN",
         "OOM",
         "hang"
-      ]
+      ],
+      "visual": "review-08-finish",
+      "visualTask": "讀完「故障診斷手冊：從錯誤訊息找到最小原因」後，在圖上指出「保存與還原」的位置或對應關係；用本單元的一個例子說明它與「匯出驗收」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-capstone",
@@ -634,7 +724,9 @@
         "checkpoint",
         "inference"
       ],
-      "example": "24_capstone.py"
+      "example": "24_capstone.py",
+      "visual": "review-08-finish",
+      "visualTask": "讀完「完整專題：訓練、選模、存檔、載入與新資料推論」後，在圖上指出「匯出驗收」的位置或對應關係；用本單元的一個例子說明它與「執行說明」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-exercises",
@@ -645,7 +737,9 @@
         "exercises",
         "answers",
         "practice"
-      ]
+      ],
+      "visual": "review-08-finish",
+      "visualTask": "讀完「整合練習與解答：從看懂到獨立寫出」後，在圖上指出「執行說明」的位置或對應關係；用本單元的一個例子說明它與「訓練主線」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-reference",
@@ -657,7 +751,109 @@
         "2.15.0",
         "migration",
         "glossary"
-      ]
+      ],
+      "visual": "review-08-finish",
+      "visualTask": "讀完「速查、版本與下一步：用最新API持續學習」後，在圖上指出「訓練主線」的位置或對應關係；用本單元的一個例子說明它與「數值測試」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-start",
+      "file": "assets/figures/review-01-start.svg",
+      "title": "Tensor的shape與dtype",
+      "alt": "Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。",
+      "caption": "相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。",
+      "group": "start",
+      "kind": "tensor",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-grad",
+      "file": "assets/figures/review-02-grad.svg",
+      "title": "Autograd沿計算圖傳遞梯度",
+      "alt": "Autograd沿計算圖傳遞梯度；梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。",
+      "caption": "梯度預設累積，清零和更新各有順序；detach與inference_mode會改變梯度追蹤。",
+      "group": "grad",
+      "kind": "graph",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-building",
+      "file": "assets/figures/review-03-building.svg",
+      "title": "Dataset到DataLoader的批次",
+      "alt": "Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。",
+      "caption": "Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。",
+      "group": "building",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-training",
+      "file": "assets/figures/review-04-training.svg",
+      "title": "Module把參數與forward組織起來",
+      "alt": "Module把參數與forward組織起來；train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。",
+      "caption": "train與eval影響部分層，不等於梯度開關；參數、buffer和輸出軸有不同責任。",
+      "group": "training",
+      "kind": "network",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-practice",
+      "file": "assets/figures/review-05-practice.svg",
+      "title": "一個訓練步的狀態更新",
+      "alt": "一個訓練步的狀態更新；驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。",
+      "caption": "驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。",
+      "group": "practice",
+      "kind": "loop",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-engineering",
+      "file": "assets/figures/review-06-engineering.svg",
+      "title": "Checkpoint與精確續訓",
+      "alt": "Checkpoint與精確續訓；只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。",
+      "caption": "只存權重足以部分推論，不保證精確續訓；保存架構、設定與版本才能重建。",
+      "group": "engineering",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-performance",
+      "file": "assets/figures/review-07-performance.svg",
+      "title": "效能比較要先定義邊界",
+      "alt": "效能比較要先定義邊界；CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。",
+      "caption": "CUDA非同步量測需有正確同步；warmup、batch與實際工作量一起記錄。",
+      "group": "performance",
+      "kind": "timeline",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-finish",
+      "file": "assets/figures/review-08-finish.svg",
+      "title": "完整PyTorch工程交付",
+      "alt": "完整PyTorch工程交付；範例、測試與需求檔保持一致；未執行硬體與後端另列條件。",
+      "caption": "範例、測試與需求檔保持一致；未執行硬體與後端另列條件。",
+      "group": "finish",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "pytorch-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "pytorch-study.zip"
   ]
 }

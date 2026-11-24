@@ -1,0 +1,2179 @@
+{
+  "slug": "transformer",
+  "title": "Transformer 與 LLM 原理完整教學",
+  "shortTitle": "Transformer 與 LLM 原理",
+  "updated": "2026-11-24",
+  "baseline": "PyTorch 2.15.0 · Transformers 5.24.0 · Python 3.15.2",
+  "footerLabel": "THE TRANSFORMER FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json"
+  ],
+  "searchHint": "搜尋QKV、RoPE、KV Cache、PPL或DPO…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從語言與機率開始",
+      "description": "模型任務、環境、機率、矩陣與梯度回顧。"
+    },
+    {
+      "id": "tokenization",
+      "number": "02",
+      "title": "文字如何成為Token",
+      "description": "Unicode、byte、BPE、padding與聊天模板。"
+    },
+    {
+      "id": "representations",
+      "number": "03",
+      "title": "Embedding與位置資訊",
+      "description": "查表、輸出頭、權重綁定、正弦編碼與RoPE。"
+    },
+    {
+      "id": "attention",
+      "number": "04",
+      "title": "拆解Q、K、V與Attention",
+      "description": "點積、Softmax、遮罩、多頭與SDPA。"
+    },
+    {
+      "id": "blocks",
+      "number": "05",
+      "title": "組成完整Transformer區塊",
+      "description": "FFN、殘差、正規化、架構模式與參數量。"
+    },
+    {
+      "id": "pretraining",
+      "number": "06",
+      "title": "預訓練目標與資料",
+      "description": "標籤位移、語料、packing、最佳化與計算。"
+    },
+    {
+      "id": "tiny-lm",
+      "number": "07",
+      "title": "從零訓練小型GPT",
+      "description": "完整模型、CPU訓練、保留資料與成品存取。"
+    },
+    {
+      "id": "generation",
+      "number": "08",
+      "title": "逐Token生成與解碼",
+      "description": "自迴歸、prefill、取樣、搜尋與停止政策。"
+    },
+    {
+      "id": "kv-cache",
+      "number": "09",
+      "title": "看清楚KV Cache",
+      "description": "張量、矩形遮罩、位置、GQA與容量。"
+    },
+    {
+      "id": "efficiency",
+      "number": "10",
+      "title": "高效推論的不同機制",
+      "description": "FlashAttention、量化、排程、推測與長context。"
+    },
+    {
+      "id": "architectures",
+      "number": "11",
+      "title": "比較架構與模型家族",
+      "description": "BERT、T5、GPT、MoE、混合與推理模型。"
+    },
+    {
+      "id": "posttraining",
+      "number": "12",
+      "title": "從預訓練到後訓練",
+      "description": "SFT、偏好、RLHF、DPO、推理與任務適應。"
+    },
+    {
+      "id": "evaluation",
+      "number": "13",
+      "title": "讓評估回答正確問題",
+      "description": "PPL、任務基準、污染、context與可信度。"
+    },
+    {
+      "id": "reliability",
+      "number": "14",
+      "title": "能力邊界與研究判讀",
+      "description": "解釋、幻覺、提示注入、偏差與證據。"
+    },
+    {
+      "id": "projects",
+      "number": "15",
+      "title": "整合成可檢查的專題",
+      "description": "小GPT、cache、分詞器、現行框架與實驗報告。"
+    },
+    {
+      "id": "reference",
+      "number": "16",
+      "title": "推導速查與持續學習",
+      "description": "數學、容量、除錯、110術語、路線與來源。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-lm-task",
+      "title": "語言模型在預測什麼",
+      "group": "foundations",
+      "summary": "從下一個Token的條件分布開始，分清語言建模、文字生成與對話行為。",
+      "tags": [
+        "next token",
+        "conditional probability",
+        "language model",
+        "logits"
+      ],
+      "visual": "tf01",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：語言模型在預測什麼。"
+    },
+    {
+      "id": "002-environment",
+      "title": "穩定版本與離線實作環境",
+      "group": "foundations",
+      "summary": "用鎖版與隔離環境重現小型Transformer，分清最新穩定版、相容Python與實測範圍。",
+      "tags": [
+        "版本",
+        "venv",
+        "CPU",
+        "offline"
+      ],
+      "visual": "tf01",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：穩定版本與離線實作環境。",
+      "example": "01_unicode_bytes.py"
+    },
+    {
+      "id": "003-probability",
+      "title": "條件機率對數與資訊量",
+      "group": "foundations",
+      "summary": "從機率和對數推導負對數似然、交叉熵與perplexity的分母。",
+      "tags": [
+        "NLL",
+        "cross entropy",
+        "perplexity",
+        "log"
+      ],
+      "visual": "tf02",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：條件機率對數與資訊量。"
+    },
+    {
+      "id": "004-matrix-shapes",
+      "title": "向量矩陣與批次形狀",
+      "group": "foundations",
+      "summary": "用B、T、D、V與H追蹤Transformer資料流，避免廣播成功卻語意錯誤。",
+      "tags": [
+        "shape",
+        "matmul",
+        "broadcast",
+        "B T D"
+      ],
+      "visual": "tf31",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：向量矩陣與批次形狀。"
+    },
+    {
+      "id": "005-gradients",
+      "title": "神經網路與梯度必要回顧",
+      "group": "foundations",
+      "summary": "用一個可手算的參數更新理解反向傳播，辨認梯度、模式與最佳化的不同責任。",
+      "tags": [
+        "autograd",
+        "chain rule",
+        "gradient",
+        "optimizer"
+      ],
+      "visual": "tf09",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：神經網路與梯度必要回顧。"
+    },
+    {
+      "id": "006-foundation-exercises",
+      "title": "入門練習與解析",
+      "group": "foundations",
+      "summary": "以機率、形狀與反向傳播的小題驗證基礎，建立能自行排查的習慣。",
+      "tags": [
+        "入門習題",
+        "shape答案",
+        "NLL答案",
+        "梯度答案"
+      ],
+      "visual": "tf02",
+      "visualTask": "指出模型輸入、機率與決策分別在哪裡，再用本頁算例核對數值或shape。 本頁主題：入門練習與解析。"
+    },
+    {
+      "id": "007-unicode",
+      "title": "Unicode字元與UTF8位元組",
+      "group": "tokenization",
+      "summary": "區分可見字形、碼位、位元組與Token，建立不破壞文字的編碼與解碼契約。",
+      "tags": [
+        "Unicode",
+        "UTF8",
+        "grapheme",
+        "normalization"
+      ],
+      "visual": "tf03",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：Unicode字元與UTF8位元組。",
+      "example": "01_unicode_bytes.py"
+    },
+    {
+      "id": "008-subword",
+      "title": "BPEWordPiece與Unigram",
+      "group": "tokenization",
+      "summary": "以詞彙表與切分決策比較三類子詞方法，避免把工具名稱與演算法混在一起。",
+      "tags": [
+        "BPE",
+        "WordPiece",
+        "Unigram",
+        "SentencePiece"
+      ],
+      "visual": "tf04",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：BPEWordPiece與Unigram。"
+    },
+    {
+      "id": "009-byte-bpe",
+      "title": "從零建立位元組BPE",
+      "group": "tokenization",
+      "summary": "明定初始byte詞彙、合併順序與解碼方式，製作可往返且可重現的教學BPE。",
+      "tags": [
+        "byte BPE",
+        "merge ranks",
+        "decoder",
+        "reproducibility"
+      ],
+      "visual": "tf04",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：從零建立位元組BPE。",
+      "example": "02_byte_bpe.py"
+    },
+    {
+      "id": "010-batching",
+      "title": "padding截斷與序列邊界",
+      "group": "tokenization",
+      "summary": "把不同長度的序列整理成batch，讓Attention、loss和位置ID各自遵守有效範圍。",
+      "tags": [
+        "padding",
+        "truncation",
+        "attention mask",
+        "boundaries"
+      ],
+      "visual": "tf12",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：padding截斷與序列邊界。"
+    },
+    {
+      "id": "011-special-tokens",
+      "title": "特殊Token與聊天模板",
+      "group": "tokenization",
+      "summary": "分清文字內容與控制結構，讓角色、結束標記和生成起點在訓練推論保持一致。",
+      "tags": [
+        "BOS",
+        "EOS",
+        "chat template",
+        "role tokens"
+      ],
+      "visual": "tf01",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：特殊Token與聊天模板。",
+      "example": "24_hf_offline_model.py"
+    },
+    {
+      "id": "012-tokenizer-exercises",
+      "title": "Tokenizer練習與解析",
+      "group": "tokenization",
+      "summary": "以可逆性、合併順序、padding與模板小題，驗收文字到ID的完整流程。",
+      "tags": [
+        "Tokenizer習題",
+        "BPE答案",
+        "Unicode答案",
+        "mask"
+      ],
+      "visual": "tf04",
+      "visualTask": "沿文字、byte與ID的轉換追蹤，說明哪些邊界、特殊符號或padding會影響本頁方法。 本頁主題：Tokenizer練習與解析。"
+    },
+    {
+      "id": "013-embedding",
+      "title": "TokenEmbedding與查表",
+      "group": "representations",
+      "summary": "從整數ID查出可學向量，理解重複Token梯度與上下文表示的形成。",
+      "tags": [
+        "Embedding",
+        "lookup",
+        "vocabulary",
+        "padding_idx"
+      ],
+      "visual": "tf05",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：TokenEmbedding與查表。",
+      "example": "04_embedding_head.py"
+    },
+    {
+      "id": "014-output-head",
+      "title": "語言模型輸出頭與權重綁定",
+      "group": "representations",
+      "summary": "把隱藏狀態投影回詞彙分數，手算logits並比較共享與獨立參數。",
+      "tags": [
+        "LM head",
+        "weight tying",
+        "logits",
+        "vocabulary projection"
+      ],
+      "visual": "tf05",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：語言模型輸出頭與權重綁定。",
+      "example": "04_embedding_head.py"
+    },
+    {
+      "id": "015-position",
+      "title": "絕對位置與順序資訊",
+      "group": "representations",
+      "summary": "辨認Token內容與位置訊號，建立padding、截斷及文件packing下的位置契約。",
+      "tags": [
+        "position embedding",
+        "order",
+        "position_ids",
+        "permutation"
+      ],
+      "visual": "tf06",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：絕對位置與順序資訊。"
+    },
+    {
+      "id": "016-sinusoidal",
+      "title": "正弦位置編碼",
+      "group": "representations",
+      "summary": "手算不同頻率的正弦與餘弦位置訊號，分清可計算長度和實際外推能力。",
+      "tags": [
+        "sinusoidal",
+        "frequency",
+        "position encoding",
+        "extrapolation"
+      ],
+      "visual": "tf06",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：正弦位置編碼。"
+    },
+    {
+      "id": "017-rope",
+      "title": "旋轉位置編碼RoPE",
+      "group": "representations",
+      "summary": "從二維旋轉理解RoPE如何作用於Q與K，避免配對、位置與cache混用。",
+      "tags": [
+        "RoPE",
+        "rotary",
+        "relative position",
+        "pairing"
+      ],
+      "visual": "tf06",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：旋轉位置編碼RoPE。",
+      "example": "05_positions_rope.py"
+    },
+    {
+      "id": "018-representation-exercises",
+      "title": "表示與位置練習與解析",
+      "group": "representations",
+      "summary": "用參數計數與幾何不變量檢查Embedding、權重共享和位置注入。",
+      "tags": [
+        "表示習題",
+        "weight tying答案",
+        "RoPE答案",
+        "position IDs"
+      ],
+      "visual": "tf05",
+      "visualTask": "找出查表、維度或位置的作用，說明它如何改變本頁的輸入表示與輸出分數。 本頁主題：表示與位置練習與解析。"
+    },
+    {
+      "id": "019-qkv",
+      "title": "QueryKeyValue如何形成",
+      "group": "attention",
+      "summary": "由同一份隱藏狀態投影出Q、K、V，分清配對分數與實際混合的內容。",
+      "tags": [
+        "QKV",
+        "projection",
+        "self attention",
+        "weighted sum"
+      ],
+      "visual": "tf07",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：QueryKeyValue如何形成。",
+      "example": "06_attention_arithmetic.py"
+    },
+    {
+      "id": "020-scaled-attention",
+      "title": "縮放點積與Softmax",
+      "group": "attention",
+      "summary": "從分數、縮放、遮罩到加權和逐步計算Attention，理解數值穩定性。",
+      "tags": [
+        "scaled dot product",
+        "softmax",
+        "sqrt dk",
+        "stability"
+      ],
+      "visual": "tf07",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：縮放點積與Softmax。",
+      "example": "06_attention_arithmetic.py"
+    },
+    {
+      "id": "021-causal-mask",
+      "title": "causal與padding遮罩",
+      "group": "attention",
+      "summary": "以絕對位置建立可見性，處理padding、文件隔離與cache的矩形遮罩。",
+      "tags": [
+        "causal mask",
+        "padding mask",
+        "cache offset",
+        "boolean mask"
+      ],
+      "visual": "tf08",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：causal與padding遮罩。",
+      "example": "07_sdpa_masks.py"
+    },
+    {
+      "id": "022-multihead",
+      "title": "多頭Attention與形狀重排",
+      "group": "attention",
+      "summary": "逐步拆頭、混合與合頭，手算標準參數量並檢查排列不變性。",
+      "tags": [
+        "multi-head",
+        "transpose",
+        "head dimension",
+        "output projection"
+      ],
+      "visual": "tf07",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：多頭Attention與形狀重排。",
+      "example": "08_multihead_shapes.py"
+    },
+    {
+      "id": "023-cross-sdpa",
+      "title": "CrossAttention與SDPA介面",
+      "group": "attention",
+      "summary": "將不同來源的Q與K/V接起來，以明確mask和dropout設定核對手寫與框架運算。",
+      "tags": [
+        "cross attention",
+        "SDPA",
+        "dropout",
+        "reference implementation"
+      ],
+      "visual": "tf10",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：CrossAttention與SDPA介面。",
+      "example": "07_sdpa_masks.py"
+    },
+    {
+      "id": "024-attention-exercises",
+      "title": "Attention手算與解析",
+      "group": "attention",
+      "summary": "用權重、遮罩、cache與多頭往返小題，驗證Attention各步驟的語意。",
+      "tags": [
+        "Attention習題",
+        "mask答案",
+        "SDPA答案",
+        "shape"
+      ],
+      "visual": "tf08",
+      "visualTask": "依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：Attention手算與解析。"
+    },
+    {
+      "id": "025-ffn",
+      "title": "逐Token前饋網路",
+      "group": "blocks",
+      "summary": "拆開跨位置的Attention與逐位置的通道非線性，手算FFN形狀和參數。",
+      "tags": [
+        "FFN",
+        "MLP",
+        "GELU",
+        "position-wise"
+      ],
+      "visual": "tf09",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：逐Token前饋網路。",
+      "example": "09_norm_ffn.py"
+    },
+    {
+      "id": "026-residual-norm",
+      "title": "殘差LayerNorm與PreNorm",
+      "group": "blocks",
+      "summary": "追蹤殘差路徑和正規化軸，分清PreNorm與PostNorm的計算順序。",
+      "tags": [
+        "residual",
+        "LayerNorm",
+        "PreNorm",
+        "PostNorm"
+      ],
+      "visual": "tf09",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：殘差LayerNorm與PreNorm。",
+      "example": "09_norm_ffn.py"
+    },
+    {
+      "id": "027-rms-swiglu",
+      "title": "RMSNorm與SwiGLU",
+      "group": "blocks",
+      "summary": "比較去均值與不去均值的正規化，再以形狀和參數預算理解門控FFN。",
+      "tags": [
+        "RMSNorm",
+        "SwiGLU",
+        "SiLU",
+        "gating"
+      ],
+      "visual": "tf09",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：RMSNorm與SwiGLU。"
+    },
+    {
+      "id": "028-architecture-modes",
+      "title": "EncoderDecoder與CrossAttention",
+      "group": "blocks",
+      "summary": "依資料可見性比較Encoder、Decoder-only與Encoder–Decoder，而非只以模型名稱分類。",
+      "tags": [
+        "encoder",
+        "decoder-only",
+        "encoder-decoder",
+        "masked LM"
+      ],
+      "visual": "tf10",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：EncoderDecoder與CrossAttention。"
+    },
+    {
+      "id": "029-parameter-counting",
+      "title": "參數量初始化與訓練模式",
+      "group": "blocks",
+      "summary": "把模型元件逐項計數，分清共享參數、初始化、最佳化器狀態與模式。",
+      "tags": [
+        "parameter count",
+        "initialization",
+        "ModuleList",
+        "train eval"
+      ],
+      "visual": "tf31",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：參數量初始化與訓練模式。"
+    },
+    {
+      "id": "030-block-exercises",
+      "title": "Transformer區塊練習與解析",
+      "group": "blocks",
+      "summary": "用區塊運算順序、Norm數值與參數預算，抓出shape合法卻架構不同的錯誤。",
+      "tags": [
+        "區塊習題",
+        "Norm答案",
+        "SwiGLU答案",
+        "參數計數"
+      ],
+      "visual": "tf10",
+      "visualTask": "沿殘差與主路徑追蹤shape，區分逐Token運算與跨Token混合，並核對本頁的參數或正規化。 本頁主題：Transformer區塊練習與解析。"
+    },
+    {
+      "id": "031-shifted-targets",
+      "title": "nextToken目標與標籤位移",
+      "group": "pretraining",
+      "summary": "逐位置建立input與target，避免沒位移、重複位移及loss軸錯誤。",
+      "tags": [
+        "shift labels",
+        "teacher forcing",
+        "cross entropy",
+        "ignore_index"
+      ],
+      "visual": "tf11",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：nextToken目標與標籤位移。",
+      "example": "10_shifted_loss.py"
+    },
+    {
+      "id": "032-corpus",
+      "title": "語料來源去重與切分",
+      "group": "pretraining",
+      "summary": "把文件來源、重複群組與Token切片分開管理，避免把資料洩漏當成語言能力。",
+      "tags": [
+        "corpus",
+        "deduplication",
+        "split",
+        "provenance"
+      ],
+      "visual": "tf12",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：語料來源去重與切分。"
+    },
+    {
+      "id": "033-packing",
+      "title": "batchpacking與有效Token分母",
+      "group": "pretraining",
+      "summary": "將短文件合併成高利用率batch，同時保存Attention隔離、位置與loss邊界。",
+      "tags": [
+        "packing",
+        "valid tokens",
+        "block diagonal mask",
+        "denominator"
+      ],
+      "visual": "tf12",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：batchpacking與有效Token分母。",
+      "example": "11_packing_boundaries.py"
+    },
+    {
+      "id": "034-optimization",
+      "title": "最佳化梯度累積與數值精度",
+      "group": "pretraining",
+      "summary": "依有效Token數正確累積梯度，分清AdamW、排程、裁剪與混合精度的責任。",
+      "tags": [
+        "AdamW",
+        "gradient accumulation",
+        "AMP",
+        "clipping"
+      ],
+      "visual": "tf14",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：最佳化梯度累積與數值精度。",
+      "example": "13_gradient_accumulation.py"
+    },
+    {
+      "id": "035-scaling",
+      "title": "資料參數與訓練計算",
+      "group": "pretraining",
+      "summary": "用N、有效Token與序列長度估算訓練取捨，理解scaling law的條件與外推限制。",
+      "tags": [
+        "scaling laws",
+        "compute budget",
+        "tokens",
+        "Chinchilla"
+      ],
+      "visual": "tf31",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：資料參數與訓練計算。"
+    },
+    {
+      "id": "036-pretraining-exercises",
+      "title": "預訓練練習與解析",
+      "group": "pretraining",
+      "summary": "用位移、資料切分、packing與累積梯度小題，驗收從語料到更新的完整鏈路。",
+      "tags": [
+        "預訓練習題",
+        "shift答案",
+        "packing答案",
+        "有效Token"
+      ],
+      "visual": "tf11",
+      "visualTask": "指出每個target的來源、哪些項目計入loss，以及哪些資料不可跨越切分界線。 本頁主題：預訓練練習與解析。"
+    },
+    {
+      "id": "037-tiny-config",
+      "title": "決定小型語言模型的契約",
+      "group": "tiny-lm",
+      "summary": "先把模型、資料與輸出形狀寫清楚，再開始增加層數。小模型的價值是每個張量都能追蹤。",
+      "tags": [
+        "TinyGPT",
+        "config",
+        "shape",
+        "byte tokenizer"
+      ],
+      "visual": "tf13",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：決定小型語言模型的契約。",
+      "example": "04_embedding_head.py"
+    },
+    {
+      "id": "038-manual-decoder",
+      "title": "把Decoder逐層組起來",
+      "group": "tiny-lm",
+      "summary": "將已理解的embedding、遮罩、多頭attention與前饋區塊串成一個能反向傳播的模型。",
+      "tags": [
+        "decoder",
+        "PreNorm",
+        "causality",
+        "logits"
+      ],
+      "visual": "tf13",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：把Decoder逐層組起來。",
+      "example": "08_multihead_shapes.py"
+    },
+    {
+      "id": "039-training-loop",
+      "title": "從零訓練小型語言模型",
+      "group": "tiny-lm",
+      "summary": "用一份你知道答案如何產生的語料，觀察next-token loss如何降低，再用未訓練句子檢查。",
+      "tags": [
+        "training",
+        "AdamW",
+        "token NLL",
+        "synthetic"
+      ],
+      "visual": "tf14",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：從零訓練小型語言模型。",
+      "example": "12_train_tiny_lm.py"
+    },
+    {
+      "id": "040-validation",
+      "title": "驗證曲線與生成樣本如何解讀",
+      "group": "tiny-lm",
+      "summary": "訓練loss、驗證loss與生成文字是不同觀察，不能互相替代。",
+      "tags": [
+        "validation",
+        "perplexity",
+        "denominator",
+        "loss curve"
+      ],
+      "visual": "tf25",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：驗證曲線與生成樣本如何解讀。",
+      "example": "27_perplexity.py"
+    },
+    {
+      "id": "041-checkpoint",
+      "title": "保存模型與重現推論",
+      "group": "tiny-lm",
+      "summary": "模型權重、分詞設定、架構與生成政策一起構成可重現的推論成品。",
+      "tags": [
+        "checkpoint",
+        "safetensors",
+        "weight tying",
+        "reproduce"
+      ],
+      "visual": "tf29",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：保存模型與重現推論。",
+      "example": "14_checkpoint_roundtrip.py"
+    },
+    {
+      "id": "042-tiny-exercises",
+      "title": "小型語言模型練習與解析",
+      "group": "tiny-lm",
+      "summary": "本章用可以從乾淨環境執行的實驗，確認你理解資料、模型與訓練的共同契約。",
+      "tags": [
+        "exercises",
+        "tiny LM",
+        "causal test",
+        "shift"
+      ],
+      "visual": "tf14",
+      "visualTask": "把本頁程式中的張量、訓練狀態或成品對到圖中位置，列出驗收所需的數值。 本頁主題：小型語言模型練習與解析。"
+    },
+    {
+      "id": "043-autoregressive",
+      "title": "逐Token生成與訓練平行化",
+      "group": "generation",
+      "summary": "自迴歸模型把一段文字的機率拆成依序的條件機率；生成每一步依賴已經決定的前綴。",
+      "tags": [
+        "autoregressive",
+        "teacher forcing",
+        "generation",
+        "EOS"
+      ],
+      "visual": "tf15",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：逐Token生成與訓練平行化。",
+      "example": "16_generation.py"
+    },
+    {
+      "id": "044-prefill-decode",
+      "title": "Prefill與Decode的兩種工作",
+      "group": "generation",
+      "summary": "Prefill處理已知的整段prompt；decode則逐步加入新token。兩者使用同一組權重，卻有不同的shape與效能限制。",
+      "tags": [
+        "prefill",
+        "decode",
+        "TTFT",
+        "throughput"
+      ],
+      "visual": "tf15",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：Prefill與Decode的兩種工作。"
+    },
+    {
+      "id": "045-sampling",
+      "title": "TemperatureTopK與TopP的計算",
+      "group": "generation",
+      "summary": "解碼策略改變如何從logits選下一token，並不會替模型增加新知識。",
+      "tags": [
+        "temperature",
+        "top-k",
+        "top-p",
+        "sampling"
+      ],
+      "visual": "tf16",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：TemperatureTopK與TopP的計算。",
+      "example": "15_sampling.py"
+    },
+    {
+      "id": "046-beam-stopping",
+      "title": "GreedyBeam與停止政策",
+      "group": "generation",
+      "summary": "Greedy逐步選最高分，beam保留多條候選；兩者都需要明確的長度與完成條件。",
+      "tags": [
+        "beam search",
+        "greedy",
+        "EOS",
+        "length penalty"
+      ],
+      "visual": "tf16",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：GreedyBeam與停止政策。"
+    },
+    {
+      "id": "047-constrained-generation",
+      "title": "重複控制與結構化生成的界線",
+      "group": "generation",
+      "summary": "輸出格式控制是在每一步限制候選token，語意正確仍需另外驗證。",
+      "tags": [
+        "constraints",
+        "JSON",
+        "repetition",
+        "semantic validity"
+      ],
+      "visual": "tf16",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：重複控制與結構化生成的界線。"
+    },
+    {
+      "id": "048-generation-exercises",
+      "title": "生成策略練習與解析",
+      "group": "generation",
+      "summary": "把每個生成政策寫成可核對的數值與停止條件，避免只憑文字感覺調參數。",
+      "tags": [
+        "exercises",
+        "sampling",
+        "cache",
+        "context budget"
+      ],
+      "visual": "tf16",
+      "visualTask": "分開模型分布與解碼政策，指出本頁改變的是機率、候選集合、搜尋還是停止條件。 本頁主題：生成策略練習與解析。"
+    },
+    {
+      "id": "049-cache-tensors",
+      "title": "KVCache實際保存哪些張量",
+      "group": "kv-cache",
+      "summary": "KV cache保存每層已處理token的key與value，讓後續decode重用前綴計算；它不是檢索文件或整段答案的資料庫。",
+      "tags": [
+        "KV Cache",
+        "key",
+        "value",
+        "append"
+      ],
+      "visual": "tf17",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：KVCache實際保存哪些張量。",
+      "example": "17_cache_equivalence.py"
+    },
+    {
+      "id": "050-cache-equivalence",
+      "title": "矩形因果遮罩與數值等價",
+      "group": "kv-cache",
+      "summary": "快取實作最重要的驗收，是同一模型在完整與分段計算時，對相同位置給出一致logits。",
+      "tags": [
+        "cache parity",
+        "rectangular mask",
+        "SDPA",
+        "causal offset"
+      ],
+      "visual": "tf17",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：矩形因果遮罩與數值等價。",
+      "example": "07_sdpa_masks.py"
+    },
+    {
+      "id": "051-padding-cache",
+      "title": "Padding位置與Cache中的真實長度",
+      "group": "kv-cache",
+      "summary": "批次中的物理欄位數、每筆有效token數及cache保存長度是不同數字，不能互相代用。",
+      "tags": [
+        "padding",
+        "position_ids",
+        "cache length",
+        "last valid token"
+      ],
+      "visual": "tf17",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：Padding位置與Cache中的真實長度。",
+      "example": "18_padding_positions.py"
+    },
+    {
+      "id": "052-gqa",
+      "title": "MHA、GQA與MQA的分工",
+      "group": "kv-cache",
+      "summary": "Query heads與KV heads不必相同；GQA和MQA透過共享K/V減少cache與部分投影成本。",
+      "tags": [
+        "GQA",
+        "MQA",
+        "MHA",
+        "KV heads"
+      ],
+      "visual": "tf18",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：MHA、GQA與MQA的分工。",
+      "example": "19_gqa.py"
+    },
+    {
+      "id": "053-kv-capacity",
+      "title": "推論容量與Cache記憶體估算",
+      "group": "kv-cache",
+      "summary": "容量估算先分清楚保存了哪些張量，再把權重、KV與其他工作空間分別計算。",
+      "tags": [
+        "KV memory",
+        "GiB",
+        "capacity",
+        "bytes"
+      ],
+      "visual": "tf18",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：推論容量與Cache記憶體估算。",
+      "example": "20_kv_capacity.py"
+    },
+    {
+      "id": "054-cache-exercises",
+      "title": "Cache與容量練習解析",
+      "group": "kv-cache",
+      "summary": "這組練習同時檢查shape、遮罩、位置與資源分母，避免只驗證cache物件存在。",
+      "tags": [
+        "exercises",
+        "cache",
+        "mask",
+        "GQA",
+        "capacity"
+      ],
+      "visual": "tf18",
+      "visualTask": "核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：Cache與容量練習解析。"
+    },
+    {
+      "id": "055-flash-attention",
+      "title": "FlashAttention與線上Softmax",
+      "group": "efficiency",
+      "summary": "FlashAttention的重要想法，是重新安排精確attention的計算與記憶體存取，避免把完整分數矩陣反覆寫到較慢記憶體。",
+      "tags": [
+        "FlashAttention",
+        "online softmax",
+        "IO",
+        "tiling"
+      ],
+      "visual": "tf19",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：FlashAttention與線上Softmax。",
+      "example": "21_online_softmax.py"
+    },
+    {
+      "id": "056-quantization",
+      "title": "權重量化與低精度的原理",
+      "group": "efficiency",
+      "summary": "量化用較少位元表示數值，需要配套的尺度、還原規則與kernel；省下檔案不等於所有運算都更快。",
+      "tags": [
+        "quantization",
+        "INT8",
+        "scale",
+        "weight-only"
+      ],
+      "visual": "tf18",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：權重量化與低精度的原理。",
+      "example": "22_quantization.py"
+    },
+    {
+      "id": "057-serving",
+      "title": "連續批次分頁與服務排程",
+      "group": "efficiency",
+      "summary": "模型能生成單一句子，還不等於能有效服務多個不同長度的請求。",
+      "tags": [
+        "continuous batching",
+        "PagedAttention",
+        "serving",
+        "scheduling"
+      ],
+      "visual": "tf20",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：連續批次分頁與服務排程。"
+    },
+    {
+      "id": "058-speculative",
+      "title": "推測解碼如何保留目標分布",
+      "group": "efficiency",
+      "summary": "推測解碼先用較便宜的draft提出候選，再由target驗證；是否保留target分布，取決於明確的接受與修正規則。",
+      "tags": [
+        "speculative decoding",
+        "draft",
+        "target",
+        "rejection sampling"
+      ],
+      "visual": "tf20",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：推測解碼如何保留目標分布。",
+      "example": "23_speculative_distribution.py"
+    },
+    {
+      "id": "059-long-context",
+      "title": "長上下文位置延伸與資訊使用",
+      "group": "efficiency",
+      "summary": "可以接受很長的輸入，不代表模型能穩定找出、整合並正確使用其中資訊。",
+      "tags": [
+        "long context",
+        "RoPE scaling",
+        "window",
+        "information use"
+      ],
+      "visual": "tf19",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：長上下文位置延伸與資訊使用。"
+    },
+    {
+      "id": "060-efficiency-exercises",
+      "title": "高效推論練習與解析",
+      "group": "efficiency",
+      "summary": "先分辨每個方法改善的成本，再談速度與品質，才不會把不同優化當成同一件事。",
+      "tags": [
+        "exercises",
+        "efficiency",
+        "quantization",
+        "speculative"
+      ],
+      "visual": "tf20",
+      "visualTask": "說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：高效推論練習與解析。"
+    },
+    {
+      "id": "061-encoder",
+      "title": "BERT與雙向編碼器",
+      "group": "architectures",
+      "summary": "理解雙向注意力如何形成上下文表示，以及遮蔽預測、分類與生成為何需要不同目標。",
+      "tags": [
+        "BERT",
+        "Encoder",
+        "MLM",
+        "雙向注意力",
+        "CLS"
+      ],
+      "visual": "tf21",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：BERT與雙向編碼器。"
+    },
+    {
+      "id": "062-encoder-decoder",
+      "title": "T5與序列到序列",
+      "group": "architectures",
+      "summary": "把輸入理解與輸出生成分開，追蹤 encoder、decoder self-attention 與 cross-attention 的資訊路徑。",
+      "tags": [
+        "T5",
+        "Seq2Seq",
+        "CrossAttention",
+        "SpanCorruption",
+        "TeacherForcing"
+      ],
+      "visual": "tf21",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：T5與序列到序列。"
+    },
+    {
+      "id": "063-decoder-families",
+      "title": "GPT與現代Decoder家族",
+      "group": "architectures",
+      "summary": "抓住因果語言建模的共同骨架，分辨位置表示、正規化、MLP 與注意力頭的可公開差異。",
+      "tags": [
+        "GPT",
+        "Llama",
+        "DecoderOnly",
+        "RMSNorm",
+        "RoPE",
+        "GQA"
+      ],
+      "visual": "tf21",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：GPT與現代Decoder家族。",
+      "example": "24_hf_offline_model.py"
+    },
+    {
+      "id": "064-moe",
+      "title": "MixtureofExperts與稀疏計算",
+      "group": "architectures",
+      "summary": "分開總參數、每 token 活躍參數與實際系統成本，理解 router 如何把 token 分送到不同專家。",
+      "tags": [
+        "MoE",
+        "Router",
+        "TopK",
+        "Expert",
+        "稀疏計算",
+        "負載平衡"
+      ],
+      "visual": "tf22",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：MixtureofExperts與稀疏計算。"
+    },
+    {
+      "id": "065-hybrids",
+      "title": "混合架構與推理模型的界線",
+      "group": "architectures",
+      "summary": "用運算結構、訓練目標與推論流程三條軸線比較模型，避免把「推理模型」誤當成單一架構。",
+      "tags": [
+        "混合架構",
+        "SSM",
+        "Mamba",
+        "推理模型",
+        "TestTimeCompute",
+        "比較軸線"
+      ],
+      "visual": "tf22",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：混合架構與推理模型的界線。"
+    },
+    {
+      "id": "066-architecture-exercises",
+      "title": "架構比較練習與解析",
+      "group": "architectures",
+      "summary": "以可見資訊、輸出對齊、形狀與成本逐項驗收架構理解，讓比較建立在相同條件與明確主張上。",
+      "tags": [
+        "習題",
+        "架構比較",
+        "Encoder",
+        "Decoder",
+        "MoE",
+        "成本"
+      ],
+      "visual": "tf21",
+      "visualTask": "對照架構的可見性、學習目標、常駐參數與每步工作，不以模型名稱代替能力證據。 本頁主題：架構比較練習與解析。"
+    },
+    {
+      "id": "067-sft",
+      "title": "指令微調與聊天學習目標",
+      "group": "posttraining",
+      "summary": "把示範答案轉成有明確計分位置的條件生成目標，分辨模型能力、格式與資料品質。",
+      "tags": [
+        "SFT",
+        "指令微調",
+        "AssistantMask",
+        "ChatTemplate",
+        "NLL"
+      ],
+      "visual": "tf23",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：指令微調與聊天學習目標。"
+    },
+    {
+      "id": "068-preferences",
+      "title": "偏好資料獎勵與RLHF",
+      "group": "posttraining",
+      "summary": "理解「比較哪個答案較好」如何變成可學分數，以及獎勵、KL 約束與真實品質之間的差距。",
+      "tags": [
+        "RLHF",
+        "RewardModel",
+        "偏好資料",
+        "BradleyTerry",
+        "KL"
+      ],
+      "visual": "tf24",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：偏好資料獎勵與RLHF。"
+    },
+    {
+      "id": "069-dpo",
+      "title": "DPO與參考模型的角色",
+      "group": "posttraining",
+      "summary": "以符號和一對答案手算 DPO，確認偏好方向、參考機率與隱含獎勵，而不把它簡化成只學好答案。",
+      "tags": [
+        "DPO",
+        "ReferenceModel",
+        "偏好最佳化",
+        "LogRatio",
+        "ImplicitReward"
+      ],
+      "visual": "tf24",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：DPO與參考模型的角色。",
+      "example": "26_dpo_objective.py"
+    },
+    {
+      "id": "070-reasoning",
+      "title": "推理時運算與可驗證獎勵",
+      "group": "posttraining",
+      "summary": "將多步生成、候選搜尋與外部驗證分開量測，理解更多運算何時有幫助、何時只放大錯誤。",
+      "tags": [
+        "推理時運算",
+        "Verifier",
+        "可驗證獎勵",
+        "PassAtK",
+        "CoT"
+      ],
+      "visual": "tf24",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：推理時運算與可驗證獎勵。"
+    },
+    {
+      "id": "071-adaptation",
+      "title": "LoRA蒸餾與任務適應的原理",
+      "group": "posttraining",
+      "summary": "比較改少量參數、模仿教師與提供外部證據三種思路，避免把參數效率當作品質或知識更新的保證。",
+      "tags": [
+        "LoRA",
+        "低秩",
+        "蒸餾",
+        "TeacherStudent",
+        "任務適應"
+      ],
+      "visual": "tf23",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：LoRA蒸餾與任務適應的原理。"
+    },
+    {
+      "id": "072-posttraining-exercises",
+      "title": "後訓練練習與解析",
+      "group": "posttraining",
+      "summary": "用遮罩、機率比與成本算例，驗收 SFT、偏好學習、推理預算與任務適應各自改變了什麼。",
+      "tags": [
+        "習題",
+        "SFT",
+        "RLHF",
+        "DPO",
+        "LoRA",
+        "蒸餾"
+      ],
+      "visual": "tf24",
+      "visualTask": "指出資料、模型、參考或回饋的角色，說明本頁目標改善什麼，以及仍不能保證什麼。 本頁主題：後訓練練習與解析。"
+    },
+    {
+      "id": "073-perplexity",
+      "title": "NLL與Perplexity的可比較條件",
+      "group": "evaluation",
+      "summary": "先固定分詞、目標位置與可用上下文，再用 token 加權的 NLL 定義 PPL，避免不同尺度造成假進步。",
+      "tags": [
+        "NLL",
+        "Perplexity",
+        "Tokenizer",
+        "ContextWindow",
+        "目標計數"
+      ],
+      "visual": "tf25",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：NLL與Perplexity的可比較條件。",
+      "example": "27_perplexity.py"
+    },
+    {
+      "id": "074-task-benchmarks",
+      "title": "任務評測與基準的限制",
+      "group": "evaluation",
+      "summary": "讓指標、題目、提示與推論預算對應到明確能力主張，不把一個公開分數當成全面能力證明。",
+      "tags": [
+        "Benchmark",
+        "MMLU",
+        "HumanEval",
+        "HELM",
+        "PassAtK",
+        "MacroMicro"
+      ],
+      "visual": "tf26",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：任務評測與基準的限制。"
+    },
+    {
+      "id": "075-contamination",
+      "title": "資料污染與評測洩漏",
+      "group": "evaluation",
+      "summary": "追蹤評測資訊如何進入預訓練、後訓練、提示與選擇迴圈，區分可證明重疊、可疑訊號與未知。",
+      "tags": [
+        "資料污染",
+        "Contamination",
+        "評測洩漏",
+        "去重",
+        "近重複",
+        "切分"
+      ],
+      "visual": "tf26",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：資料污染與評測洩漏。"
+    },
+    {
+      "id": "076-context-evaluation",
+      "title": "長上下文與資訊使用的評估",
+      "group": "evaluation",
+      "summary": "把可輸入長度、找得到線索、整合證據與最後答對分開測，避免只用一次 needle 成功代表所有長文本能力。",
+      "tags": [
+        "長上下文",
+        "LostInTheMiddle",
+        "LongBench",
+        "證據定位",
+        "位置偏差"
+      ],
+      "visual": "tf26",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：長上下文與資訊使用的評估。"
+    },
+    {
+      "id": "077-confidence",
+      "title": "Token機率與答案可信度",
+      "group": "evaluation",
+      "summary": "分開下一 token 的條件機率、答案為真的估計與決策門檻，用獨立資料檢查校準與拒答取捨。",
+      "tags": [
+        "信心",
+        "校準",
+        "TokenProbability",
+        "Brier",
+        "SelectivePrediction",
+        "拒答"
+      ],
+      "visual": "tf25",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：Token機率與答案可信度。"
+    },
+    {
+      "id": "078-evaluation-exercises",
+      "title": "語言模型評估練習與解析",
+      "group": "evaluation",
+      "summary": "用分母、預算、來源與條件分組逐項檢查，讓語言模型評估能重算、能解讀且不偷看測試資料。",
+      "tags": [
+        "習題",
+        "Perplexity",
+        "評測協定",
+        "污染",
+        "長上下文",
+        "校準"
+      ],
+      "visual": "tf25",
+      "visualTask": "先找有效樣本或Token分母，區分語料似然、任務正確、污染與證據使用。 本頁主題：語言模型評估練習與解析。"
+    },
+    {
+      "id": "079-interpretability",
+      "title": "Attention圖與因果探測",
+      "group": "reliability",
+      "summary": "將可視化當成提出假設的工具，再以對照、消融與介入檢查模型真正依賴哪些資訊。",
+      "tags": [
+        "可解釋性",
+        "Attention",
+        "Ablation",
+        "ActivationPatching",
+        "因果探測"
+      ],
+      "visual": "tf27",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：Attention圖與因果探測。",
+      "example": "28_logit_ablation.py"
+    },
+    {
+      "id": "080-hallucination",
+      "title": "幻覺記憶與知識邊界",
+      "group": "reliability",
+      "summary": "分辨語言流暢、參數記憶、來源支持與事實正確，讓不確定與查證成為可評估的行為。",
+      "tags": [
+        "幻覺",
+        "事實性",
+        "Grounding",
+        "記憶",
+        "查證",
+        "拒答"
+      ],
+      "visual": "tf27",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：幻覺記憶與知識邊界。"
+    },
+    {
+      "id": "081-prompt-boundaries",
+      "title": "提示注入與指令邊界",
+      "group": "reliability",
+      "summary": "把外部文字當作待處理資料，分開模型的指令遵循與系統真正的授權，理解防禦與驗收的限制。",
+      "tags": [
+        "PromptInjection",
+        "信任邊界",
+        "指令層級",
+        "工具輸出",
+        "最小權限"
+      ],
+      "visual": "tf28",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：提示注入與指令邊界。"
+    },
+    {
+      "id": "082-bias",
+      "title": "偏差隱私與模型使用限制",
+      "group": "reliability",
+      "summary": "從資料、分組錯誤與系統資訊流檢查限制，避免把平均成績、權重公開或輸出過濾當作完整保證。",
+      "tags": [
+        "偏差",
+        "隱私",
+        "分組評估",
+        "記憶化",
+        "資料來源",
+        "使用限制"
+      ],
+      "visual": "tf28",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：偏差隱私與模型使用限制。"
+    },
+    {
+      "id": "083-paper-reading",
+      "title": "讀懂論文模型卡與能力主張",
+      "group": "reliability",
+      "summary": "將結論拆成可觀察結果、方法假設、比較條件與尚未證明的推論，建立能重現且有邊界的閱讀紀錄。",
+      "tags": [
+        "論文判讀",
+        "模型卡",
+        "Ablation",
+        "Benchmark",
+        "重現",
+        "證據"
+      ],
+      "visual": "tf27",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：讀懂論文模型卡與能力主張。"
+    },
+    {
+      "id": "084-reliability-exercises",
+      "title": "可靠性與研究判讀練習解析",
+      "group": "reliability",
+      "summary": "用反例、介入、支持比例與攻防取捨，驗收模型解釋、事實性、信任邊界與研究主張。",
+      "tags": [
+        "習題",
+        "可靠性",
+        "可解釋性",
+        "幻覺",
+        "提示注入",
+        "研究判讀"
+      ],
+      "visual": "tf28",
+      "visualTask": "區分圖中的觀察、介入與外部信任條件；指出哪一項證據仍不足以支持較強主張。 本頁主題：可靠性與研究判讀練習解析。"
+    },
+    {
+      "id": "085-tiny-project",
+      "title": "專題從零訓練小型GPT",
+      "group": "projects",
+      "summary": "用原創32句語料、明確的byte詞表與小型decoder，建立資料切分、訓練、保存、重讀和評估都可追溯的完整專題。",
+      "tags": [
+        "專題",
+        "TinyGPT",
+        "訓練",
+        "artifact",
+        "byte",
+        "原創語料"
+      ],
+      "visual": "tf29",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：專題從零訓練小型GPT。",
+      "example": "12_train_tiny_lm.py"
+    },
+    {
+      "id": "086-cache-project",
+      "title": "專題建立可驗證的KVCache",
+      "group": "projects",
+      "summary": "以完整前綴作數值參照，驗證分塊query、絕對位置、矩形遮罩與padding，再區分cache一致性和推論效能。",
+      "tags": [
+        "專題",
+        "KV cache",
+        "矩形mask",
+        "padding",
+        "logits",
+        "位置"
+      ],
+      "visual": "tf30",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：專題建立可驗證的KVCache。",
+      "example": "17_cache_equivalence.py"
+    },
+    {
+      "id": "087-tokenizer-project",
+      "title": "專題本機Tokenizer與聊天模板",
+      "group": "projects",
+      "summary": "從byte-level BPE訓練與round-trip開始，保存特殊ID和模板，並檢查tokenizer、模型詞表與對話序列化的契約。",
+      "tags": [
+        "專題",
+        "tokenizers",
+        "BPE",
+        "chat template",
+        "特殊token",
+        "round-trip"
+      ],
+      "visual": "tf29",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：專題本機Tokenizer與聊天模板。",
+      "example": "03_local_tokenizer.py"
+    },
+    {
+      "id": "088-hf-project",
+      "title": "專題用現行框架核對模型介面",
+      "group": "projects",
+      "summary": "以Transformers 5.24離線隨機小Llama，比對forward、現行cache介面與本機保存重讀，將框架相容性和預訓練能力分開驗證。",
+      "tags": [
+        "專題",
+        "Transformers 5.24",
+        "LlamaConfig",
+        "cache",
+        "DynamicCache",
+        "離線"
+      ],
+      "visual": "tf30",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：專題用現行框架核對模型介面。",
+      "example": "25_hf_cache.py"
+    },
+    {
+      "id": "089-experiment-project",
+      "title": "專題建立公平的實驗報告",
+      "group": "projects",
+      "summary": "以明確問題、可比較預算、有效token分母、配對案例與保存條件，避免把更多計算、不同詞表或資料重複誤認成模型改進。",
+      "tags": [
+        "專題",
+        "實驗",
+        "有效token",
+        "PPL",
+        "配對",
+        "計算預算"
+      ],
+      "visual": "tf29",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：專題建立公平的實驗報告。",
+      "example": "13_gradient_accumulation.py"
+    },
+    {
+      "id": "090-project-exercises",
+      "title": "完整專題驗收與解析",
+      "group": "projects",
+      "summary": "用六個有錯誤設定的交付情境，檢查資料、詞表、loss、cache、保存與實驗結論是否能重現並被他人審查。",
+      "tags": [
+        "專題",
+        "驗收",
+        "練習",
+        "解析",
+        "artifact",
+        "數值一致性"
+      ],
+      "visual": "tf30",
+      "visualTask": "依本頁專題追蹤資料、模型、固定輸入、數值比較與交付檔，寫出可重現的命令與限制。 本頁主題：完整專題驗收與解析。"
+    },
+    {
+      "id": "091-math-review",
+      "title": "必要數學推導與手算",
+      "group": "reference",
+      "summary": "將softmax、cross entropy梯度、attention加權、Norm和RoPE各用最小算例推導，連回有效token與張量形狀。",
+      "tags": [
+        "數學",
+        "推導",
+        "softmax",
+        "cross entropy",
+        "RoPE",
+        "LayerNorm"
+      ],
+      "visual": "tf31",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：必要數學推導與手算。"
+    },
+    {
+      "id": "092-formula-sheet",
+      "title": "張量參數與容量速查",
+      "group": "reference",
+      "summary": "用一致符號核對QKV與logits形狀，推算預設TinyGPT的31,392個參數，以及KV、工作矩陣和optimizer狀態的不同分母。",
+      "tags": [
+        "速查",
+        "shape",
+        "參數量",
+        "KV容量",
+        "複雜度",
+        "MHA",
+        "GQA"
+      ],
+      "visual": "tf31",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：張量參數與容量速查。"
+    },
+    {
+      "id": "093-troubleshooting",
+      "title": "環境資料與模型故障排查",
+      "group": "reference",
+      "summary": "依環境、資料契約、loss、cache與序列化逐層定位問題，保存第一個差異，而不是以重裝套件或放大模型取代診斷。",
+      "tags": [
+        "除錯",
+        "環境",
+        "mask",
+        "NaN",
+        "cache",
+        "safetensors",
+        "故障排查"
+      ],
+      "visual": "tf32",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：環境資料與模型故障排查。"
+    },
+    {
+      "id": "094-glossary",
+      "title": "中英術語與機制對照",
+      "group": "reference",
+      "summary": "以110個原創中英操作性定義，區分文字表示、注意力物件、位置、訓練、生成與評估，並用算例連起名詞。",
+      "tags": [
+        "詞表",
+        "glossary",
+        "110 terms",
+        "術語",
+        "機制",
+        "定義"
+      ],
+      "visual": "tf31",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：中英術語與機制對照。"
+    },
+    {
+      "id": "095-learning-paths",
+      "title": "學習路線與閱讀順序",
+      "group": "reference",
+      "summary": "依從零理解、手寫模型、cache推論、框架介面與研究閱讀安排路線，每條都以可解釋的產物驗收，再接到既有獨立課程。",
+      "tags": [
+        "學習路線",
+        "先備知識",
+        "專題",
+        "跨課閱讀",
+        "順序",
+        "驗收"
+      ],
+      "visual": "tf32",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：學習路線與閱讀順序。"
+    },
+    {
+      "id": "096-references",
+      "title": "版本原始論文與持續更新",
+      "group": "reference",
+      "summary": "分開保存當日穩定版本、固定tag的API證據、原始研究與實際測試範圍，建立下一次更新時可重做的查核流程。",
+      "tags": [
+        "版本",
+        "參考資料",
+        "原始論文",
+        "更新",
+        "5.24.0",
+        "2.15.0",
+        "查核日期"
+      ],
+      "visual": "tf32",
+      "visualTask": "選本頁一個概念對照圖中shape、公式或除錯分支，說出下一個需要核對的條件。 本頁主題：版本原始論文與持續更新。"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "tf01",
+      "file": "assets/figures/01-text-token-decision.svg",
+      "title": "從文字到下一個token",
+      "alt": "天氣好先變成12,7,25三個教學token ID，Transformer輸出句點問號驚嘆號機率0.6,0.3,0.1，再由解碼規則選擇。",
+      "description": "天氣好先變成12,7,25三個教學token ID，Transformer輸出句點問號驚嘆號機率0.6,0.3,0.1，再由解碼規則選擇。",
+      "caption": "先區分分數與決策；模型沒有在這一步直接產生一整段文字。",
+      "group": "foundations",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf02",
+      "file": "assets/figures/02-chain-nll.svg",
+      "title": "條件機率鏈與負對數似然",
+      "alt": "BOS我想睡四格序列下有三個條件機率0.5,0.25,0.8，相乘0.1，負對數相加2.3026，三token平均0.7675。",
+      "description": "BOS我想睡四格序列下有三個條件機率0.5,0.25,0.8，相乘0.1，負對數相加2.3026，三token平均0.7675。",
+      "caption": "平均損失的分母是有效預測目標，不是字數、句數或輸入格數。",
+      "group": "foundations",
+      "sources": [
+        {
+          "title": "PyTorch CrossEntropyLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf03",
+      "file": "assets/figures/03-unicode-bytes-tokens.svg",
+      "title": "字、byte與token不是相同單位",
+      "alt": "A貓包含兩個Unicode碼點U0041 U8C93，UTF8則是41 E8 B2 93四bytes，再由tokenizer規則映射成不同ID。",
+      "description": "A貓包含兩個Unicode碼點U0041 U8C93，UTF8則是41 E8 B2 93四bytes，再由tokenizer規則映射成不同ID。",
+      "caption": "比較長度或計費前，先說清楚採用bytes、碼點還是特定tokenizer。",
+      "group": "tokenization",
+      "sources": [
+        {
+          "title": "Unicode UTF-8 definition",
+          "url": "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-3/"
+        },
+        {
+          "title": "BPE subword original paper",
+          "url": "https://arxiv.org/abs/1508.07909"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf04",
+      "file": "assets/figures/04-bpe-merges.svg",
+      "title": "BPE：從較小片段到子詞",
+      "alt": "lower先分l o w e r，按順位合併l加o成lo，再lo加w成low，最後low e r。",
+      "description": "lower先分l o w e r，按順位合併l加o成lo，再lo加w成low，最後low e r。",
+      "caption": "相同文字在不同詞表和規則下會有不同token數；版本需與模型一起保存。",
+      "group": "tokenization",
+      "sources": [
+        {
+          "title": "BPE subword original paper",
+          "url": "https://arxiv.org/abs/1508.07909"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf05",
+      "file": "assets/figures/05-embedding-tied-output.svg",
+      "title": "Embedding查表與輸出權重共享",
+      "alt": "六列三維Embedding表中ID1與ID4資料列被選出，右側隱狀態h乘同一E轉置得到V個logits。",
+      "description": "六列三維Embedding表中ID1與ID4資料列被選出，右側隱狀態h乘同一E轉置得到V個logits。",
+      "caption": "追蹤ID、向量與logits的形狀；權重共享仍需保存詞表順序。",
+      "group": "representations",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "Using the Output Embedding to Improve Language Models",
+          "url": "https://arxiv.org/abs/1608.05859"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf06",
+      "file": "assets/figures/06-rope-relative-angles.svg",
+      "title": "RoPE：旋轉如何帶入相對位置",
+      "alt": "兩張圓圖中Q60度K20度與Q90度K50度有相同40度角差，說明共同位移不改變相對旋轉。",
+      "description": "兩張圓圖中Q60度K20度與Q90度K50度有相同40度角差，說明共同位移不改變相對旋轉。",
+      "caption": "先理解相對角差，再區分頻率、position_id、長度外推與模型實際可用範圍。",
+      "group": "representations",
+      "sources": [
+        {
+          "title": "RoFormer original paper",
+          "url": "https://arxiv.org/abs/2104.09864"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf07",
+      "file": "assets/figures/07-qkv-numerical.svg",
+      "title": "Q、K、V：先找關聯，再聚合內容",
+      "alt": "查詢1和兩個key1,0得到分數1,0，softmax為0.7311,0.2689，再用此顯示權重加權V兩列2,0與0,4得到1.4622,1.0756。",
+      "description": "查詢1和兩個key1,0得到分數1,0，softmax為0.7311,0.2689，再用此顯示權重加權V兩列2,0與0,4得到1.4622,1.0756。",
+      "caption": "自己改一個V值，確認權重不變而輸出改變；再改K值觀察權重。",
+      "group": "attention",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf08",
+      "file": "assets/figures/08-causal-padding-masks.svg",
+      "title": "因果遮罩與padding遮罩",
+      "alt": "左矩陣是四乘四下三角True因果遮罩，右矩陣最後key為PAD全False，PAD query輸出另外忽略。",
+      "description": "左矩陣是四乘四下三角True因果遮罩，右矩陣最後key為PAD全False，PAD query輸出另外忽略。",
+      "caption": "檢查列欄方向和True的定義；padding key遮罩與loss忽略不是相同動作。",
+      "group": "attention",
+      "sources": [
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf09",
+      "file": "assets/figures/09-pre-norm-block.svg",
+      "title": "Transformer block的主路徑與殘差",
+      "alt": "輸入X經Norm因果注意力與殘差加法，再經Norm MLP第二次殘差加法，整層保持B S D形狀。",
+      "description": "輸入X經Norm因果注意力與殘差加法，再經Norm MLP第二次殘差加法，整層保持B S D形狀。",
+      "caption": "用筆沿主路徑走一次，再分別沿兩條skip走一次，確認每個加法的來源。",
+      "group": "blocks",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "On Layer Normalization in the Transformer Architecture",
+          "url": "https://arxiv.org/abs/2002.04745"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf10",
+      "file": "assets/figures/10-attention-provenance.svg",
+      "title": "Encoder、Decoder與Cross-Attention",
+      "alt": "三列分別把來源序列或目標前綴作為QKV，cross attention則用目標隱狀態作Q而encoder輸出作KV。",
+      "description": "三列分別把來源序列或目標前綴作為QKV，cross attention則用目標隱狀態作Q而encoder輸出作KV。",
+      "caption": "cross-attention的矩陣形狀是目標長度×來源長度，別套用同長度self-attention直覺。",
+      "group": "blocks",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf11",
+      "file": "assets/figures/11-next-token-shift.svg",
+      "title": "Next-token訓練：輸入、目標與忽略位置",
+      "alt": "輸入BOS我愛貓PAD與目標我愛貓EOS忽略上下對齊，前四格箭頭相連，PAD loss不納入分母。",
+      "description": "輸入BOS我愛貓PAD與目標我愛貓EOS忽略上下對齊，前四格箭頭相連，PAD loss不納入分母。",
+      "caption": "手寫一個樣本的X與Y；若目標和輸入同格未右移，任務就被改變了。",
+      "group": "pretraining",
+      "sources": [
+        {
+          "title": "PyTorch CrossEntropyLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf12",
+      "file": "assets/figures/12-corpus-split-packing.svg",
+      "title": "資料管線：文件邊界與token block",
+      "alt": "文件先去重並按來源群組分訓練驗證，訓練token流A1A2EOSB1B2B3再打包成兩個block。",
+      "description": "文件先去重並按來源群組分訓練驗證，訓練token流A1A2EOSB1B2B3再打包成兩個block。",
+      "caption": "文件切分邊界、EOS與attention block邊界是三種不同概念，要各自記錄。",
+      "group": "pretraining",
+      "sources": [
+        {
+          "title": "The Pile dataset paper",
+          "url": "https://arxiv.org/abs/2101.00027"
+        },
+        {
+          "title": "PyTorch CrossEntropyLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf13",
+      "file": "assets/figures/13-tiny-model-shapes.svg",
+      "title": "Tiny GPT的張量流",
+      "alt": "2乘4 IDs經embedding和blocks成2乘4乘8，兩個head內QKV各2乘2乘4乘4，輸出logits2乘4乘16。",
+      "description": "2乘4 IDs經embedding和blocks成2乘4乘8，兩個head內QKV各2乘2乘4乘4，輸出logits2乘4乘16。",
+      "caption": "逐步核對最後一維；模型能執行不代表把sequence軸和head軸放對。",
+      "group": "tiny-lm",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf14",
+      "file": "assets/figures/14-training-checkpoint.svg",
+      "title": "訓練、驗證與可恢復checkpoint",
+      "alt": "上排訓練資料模型loss回傳梯度，下排驗證資料eval選版本，底部列checkpoint包含權重optimizer RNG設定資料tokenizer版本。",
+      "description": "上排訓練資料模型loss回傳梯度，下排驗證資料eval選版本，底部列checkpoint包含權重optimizer RNG設定資料tokenizer版本。",
+      "caption": "中斷再續訓時比較下一個step，而不只確認模型檔能載入。",
+      "group": "tiny-lm",
+      "sources": [
+        {
+          "title": "PyTorch saving models tutorial",
+          "url": "https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf15",
+      "file": "assets/figures/15-prefill-decode.svg",
+      "title": "自回歸生成：先讀前綴，再逐字延伸",
+      "alt": "prefill我喜歡建立KV，decode第一步新產生貓，第二步把貓接回前綴再產生句點，舊前綴以淡色顯示。",
+      "description": "prefill我喜歡建立KV，decode第一步新產生貓，第二步把貓接回前綴再產生句點，舊前綴以淡色顯示。",
+      "caption": "分開量測prefill與decode；不能把整段生成視為一次完全平行的前向。",
+      "group": "generation",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf16",
+      "file": "assets/figures/16-sampling-truncation.svg",
+      "title": "Temperature、top-k與top-p",
+      "alt": "原分布五條機率長條與topk2重正規化0.643 0.357、topp0.8保留前三項重正規化0.529 0.294 0.176並排。",
+      "description": "原分布五條機率長條與topk2重正規化0.643 0.357、topp0.8保留前三項重正規化0.529 0.294 0.176並排。",
+      "caption": "截斷改變採樣分布；低溫、少候選與輸出正確不是同一件事。",
+      "group": "generation",
+      "sources": [
+        {
+          "title": "The Curious Case of Neural Text Degeneration",
+          "url": "https://arxiv.org/abs/1904.09751"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf17",
+      "file": "assets/figures/17-cache-offset-mask.svg",
+      "title": "KV cache與非正方形因果遮罩",
+      "alt": "K與V各有舊位置0,1,2及新位置3,4，本次兩query的5欄允許遮罩分別11110與11111。",
+      "description": "K與V各有舊位置0,1,2及新位置3,4，本次兩query的5欄允許遮罩分別11110與11111。",
+      "caption": "快取不只省重算；正確性取決於key位置、query位置與遮罩的對齊。",
+      "group": "kv-cache",
+      "sources": [
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        },
+        {
+          "title": "RoFormer original paper",
+          "url": "https://arxiv.org/abs/2104.09864"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf18",
+      "file": "assets/figures/18-mha-gqa-mqa.svg",
+      "title": "共享K/V heads，改變cache容量",
+      "alt": "MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。",
+      "description": "MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。",
+      "caption": "記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。",
+      "group": "kv-cache",
+      "sources": [
+        {
+          "title": "Grouped-query attention original paper",
+          "url": "https://arxiv.org/abs/2305.13245"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf19",
+      "file": "assets/figures/19-tiled-online-softmax.svg",
+      "title": "FlashAttention：改變資料搬運與中間儲存",
+      "alt": "左側大網格只搬入兩塊到SRAM狀態m l o，右側分數0,1再讀2，最大值改2並重新縮放得到l2=1.5032。",
+      "description": "左側大網格只搬入兩塊到SRAM狀態m l o，右側分數0,1再讀2，最大值改2並重新縮放得到l2=1.5032。",
+      "caption": "不要把不實體化S×S矩陣，誤寫成所有密集注意力算術都變為線性。",
+      "group": "efficiency",
+      "sources": [
+        {
+          "title": "FlashAttention original paper",
+          "url": "https://arxiv.org/abs/2205.14135"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf20",
+      "file": "assets/figures/20-serving-mechanisms.svg",
+      "title": "批次、分頁KV與推測解碼",
+      "alt": "第一列A完成以D填入批次，第二列請求邏輯頁0和1映射實體頁7和2，第三列草稿abcd經目標接受ab並以u替代後續。",
+      "description": "第一列A完成以D填入批次，第二列請求邏輯頁0和1映射實體頁7和2，第三列草稿abcd經目標接受ab並以u替代後續。",
+      "caption": "分開記錄延遲、吞吐、記憶體與輸出分布；一個指標改善不能代表全部改善。",
+      "group": "efficiency",
+      "sources": [
+        {
+          "title": "PagedAttention original paper",
+          "url": "https://arxiv.org/abs/2309.06180"
+        },
+        {
+          "title": "Speculative decoding original paper",
+          "url": "https://arxiv.org/abs/2211.17192"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf21",
+      "file": "assets/figures/21-architecture-task-map.svg",
+      "title": "架構家族與常見任務",
+      "alt": "encoder三乘三全連接、encoderdecoder來源與目標間crossattention、decoder三乘三因果下三角並列。",
+      "description": "encoder三乘三全連接、encoderdecoder來源與目標間crossattention、decoder三乘三因果下三角並列。",
+      "caption": "選架構時先判斷要讀完整序列、條件生成，還是依前綴續寫，再看訓練目標。",
+      "group": "architectures",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf22",
+      "file": "assets/figures/22-moe-active-resident.svg",
+      "title": "MoE：活躍參數與常駐參數",
+      "alt": "一個token經router只連到E1 E6兩expert，其餘六expert為淡色；共享200M全八expert總1B，兩expert活躍400M。",
+      "description": "一個token經router只連到E1 E6兩expert，其餘六expert為淡色；共享200M全八expert總1B，兩expert活躍400M。",
+      "caption": "估算部署資源時，區分總權重、當步啟用權重、通信與KV cache。",
+      "group": "architectures",
+      "sources": [
+        {
+          "title": "Switch Transformer original paper",
+          "url": "https://arxiv.org/abs/2101.03961"
+        },
+        {
+          "title": "Mixtral original paper",
+          "url": "https://arxiv.org/abs/2401.04088"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf23",
+      "file": "assets/figures/23-training-stages.svg",
+      "title": "預訓練、SFT與偏好調整",
+      "alt": "一般語料下一token、指令示範、同題回答偏好三個階段依序得到base SFT和偏好調整policy。",
+      "description": "一般語料下一token、指令示範、同題回答偏好三個階段依序得到base SFT和偏好調整policy。",
+      "caption": "觀察訓練訊號，而不只看模型名稱有沒有Instruct或Chat字樣。",
+      "group": "posttraining",
+      "sources": [
+        {
+          "title": "InstructGPT original paper",
+          "url": "https://arxiv.org/abs/2203.02155"
+        },
+        {
+          "title": "Direct Preference Optimization original paper",
+          "url": "https://arxiv.org/abs/2305.18290"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf24",
+      "file": "assets/figures/24-preference-relative-policy.svg",
+      "title": "偏好、reference與DPO的相對比較",
+      "alt": "prompt連到chosen和rejected兩回答，DPO計算policy序列logprob差減reference差，再用負log sigmoid beta delta。",
+      "description": "prompt連到chosen和rejected兩回答，DPO計算policy序列logprob差減reference差，再用負log sigmoid beta delta。",
+      "caption": "DPO不是只最大化chosen的單獨分數；比較的是同prompt的偏好差與reference差。",
+      "group": "posttraining",
+      "sources": [
+        {
+          "title": "Direct Preference Optimization original paper",
+          "url": "https://arxiv.org/abs/2305.18290"
+        },
+        {
+          "title": "InstructGPT original paper",
+          "url": "https://arxiv.org/abs/2203.02155"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf25",
+      "file": "assets/figures/25-nll-denominator-ppl.svg",
+      "title": "NLL聚合與Perplexity的比較前提",
+      "alt": "兩批分別NLL4有效token2和NLL8有效token8，合併平均12除10=1.2 PPL3.3201，不能平均批次loss得1.5。",
+      "description": "兩批分別NLL4有效token2和NLL8有效token8，合併平均12除10=1.2 PPL3.3201，不能平均批次loss得1.5。",
+      "caption": "在訓練記錄中同時保存nll_sum和valid_token_count，才有可重算的總分。",
+      "group": "evaluation",
+      "sources": [
+        {
+          "title": "PyTorch CrossEntropyLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf26",
+      "file": "assets/figures/26-contamination-groups.svg",
+      "title": "Benchmark污染與來源群組",
+      "alt": "原題來源改寫題和答案解析由紅虛線關聯，同來源整組分到train或test，強調hash不同不代表獨立。",
+      "description": "原題來源改寫題和答案解析由紅虛線關聯，同來源整組分到train或test，強調hash不同不代表獨立。",
+      "caption": "保留測試版本、檢索規則與可檢查範圍，分開寫已檢查和無法確認的來源。",
+      "group": "evaluation",
+      "sources": [
+        {
+          "title": "Language Models are Few-Shot Learners",
+          "url": "https://arxiv.org/abs/2005.14165"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf27",
+      "file": "assets/figures/27-heatmap-vs-intervention.svg",
+      "title": "注意力圖與因果檢查是不同的證據",
+      "alt": "左側三乘三attention熱圖，右側替換目標詞後比較logit和任務表現，兩者觀察層次不同。",
+      "description": "左側三乘三attention熱圖，右側替換目標詞後比較logit和任務表現，兩者觀察層次不同。",
+      "caption": "把好看的熱圖當成假說起點；用明確介入、對照與限制支持更強的結論。",
+      "group": "reliability",
+      "sources": [
+        {
+          "title": "Attention is not Explanation",
+          "url": "https://arxiv.org/abs/1902.10186"
+        },
+        {
+          "title": "Attention is not not Explanation",
+          "url": "https://arxiv.org/abs/1908.04626"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf28",
+      "file": "assets/figures/28-trust-boundaries.svg",
+      "title": "幻覺、提示注入與工具信任邊界",
+      "alt": "使用者規則與外部文件分別進入LLM候選輸出，紅虛線標記外部資料不可信，執行前另做權限參數來源檢查。",
+      "description": "使用者規則與外部文件分別進入LLM候選輸出，紅虛線標記外部資料不可信，執行前另做權限參數來源檢查。",
+      "caption": "內容生成與工具執行分開驗收；模型說得流暢，不代表內容有依據或操作已獲授權。",
+      "group": "reliability",
+      "sources": [
+        {
+          "title": "NIST Generative AI Profile",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf29",
+      "file": "assets/figures/29-tiny-lm-artifact.svg",
+      "title": "從語料到可重現的Tiny LM交付",
+      "alt": "原創語料到tokenizer模型訓練checkpoint生成設定評估證據六張卡沿環狀串接，各卡列保存欄位。",
+      "description": "原創語料到tokenizer模型訓練checkpoint生成設定評估證據六張卡沿環狀串接，各卡列保存欄位。",
+      "caption": "讓另一個人只用交付資料，就能重建token IDs、載入模型並核對同一個測試。",
+      "group": "projects",
+      "sources": [
+        {
+          "title": "PyTorch reproducibility",
+          "url": "https://docs.pytorch.org/docs/2.15/notes/randomness.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf30",
+      "file": "assets/figures/30-cache-logits-parity.svg",
+      "title": "Cache正確性：對齊logits，不只看文字",
+      "alt": "完整前綴0,1,2,3前向與快取0,1,2加新位置3前向，底部以最大logit絕對差和容差比較。",
+      "description": "完整前綴0,1,2,3前向與快取0,1,2加新位置3前向，底部以最大logit絕對差和容差比較。",
+      "caption": "先關閉dropout並控制位置與mask，再排查cache；相同文字也可能隱藏logit錯誤。",
+      "group": "projects",
+      "sources": [
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf31",
+      "file": "assets/figures/31-tensor-complexity-map.svg",
+      "title": "張量形狀、密集注意力與cache對照",
+      "alt": "五列表格將token hidden QKV dense scores cache對應形狀，dense scores平方長度，cache線性長度再乘dtypebytes。",
+      "description": "五列表格將token hidden QKV dense scores cache對應形狀，dense scores平方長度，cache線性長度再乘dtypebytes。",
+      "caption": "估算時先確認物件：注意力工作矩陣、歷史KV與模型權重不是同一筆記憶體。",
+      "group": "reference",
+      "sources": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "Grouped-query attention original paper",
+          "url": "https://arxiv.org/abs/2305.13245"
+        },
+        {
+          "title": "FlashAttention original paper",
+          "url": "https://arxiv.org/abs/2205.14135"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    },
+    {
+      "id": "tf32",
+      "file": "assets/figures/32-debug-decision-tree.svg",
+      "title": "Transformer除錯路線",
+      "alt": "問題分成loss不下降生成異常cache不一致三條路，分別檢查shift更新、詞表解碼、位置與矩形遮罩。",
+      "description": "問題分成loss不下降生成異常cache不一致三條路，分別檢查shift更新、詞表解碼、位置與矩形遮罩。",
+      "caption": "先定位資料、學習或推論哪一層失效，再選擇下一個能排除假說的測試。",
+      "group": "reference",
+      "sources": [
+        {
+          "title": "PyTorch SDPA documentation",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.functional.scaled_dot_product_attention.html"
+        },
+        {
+          "title": "PyTorch CrossEntropyLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html"
+        }
+      ],
+      "checked": "2026-11-24",
+      "original": true
+    }
+  ]
+}

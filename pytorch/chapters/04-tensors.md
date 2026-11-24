@@ -2,6 +2,16 @@
 
 學會辨認一個 Tensor 的四個基本屬性，以及資料轉換的成本。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Tensor的shape與dtype；相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。](assets/figures/review-01-start.svg)
+
+> **圖解｜Tensor的shape與dtype**：相同元素數量不保證reshape保留資料意義；先核對shape、軸名稱與dtype。
+
+**本單元讀圖任務**：讀完「Tensor 的數值契約：建立、dtype、device 與共享儲存」後，在圖上指出「device」的位置或對應關係；用本單元的一個例子說明它與「數值範圍」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 數值之外還有什麼
 
 Tensor 不只是巢狀 list。至少要讀 shape、dtype、device、requires_grad。`torch.tensor([1,2])` 通常推斷整數，而模型特徵多用 float32；分類索引使用 long。兩者都能印出數字，不表示可以交換使用。浮點 Tensor 才能參與一般可微分訓練。

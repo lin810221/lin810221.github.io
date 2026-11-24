@@ -72,7 +72,7 @@ for(const lesson of window.COURSE.lessons){
   const {document:doc}=parseHTML(`<!doctype html><html><body>${lesson.html}</body></html>`);
   for(const element of doc.querySelectorAll('.math-source,.math-block')){
     const display=element.classList.contains('math-block'),text=element.textContent.trim();
-    const tex=display?text.slice(2,-2).trim():text.slice(1,-1);
+    const tex=element.getAttribute('data-tex') ?? (display?text.slice(2,-2).trim():text.slice(1,-1));
     assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;
   }
 }

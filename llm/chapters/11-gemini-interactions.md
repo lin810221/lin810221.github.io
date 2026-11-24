@@ -1,3 +1,15 @@
+
+
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![取樣分布與參數；圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-providers.svg)
+
+> **圖解｜取樣分布與參數**：圖示機率為固定教學算例，並非模型實測；Temperature改機率集中程度，不直接增加知識。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Gemini：Interactions API 實戰」後，在圖上指出「候選過濾」的位置或對應關係；用本單元的一個例子說明它與「重新正規化」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 為什麼這一章使用 Interactions？
 
 目前 Google 官方將 Interactions API 作為新專案的主要建議介面；舊 generateContent 仍受支援。本課以目前介面為主，下一單元另外整理舊範例遷移。

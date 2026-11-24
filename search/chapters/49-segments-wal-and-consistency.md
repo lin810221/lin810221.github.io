@@ -2,6 +2,16 @@
 
 分清可搜尋、可恢復、可讀到最新與可災難復原，不用單一成功訊號概括。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![搜尋品質與效能的分母；固定查詢集合、真值與索引版本再比較；平均延遲不足以說明尾端請求。](assets/figures/review-09-operations.svg)
+
+> **圖解｜搜尋品質與效能的分母**：固定查詢集合、真值與索引版本再比較；平均延遲不足以說明尾端請求。
+
+**本單元讀圖任務**：讀完「Segment、Refresh、WAL 與複本：四種不同的承諾」後，在圖上指出「相關文件」的位置或對應關係；用本單元的一個例子說明它與「Recall@k」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 可見性與持久性
 
 搜尋引擎的 refresh 讓新的索引視圖可被搜尋；WAL/translog 等日誌協助故障恢復；flush/checkpoint 將狀態推進到另一個持久化階段。各產品名稱與具體語意不同，不能把 SQLite WAL、PostgreSQL WAL 與 Elasticsearch translog 當相同 API。更不能由「查得到」直接推論「已有可還原備份」。

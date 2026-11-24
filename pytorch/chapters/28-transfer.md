@@ -2,6 +2,16 @@
 
 分清requires_grad、optimizer覆蓋範圍與BatchNorm／Dropout的狀態。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![一個訓練步的狀態更新；驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。](assets/figures/review-05-practice.svg)
+
+> **圖解｜一個訓練步的狀態更新**：驗證不執行參數更新；loss下降仍需要獨立保留資料檢查。
+
+**本單元讀圖任務**：讀完「凍結與遷移學習：參數不更新，模組仍有模式」後，在圖上指出「Backward」的位置或對應關係；用本單元的一個例子說明它與「Optimizer step」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 什麼叫凍結
 
 把backbone參數requires_grad設False，代表它們不需計算參數梯度。只把head參數交給optimizer，確保更新範圍明確。這與eval不同：eval調整模組行為，不是鎖定weights；凍結weights也不一定阻止BatchNorm running statistics變化。

@@ -2,20 +2,30 @@
 
 從線性分數到二元機率，使用1.9版的正則化介面。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![回歸線與殘差；殘差是觀察值減預測值；低訓練誤差不等於新資料準確。座標圖為教學算例，沒有使用實測或臨床資料。](assets/figures/review-03-linear.svg)
+
+> **圖解｜回歸線與殘差**：殘差是觀察值減預測值；低訓練誤差不等於新資料準確。座標圖為教學算例，沒有使用實測或臨床資料。
+
+**本單元讀圖任務**：讀完「Logistic Regression：機率、Log loss與決策邊界」後，在圖上指出「觀察值」的位置或對應關係；用本單元的一個例子說明它與「殘差」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 名稱有Regression，任務是分類
 
-模型先計算z=wᵀx+b，再用sigmoid轉成正例機率。當門檻為.5時，決策邊界z=0是線性超平面。模型估計機率並不保證校準完美，尤其資料偏差、class weight與分布改變都會影響解讀。
+模型先計算$z=w^\top x+b$，再用sigmoid轉成正例機率。當門檻為.5時，決策邊界$z=0$是線性超平面。模型估計機率並不保證校準完美，尤其資料偏差、class weight與分布改變都會影響解讀。
 
 $$
 p=\sigma(z)=\frac1{1+e^{-z}},\qquad
 L=-\frac1N\sum_i[y_i\log p_i+(1-y_i)\log(1-p_i)]
 $$
 
-若z=0，p=.5；z約2.197時p=.9。真實label=0但模型p=.99會受很大Log loss，與只看分類對錯的accuracy不同。
+若$z=0$，p=.5；z約2.197時p=.9。真實label=0但模型p=.99會受很大Log loss，與只看分類對錯的accuracy不同。
 
 ## 使用目前API
 
-本課1.9使用C及l1_ratio描述正則化，不以舊penalty參數作主線。l1_ratio=0為L2，1為L1，介於其間為Elastic Net；solver需支援所選形式，L1／混合常使用saga。C越大限制越弱，與Ridge alpha方向不同；C=np.inf表示不施加該正則化。
+本課1.9使用C及l1_ratio描述正則化，不以舊penalty參數作主線。l1_ratio=0為L2，1為L1，介於其間為Elastic Net；solver需支援所選形式，L1／混合常使用saga。C越大限制越弱，與Ridge alpha方向不同；$C=np.inf$表示不施加該正則化。
 
 ## 標準化與收斂
 

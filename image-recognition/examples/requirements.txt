@@ -1,0 +1,10 @@
+# Latest stable packages checked 2026-11-23. Complete runtime: Python 3.12-3.14.
+# Install torch/vision CPU wheels first, as described in README.md.
+torch==2.15.0
+torchvision==0.29.2
+numpy==2.5.5
+Pillow==13.0.0
+opencv-python-headless==5.1.0.95
+onnx==1.23.2
+onnxscript==0.7.2
+onnxruntime==1.32.0

@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/reader.js','mcp/assets/overview.js','mcp/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,21);assert.equal(home.querySelectorAll('a[href="mcp/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,23);assert.equal(home.querySelectorAll('a[href="mcp/index.html"]').length,1);
 const {window,document}=parseHTML(await read('mcp/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['01-statistics-definition'],notes:{'01-statistics-definition':'preserve statistics'}}),storage=new Map([['learning-notes:applied-statistics:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};
@@ -39,7 +39,7 @@ for(const lesson of window.COURSE.lessons){
   for(const a of document.querySelectorAll('.toc-links a'))assert.ok(document.getElementById(a.getAttribute('href').split('/')[1]));
   if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}
   const {document:doc}=parseHTML('<html><body>'+lesson.html+'</body></html>');
-  for(const element of doc.querySelectorAll('.math-source,.math-block')){const text=element.textContent.trim(),display=element.classList.contains('math-block'),tex=display?text.slice(2,-2).trim():text.slice(1,-1);assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;}
+  for(const element of doc.querySelectorAll('.math-source,.math-block')){const text=element.textContent.trim(),display=element.classList.contains('math-block'),tex=element.getAttribute('data-tex') ?? (display?text.slice(2,-2).trim():text.slice(1,-1));assert.ok(katex.renderToString(tex,{displayMode:display,throwOnError:true}).includes('class="katex'));equations++;}
 }
 assert.equal(examples,30);assert.ok(equations>=6);assert.deepEqual(window.COURSE.groups.map(g=>window.COURSE.lessons.filter(l=>l.group===g.id).length),Array(9).fill(6));
 navigate('01-why-mcp');q('#complete-lesson').click();q('#lesson-notes').value='工具提案不等於執行事實。';input('#lesson-notes');navigate('07-json-rpc');assert.ok(q('.lesson-kicker').textContent.includes('CHAPTER 02'));assert.ok(q('.lesson-kicker').textContent.includes('UNIT 01 OF 6'));navigate('01-why-mcp');assert.equal(q('#lesson-notes').value,'工具提案不等於執行事實。');assert.equal(q('#progress-count').textContent,'1 / 54');assert.equal(storage.get('learning-notes:applied-statistics:v1'),previous);

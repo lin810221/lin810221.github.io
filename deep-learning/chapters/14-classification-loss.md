@@ -2,6 +2,16 @@
 
 分清單選與多標籤的資料格式，再推導正確輸出梯度。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![目標函數與資料契約；logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。](assets/figures/review-03-objectives.svg)
+
+> **圖解｜目標函數與資料契約**：logits、機率及類別ID不可混用；損失的平均方式會改梯度尺度。
+
+**本單元讀圖任務**：讀完「分類損失：Logits、BCE、Softmax CE與加權分母」後，在圖上指出「單標籤分類」的位置或對應關係；用本單元的一個例子說明它與「多標籤」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 單選與多標籤
 
 多類單選logits[N,C]配long target[N]；二元可用logits[N,1]配float target[N,1]與BCEWithLogits；多標籤兩者[N,C]、每欄可同時成立。不要把每個task一律做softmax，因為多標籤不要求各欄機率合計1。

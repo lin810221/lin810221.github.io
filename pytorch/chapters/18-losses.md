@@ -2,6 +2,16 @@
 
 分清 logits、機率、索引與浮點標籤，避免多套一次 activation。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「損失函數的資料契約：CE、BCE 與 MSE」後，在圖上指出「原始樣本」的位置或對應關係；用本單元的一個例子說明它與「Dataset取樣」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 多類單選：CrossEntropyLoss
 
 對 N 筆、C 類，模型回傳 logits[N,C]，本課標籤是 long[N]，值在0到C-1。不要先 softmax 再送 CE，因為 CE 會以 logits 計算對數正規化。API 也支援特定機率目標形式，但本課一般分類以索引標籤為主，不混用兩種契約。

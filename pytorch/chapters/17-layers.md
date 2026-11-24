@@ -2,6 +2,16 @@
 
 把每一層當作有明確輸入輸出規格的數值運算。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![Dataset到DataLoader的批次；Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。](assets/figures/review-03-building.svg)
+
+> **圖解｜Dataset到DataLoader的批次**：Dataset定義單筆資料，collate處理批次組合；尾批、worker與隨機種子要明確。
+
+**本單元讀圖任務**：讀完「常用層與 shape：Linear、Conv2d、Embedding 與正規化」後，在圖上指出「模型輸入」的位置或對應關係；用本單元的一個例子說明它與「原始樣本」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## Linear 的最後一軸
 
 nn.Linear(F,C) 將最後一軸 F 變成 C。`[N,F]→[N,C]`，`[N,T,F]→[N,T,C]`；它不會自動把時間軸平均。權重儲存 `[C,F]`，bias `[C]`。加入 ReLU 等非線性，才能讓多層線性網路超越單一線性映射的表示能力。

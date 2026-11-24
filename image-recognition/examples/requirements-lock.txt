@@ -1,0 +1,24 @@
+# Complete CPU environment resolved and tested 2026-11-23; Python 3.13.13.
+# Install torch/vision from the official CPU index first.
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+filelock==4.2.4
+flatbuffers==25.12.19
+fsspec==2026.9.0
+ml_dtypes==0.7.0
+mpmath==1.3.0
+networkx==3.7
+numpy==2.5.5
+onnx-ir==1.1.0
+onnx==1.23.2
+onnxruntime==1.32.0
+onnxscript==0.7.2
+opencv-python-headless==5.1.0.95
+packaging==26.3
+pillow==13.0.0
+protobuf==7.36.2
+setuptools==78.1.0
+sympy==1.14.0
+torch==2.15.0
+torchvision==0.29.2
+typing_extensions==4.16.0

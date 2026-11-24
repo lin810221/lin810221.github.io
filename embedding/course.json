@@ -65,7 +65,9 @@
       "tags": [
         "表示學習",
         "概念"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「Embedding 是什麼：讓資料成為可以運算的表示」後，在圖上指出「原始物件」的位置或對應關係；用本單元的一個例子說明它與「向量座標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "02-vector-arithmetic",
@@ -76,7 +78,9 @@
         "線性代數",
         "LaTeX"
       ],
-      "example": "01_vectors.py"
+      "example": "01_vectors.py",
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「向量數學：座標、內積、範數與線性組合」後，在圖上指出「向量座標」的位置或對應關係；用本單元的一個例子說明它與「鄰近關係」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "03-similarity",
@@ -86,7 +90,9 @@
       "tags": [
         "Cosine",
         "距離"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「Cosine、Dot Product 與 L2：分數到底代表什麼」後，在圖上指出「鄰近關係」的位置或對應關係；用本單元的一個例子說明它與「相似度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "04-tokens-and-levels",
@@ -96,7 +102,9 @@
       "tags": [
         "Token",
         "Pooling"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「Token、Embedding Table、Hidden State 與句向量」後，在圖上指出「相似度」的位置或對應關係；用本單元的一個例子說明它與「任務驗證」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "05-vector-spaces",
@@ -106,7 +114,9 @@
       "tags": [
         "空間",
         "版本"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「向量空間與相容性：同維度也可能完全不能混用」後，在圖上指出「任務驗證」的位置或對應關係；用本單元的一個例子說明它與「原始物件」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "06-first-run",
@@ -116,7 +126,9 @@
       "tags": [
         "Python",
         "離線"
-      ]
+      ],
+      "visual": "review-01-foundations",
+      "visualTask": "讀完「環境準備與第一個向量工作台」後，在圖上指出「原始物件」的位置或對應關係；用本單元的一個例子說明它與「向量座標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "07-cooccurrence",
@@ -127,7 +139,9 @@
         "Co-occurrence",
         "PPMI"
       ],
-      "example": "03_cooccurrence.py"
+      "example": "03_cooccurrence.py",
+      "visual": "review-02-origins",
+      "visualTask": "讀完「分布假說與共現矩陣：從鄰近文字找規律」後，在圖上指出「查詢向量」的位置或對應關係；用本單元的一個例子說明它與「候選A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "08-sparse-low-rank",
@@ -138,7 +152,9 @@
         "TF–IDF",
         "SVD"
       ],
-      "example": "02_tfidf.py"
+      "example": "02_tfidf.py",
+      "visual": "review-02-origins",
+      "visualTask": "讀完「One-hot、TF–IDF 與低秩分解：稀疏到稠密的橋樑」後，在圖上指出「候選A」的位置或對應關係；用本單元的一個例子說明它與「候選B」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "09-word2vec",
@@ -148,7 +164,9 @@
       "tags": [
         "Word2Vec",
         "Skip-gram"
-      ]
+      ],
+      "visual": "review-02-origins",
+      "visualTask": "讀完「Word2Vec：CBOW、Skip-gram 與兩張向量表」後，在圖上指出「候選B」的位置或對應關係；用本單元的一個例子說明它與「向量長度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "10-negative-sampling",
@@ -159,7 +177,9 @@
         "Gradient",
         "Negative Sampling"
       ],
-      "example": "04_tiny_skipgram.py"
+      "example": "04_tiny_skipgram.py",
+      "visual": "review-02-origins",
+      "visualTask": "讀完「負採樣與梯度：親手更新一個詞向量」後，在圖上指出「向量長度」的位置或對應關係；用本單元的一個例子說明它與「夾角」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "11-glove-fasttext",
@@ -169,7 +189,9 @@
       "tags": [
         "GloVe",
         "fastText"
-      ]
+      ],
+      "visual": "review-02-origins",
+      "visualTask": "讀完「GloVe、fastText 與 OOV：詞的內部也有結構」後，在圖上指出「夾角」的位置或對應關係；用本單元的一個例子說明它與「查詢向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "12-contextual-encoders",
@@ -179,7 +201,9 @@
       "tags": [
         "BERT",
         "Contextual"
-      ]
+      ],
+      "visual": "review-02-origins",
+      "visualTask": "讀完「上下文表示：BERT、Attention 與位置資訊」後，在圖上指出「查詢向量」的位置或對應關係；用本單元的一個例子說明它與「候選A」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "13-sentence-encoders",
@@ -189,7 +213,9 @@
       "tags": [
         "SBERT",
         "Bi-encoder"
-      ]
+      ],
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「Sentence Embedding：Bi-encoder、Cross-encoder 與 Late Interaction」後，在圖上指出「Token ID」的位置或對應關係；用本單元的一個例子說明它與「查表向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "14-pooling",
@@ -200,7 +226,9 @@
         "Mean Pooling",
         "Mask"
       ],
-      "example": "06_pooling.py"
+      "example": "06_pooling.py",
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「Pooling、Attention Mask 與正規化」後，在圖上指出「查表向量」的位置或對應關係；用本單元的一個例子說明它與「上下文混合」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "15-contrastive-learning",
@@ -211,7 +239,9 @@
         "InfoNCE",
         "Temperature"
       ],
-      "example": "05_contrastive.py"
+      "example": "05_contrastive.py",
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「對比學習與 InfoNCE：拉近正樣本、區分負樣本」後，在圖上指出「上下文混合」的位置或對應關係；用本單元的一個例子說明它與「池化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "16-training-pairs",
@@ -221,7 +251,9 @@
       "tags": [
         "Dataset",
         "Triplet"
-      ]
+      ],
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「正負樣本、Triplet、Hard Negative 與 False Negative」後，在圖上指出「池化」的位置或對應關係；用本單元的一個例子說明它與「句向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "17-task-recipes",
@@ -231,7 +263,9 @@
       "tags": [
         "Prompt",
         "Task Type"
-      ]
+      ],
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「任務前綴、Instruction 與 Query／Document 非對稱」後，在圖上指出「句向量」的位置或對應關係；用本單元的一個例子說明它與「Token ID」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "18-multilingual",
@@ -241,7 +275,9 @@
       "tags": [
         "多語",
         "Domain"
-      ]
+      ],
+      "visual": "review-03-sentences",
+      "visualTask": "讀完「多語與跨領域：繁體中文、代碼與真正的跨語對齊」後，在圖上指出「Token ID」的位置或對應關係；用本單元的一個例子說明它與「查表向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "19-choose-model",
@@ -251,7 +287,9 @@
       "tags": [
         "MTEB",
         "選型"
-      ]
+      ],
+      "visual": "review-04-models",
+      "visualTask": "讀完「模型選型：把 Benchmark 變成自己的驗收」後，在圖上指出「Anchor」的位置或對應關係；用本單元的一個例子說明它與「Positive」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "20-openai-api",
@@ -262,7 +300,9 @@
         "OpenAI",
         "API"
       ],
-      "example": "17_openai.py"
+      "example": "17_openai.py",
+      "visual": "review-04-models",
+      "visualTask": "讀完「OpenAI Embeddings：參數、輸出與批次配對」後，在圖上指出「Positive」的位置或對應關係；用本單元的一個例子說明它與「Negative」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "21-gemini-api",
@@ -273,7 +313,9 @@
         "Gemini",
         "Task Type"
       ],
-      "example": "18_gemini.py"
+      "example": "18_gemini.py",
+      "visual": "review-04-models",
+      "visualTask": "讀完「Gemini Embeddings：任務類型、REST 與 SDK 欄位」後，在圖上指出「Negative」的位置或對應關係；用本單元的一個例子說明它與「相似分數」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "22-local-inference",
@@ -284,7 +326,9 @@
         "Local",
         "Sentence Transformers"
       ],
-      "example": "19_local_model.py"
+      "example": "19_local_model.py",
+      "visual": "review-04-models",
+      "visualTask": "讀完「本機 Sentence Transformers：模型下載、離線與 Recipe」後，在圖上指出「相似分數」的位置或對應關係；用本單元的一個例子說明它與「對比目標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "23-batching-errors",
@@ -294,7 +338,9 @@
       "tags": [
         "Batching",
         "Retry"
-      ]
+      ],
+      "visual": "review-04-models",
+      "visualTask": "讀完「批次、長文本、非同步與錯誤處理」後，在圖上指出「對比目標」的位置或對應關係；用本單元的一個例子說明它與「Anchor」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "24-manifest-storage",
@@ -305,7 +351,9 @@
         "Manifest",
         "SQLite"
       ],
-      "example": "16_manifest.py"
+      "example": "16_manifest.py",
+      "visual": "review-04-models",
+      "visualTask": "讀完「Manifest、快取與向量儲存：把表示當成有版本的資料」後，在圖上指出「Anchor」的位置或對應關係；用本單元的一個例子說明它與「Positive」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "25-semantic-search",
@@ -316,7 +364,9 @@
         "Search",
         "Hybrid"
       ],
-      "example": "07_search.py"
+      "example": "07_search.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「語意搜尋：Exact Search、Hybrid 與 RAG 的接點」後，在圖上指出「輸入正規化」的位置或對應關係；用本單元的一個例子說明它與「模型版本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "26-classification",
@@ -327,7 +377,9 @@
         "Classification",
         "Centroid"
       ],
-      "example": "08_classification.py"
+      "example": "08_classification.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「Embedding 分類：最近中心、kNN 與監督式模型」後，在圖上指出「模型版本」的位置或對應關係；用本單元的一個例子說明它與「輸出維度」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "27-clustering",
@@ -338,7 +390,9 @@
         "Clustering",
         "K-means"
       ],
-      "example": "09_clustering.py"
+      "example": "09_clustering.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「Embedding 聚類：K-means、DBSCAN 與群集驗收」後，在圖上指出「輸出維度」的位置或對應關係；用本單元的一個例子說明它與「正規化政策」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "28-deduplication",
@@ -349,7 +403,9 @@
         "Deduplication",
         "Threshold"
       ],
-      "example": "10_thresholds.py"
+      "example": "10_thresholds.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「去重與相似配對：門檻、分組與避免誤合併」後，在圖上指出「正規化政策」的位置或對應關係；用本單元的一個例子說明它與「保存向量」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "29-recommendations",
@@ -360,7 +416,9 @@
         "Recommendation",
         "Profile"
       ],
-      "example": "11_recommendations.py"
+      "example": "11_recommendations.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「內容推薦與個人偏好向量：冷啟動、多樣性與時間」後，在圖上指出「保存向量」的位置或對應關係；用本單元的一個例子說明它與「輸入正規化」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "30-outliers",
@@ -371,7 +429,9 @@
         "Outlier",
         "Drift"
       ],
-      "example": "12_anomalies.py"
+      "example": "12_anomalies.py",
+      "visual": "review-05-applications",
+      "visualTask": "讀完「離群、探索與漂移：距離很遠不代表一定錯誤」後，在圖上指出「輸入正規化」的位置或對應關係；用本單元的一個例子說明它與「模型版本」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "31-evaluation",
@@ -382,7 +442,9 @@
         "Evaluation",
         "Metrics"
       ],
-      "example": "13_evaluation.py"
+      "example": "13_evaluation.py",
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「Embedding 評估：檢索、分類、聚類與資料切分」後，在圖上指出「表示空間」的位置或對應關係；用本單元的一個例子說明它與「相似鄰居」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "32-threshold-calibration",
@@ -392,7 +454,9 @@
       "tags": [
         "Threshold",
         "Calibration"
-      ]
+      ],
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「門檻與校準：Precision–Recall、ROC 與成本」後，在圖上指出「相似鄰居」的位置或對應關係；用本單元的一個例子說明它與「決策邊界」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "33-space-geometry",
@@ -402,7 +466,9 @@
       "tags": [
         "Anisotropy",
         "Hubness"
-      ]
+      ],
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「空間幾何：各向異性、Hubness、中心化與距離集中」後，在圖上指出「決策邊界」的位置或對應關係；用本單元的一個例子說明它與「群集」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "34-projection",
@@ -413,7 +479,9 @@
         "PCA",
         "UMAP"
       ],
-      "example": "14_pca.py"
+      "example": "14_pca.py",
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「PCA、t-SNE 與 UMAP：看見結構，也看見投影限制」後，在圖上指出「群集」的位置或對應關係；用本單元的一個例子說明它與「任務目標」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "35-quantization",
@@ -424,7 +492,9 @@
         "Quantization",
         "int8"
       ],
-      "example": "15_quantization.py"
+      "example": "15_quantization.py",
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「向量量化：float32、int8、Binary 與重打分」後，在圖上指出「任務目標」的位置或對應關係；用本單元的一個例子說明它與「表示空間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "36-dimensionality",
@@ -434,7 +504,9 @@
       "tags": [
         "Matryoshka",
         "維度"
-      ]
+      ],
+      "visual": "review-06-geometry",
+      "visualTask": "讀完「維度縮減：PCA、投影與 Matryoshka Representation」後，在圖上指出「表示空間」的位置或對應關係；用本單元的一個例子說明它與「相似鄰居」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "37-clip",
@@ -444,7 +516,9 @@
       "tags": [
         "CLIP",
         "Multimodal"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「CLIP 與跨模態空間：文字如何找圖片」後，在圖上指出「原始空間」的位置或對應關係；用本單元的一個例子說明它與「投影」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "38-multimodal-documents",
@@ -454,7 +528,9 @@
       "tags": [
         "Audio",
         "Document"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「圖片、音訊、影片與文件：選對表示單位」後，在圖上指出「投影」的位置或對應關係；用本單元的一個例子說明它與「低維表示」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "39-finetuning-data",
@@ -464,7 +540,9 @@
       "tags": [
         "Fine-tuning",
         "Data"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「領域微調前：資料定義、切分、授權與基線」後，在圖上指出「低維表示」的位置或對應關係；用本單元的一個例子說明它與「量化網格」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "40-training-recipe",
@@ -474,7 +552,9 @@
       "tags": [
         "Trainer",
         "Checkpoint"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「微調實作路線：Loss、Batch、Trainer 與 Checkpoint」後，在圖上指出「量化網格」的位置或對應關係；用本單元的一個例子說明它與「重建誤差」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "41-distillation",
@@ -484,7 +564,9 @@
       "tags": [
         "Distillation",
         "Compression"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「蒸餾與壓縮：讓較小模型學到可用關係」後，在圖上指出「重建誤差」的位置或對應關係；用本單元的一個例子說明它與「原始空間」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "42-privacy-bias",
@@ -494,7 +576,9 @@
       "tags": [
         "Privacy",
         "Bias"
-      ]
+      ],
+      "visual": "review-07-advanced",
+      "visualTask": "讀完「隱私、偏誤與對抗：向量不是匿名化資料」後，在圖上指出「原始空間」的位置或對應關係；用本單元的一個例子說明它與「投影」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "43-indexes-capacity",
@@ -504,7 +588,9 @@
       "tags": [
         "ANN",
         "HNSW"
-      ]
+      ],
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「索引與容量：Exact、HNSW、過濾與記憶體估算」後，在圖上指出「資料切分」的位置或對應關係；用本單元的一個例子說明它與「模型與前處理」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "44-migration",
@@ -514,7 +600,9 @@
       "tags": [
         "Migration",
         "Versioning"
-      ]
+      ],
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「版本遷移與服務契約：換模型不只改一行名稱」後，在圖上指出「模型與前處理」的位置或對應關係；用本單元的一個例子說明它與「向量檢查」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "45-cost-monitoring",
@@ -524,7 +612,9 @@
       "tags": [
         "Latency",
         "Monitoring"
-      ]
+      ],
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「吞吐、成本與監控：知道時間和資源花在哪裡」後，在圖上指出「向量檢查」的位置或對應關係；用本單元的一個例子說明它與「下游評估」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "46-capstone",
@@ -535,7 +625,9 @@
         "Capstone",
         "實作"
       ],
-      "example": "20_workbench.py"
+      "example": "20_workbench.py",
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「完整專案：自己的 Embedding 工作台」後，在圖上指出「下游評估」的位置或對應關係；用本單元的一個例子說明它與「版本更新」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "47-exercises",
@@ -545,7 +637,9 @@
       "tags": [
         "Exercises",
         "驗收"
-      ]
+      ],
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「分級練習與解答：從數學驗證到模型比較」後，在圖上指出「版本更新」的位置或對應關係；用本單元的一個例子說明它與「資料切分」的關係，再寫出一個適用條件或限制。"
     },
     {
       "id": "48-reference",
@@ -555,7 +649,109 @@
       "tags": [
         "Reference",
         "參數"
-      ]
+      ],
+      "visual": "review-08-engineering",
+      "visualTask": "讀完「名詞、參數、公式與官方資料速查」後，在圖上指出「資料切分」的位置或對應關係；用本單元的一個例子說明它與「模型與前處理」的關係，再寫出一個適用條件或限制。"
     }
+  ],
+  "visuals": [
+    {
+      "id": "review-01-foundations",
+      "file": "assets/figures/review-01-foundations.svg",
+      "title": "把物件映射到向量空間",
+      "alt": "把物件映射到向量空間；向量座標是模型表示，不自動等於人類語意；同一模型與前處理才有可比較的座標系。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "向量座標是模型表示，不自動等於人類語意；同一模型與前處理才有可比較的座標系。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "foundations",
+      "kind": "scatter",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-02-origins",
+      "file": "assets/figures/review-02-origins.svg",
+      "title": "內積Cosine與距離",
+      "alt": "內積Cosine與距離；Cosine比較方向，內積也受長度影響；L2正規化後的關係需明確核對。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "Cosine比較方向，內積也受長度影響；L2正規化後的關係需明確核對。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "origins",
+      "kind": "vectors",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-03-sentences",
+      "file": "assets/figures/review-03-sentences.svg",
+      "title": "從字詞到上下文表示",
+      "alt": "從字詞到上下文表示；詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。",
+      "caption": "詞向量與句向量不是同一輸出單位；池化策略和mask會影響最終表示。",
+      "group": "sentences",
+      "kind": "matrix",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-04-models",
+      "file": "assets/figures/review-04-models.svg",
+      "title": "對比學習拉近與拉遠",
+      "alt": "對比學習拉近與拉遠；正負對的語意由資料與任務定義；低loss不自動證明所有下游任務變好。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "正負對的語意由資料與任務定義；低loss不自動證明所有下游任務變好。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "models",
+      "kind": "contrast",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-05-applications",
+      "file": "assets/figures/review-05-applications.svg",
+      "title": "模型呼叫與向量契約",
+      "alt": "模型呼叫與向量契約；維度相同不代表不同模型可共用索引；請求、錯誤與批次需按實際服務核對。",
+      "caption": "維度相同不代表不同模型可共用索引；請求、錯誤與批次需按實際服務核對。",
+      "group": "applications",
+      "kind": "flow",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-06-geometry",
+      "file": "assets/figures/review-06-geometry.svg",
+      "title": "搜尋分類聚類與推薦",
+      "alt": "搜尋分類聚類與推薦；同一向量可服務多任務，評估方式仍不同；鄰近不保證因果、同身分或同一用途。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "同一向量可服務多任務，評估方式仍不同；鄰近不保證因果、同身分或同一用途。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "geometry",
+      "kind": "scatter",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-07-advanced",
+      "file": "assets/figures/review-07-advanced.svg",
+      "title": "降維與量化會丟失資訊",
+      "alt": "降維與量化會丟失資訊；視覺化距離不一定保留原始高維鄰近；壓縮同時評估品質、容量和計算。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "caption": "視覺化距離不一定保留原始高維鄰近；壓縮同時評估品質、容量和計算。座標圖為教學算例，沒有使用實測或臨床資料。",
+      "group": "advanced",
+      "kind": "projection",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    },
+    {
+      "id": "review-08-engineering",
+      "file": "assets/figures/review-08-engineering.svg",
+      "title": "表示學習的完整驗收",
+      "alt": "表示學習的完整驗收；不只測維度和非零值，也測任務效果；模型升版時重建與回退策略需明確。",
+      "caption": "不只測維度和非零值，也測任務效果；模型升版時重建與回退策略需明確。",
+      "group": "engineering",
+      "kind": "lanes",
+      "origin": "Original instructional diagram, 2026-11-24",
+      "sourceIds": []
+    }
+  ],
+  "visualPresentation": "chapter",
+  "visualUpdated": "2026-11-24",
+  "studyBundle": "embedding-study.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "embedding-study.zip"
   ]
 }

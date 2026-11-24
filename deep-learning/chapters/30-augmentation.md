@@ -2,6 +2,16 @@
 
 把不變性假設寫進資料流程，並檢查soft target與loss的一致性。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「資料增強與Mixup：先定義哪些變換保留答案」後，在圖上指出「正規化」的位置或對應關係；用本單元的一個例子說明它與「過擬合」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 增強是一種假設
 
 水平翻轉可能保留某些影像類別，旋轉文字可能改變字義；時間重排可能破壞序列任務，顏色改動可能移除關鍵訊號。本課橫線／直線label在90度旋轉後會互換，所以不能盲目標成label-preserving。每種變換都要看任務。

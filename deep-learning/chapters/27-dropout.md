@@ -2,6 +2,16 @@
 
 用inverted scaling手算平均保持，了解它對學習訊號的擾動。
 
+<!-- chapter-visual:start -->
+## 圖解與讀圖任務
+
+![泛化正則化與正規化；Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。](assets/figures/review-05-regularization.svg)
+
+> **圖解｜泛化正則化與正規化**：Dropout、weight decay與Norm不做同一件事；比較訓練及保留資料，不只看單條曲線。
+
+**本單元讀圖任務**：讀完「Dropout：隨機遮蔽、期望與推論模式」後，在圖上指出「正規化」的位置或對應關係；用本單元的一個例子說明它與「過擬合」的關係，再寫出一個適用條件或限制。
+<!-- chapter-visual:end -->
+
 ## 訓練期間隨機關閉部分值
 
 Dropout以某機率將activation設零，降低模型對固定共適應模式的依賴。PyTorch的p是丟棄機率，不是保留機率。inverted dropout在train將保留下來的值除1-p，eval直接保持原值。
