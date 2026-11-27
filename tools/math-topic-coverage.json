@@ -3418,6 +3418,89 @@
         ]
       },
       "policy": "座標、IoU、編輯距離、對比損失、MaxSim、評估、風險覆蓋、取樣與資源預算各節保留公式、符號、分母、條件和算例；API參數維持程式碼。"
+    },
+    "fastapi": {
+      "units": 96,
+      "formulaSections": {
+        "022-deadlines": [
+          {
+            "heading": "總預算的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "024-bounded-retries": [
+          {
+            "heading": "指數退避與上限",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "029-idempotency-identity": [
+          {
+            "heading": "兩個不同的識別",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "045-context-budget": [
+          {
+            "heading": "上下文有共同預算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "052-lease-fencing": [
+          {
+            "heading": "提交條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "056-sse-replay": [
+          {
+            "heading": "游標的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "062-token-bucket": [
+          {
+            "heading": "桶的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "063-little-capacity": [
+          {
+            "heading": "平均關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "065-health-slo": [
+          {
+            "heading": "最近秩百分位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "088-horizontal-scaling": [
+          {
+            "heading": "記憶體成本的簡式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "092-formula-reference": [
+          {
+            "heading": "成本的明確口徑",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "期限、重試、上下文預算、冪等識別、SSE游標、限流、Little定律、尾延遲與程序記憶體使用LaTeX定義符號、範圍、假設及算例；API程式碼保留程式碼格式。"
     }
   }
 }

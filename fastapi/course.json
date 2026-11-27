@@ -1,0 +1,1745 @@
+{
+  "slug": "fastapi",
+  "title": "FastAPI 與 AI 後端工程完整教學",
+  "shortTitle": "FastAPI 與 AI 後端工程",
+  "updated": "2026-11-27",
+  "baseline": "FastAPI 0.165.0 · Python 3.15.2 · SQLAlchemy 2.1.9",
+  "footerLabel": "THE FASTAPI & AI BACKEND FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "exampleFileExtensions": [
+    ".yaml",
+    ".ini",
+    ".html",
+    ".css",
+    ".js"
+  ],
+  "exampleFileNames": [
+    "Dockerfile",
+    ".dockerignore"
+  ],
+  "exampleExcludeDirectories": [
+    ".runtime"
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json",
+    "assets/figures/README.md",
+    "examples/VERIFICATION.md",
+    "examples/RUNBOOK.md",
+    "examples/DATA_DICTIONARY.md"
+  ],
+  "visualPresentation": "custom",
+  "minimumDisplayEquations": 4,
+  "searchHint": "搜尋 ASGI、Depends、SSE、租戶、交易、lease、deadline…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從零理解 HTTP 與 ASGI",
+      "description": "請求、環境、伺服器與第一份契約。"
+    },
+    {
+      "id": "contracts",
+      "number": "02",
+      "title": "路由與型別契約",
+      "description": "參數、Pydantic、輸出、錯誤與OpenAPI。"
+    },
+    {
+      "id": "dependencies",
+      "number": "03",
+      "title": "依賴與生命週期",
+      "description": "依賴圖、清理時機、共享資源與測試替換。"
+    },
+    {
+      "id": "concurrency",
+      "number": "04",
+      "title": "非同步與上游連線",
+      "description": "事件迴圈、執行緒、連線池、期限與取消。"
+    },
+    {
+      "id": "database",
+      "number": "05",
+      "title": "資料庫與交易",
+      "description": "SQLAlchemy、migration、分頁、衝突與非同步Session。"
+    },
+    {
+      "id": "security",
+      "number": "06",
+      "title": "身分、權限與信任邊界",
+      "description": "Bearer、JWT、OIDC、租戶、CORS與秘密。"
+    },
+    {
+      "id": "documents",
+      "number": "07",
+      "title": "文件 API 與可信任資料",
+      "description": "上傳、位元組、編碼、檢索與引用。"
+    },
+    {
+      "id": "providers",
+      "number": "08",
+      "title": "模型供應商與可靠呼叫",
+      "description": "介面、結構化輸出、預算、重試與品質。"
+    },
+    {
+      "id": "jobs",
+      "number": "09",
+      "title": "持久化工作與恢復",
+      "description": "202、狀態、claim、lease、fencing與取消。"
+    },
+    {
+      "id": "streaming",
+      "number": "10",
+      "title": "SSE、JSONL 與 WebSocket",
+      "description": "事件框架、回放、背壓與客戶端。"
+    },
+    {
+      "id": "reliability",
+      "number": "11",
+      "title": "容量與可觀測性",
+      "description": "限流、並行、快取、健康檢查與尾延遲。"
+    },
+    {
+      "id": "testing",
+      "number": "12",
+      "title": "從單元到故障驗收",
+      "description": "ASGI、非同步、並行、契約與真實TCP。"
+    },
+    {
+      "id": "project",
+      "number": "13",
+      "title": "RelayDesk 完整實作",
+      "description": "三個終端機，從文件到可回放答案。"
+    },
+    {
+      "id": "delivery",
+      "number": "14",
+      "title": "封裝、部署與維運",
+      "description": "程序、容器、CI、遷移、備份與交付。"
+    },
+    {
+      "id": "performance",
+      "number": "15",
+      "title": "效能、擴充與成本",
+      "description": "剖析、模型服務、連線池、跨程序狀態與保留。"
+    },
+    {
+      "id": "reference",
+      "number": "16",
+      "title": "整合、練習與參考",
+      "description": "優雅關閉、公式、排錯與跨課路線。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-http-contract",
+      "group": "foundations",
+      "title": "從一個 HTTP 請求開始",
+      "summary": "先看懂客戶端到底送了什麼，以及後端承諾回傳什麼。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "http-contract"
+      ],
+      "visual": "fa-01",
+      "visualTask": "「從一個 HTTP 請求開始」讀圖：指出202與200各自證明的事，找出真正提交資料的邊界。再用本節的條件回答：202代表模型已經完成嗎？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "002-asgi-lifecycle",
+      "group": "foundations",
+      "title": "ASGI、FastAPI、Starlette 與 Uvicorn",
+      "summary": "將協定、框架與伺服器的責任拆開，排錯才找得到層次。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "asgi-lifecycle"
+      ],
+      "visual": "fa-01",
+      "visualTask": "「ASGI、FastAPI、Starlette 與 Uvicorn」讀圖：指出202與200各自證明的事，找出真正提交資料的邊界。再用本節的條件回答：TestClient成功能證明反向代理不會緩衝SSE嗎？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "003-environment",
+      "group": "foundations",
+      "title": "安裝最新穩定版並固定環境",
+      "summary": "查核版本、建立隔離環境、保存完整鎖版，再開始第一個專案。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "environment"
+      ],
+      "visual": "fa-01",
+      "visualTask": "「安裝最新穩定版並固定環境」讀圖：指出202與200各自證明的事，找出真正提交資料的邊界。再用本節的條件回答：為何不能只寫pip install fastapi？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "004-first-server",
+      "group": "foundations",
+      "title": "啟動第一個伺服器與互動文件",
+      "summary": "先跑通健康檢查，再理解開發重載和正式程序的差別。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "first-server"
+      ],
+      "visual": "fa-02",
+      "visualTask": "「啟動第一個伺服器與互動文件」讀圖：分辨HTTP請求、WebSocket連線與伺服器生命週期。再用本節的條件回答：app:app找不到時先檢查什麼？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "005-router-structure",
+      "group": "foundations",
+      "title": "用 APIRouter 組織版本與責任",
+      "summary": "模組化應保留清楚的依賴方向，避免所有程式塞進入口檔。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "router-structure"
+      ],
+      "visual": "fa-02",
+      "visualTask": "「用 APIRouter 組織版本與責任」讀圖：分辨HTTP請求、WebSocket連線與伺服器生命週期。再用本節的條件回答：為何worker不應匯入某個HTTP請求的Session？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "006-debugging-basics",
+      "group": "foundations",
+      "title": "讀懂第一個錯誤並建立排查順序",
+      "summary": "先分清連不上、路由不符、驗證失敗與服務規則拒絕。",
+      "tags": [
+        "FastAPI",
+        "foundations",
+        "debugging-basics"
+      ],
+      "visual": "fa-02",
+      "visualTask": "「讀懂第一個錯誤並建立排查順序」讀圖：分辨HTTP請求、WebSocket連線與伺服器生命週期。再用本節的條件回答：422和500在排錯上最大的差別是什麼？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "007-path-query",
+      "group": "contracts",
+      "title": "Path 與 Query：把參數放在正確位置",
+      "summary": "資源識別、篩選與分頁各有自己的契約。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "path-query"
+      ],
+      "visual": "fa-03",
+      "visualTask": "「Path 與 Query：把參數放在正確位置」讀圖：為型別、權限與事實三種錯誤安排不同檢查。再用本節的條件回答：要求十萬筆資料後，能等資料庫查完再裁成50筆嗎？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "008-body-model",
+      "group": "contracts",
+      "title": "Request Body 與 Pydantic 模型",
+      "summary": "把輸入契約寫成明確型別，而不是到處使用不受限dict。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "body-model"
+      ],
+      "visual": "fa-03",
+      "visualTask": "「Request Body 與 Pydantic 模型」讀圖：為型別、權限與事實三種錯誤安排不同檢查。再用本節的條件回答：title是合法字串，就能相信tenant也是使用者自己的嗎？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "009-strict-validation",
+      "group": "contracts",
+      "title": "Strict、欄位驗證與正規化",
+      "summary": "明確決定哪些轉換能做，哪些應直接拒絕。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "strict-validation"
+      ],
+      "visual": "fa-03",
+      "visualTask": "「Strict、欄位驗證與正規化」讀圖：為型別、權限與事實三種錯誤安排不同檢查。再用本節的條件回答：把文件ID排序永遠正確嗎？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "010-response-model",
+      "group": "contracts",
+      "title": "Response Model 與 DTO",
+      "summary": "控制公開輸出，避免把內部資料模型當成對外契約。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "response-model"
+      ],
+      "visual": "fa-04",
+      "visualTask": "「Response Model 與 DTO」讀圖：用反例分辨認證、授權、衝突與輸入錯誤。再用本節的條件回答：response model會自動檢查引用屬於目前租戶嗎？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "011-error-contract",
+      "group": "contracts",
+      "title": "設計可追蹤又不洩漏秘密的錯誤",
+      "summary": "狀態碼、錯誤代碼與request ID一起構成可操作的失敗介面。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "error-contract"
+      ],
+      "visual": "fa-04",
+      "visualTask": "「設計可追蹤又不洩漏秘密的錯誤」讀圖：用反例分辨認證、授權、衝突與輸入錯誤。再用本節的條件回答：為何不能直接把error.errors()回傳？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "012-openapi",
+      "group": "contracts",
+      "title": "OpenAPI 是可驗證的介面文件",
+      "summary": "讓安全宣告、狀態碼與串流媒體型別和實際行為一致。",
+      "tags": [
+        "FastAPI",
+        "contracts",
+        "openapi"
+      ],
+      "visual": "fa-04",
+      "visualTask": "「OpenAPI 是可驗證的介面文件」讀圖：用反例分辨認證、授權、衝突與輸入錯誤。再用本節的條件回答：新增自訂response class後，只測端點200夠嗎？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "013-dependency-graph",
+      "group": "dependencies",
+      "title": "Depends：把依賴關係寫成可檢查的圖",
+      "summary": "從Bearer到principal再到editor，重用的是責任清楚的可呼叫物件。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "dependency-graph"
+      ],
+      "visual": "fa-05",
+      "visualTask": "「Depends：把依賴關係寫成可檢查的圖」讀圖：追蹤兩條路徑為何能重用同一依賴結果。再用本節的條件回答：Depends快取可以存放上一次使用者的權限嗎？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "014-lifespan",
+      "group": "dependencies",
+      "title": "用 lifespan 管理共享連線與啟動",
+      "summary": "建立一次、使用多次、在finally中可靠關閉。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "lifespan"
+      ],
+      "visual": "fa-05",
+      "visualTask": "「用 lifespan 管理共享連線與啟動」讀圖：追蹤兩條路徑為何能重用同一依賴結果。再用本節的條件回答：把AsyncClient建在每次請求裡有什麼成本？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "015-yield-dependencies",
+      "group": "dependencies",
+      "title": "yield 依賴與資源所有權",
+      "summary": "取得資源與歸還資源必須屬於同一個清楚的範圍。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "yield-dependencies"
+      ],
+      "visual": "fa-05",
+      "visualTask": "「yield 依賴與資源所有權」讀圖：追蹤兩條路徑為何能重用同一依賴結果。再用本節的條件回答：路由回傳generator後，為何with資源可能已關閉？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "016-dependency-scope",
+      "group": "dependencies",
+      "title": "function 與 request scope 的串流差異",
+      "summary": "清理時機會改變串流是否還能使用依賴資源。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "dependency-scope"
+      ],
+      "visual": "fa-06",
+      "visualTask": "「function 與 request scope 的串流差異」讀圖：指出在第一個chunk前關閉資源時，哪些後續操作會失效。再用本節的條件回答：request scope能解決慢SSE占住資料庫連線嗎？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "017-dependency-concurrency",
+      "group": "dependencies",
+      "title": "原生 Depends 並行限制",
+      "summary": "使用最新max_concurrency功能時，要知道共享範圍與清理邊界。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "dependency-concurrency"
+      ],
+      "visual": "fa-06",
+      "visualTask": "「原生 Depends 並行限制」讀圖：指出在第一個chunk前關閉資源時，哪些後續操作會失效。再用本節的條件回答：兩個worker各設並行上限二，全站一定最多兩個嗎？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "018-dependency-overrides",
+      "group": "dependencies",
+      "title": "測試替換依賴與 app factory",
+      "summary": "以明確替換縮小測試範圍，同時保留真實認證測試。",
+      "tags": [
+        "FastAPI",
+        "dependencies",
+        "dependency-overrides"
+      ],
+      "visual": "fa-06",
+      "visualTask": "「測試替換依賴與 app factory」讀圖：指出在第一個chunk前關閉資源時，哪些後續操作會失效。再用本節的條件回答：為何override成功不能當作認證通過？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "019-async-await",
+      "group": "concurrency",
+      "title": "async def 與 def 的選擇",
+      "summary": "先辨識等待型與阻塞型操作，再決定函式放在哪裡執行。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "async-await"
+      ],
+      "visual": "fa-07",
+      "visualTask": "「async def 與 def 的選擇」讀圖：在等待區間插入第二個請求，再比較阻塞版本。再用本節的條件回答：async路由裡呼叫同步requests.get會自動進執行緒池嗎？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "020-threadpool",
+      "group": "concurrency",
+      "title": "同步程式、執行緒池與競爭",
+      "summary": "把阻塞移出事件迴圈後，仍要管理共享狀態與有限容量。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "threadpool"
+      ],
+      "visual": "fa-07",
+      "visualTask": "「同步程式、執行緒池與競爭」讀圖：在等待區間插入第二個請求，再比較阻塞版本。再用本節的條件回答：把同一Session包在to_thread中呼叫兩次可以並行嗎？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "021-http-client",
+      "group": "concurrency",
+      "title": "HTTPX 連線池與共享客戶端",
+      "summary": "持久化client、連線上限和明確信任設定一起管理上游請求。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "http-client"
+      ],
+      "visual": "fa-07",
+      "visualTask": "「HTTPX 連線池與共享客戶端」讀圖：在等待區間插入第二個請求，再比較阻塞版本。再用本節的條件回答：每個連線池上限八條且有三個worker，遠端最多一定八條連線嗎？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "022-deadlines",
+      "group": "concurrency",
+      "title": "局部逾時與整體 deadline",
+      "summary": "每段等待有限，整次工作也必須有總預算。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "deadlines"
+      ],
+      "visual": "fa-08",
+      "visualTask": "「局部逾時與整體 deadline」讀圖：把退避也算進總預算，說明重試次數上限的作用。再用本節的條件回答：兩次各5秒timeout，整次一定不超過5秒嗎？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "023-cancellation",
+      "group": "concurrency",
+      "title": "取消、清理與外部副作用",
+      "summary": "取消等待和撤銷已發生的工作是不同問題。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "cancellation"
+      ],
+      "visual": "fa-08",
+      "visualTask": "「取消、清理與外部副作用」讀圖：把退避也算進總預算，說明重試次數上限的作用。再用本節的條件回答：關掉瀏覽器的SSE連線會自動取消持久化工作嗎？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "024-bounded-retries",
+      "group": "concurrency",
+      "title": "有限重試、退避與重試放大",
+      "summary": "只在明確的暫時性錯誤上重試，並保留次數與時間上限。",
+      "tags": [
+        "FastAPI",
+        "concurrency",
+        "bounded-retries"
+      ],
+      "visual": "fa-08",
+      "visualTask": "「有限重試、退避與重試放大」讀圖：把退避也算進總預算，說明重試次數上限的作用。再用本節的條件回答：模型POST在本機timeout後，可以直接當成沒扣費再重試嗎？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "025-orm-models",
+      "group": "database",
+      "title": "SQLAlchemy 模型與資料庫約束",
+      "summary": "ORM讓資料可操作；真正不能違反的規則仍要交給資料庫。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "orm-models"
+      ],
+      "visual": "fa-09",
+      "visualTask": "「SQLAlchemy 模型與資料庫約束」讀圖：在flush失敗處標記回滾，並指出回應能發布的時點。再用本節的條件回答：為何檢查「沒有同名工作」後再新增仍可能重複？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "026-sessions-transactions",
+      "group": "database",
+      "title": "Session、交易與回滾",
+      "summary": "短生命週期Session管理一組一致的修改，不能當成全域共享物件。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "sessions-transactions"
+      ],
+      "visual": "fa-09",
+      "visualTask": "「Session、交易與回滾」讀圖：在flush失敗處標記回滾，並指出回應能發布的時點。再用本節的條件回答：flush成功是否足以向客戶端保證永久保存？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "027-migrations",
+      "group": "database",
+      "title": "真實 Alembic migration 與模型一致性",
+      "summary": "把schema演進保存成可重跑的版本，而不是每次啟動隨意create_all。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "migrations"
+      ],
+      "visual": "fa-09",
+      "visualTask": "「真實 Alembic migration 與模型一致性」讀圖：在flush失敗處標記回滾，並指出回應能發布的時點。再用本節的條件回答：revision內直接呼叫目前Base.metadata.create_all有什麼問題？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "028-pagination",
+      "group": "database",
+      "title": "查詢、穩定排序與 keyset 分頁",
+      "summary": "先限制授權範圍，再排序和取頁，避免資料與效能一起出錯。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "pagination"
+      ],
+      "visual": "fa-10",
+      "visualTask": "「查詢、穩定排序與 keyset 分頁」讀圖：比較先篩租戶與取頁後才過濾的不同結果。再用本節的條件回答：用created_at排序卻只記錄時間游標有什麼風險？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "029-idempotency-identity",
+      "group": "database",
+      "title": "冪等鍵、請求指紋與衝突",
+      "summary": "同一次意圖重送找回原工作，不同意圖共用鍵則拒絕。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "idempotency-identity"
+      ],
+      "visual": "fa-10",
+      "visualTask": "「冪等鍵、請求指紋與衝突」讀圖：比較先篩租戶與取頁後才過濾的不同結果。再用本節的條件回答：同一鍵但問題從warranty改成delivery，應回原答案嗎？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "030-async-session",
+      "group": "database",
+      "title": "AsyncSession 與非同步驅動",
+      "summary": "非同步資料庫需要對應驅動，不能只替換函式名稱。",
+      "tags": [
+        "FastAPI",
+        "database",
+        "async-session"
+      ],
+      "visual": "fa-10",
+      "visualTask": "「AsyncSession 與非同步驅動」讀圖：比較先篩租戶與取頁後才過濾的不同結果。再用本節的條件回答：gather十個查詢時可以共用一個AsyncSession嗎？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "031-bearer-tokens",
+      "group": "security",
+      "title": "Bearer token、摘要保存與撤銷",
+      "summary": "先做好服務憑證的生命週期，再談更複雜的登入整合。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "bearer-tokens"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「Bearer token、摘要保存與撤銷」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：為何隨機API token能存SHA-256摘要，而使用者密碼不宜？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "032-jwt-oidc",
+      "group": "security",
+      "title": "JWT、OAuth 與 OIDC 的正確分工",
+      "summary": "JWT是承載格式，OAuth是授權框架，OIDC提供登入身分層。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "jwt-oidc"
+      ],
+      "visual": "fa-12",
+      "visualTask": "「JWT、OAuth 與 OIDC 的正確分工」讀圖：分辨登入結果、API受眾與資料擁有者三種身分關係。再用本節的條件回答：拿到合法簽章的ID token，就能讓它呼叫任意API嗎？",
+      "example": "lab26.py"
+    },
+    {
+      "id": "033-tenant-authorization",
+      "group": "security",
+      "title": "角色與租戶隔離：防止物件層越權",
+      "summary": "能猜到ID不是存取權，每次查詢都要保留授權條件。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "tenant-authorization"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「角色與租戶隔離：防止物件層越權」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：UUID足夠長是否就不需要租戶條件？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "034-cors-host-csrf",
+      "group": "security",
+      "title": "CORS、Host 與 CSRF 不要混用",
+      "summary": "瀏覽器來源政策和伺服器授權是不同層的機制。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "cors-host-csrf"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「CORS、Host 與 CSRF 不要混用」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：不在CORS allowlist的curl客戶端一定會被拒絕嗎？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "035-untrusted-inputs",
+      "group": "security",
+      "title": "檔案、URL 與文件指令的信任邊界",
+      "summary": "資料不能自行變成檔案路徑、網路目的地或工具權限。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "untrusted-inputs"
+      ],
+      "visual": "fa-13",
+      "visualTask": "「檔案、URL 與文件指令的信任邊界」讀圖：指出哪一層測量位元組，哪一層測量Unicode字元。再用本節的條件回答：把「不要讀內網」寫進prompt能防止SSRF嗎？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "036-settings-secrets",
+      "group": "security",
+      "title": "設定、秘密與可重現部署",
+      "summary": "將可公開設定與秘密分開，避免匯入時讀取並洩漏憑證。",
+      "tags": [
+        "FastAPI",
+        "security",
+        "settings-secrets"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「設定、秘密與可重現部署」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：健康檢查回傳所有環境變數方便除錯，可以嗎？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "037-document-contract",
+      "group": "documents",
+      "title": "文件 API 的領域契約",
+      "summary": "先限定文件種類與輸出責任，再逐步擴充解析能力。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "document-contract"
+      ],
+      "visual": "fa-13",
+      "visualTask": "「文件 API 的領域契約」讀圖：指出哪一層測量位元組，哪一層測量Unicode字元。再用本節的條件回答：支援文字上傳後，加上.pdf副檔名就算支援PDF嗎？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "038-multipart",
+      "group": "documents",
+      "title": "Multipart、UploadFile 與檔案清理",
+      "summary": "從真的multipart請求讀資料，所有離開路徑都要關閉上傳檔。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "multipart"
+      ],
+      "visual": "fa-13",
+      "visualTask": "「Multipart、UploadFile 與檔案清理」讀圖：指出哪一層測量位元組，哪一層測量Unicode字元。再用本節的條件回答：UploadFile用了暫存檔，就可以不限制上傳大小嗎？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "039-body-form-limits",
+      "group": "documents",
+      "title": "最新請求大小與表單限制",
+      "summary": "整體body、檔案數、文字欄位數與文字部分大小分開設定。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "body-form-limits"
+      ],
+      "visual": "fa-13",
+      "visualTask": "「最新請求大小與表單限制」讀圖：指出哪一層測量位元組，哪一層測量Unicode字元。再用本節的條件回答：文字part上限8192是否保證上傳檔不超過8192位元組？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "040-unicode-dedup",
+      "group": "documents",
+      "title": "Unicode、原文保存與內容去重",
+      "summary": "位元組、字元和視覺文字不是同一種長度。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "unicode-dedup"
+      ],
+      "visual": "fa-14",
+      "visualTask": "「Unicode、原文保存與內容去重」讀圖：用原文切片驗證引用，再找出仍需人工或語意評估的部分。再用本節的條件回答：前面有兩個中文字加換行，後面句子的Python起點是多少？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "041-retrieval-boundaries",
+      "group": "documents",
+      "title": "受權限限制的檢索與抽句基準",
+      "summary": "先建立能檢查的離線基準，再替換更強的語意模型。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "retrieval-boundaries"
+      ],
+      "visual": "fa-14",
+      "visualTask": "「受權限限制的檢索與抽句基準」讀圖：用原文切片驗證引用，再找出仍需人工或語意評估的部分。再用本節的條件回答：離線抽句能回答「保固」和warranty是同義詞嗎？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "042-evidence-validation",
+      "group": "documents",
+      "title": "結構化答案與精確引用核對",
+      "summary": "先驗schema，再驗文件、區間與原文，最後評估答案是否受到支持。",
+      "tags": [
+        "FastAPI",
+        "documents",
+        "evidence-validation"
+      ],
+      "visual": "fa-14",
+      "visualTask": "「結構化答案與精確引用核對」讀圖：用原文切片驗證引用，再找出仍需人工或語意評估的部分。再用本節的條件回答：引用字串存在，能證明模型對該字串的解讀一定正確嗎？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "043-provider-interface",
+      "group": "providers",
+      "title": "Provider 介面、離線基準與測試替身",
+      "summary": "讓供應商差異停留在邊界，不滲透到工作與權限規則。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "provider-interface"
+      ],
+      "visual": "fa-15",
+      "visualTask": "「Provider 介面、離線基準與測試替身」讀圖：說明mock成功、結構成功與答案正確不能互相代替。再用本節的條件回答：MockTransport測試通過，能標示模型品質已實測嗎？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "044-openai-adapter",
+      "group": "providers",
+      "title": "以 Responses API 接入可控的模型呼叫",
+      "summary": "明確model、schema、期限與位元組預算，並處理拒答和未完成。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "openai-adapter"
+      ],
+      "visual": "fa-15",
+      "visualTask": "「以 Responses API 接入可控的模型呼叫」讀圖：說明mock成功、結構成功與答案正確不能互相代替。再用本節的條件回答：max_output_tokens設定後，為何還限制回應bytes？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "045-context-budget",
+      "group": "providers",
+      "title": "Context、輸出上限與成本預算",
+      "summary": "模型參數是服務契約的一部分，不能只暴露任意數字給客戶端。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "context-budget"
+      ],
+      "visual": "fa-15",
+      "visualTask": "「Context、輸出上限與成本預算」讀圖：說明mock成功、結構成功與答案正確不能互相代替。再用本節的條件回答：中文文字長度4096是否等於4096個token？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "046-provider-failures",
+      "group": "providers",
+      "title": "上游錯誤、斷路與拒絕服務政策",
+      "summary": "把暫時不可用、永久錯誤與不符合輸出契約分開處理。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "provider-failures"
+      ],
+      "visual": "fa-16",
+      "visualTask": "「上游錯誤、斷路與拒絕服務政策」讀圖：在回應遺失而遠端已扣費的時間點，分析重試風險。再用本節的條件回答：沒有斷路器時，增加十次重試能保證上游恢復嗎？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "047-retry-billing",
+      "group": "providers",
+      "title": "模型重試、冪等與用量對帳",
+      "summary": "本地只建立一份工作，不代表遠端只執行或計費一次。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "retry-billing"
+      ],
+      "visual": "fa-16",
+      "visualTask": "「模型重試、冪等與用量對帳」讀圖：在回應遺失而遠端已扣費的時間點，分析重試風險。再用本節的條件回答：fencing成功是否表示兩個worker沒有重複呼叫模型？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "048-evaluation",
+      "group": "providers",
+      "title": "把後端可靠性和模型品質分開評估",
+      "summary": "HTTP成功率、引用正確、拒答品質與成本各有自己的分母。",
+      "tags": [
+        "FastAPI",
+        "providers",
+        "evaluation"
+      ],
+      "visual": "fa-15",
+      "visualTask": "「把後端可靠性和模型品質分開評估」讀圖：說明mock成功、結構成功與答案正確不能互相代替。再用本節的條件回答：succeeded比例提高，是否就表示模型回答更正確？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "049-job-state",
+      "group": "jobs",
+      "title": "202 Accepted 與持久化工作狀態",
+      "summary": "把長工作從HTTP連線分離，客戶端才能可靠追蹤。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "job-state"
+      ],
+      "visual": "fa-17",
+      "visualTask": "「202 Accepted 與持久化工作狀態」讀圖：畫出queued取消與running取消的不同路徑。再用本節的條件回答：送出工作後一直queued，最先應檢查什麼？",
+      "example": "lab19.py"
+    },
+    {
+      "id": "050-background-vs-queue",
+      "group": "jobs",
+      "title": "BackgroundTasks 與真正的工作佇列",
+      "summary": "輕量回應後動作和可恢復業務工作需要不同承諾。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "background-vs-queue"
+      ],
+      "visual": "fa-17",
+      "visualTask": "「BackgroundTasks 與真正的工作佇列」讀圖：畫出queued取消與running取消的不同路徑。再用本節的條件回答：把模型呼叫塞進BackgroundTasks就算可靠AI工作平台嗎？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "051-claim-transaction",
+      "group": "jobs",
+      "title": "工作 claim 的資料庫交易",
+      "summary": "同一工作只能由當下有效持有者提交，競爭要在資料庫內解決。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "claim-transaction"
+      ],
+      "visual": "fa-18",
+      "visualTask": "「工作 claim 的資料庫交易」讀圖：分別檢查到期時間與擁有者token，找出只驗時間的漏洞。再用本節的條件回答：為何不在BEGIN後直接等待整個模型呼叫完成？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "052-lease-fencing",
+      "group": "jobs",
+      "title": "租約、重領與 fencing token",
+      "summary": "到期時間解決卡住，持有者token解決舊worker回來覆寫。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "lease-fencing"
+      ],
+      "visual": "fa-18",
+      "visualTask": "「租約、重領與 fencing token」讀圖：分別檢查到期時間與擁有者token，找出只驗時間的漏洞。再用本節的條件回答：只確認工作仍running，為何不能防止舊worker提交？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "053-job-cancellation",
+      "group": "jobs",
+      "title": "取消 queued 與 running 工作",
+      "summary": "明確定義取消生效點，避免向使用者承諾做不到的即時中止。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "job-cancellation"
+      ],
+      "visual": "fa-18",
+      "visualTask": "「取消 queued 與 running 工作」讀圖：分別檢查到期時間與擁有者token，找出只驗時間的漏洞。再用本節的條件回答：答案已commit為succeeded後才按取消，能把已發生的扣費回滾嗎？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "054-crash-recovery",
+      "group": "jobs",
+      "title": "當機恢復、嘗試上限與毒性工作",
+      "summary": "重領需要有終點，故障測試要對準提交邊界。",
+      "tags": [
+        "FastAPI",
+        "jobs",
+        "crash-recovery"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「當機恢復、嘗試上限與毒性工作」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：為何模擬當機不能先寫failed再拋例外？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "055-sse-frames",
+      "group": "streaming",
+      "title": "SSE 的 id、event、data 與事件邊界",
+      "summary": "使用原生ServerSentEvent，理解線上格式再寫客戶端。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "sse-frames"
+      ],
+      "visual": "fa-19",
+      "visualTask": "「SSE 的 id、event、data 與事件邊界」讀圖：在事件中間切開網路chunk，說明為何必須保留解析緩衝。再用本節的條件回答：yield字串hello透過data欄位後一定原樣是data: hello嗎？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "056-sse-replay",
+      "group": "streaming",
+      "title": "持久化事件與 Last-Event-ID 回放",
+      "summary": "游標只代表讀到哪裡；事件本身要先被可靠保存。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "sse-replay"
+      ],
+      "visual": "fa-19",
+      "visualTask": "「持久化事件與 Last-Event-ID 回放」讀圖：在事件中間切開網路chunk，說明為何必須保留解析緩衝。再用本節的條件回答：同一工作事件ID是3、6、8，游標為6要回哪些？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "057-native-jsonl",
+      "group": "streaming",
+      "title": "原生 JSON Lines 與一般 JSON 陣列",
+      "summary": "逐筆交付資料時，客戶端要使用符合媒體型別的解析方式。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "native-jsonl"
+      ],
+      "visual": "fa-19",
+      "visualTask": "「原生 JSON Lines 與一般 JSON 陣列」讀圖：在事件中間切開網路chunk，說明為何必須保留解析緩衝。再用本節的條件回答：能把整個JSONL回應直接response.json()嗎？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "058-backpressure",
+      "group": "streaming",
+      "title": "斷線、背壓與有限串流",
+      "summary": "慢客戶端不能讓記憶體、資料庫連線或歷史讀取無限增長。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "backpressure"
+      ],
+      "visual": "fa-20",
+      "visualTask": "「斷線、背壓與有限串流」讀圖：找出流量失衡時會增長的記憶體與資料庫成本。再用本節的條件回答：SSE已送出200後，才發現使用者沒有權限，可以改404嗎？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "059-websocket",
+      "group": "streaming",
+      "title": "WebSocket 的雙向連線與驗證",
+      "summary": "選協定要看互動需求，長連線仍需要身分、來源和資源限制。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "websocket"
+      ],
+      "visual": "fa-20",
+      "visualTask": "「WebSocket 的雙向連線與驗證」讀圖：找出流量失衡時會增長的記憶體與資料庫成本。再用本節的條件回答：檢查Origin後是否可以省略WebSocket token？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "060-browser-stream-client",
+      "group": "streaming",
+      "title": "瀏覽器 fetch 串流與 Bearer 驗證",
+      "summary": "客戶端要處理UTF-8分段、事件框架、取消與重新連線。",
+      "tags": [
+        "FastAPI",
+        "streaming",
+        "browser-stream-client"
+      ],
+      "visual": "fa-19",
+      "visualTask": "「瀏覽器 fetch 串流與 Bearer 驗證」讀圖：在事件中間切開網路chunk，說明為何必須保留解析緩衝。再用本節的條件回答：收到半個中文字或半個data JSON時應立即解析嗎？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "061-admission",
+      "group": "reliability",
+      "title": "入口限制、工作配額與排隊",
+      "summary": "在昂貴工作開始前拒絕不合理輸入，並明確管理排隊容量。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "admission"
+      ],
+      "visual": "fa-21",
+      "visualTask": "「入口限制、工作配額與排隊」讀圖：比較一次六筆突發和每秒兩筆持續請求的差別。再用本節的條件回答：限制每個body很小，是否就不需要限制queued工作數？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "062-token-bucket",
+      "group": "reliability",
+      "title": "Token bucket：速率與突發分開建模",
+      "summary": "先用可驗證的數學模型理解限流，再決定跨實例實作。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "token-bucket"
+      ],
+      "visual": "fa-21",
+      "visualTask": "「Token bucket：速率與突發分開建模」讀圖：比較一次六筆突發和每秒兩筆持續請求的差別。再用本節的條件回答：把每個worker各自建立的bucket當全站限流會怎樣？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "063-little-capacity",
+      "group": "reliability",
+      "title": "Little 定律、平均在途數與容量",
+      "summary": "用單位一致的平均值建立容量直覺，同時保留假設。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "little-capacity"
+      ],
+      "visual": "fa-22",
+      "visualTask": "「Little 定律、平均在途數與容量」讀圖：用相同平均值構造不同突發流量，說明還缺少哪些資訊。再用本節的條件回答：平均在途10是否能推論最多只會有10個請求？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "064-cache-keys",
+      "group": "reliability",
+      "title": "快取鍵、租戶與版本失效",
+      "summary": "快取會保存過去的決策，也可能保存過去的錯誤。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "cache-keys"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「快取鍵、租戶與版本失效」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：冪等鍵和答案快取鍵可以直接共用嗎？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "065-health-slo",
+      "group": "reliability",
+      "title": "健康檢查、SLO 與 p95",
+      "summary": "活著、可接工作、答案正確與使用者滿意各是不同指標。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "health-slo"
+      ],
+      "visual": "fa-29",
+      "visualTask": "「健康檢查、SLO 與 p95」讀圖：避免把提早送headers的串流誤判成整個工作很快完成。再用本節的條件回答：平均延遲很好是否能保證p95也好？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "066-observability",
+      "group": "reliability",
+      "title": "request ID、結構化紀錄與隱私",
+      "summary": "可追蹤不等於把全部內容都留下，追蹤欄位也要有界。",
+      "tags": [
+        "FastAPI",
+        "reliability",
+        "observability"
+      ],
+      "visual": "fa-29",
+      "visualTask": "「request ID、結構化紀錄與隱私」讀圖：避免把提早送headers的串流誤判成整個工作很快完成。再用本節的條件回答：把完整問題放在metrics label有什麼問題？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "067-testing-levels",
+      "group": "testing",
+      "title": "測試金字塔與真實框架測試",
+      "summary": "按每一層能證明的行為設計測試，不用數量代替品質。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "testing-levels"
+      ],
+      "visual": "fa-23",
+      "visualTask": "「測試金字塔與真實框架測試」讀圖：替每一種測試寫出一個仍無法驗證的條件。再用本節的條件回答：用fake dict代替SQLite能證明唯一約束與並行交易嗎？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "068-test-dependencies",
+      "group": "testing",
+      "title": "測試依賴與 lifespan 隔離",
+      "summary": "在正確的邊界替換，並確認測試結束後狀態完全恢復。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "test-dependencies"
+      ],
+      "visual": "fa-23",
+      "visualTask": "「測試依賴與 lifespan 隔離」讀圖：替每一種測試寫出一個仍無法驗證的條件。再用本節的條件回答：為何清除override後還要再測一次401？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "069-async-tests",
+      "group": "testing",
+      "title": "非同步測試、ASGITransport 與生命週期",
+      "summary": "直接呼叫ASGI能測並行，但啟動資源需要另外管理。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "async-tests"
+      ],
+      "visual": "fa-23",
+      "visualTask": "「非同步測試、ASGITransport 與生命週期」讀圖：替每一種測試寫出一個仍無法驗證的條件。再用本節的條件回答：ASGITransport建立成功，為何app.state.store仍可能不存在？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "070-contract-tests",
+      "group": "testing",
+      "title": "回應、OpenAPI 與下載包契約測試",
+      "summary": "驗證讀者真正拿到的成品，不只驗作者工作目錄。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "contract-tests"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「回應、OpenAPI 與下載包契約測試」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：原始目錄可以跑，為何仍要解壓ZIP再測？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "071-race-tests",
+      "group": "testing",
+      "title": "並行競爭、過期租約與取消測試",
+      "summary": "先列出可能交錯順序，再驗證不變條件。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "race-tests"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「並行競爭、過期租約與取消測試」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：依序重送兩次成功，是否足以證明並行冪等安全？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "072-socket-fault-tests",
+      "group": "testing",
+      "title": "真實 TCP、獨立 worker 與故障注入",
+      "summary": "跨過ASGI測試邊界，驗證真正的程序與網路交付。",
+      "tags": [
+        "FastAPI",
+        "testing",
+        "socket-fault-tests"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「真實 TCP、獨立 worker 與故障注入」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：真實本機TCP成功能證明雲端部署也成功嗎？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "073-project-map",
+      "group": "project",
+      "title": "RelayDesk：從原文到可恢復答案",
+      "summary": "將前面機制收斂成一個真正可啟動、查詢和恢復的後端。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-map"
+      ],
+      "visual": "fa-25",
+      "visualTask": "「RelayDesk：從原文到可恢復答案」讀圖：找出資料庫保證的關係與仍由應用程式維護的關係。再用本節的條件回答：為何專題先用抽句provider而不是直接呼叫最強模型？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "074-project-identity",
+      "group": "project",
+      "title": "建立租戶身分與文件 CRUD",
+      "summary": "用真實token、ETag和條件更新避免跨租戶與遺失修改。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-identity"
+      ],
+      "visual": "fa-25",
+      "visualTask": "「建立租戶身分與文件 CRUD」讀圖：找出資料庫保證的關係與仍由應用程式維護的關係。再用本節的條件回答：版本1的標題已被別人改成版本2，你還送If-Match=\"1\"會怎樣？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "075-project-upload",
+      "group": "project",
+      "title": "從上傳到租戶內文件庫",
+      "summary": "先用可閱讀的固定資料跑完一條真正的文件路徑。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-upload"
+      ],
+      "visual": "fa-25",
+      "visualTask": "「從上傳到租戶內文件庫」讀圖：找出資料庫保證的關係與仍由應用程式維護的關係。再用本節的條件回答：相同內容換一個title重送，為何仍是原文件？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "076-project-submit",
+      "group": "project",
+      "title": "提交工作、重送與查詢結果",
+      "summary": "客戶端保存工作ID和冪等鍵，網路重試才不會建立重複意圖。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-submit"
+      ],
+      "visual": "fa-26",
+      "visualTask": "「提交工作、重送與查詢結果」讀圖：停止worker後提交工作，再啟動worker觀察狀態演進。再用本節的條件回答：POST回應遺失，重試時應換新鍵嗎？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "077-project-worker",
+      "group": "project",
+      "title": "獨立 worker 與已驗證答案",
+      "summary": "工作計算、引用驗證與結果提交分成可觀察階段。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-worker"
+      ],
+      "visual": "fa-26",
+      "visualTask": "「獨立 worker 與已驗證答案」讀圖：停止worker後提交工作，再啟動worker觀察狀態演進。再用本節的條件回答：worker顯示執行過，API卻仍queued，可能是哪個設定差異？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "078-project-replay",
+      "group": "project",
+      "title": "事件回放、取消與恢復演練",
+      "summary": "用同一工作走過正常、斷線、取消和當機的完整路徑。",
+      "tags": [
+        "FastAPI",
+        "project",
+        "project-replay"
+      ],
+      "visual": "fa-26",
+      "visualTask": "「事件回放、取消與恢復演練」讀圖：停止worker後提交工作，再啟動worker觀察狀態演進。再用本節的條件回答：重新訂閱SSE和租約重領有何根本差別？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "079-portable-package",
+      "group": "delivery",
+      "title": "可攜程式包、路徑與操作文件",
+      "summary": "讓另一台機器解壓後能理解、安裝和執行，而非依賴作者環境。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "portable-package"
+      ],
+      "visual": "fa-27",
+      "visualTask": "「可攜程式包、路徑與操作文件」讀圖：說明三個部署對象的執行責任與秘密保存位置。再用本節的條件回答：Dockerfile漏在ZIP外，但作者電腦可以build，算交付完成嗎？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "080-uvicorn-proxy",
+      "group": "delivery",
+      "title": "Uvicorn、反向代理與部署路徑",
+      "summary": "程序能回應只是起點，正式網路路徑還有TLS、信任和緩衝。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "uvicorn-proxy"
+      ],
+      "visual": "fa-27",
+      "visualTask": "「Uvicorn、反向代理與部署路徑」讀圖：說明三個部署對象的執行責任與秘密保存位置。再用本節的條件回答：在API加X-Accel-Buffering: no就能保證所有代理即時送出嗎？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "081-docker-processes",
+      "group": "delivery",
+      "title": "容器、非 root 使用者與持久化 volume",
+      "summary": "映像保存程式，volume保存狀態，API與worker分開運作。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "docker-processes"
+      ],
+      "visual": "fa-27",
+      "visualTask": "「容器、非 root 使用者與持久化 volume」讀圖：說明三個部署對象的執行責任與秘密保存位置。再用本節的條件回答：把三台機器都掛同一個SQLite網路檔，就等於高可用資料庫嗎？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "082-ci-delivery",
+      "group": "delivery",
+      "title": "CI、建置與網站發布的分工",
+      "summary": "教材能上GitHub Pages，真正API服務則需要自己的執行環境。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "ci-delivery"
+      ],
+      "visual": "fa-28",
+      "visualTask": "「CI、建置與網站發布的分工」讀圖：找出同時支援新舊程式的區間，安排回填和移除時間。再用本節的條件回答：GitHub Pages會替你啟動FastAPI資料庫與worker嗎？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "083-schema-rollout",
+      "group": "delivery",
+      "title": "Schema 演進、相容性與回滾",
+      "summary": "先讓新舊程式可以共存，再收縮舊資料結構。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "schema-rollout"
+      ],
+      "visual": "fa-28",
+      "visualTask": "「Schema 演進、相容性與回滾」讀圖：找出同時支援新舊程式的區間，安排回填和移除時間。再用本節的條件回答：新版部署失敗，直接把資料庫downgrade一定安全嗎？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "084-backup-restore",
+      "group": "delivery",
+      "title": "備份、還原與恢復目標",
+      "summary": "有備份檔不代表能還原，也不代表符合容許的資料損失。",
+      "tags": [
+        "FastAPI",
+        "delivery",
+        "backup-restore"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「備份、還原與恢復目標」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：看到每天都產生備份檔，能直接宣稱RTO達標嗎？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "085-latency-profile",
+      "group": "performance",
+      "title": "延遲剖析：先找真正的瓶頸",
+      "summary": "把排隊、資料庫、上游與傳輸分開量測，再選優化。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "latency-profile"
+      ],
+      "visual": "fa-29",
+      "visualTask": "「延遲剖析：先找真正的瓶頸」讀圖：避免把提早送headers的串流誤判成整個工作很快完成。再用本節的條件回答：模型推論占九成時間時，將JSON序列化加速一倍會讓整體快一倍嗎？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "086-model-serving",
+      "group": "performance",
+      "title": "模型常駐、批次與 GPU 工作分工",
+      "summary": "API工程與推論服務可以分開擴充，避免每個請求重新載入模型。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "model-serving"
+      ],
+      "visual": "fa-29",
+      "visualTask": "「模型常駐、批次與 GPU 工作分工」讀圖：避免把提早送headers的串流誤判成整個工作很快完成。再用本節的條件回答：增加四個Uvicorn worker一定能讓一張GPU吞吐變四倍嗎？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "087-database-tuning",
+      "group": "performance",
+      "title": "資料庫連線池、查詢與鎖等待",
+      "summary": "讓連線數配合資料庫能力，避免把排隊轉移到更昂貴的位置。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "database-tuning"
+      ],
+      "visual": "fa-29",
+      "visualTask": "「資料庫連線池、查詢與鎖等待」讀圖：避免把提早送headers的串流誤判成整個工作很快完成。再用本節的條件回答：資料庫只容許有限writer，將HTTP並行擴大十倍會怎樣？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "088-horizontal-scaling",
+      "group": "performance",
+      "title": "水平擴充與程序狀態乘數",
+      "summary": "先找出哪些狀態本地、哪些共享，再增加實例。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "horizontal-scaling"
+      ],
+      "visual": "fa-30",
+      "visualTask": "「水平擴充與程序狀態乘數」讀圖：估算增加worker後的連線與模型複製成本。再用本節的條件回答：app.state裡的semaphore在三個容器間會共享嗎？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "089-retention-quotas",
+      "group": "performance",
+      "title": "保留、刪除、配額與可持續成本",
+      "summary": "資料會持續累積，沒有清理政策就不能只看單次請求成本。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "retention-quotas"
+      ],
+      "visual": "fa-20",
+      "visualTask": "「保留、刪除、配額與可持續成本」讀圖：找出流量失衡時會增長的記憶體與資料庫成本。再用本節的條件回答：DELETE回204是否等於備份和歷史事件中的原文已全部抹除？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "090-production-review",
+      "group": "performance",
+      "title": "正式環境驗收：把承諾對應到證據",
+      "summary": "將功能完成、部署完成和營運準備分成可核對的條件。",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "production-review"
+      ],
+      "visual": "fa-11",
+      "visualTask": "「正式環境驗收：把承諾對應到證據」讀圖：找出角色檢查與資源歸屬檢查各自的位置。再用本節的條件回答：所有單元測試通過，還缺哪類正式證據？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "091-graceful-shutdown",
+      "group": "reference",
+      "title": "優雅關閉與未完成工作",
+      "summary": "先停止接單，再排空有限工作，最後清理共用資源。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "graceful-shutdown"
+      ],
+      "visual": "fa-31",
+      "visualTask": "「優雅關閉與未完成工作」讀圖：將程序退出分成接單、排空、取消、清理四個階段。再用本節的條件回答：為何關閉HTTP client應晚於仍使用它的請求？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "092-formula-reference",
+      "group": "reference",
+      "title": "容量、期限與成本公式速查",
+      "summary": "公式用來整理假設與單位，不代替真實量測。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "formula-reference"
+      ],
+      "visual": "fa-22",
+      "visualTask": "「容量、期限與成本公式速查」讀圖：用相同平均值構造不同突發流量，說明還缺少哪些資訊。再用本節的條件回答：為何不能把示意價格0.008當成正式預算？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "093-integrated-exercises",
+      "group": "reference",
+      "title": "整合練習：用反例驗證你的後端",
+      "summary": "把學到的契約變成一組可重現的操作與判斷題。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "integrated-exercises"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「整合練習：用反例驗證你的後端」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：同時通過這三組練習，能宣稱什麼，不能宣稱什麼？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "094-troubleshooting",
+      "group": "reference",
+      "title": "排錯手冊：從錯誤證據回到責任層",
+      "summary": "用症狀、最小檢查與可驗證修正整理常見故障。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "troubleshooting"
+      ],
+      "visual": "fa-24",
+      "visualTask": "「排錯手冊：從錯誤證據回到責任層」讀圖：判斷四個斷點中哪些可能重算，哪些只能重送回應。再用本節的條件回答：看到stale_lease就移除token檢查，能修好恢復嗎？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "095-cross-reading",
+      "group": "reference",
+      "title": "學習路線與跨課整合",
+      "summary": "依目標接到其他完整課程，不讓必要基礎消失在連結裡。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "cross-reading"
+      ],
+      "visual": "fa-32",
+      "visualTask": "「學習路線與跨課整合」讀圖：依目標選跨課路線，列出整合時要重新驗證的契約。再用本節的條件回答：串接既有RAG程式後，最先應核對哪些契約？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "096-sources",
+      "group": "reference",
+      "title": "版本紀錄、來源與下一步",
+      "summary": "保留可重現基準，也保留尚未驗證的邊界。",
+      "tags": [
+        "FastAPI",
+        "reference",
+        "sources"
+      ],
+      "visual": "fa-32",
+      "visualTask": "「版本紀錄、來源與下一步」讀圖：依目標選跨課路線，列出整合時要重新驗證的契約。再用本節的條件回答：下次新版本發布，只改baseline字串足夠嗎？",
+      "example": "lab32.py"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "fa-01",
+      "file": "assets/figures/01.svg",
+      "alt": "瀏覽器經過ASGI、路由、服務與資料庫，再取得具狀態碼的回應。",
+      "caption": "一個 HTTP 請求的往返。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "指出202與200各自證明的事，找出真正提交資料的邊界。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-02",
+      "file": "assets/figures/02.svg",
+      "alt": "HTTP與WebSocket訊息分流，啟動和關閉管理共享資源。",
+      "caption": "ASGI 訊息與 lifespan。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "分辨HTTP請求、WebSocket連線與伺服器生命週期。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-03",
+      "file": "assets/figures/03.svg",
+      "alt": "同一份請求經過型別驗證、服務規則與輸出過濾。",
+      "caption": "輸入與輸出契約。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "為型別、權限與事實三種錯誤安排不同檢查。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-04",
+      "file": "assets/figures/04.svg",
+      "alt": "401、403、404、409、422與413對應不同邊界。",
+      "caption": "狀態碼是回應契約。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "用反例分辨認證、授權、衝突與輸入錯誤。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-05",
+      "file": "assets/figures/05.svg",
+      "alt": "Bearer與store是共享子依賴，principal判定身分再傳入editor。",
+      "caption": "依賴圖與單次請求快取。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "追蹤兩條路徑為何能重用同一依賴結果。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-06",
+      "file": "assets/figures/06.svg",
+      "alt": "function scope在串流前關閉，request scope在回應後關閉。",
+      "caption": "yield 依賴的清理時機。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "指出在第一個chunk前關閉資源時，哪些後續操作會失效。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-07",
+      "file": "assets/figures/07.svg",
+      "alt": "非同步等待能交錯，直接sleep會延後其他請求。",
+      "caption": "等待 I/O 與阻塞事件迴圈。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "在等待區間插入第二個請求，再比較阻塞版本。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-08",
+      "file": "assets/figures/08.svg",
+      "alt": "連線、讀取、退避與重試共用同一總期限。",
+      "caption": "一個總期限涵蓋多次嘗試。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "把退避也算進總預算，說明重試次數上限的作用。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-09",
+      "file": "assets/figures/09.svg",
+      "alt": "寫入先flush檢查約束，commit後才能宣稱已持久化。",
+      "caption": "交易邊界與回應。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "在flush失敗處標記回滾，並指出回應能發布的時點。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-10",
+      "file": "assets/figures/10.svg",
+      "alt": "資料列按id排列，以大於上次id取得下一頁。",
+      "caption": "keyset 依穩定鍵續讀。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "比較先篩租戶與取頁後才過濾的不同結果。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-11",
+      "file": "assets/figures/11.svg",
+      "alt": "憑證映射租戶與角色，每次查詢加入租戶條件。",
+      "caption": "認證與資源授權分開。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "找出角色檢查與資源歸屬檢查各自的位置。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-12",
+      "file": "assets/figures/12.svg",
+      "alt": "OIDC登入與API接受的access token有不同用途。",
+      "caption": "外部身分服務與本地 API。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "分辨登入結果、API受眾與資料擁有者三種身分關係。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-13",
+      "file": "assets/figures/13.svg",
+      "alt": "整體body含multipart overhead，檔案內容另檢查長度與UTF-8。",
+      "caption": "上傳的多層資源界線。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "指出哪一層測量位元組，哪一層測量Unicode字元。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-14",
+      "file": "assets/figures/14.svg",
+      "alt": "答案引用原文，起點含、終點不含；區間必須屬授權文件。",
+      "caption": "引用以文件和字元區間核對。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "用原文切片驗證引用，再找出仍需人工或語意評估的部分。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-15",
+      "file": "assets/figures/15.svg",
+      "alt": "離線抽句和OpenAI adapter共享答案形狀，但能力與實測不同。",
+      "caption": "供應商介面與輸出驗證。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "說明mock成功、結構成功與答案正確不能互相代替。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-16",
+      "file": "assets/figures/16.svg",
+      "alt": "暫時性GET錯誤有限重試，模型POST需考慮重複扣費。",
+      "caption": "可重試錯誤與副作用。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "在回應遺失而遠端已扣費的時間點，分析重試風險。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-17",
+      "file": "assets/figures/17.svg",
+      "alt": "queued經claim進入running，再提交成功、失敗或取消。",
+      "caption": "持久化工作狀態。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "畫出queued取消與running取消的不同路徑。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-18",
+      "file": "assets/figures/18.svg",
+      "alt": "A失去租約後，B重新claim取得新token，A不能再發布。",
+      "caption": "租約過期與 fencing。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "分別檢查到期時間與擁有者token，找出只驗時間的漏洞。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-19",
+      "file": "assets/figures/19.svg",
+      "alt": "id、event、data及空白行形成一個事件，切包位置不固定。",
+      "caption": "SSE 事件不是 TCP 封包。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "在事件中間切開網路chunk，說明為何必須保留解析緩衝。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-20",
+      "file": "assets/figures/20.svg",
+      "alt": "產生器、傳輸與客戶端速率不同時，需要背壓和截止政策。",
+      "caption": "慢客戶端與有界緩衝。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "找出流量失衡時會增長的記憶體與資料庫成本。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-21",
+      "file": "assets/figures/21.svg",
+      "alt": "桶有容量上限，時間補充token，每次接受消耗一個。",
+      "caption": "Token bucket 的速率與突發。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "比較一次六筆突發和每秒兩筆持續請求的差別。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-22",
+      "file": "assets/figures/22.svg",
+      "alt": "穩定系統下，抵達速率乘平均停留時間得到平均在途數。",
+      "caption": "平均並行量與工作行程。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "用相同平均值構造不同突發流量，說明還缺少哪些資訊。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-23",
+      "file": "assets/figures/23.svg",
+      "alt": "純函式、ASGI、真實TCP、外部服務與正式環境有不同邊界。",
+      "caption": "測試層次各自證明什麼。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "替每一種測試寫出一個仍無法驗證的條件。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-24",
+      "file": "assets/figures/24.svg",
+      "alt": "故障點相對commit的位置會決定重試應讀舊結果或重新計算。",
+      "caption": "故障注入與恢復驗收。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "判斷四個斷點中哪些可能重算，哪些只能重送回應。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-25",
+      "file": "assets/figures/25.svg",
+      "alt": "Credential映射租戶，Document與Job帶tenant，Event引用Job。",
+      "caption": "RelayDesk 資料關係。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "找出資料庫保證的關係與仍由應用程式維護的關係。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-26",
+      "file": "assets/figures/26.svg",
+      "alt": "API伺服器、worker與客戶端分開執行，共用持久化資料庫。",
+      "caption": "三個操作視窗。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "停止worker後提交工作，再啟動worker觀察狀態演進。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-27",
+      "file": "assets/figures/27.svg",
+      "alt": "GitHub Pages只提供教材，FastAPI服務在別的執行環境。",
+      "caption": "靜態教材與後端服務。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "說明三個部署對象的執行責任與秘密保存位置。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-28",
+      "file": "assets/figures/28.svg",
+      "alt": "expand-contract讓新舊程式短期共存，之後才移除舊欄位。",
+      "caption": "資料庫先擴充、程式再切換。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "找出同時支援新舊程式的區間，安排回填和移除時間。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-29",
+      "file": "assets/figures/29.svg",
+      "alt": "排隊、檢索、上游與發布各自量測，header時間不是串流完成時間。",
+      "caption": "量測延遲的正確區間。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "避免把提早送headers的串流誤判成整個工作很快完成。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-30",
+      "file": "assets/figures/30.svg",
+      "alt": "每個程序有自己的模型、client、semaphore與記憶體。",
+      "caption": "多 worker 的獨立資源。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "估算增加worker後的連線與模型複製成本。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-31",
+      "file": "assets/figures/31.svg",
+      "alt": "停止收新請求，等待有限工作，取消剩餘，再關閉共享資源。",
+      "caption": "優雅關閉順序。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "將程序退出分成接單、排空、取消、清理四個階段。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    },
+    {
+      "id": "fa-32",
+      "file": "assets/figures/32.svg",
+      "alt": "FastAPI負責API工程，其他課補網站、資料、檢索與文件。",
+      "caption": "跨課閱讀保留獨立主線。固定教學資料與簡化機制，非實際效能量測。",
+      "readingTask": "依目標選跨課路線，列出整合時要重新驗證的契約。",
+      "source": "原創；依對應單元所列官方文件核對機制。"
+    }
+  ]
+}

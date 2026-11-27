@@ -205,6 +205,18 @@
         "rag"
       ],
       "note": "多模態課保留必要基礎；模型訓練與RAG系統可依需求跨課深入。"
+    },
+    {
+      "id": "ai-backend",
+      "domain": "engineering",
+      "title": "從資料到 AI API",
+      "description": "先學資料與交易，再建立可追蹤和恢復的AI服務，最後接入知識檢索。",
+      "courses": [
+        "sql",
+        "fastapi",
+        "rag"
+      ],
+      "note": "三門課保留獨立主線；FastAPI專題可先用離線provider完成，不必先取得模型key。"
     }
   ],
   "courses": {
@@ -1061,6 +1073,40 @@
           "12 個互動實驗"
         ],
         "action": "從頁面理解，走到可查證資料",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    },
+    "fastapi": {
+      "domain": "engineering",
+      "group": "網站開發",
+      "level": "foundation",
+      "order": 20,
+      "title": "FastAPI 與 AI 後端工程",
+      "prerequisite": "具Python基本語法較容易實作；HTTP、資料庫與框架從零介紹",
+      "tags": [
+        "python",
+        "web",
+        "api",
+        "deployment",
+        "llm",
+        "evaluation"
+      ],
+      "description": "從HTTP與型別，到非同步、交易、租戶權限、持久化工作與SSE。完成可重送、取消、回放與故障恢復的RelayDesk後端。",
+      "coverCaption": "REQUEST → VERIFY → DELIVER",
+      "classicOrder": 28,
+      "classic": {
+        "name": "FastAPI & AI Backend",
+        "subtitle": "FastAPI 與 AI 後端工程",
+        "eyebrow": "FASTAPI & AI BACKEND ENGINEERING",
+        "description": "從第一個HTTP請求，到非同步、SQLAlchemy、租戶權限、模型介面與事件回放。完成能處理重送、取消和當機恢復的RelayDesk。",
+        "extraMeta": [
+          "32 張圖解・32 個實作入口",
+          "12 個互動實驗"
+        ],
+        "action": "從請求契約，走到可靠交付",
         "artClasses": [
           "subject-art",
           "transformer-art"

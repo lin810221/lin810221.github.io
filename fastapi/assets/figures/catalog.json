@@ -1,0 +1,258 @@
+[
+  {
+    "id": "fa-01",
+    "file": "assets/figures/01.svg",
+    "alt": "瀏覽器經過ASGI、路由、服務與資料庫，再取得具狀態碼的回應。",
+    "caption": "一個 HTTP 請求的往返。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "指出202與200各自證明的事，找出真正提交資料的邊界。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-02",
+    "file": "assets/figures/02.svg",
+    "alt": "HTTP與WebSocket訊息分流，啟動和關閉管理共享資源。",
+    "caption": "ASGI 訊息與 lifespan。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "分辨HTTP請求、WebSocket連線與伺服器生命週期。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-03",
+    "file": "assets/figures/03.svg",
+    "alt": "同一份請求經過型別驗證、服務規則與輸出過濾。",
+    "caption": "輸入與輸出契約。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "為型別、權限與事實三種錯誤安排不同檢查。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-04",
+    "file": "assets/figures/04.svg",
+    "alt": "401、403、404、409、422與413對應不同邊界。",
+    "caption": "狀態碼是回應契約。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "用反例分辨認證、授權、衝突與輸入錯誤。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-05",
+    "file": "assets/figures/05.svg",
+    "alt": "Bearer與store是共享子依賴，principal判定身分再傳入editor。",
+    "caption": "依賴圖與單次請求快取。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "追蹤兩條路徑為何能重用同一依賴結果。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-06",
+    "file": "assets/figures/06.svg",
+    "alt": "function scope在串流前關閉，request scope在回應後關閉。",
+    "caption": "yield 依賴的清理時機。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "指出在第一個chunk前關閉資源時，哪些後續操作會失效。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-07",
+    "file": "assets/figures/07.svg",
+    "alt": "非同步等待能交錯，直接sleep會延後其他請求。",
+    "caption": "等待 I/O 與阻塞事件迴圈。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "在等待區間插入第二個請求，再比較阻塞版本。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-08",
+    "file": "assets/figures/08.svg",
+    "alt": "連線、讀取、退避與重試共用同一總期限。",
+    "caption": "一個總期限涵蓋多次嘗試。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "把退避也算進總預算，說明重試次數上限的作用。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-09",
+    "file": "assets/figures/09.svg",
+    "alt": "寫入先flush檢查約束，commit後才能宣稱已持久化。",
+    "caption": "交易邊界與回應。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "在flush失敗處標記回滾，並指出回應能發布的時點。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-10",
+    "file": "assets/figures/10.svg",
+    "alt": "資料列按id排列，以大於上次id取得下一頁。",
+    "caption": "keyset 依穩定鍵續讀。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "比較先篩租戶與取頁後才過濾的不同結果。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-11",
+    "file": "assets/figures/11.svg",
+    "alt": "憑證映射租戶與角色，每次查詢加入租戶條件。",
+    "caption": "認證與資源授權分開。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "找出角色檢查與資源歸屬檢查各自的位置。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-12",
+    "file": "assets/figures/12.svg",
+    "alt": "OIDC登入與API接受的access token有不同用途。",
+    "caption": "外部身分服務與本地 API。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "分辨登入結果、API受眾與資料擁有者三種身分關係。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-13",
+    "file": "assets/figures/13.svg",
+    "alt": "整體body含multipart overhead，檔案內容另檢查長度與UTF-8。",
+    "caption": "上傳的多層資源界線。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "指出哪一層測量位元組，哪一層測量Unicode字元。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-14",
+    "file": "assets/figures/14.svg",
+    "alt": "答案引用原文，起點含、終點不含；區間必須屬授權文件。",
+    "caption": "引用以文件和字元區間核對。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "用原文切片驗證引用，再找出仍需人工或語意評估的部分。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-15",
+    "file": "assets/figures/15.svg",
+    "alt": "離線抽句和OpenAI adapter共享答案形狀，但能力與實測不同。",
+    "caption": "供應商介面與輸出驗證。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "說明mock成功、結構成功與答案正確不能互相代替。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-16",
+    "file": "assets/figures/16.svg",
+    "alt": "暫時性GET錯誤有限重試，模型POST需考慮重複扣費。",
+    "caption": "可重試錯誤與副作用。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "在回應遺失而遠端已扣費的時間點，分析重試風險。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-17",
+    "file": "assets/figures/17.svg",
+    "alt": "queued經claim進入running，再提交成功、失敗或取消。",
+    "caption": "持久化工作狀態。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "畫出queued取消與running取消的不同路徑。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-18",
+    "file": "assets/figures/18.svg",
+    "alt": "A失去租約後，B重新claim取得新token，A不能再發布。",
+    "caption": "租約過期與 fencing。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "分別檢查到期時間與擁有者token，找出只驗時間的漏洞。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-19",
+    "file": "assets/figures/19.svg",
+    "alt": "id、event、data及空白行形成一個事件，切包位置不固定。",
+    "caption": "SSE 事件不是 TCP 封包。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "在事件中間切開網路chunk，說明為何必須保留解析緩衝。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-20",
+    "file": "assets/figures/20.svg",
+    "alt": "產生器、傳輸與客戶端速率不同時，需要背壓和截止政策。",
+    "caption": "慢客戶端與有界緩衝。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "找出流量失衡時會增長的記憶體與資料庫成本。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-21",
+    "file": "assets/figures/21.svg",
+    "alt": "桶有容量上限，時間補充token，每次接受消耗一個。",
+    "caption": "Token bucket 的速率與突發。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "比較一次六筆突發和每秒兩筆持續請求的差別。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-22",
+    "file": "assets/figures/22.svg",
+    "alt": "穩定系統下，抵達速率乘平均停留時間得到平均在途數。",
+    "caption": "平均並行量與工作行程。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "用相同平均值構造不同突發流量，說明還缺少哪些資訊。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-23",
+    "file": "assets/figures/23.svg",
+    "alt": "純函式、ASGI、真實TCP、外部服務與正式環境有不同邊界。",
+    "caption": "測試層次各自證明什麼。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "替每一種測試寫出一個仍無法驗證的條件。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-24",
+    "file": "assets/figures/24.svg",
+    "alt": "故障點相對commit的位置會決定重試應讀舊結果或重新計算。",
+    "caption": "故障注入與恢復驗收。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "判斷四個斷點中哪些可能重算，哪些只能重送回應。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-25",
+    "file": "assets/figures/25.svg",
+    "alt": "Credential映射租戶，Document與Job帶tenant，Event引用Job。",
+    "caption": "RelayDesk 資料關係。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "找出資料庫保證的關係與仍由應用程式維護的關係。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-26",
+    "file": "assets/figures/26.svg",
+    "alt": "API伺服器、worker與客戶端分開執行，共用持久化資料庫。",
+    "caption": "三個操作視窗。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "停止worker後提交工作，再啟動worker觀察狀態演進。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-27",
+    "file": "assets/figures/27.svg",
+    "alt": "GitHub Pages只提供教材，FastAPI服務在別的執行環境。",
+    "caption": "靜態教材與後端服務。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "說明三個部署對象的執行責任與秘密保存位置。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-28",
+    "file": "assets/figures/28.svg",
+    "alt": "expand-contract讓新舊程式短期共存，之後才移除舊欄位。",
+    "caption": "資料庫先擴充、程式再切換。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "找出同時支援新舊程式的區間，安排回填和移除時間。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-29",
+    "file": "assets/figures/29.svg",
+    "alt": "排隊、檢索、上游與發布各自量測，header時間不是串流完成時間。",
+    "caption": "量測延遲的正確區間。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "避免把提早送headers的串流誤判成整個工作很快完成。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-30",
+    "file": "assets/figures/30.svg",
+    "alt": "每個程序有自己的模型、client、semaphore與記憶體。",
+    "caption": "多 worker 的獨立資源。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "估算增加worker後的連線與模型複製成本。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-31",
+    "file": "assets/figures/31.svg",
+    "alt": "停止收新請求，等待有限工作，取消剩餘，再關閉共享資源。",
+    "caption": "優雅關閉順序。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "將程序退出分成接單、排空、取消、清理四個階段。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  },
+  {
+    "id": "fa-32",
+    "file": "assets/figures/32.svg",
+    "alt": "FastAPI負責API工程，其他課補網站、資料、檢索與文件。",
+    "caption": "跨課閱讀保留獨立主線。固定教學資料與簡化機制，非實際效能量測。",
+    "readingTask": "依目標選跨課路線，列出整合時要重新驗證的契約。",
+    "source": "原創；依對應單元所列官方文件核對機制。"
+  }
+]

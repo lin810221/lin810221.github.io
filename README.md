@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有二十七門課程，整理為五大領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有二十八門課程，整理為五大領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
 
@@ -455,3 +455,7 @@ python -X utf8 tools/prepare_pages.py --target pages
 2026-11-27核對並Windows CPU實測PyMuPDF2.2、pypdf7.2.0、RapidOCR3.10.0、ONNX Runtime1.32.0與Pydantic2.14.4。因ONNX Runtime沒有Python3.15 wheel，採相容分支最新修補版Python3.14.10。58項測試涵蓋真正PP-OCRv6、PDF與表格、AcroForm、redaction、區域引用、WAV／動畫GIF和版本發布恢復。
 
 [範例包](multimodal/examples.zip)包含完整來源、合成資料、操作手冊與測試；[學習包](multimodal/study-pack.zip)包含圖解、學習單、答案、術語和版本。API預設dry-run，OpenAI Responses、Gemini穩定Interactions v1與Claude Messages只做離線契約驗證。手工向量不是語意模型，逐字稿為人工fixture；大型VLM、ASR、MP4與雲端未代跑。首頁簡易版與詳細版、文件AI標籤和跨課路線均已納入。
+
+## FastAPI 與 AI 後端工程
+
+[閱讀課程](fastapi/index.html)：16章、96單元、32張中文SVG、32個實作入口、12個互動實驗、107術語。2026-11-27查核FastAPI0.165.0、Python3.15.2、SQLAlchemy2.1.9與31個鎖版套件。RelayDesk實作文件CRUD、ETag、租戶權限、持久化工作、租約fencing、取消與SSE回放；52項測試包含真實Uvicorn TCP與獨立worker。[完整程式包](fastapi/examples.zip)、[圖解學習包](fastapi/study-pack.zip)。付費API、容器、OIDC服務、代理TLS、GPU與正式負載另列驗收，詳見[驗證紀錄](fastapi/examples/VERIFICATION.md)。

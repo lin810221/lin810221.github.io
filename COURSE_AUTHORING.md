@@ -41,7 +41,7 @@
 
 ## 更新既有課程
 
-網站框架課的完整程式包需包含模板、CSS、migration與其他啟動必要檔案；以`course.json`的`exampleFileExtensions`明列額外副檔名，並用`exampleExcludeDirectories`排除執行產物。驗收時對照ZIP與原檔，解壓到乾淨目錄重跑框架檢查及測試；不可只在作者工作目錄執行。私人資料庫、上傳檔、建置後資產與秘密不放入公開程式包。
+網站框架課的完整程式包需包含模板、CSS、migration與其他啟動必要檔案；以`course.json`的`exampleFileExtensions`明列額外副檔名，並用`exampleExcludeDirectories`排除執行產物。驗收時對照ZIP與原檔，解壓到乾淨目錄重跑框架檢查及測試；不可只在作者工作目錄執行。私人資料庫、上傳檔、建置後資產與秘密不放入公開程式包。無一般副檔名的必要檔案如Dockerfile與.dockerignore，以`exampleFileNames`明列安全檔名；不因此放寬其他隱藏檔或.env的排除。
 
 更新時檢查破壞性變更、棄用項目、模型／服務可用性與相依套件。同步修改原稿、範例、鎖版需求、測試、下載包及版本說明。舊課程的日期與版本代表其更新當時的狀態，不因新課程完成就自動宣稱全站都是最新版。
 

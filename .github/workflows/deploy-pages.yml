@@ -70,6 +70,9 @@ jobs:
       - name: Verify multimodal sources, fixtures and portable downloads
         run: python -m unittest discover -s tools -p test_multimodal_materials.py -v
 
+      - name: Verify FastAPI sources, diagrams and portable full project
+        run: python -m unittest discover -s tools -p test_fastapi_materials.py -v
+
       - name: Validate pages, links, and offline fonts
         run: python tools/validate.py
 
@@ -457,8 +460,27 @@ jobs:
       - name: Verify actual PDF, bundled CPU OCR, evidence and recovery offline
         run: python -m unittest discover -s multimodal/examples -p test_examples.py -v
 
+  fastapi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Set up current stable FastAPI runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+          cache: pip
+          cache-dependency-path: fastapi/examples/requirements-lock.txt
+      - name: Install locked ASGI, database and test clients
+        run: python -m pip install -r fastapi/examples/requirements-lock.txt
+      - name: Verify real ASGI, SQL, auth, jobs, SSE and loopback worker
+        run: python -m unittest discover -s fastapi/examples -p test_examples.py -v
+
   deploy:
-    needs: [build, statistics, mcp, search, economics, nutrition, exercise_science, metabolic_health, mental_health, ergonomics, image_recognition, transformer, finetuning, django, sql, multimodal]
+    needs: [build, statistics, mcp, search, economics, nutrition, exercise_science, metabolic_health, mental_health, ergonomics, image_recognition, transformer, finetuning, django, sql, multimodal, fastapi]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

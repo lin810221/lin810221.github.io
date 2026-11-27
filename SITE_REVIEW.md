@@ -97,3 +97,13 @@ Python3.15.2與DuckDB2.0.1的52項測試通過；範例ZIP解壓到乾淨資料�
 全站27門課程與章內編號fixture共28組閱讀器DOM回歸通過。新課132處公式含22個獨立區塊已預先排版，嚴格數學文字稽核為零候選，32張SVG已逐一檢視點陣預覽並校正引用疊框。實際瀏覽器桌面／手機版面仍未驗收。
 
 OpenAI Responses、Gemini穩定Interactions v1、Claude Messages與選用轉錄只做離線契約；FFmpeg只測命令規劃與明確執行開關。沒有代跑付費API、大型VLM、ASR、MP4、GPU或雲端服務。原始圖像、向量代數、人工逐字稿與真實OCR在教材中各自標示。所有修改仍在本機，未commit、push或公開發布。
+
+## 2026-11-27 FastAPI與AI後端工程交付
+
+新增獨立fastapi課程：16章96單元、32張原創中文SVG、32個實作入口、12個本機互動實驗、107術語與49筆來源。RelayDesk實作文件CRUD與If-Match、租戶權限、持久化工作、SSE回放、租約fencing、取消和故障恢復。
+
+52項Python測試通過，包含32個入口、真實Uvicorn回環TCP與獨立worker；乾淨解壓包重跑52項通過。全站182項教材／公式測試、29組隔離閱讀器與28課首頁互動回歸通過。全部28課以build.py --require-prerender建置。32張SVG已實際轉圖檢視，修正流程標籤位置及三終端機拓撲。
+
+閱讀器檢查搜尋、進度、筆記、章內重編、下載、選單、重掛載與原多模態筆記隔離。SSE JSON客戶端以逐byte中文／emoji、LF／CRLF及不完整事件、錯ID和有界緩衝驗證。真實瀏覽器連線不可用，未宣稱桌面或手機版面已驗收。付費模型、Docker、OIDC服務、代理TLS、正式負載、GPU與跨機器排程明列未執行。
+
+為完整程式包新增exampleFileNames，明列Dockerfile與.dockerignore，其他隱藏目錄與.env仍排除；全站既有包內容與來源一致性檢查通過。

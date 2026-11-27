@@ -125,12 +125,15 @@ def build(course_path):
         examples = course_path / "examples"
         with zipfile.ZipFile(course_path / bundle, "w", compression=zipfile.ZIP_DEFLATED) as archive:
             excluded_directories = set(catalog.get('exampleExcludeDirectories', []))
+            allowed_names = set(catalog.get('exampleFileNames', []))
+            if any(not isinstance(name, str) or not (name == '.dockerignore' or re.fullmatch(r'[A-Za-z][A-Za-z0-9_.-]*', name)) for name in allowed_names):
+                raise ValueError('Explicit example filenames must be safe basenames')
             for example_path in sorted(examples.rglob("*")):
                 relative = example_path.relative_to(examples)
-                if any(part.startswith(".") or part == "__pycache__" or part in excluded_directories for part in relative.parts):
+                if any(part.startswith(".") or part == "__pycache__" or part in excluded_directories for part in relative.parts[:-1]) or relative.name == '__pycache__' or relative.name in excluded_directories or (relative.name.startswith('.') and relative.name not in allowed_names):
                     continue
                 allowed_extensions = {".py", ".md", ".txt", ".json", ".sql", ".csv"} | set(catalog.get('exampleFileExtensions', []))
-                if example_path.is_file() and example_path.suffix in allowed_extensions:
+                if example_path.is_file() and (example_path.suffix in allowed_extensions or relative.name in allowed_names):
                     info = zipfile.ZipInfo("examples/" + relative.as_posix(), date_time=(2026, 10, 29, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_DEFLATED
                     archive.writestr(info, example_path.read_bytes())

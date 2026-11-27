@@ -85,7 +85,7 @@ assert.equal(h.q('[data-tag-count="python"]').textContent,'1','Facet counts resp
 h.click('#clear-filters');
 assert.equal(h.visible().length,slugs.length);
 h.click('[data-course="django"] [data-tag="api"]');
-assert.deepEqual(new Set(h.visible()),new Set(['llm','mcp','django']),'Card tags immediately find related courses');
+assert.deepEqual(new Set(h.visible()),new Set(['llm','mcp','django','fastapi']),'Card tags immediately find related courses');
 h.click('.tag-options [data-tag="api"]');
 assert.equal(h.visible().length,slugs.length,'Click selected tag to deselect');
 h.click('[data-domain="health"]');
@@ -235,5 +235,6 @@ sqlHome.click('[data-card-view-option="detailed"]');assert.deepEqual(sqlHome.vis
 sqlHome.click('[data-route="data-to-web"]');assert.deepEqual(sqlHome.visible(),['sql','django']);
 assert.equal(sqlHome.writes(),0,'New engineering route preserves reader storage');
 const documentHome=setup();documentHome.click('.tag-options [data-tag="documents"]');assert.deepEqual(documentHome.visible(),['multimodal']);documentHome.click('[data-card-view-option="compact"]');assert.deepEqual(documentHome.visible(),classicOrder);documentHome.click('[data-card-view-option="detailed"]');assert.deepEqual(documentHome.visible(),['multimodal']);documentHome.click('[data-route="document-ai"]');assert.deepEqual(documentHome.visible(),['image-recognition','multimodal','rag']);assert.equal(documentHome.writes(),0);
-export const report={courses:slugs.length,domains:5,checks:'tag/domain/level/search, routes, SQL route, deep links/history, offline, no-JS, escaped input, read-only progress, original/classified homepage switching and persistence'};
+const backendHome=setup();backendHome.click('[data-route="ai-backend"]');assert.deepEqual(backendHome.visible(),['sql','fastapi','rag']);backendHome.click('[data-card-view-option="compact"]');assert.deepEqual(backendHome.visible(),classicOrder);backendHome.click('[data-card-view-option="detailed"]');assert.deepEqual(backendHome.visible(),['sql','fastapi','rag']);assert.equal(backendHome.writes(),0);
+export const report={courses:slugs.length,domains:5,checks:'tag/domain/level/search, routes, SQL and AI backend routes, deep links/history, offline, no-JS, escaped input, read-only progress, original/classified homepage switching and persistence'};
 console.log('PASS homepage:',JSON.stringify(report));

@@ -1,0 +1,54 @@
+/* Real generated reader in isolated DOM; browser layout remains separate. */
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {parseHTML,Event,HTMLElement} from '../.qa/vendor/linkedom.mjs';
+import {parse} from '../.qa/vendor/acorn.mjs';
+import katex from '../.qa/vendor/katex.mjs';
+const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
+for(const file of ['assets/reader.js','fastapi/assets/overview.js','fastapi/assets/course-data.js','fastapi/examples/client.js','fastapi/examples/sse-client.js'])parse(await read(file),{ecmaVersion:'latest'});
+const {window,document}=parseHTML(await read('fastapi/index.html'));
+const legacy=JSON.stringify({completed:['001-task-map'],notes:{'001-task-map':'保留原文件課筆記'}});
+const storage=new Map([['learning-notes:multimodal:v1',legacy]]),location={hash:''},q=s=>document.querySelector(s);
+HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};
+if(!Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype,'checked'))Object.defineProperty(window.HTMLInputElement.prototype,'checked',{get(){return this.hasAttribute('checked');},set(v){v?this.setAttribute('checked',''):this.removeAttribute('checked');}});
+window.scrollTo=()=>{};window.print=()=>{};q('#search-dialog').showModal=function(){this.open=true;};q('#search-dialog').close=function(){this.open=false;};
+window.katex={render:(tex,el,options)=>{el.innerHTML=katex.renderToString(tex,options);}};
+Object.assign(globalThis,{window,document,location,requestAnimationFrame:fn=>fn(),localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v)}});
+await import(new URL('assets/math.js',root).href);await import(new URL('fastapi/assets/course-data.js',root).href);await import(new URL('fastapi/assets/overview.js',root).href);await import(new URL('assets/reader.js',root).href);
+const navigate=id=>{location.hash='#'+id;window.dispatchEvent(new Event('hashchange'));};
+const input=(id,value)=>{q('#'+id).value=String(value);q('#'+id).dispatchEvent(new Event('input'));};
+const checked=(id,value)=>{q('#'+id).checked=value;q('#'+id).dispatchEvent(new Event('change'));};
+const select=(id,value)=>{for(const e of q('#'+id).querySelectorAll('option'))e.selected=false;q('#'+id).querySelector(`option[value="${value}"]`).selected=true;q('#'+id).dispatchEvent(new Event('change'));};
+assert.equal(document.querySelectorAll('.chapter-link').length,96);assert.equal(document.querySelectorAll('.module-row').length,16);
+assert.equal(document.querySelectorAll('.tf-lab').length,12);assert.equal(document.querySelectorAll('.tf-atlas img').length,32);
+for(const el of document.querySelectorAll('.tf-lab input,.tf-lab select'))assert.ok(q(`label[for="${el.id}"]`));
+const lab=window.FastAPILab;
+assert.equal(lab.status('none',true),401);select('fa-role','editor');assert.equal(q('#fa-status-code').textContent,'422');checked('fa-valid',true);assert.equal(q('#fa-status-code').textContent,'202');
+assert.deepEqual(lab.scope('function'),['open','route','close','chunk']);select('fa-scope-mode','request');assert.ok(q('#fa-scope-order').textContent.endsWith('close'));
+assert.equal(lab.schedule(4,false).at(-1).end,100);checked('fa-blocking',true);assert.equal(q('#fa-finish-time').textContent,'400');
+assert.deepEqual(lab.capacity(20,.5,2),{average:10,pool:16});input('fa-rate',40);assert.equal(q('#fa-average').textContent,'20.0');
+assert.equal(lab.idempotency(false,false,true).status,409);checked('fa-new-body',true);assert.ok(q('#fa-idem-state').textContent.startsWith('409'));checked('fa-new-tenant',true);assert.ok(q('#fa-idem-state').textContent.includes('建立新工作'));
+assert.equal(lab.lease(129,false,false).valid,true);input('fa-time',130);assert.equal(q('#fa-lease-state').textContent,'stale_lease');input('fa-time',129);checked('fa-cancel',true);assert.equal(q('#fa-lease-state').textContent,'cancelled');
+assert.deepEqual(lab.replay(6),[{id:8,event:'succeeded'}]);input('fa-cursor',8);assert.equal(q('#fa-replay-ids').textContent,'沒有新事件');
+assert.equal(lab.bucket(0,3).probe,false);assert.equal(lab.bucket(.5,3).probe,true);input('fa-elapsed',0);assert.equal(q('#fa-probe').textContent,'拒絕');
+assert.equal(lab.deadline(.7,2).fits,true);input('fa-attempts',3);assert.ok(q('#fa-deadline-state').textContent.includes('超過'));
+assert.deepEqual(lab.acl('alpha',false),[]);checked('fa-filter-first',true);assert.equal(q('#fa-acl-result').textContent,'結果：A');
+assert.equal(lab.percentile(100).p95,100);input('fa-outlier',500);assert.equal(q('#fa-p95-value').textContent,'p95 500ms');
+select('fa-fault','after-compute');assert.ok(q('#fa-recovery-state').textContent.includes('可能重算'));
+for(const fn of [()=>lab.status('unknown',true),()=>lab.scope('other'),()=>lab.schedule(1.2,false),()=>lab.capacity(NaN,1,1),()=>lab.lease(99,false,false),()=>lab.replay(-1),()=>lab.bucket(Infinity,2),()=>lab.deadline(1,4),()=>lab.acl('unknown',true),()=>lab.percentile(-1),()=>lab.recovery('unknown')])assert.throws(fn,RangeError);
+for(const el of document.querySelectorAll('.tf-lab .math-block'))assert.ok(el.querySelector('.katex'));
+for(const svg of document.querySelectorAll('.tf-plot')){assert.equal(svg.getAttribute('role'),'img');assert.ok(svg.querySelector('title'));assert.ok(!/NaN|Infinity/.test(svg.innerHTML));}
+let equations=0,examples=0;const used=new Set();
+for(const lesson of window.COURSE.lessons){navigate(lesson.id);assert.equal(q('.lesson-header h1').textContent,lesson.title);assert.ok(q('.tf-task').textContent.includes(lesson.title));used.add(q('.tf-figure img').getAttribute('src'));assert.equal(document.querySelectorAll('.chapter-link[aria-current="page"]').length,1);for(const a of document.querySelectorAll('.toc-links a'))assert.ok(document.getElementById(a.getAttribute('href').split('/')[1]));if(lesson.example){examples++;assert.equal(q('.example-download a').getAttribute('href'),'examples.zip');}const {document:doc}=parseHTML(`<!doctype html><html><body>${lesson.html}</body></html>`);for(const math of doc.querySelectorAll('.math-source,.math-block')){assert.ok(math.querySelector('.katex'));katex.renderToString(math.getAttribute('data-tex'),{throwOnError:true});equations++;}}
+assert.equal(used.size,32);assert.equal(examples,96);assert.ok(equations>=30);
+navigate('001-http-contract');q('#complete-lesson').click();assert.equal(q('#progress-count').textContent,'1 / 96');q('#lesson-notes').value='期限、租戶、事件與租約分開驗證。';q('#lesson-notes').dispatchEvent(new Event('input'));navigate('073-project-map');navigate('001-http-contract');assert.equal(q('#lesson-notes').value,'期限、租戶、事件與租約分開驗證。');assert.equal(storage.get('learning-notes:multimodal:v1'),legacy);
+q('#open-search').click();for(const term of ['0.165.0','fencing','If-Match','max_concurrency','65536']){q('#search-input').value=term;q('#search-input').dispatchEvent(new Event('input'));assert.ok(document.querySelectorAll('.search-result').length,term);}q('#close-search').click();
+q('#menu-toggle').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'true');q('#sidebar-shade').click();assert.equal(q('#menu-toggle').getAttribute('aria-expanded'),'false');
+navigate('overview');assert.equal(q('#fa-status-code').textContent,'401');assert.equal(q('#fa-replay-ids').textContent,'8');const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);assert.equal(ids.length,new Set(ids).size);
+await import(new URL('fastapi/examples/sse-client.js',root).href);
+const encoder=new TextEncoder();
+for(const ending of ['\n','\r\n']){const entries=[],decoder=window.RelaySSE.createDecoder(entry=>entries.push(entry)),bytes=encoder.encode([': ping','','id: 6','event: running','data: {"text":"中文😀"}','',''].join(ending));for(const byte of bytes)decoder.feed(Uint8Array.of(byte));decoder.finish();assert.deepEqual(entries,[{id:'6',event:'running',data:{text:'中文😀'}}]);}
+assert.throws(()=>{const decoder=window.RelaySSE.createDecoder(()=>{});decoder.feed(encoder.encode('id: bad\ndata: {}\n\n'));});
+assert.throws(()=>{const decoder=window.RelaySSE.createDecoder(()=>{});decoder.feed(encoder.encode('data: {}'));decoder.finish();});
+assert.throws(()=>{const decoder=window.RelaySSE.createDecoder(()=>{},32);decoder.feed(encoder.encode('x'.repeat(33)));});
+export const report={slug:'fastapi',modules:16,units:96,figures:32,equations,examples,labs:'12 interactive mechanisms PASS',reader:'math/search/progress/notes/downloads/menu/remount PASS',isolation:'multimodal notes preserved',client:'SSE JSON decoder, byte-fragmented UTF-8 and LF/CRLF PASS',limit:'DOM emulation, not real-browser layout'};
