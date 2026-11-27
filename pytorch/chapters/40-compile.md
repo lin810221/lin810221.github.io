@@ -29,7 +29,7 @@ python pytorch/examples/22_compile.py --compile --backend inductor
 
 ## graph break與重編譯
 
-Tensor.item轉Python控制流、不可支援的Python副作用或資料相依分支可能切圖。fullgraph=True有助在例子中直接顯示不支援點；真實模型可有多圖。輸入shape／dtype／device與Python值改變可能觸發guard不符及重編譯，不能只測固定一個batch就推論任意輸入都同樣快。
+Tensor.item轉Python控制流、不可支援的Python副作用或資料相依分支可能切圖。 `fullgraph=True` 有助在例子中直接顯示不支援點；真實模型可有多圖。輸入shape／dtype／device與Python值改變可能觸發guard不符及重編譯，不能只測固定一個batch就推論任意輸入都同樣快。
 
 ## 效能比較的最低要求
 

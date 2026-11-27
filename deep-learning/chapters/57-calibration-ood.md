@@ -18,7 +18,7 @@
 
 ## 兩個可以手算的分數
 
-二分類Brier取機率與0／1標籤的平方差平均，NLL對給真實類別極低機率的錯誤有很大懲罰。若$y=1$，p=.8的Brier為.04；p=.1則為.81。評估時也看分類、類別分組與資料切片，單一平均可能掩蓋少數群組的失敗。
+二分類Brier取機率與0／1標籤的平方差平均，NLL對給真實類別極低機率的錯誤有很大懲罰。若$y=1$， $p=.8$ 的Brier為.04； $p=.1$ 則為.81。評估時也看分類、類別分組與資料切片，單一平均可能掩蓋少數群組的失敗。
 
 $$
 \operatorname{Brier}=\frac1N\sum_i(p_i-y_i)^2,\qquad
@@ -29,7 +29,7 @@ $$
 
 ## 溫度縮放只改一個正數
 
-將已訓練模型凍結，在另外保留的校準資料上以NLL估T>0，再用softmax(z/T)。T較大讓分布平緩；它保留同一筆logits的argmax，所以通常不改top-1分類結果，無法修好原本分類錯誤。校準資料可從validation另分；不要用最終test調T。
+將已訓練模型凍結，在另外保留的校準資料上以NLL估 $T>0$ ，再用 $\operatorname{softmax}\left(\frac{z}{T}\right)$ 。T較大讓分布平緩；它保留同一筆logits的argmax，所以通常不改top-1分類結果，無法修好原本分類錯誤。校準資料可從validation另分；不要用最終test調T。
 
 $$
 p_T(c\mid x)=\frac{\exp(z_c/T)}{\sum_j\exp(z_j/T)},\qquad T>0

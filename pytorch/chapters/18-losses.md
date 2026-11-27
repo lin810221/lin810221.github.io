@@ -24,9 +24,24 @@ logits 是未正規化分數，可為任意實數。推論取 argmax 不需先 s
 
 ## 二元與多標籤：BCEWithLogitsLoss
 
-單一二元任務可用 logits[N,1] 與 float targets[N,1]，值為0或1；多標籤則兩者 `[N,C]`，每類可獨立為真。本課先不加 sigmoid，直接用 BCEWithLogitsLoss。binary 單輸出若用 argmax(dim=1)，永遠只有第0欄，應依 sigmoid 機率或 logits 門檻決策。
+對未加權的二元目標，令 $p=\sigma(z)$；$z$ 是模型輸出的 logit，$y$ 是 0 或 1。單一輸出的損失為：
+
+<!-- equation:binary-logit-loss -->
+$$
+\sigma(z)=\frac1{1+e^{-z}},\qquad
+\ell(z,y)=-\left[y\log\sigma(z)+(1-y)\log(1-\sigma(z))\right].
+$$
+
+單一二元任務可用 logits[N,1] 與 float targets[N,1]，值為0或1；多標籤則兩者 `[N,C]`，每類可獨立為真。本課先不加 sigmoid，直接用 BCEWithLogitsLoss。binary 單輸出若用  `argmax(dim=1)` ，永遠只有第0欄，應依 sigmoid 機率或 logits 門檻決策。
 
 ## 回歸：MSELoss
+
+令 $M$ 是參與計算的輸出元素總數。未加權且以元素平均的 MSE 定義如下；向量回歸時，$M$ 不一定只等於樣本筆數。
+
+<!-- equation:mean-squared-error -->
+$$
+L_{\mathrm{MSE}}=\frac1M\sum_{j=1}^M(\hat y_j-y_j)^2.
+$$
 
 預測與答案的 shape 明確相同，且均為浮點。`[N,1]` 與 `[N]` 會觸發非預期廣播；在 loss 前 assert。target 尺度會影響 MSE、梯度與 lr 的實際作用。比較不同資料集的 MSE 時，也要看單位與前處理。
 

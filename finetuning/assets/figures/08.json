@@ -1,0 +1,9 @@
+{
+  "title": "曲線顯示現象，不能單獨證明原因",
+  "alt": "合成曲線中訓練loss持續下降，開發loss先下降後上升；座標是教學單位。",
+  "caption": "先查資料、標籤與分母，再診斷過擬合。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

@@ -6,7 +6,7 @@
 
 ## 批次形狀整齊，不代表資料全都有效
 
-兩段Token長度分別3與5，為了合成矩形batch，短段可能補兩個PAD，形成`[B=2,T=5]`。PAD提供儲存位置，不表示原文多了兩個正常Token。模型需要知道哪些key不可讀取，loss也需要知道哪些target不應計分；這兩份mask相關，但不是同一張表就可不經思考地到處使用。
+兩段Token長度分別3與5，為了合成矩形batch，短段可能補兩個PAD，形成 `[B=2,T=5]` 。PAD提供儲存位置，不表示原文多了兩個正常Token。模型需要知道哪些key不可讀取，loss也需要知道哪些target不應計分；這兩份mask相關，但不是同一張表就可不經思考地到處使用。
 
 本課固定PAD ID0、BOS1、EOS2，byte IDs從3開始。PAD是詞彙表中的一個合法ID，loss ignore sentinel則是−100，後者不會被拿來查Embedding。把−100直接放進input_ids會索引錯誤；把PAD ID當ignore也不能取代對「哪些位置該監督」的明確設計。
 
@@ -36,6 +36,6 @@ Padding query列若完全沒有可讀key，自寫softmax可能得到NaN。可避
 
 ## 練習與解析
 
-長度2與6的兩段序列補到6，若只以12位置平均loss，錯在哪？分母應依實際有效預測配對，不含padding；序列長度與可預測target數也需依BOS/EOS與位移定義，而非直接把2+6當答案。請先列每個input→target配對，再數M。
+長度2與6的兩段序列補到6，若只以12位置平均loss，錯在哪？分母應依實際有效預測配對，不含padding；序列長度與可預測target數也需依BOS/EOS與位移定義，而非直接把 $2+6$ 當答案。請先列每個input→target配對，再數M。
 
 原始工具設定可查[Transformers padding與截斷](https://huggingface.co/docs/transformers/pad_truncation)，遮罩語意見[PyTorch SDPA](https://docs.pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html)。本文主線採明確自建batch，不依賴外部模型下載。

@@ -19,7 +19,7 @@
 
 ## 缺一項如何輸出
 
-如果豆腐D未知，即使其餘兩項D都有值，整餐D也不能叫完整已知總量。輸出amount=None、known_subtotal和missing_foods，讓人看見可用線索與缺口；未知不是營養不存在。
+如果豆腐D未知，即使其餘兩項D都有值，整餐D也不能叫完整已知總量。輸出 `amount=None` 、known_subtotal和missing_foods，讓人看見可用線索與缺口；未知不是營養不存在。
 
 ## 零份量的特殊情況
 

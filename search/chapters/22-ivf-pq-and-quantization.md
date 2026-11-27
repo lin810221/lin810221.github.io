@@ -24,15 +24,15 @@ $$
 \operatorname{codeBytesPerVector}=\frac{m b}{8}
 $$
 
-這只是 codes，不含 ID、coarse centroids、codebooks、倒排結構、原向量與中繼資料。d 必須能被 m 整除；每個子空間有 2^b 個中心，需要足夠訓練資料。量化距離近似會改變名次，即使掃所有 IVF 列表也不必然恢復 Flat 排名。
+這只是 codes，不含 ID、coarse centroids、codebooks、倒排結構、原向量與中繼資料。d 必須能被 m 整除；每個子空間有  $2^{b}$  個中心，需要足夠訓練資料。量化距離近似會改變名次，即使掃所有 IVF 列表也不必然恢復 Flat 排名。
 
 ## 入口的訓練選擇
 
-本例用 2048 筆 32 維，16 個 coarse lists、m=4、每子碼4bits，避免拿十筆資料硬練大型碼本。提高 nprobe 觀察 Recall 與耗時，但不要把這個小例低 Recall 視為所有 IVF-PQ 都差；參數、訓練集與分布決定結果。
+本例用 2048 筆 32 維，16 個 coarse lists、 $m=4$ 、每子碼4bits，避免拿十筆資料硬練大型碼本。提高 nprobe 觀察 Recall 與耗時，但不要把這個小例低 Recall 視為所有 IVF-PQ 都差；參數、訓練集與分布決定結果。
 
 ## 壓縮不是刪掉所有成本
 
-若保留 float32 原向量作 rerank，主儲存仍需計入 N×d×4。也可能將壓縮向量放記憶體、原向量放磁碟，導致重排 I/O。容量報告應區分 codes、原向量、圖、payload、複本與暫存，而不是只宣傳 codes 的壓縮倍數。
+若保留 float32 原向量作 rerank，主儲存仍需計入  $N\times d\times 4$ 。也可能將壓縮向量放記憶體、原向量放磁碟，導致重排 I/O。容量報告應區分 codes、原向量、圖、payload、複本與暫存，而不是只宣傳 codes 的壓縮倍數。
 
 ## 可執行範例
 
@@ -42,7 +42,7 @@ $$
 
 ## 練習與解答
 
-**請先嘗試：** nprobe=nlist 時，IVF-PQ 是否就與 Flat 完全相同？
+**請先嘗試：**  `nprobe=nlist`  時，IVF-PQ 是否就與 Flat 完全相同？
 
 <details><summary>展開解答與判斷依據</summary>
 

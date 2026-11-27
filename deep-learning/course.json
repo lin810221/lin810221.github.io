@@ -529,7 +529,7 @@
       "id": "31-convolution",
       "group": "vision",
       "title": "卷積運算：局部感受、權重共享與cross-correlation",
-      "summary": "用3×3影像與2×2kernel手算每個位置，理解CNN的結構偏好。",
+      "summary": "用 $3\\times3$ 影像與 $2\\times2$ 卷積核手算每個位置，理解 CNN 的結構偏好。",
       "tags": [
         "convolution",
         "cross correlation",

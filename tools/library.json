@@ -1,0 +1,1071 @@
+{
+  "domains": [
+    {
+      "id": "ai",
+      "title": "AI 與機器學習",
+      "english": "AI & MACHINE LEARNING",
+      "symbol": "✳",
+      "description": "從模型原理到知識檢索，再把能力接成 Agent。",
+      "groups": [
+        "模型與訓練",
+        "檢索與知識系統",
+        "多模態與內容理解",
+        "Agent 與工具"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "健康與生命科學",
+      "english": "HEALTH & LIFE SCIENCE",
+      "symbol": "◎",
+      "description": "用圖解理解身體，以研究證據連結日常生活。",
+      "groups": [
+        "人體基礎",
+        "生活健康",
+        "研究判讀、公共衛生與急救"
+      ]
+    },
+    {
+      "id": "math",
+      "title": "數學與統計",
+      "english": "MATHEMATICS & STATISTICS",
+      "symbol": "∑",
+      "description": "讀懂資料、機率與不確定性，建立推論的基礎。",
+      "groups": [
+        "統計與資料分析"
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "軟體與資料工程",
+      "english": "SOFTWARE & DATA ENGINEERING",
+      "symbol": "⌘",
+      "description": "從可靠的資料，到能測試與維護的完整服務。",
+      "groups": [
+        "資料庫與資料工程",
+        "網站開發"
+      ]
+    },
+    {
+      "id": "society",
+      "title": "經濟與社會科學",
+      "english": "ECONOMICS & SOCIAL SCIENCE",
+      "symbol": "↗",
+      "description": "理解選擇、制度與政策，用模型檢查直覺。",
+      "groups": [
+        "經濟與決策"
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "id": "intro",
+      "title": "入門起步",
+      "description": "可從基本概念開始"
+    },
+    {
+      "id": "foundation",
+      "title": "基礎應用",
+      "description": "有相關基礎，銜接實作與分析"
+    },
+    {
+      "id": "advanced",
+      "title": "進階整合",
+      "description": "建議先具備模型或系統基礎"
+    }
+  ],
+  "tags": {
+    "python": "Python",
+    "data-analysis": "資料分析",
+    "model-training": "模型訓練",
+    "llm": "LLM",
+    "agents": "AI Agents",
+    "tools": "工具整合",
+    "retrieval": "資訊檢索",
+    "vectors": "向量",
+    "evaluation": "評估與驗證",
+    "web": "網站開發",
+    "api": "API",
+    "body": "人體機制",
+    "daily-health": "日常健康",
+    "evidence": "證據判讀",
+    "prevention": "健康預防",
+    "movement": "活動與訓練",
+    "stress": "壓力與恢復",
+    "research": "研究方法",
+    "risk": "風險與決策",
+    "vision": "電腦視覺",
+    "deployment": "部署與維護",
+    "causality": "因果推論",
+    "policy": "公共政策",
+    "emergency": "緊急應變",
+    "sql": "SQL",
+    "data-engineering": "資料工程",
+    "multimodal": "多模態",
+    "documents": "文件 AI"
+  },
+  "featuredTags": [
+    "python",
+    "llm",
+    "agents",
+    "retrieval",
+    "model-training",
+    "data-analysis",
+    "sql",
+    "documents",
+    "daily-health",
+    "body",
+    "evidence",
+    "research"
+  ],
+  "routes": [
+    {
+      "id": "models",
+      "domain": "ai",
+      "title": "看懂模型，親手訓練",
+      "description": "先建立學習與評估觀念，再把梯度、架構和適應方法接起來。",
+      "courses": [
+        "machine-learning",
+        "deep-learning",
+        "pytorch",
+        "transformer",
+        "finetuning"
+      ],
+      "note": "深度學習與 PyTorch 可搭配閱讀；影像辨識是另一條應用分支。"
+    },
+    {
+      "id": "knowledge",
+      "domain": "ai",
+      "title": "打造有依據的知識助理",
+      "description": "從模型服務認識輸入輸出，再建立可檢索、可引用的知識流程。",
+      "courses": [
+        "llm",
+        "embedding",
+        "search",
+        "rag"
+      ],
+      "note": "Embedding 與搜尋可交替閱讀，RAG 再串起完整應用。"
+    },
+    {
+      "id": "agents",
+      "domain": "ai",
+      "title": "把模型能力接成 Agent",
+      "description": "從服務呼叫、工具契約，走到有狀態與可恢復的工作流程。",
+      "courses": [
+        "llm",
+        "mcp",
+        "langgraph"
+      ],
+      "note": "路線是建議閱讀順序，每門課都保留自己的從零主線。"
+    },
+    {
+      "id": "health-basics",
+      "domain": "health",
+      "title": "理解身體，照顧日常",
+      "description": "先認識身體如何運作，再從飲食、活動與睡眠建立生活觀念。",
+      "courses": [
+        "anatomy-physiology",
+        "nutrition",
+        "exercise-science",
+        "sleep-science"
+      ],
+      "note": "生活課可依興趣先讀，遇到機制再回查人體基礎。"
+    },
+    {
+      "id": "evidence",
+      "domain": "health",
+      "title": "從資料走向健康證據",
+      "description": "把統計的不確定性，連到研究判讀與群體健康。",
+      "courses": [
+        "applied-statistics",
+        "evidence-health",
+        "public-health"
+      ],
+      "note": "跨領域路線；先理解比較、偏差與分母，再評估結論。"
+    },
+    {
+      "id": "data-to-web",
+      "domain": "engineering",
+      "title": "從資料走到完整服務",
+      "description": "先理解資料模型、SQL 與交易，再把資料能力接成網站流程。",
+      "courses": [
+        "sql",
+        "django"
+      ],
+      "note": "兩門課均有從零主線；資料工程管線與 Django 網站專案可依需要分別實作。"
+    },
+    {
+      "id": "document-ai",
+      "domain": "ai",
+      "title": "從視覺理解到文件助理",
+      "description": "理解影像來源，再接文件結構、區域證據和知識回答。",
+      "courses": [
+        "image-recognition",
+        "multimodal",
+        "rag"
+      ],
+      "note": "多模態課保留必要基礎；模型訓練與RAG系統可依需求跨課深入。"
+    }
+  ],
+  "courses": {
+    "machine-learning": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "intro",
+      "order": 10,
+      "title": "機器學習",
+      "prerequisite": "Python 基本語法；數學可隨課補足",
+      "tags": [
+        "python",
+        "data-analysis",
+        "model-training",
+        "evaluation"
+      ],
+      "description": "從第一個模型開始，理解回歸、分類與分群。學會評估與校準，讓每個預測都有可信依據。",
+      "coverCaption": "DEFINE → LEARN → VALIDATE",
+      "classicOrder": 6,
+      "classic": {
+        "name": "Machine Learning",
+        "subtitle": "機器學習",
+        "eyebrow": "MACHINE LEARNING",
+        "description": "從資料與第一個模型開始，走進回歸、分類、集成與分群。學會評估、校準與選擇，讓每個預測都有可信依據。",
+        "extraMeta": [
+          "30 份 Python 範例",
+          "5 個互動實驗室"
+        ],
+        "action": "開始理解模型如何學習",
+        "artClasses": [
+          "subject-art",
+          "ml-art"
+        ]
+      }
+    },
+    "deep-learning": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "foundation",
+      "order": 20,
+      "title": "深度學習",
+      "prerequisite": "建議先認識機器學習與向量",
+      "tags": [
+        "python",
+        "model-training",
+        "evaluation"
+      ],
+      "description": "從神經元與梯度，到 CNN、Attention 與生成模型。用推導、圖解與實作，看懂模型如何學習。",
+      "coverCaption": "REPRESENT → DIFFERENTIATE → LEARN",
+      "classicOrder": 7,
+      "classic": {
+        "name": "Deep Learning",
+        "subtitle": "深度學習",
+        "eyebrow": "DEEP LEARNING",
+        "description": "從手算梯度與第一個神經元，到 CNN、序列、Attention 與生成模型。理解每一層的轉換，親手驗證模型如何學習。",
+        "extraMeta": [
+          "42 份 Python 範例",
+          "6 個互動實驗室"
+        ],
+        "action": "看見表示與梯度的流動",
+        "artClasses": [
+          "subject-art",
+          "dl-art"
+        ]
+      }
+    },
+    "pytorch": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "foundation",
+      "order": 30,
+      "title": "PyTorch 實作工程",
+      "prerequisite": "Python 基本語法；可搭配深度學習",
+      "tags": [
+        "python",
+        "model-training",
+        "deployment"
+      ],
+      "description": "從第一個 Tensor 到完整訓練。掌握梯度、資料管線、模型保存與 GPU，建立可重現的實作流程。",
+      "coverCaption": "TENSORS → GRADIENTS → TRAINING",
+      "classicOrder": 5,
+      "classic": {
+        "name": "PyTorch",
+        "subtitle": "實作工程",
+        "eyebrow": "PYTORCH ENGINEERING",
+        "description": "從第一個 Tensor 到完整訓練。循序掌握 Autograd、資料管線、模型保存、GPU 與效能分析，讓每一次更新都有依據。",
+        "extraMeta": [
+          "24 份 Python 範例",
+          "PyTorch 2.15.0"
+        ],
+        "action": "親手寫出模型的學習",
+        "artClasses": [
+          "subject-art",
+          "pytorch-art"
+        ]
+      }
+    },
+    "transformer": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "advanced",
+      "order": 40,
+      "title": "Transformer 與 LLM 原理",
+      "prerequisite": "建議先讀深度學習與 PyTorch",
+      "tags": [
+        "python",
+        "llm",
+        "model-training",
+        "evaluation"
+      ],
+      "description": "從 Token、Q／K／V 到手寫 GPT。沿著矩陣與圖解，理解 Attention、生成與模型的能力邊界。",
+      "coverCaption": "TOKENS · ATTENTION · LANGUAGE",
+      "classicOrder": 23,
+      "classic": {
+        "name": "Transformer",
+        "subtitle": "與 LLM 原理",
+        "eyebrow": "TRANSFORMER & LLM FOUNDATIONS",
+        "description": "從Token、Q／K／V與位置編碼，走到手寫GPT、生成、KV Cache與後訓練。用矩陣、圖解和離線實作，理解模型每一步，也理解它的邊界。",
+        "extraMeta": [
+          "32 張圖解・28 份範例",
+          "10 個互動實驗"
+        ],
+        "action": "從下一個Token開始理解",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    },
+    "image-recognition": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "advanced",
+      "order": 50,
+      "title": "影像辨識",
+      "prerequisite": "建議具備深度學習與 PyTorch 基礎",
+      "tags": [
+        "python",
+        "vision",
+        "model-training",
+        "evaluation"
+      ],
+      "description": "從像素、色彩與座標，到分類、偵測與分割。親手訓練小模型，再用 IoU、AP 與可靠性檢查結果。",
+      "coverCaption": "PIXELS · FEATURES · UNDERSTANDING",
+      "classicOrder": 22,
+      "classic": {
+        "name": "Computer Vision",
+        "subtitle": "影像辨識",
+        "eyebrow": "COMPUTER VISION",
+        "description": "從像素、色彩與座標，到CNN、ViT、分類、物件偵測與分割。親手訓練小模型，算清IoU與AP，再把預測接上可靠性與部署。",
+        "extraMeta": [
+          "28 張中文圖解・24 份範例",
+          "8 個互動實驗"
+        ],
+        "action": "從第一張影像開始",
+        "artClasses": [
+          "subject-art",
+          "vision-art"
+        ]
+      }
+    },
+    "finetuning": {
+      "domain": "ai",
+      "group": "模型與訓練",
+      "level": "advanced",
+      "order": 60,
+      "title": "LLM 微調與模型適應",
+      "prerequisite": "建議先讀 Transformer 與 PyTorch",
+      "tags": [
+        "python",
+        "llm",
+        "model-training",
+        "evaluation"
+      ],
+      "description": "從資料與聊天模板，到 SFT、LoRA、QLoRA 與 DPO。透過評估、續訓與成品回讀，驗證模型的改變。",
+      "coverCaption": "DATA → ADAPT → EVALUATE",
+      "classicOrder": 24,
+      "classic": {
+        "name": "Model Adaptation",
+        "subtitle": "LLM 微調與模型適應",
+        "eyebrow": "LLM FINE-TUNING & ADAPTATION",
+        "description": "從資料與聊天模板，走到SFT、LoRA、QLoRA、DPO與蒸餾。逐token檢查監督，以保留評估、續訓與成品回讀，證明模型改變了什麼。",
+        "extraMeta": [
+          "24 張圖解・24 份範例",
+          "8 個互動實驗"
+        ],
+        "action": "從資料走到可交付模型",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    },
+    "embedding": {
+      "domain": "ai",
+      "group": "檢索與知識系統",
+      "level": "foundation",
+      "order": 10,
+      "title": "Embedding 與表示學習",
+      "prerequisite": "Python 基本語法；向量概念可隨課補足",
+      "tags": [
+        "python",
+        "vectors",
+        "retrieval",
+        "data-analysis"
+      ],
+      "description": "文字如何成為向量？從幾何與表示學習，到搜尋、分類、聚類與推薦，理解相似度背後的意義。",
+      "coverCaption": "REPRESENT → LEARN → COMPARE",
+      "classicOrder": 4,
+      "classic": {
+        "name": "Embedding",
+        "subtitle": "與表示學習",
+        "eyebrow": "EMBEDDINGS & REPRESENTATION LEARNING",
+        "description": "文字如何成為向量？從幾何、對比學習與模型 API，到搜尋、分類、聚類、推薦，以及降維與量化。",
+        "extraMeta": [
+          "20 份 Python 範例",
+          "4 個互動實驗室"
+        ],
+        "action": "探索語意的形狀",
+        "artClasses": [
+          "subject-art",
+          "embedding-art"
+        ]
+      }
+    },
+    "search": {
+      "domain": "ai",
+      "group": "檢索與知識系統",
+      "level": "foundation",
+      "order": 20,
+      "title": "搜尋引擎與向量資料庫",
+      "prerequisite": "Python 基本語法；建議認識 Embedding",
+      "tags": [
+        "retrieval",
+        "vectors",
+        "evaluation",
+        "deployment"
+      ],
+      "description": "從倒排索引到向量近鄰，親手建立混合搜尋。一起考慮品質、效能、資料更新與備份重建。",
+      "coverCaption": "INDEX → RETRIEVE → VERIFY",
+      "classicOrder": 10,
+      "classic": {
+        "name": "Search",
+        "subtitle": "搜尋引擎與向量資料庫",
+        "eyebrow": "SEARCH SYSTEMS",
+        "description": "從倒排索引到向量近鄰，從第一次查詢到資料更新與備份重建。親手實作混合搜尋，理解品質、效能與一致性的取捨。",
+        "extraMeta": [
+          "32 份 Python 範例",
+          "7 個互動實驗"
+        ],
+        "action": "讓搜尋成為可靠的系統",
+        "artClasses": [
+          "subject-art",
+          "search-art"
+        ]
+      }
+    },
+    "rag": {
+      "domain": "ai",
+      "group": "檢索與知識系統",
+      "level": "foundation",
+      "order": 30,
+      "title": "RAG 檢索增強生成",
+      "prerequisite": "建議認識 LLM 服務、Embedding 與檢索",
+      "tags": [
+        "llm",
+        "retrieval",
+        "evaluation",
+        "agents"
+      ],
+      "description": "把文件切塊、檢索與重排序接起來。透過引用與評估，打造有依據、可查證的知識助理。",
+      "coverCaption": "RETRIEVE → GROUND → VERIFY",
+      "classicOrder": 3,
+      "classic": {
+        "name": "RAG",
+        "subtitle": "檢索增強生成",
+        "eyebrow": "RETRIEVAL AUGMENTED GENERATION",
+        "description": "從文件切塊、BM25 與向量檢索，到重排序、引用與評估。親手打造有依據、可查證的知識助理。",
+        "extraMeta": [
+          "16 份 Python 範例",
+          "3 個互動實驗室"
+        ],
+        "action": "讓知識找到答案",
+        "artClasses": [
+          "subject-art",
+          "rag-art"
+        ]
+      }
+    },
+    "llm": {
+      "domain": "ai",
+      "group": "Agent 與工具",
+      "level": "intro",
+      "order": 10,
+      "title": "LLM 服務與 AI Agents",
+      "prerequisite": "概念可直接讀；實作使用 Python",
+      "tags": [
+        "llm",
+        "agents",
+        "api",
+        "python"
+      ],
+      "description": "認識 OpenAI、Gemini、Claude 的功能與參數。從 API 呼叫開始，打造有工具與記憶的 AI Agent。",
+      "coverCaption": "MODEL → TOOLS → AGENT",
+      "classicOrder": 2,
+      "classic": {
+        "name": "LLM APIs",
+        "subtitle": "與 AI Agents",
+        "eyebrow": "LLM SERVICES & AGENTS",
+        "description": "從 OpenAI、Gemini、Claude 的功能與參數，到親手打造有工具、有記憶、能接受審核的 AI Agent。",
+        "extraMeta": [
+          "12 份 Python 範例",
+          "三家 API 實戰"
+        ],
+        "action": "探索這個領域",
+        "artClasses": [
+          "subject-art",
+          "llm-art"
+        ]
+      }
+    },
+    "mcp": {
+      "domain": "ai",
+      "group": "Agent 與工具",
+      "level": "foundation",
+      "order": 20,
+      "title": "MCP 與工具整合",
+      "prerequisite": "Python 與 API 基本概念",
+      "tags": [
+        "agents",
+        "tools",
+        "api",
+        "python"
+      ],
+      "description": "從第一個工具伺服器到完整整合專案。理解協定、資料契約、授權與審核，讓 Agent 的能力可驗證。",
+      "coverCaption": "DISCOVER → REVIEW → EXECUTE",
+      "classicOrder": 9,
+      "classic": {
+        "name": "MCP",
+        "subtitle": "與工具整合",
+        "eyebrow": "MODEL CONTEXT PROTOCOL",
+        "description": "從第一個工具伺服器到可信任的 Agent 能力。掌握協定、契約、授權與審核，親手完成可驗證的工單整合專案。",
+        "extraMeta": [
+          "30 份 Python 範例",
+          "6 個互動實驗"
+        ],
+        "action": "讓模型接上可驗證的能力",
+        "artClasses": [
+          "subject-art"
+        ]
+      }
+    },
+    "langgraph": {
+      "domain": "ai",
+      "group": "Agent 與工具",
+      "level": "advanced",
+      "order": 30,
+      "title": "LangGraph 完整教學",
+      "prerequisite": "建議認識 Python、LLM 與工具呼叫",
+      "tags": [
+        "agents",
+        "tools",
+        "python",
+        "deployment"
+      ],
+      "description": "從第一個節點到有記憶、能等待、可恢復的 Agent。用圖式流程串起工具、狀態與人工審核。",
+      "coverCaption": "STATE → ACTION → UNDERSTANDING",
+      "classicOrder": 1,
+      "classic": {
+        "name": "LangGraph",
+        "subtitle": "完整教學",
+        "eyebrow": "AI ENGINEERING",
+        "description": "從第一個節點到有記憶、能等待、可恢復的 Agent。循序掌握圖式工作流程的每一個環節。",
+        "extraMeta": [
+          "12 份 Python 範例",
+          "從零到實務"
+        ],
+        "action": "開始學習",
+        "artClasses": [
+          "subject-art"
+        ]
+      }
+    },
+    "anatomy-physiology": {
+      "domain": "health",
+      "group": "人體基礎",
+      "level": "intro",
+      "order": 10,
+      "title": "人體解剖與生理學",
+      "prerequisite": "不需醫學背景，從圖解開始",
+      "tags": [
+        "body",
+        "daily-health"
+      ],
+      "description": "用中文示意圖認識器官，沿路徑看懂功能。從細胞與穩態到各大系統，理解身體如何彼此配合。",
+      "coverCaption": "SEE → TRACE → UNDERSTAND",
+      "classicOrder": 17,
+      "classic": {
+        "name": "The Human Body",
+        "subtitle": "人體解剖與生理學",
+        "eyebrow": "ANATOMY & PHYSIOLOGY",
+        "description": "用中文示意圖認識器官，沿路徑看懂功能。從細胞、組織與穩態，到神經、心肺、消化、腎臟及生殖，把身體的連結放回生活。",
+        "extraMeta": [
+          "64 張原創中文圖解",
+          "8 個互動讀圖活動"
+        ],
+        "action": "從看見構造，走向理解生命",
+        "artClasses": [
+          "subject-art",
+          "anatomy-art"
+        ]
+      }
+    },
+    "nutrition": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "intro",
+      "order": 10,
+      "title": "營養學與飲食科學",
+      "prerequisite": "可直接開始，人體基礎作為參考",
+      "tags": [
+        "daily-health",
+        "body",
+        "evidence",
+        "prevention"
+      ],
+      "description": "從消化、能量與營養素，到餐盤、標示和食品安全。用生活情境與研究證據，讀懂每天的飲食選擇。",
+      "coverCaption": "FOOD → BODY → EVIDENCE",
+      "classicOrder": 12,
+      "classic": {
+        "name": "Nutrition",
+        "subtitle": "營養學與飲食科學",
+        "eyebrow": "NUTRITION & FOOD SCIENCE",
+        "description": "從消化、能量與營養素，到餐盤、標示、補充品與食品安全。理解每個分母，查核每項證據，把食物放回生活。",
+        "extraMeta": [
+          "48 張中文圖解",
+          "12 個互動實驗"
+        ],
+        "action": "讀懂食物與飲食的科學",
+        "artClasses": [
+          "subject-art",
+          "nutrition-art"
+        ]
+      }
+    },
+    "sleep-science": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "intro",
+      "order": 20,
+      "title": "睡眠科學與晝夜節律",
+      "prerequisite": "可從睡眠日誌與機制圖開始",
+      "tags": [
+        "daily-health",
+        "body",
+        "stress",
+        "evidence"
+      ],
+      "description": "沿著一夜的階段圖，理解睡眠壓力與生理時鐘。從日誌、光照到輪班與時差，把機制放回生活。",
+      "coverCaption": "SLEEP → CLOCK → CONTEXT",
+      "classicOrder": 19,
+      "classic": {
+        "name": "The Rhythm of Sleep",
+        "subtitle": "睡眠科學與晝夜節律",
+        "eyebrow": "SLEEP & CIRCADIAN SCIENCE",
+        "description": "從一夜的階段圖、睡眠壓力與生理時鐘，到日誌、光照、穿戴、輪班和時差。沿時間追機制，把睡眠放回生活與可檢查的證據。",
+        "extraMeta": [
+          "54 張中文圖解",
+          "10 個互動學習活動"
+        ],
+        "action": "沿時間，看懂睡眠",
+        "artClasses": [
+          "subject-art",
+          "sleep-art"
+        ]
+      }
+    },
+    "mental-health": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "intro",
+      "order": 30,
+      "title": "心理健康與壓力科學",
+      "prerequisite": "不需心理學背景",
+      "tags": [
+        "daily-health",
+        "stress",
+        "evidence"
+      ],
+      "description": "理解壓力、情緒、注意力與習慣。從日常技能走到人際與職場，以證據選方法，以尊重連結支持。",
+      "coverCaption": "NOTICE → UNDERSTAND → CONNECT",
+      "classicOrder": 15,
+      "classic": {
+        "name": "Mental Health",
+        "subtitle": "心理健康與壓力科學",
+        "eyebrow": "MENTAL HEALTH & STRESS SCIENCE",
+        "description": "從壓力、情緒、注意力與習慣，到日常技能、人際職場和照護。理解經驗與環境，用證據選方法，用尊重連結支持。",
+        "extraMeta": [
+          "48 張中文圖解",
+          "12 個互動實驗"
+        ],
+        "action": "從理解，走向可行的支持",
+        "artClasses": [
+          "subject-art",
+          "mental-art"
+        ]
+      }
+    },
+    "ergonomics": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "intro",
+      "order": 40,
+      "title": "肌肉骨骼健康與人體工學",
+      "prerequisite": "從生活任務與工作環境開始",
+      "tags": [
+        "daily-health",
+        "body",
+        "movement",
+        "prevention"
+      ],
+      "description": "從骨關節、肌肉與疼痛，到桌椅鍵鼠和搬抬作業。用任務與環境分析，理解身體負荷及改善方向。",
+      "coverCaption": "OBSERVE → ADAPT → REVIEW",
+      "classicOrder": 16,
+      "classic": {
+        "name": "Ergonomics",
+        "subtitle": "肌肉骨骼健康與人體工學",
+        "eyebrow": "MUSCULOSKELETAL HEALTH & ERGONOMICS",
+        "description": "從骨關節、肌肉、力與疼痛，到桌椅鍵鼠、搬抬、重複作業與振動。理解任務需求，讓環境適合人的差異。",
+        "extraMeta": [
+          "48 張中文圖解",
+          "12 個互動實驗"
+        ],
+        "action": "從觀察，走向可回顧的改善",
+        "artClasses": [
+          "subject-art",
+          "ergonomics-art"
+        ]
+      }
+    },
+    "exercise-science": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "foundation",
+      "order": 50,
+      "title": "運動科學與訓練原理",
+      "prerequisite": "建議搭配人體的肌肉與供能機制",
+      "tags": [
+        "movement",
+        "body",
+        "daily-health",
+        "evidence"
+      ],
+      "description": "從肌肉、力學與供能，到肌力、耐力和恢復。理解訓練變數，透過紀錄與證據評估自己的進步。",
+      "coverCaption": "MOVE → LOAD → ADAPT → OBSERVE",
+      "classicOrder": 13,
+      "classic": {
+        "name": "Exercise Science",
+        "subtitle": "運動科學與訓練原理",
+        "eyebrow": "EXERCISE SCIENCE",
+        "description": "從力學、肌肉與供能，到肌力、肌肥大、耐力和恢復。理解訓練的變數，用紀錄與證據看見進步。",
+        "extraMeta": [
+          "48 張中文圖解",
+          "12 個互動實驗"
+        ],
+        "action": "理解為什麼這樣練",
+        "artClasses": [
+          "subject-art",
+          "exercise-art"
+        ]
+      }
+    },
+    "metabolic-health": {
+      "domain": "health",
+      "group": "生活健康",
+      "level": "foundation",
+      "order": 60,
+      "title": "代謝健康與慢性病預防",
+      "prerequisite": "建議先認識人體生理與飲食概念",
+      "tags": [
+        "body",
+        "prevention",
+        "daily-health",
+        "risk"
+      ],
+      "description": "從胰島素、體位與檢驗，到心血管、肝臟和腎臟。連結生活、量測與證據，理解慢性病預防。",
+      "coverCaption": "MEASURE → CONNECT → PREVENT",
+      "classicOrder": 14,
+      "classic": {
+        "name": "Metabolic Health",
+        "subtitle": "代謝健康與慢性病預防",
+        "eyebrow": "METABOLIC HEALTH",
+        "description": "從胰島素、體位與檢驗，到血壓血脂、心臟、肝臟與腎臟。把生活、量測與證據連起來，理解有依據的預防。",
+        "extraMeta": [
+          "48 張中文圖解",
+          "12 個互動實驗"
+        ],
+        "action": "讀懂數字背後的身體連結",
+        "artClasses": [
+          "subject-art",
+          "metabolic-art"
+        ]
+      }
+    },
+    "first-aid": {
+      "domain": "health",
+      "group": "研究判讀、公共衛生與急救",
+      "level": "intro",
+      "order": 10,
+      "title": "急救與緊急應變",
+      "prerequisite": "無先備要求；技能須搭配實體訓練",
+      "tags": [
+        "emergency",
+        "prevention",
+        "daily-health"
+      ],
+      "description": "先辨識危險，再接上 119、CPR、AED 與安全照護。用圖解和情境學習應變，銜接實體技能訓練。",
+      "coverCaption": "NOTICE → CALL → CARE",
+      "classicOrder": 21,
+      "classic": {
+        "name": "Ready to Help",
+        "subtitle": "急救與緊急應變",
+        "eyebrow": "FIRST AID & EMERGENCY RESPONSE",
+        "description": "先辨識現場危險，再接上119、CPR、AED與安全照護。從哽塞、出血、燒燙傷到常見急症和災害準備，以圖解和情境銜接實體技能訓練。",
+        "extraMeta": [
+          "60 張中文圖解",
+          "12 個情境學習活動"
+        ],
+        "action": "從救援主線開始",
+        "artClasses": [
+          "subject-art",
+          "aid-art"
+        ]
+      }
+    },
+    "evidence-health": {
+      "domain": "health",
+      "group": "研究判讀、公共衛生與急救",
+      "level": "foundation",
+      "order": 20,
+      "title": "實證健康與醫學研究判讀",
+      "prerequisite": "建議搭配應用統計；可先讀概念",
+      "tags": [
+        "evidence",
+        "research",
+        "risk",
+        "causality"
+      ],
+      "description": "從研究設計到偏差、風險、森林圖與指南。追溯每個結論的比較、分母與不確定性，讀懂健康證據。",
+      "coverCaption": "ASK → APPRAISE → APPLY",
+      "classicOrder": 18,
+      "classic": {
+        "name": "Read the Evidence",
+        "subtitle": "實證健康與醫學研究判讀",
+        "eyebrow": "EVIDENCE-BASED HEALTH",
+        "description": "從健康問題與研究設計，到偏差、風險、診斷、森林圖與指南。追溯每個結論的比較、分母與不確定性，讓證據回到生活。",
+        "extraMeta": [
+          "54 張中文圖解",
+          "9 個互動判讀活動"
+        ],
+        "action": "先問清楚，再讀證據",
+        "artClasses": [
+          "subject-art",
+          "evidence-art"
+        ]
+      }
+    },
+    "public-health": {
+      "domain": "health",
+      "group": "研究判讀、公共衛生與急救",
+      "level": "foundation",
+      "order": 30,
+      "title": "公共衛生與流行病學",
+      "prerequisite": "建議認識基本統計與研究判讀",
+      "tags": [
+        "research",
+        "prevention",
+        "causality",
+        "policy"
+      ],
+      "description": "從群體健康、風險與因果，到監測、疫情調查和健康公平。用圖解看清比較，將證據接到公共行動。",
+      "coverCaption": "POPULATION → EVIDENCE → ACTION",
+      "classicOrder": 20,
+      "classic": {
+        "name": "Health is Shared",
+        "subtitle": "公共衛生與流行病學",
+        "eyebrow": "PUBLIC HEALTH & EPIDEMIOLOGY",
+        "description": "從群體健康、風險、人時與因果，到監測、疫情調查、篩檢、環境和健康公平。用圖解看清比較，將證據接到政策與公共行動。",
+        "extraMeta": [
+          "60 張中文圖解",
+          "12 個互動學習活動"
+        ],
+        "action": "從人口健康開始",
+        "artClasses": [
+          "subject-art",
+          "public-art"
+        ]
+      }
+    },
+    "applied-statistics": {
+      "domain": "math",
+      "group": "統計與資料分析",
+      "level": "intro",
+      "order": 10,
+      "title": "應用統計",
+      "prerequisite": "從資料整理與機率基本概念開始",
+      "tags": [
+        "data-analysis",
+        "research",
+        "risk",
+        "python"
+      ],
+      "description": "從圖表、機率與抽樣，到信賴區間、檢定、ANOVA 與迴歸。讓每個數字都有可說明的條件與結論。",
+      "coverCaption": "ASK → MEASURE → INFER → EXPLAIN",
+      "classicOrder": 8,
+      "classic": {
+        "name": "Applied Statistics",
+        "subtitle": "應用統計",
+        "eyebrow": "APPLIED STATISTICS",
+        "description": "依十章主線，從圖表、機率與抽樣，走到區間、檢定、ANOVA、迴歸與問卷。讓每一個數字，都有可以說明的條件與結論。",
+        "extraMeta": [
+          "40 份 Python 範例",
+          "8 個互動實驗室"
+        ],
+        "action": "從資料走向有依據的判斷",
+        "artClasses": [
+          "subject-art",
+          "statistics-art"
+        ]
+      }
+    },
+    "django": {
+      "domain": "engineering",
+      "group": "網站開發",
+      "level": "foundation",
+      "order": 10,
+      "title": "Django",
+      "prerequisite": "Python 基本語法；網站概念由課內介紹",
+      "tags": [
+        "python",
+        "web",
+        "api",
+        "deployment"
+      ],
+      "description": "從第一個請求到 Model、表單、登入與 REST API。親手完成學習任務網站，走過測試、權限與部署。",
+      "coverCaption": "REQUEST → MODEL → RESPONSE",
+      "classicOrder": 25,
+      "classic": {
+        "name": "Django",
+        "subtitle": "完整網站實作",
+        "eyebrow": "DJANGO WEB ENGINEERING",
+        "description": "從第一個請求，到Model、表單、登入、Admin與REST API。用同一個學習任務網站，走完資料擁有權、私人附件、測試與部署。",
+        "extraMeta": [
+          "28 張圖解・24 個實驗",
+          "8 個互動算例"
+        ],
+        "action": "從零建立一個完整網站",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    },
+    "economics": {
+      "domain": "society",
+      "group": "經濟與決策",
+      "level": "intro",
+      "order": 10,
+      "title": "經濟學",
+      "prerequisite": "不需經濟學背景，圖表與模型循序介紹",
+      "tags": [
+        "data-analysis",
+        "risk",
+        "causality",
+        "policy"
+      ],
+      "description": "從機會成本與供需曲線，到成長、通膨與貿易。把直覺化成模型，再用資料檢查每一個政策取捨。",
+      "coverCaption": "CHOICE → INSTITUTIONS → OUTCOMES",
+      "classicOrder": 11,
+      "classic": {
+        "name": "Economics",
+        "subtitle": "經濟學",
+        "eyebrow": "ECONOMICS",
+        "description": "從機會成本與第一條供需曲線，到成長、通膨、貨幣與貿易。把直覺化成模型，再用資料與證據檢查每一個政策取捨。",
+        "extraMeta": [
+          "42 份 Python 範例",
+          "10 個互動實驗"
+        ],
+        "action": "從個體選擇，讀懂總體與世界",
+        "artClasses": [
+          "subject-art",
+          "economics-art"
+        ]
+      }
+    },
+    "sql": {
+      "domain": "engineering",
+      "group": "資料庫與資料工程",
+      "level": "intro",
+      "order": 10,
+      "title": "SQL 與資料工程",
+      "prerequisite": "不需 SQL 經驗；Python 環境與執行步驟從零介紹",
+      "tags": [
+        "sql",
+        "data-engineering",
+        "data-analysis",
+        "python",
+        "deployment"
+      ],
+      "description": "從 SELECT、JOIN 與交易，到 Parquet、CDC、資料品質與可恢復發布。用同一個訂單資料專案，把查詢結果交付成可信任的資料產品。",
+      "coverCaption": "QUERY → MODEL → DELIVER",
+      "classicOrder": 26,
+      "classic": {
+        "name": "SQL & Data Engineering",
+        "subtitle": "SQL 與資料工程",
+        "eyebrow": "SQL & DATA ENGINEERING",
+        "description": "從第一筆 SELECT，到 JOIN、視窗、交易、Parquet 與增量管線。沿著訂單資料專案，理解粒度、晚到、刪除、品質閘門與發布恢復。",
+        "extraMeta": [
+          "36 張圖解・36 個實作入口",
+          "12 個互動實驗"
+        ],
+        "action": "從查詢開始，交付可靠資料",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    },
+    "multimodal": {
+      "domain": "ai",
+      "group": "多模態與內容理解",
+      "level": "foundation",
+      "order": 10,
+      "title": "多模態與文件 AI",
+      "prerequisite": "Python 基本語法有助實作；PDF、OCR與模型概念從零介紹",
+      "tags": [
+        "multimodal",
+        "documents",
+        "vision",
+        "retrieval",
+        "evaluation",
+        "python"
+      ],
+      "description": "從PDF、真實OCR與版面，到表格、VLM、圖文問答和跨模態檢索。完成有來源區域、欄位驗證與可恢復發布的文件專題。",
+      "coverCaption": "SEE → READ → VERIFY",
+      "classicOrder": 27,
+      "classic": {
+        "name": "Multimodal & Document AI",
+        "subtitle": "多模態與文件 AI",
+        "eyebrow": "MULTIMODAL & DOCUMENT AI",
+        "description": "從一份PDF到有證據的欄位與答案。看懂OCR、版面、表格、VLM和時間定位，完成可查證的DocWeave文件專題。",
+        "extraMeta": [
+          "32 張圖解・32 個實作入口",
+          "12 個互動實驗"
+        ],
+        "action": "從頁面理解，走到可查證資料",
+        "artClasses": [
+          "subject-art",
+          "transformer-art"
+        ]
+      }
+    }
+  }
+}

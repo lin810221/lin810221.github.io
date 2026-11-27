@@ -52,7 +52,7 @@ followup = client.interactions.create(
 )
 ```
 
-這段使用服務端歷史，因此不能把 first 設成 store=false 後又假設仍能引用。若採無狀態模式，需要自行依協定保留完整步驟。
+這段使用服務端歷史，因此不能把 first 設成  `store=false`  後又假設仍能引用。若採無狀態模式，需要自行依協定保留完整步驟。
 
 ## Thought Signatures 不是可任意改寫的文字
 

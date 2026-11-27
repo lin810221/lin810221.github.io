@@ -37,7 +37,7 @@ v1 source snapshot → encode v2 → index v2
 
 ## 練習與解答
 
-**請先嘗試：** 只修改 normalize=True，需要重算文件向量嗎？
+**請先嘗試：** 只修改  `normalize=True` ，需要重算文件向量嗎？
 
 <details><summary>展開解答與判斷依據</summary>
 

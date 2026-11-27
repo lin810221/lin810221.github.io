@@ -1,0 +1,9 @@
+{
+  "title": "偏好訓練中的兩個模型角色",
+  "alt": "policy與固定reference對相同chosen及rejected配對評分，reference不接收梯度更新。",
+  "caption": "reference可預先計分，但來源與版本仍須固定。",
+  "sources": [
+    "https://arxiv.org/abs/2305.18290"
+  ],
+  "license": "original educational diagram"
+}

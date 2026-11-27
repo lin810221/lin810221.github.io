@@ -63,7 +63,7 @@ def decide(state: dict) -> Command[Literal["retry", "finish"]]:
 
 ## 如何測試分支？
 
-針對每個路由結果準備固定 State：成功、失敗、邊界值。再驗證整張圖確實走到預期輸出。例如輸入 target=1 應只 advance 一次；target=3 應三次。若允許 target=0，要先決定這張圖目前「至少執行一次」是否符合需求，再改入口路由。
+針對每個路由結果準備固定 State：成功、失敗、邊界值。再驗證整張圖確實走到預期輸出。例如輸入  $\mathrm{target}=1$  應只 advance 一次； $\mathrm{target}=3$  應三次。若允許  $\mathrm{target}=0$ ，要先決定這張圖目前「至少執行一次」是否符合需求，再改入口路由。
 
 **練習：**把範例改成 target 不可小於 1，並在入口拒絕不合法輸入。不要單靠 TypedDict 的 `int` 提示。
 

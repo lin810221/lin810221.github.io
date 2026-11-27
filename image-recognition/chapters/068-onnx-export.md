@@ -8,9 +8,9 @@ ONNX把模型運算表示成可由其他runtime執行的圖；匯出成功只證
 
 ## 現行PyTorch匯出方式
 
-本課採torch.onnx.export的dynamo=True路徑，使用torch.export擷取模型，再轉換為ONNX。動態維度用dynamic_shapes描述；舊教材常見dynamic_axes主要對應不同匯出路徑，不直接拿來替代新API的設定。
+本課採torch.onnx.export的 `dynamo=True` 路徑，使用torch.export擷取模型，再轉換為ONNX。動態維度用dynamic_shapes描述；舊教材常見dynamic_axes主要對應不同匯出路徑，不直接拿來替代新API的設定。
 
-匯出前model.eval()，輸入Tensor契約與正式推論一致。指定input_names與output_names有助於服務整合；opset_version依目標runtime支援選擇，不以數字最大為目的。本課小模型用opset18，單檔external_data=False；大型模型可能需要外部權重檔，交付時不能只複製主檔。
+匯出前model.eval()，輸入Tensor契約與正式推論一致。指定input_names與output_names有助於服務整合；opset_version依目標runtime支援選擇，不以數字最大為目的。本課小模型用opset18，單檔 `external_data=False` ；大型模型可能需要外部權重檔，交付時不能只複製主檔。
 
 ## 固定與動態維度
 

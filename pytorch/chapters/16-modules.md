@@ -32,7 +32,7 @@ for name, tensor in model.state_dict().items():
     print(name, tuple(tensor.shape))
 ```
 
-預設 MLP 的參數數量為 4×12+12+12×3+3=99。Dropout 與 ReLU 無可訓練參數，不代表它們在 forward 沒有效果。透過參數計數可以快速發現忘記註冊的層。
+預設 MLP 的參數數量為  $4\times 12+12+12\times 3+3=99$ 。Dropout 與 ReLU 無可訓練參數，不代表它們在 forward 沒有效果。透過參數計數可以快速發現忘記註冊的層。
 
 ## forward 應保持介面清楚
 

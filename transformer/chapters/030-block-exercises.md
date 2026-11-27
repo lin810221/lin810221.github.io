@@ -6,13 +6,13 @@
 
 ## 題目一：逐Token不是整段攤平
 
-輸入`[B=2,T=3,D=4]`，基本FFN中間F=12。第一個Linear輸出與第二個Linear輸出shape分別為何？若先攤成`[2,12]`再接Linear，還是同一個逐TokenFFN嗎？
+輸入 `[B=2,T=3,D=4]` ，基本FFN中間 $F=12$ 。第一個Linear輸出與第二個Linear輸出shape分別為何？若先攤成`[2,12]`再接Linear，還是同一個逐TokenFFN嗎？
 
 **解析：**標準路線為`[2,3,12]`再回`[2,3,4]`。先把T與D黏起來，會混合不同位置並綁定長度，是另一種架構。單獨FFN在無隨機差異下，修改一個位置不應影響其他位置；完整Transformer中的Attention則可讓資訊跨位置流動。
 
 ## 題目二：兩種Norm的手算
 
-x=`[1,3]`，gamma=1、beta=0，先忽略極小eps，LayerNorm與RMSNorm輸出分別為何？把x加5後哪種維持原結果？
+x=`[1,3]`， $\gamma =1$ 、 $\beta =0$ ，先忽略極小eps，LayerNorm與RMSNorm輸出分別為何？把x加5後哪種維持原結果？
 
 **解析：**LN用均值2與變異數1，輸出`[-1,1]`；RMSNorm除sqrt(5)，輸出約`[.4472,1.3416]`。同加常數後LN中心化結果相同，RMSNorm則改變。這也證明「RMSNorm讓平均變0」不正確。真實數值對照時需把eps與dtype明列，不能以忽略eps的手算要求逐位一致。
 
@@ -24,9 +24,9 @@ x=`[1,3]`，gamma=1、beta=0，先忽略極小eps，LayerNorm與RMSNorm輸出分
 
 ## 題目四：同參數預算的FFN
 
-$D=4$，無bias基本FFN F=12有多少參數？若改SwiGLU，哪個F能讓三個矩陣有相同權重數？
+$D=4$，無bias基本FFN  $F=12$ 有多少參數？若改SwiGLU，哪個F能讓三個矩陣有相同權重數？
 
-**解析：**基本FFN=2×4×12=96；SwiGLU F=8時3×4×8=96。若兩者都用F=12，後者144，不能宣稱只換非線性卻預算完全不變。即使參數相同，中間activation與硬體效率也不保證相同，要另外實測。
+**解析：**基本 $\mathrm{FFN}=2\times 4\times 12=96$ ；SwiGLU  $F=8$ 時 $3\times 4\times 8=96$ 。若兩者都用 $F=12$ ，後者144，不能宣稱只換非線性卻預算完全不變。即使參數相同，中間activation與硬體效率也不保證相同，要另外實測。
 
 SwiGLU的SiLU門不是0到1機率，且有兩條可學投影。它與MoE路由不同，不能因都有gate就把機制混為一談。
 

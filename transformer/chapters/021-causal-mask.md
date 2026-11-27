@@ -18,7 +18,7 @@ $T=3$、位置0到2，允許矩陣是`[[1,0,0],[1,1,0],[1,1,1]]`。列是query�
 
 ## cache時是矩形，不是直接套左上三角
 
-已有3個cache Token，本次加入2個新Token，K總長5、Q長2。query邏輯位置是3與4，key位置0到4，allowed應為`[[1,1,1,1,0],[1,1,1,1,1]]`。直接對2×5做普通tril會得到`[[1,0,0,0,0],[1,1,0,0,0]]`，把大部分合法前綴誤封鎖。
+已有3個cache Token，本次加入2個新Token，K總長5、Q長2。query邏輯位置是3與4，key位置0到4，allowed應為`[[1,1,1,1,0],[1,1,1,1,1]]`。直接對 $2\times 5$ 做普通tril會得到`[[1,0,0,0,0],[1,1,0,0,0]]`，把大部分合法前綴誤封鎖。
 
 ```python
 import torch
@@ -37,7 +37,7 @@ assert allowed.tolist() == [[True, True, True, True, False],
 
 PyTorch SDPA的布林`attn_mask=True`表示允許參與；`nn.MultiheadAttention`的布林attn_mask與key_padding_mask中，True則表示封鎖。遷移時要依API轉換，不把同一個bool Tensor直接拿去共用。加性float mask通常是加入分數的bias，0與−∞的語意又是另一種表示方式。
 
-PyTorch 2.15的SDPA對非方形`is_causal=True`採左上對齊語意，因此不能把它直接當上例的cache offset遮罩；本課主線使用明確allowed mask，並在該呼叫讓is_causal=False。文件要求attn_mask與is_causal的相容條件也要遵守，不依未記錄的後端偶然行為。
+PyTorch 2.15的SDPA對非方形`is_causal=True`採左上對齊語意，因此不能把它直接當上例的cache offset遮罩；本課主線使用明確allowed mask，並在該呼叫讓 `is_causal=False` 。文件要求attn_mask與is_causal的相容條件也要遵守，不依未記錄的後端偶然行為。
 
 ## 無效query與NaN要有政策
 

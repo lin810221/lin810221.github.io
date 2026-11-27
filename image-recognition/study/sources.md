@@ -21,7 +21,7 @@ CPU 官方索引：[torch](https://download.pytorch.org/whl/cpu/torch/)、[torch
 
 ## 文件差異與遷移
 
-- [TorchVision 發布紀錄](https://github.com/pytorch/vision/releases)：0.29 系列對 torch 2.14 起採 ABI 穩定，0.29.2 明列相容 PyTorch 2.14 及以後。README/PyPI 的舊對照表仍止於 2.13/0.28，不能推測 2.15 必須搭配不存在的 0.30。
+- [TorchVision 發布紀錄](https://github.com/pytorch/vision/releases)：0.29 系列對 torch 2.14 起採 ABI 穩定，0.29.2 明列相容 PyTorch 2.14 及以後。README/PyPI 的舊對照表仍止於  $\frac{2.13}{0.28}$ ，不能推測 2.15 必須搭配不存在的 0.30。
 - 同一發布紀錄指出 `torchvision.io` 的影像編碼／解碼 API 已棄用，轉到 TorchCodec。課程用 Pillow 讀圖可避免教舊的 `torchvision.io.read_image/decode_image`。影片／TorchCodec 額外安裝屬選讀。
 - [OpenCV 4→5 官方遷移](https://github.com/opencv/opencv/wiki/OpenCV-4-to-5-migration)：5.x 移除舊 C API；部分舊 ML、Haar/HOG 功能移到 contrib，Caffe/Darknet 載入器移除。一般 Python 色彩／濾波等名稱多沿用 `cv2`。本課只裝四種 OpenCV wheel 的其中一種，選 headless 避免桌面 GUI 依賴；圖像用檔案輸出及網站展示。
 
@@ -31,7 +31,7 @@ CPU 官方索引：[torch](https://download.pytorch.org/whl/cpu/torch/)、[torch
 - [ToDtype](https://docs.pytorch.org/vision/stable/generated/torchvision.transforms.v2.ToDtype.html)：支援依 TVTensor 型別指定轉換；語意 mask 的類別 ID 應維持整數，不做影像縮放。mask resize 用最近鄰；不要用雙線性產生虛構類別。
 - [SanitizeBoundingBoxes](https://docs.pytorch.org/vision/stable/generated/torchvision.transforms.v2.SanitizeBoundingBoxes.html)：裁切後清除退化／越界框並同步 labels 與 instance masks。必要時先 ClampBoundingBoxes；COCO area／iscrowd 可用 labels_getter 一起處理。幾何增強後仍應檢查空目標及框面積。
 - [偵測／分割範例](https://docs.pytorch.org/vision/stable/auto_examples/transforms/plot_transforms_e2e.html)：可作為具型別目標、變換與資料載入的進階閱讀。
-- [模型與權重](https://docs.pytorch.org/vision/stable/models.html)：明列 weights enum，使用該權重的 `.transforms()` 及 `.meta['categories']`；`DEFAULT` 可能隨日後版本改變，重現實驗應保存具體 enum 與套件版號。分類單張 batch 為 NCHW；偵測 API 接受 C×H×W tensor 的 list。推論先 `eval()` 再 `inference_mode()`。`weights=None` 表示未訓練模型，不能宣稱有辨識能力。
+- [模型與權重](https://docs.pytorch.org/vision/stable/models.html)：明列 weights enum，使用該權重的 `.transforms()` 及 `.meta['categories']`；`DEFAULT` 可能隨日後版本改變，重現實驗應保存具體 enum 與套件版號。分類單張 batch 為 NCHW；偵測 API 接受  $C\times H\times W$  tensor 的 list。推論先 `eval()` 再 `inference_mode()`。`weights=None` 表示未訓練模型，不能宣稱有辨識能力。
 - [TorchVision README 授權](https://github.com/pytorch/vision/blob/main/README.md)：程式庫授權不代表所有資料／權重都可用於所有用途；逐模型與資料查條款，SWAG 權重特別為 CC-BY-NC 4.0。本課預設合成圖與自訓小模型不下載權重；需要外部權重的段落明列網路、檔案與授權條件。
 - [PyTorch 2.15 ONNX API](https://docs.pytorch.org/docs/2.15/onnx.html)：`torch.onnx.export(..., dynamo=True)` 是現行推薦／預設路徑，回傳 ONNXProgram。動態維度用 `dynamic_shapes`；不要把舊 TorchScript 的 `dynamic_axes` 當成新路徑首選。匯出前 `eval()`；需要 onnxscript／onnx；`verify=True` 需要 ORT。固定小模型可指定 `external_data=False` 便於單檔攜帶。opset 選目標 runtime 支援版，不能只寫越新越好。驗證比較同一前處理、logits、容許誤差及不同 batch 輸入。
 

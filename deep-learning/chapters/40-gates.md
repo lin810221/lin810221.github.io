@@ -34,7 +34,7 @@ o_t&=\sigma(W_ox_t+U_oh_{t-1}+b_o).
 \end{aligned}
 $$
 
-一維手算：舊cell為2、forget=.8、input=.1、候選=.5，新cell為1.65；若output=.6，hidden就是.6×tanh(1.65)。cell可以保留大於1的數值，hidden則在此標準形式經tanh限制，不能把兩者當同一張量。
+一維手算：舊cell為2、 `forget=.8` 、 `input=.1` 、候選=.5，新cell為1.65；若 `output=.6` ，hidden就是 $.6\times \tanh\left(1.65\right)$ 。cell可以保留大於1的數值，hidden則在此標準形式經tanh限制，不能把兩者當同一張量。
 
 ## 為何有助長依賴
 
@@ -53,7 +53,7 @@ h_t&=(1-z_t)\odot n_t+z_t\odot h_{t-1}.
 \end{aligned}
 $$
 
-這裡採PyTorch的GRU候選公式。z接近1偏向保留舊hidden，接近0偏向新候選；reset放在hidden線性轉換之後，不能任意改為W乘(r⊙h)還聲稱完全相同。除非有特殊結構，矩陣乘與逐元素乘不交換。
+這裡採PyTorch的GRU候選公式。z接近1偏向保留舊hidden，接近0偏向新候選；reset放在hidden線性轉換之後，不能任意改為W乘 $(r\odot h)$ 還聲稱完全相同。除非有特殊結構，矩陣乘與逐元素乘不交換。
 
 ## 實際state契約
 
@@ -65,7 +65,7 @@ $$
 
 ## 練習與解答
 
-LSTM輸出是tuple，直接拿tuple.shape會錯；解答：分開output與state，再分h/c。若模型只需最後有效hidden，對變長batch使用pack或明確mask，不拿PAD後最右位置。截斷hidden時LSTM的h與c都要依設計處理。
+LSTM輸出是tuple，直接拿tuple.shape會錯；解答：分開output與state，再分 $\frac{h}{c}$ 。若模型只需最後有效hidden，對變長batch使用pack或明確mask，不拿PAD後最右位置。截斷hidden時LSTM的h與c都要依設計處理。
 
 ## 完整可執行範例
 

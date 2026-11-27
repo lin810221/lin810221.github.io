@@ -21,7 +21,7 @@
 | 介面 | 文字事件例子 | 重要區別 |
 | --- | --- | --- |
 | OpenAI Responses | response.output_text.delta | 工具 arguments 有其他 delta 型別 |
-| Gemini Interactions | step.delta，delta.type=text | 使用 event_type，而非照搬 generateContent chunk |
+| Gemini Interactions | step.delta， `delta.type=text`  | 使用 event_type，而非照搬 generateContent chunk |
 | Claude Messages | content_block_delta，text_delta | input_json_delta、thinking_delta 不能當最終文字 |
 
 事件可能帶有 item、step 或 block 的識別資訊。完整應用應按內容區塊聚合，不能把不同工具與訊息的增量全部混成一條字串。

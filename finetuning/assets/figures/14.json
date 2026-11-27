@@ -1,0 +1,9 @@
+{
+  "title": "可續訓checkpoint與部署成品",
+  "alt": "完整續訓狀態包含模型最佳化器排程器隨機狀態與資料位置，部署成品只提供推論所需內容。",
+  "caption": "兩種成品用途不同；adapter不等於完整續訓狀態。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

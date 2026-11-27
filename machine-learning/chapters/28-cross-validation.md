@@ -22,15 +22,15 @@ K折將train資料分K份，每次留一份驗證，其餘fit整個pipeline。�
 
 ## 平均與變異怎麼讀
 
-報每折score與mean/std，幫助看切分敏感度。fold的train集合大量重疊，因此fold score不是完全獨立樣本，不能隨意用std/sqrt(K)做嚴格信賴區間。CV平均與最後用全部train重fit的模型，也不是完全同一個訓練大小。
+報每折score與mean/std，幫助看切分敏感度。fold的train集合大量重疊，因此fold score不是完全獨立樣本，不能隨意用$\frac{s}{\sqrt K}$做嚴格信賴區間。CV平均與最後用全部train重fit的模型，也不是完全同一個訓練大小。
 
 ## sklearn scoring方向
 
-選模介面通常越大越好，誤差型scoring用neg_mean_absolute_error等負號。若mean score=-5，MAE為5；比較-3優於-5。不要把負號去掉後仍拿max挑最大誤差。cross_validate輸出test_score裡的test，通常指此折驗證，不自動代表你另外保留的final test。
+選模介面通常越大越好，誤差型scoring用neg_mean_absolute_error等負號。若mean  $\mathrm{score}=-5$ ，MAE為5；比較-3優於-5。不要把負號去掉後仍拿max挑最大誤差。cross_validate輸出test_score裡的test，通常指此折驗證，不自動代表你另外保留的final test。
 
 ## 本章驗證
 
-範例return_estimator=True，輸出每fold StandardScaler.mean_。測試逐一比對該fold train均值，確保pipeline真的在折內fit。這比只檢查程式有寫Pipeline更具體。平行n_jobs先1，避免小例資源競爭與難以追蹤錯誤。
+範例 `return_estimator=True` ，輸出每fold StandardScaler.mean_。測試逐一比對該fold train均值，確保pipeline真的在折內fit。這比只檢查程式有寫Pipeline更具體。平行n_jobs先1，避免小例資源競爭與難以追蹤錯誤。
 
 ## 練習與解答
 

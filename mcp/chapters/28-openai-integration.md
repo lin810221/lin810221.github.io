@@ -26,7 +26,7 @@
 
 ## 審核是對話狀態的一部分
 
-API 可能回傳 `mcp_approval_request`，應由應用呈現具體工具與參數，取得使用者決策後以對應 approval response 繼續。不能只在程式中看到待核准，就自動視為同意。設定 require_approval=always 是本課配置的預設，並非所有工具都可因此省略 Server 端審核。
+API 可能回傳 `mcp_approval_request`，應由應用呈現具體工具與參數，取得使用者決策後以對應 approval response 繼續。不能只在程式中看到待核准，就自動視為同意。設定  `require_approval=always`  是本課配置的預設，並非所有工具都可因此省略 Server 端審核。
 
 Host 核准一次遠端工具呼叫，與業務上允許關閉某張工單，是兩種可疊加的控制。正式系統可要求 Server 同時驗證工單預覽、當前主體與核准紀錄，避免另一種 Client 繞過供應商 UI 直接寫入。
 

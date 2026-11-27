@@ -12,9 +12,9 @@
 
 ## 練習一：切塊不漏字
 
-建立一段 47 字元的測試文字，size=15、overlap=4。列出每塊 start、end，驗證所有字元至少覆蓋一次、每塊不超過 size、沒有空尾塊。
+建立一段 47 字元的測試文字， `size=15` 、 $\mathrm{overlap}=4$ 。列出每塊 start、end，驗證所有字元至少覆蓋一次、每塊不超過 size、沒有空尾塊。
 
-**解法方向：**步長 11，起點 0、11、22、33，最後範圍 `[33:47]`。比較 `normalized_text[start:end]` 與 chunk.text，不要只檢查片段數。再測空文件、剛好等長與 overlap=size 的拒絕行為。
+**解法方向：**步長 11，起點 0、11、22、33，最後範圍 `[33:47]`。比較 `normalized_text[start:end]` 與 chunk.text，不要只檢查片段數。再測空文件、剛好等長與  $\mathrm{overlap}=size$  的拒絕行為。
 
 ## 練習二：保留精確代碼
 

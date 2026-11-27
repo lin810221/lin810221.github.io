@@ -25,7 +25,7 @@ $$
 
 ## 原創記憶體尺度案例
 
-假設一個簡化 dense decoder 有 8 層、每層 KV cache 的 batch=1、KV heads=4、head dim=16、float32。$T=1024$ 時純 KV bytes 為 \(2\times8\times1024\times4\times16\times4=4194304\)，約 4MiB；$T=2048$ 時變 8MiB。
+假設一個簡化 dense decoder 有 8 層、每層 KV cache 的  `batch=1` 、KV  `heads=4` 、head  `dim=16` 、float32。$T=1024$ 時純 KV bytes 為 \(2\times8\times1024\times4\times16\times4=4194304\)，約 4MiB；$T=2048$ 時變 8MiB。
 
 再假設另一個教學系統每層只保存 4096 個 float32 狀態，八層總共 131072 bytes，約 128KiB，與本例 T 無關。這只是兩種儲存規則的比較，不證明它們具有相同精度、吞吐或能力。真實 SSM 還有卷積狀態、kernel 與其他記憶體，混合模型則同時包含多種成本。
 

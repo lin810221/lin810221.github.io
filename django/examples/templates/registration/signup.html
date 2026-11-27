@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<h1>建立你的學習帳號。</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>建立帳號</button></form>{% endblock %}

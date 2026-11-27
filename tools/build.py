@@ -13,6 +13,7 @@ from markdown.inlinepatterns import InlineProcessor
 from markdown.preprocessors import Preprocessor
 import xml.etree.ElementTree as ET
 from pygments.formatters import HtmlFormatter
+from audit_math_prose import assert_math_prose
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -49,6 +50,8 @@ def assert_readable(text, label):
     prose = re.sub(r"`[^`\n]*`", "", prose)
     if re.search(r"\?{3,}|\ufffd", prose):
         raise ValueError(f"Damaged text in {label}: replacement characters/question-mark runs")
+    if re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f]',text):
+        raise ValueError(f'Invisible control character in {label}')
 
 
 def math_markup(tex, display=False):
@@ -101,6 +104,8 @@ def build(course_path):
         source = (course_path / "chapters" / (lesson["id"] + ".md")).read_text(encoding="utf-8")
         assert_readable(lesson['title']+'\n'+lesson['summary'], lesson['id']+' metadata')
         assert_readable(source, lesson['id'])
+        assert_math_prose(source,course_path.name+'/'+lesson['id'])
+        assert_math_prose(lesson['summary'],course_path.name+'/'+lesson['id']+'/summary')
         source = re.sub(r"<!-- example:([a-zA-Z0-9_]+\.py) -->", lambda m: "```python\n" + (course_path / "examples" / m.group(1)).read_text(encoding="utf-8").rstrip() + "\n```", source)
         md = markdown.Markdown(extensions=["fenced_code", "tables", "toc", "attr_list", "codehilite", MathExtension()], extension_configs={"codehilite": {"guess_lang": False}, "toc": {"permalink": False}})
         lesson["html"] = md.convert(source)
@@ -119,11 +124,13 @@ def build(course_path):
             raise ValueError("Example bundle must be a ZIP filename")
         examples = course_path / "examples"
         with zipfile.ZipFile(course_path / bundle, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            excluded_directories = set(catalog.get('exampleExcludeDirectories', []))
             for example_path in sorted(examples.rglob("*")):
                 relative = example_path.relative_to(examples)
-                if any(part.startswith(".") or part == "__pycache__" for part in relative.parts):
+                if any(part.startswith(".") or part == "__pycache__" or part in excluded_directories for part in relative.parts):
                     continue
-                if example_path.is_file() and example_path.suffix in {".py", ".md", ".txt", ".json", ".sql", ".csv"}:
+                allowed_extensions = {".py", ".md", ".txt", ".json", ".sql", ".csv"} | set(catalog.get('exampleFileExtensions', []))
+                if example_path.is_file() and example_path.suffix in allowed_extensions:
                     info = zipfile.ZipInfo("examples/" + relative.as_posix(), date_time=(2026, 10, 29, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_DEFLATED
                     archive.writestr(info, example_path.read_bytes())
@@ -142,6 +149,8 @@ if __name__ == "__main__":
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", name):
             parser.error(f"Invalid subject folder: {name}")
         build(ROOT / name)
+    from build_library import build_library
+    build_library()
     if shutil.which('node'):
         subprocess.run(['node',str(ROOT/'tools/render_math_cli.mjs'),*names],check=True,cwd=ROOT)
     elif args.require_prerender:

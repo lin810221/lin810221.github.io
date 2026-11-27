@@ -26,7 +26,7 @@ model是目前權重；optimizer保存更新歷史；torch_rng保存CPU隨機狀
 
 ## 本課精確相等的範圍
 
-只驗證同一CPU環境、相同版本與設定、num_workers=0、epoch邊界。本課資料產生有獨立Generator，沒有Python/NumPy隨機augmentation。它不宣稱中途任意batch、多worker預取、跨GPU或跨版本完全相同。若加入其他RNG、CUDA RNG、sampler位置或stateful transforms，要一起設計保存。
+只驗證同一CPU環境、相同版本與設定、 `num_workers=0` 、epoch邊界。本課資料產生有獨立Generator，沒有Python/NumPy隨機augmentation。它不宣稱中途任意batch、多worker預取、跨GPU或跨版本完全相同。若加入其他RNG、CUDA RNG、sampler位置或stateful transforms，要一起設計保存。
 
 ## 實驗結果如何判讀
 

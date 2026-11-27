@@ -20,7 +20,7 @@
 
   課內進階內容：KV Cache、解碼策略、長上下文、推論容量與小型語言模型訓練。聚焦 Transformer 的完整機制，供應商 API 操作連回既有 LLM 課程。
 
-  核心與進階已納入byte／BPE、權重綁定、RoPE、SDPA遮罩、手寫GPT訓練、token分母、cache等價、GQA容量、FlashAttention及推測解碼原理、MoE、SFT／RLHF／DPO、長context評估與可靠性。預設不下載外部權重；LLM微調工程另保留獨立課規劃。[程式包](transformer/examples.zip)與[圖解學習包](transformer/study-pack.zip)可下載。
+  核心與進階已納入byte／BPE、權重綁定、RoPE、SDPA遮罩、手寫GPT訓練、token分母、cache等價、GQA容量、FlashAttention及推測解碼原理、MoE、SFT／RLHF／DPO、長context評估與可靠性。預設不下載外部權重；LLM微調工程另見[獨立課程](finetuning/index.html)。[程式包](transformer/examples.zip)與[圖解學習包](transformer/study-pack.zip)可下載。
 
 - [x] [影像辨識完整教學](image-recognition/index.html) — 14章、84單元、28張原創中文SVG、24份離線Python範例、8個互動實驗；2026-11-23查核穩定版本。
 
@@ -206,11 +206,11 @@
 ## AI 原理與模型訓練
 
 
-- [ ] **LLM 微調與模型適應**
+- [x] [LLM 微調與模型適應](finetuning/index.html) — 12章、72單元、24張中文圖、24份離線範例、8個互動實驗與91術語；2026-11-25查核穩定版本。
 
   核心範圍：微調與 RAG 的選擇、資料格式、chat template、SFT、LoRA／QLoRA、訓練參數、驗證、checkpoint 與模型發布。
 
-  課內進階內容：偏好資料與 DPO、資料污染、災難性遺忘、量化與部署驗收。聚焦生成模型的任務適應；Embedding 微調只比較其不同目標並連回既有教材。
+  課內進階內容：偏好資料與 DPO、資料污染、災難性遺忘、量化與部署驗收。聚焦生成模型的任務適應；Embedding 微調只比較其不同目標並連回既有教材。已納入持續預訓練、蒸餾、詞彙與多語適應、工具行為、保留能力與雲端工作管理；[實作包](finetuning/examples.zip)與[圖解學習包](finetuning/study-pack.zip)可下載。CPU主線實測，GPU與託管工作另列條件。
 
 
 ## AI 應用與工程
@@ -227,23 +227,25 @@
 
   課內進階內容：評分器校準、對抗測試、監控、版本比較與發布門檻。整合既有課程的入門觀念，建立能持續執行的評估流程。
 
-- [ ] **多模態與文件 AI**
+- [x] [多模態與文件 AI](multimodal/index.html) — 16章、96單元、32張中文圖解、32個實作入口、12個互動實驗；2026-11-27查核PyMuPDF2.2與RapidOCR3.10.0。
 
   核心範圍：PDF 解析、OCR、版面、表格、文件結構、VLM 使用、圖文問答、來源與頁面定位。
 
-  課內進階內容：音訊轉錄、影片／時間定位、跨模態檢索、文件抽取評估與可查證助理。以內容理解和資料管線為主，基礎影像模型訓練連到影像辨識。
+  課內進階內容：圖文對比學習、VLM／OCR-free、三家模型API契約、MaxSim、評估、隱私、WAV與GIF時間定位，以及可恢復的DocWeave專題。58項核心測試含真實PP-OCRv6通過；ASR、MP4、大型VLM與付費API為明列的選用驗收，未冒稱已執行。基礎影像訓練跨讀影像辨識。
 
 ## 網站與資料工程
 
-- [ ] **Django**
+- [x] [Django 完整實作教學](django/index.html) — 14章、84單元、28張原創中文圖、24個離線實驗、8個互動算例、104術語；2026-11-26查核Django6.1.3。
 
   核心範圍：專案與 app、URL／View／Template、ORM、migration、表單、登入與權限、Admin、檔案、測試與網站部署。
 
-  課內進階內容：REST API、快取、背景工作、安全與效能。以具備帳號、內容和管理功能的完整網站為主；與 FastAPI 保持各自的專案和框架主線。
+  課內進階內容：REST API、快取、背景工作、安全與效能。以具備帳號、內容和管理功能的完整網站為主；與 FastAPI 保持各自的專案和框架主線。已實作StudyHub、私人附件、DRF API、43項測試、Tasks及fetch modes；外部服務與正式部署另列驗收條件。[完整專案](django/examples.zip)及[圖解學習包](django/study-pack.zip)。
 
-- [ ] **SQL 與資料工程**
+- [x] [SQL 與資料工程](sql/index.html) — 18章、108單元、36張中文圖解、36個實作入口、12個互動實驗；2026-11-27查核DuckDB2.0.1與PostgreSQL19.0。
 
-  核心範圍：關聯資料模型、SQL 查詢、JOIN、聚合、window functions、交易、索引、schema、資料品質與 ETL／ELT。
+  核心範圍：關聯模型、NULL與型別、SQL查詢、JOIN、彙總、視窗、交易隔離、索引、Parquet、ETL／ELT、來源區間、CDC、DAG、品質與治理。
+
+  已完成DataHarbor訂單專題：更正、刪除、晚到、checkpoint、outbox與可恢復的版本發布。52項離線測試及私人PostgreSQL19快照／列鎖／RLS／新版語法實測通過；Airflow、dbt與Debezium為架構銜接，未部署。
 
   課內進階內容：資料倉儲、排程、增量處理、CDC、血緣、監控與資料管線測試。ORM 作為使用情境，查詢語意與管線設計仍獨立學習。
 

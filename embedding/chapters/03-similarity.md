@@ -12,6 +12,14 @@
 
 ## 先定義「接近」
 
+兩個 $d$ 維向量的內積與 Euclidean（L2）距離先明確定義為：
+
+<!-- equation:dot-product-and-euclidean-distance -->
+$$
+x\cdot y=\sum_{j=1}^d x_jy_j,\qquad
+d_2(x,y)=\sqrt{\sum_{j=1}^d(x_j-y_j)^2}.
+$$
+
 同一組向量可以用 cosine、內積或 Euclidean distance 排序。它們保留的資訊不同，資料庫與模型文件也可能要求不同設定。先了解表示是否已正規化，才選比較方式。
 
 Cosine 比方向，內積同時受長度影響，L2 衡量座標差的長度。相似度通常越大越接近；距離通常越小越接近。如果把 cosine distance 當 similarity 降序排序，就會把最不相關的放前面。

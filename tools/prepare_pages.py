@@ -11,6 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSET_SUFFIXES = {".js", ".css", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico", ".woff2", ".txt"}
 
 
+def declared_study_bundle(folder, course):
+    """A declared learning download is published even without a resource-list duplicate."""
+    bundle = course.get('studyBundle')
+    if not bundle:
+        return None
+    if not re.fullmatch(r'[a-zA-Z0-9_-]+\.zip', bundle):
+        raise ValueError(f'Invalid study bundle: {bundle}')
+    target = (folder / bundle).resolve()
+    if not target.is_relative_to(folder.resolve()) or not target.is_file():
+        raise ValueError(f'Missing study bundle: {bundle}')
+    return target
+
+
 def check_links(links, base, destination):
     for link in links:
         parsed = urlparse(link)
@@ -47,6 +60,9 @@ def main():
             if not target.is_relative_to(folder.resolve()) or not target.is_file():
                 raise ValueError(f"Invalid learning resource: {resource}")
             selected.add(target.relative_to(ROOT))
+        study_bundle = declared_study_bundle(folder, course)
+        if study_bundle is not None:
+            selected.add(study_bundle.relative_to(ROOT))
         if course.get("exampleBundle"):
             selected.add(Path(folder.name) / course["exampleBundle"])
         else:

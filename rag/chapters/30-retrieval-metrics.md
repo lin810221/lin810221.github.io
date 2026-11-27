@@ -40,7 +40,7 @@ IDCG 使用所有已標註相關文件的理想排序，不是只把系統已找
 
 ## 手算與程式對照
 
-排名是 X、A、B；A 等級 2、B 等級 1，$k=3$。Precision=2/3，Recall=1，MRR=1/2。DCG 為 $3/\log_2 3+1/\log_2 4$，IDCG 為 $3+1/\log_2 3$。你可以逐項核對範例。
+排名是 X、A、B；A 等級 2、B 等級 1，$k=3$。 $\mathrm{Precision}=\frac{2}{3}$ ， $\mathrm{Recall}=1$ ， $MRR=\frac{1}{2}$ 。DCG 為 $3/\log_2 3+1/\log_2 4$，IDCG 為 $3+1/\log_2 3$。你可以逐項核對範例。
 
 <!-- example:11_evaluation.py -->
 
@@ -54,6 +54,6 @@ IDCG 使用所有已標註相關文件的理想排序，不是只把系統已找
 
 **題目：**前 3 名都是同一相關文件的不同 chunk，已標註兩份必要文件，Recall 是多少？
 
-**參考答案：**若以文件級評估，只找到一份，Recall=1/2。不能把三個 chunk 算成三份相關文件。指標定義與評估單位應固定在報告中。
+**參考答案：**若以文件級評估，只找到一份， $\mathrm{Recall}=\frac{1}{2}$ 。不能把三個 chunk 算成三份相關文件。指標定義與評估單位應固定在報告中。
 
 延伸閱讀：[Stanford IR evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)

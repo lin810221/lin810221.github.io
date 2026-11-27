@@ -1,0 +1,9 @@
+{
+  "title": "DPO比較policy相對reference的偏好",
+  "alt": "policy對chosen與rejected的序列log機率差為三，reference為一；差中之差乘beta得到目標logit。",
+  "caption": "不是只把chosen的機率提高就完整定義DPO。",
+  "sources": [
+    "https://arxiv.org/abs/2305.18290"
+  ],
+  "license": "original educational diagram"
+}

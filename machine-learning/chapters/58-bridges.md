@@ -34,7 +34,7 @@ X與y的shape／dtype、train-only前處理、eval模式、loss與metric區分�
 
 ## 接續閱讀與練習
 
-可讀[PyTorch實作工程](../pytorch/index.html)、[Embedding與表示學習](../embedding/index.html)、[RAG檢索增強生成](../rag/index.html)。練習：同一文字split比較TF-IDF+Logistic與固定Embedding+Logistic，保持評估資料、指標與搜尋預算一致。解答：若Embedding需下載或API，另明確設定與記錄，不把外部條件混進離線範例成績。
+可讀[PyTorch實作工程](../pytorch/index.html)、[Embedding與表示學習](../embedding/index.html)、[RAG檢索增強生成](../rag/index.html)。練習：同一文字split比較 $TF-IDF+\mathrm{Logistic}$ 與固定 $\mathrm{Embedding}+\mathrm{Logistic}$ ，保持評估資料、指標與搜尋預算一致。解答：若Embedding需下載或API，另明確設定與記錄，不把外部條件混進離線範例成績。
 
 ## 官方來源與延伸閱讀
 

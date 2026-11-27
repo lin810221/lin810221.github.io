@@ -18,7 +18,7 @@ global norm clipping在梯度norm超過上限時，整組按比例縮小，通�
 
 ## 累積需正確分母
 
-10筆拆4/4/2，先對每批loss sum除整組10，再逐批backward、最後step一次，才對應同參數位置的大batch mean梯度。每批mean除固定3會放大尾2筆權重。若每批都step，則參數位置已變，是不同演算法。
+10筆拆 $\frac{\frac{4}{4}}{2}$ ，先對每批loss sum除整組10，再逐批backward、最後step一次，才對應同參數位置的大batch mean梯度。每批mean除固定3會放大尾2筆權重。若每批都step，則參數位置已變，是不同演算法。
 
 $$
 \nabla L_{group}=\sum_b\frac{n_b}{\sum_jn_j}\nabla\bar L_b
@@ -34,7 +34,7 @@ loss scaling先放大反向訊號，再還原grad；clipping需在unscale之後�
 
 ## 數值實作與工程銜接
 
-第16例實測norm裁切與4/4/2更新差。大型記憶體、device搬移、AMP與DDP實作細節可讀PyTorch工程課；這裡先證明loss縮放與更新含義一致。只看loss下降不足以抓出錯的尾批權重。
+第16例實測norm裁切與 $\frac{\frac{4}{4}}{2}$ 更新差。大型記憶體、device搬移、AMP與DDP實作細節可讀PyTorch工程課；這裡先證明loss縮放與更新含義一致。只看loss下降不足以抓出錯的尾批權重。
 
 ## 練習與解答
 

@@ -18,7 +18,7 @@
 
 ## 本課可知答案的資料
 
-表格480筆四個feature，target依x0×x1+.25x2-.1x3是否正生成；shuffle後288train、96val、96test。mean／population std只fit train，套同一規則到其餘。影像及序列是另外生成與切分，沒有暗中下載真實資料。
+表格480筆四個feature，target依 $x0\times x1+.25x2-.1x3$ 是否正生成；shuffle後288train、96val、96test。mean／population std只fit train，套同一規則到其餘。影像及序列是另外生成與切分，沒有暗中下載真實資料。
 
 $$
 \mu_j=\frac1{N_{train}}\sum_{i\in train}x_{i,j},\qquad

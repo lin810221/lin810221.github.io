@@ -55,6 +55,21 @@ jobs:
       - name: Verify Markdown and LaTeX parsing regressions
         run: python -m unittest discover -s tools -p test_math_build.py -v
 
+      - name: Verify whole-site mathematical prose and topic definitions
+        run: python -m unittest discover -s tools -p test_math_editorial.py -v
+
+      - name: Verify fine-tuning sources, diagrams and portable learning materials
+        run: python -m unittest discover -s tools -p test_finetuning_materials.py -v
+
+      - name: Verify Django templates, source correspondence and portable downloads
+        run: python -m unittest discover -s tools -p test_django_materials.py -v
+
+      - name: Verify SQL source parity, diagrams and portable learning materials
+        run: python -m unittest discover -s tools -p test_sql_materials.py -v
+
+      - name: Verify multimodal sources, fixtures and portable downloads
+        run: python -m unittest discover -s tools -p test_multimodal_materials.py -v
+
       - name: Validate pages, links, and offline fonts
         run: python tools/validate.py
 
@@ -341,8 +356,109 @@ jobs:
       - name: Verify language model, tokenizer, cache, objectives and offline artifacts
         run: python -m unittest discover -s transformer/examples -p test_examples.py -v
 
+  finetuning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: "1"
+      HF_HUB_OFFLINE: "1"
+      TOKENIZERS_PARALLELISM: "false"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Set up independent fine-tuning course runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+          cache: pip
+          cache-dependency-path: finetuning/examples/requirements-lock.txt
+      - name: Install pinned CPU training stack
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple
+          python -m pip install -r finetuning/examples/requirements-lock.txt
+      - name: Verify real PEFT, TRL, resume, evaluation and artifact contracts offline
+        run: python -m unittest discover -s finetuning/examples -p test_examples.py -v
+
+  django:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Set up independent Django stable runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+          cache: pip
+          cache-dependency-path: django/examples/requirements-lock.txt
+      - name: Install locked Django application dependencies
+        run: python -m pip install -r django/examples/requirements-lock.txt
+      - name: Verify real models, ownership, CSRF, files, API and current APIs
+        run: python -m unittest discover -s django/examples -p test_examples.py -v
+      - name: Verify standard Django runner and migration consistency
+        run: |
+          python django/examples/manage.py test desk --settings=studyhub.testing
+          python django/examples/manage.py makemigrations --check --dry-run --settings=studyhub.testing
+
+  sql:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: "1"
+      SQL_COURSE_PG_DSN: postgresql://postgres:course@127.0.0.1:5432/postgres
+    services:
+      postgres:
+        image: postgres:19.0
+        env:
+          POSTGRES_PASSWORD: course
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Set up SQL course runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15.2"
+          cache: pip
+          cache-dependency-path: sql/examples/requirements-lock.txt
+      - name: Install locked database clients
+        run: python -m pip install -r sql/examples/requirements-lock.txt
+      - name: Verify real SQL, DataHarbor recovery, DAG and warehouse
+        run: python -m unittest discover -s sql/examples -p test_examples.py -v
+      - name: Verify actual PostgreSQL 19 isolation, RLS and current syntax
+        run: python sql/examples/postgres_lab.py
+
+  multimodal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Set up supported current-patch document runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14.10"
+          cache: pip
+          cache-dependency-path: multimodal/examples/requirements-lock.txt
+      - name: Install pinned PDF, OCR and contract stack
+        run: python -m pip install -r multimodal/examples/requirements-lock.txt
+      - name: Verify actual PDF, bundled CPU OCR, evidence and recovery offline
+        run: python -m unittest discover -s multimodal/examples -p test_examples.py -v
+
   deploy:
-    needs: [build, statistics, mcp, search, economics, nutrition, exercise_science, metabolic_health, mental_health, ergonomics, image_recognition, transformer]
+    needs: [build, statistics, mcp, search, economics, nutrition, exercise_science, metabolic_health, mental_health, ergonomics, image_recognition, transformer, finetuning, django, sql, multimodal]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

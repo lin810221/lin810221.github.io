@@ -9,7 +9,7 @@ CONSORT與SPIRIT使用2025正式更新；PRISMA為2020主聲明。Cochrane版本
 RoB 2正式平行試驗版2019-08-22，群集／交叉試驗版另讀2021修訂。ROBINS-I 2016正式版與V2 2025-11-20草案分開；草案仍可能修訂。GRADE Book為官方漸進更新資源，未宣稱舊手冊已全部替換。IPDAS 5.0為2026正式更新，與指南、報告和偏差工具用途不同。
 
 - 2026-11-16查核。所有圖與案例為原創教學，不複製外站圖片或正式偏差工具題庫；不提供個人診斷、處方或真實參與者資料。
-- Cochrane版本紀錄頁列6.5.1的2025與2026更新，部分入口仍標6.5/2024。教材使用各章線上正式內容並保留這個差異，不虛構全章均於2026改版。
+- Cochrane版本紀錄頁列6.5.1的2025與2026更新，部分入口仍標 `6.5/2024` 。教材使用各章線上正式內容並保留這個差異，不虛構全章均於2026改版。
 - CONSORT與SPIRIT採正式2025聲明。RoB 2個人平行試驗版2019-08-22；群集與交叉版2021-03-18修訂。官方頁2025版權註明工具CC BY-NC-ND，不重製或改編正式題庫、演算法與評分表。
 - ROBINS-I正式2016與V2 2025-11-20草案分開；V2官方明說仍是draft subject to change，不冒稱已正式取代。
 - PubMed官方User Guide頁面標更新2026-09-30。ClinicalTrials.gov兩個直接開啟頁主要回JS外殼，但官方搜尋索引可讀欄位與FAQ；未聲稱已操作其動態介面。ICH索引無可讀正文，改核FDA正式E9(R1)2021-05入口及其官方PDF。
@@ -18,10 +18,10 @@ RoB 2正式平行試驗版2019-08-22，群集／交叉試驗版另讀2021修訂�
 - 所有來源標示出版或方法年與查核日；無法直接讀動態正文的頁面已明記，個案數字均明示虛構，未使用未讀來源新增臨床閾值。
 - 本部分來源查核2026-11-16；正式出版、章節更新、封存教材與查核日各自列出。數字與所有SVG均為原創教學資料，未複製外站插圖。
 - Cochrane分章頁、CDC封存原理、ASA2016聲明PDF、FDA2007診斷／2022多重終點／2016非劣性、STARD2015、UK NSC2025手冊、NCI、PRISMA2020與RoB工具官方頁可讀。
-- BMJ TRIPOD+AI原始聲明全文403；僅使用官方檢索摘要中校準、區辨及驗證的公開描述，不宣稱已核對完整清單。預測模型外部驗證2024方法文使用官方索引摘要。
+- BMJ  $\mathrm{TRIPOD}+AI$ 原始聲明全文403；僅使用官方檢索摘要中校準、區辨及驗證的公開描述，不宣稱已核對完整清單。預測模型外部驗證2024方法文使用官方索引摘要。
 - ROBINS-I V2官方頁明示2025-11-20仍為草案，與正式2016版區分；RoB2平行個別隨機版2019-08-22，群集及交叉版另有2021修訂。
-- 二元30/1000對40/1000的RR.75、ARR1百分點及NNT100都是點估計；log-RR近似95%區間約.47至1.20仍含1，不稱已確立效益。
-- 診斷範例10000人、盛行率1%、敏感度90%、特異度95%產生90/10/495/9405；自然頻率為期望值，不預先四捨五入，也不作個人診斷。
+- 二元 $\frac{30}{1000}$ 對 $\frac{40}{1000}$ 的RR.75、ARR1百分點及NNT100都是點估計；log-RR近似95%區間約.47至1.20仍含1，不稱已確立效益。
+- 診斷範例10000人、盛行率1%、敏感度90%、特異度95%產生 $\frac{\frac{\frac{90}{10}}{495}}{9405}$ ；自然頻率為期望值，不預先四捨五入，也不作個人診斷。
 - 查核日期2026-11-16；所有插圖原創，未重製第三方清單、圖表或題庫。虛構數值不是任何醫療方案的真實估計。
 - Cochrane現行第21章已是Living systematic reviews並引用6.5.1／2026；部分章仍引用6.5／2024。版本更新頁另列6.5.1的2025與2026更動，不將各章修訂日全部改為2026。
 - GRADE Book主站需JavaScript而工具無正文；官方GRADEpro說明頁可讀，表示逐步發布、預計2026年底全面取代舊手冊。未宣稱已完成全部取代；核心依可查Cochrane14及15章教學。
@@ -33,7 +33,7 @@ RoB 2正式平行試驗版2019-08-22，群集／交叉試驗版另讀2021修訂�
 
 ## 正式資料與原始方法索引
 
-- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新。
+- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示 `6.5/2024` ，版本紀錄另列6.5.1更新。
 - [CONSORT／SPIRIT：正式發表版本](https://www.consort-spirit.org/published-statements)：CONSORT 2025與SPIRIT 2025。
 - [CDC：分析流行病學的研究設計](https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section7.html)：歷史教學頁，archive；非2026新指南。
 - [Cochrane：搜尋與研究篩選](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04)：線上章節；2026-11-16查核。
@@ -84,7 +84,7 @@ RoB 2正式平行試驗版2019-08-22，群集／交叉試驗版另讀2021修訂�
 - [STROBE：用途及限制](https://www.strobe-statement.org/)：報告規範；不是研究品質評分工具。
 - [ICMJE：臨床試驗登錄](https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/clinical-trial-registration.html)：現行政策；2026-11-16查核。
 - [PRISMA：官方聲明與擴充](https://www.prisma-statement.org/)：PRISMA 2020；擴充另依用途核對。
-- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)：TRIPOD+AI 2024及TRIPOD-LLM官方入口。
+- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)： $\mathrm{TRIPOD}+AI$  2024及TRIPOD-LLM官方入口。
 - [PROBAST+AI原始方法文](https://doi.org/10.1136/bmj-2024-082505)：BMJ 2025；出版平台403，索引確認正式文與用途，不重製工具。
 - [ICMJE：關係、活動與利益衝突](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/author-responsibilities--conflicts-of-interest.html)：現行建議；2026-11-16查核。
 - [ICMJE：更正與版本控制](https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html)：現行建議；2026-11-16查核。

@@ -30,7 +30,7 @@ START → normalize → greet → END
 
 `normalize` 只回傳 `name` 更新。這個更新會由執行引擎合併到 State；不是建立一份把其他欄位都刪掉的新狀態。`greet` 執行時會看到清理後的名字，接著加入 `greeting`。
 
-`builder = StateGraph(State)` 建立流程的藍圖。`add_node("normalize", normalize)` 的第一個參數是節點名稱，第二個是可呼叫的函式物件。請傳 `normalize`，不要傳 `normalize()`；後者會立即執行，而且缺少 State。
+ `builder = StateGraph(State)`  建立流程的藍圖。`add_node("normalize", normalize)` 的第一個參數是節點名稱，第二個是可呼叫的函式物件。請傳 `normalize`，不要傳 `normalize()`；後者會立即執行，而且缺少 State。
 
 `add_edge` 建立固定順序。字串名稱必須和註冊的節點一致。`START` 會啟動第一個節點，`END` 表示此路徑結束。
 

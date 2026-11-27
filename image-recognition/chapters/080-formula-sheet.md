@@ -12,9 +12,9 @@
 | --- | --- | --- |
 | 單張影像 | CHW | RGB／BGR、dtype、範圍、方向及 alpha 政策 |
 | 分類批次 | NCHW；答案 N | logits 維度、class mapping、是否單標籤 |
-| 偵測目標 | 每張 N_i×4 框與 N_i 類別 | XYXY、畫布大小、類別 0 保留背景、空目標 |
-| 語意分割答案 | N×H×W 整數 | 0 是合法背景，255 為本課 ignore |
-| 實例分割答案 | 每張 N_i×H×W | 與框及 labels 的同一個實例順序 |
+| 偵測目標 | 每張  $N_{i}\times 4$  框與 N_i 類別 | XYXY、畫布大小、類別 0 保留背景、空目標 |
+| 語意分割答案 |  $N\times H\times W$  整數 | 0 是合法背景，255 為本課 ignore |
+| 實例分割答案 | 每張  $N_{i}\times H\times W$  | 與框及 labels 的同一個實例順序 |
 
 不同任務使用相同數字時可能有不同意思。二值顯示圖的 255 可代表前景，語意 mask 的 255 在本課代表忽略；先看資料角色，再決定能不能除以 255 或計入指標。模型產物至少包含這些契約與版本，單獨一個權重檔不足以重現推論。
 
@@ -27,11 +27,11 @@ w_I=\max(0,\min(x_{2A},x_{2B})-\max(x_{1A},x_{1B})),\quad
 h_I=\max(0,\min(y_{2A},y_{2B})-\max(y_{1A},y_{1B}))
 $$
 
-相交面積是 `w_I h_I`。A=`(0,0,10,10)`、B=`(5,0,15,10)` 時，相交 50、聯集 150，IoU=1/3。不要在連續框面積加 1；如果來源是兩端含像素的整數索引框，先明確轉成本課邊界表示。
+相交面積是 `w_I h_I`。A=`(0,0,10,10)`、B=`(5,0,15,10)` 時，相交 50、聯集 150， $\mathrm{IoU}=\frac{1}{3}$ 。不要在連續框面積加 1；如果來源是兩端含像素的整數索引框，先明確轉成本課邊界表示。
 
 ## 分類混淆矩陣與門檻
 
-針對指定正類，precision=`TP/(TP+FP)`，recall=`TP/(TP+FN)`，F1=`2TP/(2TP+FP+FN)`。例如 $TP=18$、$FP=6$、$FN=2$，$\operatorname{precision}=0.75$、$\operatorname{recall}=0.9$、F1≈0.818。分母為零時先訂政策並報告 support，不能用一個好看的預設值掩蓋沒有正例。
+針對指定正類，precision=`TP/(TP+FP)`，recall=`TP/(TP+FN)`，F1=`2TP/(2TP+FP+FN)`。例如 $TP=18$、$FP=6$、$FN=2$，$\operatorname{precision}=0.75$、$\operatorname{recall}=0.9$、 $F1\approx 0.818$ 。分母為零時先訂政策並報告 support，不能用一個好看的預設值掩蓋沒有正例。
 
 macro 先逐類計算再平均，micro 先彙總計數；weighted 依各類 support 加權。這些平均方式可能得到不同結果。改門檻通常同時改變 FP 與 FN，應依驗證資料及使用成本選擇，再到測試資料估計效果。accuracy 容易被多數類主導，類別不平衡時需同時看逐類結果。
 
@@ -42,13 +42,13 @@ IoU=\frac{|A\cap B|}{|A\cup B|},\qquad
 Dice=\frac{2|A\cap B|}{|A|+|B|}
 $$
 
-若兩集合各有 100 像素、交集 50，IoU=1/3、Dice=0.5。對相同二值計數且分母有效時，$\operatorname{Dice}=\frac{2\operatorname{IoU}}{1+\operatorname{IoU}}$；套到不同平均順序或不同空類別政策後，不能假定平均值仍滿足這個換算。先排除 ignore，再做每類統計；同時說明是全資料累積還是每圖平均。
+若兩集合各有 100 像素、交集 50， $\mathrm{IoU}=\frac{1}{3}$ 、 $\mathrm{Dice}=0.5$ 。對相同二值計數且分母有效時，$\operatorname{Dice}=\frac{2\operatorname{IoU}}{1+\operatorname{IoU}}$；套到不同平均順序或不同空類別政策後，不能假定平均值仍滿足這個換算。先排除 ignore，再做每類統計；同時說明是全資料累積還是每圖平均。
 
 ## AP 與 mAP 不是單一門檻的 precision
 
 本課簡化 AP 以單一類別、指定 IoU 門檻，在各影像內做一對一匹配，依信心由高到低累積 TP／FP，形成 precision–recall 曲線，再用 all-points precision envelope 積分。重複預測同一真值不能重複算 TP。沒有真值正例時 AP 的定義及排除政策需明示。
 
-兩個真值，預測依序為 TP、重複 FP、TP，recall 為 0.5、0.5、1，precision 為 1、0.5、2/3；此簡化協定 AP 為 $0.5\times1+0.5\times\frac23=\frac56$。它不是 COCO 完整指標。COCO 還有 101 recall 取樣、IoU 門檻組、area、crowd、ignore、maxDets 等設定，報告時要寫清楚資料與評估器版本。
+兩個真值，預測依序為 TP、重複 FP、TP，recall 為 0.5、0.5、1，precision 為 1、0.5、 $\frac{2}{3}$ ；此簡化協定 AP 為 $0.5\times1+0.5\times\frac23=\frac56$。它不是 COCO 完整指標。COCO 還有 101 recall 取樣、IoU 門檻組、area、crowd、ignore、maxDets 等設定，報告時要寫清楚資料與評估器版本。
 
 mAP 必須指明平均哪些類別及哪些 IoU 門檻；`AP50` 與常見 `AP@[.50:.95]` 是不同嚴格度。不能將單張框 IoU、簡化 AP、完整 COCO AP 或分類 accuracy 放在一起當同一量綱比較。
 
@@ -58,7 +58,7 @@ mAP 必須指明平均哪些類別及哪些 IoU 門檻；`AP50` 與常見 `AP@[.
 
 ## 練習與解析
 
-**題目：** 同一預測 IoU=0.6，在 IoU 門檻 0.5 和 0.75 下都是真陽性嗎？報告「mAP 90%」缺少什麼？
+**題目：** 同一預測  $\mathrm{IoU}=0.6$ ，在 IoU 門檻 0.5 和 0.75 下都是真陽性嗎？報告「mAP 90%」缺少什麼？
 
 **解析：** 它只通過 0.5；仍需檢查類別、影像及是否已被更高分預測匹配。mAP 至少缺資料切分、類別範圍、IoU 協定、匹配及忽略政策、評估器版本，單一百分比無法可靠比較。
 

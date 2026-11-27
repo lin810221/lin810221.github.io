@@ -1,0 +1,4 @@
+duckdb==2.0.1
+psycopg==3.3.9
+psycopg-binary==3.3.9
+tzdata==2026.6

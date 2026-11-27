@@ -48,4 +48,4 @@ query latency = auth + preprocessing + tokenization + encoding + search + postpr
 
 **題目：**吞吐提高兩倍，但使用者等更久，可能為什麼？
 
-**參考答案：**大 batch 可能增加排隊等待；吞吐與單題延遲是不同指標。看 p50/p95、batch 集合時間和併發，依服務目標選設定，而非只追最大每秒數。
+**參考答案：**大 batch 可能增加排隊等待；吞吐與單題延遲是不同指標。看  $\frac{p50}{p95}$ 、batch 集合時間和併發，依服務目標選設定，而非只追最大每秒數。

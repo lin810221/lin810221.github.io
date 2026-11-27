@@ -38,7 +38,7 @@ assert abs(sum(distribution([2.8,1.9,0.9,0.3],0.3)) - 1) < 1e-9
 
 ## 四：工具呼叫要有上限
 
-讓模擬模型一直回傳同一個 multiply request；max_turns=3 後應回覆 budget_exceeded。把工具改成 unknown，確認函式白名單不會執行它。
+讓模擬模型一直回傳同一個 multiply request； `max_turns=3`  後應回覆 budget_exceeded。把工具改成 unknown，確認函式白名單不會執行它。
 
 參考做法：工具結果可回報 unknown_tool 給模型，但真正執行只查明確 registry。對同 ID 不同參數應拒絕，不要混用舊結果。
 

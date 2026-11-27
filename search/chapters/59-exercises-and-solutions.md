@@ -32,7 +32,7 @@ v3 tombstone完成，但一個延遲v1事件又寫回向量。請說明只用poi
 
 ## 題目四：還原後向量庫是空的
 
-來源備份有checkpoint=10，新collection為空，replay只讀seq>10。為何程式沒有錯卻查不到？
+來源備份有 `checkpoint=10` ，新collection為空，replay只讀 $seq>10$ 。為何程式沒有錯卻查不到？
 
 **解析：** checkpoint屬於舊索引的消費狀態。新generation需從來源快照重建，再追快照後事件；不能把舊水位當新索引已有資料。離線暫停寫入與線上snapshot/CDC協定也要分清。
 

@@ -18,7 +18,7 @@
 
 頻率案例限定一年封閉、基線無病世代且所有結局均查明：45人在0.5年首次發病、90人在0.25年因其他原因死亡、765人無病追滿一年，累積人時22.5＋22.5＋765＝810人年。45／900是此競爭死亡情境的實際一年發病比例，不是移除死亡的假想風險；人時率則為45／810。世代RR/RD與病例對照OR依抽樣解釋。共同權重、分層與DAG提供可比較性的工具，並不自動排除所有混雜。
 
-SIR使用固定人口1000、初始990/10/0、β0.3／日、γ0.1／日與Euler步長0.1日。所有參數任意、未用真實資料校準，不提供預測區間或實際政策效果。篩檢為固定條件下的期望人數；ICER使用任意成本單位與QALY，不指定支付門檻。
+SIR使用固定人口1000、初始 $\frac{\frac{990}{10}}{0}$ 、β0.3／日、γ0.1／日與Euler步長0.1日。所有參數任意、未用真實資料校準，不提供預測區間或實際政策效果。篩檢為固定條件下的期望人數；ICER使用任意成本單位與QALY，不指定支付門檻。
 
 ## 可取得內容與限制
 
@@ -35,7 +35,7 @@ SIR使用固定人口1000、初始990/10/0、β0.3／日、γ0.1／日與Euler�
 - [CDC：現場分析性研究設計](https://www.cdc.gov/field-epi-manual/php/chapters/design-conduct-analyze-field-studies.html)：現行網頁2024-08-08；設計、比較及限制。
 - [CDC：疾病頻率與風險量數](https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html)：Principles of Epidemiology第三版歷史教學存檔；不稱2026新版。
 - [WHO：GHE2023生命表方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_lifetable_methods.pdf)：現行2000–2023方法文件；估計年與公布年分開。
-- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本GHE/2026.3。
+- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本 `GHE/2026.3` 。
 - [CDC／NCHS：年齡調整](https://www.cdc.gov/nchs/hus/sources-definitions/age-adjustment.htm)：網頁更新2026-09-16；所用美國標準人口仍為2000年。
 - [STROBE：觀察研究報告與適用範圍](https://www.strobe-statement.org/checklists/)：原始聲明2007；官方現行入口，報告指南不等於品質評分。
 - [Hernán等：明確目標試驗與時間偏差](https://doi.org/10.1016/j.jclinepi.2016.04.014)：原始方法2016；部分PMC存取有驗證限制，不宣稱全文全部可讀。
@@ -50,7 +50,7 @@ SIR使用固定人口1000、初始990/10/0、β0.3／日、γ0.1／日與Euler�
 - [臺灣CDC：傳染病統計資料查詢系統](https://nidss.cdc.gov.tw/)：現行資料入口2026-11-17查核；資料隨調查修正，本課不嵌入即時疫情數字。
 - [臺灣CDC：開放資料平台](https://data.cdc.gov.tw/)：現行資料入口；各資料集之更新、欄位與使用條件分別核對。
 - [CDC：設計現場介入](https://www.cdc.gov/field-epi-manual/php/chapters/interventions.html)：官方方法章節；實際介入依事件與當地權責。
-- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013，DOI10.1093/aje/kwt133；不是即時疫情估計。
+- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013， `DOI10.1093/aje/kwt133` ；不是即時疫情估計。
 - [Kermack與McKendrick：傳染病數學理論原始文獻](https://doi.org/10.1098/rspa.1927.0118)：原始模型1927；本課另寫封閉人口SIR玩具模型，不宣稱已校準真實疫情。
 - [WHO：環境健康](https://www.who.int/health-topics/environmental-health)：現行官方主題入口；危害、曝露與可歸因負擔分開。
 - [WHO：疫苗效力、效果與保護](https://www.who.int/news-room/feature-stories/detail/vaccine-efficacy-effectiveness-and-protection)：官方說明2025-03-10；不同終點、時間與族群分開。

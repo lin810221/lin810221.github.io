@@ -45,7 +45,7 @@ Gemini CLI 是已提供 Host 功能的工具，可管理 MCP Server、工具清�
 
 ## 練習與解答
 
-檢查 provider 配置範例，CLI 應保持 trust=false 並只開放 search_notes。將寫入工具加入清單之前，應先完成 Server 的核准與冪等流程。若 CLI 顯示未連線，先查 command、args、信任目錄與 Server stderr；不要先調 temperature，因為那不會修正程序啟動問題。
+檢查 provider 配置範例，CLI 應保持  `trust=false`  並只開放 search_notes。將寫入工具加入清單之前，應先完成 Server 的核准與冪等流程。若 CLI 顯示未連線，先查 command、args、信任目錄與 Server stderr；不要先調 temperature，因為那不會修正程序啟動問題。
 
 ## 官方閱讀
 

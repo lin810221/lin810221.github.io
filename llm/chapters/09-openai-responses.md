@@ -70,7 +70,7 @@ else:
 
 ## 從單輪到多輪
 
-可以自行維護完整原生歷史，或使用 previous_response_id / Conversations。服務端保存、當輪 instructions 和資料政策必須一起設計；本課乾跑基線刻意保持單輪及 store=false。
+可以自行維護完整原生歷史，或使用 previous_response_id / Conversations。服務端保存、當輪 instructions 和資料政策必須一起設計；本課乾跑基線刻意保持單輪及  `store=false` 。
 
 **練習：**用固定 JSON fixture 放一個 reasoning item 在 message 前面，確認你的解析器仍能正確取得可見文字。再測試只有 function_call 時應回報 requires_tools。
 

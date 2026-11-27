@@ -1,0 +1,9 @@
+{
+  "title": "EOS、截斷與packing邊界",
+  "alt": "兩份文件以EOS串接，後段仍可注意前段；截斷可能移除回答，PAD不應納入監督。",
+  "caption": "紅箭頭：B能讀取前面的A；真正隔離需支援區塊遮罩。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

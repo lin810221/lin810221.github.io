@@ -26,15 +26,15 @@ undersampling可減少多數類資料，可能丟訊號；oversampling重複或�
 
 ## 決策成本
 
-同一固定模型可降低threshold提高接受範圍，改變FP/FN；它不需要重新fit。若成本FN=5、$FP=1$，可在validation評估5FN+FP，或在合適校準與假設下推導理論閾值；實際容量與資料偏移可能還要限制處理量。
+同一固定模型可降低threshold提高接受範圍，改變FP/FN；它不需要重新fit。若成本 $\mathrm{FN}=5$ 、$FP=1$，可在validation評估 $5\mathrm{FN}+\mathrm{FP}$ ，或在合適校準與假設下推導理論閾值；實際容量與資料偏移可能還要限制處理量。
 
 ## 執行本章實驗
 
-生成90/10合成資料，固定class_weight='balanced'，對同一holdout展示threshold .5與.25的指標。這些事先指定門檻是示範，不能看過holdout後反覆選最好。完整專題會以獨立val明確選成本門檻。
+生成 $\frac{90}{10}$ 合成資料，固定class_weight='balanced'，對同一holdout展示threshold .5與.25的指標。這些事先指定門檻是示範，不能看過holdout後反覆選最好。完整專題會以獨立val明確選成本門檻。
 
 ## 練習與解答
 
-提高recall後FP從10變100是否一定值得？解答：看FN減少多少、單筆成本與處理能力。若training被重抽成50/50、部署仍1%正例，predict_proba可能需重新校準或調整先驗假設；不能直接稱.8就是現實80%發生率。
+提高recall後FP從10變100是否一定值得？解答：看FN減少多少、單筆成本與處理能力。若training被重抽成 $\frac{50}{50}$ 、部署仍1%正例，predict_proba可能需重新校準或調整先驗假設；不能直接稱.8就是現實80%發生率。
 
 ## 完整可執行範例
 

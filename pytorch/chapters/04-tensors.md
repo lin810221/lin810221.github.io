@@ -32,7 +32,7 @@ print(x.shape, x.dtype, x.device, x.requires_grad)
 
 ## 轉換與拷貝的選擇
 
-`.to(dtype=torch.float32)` 或 `.to(device)` 回傳轉換結果；通常要接回變數。`torch.tensor(existing)` 用來建立拷貝時應注意它會切斷原有計算歷史，需保留微分路徑時使用 Tensor 運算或 clone。NumPy 的 `from_numpy` 對可支援的 CPU array 會共用記憶體，任一側修改都可能影響另一側；跨 GPU 則需要搬移。
+ `.to(dtype=torch.float32)`  或 `.to(device)` 回傳轉換結果；通常要接回變數。`torch.tensor(existing)` 用來建立拷貝時應注意它會切斷原有計算歷史，需保留微分路徑時使用 Tensor 運算或 clone。NumPy 的 `from_numpy` 對可支援的 CPU array 會共用記憶體，任一側修改都可能影響另一側；跨 GPU 則需要搬移。
 
 `x.item()` 只適合單元素 Tensor，轉成 Python 數字後不再有可微分路徑。做訓練日誌可以 `loss.detach().item()`；若把這個數字再拿來 backward，計算圖已不在。GPU 每批取 item 也可能帶來同步成本。
 

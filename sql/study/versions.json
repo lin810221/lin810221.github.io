@@ -1,0 +1,100 @@
+{
+  "checked": "2026-11-27",
+  "timezone": "Asia/Taipei",
+  "python": "3.15.2",
+  "packages": {
+    "duckdb": "2.0.1",
+    "tzdata": "2026.6"
+  },
+  "optional_packages": {
+    "psycopg": "3.3.9",
+    "psycopg-binary": "3.3.9"
+  },
+  "postgresql_server": "19.0",
+  "sqlite_latest_mainline": "3.54.1",
+  "sqlite_bundled_observed": "3.53.4",
+  "core_tests": 52,
+  "entry_scripts": 36,
+  "postgresql_verification": {
+    "server_version": 190000,
+    "read_committed": [
+      100,
+      200
+    ],
+    "repeatable_read": [
+      100,
+      100
+    ],
+    "skip_locked": [
+      2
+    ],
+    "serializable": [
+      "40001",
+      "committed"
+    ],
+    "rls_rows": [
+      [
+        1,
+        10
+      ]
+    ],
+    "on_conflict_do_select": [
+      1,
+      0
+    ],
+    "ignore_nulls": [
+      [
+        1,
+        null
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        10
+      ]
+    ],
+    "parameters": "' OR 1=1 --",
+    "checks": "isolation/row-lock/SSI/RLS/PG19 features/parameter binding PASS"
+  },
+  "sources": {
+    "Python": "https://www.python.org/downloads/",
+    "DuckDB Python": "https://duckdb.org/docs/2.0/clients/python/overview",
+    "DuckDB 套件": "https://pypi.org/pypi/duckdb/json",
+    "PostgreSQL 19 發布": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
+    "PostgreSQL 版本政策": "https://www.postgresql.org/support/versioning/",
+    "PostgreSQL 19 版本說明": "https://www.postgresql.org/docs/19/release-19.html",
+    "Psycopg": "https://pypi.org/pypi/psycopg/json",
+    "SQLite 版本": "https://www.sqlite.org/changes.html",
+    "SQL 查詢": "https://www.postgresql.org/docs/19/queries.html",
+    "型別": "https://www.postgresql.org/docs/19/datatype.html",
+    "NULL 與比較": "https://www.postgresql.org/docs/19/functions-comparison.html",
+    "約束": "https://www.postgresql.org/docs/19/ddl-constraints.html",
+    "視窗": "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+    "交易隔離": "https://www.postgresql.org/docs/19/transaction-iso.html",
+    "鎖": "https://www.postgresql.org/docs/19/explicit-locking.html",
+    "DuckDB 併發": "https://duckdb.org/docs/2.0/connect/concurrency",
+    "複合索引": "https://www.postgresql.org/docs/19/indexes-multicolumn.html",
+    "CSV": "https://duckdb.org/docs/2.0/data/csv/overview",
+    "Parquet": "https://duckdb.org/docs/2.0/data/parquet/overview",
+    "Parquet 格式": "https://parquet.apache.org/docs/file-format/",
+    "CDC": "https://debezium.io/documentation/reference/stable/connectors/postgresql.html",
+    "Airflow": "https://airflow.apache.org/docs/apache-airflow/3.4.0/core-concepts/dag-run.html",
+    "dbt": "https://docs.getdbt.com/docs/build/incremental-models",
+    "OpenLineage": "https://openlineage.io/docs/spec/object-model/",
+    "物件儲存條件寫入": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-writes.html",
+    "RLS": "https://www.postgresql.org/docs/19/ddl-rowsecurity.html",
+    "備份": "https://www.postgresql.org/docs/19/backup.html"
+  },
+  "not_deployed": [
+    "Airflow",
+    "dbt",
+    "Debezium",
+    "OpenLineage",
+    "S3",
+    "DuckLake",
+    "Quack"
+  ]
+}

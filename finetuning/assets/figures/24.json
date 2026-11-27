@@ -1,0 +1,9 @@
+{
+  "title": "排錯先分層，再找最小反例",
+  "alt": "由失敗現象分到資料模板、梯度資源或評估成品，縮成最小實驗再判定原因。",
+  "caption": "能重現的錯誤比猜測超參數更能縮短排錯時間。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

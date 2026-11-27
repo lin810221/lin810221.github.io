@@ -22,7 +22,7 @@
 教材用乙醇密度約0.789 g/mL：
 
 $$
-\mathrm{alcohol\;(g)}=\mathrm{volume\;(mL)}\times\mathrm{ABV}\times0.789
+\mathrm{alcohol\;(g)}=\mathrm{volume\;(\mathrm{mL})}\times\mathrm{ABV}\times0.789
 $$
 
 330mL、5%約13.0g。這是化學近似，不是個人風險估計；各國「標準杯」定義也不同，不能直接將杯數跨國比較。
@@ -43,7 +43,7 @@ WHO資料指出酒精具有多種健康傷害，不能以可能升高HDL或觀�
 
 ## 練習與解答
 
-**先自己判斷：** 330mL、5%啤酒的純酒精是否為330×5×0.789？
+**先自己判斷：** 330mL、5%啤酒的純酒精是否為 $330\times 5\times 0.789$ ？
 
 <details><summary>展開驗算與理由</summary>
 

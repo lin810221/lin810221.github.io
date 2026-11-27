@@ -1,0 +1,310 @@
+[
+  {
+    "id": "figure-01",
+    "file": "assets/figures/01.svg",
+    "title": "靜態教材與動態網站在哪裡執行",
+    "alt": "上列瀏覽器下載靜態教材，下列請求由Python與資料庫處理；兩種網站有不同部署需求。",
+    "caption": "GitHub Pages能提供教材；Django後端需要Python服務。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/intro/overview/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-02",
+    "file": "assets/figures/02.svg",
+    "title": "Project、app與管理入口",
+    "alt": "project組合設定與根路由，app提供功能，管理命令建立與維護環境。",
+    "caption": "建立目錄、註冊app與套用migration是不同動作。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/intro/overview/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-03",
+    "file": "assets/figures/03.svg",
+    "title": "路由依順序選擇View",
+    "alt": "三條路由依固定與整數參數轉向不同View；reverse使用名稱和參數產生網址。",
+    "caption": "URL能定位物件，不代表使用者有權存取。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/http/urls/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-04",
+    "file": "assets/figures/04.svg",
+    "title": "Middleware的進入與返回",
+    "alt": "請求依序經安全、session、認證到View，回應反向經過；順序影響可用資訊。",
+    "caption": "計時分項不可重複；View耗時可能已包含資料庫。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/http/middleware/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-05",
+    "file": "assets/figures/05.svg",
+    "title": "模板繼承與資料輸出",
+    "alt": "共用base模板向三種子模板提供結構，各模板使用context呈現資料並保持自動跳脫。",
+    "caption": "繼承結構不是把任意Python放進HTML執行。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/templates/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-06",
+    "file": "assets/figures/06.svg",
+    "title": "程式資產與私人檔案的邊界",
+    "alt": "static、頁面HTML與使用者檔案分別有建置、呈現與授權流程，不應全部公開在同一資料夾。",
+    "caption": "可及性檢查橫跨頁面：label、焦點、錯誤與對比。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/howto/static-files/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-07",
+    "file": "assets/figures/07.svg",
+    "title": "StudyHub資料關係",
+    "alt": "User透過owner連到多個Task，Task與Tag為多對多，每個Task可有多個附件。",
+    "caption": "關聯存在性不等於擁有者授權。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/db/models/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-08",
+    "file": "assets/figures/08.svg",
+    "title": "Schema演進與資料搬移",
+    "alt": "模型變更先產生migration，審查SQL與資料轉換後才套用至資料庫。",
+    "caption": "有版本的migration才能在乾淨環境重建schema。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/migrations/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-09",
+    "file": "assets/figures/09.svg",
+    "title": "二十筆資料的關聯查詢算例",
+    "alt": "在指定假設下逐列讀取owner需二十一次，批次載入兩次，單值join一次；並非所有關係皆如此。",
+    "caption": "查詢數是指定算例，不能推論實際耗時比例。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/db/optimization/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-10",
+    "file": "assets/figures/10.svg",
+    "title": "交易提交、回滾與副作用",
+    "alt": "atomic中的相關寫入一起提交或回滾，外部副作用透過on_commit延後，仍需另外處理失敗。",
+    "caption": "SQLite與PostgreSQL的鎖定語意需分別驗證。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/db/transactions/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-11",
+    "file": "assets/figures/11.svg",
+    "title": "表單輸入經過哪些檢查",
+    "alt": "原始輸入經欄位轉型與驗證，再按owner範圍確認關聯，最後才寫入。",
+    "caption": "前端選單不能替代伺服器驗證。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/forms/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-12",
+    "file": "assets/figures/12.svg",
+    "title": "POST Redirect GET與重新整理",
+    "alt": "成功POST儲存後回傳redirect，瀏覽器GET詳情；重新整理通常重做GET，並非完整去重機制。",
+    "caption": "PRG改善互動；重試仍需要命令識別與冪等策略。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/forms/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-13",
+    "file": "assets/figures/13.svg",
+    "title": "認證之後仍要限制物件範圍",
+    "alt": "Alice只能操作屬於自己的任務，Bob的物件被拒絕；登入本身不授予所有資料權限。",
+    "caption": "列表、詳情、寫入、下載與API都要核對owner。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/auth/default/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-14",
+    "file": "assets/figures/14.svg",
+    "title": "CSRF與其他防護不能互相取代",
+    "alt": "Session寫入需CSRF及資料授權，CORS只處理瀏覽器跨來源讀取條件，CSP亦有不同責任。",
+    "caption": "本圖簡化流程；實際還需來源、Cookie及HTTP條件。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/ref/csrf/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-15",
+    "file": "assets/figures/15.svg",
+    "title": "Admin的三道範圍",
+    "alt": "staff資格、模型permission與物件queryset依序限制後台能做的動作與可見資料。",
+    "caption": "列表安全之外，還要檢查關聯選單與action。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/ref/contrib/admin/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-16",
+    "file": "assets/figures/16.svg",
+    "title": "私人附件的存取路徑",
+    "alt": "上傳先確認任務owner再驗證內容，儲存後下載仍需重新授權，不提供公開media捷徑。",
+    "caption": "FileResponse的attachment標頭不會替你做授權。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/files/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-17",
+    "file": "assets/figures/17.svg",
+    "title": "JSON到Serializer再到服務",
+    "alt": "JSON輸入經Serializer驗證與唯讀白名單，再由伺服器補owner並呼叫共用服務。",
+    "caption": "ModelSerializer不是把所有Model欄位自動公開。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/forms/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-18",
+    "file": "assets/figures/18.svg",
+    "title": "API狀態與分頁內容",
+    "alt": "建立、輸入錯誤與授權失敗保留不同狀態；分頁count和results也有不同分母。",
+    "caption": "401或403取決於認證方案；不要只背固定對照。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/http/urls/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-19",
+    "file": "assets/figures/19.svg",
+    "title": "不同測試層回答不同問題",
+    "alt": "底層資料與服務、HTTP及API、部署與真實瀏覽器各有範圍，不能互相冒名。",
+    "caption": "區塊寬度表示範圍示意，不代表測試數量。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/testing/overview/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-20",
+    "file": "assets/figures/20.svg",
+    "title": "以反例覆蓋每一個入口",
+    "alt": "HTML、API與Admin分別檢查正常、非法及跨帳號情境，不以單一成功案例替代全部。",
+    "caption": "拒絕回應之外，還要檢查資料沒有被修改。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/testing/tools/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-21",
+    "file": "assets/figures/21.svg",
+    "title": "快取鍵必須包含資料範圍",
+    "alt": "不同使用者有不同摘要鍵，提交後只清除相應owner；TTL不是唯一失效策略。",
+    "caption": "LocMem每程序獨立，不代表多worker共用快取。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/cache/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-22",
+    "file": "assets/figures/22.svg",
+    "title": "Tasks、queue與worker的責任",
+    "alt": "請求提交後可enqueue工作，由外部worker執行；本課ImmediateBackend則在原程序立即執行。",
+    "caption": "Django Tasks提供協定；真正worker與queue需另配置。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/tasks/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-23",
+    "file": "assets/figures/23.svg",
+    "title": "正式服務的組件邊界",
+    "alt": "請求經TLS反向代理、WSGI或ASGI服務、Django後端到資料庫，每層都需自己的設定。",
+    "caption": "反向代理標頭只能信任已確認的代理設定。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/howto/deployment/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-24",
+    "file": "assets/figures/24.svg",
+    "title": "部署時分開管理四種內容",
+    "alt": "程式、資料庫、靜態資產與私人檔案有不同版本、保存與回復需求，不應只備份原始碼。",
+    "caption": "更新前確認資料相容性與可用回復路徑。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-25",
+    "file": "assets/figures/25.svg",
+    "title": "StudyHub專題的交付鏈",
+    "alt": "從契約與資料模型、介面與API、測試及成品，到部署條件逐步完成同一專題。",
+    "caption": "所有入口共用資料範圍與明確業務服務。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/intro/overview/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-26",
+    "file": "assets/figures/26.svg",
+    "title": "一次完整操作經過的邊界",
+    "alt": "使用者登入後建立任務、上傳附件，最後透過頁面或API更新；每一步重新檢查授權。",
+    "caption": "共用Model不代表每個入口已自動套用相同權限。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/auth/default/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-27",
+    "file": "assets/figures/27.svg",
+    "title": "排錯先縮小，再提出原因",
+    "alt": "由症狀分成環境路由、資料權限與資產部署，使用最小可重現案例判斷。",
+    "caption": "保存版本、設定、request ID與完整錯誤，遮蔽秘密。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/topics/logging/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-28",
+    "file": "assets/figures/28.svg",
+    "title": "更新版本與回復流程",
+    "alt": "查核相容性後在隔離環境升級，驗證migration與功能，再進行有回復計畫的發布。",
+    "caption": "版本、資料與測試證據一起交付。",
+    "sources": [
+      "https://docs.djangoproject.com/en/6.1/howto/upgrade-version/"
+    ],
+    "license": "original educational diagram"
+  }
+]

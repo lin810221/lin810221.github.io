@@ -33,7 +33,7 @@ $$
 
 ## 手算與目前API
 
-$y=[1,2,3]$、pred=[1,2,5]，$\operatorname{MAE}=2/3$、$\operatorname{MSE}=4/3$、$\operatorname{RMSE}=\sqrt{4/3}$，R²=1-4/2=-1。本課使用root_mean_squared_error，不以舊版MSE squared=False介面作主線。指標函式先驗證同shape，避免[N,1]與[N]的隱含廣播。
+$y=[1,2,3]$、 $\mathrm{pred}=[1,2,5]$ ，$\operatorname{MAE}=2/3$、$\operatorname{MSE}=4/3$、$\operatorname{RMSE}=\sqrt{4/3}$， $R^{2}=1-\frac{4}{2}=-1$ 。本課使用root_mean_squared_error，不以舊版MSE  `squared=False` 介面作主線。指標函式先驗證同shape，避免[N,1]與[N]的隱含廣播。
 
 ## 殘差分布與百分比陷阱
 

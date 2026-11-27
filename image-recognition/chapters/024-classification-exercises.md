@@ -8,9 +8,9 @@
 
 ## 題目：追蹤張量與參數
 
-輸入[4,3,32,32]，Conv2d(3,16,3,stride=2,padding=1)，接ReLU及AdaptiveAvgPool2d(1)，最後Linear(16,5)。寫出每步shape與卷積參數量，說明為何不需要在每次換batch大小時重建Linear。
+輸入[4,3,32,32]， `Conv2d(3,16,3,stride=2,padding=1)` ，接ReLU及AdaptiveAvgPool2d(1)，最後Linear(16,5)。寫出每步shape與卷積參數量，說明為何不需要在每次換batch大小時重建Linear。
 
-解析：卷積為[4,16,16,16]；ReLU不改shape；池化為[4,16,1,1]，flatten(1)後[4,16]；輸出[4,5]。卷積參數16×(3×3×3+1)=448。batch軸不是Linear輸入特徵軸，因此最後一批只剩1張仍可推論，但訓練時其他層如BatchNorm可能有額外限制。
+解析：卷積為[4,16,16,16]；ReLU不改shape；池化為[4,16,1,1]，flatten(1)後[4,16]；輸出[4,5]。卷積參數 $16\times (3\times 3\times 3+1)=448$ 。batch軸不是Linear輸入特徵軸，因此最後一批只剩1張仍可推論，但訓練時其他層如BatchNorm可能有額外限制。
 
 ## 題目：損失函數契約
 

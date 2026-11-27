@@ -18,7 +18,7 @@
 
 ## 刪除與 Tombstone
 
-向量庫可按 ID 刪除，但來源保留 active=False 與較新的 revision，才能拒絕延遲的舊 upsert。只刪向量卻忘記來源，重建會把文件加回；只改來源卻不清索引，候選仍占用預算。服務 hydration 可先隱藏失效候選，同步 worker 再清除索引。
+向量庫可按 ID 刪除，但來源保留  `active=False`  與較新的 revision，才能拒絕延遲的舊 upsert。只刪向量卻忘記來源，重建會把文件加回；只改來源卻不清索引，候選仍占用預算。服務 hydration 可先隱藏失效候選，同步 worker 再清除索引。
 
 ## Local 保存與重新開啟
 
@@ -26,7 +26,7 @@
 
 ## 可靠寫入需要更多條件
 
-wait=True 對操作完成有特定語意，但不代表跨 source/vector 交易、全副本一致或可災難復原。正式 server 的 ordering、consistency、replication 設定需按版本驗收。完整恢復也要考慮來源、worker checkpoint、recipe 與是否存在重建中的 generation。
+ `wait=True`  對操作完成有特定語意，但不代表跨 source/vector 交易、全副本一致或可災難復原。正式 server 的 ordering、consistency、replication 設定需按版本驗收。完整恢復也要考慮來源、worker checkpoint、recipe 與是否存在重建中的 generation。
 
 ## 可執行範例
 

@@ -45,7 +45,7 @@ resource 參數用來指定 Token 的目標資源，避免把原本給另一個 
 
 ## 練習與解答
 
-把「登入頁、驗證 JWT、查工單租戶、刷新 Token」分配角色。參考答案：登入與簽發屬身分服務；JWT 與工單 ACL 屬資源 Server；刷新由 Client 配合身分服務處理。若你把所有流程都寫成工具參數 approved=true，就沒有真正建立 OAuth 授權。
+把「登入頁、驗證 JWT、查工單租戶、刷新 Token」分配角色。參考答案：登入與簽發屬身分服務；JWT 與工單 ACL 屬資源 Server；刷新由 Client 配合身分服務處理。若你把所有流程都寫成工具參數  `approved=true` ，就沒有真正建立 OAuth 授權。
 
 ## 官方閱讀
 

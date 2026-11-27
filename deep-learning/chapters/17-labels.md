@@ -22,7 +22,7 @@ class weights改loss，抽樣改訓練樣本分布，threshold改固定模型的
 
 ## 加權CE的分母
 
-labels[0,0,0,1]、weights[1,3]時，mean weighted CE按3×1+1×3=6除，不是4。第10例回傳逐樣本weighted loss與sum/6，對照官方實際結果。若做gradient accumulation，群組分母也應是對應weights合計。
+labels[0,0,0,1]、weights[1,3]時，mean weighted CE按 $3\times 1+1\times 3=6$ 除，不是4。第10例回傳逐樣本weighted loss與 $\frac{sum}{6}$ ，對照官方實際結果。若做gradient accumulation，群組分母也應是對應weights合計。
 
 $$
 L=\frac{\sum_i w_{y_i}\,[-\log p_{i,y_i}]}{\sum_i w_{y_i}}

@@ -45,7 +45,7 @@ print(model.predict(scaler.transform(x[200:205])))
 
 ## 練習與解答
 
-每批只有單一類，fit重新建模型能累積所有知識嗎？答案：普通fit通常重新估，應用支援的partial_fit並傳classes。若要找更大資料效能，先量I/O與記憶體，不把n_jobs=-1當分散式訓練。大型串流專案需更完整checkpoint與資料offset設計。
+每批只有單一類，fit重新建模型能累積所有知識嗎？答案：普通fit通常重新估，應用支援的partial_fit並傳classes。若要找更大資料效能，先量I/O與記憶體，不把 `n_jobs=-1` 當分散式訓練。大型串流專案需更完整checkpoint與資料offset設計。
 
 ## 官方來源與延伸閱讀
 

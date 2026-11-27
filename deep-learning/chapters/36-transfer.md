@@ -22,7 +22,7 @@
 
 ## 凍結參數與模式
 
-requires_grad=False不等於eval：BatchNorm running buffers與Dropout行為可能仍改變。固定feature extractor時no_grad可減圖，但如果前方有可訓練模組需穿過它回傳gradient，就不能把整段切斷。畫出需要的路徑，再選操作。
+ `requires_grad=False` 不等於eval：BatchNorm running buffers與Dropout行為可能仍改變。固定feature extractor時no_grad可減圖，但如果前方有可訓練模組需穿過它回傳gradient，就不能把整段切斷。畫出需要的路徑，再選操作。
 
 ## 本課第25例的界線
 

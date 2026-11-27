@@ -30,7 +30,7 @@ $$
 
 ## 手算同一批
 
-pred=[0,2,5]、target=[1,2,3]，殘差[-1,0,2]。$\operatorname{MSE}=5/3$，$\operatorname{MAE}=1$，Huber(delta1)=2/3。第7例同時輸出每個prediction的梯度，核對mean分母。大錯誤會在不同目標中有不同更新影響。
+ $\mathrm{pred}=[0,2,5]$ 、 $\mathrm{target}=[1,2,3]$ ，殘差[-1,0,2]。$\operatorname{MSE}=5/3$，$\operatorname{MAE}=1$， $\operatorname{Huber}\left(\mathrm{delta}1\right)=\frac{2}{3}$ 。第7例同時輸出每個prediction的梯度，核對mean分母。大錯誤會在不同目標中有不同更新影響。
 
 ## Loss與評估指標
 

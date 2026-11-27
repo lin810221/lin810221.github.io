@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" color="#98d8cd" role="img" aria-labelledby="sql-title sql-desc">
+<title id="sql-title">SQL 與資料工程：從資料表到可信發布</title><desc id="sql-desc">三層資料庫經過查詢表格與品質閘門，交付成有勾選標記的版本檔案。</desc>
+<defs><linearGradient id="sql-flow"><stop stop-color="#98d8cd"/><stop offset="1" stop-color="#eac98d"/></linearGradient></defs>
+<g fill="none" stroke="currentColor" stroke-width="1.6">
+<path d="M24 48v57c0 8 15 14 33 14s33-6 33-14V48"/><ellipse cx="57" cy="48" rx="33" ry="14"/><path d="M24 68c0 8 15 14 33 14s33-6 33-14M24 88c0 8 15 14 33 14s33-6 33-14"/>
+<path d="M95 81h23m-6-5 6 5-6 5" stroke="url(#sql-flow)"/>
+<rect x="125" y="50" width="55" height="65" rx="4"/><path d="M125 69h55M125 84h55M125 99h55M145 69v46M163 69v46" opacity=".7"/>
+<path d="M185 81h18m-6-5 6 5-6 5" stroke="url(#sql-flow)"/>
+<path d="M211 54h24l12 12v48h-36zM235 54v13h12"/><path d="m218 89 7 7 15-17" stroke="#eac98d" stroke-width="2.5"/>
+</g><g fill="currentColor" font-family="ui-monospace,monospace" font-size="10" text-anchor="middle"><text x="57" y="145">SOURCE</text><text x="152" y="145">QUERY</text><text x="229" y="145">PUBLISH</text></g></svg>

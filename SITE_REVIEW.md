@@ -1,4 +1,6 @@
-# 全站圖解、公式與文字 review
+# 全站圖解、公式與文字 review（第一輪紀錄）
+
+本文件保留第一輪紀錄與當時數字；後續針對原稿裸算式與公式缺漏的修正、最新驗證及逐課結果，請見 [全站數學內容與排版修正](MATH_REVIEW.md)。
 
 查核與修正日期：2026-11-24。範圍為 23 門課程、1840 個單元。
 
@@ -77,3 +79,21 @@ python tools/prepare_pages.py --target pages
 只有 Python 時執行 `python tools/build.py` 仍可由本機 KaTeX 在開頁時補排公式；GitHub Actions 發布要求建置時已完成排版。後續製作規範見 [COURSE_AUTHORING.md](COURSE_AUTHORING.md)。
 
 本次只更新本機檔案與 `dist`，尚未 commit、push 或發布到 GitHub。
+
+## 2026-11-27：SQL與資料工程新增驗收
+
+新增獨立 `sql` 課程：18章108單元、36張原創中文圖解、36個實作入口、12個互動實驗、108題與解答、94個術語。首頁兩種模式均有入口，並加入SQL／資料工程標籤及SQL到Django的閱讀路線。上表保留原先全站review的歷史範圍，不以新課數字回寫舊日期。
+
+Python3.15.2與DuckDB2.0.1的52項測試通過；範例ZIP解壓到乾淨資料夾後同樣通過。私人PostgreSQL19.0伺服器實測隔離快照、列鎖、序列化衝突、RLS、參數綁定、IGNORE NULLS與DO SELECT RETURNING，測完已停止，未安裝系統服務。Airflow、dbt、Debezium與雲端服務未部署。
+
+全部26門課程與章內編號fixture共27組閱讀器DOM回歸通過；新課58處公式預先排版，來源數學標記掃描為零候選，既有筆記與進度鍵保留。SQL的36張圖已全部轉成點陣預覽並檢視。DOM與圖解預覽不代表實際桌面／手機瀏覽器版面已驗收；本次無可用的瀏覽器連線。
+
+## 2026-11-27：多模態與文件AI新增驗收
+
+新增獨立multimodal課程：16章96單元、32張原創中文圖解、32個實作入口、12個互動實驗、96題與解析、115術語。首頁簡易版與詳細版、文件AI標籤及跨課路線已納入，影像辨識的原規劃文字改為實際跨課連結。
+
+當日穩定套件PyMuPDF2.2、pypdf7.2.0、RapidOCR3.10.0、ONNX Runtime1.32.0、Pydantic2.14.4與Pillow13.0.0在相容Python3.14.10環境執行。Python3.15.2的ONNX Runtime wheel缺少問題保留於版本說明。58項核心測試含真實CPU OCR、PDF、表格、AcroForm、redaction、引用、WAV、GIF與DocWeave恢復；ZIP解壓新目錄後同樣通過，9份合成fixture重生後逐檔雜湊一致。
+
+全站27門課程與章內編號fixture共28組閱讀器DOM回歸通過。新課132處公式含22個獨立區塊已預先排版，嚴格數學文字稽核為零候選，32張SVG已逐一檢視點陣預覽並校正引用疊框。實際瀏覽器桌面／手機版面仍未驗收。
+
+OpenAI Responses、Gemini穩定Interactions v1、Claude Messages與選用轉錄只做離線契約；FFmpeg只測命令規劃與明確執行開關。沒有代跑付費API、大型VLM、ASR、MP4、GPU或雲端服務。原始圖像、向量代數、人工逐字稿與真實OCR在教材中各自標示。所有修改仍在本機，未commit、push或公開發布。

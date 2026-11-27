@@ -21,11 +21,11 @@ p=\sigma(z)=\frac1{1+e^{-z}},\qquad
 L=-\frac1N\sum_i[y_i\log p_i+(1-y_i)\log(1-p_i)]
 $$
 
-若$z=0$，p=.5；z約2.197時p=.9。真實label=0但模型p=.99會受很大Log loss，與只看分類對錯的accuracy不同。
+若$z=0$， $p=.5$ ；z約2.197時 $p=.9$ 。真實 `label=0` 但模型 $p=.99$ 會受很大Log loss，與只看分類對錯的accuracy不同。
 
 ## 使用目前API
 
-本課1.9使用C及l1_ratio描述正則化，不以舊penalty參數作主線。l1_ratio=0為L2，1為L1，介於其間為Elastic Net；solver需支援所選形式，L1／混合常使用saga。C越大限制越弱，與Ridge alpha方向不同；$C=np.inf$表示不施加該正則化。
+本課1.9使用C及l1_ratio描述正則化，不以舊penalty參數作主線。 `l1_ratio=0` 為L2，1為L1，介於其間為Elastic Net；solver需支援所選形式，L1／混合常使用saga。C越大限制越弱，與Ridge alpha方向不同；$C=np.inf$表示不施加該正則化。
 
 ## 標準化與收斂
 

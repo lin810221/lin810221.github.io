@@ -55,7 +55,7 @@ PICO定義想回答的問題，搜尋式則要在可接受工作量下找回可�
 
 ## 來源、版本與下一步
 
-- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新。
+- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示 `6.5/2024` ，版本紀錄另列6.5.1更新。
 - [Cochrane：搜尋與研究篩選](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04)：線上章節；2026-11-16查核。
 - [NLM：PubMed User Guide](https://pubmed.ncbi.nlm.nih.gov/help/)：頁面最近更新2026-09-30；2026-11-16查核。
 

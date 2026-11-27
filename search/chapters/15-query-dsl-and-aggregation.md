@@ -14,7 +14,7 @@
 
 ## 把相關性與資格寫在正確位置
 
-bool.must 可放 multi_match，title^2 提升標題；bool.filter 放 tenant、active 與 recipe 的精確條件。模型或使用者不能直接提供整份 DSL，否則可繞過欄位限制與資源預算。本課服務只接受 query、k，由可信主體產生租戶，再組出固定形狀的請求。
+bool.must 可放 multi_match， $\mathrm{title}^{2}$  提升標題；bool.filter 放 tenant、active 與 recipe 的精確條件。模型或使用者不能直接提供整份 DSL，否則可繞過欄位限制與資源預算。本課服務只接受 query、k，由可信主體產生租戶，再組出固定形狀的請求。
 
 ## Aggregation 的作用域
 
@@ -26,7 +26,7 @@ bool.must 可放 multi_match，title^2 提升標題；bool.filter 放 tenant、a
 
 ## 離線與 live
 
-預設入口用真實 SDK 記錄請求；`--live` 只對你指定的既有索引發出搜尋。透過環境變數提供 URL、索引、API key 與 CA，不將憑證寫進教材。官方 TLS 與憑證驗證應保持啟用；不要以 verify_certs=false 當通用排錯方式。
+預設入口用真實 SDK 記錄請求；`--live` 只對你指定的既有索引發出搜尋。透過環境變數提供 URL、索引、API key 與 CA，不將憑證寫進教材。官方 TLS 與憑證驗證應保持啟用；不要以  `verify_certs=false`  當通用排錯方式。
 
 ## 可執行範例
 

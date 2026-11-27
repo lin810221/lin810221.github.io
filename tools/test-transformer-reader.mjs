@@ -7,7 +7,7 @@ import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const file of ['assets/reader.js','transformer/assets/overview.js','transformer/assets/course-data.js'])parse(await read(file),{ecmaVersion:'latest'});
 const {document:home}=parseHTML(await read('index.html'));
-assert.equal(home.querySelectorAll('.subject-feature').length,23);
+assert.equal(home.querySelectorAll('.subject-feature').length,Object.keys(JSON.parse(await readFile(new URL('tools/library.json',root),'utf8')).courses).length);
 assert.equal(home.querySelectorAll('a[href="transformer/index.html"]').length,1);
 const {window,document}=parseHTML(await read('transformer/index.html'));
 const old=JSON.stringify({completed:['001-task-map'],notes:{'001-task-map':'影像課筆記保留'}});

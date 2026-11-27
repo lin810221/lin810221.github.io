@@ -8,9 +8,9 @@ Vision Transformer將影像分成小區塊，再把每塊轉成token，讓序列
 
 ## 從影像到序列
 
-224×224影像以16×16、不重疊patch切分，有14×14=196個patch。RGB每塊有16×16×3=768個數值，經線性投影成D維token。這個投影也可用kernel_size=stride=16的Conv2d實作；它不是沿用語言的單字字典。
+ $224\times 224$ 影像以 $16\times 16$ 、不重疊patch切分，有 $14\times 14=196$ 個patch。RGB每塊有 $16\times 16\times 3=768$ 個數值，經線性投影成D維token。這個投影也可用 `kernel_size=stride=16` 的Conv2d實作；它不是沿用語言的單字字典。
 
-張量[N,3,H,W]經patch projection得到[N,D,H/P,W/P]，flatten空間後transpose成[N,L,D]。注意transpose後的軸順序，不可把D當序列長度。某些模型加class token，L變成197；其他模型用平均池化，結構不完全相同。
+張量[N,3,H,W]經patch projection得到 $[N,D,\frac{H}{P},\frac{W}{P}]$ ，flatten空間後transpose成[N,L,D]。注意transpose後的軸順序，不可把D當序列長度。某些模型加class token，L變成197；其他模型用平均池化，結構不完全相同。
 
 $$
 L=\frac{H}{P}\frac{W}{P},\qquad X_{tokens}\in\mathbb{R}^{N\times L\times D}
@@ -26,13 +26,13 @@ patch太大可能把細小瑕疵和背景混在一起。patch變小能保留較�
 
 ## 可以執行的Patch實驗
 
-12_patches_attention.py用32×32影像、8×8patch、$D=16$，產生16個token，再進行四頭attention。這是未訓練結構示範，不是完整預訓練ViT，輸出的數字不具辨識意義。
+12_patches_attention.py用 $32\times 32$ 影像、 $8\times 8\mathrm{patch}$ 、$D=16$，產生16個token，再進行四頭attention。這是未訓練結構示範，不是完整預訓練ViT，輸出的數字不具辨識意義。
 
 <!-- example:12_patches_attention.py -->
 
 ## 練習與解析
 
-32×48影像以8×8patch分塊，$L=4\times 6=24$。若加入一個class token，attention矩陣每個head為25×25。把影像長寬各加倍後，patch數增加四倍，標準attention矩陣格數增加十六倍，不只是四倍。
+ $32\times 48$ 影像以 $8\times 8\mathrm{patch}$ 分塊，$L=4\times 6=24$。若加入一個class token，attention矩陣每個head為 $25\times 25$ 。把影像長寬各加倍後，patch數增加四倍，標準attention矩陣格數增加十六倍，不只是四倍。
 
 這個算例不包含投影、MLP、記憶體最佳化與實際kernel差異，所以它說明的是理論主要項，不能當作精確延遲倍數。
 

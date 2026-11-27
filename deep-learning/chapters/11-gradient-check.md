@@ -32,11 +32,11 @@ logsumexp的解析梯度是softmax，能同時檢查穩定運算與向量梯度�
 
 ## 常見斷圖
 
-item轉Python數字、detach、NumPy計算後重新torch.tensor，都可能讓值仍合理但失去原來依賴。對新Tensor設requires_grad不能把已斷的路接回去。先檢查is_leaf、grad_fn與loss是否連到目標參數，區分grad=None與正確零導數。
+item轉Python數字、detach、NumPy計算後重新torch.tensor，都可能讓值仍合理但失去原來依賴。對新Tensor設requires_grad不能把已斷的路接回去。先檢查is_leaf、grad_fn與loss是否連到目標參數，區分 `grad=None` 與正確零導數。
 
 ## 練習與解答
 
-在第4例manual梯度忘除N，gradcheck式對照會差固定倍數；若只一層不同，沿chain rule找最早偏差。解答：先最小化問題、固定輸入、用double與合理容許值，不直接增加retain_graph或把全部參數requires_grad=True來掩蓋錯誤。
+在第4例manual梯度忘除N，gradcheck式對照會差固定倍數；若只一層不同，沿chain rule找最早偏差。解答：先最小化問題、固定輸入、用double與合理容許值，不直接增加retain_graph或把全部參數 `requires_grad=True` 來掩蓋錯誤。
 
 ## 完整可執行範例
 

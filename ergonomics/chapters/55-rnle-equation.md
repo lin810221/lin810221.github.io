@@ -45,7 +45,7 @@ NIOSH以LI／CLI不超過1作工作設計方向，但不是個人安全、零風
 
 ## 練習與解答
 
-**先想一想：** LC=23kg，是否表示每個成人都可安全搬23kg？
+**先想一想：**  $\mathrm{LC}=23\mathrm{kg}$ ，是否表示每個成人都可安全搬23kg？
 
 <details><summary>展開驗算與理由</summary>
 

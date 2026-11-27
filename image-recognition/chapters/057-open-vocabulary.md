@@ -40,4 +40,4 @@ $$
 
 ## 跨課閱讀
 
-向量、檢索與相似度可延伸到[Embedding課程](../embedding/index.html)。本課聚焦視覺輸出與驗收；OCR、文件版面與可查證圖文問答是另一門多模態課程的規劃，尚未完成部分不建立失效連結。
+向量、檢索與相似度可延伸到[Embedding課程](../embedding/index.html)。本課聚焦視覺輸出與驗收；OCR、文件版面、表格與可查證圖文問答可接著閱讀[多模態與文件AI](../multimodal/index.html)。

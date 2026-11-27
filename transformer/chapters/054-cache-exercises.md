@@ -1,6 +1,6 @@
 # Cache與容量練習解析
 
-<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享K/V heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
+<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享 $\frac{K}{V}$  heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
 
 <div class="tf-task"><strong>讀圖任務</strong><p>核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：Cache與容量練習解析。</p></div>
 
@@ -8,7 +8,7 @@
 
 ## 題目：追加軸
 
-K/V原為[2,4,3,8]，新token的K/V為[2,4,2,8]，應沿哪一軸串接？解析：沿序列軸-2，結果[2,4,5,8]。沿最後一軸會變head_dim並破壞點積；沿head軸則改模型結構。
+ $\frac{K}{V}$ 原為[2,4,3,8]，新token的 $\frac{K}{V}$ 為[2,4,2,8]，應沿哪一軸串接？解析：沿序列軸-2，結果[2,4,5,8]。沿最後一軸會變head_dim並破壞點積；沿head軸則改模型結構。
 
 ## 題目：遮罩逐列
 
@@ -20,7 +20,7 @@ past1、新3時，key長4，允許列為1100、1110、1111。SDPA True表示可�
 
 ## 題目：計算容量
 
-B1、L2、S1024、Hkv8、Dh64、b2，純KV=2,097,152bytes=2MiB。若改float32為4MiB；若只是把query heads增加，Hkv與Dh不變，純KV公式不因此改變，但query相關計算可能增加。
+B1、L2、S1024、Hkv8、Dh64、b2，純 $\mathrm{KV}=2,097,152\mathrm{bytes}=2MiB$ 。若改float32為4MiB；若只是把query heads增加，Hkv與Dh不變，純KV公式不因此改變，但query相關計算可能增加。
 
 ## 實作任務
 

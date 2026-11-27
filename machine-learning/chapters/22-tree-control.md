@@ -45,7 +45,7 @@ search=GridSearchCV(DecisionTreeClassifier(random_state=7),
 
 ## 練習與解答
 
-$N=100$且min_samples_leaf=20，一次分裂若產生10與90筆是否允許？答案：不符合leaf下限。若depth變小val改善，可能減少過擬合，但仍要檢查切分變異；單次結果不足以證明所有資料都適合同樣depth。將模型大小與規則可讀性寫入選擇理由。
+$N=100$且 `min_samples_leaf=20` ，一次分裂若產生10與90筆是否允許？答案：不符合leaf下限。若depth變小val改善，可能減少過擬合，但仍要檢查切分變異；單次結果不足以證明所有資料都適合同樣depth。將模型大小與規則可讀性寫入選擇理由。
 
 ## 官方來源與延伸閱讀
 

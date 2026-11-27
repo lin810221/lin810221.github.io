@@ -20,7 +20,7 @@ Transformer最後的隱藏狀態通常是`[B,T,D]`，語言模型頭把每個D�
 
 當輸入Embedding為E=`[V,D]`，可令輸出Linear的weight直接共用E，logits為$HE^\top$。這叫weight tying；不是所有模型都必須採用，是否綁定要看具體架構與config。[Press與Wolf的原始研究](https://arxiv.org/abs/1608.05859)是這項語言模型設計的歷史來源。
 
-如果V=100、$D=8$，不綁定時輸入表與無bias輸出頭共1600個元素，綁定後獨立元素只有800。若另有輸出bias，仍要加100。這裡只計這兩個模組，不是整個Transformer參數量；後面Attention、FFN與Norm仍需另外計算。
+如果 $V=100$ 、$D=8$，不綁定時輸入表與無bias輸出頭共1600個元素，綁定後獨立元素只有800。若另有輸出bias，仍要加100。這裡只計這兩個模組，不是整個Transformer參數量；後面Attention、FFN與Norm仍需另外計算。
 
 ## copy與share不是同一件事
 
@@ -45,7 +45,7 @@ assert head.weight is embedding.weight
 
 ## 練習與解析
 
-V=259、$D=32$，無bias且共享輸入輸出，這兩處共多少獨立參數？答案8288，不是16576。若state_dict有兩個名稱指向相同權重，也不代表真的有兩套獨立參數；序列化工具對共享的保存規則需另外查核。
+ $V=259$ 、$D=32$，無bias且共享輸入輸出，這兩處共多少獨立參數？答案8288，不是16576。若state_dict有兩個名稱指向相同權重，也不代表真的有兩套獨立參數；序列化工具對共享的保存規則需另外查核。
 
 再問：輸出logits=`[1,2,3]`，正確類是第二類，loss是否因最高類錯誤就固定為1？不是。交叉熵為`−ln(.2447)≈1.4076`，反映正確類分配到的機率。介面見[Linear](https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html)與[CrossEntropyLoss](https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html)。
 

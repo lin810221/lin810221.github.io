@@ -1,0 +1,9 @@
+{
+  "title": "Adapter交付的依賴關係",
+  "alt": "精確基底與tokenizer共同決定adapter能否重現，manifest用身分與雜湊將其連結。",
+  "caption": "同一模型名稱不保證內容相同。",
+  "sources": [
+    "https://huggingface.co/docs/peft/v0.22.0/developer_guides/checkpoint"
+  ],
+  "license": "original educational diagram"
+}

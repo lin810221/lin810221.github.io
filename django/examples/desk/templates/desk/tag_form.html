@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<h1>修改標籤。</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>儲存名稱</button></form><a href="{% url 'desk:tags' %}">回到標籤</a>{% endblock %}

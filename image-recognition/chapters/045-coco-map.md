@@ -8,7 +8,7 @@
 
 先分清楚數值50%、IoU門檻0.50與多門檻平均三種意思。報告應寫明例如`COCO bbox AP @[.50:.95]`或`bbox AP50`，並附資料切分與評估器版本。AP50比較寬容；AP75對定位要求較高，兩者差距大時值得檢查邊界、縮放還原與小物件。
 
-COCO常用bbox摘要在多個IoU門檻、類別與101個召回取樣點上彙整：IoU從0.50到0.95、間隔0.05。另有大小範圍與每圖最大預測數等維度，常見主摘要使用maxDets=100。沒有有效真實標註的類別或切片，不應任意當成一般0分加入平均。具體ignore、crowd、area與有效項目規則以指定版本的[官方COCOeval程式](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)為準。
+COCO常用bbox摘要在多個IoU門檻、類別與101個召回取樣點上彙整：IoU從0.50到0.95、間隔0.05。另有大小範圍與每圖最大預測數等維度，常見主摘要使用 `maxDets=100` 。沒有有效真實標註的類別或切片，不應任意當成一般0分加入平均。具體ignore、crowd、area與有效項目規則以指定版本的[官方COCOeval程式](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)為準。
 
 ## 用兩類玩具數字理解平均維度
 

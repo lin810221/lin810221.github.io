@@ -1,0 +1,1871 @@
+{
+  "slug": "multimodal",
+  "title": "多模態與文件 AI 完整教學",
+  "shortTitle": "多模態與文件 AI",
+  "updated": "2026-11-27",
+  "baseline": "PyMuPDF 2.2 · RapidOCR 3.10.0 · Python 3.14.10",
+  "footerLabel": "THE MULTIMODAL & DOCUMENT AI FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "exampleFileExtensions": [
+    ".pdf",
+    ".png",
+    ".wav",
+    ".gif",
+    ".html",
+    ".svg",
+    ".jsonl"
+  ],
+  "exampleExcludeDirectories": [
+    ".runtime",
+    "models"
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json",
+    "assets/figures/README.md",
+    "examples/VERIFICATION.md",
+    "examples/RUNBOOK.md",
+    "examples/DATA_DICTIONARY.md"
+  ],
+  "visualPresentation": "custom",
+  "searchHint": "搜尋 OCR、PDF、VLM、表格、引用、MaxSim、時間定位…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從零認識多模態與文件AI",
+      "description": "先定義任務、來源與可查證的交付。"
+    },
+    {
+      "id": "geometry",
+      "number": "02",
+      "title": "影像、座標與頁面表示",
+      "description": "像素、DPI、裁切、旋轉與區域定位。"
+    },
+    {
+      "id": "pdf",
+      "number": "03",
+      "title": "真正理解PDF",
+      "description": "文字層、物件、解析器、掃描與密碼。"
+    },
+    {
+      "id": "ocr",
+      "number": "04",
+      "title": "OCR與辨識品質",
+      "description": "真實PP-OCRv6、偵測、方向、辨識與誤差。"
+    },
+    {
+      "id": "layout",
+      "number": "05",
+      "title": "版面與文件結構",
+      "description": "閱讀順序、區塊、標題、圖說與中介表示。"
+    },
+    {
+      "id": "tables",
+      "number": "06",
+      "title": "表格、表單與鍵值擷取",
+      "description": "列欄、合併儲存格、跨頁、表單與對帳。"
+    },
+    {
+      "id": "extraction",
+      "number": "07",
+      "title": "結構化擷取與業務驗證",
+      "description": "Schema、精確金額、證據、缺值與人工覆核。"
+    },
+    {
+      "id": "models",
+      "number": "08",
+      "title": "多模態模型原理",
+      "description": "圖文對齊、CLIP、VLM、OCR-free與選型。"
+    },
+    {
+      "id": "providers",
+      "number": "09",
+      "title": "使用多模態模型服務",
+      "description": "OpenAI、Gemini、Claude的輸入、輸出與預算。"
+    },
+    {
+      "id": "docvqa",
+      "number": "10",
+      "title": "可查證的圖文問答",
+      "description": "題意、頁碼、區域、拒答與引用支持。"
+    },
+    {
+      "id": "retrieval",
+      "number": "11",
+      "title": "跨模態與文件檢索",
+      "description": "頁面索引、影像embedding、MaxSim與權限。"
+    },
+    {
+      "id": "evaluation",
+      "number": "12",
+      "title": "文件擷取與問答評估",
+      "description": "文件級切分、CER、ANLS、欄位、定位與風險。"
+    },
+    {
+      "id": "security",
+      "number": "13",
+      "title": "安全、隱私與資料治理",
+      "description": "信任邊界、惡意文件、真正遮蔽與快取隔離。"
+    },
+    {
+      "id": "media",
+      "number": "14",
+      "title": "音訊、影片與時間定位",
+      "description": "取樣、轉錄、抽幀、時間區間與聲畫同步。"
+    },
+    {
+      "id": "project",
+      "number": "15",
+      "title": "完成DocWeave專題",
+      "description": "從合成發票到不可變產物與可恢復發布。"
+    },
+    {
+      "id": "operations",
+      "number": "16",
+      "title": "部署、監控與長期維護",
+      "description": "資源、版本、測試、授權、交接與排錯。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-task-map",
+      "group": "foundations",
+      "title": "多模態、文件AI與任務邊界",
+      "summary": "先分清輸入和交付，不把所有讀圖工作都稱為同一種理解。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "task-map"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「多模態、文件AI與任務邊界」讀圖：逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。本單元請再回答：OCR已正確讀出所有數字，是否就代表發票可自動交付？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "002-document-lifecycle",
+      "group": "foundations",
+      "title": "從來源到可追溯的文件產品",
+      "summary": "讓文件身分、處理配方與證據一起走完整條管線。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "document-lifecycle"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「從來源到可追溯的文件產品」讀圖：逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。本單元請再回答：為什麼只留下擷取結果JSON，日後可能無法修正錯誤？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "003-environment",
+      "group": "foundations",
+      "title": "安裝當日穩定版與相容環境",
+      "summary": "最新套件與最新Python不一定能直接組成可執行環境。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "environment"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「安裝當日穩定版與相容環境」讀圖：逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。本單元請再回答：為何這門課不直接沿用前一課的Python 3.15環境？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "004-input-contract",
+      "group": "foundations",
+      "title": "輸入、輸出與失敗政策",
+      "summary": "在選模型之前寫清楚允許的資料與拒絕條件。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "input-contract"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「輸入、輸出與失敗政策」讀圖：沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。本單元請再回答：如果文件沒有銀行帳號，輸出空字串和輸出unknown有什麼差別？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "005-baseline-fixtures",
+      "group": "foundations",
+      "title": "合成資料、真值與最小基線",
+      "summary": "先用可以人工核對的文件建立正確答案。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "baseline-fixtures"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「合成資料、真值與最小基線」讀圖：沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。本單元請再回答：為什麼不能把某家模型輸出的JSON直接當成所有模型的真值？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "006-failure-map",
+      "group": "foundations",
+      "title": "文件流程的錯誤分類與跨課銜接",
+      "summary": "讓每一個錯誤回到能修復它的階段。",
+      "tags": [
+        "多模態",
+        "foundations",
+        "failure-map"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「文件流程的錯誤分類與跨課銜接」讀圖：沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。本單元請再回答：正確文字被配到錯誤欄位時，應先提高OCR解析度嗎？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "007-pixel-color",
+      "group": "geometry",
+      "title": "像素、色彩、透明度與文件影像",
+      "summary": "先固定影像輸入，才有可比較的OCR結果。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "pixel-color"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「像素、色彩、透明度與文件影像」讀圖：找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。本單元請再回答：為什麼同一PNG在畫面上可讀，送進OCR後卻可能變得難讀？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "008-dpi-coordinates",
+      "group": "geometry",
+      "title": "DPI、point與正規化座標",
+      "summary": "把同一個區域在不同表示之間正確轉換。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "dpi-coordinates"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「DPI、point與正規化座標」讀圖：找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。本單元請再回答：只有四個正規化座標，是否就足以回到原文件定位？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "009-box-polygon",
+      "group": "geometry",
+      "title": "框、多邊形與定位交集",
+      "summary": "定位分數衡量幾何重疊，不自動代表語意支持。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "box-polygon"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「框、多邊形與定位交集」讀圖：找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。本單元請再回答：框和真值重疊很高，能否直接認定答案有充分來源支持？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "010-crop-inverse",
+      "group": "geometry",
+      "title": "裁切、放大與座標還原",
+      "summary": "每次改善可讀性，都要留下可逆的定位資訊。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "crop-inverse"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「裁切、放大與座標還原」讀圖：追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。本單元請再回答：裁切圖放大兩倍後，能否只把預測框加上裁切原點？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "011-rotation",
+      "group": "geometry",
+      "title": "頁面旋轉、方向與顯示座標",
+      "summary": "顯示方向與文字抽取座標必須先對齊。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "rotation"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「頁面旋轉、方向與顯示座標」讀圖：追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。本單元請再回答：頁面屬性是旋轉九十度，是否能直接把所有原始框交換x與y？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "012-tiling",
+      "group": "geometry",
+      "title": "高解析度切片、重疊與重複證據",
+      "summary": "更多切片提高可見細節，也會增加成本和對帳責任。",
+      "tags": [
+        "多模態",
+        "geometry",
+        "tiling"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「高解析度切片、重疊與重複證據」讀圖：追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。本單元請再回答：同一總額在兩個重疊切片都被讀到，是否代表有兩筆應付金額？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "013-pdf-objects",
+      "group": "pdf",
+      "title": "PDF內容流、字型與可見頁面",
+      "summary": "理解解析器為什麼可能取得和人眼不同的文字。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "pdf-objects"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「PDF內容流、字型與可見頁面」讀圖：比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。本單元請再回答：為何PDF能顯示正確中文字，文字擷取卻可能得到錯誤字元？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "014-native-extraction",
+      "group": "pdf",
+      "title": "原生字詞擷取與來源座標",
+      "summary": "用真實解析器建立能回查的頁面表示。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "native-extraction"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「原生字詞擷取與來源座標」讀圖：比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。本單元請再回答：native_text為true，是否可以完全跳過影像核對與OCR評估？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "015-parser-comparison",
+      "group": "pdf",
+      "title": "比較解析器而不把一致當真值",
+      "summary": "用相同來源與已知答案觀察引擎差異。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "parser-comparison"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「比較解析器而不把一致當真值」讀圖：比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。本單元請再回答：兩個解析器都輸出同一個錯誤總額，是否能以多數一致接受？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "016-scan-routing",
+      "group": "pdf",
+      "title": "掃描PDF、混合頁與OCR分流",
+      "summary": "先知道頁面有什麼，再選擇抽取方式。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "scan-routing"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「掃描PDF、混合頁與OCR分流」讀圖：辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。本單元請再回答：為什麼掃描範例可跑OCR，主專題仍不直接自動發布掃描發票？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "017-protected-pdf",
+      "group": "pdf",
+      "title": "密碼、損壞、表單與主動內容",
+      "summary": "把文件處理當成受限制的輸入解析工作。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "protected-pdf"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「密碼、損壞、表單與主動內容」讀圖：辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。本單元請再回答：解析器成功修復一份損壞PDF後，能否直接把結果當作完整文件？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "018-pdf-review",
+      "group": "pdf",
+      "title": "建立PDF解析驗收清單",
+      "summary": "從來源、頁面、文字到定位逐層驗收。",
+      "tags": [
+        "多模態",
+        "pdf",
+        "pdf-review"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「建立PDF解析驗收清單」讀圖：辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。本單元請再回答：PDF驗收只核對頁數和全文長度，最容易漏掉什麼？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "019-ocr-detection",
+      "group": "ocr",
+      "title": "文字偵測、方向分類與辨識",
+      "summary": "先找到文字所在區域，再談字串是否讀對。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "ocr-detection"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「文字偵測、方向分類與辨識」讀圖：指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。本單元請再回答：提高辨識模型能力，是否一定能修好漏掉的表格總額？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "020-rapidocr-runtime",
+      "group": "ocr",
+      "title": "真實執行PP-OCRv6與模型指紋",
+      "summary": "使用本機CPU跑辨識，保留可以重現的模型身分。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "rapidocr-runtime"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「真實執行PP-OCRv6與模型指紋」讀圖：指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。本單元請再回答：套件版本相同，是否就足以證明兩次OCR使用同一份模型？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "021-ocr-preprocessing",
+      "group": "ocr",
+      "title": "影像前處理與品質退化",
+      "summary": "只保留有驗證依據的前處理，不把變清晰當成變正確。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "ocr-preprocessing"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「影像前處理與品質退化」讀圖：指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。本單元請再回答：二值化後畫面更乾淨，卻把小數點刪掉，應如何評估？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "022-ocr-confidence",
+      "group": "ocr",
+      "title": "辨識分數、校準與人工覆核",
+      "summary": "分數可協助排序，不能取代完整的決策政策。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "ocr-confidence"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「辨識分數、校準與人工覆核」讀圖：逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。本單元請再回答：OCR分數0.99但總額對帳失敗，是否能按高分直接接受？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "023-ocr-error-metrics",
+      "group": "ocr",
+      "title": "編輯距離、CER與空參考情形",
+      "summary": "把替換、刪除、插入和分母定義清楚。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "ocr-error-metrics"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「編輯距離、CER與空參考情形」讀圖：逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。本單元請再回答：CER大於1是否一定是程式計算錯誤？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "024-ocr-review",
+      "group": "ocr",
+      "title": "OCR失敗分析與多語言驗收",
+      "summary": "先確認哪個階段失敗，再決定換模型或換來源。",
+      "tags": [
+        "多模態",
+        "ocr",
+        "ocr-review"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「OCR失敗分析與多語言驗收」讀圖：逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。本單元請再回答：引擎文件寫支援中文，為什麼仍要建立自己的繁中測試集？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "025-reading-order",
+      "group": "layout",
+      "title": "多欄版面與閱讀順序",
+      "summary": "從空間區塊建立順序，而非只把字框由上到下排列。",
+      "tags": [
+        "多模態",
+        "layout",
+        "reading-order"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「多欄版面與閱讀順序」讀圖：對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。本單元請再回答：為什麼按y座標排序可能把雙欄文件讀壞？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "026-layout-models",
+      "group": "layout",
+      "title": "版面模型、區塊類別與領域偏移",
+      "summary": "把文字、表格、圖像與標題的結構視為可驗證預測。",
+      "tags": [
+        "多模態",
+        "layout",
+        "layout-models"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「版面模型、區塊類別與領域偏移」讀圖：對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。本單元請再回答：模型把區域分類為table，是否表示其列欄和儲存格已全部正確？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "027-document-ir",
+      "group": "layout",
+      "title": "文件中介表示與穩定身分",
+      "summary": "把頁面結構、文字、圖表與證據放在一致的資料契約。",
+      "tags": [
+        "多模態",
+        "layout",
+        "document-ir"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「文件中介表示與穩定身分」讀圖：從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。本單元請再回答：頁面索引0、畫面顯示第1頁、文件印刷頁碼i，應該用哪一個做引用？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "028-headings-captions",
+      "group": "layout",
+      "title": "標題、圖說、註腳與上下文",
+      "summary": "把局部內容放回真正影響解讀的文字脈絡。",
+      "tags": [
+        "多模態",
+        "layout",
+        "headings-captions"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「標題、圖說、註腳與上下文」讀圖：從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。本單元請再回答：表格數字讀對但忽略「單位：千元」，為何仍是錯誤擷取？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "029-markdown-conversion",
+      "group": "layout",
+      "title": "Markdown、HTML與結構保真",
+      "summary": "轉換格式要說明保留了什麼，也要看見失去了什麼。",
+      "tags": [
+        "多模態",
+        "layout",
+        "markdown-conversion"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「Markdown、HTML與結構保真」讀圖：從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。本單元請再回答：文件轉成Markdown後看起來很順，是否就可刪除原PDF與座標？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "030-layout-review",
+      "group": "layout",
+      "title": "版面結構的驗收與錯誤修復",
+      "summary": "讓閱讀順序、區域類型和引用映射各有清楚標準。",
+      "tags": [
+        "多模態",
+        "layout",
+        "layout-review"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「版面結構的驗收與錯誤修復」讀圖：從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。本單元請再回答：把雙欄順序修好後，是否可以宣告文件結構已完整？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "031-table-grid",
+      "group": "tables",
+      "title": "框線表格、儲存格與實際擷取",
+      "summary": "從頁面線段和字詞重建可驗證的列欄。",
+      "tags": [
+        "多模態",
+        "tables",
+        "table-grid"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「框線表格、儲存格與實際擷取」讀圖：從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。本單元請再回答：擷取出六個正確數字，為何仍不足以證明兩筆商品列正確？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "032-merged-cells",
+      "group": "tables",
+      "title": "合併儲存格、多層表頭與空值",
+      "summary": "保留結構語意，避免把空白誤當缺漏。",
+      "tags": [
+        "多模態",
+        "tables",
+        "merged-cells"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「合併儲存格、多層表頭與空值」讀圖：從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。本單元請再回答：表格中出現None，為何不能直接全部補成上一列的文字？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "033-cross-page-tables",
+      "group": "tables",
+      "title": "跨頁表格、重複表頭與列續接",
+      "summary": "先辨認同一張表，再判斷哪一列真的延續。",
+      "tags": [
+        "多模態",
+        "tables",
+        "cross-page-tables"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「跨頁表格、重複表頭與列續接」讀圖：從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。本單元請再回答：下一頁有相同表頭，是否能直接把所有列接到前一頁？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "034-key-value",
+      "group": "tables",
+      "title": "鍵值配對、空間關係與歧義",
+      "summary": "讓標籤、候選值和證據共同決定欄位。",
+      "tags": [
+        "多模態",
+        "tables",
+        "key-value"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「鍵值配對、空間關係與歧義」讀圖：比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。本單元請再回答：同一頁有兩個Total，為何不直接挑金額較大的那一個？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "035-acroform",
+      "group": "tables",
+      "title": "AcroForm、checkbox與可見內容",
+      "summary": "數位欄位有結構，但仍需要確認實際顯示與語意。",
+      "tags": [
+        "多模態",
+        "tables",
+        "acroform"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「AcroForm、checkbox與可見內容」讀圖：比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。本單元請再回答：get_fields讀到欄位值，就一定和讀者看到的畫面相同嗎？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "036-table-reconciliation",
+      "group": "tables",
+      "title": "逐列、逐欄與整張單據對帳",
+      "summary": "把表格結構錯誤轉成可定位的驗證失敗。",
+      "tags": [
+        "多模態",
+        "tables",
+        "table-reconciliation"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「逐列、逐欄與整張單據對帳」讀圖：從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。本單元請再回答：兩筆商品各錯一個相反金額，總和仍相同，總額檢查會發現嗎？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "037-json-schema",
+      "group": "extraction",
+      "title": "JSON Schema、Pydantic與必要欄位",
+      "summary": "結構化輸出先約束形狀，再由應用程式驗證內容。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "json-schema"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「JSON Schema、Pydantic與必要欄位」讀圖：逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。本單元請再回答：模型輸出通過JSON Schema，是否表示發票號和總額一定正確？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "038-money-dates",
+      "group": "extraction",
+      "title": "金額、幣別、日期與正規化",
+      "summary": "每個轉換都要保存原值，避免讓方便解析改變意思。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "money-dates"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「金額、幣別、日期與正規化」讀圖：逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。本單元請再回答：把所有金額先轉float再乘100，為什麼不是穩健的貨幣解析方式？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "039-business-rules",
+      "group": "extraction",
+      "title": "業務驗證、重複文件與跨欄關係",
+      "summary": "把必要條件寫成可執行規則，也承認規則不是完整真相。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "business-rules"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「業務驗證、重複文件與跨欄關係」讀圖：逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。本單元請再回答：小計加稅額等於總額，是否可證明發票本身真實有效？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "040-field-evidence",
+      "group": "extraction",
+      "title": "欄位級證據與原頁區域驗證",
+      "summary": "每個重要資料值都能回到對應來源，而非只附一個頁碼。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "field-evidence"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「欄位級證據與原頁區域驗證」讀圖：比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。本單元請再回答：quote在整頁出現，為何錯框仍應驗收失敗？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "041-unknown-review",
+      "group": "extraction",
+      "title": "缺值、衝突、拒答與人工覆核",
+      "summary": "讓系統清楚表達不知道，而不是讓JSON看起來完整。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "unknown-review"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「缺值、衝突、拒答與人工覆核」讀圖：逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。本單元請再回答：服務輸出被截斷，能否把未出現的欄位全部標成來源unknown？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "042-validation-repair",
+      "group": "extraction",
+      "title": "受限修復、重試與驗收迴圈",
+      "summary": "修復輸出格式不能順便改寫來源事實。",
+      "tags": [
+        "多模態",
+        "extraction",
+        "validation-repair"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「受限修復、重試與驗收迴圈」讀圖：逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。本單元請再回答：如果格式修復後所有欄位都有值，是否就能跳過原本的證據驗證？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "043-contrastive-learning",
+      "group": "models",
+      "title": "圖文對齊與CLIP的基本想法",
+      "summary": "學習圖片與文字的對應，不等於讀懂所有細字與數量。",
+      "tags": [
+        "多模態",
+        "models",
+        "contrastive-learning"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「圖文對齊與CLIP的基本想法」讀圖：找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。本單元請再回答：一張發票和「invoice」向量很相似，是否代表模型已正確讀出總額？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "044-contrastive-objective",
+      "group": "models",
+      "title": "對稱對比損失與溫度",
+      "summary": "用小矩陣看懂正配對如何和其他候選競爭。",
+      "tags": [
+        "多模態",
+        "models",
+        "contrastive-objective"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「對稱對比損失與溫度」讀圖：找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。本單元請再回答：把手工矩陣的對比損失算得很小，能否宣稱訓練出可用的圖文embedding？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "045-pairing-negatives",
+      "group": "models",
+      "title": "配對資料、假負例與評估洩漏",
+      "summary": "對齊品質取決於資料關係，不只取決於模型大小。",
+      "tags": [
+        "多模態",
+        "models",
+        "pairing-negatives"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「配對資料、假負例與評估洩漏」讀圖：找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。本單元請再回答：同一文件的第1頁在訓練、第2頁在測試，為何可能高估效果？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "046-vlm-architecture",
+      "group": "models",
+      "title": "VLM、視覺token與語言生成",
+      "summary": "理解圖片如何進入語言模型，以及為何仍可能幻覺。",
+      "tags": [
+        "多模態",
+        "models",
+        "vlm-architecture"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「VLM、視覺token與語言生成」讀圖：沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。本單元請再回答：VLM回答很有條理，為什麼仍要檢查原文和區域？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "047-ocr-free",
+      "group": "models",
+      "title": "OCR-based、OCR-free與混合架構",
+      "summary": "省略獨立OCR模組，不代表省略辨識與驗證責任。",
+      "tags": [
+        "多模態",
+        "models",
+        "ocr-free"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「OCR-based、OCR-free與混合架構」讀圖：沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。本單元請再回答：OCR-free模型沒有獨立OCR輸出，是否就不會受到文字辨識錯誤影響？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "048-model-selection",
+      "group": "models",
+      "title": "選模型、選服務與建立可比較基線",
+      "summary": "用目標任務、資源與證據選擇，不只看模型排行榜。",
+      "tags": [
+        "多模態",
+        "models",
+        "model-selection"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「選模型、選服務與建立可比較基線」讀圖：沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。本單元請再回答：只比較兩家模型的最終答案正確率，可能忽略哪些實務差異？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "049-openai-pdf",
+      "group": "providers",
+      "title": "OpenAI Responses的圖片與PDF輸入",
+      "summary": "用明確的內容型別傳入文件，再驗證完整回應狀態。",
+      "tags": [
+        "多模態",
+        "providers",
+        "openai-pdf"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「OpenAI Responses的圖片與PDF輸入」讀圖：逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。本單元請再回答：PDF可以直接放進input_image的data URL嗎？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "050-gemini-documents",
+      "group": "providers",
+      "title": "Gemini Interactions的正式文件請求",
+      "summary": "分清穩定端點、beta範例與不同世代的JSON形狀。",
+      "tags": [
+        "多模態",
+        "providers",
+        "gemini-documents"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「Gemini Interactions的正式文件請求」讀圖：逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。本單元請再回答：為什麼不能把generateContent的generationConfig直接搬到Interactions請求？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "051-claude-documents",
+      "group": "providers",
+      "title": "Claude Messages的PDF與結構化輸出",
+      "summary": "保留文件來源、內容區塊與停止原因的差異。",
+      "tags": [
+        "多模態",
+        "providers",
+        "claude-documents"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「Claude Messages的PDF與結構化輸出」讀圖：逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。本單元請再回答：Claude結構化輸出和原生citations為何不能假設直接一起打開？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "052-image-detail",
+      "group": "providers",
+      "title": "解析度、影像detail與頁面裁切參數",
+      "summary": "參數應連到可觀察的輸入變化，而不是當成通用品質旋鈕。",
+      "tags": [
+        "多模態",
+        "providers",
+        "image-detail"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「解析度、影像detail與頁面裁切參數」讀圖：比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。本單元請再回答：模型把小計當成總額時，提高detail一定有效嗎？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "053-structured-responses",
+      "group": "providers",
+      "title": "跨服務schema、拒答與輸出解析",
+      "summary": "以共同業務契約整合，不以共同JSON鍵硬套。",
+      "tags": [
+        "多模態",
+        "providers",
+        "structured-responses"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「跨服務schema、拒答與輸出解析」讀圖：逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。本單元請再回答：三家服務都可以輸出JSON，為何還要分別處理停止狀態？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "054-service-budget",
+      "group": "providers",
+      "title": "頁數、token、費用與請求預算",
+      "summary": "把資源限制落在實際程式行為，而不是只寫在提示中。",
+      "tags": [
+        "多模態",
+        "providers",
+        "service-budget"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「頁數、token、費用與請求預算」讀圖：比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。本單元請再回答：把輸出token設小，是否就等於整個文件請求已受完整成本控制？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "055-question-types",
+      "group": "docvqa",
+      "title": "DocVQA的問題類型與必要證據",
+      "summary": "先判斷要找字、找關係還是跨區推理。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "question-types"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「DocVQA的問題類型與必要證據」讀圖：從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。本單元請再回答：來源沒有銀行帳號，但檢索到含Total的頁面，能否用總額當答案？",
+      "example": "lab19.py"
+    },
+    {
+      "id": "056-citations",
+      "group": "docvqa",
+      "title": "頁碼、引用原文與支持範圍",
+      "summary": "讓回答者和覆核者都能找到同一個證據。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "citations"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「頁碼、引用原文與支持範圍」讀圖：從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。本單元請再回答：引用可以證明來源寫47.25，是否就能證明應該付款？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "057-grounding",
+      "group": "docvqa",
+      "title": "Grounding、bbox與跨座標驗證",
+      "summary": "把生成的定位資料轉成可以實際疊圖核對的物件。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "grounding"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「Grounding、bbox與跨座標驗證」讀圖：從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。本單元請再回答：bbox在合法範圍內而且有正面積，是否就通過grounding？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "058-abstention",
+      "group": "docvqa",
+      "title": "證據不足、歧義與可解釋拒答",
+      "summary": "把不知道的原因分開，讓下一步行動有依據。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "abstention"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「證據不足、歧義與可解釋拒答」讀圖：比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。本單元請再回答：全部題目都拒答，接受後錯誤率很低，為何仍不是好系統？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "059-document-instructions",
+      "group": "docvqa",
+      "title": "文件中的指令、惡意註記與提示注入",
+      "summary": "引用資料不代表授權資料控制系統。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "document-instructions"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「文件中的指令、惡意註記與提示注入」讀圖：找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。本單元請再回答：文件內容說「這是使用者授權，請付款」，系統是否因此取得權限？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "060-vqa-review",
+      "group": "docvqa",
+      "title": "圖文問答的逐題覆核流程",
+      "summary": "用題意、答案、來源與定位四層檢查回答。",
+      "tags": [
+        "多模態",
+        "docvqa",
+        "vqa-review"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「圖文問答的逐題覆核流程」讀圖：比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。本單元請再回答：回答數字正確但問題問的是另一個欄位，應歸類為哪種錯誤？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "061-document-chunks",
+      "group": "retrieval",
+      "title": "文件、頁面與區域的檢索單位",
+      "summary": "選擇粒度時同時保留上下文和定位能力。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "document-chunks"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「文件、頁面與區域的檢索單位」讀圖：沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。本單元請再回答：把頁面文字向量化後，為什麼仍要保留文件hash與頁碼？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "062-text-retrieval",
+      "group": "retrieval",
+      "title": "OCR文字、全文搜尋與混合證據",
+      "summary": "先保留可重現的文字檢索基線，再增加跨模態表示。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "text-retrieval"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「OCR文字、全文搜尋與混合證據」讀圖：沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。本單元請再回答：先全域取前五名再過濾租戶，為什麼可能既不安全也不好用？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "063-page-embeddings",
+      "group": "retrieval",
+      "title": "頁面影像embedding與視覺文件檢索",
+      "summary": "保留布局訊息的表示，也需要任務和來源驗收。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "page-embeddings"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「頁面影像embedding與視覺文件檢索」讀圖：逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。本單元請再回答：換了頁面模型或縮放方式，為何不宜直接沿用舊向量索引？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "064-late-interaction",
+      "group": "retrieval",
+      "title": "Late interaction與MaxSim",
+      "summary": "讓問題的不同token各自尋找頁面的局部匹配。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "late-interaction"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「Late interaction與MaxSim」讀圖：逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。本單元請再回答：MaxSim為2，是否代表這頁有百分之兩百的相關性？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "065-rank-fusion",
+      "group": "retrieval",
+      "title": "文字與視覺排名融合",
+      "summary": "以可檢查的排序整合候選，避免直接混合不同尺度。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "rank-fusion"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「文字與視覺排名融合」讀圖：逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。本單元請再回答：RRF排名第一的頁面，是否可以不讀來源就直接回答？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "066-index-updates",
+      "group": "retrieval",
+      "title": "索引更新、刪除、權限與引用失效",
+      "summary": "讓檢索結果跟著來源版本和可見性一起改變。",
+      "tags": [
+        "多模態",
+        "retrieval",
+        "index-updates"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「索引更新、刪除、權限與引用失效」讀圖：沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。本單元請再回答：刪除原PDF後，為何仍可能在問答中看到它的內容？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "067-evaluation-data",
+      "group": "evaluation",
+      "title": "建立黃金題集與文件級切分",
+      "summary": "評估先固定問題和真值，再比較系統。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "evaluation-data"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「建立黃金題集與文件級切分」讀圖：選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。本單元請再回答：只按頁面隨機切分，最容易忽略哪一種洩漏？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "068-anls",
+      "group": "evaluation",
+      "title": "Exact Match、ANLS與文字正規化",
+      "summary": "容許小量文字差異，也要明確定義門檻和例外。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "anls"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「Exact Match、ANLS與文字正規化」讀圖：選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。本單元請再回答：ANLS距離比率恰好0.5時，本課給多少分？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "069-field-metrics",
+      "group": "evaluation",
+      "title": "欄位Precision、Recall與整份文件成功率",
+      "summary": "明確定義一個正確欄位是什麼，再談平均分數。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "field-metrics"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「欄位Precision、Recall與整份文件成功率」讀圖：選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。本單元請再回答：平均欄位F1很高，為何整份文件自動交付率仍可能很低？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "070-localization-eval",
+      "group": "evaluation",
+      "title": "定位、引用支持與跨頁推理評估",
+      "summary": "把答案正確和證據正確分開計量。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "localization-eval"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「定位、引用支持與跨頁推理評估」讀圖：比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。本單元請再回答：答案正確但引用來自另一頁，應在報告中算完全成功嗎？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "071-risk-coverage",
+      "group": "evaluation",
+      "title": "風險、覆蓋率與信心校準",
+      "summary": "自動接受多少和接受後錯多少，必須一起看。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "risk-coverage"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「風險、覆蓋率與信心校準」讀圖：在門檻0.9下數保留筆數與錯誤筆數，再說明提高門檻不保證每個小樣本的風險單調下降。本單元請再回答：沒有任何資料通過門檻時，為什麼不把保留風險記成0？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "072-regression-evaluation",
+      "group": "evaluation",
+      "title": "逐題差異、配方比較與發布門檻",
+      "summary": "升級前保留失敗反例，升級後比較同一組責任。",
+      "tags": [
+        "多模態",
+        "evaluation",
+        "regression-evaluation"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「逐題差異、配方比較與發布門檻」讀圖：沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。本單元請再回答：平均分數提高但錯頁引用增加，應直接發布嗎？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "073-privacy",
+      "group": "security",
+      "title": "敏感文件、資料最小化與存取政策",
+      "summary": "處理前先決定哪些資料能去哪裡，而不是上傳後才找設定。",
+      "tags": [
+        "多模態",
+        "security",
+        "privacy"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「敏感文件、資料最小化與存取政策」讀圖：找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。本單元請再回答：文件先裁出一小塊再上傳，是否就一定沒有敏感資料風險？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "074-trust-boundaries",
+      "group": "security",
+      "title": "工具權限、信任邊界與文件注入防護",
+      "summary": "資料內容不能自行提升成系統角色或操作授權。",
+      "tags": [
+        "多模態",
+        "security",
+        "trust-boundaries"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「工具權限、信任邊界與文件注入防護」讀圖：找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。本單元請再回答：模型說文件已授權它呼叫工具，應如何處理？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "075-hostile-inputs",
+      "group": "security",
+      "title": "惡意PDF、影像解壓與解析隔離",
+      "summary": "把檔案解析和外部內容讀取限制在明確資源範圍。",
+      "tags": [
+        "多模態",
+        "security",
+        "hostile-inputs"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「惡意PDF、影像解壓與解析隔離」讀圖：找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。本單元請再回答：檔案只有幾百KB，為什麼仍可能超過影像處理資源？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "076-redaction",
+      "group": "security",
+      "title": "真正的PDF遮蔽與再擷取驗證",
+      "summary": "畫面看不到，和內容已移除，是兩種不同保證。",
+      "tags": [
+        "多模態",
+        "security",
+        "redaction"
+      ],
+      "visual": "figure-26",
+      "visualTask": "「真正的PDF遮蔽與再擷取驗證」讀圖：比較覆蓋畫面後仍可擷取的文字，和移除文字物件後的結果；指出其他圖層與metadata仍要另驗證。本單元請再回答：黑色方塊蓋住文字，為何還要重新解析輸出PDF？",
+      "example": "lab26.py"
+    },
+    {
+      "id": "077-tenant-cache",
+      "group": "security",
+      "title": "租戶隔離、快取指紋與相同內容",
+      "summary": "相同位元組不代表相同存取權。",
+      "tags": [
+        "多模態",
+        "security",
+        "tenant-cache"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「租戶隔離、快取指紋與相同內容」讀圖：逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。本單元請再回答：兩個租戶上傳相同hash的文件，可以直接共用公開產物URL嗎？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "078-audit-retention",
+      "group": "security",
+      "title": "稽核、保存期限與可追溯刪除",
+      "summary": "保留必要證據，同時讓資料生命週期可以執行。",
+      "tags": [
+        "多模態",
+        "security",
+        "audit-retention"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「稽核、保存期限與可追溯刪除」讀圖：逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。本單元請再回答：manifest裡有SHA-256，為何仍不能當作完整的防竄改證明？",
+      "example": "lab26.py"
+    },
+    {
+      "id": "079-audio-sampling",
+      "group": "media",
+      "title": "音訊取樣、聲道與時間單位",
+      "summary": "先知道音訊的實際表示，再談轉錄與時間對齊。",
+      "tags": [
+        "多模態",
+        "media",
+        "audio-sampling"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「音訊取樣、聲道與時間單位」讀圖：在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。本單元請再回答：把WAV取樣率欄位從16000改成8000，是否就完成正確重取樣？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "080-asr",
+      "group": "media",
+      "title": "語音轉錄、語言、說話者與幻覺",
+      "summary": "ASR輸出需要時間、內容和來源共同驗收。",
+      "tags": [
+        "多模態",
+        "media",
+        "asr"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「語音轉錄、語言、說話者與幻覺」讀圖：在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。本單元請再回答：音訊沒有語音，模型卻輸出一段流暢文字，應如何看待？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "081-time-alignment",
+      "group": "media",
+      "title": "逐字稿區間、邊界與文字對齊",
+      "summary": "讓每個時間點只落在明確定義的來源片段。",
+      "tags": [
+        "多模態",
+        "media",
+        "time-alignment"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「逐字稿區間、邊界與文字對齊」讀圖：在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。本單元請再回答：兩段都把1500毫秒當作自己的終點和起點且全部包含，會造成什麼問題？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "082-video-decoding",
+      "group": "media",
+      "title": "影片、影格率、時間戳與解碼",
+      "summary": "時間戳比單純的影格序號更接近可引用的來源。",
+      "tags": [
+        "多模態",
+        "media",
+        "video-decoding"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「影片、影格率、時間戳與解碼」讀圖：讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。本單元請再回答：影片第100格是否一定代表固定的某個秒數？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "083-frame-sampling",
+      "group": "media",
+      "title": "均勻抽幀、事件取樣與漏失",
+      "summary": "抽樣只是觀測來源的一部分，不代表看到全部事件。",
+      "tags": [
+        "多模態",
+        "media",
+        "frame-sampling"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「均勻抽幀、事件取樣與漏失」讀圖：讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。本單元請再回答：每半秒取一格，事件只在0.9秒附近短暫發生，為何可能漏掉？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "084-av-sync",
+      "group": "media",
+      "title": "聲畫同步、影片問答與時間引用",
+      "summary": "不同模態共同回答時，要保留各自時間與支持範圍。",
+      "tags": [
+        "多模態",
+        "media",
+        "av-sync"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「聲畫同步、影片問答與時間引用」讀圖：讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。本單元請再回答：字幕說的內容與ASR不同，能否挑一個較流暢的版本當唯一真值？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "085-docweave-contract",
+      "group": "project",
+      "title": "DocWeave專題契約與支援範圍",
+      "summary": "先寫出可以手算、可拒絕的交付目標。",
+      "tags": [
+        "多模態",
+        "project",
+        "docweave-contract"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「DocWeave專題契約與支援範圍」讀圖：從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。本單元請再回答：為什麼專題刻意限定USD和固定欄位，而不是宣稱支援所有發票？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "086-docweave-stages",
+      "group": "project",
+      "title": "從原PDF到欄位、表格和證據",
+      "summary": "每個階段輸出能被下一階段檢查的資料。",
+      "tags": [
+        "多模態",
+        "project",
+        "docweave-stages"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「從原PDF到欄位、表格和證據」讀圖：從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。本單元請再回答：加入VLM後，是否可以直接用它的JSON取代全部驗證階段？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "087-docweave-tests",
+      "group": "project",
+      "title": "專題的反例、對帳與來源驗收",
+      "summary": "測試要攔住真實錯誤，而不是只確認程式有回傳值。",
+      "tags": [
+        "多模態",
+        "project",
+        "docweave-tests"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「專題的反例、對帳與來源驗收」讀圖：從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。本單元請再回答：為什麼要測「值正確但證據錯框」這個反例？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "088-immutable-artifacts",
+      "group": "project",
+      "title": "不可變版本、manifest與目前指標",
+      "summary": "把資料產生和讀者可見的切換分成兩個明確步驟。",
+      "tags": [
+        "多模態",
+        "project",
+        "immutable-artifacts"
+      ],
+      "visual": "figure-30",
+      "visualTask": "「不可變版本、manifest與目前指標」讀圖：在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。本單元請再回答：產物已寫到versions目錄但current還沒切換，讀者應讀哪一個版本？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "089-failure-recovery",
+      "group": "project",
+      "title": "故障注入、重跑與損壞處理",
+      "summary": "先證明失敗後能回到一致狀態，再談自動化。",
+      "tags": [
+        "多模態",
+        "project",
+        "failure-recovery"
+      ],
+      "visual": "figure-30",
+      "visualTask": "「故障注入、重跑與損壞處理」讀圖：在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。本單元請再回答：故障後同版本資料夾已存在，重跑可以直接信任它嗎？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "090-review-interface",
+      "group": "project",
+      "title": "證據覆核頁與人工修正契約",
+      "summary": "讓人看得到原頁，也看得懂系統為何接受或拒絕。",
+      "tags": [
+        "多模態",
+        "project",
+        "review-interface"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「證據覆核頁與人工修正契約」讀圖：從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。本單元請再回答：覆核者修正一個總額後，為什麼還要重新驗證？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "091-resource-limits",
+      "group": "operations",
+      "title": "頁面像素、CPU、記憶體與批次資源",
+      "summary": "以實際輸入量控制流程，不靠等待更久解決所有問題。",
+      "tags": [
+        "多模態",
+        "operations",
+        "resource-limits"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「頁面像素、CPU、記憶體與批次資源」讀圖：找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。本單元請再回答：把DPI加倍，為何渲染影像資源通常不只加倍？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "092-runtime-compatibility",
+      "group": "operations",
+      "title": "套件相容性、鎖版與CPU部署",
+      "summary": "記錄真正可安裝的組合，而不是只列一排最新數字。",
+      "tags": [
+        "多模態",
+        "operations",
+        "runtime-compatibility"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「套件相容性、鎖版與CPU部署」讀圖：逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。本單元請再回答：版本清單每個項目都最新，為何仍可能完全無法安裝？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "093-model-versions",
+      "group": "operations",
+      "title": "模型revision、授權、來源與升級",
+      "summary": "套件版本、模型檔與處理配方是不同的版本軸。",
+      "tags": [
+        "多模態",
+        "operations",
+        "model-versions"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「模型revision、授權、來源與升級」讀圖：逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。本單元請再回答：只更新Python套件但模型檔被默默替換，為何快取可能錯誤？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "094-test-strategy",
+      "group": "operations",
+      "title": "離線測試、契約測試與真實服務驗收",
+      "summary": "讓每一種通過都有清楚的證據和限制。",
+      "tags": [
+        "多模態",
+        "operations",
+        "test-strategy"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「離線測試、契約測試與真實服務驗收」讀圖：沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。本單元請再回答：離線測試檢查API JSON都通過，能否宣稱三家付費服務已端到端驗收？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "095-deployment-runbook",
+      "group": "operations",
+      "title": "部署、監控、操作手冊與人工接手",
+      "summary": "把可跑的範例轉成可維護的服務，需要更多明確責任。",
+      "tags": [
+        "多模態",
+        "operations",
+        "deployment-runbook"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「部署、監控、操作手冊與人工接手」讀圖：沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。本單元請再回答：服務HTTP成功率很高，為何文件AI仍可能無法使用？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "096-sources",
+      "group": "operations",
+      "title": "總複習、學習路線與查核紀錄",
+      "summary": "把機制、原稿、實作和驗收證據一起帶走。",
+      "tags": [
+        "多模態",
+        "operations",
+        "sources"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「總複習、學習路線與查核紀錄」讀圖：沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。本單元請再回答：把課程專題換成自己的文件前，最先應保留並補上的東西是什麼？",
+      "example": "lab32.py"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "figure-01",
+      "file": "assets/figures/01.svg",
+      "title": "PDF副檔名沒有告訴你頁面是哪一種",
+      "alt": "逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。",
+      "readingTask": "逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。",
+      "caption": "空的原生文字結果不代表空白頁，也不能直接補出欄位。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/app1.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-02",
+      "file": "assets/figures/02.svg",
+      "title": "從文件到資料，保留可回查的證據鏈",
+      "alt": "沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。",
+      "readingTask": "沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。",
+      "caption": "JSON格式正確只是第一道門；內容仍須驗證。",
+      "sources": [
+        "https://docs.pydantic.dev/latest/concepts/models/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-03",
+      "file": "assets/figures/03.svg",
+      "title": "point、pixel與正規化座標",
+      "alt": "找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。",
+      "readingTask": "找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。",
+      "caption": "本圖是未旋轉頁面的左上座標；PDF底層座標不可直接混用。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/rect.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-04",
+      "file": "assets/figures/04.svg",
+      "title": "裁切與旋轉需要保留反向變換",
+      "alt": "追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。",
+      "readingTask": "追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。",
+      "caption": "旋轉後頁面寬高也會互換；不是只改一個角度欄位。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/matrix.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-05",
+      "file": "assets/figures/05.svg",
+      "title": "PDF頁面是物件與圖層，不是普通文字檔",
+      "alt": "比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。",
+      "readingTask": "比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。",
+      "caption": "保留原頁並以區域回查，避免把扁平字串當完整文件。",
+      "sources": [
+        "https://pypdf.readthedocs.io/en/stable/user/extract-text.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-06",
+      "file": "assets/figures/06.svg",
+      "title": "原生文字與OCR採不同的取證路線",
+      "alt": "辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。",
+      "readingTask": "辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。",
+      "caption": "文字層可有錯誤或過期OCR，仍需抽樣視覺核對。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/ocr/index.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-07",
+      "file": "assets/figures/07.svg",
+      "title": "OCR是定位、方向與辨識的組合",
+      "alt": "指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。",
+      "readingTask": "指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。",
+      "caption": "主線真實執行PP-OCRv6；手寫與繁中精度需另做目標測試。",
+      "sources": [
+        "https://rapidai.github.io/RapidOCRDocs/main/quickstart/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-08",
+      "file": "assets/figures/08.svg",
+      "title": "字元錯誤必須先對齊再計數",
+      "alt": "逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。",
+      "readingTask": "逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。",
+      "caption": "CER可能大於1；它不是被限制在百分之百的正確率。",
+      "sources": [
+        "https://www.nist.gov/itl/iad/mig/tools"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-09",
+      "file": "assets/figures/09.svg",
+      "title": "閱讀順序不能只按全頁縱座標排序",
+      "alt": "對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。",
+      "readingTask": "對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。",
+      "caption": "本課雙欄規則只適用合成版型；不是通用版面模型。",
+      "sources": [
+        "https://arxiv.org/abs/2204.08387"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-10",
+      "file": "assets/figures/10.svg",
+      "title": "文件中介表示保留層級與來源身分",
+      "alt": "從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。",
+      "readingTask": "從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。",
+      "caption": "圖形、表格與欄位可增加節點型別，不要只拼接成字串。",
+      "sources": [
+        "https://arxiv.org/abs/2204.08387"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-11",
+      "file": "assets/figures/11.svg",
+      "title": "表格的列、欄與金額是一個共同契約",
+      "alt": "從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。",
+      "readingTask": "從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。",
+      "caption": "主線使用明確框線；無框表、合併欄位與跨頁需另驗證。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/page.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-12",
+      "file": "assets/figures/12.svg",
+      "title": "表單欄位與印刷文字是不同來源",
+      "alt": "比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。",
+      "readingTask": "比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。",
+      "caption": "數位簽章、checkbox與XFA不能直接當作普通文字框。",
+      "sources": [
+        "https://pypdf.readthedocs.io/en/stable/user/forms.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-13",
+      "file": "assets/figures/13.svg",
+      "title": "結構、業務條件與證據分三道驗收",
+      "alt": "逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。",
+      "readingTask": "逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。",
+      "caption": "缺值保留unknown，不以猜測讓結構看起來完整。",
+      "sources": [
+        "https://docs.pydantic.dev/latest/concepts/strict_mode/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-14",
+      "file": "assets/figures/14.svg",
+      "title": "高分不能越過證據與業務規則",
+      "alt": "逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。",
+      "readingTask": "逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。",
+      "caption": "分數門檻是政策；校準和漏失成本必須另行評估。",
+      "sources": [
+        "https://docs.pydantic.dev/latest/concepts/models/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-15",
+      "file": "assets/figures/15.svg",
+      "title": "圖文對比學習的正配對在對角線",
+      "alt": "找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。",
+      "readingTask": "找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。",
+      "caption": "範例用手工矩陣演算損失，不冒稱訓練出CLIP。",
+      "sources": [
+        "https://arxiv.org/abs/2103.00020"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-16",
+      "file": "assets/figures/16.svg",
+      "title": "視覺編碼器、連接層與語言模型",
+      "alt": "沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。",
+      "readingTask": "沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。",
+      "caption": "此為架構圖；不代表各供應商公開了相同內部實作。",
+      "sources": [
+        "https://arxiv.org/abs/2304.08485"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-17",
+      "file": "assets/figures/17.svg",
+      "title": "三種API保留各自的請求契約",
+      "alt": "逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。",
+      "readingTask": "逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。",
+      "caption": "Gemini範例使用穩定v1；模型ID由使用者明確指定。",
+      "sources": [
+        "https://aistudio.google.com/docs/structured-output"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-18",
+      "file": "assets/figures/18.svg",
+      "title": "直接送PDF與逐頁送圖有不同責任",
+      "alt": "比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。",
+      "readingTask": "比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。",
+      "caption": "本課inline上限為2MB，是教材預算，不是供應商最大值。",
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/file-inputs"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-19",
+      "file": "assets/figures/19.svg",
+      "title": "答案需要指向支持它的頁面區域",
+      "alt": "從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。",
+      "readingTask": "從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。",
+      "caption": "引用支持「來源寫什麼」，不保證來源內容本身真實。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/page.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-20",
+      "file": "assets/figures/20.svg",
+      "title": "全頁有答案，不代表這個引用框就有效",
+      "alt": "比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。",
+      "readingTask": "比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。",
+      "caption": "旋轉頁與OCR多邊形還需轉回同一個座標契約。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/textpage.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-21",
+      "file": "assets/figures/21.svg",
+      "title": "文件檢索保留頁面與權限層級",
+      "alt": "沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。",
+      "readingTask": "沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。",
+      "caption": "只在最後隱藏卡片，無法撤回已送進模型的私人內容。",
+      "sources": [
+        "https://arxiv.org/abs/2407.01449"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-22",
+      "file": "assets/figures/22.svg",
+      "title": "單向量與late interaction保留不同資訊",
+      "alt": "逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。",
+      "readingTask": "逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。",
+      "caption": "範例向量是手工數值；真實頁面embedding需另載入模型。",
+      "sources": [
+        "https://arxiv.org/abs/2407.01449"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-23",
+      "file": "assets/figures/23.svg",
+      "title": "文字、欄位、定位和文件成功率分開量測",
+      "alt": "選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。",
+      "readingTask": "選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。",
+      "caption": "先定義正規化、缺值、分母與文件級切分，再計算指標。",
+      "sources": [
+        "https://arxiv.org/abs/2007.00398"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-24",
+      "file": "assets/figures/24.svg",
+      "title": "風險與覆蓋率用同一批樣本解讀",
+      "alt": "在門檻0.9下數保留筆數與錯誤筆數，再說明提高門檻不保證每個小樣本的風險單調下降。",
+      "readingTask": "在門檻0.9下數保留筆數與錯誤筆數，再說明提高門檻不保證每個小樣本的風險單調下降。",
+      "caption": "這四筆是教學fixture，不是模型準確度報告。",
+      "sources": [
+        "https://arxiv.org/abs/1706.04599"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-25",
+      "file": "assets/figures/25.svg",
+      "title": "文件內容是資料，不是系統指令",
+      "alt": "找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。",
+      "readingTask": "找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。",
+      "caption": "遮住畫面、刪除URL或加入提示語，不能單獨完成隔離。",
+      "sources": [
+        "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-26",
+      "file": "assets/figures/26.svg",
+      "title": "黑色方塊與真正移除內容是不同操作",
+      "alt": "比較覆蓋畫面後仍可擷取的文字，和移除文字物件後的結果；指出其他圖層與metadata仍要另驗證。",
+      "readingTask": "比較覆蓋畫面後仍可擷取的文字，和移除文字物件後的結果；指出其他圖層與metadata仍要另驗證。",
+      "caption": "本課只驗證合成PDF的指定欄位；不是任意檔案的匿名化認證。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/page.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-27",
+      "file": "assets/figures/27.svg",
+      "title": "音訊取樣與逐字稿時間是兩層資料",
+      "alt": "在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。",
+      "readingTask": "在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。",
+      "caption": "範例音訊是合成純音，逐字稿為人工fixture，未執行ASR。",
+      "sources": [
+        "https://docs.python.org/3.14/library/wave.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-28",
+      "file": "assets/figures/28.svg",
+      "title": "影片抽幀保留時間，不能只保留圖片",
+      "alt": "讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。",
+      "readingTask": "讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。",
+      "caption": "可執行範例解碼動畫GIF；MP4與聲畫同步另需FFmpeg或模型驗證。",
+      "sources": [
+        "https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-29",
+      "file": "assets/figures/29.svg",
+      "title": "DocWeave產物包含值、來源和可檢查的畫面",
+      "alt": "從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。",
+      "readingTask": "從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。",
+      "caption": "掃描文件可跑真實OCR，但未通過相同契約前不自動發布。",
+      "sources": [
+        "https://docs.pydantic.dev/latest/concepts/models/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-30",
+      "file": "assets/figures/30.svg",
+      "title": "不可變產物與目前指標分開提交",
+      "alt": "在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。",
+      "readingTask": "在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。",
+      "caption": "原子替換是本機程序層的邊界，不等同跨服務或斷電保證。",
+      "sources": [
+        "https://docs.python.org/3.14/library/os.html#os.replace"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-31",
+      "file": "assets/figures/31.svg",
+      "title": "內容快取不能忽略處理配方與租戶",
+      "alt": "逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。",
+      "readingTask": "逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。",
+      "caption": "產物雜湊是損壞偵測；不能取代可信寫入者或數位簽章。",
+      "sources": [
+        "https://docs.python.org/3.14/library/hashlib.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-32",
+      "file": "assets/figures/32.svg",
+      "title": "維運同時記錄品質、資源與資料版本",
+      "alt": "沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。",
+      "readingTask": "沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。",
+      "caption": "版本以2026-11-27查核為準；大型VLM、付費API與雲端服務未代跑。",
+      "sources": [
+        "https://pymupdf.readthedocs.io/en/latest/installation.html"
+      ],
+      "license": "original educational diagram"
+    }
+  ]
+}

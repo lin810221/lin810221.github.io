@@ -12,7 +12,7 @@
 
 ## 本課byte算例
 
-A的ASCII值65、B為66，byte IDs分別68與69；序列S是`[1,68,69,2]`。模型輸入`[1,68,69]`，輸出`[B=1,T=3,V=259]`logits，target是`[68,69,2]`。它不預測BOS之前不存在的字，也不把EOS後人為補的PAD當成一般原文監督。
+A的ASCII值65、B為66，byte IDs分別68與69；序列S是`[1,68,69,2]`。模型輸入`[1,68,69]`，輸出 `[B=1,T=3,V=259]` logits，target是`[68,69,2]`。它不預測BOS之前不存在的字，也不把EOS後人為補的PAD當成一般原文監督。
 
 Teacher forcing表示訓練時使用真實前綴輸入，而非每一步都先抽樣自己的Token再接回去。這使各位置可在一次causal forward中平行計算；生成時仍需逐步依已選Token延伸，兩種資料條件不完全相同。
 
@@ -32,13 +32,13 @@ assert torch.allclose(flat, transposed)
 assert abs(flat.item() - torch.log(torch.tensor(259.)).item()) < 1e-5
 ```
 
-均勻logits的每步正確機率1/259，所以loss約ln(259)；這是驗證損失軸與分母的原創控制例，不是已訓練模型的成績。
+均勻logits的每步正確機率 $\frac{1}{259}$ ，所以loss約ln(259)；這是驗證損失軸與分母的原創控制例，不是已訓練模型的成績。
 
 ## PAD ID與−100的用途
 
 input中的PAD是詞彙ID0；target不應監督的位置設−100，配合ignore_index。−100不是一個可生成的Token，也不能拿去查Embedding。若把−100先clamp成0，會把原本應忽略的目標變成PAD監督，改變loss與分母。
 
-對話中只訓練assistant內容時，target mask也要跟位移後位置對齊。某個答案Token出現在原始序列第j格，它由前一位置j−1的logit預測；若直接把原始答案位置mask套到同欄logit，可能漏掉第一個答案、多算最後邊界。
+對話中只訓練assistant內容時，target mask也要跟位移後位置對齊。某個答案Token出現在原始序列第j格，它由前一位置 $j-1$ 的logit預測；若直接把原始答案位置mask套到同欄logit，可能漏掉第一個答案、多算最後邊界。
 
 ## 手寫模型與高階模型只選一處位移
 

@@ -24,7 +24,7 @@ $$
 H_{out}=\left\lfloor\frac{H+2P-D(K-1)-1}{S}+1\right\rfloor
 $$
 
-本課 8×8、kernel3、padding1、stride1 保持 8×8，輸出4個 channel，Flatten 是256，而不是64。「[CNN 實作：從 NCHW 到可訓練的影像分類器](#26-cnn)」完整例子直接驗證這個尺寸。
+本課  $8\times 8$ 、kernel3、padding1、stride1 保持  $8\times 8$ ，輸出4個 channel，Flatten 是256，而不是64。「[CNN 實作：從 NCHW 到可訓練的影像分類器](#26-cnn)」完整例子直接驗證這個尺寸。
 
 ## Embedding 是查表
 
@@ -46,7 +46,7 @@ print(nn.Embedding(8,4,padding_idx=0)(ids).shape)
 
 ## 練習與解答
 
-輸入 `[2,7,4]` 經 Linear(4,3) 得 `[2,7,3]`；若想句子分類，還要定義 pooling 或選取位置。Conv2d 輸入32×32、K3、P0、S2，輸出高度15。若得到16，重新核對公式的 -1 與 floor，而不是改 Linear 到程式剛好能跑。
+輸入 `[2,7,4]` 經 Linear(4,3) 得 `[2,7,3]`；若想句子分類，還要定義 pooling 或選取位置。Conv2d 輸入 $32\times 32$ 、K3、P0、S2，輸出高度15。若得到16，重新核對公式的 -1 與 floor，而不是改 Linear 到程式剛好能跑。
 
 ## 官方來源與延伸閱讀
 

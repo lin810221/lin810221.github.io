@@ -18,7 +18,7 @@ state_dict保存參數與persistent buffers，並不保存你任意寫的Python�
 
 ## 載入與重建模型
 
-先用相同結構建立Module，再load_state_dict。map_location='cpu'讓GPU存檔能先在CPU讀取，之後按需求移device。strict預設檢查key；若故意只載backbone，需讀missing/unexpected keys，不能一律strict=False把結構錯誤藏起來。
+先用相同結構建立Module，再load_state_dict。map_location='cpu'讓GPU存檔能先在CPU讀取，之後按需求移device。strict預設檢查key；若故意只載backbone，需讀missing/unexpected keys，不能一律 `strict=False` 把結構錯誤藏起來。
 
 ```python
 import torch
@@ -34,7 +34,7 @@ model.eval()
 
 ## weights_only 的用途與限制
 
-本課明確指定weights_only=True，payload僅含Tensor、字串、數字與一般容器。這限制unpickling可做的事情，但仍只載入可信來源，不視為任意檔案的安全沙盒。不要為了解決不相容就直接改False；先理解檔案格式、必要類別與來源。
+本課明確指定 `weights_only=True` ，payload僅含Tensor、字串、數字與一般容器。這限制unpickling可做的事情，但仍只載入可信來源，不視為任意檔案的安全沙盒。不要為了解決不相容就直接改False；先理解檔案格式、必要類別與來源。
 
 ## 保存瞬間要獨立
 

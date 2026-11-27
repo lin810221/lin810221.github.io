@@ -28,11 +28,11 @@ train使用當前batch統計並更新running；eval通常使用保存的running�
 
 ## 手算兩筆
 
-$x=[[1,2],[3,4]]$，每feature平均[2,3]；population variance各1，unbiased各2。初始running mean0、var1，momentum=.1後mean[.2,.3]、var[1.1,1.1]。第18例真正核對buffer與eval輸出，因此eval mean不需為0。
+$x=[[1,2],[3,4]]$，每feature平均[2,3]；population variance各1，unbiased各2。初始running mean0、var1， `momentum=.1` 後mean[.2,.3]、var[1.1,1.1]。第18例真正核對buffer與eval輸出，因此eval mean不需為0。
 
 ## 小batch與遷移
 
-批次太小或分布差異大時統計噪音增加；若凍結weights但仍train，running buffer仍可改。轉移學習需決定是否沿用／更新統計與affine參數，不是只有requires_grad=False。各rank統計與SyncBatchNorm也是額外工程問題。
+批次太小或分布差異大時統計噪音增加；若凍結weights但仍train，running buffer仍可改。轉移學習需決定是否沿用／更新統計與affine參數，不是只有 `requires_grad=False` 。各rank統計與SyncBatchNorm也是額外工程問題。
 
 ## 練習與解答
 

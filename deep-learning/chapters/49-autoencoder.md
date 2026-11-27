@@ -14,7 +14,7 @@
 
 ## Encoder與Decoder
 
-encoder將x變latent z，decoder重建x̂，以reconstruction loss訓練。若容量足夠且沒有約束，可能只是記住輸入；瓶頸、noise或其他限制才讓表示有特定偏好。重建好不保證分類／檢索好，兩者目標不同。
+encoder將x變latent z，decoder重建 $\hat{x}$ ，以reconstruction loss訓練。若容量足夠且沒有約束，可能只是記住輸入；瓶頸、noise或其他限制才讓表示有特定偏好。重建好不保證分類／檢索好，兩者目標不同。
 
 $$
 z=f_\theta(x),\quad\hat x=g_\phi(z),\quad
@@ -27,7 +27,7 @@ $$
 
 ## 本章實驗
 
-合成2D資料[u,.5u²-.5]，2→8→1 encoder接1→8→2 decoder，120次full-batch Adam。第34例列初始與最終reconstruction MSE，測試確認下降。這是訓練可學性檢查，沒有獨立生成品質或真實壓縮benchmark。
+合成2D資料 $[u,.5u^{2}-.5]$ ，2→8→1 encoder接1→8→2 decoder，120次full-batch Adam。第34例列初始與最終reconstruction MSE，測試確認下降。這是訓練可學性檢查，沒有獨立生成品質或真實壓縮benchmark。
 
 ## Denoising與其他變體
 

@@ -8,15 +8,15 @@ KV cache保存每層已處理token的key與value，讓後續decode重用前綴�
 
 ## 每層一份K與V
 
-對MHA，每層cache常為K、V各[B,H,T,Dh]。Q只服務當前query，通常不為未來decode持續保存。下一個token在第l層的K/V必須由該層表示產生，不可把第一層K/V直接拿給所有層。
+對MHA，每層cache常為K、V各[B,H,T,Dh]。Q只服務當前query，通常不為未來decode持續保存。下一個token在第l層的 $\frac{K}{V}$ 必須由該層表示產生，不可把第一層 $\frac{K}{V}$ 直接拿給所有層。
 
 本課模型以list儲存每層tuple(K,V)。一個3-token prefix、2層、4heads、Dh8、batch1，會有兩組各[1,4,3,8]的K與V。新送2tokens後，沿序列軸串接成[1,4,5,8]，不是沿head或feature軸串接。
 
 ## 為何能重用
 
-在固定權重、相同前綴、causal attention和相同位置下，過去token的表示不受未來影響，因此過去K/V可重用。若修改前綴、位置政策、模型權重或某層狀態，原cache不一定有效。這是需要明確驗證的等價條件。
+在固定權重、相同前綴、causal attention和相同位置下，過去token的表示不受未來影響，因此過去 $\frac{K}{V}$ 可重用。若修改前綴、位置政策、模型權重或某層狀態，原cache不一定有效。這是需要明確驗證的等價條件。
 
-cache仍可能占大量記憶體；越長prefix或更多同時請求，保存量越大。它減少前綴重算，不消除新token的投影、FFN、讀取K/V及attention運算。
+cache仍可能占大量記憶體；越長prefix或更多同時請求，保存量越大。它減少前綴重算，不消除新token的投影、FFN、讀取 $\frac{K}{V}$ 及attention運算。
 
 ## 只送尚未處理的部分
 

@@ -46,7 +46,7 @@ print(matrix.diag().sum().float()/matrix.sum())
 
 ## 練習與解答
 
-二元分類TP=8、$FP=2$、$FN=4$，$\operatorname{precision}=.8$、$\operatorname{recall}=2/3$、F1約.7273。若提高接受門檻，precision是否一定上升？不保證個別資料上單調，需重新計數；通常只是改變取捨。下一次換資料時沿用同一門檻也需要再驗證，而非把0.5當普遍正確答案。
+二元分類 $\mathrm{TP}=8$ 、$FP=2$、$FN=4$，$\operatorname{precision}=.8$、$\operatorname{recall}=2/3$、F1約.7273。若提高接受門檻，precision是否一定上升？不保證個別資料上單調，需重新計數；通常只是改變取捨。下一次換資料時沿用同一門檻也需要再驗證，而非把0.5當普遍正確答案。
 
 ## 官方來源與延伸閱讀
 

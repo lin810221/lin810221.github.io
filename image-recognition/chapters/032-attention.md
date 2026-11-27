@@ -28,7 +28,7 @@ CNN先用局部連結與權重共享引入空間偏好；ViT較依賴資料、�
 
 ## API與推論模式
 
-nn.MultiheadAttention的batch_first=True讓輸入為[N,L,D]；若省略，預設軸順序不同。dropout、eval與inference_mode仍要清楚。需要權重作教學時可need_weights=True，但實際高效路徑可能因參數與裝置不同而變，速度需實測。
+nn.MultiheadAttention的 `batch_first=True` 讓輸入為[N,L,D]；若省略，預設軸順序不同。dropout、eval與inference_mode仍要清楚。需要權重作教學時可 `need_weights=True` ，但實際高效路徑可能因參數與裝置不同而變，速度需實測。
 
 ## 練習與解析
 

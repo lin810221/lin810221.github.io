@@ -14,11 +14,11 @@
 
 ## Encoder輸出分布參數
 
-VAE以q(z|x)近似latent posterior，常輸出mean與log variance；decoder描述p(x|z)，prior常標準normal。不是對同一latent任意加noise就自動等於VAE，必須有對應概率目標與推導。
+VAE以 $q(z\mid x)$ 近似latent posterior，常輸出mean與log variance；decoder描述 $p(x\mid z)$ ，prior常標準normal。不是對同一latent任意加noise就自動等於VAE，必須有對應概率目標與推導。
 
 ## 重參數化
 
-$z=\mu+\sigma\odot\varepsilon$，ε來自與可學參數無關的標準normal，使抽樣可寫成可微轉換。logvar是logσ²，所以std=exp(.5logvar)，漏掉.5會改分布。測試真的backward確認encoder與decoder梯度有限。
+$z=\mu+\sigma\odot\varepsilon$， $\varepsilon $ 來自與可學參數無關的標準normal，使抽樣可寫成可微轉換。logvar是 $\log\sigma^2$ ，所以 $\mathrm{std}=\exp(0.5\,\mathrm{logvar})$ ，漏掉.5會改分布。測試真的backward確認encoder與decoder梯度有限。
 
 $$
 z=\mu+\exp(\tfrac12\log\sigma^2)\odot\epsilon,\quad\epsilon\sim\mathcal N(0,I)
@@ -34,7 +34,13 @@ $$
 
 ## 下界是如何產生的
 
-從log pθ(x)=log∫pθ(x,z)dz開始，乘除qφ(z|x)，將積分寫成q下的期望。log是凹函數，Jensen讓「log期望」大於等於「期望log」。展開joint後得到重建期望減KL：
+從邊際似然開始，將潛在變數積分掉：
+
+$$
+\log p_\theta(x)=\log\int p_\theta(x,z)\,\mathrm{d}z.
+$$
+
+再引入近似後驗 $q_\phi(z\mid x)$，將積分改寫成相對於此分布的期望。log是凹函數，Jensen讓「log期望」大於等於「期望log」。展開joint後得到重建期望減KL：
 
 $$
 \log p_\theta(x)\geq
@@ -43,11 +49,11 @@ $$
 =\operatorname{ELBO}(x).
 $$
 
-在密度與支撐等條件滿足時，log p(x)與ELBO的差是q(z|x)對真正posterior pθ(z|x)的KL。最大化下界因此同時涉及生成模型與近似posterior，但不保證有限網路能完全消除差距。實作常以一次或少數ε抽樣估計重建期望；那個隨機估計也不同於deterministic decoder(mean)的MSE。
+在密度與支撐等條件滿足時，log p(x)與ELBO的差是 $q(z\mid x)$ 對真正posterior pθ(z|x)的KL。最大化下界因此同時涉及生成模型與近似posterior，但不保證有限網路能完全消除差距。實作常以一次或少數 $\varepsilon $ 抽樣估計重建期望；那個隨機估計也不同於deterministic decoder(mean)的MSE。
 
 ## 本課訓練的精確目標
 
-第35例2D toy，重建採固定variance1 Gaussian去常數後的.5平方和，另加beta=.1的KL。因beta非1，明確稱beta-VAE取捨，不冒稱原始標準ELBO。報告mean-decode MSE與最後KL，MSE不是ELBO，也不是生成品質。
+第35例2D toy，重建採固定variance1 Gaussian去常數後的.5平方和，另加 $\beta =.1$ 的KL。因beta非1，明確稱beta-VAE取捨，不冒稱原始標準ELBO。報告mean-decode MSE與最後KL，MSE不是ELBO，也不是生成品質。
 
 ## 限制與練習
 

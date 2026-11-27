@@ -16,7 +16,7 @@ toy_corpus以八種主詞與四種動詞產生32句，如red bird moves.與blue 
 
 每句編成[BOS,bytes...,EOS]，x取[:-1]、y取[1:]。右側padding的x填PAD0，y填-100，key mask標明有效輸入。所有有效target的loss求和後除以有效token總數，不把不同長度句子平均成等權重。
 
-先model.train()，optimizer.zero_grad，forward、loss、backward、梯度裁切、step。預設AdamW lr=.008、140步，dropout0。這組設定只服務小型CPU實驗，不是大型預訓練參數建議。每一步記錄train NLL，最後以eval及inference_mode計valid NLL和PPL。
+先model.train()，optimizer.zero_grad，forward、loss、backward、梯度裁切、step。預設AdamW  `lr=.008` 、140步，dropout0。這組設定只服務小型CPU實驗，不是大型預訓練參數建議。每一步記錄train NLL，最後以eval及inference_mode計valid NLL和PPL。
 
 $$
 \mathcal L=-\frac{1}{N_{valid}}\sum_{b,t:\ y_{bt}\ne-100}\log p_\theta(y_{bt}\mid x_{b,\le t})
@@ -26,7 +26,7 @@ $$
 
 安裝鎖版需求後，在examples中執行`python 12_train_tiny_lm.py --output outputs/tiny-lm`。輸出包含model.safetensors、config、tokenizer契約、manifest、report.json與loss.svg。文字生成是可觀察的補充，驗證不能只看一兩句看起來流暢的樣本。
 
-報告保留首末train NLL、有效token分母、valid NLL/PPL與生成token IDs。可先預測均勻分布NLL約log259=5.557，再看初始值與學習曲線；初始化及token分布會讓它不完全等於理論均勻值。
+報告保留首末train NLL、有效token分母、valid NLL/PPL與生成token IDs。可先預測均勻分布NLL約 $log259=5.557$ ，再看初始值與學習曲線；初始化及token分布會讓它不完全等於理論均勻值。
 
 ## 練習與解析
 

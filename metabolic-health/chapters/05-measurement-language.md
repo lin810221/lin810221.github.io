@@ -37,7 +37,7 @@ mg/dL與mmol/L換算依分析物；膽固醇、TG和葡萄糖係數不同。HbA1
 
 ## 練習與解答
 
-**先自己判斷：** HbA1c48mmol/mol，是否可直接放到血糖mmol/L欄？
+**先自己判斷：**  $\mathrm{HbA1c}:\;48\,\mathrm{mmol/mol}$ ，是否可直接放到血糖mmol/L欄？
 
 <details><summary>展開驗算與理由</summary>
 

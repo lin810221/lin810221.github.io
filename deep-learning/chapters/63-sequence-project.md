@@ -18,7 +18,7 @@
 
 ## 批次不等於同樣長度
 
-collate將一批補到其中最大長度，PAD保留為0，長度另以CPU long tensor保存。Embedding有9個ID、維度8、padding_idx=0；GRU hidden12，最後hidden接Linear2。pack_padded_sequence會依有效長度排除尾端padding，enforce_sorted=False允許批次未預先排序。此例全為非空序列，不能用長度0偷渡。
+collate將一批補到其中最大長度，PAD保留為0，長度另以CPU long tensor保存。Embedding有9個ID、維度8、 `padding_idx=0` ；GRU hidden12，最後hidden接Linear2。pack_padded_sequence會依有效長度排除尾端padding， `enforce_sorted=False` 允許批次未預先排序。此例全為非空序列，不能用長度0偷渡。
 
 ## 為何不是拿最後一欄
 

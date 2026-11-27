@@ -20,7 +20,7 @@
 
 ### 來源索引要帶版本與狀態
 
-本課查核使用CONSORT與SPIRIT 2025、PRISMA 2020、STARD 2015、TRIPOD+AI 2024及PROBAST+AI 2025等對應入口。Cochrane版本更新頁與新第21章顯示6.5.1／2026，但部分頁引用仍是6.5／2024，不能任意統一改年份。IPDAS現行官方頁已列5.0／2026；方法年、修訂日與本課查核日分開記錄。
+本課查核使用CONSORT與SPIRIT 2025、PRISMA 2020、STARD 2015、 $\mathrm{TRIPOD}+AI$  2024及 $\mathrm{PROBAST}+AI$  2025等對應入口。Cochrane版本更新頁與新第21章顯示6.5.1／2026，但部分頁引用仍是6.5／2024，不能任意統一改年份。IPDAS現行官方頁已列5.0／2026；方法年、修訂日與本課查核日分開記錄。
 
 ### 保留工具適用與查核限制
 
@@ -57,7 +57,7 @@ GRADE Book是逐步發布中的官方更新資源，不能把無法讀取的頁�
 
 - [SPIRIT–CONSORT：正式聲明](https://www.consort-spirit.org/published-statements)：SPIRIT 2025／CONSORT 2025。
 - [PRISMA：官方聲明與擴充](https://www.prisma-statement.org/)：PRISMA 2020；擴充另依用途核對。
-- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)：TRIPOD+AI 2024及TRIPOD-LLM官方入口。
+- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)： $\mathrm{TRIPOD}+AI$  2024及TRIPOD-LLM官方入口。
 - [GRADEpro：GRADE Book過渡說明](https://help.gradepro.org/support/solutions/articles/204000075707)：官方Book逐步發布；查核2026-11-16，不宣稱已全數取代舊手冊。
 - [OHRI：決策輔助工具標準](https://decisionaid.ohri.ca/IPDAS/using.html)：IPDAS 5.0／BMJ 2026；非舊域名。
 - [ICMJE：更正與版本控制](https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html)：現行建議；2026-11-16查核。

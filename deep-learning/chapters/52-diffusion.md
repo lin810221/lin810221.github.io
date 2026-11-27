@@ -14,7 +14,7 @@
 
 ## 前向逐步破壞資料
 
-β_t決定每步noise，α_t=1-β_t，αbar_t為累乘。可直接從clean與獨立normal ε取得任意t的noisy樣本，不必逐步跑到t。程式索引0對應數學第一個加噪步，不是clean本身，避免off-by-one。
+β_t決定每步noise， $\alpha _{t}=1-\beta _{t}$ ，αbar_t為累乘。可直接從clean與獨立normal  $\varepsilon $ 取得任意t的noisy樣本，不必逐步跑到t。程式索引0對應數學第一個加噪步，不是clean本身，避免off-by-one。
 
 $$
 x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\,\epsilon
@@ -39,7 +39,7 @@ $$
 
 ## 最後一步與索引約定
 
-定義乾淨時刻ᾱ₀=1，所以數學t=1的posterior variance為0。程式schedule[0]對應這個t=1，previous alpha_bar首項要補1。其他步驟由mean加上sqrt(β̃_t)乘新的normal噪音；同一條反向鏈的每一步使用當前xt與對應t，不能把第一次的模型輸出重複套30次。
+定義乾淨時刻 $\bar{\alpha}_{0}=1$ ，所以數學 $t=1$ 的posterior variance為0。程式schedule[0]對應這個 $t=1$ ，previous alpha_bar首項要補1。其他步驟由mean加上sqrt(β̃_t)乘新的normal噪音；同一條反向鏈的每一步使用當前xt與對應t，不能把第一次的模型輸出重複套30次。
 
 $$
 x_{t-1}=\mu_\theta(x_t,t)+\sqrt{\tilde\beta_t}\,z,
@@ -47,7 +47,7 @@ x_{t-1}=\mu_\theta(x_t,t)+\sqrt{\tilde\beta_t}\,z,
 x_0=\mu_\theta(x_1,1).
 $$
 
-首頁固定ε隨t變化，是比較閉式邊際分布係數的視圖；它不是逐步注入獨立噪音的前向Markov樣本路徑。網頁的前向數學、Python的noise prediction訓練與反向採樣，需各自說明。
+首頁固定 $\varepsilon $ 隨t變化，是比較閉式邊際分布係數的視圖；它不是逐步注入獨立噪音的前向Markov樣本路徑。網頁的前向數學、Python的noise prediction訓練與反向採樣，需各自說明。
 
 ## 低維實驗與證據
 

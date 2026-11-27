@@ -1,0 +1,7 @@
+{
+  "invoice_no": "DW-2026-001",
+  "currency": "USD",
+  "subtotal_cents": 4500,
+  "tax_cents": 225,
+  "total_cents": 4725
+}

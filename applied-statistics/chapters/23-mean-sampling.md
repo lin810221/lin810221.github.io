@@ -14,7 +14,15 @@
 
 ## 平均與變異 {#5-4-1}
 
-iid、有限μ與σ²時，E(X̄)=μ、Var(X̄)=σ²/n，$SE=\sigma /\sqrt{n}$。期望的線性不需要獨立，但變異簡化需要處理共變異數。時間相關或同群資料會改SE，不能只把人數放入根號。
+**獨立同分布抽樣下的結果。** 每筆觀察的平均為 $\mu$、有限變異數為 $\sigma^2$；標準誤描述不同樣本平均之間的變動。
+
+<!-- equation:sample-mean-moments -->
+$$
+E[\bar X]=\mu,\qquad\operatorname{Var}(\bar X)=\frac{\sigma^2}{n},\qquad
+\operatorname{SE}(\bar X)=\frac{\sigma}{\sqrt n}.
+$$
+
+iid、有限 $\mu $ 與 $\sigma ^{2}$ 時， $E\left(\bar{X}\right)=\mu $ 、 $\operatorname{Var}\left(\bar{X}\right)=\frac{\sigma ^{2}}{n}$ ，$SE=\sigma /\sqrt{n}$。期望的線性不需要獨立，但變異簡化需要處理共變異數。時間相關或同群資料會改SE，不能只把人數放入根號。
 
 $$
 E(\bar X)=\mu,\qquad \operatorname{SE}(\bar X)=\frac\sigma{\sqrt n}
@@ -26,11 +34,11 @@ $$
 
 ## 有限母體修正
 
-從有限N不放回SRS，若σ_N²以N為分母定義母體變異，平均SE為σ_N/√n乘√((N−n)/(N−1))。n接近N時修正明顯，普查時抽樣誤差為0；測量錯誤仍可能存在。若用N−1分母定義母體變異，修正式會換等價形式，請先對齊記號。
+從有限N不放回SRS，若 $\sigma_N^2$ 以N為分母定義母體變異，平均SE為 $\frac{\sigma _{N}}{\sqrt{n}}$ 乘 $\sqrt{\frac{N-n}{N-1}}$ 。n接近N時修正明顯，普查時抽樣誤差為0；測量錯誤仍可能存在。若用 $N-1$ 分母定義母體變異，修正式會換等價形式，請先對齊記號。
 
 ## 指數母體的實際模擬
 
-第09例以均值1、SD1的Exponential生成4000組，每組30筆，查看平均分布的實際均值與SD，理論SE=1/√30。觀察某一母體下近似表現，是具體證據而非所有分布的通用定理。首頁也可改n觀察偏態平均逐漸集中。
+第09例以均值1、SD1的Exponential生成4000組，每組30筆，查看平均分布的實際均值與SD，理論 $\mathrm{SE}=\frac{1}{\sqrt{30}}$ 。觀察某一母體下近似表現，是具體證據而非所有分布的通用定理。首頁也可改n觀察偏態平均逐漸集中。
 
 ## 規模與成本
 

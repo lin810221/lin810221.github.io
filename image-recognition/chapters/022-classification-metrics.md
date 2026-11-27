@@ -8,7 +8,7 @@
 
 ## 混淆矩陣的方向
 
-本課採真實類別為列、預測類別為欄。二類矩陣[[4,0],[1,1]]表示四筆真0全對；兩筆真1中漏掉一筆。accuracy為5/6；類別1的precision為1、recall為1/2。若把矩陣轉置，precision與recall的分母會交換，所以報告必須標軸。
+本課採真實類別為列、預測類別為欄。二類矩陣[[4,0],[1,1]]表示四筆真0全對；兩筆真1中漏掉一筆。accuracy為 $\frac{5}{6}$ ；類別1的precision為1、recall為 $\frac{1}{2}$ 。若把矩陣轉置，precision與recall的分母會交換，所以報告必須標軸。
 
 $$
 \mathrm{precision}=\frac{TP}{TP+FP},\quad

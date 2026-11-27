@@ -6,7 +6,7 @@ import {parse} from '../.qa/vendor/acorn.mjs';
 import katex from '../.qa/vendor/katex.mjs';
 const root=new URL('../',import.meta.url),read=file=>readFile(new URL(file,root),'utf8');
 for(const f of ['assets/reader.js','first-aid/assets/scenarios.js','first-aid/assets/overview.js','first-aid/assets/course-data.js'])parse(await read(f),{ecmaVersion:'latest'});
-const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,23);assert.equal(home.querySelectorAll('a[href="first-aid/index.html"]').length,1);
+const {document:home}=parseHTML(await read('index.html'));assert.equal(home.querySelectorAll('.subject-feature').length,Object.keys(JSON.parse(await readFile(new URL('tools/library.json',root),'utf8')).courses).length);assert.equal(home.querySelectorAll('a[href="first-aid/index.html"]').length,1);
 const {window,document}=parseHTML(await read('first-aid/index.html')),q=s=>document.querySelector(s),location={hash:''};
 const previous=JSON.stringify({completed:['001-population-health'],notes:{'001-population-health':'保留公共衛生課筆記'}}),storage=new Map([['learning-notes:public-health:v1',previous]]);
 HTMLElement.prototype.focus=function(){};HTMLElement.prototype.scrollIntoView=function(){};window.scrollTo=()=>{};window.print=()=>{};

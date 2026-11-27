@@ -24,7 +24,7 @@ python -m unittest discover -s transformer/examples -p test_examples.py -v
 
 ## 案例：Next-token shift做了兩次
 
-**題目：** 資料函式已產生`X=s[:-1]`、`Y=s[1:]`，學生又在自訂loss中將logits去最後一格、labels去第一格。loss仍可下降，能否視為正確？
+**題目：** 資料函式已產生 `X=s[:-1]` 、 `Y=s[1:]` ，學生又在自訂loss中將logits去最後一格、labels去第一格。loss仍可下降，能否視為正確？
 
 **解析：** 它實際改成讓位置t預測更後面的目標。先取一條短序列，在紙上逐格列出X、Y、有效mask和logit對應；外部shift只做一次，loss直接對齊同位置張量。loss下降只代表某個目標可被最佳化，不證明目標就是你聲稱的next-token任務。修正後保留短序列對照與PAD忽略分母檢查。
 
@@ -32,13 +32,13 @@ python -m unittest discover -s transformer/examples -p test_examples.py -v
 
 **題目：** prefill3個token後，新增2個token時，第一列query只能看key0。作者認為`is_causal=True`一定會處理所有情況。正確遮罩是什麼？
 
-**解析：** query位置為3和4、key位置0至4，允許列是`11110`與`11111`。這裡需要帶past offset的矩形遮罩，不是左上對齊2×5三角形。再核對每層cache長度、position_id、key mask是否涵蓋過去與新增位置。測試應比較完整前綴後兩位置的logits，而不是只看最後argmax。
+**解析：** query位置為3和4、key位置0至4，允許列是`11110`與`11111`。這裡需要帶past offset的矩形遮罩，不是左上對齊 $2\times 5$ 三角形。再核對每層cache長度、position_id、key mask是否涵蓋過去與新增位置。測試應比較完整前綴後兩位置的logits，而不是只看最後argmax。
 
 ## 案例：右補齊選錯最後位置
 
 **題目：** 第一列`[1,50,51,0]`，第二列`[1,70,71,72]`。學生一律用`logits[:,-1]`選下一token，並在cache新增時只傳新token長度的mask。錯在哪裡？
 
-**解析：** 第一列最後有效位置是索引2；-1取的是PAD query輸出。cache新增時，key長度是past+new，所以mask必須覆蓋完整長度。語意position還要依有效token數計算，不能把補齊格數直接當位置。本課forward可用`18_padding_positions.py`作對照，但預設generate只接受單一未補齊序列；要做批次生成需另訂取logits、EOS與cache管理規則。
+**解析：** 第一列最後有效位置是索引2；-1取的是PAD query輸出。cache新增時，key長度是 $past+new$ ，所以mask必須覆蓋完整長度。語意position還要依有效token數計算，不能把補齊格數直接當位置。本課forward可用`18_padding_positions.py`作對照，但預設generate只接受單一未補齊序列；要做批次生成需另訂取logits、EOS與cache管理規則。
 
 ## 案例：框架回傳欄位被猜測
 
@@ -48,7 +48,7 @@ python -m unittest discover -s transformer/examples -p test_examples.py -v
 
 ## 案例：指標比較的單位不一致
 
-**題目：** A批次2個有效token、平均NLL=1；B批次8個、平均NLL=3。報告寫平均NLL=2，並用訓練曲線當作valid曲線。應如何修正？
+**題目：** A批次2個有效token、平均 $\mathrm{NLL}=1$ ；B批次8個、平均 $\mathrm{NLL}=3$ 。報告寫平均 $\mathrm{NLL}=2$ ，並用訓練曲線當作valid曲線。應如何修正？
 
 **解析：** 總NLL26、有效目標10，所以平均2.6，PPL為`exp(2.6)`約13.4637。保存每批的NLL總和與token分母，才能重新聚合。圖線也需標明資料split與測量時點；本課預設每step記train NLL，最後另算valid。把名稱換成validation不能增加未見資料的證據。
 

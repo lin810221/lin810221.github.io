@@ -1,6 +1,6 @@
 # 長上下文位置延伸與資訊使用
 
-<figure class="tf-figure"><a href="assets/figures/19-tiled-online-softmax.svg" target="_blank" rel="noopener"><img src="assets/figures/19-tiled-online-softmax.svg" alt="左側大網格只搬入兩塊到SRAM狀態m l o，右側分數0,1再讀2，最大值改2並重新縮放得到l2=1.5032。" loading="lazy"></a><figcaption>FlashAttention：改變資料搬運與中間儲存。不要把不實體化S×S矩陣，誤寫成所有密集注意力算術都變為線性。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
+<figure class="tf-figure"><a href="assets/figures/19-tiled-online-softmax.svg" target="_blank" rel="noopener"><img src="assets/figures/19-tiled-online-softmax.svg" alt="左側大網格只搬入兩塊到SRAM狀態m l o，右側分數0,1再讀2，最大值改2並重新縮放得到l2=1.5032。" loading="lazy"></a><figcaption>FlashAttention：改變資料搬運與中間儲存。不要把不實體化 $S\times S$ 矩陣，誤寫成所有密集注意力算術都變為線性。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
 
 <div class="tf-task"><strong>讀圖任務</strong><p>說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：長上下文位置延伸與資訊使用。</p></div>
 

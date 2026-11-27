@@ -14,6 +14,13 @@
 
 ## 單選與多標籤
 
+對二元或多標籤的未加權目標，令 $M$ 為有效元素總數、$p_j=\sigma(z_j)$。以下平均對所有有效元素進行，不與類別權重或忽略位置的規則混用：
+
+<!-- equation:multilabel-binary-cross-entropy -->
+$$
+L_{\mathrm{BCE}}=-\frac1M\sum_{j=1}^M\left[y_j\log p_j+(1-y_j)\log(1-p_j)\right].
+$$
+
 多類單選logits[N,C]配long target[N]；二元可用logits[N,1]配float target[N,1]與BCEWithLogits；多標籤兩者[N,C]、每欄可同時成立。不要把每個task一律做softmax，因為多標籤不要求各欄機率合計1。
 
 ## 不先手寫不穩定機率

@@ -24,7 +24,7 @@ AUC描述對事件與未事件的排序能力，不直接告訴某風險百分�
 
 ### 用對報告與評估入口
 
-TRIPOD+AI提供預測模型報告入口，PROBAST+AI 2025處理品質、偏差及適用性評估；它們不是產品批准或部署許可。正式評估應讀完整原工具。本課只用原創示意圖區分任務、驗證與影響，未依受限頁面補出工具細項，也不以自訂分數宣告某醫療AI安全。
+ $\mathrm{TRIPOD}+AI$ 提供預測模型報告入口， $\mathrm{PROBAST}+AI$  2025處理品質、偏差及適用性評估；它們不是產品批准或部署許可。正式評估應讀完整原工具。本課只用原創示意圖區分任務、驗證與影響，未依受限頁面補出工具細項，也不以自訂分數宣告某醫療AI安全。
 
 ## 放進研究情境
 
@@ -55,7 +55,7 @@ TRIPOD+AI提供預測模型報告入口，PROBAST+AI 2025處理品質、偏差�
 
 ## 來源、版本與下一步
 
-- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)：TRIPOD+AI 2024及TRIPOD-LLM官方入口。
+- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)： $\mathrm{TRIPOD}+AI$  2024及TRIPOD-LLM官方入口。
 - [PROBAST+AI原始方法文](https://doi.org/10.1136/bmj-2024-082505)：BMJ 2025；出版平台403，索引確認正式文與用途，不重製工具。
 - [FDA：真實世界資料與證據](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)：現行定義及正式文件入口；2026-11-16查核。
 

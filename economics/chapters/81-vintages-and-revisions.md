@@ -22,7 +22,7 @@ synthetic_vintages.csv對同一period保留多個release_date。2025年第一季
 
 ## As-of演算法
 
-先選release_date≤cutoff，再對每個series/period取其中最新發布。檢查重複鍵、單位、季調與方法一致。缺少尚未發布期應保留缺，不補0或拿未來資料倒填。日期格式與時區也需依資料服務定義。
+先選 $\mathrm{release}_{date}\le \mathrm{cutoff}$ ，再對每個series/period取其中最新發布。檢查重複鍵、單位、季調與方法一致。缺少尚未發布期應保留缺，不補0或拿未來資料倒填。日期格式與時區也需依資料服務定義。
 
 ## 預測與政策比較
 

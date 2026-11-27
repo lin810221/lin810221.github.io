@@ -19,7 +19,7 @@ kg不是N，kg-reps不是J，W不是kcal；L/min與mL/kg/min需質量與1000倍�
 
 ## 語意層
 
-單組RIR-based RPE、Borg6–20與session CR10不混用；%HRR不是%HRmax；VO₂peak不無聲改max；計畫不是完成，休息0不是漏記。即使每行公式都對，欄位對錯仍會改結論。
+單組RIR-based RPE、Borg6–20與session CR10不混用；%HRR不是%HRmax； $VO_{2}peak$ 不無聲改max；計畫不是完成，休息0不是漏記。即使每行公式都對，欄位對錯仍會改結論。
 
 ## 來源層
 

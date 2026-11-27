@@ -1,0 +1,9 @@
+{
+  "title": "LoRA矩陣形狀與可訓練參數",
+  "alt": "四乘四基底加上四乘二矩陣B與二乘四矩陣A的乘積；基底凍結，只更新A與B。",
+  "caption": "此例adapter有16參數；大維度、低rank時才有明顯節省。",
+  "sources": [
+    "https://arxiv.org/abs/2106.09685"
+  ],
+  "license": "original educational diagram"
+}

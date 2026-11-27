@@ -14,7 +14,7 @@
 
 當shape或索引錯誤出現，先用短句查看原始文字、UTF-8 bytes、token IDs、X、Y和mask。預設ByteTokenizer詞表259，合法ID為0至258；若用了另一個BPE詞表，先核對最大ID與embedding列數，不能只看句子decode正常。
 
-`TinyGPT.forward`要求非空`int64 [B,T]`。把整批輸入轉成float32會破壞embedding索引契約；dtype應對浮點權重與整數IDs分別處理。D必須能被heads整除；若$D=30$、heads=4，沒有整數head_dim，應修設定，不是任意reshape到最接近的形狀。
+`TinyGPT.forward`要求非空`int64 [B,T]`。把整批輸入轉成float32會破壞embedding索引契約；dtype應對浮點權重與整數IDs分別處理。D必須能被heads整除；若$D=30$、 `heads=4` ，沒有整數head_dim，應修設定，不是任意reshape到最接近的形狀。
 
 context預算也要明確。預設learned position表有64格，程式檢查past儲存長度加本次長度，不允許默默重設位置。padding占用實體cache格數，即使語意position由有效token數計算，也可能增加配置長度；這兩個限制要分開觀察。
 
@@ -34,9 +34,9 @@ context預算也要明確。預設learned position表有64格，程式檢查past
 
 ## Cache差異的最小排查順序
 
-先關dropout，固定權重和IDs，比較無cache的完整logits；再測prefill加單token，最後測past3加chunk2。印出每層cache shape、position_id與2×5allowed mask。正確矩陣是`11110 / 11111`，不是左上三角。
+先關dropout，固定權重和IDs，比較無cache的完整logits；再測prefill加單token，最後測past3加chunk2。印出每層cache shape、position_id與 $2\times 5\mathrm{allowed}$  mask。正確矩陣是`11110 / 11111`，不是左上三角。
 
-含padding時，key mask覆蓋past+new，下一個語意位置由有效token數決定；選下一token時取最後有效query，不取PAD。框架DynamicCache會更新狀態，每條對照路徑要用自己的新cache。若第一層已不同，先查輸入和位置；若到某層才不同，再查該層head合併、mask和dtype。
+含padding時，key mask覆蓋 $past+new$ ，下一個語意位置由有效token數決定；選下一token時取最後有效query，不取PAD。框架DynamicCache會更新狀態，每條對照路徑要用自己的新cache。若第一層已不同，先查輸入和位置；若到某層才不同，再查該層head合併、mask和dtype。
 
 ## 保存、hash與共享權重
 

@@ -14,7 +14,7 @@
 
 ## 來源與可見範圍
 
-self-attention的Q/K/V來自同一序列，cross-attention的Q來自一段、K/V來自另一來源。能否看未來由任務決定：整句分類可全可見，下一token預測通常限制key位置j<=query位置i。名稱本身不會替你加mask。
+self-attention的Q/K/V來自同一序列，cross-attention的Q來自一段、 $\frac{K}{V}$ 來自另一來源。能否看未來由任務決定：整句分類可全可見，下一token預測通常限制key位置j<=query位置i。名稱本身不會替你加mask。
 
 ## bool語意最容易相反
 
@@ -26,7 +26,7 @@ PyTorch F.scaled_dot_product_attention的bool True表示允許；nn.MultiheadAtt
 
 ## 直接測未來不變性
 
-第31例用lower-triangular allowed mask，將最後位置V加100，前3個輸出應完全不變；另比is_causal=True結果。這個測試比只看mask矩陣長得像三角更有力。若倒置True／False，可能仍產生有限值卻偷看未來。
+第31例用lower-triangular allowed mask，將最後位置V加100，前3個輸出應完全不變；另比 `is_causal=True` 結果。這個測試比只看mask矩陣長得像三角更有力。若倒置True／False，可能仍產生有限值卻偷看未來。
 
 ## dropout與eval
 
@@ -34,7 +34,7 @@ functional SDPA的dropout_p由你明確提供，不能以為外部model.eval會�
 
 ## 練習與解答
 
-L4的query第1個只能看key0；query最後可看0..3。解答：把每個query能看的索引寫出，再做擾動測試。若Q/K也改未來，前面的合法可見值依舊不該改；多層網路還需norm／其他運算不跨未來位置，「[一個Transformer Block：Attention、FFN、Norm與Residual](#46-transformer-bridge)」測完整小block。
+L4的query第1個只能看key0；query最後可看0..3。解答：把每個query能看的索引寫出，再做擾動測試。若 $\frac{Q}{K}$ 也改未來，前面的合法可見值依舊不該改；多層網路還需norm／其他運算不跨未來位置，「[一個Transformer Block：Attention、FFN、Norm與Residual](#46-transformer-bridge)」測完整小block。
 
 ## 完整可執行範例
 

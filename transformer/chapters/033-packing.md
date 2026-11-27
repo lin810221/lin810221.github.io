@@ -24,7 +24,7 @@ input的segment_ids為`[0,0,0,1,1]`；query僅讀相同segment且不晚於自己
 
 ## loss的分母是有效預測數
 
-假設兩個microbatch的NLL總和分別6與8，有效Token數分別2與8。整體平均應為(6+8)/(2+8)=1.4；直接平均兩個batch mean，得到(3+1)/2=2，權重不同。batch shape一樣也可能有效數不同，不能以步數取代Token分母。
+假設兩個microbatch的NLL總和分別6與8，有效Token數分別2與8。整體平均應為 $\frac{6+8}{2+8}=1.4$ ；直接平均兩個batch mean，得到 $\frac{3+1}{2}=2$ ，權重不同。batch shape一樣也可能有效數不同，不能以步數取代Token分母。
 
 $$
 L_{global}=\frac{\sum_b S_b}{\sum_b M_b}

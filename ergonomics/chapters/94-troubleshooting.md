@@ -31,11 +31,11 @@ FM或CM未知、適用未確認，或RWL為0時，不提供可用LI。這是正�
 
 ## 網頁與Markdown
 
-閱讀可直接開index.html，內容由已產生course-data.js離線載入。編輯chapters後回專案根目錄執行python tools/build.py ergonomics並重新整理，必要時重新開頁；保存的筆記在本機瀏覽器，不是已推送GitHub。
+閱讀可直接開index.html，內容由已產生course-data.js離線載入。編輯chapters後回專案根目錄執行python  `tools/build.py`  ergonomics並重新整理，必要時重新開頁；保存的筆記在本機瀏覽器，不是已推送GitHub。
 
 ## 練習與解答
 
-**先想一想：** $H=80cm$算不出LI，是否應改程式把H固定63以完成報告？
+**先想一想：** $H=80\mathrm{cm}$算不出LI，是否應改程式把H固定63以完成報告？
 
 <details><summary>展開驗算與理由</summary>
 

@@ -1,6 +1,6 @@
 # 卷積運算：局部感受、權重共享與cross-correlation
 
-用3×3影像與2×2kernel手算每個位置，理解CNN的結構偏好。
+用 $3\times 3$ 影像與 $2\times 2\mathrm{kernel}$ 手算每個位置，理解CNN的結構偏好。
 
 <!-- chapter-visual:start -->
 ## 圖解與讀圖任務
@@ -26,21 +26,21 @@ $$
 
 ## 四個輸出的手算
 
-輸入1..9排3×3，kernel[[1,0],[0,-1]]，stride1無padding。左上1-5=-4，其他位置2-6、4-8、5-9也都-4，輸出[1,1,2,2]。第21例直接用F.conv2d核對，沒有依賴下載影像。
+輸入1..9排 $3\times 3$ ，kernel[[1,0],[0,-1]]，stride1無padding。左上 $1-5=-4$ ，其他位置2-6、4-8、5-9也都-4，輸出[1,1,2,2]。第21例直接用F.conv2d核對，沒有依賴下載影像。
 
 ## Channel與參數
 
-Conv2d(inC,outC,K)的weight[outC,inC,K,K]，每個out channel聚合所有輸入channel；參數數outC×inC×K²+outC，與影像高寬無關。groups／depthwise會改連接結構，不能仍套一般全channel公式。
+Conv2d(inC,outC,K)的weight[outC,inC,K,K]，每個out channel聚合所有輸入channel；參數數 $outC\times inC\times K^{2}+outC$ ，與影像高寬無關。groups／depthwise會改連接結構，不能仍套一般全channel公式。
 
 ## Stride、padding與dilation的尺寸
 
-每個空間維度可獨立計算。設輸入長I、kernel長K、兩側各padding P、stride S、dilation D，dilation讓相鄰kernel元素相隔D個輸入位置。有效kernel跨度為D(K−1)+1；不能把K直接乘D，因為兩端之間只有K−1段間距。
+每個空間維度可獨立計算。設輸入長I、kernel長K、兩側各padding P、stride S、dilation D，dilation讓相鄰kernel元素相隔D個輸入位置。有效kernel跨度為 `D(K−1)+1` ；不能把K直接乘D，因為兩端之間只有 $K-1$ 段間距。
 
 $$
 O=\left\lfloor\frac{I+2P-D(K-1)-1}{S}+1\right\rfloor
 $$
 
-例如$I=8$、K=3、$P=1$、S=2、$D=1$，得到O=4。padding保留尺寸與真實資訊是不同概念；補的零不是額外觀測到的像素。
+例如$I=8$、 $K=3$ 、$P=1$、 $S=2$ 、$D=1$，得到 $O=4$ 。padding保留尺寸與真實資訊是不同概念；補的零不是額外觀測到的像素。
 
 ## 共享權重怎麼得到梯度
 

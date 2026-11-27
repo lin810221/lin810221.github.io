@@ -1,0 +1,51 @@
+{
+  "batch_id": "batch-002",
+  "after_seq": 4,
+  "through_seq": 8,
+  "events": [
+    {
+      "event_id": "evt-5",
+      "seq": 5,
+      "op": "upsert",
+      "order_id": 102,
+      "customer_id": 2,
+      "ordered_at": "2026-11-01T09:00:00Z",
+      "event_at": "2026-11-01T10:00:00Z",
+      "status": "paid",
+      "amount_cents": 4500
+    },
+    {
+      "event_id": "evt-6",
+      "seq": 6,
+      "op": "delete",
+      "order_id": 101,
+      "customer_id": 1,
+      "ordered_at": "2026-11-01T09:00:00Z",
+      "event_at": "2026-11-01T10:00:00Z",
+      "status": "paid",
+      "amount_cents": 3000
+    },
+    {
+      "event_id": "evt-7",
+      "seq": 7,
+      "op": "upsert",
+      "order_id": 105,
+      "customer_id": 2,
+      "ordered_at": "2026-11-03T09:00:00Z",
+      "event_at": "2026-11-03T10:00:00Z",
+      "status": "paid",
+      "amount_cents": 1000
+    },
+    {
+      "event_id": "evt-8",
+      "seq": 8,
+      "op": "upsert",
+      "order_id": 103,
+      "customer_id": 1,
+      "ordered_at": "2026-11-02T09:00:00Z",
+      "event_at": "2026-11-02T10:00:00Z",
+      "status": "paid",
+      "amount_cents": 2000
+    }
+  ]
+}

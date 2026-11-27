@@ -14,7 +14,7 @@
 
 ## 從最小模型開始
 
-17_train_segmenter.py使用3×3卷積、ReLU與1×1輸出head，訓練35步。這不是完整U-Net，但能驗證像素loss、梯度與驗證流程；當資料需要更大上下文或多尺度時，再換用U-Net等架構並保持相同評估契約。
+17_train_segmenter.py使用 $3\times 3$ 卷積、ReLU與 $1\times 1$ 輸出head，訓練35步。這不是完整U-Net，但能驗證像素loss、梯度與驗證流程；當資料需要更大上下文或多尺度時，再換用U-Net等架構並保持相同評估契約。
 
 <!-- example:17_train_segmenter.py -->
 

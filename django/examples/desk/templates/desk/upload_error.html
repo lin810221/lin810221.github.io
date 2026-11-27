@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<h1>請檢查上傳的文字檔</h1><form method="post" enctype="multipart/form-data" action="{% url 'desk:upload' task.pk %}">{% csrf_token %}{{ form.as_p }}<button>重新上傳</button></form>{% endblock %}

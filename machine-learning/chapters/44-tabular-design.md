@@ -18,7 +18,7 @@
 
 ## 混合前處理
 
-ColumnTransformer讓數值median+scale，類別MISSING+one-hot。保存名稱與順序，remainder是drop或passthrough要明確。新增欄位不應無意間改變模型輸入；本課schema拒絕缺少／多出keys，避免API悄悄接受未知結構。
+ColumnTransformer讓數值 $\mathrm{median}+\mathrm{scale}$ ，類別 $\mathrm{MISSING}+one-hot$ 。保存名稱與順序，remainder是drop或passthrough要明確。新增欄位不應無意間改變模型輸入；本課schema拒絕缺少／多出keys，避免API悄悄接受未知結構。
 
 ## 回歸的target特性
 

@@ -36,7 +36,7 @@
 
 兩骨端覆關節軟骨，中間為含滑液的關節腔，外有囊與支持構造；只顯示簡化截面。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/18-joint.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{18}-\mathrm{joint}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NIOSH：人體工學](https://www.cdc.gov/niosh/ergonomics/about/index.html)
 - [NCI：關節](https://training.seer.cancer.gov/anatomy/skeletal/articulations.html)
@@ -47,7 +47,7 @@
 
 整塊骨骼肌含肌束，肌束含多個肌纖維，肌纖維內含肌原纖維及重複肌節；肌纖維不是整條肌束。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/19-muscle-hierarchy.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{19}-\mathrm{muscle}-\mathrm{hierarchy}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NIOSH：人體工學](https://www.cdc.gov/niosh/ergonomics/about/index.html)
 - [NCI：肌肉](https://training.seer.cancer.gov/anatomy/muscular/structure.html)
@@ -58,7 +58,7 @@
 
 一般神經元含樹突、細胞體、軸突與末梢，部分軸突有髓鞘；神經是多軸突及支持組織的集合。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/22-neuron.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{22}-\mathrm{neuron}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NIOSH：人體工學](https://www.cdc.gov/niosh/ergonomics/about/index.html)
 - [NCI：神經組織](https://training.seer.cancer.gov/anatomy/nervous/tissue.html)

@@ -1,0 +1,9 @@
+{
+  "title": "SFT的資料與梯度路徑",
+  "alt": "資料經模板與遮罩形成模型輸入與labels，loss反向更新指定參數。",
+  "caption": "前向能跑、梯度能學、任務改善是三層驗收。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

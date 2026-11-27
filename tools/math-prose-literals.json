@@ -1,0 +1,661 @@
+{
+  "reviewed": "2026-11-24",
+  "literals": [
+    {
+      "token": "/mcp/mcp",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "130/80",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "130/85",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "4/4/9",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "4kcal/g",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "ACC/AHA",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "AI/CDRR",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Asia/Taipei",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "B-tree/GIN",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "BOS/EOS",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "C/gamma",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "CO₂",
+      "reason": "Chemical notation or immune-cell name, not a numerical equation."
+    },
+    {
+      "token": "CPU/Gloo",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "CPU/RAM",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Command(resume=...)",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "DSL/SQL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Exact/ANN",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Exact/HNSW/IVF-PQ",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Filter/metric",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Flat/HNSW/IVF-PQ",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "GI/GL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "GPU/DDP",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "ID/score",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "I²",
+      "reason": "Conventional standalone metric or method name; equations using it still require math markup."
+    },
+    {
+      "token": "K/V",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "L/min",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "L1/L2",
+      "reason": "Conventional standalone metric or method name; equations using it still require math markup."
+    },
+    {
+      "token": "Local/Faiss",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Martin/Hopkins",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "N/mm²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "NLL/PPL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "O₂",
+      "reason": "Chemical notation or immune-cell name, not a numerical equation."
+    },
+    {
+      "token": "O₂/kg/min",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "PAD/BOS/EOS",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "PER/TIM",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Precision/Recall",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Python/NumPy",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "RDA/AI",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "RPO/RTO",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "R²",
+      "reason": "Conventional standalone metric or method name; equations using it still require math markup."
+    },
+    {
+      "token": "SDK/SQL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "SQL/API",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Sampson/NIH",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "T/B",
+      "reason": "Chemical notation or immune-cell name, not a numerical equation."
+    },
+    {
+      "token": "TP/FP/FN/TN",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "Torch/Python/build/device",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "U/L",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "VA/DoD",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "WAL/translog",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "action/body",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "active/tenant",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "alpha/beta",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "best/history/config",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "best_model/best_loss",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "cm²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "collection/generation",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "consumer/generation",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "copies/headroom",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "detach/item",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "encode/decode",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "encode_query/encode_document",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "examples/README",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "expected/actual",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "feature/channel",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "features/classes",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "filter/fusion/persistence",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "flush/checkpoint",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "forward/backward",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "g/100",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "g/L",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "g/day",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "g/mL",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "gamma/beta",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "generation/worker",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "group/time",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "hash/recipe",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "headline/core",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "hit/miss",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "index/collection/partition",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "indices/values",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "input/output",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "input/target",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "kernel/stride/padding",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "key/value",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "keyword/typed",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "lexical/sparse",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "m/s²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mL/kg/min",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mL/min",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mL/min/1.73m²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "macro/micro",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "macro/micro/weighted",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "mean/scale",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "mean/std",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "metadata/ACL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "mg/L",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mg/dL",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mg/g",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mg/mg",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mg×2.5",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "missing/unexpected",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "mmol/L",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mmol/mol",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "mm²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "model/optimizer/loader",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "model/x/y/buffer",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "mol/L",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "m²",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "nDCG/MRR",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "nmol/L",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "pool/head",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "pred/target",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "profile/term",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "query/document",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "query/passsage",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "query/rerank",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "release_date/vintage",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "request/job",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "revision/tombstone",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "role/content",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "samples/s",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "save/load",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "save_checkpoint/load_checkpoint",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "schema/mapping",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "segment/merge",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "series/period",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "series/period/vintage",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "server/discover",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "server/extension",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "snapshot/CDC",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "snapshot/recovery",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "snapshot/watermark",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "source/index",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "source/target",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "source/vector",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "status/error",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "strict/relaxed",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "subscriptions/listen",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "sum/mean",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "target/context",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "teacher/student",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tenant/ACL",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tenant/active/recipe",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tenant/doc_id",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tenant/doc_id/revision",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tensor/pipeline",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "title/body",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tokens/s",
+      "reason": "Literal measurement unit, factor label, or slash-separated blood-pressure reading."
+    },
+    {
+      "token": "tools/call",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "train/test",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "train/val",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "train/val/test",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "train/valid",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "train_epoch/evaluate",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "try/finally",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "tuple/dict",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "upsert/delete",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "val/test",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "validation/test",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "venv/bin/python",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "weight/bias",
+      "reason": "Technical name, resource path, or slash-separated alternatives; not mathematical division."
+    },
+    {
+      "token": "VO₂max",
+      "reason": "Conventional name of an exercise physiology measure; not an unformatted numerical equation."
+    },
+    {
+      "token": "VO₂peak",
+      "reason": "Conventional name of an exercise physiology measure; not an unformatted numerical equation."
+    },
+    {
+      "token": "τ²",
+      "reason": "Standalone conventional variance-component name in a lesson title; equations containing it still require math delimiters."
+    }
+  ]
+}

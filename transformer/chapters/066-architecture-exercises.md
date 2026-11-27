@@ -26,9 +26,9 @@ Seq2seq 的來源有 100 tokens、答案有 20 tokens。請列 encoder self-atte
 
 ## 題目三：GQA 的實際形狀
 
-hidden size=32、query heads=4、KV heads=2、head dim=8，batch=1、長度=10。Q、K、V 各為何？如果手寫示範先將 K、V 重複成四個頭，是否已證明 GQA 的最佳化記憶體優勢？
+hidden  `size=32` 、query  `heads=4` 、KV  `heads=2` 、head  `dim=8` ， `batch=1` 、長度=10。Q、K、V 各為何？如果手寫示範先將 K、V 重複成四個頭，是否已證明 GQA 的最佳化記憶體優勢？
 
-**解析：** Q 為 1×4×10×8，K、V 各 1×2×10×8。重複可用來驗證數學結果，但展開後的暫時張量增加成本；應將未展開 cache、注意力 kernel 與峰值量測分開。能算出正確輸出與能高效執行是兩個驗收層次。
+**解析：** Q 為  $1\times 4\times 10\times 8$ ，K、V 各  $1\times 2\times 10\times 8$ 。重複可用來驗證數學結果，但展開後的暫時張量增加成本；應將未展開 cache、注意力 kernel 與峰值量測分開。能算出正確輸出與能高效執行是兩個驗收層次。
 
 ## 題目四：MoE 的總量與活躍量
 

@@ -14,17 +14,17 @@
 
 ## 預測機率不等於最後行動
 
-模型給P(Y=1|x)，決策規則才決定是否處理。threshold .5是一個常見預設，不代表任何成本、稀有比例或容量下都最佳。把門檻當超參數：可以在獨立val或內部CV選，不能直接看最終test挑。
+模型給 $P\left(Y=1\mid x\right)$ ，決策規則才決定是否處理。threshold .5是一個常見預設，不代表任何成本、稀有比例或容量下都最佳。把門檻當超參數：可以在獨立val或內部CV選，不能直接看最終test挑。
 
 ## 手算成本曲線
 
-$y=[1,1,0,0]$、scores=[.9,.4,.8,.1]。FN成本5、FP成本1：threshold .5時FN1+FP1，成本6；threshold .4時TP2、FP1、FN0，成本1。因此更低threshold在這份validation更合適。相同成本時本課選較低門檻作固定tie-break，並明確記錄。
+$y=[1,1,0,0]$、 $\mathrm{scores}=[.9,.4,.8,.1]$ 。FN成本5、FP成本1：threshold .5時 $\mathrm{FN}1+\mathrm{FP}1$ ，成本6；threshold .4時TP2、FP1、FN0，成本1。因此更低threshold在這份validation更合適。相同成本時本課選較低門檻作固定tie-break，並明確記錄。
 
 $$
 C(t)=c_{FN}\,FN(t)+c_{FP}\,FP(t)
 $$
 
-若機率正確校準、每筆成本固定且只有兩個錯誤成本，理論閾值為c_FP/(c_FP+c_FN)；資料有限、校準有誤或有容量約束時，需再驗證，不機械套公式。
+若機率正確校準、每筆成本固定且只有兩個錯誤成本，理論閾值為 $\frac{c_{\mathrm{FP}}}{c_{\mathrm{FP}}+c_{\mathrm{FN}}}$ ；資料有限、校準有誤或有容量約束時，需再驗證，不機械套公式。
 
 ## 目前API的實作
 

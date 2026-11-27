@@ -6,13 +6,13 @@
 
 ## Query與記憶來源可以不同
 
-翻譯時，正在生成的目標序列可提供Q，完整來源句的encoder表示提供K/V，這就是常見CrossAttention。若目標有T_q=2個位置、來源有T_k=3個位置，分數是2×3；輸出長度跟query走，不是跟來源長度走。來源padding仍不可讀，但通常不需套目標與來源位置的普通下三角。
+翻譯時，正在生成的目標序列可提供Q，完整來源句的encoder表示提供 $\frac{K}{V}$ ，這就是常見CrossAttention。若目標有 $T_{q}=2$ 個位置、來源有 $T_{k}=3$ 個位置，分數是 $2\times 3$ ；輸出長度跟query走，不是跟來源長度走。來源padding仍不可讀，但通常不需套目標與來源位置的普通下三角。
 
 自回歸Decoder自己的SelfAttention仍要causal；CrossAttention能讀完整來源是因為來源在生成開始前已知。這兩個模組的可見性條件不同，不是Decoder所有Attention都一律封住右上角。若來源也是逐步串流，則需另一份明確可見性設計。
 
 ## 一組可核對的張量
 
-令Q為`[B=1,H=1,T_q=2,d_h=2]`，K為`[1,1,3,2]`，V為`[1,1,3,1]`。以下示範不下載模型的基本介面，mask的True表示允許；正式範例另有測試與誤差容忍。
+令Q為 `[B=1,H=1,T_q=2,d_h=2]` ，K為`[1,1,3,2]`，V為`[1,1,3,1]`。以下示範不下載模型的基本介面，mask的True表示允許；正式範例另有測試與誤差容忍。
 
 ```python
 import math
@@ -39,13 +39,13 @@ assert torch.allclose(actual, reference, atol=1e-6, rtol=1e-5)
 
 `scaled_dot_product_attention`接收已形成的Q/K/V，不替你建立Token Embedding、投影矩陣、RoPE、合頭、W_O或殘差。它不是完整Transformer層，也不會自動理解文件邊界或聊天角色。你提供什麼shape、位置與mask，它就按該契約計算。
 
-函式預設尺度依Q/K最後維度；布林mask True允許、float mask加入分數。與MHA的布林遮罩方向相反，移植時要明確轉換。對有cache的矩形causal情境，使用前一單元推導的絕對位置allowed，不把非方形is_causal直接當成後綴對齊。
+函式預設尺度依 $\frac{Q}{K}$ 最後維度；布林mask True允許、float mask加入分數。與MHA的布林遮罩方向相反，移植時要明確轉換。對有cache的矩形causal情境，使用前一單元推導的絕對位置allowed，不把非方形is_causal直接當成後綴對齊。
 
 ## eval不會替函式改dropout_p
 
 SDPA依你傳入的dropout_p執行，即使包住它的模組已eval，也要由forward把p設成0。常見寫法是`p if self.training else 0.0`。若測cached與完整前綴時忘記關閉dropout，隨機差異可能掩蓋真正的mask錯誤，或讓你誤判正確實作不一致。
 
-相反地，訓練若永遠硬寫dropout_p=0，也不是有設定Dropout參數就自動生效。要以實際呼叫值與模式測試，不能只看config中有一個p欄位便宣稱正則化已使用。
+相反地，訓練若永遠硬寫 `dropout_p=0` ，也不是有設定Dropout參數就自動生效。要以實際呼叫值與模式測試，不能只看config中有一個p欄位便宣稱正則化已使用。
 
 ## 後端相容與數值誤差
 

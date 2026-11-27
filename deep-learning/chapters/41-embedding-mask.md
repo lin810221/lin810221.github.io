@@ -18,7 +18,7 @@ token ID是離散索引，Embedding(V,D)回傳對應列，輸入long[N,T]→[N,T
 
 ## PAD列與平均分母
 
-padding_idx=0讓對應列在一般訓練不更新；若做mean pooling，仍需只除有效token數。補零後對所有T平均會讓短句表示依PAD量改變。全空序列要明確拒絕或設計EMPTY規則，不默默除0。
+ `padding_idx=0` 讓對應列在一般訓練不更新；若做mean pooling，仍需只除有效token數。補零後對所有T平均會讓短句表示依PAD量改變。全空序列要明確拒絕或設計EMPTY規則，不默默除0。
 
 $$
 u_i=\frac{\sum_t m_{i,t}e_{i,t}}{\sum_t m_{i,t}}

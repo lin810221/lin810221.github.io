@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<p class="eyebrow">WELCOME BACK</p><h1>回到你的學習空間。</h1><form method="post">{% csrf_token %}{{ form.as_p }}<input type="hidden" name="next" value="{{ next }}"><button>登入</button></form><p><a href="{% url 'signup' %}">建立帳號</a> · <a href="{% url 'password_reset' %}">忘記密碼</a></p>{% endblock %}

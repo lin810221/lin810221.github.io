@@ -26,7 +26,7 @@ $$
 
 ## 手算範例
 
-$y=[1,1,0,0]$，scores=[.9,.4,.8,.1]，threshold=.5，$TP=FP=FN=TN=1$，$\operatorname{precision}=\operatorname{recall}=F1=.5$。threshold=.85只接受第一筆，$\operatorname{precision}=1$、$\operatorname{recall}=.5$。這些是固定分數的決策變化，不是重新訓練。
+$y=[1,1,0,0]$， $\mathrm{scores}=[.9,.4,.8,.1]$ ， `threshold=.5` ，$TP=FP=FN=TN=1$，$\operatorname{precision}=\operatorname{recall}=F1=.5$。 `threshold=.85` 只接受第一筆，$\operatorname{precision}=1$、$\operatorname{recall}=.5$。這些是固定分數的決策變化，不是重新訓練。
 
 ## ROC與PR
 
@@ -38,7 +38,7 @@ ROC看TPR與FPR的門檻軌跡，AUC衡量正負排序關係；PR看precision與
 
 ## 練習與解答
 
-1000筆只有10正例，全猜負accuracy=.99但recall=0。解答：以支持數、PR與決策成本判斷，別把.99當成功。預測分數整體做嚴格單調轉換，排序指標可維持，固定.5門檻與機率品質卻可能不同。真實threshold在validation選，「[決策門檻：成本、容量與TunedThresholdClassifierCV](#33-thresholds)」會實作。
+1000筆只有10正例，全猜負 $\mathrm{accuracy}=.99$ 但 $\mathrm{recall}=0$ 。解答：以支持數、PR與決策成本判斷，別把.99當成功。預測分數整體做嚴格單調轉換，排序指標可維持，固定.5門檻與機率品質卻可能不同。真實threshold在validation選，「[決策門檻：成本、容量與TunedThresholdClassifierCV](#33-thresholds)」會實作。
 
 ## 完整可執行範例
 

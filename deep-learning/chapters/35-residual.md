@@ -26,11 +26,11 @@ $$
 
 ## 位置與形狀
 
-相加兩邊shape需相容且語意一致，channel或stride改變時可用projection shortcut，例如1×1 conv。post-add ReLU會改負值與Jacobian；pre-activation／pre-norm變體又有不同路徑，不把所有ResNet畫成同一圖。
+相加兩邊shape需相容且語意一致，channel或stride改變時可用projection shortcut，例如 $1\times 1$  conv。post-add ReLU會改負值與Jacobian；pre-activation／pre-norm變體又有不同路徑，不把所有ResNet畫成同一圖。
 
 ## 精確小例
 
-第24例令Linear分支weight/bias全零，直接返回x+branch(x)，沒有加後ReLU。輸入[1,-2]保持原值，Jacobian為I，實際用torch.autograd.functional.jacobian核對。此測試因刻意控制結構才應精確，不能套到含ReLU的所有block。
+第24例令Linear分支weight/bias全零，直接返回 $x+\mathrm{branch}(x)$ ，沒有加後ReLU。輸入[1,-2]保持原值，Jacobian為I，實際用torch.autograd.functional.jacobian核對。此測試因刻意控制結構才應精確，不能套到含ReLU的所有block。
 
 ## 模型設計的比較
 

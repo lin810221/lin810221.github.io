@@ -1,0 +1,9 @@
+{
+  "title": "雲端微調工作與評估是兩條狀態線",
+  "alt": "工作由驗證進入執行，成功只表示服務完成，尚需獨立評估才能部署。",
+  "caption": "工作成功不等於模型品質合格。",
+  "sources": [
+    "https://developers.openai.com/api/docs/guides/supervised-fine-tuning"
+  ],
+  "license": "original educational diagram"
+}

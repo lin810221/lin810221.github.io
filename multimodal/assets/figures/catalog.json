@@ -1,0 +1,386 @@
+[
+  {
+    "id": "figure-01",
+    "file": "assets/figures/01.svg",
+    "title": "PDF副檔名沒有告訴你頁面是哪一種",
+    "alt": "逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。",
+    "readingTask": "逐列比較文字層與影像，決定先解析還是OCR；說明同一PDF內為何仍要逐頁檢查。",
+    "caption": "空的原生文字結果不代表空白頁，也不能直接補出欄位。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/app1.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-02",
+    "file": "assets/figures/02.svg",
+    "title": "從文件到資料，保留可回查的證據鏈",
+    "alt": "沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。",
+    "readingTask": "沿來源雜湊、頁面與區域走到欄位，再找到引用如何回到原文件。",
+    "caption": "JSON格式正確只是第一道門；內容仍須驗證。",
+    "sources": [
+      "https://docs.pydantic.dev/latest/concepts/models/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-03",
+    "file": "assets/figures/03.svg",
+    "title": "point、pixel與正規化座標",
+    "alt": "找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。",
+    "readingTask": "找出左上原點與區域的兩個角；計算144 DPI時座標如何縮放，說明正規化值仍需附座標系。",
+    "caption": "本圖是未旋轉頁面的左上座標；PDF底層座標不可直接混用。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/rect.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-04",
+    "file": "assets/figures/04.svg",
+    "title": "裁切與旋轉需要保留反向變換",
+    "alt": "追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。",
+    "readingTask": "追蹤原頁區域到裁切圖，再將局部框還原；指出只儲存小圖座標會失去哪個定位資訊。",
+    "caption": "旋轉後頁面寬高也會互換；不是只改一個角度欄位。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/matrix.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-05",
+    "file": "assets/figures/05.svg",
+    "title": "PDF頁面是物件與圖層，不是普通文字檔",
+    "alt": "比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。",
+    "readingTask": "比較可見畫面、文字物件和影像，指出複製文字成功仍無法證明欄位順序正確。",
+    "caption": "保留原頁並以區域回查，避免把扁平字串當完整文件。",
+    "sources": [
+      "https://pypdf.readthedocs.io/en/stable/user/extract-text.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-06",
+    "file": "assets/figures/06.svg",
+    "title": "原生文字與OCR採不同的取證路線",
+    "alt": "辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。",
+    "readingTask": "辨認兩條路線的共同輸出是附座標的文字，再指出OCR多出來的辨識與品質責任。",
+    "caption": "文字層可有錯誤或過期OCR，仍需抽樣視覺核對。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/ocr/index.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-07",
+    "file": "assets/figures/07.svg",
+    "title": "OCR是定位、方向與辨識的組合",
+    "alt": "指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。",
+    "readingTask": "指出偵測框、方向分類與字串各自可能出錯的位置；區分辨識分數與經校準的正確機率。",
+    "caption": "主線真實執行PP-OCRv6；手寫與繁中精度需另做目標測試。",
+    "sources": [
+      "https://rapidai.github.io/RapidOCRDocs/main/quickstart/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-08",
+    "file": "assets/figures/08.svg",
+    "title": "字元錯誤必須先對齊再計數",
+    "alt": "逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。",
+    "readingTask": "逐字找出替換，說明插入與刪除也要計入，以及空參考字串為何需要另一個處理政策。",
+    "caption": "CER可能大於1；它不是被限制在百分之百的正確率。",
+    "sources": [
+      "https://www.nist.gov/itl/iad/mig/tools"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-09",
+    "file": "assets/figures/09.svg",
+    "title": "閱讀順序不能只按全頁縱座標排序",
+    "alt": "對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。",
+    "readingTask": "對照左右兩欄與跨欄錯誤箭頭，說明先分區再讀的前提，以及標題跨欄時要另外處理。",
+    "caption": "本課雙欄規則只適用合成版型；不是通用版面模型。",
+    "sources": [
+      "https://arxiv.org/abs/2204.08387"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-10",
+    "file": "assets/figures/10.svg",
+    "title": "文件中介表示保留層級與來源身分",
+    "alt": "從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。",
+    "readingTask": "從文件走到頁面和字詞，再找出欄位引用需要哪四個資訊；指出頁碼相同不代表來源相同。",
+    "caption": "圖形、表格與欄位可增加節點型別，不要只拼接成字串。",
+    "sources": [
+      "https://arxiv.org/abs/2204.08387"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-11",
+    "file": "assets/figures/11.svg",
+    "title": "表格的列、欄與金額是一個共同契約",
+    "alt": "從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。",
+    "readingTask": "從Cable列追蹤數量、單價與列金額，再核對小計；說明只擷取所有數字仍無法重建表格關係。",
+    "caption": "主線使用明確框線；無框表、合併欄位與跨頁需另驗證。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/page.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-12",
+    "file": "assets/figures/12.svg",
+    "title": "表單欄位與印刷文字是不同來源",
+    "alt": "比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。",
+    "readingTask": "比較視覺鍵值配對和PDF互動欄位，指出為何不能因為欄位物件有值，就省略可見頁面核對。",
+    "caption": "數位簽章、checkbox與XFA不能直接當作普通文字框。",
+    "sources": [
+      "https://pypdf.readthedocs.io/en/stable/user/forms.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-13",
+    "file": "assets/figures/13.svg",
+    "title": "結構、業務條件與證據分三道驗收",
+    "alt": "逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。",
+    "readingTask": "逐項檢查型別、4500與225是否對成4725，以及每個欄位是否可回到來源區域。",
+    "caption": "缺值保留unknown，不以猜測讓結構看起來完整。",
+    "sources": [
+      "https://docs.pydantic.dev/latest/concepts/strict_mode/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-14",
+    "file": "assets/figures/14.svg",
+    "title": "高分不能越過證據與業務規則",
+    "alt": "逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。",
+    "readingTask": "逐列比較unknown、review、accept的差異；指出一個高分但引用錯頁的值應走哪條路。",
+    "caption": "分數門檻是政策；校準和漏失成本必須另行評估。",
+    "sources": [
+      "https://docs.pydantic.dev/latest/concepts/models/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-15",
+    "file": "assets/figures/15.svg",
+    "title": "圖文對比學習的正配對在對角線",
+    "alt": "找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。",
+    "readingTask": "找出兩個方向的正例與負例，說明batch內重複語意為何可能形成假負例。",
+    "caption": "範例用手工矩陣演算損失，不冒稱訓練出CLIP。",
+    "sources": [
+      "https://arxiv.org/abs/2103.00020"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-16",
+    "file": "assets/figures/16.svg",
+    "title": "視覺編碼器、連接層與語言模型",
+    "alt": "沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。",
+    "readingTask": "沿影像patch走到視覺token與語言輸出，指出OCR文字在哪裡可作補充，以及生成仍可能幻覺。",
+    "caption": "此為架構圖；不代表各供應商公開了相同內部實作。",
+    "sources": [
+      "https://arxiv.org/abs/2304.08485"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-17",
+    "file": "assets/figures/17.svg",
+    "title": "三種API保留各自的請求契約",
+    "alt": "逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。",
+    "readingTask": "逐列辨認PDF輸入和結構化輸出所在位置，不要把某家JSON鍵直接貼到另一家。",
+    "caption": "Gemini範例使用穩定v1；模型ID由使用者明確指定。",
+    "sources": [
+      "https://aistudio.google.com/docs/structured-output"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-18",
+    "file": "assets/figures/18.svg",
+    "title": "直接送PDF與逐頁送圖有不同責任",
+    "alt": "比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。",
+    "readingTask": "比較頁面視覺、文字層與自己產生影像兩條輸入，指出使用者設定解析度後仍要核對哪些限制。",
+    "caption": "本課inline上限為2MB，是教材預算，不是供應商最大值。",
+    "sources": [
+      "https://developers.openai.com/api/docs/guides/file-inputs"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-19",
+    "file": "assets/figures/19.svg",
+    "title": "答案需要指向支持它的頁面區域",
+    "alt": "從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。",
+    "readingTask": "從47.25回到第一頁的區域，說明字串4725的資料單位與頁面小數金額為何不同。",
+    "caption": "引用支持「來源寫什麼」，不保證來源內容本身真實。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/page.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-20",
+    "file": "assets/figures/20.svg",
+    "title": "全頁有答案，不代表這個引用框就有效",
+    "alt": "比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。",
+    "readingTask": "比較總額區與錯誤上方區域，檢查quote必須來自框內文字，不能只做全頁子字串搜尋。",
+    "caption": "旋轉頁與OCR多邊形還需轉回同一個座標契約。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/textpage.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-21",
+    "file": "assets/figures/21.svg",
+    "title": "文件檢索保留頁面與權限層級",
+    "alt": "沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。",
+    "readingTask": "沿文件、頁面到區域chunk追蹤來源與租戶標記，指出權限過濾應在排序前還是排序後。",
+    "caption": "只在最後隱藏卡片，無法撤回已送進模型的私人內容。",
+    "sources": [
+      "https://arxiv.org/abs/2407.01449"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-22",
+    "file": "assets/figures/22.svg",
+    "title": "單向量與late interaction保留不同資訊",
+    "alt": "逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。",
+    "readingTask": "逐列找query token的最佳頁面token，說明此總分不是機率，也會受query長度影響。",
+    "caption": "範例向量是手工數值；真實頁面embedding需另載入模型。",
+    "sources": [
+      "https://arxiv.org/abs/2407.01449"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-23",
+    "file": "assets/figures/23.svg",
+    "title": "文字、欄位、定位和文件成功率分開量測",
+    "alt": "選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。",
+    "readingTask": "選一個錯誤案例，指出它會影響哪個分數，並說明為何一個平均分數無法代表整份文件可自動交付。",
+    "caption": "先定義正規化、缺值、分母與文件級切分，再計算指標。",
+    "sources": [
+      "https://arxiv.org/abs/2007.00398"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-24",
+    "file": "assets/figures/24.svg",
+    "title": "風險與覆蓋率用同一批樣本解讀",
+    "alt": "在門檻0.9下數保留筆數與錯誤筆數，再說明提高門檻不保證每個小樣本的風險單調下降。",
+    "readingTask": "在門檻0.9下數保留筆數與錯誤筆數，再說明提高門檻不保證每個小樣本的風險單調下降。",
+    "caption": "這四筆是教學fixture，不是模型準確度報告。",
+    "sources": [
+      "https://arxiv.org/abs/1706.04599"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-25",
+    "file": "assets/figures/25.svg",
+    "title": "文件內容是資料，不是系統指令",
+    "alt": "找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。",
+    "readingTask": "找出惡意文字穿越信任邊界的路徑，再指出工具執行為何不能由文件裡的一句話授權。",
+    "caption": "遮住畫面、刪除URL或加入提示語，不能單獨完成隔離。",
+    "sources": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-26",
+    "file": "assets/figures/26.svg",
+    "title": "黑色方塊與真正移除內容是不同操作",
+    "alt": "比較覆蓋畫面後仍可擷取的文字，和移除文字物件後的結果；指出其他圖層與metadata仍要另驗證。",
+    "readingTask": "比較覆蓋畫面後仍可擷取的文字，和移除文字物件後的結果；指出其他圖層與metadata仍要另驗證。",
+    "caption": "本課只驗證合成PDF的指定欄位；不是任意檔案的匿名化認證。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/page.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-27",
+    "file": "assets/figures/27.svg",
+    "title": "音訊取樣與逐字稿時間是兩層資料",
+    "alt": "在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。",
+    "readingTask": "在1500毫秒找唯一有效區間，說明WAV取樣數、轉錄文字、說話者與語言是不同驗證項目。",
+    "caption": "範例音訊是合成純音，逐字稿為人工fixture，未執行ASR。",
+    "sources": [
+      "https://docs.python.org/3.14/library/wave.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-28",
+    "file": "assets/figures/28.svg",
+    "title": "影片抽幀保留時間，不能只保留圖片",
+    "alt": "讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。",
+    "readingTask": "讀四個時間戳並推測中間未取樣的區段，說明事件召回率與取樣間隔的關係。",
+    "caption": "可執行範例解碼動畫GIF；MP4與聲畫同步另需FFmpeg或模型驗證。",
+    "sources": [
+      "https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-29",
+    "file": "assets/figures/29.svg",
+    "title": "DocWeave產物包含值、來源和可檢查的畫面",
+    "alt": "從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。",
+    "readingTask": "從原PDF走到欄位與表格，再找review.html如何和同一份來源及manifest連接。",
+    "caption": "掃描文件可跑真實OCR，但未通過相同契約前不自動發布。",
+    "sources": [
+      "https://docs.pydantic.dev/latest/concepts/models/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-30",
+    "file": "assets/figures/30.svg",
+    "title": "不可變產物與目前指標分開提交",
+    "alt": "在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。",
+    "readingTask": "在manifest已驗證但current尚未替換時中斷，說明讀者仍看到舊狀態以及重跑如何完成切換。",
+    "caption": "原子替換是本機程序層的邊界，不等同跨服務或斷電保證。",
+    "sources": [
+      "https://docs.python.org/3.14/library/os.html#os.replace"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-31",
+    "file": "assets/figures/31.svg",
+    "title": "內容快取不能忽略處理配方與租戶",
+    "alt": "逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。",
+    "readingTask": "逐列決定是否可重用結果，指出相同文件雜湊為何不能取代授權檢查。",
+    "caption": "產物雜湊是損壞偵測；不能取代可信寫入者或數位簽章。",
+    "sources": [
+      "https://docs.python.org/3.14/library/hashlib.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-32",
+    "file": "assets/figures/32.svg",
+    "title": "維運同時記錄品質、資源與資料版本",
+    "alt": "沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。",
+    "readingTask": "沿來源、模型和schema三條版本線檢查一次升級，選出需要重跑的文字、欄位、引用與恢復測試。",
+    "caption": "版本以2026-11-27查核為準；大型VLM、付費API與雲端服務未代跑。",
+    "sources": [
+      "https://pymupdf.readthedocs.io/en/latest/installation.html"
+    ],
+    "license": "original educational diagram"
+  }
+]

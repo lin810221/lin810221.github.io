@@ -14,7 +14,7 @@
 
 ## Index 是查詢結構也是管理單位
 
-Elasticsearch index 包含 mapping、設定與 shards。欄位用 text 才能經過分析，用 keyword 保留精確值供 Filter、排序與聚合。數字、日期與 bool 應使用明確型別。本課設定 dynamic=strict，未宣告欄位會失敗，讓 schema 變更在匯入時被看見，而不是默默生成不一致資料。
+Elasticsearch index 包含 mapping、設定與 shards。欄位用 text 才能經過分析，用 keyword 保留精確值供 Filter、排序與聚合。數字、日期與 bool 應使用明確型別。本課設定  `dynamic=strict` ，未宣告欄位會失敗，讓 schema 變更在匯入時被看見，而不是默默生成不一致資料。
 
 ## 定義必要欄位
 
@@ -36,7 +36,7 @@ title/body 使用 text；tenant、doc_id、recipe、category 使用 keyword；re
 
 ## 練習與解答
 
-**請先嘗試：** dynamic=strict 是否能代替文件的業務驗證？
+**請先嘗試：**  `dynamic=strict`  是否能代替文件的業務驗證？
 
 <details><summary>展開解答與判斷依據</summary>
 

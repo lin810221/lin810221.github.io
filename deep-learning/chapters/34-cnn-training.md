@@ -14,11 +14,11 @@
 
 ## 先用能解釋的資料
 
-生成180張1×8×8灰階圖，水平／垂直雙像素帶加固定分布noise，位置在合理範圍隨機。shuffle後108train、36val、36test。這個任務讓你檢查局部方向與位置變動，沒有把線條成績當真實影像能力。
+生成180張 $1\times 8\times 8$ 灰階圖，水平／垂直雙像素帶加固定分布noise，位置在合理範圍隨機。shuffle後108train、36val、36test。這個任務讓你檢查局部方向與位置變動，沒有把線條成績當真實影像能力。
 
 ## 架構帳本
 
-Conv1→6 K3/P1得到[N,6,8,8]，ReLU；Conv6→8 K3/P1/S2得到[N,8,4,4]，ReLU；Flatten128→Linear2 logits。分類CE用long[N]，每輪train+val，保存val最低loss模型，最後才test。
+Conv1→6  $\frac{K3}{P1}$ 得到[N,6,8,8]，ReLU；Conv6→8  $\frac{\frac{K3}{P1}}{S2}$ 得到[N,8,4,4]，ReLU；Flatten128→Linear2 logits。分類CE用long[N]，每輪 $\mathrm{train}+\mathrm{val}$ ，保存val最低loss模型，最後才test。
 
 ## 驗證要看什麼
 
@@ -34,7 +34,7 @@ RGB／灰階、CHW／HWC、0..255／0..1、resize、缺失檔案與label mapping
 
 ## 練習與解答
 
-輸入改16×16，同stride後為[N,8,8,8]，Flatten512，舊Linear128不相容。解答：推算後改head或採適當adaptive pooling，重新驗證。分辨率與噪音改變也改任務分布，不拿不同資料成績直接說架構進步。
+輸入改 $16\times 16$ ，同stride後為[N,8,8,8]，Flatten512，舊Linear128不相容。解答：推算後改head或採適當adaptive pooling，重新驗證。分辨率與噪音改變也改任務分布，不拿不同資料成績直接說架構進步。
 
 ## 完整可執行範例
 

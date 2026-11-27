@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark">
+<meta name="description" content="依領域、學習起點與標籤探索完整課程。從 AI、健康到統計、網站工程與經濟，為下一個好奇找到方向。">
+<title>Learning Notes · 學習空間</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/library.css">
+<script src="assets/library-data.js" defer></script><script src="assets/library.js" defer></script>
+</head>
+<body class="library-page catalog-page" data-card-view="detailed">
+<a class="skip-link" href="#main">跳至主要內容</a>
+<header class="library-header"><a class="brand" href="index.html"><span class="brand-mark">ln<span>·</span></span><span>學習筆記<span class="brand-sub">LEARNING NOTES</span></span></a><div class="library-header-actions"><span class="header-note classic-header-note" data-view-only="compact" hidden><span class="status-dot"></span> 個人的知識，慢慢長成系統。</span><nav class="library-top-nav" data-view-only="detailed" aria-label="首頁導覽"><a href="#explore">探索領域</a><a href="#learning-routes">學習路線</a><a href="#course-library">所有課程 <span aria-hidden="true">↗</span></a></nav><div class="card-view-switch enhancement" hidden role="group" aria-label="課程牌卡顯示方式"><button type="button" data-card-view-option="compact" aria-pressed="false" aria-controls="course-results" title="原版首頁：單欄課程清單與左圖右文的大圖牌卡">簡易版</button><button type="button" data-card-view-option="detailed" aria-pressed="true" aria-controls="course-results" title="新版首頁：領域分類、學習路線、搜尋與 tag 篩選">詳細版</button></div><span id="card-view-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></span></div></header>
+<main id="main" class="library-main">
+<section class="classic-intro" data-view-only="compact" hidden aria-labelledby="classic-library-title"><div class="eyebrow">A SPACE FOR CURIOSITY <span>／ 學習空間</span></div><h1 id="classic-library-title">把好奇，<br>變成<span class="accent">理解。</span></h1><p class="library-intro">一次專注一個領域。從第一個概念到親手實作，<br class="desktop-only">讓每一份筆記，都成為可以反覆回來的地方。</p><div class="library-section-label"><span>探索領域</span><span class="mono">$total SUBJECTS</span></div></section>
+<section data-view-only="detailed" class="library-hero" aria-labelledby="library-title"><div><div class="eyebrow">A SPACE FOR CURIOSITY <span>／ 學習空間</span></div><h1 id="library-title">把好奇，<br>變成<span class="accent">理解。</span></h1><p class="library-intro">從感興趣的領域出發，找到適合的學習起點。<br>每一門課，都是一段可以慢慢走完的完整旅程。</p><a href="#explore" class="hero-explore">找到你的下一門課 <span aria-hidden="true">↓</span></a></div><aside class="library-at-a-glance" aria-label="課程空間概況"><span class="eyebrow">YOUR KNOWLEDGE, CONNECTED</span><div class="library-numbers"><div><strong>$total</strong><span>完整課程</span></div><div><strong>$domain_total</strong><span>知識領域</span></div><div><strong>$unit_total</strong><span>閱讀單元</span></div></div><div class="knowledge-lines" aria-hidden="true"><span>理解原理</span><i></i><span>連結知識</span><i></i><span>走進生活</span></div><p>循序理解，也可以自由探索。<br>課程可離線閱讀，筆記與進度保存在目前的瀏覽器。</p></aside></section>
+<section id="continue-learning" class="continue-section" hidden aria-labelledby="continue-title"><div class="section-heading"><div><span class="eyebrow">KEEP YOUR CURIOSITY GOING</span><h2 id="continue-title">接著學下去</h2></div><p>依課程順序列出已開始的課；回到上次閱讀，或接續未完成的單元。</p></div><div id="continue-courses" class="continue-grid"></div></section>
+<section data-view-only="detailed" id="explore" aria-labelledby="explore-title"><div class="section-heading"><div><span class="eyebrow">EXPLORE BY DOMAIN</span><h2 id="explore-title">先選一個感興趣的領域</h2></div><a class="all-domains enhancement" hidden href="#course-library" data-domain="all">瀏覽全部 $total 門 ↗</a></div><div class="domain-grid">$domain_cards</div></section>
+<section data-view-only="detailed" id="learning-routes" class="routes-section" aria-labelledby="routes-title"><div class="section-heading"><div><span class="eyebrow">A LITTLE DIRECTION</span><h2 id="routes-title">不知道從哪裡開始？</h2></div><p>選一條建議路線。先備知識是方向，每門課都能獨立閱讀。</p></div><div class="routes-grid">$routes</div></section>
+<section id="course-library" aria-labelledby="catalog-title"><div class="section-heading" data-view-only="detailed"><div><span class="eyebrow">THE COURSE LIBRARY</span><h2 id="catalog-title">找到下一門課</h2></div><p>依領域與主題分組，從入門到進階排列。</p></div>
+<div class="filter-panel enhancement" data-view-only="detailed" hidden>
+<div class="catalog-search-row"><label class="catalog-search"><span aria-hidden="true">⌕</span><span class="sr-only">搜尋課程名稱、主題或標籤</span><input id="course-search" type="search" placeholder="搜尋課程、主題或 tag…" autocomplete="off" aria-controls="course-results"></label><label class="domain-select-label">領域<select id="domain-filter" aria-controls="course-results"><option value="all">全部領域</option></select></label></div>
+<div class="filter-line"><span class="filter-label">學習起點</span><div class="filter-pills" role="group" aria-label="依學習起點篩選">$level_filters</div></div>
+<p class="level-explanation">起點代表建議先備程度；每門完整課程仍包含課內進階內容。</p>
+<div class="filter-line tag-filter-line"><span class="filter-label">主題 tag</span><div class="tag-options">$featured_tags<details class="more-tags"><summary>更多 tag</summary><div>$more_tags</div></details></div></div>
+<p class="tag-explanation">點一下 tag 立即找課，再點一次取消。每次選一個 tag，可搭配領域、起點與搜尋；數字是目前其他條件下的課程數。</p>
+<div class="active-filter-row"><div id="active-filters" aria-label="目前篩選條件"></div><button id="clear-filters" type="button" hidden>清除全部</button></div>
+</div>
+<noscript><p class="no-script-note">所有課程均列於下方。開啟 JavaScript 後可使用即時搜尋、tag 篩選與本機學習進度。</p></noscript>
+<div class="results-toolbar" data-view-only="detailed"><p id="result-count" role="status" aria-live="polite" aria-atomic="true">共 $total 門課程</p><span id="sort-description">領域 → 主題 → 學習起點</span></div>
+<div id="empty-results" class="empty-results" hidden><span aria-hidden="true">⌕</span><h3>還沒有符合條件的課程</h3><p>試著移除一個條件，或換個關鍵字。上方 tag 數字會提示哪些主題仍有課程。</p><button id="empty-reset" type="button">清除條件，查看全部課程 ↗</button></div>
+<div id="course-results"><div id="classic-results" hidden></div>$course_sections</div>
+</section>
+<details class="recent-updates" data-view-only="detailed"><summary>最近內容更新 <span>課程內容基準日，圖解修訂另見課內紀錄</span></summary><ul>$recent</ul></details>
+<div class="library-bottom"><span class="small-spark" aria-hidden="true">✳</span><p>下一個領域，從你的下一個問題開始。</p><span class="mono" data-view-only="detailed">STAY CURIOUS. KEEP CONNECTING.</span><span class="mono" data-view-only="compact" hidden>KEEP EXPLORING.</span></div>
+</main>
+<footer class="library-footer" data-view-only="detailed"><span>Learning Notes · 一次理解一個主題。</span><span>筆記與進度依瀏覽器保存；換裝置或網址不會自動同步。</span></footer>
+<footer class="library-footer" data-view-only="compact" hidden><span>Learning Notes <span class="muted">／ 持續整理，持續理解。</span></span><span class="mono">DARK BY DESIGN · LOCAL FIRST</span></footer>
+</body>
+</html>

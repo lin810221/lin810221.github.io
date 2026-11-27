@@ -26,7 +26,7 @@
 
 ## 範例的安全執行範圍
 
-入口只輸出 data/pg_schema.sql，不自動連線、不執行 CREATE EXTENSION，也不替你變更資料庫。要在獨立測試庫使用，先確認 PostgreSQL 18.6、extension 0.8.7 已安裝與角色權限，再由你執行 SQL。DDL、RLS 與索引計畫需在真實服務另外驗證。
+入口只輸出  `data/pg_schema.sql` ，不自動連線、不執行 CREATE EXTENSION，也不替你變更資料庫。要在獨立測試庫使用，先確認 PostgreSQL 18.6、extension 0.8.7 已安裝與角色權限，再由你執行 SQL。DDL、RLS 與索引計畫需在真實服務另外驗證。
 
 ## 可執行範例
 

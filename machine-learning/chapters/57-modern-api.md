@@ -43,7 +43,7 @@ groups、sample_weight等metadata不是一般X欄位。若啟用routing，依目
 
 ## 練習與解答
 
-把舊Logistic的penalty='l1'直接換l1_ratio=1，卻仍用不支援solver是否足夠？答案：不足，需配相容solver並測收斂。只有更名不代表完整遷移。若新版預設改變，明確指定本課有意採用的參數，並區分保留舊行為與採用新策略。
+把舊Logistic的penalty='l1'直接換 `l1_ratio=1` ，卻仍用不支援solver是否足夠？答案：不足，需配相容solver並測收斂。只有更名不代表完整遷移。若新版預設改變，明確指定本課有意採用的參數，並區分保留舊行為與採用新策略。
 
 ## 官方來源與延伸閱讀
 

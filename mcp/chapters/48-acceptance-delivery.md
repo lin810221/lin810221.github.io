@@ -30,7 +30,7 @@ python -m unittest discover -s . -p test_examples.py -v
 
 ## 報告要支持哪些結論
 
-本課流程應顯示 alpha T1 已 closed、version=2，beta T1 仍 open，committed audit_count=1，provider_api_calls=0。跨租戶 notes 查詢不會取得 beta 私有文字。這些欄位各自對應一個可觀察不變量。
+本課流程應顯示 alpha T1 已 closed、 `version=2` ，beta T1 仍 open，committed  `audit_count=1` ， `provider_api_calls=0` 。跨租戶 notes 查詢不會取得 beta 私有文字。這些欄位各自對應一個可觀察不變量。
 
 若要宣稱真實 HTTP 互通，需另執行本課 transport tests；若要宣稱某個模型產品可以使用，需在實際帳號完成產品整合。程序內成功、HTTP 成功和供應商成功，是不同層次的證據。
 

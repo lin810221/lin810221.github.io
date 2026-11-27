@@ -25,7 +25,7 @@ $$
 
 ## 小型實作
 
-TinyBlock維度8、2head、FFN8→16→8加GELU，MHA dropout0、LayerNorm最後維度8。causal mask用MHA的True禁止上三角，need_weights=False。forward保持[N,T,8]，每個FFN獨立作用各位置。
+TinyBlock維度8、2head、FFN8→16→8加GELU，MHA dropout0、LayerNorm最後維度8。causal mask用MHA的True禁止上三角， `need_weights=False` 。forward保持[N,T,8]，每個FFN獨立作用各位置。
 
 ## 整體causal測試
 
@@ -33,7 +33,7 @@ TinyBlock維度8、2head、FFN8→16→8加GELU，MHA dropout0、LayerNorm最後
 
 ## 與RNN的差異
 
-RNN以遞迴state串時間，Attention可在已知序列上平行建立內容關係，但一般有T²成本。生成逐步解碼時仍有自回歸與快取工程；不能因訓練可平行就說生成一次完成所有token。完整Transformer／LLM原理課將深入這些機制。
+RNN以遞迴state串時間，Attention可在已知序列上平行建立內容關係，但一般有 $T^{2}$ 成本。生成逐步解碼時仍有自回歸與快取工程；不能因訓練可平行就說生成一次完成所有token。完整Transformer／LLM原理課將深入這些機制。
 
 ## 練習與解答
 

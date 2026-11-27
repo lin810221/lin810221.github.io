@@ -1,0 +1,9 @@
+{
+  "title": "詞表變更會延伸到模型成品",
+  "alt": "新增token會增加embedding列並影響輸出頭，需保存tokenizer與新權重，不能只交換詞表檔。",
+  "caption": "格子只是維度示意；新增token不會自動學會含義。",
+  "sources": [
+    "https://huggingface.co/docs/transformers/main_classes/tokenizer"
+  ],
+  "license": "original educational diagram"
+}

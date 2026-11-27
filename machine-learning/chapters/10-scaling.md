@@ -37,11 +37,11 @@ print(RobustScaler().fit_transform(train).ravel())
 
 ## 稀疏資料與可解釋係數
 
-對大稀疏矩陣中心化可能變成dense，記憶體暴增；需考慮with_mean=False或其他策略。標準化後係數是以轉換單位衡量，不能直接說「原特徵增加1會改變多少」。要回到原單位需結合scale與intercept，並注意相關特徵與因果限制。
+對大稀疏矩陣中心化可能變成dense，記憶體暴增；需考慮 `with_mean=False` 或其他策略。標準化後係數是以轉換單位衡量，不能直接說「原特徵增加1會改變多少」。要回到原單位需結合scale與intercept，並注意相關特徵與因果限制。
 
 ## 練習與解答
 
-train=[1,3,5]均值3，population標準差sqrt(8/3)，新值7的z約2.449。解答：只用train統計，即使val均值很不一樣也不重新fit。若每列normalize讓總消費大小消失，對依金額決策可能傷害訊號；縮放不是越多越好，應在完整Pipeline與CV比較。
+ $\mathrm{train}=[1,3,5]$ 均值3，population標準差 $\sqrt{\frac{8}{3}}$ ，新值7的z約2.449。解答：只用train統計，即使val均值很不一樣也不重新fit。若每列normalize讓總消費大小消失，對依金額決策可能傷害訊號；縮放不是越多越好，應在完整Pipeline與CV比較。
 
 ## 官方來源與延伸閱讀
 

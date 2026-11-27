@@ -14,7 +14,7 @@
 
 ## 位置ID與實際cache欄位
 
-本課在提供attention_mask時，以cumsum-1得到非padding token的位置，再對當前query取尾段。若第一筆前三格有效、第四格PAD，新token的學得位置為3；但cache物理長度已是4，新K/V會附在第4索引。因果遮罩依物理先後，位置embedding依有效token位置，兩者可不同。
+本課在提供attention_mask時，以cumsum-1得到非padding token的位置，再對當前query取尾段。若第一筆前三格有效、第四格PAD，新token的學得位置為3；但cache物理長度已是4，新 $\frac{K}{V}$ 會附在第4索引。因果遮罩依物理先後，位置embedding依有效token位置，兩者可不同。
 
 padding key仍需False，新增有效key為True，mask長度涵蓋past加new。若只給新token的一格mask，框架無法由它知道前綴哪些是PAD。本課明確拒絕長度不符的mask。
 

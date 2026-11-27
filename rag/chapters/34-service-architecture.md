@@ -28,7 +28,7 @@
 }
 ```
 
-使用者提交 question、conversation ID 等允許欄位；tenant、角色與索引範圍由可信伺服器決定。不要把來自瀏覽器的 `roles=[admin]` 直接轉成查詢權限。
+使用者提交 question、conversation ID 等允許欄位；tenant、角色與索引範圍由可信伺服器決定。不要把來自瀏覽器的  `roles=[admin]`  直接轉成查詢權限。
 
 ## 匯入工作使用狀態機
 

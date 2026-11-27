@@ -6,7 +6,7 @@
 
 ## 先分清本課兩個不同基線
 
-核心小模型使用固定ByteTokenizer：PAD=0、BOS=1、EOS=2，原始byte值b映射到`b+3`，因此詞彙大小是259。它沒有學合併，優點是簡單、可核對且不需外部資料。本單元另做教學BPE：從同一組byte與保留ID出發，再增加合併Token；BPE詞彙大小會隨合併數增加，不能把它直接塞給仍只有259列Embedding的模型。
+核心小模型使用固定ByteTokenizer： $\mathrm{PAD}=0$ 、 $\mathrm{BOS}=1$ 、 $\mathrm{EOS}=2$ ，原始byte值b映射到`b+3`，因此詞彙大小是259。它沒有學合併，優點是簡單、可核對且不需外部資料。本單元另做教學BPE：從同一組byte與保留ID出發，再增加合併Token；BPE詞彙大小會隨合併數增加，不能把它直接塞給仍只有259列Embedding的模型。
 
 輸入先以UTF8轉bytes，不做lowercase、Unicode正規化或空白折疊。每個一般Token都對應一串bytes，merge只是把兩串連在一起。完整合法輸入的encode/decode往返，依賴保存全部規則與不改寫原始bytes；特殊Token如何加入與跳過也要明定。
 

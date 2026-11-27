@@ -1,0 +1,1337 @@
+{
+  "slug": "finetuning",
+  "title": "LLM 微調與模型適應完整教學",
+  "shortTitle": "LLM 微調與模型適應",
+  "updated": "2026-11-25",
+  "baseline": "Transformers 5.24.1 · PEFT 0.22.0 · TRL 1.18.2",
+  "footerLabel": "THE MODEL ADAPTATION GUIDE",
+  "exampleBundle": "examples.zip",
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json"
+  ],
+  "searchHint": "搜尋 LoRA、QLoRA、SFT、DPO、遮罩或評估…",
+  "groups": [
+    {
+      "id": "strategy",
+      "number": "01",
+      "title": "先決定要改變什麼",
+      "description": "適應策略、任務契約、環境與實驗基準。"
+    },
+    {
+      "id": "data",
+      "number": "02",
+      "title": "資料是訓練規格",
+      "description": "資料格式、權利、切分、去重與偏好配對。"
+    },
+    {
+      "id": "tokens",
+      "number": "03",
+      "title": "聊天模板與監督位置",
+      "description": "模板、位移、遮罩、截斷、padding與packing。"
+    },
+    {
+      "id": "sft",
+      "number": "04",
+      "title": "建立可以驗證的SFT",
+      "description": "本機小模型、手寫迴圈、TRL與保留集。"
+    },
+    {
+      "id": "lora",
+      "number": "05",
+      "title": "拆解LoRA與其他PEFT",
+      "description": "矩陣、縮放、梯度、目標模組與adapter。"
+    },
+    {
+      "id": "qlora",
+      "number": "06",
+      "title": "QLoRA與記憶體工程",
+      "description": "量化、NF4、k-bit準備與硬體條件。"
+    },
+    {
+      "id": "systems",
+      "number": "07",
+      "title": "讓訓練可靠地運行",
+      "description": "累積、排程、精度、checkpoint與分散式。"
+    },
+    {
+      "id": "preferences",
+      "number": "08",
+      "title": "從示範走向偏好學習",
+      "description": "序列評分、DPO、reference與RLHF界線。"
+    },
+    {
+      "id": "adaptation",
+      "number": "09",
+      "title": "領域、語言與行為適應",
+      "description": "持續預訓練、蒸餾、詞彙、工具與遺忘。"
+    },
+    {
+      "id": "evaluation",
+      "number": "10",
+      "title": "證明模型有改善",
+      "description": "評估契約、切片、污染、judge與消融。"
+    },
+    {
+      "id": "delivery",
+      "number": "11",
+      "title": "成品、服務與雲端平台",
+      "description": "adapter儲存、合併、供應商、成本與交付。"
+    },
+    {
+      "id": "projects",
+      "number": "12",
+      "title": "完成你的第一個微調專案",
+      "description": "完整專題、排錯、公式、術語與來源。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-adaptation-map",
+      "group": "strategy",
+      "title": "模型適應究竟改變了什麼",
+      "summary": "分清楚權重、上下文與外部資料，先建立整門課的地圖。",
+      "tags": [
+        "strategy",
+        "adaptation-map",
+        "微調"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「模型適應究竟改變了什麼」讀圖：指出哪些資訊走輸入端、哪些改權重，再找出共同驗收點。再回答：公司規章每週更新，但回覆格式很穩定，應把兩種需求放在哪裡？"
+    },
+    {
+      "id": "002-task-contract",
+      "group": "strategy",
+      "title": "把需求寫成可以驗收的任務",
+      "summary": "輸入、輸出、錯誤與比較方式，比先挑微調方法更重要。",
+      "tags": [
+        "strategy",
+        "task-contract",
+        "微調"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「把需求寫成可以驗收的任務」讀圖：指出哪些資訊走輸入端、哪些改權重，再找出共同驗收點。再回答：若JSON解析率提高，但內容準確度降低，能否宣告微調成功？"
+    },
+    {
+      "id": "003-prompt-rag-finetune",
+      "group": "strategy",
+      "title": "提示、RAG與微調如何分工",
+      "summary": "用錯誤的來源選方法，而不是用模型大小選方法。",
+      "tags": [
+        "strategy",
+        "prompt-rag-finetune",
+        "微調"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「提示、RAG與微調如何分工」讀圖：指出哪些資訊走輸入端、哪些改權重，再找出共同驗收點。再回答：模型沒有讀到產品新價格，增加LoRA rank能解決嗎？"
+    },
+    {
+      "id": "004-environment",
+      "group": "strategy",
+      "title": "建立最新穩定版的隔離環境",
+      "summary": "以查核日鎖版，區分CPU教學與GPU模型訓練。",
+      "tags": [
+        "strategy",
+        "environment",
+        "微調"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「建立最新穩定版的隔離環境」讀圖：沿版本身分走到成品，指出本單元需要保存的檢查紀錄。再回答：為何不把安裝指令一律改成不指定版本？",
+      "example": "01_schema.py"
+    },
+    {
+      "id": "005-base-instruct",
+      "group": "strategy",
+      "title": "基底模型、指令模型與授權",
+      "summary": "起點不同，所需資料與可能退步的能力也不同。",
+      "tags": [
+        "strategy",
+        "base-instruct",
+        "微調"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「基底模型、指令模型與授權」讀圖：沿版本身分走到成品，指出本單元需要保存的檢查紀錄。再回答：adapter檔很小，是否因此能不附基底模型資訊？"
+    },
+    {
+      "id": "006-strategy-exercises",
+      "group": "strategy",
+      "title": "策略練習：先做一份實驗提案",
+      "summary": "在花算力之前，讓方法、資料與驗收對得起來。",
+      "tags": [
+        "strategy",
+        "strategy-exercises",
+        "微調"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「策略練習：先做一份實驗提案」讀圖：沿版本身分走到成品，指出本單元需要保存的檢查紀錄。再回答：怎樣的提案還不適合開始訓練？"
+    },
+    {
+      "id": "007-data-schema",
+      "group": "data",
+      "title": "SFT資料格式與來源追蹤",
+      "summary": "用嚴格schema把資料問題擋在GPU之前。",
+      "tags": [
+        "data",
+        "data-schema",
+        "微調"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「SFT資料格式與來源追蹤」讀圖：沿群組箭頭核對切分，說明來源權利與內容重複還需在哪裡檢查。再回答：資料可以解析且沒有空值，還可能有什麼致命問題？",
+      "example": "01_schema.py"
+    },
+    {
+      "id": "008-rights-privacy",
+      "group": "data",
+      "title": "資料權利、個資與刪除範圍",
+      "summary": "知道資料從哪來，也知道模型成品能承諾到哪裡。",
+      "tags": [
+        "data",
+        "rights-privacy",
+        "微調"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「資料權利、個資與刪除範圍」讀圖：沿群組箭頭核對切分，說明來源權利與內容重複還需在哪裡檢查。再回答：刪除訓練CSV後能否宣稱模型已忘記某位客戶？"
+    },
+    {
+      "id": "009-group-splits",
+      "group": "data",
+      "title": "按群組、時間與來源切分資料",
+      "summary": "防止模型在測試時看見同一事件的另一種寫法。",
+      "tags": [
+        "data",
+        "group-splits",
+        "微調"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「按群組、時間與來源切分資料」讀圖：沿群組箭頭核對切分，說明來源權利與內容重複還需在哪裡檢查。再回答：測試與訓練沒有相同ID，是否足夠？",
+      "example": "02_group_split.py"
+    },
+    {
+      "id": "010-dedup-quality",
+      "group": "data",
+      "title": "去重、標註一致性與資料混合",
+      "summary": "品質控制需要保留理由，不能只留下清理後的數量。",
+      "tags": [
+        "data",
+        "dedup-quality",
+        "微調"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「去重、標註一致性與資料混合」讀圖：核對兩候選是否來自同一提示，指出來源與品質檢查的位置。再回答：同一句輸入有兩個相反標籤，應直接投票嗎？"
+    },
+    {
+      "id": "011-preference-data",
+      "group": "data",
+      "title": "建立可比較的偏好配對",
+      "summary": "chosen與rejected是標註，不是事實保證。",
+      "tags": [
+        "data",
+        "preference-data",
+        "微調"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「建立可比較的偏好配對」讀圖：核對兩候選是否來自同一提示，指出來源與品質檢查的位置。再回答：chosen答案語氣較好但含有錯誤數字，應如何處理？"
+    },
+    {
+      "id": "012-data-exercises",
+      "group": "data",
+      "title": "資料驗收練習與稽核表",
+      "summary": "先找出故意埋入的錯誤，再決定是否允許開始訓練。",
+      "tags": [
+        "data",
+        "data-exercises",
+        "微調"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「資料驗收練習與稽核表」讀圖：核對兩候選是否來自同一提示，指出來源與品質檢查的位置。再回答：清理後資料比較少，是不是代表品質較差？"
+    },
+    {
+      "id": "013-chat-template",
+      "group": "tokens",
+      "title": "聊天模板是模型輸入協定",
+      "summary": "角色標記、生成起點與訓練用模板必須一致。",
+      "tags": [
+        "tokens",
+        "chat-template",
+        "微調"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「聊天模板是模型輸入協定」讀圖：從warm所在位置往前追一格，核對哪個logit負責答案與EOS。再回答：把模型原模板改成自己喜歡的角色符號，為什麼可能退步？",
+      "example": "03_chat_masks.py"
+    },
+    {
+      "id": "014-autoregressive-loss",
+      "group": "tokens",
+      "title": "因果語言模型的標籤位移與損失",
+      "summary": "先知道哪個位置預測哪個token，再談loss下降。",
+      "tags": [
+        "tokens",
+        "autoregressive-loss",
+        "微調"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「因果語言模型的標籤位移與損失」讀圖：從warm所在位置往前追一格，核對哪個logit負責答案與EOS。再回答：序列有六個token，未加外部起始位置時最多有幾個位移target？",
+      "example": "04_shifted_loss.py"
+    },
+    {
+      "id": "015-assistant-mask",
+      "group": "tokens",
+      "title": "Assistant-only與completion-only監督",
+      "summary": "遮罩改變的是學習目標，不是模型能看見的文字。",
+      "tags": [
+        "tokens",
+        "assistant-mask",
+        "微調"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「Assistant-only與completion-only監督」讀圖：從warm所在位置往前追一格，核對哪個logit負責答案與EOS。再回答：把user的labels設為忽略值，是否代表assistant看不到user？",
+      "example": "03_chat_masks.py"
+    },
+    {
+      "id": "016-eos-padding",
+      "group": "tokens",
+      "title": "EOS、padding與停止條件",
+      "summary": "相同token ID可能扮演不同位置角色。",
+      "tags": [
+        "tokens",
+        "eos-padding",
+        "微調"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「EOS、padding與停止條件」讀圖：沿文件邊界檢查可見前文與有效labels，說明截斷會刪去哪部分。再回答：PAD與EOS共用ID時，直接把該ID的所有labels設為忽略值會怎樣？"
+    },
+    {
+      "id": "017-truncation-packing",
+      "group": "tokens",
+      "title": "截斷與packing的資訊邊界",
+      "summary": "長度上限會改變資料；EOS不會隔離attention。",
+      "tags": [
+        "tokens",
+        "truncation-packing",
+        "微調"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「截斷與packing的資訊邊界」讀圖：沿文件邊界檢查可見前文與有效labels，說明截斷會刪去哪部分。再回答：把每份文件之間放EOS，能否保證它們互相看不到？",
+      "example": "05_sequence_audit.py"
+    },
+    {
+      "id": "018-template-exercises",
+      "group": "tokens",
+      "title": "模板稽核練習：逐格追蹤token",
+      "summary": "把監督位置變成可看的表格與可重跑的測試。",
+      "tags": [
+        "tokens",
+        "template-exercises",
+        "微調"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「模板稽核練習：逐格追蹤token」讀圖：沿文件邊界檢查可見前文與有效labels，說明截斷會刪去哪部分。再回答：把模型loss與手寫loss比對相同，是否已證明模板正確？"
+    },
+    {
+      "id": "019-local-model",
+      "group": "sft",
+      "title": "建立不下載權重的小型模型",
+      "summary": "用可控制的模型先驗證流程，再擴大到預訓練LLM。",
+      "tags": [
+        "sft",
+        "local-model",
+        "微調"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「建立不下載權重的小型模型」讀圖：沿labels、模型、loss與更新路徑，指出本單元要驗證的一步。再回答：從config建立模型且能生成文字，是否已完成預訓練模型微調？",
+      "example": "06_full_sft.py"
+    },
+    {
+      "id": "020-torch-sft",
+      "group": "sft",
+      "title": "手寫完整參數SFT迴圈",
+      "summary": "明確看見歸零、前向、反向與更新的先後。",
+      "tags": [
+        "sft",
+        "torch-sft",
+        "微調"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「手寫完整參數SFT迴圈」讀圖：沿labels、模型、loss與更新路徑，指出本單元要驗證的一步。再回答：忘了zero_grad時，為什麼仍可能看到loss下降？",
+      "example": "06_full_sft.py"
+    },
+    {
+      "id": "021-trl-sft",
+      "group": "sft",
+      "title": "使用目前版本的SFTTrainer",
+      "summary": "把框架設定接到已經驗證的資料與模板。",
+      "tags": [
+        "sft",
+        "trl-sft",
+        "微調"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「使用目前版本的SFTTrainer」讀圖：沿labels、模型、loss與更新路徑，指出本單元要驗證的一步。再回答：範例跑完兩步，能否把training_loss當成最終模型品質？",
+      "example": "15_trl_sft.py"
+    },
+    {
+      "id": "022-validation-loop",
+      "group": "sft",
+      "title": "保留集loss與生成品質分開看",
+      "summary": "Teacher forcing能評分，不能代替部署時的回答檢查。",
+      "tags": [
+        "sft",
+        "validation-loop",
+        "微調"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「保留集loss與生成品質分開看」讀圖：比較訓練與開發曲線，區分可觀察現象與尚未證明的原因。再回答：兩個模型PPL不同，但tokenizer也不同，可以直接排名嗎？",
+      "example": "20_heldout_evaluation.py"
+    },
+    {
+      "id": "023-sft-diagnostics",
+      "group": "sft",
+      "title": "訓練曲線、過擬合與資料檢查",
+      "summary": "看到異常曲線時，先追查它是怎麼算出來的。",
+      "tags": [
+        "sft",
+        "sft-diagnostics",
+        "微調"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「訓練曲線、過擬合與資料檢查」讀圖：比較訓練與開發曲線，區分可觀察現象與尚未證明的原因。再回答：驗證loss上升就能斷言模型容量太大嗎？"
+    },
+    {
+      "id": "024-sft-exercises",
+      "group": "sft",
+      "title": "SFT驗收：從一個批次到保留集",
+      "summary": "把能跑、能學與值得使用分成三個檢查。",
+      "tags": [
+        "sft",
+        "sft-exercises",
+        "微調"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「SFT驗收：從一個批次到保留集」讀圖：比較訓練與開發曲線，區分可觀察現象與尚未證明的原因。再回答：一份最低限度合格的SFT成果應包含什麼？"
+    },
+    {
+      "id": "025-lora-matrices",
+      "group": "lora",
+      "title": "LoRA矩陣、形狀與參數量",
+      "summary": "凍結基底，以低秩更新表示任務需要的改變。",
+      "tags": [
+        "lora",
+        "lora-matrices",
+        "微調"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「LoRA矩陣、形狀與參數量」讀圖：逐一核對A、B與基底形狀，數出哪些格子可以更新。再回答：輸入維度100、輸出維度200、rank為4，一層LoRA有多少可訓練矩陣參數？",
+      "example": "07_lora_matrices.py"
+    },
+    {
+      "id": "026-lora-gradients",
+      "group": "lora",
+      "title": "初始化、凍結與第一步梯度",
+      "summary": "B從零開始時，兩個矩陣的第一步行為不同。",
+      "tags": [
+        "lora",
+        "lora-gradients",
+        "微調"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「初始化、凍結與第一步梯度」讀圖：逐一核對A、B與基底形狀，數出哪些格子可以更新。再回答：看到A第一步梯度為零，應立即提高學習率嗎？",
+      "example": "07_lora_matrices.py"
+    },
+    {
+      "id": "027-target-modules",
+      "group": "lora",
+      "title": "選擇target modules與可訓練層",
+      "summary": "目標名稱依架構而變，不能複製一組通用縮寫。",
+      "tags": [
+        "lora",
+        "target-modules",
+        "微調"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「選擇target modules與可訓練層」讀圖：逐一核對A、B與基底形狀，數出哪些格子可以更新。再回答：別人的模型使用c_attn，本模型找不到，應怎麼辦？"
+    },
+    {
+      "id": "028-peft-lora",
+      "group": "lora",
+      "title": "用PEFT訓練第一個LoRA",
+      "summary": "在真實套件上核對參數、訓練與成品。",
+      "tags": [
+        "lora",
+        "peft-lora",
+        "微調"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「用PEFT訓練第一個LoRA」讀圖：從B為零推回初始輸出，說明第一步A與B的梯度差異。再回答：只需訓練adapter，能否把base前向整段放在no_grad內？",
+      "example": "08_peft_lora.py"
+    },
+    {
+      "id": "029-peft-variants",
+      "group": "lora",
+      "title": "Rank、rsLoRA、DoRA與soft prompt",
+      "summary": "比較不同的適應位置與縮放，而非只記方法名稱。",
+      "tags": [
+        "lora",
+        "peft-variants",
+        "微調"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「Rank、rsLoRA、DoRA與soft prompt」讀圖：從B為零推回初始輸出，說明第一步A與B的梯度差異。再回答：rank提高但alpha固定，標準LoRA縮放會如何變化？",
+      "example": "09_rank_scaling.py"
+    },
+    {
+      "id": "030-lora-exercises",
+      "group": "lora",
+      "title": "LoRA驗收與多adapter管理",
+      "summary": "用可重現的檢查確認只改了你打算改的部分。",
+      "tags": [
+        "lora",
+        "lora-exercises",
+        "微調"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「LoRA驗收與多adapter管理」讀圖：從B為零推回初始輸出，說明第一步A與B的梯度差異。再回答：兩個adapter都能單獨運行，是否代表加權混合後不用再評估？"
+    },
+    {
+      "id": "031-quantization",
+      "group": "qlora",
+      "title": "量化的儲存、計算與誤差",
+      "summary": "位元數省下的是哪一部分，必須說清楚。",
+      "tags": [
+        "qlora",
+        "quantization",
+        "微調"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「量化的儲存、計算與誤差」讀圖：比較兩排碼本間距，說明本單元涉及哪種量化與哪些假設。再回答：四位元模型的所有張量都是四位元嗎？",
+      "example": "10_toy_quantization.py"
+    },
+    {
+      "id": "032-nf4-double-quant",
+      "group": "qlora",
+      "title": "NF4、double quantization與QLoRA",
+      "summary": "理解論文中的三個節省來源，不把它們混成同一件事。",
+      "tags": [
+        "qlora",
+        "nf4-double-quant",
+        "微調"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「NF4、double quantization與QLoRA」讀圖：比較兩排碼本間距，說明本單元涉及哪種量化與哪些假設。再回答：使用四位元權重並完整更新所有權重，就能稱為本課所說的QLoRA嗎？"
+    },
+    {
+      "id": "033-bnb-recipe",
+      "group": "qlora",
+      "title": "bitsandbytes設定與硬體條件",
+      "summary": "把可執行的GPU支線寫清楚，也保留驗證界線。",
+      "tags": [
+        "qlora",
+        "bnb-recipe",
+        "微調"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「bitsandbytes設定與硬體條件」讀圖：比較兩排碼本間距，說明本單元涉及哪種量化與哪些假設。再回答：可建立BitsAndBytesConfig是否表示顯示卡一定能訓練？",
+      "example": "11_qlora_recipe.py"
+    },
+    {
+      "id": "034-kbit-preparation",
+      "group": "qlora",
+      "title": "k-bit模型準備與梯度流",
+      "summary": "準備、包裝與參數稽核的順序要一致。",
+      "tags": [
+        "qlora",
+        "kbit-preparation",
+        "微調"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「k-bit模型準備與梯度流」讀圖：逐項指認記憶體成本，說明本單元設定會改變哪一項。再回答：加入LoRA後又執行凍結所有參數，可能發生什麼？"
+    },
+    {
+      "id": "035-memory-budget",
+      "group": "qlora",
+      "title": "建立有假設的記憶體預算",
+      "summary": "權重、梯度、最佳化器與activation要分項列出。",
+      "tags": [
+        "qlora",
+        "memory-budget",
+        "微調"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「建立有假設的記憶體預算」讀圖：逐項指認記憶體成本，說明本單元設定會改變哪一項。再回答：四位元基底檔案3.5GB，能否保證4GB顯示卡可訓練？",
+      "example": "13_memory_budget.py"
+    },
+    {
+      "id": "036-qlora-exercises",
+      "group": "qlora",
+      "title": "QLoRA可行性與資源驗收",
+      "summary": "用一張有量測欄位的表，替代沒有前提的硬體推薦。",
+      "tags": [
+        "qlora",
+        "qlora-exercises",
+        "微調"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「QLoRA可行性與資源驗收」讀圖：逐項指認記憶體成本，說明本單元設定會改變哪一項。再回答：沒有GPU時，可以完成本課哪些驗收？"
+    },
+    {
+      "id": "037-gradient-accumulation",
+      "group": "systems",
+      "title": "梯度累積與有效token加權",
+      "summary": "不同回答長度時，平均的平均會改變目標。",
+      "tags": [
+        "systems",
+        "gradient-accumulation",
+        "微調"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「梯度累積與有效token加權」讀圖：數出microbatch與更新的邊界，說明有效target不同時如何加權。再回答：四個microbatch並不等長，直接各自loss除以4有什麼問題？",
+      "example": "12_token_accumulation.py"
+    },
+    {
+      "id": "038-optimizer-scheduler",
+      "group": "systems",
+      "title": "學習率、warmup與更新步數",
+      "summary": "把資料曝光與參數更新分開記錄。",
+      "tags": [
+        "systems",
+        "optimizer-scheduler",
+        "微調"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「學習率、warmup與更新步數」讀圖：數出microbatch與更新的邊界，說明有效target不同時如何加權。再回答：改大梯度累積，但scheduler仍每個microbatch前進，會怎樣？"
+    },
+    {
+      "id": "039-mixed-precision",
+      "group": "systems",
+      "title": "混合精度、BF16與梯度裁剪",
+      "summary": "精度配置涵蓋多種張量，不只是模型載入參數。",
+      "tags": [
+        "systems",
+        "mixed-precision",
+        "微調"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「混合精度、BF16與梯度裁剪」讀圖：數出microbatch與更新的邊界，說明有效target不同時如何加權。再回答：使用autocast後，所有模型張量是否都變成同一dtype？"
+    },
+    {
+      "id": "040-checkpoint-distributed",
+      "group": "systems",
+      "title": "Activation checkpoint與分散式訓練",
+      "summary": "節省哪種記憶體、增加哪種成本，要分清楚。",
+      "tags": [
+        "systems",
+        "checkpoint-distributed",
+        "微調"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「Activation checkpoint與分散式訓練」讀圖：比較兩種保存內容，指出續訓與推論各自依賴的狀態。再回答：Activation checkpoint能不能代替保存optimizer的續訓checkpoint？"
+    },
+    {
+      "id": "041-exact-resume",
+      "group": "systems",
+      "title": "精確續訓：保存的不只是權重",
+      "summary": "在optimizer更新邊界恢復，是最容易驗證的起點。",
+      "tags": [
+        "systems",
+        "exact-resume",
+        "微調"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「精確續訓：保存的不只是權重」讀圖：比較兩種保存內容，指出續訓與推論各自依賴的狀態。再回答：恢復了模型卻沒有Adam動量，能否說exact resume？",
+      "example": "14_checkpoint_resume.py"
+    },
+    {
+      "id": "042-runtime-exercises",
+      "group": "systems",
+      "title": "訓練工程練習：等效、峰值與恢復",
+      "summary": "每個節省策略都附一個能否成立的檢查。",
+      "tags": [
+        "systems",
+        "runtime-exercises",
+        "微調"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「訓練工程練習：等效、峰值與恢復」讀圖：比較兩種保存內容，指出續訓與推論各自依賴的狀態。再回答：四種節省策略一次全開後loss異常，下一步應怎麼做？"
+    },
+    {
+      "id": "043-sft-preferences",
+      "group": "preferences",
+      "title": "SFT、DPO與RLHF的資料差異",
+      "summary": "示範學習與偏好比較回答不同的問題。",
+      "tags": [
+        "preferences",
+        "sft-preferences",
+        "微調"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「SFT、DPO與RLHF的資料差異」讀圖：重算差中之差與DPO logit，指出四個序列分數的角色。再回答：DPO不需顯式reward model，是否代表不需偏好規則？"
+    },
+    {
+      "id": "044-sequence-scores",
+      "group": "preferences",
+      "title": "序列log機率與回答長度",
+      "summary": "DPO的基本分數是回答token的log機率加總。",
+      "tags": [
+        "preferences",
+        "sequence-scores",
+        "微調"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「序列log機率與回答長度」讀圖：重算差中之差與DPO logit，指出四個序列分數的角色。再回答：把prompt的log機率也加進去，為什麼不應直接接受？",
+      "example": "16_sequence_scores.py"
+    },
+    {
+      "id": "045-dpo-objective",
+      "group": "preferences",
+      "title": "DPO目標、beta與固定reference",
+      "summary": "比較的是偏好變化，不能漏掉reference項。",
+      "tags": [
+        "preferences",
+        "dpo-objective",
+        "微調"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「DPO目標、beta與固定reference」讀圖：重算差中之差與DPO logit，指出四個序列分數的角色。再回答：policy等於reference時loss為log2，是不是表示訓練失敗？",
+      "example": "17_dpo_loss.py"
+    },
+    {
+      "id": "046-trl-dpo",
+      "group": "preferences",
+      "title": "以DPOTrainer跑一個真實步驟",
+      "summary": "用當前API驗證資料、policy與reference。",
+      "tags": [
+        "preferences",
+        "trl-dpo",
+        "微調"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「以DPOTrainer跑一個真實步驟」讀圖：指出固定reference與可更新policy，檢查相同配對如何進入兩者。再回答：更改聊天模板後，舊的reference預計分數還能直接沿用嗎？",
+      "example": "18_trl_dpo.py"
+    },
+    {
+      "id": "047-rlhf-grpo",
+      "group": "preferences",
+      "title": "理解RLHF、PPO與GRPO的界線",
+      "summary": "認識下一步，但不把概念回顧冒稱完整強化學習實作。",
+      "tags": [
+        "preferences",
+        "rlhf-grpo",
+        "微調"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「理解RLHF、PPO與GRPO的界線」讀圖：指出固定reference與可更新policy，檢查相同配對如何進入兩者。再回答：若reward只檢查JSON可解析，模型會自動學到事實正確嗎？"
+    },
+    {
+      "id": "048-preference-exercises",
+      "group": "preferences",
+      "title": "偏好學習驗收：符號與標註",
+      "summary": "讓手算、程式與訓練三者對得起來。",
+      "tags": [
+        "preferences",
+        "preference-exercises",
+        "微調"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「偏好學習驗收：符號與標註」讀圖：指出固定reference與可更新policy，檢查相同配對如何進入兩者。再回答：reference也跟著policy更新，還是標準的固定reference DPO嗎？"
+    },
+    {
+      "id": "049-continued-pretraining",
+      "group": "adaptation",
+      "title": "持續預訓練與領域適應",
+      "summary": "先適應語言分布，再確認任務行為是否仍然可用。",
+      "tags": [
+        "adaptation",
+        "continued-pretraining",
+        "微調"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「持續預訓練與領域適應」讀圖：從資料型態走到目標，指出本單元能與哪種方法比較。再回答：模型在領域文章上的PPL降低，是否能證明專業問答已正確？"
+    },
+    {
+      "id": "050-distillation",
+      "group": "adaptation",
+      "title": "蒸餾：從教師分布學習",
+      "summary": "教師需固定，token與詞表也必須對齊。",
+      "tags": [
+        "adaptation",
+        "distillation",
+        "微調"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「蒸餾：從教師分布學習」讀圖：從資料型態走到目標，指出本單元能與哪種方法比較。再回答：KL參數順序反過來，仍是同一個loss嗎？",
+      "example": "19_distillation.py"
+    },
+    {
+      "id": "051-vocabulary",
+      "group": "adaptation",
+      "title": "新詞彙、embedding與多語適應",
+      "summary": "新增token不等於模型已理解新概念。",
+      "tags": [
+        "adaptation",
+        "vocabulary",
+        "微調"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「新詞彙、embedding與多語適應」讀圖：從資料型態走到目標，指出本單元能與哪種方法比較。再回答：新增tokenizer詞彙後，只保存LoRA矩陣可能漏掉什麼？"
+    },
+    {
+      "id": "052-tools-structured-output",
+      "group": "adaptation",
+      "title": "工具呼叫、結構輸出與Agent適應",
+      "summary": "訓練可學呼叫格式，工具執行仍需明確契約。",
+      "tags": [
+        "adaptation",
+        "tools-structured-output",
+        "微調"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「工具呼叫、結構輸出與Agent適應」讀圖：追蹤詞表新增列，說明哪些權重、模板或行為需要重新驗證。再回答：模型產生合法工具JSON，是否代表Agent任務已完成？"
+    },
+    {
+      "id": "053-forgetting",
+      "group": "adaptation",
+      "title": "災難性遺忘與資料混合",
+      "summary": "新任務進步時，也要量測舊能力的代價。",
+      "tags": [
+        "adaptation",
+        "forgetting",
+        "微調"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「災難性遺忘與資料混合」讀圖：追蹤詞表新增列，說明哪些權重、模板或行為需要重新驗證。再回答：基底權重沒改，所以LoRA不會造成舊任務退步，對嗎？",
+      "example": "21_retention_slices.py"
+    },
+    {
+      "id": "054-adaptation-exercises",
+      "group": "adaptation",
+      "title": "選擇適應方法的練習",
+      "summary": "把資料形式、目標與交付限制放進同一張提案。",
+      "tags": [
+        "adaptation",
+        "adaptation-exercises",
+        "微調"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「選擇適應方法的練習」讀圖：追蹤詞表新增列，說明哪些權重、模板或行為需要重新驗證。再回答：同時加入新詞彙、換模板與做DPO後品質改變，能歸因於DPO嗎？"
+    },
+    {
+      "id": "055-evaluation-contract",
+      "group": "evaluation",
+      "title": "建立保留評估與品質門檻",
+      "summary": "評估資料與評分規則也需要版本。",
+      "tags": [
+        "evaluation",
+        "evaluation-contract",
+        "微調"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「建立保留評估與品質門檻」讀圖：由下到上讀三層驗收，指出本單元的指標能回答哪一層問題。再回答：把無法解析的輸出全部排除後再算內容準確率，可以嗎？"
+    },
+    {
+      "id": "056-generation-metrics",
+      "group": "evaluation",
+      "title": "評估loss、格式與自由生成",
+      "summary": "一個模型需要多張成績單，不同指標不要互相冒名。",
+      "tags": [
+        "evaluation",
+        "generation-metrics",
+        "微調"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「評估loss、格式與自由生成」讀圖：由下到上讀三層驗收，指出本單元的指標能回答哪一層問題。再回答：模型teacher-forced token準確率為九成，是否代表九成使用者問題可解決？",
+      "example": "20_heldout_evaluation.py"
+    },
+    {
+      "id": "057-uncertainty-slices",
+      "group": "evaluation",
+      "title": "切片比較、配對與不確定性",
+      "summary": "樣本少與資料相依會影響你能下多強的結論。",
+      "tags": [
+        "evaluation",
+        "uncertainty-slices",
+        "微調"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「切片比較、配對與不確定性」讀圖：由下到上讀三層驗收，指出本單元的指標能回答哪一層問題。再回答：一份文件產生一百個相似問題，能視為一百個獨立證據嗎？"
+    },
+    {
+      "id": "058-contamination-canaries",
+      "group": "evaluation",
+      "title": "資料污染、記憶與canary檢查",
+      "summary": "測到答案，還是測到新能力，需要留下證據。",
+      "tags": [
+        "evaluation",
+        "contamination-canaries",
+        "微調"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「資料污染、記憶與canary檢查」讀圖：比較總體與重要切片，指出哪些分母與錯誤類型不能省略。再回答：測試題換了幾個詞，是否就保證沒有污染？"
+    },
+    {
+      "id": "059-judges-ablation",
+      "group": "evaluation",
+      "title": "模型judge、人工複核與消融",
+      "summary": "讓評分器的偏差也成為檢查對象。",
+      "tags": [
+        "evaluation",
+        "judges-ablation",
+        "微調"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「模型judge、人工複核與消融」讀圖：比較總體與重要切片，指出哪些分母與錯誤類型不能省略。再回答：judge偏愛較長回答，如何發現與處理？"
+    },
+    {
+      "id": "060-evaluation-exercises",
+      "group": "evaluation",
+      "title": "評估驗收：寫出能被反駁的結論",
+      "summary": "把提升、代價與尚未確定的部分一起交付。",
+      "tags": [
+        "evaluation",
+        "evaluation-exercises",
+        "微調"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「評估驗收：寫出能被反駁的結論」讀圖：比較總體與重要切片，指出哪些分母與錯誤類型不能省略。再回答：可以怎樣誠實描述本課的合成小模型結果？"
+    },
+    {
+      "id": "061-adapter-artifact",
+      "group": "delivery",
+      "title": "Adapter成品、manifest與基底身分",
+      "summary": "一個小檔案需要一整套明確依賴才能正確運作。",
+      "tags": [
+        "delivery",
+        "adapter-artifact",
+        "微調"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「Adapter成品、manifest與基底身分」讀圖：沿基底、模板與adapter追到manifest，列出回讀必須核對的身分。再回答：adapter能載入另一個同架構模型，是否表示兩者可以互換？",
+      "example": "22_adapter_artifacts.py"
+    },
+    {
+      "id": "062-merge-serving",
+      "group": "delivery",
+      "title": "合併、重新量化與多adapter服務",
+      "summary": "部署形式改變後，數值與品質都要重新確認。",
+      "tags": [
+        "delivery",
+        "merge-serving",
+        "微調"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「合併、重新量化與多adapter服務」讀圖：沿基底、模板與adapter追到manifest，列出回讀必須核對的身分。再回答：合併前後文字剛好相同，是否足夠？",
+      "example": "22_adapter_artifacts.py"
+    },
+    {
+      "id": "063-managed-finetuning",
+      "group": "delivery",
+      "title": "OpenAI、Gemini與雲端微調服務",
+      "summary": "供應商名稱相同，也可能是完全不同的平台能力。",
+      "tags": [
+        "delivery",
+        "managed-finetuning",
+        "微調"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「OpenAI、Gemini與雲端微調服務」讀圖：沿基底、模板與adapter追到manifest，列出回讀必須核對的身分。再回答：Gemini API的舊微調教學，能直接套到目前Google Cloud服務嗎？"
+    },
+    {
+      "id": "064-job-lineage",
+      "group": "delivery",
+      "title": "工作生命週期、重試與版本追蹤",
+      "summary": "訓練成功只是流程狀態，品質合格還要另外判斷。",
+      "tags": [
+        "delivery",
+        "job-lineage",
+        "微調"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「工作生命週期、重試與版本追蹤」讀圖：沿工作狀態走到評估，指出服務成功之後還缺哪些驗收。再回答：API請求超時後，應立刻重新提交同一訓練工作嗎？",
+      "example": "23_managed_job.py"
+    },
+    {
+      "id": "065-cost-privacy",
+      "group": "delivery",
+      "title": "成本、資料位置與可攜性",
+      "summary": "先列出計費與資料面，再決定本地或託管。",
+      "tags": [
+        "delivery",
+        "cost-privacy",
+        "微調"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「成本、資料位置與可攜性」讀圖：沿工作狀態走到評估，指出服務成功之後還缺哪些驗收。再回答：只計算訓練token費用，還可能漏掉什麼？"
+    },
+    {
+      "id": "066-delivery-exercises",
+      "group": "delivery",
+      "title": "交付驗收與模型卡",
+      "summary": "讓另一個人能夠重現、評估與回復。",
+      "tags": [
+        "delivery",
+        "delivery-exercises",
+        "微調"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「交付驗收與模型卡」讀圖：沿工作狀態走到評估，指出服務成功之後還缺哪些驗收。再回答：另一位同事只能在原作者電腦上跑出結果，交付完成了嗎？"
+    },
+    {
+      "id": "067-sft-capstone",
+      "group": "projects",
+      "title": "專題：完成一份SFT實驗報告",
+      "summary": "串起契約、資料、基準、訓練、評估與成品。",
+      "tags": [
+        "projects",
+        "sft-capstone",
+        "微調"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「專題：完成一份SFT實驗報告」讀圖：沿完整交付鏈指出每個步驟產出的證據，再找出尚未測試的能力。再回答：capstone報告中最容易被誤讀的是什麼？",
+      "example": "24_capstone.py"
+    },
+    {
+      "id": "068-lora-dpo-capstone",
+      "group": "projects",
+      "title": "專題：比較完整微調、LoRA與DPO",
+      "summary": "建立可歸因的比較，不只收集三條loss曲線。",
+      "tags": [
+        "projects",
+        "lora-dpo-capstone",
+        "微調"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「專題：比較完整微調、LoRA與DPO」讀圖：沿完整交付鏈指出每個步驟產出的證據，再找出尚未測試的能力。再回答：LoRA SFT與完整參數DPO結果不同，能直接說是LoRA造成嗎？"
+    },
+    {
+      "id": "069-troubleshooting",
+      "group": "projects",
+      "title": "排錯指南：資料、梯度、資源與成品",
+      "summary": "先縮成最小反例，再提出原因。",
+      "tags": [
+        "projects",
+        "troubleshooting",
+        "微調"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「排錯指南：資料、梯度、資源與成品」讀圖：沿完整交付鏈指出每個步驟產出的證據，再找出尚未測試的能力。再回答：模型訓練正常，但回讀後完全不同，先增加epoch有用嗎？"
+    },
+    {
+      "id": "070-formula-sheet",
+      "group": "projects",
+      "title": "公式表：條件、符號與算例",
+      "summary": "將最常混淆的定義集中核對。",
+      "tags": [
+        "projects",
+        "formula-sheet",
+        "微調"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「公式表：條件、符號與算例」讀圖：依圖將問題分層，選擇一個最小反例與能否推翻猜測的檢查。再回答：哪三個常見錯誤可用此表立刻排除？"
+    },
+    {
+      "id": "071-glossary-routes",
+      "group": "projects",
+      "title": "術語與三條學習路線",
+      "summary": "依你的起點安排閱讀，仍保留完整工程主線。",
+      "tags": [
+        "projects",
+        "glossary-routes",
+        "微調"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「術語與三條學習路線」讀圖：依圖將問題分層，選擇一個最小反例與能否推翻猜測的檢查。再回答：已會呼叫LLM API，最值得先補哪段？"
+    },
+    {
+      "id": "072-sources",
+      "group": "projects",
+      "title": "版本、原始研究與實測界線",
+      "summary": "把查核日期、出版日期與真正跑過的內容分開。",
+      "tags": [
+        "projects",
+        "sources",
+        "微調"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「版本、原始研究與實測界線」讀圖：依圖將問題分層，選擇一個最小反例與能否推翻猜測的檢查。再回答：論文查核日是2026-11-25，是否應把LoRA稱為2026年方法？"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "figure-01",
+      "file": "assets/figures/01.svg",
+      "title": "先找問題，再選適應方法",
+      "alt": "左側為資料更新與檢索，右側為穩定行為與微調，兩者都指向共同評估。",
+      "caption": "方法可組合；資訊更新與權重更新需要各自的版本。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-02",
+      "file": "assets/figures/02.svg",
+      "title": "一次實驗必須留下哪些身分",
+      "alt": "資料、模板、基底與設定流向訓練，訓練成果須經保留評估才能交付。",
+      "caption": "權重檔本身不足以重建實驗。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-03",
+      "file": "assets/figures/03.svg",
+      "title": "資料切分的單位是群組",
+      "alt": "群組A與B全部放入訓練，群組C保留；群組隔離之外仍檢查複製內容。",
+      "caption": "不同ID不等於資訊獨立。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-04",
+      "file": "assets/figures/04.svg",
+      "title": "偏好配對如何建立",
+      "alt": "同一提示產生兩個候選，經明確標註規則比較；chosen名稱本身不證明內容正確。",
+      "caption": "標註偏差會成為模型學習訊號。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-05",
+      "file": "assets/figures/05.svg",
+      "title": "追蹤位移與assistant監督",
+      "alt": "七個token的序列依次為角色、問題、結束、角色與答案；只監督assistant內容與其結束符。",
+      "caption": "斜箭頭：下一個token的預測對應。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-06",
+      "file": "assets/figures/06.svg",
+      "title": "EOS、截斷與packing邊界",
+      "alt": "兩份文件以EOS串接，後段仍可注意前段；截斷可能移除回答，PAD不應納入監督。",
+      "caption": "紅箭頭：B能讀取前面的A；真正隔離需支援區塊遮罩。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-07",
+      "file": "assets/figures/07.svg",
+      "title": "SFT的資料與梯度路徑",
+      "alt": "資料經模板與遮罩形成模型輸入與labels，loss反向更新指定參數。",
+      "caption": "前向能跑、梯度能學、任務改善是三層驗收。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-08",
+      "file": "assets/figures/08.svg",
+      "title": "曲線顯示現象，不能單獨證明原因",
+      "alt": "合成曲線中訓練loss持續下降，開發loss先下降後上升；座標是教學單位。",
+      "caption": "先查資料、標籤與分母，再診斷過擬合。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-09",
+      "file": "assets/figures/09.svg",
+      "title": "LoRA矩陣形狀與可訓練參數",
+      "alt": "四乘四基底加上四乘二矩陣B與二乘四矩陣A的乘積；基底凍結，只更新A與B。",
+      "caption": "此例adapter有16參數；大維度、低rank時才有明顯節省。",
+      "sources": [
+        "https://arxiv.org/abs/2106.09685"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-10",
+      "file": "assets/figures/10.svg",
+      "title": "零初始化的第一步梯度",
+      "alt": "B為零而A隨機時，初始輸出保持基底，A首步梯度為零，B通常可更新。",
+      "caption": "不能把A首步零梯度直接判為凍結錯誤。",
+      "sources": [
+        "https://arxiv.org/abs/2106.09685"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-11",
+      "file": "assets/figures/11.svg",
+      "title": "碼本的間距可以不同",
+      "alt": "上列均勻碼本等距，下列非均勻碼本在中心較密；下列僅示意，不是完整NF4常數表。",
+      "caption": "圓點表示可重建值；本圖不列出實際NF4碼表。",
+      "sources": [
+        "https://arxiv.org/abs/2305.14314"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-12",
+      "file": "assets/figures/12.svg",
+      "title": "QLoRA記憶體不能只算權重",
+      "alt": "堆疊前的四種獨立成本包括量化基底、adapter與最佳化器、activation暫存及量化metadata。",
+      "caption": "條長為示意，沒有真實容量或固定比例的意義。",
+      "sources": [
+        "https://arxiv.org/abs/2305.14314"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-13",
+      "file": "assets/figures/13.svg",
+      "title": "microbatch與optimizer step",
+      "alt": "多個microbatch累積有效token加權梯度後，才進行一次參數更新與scheduler step。",
+      "caption": "圖中箭頭表示步驟順序；不是資料彼此串成同一序列。",
+      "sources": [
+        "https://huggingface.co/docs/accelerate/usage_guides/gradient_accumulation"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-14",
+      "file": "assets/figures/14.svg",
+      "title": "可續訓checkpoint與部署成品",
+      "alt": "完整續訓狀態包含模型最佳化器排程器隨機狀態與資料位置，部署成品只提供推論所需內容。",
+      "caption": "兩種成品用途不同；adapter不等於完整續訓狀態。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-15",
+      "file": "assets/figures/15.svg",
+      "title": "DPO比較policy相對reference的偏好",
+      "alt": "policy對chosen與rejected的序列log機率差為三，reference為一；差中之差乘beta得到目標logit。",
+      "caption": "不是只把chosen的機率提高就完整定義DPO。",
+      "sources": [
+        "https://arxiv.org/abs/2305.18290"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-16",
+      "file": "assets/figures/16.svg",
+      "title": "偏好訓練中的兩個模型角色",
+      "alt": "policy與固定reference對相同chosen及rejected配對評分，reference不接收梯度更新。",
+      "caption": "reference可預先計分，但來源與版本仍須固定。",
+      "sources": [
+        "https://arxiv.org/abs/2305.18290"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-17",
+      "file": "assets/figures/17.svg",
+      "title": "不同適應方法需要不同資料",
+      "alt": "持續預訓練使用領域文字，SFT使用示範，蒸餾使用教師訊號；三者目標不能直接互換。",
+      "caption": "資料可組合，仍需分別定義損失與評估。",
+      "sources": [
+        "https://arxiv.org/abs/1503.02531",
+        "https://arxiv.org/abs/2004.10964"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-18",
+      "file": "assets/figures/18.svg",
+      "title": "詞表變更會延伸到模型成品",
+      "alt": "新增token會增加embedding列並影響輸出頭，需保存tokenizer與新權重，不能只交換詞表檔。",
+      "caption": "格子只是維度示意；新增token不會自動學會含義。",
+      "sources": [
+        "https://huggingface.co/docs/transformers/main_classes/tokenizer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-19",
+      "file": "assets/figures/19.svg",
+      "title": "由機制驗收到任務驗收",
+      "alt": "下層數值契約、中層獨立保留評估與上層部署任務檢查逐層支撐，任何一層不能被另一層取代。",
+      "caption": "圖層表示檢查範圍，寬度不代表樣本數。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-20",
+      "file": "assets/figures/20.svg",
+      "title": "總分可以掩蓋重要切片",
+      "alt": "虛構評估表中總成功率高於少數類別與長輸入切片；各切片可重疊，須另報樣本數。",
+      "caption": "數字是教學案例；不是任何模型測試結果。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-21",
+      "file": "assets/figures/21.svg",
+      "title": "Adapter交付的依賴關係",
+      "alt": "精確基底與tokenizer共同決定adapter能否重現，manifest用身分與雜湊將其連結。",
+      "caption": "同一模型名稱不保證內容相同。",
+      "sources": [
+        "https://huggingface.co/docs/peft/v0.22.0/developer_guides/checkpoint"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-22",
+      "file": "assets/figures/22.svg",
+      "title": "雲端微調工作與評估是兩條狀態線",
+      "alt": "工作由驗證進入執行，成功只表示服務完成，尚需獨立評估才能部署。",
+      "caption": "工作成功不等於模型品質合格。",
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/supervised-fine-tuning"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-23",
+      "file": "assets/figures/23.svg",
+      "title": "第一個專案的完整交付鏈",
+      "alt": "資料與模板經基準及訓練、保留評估、成品回讀最後形成可重現報告。",
+      "caption": "先用本課合成CPU主線驗證，再移植真實資料與模型。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-24",
+      "file": "assets/figures/24.svg",
+      "title": "排錯先分層，再找最小反例",
+      "alt": "由失敗現象分到資料模板、梯度資源或評估成品，縮成最小實驗再判定原因。",
+      "caption": "能重現的錯誤比猜測超參數更能縮短排錯時間。",
+      "sources": [
+        "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+      ],
+      "license": "original educational diagram"
+    }
+  ],
+  "visualPresentation": "custom",
+  "exampleExcludeDirectories": [
+    "outputs",
+    "finetuning-output"
+  ]
+}

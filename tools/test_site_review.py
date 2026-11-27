@@ -4,9 +4,15 @@ from pathlib import Path
 from zipfile import ZipFile
 from build import assert_readable
 from validate import InspectHTML
+from prepare_pages import declared_study_bundle
 ROOT=Path(__file__).resolve().parents[1]
 
 class SiteReviewTests(unittest.TestCase):
+    def test_declared_study_download_does_not_need_a_duplicate_resource_entry(self):
+        folder=ROOT/'transformer'
+        self.assertEqual(declared_study_bundle(folder,{'studyBundle':'study-pack.zip','learningResources':[]}),(folder/'study-pack.zip').resolve())
+        self.assertIsNone(declared_study_bundle(folder,{}))
+        with self.assertRaises(ValueError):declared_study_bundle(folder,{'studyBundle':'../outside.zip'})
     def test_every_unit_has_a_local_accessible_diagram(self):
         for path in ROOT.glob('*/course.json'):
             c=json.loads(path.read_text(encoding='utf-8'));figures={f['id']:f for f in c.get('visuals',[])}

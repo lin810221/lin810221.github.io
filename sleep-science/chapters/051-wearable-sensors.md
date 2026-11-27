@@ -58,7 +58,7 @@
 - [AASM：消費型睡眠科技立場](https://pubmed.ncbi.nlm.nih.gov/29734997/)：2018立場；不據舊文概括2026所有裝置的監管狀態。
 - [AASM：活動紀錄器正式臨床指南](https://pubmed.ncbi.nlm.nih.gov/29991437/)：2018正式指南；裝置、用途與臨床條件依原文。
 - [NSF：消費型睡眠科技官方公開立場](https://www.thensf.org/wp-content/uploads/2025/09/National-Sleep-Foundation-Consumer-SleepTech-Position-Statement.pdf)：官方公開PDF，網址含2025；另有2026期刊聲明，不宣稱兩文件完全逐字相同。
-- [NSF：消費型睡眠科技期刊立場索引](https://pubmed.ncbi.nlm.nih.gov/41792005/)：2026正式期刊立場，DOI10.1016/j.sleh.2026.02.003；出版商全文403，公開摘要可核對。
+- [NSF：消費型睡眠科技期刊立場索引](https://pubmed.ncbi.nlm.nih.gov/41792005/)：2026正式期刊立場， `DOI10.1016/j.sleh.2026.02.003` ；出版商全文403，公開摘要可核對。
 
 教材與圖解查核2026-11-17；出版、正式修訂與查核日期分開。圖為原創概念示意，不重製專業評分規則或授權問卷。
 

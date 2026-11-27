@@ -12,7 +12,7 @@
 
 ## Messages 的基本契約
 
-Claude Messages API 使用頂層 system、max_tokens 與 messages。messages 主要包含 user / assistant 回合；system 指令不是隨便新增一筆 role=system 就完成。
+Claude Messages API 使用頂層 system、max_tokens 與 messages。messages 主要包含 user / assistant 回合；system 指令不是隨便新增一筆  `role=system`  就完成。
 
 回應 content 是內容區塊列表，可以有文字、工具請求、thinking 或其他型別。不要假設第一塊永遠是文字。
 

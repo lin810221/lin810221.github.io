@@ -56,7 +56,7 @@
 ## 來源、版本與下一步
 
 - [CDC：流行病學原理第三版](https://stacks.cdc.gov/view/cdc/6914/cdc_6914_DS1.pdf)：第三版2006，2012教材更新；作基礎定義，不當作現行法規。
-- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013，DOI10.1093/aje/kwt133；不是即時疫情估計。
+- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013， `DOI10.1093/aje/kwt133` ；不是即時疫情估計。
 
 教材與圖解查核2026-11-17；資料涵蓋年、出版、正式修訂與查核日分開。圖與案例為原創教學材料，非真實疫情、地區排名或機關授權工具。
 

@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<h1>刪除標籤「{{ object.name }}」？</h1><p>任務本身會保留，只移除這個標籤及連結。</p><form method="post">{% csrf_token %}<button>確認刪除標籤</button></form><a href="{% url 'desk:tags' %}">保留標籤</a>{% endblock %}

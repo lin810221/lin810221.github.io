@@ -20,9 +20,9 @@ python transformer/examples/12_train_tiny_lm.py --output outputs/tiny-lm
 
 `toy_corpus()`用8種主詞片語與4種動作組成32個原創句子，先按完整句子固定分成25句訓練、7句驗證，再tokenize。同一語法內的組合保留可以觀察模型對有限組合的表現，但不是跨網站、跨領域或自然語言能力驗證。若自行擴充語料，另保存來源群組，避免一段文字切碎後同時出現在訓練與驗證。
 
-預設`ByteTokenizer`不學BPE：PAD=0、BOS=1、EOS=2，每個UTF-8 byte以`byte+3`映射，所以詞表固定259。ASCII字母A的byte是65，對應token ID 68；一個中文字可能占多個byte token。這個規則讓陌生字串仍可編碼，也讓你清楚看見「長度」的分母。
+預設`ByteTokenizer`不學BPE： $\mathrm{PAD}=0$ 、 $\mathrm{BOS}=1$ 、 $\mathrm{EOS}=2$ ，每個UTF-8 byte以`byte+3`映射，所以詞表固定259。ASCII字母A的byte是65，對應token ID 68；一個中文字可能占多個byte token。這個規則讓陌生字串仍可編碼，也讓你清楚看見「長度」的分母。
 
-`make_batch()`建立`X=s[:-1]`與`Y=s[1:]`，外部只shift一次。`X`以PAD補齊，`Y`的補齊位置為-100；attention mask與loss ignore各有自己的用途。預設context=64，超出長度應明確切分或改設定，不能偷偷刪掉標記後仍宣稱任務不變。
+`make_batch()`建立 `X=s[:-1]` 與 `Y=s[1:]` ，外部只shift一次。`X`以PAD補齊，`Y`的補齊位置為-100；attention mask與loss ignore各有自己的用途。預設 $\mathrm{context}=64$ ，超出長度應明確切分或改設定，不能偷偷刪掉標記後仍宣稱任務不變。
 
 ## 模型結構與一次更新
 

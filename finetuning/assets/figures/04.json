@@ -1,0 +1,9 @@
+{
+  "title": "偏好配對如何建立",
+  "alt": "同一提示產生兩個候選，經明確標註規則比較；chosen名稱本身不證明內容正確。",
+  "caption": "標註偏差會成為模型學習訊號。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

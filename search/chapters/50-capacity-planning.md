@@ -21,11 +21,11 @@ B_{vector}=N d\frac{b}{8},\qquad
 B_{planned}=(B_{vector}+B_{original}+B_{graph})\,C\,H
 $$
 
-C 是總 copies，包含 primary；H 是容量 headroom 倍數。GB=10^9 bytes，GiB=2^30 bytes。只報「1G」會讓不同單位與配置混淆，報告應同時保存精確 bytes。
+C 是總 copies，包含 primary；H 是容量 headroom 倍數。 $GB=10^{9}$  bytes， $GiB=2^{30}$  bytes。只報「1G」會讓不同單位與配置混淆，報告應同時保存精確 bytes。
 
 ## 圖與量化的粗估
 
-本課 HNSW 圖用 N×M×2×4 bytes 作教學近似，沒有包含多層圖、allocator、ID、對齊與實作差異；正式容量以實測為準。量化成8bits可縮小表示，但若保留原float32向量作 rerank，還要加 N×d×4。PQ codes 也不等於一般 scalar quantization，需按 m 與 code bits 另算。
+本課 HNSW 圖用  $N\times M\times 2\times 4$  bytes 作教學近似，沒有包含多層圖、allocator、ID、對齊與實作差異；正式容量以實測為準。量化成8bits可縮小表示，但若保留原float32向量作 rerank，還要加  $N\times d\times 4$ 。PQ codes 也不等於一般 scalar quantization，需按 m 與 code bits 另算。
 
 ## 尚未包含的成本
 

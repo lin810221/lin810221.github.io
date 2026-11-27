@@ -63,7 +63,7 @@ $$
 
 ## 來源、版本與下一步
 
-- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本GHE/2026.3。
+- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本 `GHE/2026.3` 。
 
 教材與圖解查核2026-11-17；資料涵蓋年、出版、正式修訂與查核日分開。圖與案例為原創教學材料，非真實疫情、地區排名或機關授權工具。
 

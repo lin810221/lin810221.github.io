@@ -26,7 +26,7 @@ JSON fixture依`__file__`定位，從其他工作目錄也能讀取。predict_ta
 
 ## round-trip應驗證什麼
 
-相同原始輸入在存檔前後應有一致預測；本課測試確認最大誤差為0。loader使用weights_only=True與CPU map_location，且檢查格式及Torch版本。這是教學用嚴格同版本協定，並非PyTorch要求所有state_dict一律同版本；真實升級應有相容性測試。仍只載入可信來源，不把選項視為任意不可信檔案的安全承諾。
+相同原始輸入在存檔前後應有一致預測；本課測試確認最大誤差為0。loader使用 `weights_only=True` 與CPU map_location，且檢查格式及Torch版本。這是教學用嚴格同版本協定，並非PyTorch要求所有state_dict一律同版本；真實升級應有相容性測試。仍只載入可信來源，不把選項視為任意不可信檔案的安全承諾。
 
 ## 為何不是精確續訓
 

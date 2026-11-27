@@ -56,7 +56,7 @@ R0是條件下的平均，沒有完整描述接觸網絡、傳播分散程度、
 ## 來源、版本與下一步
 
 - [Kermack與McKendrick：傳染病數學理論原始文獻](https://doi.org/10.1098/rspa.1927.0118)：原始模型1927；本課另寫封閉人口SIR玩具模型，不宣稱已校準真實疫情。
-- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013，DOI10.1093/aje/kwt133；不是即時疫情估計。
+- [Cori等：時間變動再生數的原始方法](https://pubmed.ncbi.nlm.nih.gov/24043437/)：American Journal of Epidemiology 2013， `DOI10.1093/aje/kwt133` ；不是即時疫情估計。
 - [CDC：現場調查的進行](https://www.cdc.gov/field-epi-manual/php/chapters/field-investigation.html)：官方現行網頁；教材章節與頁面日期分列，查核2026-11-17。
 
 教材與圖解查核2026-11-17；資料涵蓋年、出版、正式修訂與查核日分開。圖與案例為原創教學材料，非真實疫情、地區排名或機關授權工具。

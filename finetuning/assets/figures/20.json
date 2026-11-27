@@ -1,0 +1,9 @@
+{
+  "title": "總分可以掩蓋重要切片",
+  "alt": "虛構評估表中總成功率高於少數類別與長輸入切片；各切片可重疊，須另報樣本數。",
+  "caption": "數字是教學案例；不是任何模型測試結果。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

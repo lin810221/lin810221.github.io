@@ -22,7 +22,7 @@
 
 ## 本章的實驗
 
-對固定train索引建立3折清單，dummy、StandardScaler+Logistic、森林共用此清單，回報每折average precision。程式不使用保留test，不把對test的多次挑選當公平選模。比較結果只是這份合成資料的訓練CV，需要最終holdout檢驗整個選擇。
+對固定train索引建立3折清單，dummy、 $\mathrm{StandardScaler}+\mathrm{Logistic}$ 、森林共用此清單，回報每折average precision。程式不使用保留test，不把對test的多次挑選當公平選模。比較結果只是這份合成資料的訓練CV，需要最終holdout檢驗整個選擇。
 
 ## 分數之外的維度
 
@@ -34,7 +34,7 @@
 
 ## 練習與解答
 
-A的CV AP=.81、B=.82，B大10倍，能否直接選B？解答：先看配對fold差異與變異、任務成本、推論需求，必要時選較簡單且可驗證的方案。若A在不同split比較，這.01甚至不能直接歸因於模型。最後描述選擇準則，再開test，不在看到test後改規則。
+A的CV  $\mathrm{AP}=.81$ 、 $B=.82$ ，B大10倍，能否直接選B？解答：先看配對fold差異與變異、任務成本、推論需求，必要時選較簡單且可驗證的方案。若A在不同split比較，這.01甚至不能直接歸因於模型。最後描述選擇準則，再開test，不在看到test後改規則。
 
 ## 完整可執行範例
 

@@ -44,7 +44,7 @@ backward後看grad是否存在、是否finite與norm；step前後用detach().clo
 
 ## 練習與解答
 
-模型train loss下降、val明顯升高：查過擬合、資料分布與前處理，不能直接判斷是optimizer壞了。兩者都完全不動：查學習訊號與更新。只有batch_size=1失敗：查無參數squeeze、BatchNorm及shape假設。解答要附最小輸入與expected/actual shape，才有可追蹤的證據。
+模型train loss下降、val明顯升高：查過擬合、資料分布與前處理，不能直接判斷是optimizer壞了。兩者都完全不動：查學習訊號與更新。只有 `batch_size=1` 失敗：查無參數squeeze、BatchNorm及shape假設。解答要附最小輸入與expected/actual shape，才有可追蹤的證據。
 
 ## 官方來源與延伸閱讀
 

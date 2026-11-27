@@ -24,7 +24,7 @@ $$
 
 ## 如何觀察
 
-每層activation分布、grad norm、零梯度比例與step前後參數差。grad=None先查路徑沒使用、斷圖或未反向；grad=0可能是正確局部導數。不能只將兩者都稱為「梯度消失」。追最早異常層，比在最後loss看到NaN才改lr更有效。
+每層activation分布、grad norm、零梯度比例與step前後參數差。 `grad=None` 先查路徑沒使用、斷圖或未反向； `grad=0` 可能是正確局部導數。不能只將兩者都稱為「梯度消失」。追最早異常層，比在最後loss看到NaN才改lr更有效。
 
 ## 常見對策的角色
 
@@ -36,7 +36,7 @@ $$
 
 ## 練習與解答
 
-residual h_next=h+F(h)的Jacobian為I+J_F，當J_F近零仍有identity路徑；但若J_F在某方向約-I，也可能抵消，不能說residual保證永遠不消失。解答：用結構直覺產生假設，再由具體梯度與訓練實驗驗證。
+residual  $h_{next}=h+F\left(h\right)$ 的Jacobian為 $I+J_{F}$ ，當J_F近零仍有identity路徑；但若J_F在某方向約-I，也可能抵消，不能說residual保證永遠不消失。解答：用結構直覺產生假設，再由具體梯度與訓練實驗驗證。
 
 ## 完整可執行範例
 

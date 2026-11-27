@@ -18,7 +18,7 @@ Bulk 以 NDJSON 傳送多個 action。整個 HTTP 請求成功，裡面仍可能
 
 ## Refresh 與持久性不同
 
-搜尋依讀取可見的 segment；寫入成功未必立即可被一般 search 找到。refresh 讓新變更可搜尋，並不等同 flush、備份或跨節點一致。`refresh=wait_for` 可等待正常 refresh，適合少量需要後續立即搜尋的操作；對每個小寫入強制 refresh 可能產生很多小 segment，增加成本。
+搜尋依讀取可見的 segment；寫入成功未必立即可被一般 search 找到。refresh 讓新變更可搜尋，並不等同 flush、備份或跨節點一致。 `refresh=wait_for`  可等待正常 refresh，適合少量需要後續立即搜尋的操作；對每個小寫入強制 refresh 可能產生很多小 segment，增加成本。
 
 ## 併發寫入有兩種版本概念
 

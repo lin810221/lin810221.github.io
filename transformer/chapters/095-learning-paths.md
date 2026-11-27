@@ -14,7 +14,7 @@
 
 先完成第01至03章的機率、tokenizer、embedding與位置。此階段可以回答：同一文字的byte數、碼點數與token數為何不同；ID為什麼只能對應自己的詞表；位置改變怎麼進入模型。用`01_unicode_bytes.py`、`03_local_tokenizer.py`和`04_embedding_head.py`核對觀念。
 
-接著讀第04至07章，將Q/K/V、mask、block、shifted loss與小型訓練串起來。先手算一列attention，再看SDPA；先用短序列列X/Y，再啟動訓練。完成[從零訓練小型GPT](#085-tiny-project)後，應能指出每個輸出檔的用途，而不只說模型有學到。
+接著讀第04至07章，將Q/K/V、mask、block、shifted loss與小型訓練串起來。先手算一列attention，再看SDPA；先用短序列列 $\frac{X}{Y}$ ，再啟動訓練。完成[從零訓練小型GPT](#085-tiny-project)後，應能指出每個輸出檔的用途，而不只說模型有學到。
 
 第08至14章依序連到生成、cache、效率、架構、後訓練、評估與可靠性。最後用第15章專題整合，並把第16章當作查表與補缺工具。這條路線涵蓋全課主線；遇到數學卡住時回[必要數學推導與手算](#091-math-review)，而不是為了趕進度省略目標與分母。
 

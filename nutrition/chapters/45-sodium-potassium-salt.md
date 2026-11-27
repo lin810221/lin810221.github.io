@@ -22,12 +22,12 @@
 純氯化鈉的質量比例可用食鹽約為鈉的2.5倍：800mg鈉約2g鹽當量。它描述當量，不表示包裝真的加入2g食鹽；鈉也可能由其他成分而來。
 
 $$
-\mathrm{salt\ equivalent\ (g)}\approx\frac{\mathrm{sodium\ (mg)}\times2.5}{1000}
+\mathrm{salt\ equivalent\ (g)}\approx\frac{\mathrm{sodium\ (\mathrm{mg})}\times2.5}{1000}
 $$
 
 ## 數字的名稱不能省
 
-WHO成人鈉指南為低於2000mg/day，台灣一般四歲以上標示NRV也用2000mg，但用途不同。美國2019體系中14歲以上2300mg是CDRR，不是新訂的鈉UL；看似相近的數值不能混稱。
+WHO成人鈉指南為低於 $\frac{2000mg}{day}$ ，台灣一般四歲以上標示NRV也用2000mg，但用途不同。美國2019體系中14歲以上2300mg是CDRR，不是新訂的鈉UL；看似相近的數值不能混稱。
 
 ## 高鉀不一定人人適用
 

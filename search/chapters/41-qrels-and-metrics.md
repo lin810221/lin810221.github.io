@@ -27,6 +27,17 @@ $$
 
 ## 其他指標
 
+MRR 對每個查詢第一個相關結果的名次取倒數後平均；沒找到相關結果時該查詢記零。分級相關可使用下列 DCG／nDCG 定義，並先固定 gain 規則；理想 DCG 為零的查詢需明確訂定處理政策。
+
+<!-- equation:ranked-retrieval-metrics -->
+$$
+\begin{aligned}
+\operatorname{MRR}&=\frac1{|\mathcal Q|}\sum_{q\in\mathcal Q}\frac1{r_q},\\[3pt]
+\operatorname{DCG}@k&=\sum_{i=1}^k\frac{2^{\mathrm{rel}_i}-1}{\log_2(i+1)},\\[3pt]
+\operatorname{nDCG}@k&=\frac{\operatorname{DCG}@k}{\operatorname{IDCG}@k}.
+\end{aligned}
+$$
+
 MRR 看第一個相關結果的倒數名次，適合只需一個答案的查詢；Recall 看召回覆蓋，Precision 看回傳中相關比例。分級 relevance 可用 nDCG 區分非常相關與部分相關。未標註文件不必然無關，若採當0處理要揭露評估集完整度。
 
 ## 避免資料洩漏
@@ -41,7 +52,7 @@ MRR 看第一個相關結果的倒數名次，適合只需一個答案的查詢�
 
 ## 練習與解答
 
-**請先嘗試：** ANN Recall=1，使用者仍說結果很差，先查哪裡？
+**請先嘗試：** ANN  $\mathrm{Recall}=1$ ，使用者仍說結果很差，先查哪裡？
 
 <details><summary>展開解答與判斷依據</summary>
 

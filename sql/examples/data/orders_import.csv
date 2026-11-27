@@ -1,0 +1,4 @@
+external_id,amount,comment
+001,12.50,"quoted, comma"
+002,0.00,
+003,7.25,"text with ""quotes"""

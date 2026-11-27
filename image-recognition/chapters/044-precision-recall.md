@@ -18,7 +18,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 1 | TP | 1 | 0 | 1 | 0.5 |
 | 2 | FP | 1 | 1 | 0.5 | 0.5 |
-| 3 | TP | 2 | 1 | 2/3 | 1 |
+| 3 | TP | 2 | 1 |  $\frac{2}{3}$  | 1 |
 | 4 | FP | 2 | 2 | 0.5 | 1 |
 | 5 | FP | 2 | 3 | 0.4 | 1 |
 
@@ -26,7 +26,7 @@ Recall的分母是真實目標數2，不是五筆預測。末端precision變差�
 
 ## 本課玩具AP：precision envelope的面積
 
-對每個召回位置r，取其右側可達的最大precision，得到向右看齊的包絡線$p_{interp}(r)$。在此算例中，0到0.5的高度為1，0.5到1的高度為2/3；面積為0.5×1+0.5×2/3=5/6，約0.8333。這是本課連續區間面積的玩具AP，不是COCO的101個recall點平均。
+對每個召回位置r，取其右側可達的最大precision，得到向右看齊的包絡線$p_{interp}(r)$。在此算例中，0到0.5的高度為1，0.5到1的高度為 $\frac{2}{3}$ ；面積為 $0.5\times 1+\frac{0.5\times 2}{3}=\frac{5}{6}$ ，約0.8333。這是本課連續區間面積的玩具AP，不是COCO的101個recall點平均。
 
 $$
 AP_{toy}=\sum_i (r_i-r_{i-1})\,p_{interp}(r_i)
@@ -44,11 +44,11 @@ $$
 
 COCO、歷史VOC版本與其他領域可能使用不同插值或平均政策；分類的average precision也有自己的樣本定義，不能只因名稱相似就拿同一個函式當偵測評估器。偵測要先完成空間與類別配對，之後才有排序的TP/FP序列。比較兩個系統時，必須使用同一資料、同一IoU門檻、同一預測上限與同一套評估程式。
 
-練習：若排序改為`FP, TP, TP`、仍有兩個真實物件，本玩具AP是多少？累積precision為0、1/2、2/3，包絡線在0到1皆可達2/3，AP=2/3。請比較這與5/6的差異，說明第一個高分誤報如何影響整條排序。
+練習：若排序改為`FP, TP, TP`、仍有兩個真實物件，本玩具AP是多少？累積precision為0、 $\frac{1}{2}$ 、 $\frac{2}{3}$ ，包絡線在0到1皆可達 $\frac{2}{3}$ ， $\mathrm{AP}=\frac{2}{3}$ 。請比較這與 $\frac{5}{6}$ 的差異，說明第一個高分誤報如何影響整條排序。
 
 ## 原始資料與口徑
 
-表格與算式為原創教學資料；正式歷史口徑可讀[Pascal VOC評估說明](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/index.html)，COCO取樣規則在[COCOeval](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)。引用時保留口徑名稱，避免將此單元的5/6包裝成正式benchmark分數。
+表格與算式為原創教學資料；正式歷史口徑可讀[Pascal VOC評估說明](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/index.html)，COCO取樣規則在[COCOeval](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)。引用時保留口徑名稱，避免將此單元的 $\frac{5}{6}$ 包裝成正式benchmark分數。
 
 ## 可執行範例與驗收
 

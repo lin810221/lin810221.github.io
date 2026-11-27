@@ -1,0 +1,9 @@
+{
+  "title": "microbatch與optimizer step",
+  "alt": "多個microbatch累積有效token加權梯度後，才進行一次參數更新與scheduler step。",
+  "caption": "圖中箭頭表示步驟順序；不是資料彼此串成同一序列。",
+  "sources": [
+    "https://huggingface.co/docs/accelerate/usage_guides/gradient_accumulation"
+  ],
+  "license": "original educational diagram"
+}

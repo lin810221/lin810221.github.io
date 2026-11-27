@@ -27,11 +27,11 @@ python pytorch/examples/24_capstone.py --epochs 10 --device cpu --output runs/py
 
 ## 設定與資料版本一起保存
 
-特徵順序、split、label mapping、scaler與原始資料版本可能比hidden=12更重要。dataset更新後仍用同seed，不代表同樣split或同樣資料。可以用資料清單hash與前處理版本識別，但不要把敏感內容直接寫進公開log。
+特徵順序、split、label mapping、scaler與原始資料版本可能比 $\mathrm{hidden}=12$ 更重要。dataset更新後仍用同seed，不代表同樣split或同樣資料。可以用資料清單hash與前處理版本識別，但不要把敏感內容直接寫進公開log。
 
 ## 推論介面先明確
 
-本課predict接受raw_features[N,4]，驗證有限值與欄數，再套保存的mean/scale，建立模型載best_state，以eval+inference_mode回傳類別索引。正式服務還應驗證欄位名稱、schema version、label名稱與空輸入政策。API服務的流量、認證與部署屬另一層工程，不等同有.pt就完成。
+本課predict接受raw_features[N,4]，驗證有限值與欄數，再套保存的mean/scale，建立模型載best_state，以 $eval+\mathrm{inference}_{mode}$ 回傳類別索引。正式服務還應驗證欄位名稱、schema version、label名稱與空輸入政策。API服務的流量、認證與部署屬另一層工程，不等同有.pt就完成。
 
 ## 練習與解答
 

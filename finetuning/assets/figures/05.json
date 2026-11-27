@@ -1,0 +1,9 @@
+{
+  "title": "追蹤位移與assistant監督",
+  "alt": "七個token的序列依次為角色、問題、結束、角色與答案；只監督assistant內容與其結束符。",
+  "caption": "斜箭頭：下一個token的預測對應。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

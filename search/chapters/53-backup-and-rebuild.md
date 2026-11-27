@@ -22,11 +22,11 @@ RPO 描述可接受遺失多少時間的資料，RTO 描述可接受恢復多久
 
 ## 不能照搬舊 Checkpoint
 
-備份中的 checkpoint 可能顯示舊索引已處理到 seq=10；新 collection 卻一筆也沒有。若只 replay seq>10，就會得到空索引。新 generation 必須從來源快照完整建置，再依自己的快照水位追事件。checkpoint 應與 consumer/generation 及資料狀態綁定。
+備份中的 checkpoint 可能顯示舊索引已處理到  `seq=10` ；新 collection 卻一筆也沒有。若只 replay  $seq>10$ ，就會得到空索引。新 generation 必須從來源快照完整建置，再依自己的快照水位追事件。checkpoint 應與 consumer/generation 及資料狀態綁定。
 
 ## 線上重建需更強協定
 
-離線實驗暫停 producers，因而來源快照穩定。線上要取得一致快照與水位，保留之後的變更，處理 encode 期間更新/刪除，追到可切換門檻後驗收。若沒有 snapshot+CDC 協定，不能把遍歷一次來源後設定最新水位稱為無漏資料重建。
+離線實驗暫停 producers，因而來源快照穩定。線上要取得一致快照與水位，保留之後的變更，處理 encode 期間更新/刪除，追到可切換門檻後驗收。若沒有  $\mathrm{snapshot}+CDC$  協定，不能把遍歷一次來源後設定最新水位稱為無漏資料重建。
 
 ## 還原報告的內容
 

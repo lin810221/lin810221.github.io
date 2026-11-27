@@ -1,0 +1,9 @@
+{
+  "title": "先找問題，再選適應方法",
+  "alt": "左側為資料更新與檢索，右側為穩定行為與微調，兩者都指向共同評估。",
+  "caption": "方法可組合；資訊更新與權重更新需要各自的版本。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

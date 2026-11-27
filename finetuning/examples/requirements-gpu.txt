@@ -1,0 +1,3 @@
+# Optional CUDA route, separately validate OS, GPU, Python and driver support.
+-r requirements.txt
+bitsandbytes==0.50.2

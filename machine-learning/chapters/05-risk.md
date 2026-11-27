@@ -37,7 +37,7 @@ $$
 
 ## 評估指標與決策成本
 
-訓練用log loss、CV用average precision、最後門檻用5×FN+FP，可以是合理設計，只要每一層有明確目的與獨立資料角色。不要為了使三者相同而忽略業務需求；也不要在看test後才改目標，然後仍把test當完全未使用。
+訓練用log loss、CV用average precision、最後門檻用 $5\times \mathrm{FN}+\mathrm{FP}$ ，可以是合理設計，只要每一層有明確目的與獨立資料角色。不要為了使三者相同而忽略業務需求；也不要在看test後才改目標，然後仍把test當完全未使用。
 
 ## 練習與解答
 

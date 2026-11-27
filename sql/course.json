@@ -1,0 +1,2093 @@
+{
+  "slug": "sql",
+  "title": "SQL 與資料工程完整教學",
+  "shortTitle": "SQL 與資料工程",
+  "updated": "2026-11-27",
+  "baseline": "DuckDB 2.0.1 · PostgreSQL 19.0 · Python 3.15.2",
+  "footerLabel": "THE SQL & DATA ENGINEERING FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "exampleFileExtensions": [
+    ".jsonl",
+    ".example"
+  ],
+  "exampleExcludeDirectories": [
+    ".runtime"
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json",
+    "assets/figures/README.md",
+    "examples/DATA_DICTIONARY.md",
+    "examples/RUNBOOK.md",
+    "examples/VERIFICATION.md"
+  ],
+  "visualPresentation": "custom",
+  "searchHint": "搜尋 JOIN、NULL、CDC、watermark、SCD2、Parquet…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從零認識SQL與資料工程",
+      "description": "資料生命週期、粒度、環境與第一個查詢。"
+    },
+    {
+      "id": "schema",
+      "number": "02",
+      "title": "型別、空值與資料契約",
+      "description": "精確數值、時間、約束與schema演進。"
+    },
+    {
+      "id": "queries",
+      "number": "03",
+      "title": "查詢與彙總",
+      "description": "篩選、排序、條件、分組與正確分母。"
+    },
+    {
+      "id": "joins",
+      "number": "04",
+      "title": "關聯與集合",
+      "description": "JOIN、fanout、反連接及集合的語意。"
+    },
+    {
+      "id": "composition",
+      "number": "05",
+      "title": "組織複雜SQL",
+      "description": "子查詢、CTE、遞迴、View與JSON。"
+    },
+    {
+      "id": "windows",
+      "number": "06",
+      "title": "視窗函數與時序分析",
+      "description": "分區、同值、frame、排名與前後列。"
+    },
+    {
+      "id": "transactions",
+      "number": "07",
+      "title": "寫入、交易與併發",
+      "description": "參數綁定、回滾、MVCC與安全重試。"
+    },
+    {
+      "id": "modeling",
+      "number": "08",
+      "title": "資料模型與倉儲粒度",
+      "description": "正規化、關聯、星型與歷史維度。"
+    },
+    {
+      "id": "performance",
+      "number": "09",
+      "title": "執行計畫與效能",
+      "description": "索引、裁剪、join策略、分頁與量測。"
+    },
+    {
+      "id": "formats",
+      "number": "10",
+      "title": "檔案、Parquet與資料湖",
+      "description": "CSV、JSON、列組、分割與演進。"
+    },
+    {
+      "id": "etl",
+      "number": "11",
+      "title": "建立可重現的ETL與ELT",
+      "description": "擷取、原始層、清理、去重與品質閘門。"
+    },
+    {
+      "id": "incremental",
+      "number": "12",
+      "title": "增量、遲到資料與CDC",
+      "description": "游標、閉合區間、刪除、checkpoint與回補。"
+    },
+    {
+      "id": "orchestration",
+      "number": "13",
+      "title": "排程、依賴與重跑",
+      "description": "DAG、冪等、重試、時間區間與並行限制。"
+    },
+    {
+      "id": "quality",
+      "number": "14",
+      "title": "資料品質與測試",
+      "description": "契約、完整率、對帳、反例與隔離。"
+    },
+    {
+      "id": "warehouse",
+      "number": "15",
+      "title": "分析倉儲與指標層",
+      "description": "事實、SCD2、增量模型、指標與服務。"
+    },
+    {
+      "id": "operations",
+      "number": "16",
+      "title": "安全、治理與維運",
+      "description": "參數、權限、個資、血緣、備份與監控。"
+    },
+    {
+      "id": "capstone",
+      "number": "17",
+      "title": "完成DataHarbor專題",
+      "description": "從事件契約到可恢復的Parquet發布。"
+    },
+    {
+      "id": "maintenance",
+      "number": "18",
+      "title": "PostgreSQL實戰與長期維護",
+      "description": "19版實測、方言、工具銜接、遷移與排錯。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-data-lifecycle",
+      "group": "foundations",
+      "title": "SQL、資料庫與資料工程的分工",
+      "summary": "先把查詢、儲存和可靠交付資料分開，再決定每個工具的位置。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "data-lifecycle"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「SQL、資料庫與資料工程的分工」讀圖：追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。請用圖回答：把CSV檔放進GitHub倉庫，是否就有完整資料管線？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "002-grain-and-keys",
+      "group": "foundations",
+      "title": "資料列、粒度與鍵",
+      "summary": "先說清楚一列代表什麼，才有資格解讀筆數與JOIN結果。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "grain-and-keys"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「資料列、粒度與鍵」讀圖：追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。請用圖回答：六筆明細只對應五個訂單鍵，是否需要用DISTINCT刪掉其中一列？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "003-environment",
+      "group": "foundations",
+      "title": "建立可重現的Python與DuckDB環境",
+      "summary": "以當日核對的穩定版為基準，先成功跑通最小資料庫。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "environment"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「建立可重現的Python與DuckDB環境」讀圖：追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。請用圖回答：安裝後仍無法import duckdb，第一步應重新安裝所有套件嗎？",
+      "example": "lab01.py"
+    },
+    {
+      "id": "004-first-query",
+      "group": "foundations",
+      "title": "第一次查詢與結果驗證",
+      "summary": "用一個可以手算的結果，理解SQL查詢的基本形狀。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "first-query"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「第一次查詢與結果驗證」讀圖：同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。請用圖回答：為什麼付款總額13000不能直接顯示成13000美元？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "005-dialects",
+      "group": "foundations",
+      "title": "SQL標準、方言與三種資料庫",
+      "summary": "保留共同概念，也明確標示無法直接互換的語法與能力。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "dialects"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「SQL標準、方言與三種資料庫」讀圖：同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。請用圖回答：Python 3.15.2環境一定包含SQLite 3.54.1嗎？",
+      "example": "lab02.py"
+    },
+    {
+      "id": "006-dataset-contract",
+      "group": "foundations",
+      "title": "建立第一份資料字典與驗收清單",
+      "summary": "把樣本變成可檢查的契約，而不是只看漂亮的查詢結果。",
+      "tags": [
+        "SQL",
+        "foundations",
+        "dataset-contract"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「建立第一份資料字典與驗收清單」讀圖：同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。請用圖回答：一張報表的筆數和來源不同，就一定有資料遺失嗎？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "007-numeric-money",
+      "group": "schema",
+      "title": "數值型別與金額的精確表示",
+      "summary": "用整數最小單位或固定小數，避免把二進位近似當作財務規則。",
+      "tags": [
+        "SQL",
+        "schema",
+        "numeric-money"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「數值型別與金額的精確表示」讀圖：逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。請用圖回答：把無法解析的金額改成0，可以讓後續SUM更穩定嗎？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "008-null-three-values",
+      "group": "schema",
+      "title": "NULL與三值邏輯",
+      "summary": "空值不是空字串、不是零，也不能用一般相等式直接判定。",
+      "tags": [
+        "SQL",
+        "schema",
+        "null-three-values"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「NULL與三值邏輯」讀圖：逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。請用圖回答：COUNT(email)只有2，是否代表客戶表只有2列？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "009-timezones",
+      "group": "schema",
+      "title": "日期、時間戳記與時區",
+      "summary": "同一瞬間、當地時鐘與業務日期是三個不同概念。",
+      "tags": [
+        "SQL",
+        "schema",
+        "timezones"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「日期、時間戳記與時區」讀圖：逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。請用圖回答：TIMESTAMPTZ能否讓你事後還原使用者最初輸入的時區名稱？",
+      "example": "lab03.py"
+    },
+    {
+      "id": "010-constraints",
+      "group": "schema",
+      "title": "主鍵、外鍵與CHECK約束",
+      "summary": "用資料庫保護不可違反的條件，再把業務驗證放在正確邊界。",
+      "tags": [
+        "SQL",
+        "schema",
+        "constraints"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「主鍵、外鍵與CHECK約束」讀圖：從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。請用圖回答：CHECK限制金額非負後，是否就不需要NOT NULL？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "011-schema-evolution",
+      "group": "schema",
+      "title": "CREATE、ALTER與schema演進",
+      "summary": "把欄位變更當作資料契約遷移，而不是只修改一段DDL。",
+      "tags": [
+        "SQL",
+        "schema",
+        "schema-evolution"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「CREATE、ALTER與schema演進」讀圖：從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。請用圖回答：把欄位型別改成功，是否就代表下游報表一定相容？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "012-schema-review",
+      "group": "schema",
+      "title": "資料契約實作與反例",
+      "summary": "用故意錯誤的輸入，確認約束與解析真的會保護資料。",
+      "tags": [
+        "SQL",
+        "schema",
+        "schema-review"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「資料契約實作與反例」讀圖：從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。請用圖回答：Python中的True能否直接通過本課整數金額契約？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "013-projection-order",
+      "group": "queries",
+      "title": "投影、別名、排序與LIMIT",
+      "summary": "欄位選擇與結果順序要明寫，不依賴檔案或儲存的偶然排列。",
+      "tags": [
+        "SQL",
+        "queries",
+        "projection-order"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「投影、別名、排序與LIMIT」讀圖：先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。請用圖回答：查詢已加LIMIT，為什麼還不能叫做最新兩筆訂單？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "014-predicates",
+      "group": "queries",
+      "title": "WHERE、範圍與字串條件",
+      "summary": "讓條件寫出真正的業務集合，再檢查空值與邊界。",
+      "tags": [
+        "SQL",
+        "queries",
+        "predicates"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「WHERE、範圍與字串條件」讀圖：先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。請用圖回答：時間批次的終點若也使用包含條件，相鄰批次會有什麼風險？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "015-case-coalesce",
+      "group": "queries",
+      "title": "CASE、COALESCE與分類欄位",
+      "summary": "分類與補值是資料轉換規則，必須保留可解釋的條件。",
+      "tags": [
+        "SQL",
+        "queries",
+        "case-coalesce"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「CASE、COALESCE與分類欄位」讀圖：先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。請用圖回答：TRY_CAST後都是NULL，是否表示非法文字和來源缺值可以合併成同一原因？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "016-group-having",
+      "group": "queries",
+      "title": "GROUP BY、聚合與HAVING",
+      "summary": "先固定每組的鍵，再理解篩選發生在聚合之前或之後。",
+      "tags": [
+        "SQL",
+        "queries",
+        "group-having"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「GROUP BY、聚合與HAVING」讀圖：獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。請用圖回答：把付款狀態條件從WHERE搬到HAVING，是否一定仍得到同樣語意？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "017-aggregate-denominators",
+      "group": "queries",
+      "title": "正確分母與加權平均",
+      "summary": "整體平均要回到原始分子與分母，不直接平均各組平均。",
+      "tags": [
+        "SQL",
+        "queries",
+        "aggregate-denominators"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「正確分母與加權平均」讀圖：獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。請用圖回答：兩組平均分別4000和1000，但筆數是2和1，整體平均是多少？",
+      "example": "lab06.py"
+    },
+    {
+      "id": "018-query-logical-order",
+      "group": "queries",
+      "title": "SQL的邏輯順序與查詢除錯",
+      "summary": "用分階段結果定位錯誤，再用執行計畫理解實際運算。",
+      "tags": [
+        "SQL",
+        "queries",
+        "query-logical-order"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「SQL的邏輯順序與查詢除錯」讀圖：獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。請用圖回答：總額翻倍時，應先把SUM改成SUM(DISTINCT amount_cents)嗎？",
+      "example": "lab05.py"
+    },
+    {
+      "id": "019-inner-join",
+      "group": "joins",
+      "title": "INNER JOIN與關聯方向",
+      "summary": "把配對條件和每一側的粒度一起讀，避免只背JOIN語法。",
+      "tags": [
+        "SQL",
+        "joins",
+        "inner-join"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「INNER JOIN與關聯方向」讀圖：找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。請用圖回答：從訂單連到唯一客戶後，為什麼付款訂單數仍應是4？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "020-left-join",
+      "group": "joins",
+      "title": "LEFT JOIN與ON、WHERE的差異",
+      "summary": "保留左側列，需要同時理解配對條件與配對後篩選。",
+      "tags": [
+        "SQL",
+        "joins",
+        "left-join"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「LEFT JOIN與ON、WHERE的差異」讀圖：找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。請用圖回答：LEFT JOIN後使用COUNT(*)，沒有訂單的客戶為何可能顯示1？",
+      "example": "lab07.py"
+    },
+    {
+      "id": "021-join-fanout",
+      "group": "joins",
+      "title": "多對多配對與fanout",
+      "summary": "JOIN會列出所有符合的配對，聚合不會自動修復粒度。",
+      "tags": [
+        "SQL",
+        "joins",
+        "join-fanout"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「多對多配對與fanout」讀圖：數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。請用圖回答：訂單102有2筆明細、2筆退款，直接JOIN會產生幾組配對？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "022-semi-anti",
+      "group": "joins",
+      "title": "EXISTS、NOT EXISTS與反連接",
+      "summary": "只問存在與否時，不必把右側所有配對列都展開。",
+      "tags": [
+        "SQL",
+        "joins",
+        "semi-anti"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「EXISTS、NOT EXISTS與反連接」讀圖：數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。請用圖回答：只找至少有一筆付款的客戶時，為何EXISTS常比JOIN後DISTINCT更清楚？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "023-sets",
+      "group": "joins",
+      "title": "UNION、INTERSECT與EXCEPT",
+      "summary": "把集合與多重集合分清楚，別讓預設去重改變來源事實。",
+      "tags": [
+        "SQL",
+        "joins",
+        "sets"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「UNION、INTERSECT與EXCEPT」讀圖：數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。請用圖回答：UNION ALL得到重複外觀的列，是否一定應改用UNION？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "024-join-review",
+      "group": "joins",
+      "title": "多表查詢的粒度驗收",
+      "summary": "建立一套能找出漏列、重複與錯誤總額的檢查順序。",
+      "tags": [
+        "SQL",
+        "joins",
+        "join-review"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「多表查詢的粒度驗收」讀圖：數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。請用圖回答：四筆付款訂單淨額合計11000，是否已經是可直接報稅的正式營收？",
+      "example": "lab08.py"
+    },
+    {
+      "id": "025-subqueries",
+      "group": "composition",
+      "title": "純量、表格與相關子查詢",
+      "summary": "先確認子查詢回傳的形狀，再看它和外層資料的關係。",
+      "tags": [
+        "SQL",
+        "composition",
+        "subqueries"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「純量、表格與相關子查詢」讀圖：沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。請用圖回答：純量子查詢回傳多筆客戶時，直接加LIMIT 1是否是可靠修正？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "026-cte",
+      "group": "composition",
+      "title": "以CTE拆開資料轉換",
+      "summary": "用命名中間結果建立可讀的查詢，不把語法外觀當成效能保證。",
+      "tags": [
+        "SQL",
+        "composition",
+        "cte"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「以CTE拆開資料轉換」讀圖：沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。請用圖回答：看到WITH就能斷定中間結果一定先寫進暫存表嗎？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "027-recursive",
+      "group": "composition",
+      "title": "遞迴CTE、階層與循環",
+      "summary": "遞迴需要明確的起點、擴展規則和終止條件。",
+      "tags": [
+        "SQL",
+        "composition",
+        "recursive"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「遞迴CTE、階層與循環」讀圖：從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。請用圖回答：查詢加了深度上限10，能否宣稱已自動辨識所有循環？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "028-views",
+      "group": "composition",
+      "title": "View、實體表與物化結果",
+      "summary": "分清楚命名邏輯、保存資料和更新資料的責任。",
+      "tags": [
+        "SQL",
+        "composition",
+        "views"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「View、實體表與物化結果」讀圖：沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。請用圖回答：建立mart_daily View後，為什麼不能宣稱已產生一份固定版本的報表檔？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "029-json-nested",
+      "group": "composition",
+      "title": "JSON、巢狀資料與轉型",
+      "summary": "先保留來源外框，再把需要分析的欄位轉成可檢查的型別。",
+      "tags": [
+        "SQL",
+        "composition",
+        "json-nested"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「JSON、巢狀資料與轉型」讀圖：比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。請用圖回答：把商品JSON陣列展開後，COUNT(*)為何不能再直接當訂單數？",
+      "example": "lab10.py"
+    },
+    {
+      "id": "030-composition-review",
+      "group": "composition",
+      "title": "把複雜查詢拆成可驗收的模型",
+      "summary": "命名中間結果，也為每一步寫下不變條件。",
+      "tags": [
+        "SQL",
+        "composition",
+        "composition-review"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「把複雜查詢拆成可驗收的模型」讀圖：從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。請用圖回答：將一段錯誤SQL改寫成多個CTE後，是否就完成品質改善？",
+      "example": "lab09.py"
+    },
+    {
+      "id": "031-window-partitions",
+      "group": "windows",
+      "title": "OVER、PARTITION BY與ORDER BY",
+      "summary": "視窗計算保留原列，和GROUP BY縮成每組一列不同。",
+      "tags": [
+        "SQL",
+        "windows",
+        "window-partitions"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「OVER、PARTITION BY與ORDER BY」讀圖：比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。請用圖回答：把客戶總額用視窗附到每張訂單後，能否直接再SUM這個欄位得到全店總額？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "032-ranking",
+      "group": "windows",
+      "title": "ROW_NUMBER、RANK與同值處理",
+      "summary": "排名規則要對應問題，不讓相同值的先後由偶然順序決定。",
+      "tags": [
+        "SQL",
+        "windows",
+        "ranking"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「ROW_NUMBER、RANK與同值處理」讀圖：比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。請用圖回答：ROW_NUMBER只依非唯一時間排序，能否保證每次挑中同一筆最新訂單？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "033-frames",
+      "group": "windows",
+      "title": "ROWS、RANGE與視窗frame",
+      "summary": "相同時間的peer與逐列累積，可能回答不同問題。",
+      "tags": [
+        "SQL",
+        "windows",
+        "frames"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「ROWS、RANGE與視窗frame」讀圖：比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。請用圖回答：同一時間有兩筆金額時，為何RANGE的累積值可能一次跳過兩筆？",
+      "example": "lab11.py"
+    },
+    {
+      "id": "034-lag-lead",
+      "group": "windows",
+      "title": "LAG、LEAD與空值跳過",
+      "summary": "比較前後列之前，先確認分區、排序與NULL處理。",
+      "tags": [
+        "SQL",
+        "windows",
+        "lag-lead"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「LAG、LEAD與空值跳過」讀圖：讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。請用圖回答：PostgreSQL 19的IGNORE NULLS和DuckDB是否可以整段語法直接互換？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "035-sessions",
+      "group": "windows",
+      "title": "移動視窗、缺日與sessionization",
+      "summary": "時間分析要分清楚最近幾列和最近幾天。",
+      "tags": [
+        "SQL",
+        "windows",
+        "sessions"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「移動視窗、缺日與sessionization」讀圖：讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。請用圖回答：最近三列的平均，是否就等於最近三天的平均？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "036-window-review",
+      "group": "windows",
+      "title": "視窗分析的完整驗收",
+      "summary": "用同值、空值、缺日與邊界資料，證明查詢回答的是同一個問題。",
+      "tags": [
+        "SQL",
+        "windows",
+        "window-review"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「視窗分析的完整驗收」讀圖：讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。請用圖回答：視窗測試只有時間唯一且沒有空值的資料，主要會漏掉哪些風險？",
+      "example": "lab12.py"
+    },
+    {
+      "id": "037-bound-crud",
+      "group": "transactions",
+      "title": "參數化INSERT、UPDATE與DELETE",
+      "summary": "值使用參數，結構使用白名單；先讓寫入邊界可以被驗證。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "bound-crud"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「參數化INSERT、UPDATE與DELETE」讀圖：在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。請用圖回答：使用參數後，能否把使用者輸入的排序欄位直接當作值參數？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "038-bulk-load",
+      "group": "transactions",
+      "title": "批次寫入、COPY與staging",
+      "summary": "先把大量輸入放到可驗證的中間層，再決定正式合併。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "bulk-load"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「批次寫入、COPY與staging」讀圖：在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。請用圖回答：COPY成功是否就表示來源所有列都符合報表契約？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "039-atomicity",
+      "group": "transactions",
+      "title": "BEGIN、COMMIT、ROLLBACK與原子性",
+      "summary": "相關資料變更一起成立，但外部副作用仍有自己的失敗邊界。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "atomicity"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「BEGIN、COMMIT、ROLLBACK與原子性」讀圖：在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。請用圖回答：資料庫COMMIT成功，能否證明外部Parquet指標也已更新？",
+      "example": "lab13.py"
+    },
+    {
+      "id": "040-isolation",
+      "group": "transactions",
+      "title": "MVCC與隔離等級",
+      "summary": "快照、鎖與序列化各自回答不同併發問題。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "isolation"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「MVCC與隔離等級」讀圖：沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。請用圖回答：PostgreSQL的Repeatable Read能否自動保證所有跨列業務條件都等同序列執行？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "041-upsert-merge",
+      "group": "transactions",
+      "title": "UPSERT、MERGE與版本勝出",
+      "summary": "合併語法不會自行定義哪一份來源才是最新真相。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "upsert-merge"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「UPSERT、MERGE與版本勝出」讀圖：沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。請用圖回答：用了MERGE，就能忽略來源同一鍵有兩份衝突payload嗎？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "042-concurrency-review",
+      "group": "transactions",
+      "title": "列鎖、死結與整個交易重試",
+      "summary": "把可重試衝突和永久輸入錯誤分開處理。",
+      "tags": [
+        "SQL",
+        "transactions",
+        "concurrency-review"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「列鎖、死結與整個交易重試」讀圖：沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。請用圖回答：收到40001後，只重送最後一條UPDATE為什麼不夠？",
+      "example": "lab14.py"
+    },
+    {
+      "id": "043-functional-dependencies",
+      "group": "modeling",
+      "title": "函數相依與正規化的目的",
+      "summary": "正規化關注資料事實的相依，而非單純把表拆得越多越好。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "functional-dependencies"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「函數相依與正規化的目的」讀圖：左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。請用圖回答：新增一個自動流水號主鍵，是否就能自動消除資料的更新異常？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "044-normalization-anomalies",
+      "group": "modeling",
+      "title": "拆分實體與驗證可重建性",
+      "summary": "表的拆分需要保留正確關聯與完整性條件。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "normalization-anomalies"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「拆分實體與驗證可重建性」讀圖：左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。請用圖回答：把客戶地區從明細拆出去後，還需要驗證哪些條件？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "045-er-cardinality",
+      "group": "modeling",
+      "title": "ER關係、基數與多對多橋接",
+      "summary": "用關聯方向與唯一性約束，說明哪些配對是允許的。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "er-cardinality"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「ER關係、基數與多對多橋接」讀圖：左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。請用圖回答：訂單與商品的橋接表，為什麼不一定能直接以兩個外鍵作唯一鍵？",
+      "example": "lab15.py"
+    },
+    {
+      "id": "046-star-grain",
+      "group": "modeling",
+      "title": "星型模型與事實表粒度",
+      "summary": "先宣告事實的一列，再選擇維度和可相加的量。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "star-grain"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「星型模型與事實表粒度」讀圖：找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。請用圖回答：平均訂單金額能否像付款總額一樣直接跨地區相加？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "047-scd-types",
+      "group": "modeling",
+      "title": "SCD Type 1與Type 2的歷史選擇",
+      "summary": "覆寫目前資料與保存有效時間，支援的是不同的查詢問題。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "scd-types"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「SCD Type 1與Type 2的歷史選擇」讀圖：共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。請用圖回答：舊版本valid_to與新版本valid_from相同時，為何使用半開區間？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "048-model-review",
+      "group": "modeling",
+      "title": "從需求到模型的設計審查",
+      "summary": "以具體查詢與失敗案例檢查模型，而非只看ER圖是否整齊。",
+      "tags": [
+        "SQL",
+        "modeling",
+        "model-review"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「從需求到模型的設計審查」讀圖：左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。請用圖回答：模型只有目前客戶地區，是否可以直接回答去年的訂單當時屬於哪個地區？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "049-explain",
+      "group": "performance",
+      "title": "EXPLAIN與實際執行計畫",
+      "summary": "把邏輯查詢和物理運算對照，再根據證據找瓶頸。",
+      "tags": [
+        "SQL",
+        "performance",
+        "explain"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「EXPLAIN與實際執行計畫」讀圖：沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。請用圖回答：對UPDATE使用EXPLAIN ANALYZE，是否就不會真的修改資料？",
+      "example": "lab17.py"
+    },
+    {
+      "id": "050-indexes",
+      "group": "performance",
+      "title": "B-tree、複合索引與DuckDB存取方式",
+      "summary": "索引服務特定查詢模式，並帶來維護與儲存成本。",
+      "tags": [
+        "SQL",
+        "performance",
+        "indexes"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「B-tree、複合索引與DuckDB存取方式」讀圖：左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。請用圖回答：WHERE沒有使用複合索引的第一欄，是否就能斷言PostgreSQL 19永遠不可能利用它？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "051-pruning",
+      "group": "performance",
+      "title": "分割、排序與資料裁剪",
+      "summary": "少讀不需要的資料，往往比把全部資料讀快更有效。",
+      "tags": [
+        "SQL",
+        "performance",
+        "pruning"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「分割、排序與資料裁剪」讀圖：左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。請用圖回答：只讀原來十分之一的位元組，是否就能保證整體查詢快十倍？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "052-join-cost",
+      "group": "performance",
+      "title": "Hash Join、排序、記憶體與spill",
+      "summary": "演算法名稱需要搭配資料量與資源限制一起解讀。",
+      "tags": [
+        "SQL",
+        "performance",
+        "join-cost"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「Hash Join、排序、記憶體與spill」讀圖：沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。請用圖回答：Hash Join看起來耗用很多記憶體，是否應直接把所有JOIN改成Nested Loop？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "053-pagination",
+      "group": "performance",
+      "title": "OFFSET與複合鍵游標分頁",
+      "summary": "排序完整性與來源變動，會直接影響跨頁是否漏列或重複。",
+      "tags": [
+        "SQL",
+        "performance",
+        "pagination"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「OFFSET與複合鍵游標分頁」讀圖：左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。請用圖回答：上一頁最後時間有兩筆資料，只保存時間並使用嚴格大於會有什麼風險？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "054-benchmark",
+      "group": "performance",
+      "title": "建立有意義的SQL效能實驗",
+      "summary": "讓結果、環境與測量方法都能被重現。",
+      "tags": [
+        "SQL",
+        "performance",
+        "benchmark"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「建立有意義的SQL效能實驗」讀圖：左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。請用圖回答：兩個查詢的COUNT相同，是否足以證明最佳化沒有改變結果？",
+      "example": "lab18.py"
+    },
+    {
+      "id": "055-csv",
+      "group": "formats",
+      "title": "CSV的型別、引號與前導零",
+      "summary": "簡單文字格式也需要明確schema與成熟的解析器。",
+      "tags": [
+        "SQL",
+        "formats",
+        "csv"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「CSV的型別、引號與前導零」讀圖：將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。請用圖回答：把001先讀成整數1再轉字串，能否自動找回原始識別？",
+      "example": "lab19.py"
+    },
+    {
+      "id": "056-json-lines",
+      "group": "formats",
+      "title": "JSON文件、JSON Lines與schema漂移",
+      "summary": "明確區分檔案外框、事件外框和欄位型別。",
+      "tags": [
+        "SQL",
+        "formats",
+        "json-lines"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「JSON文件、JSON Lines與schema漂移」讀圖：將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。請用圖回答：JSON能成功解析，是否代表事件批次完整且可安全前進checkpoint？",
+      "example": "lab19.py"
+    },
+    {
+      "id": "057-parquet",
+      "group": "formats",
+      "title": "Parquet的列組、欄位chunk與型別",
+      "summary": "用檔案內部結構解釋為什麼部分分析可以少讀資料。",
+      "tags": [
+        "SQL",
+        "formats",
+        "parquet"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「Parquet的列組、欄位chunk與型別」讀圖：找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。請用圖回答：五筆訂單寫入Parquet後總額15000，為何不同於付款總額13000？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "058-partition-layout",
+      "group": "formats",
+      "title": "分割目錄、Hive欄位與小檔案",
+      "summary": "目錄結構是資料管理策略，不是索引與交易的替代品。",
+      "tags": [
+        "SQL",
+        "formats",
+        "partition-layout"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「分割目錄、Hive欄位與小檔案」讀圖：找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。請用圖回答：某日期目錄已經建立，為什麼仍不能直接判定當天資料完整？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "059-file-schema",
+      "group": "formats",
+      "title": "多檔schema演進與版本manifest",
+      "summary": "把可相容的變動和危險的自動合併分開。",
+      "tags": [
+        "SQL",
+        "formats",
+        "file-schema"
+      ],
+      "visual": "figure-36",
+      "visualTask": "「多檔schema演進與版本manifest」讀圖：沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。請用圖回答：讓讀取器按欄位名稱合併檔案，是否能解決同名欄位由美元改成美分？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "060-file-review",
+      "group": "formats",
+      "title": "從檔案讀寫到可驗證交付",
+      "summary": "讀得進來和交付得可靠，是兩個需要分別驗收的成果。",
+      "tags": [
+        "SQL",
+        "formats",
+        "file-review"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「從檔案讀寫到可驗證交付」讀圖：找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。請用圖回答：檔案SHA-256正確，就能證明裡面的業務資料沒有錯嗎？",
+      "example": "lab20.py"
+    },
+    {
+      "id": "061-extract",
+      "group": "etl",
+      "title": "擷取API、資料庫與檔案來源",
+      "summary": "一致性、重讀能力與來源負載，會決定擷取策略。",
+      "tags": [
+        "SQL",
+        "etl",
+        "extract"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「擷取API、資料庫與檔案來源」讀圖：比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。請用圖回答：固定擷取上界後，為什麼仍可能漏掉被倒寫更新時間的更正？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "062-raw-layer",
+      "group": "etl",
+      "title": "不可變原始層與重播證據",
+      "summary": "保存足以重建的來源，而不把raw層誤認成品質已通過。",
+      "tags": [
+        "SQL",
+        "etl",
+        "raw-layer"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「不可變原始層與重播證據」讀圖：比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。請用圖回答：同一batch id傳來不同payload時，為什麼不能當作一般重跑？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "063-normalization",
+      "group": "etl",
+      "title": "清理、轉型與標準化",
+      "summary": "保留原始值，再讓標準化規則有版本與可重算的結果。",
+      "tags": [
+        "SQL",
+        "etl",
+        "normalization"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「清理、轉型與標準化」讀圖：比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。請用圖回答：未知付款狀態都轉成cancelled，為什麼可能讓報表看起來正常卻錯誤？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "064-dedup",
+      "group": "etl",
+      "title": "去重、來源版本與衝突拒絕",
+      "summary": "去重不是刪除長得一樣的列，而是依契約選擇一份事實。",
+      "tags": [
+        "SQL",
+        "etl",
+        "dedup"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「去重、來源版本與衝突拒絕」讀圖：對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。請用圖回答：同一訂單、同一來源版本卻有兩份不同金額時，直接取最後讀到的那筆有何問題？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "065-quality-gate",
+      "group": "etl",
+      "title": "staging、隔離與發布閘門",
+      "summary": "讓失敗停在可修復的位置，不把未驗證資料推到正式使用者面前。",
+      "tags": [
+        "SQL",
+        "etl",
+        "quality-gate"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「staging、隔離與發布閘門」讀圖：逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。請用圖回答：把壞資料隔離後仍前進checkpoint，為何可能永久漏掉它？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "066-etl-project",
+      "group": "etl",
+      "title": "完成第一條ETL與ELT流程",
+      "summary": "讓每一層有可保存、可檢查與可重建的成果。",
+      "tags": [
+        "SQL",
+        "etl",
+        "etl-project"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「完成第一條ETL與ELT流程」讀圖：對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。請用圖回答：先有可重算的小型ETL，再加入排程，為什麼比先安裝大量平台更容易除錯？",
+      "example": "lab22.py"
+    },
+    {
+      "id": "067-watermarks",
+      "group": "incremental",
+      "title": "Watermark、固定上界與遺漏風險",
+      "summary": "增量不只是把WHERE改成更新時間大於上次。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "watermarks"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「Watermark、固定上界與遺漏風險」讀圖：辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。請用圖回答：保存目前看過最大的事件時間，能否證明更早事件全部到齊？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "068-composite-cursors",
+      "group": "incremental",
+      "title": "更新時間與主鍵的複合游標",
+      "summary": "在同時間多列的情況下，讓分頁有完整順序。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "composite-cursors"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「更新時間與主鍵的複合游標」讀圖：辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。請用圖回答：同一時間三列分兩頁讀取時，時間與鍵的複合游標解決了哪個問題？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "069-late-data",
+      "group": "incremental",
+      "title": "遲到、更正與lookback重算",
+      "summary": "時間較早的事實，可以在更晚的來源版本才抵達。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "late-data"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「遲到、更正與lookback重算」讀圖：追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。請用圖回答：新的來源序列修改了昨天的金額，是否因事件日期較舊就應忽略？",
+      "example": "lab23.py"
+    },
+    {
+      "id": "070-cdc-delete",
+      "group": "incremental",
+      "title": "CDC事件、刪除與墓碑",
+      "summary": "變更捕捉的價值不只有新增資料，也包括更正與刪除。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "cdc-delete"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「CDC事件、刪除與墓碑」讀圖：追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。請用圖回答：本課的seq能否直接換成PostgreSQL LSN，並用加一檢查來源沒有缺事件？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "071-checkpoint",
+      "group": "incremental",
+      "title": "資料、checkpoint與outbox的提交邊界",
+      "summary": "讓已處理範圍與資料狀態一起成立，再安排可恢復的發布。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "checkpoint"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「資料、checkpoint與outbox的提交邊界」讀圖：追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。請用圖回答：資料庫提交後程序停止，為何outbox能幫助恢復？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "072-backfill",
+      "group": "incremental",
+      "title": "回補、全量重建與來源對帳",
+      "summary": "日常增量不能取代歷史修復，重建也需要版本化交付。",
+      "tags": [
+        "SQL",
+        "incremental",
+        "backfill"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「回補、全量重建與來源對帳」讀圖：追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。請用圖回答：回補後總金額相同，為什麼仍可能有資料錯誤？",
+      "example": "lab24.py"
+    },
+    {
+      "id": "073-dag",
+      "group": "orchestration",
+      "title": "DAG、依賴與拓樸排序",
+      "summary": "排程之前，先把哪些工作必須先完成畫清楚。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "dag"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「DAG、依賴與拓樸排序」讀圖：由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。請用圖回答：DAG沒有循環，是否就代表工作輸出的資料一定正確？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "074-idempotence",
+      "group": "orchestration",
+      "title": "冪等工作、重送與副作用",
+      "summary": "重跑安全來自可辨識的命令與提交邊界，不來自排程器的名稱。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "idempotence"
+      ],
+      "visual": "figure-34",
+      "visualTask": "「冪等工作、重送與副作用」讀圖：以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。請用圖回答：為什麼排程器提供retry，不等於工作自動具備冪等？",
+      "example": "lab36.py"
+    },
+    {
+      "id": "075-retries",
+      "group": "orchestration",
+      "title": "重試、退避與有限預算",
+      "summary": "先辨認錯誤是否可能暫時恢復，再限制成本與等待。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "retries"
+      ],
+      "visual": "figure-26",
+      "visualTask": "「重試、退避與有限預算」讀圖：從五次嘗試數出只有四個間隔，核對上限退避的等待時間，並把等待與工作耗時分開。請用圖回答：最多嘗試5次、等待1、2、4、4秒時，為何不能說總耗時一定11秒？",
+      "example": "lab26.py"
+    },
+    {
+      "id": "076-schedules",
+      "group": "orchestration",
+      "title": "排程時間、資料區間與時區",
+      "summary": "工作什麼時候啟動，和它應處理哪段資料，不是同一個時間。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "schedules"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「排程時間、資料區間與時區」讀圖：辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。請用圖回答：昨天的工作今天才重跑，能否直接以程序啟動時的now推算查詢範圍？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "077-parallelism",
+      "group": "orchestration",
+      "title": "並行、單寫入者與鎖的範圍",
+      "summary": "先說明誰在協調，才談多開幾個工作能否更快。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "parallelism"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「並行、單寫入者與鎖的範圍」讀圖：在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。請用圖回答：writer.lock存在很久，就能自動視為失效並刪除嗎？",
+      "example": "lab35.py"
+    },
+    {
+      "id": "078-orchestration-review",
+      "group": "orchestration",
+      "title": "工作失敗、依賴阻擋與恢復紀錄",
+      "summary": "把成功定義成成果已驗證，而不是某段程式回傳零。",
+      "tags": [
+        "SQL",
+        "orchestration",
+        "orchestration-review"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「工作失敗、依賴阻擋與恢復紀錄」讀圖：由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。請用圖回答：本課run_dag程序重啟後沒有持久results，為何仍可重跑DataHarbor workflow？",
+      "example": "lab25.py"
+    },
+    {
+      "id": "079-quality-contracts",
+      "group": "quality",
+      "title": "Schema、唯一性與外鍵測試",
+      "summary": "資料品質要落成可執行規則，並知道每條規則能證明什麼。",
+      "tags": [
+        "SQL",
+        "quality",
+        "quality-contracts"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「Schema、唯一性與外鍵測試」讀圖：從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。請用圖回答：外鍵檢查全部通過，能否證明下單時地區的SCD連接一定正確？",
+      "example": "lab04.py"
+    },
+    {
+      "id": "080-quality-metrics",
+      "group": "quality",
+      "title": "完整率、唯一率與空分母",
+      "summary": "品質指標必須明定樣本集合，不能把空資料誤判成百分之百正常。",
+      "tags": [
+        "SQL",
+        "quality",
+        "quality-metrics"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「完整率、唯一率與空分母」讀圖：逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。請用圖回答：空資料表沒有發現缺值，為何本課不直接回報完整率100%？",
+      "example": "lab27.py"
+    },
+    {
+      "id": "081-reconciliation",
+      "group": "quality",
+      "title": "筆數、金額與鍵的來源對帳",
+      "summary": "多種互補檢查，才能避免錯誤互相抵消。",
+      "tags": [
+        "SQL",
+        "quality",
+        "reconciliation"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「筆數、金額與鍵的來源對帳」讀圖：在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。請用圖回答：所有訂單差異加總為零，是否就代表每張訂單都正確？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "082-test-design",
+      "group": "quality",
+      "title": "範例、反例與性質測試",
+      "summary": "測試應守住責任邊界，不只是重述目前程式的寫法。",
+      "tags": [
+        "SQL",
+        "quality",
+        "test-design"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「範例、反例與性質測試」讀圖：在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。請用圖回答：同一批重播後筆數沒變，為何仍要檢查金額與公開指標？",
+      "example": "lab28.py"
+    },
+    {
+      "id": "083-quarantine",
+      "group": "quality",
+      "title": "隔離資料、修復與保留政策",
+      "summary": "隔離是一條受管理的修復路徑，不是把問題永久丟進另一個資料夾。",
+      "tags": [
+        "SQL",
+        "quality",
+        "quarantine"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「隔離資料、修復與保留政策」讀圖：比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。請用圖回答：把失敗列移到另一個資料夾後，就能安全刪掉來源並前進游標嗎？",
+      "example": "lab21.py"
+    },
+    {
+      "id": "084-quality-ci",
+      "group": "quality",
+      "title": "把資料驗收放入CI與每批流程",
+      "summary": "程式測試和批次資料檢查互補，不以其中之一取代另一個。",
+      "tags": [
+        "SQL",
+        "quality",
+        "quality-ci"
+      ],
+      "visual": "figure-36",
+      "visualTask": "「把資料驗收放入CI與每批流程」讀圖：沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。請用圖回答：CI全部通過，今天的來源批次為何仍要做品質檢查？",
+      "example": "lab36.py"
+    },
+    {
+      "id": "085-fact-models",
+      "group": "warehouse",
+      "title": "事實表、快照與事件模型",
+      "summary": "選擇資料的一列之前，先問需要回答哪種時間問題。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "fact-models"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「事實表、快照與事件模型」讀圖：找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。請用圖回答：目前order_state能否單獨回答每個過去時點「當時系統知道的狀態」？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "086-scd-temporal-joins",
+      "group": "warehouse",
+      "title": "歷史維度的唯一時間配對",
+      "summary": "把半開區間落進真正的倉儲資料表與驗收查詢。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "scd-temporal-joins"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「歷史維度的唯一時間配對」讀圖：共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。請用圖回答：目前地區與下單時地區的總額都13000，為何仍不能視為相同報表？",
+      "example": "lab16.py"
+    },
+    {
+      "id": "087-incremental-models",
+      "group": "warehouse",
+      "title": "增量模型、unique key與刪除政策",
+      "summary": "來源增量、目標合併與模型重建，是三個不同層次。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "incremental-models"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「增量模型、unique key與刪除政策」讀圖：追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。請用圖回答：dbt模型設定unique key後，為何仍可能漏掉刪除？",
+      "example": "lab34.py"
+    },
+    {
+      "id": "088-metrics-layer",
+      "group": "warehouse",
+      "title": "Mart、指標定義與語意層",
+      "summary": "同一個名稱，必須對應同一份可重算的問題。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "metrics-layer"
+      ],
+      "visual": "figure-29",
+      "visualTask": "「Mart、指標定義與語意層」讀圖：找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。請用圖回答：平均與去重客戶數為什麼不適合直接把各地區值相加？",
+      "example": "lab29.py"
+    },
+    {
+      "id": "089-serving",
+      "group": "warehouse",
+      "title": "提供資料、授權與一致版本",
+      "summary": "把內部處理成果交給使用者前，先定義讀取契約。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "serving"
+      ],
+      "visual": "figure-34",
+      "visualTask": "「提供資料、授權與一致版本」讀圖：以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。請用圖回答：報表過程中反覆讀current.json，為何可能混用資料版本？",
+      "example": "lab36.py"
+    },
+    {
+      "id": "090-warehouse-review",
+      "group": "warehouse",
+      "title": "完成歷史維度與指標驗收",
+      "summary": "把模型、SQL、品質與來源追溯組成同一份可交付成果。",
+      "tags": [
+        "SQL",
+        "warehouse",
+        "warehouse-review"
+      ],
+      "visual": "figure-30",
+      "visualTask": "「完成歷史維度與指標驗收」讀圖：追蹤垂直事實時點穿過兩個有效版本，確認候選數為二，應修復歷史而非任選一筆。請用圖回答：歷史維度重疊時，能否用ROW_NUMBER任選一版讓事實表維持唯一？",
+      "example": "lab30.py"
+    },
+    {
+      "id": "091-sql-security",
+      "group": "operations",
+      "title": "SQL注入、識別字與執行邊界",
+      "summary": "參數綁定保護值語意，不能把任意SQL變成安全服務。",
+      "tags": [
+        "SQL",
+        "operations",
+        "sql-security"
+      ],
+      "visual": "figure-35",
+      "visualTask": "「SQL注入、識別字與執行邊界」讀圖：比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。請用圖回答：資料庫以唯讀開啟，就可以把任意使用者SQL直接交給DuckDB執行嗎？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "092-roles-rls",
+      "group": "operations",
+      "title": "GRANT、角色與Row-Level Security",
+      "summary": "表級權限、資料列政策與應用程式身分，要分別驗證。",
+      "tags": [
+        "SQL",
+        "operations",
+        "roles-rls"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「GRANT、角色與Row-Level Security」讀圖：以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。請用圖回答：使用superuser測到可以讀全部資料，為何不能拿來驗證一般角色的RLS效果？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "093-privacy-secrets",
+      "group": "operations",
+      "title": "憑證、個資、log與保留期限",
+      "summary": "可靠的資料流程也必須限制不必要的暴露與保存。",
+      "tags": [
+        "SQL",
+        "operations",
+        "privacy-secrets"
+      ],
+      "visual": "figure-31",
+      "visualTask": "「憑證、個資、log與保留期限」讀圖：以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。請用圖回答：把正式表中的個資刪掉後，為什麼還要檢查raw、隔離區與備份？",
+      "example": "lab31.py"
+    },
+    {
+      "id": "094-lineage",
+      "group": "operations",
+      "title": "血緣、資料字典與執行證據",
+      "summary": "讓讀者能從指標回到來源與轉換版本。",
+      "tags": [
+        "SQL",
+        "operations",
+        "lineage"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「血緣、資料字典與執行證據」讀圖：沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。請用圖回答：manifest裡有來源位置與雜湊，是否就等於已完成OpenLineage協定整合？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "095-backup-recovery",
+      "group": "operations",
+      "title": "備份、回讀與RPO、RTO",
+      "summary": "有備份檔，和可以在需要時恢復，是兩個不同成果。",
+      "tags": [
+        "SQL",
+        "operations",
+        "backup-recovery"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「備份、回讀與RPO、RTO」讀圖：沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。請用圖回答：備份檔存在而且大小看起來正常，為何還不算恢復驗收完成？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "096-observability",
+      "group": "operations",
+      "title": "新鮮度、量測、SLO與告警",
+      "summary": "工作成功、資料新鮮和來源完整，不能合成一個綠燈。",
+      "tags": [
+        "SQL",
+        "operations",
+        "observability"
+      ],
+      "visual": "figure-32",
+      "visualTask": "「新鮮度、量測、SLO與告警」讀圖：沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。請用圖回答：新鮮度顯示負值時，為什麼不能直接改成0並視為表現很好？",
+      "example": "lab32.py"
+    },
+    {
+      "id": "097-project-contract",
+      "group": "capstone",
+      "title": "DataHarbor：專題契約與成功條件",
+      "summary": "用同一套來源、交易與發布規則完成可重跑的資料產品。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-contract"
+      ],
+      "visual": "figure-33",
+      "visualTask": "「DataHarbor：專題契約與成功條件」讀圖：核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。請用圖回答：DataHarbor最終付款11500，為何不能拿前面SQL fixture的13000直接判定它錯誤？",
+      "example": "lab33.py"
+    },
+    {
+      "id": "098-project-ingest",
+      "group": "capstone",
+      "title": "DataHarbor：解析、驗證與事件入庫",
+      "summary": "先拒絕不成立的來源，再把可重播證據寫入交易。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-ingest"
+      ],
+      "visual": "figure-33",
+      "visualTask": "「DataHarbor：解析、驗證與事件入庫」讀圖：核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。請用圖回答：兩個不同事件使用同一seq，為何不能只保留最後讀到的一個？",
+      "example": "lab33.py"
+    },
+    {
+      "id": "099-project-incremental",
+      "group": "capstone",
+      "title": "DataHarbor：更正、刪除與舊批重播",
+      "summary": "以新的來源版本更新狀態，並保留刪除證據。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-incremental"
+      ],
+      "visual": "figure-33",
+      "visualTask": "「DataHarbor：更正、刪除與舊批重播」讀圖：核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。請用圖回答：第二批完成後重新送第一批，current.json應回到第一批版本嗎？",
+      "example": "lab33.py"
+    },
+    {
+      "id": "100-project-publish",
+      "group": "capstone",
+      "title": "DataHarbor：版本產物與可恢復發布",
+      "summary": "將資料庫提交和檔案公開分成兩個可檢查階段。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-publish"
+      ],
+      "visual": "figure-34",
+      "visualTask": "「DataHarbor：版本產物與可恢復發布」讀圖：以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。請用圖回答：為什麼先公開current.json再補寫Parquet會有問題？",
+      "example": "lab34.py"
+    },
+    {
+      "id": "101-project-faults",
+      "group": "capstone",
+      "title": "DataHarbor：注入失敗與恢復演練",
+      "summary": "故意中斷，才知道哪一層真的可以恢復。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-faults"
+      ],
+      "visual": "figure-34",
+      "visualTask": "「DataHarbor：注入失敗與恢復演練」讀圖：以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。請用圖回答：after_pointer故障後，重新執行為何不應再次增加付款金額？",
+      "example": "lab34.py"
+    },
+    {
+      "id": "102-project-acceptance",
+      "group": "capstone",
+      "title": "DataHarbor：完整交付與乾淨環境驗收",
+      "summary": "將可以執行的程式、資料、說明與測試一起交給下一位使用者。",
+      "tags": [
+        "SQL",
+        "capstone",
+        "project-acceptance"
+      ],
+      "visual": "figure-34",
+      "visualTask": "「DataHarbor：完整交付與乾淨環境驗收」讀圖：以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。請用圖回答：完整交付為什麼要在解壓後的新目錄重跑？",
+      "example": "lab34.py"
+    },
+    {
+      "id": "103-postgres19",
+      "group": "maintenance",
+      "title": "PostgreSQL 19的私人伺服器實驗",
+      "summary": "把伺服器能力放到真實資料庫驗證，不以本機動畫代替。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "postgres19"
+      ],
+      "visual": "figure-35",
+      "visualTask": "「PostgreSQL 19的私人伺服器實驗」讀圖：比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。請用圖回答：PostgreSQL 19專用語法在18版報錯，為何不能因此判定本課所有SQL概念都錯誤？",
+      "example": "lab35.py"
+    },
+    {
+      "id": "104-portability",
+      "group": "maintenance",
+      "title": "SQLite、DuckDB與PostgreSQL的遷移檢查",
+      "summary": "把語法可執行、結果相同和部署能力相同分開驗收。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "portability"
+      ],
+      "visual": "figure-35",
+      "visualTask": "「SQLite、DuckDB與PostgreSQL的遷移檢查」讀圖：比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。請用圖回答：將資料匯成Parquet後，原本資料庫的RLS和交易設定會一起跟著走嗎？",
+      "example": "lab35.py"
+    },
+    {
+      "id": "105-tool-bridges",
+      "group": "maintenance",
+      "title": "Airflow、dbt、Kafka與分散式工具的銜接",
+      "summary": "按責任選工具，保留已建立的契約與驗收。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "tool-bridges"
+      ],
+      "visual": "figure-35",
+      "visualTask": "「Airflow、dbt、Kafka與分散式工具的銜接」讀圖：比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。請用圖回答：將Python工作放進Airflow後，為什麼仍要測重跑和資料完整性？",
+      "example": "lab35.py"
+    },
+    {
+      "id": "106-deployment-migrations",
+      "group": "maintenance",
+      "title": "遷移、回補與可回復發布",
+      "summary": "把程式、schema、資料與讀取者視為一起演進的系統。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "deployment-migrations"
+      ],
+      "visual": "figure-36",
+      "visualTask": "「遷移、回補與可回復發布」讀圖：沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。請用圖回答：重新部署舊程式，是否必然能回復已被新程式改寫的資料？",
+      "example": "lab36.py"
+    },
+    {
+      "id": "107-troubleshooting",
+      "group": "maintenance",
+      "title": "用最小反例排查查詢與管線",
+      "summary": "先收集可重現證據，再縮小原因，不把相似症狀當作結論。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "troubleshooting"
+      ],
+      "visual": "figure-36",
+      "visualTask": "「用最小反例排查查詢與管線」讀圖：沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。請用圖回答：看到付款總額翻倍時，為何不能直接斷定是資料庫版本造成？",
+      "example": "lab36.py"
+    },
+    {
+      "id": "108-sources",
+      "group": "maintenance",
+      "title": "總複習、術語與版本驗證紀錄",
+      "summary": "把SQL語意、資料可靠性與實際測試範圍一起帶走。",
+      "tags": [
+        "SQL",
+        "maintenance",
+        "sources"
+      ],
+      "visual": "figure-36",
+      "visualTask": "「總複習、術語與版本驗證紀錄」讀圖：沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。請用圖回答：升級資料工程工具時，最值得保留的驗收資產是什麼？",
+      "example": "lab36.py"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "figure-01",
+      "file": "assets/figures/01.svg",
+      "title": "從一筆訂單到一份可驗證報表",
+      "alt": "追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。",
+      "caption": "靜態教材不執行資料庫；Python與伺服器在自己的環境執行。",
+      "readingTask": "追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/clients/python/overview"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-02",
+      "file": "assets/figures/02.svg",
+      "title": "資料粒度與一對多的方向",
+      "alt": "同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。",
+      "caption": "先寫清楚一列代表什麼，再解讀COUNT與JOIN。",
+      "readingTask": "同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-constraints.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-03",
+      "file": "assets/figures/03.svg",
+      "title": "型別、NULL與聚合分母",
+      "alt": "逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。",
+      "caption": "WHERE只保留true；unknown不會自動變成true。",
+      "readingTask": "逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/functions-comparison.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-04",
+      "file": "assets/figures/04.svg",
+      "title": "用約束保護可表達的資料契約",
+      "alt": "從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。",
+      "caption": "CHECK不等於NOT NULL；跨列業務規則仍需另行驗證。",
+      "readingTask": "從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-constraints.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-05",
+      "file": "assets/figures/05.svg",
+      "title": "WHERE選集合，CASE產生標籤",
+      "alt": "先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。",
+      "caption": "條件先核對括號、空值、邊界與單位。",
+      "readingTask": "先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/queries.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-06",
+      "file": "assets/figures/06.svg",
+      "title": "分組平均需要回到原始分子分母",
+      "alt": "獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。",
+      "caption": "此圖是獨立算例；不是訂單fixture的平均金額。",
+      "readingTask": "獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/functions-aggregate.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-07",
+      "file": "assets/figures/07.svg",
+      "title": "LEFT JOIN保留未配對客戶",
+      "alt": "找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。",
+      "caption": "左列保留與後續條件需一起閱讀。",
+      "readingTask": "找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-08",
+      "file": "assets/figures/08.svg",
+      "title": "Fanout是配對乘法，不是隨機重複",
+      "alt": "數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。",
+      "caption": "SUM DISTINCT金額會刪掉合法同值，不是通用修法。",
+      "readingTask": "數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-09",
+      "file": "assets/figures/09.svg",
+      "title": "CTE讓中間粒度可以被檢查",
+      "alt": "沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。",
+      "caption": "CTE命名不代表一定物化；物理計畫仍需檢查。",
+      "readingTask": "沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/query_syntax/with"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-10",
+      "file": "assets/figures/10.svg",
+      "title": "遞迴從anchor展開階層",
+      "alt": "從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。",
+      "caption": "樹、一般圖、可達節點與所有路徑是不同問題。",
+      "readingTask": "從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/query_syntax/with"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-11",
+      "file": "assets/figures/11.svg",
+      "title": "逐列累積與同時間peer的差異",
+      "alt": "比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。",
+      "caption": "ROWS加入訂單鍵穩定同值順序；RANGE保留時間peer。",
+      "readingTask": "比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-12",
+      "file": "assets/figures/12.svg",
+      "title": "前後列的順序與NULL政策",
+      "alt": "讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。",
+      "caption": "跳過空值沒有補回缺失測量，仍要保存品質資訊。",
+      "readingTask": "讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/functions-window.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-13",
+      "file": "assets/figures/13.svg",
+      "title": "資料與處理位置共同提交",
+      "alt": "在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。",
+      "caption": "檔案與外部服務不在這個資料庫交易框內。",
+      "readingTask": "在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/statements/transactions"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-14",
+      "file": "assets/figures/14.svg",
+      "title": "PostgreSQL兩種快照的雙連線對照",
+      "alt": "沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。",
+      "caption": "相同快照不等於所有跨列業務決策都可序列化。",
+      "readingTask": "沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/transaction-iso.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-15",
+      "file": "assets/figures/15.svg",
+      "title": "拆分重複的目前客戶事實",
+      "alt": "左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。",
+      "caption": "拆分後仍需驗證鍵與可重建性；代理鍵不會自動修復相依。",
+      "readingTask": "左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-constraints.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-16",
+      "file": "assets/figures/16.svg",
+      "title": "SCD2以半開區間唯一配對",
+      "alt": "共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。",
+      "caption": "包含valid_from，不包含valid_to；重疊或空窗都需驗收。",
+      "readingTask": "共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-17",
+      "file": "assets/figures/17.svg",
+      "title": "從掃描到聚合的計畫閱讀",
+      "alt": "沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。",
+      "caption": "示意節點，不假裝與每個引擎的實際列印格式完全相同。",
+      "readingTask": "沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/guides/meta/explain_analyze"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-18",
+      "file": "assets/figures/18.svg",
+      "title": "複合索引與列組裁剪的不同責任",
+      "alt": "左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。",
+      "caption": "產品、資料分布和計畫決定實際採用方式，不作無例外推論。",
+      "readingTask": "左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/indexes-multicolumn.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-19",
+      "file": "assets/figures/19.svg",
+      "title": "CSV引號與schema必須一起處理",
+      "alt": "將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。",
+      "caption": "使用成熟解析器，再對輸入與輸出筆數驗收。",
+      "readingTask": "將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/data/csv/overview"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-20",
+      "file": "assets/figures/20.svg",
+      "title": "Parquet的欄位與列組",
+      "alt": "找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。",
+      "caption": "區塊大小是結構示意，不代表真實壓縮或I/O比例。",
+      "readingTask": "找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。",
+      "sources": [
+        "https://parquet.apache.org/docs/file-format/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-21",
+      "file": "assets/figures/21.svg",
+      "title": "Raw與typed staging保留不同證據",
+      "alt": "比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。",
+      "caption": "轉型成功只是品質的一部分，不能靜默補零。",
+      "readingTask": "比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/data/csv/overview"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-22",
+      "file": "assets/figures/22.svg",
+      "title": "來源版本勝出與衝突拒絕",
+      "alt": "對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。",
+      "caption": "事件識別去重和業務實體最新狀態是兩種粒度。",
+      "readingTask": "對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-23",
+      "file": "assets/figures/23.svg",
+      "title": "來源範圍與邊界的包含方式",
+      "alt": "辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。",
+      "caption": "上界需要來源完整性證據，不只是目前看過的最大時間。",
+      "readingTask": "辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。",
+      "sources": [
+        "https://debezium.io/documentation/reference/stable/connectors/postgresql.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-24",
+      "file": "assets/figures/24.svg",
+      "title": "CDC新增、更正與刪除的位置",
+      "alt": "追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。",
+      "caption": "seq是本課單一稠密合成序列，不是PostgreSQL LSN。",
+      "readingTask": "追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。",
+      "sources": [
+        "https://debezium.io/documentation/reference/stable/connectors/postgresql.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-25",
+      "file": "assets/figures/25.svg",
+      "title": "工作依賴與DAG驗證",
+      "alt": "由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。",
+      "caption": "手動執行器會跑真實工作，但不是排程服務。",
+      "readingTask": "由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。",
+      "sources": [
+        "https://airflow.apache.org/docs/apache-airflow/3.4.0/core-concepts/dag-run.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-26",
+      "file": "assets/figures/26.svg",
+      "title": "有限重試的等待預算",
+      "alt": "從五次嘗試數出只有四個間隔，核對上限退避的等待時間，並把等待與工作耗時分開。",
+      "caption": "永久輸入錯誤不應進入同一個重試迴圈。",
+      "readingTask": "從五次嘗試數出只有四個間隔，核對上限退避的等待時間，並把等待與工作耗時分開。",
+      "sources": [
+        "https://airflow.apache.org/docs/apache-airflow/3.4.0/core-concepts/tasks.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-27",
+      "file": "assets/figures/27.svg",
+      "title": "品質指標要帶分子與分母",
+      "alt": "逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。",
+      "caption": "高比例不代表關鍵資料正確；來源完整性需另驗收。",
+      "readingTask": "逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-constraints.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-28",
+      "file": "assets/figures/28.svg",
+      "title": "逐鍵對帳避免差異互相抵消",
+      "alt": "在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。",
+      "caption": "正常fixture每筆差異為零；本圖特別示範失敗資料。",
+      "readingTask": "在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/functions-aggregate.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-29",
+      "file": "assets/figures/29.svg",
+      "title": "星型模型中的鍵與時間角色",
+      "alt": "找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。",
+      "caption": "本課實作保存order_day；日期維度可按任務另行擴充。",
+      "readingTask": "找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-constraints.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-30",
+      "file": "assets/figures/30.svg",
+      "title": "SCD重疊不應由任意挑選掩蓋",
+      "alt": "追蹤垂直事實時點穿過兩個有效版本，確認候選數為二，應修復歷史而非任選一筆。",
+      "caption": "空窗為零配對，同樣不是可直接發布的成功結果。",
+      "readingTask": "追蹤垂直事實時點穿過兩個有效版本，確認候選數為二，應修復歷史而非任選一筆。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-31",
+      "file": "assets/figures/31.svg",
+      "title": "物件權限與RLS的不同層次",
+      "alt": "以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。",
+      "caption": "匯出檔案不會自動繼承原資料庫的RLS政策。",
+      "readingTask": "以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/ddl-rowsecurity.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-32",
+      "file": "assets/figures/32.svg",
+      "title": "追溯與恢復都需要可讀回證據",
+      "alt": "沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。",
+      "caption": "檔案存在、雜湊一致、資料可用與恢復目標是不同驗收。",
+      "readingTask": "沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/backup.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-33",
+      "file": "assets/figures/33.svg",
+      "title": "DataHarbor從兩批事件到目前快照",
+      "alt": "核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。",
+      "caption": "這是另一份專題fixture，不與基本SQL商店數字混用。",
+      "readingTask": "核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。",
+      "sources": [
+        "https://duckdb.org/docs/2.0/sql/statements/transactions"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-34",
+      "file": "assets/figures/34.svg",
+      "title": "發布邊界與三種故障狀態",
+      "alt": "以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。",
+      "caption": "此圖為首次發布；程序中斷測試不等於所有斷電或分散式故障。",
+      "readingTask": "以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。",
+      "sources": [
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-writes.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-35",
+      "file": "assets/figures/35.svg",
+      "title": "跨引擎的共同概念與不同語法",
+      "alt": "比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。",
+      "caption": "SQLite版本另行核對；Python版本不等於SQLite版本。",
+      "readingTask": "比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/functions-window.html"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-36",
+      "file": "assets/figures/36.svg",
+      "title": "升版與交接保留可重新執行的證據",
+      "alt": "沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。",
+      "caption": "程式版本回退不會自動還原schema與已改寫資料。",
+      "readingTask": "沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。",
+      "sources": [
+        "https://www.postgresql.org/docs/19/release-19.html"
+      ],
+      "license": "original educational diagram"
+    }
+  ]
+}

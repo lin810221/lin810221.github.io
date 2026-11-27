@@ -18,7 +18,7 @@
 
 ## 非線性與交互作用
 
-線性模型加入x²或x1×x2後，對原始輸入可表達非線性，但對展開後係數仍線性。PolynomialFeatures會增加維度與相關性，需要縮放、正則化與CV。樹能學一些分段交互，但不代表不需領域特徵或資料品質。
+線性模型加入 $x^{2}$ 或 $x1\times x2$ 後，對原始輸入可表達非線性，但對展開後係數仍線性。PolynomialFeatures會增加維度與相關性，需要縮放、正則化與CV。樹能學一些分段交互，但不代表不需領域特徵或資料品質。
 
 ```python
 from sklearn.pipeline import make_pipeline

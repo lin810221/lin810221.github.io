@@ -14,11 +14,18 @@
 
 ## 選擇不用下載的影像任務
 
-範例生成32張1×8×8圖片，以橫帶與直帶區分兩類，加少量固定seed的雜訊。目的是確定CNN有梯度且能擬合簡單模式。所有train accuracy都只對這32張計算；它沒有真實圖片測試集，不能當作一般影像辨識能力。
+範例生成32張 $1\times 8\times 8$ 圖片，以橫帶與直帶區分兩類，加少量固定seed的雜訊。目的是確定CNN有梯度且能擬合簡單模式。所有train accuracy都只對這32張計算；它沒有真實圖片測試集，不能當作一般影像辨識能力。
 
 ## 網路的形狀帳本
 
-輸入[N,1,8,8]，Conv2d(1,4,3,padding=1)得到[N,4,8,8]，ReLU不改shape，Flatten(start_dim=1)得到[N,256]，Linear(256,2)得到[N,2] logits。答案long[N]搭配CE。每一層都可以用一個batch印shape來核對，而不是只在loss出錯時亂改維度。
+先沿單一空間軸計算卷積輸出。$I$ 是輸入長度、$K$ 是核長、$P$ 是單側對稱 padding、$S$ 是 stride、$D$ 是 dilation；高度與寬度各自套用：
+
+<!-- equation:convolution-output-shape -->
+$$
+O=\left\lfloor\frac{I+2P-D(K-1)-1}{S}+1\right\rfloor.
+$$
+
+輸入[N,1,8,8]， `Conv2d(1,4,3,padding=1)` 得到[N,4,8,8]，ReLU不改shape， `Flatten(start_dim=1)` 得到[N,256]，Linear(256,2)得到[N,2] logits。答案long[N]搭配CE。每一層都可以用一個batch印shape來核對，而不是只在loss出錯時亂改維度。
 
 ## 真實圖片還需要的前處理
 
@@ -30,7 +37,7 @@ PIL常以HWC呈現；轉Tensor時需確認CHW、浮點範圍與channel順序。u
 
 ## 練習與解答
 
-將輸入改16×16，保持padding=1與stride1，Flatten變4×16×16=1024；可改Linear(1024,2)，或改用AdaptiveAvgPool2d降低對輸入尺寸的依賴。若加入pool2，每邊減半再計算。不要用batch_size乘入Linear輸入特徵數，batch軸應保留。
+將輸入改 $16\times 16$ ，保持 `padding=1` 與stride1，Flatten變 $4\times 16\times 16=1024$ ；可改Linear(1024,2)，或改用AdaptiveAvgPool2d降低對輸入尺寸的依賴。若加入pool2，每邊減半再計算。不要用batch_size乘入Linear輸入特徵數，batch軸應保留。
 
 進一步實作train/val切分與每類混淆矩陣，才能討論合成分布上的泛化。再加入更斜的線、位置偏移或不同雜訊，觀察模型學的是方向還是固定位置；這是資料設計與模型假設之間的實際連結。
 

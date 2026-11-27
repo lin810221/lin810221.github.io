@@ -6,7 +6,7 @@
 
 ## 先定義正確，再談速度
 
-KV cache保存每層歷史key與value，讓新的query不必重新計算整個前綴的K/V。這個專題的第一個問題是：同一個eval模型、同一個token前綴，使用cache和不使用cache，對同一位置是否得到容差內一致的logits？只有先通過這項檢查，延遲比較才有意義。
+KV cache保存每層歷史key與value，讓新的query不必重新計算整個前綴的 $\frac{K}{V}$ 。這個專題的第一個問題是：同一個eval模型、同一個token前綴，使用cache和不使用cache，對同一位置是否得到容差內一致的logits？只有先通過這項檢查，延遲比較才有意義。
 
 從專案根目錄執行：
 
@@ -21,9 +21,9 @@ python transformer/examples/18_padding_positions.py
 
 參照路徑把`[1,30,31,32,33]`一次送進模型，取所有位置logits。cache路徑先送前三個token作prefill，再把後兩個token作一個chunk送入。比較`full[:,3:]`與chunk輸出，而不是拿完整張量和只有兩個位置的張量直接比較。
 
-本課cache是按layer排列的K/V tuple清單；每層形狀為$B\times H\times T\times d_h$，新增時在長度軸串接。它與HF的`DynamicCache`是不同介面，不能直接互換。檢查清單長度、batch、heads與head_dim，有助於在錯誤剛發生時定位，而不是等矩陣乘法才出現難讀的shape例外。
+本課cache是按layer排列的 $\frac{K}{V}$  tuple清單；每層形狀為$B\times H\times T\times d_h$，新增時在長度軸串接。它與HF的`DynamicCache`是不同介面，不能直接互換。檢查清單長度、batch、heads與head_dim，有助於在錯誤剛發生時定位，而不是等矩陣乘法才出現難讀的shape例外。
 
-## 最容易寫錯的2×5遮罩
+## 最容易寫錯的 $2\times 5$ 遮罩
 
 past長度3、新query長度2，query絕對位置是3與4，key位置是0到4。允許條件是$t_{\rm key}\le t_{\rm query}$，因此兩列必須是：
 
@@ -32,7 +32,7 @@ query pos3 : 1 1 1 1 0
 query pos4 : 1 1 1 1 1
 ```
 
-此處1／True採PyTorch SDPA的允許語意。直接對2×5矩陣使用左上對齊三角形，第一列只看key0，與新增位置3應能看見前綴不符。教材因此明確建allowed mask，搭配`is_causal=False`；不要再疊一個語意不同的自動因果遮罩。
+此處1／True採PyTorch SDPA的允許語意。直接對 $2\times 5$ 矩陣使用左上對齊三角形，第一列只看key0，與新增位置3應能看見前綴不符。教材因此明確建allowed mask，搭配`is_causal=False`；不要再疊一個語意不同的自動因果遮罩。
 
 遮蔽也不是把score乘0：0仍會在softmax後得到機率。應使用API的bool gating或additive負無窮。完全沒有有效key的query要有明確政策；本課教學模型直接拒絕這種輸入，避免依賴未聲明的NaN或零輸出行為。
 
@@ -54,7 +54,7 @@ query pos4 : 1 1 1 1 1
 
 **題目：** 一個cache實作對單次新增token通過，新增兩個token卻失敗。下一步應先調學習率，還是檢查什麼？
 
-**解析：** 模型權重沒變，先查query長度2與key長度past+2時的mask offset、position_id，以及新增K/V串接的長度軸。印出2×5允許矩陣與每層cache shape；用固定隨機權重即可重現，不需重新訓練。修正後同時保留單token、chunk和padding三種回歸測試。
+**解析：** 模型權重沒變，先查query長度2與key長度 $past+2$ 時的mask offset、position_id，以及新增 $\frac{K}{V}$ 串接的長度軸。印出 $2\times 5$ 允許矩陣與每層cache shape；用固定隨機權重即可重現，不需重新訓練。修正後同時保留單token、chunk和padding三種回歸測試。
 
 ## 參考與日期
 

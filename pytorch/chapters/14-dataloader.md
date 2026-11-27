@@ -14,7 +14,7 @@
 
 ## Dataset 與 DataLoader 的分工
 
-Dataset 定義單筆內容，DataLoader 決定索引順序、批次、collate 與載入程序。batch_size=4、資料六筆時，預設兩批大小為 4、2。drop_last=True 則只留下第一批。訓練是否丟尾批要有理由；驗證通常保留所有樣本，否則指標分母與資料覆蓋會改變。
+Dataset 定義單筆內容，DataLoader 決定索引順序、批次、collate 與載入程序。 `batch_size=4` 、資料六筆時，預設兩批大小為 4、2。 `drop_last=True`  則只留下第一批。訓練是否丟尾批要有理由；驗證通常保留所有樣本，否則指標分母與資料覆蓋會改變。
 
 ## shuffle 與 generator
 
@@ -22,22 +22,22 @@ train 常 shuffle，val/test 不需要。傳入獨立 torch.Generator，可讓�
 
 ## Windows 的安全起點
 
-先 num_workers=0，錯誤會直接出現在主程序，容易診斷。Dataset 類別、collate_fn 與 worker_init_fn 放模組頂層，入口放 `if __name__ == '__main__'`。多程序使用可序列化的物件，不用 lambda 當 worker 函式。Notebook 內定義的類別在 spawn 環境可能無法被 child 找到，改用腳本。
+先  `num_workers=0` ，錯誤會直接出現在主程序，容易診斷。Dataset 類別、collate_fn 與 worker_init_fn 放模組頂層，入口放 `if __name__ == '__main__'`。多程序使用可序列化的物件，不用 lambda 當 worker 函式。Notebook 內定義的類別在 spawn 環境可能無法被 child 找到，改用腳本。
 
 ```powershell
 python pytorch/examples/05_dataloader.py
 python pytorch/examples/05_dataloader.py --workers 2
 ```
 
-第二個指令是選配多程序測試，不屬於預設 CPU 單程序驗證。若卡住，先回到 workers=0，縮小資料並確認檔案與 main guard，再加 worker。
+第二個指令是選配多程序測試，不屬於預設 CPU 單程序驗證。若卡住，先回到  `workers=0` ，縮小資料並確認檔案與 main guard，再加 worker。
 
 ## pin_memory 與 persistent_workers
 
-pin_memory 主要用於主機到 GPU 搬移；CPU 主線先不開。persistent_workers 需 workers>0，讓 epoch 間不必反覆建立程序，但程序內 Dataset 狀態也會持續。prefetch_factor 會增加預取資料量與記憶體；多 worker 並非一定更快，小資料的序列化與啟動成本可能更大。
+pin_memory 主要用於主機到 GPU 搬移；CPU 主線先不開。persistent_workers 需  $\mathrm{workers}>0$ ，讓 epoch 間不必反覆建立程序，但程序內 Dataset 狀態也會持續。prefetch_factor 會增加預取資料量與記憶體；多 worker 並非一定更快，小資料的序列化與啟動成本可能更大。
 
 ## 練習與解答
 
-$N=10$、batch_size=4，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；「[完整訓練迴圈：每一步都知道在更新什麼](#20-training-loop)」會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
+$N=10$、 `batch_size=4` ，保留尾批有 3 次 iteration，大小 `[4,4,2]`；drop_last 只有 2 次。若 epoch loss 直接平均三個 batch mean，最後兩筆的權重會放大。應以每批實際 N 加權；「[完整訓練迴圈：每一步都知道在更新什麼](#20-training-loop)」會寫入正式迴圈。執行本章範例，核對六筆標籤總數仍是六。
 
 ## 完整可執行範例
 

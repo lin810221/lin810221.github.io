@@ -22,11 +22,11 @@
 
 ## 稀疏表示與dense膨脹
 
-one-hot或TF-IDF可能百萬欄但每列少量非零。toarray後N×F全部配置可能OOM，with_mean中心化也常不適合。估記憶體需包含indices／indptr等結構與轉換中間量。小課程設sparse_output=False只為容易觀察，不能無條件照搬大型資料。
+one-hot或TF-IDF可能百萬欄但每列少量非零。toarray後 $N\times F$ 全部配置可能OOM，with_mean中心化也常不適合。估記憶體需包含indices／indptr等結構與轉換中間量。小課程設 `sparse_output=False` 只為容易觀察，不能無條件照搬大型資料。
 
 ## 平行的兩層
 
-GridSearchCV的n_jobs與森林n_jobs，再加NumPy／BLAS內部threads，可能產生巢狀過量平行。先選外層或內層主要平行，控制threadpool，量實際CPU與RAM。n_jobs=-1使用可用資源，不等於分散式叢集，也不保證小模型比較快。
+GridSearchCV的n_jobs與森林n_jobs，再加NumPy／BLAS內部threads，可能產生巢狀過量平行。先選外層或內層主要平行，控制threadpool，量實際CPU與RAM。 `n_jobs=-1` 使用可用資源，不等於分散式叢集，也不保證小模型比較快。
 
 ```python
 from threadpoolctl import threadpool_limits

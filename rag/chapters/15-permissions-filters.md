@@ -25,7 +25,7 @@ AND 文件允許角色與使用者角色有交集
 AND 日期與版本適用
 ```
 
-教材採角色聯集可讀規則，空角色集合直接得到空結果。`roles=None` 表示示範預設 reader，`roles=set()` 表示沒有任何角色，兩者不能用 `roles or {'reader'}` 混在一起。這是很常見的 fail-open 錯誤。
+教材採角色聯集可讀規則，空角色集合直接得到空結果。`roles=None` 表示示範預設 reader， `roles=set()`  表示沒有任何角色，兩者不能用 `roles or {'reader'}` 混在一起。這是很常見的 fail-open 錯誤。
 
 資料庫 filter 的 AND、OR、NOT 與陣列語意也要確認。Qdrant 文件以 `must` 表示條件必須全部符合；實際 schema 與空值處理應依產品設計測試。[Qdrant filtering](https://qdrant.tech/documentation/search/filtering/)
 

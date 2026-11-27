@@ -36,7 +36,7 @@ macOS／Linux可用自己的python3.15命令。報告目的地需不存在，以
 
 ## 公式與筆記
 
-網站內公式離線渲染，進度與筆記依課程分開存在瀏覽器。要改教材，編輯chapters與course.json，再執行tools/build.py economics和validate.py。每個單元提供練習與可展開解答，先嘗試再看解析，較能發現自己混淆的是數學還是經濟假設。
+網站內公式離線渲染，進度與筆記依課程分開存在瀏覽器。要改教材，編輯chapters與course.json，再執行 `tools/build.py`  economics和validate.py。每個單元提供練習與可展開解答，先嘗試再看解析，較能發現自己混淆的是數學還是經濟假設。
 
 ## 練習與解答
 

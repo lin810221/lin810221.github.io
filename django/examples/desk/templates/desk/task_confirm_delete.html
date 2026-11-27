@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<h1>刪除「{{ object.title }}」？</h1><p>確認後會刪除任務及其關聯資料；這個頁面的GET本身不會刪除。</p><form method="post">{% csrf_token %}<button>確認刪除</button></form><a href="{{ object.get_absolute_url }}">保留任務</a>{% endblock %}

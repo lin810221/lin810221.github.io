@@ -32,7 +32,7 @@ $$
 
 ## 輸出層的簡潔梯度
 
-CE把softmax與log合併後，對logits梯度為(P-Y)/N，其中Y為one-hot。這只對此處未加權、每筆一個類別的mean契約成立；若有class weights或有效token mask，分母要重新推導。
+CE把softmax與log合併後，對logits梯度為 $\frac{P-Y}{N}$ ，其中Y為one-hot。這只對此處未加權、每筆一個類別的mean契約成立；若有class weights或有效token mask，分母要重新推導。
 
 $$
 D_Z=\frac{P-Y}{N},\quad

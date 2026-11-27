@@ -20,7 +20,7 @@
 
 ## 第三層：確認 loss 與 target
 
-分類 CrossEntropyLoss 常見輸入是 N×C logits 與 N 個 int64 類別索引；語意分割則是 N×C×H×W logits 與 N×H×W 的整數 mask。若答案含 255，需對應 ignore_index，且評估也排除相同像素。分類 class 0 合法，本課偵測前景卻從 1 起，不能混用。
+分類 CrossEntropyLoss 常見輸入是  $N\times C$  logits 與 N 個 int64 類別索引；語意分割則是  $N\times C\times H\times W$  logits 與  $N\times H\times W$  的整數 mask。若答案含 255，需對應 ignore_index，且評估也排除相同像素。分類 class 0 合法，本課偵測前景卻從 1 起，不能混用。
 
 | 現象 | 優先檢查 | 能提供證據的小測試 |
 | --- | --- | --- |

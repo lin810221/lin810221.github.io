@@ -18,15 +18,22 @@
 
 ## 機率分配 {#4-2-2}
 
-分配描述哪些值可能出現及其機率結構。累積分配F(x)=P(X≤x)對離散連續皆適用，單調不減，兩端極限為0與1。區間機率需注意含不含邊界，離散資料在邊界可能有正機率，連續分布通常沒有。
+分配描述哪些值可能出現及其機率結構。累積分配 $F\left(x\right)=P\left(X\le x\right)$ 對離散連續皆適用，單調不減，兩端極限為0與1。區間機率需注意含不含邊界，離散資料在邊界可能有正機率，連續分布通常沒有。
 
 ## 間斷或離散分配 {#4-2-3}
 
-PMF p(x)=P(X=x)，每項非負、全部相加為1。若X取[0,1,2]、機率[.2,.5,.3]，F(1)=.7，P(X≥1)=.8。用CDF算P(a≤X≤b)時，整數情況常寫F(b)−F(a−1)，不是F(b)−F(a)。
+**機率質量函數（PMF）。** 對可數的每個取值指定機率，全部取值的機率加總為一。
+
+<!-- equation:pmf-definition -->
+$$
+p_X(x)=P(X=x),\qquad p_X(x)\ge0,\qquad\sum_x p_X(x)=1.
+$$
+
+PMF   $p(x)=P\left(X=x\right)$  ，每項非負、全部相加為1。若X取[0,1,2]、機率[.2,.5,.3]， $F\left(1\right)=.7$ ， $P\left(X\ge 1\right)=.8$ 。用CDF算 $P\left(a\le X\le b\right)$ 時，整數情況常寫 $F\left(b\right)-F\left(a-1\right)$ ，不是 $F\left(b\right)-F\left(a\right)$ 。
 
 ## 連續分配 {#4-2-4}
 
-PDF f(x)的積分為1，區間機率是面積；單點機率為0，密度可以大於1。連續均勻U(0,.5)的密度2，但整體面積2×.5=1，並未違反機率上限。CDF為密度累積積分；對連續分布P(a<X≤b)=F(b)−F(a)。
+PDF f(x)的積分為1，區間機率是面積；單點機率為0，密度可以大於1。連續均勻 $\operatorname{U}\left(0,.5\right)$ 的密度2，但整體面積 $2\times .5=1$ ，並未違反機率上限。CDF為密度累積積分；對連續分布 $P\left(a<X\le b\right)=F\left(b\right)-F\left(a\right)$ 。
 
 $$
 F(x)=P(X\leq x),\qquad
@@ -35,7 +42,7 @@ $$
 
 ## 軟體與尾端計算
 
-SciPy以pmf對離散、pdf對連續、cdf對左尾、sf對右尾、ppf對分位數。極小右尾用sf通常比1−cdf穩定。每種分配的參數命名也需查，例如normal的scale是SD而非variance。
+SciPy以pmf對離散、pdf對連續、cdf對左尾、sf對右尾、ppf對分位數。極小右尾用sf通常比 $1-cdf$ 穩定。每種分配的參數命名也需查，例如normal的scale是SD而非variance。
 
 ## 練習與解答
 

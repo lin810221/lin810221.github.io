@@ -22,7 +22,7 @@
 
 ## 複本的角色
 
-Replica 可提高可用性與分攤讀取，但不是備份。錯誤刪除或壞資料可能很快複製到所有節點。Read-your-writes、quorum 與 replica lag 依配置和故障情況而異；應為每項服務承諾寫出可測條件，而非只寫 replicas=2 就宣稱資料永不遺失。
+Replica 可提高可用性與分攤讀取，但不是備份。錯誤刪除或壞資料可能很快複製到所有節點。Read-your-writes、quorum 與 replica lag 依配置和故障情況而異；應為每項服務承諾寫出可測條件，而非只寫  `replicas=2`  就宣稱資料永不遺失。
 
 ## 故障窗口表
 

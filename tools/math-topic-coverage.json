@@ -1,0 +1,3423 @@
+{
+  "reviewed": "2026-11-24",
+  "courses": {
+    "anatomy-physiology": {
+      "units": 120,
+      "formulaSections": {
+        "011-diffusion": [
+          {
+            "heading": "選讀：用簡式整理關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "077-cardiac-cycle": [
+          {
+            "heading": "選讀：用簡式整理關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "083-volumes-ventilation": [
+          {
+            "heading": "選讀：用簡式整理關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "099-nephron": [
+          {
+            "heading": "選讀：用簡式整理關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "applied-statistics": {
+      "units": 70,
+      "formulaSections": {
+        "03-key-terms": [
+          {
+            "heading": "參數與統計量 {#1-3-3}",
+            "anchor": "1-3-3",
+            "requiresDisplayMath": true
+          }
+        ],
+        "07-quantitative-tables": [
+          {
+            "heading": "圖示法 {#2-2-2}",
+            "anchor": "2-2-2",
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-central-tendency": [
+          {
+            "heading": "算術平均數 {#3-1-1}",
+            "anchor": "3-1-1",
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-dispersion": [
+          {
+            "heading": "變異數與標準差 {#3-2-4}",
+            "anchor": "3-2-4",
+            "requiresDisplayMath": true
+          }
+        ],
+        "12-standardization-outliers": [
+          {
+            "heading": "柴比雪夫不等式 {#3-3-2}",
+            "anchor": "3-3-2",
+            "requiresDisplayMath": true
+          }
+        ],
+        "14-probability-rules": [
+          {
+            "heading": "基本性質 {#4-1-2}",
+            "anchor": "4-1-2",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "聯集、交集與條件 {#4-1-3}",
+            "anchor": "4-1-3",
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-random-variables": [
+          {
+            "heading": "間斷或離散分配 {#4-2-3}",
+            "anchor": "4-2-3",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "連續分配 {#4-2-4}",
+            "anchor": "4-2-4",
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-expectation-variance": [
+          {
+            "heading": "離散隨機變數 {#4-3-1}",
+            "anchor": "4-3-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "連續隨機變數 {#4-3-2}",
+            "anchor": "4-3-2",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "線性期望",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "變異數與共變異數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "17-discrete-families": [
+          {
+            "heading": "離散均勻分配（間斷型均等分配） {#4-4-1}",
+            "anchor": "4-4-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "二項分配 {#4-4-2}",
+            "anchor": "4-4-2",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "超幾何分配 {#4-4-3}",
+            "anchor": "4-4-3",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Poisson分配 {#4-4-4-poisson}",
+            "anchor": "4-4-4-poisson",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "選擇與解答",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "18-continuous-families": [
+          {
+            "heading": "連續均勻分配 {#4-5-1}",
+            "anchor": "4-5-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "常態分配 {#4-5-2}",
+            "anchor": "4-5-2",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "二項與常態的關係 {#4-5-3}",
+            "anchor": "4-5-3",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "連續性修正",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "完整例子",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "22-sampling-distribution": [
+          {
+            "heading": "偏差與標準誤",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "23-mean-sampling": [
+          {
+            "heading": "平均與變異 {#5-4-1}",
+            "anchor": "5-4-1",
+            "requiresDisplayMath": true
+          }
+        ],
+        "24-student-t": [
+          {
+            "heading": "t統計量從何而來 {#5-5-1-t}",
+            "anchor": "5-5-1-t",
+            "requiresDisplayMath": true
+          }
+        ],
+        "25-proportion-sampling": [
+          {
+            "heading": "抽樣平均與標準誤",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "26-chi-square-sampling": [
+          {
+            "heading": "樣本變異數的精確樞紐",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "27-f-distribution": [
+          {
+            "heading": "F的構造",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "29-mean-confidence": [
+          {
+            "heading": "大樣本與已知 $\\sigma $  {#6-1-1}",
+            "anchor": "6-1-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "小樣本與未知 $\\sigma $  {#6-1-2}",
+            "anchor": "6-1-2",
+            "requiresDisplayMath": true
+          }
+        ],
+        "30-proportion-confidence": [
+          {
+            "heading": "Wilson score區間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "31-planning-sample-size": [
+          {
+            "heading": "平均數的誤差規劃",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "比例的誤差規劃",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "32-variance-confidence": [
+          {
+            "heading": "從樞紐移項",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "35-one-mean-test": [
+          {
+            "heading": "大樣本情況 {#7-2-1}",
+            "anchor": "7-2-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "小樣本情況 {#7-2-2}",
+            "anchor": "7-2-2",
+            "requiresDisplayMath": true
+          }
+        ],
+        "36-one-proportion-test": [
+          {
+            "heading": "常態近似Z",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "37-one-variance-test": [
+          {
+            "heading": "統計量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "38-two-means": [
+          {
+            "heading": "小樣本與Welch {#7-5-2-welch}",
+            "anchor": "7-5-2-welch",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "成對樣本 {#7-5-3}",
+            "anchor": "7-5-3",
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-two-proportions": [
+          {
+            "heading": "獨立兩組的問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "40-two-variances": [
+          {
+            "heading": "精確F程序",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-chi-square-tests": [
+          {
+            "heading": "獨立性檢定 {#7-8-1}",
+            "anchor": "7-8-1",
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "齊一性檢定 {#7-8-2}",
+            "anchor": "7-8-2",
+            "requiresDisplayMath": true
+          }
+        ],
+        "44-one-way-anova": [
+          {
+            "heading": "傳統平方和",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "46-two-factor-additive": [
+          {
+            "heading": "兩個因子的問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "47-two-factor-interaction": [
+          {
+            "heading": "完整模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "49-correlation": [
+          {
+            "heading": "Pearson相關",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "50-linear-regression": [
+          {
+            "heading": "最小平方解",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-regression-inference": [
+          {
+            "heading": "斜率標準誤與檢定",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "平均反應與個別預測",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "55-reliability-validity": [
+          {
+            "heading": "Cronbach alpha",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "57-factor-analysis": [
+          {
+            "heading": "潛在共同因素模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "deep-learning": {
+      "units": 72,
+      "formulaSections": {
+        "01-representations": [
+          {
+            "heading": "四個互相影響的選擇",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "03-linear-algebra": [
+          {
+            "heading": "樣本與特徵軸",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Jacobian與向量積",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "04-calculus": [
+          {
+            "heading": "導數回答局部問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "逐段相乘",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "05-probability": [
+          {
+            "heading": "從似然到損失",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "熵、交叉熵與KL",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "06-neuron": [
+          {
+            "heading": "一個小型運算單元",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "08-forward": [
+          {
+            "heading": "參數數量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "09-scalar-backprop": [
+          {
+            "heading": "從輸出往回",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-matrix-backprop": [
+          {
+            "heading": "固定 row-vector 記號",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "輸出層的簡潔梯度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "經過ReLU再回第一層",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-gradient-check": [
+          {
+            "heading": "不只看loss是否下降",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "12-activations": [
+          {
+            "heading": "非線性也改變梯度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-regression-loss": [
+          {
+            "heading": "殘差與單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Huber的折衷",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "14-classification-loss": [
+          {
+            "heading": "單選與多標籤",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "不先手寫不穩定機率",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-data-boundaries": [
+          {
+            "heading": "本課可知答案的資料",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-training-evaluation": [
+          {
+            "heading": "未加權分類的整輪平均",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "17-labels": [
+          {
+            "heading": "加權CE的分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-sgd-momentum": [
+          {
+            "heading": "更新規則的起點",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Momentum累積方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "20-adamw": [
+          {
+            "heading": "平滑梯度與平方梯度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "為什麼AdamW分開decay",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "22-initialization": [
+          {
+            "heading": "Xavier與He的假設",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "23-gradient-flow": [
+          {
+            "heading": "導數連乘的結果",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "24-gradient-control": [
+          {
+            "heading": "累積需正確分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "26-weight-regularization": [
+          {
+            "heading": "在目標加入偏好",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "27-dropout": [
+          {
+            "heading": "訓練期間隨機關閉部分值",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "28-batchnorm": [
+          {
+            "heading": "沿哪些軸計算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "29-layernorm": [
+          {
+            "heading": "LayerNorm依指定尾部維度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "RMSNorm的差別",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "30-augmentation": [
+          {
+            "heading": "Mixup的輸入與目標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "31-convolution": [
+          {
+            "heading": "技術上常是cross-correlation",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Stride、padding與dilation的尺寸",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "32-receptive-field": [
+          {
+            "heading": "先推輸出高寬",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "感受野與相鄰輸出的跳距",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "35-residual": [
+          {
+            "heading": "$y=x+F(x)$",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "38-rnn": [
+          {
+            "heading": "每一步讀一個位置",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-bptt": [
+          {
+            "heading": "共享weights的梯度來自所有時間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "40-gates": [
+          {
+            "heading": "LSTM的狀態分工",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "把LSTM各個gate展開",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "GRU較合併的設計",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-embedding-mask": [
+          {
+            "heading": "PAD列與平均分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "43-attention": [
+          {
+            "heading": "從固定摘要到選擇性讀取",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "45-multihead-position": [
+          {
+            "heading": "多個head不是多個獨立答案",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "原始sinusoidal位置公式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "46-transformer-bridge": [
+          {
+            "heading": "兩個主要子層",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "47-contrastive": [
+          {
+            "heading": "In-batch候選與溫度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "49-autoencoder": [
+          {
+            "heading": "Encoder與Decoder",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "50-vae": [
+          {
+            "heading": "重參數化",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "ELBO與KL",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "下界是如何產生的",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-gan": [
+          {
+            "heading": "兩個模型與兩種資料",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "52-diffusion": [
+          {
+            "heading": "前向逐步破壞資料",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "模型學預測noise",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "反向平均與variance",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "最後一步與索引約定",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "53-flows": [
+          {
+            "heading": "本課的線性條件路徑",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "56-reproducibility": [
+          {
+            "heading": "不只挑一個幸運seed",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "57-calibration-ood": [
+          {
+            "heading": "兩個可以手算的分數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "溫度縮放只改一個正數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "58-saliency": [
+          {
+            "heading": "一個有已知答案的模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "59-robustness": [
+          {
+            "heading": "梯度可以指出敏感方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "60-distillation": [
+          {
+            "heading": "目標與方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "61-tabular-project": [
+          {
+            "heading": "模型與訓練協定",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "68-architecture-map": [
+          {
+            "heading": "圖神經網路的起點",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "72-reference": [
+          {
+            "heading": "常用公式與分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "economics": {
+      "units": 84,
+      "formulaSections": {
+        "02-scarcity-and-opportunity-cost": [
+          {
+            "heading": "多做一點的條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "03-models-and-frontiers": [
+          {
+            "heading": "為什麼邊界可能彎曲",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "07-supply-demand-equilibrium": [
+          {
+            "heading": "兩條線如何交會",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "09-elasticity": [
+          {
+            "heading": "沒有單位的反應程度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-revenue-and-other-elasticities": [
+          {
+            "heading": "總收益不是利潤",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "所得彈性",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "交叉價格彈性",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-tax-incidence": [
+          {
+            "heading": "收入移轉與真正損失",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-budget-sets": [
+          {
+            "heading": "兩種商品的限制",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-consumer-optimum": [
+          {
+            "heading": "從目標與限制開始",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-income-substitution-effects": [
+          {
+            "heading": "固定什麼決定分解方式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-production-functions": [
+          {
+            "heading": "Cobb–Douglas的特例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-cost-functions": [
+          {
+            "heading": "成本分類依決策期限",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "平均總成本",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-externalities-and-pigou": [
+          {
+            "heading": "線性模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "43-gdp-and-value-added": [
+          {
+            "heading": "名目支出恆等式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "44-national-accounts-and-standards": [
+          {
+            "heading": "儲蓄與投資的帳",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "45-nominal-real-and-indexes": [
+          {
+            "heading": "固定籃子的CPI",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "47-unemployment-and-participation": [
+          {
+            "heading": "三種狀態與人口範圍",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "49-long-run-growth": [
+          {
+            "heading": "複利的力量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-solow-model": [
+          {
+            "heading": "一個可追蹤的狀態",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "52-golden-rule-and-endogenous-growth": [
+          {
+            "heading": "多資本不必然多消費",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "57-nominal-real-interest": [
+          {
+            "heading": "購買力的報酬",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "59-asset-prices-and-discounting": [
+          {
+            "heading": "現金流與價格",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "63-expenditure-multiplier": [
+          {
+            "heading": "一組指定行為",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "69-debt-dynamics": [
+          {
+            "heading": "流量與存量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "77-balance-of-payments": [
+          {
+            "heading": "帳的結構",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "embedding": {
+      "units": 48,
+      "formulaSections": {
+        "02-vector-arithmetic": [
+          {
+            "heading": "內積與長度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "03-similarity": [
+          {
+            "heading": "先定義「接近」",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "幾何關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "05-vector-spaces": [
+          {
+            "heading": "一個旋轉例子",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "07-cooccurrence": [
+          {
+            "heading": "PMI 與 PPMI",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "08-sparse-low-rank": [
+          {
+            "heading": "本課程的 TF–IDF 定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "低秩表示的想法",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "09-word2vec": [
+          {
+            "heading": "為什麼有兩張表",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-negative-sampling": [
+          {
+            "heading": "把一組配對當二元問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "梯度從哪裡來",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-glove-fasttext": [
+          {
+            "heading": "GloVe 從全域統計學習",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "12-contextual-encoders": [
+          {
+            "heading": "Attention 會做什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-sentence-encoders": [
+          {
+            "heading": "Bi-encoder 的計算方式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "14-pooling": [
+          {
+            "heading": "Mask-aware 平均",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-contrastive-learning": [
+          {
+            "heading": "公式與每個符號",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-training-pairs": [
+          {
+            "heading": "Triplet 的結構",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "26-classification": [
+          {
+            "heading": "最近中心的做法",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "27-clustering": [
+          {
+            "heading": "K-means 的目標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Silhouette 的意思",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "29-recommendations": [
+          {
+            "heading": "最小偏好向量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "31-evaluation": [
+          {
+            "heading": "檢索指標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "32-threshold-calibration": [
+          {
+            "heading": "混淆矩陣",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-space-geometry": [
+          {
+            "heading": "常見後處理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "34-projection": [
+          {
+            "heading": "PCA 的線性目標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "35-quantization": [
+          {
+            "heading": "純量對稱量化",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "36-dimensionality": [
+          {
+            "heading": "Matryoshka 的方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-distillation": [
+          {
+            "heading": "向量蒸餾",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "43-indexes-capacity": [
+          {
+            "heading": "原始容量估算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "ergonomics": {
+      "units": 96,
+      "formulaSections": {
+        "13-forces-and-moments": [
+          {
+            "heading": "力矩看位置與方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-pressure-and-contact": [
+          {
+            "heading": "平均接觸壓力",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "17-time-dependent-response": [
+          {
+            "heading": "教材的指數示意",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-monitor-geometry": [
+          {
+            "heading": "明示參考點",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-visual-angle": [
+          {
+            "heading": "高度和距離的關係",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "55-rnle-equation": [
+          {
+            "heading": "公制公式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "67-push-pull-work": [
+          {
+            "heading": "外功算術",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "69-hand-arm-vibration": [
+          {
+            "heading": "八小時參考算術",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "evidence-health": {
+      "units": 108,
+      "formulaSections": {
+        "031-potential-outcomes": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "037-risk-rate": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "039-rr-or": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "040-rd-nnt": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "044-mean-difference": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "045-standardized-effects": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "049-confidence-intervals": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "052-multiple-testing": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "056-sensitivity-specificity": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "057-predictive-values": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "058-likelihood-ratios": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "074-pooling": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "103-trial-case": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "105-diagnostic-case": [
+          {
+            "heading": "用一個式子整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "exercise-science": {
+      "units": 96,
+      "formulaSections": {
+        "09-force-and-torque": [
+          {
+            "heading": "力矩的幾何",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-work-and-power": [
+          {
+            "heading": "三個不同的量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "20-cardiorespiratory-system": [
+          {
+            "heading": "心輸出量的算式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-vo2-and-units": [
+          {
+            "heading": "同一量的兩種表達",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "23-met-energy": [
+          {
+            "heading": "標準不是個人量測",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "25-measurement-basics": [
+          {
+            "heading": "配對重複性示範",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "31-resistance-variables": [
+          {
+            "heading": "負荷與努力分開",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "43-maximal-strength": [
+          {
+            "heading": "兩個估計",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "45-impulse-and-jump": [
+          {
+            "heading": "力與時間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-heart-rate-reserve": [
+          {
+            "heading": "不同分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "73-internal-external-load": [
+          {
+            "heading": "整堂負荷示例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "first-aid": {
+      "units": 120,
+      "formulaSections": {},
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "image-recognition": {
+      "units": 84,
+      "formulaSections": {
+        "003-pixel-tensors": [
+          {
+            "heading": "手算一個像素的轉換",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "005-geometry": [
+          {
+            "heading": "一個可以手算的框",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "008-resize": [
+          {
+            "heading": "手算一次 letterbox",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "009-filtering": [
+          {
+            "heading": "一個視窗如何產生一個值",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "010-edges": [
+          {
+            "heading": "方向與幅值回答不同問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "020-cnn": [
+          {
+            "heading": "張量一路如何改變",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "022-classification-metrics": [
+          {
+            "heading": "混淆矩陣的方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "025-resnet": [
+          {
+            "heading": "為什麼加入捷徑",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "029-imbalance": [
+          {
+            "heading": "門檻的代價",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "031-patches": [
+          {
+            "heading": "從影像到序列",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "032-attention": [
+          {
+            "heading": "QK與V分別做什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "035-visual-representations": [
+          {
+            "heading": "取特徵與正規化",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "037-boxes": [
+          {
+            "heading": "IoU是區域重疊的比例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "044-precision-recall": [
+          {
+            "heading": "本課玩具AP：precision envelope的面積",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "052-segmentation-loss": [
+          {
+            "heading": "可微的soft Dice算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "053-segmentation-metrics": [
+          {
+            "heading": "每個指標都先寫出有效集合",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "057-open-vocabulary": [
+          {
+            "heading": "從向量手算一次候選排序",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "062-calibration": [
+          {
+            "heading": "手算class-1 ECE與top-label ECE",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "063-explanations": [
+          {
+            "heading": "從四個位置手算Grad-CAM",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "069-runtime-parity": [
+          {
+            "heading": "分層比較",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "079-math-review": [
+          {
+            "heading": "局部加權和與卷積輸出大小",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "分數如何變成機率",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "080-formula-sheet": [
+          {
+            "heading": "半開 XYXY 的幾何",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "遮罩 IoU 與 Dice",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "langgraph": {
+      "units": 28,
+      "formulaSections": {
+        "17-parallel-send": [
+          {
+            "heading": "延伸：數學上怎麼理解？",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "28-math-resources": [
+          {
+            "heading": "用狀態轉移整理觀念",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "路由是另一種函式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "成本與平行時間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "llm": {
+      "units": 38,
+      "formulaSections": {
+        "02-tokens-context": [
+          {
+            "heading": "生成的核心：根據前文預測後續",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "06-sampling": [
+          {
+            "heading": "Temperature 在改變什麼？",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "23-embeddings-rag": [
+          {
+            "heading": "Embedding 是可比較的向量表示",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "25-cache-batch": [
+          {
+            "heading": "何時值得使用？",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "34-cost-routing": [
+          {
+            "heading": "一個明確的成本模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "machine-learning": {
+      "units": 60,
+      "formulaSections": {
+        "01-first-model": [
+          {
+            "heading": "五個基本角色",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "04-mathematics": [
+          {
+            "heading": "用矩陣描述資料",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "期望、變異與抽樣",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "05-risk": [
+          {
+            "heading": "訓練誤差只是觀察到的一部分",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "正則化與模型限制",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-scaling": [
+          {
+            "heading": "一個單位改變排名的例子",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-linear-regression": [
+          {
+            "heading": "模型對特徵線性",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "單變數解的直覺",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "14-regularization": [
+          {
+            "heading": "為什麼懲罰係數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-logistic": [
+          {
+            "heading": "名稱有Regression，任務是分類",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-target-types": [
+          {
+            "heading": "多類Logistic與softmax",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "17-sgd": [
+          {
+            "heading": "一次更新做什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "18-knn": [
+          {
+            "heading": "不先壓縮成一組係數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-naive-bayes": [
+          {
+            "heading": "在每個類別內分開估特徵",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "20-svm": [
+          {
+            "heading": "margin為什麼重要",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Kernel隱含相似度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-trees": [
+          {
+            "heading": "純度與加權改善",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "22-tree-control": [
+          {
+            "heading": "預剪枝與後剪枝",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "23-forests": [
+          {
+            "heading": "為什麼平均多個模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "24-boosting": [
+          {
+            "heading": "與Bagging的差別",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "26-classification-metrics": [
+          {
+            "heading": "先把四種情況列出來",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "27-regression-metrics": [
+          {
+            "heading": "誤差必須有單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "R²可以是負數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "32-calibration": [
+          {
+            "heading": "可靠度分箱與評分",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-thresholds": [
+          {
+            "heading": "手算成本曲線",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "37-unsupervised": [
+          {
+            "heading": "硬分群與軟分群",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "38-kmeans": [
+          {
+            "heading": "目標函數與兩步驟",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "40-pca": [
+          {
+            "heading": "PCA不是挑原始欄位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "44-tabular-design": [
+          {
+            "heading": "回歸的target特性",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "mcp": {
+      "units": 54,
+      "formulaSections": {
+        "02-host-client-server": [
+          {
+            "heading": "整合數量的直覺",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "14-output-contracts": [
+          {
+            "heading": "驗證發生在使用之前",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-token-validation": [
+          {
+            "heading": "能解碼不代表可信",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-idempotent-transactions": [
+          {
+            "heading": "重送是正常情況",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "40-deadlines-retries": [
+          {
+            "heading": "三個時間概念",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-budgets-concurrency": [
+          {
+            "heading": "容量估算的直覺",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "mental-health": {
+      "units": 96,
+      "formulaSections": {
+        "09-acute-chronic-and-recovery": [
+          {
+            "heading": "用任意模型理解累積",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "33-breathing-timing": [
+          {
+            "heading": "算的是時間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "85-measurement-and-scales": [
+          {
+            "heading": "算術與解釋",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "87-screening-bayes": [
+          {
+            "heading": "基線如何進入",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "89-effect-size-and-causality": [
+          {
+            "heading": "原始差和標準化差",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "metabolic-health": {
+      "units": 96,
+      "formulaSections": {
+        "07-homeostasis": [
+          {
+            "heading": "輸入和清除類比",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "09-insulin-resistance": [
+          {
+            "heading": "HOMA1的用途",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-bmi-and-context": [
+          {
+            "heading": "公式與單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-glucose-units": [
+          {
+            "heading": "兩種表達",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-a1c-standardization": [
+          {
+            "heading": "主方程式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-fib4-arithmetic": [
+          {
+            "heading": "公式需要四個輸入",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "57-urine-acr": [
+          {
+            "heading": "單位相消",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "59-gfr-body-surface-area": [
+          {
+            "heading": "教材的體表面積",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "去索引算術",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "75-alcohol-arithmetic": [
+          {
+            "heading": "純酒精近似式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "89-risk-effect-calculation": [
+          {
+            "heading": "固定期限的計算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "nutrition": {
+      "units": 96,
+      "formulaSections": {
+        "13-energy-factors": [
+          {
+            "heading": "常用生理能量係數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-gi-and-gl": [
+          {
+            "heading": "GL加入份量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "27-isocaloric-substitution": [
+          {
+            "heading": "算式與單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "37-vitamin-a-rae": [
+          {
+            "heading": "RAE不是單純重量改單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-vitamin-d-units": [
+          {
+            "heading": "一個可固定換算的例子",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-folate-dfe": [
+          {
+            "heading": "三個換算條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "45-sodium-potassium-salt": [
+          {
+            "heading": "近似換算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "51-nutrient-density": [
+          {
+            "heading": "算一次營養密度",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "55-serving-package": [
+          {
+            "heading": "每100基準的比較",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "63-recipe-yield": [
+          {
+            "heading": "兩個比例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "79-absolute-relative-risk": [
+          {
+            "heading": "把原始事件數找回來",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "public-health": {
+      "units": 120,
+      "formulaSections": {
+        "007-prevalence": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "008-incidence-risk": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "009-person-time": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "011-burden": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "017-standardization": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "026-relative-risk": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "027-absolute-effects": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "029-uncertainty": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "039-stratification": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "046-reporting-delays": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "051-reproduction": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "052-sir-model": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "057-attack-rates": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "062-vaccine-effect": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "063-herd-immunity": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "068-test-accuracy": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "069-predictive-values": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "087-equity-measures": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "100-policy-evaluation": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "101-economic-evaluation": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "pytorch": {
+      "units": 48,
+      "formulaSections": {
+        "01-mental-model": [
+          {
+            "heading": "五個角色與一次更新",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "06-broadcasting": [
+          {
+            "heading": "逐元素與線性代數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "08-autograd": [
+          {
+            "heading": "先用數字算一次",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "10-gradient-debug": [
+          {
+            "heading": "中央差分當第二種證據",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "13-datasets": [
+          {
+            "heading": "切分先於學習前處理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "15-collate": [
+          {
+            "heading": "看懂補零後的意義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "17-layers": [
+          {
+            "heading": "Conv2d 與空間尺寸",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "18-losses": [
+          {
+            "heading": "多類單選：CrossEntropyLoss",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "二元與多標籤：BCEWithLogitsLoss",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "回歸：MSELoss",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-optimizers": [
+          {
+            "heading": "SGD 與 AdamW 的起點",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "20-training-loop": [
+          {
+            "heading": "正確計算 epoch mean",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "22-metrics": [
+          {
+            "heading": "先定義你真正關心的錯誤",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "24-regression": [
+          {
+            "heading": "輸入、輸出與損失",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "26-cnn": [
+          {
+            "heading": "網路的形狀帳本",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "36-accumulation": [
+          {
+            "heading": "尾批不能總是除固定K",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "rag": {
+      "units": 42,
+      "formulaSections": {
+        "08-chunking": [
+          {
+            "heading": "固定視窗如何計算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "11-bm25": [
+          {
+            "heading": "逐項讀懂 BM25",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "12-vectors": [
+          {
+            "heading": "三個相關運算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "16-hybrid-rrf": [
+          {
+            "heading": "不直接相加原始分數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "18-mmr-diversity": [
+          {
+            "heading": "讀懂公式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "21-context-budget": [
+          {
+            "heading": "預算式子要算完整",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "30-retrieval-metrics": [
+          {
+            "heading": "一個分數無法描述全部品質",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "MRR 看第一個相關結果",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "nDCG 看分級相關與位置",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "31-answer-evaluation": [
+          {
+            "heading": "忠實度的概念計算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "36-cost-latency": [
+          {
+            "heading": "一份可替換價格的估算式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "search": {
+      "units": 60,
+      "formulaSections": {
+        "09-bm25-scoring": [
+          {
+            "heading": "從詞頻到飽和",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "19-distance-and-exact-baseline": [
+          {
+            "heading": "三種常見度量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "22-ivf-pq-and-quantization": [
+          {
+            "heading": "PQ 再壓縮向量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "38-reciprocal-rank-fusion": [
+          {
+            "heading": "為什麼不用直接相加",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "39-score-normalization": [
+          {
+            "heading": "線性融合的假設",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "41-qrels-and-metrics": [
+          {
+            "heading": "兩份不同的答案",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "其他指標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "50-capacity-planning": [
+          {
+            "heading": "原始向量大小",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "sleep-science": {
+      "units": 108,
+      "formulaSections": {
+        "015-two-process": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "044-cross-midnight": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "045-duration-efficiency": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "047-regularity": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "048-diary-interpretation": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "052-validation": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "056-caffeine": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "069-ahi-rei": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "080-non24": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "091-time-zones": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "103-architecture-case": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "104-diary-case": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "106-wearable-case": [
+          {
+            "heading": "用一個簡式整理",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "transformer": {
+      "units": 96,
+      "formulaSections": {
+        "001-lm-task": [
+          {
+            "heading": "用鏈式法則描述一段序列",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "003-probability": [
+          {
+            "heading": "為什麼要取對數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "平均分母與perplexity",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "005-gradients": [
+          {
+            "heading": "一個從頭算完的數值例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "016-sinusoidal": [
+          {
+            "heading": "公式中每個符號是什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "017-rope": [
+          {
+            "heading": "從一對數值開始旋轉",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "020-scaled-attention": [
+          {
+            "heading": "四步組成一個Attention",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "026-residual-norm": [
+          {
+            "heading": "LayerNorm在每個位置內計算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "027-rms-swiglu": [
+          {
+            "heading": "RMSNorm不先減均值",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "SwiGLU先產生兩條中間支路",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "033-packing": [
+          {
+            "heading": "loss的分母是有效預測數",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "039-training-loop": [
+          {
+            "heading": "目標與更新",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "043-autoregressive": [
+          {
+            "heading": "機率分解",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "045-sampling": [
+          {
+            "heading": "Temperature先改分布",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "050-cache-equivalence": [
+          {
+            "heading": "因果條件帶著偏移",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "053-kv-capacity": [
+          {
+            "heading": "純KV公式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "055-flash-attention": [
+          {
+            "heading": "線上Softmax的統計",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "056-quantization": [
+          {
+            "heading": "最簡單的對稱INT8",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "058-speculative": [
+          {
+            "heading": "一個可手算的分布",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "061-encoder": [
+          {
+            "heading": "遮蔽語言模型避免直接抄答案",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "062-encoder-decoder": [
+          {
+            "heading": "三種注意力各自看什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "063-decoder-families": [
+          {
+            "heading": "共同目標是條件序列機率",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "064-moe": [
+          {
+            "heading": "Router 與選擇性加權",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "065-hybrids": [
+          {
+            "heading": "Attention 與狀態壓縮的取捨",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "067-sft": [
+          {
+            "heading": "哪些位置參與 loss",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "068-preferences": [
+          {
+            "heading": "從成對比較建立獎勵模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "以獎勵調整生成策略",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "069-dpo": [
+          {
+            "heading": "把符號方向固定下來",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "070-reasoning": [
+          {
+            "heading": "Outcome 與 process feedback",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "四個候選的機率算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "071-adaptation": [
+          {
+            "heading": "LoRA 的低秩更新",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "蒸餾學的是教師訊號",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "073-perplexity": [
+          {
+            "heading": "PPL 量的是哪一個預測問題",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "074-task-benchmarks": [
+          {
+            "heading": "整體平均會改變權重",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "075-contamination": [
+          {
+            "heading": "一個混合成績的原創算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "076-context-evaluation": [
+          {
+            "heading": "一個位置平均的算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "077-confidence": [
+          {
+            "heading": "校準的原創算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "079-interpretability": [
+          {
+            "heading": "加權和的原創反例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "080-hallucination": [
+          {
+            "heading": "評分誘因的原創算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "081-prompt-boundaries": [
+          {
+            "heading": "原創的攻防與效用算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "082-bias": [
+          {
+            "heading": "平均會隱藏分組差異",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "091-math-review": [
+          {
+            "heading": "Cross entropy為何得到p減y",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "Norm與RoPE保留了什麼",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "092-formula-sheet": [
+          {
+            "heading": "預設TinyGPT參數量手算",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "KV cache純張量容量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "Core quantitative definitions require section-level display math; conceptual/action-only sections need none."
+    },
+    "finetuning": {
+      "units": 72,
+      "formulaSections": {
+        "014-autoregressive-loss": [
+          {
+            "heading": "下一個token的正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "015-assistant-mask": [
+          {
+            "heading": "有效target才進入分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "020-torch-sft": [
+          {
+            "heading": "梯度更新的基本式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "022-validation-loop": [
+          {
+            "heading": "評估模式與可比較的分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "025-lora-matrices": [
+          {
+            "heading": "低秩更新的正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "026-lora-gradients": [
+          {
+            "heading": "初始輸出如何保持不變",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "029-peft-variants": [
+          {
+            "heading": "rank與縮放的獨立角色",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "DoRA與提示調整的位置",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "031-quantization": [
+          {
+            "heading": "均勻量化的教學定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "035-memory-budget": [
+          {
+            "heading": "純張量的預算式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "037-gradient-accumulation": [
+          {
+            "heading": "一次更新的正確權重",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "038-optimizer-scheduler": [
+          {
+            "heading": "用optimizer step定義排程",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "044-sequence-scores": [
+          {
+            "heading": "同一提示下評分回答",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "045-dpo-objective": [
+          {
+            "heading": "從四個序列分數得到一個loss",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "047-rlhf-grpo": [
+          {
+            "heading": "群組相對優勢的概念式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "050-distillation": [
+          {
+            "heading": "溫度與KL目標",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "053-forgetting": [
+          {
+            "heading": "混合目標的明確定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "055-evaluation-contract": [
+          {
+            "heading": "同時報分子、分母與失敗",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "057-uncertainty-slices": [
+          {
+            "heading": "配對平均差的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "062-merge-serving": [
+          {
+            "heading": "合併的定義與條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "065-cost-privacy": [
+          {
+            "heading": "估算需要清楚的單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "070-formula-sheet": [
+          {
+            "heading": "遮罩損失與分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "LoRA與參數量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "DPO相對偏好",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "定量主題逐節定義公式、符號、條件與可重算的算例；API與程式參數保持程式碼。"
+    },
+    "django": {
+      "units": 84,
+      "formulaSections": {
+        "011-middleware": [
+          {
+            "heading": "延遲分項的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "027-related-loading": [
+          {
+            "heading": "查詢次數的算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "035-pagination": [
+          {
+            "heading": "分頁的正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "061-caching": [
+          {
+            "heading": "平均成本的教學模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "僅對查詢成本、分頁與快取等真正定量主題定義公式，API與路徑使用程式碼格式。"
+    },
+    "sql": {
+      "units": 108,
+      "formulaSections": {
+        "007-numeric-money": [
+          {
+            "heading": "換算的定義與條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "017-aggregate-denominators": [
+          {
+            "heading": "平均訂單金額的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "由分組結果重建整體",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "021-join-fanout": [
+          {
+            "heading": "配對列數的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "032-ranking": [
+          {
+            "heading": "分位排名有自己的分母",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "033-frames": [
+          {
+            "heading": "逐列累積的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "051-pruning": [
+          {
+            "heading": "讀取比例的教學定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "075-retries": [
+          {
+            "heading": "有上限的指數退避",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "080-quality-metrics": [
+          {
+            "heading": "完整率的正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "唯一率的正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "081-reconciliation": [
+          {
+            "heading": "訂單層對帳的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "095-backup-recovery": [
+          {
+            "heading": "RPO與RTO的教學算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "096-observability": [
+          {
+            "heading": "新鮮度的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "對JOIN配對數、加權平均、frame、品質比例、重試與新鮮度等量化主題逐節定義符號、分母、適用條件與算例。API、SQL與事件契約保持程式碼。"
+    },
+    "multimodal": {
+      "units": 96,
+      "formulaSections": {
+        "008-dpi-coordinates": [
+          {
+            "heading": "定義單位",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "正規化仍有前提",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "009-box-polygon": [
+          {
+            "heading": "IoU正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "010-crop-inverse": [
+          {
+            "heading": "反向轉換",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "011-rotation": [
+          {
+            "heading": "順時針九十度的算例",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "012-tiling": [
+          {
+            "heading": "切片數量的教學模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "023-ocr-error-metrics": [
+          {
+            "heading": "CER正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "036-table-reconciliation": [
+          {
+            "heading": "逐列算式",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "039-business-rules": [
+          {
+            "heading": "本課的總額條件",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "043-contrastive-learning": [
+          {
+            "heading": "相似度定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "044-contrastive-objective": [
+          {
+            "heading": "以圖找文",
+            "anchor": null,
+            "requiresDisplayMath": true
+          },
+          {
+            "heading": "兩個方向",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "054-service-budget": [
+          {
+            "heading": "成本的教學模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "064-late-interaction": [
+          {
+            "heading": "正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "065-rank-fusion": [
+          {
+            "heading": "RRF定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "068-anls": [
+          {
+            "heading": "ANLS的單一答案定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "069-field-metrics": [
+          {
+            "heading": "正式定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "071-risk-coverage": [
+          {
+            "heading": "定義接受集合",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "079-audio-sampling": [
+          {
+            "heading": "時長的定義",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "081-time-alignment": [
+          {
+            "heading": "半開區間",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "083-frame-sampling": [
+          {
+            "heading": "影格數量的教學模型",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ],
+        "091-resource-limits": [
+          {
+            "heading": "渲染工作量",
+            "anchor": null,
+            "requiresDisplayMath": true
+          }
+        ]
+      },
+      "policy": "座標、IoU、編輯距離、對比損失、MaxSim、評估、風險覆蓋、取樣與資源預算各節保留公式、符號、分母、條件和算例；API參數維持程式碼。"
+    }
+  }
+}

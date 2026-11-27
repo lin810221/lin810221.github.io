@@ -37,7 +37,7 @@ allocated描述Tensor等實際使用的記憶體，reserved含allocator保留區
 
 ## OOM的處理順序
 
-先看batch／sequence長度與中間Tensor是否意外擴成N×N×D，清除history對圖的引用，驗證流程使用inference mode。再考慮小batch+正確累積、AMP、activation checkpointing。activation checkpointing以重新計算換記憶體，與訓練存檔checkpoint不同；Dropout／RNG與模組副作用需按API語意檢查。
+先看batch／sequence長度與中間Tensor是否意外擴成 $N\times N\times D$ ，清除history對圖的引用，驗證流程使用inference mode。再考慮小batch+正確累積、AMP、activation checkpointing。activation checkpointing以重新計算換記憶體，與訓練存檔checkpoint不同；Dropout／RNG與模組副作用需按API語意檢查。
 
 ## 多裝置生態
 

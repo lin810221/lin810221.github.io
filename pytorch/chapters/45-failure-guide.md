@@ -20,19 +20,19 @@
 
 | 現象 | 先查證據 | 常見修正方向 |
 | --- | --- | --- |
-| mat1/mat2無法相乘 | 每層shape | 檢查Flatten、feature順序與Linear輸入 |
+|  $\frac{mat1}{mat2}$ 無法相乘 | 每層shape | 檢查Flatten、feature順序與Linear輸入 |
 | expected Long | target.dtype與shape | CE索引使用long；不是所有標籤都轉long |
 | device不一致 | model/x/y/buffer裝置 | 明確搬移與註冊buffer |
-| batch=1才失敗 | squeeze、BN、額外軸 | 指定squeeze軸與明確介面 |
+|  `batch=1` 才失敗 | squeeze、BN、額外軸 | 指定squeeze軸與明確介面 |
 | loss有值但預測錯位 | pred/target相減shape | 排除[N,1]對[N]廣播 |
 
 ## backward與更新失敗
 
-grad=None先查loss路徑、detach/item、參數註冊與requires_grad。重複backward錯誤先重新forward，非必要不retain_graph。in-place版本錯誤追蹤修改位置，避免.data。grad有值但weights不變，檢查optimizer是否包含、lr、step與AMP是否跳過更新。
+ `grad=None` 先查loss路徑、detach/item、參數註冊與requires_grad。重複backward錯誤先重新forward，非必要不retain_graph。in-place版本錯誤追蹤修改位置，避免.data。grad有值但weights不變，檢查optimizer是否包含、lr、step與AMP是否跳過更新。
 
 ## 訓練中途問題
 
-NaN找最早nonfinite位置，固定一批回FP32；OOM先找保留圖、意外pairwise維度與sequence長度；val不穩看eval、前處理與分布；DataLoader卡住先workers=0；DDP hang看各rank有無一致collective次序。每種現象都有不同證據，不統一用empty_cache或重設seed處理。
+NaN找最早nonfinite位置，固定一批回FP32；OOM先找保留圖、意外pairwise維度與sequence長度；val不穩看eval、前處理與分布；DataLoader卡住先 `workers=0` ；DDP hang看各rank有無一致collective次序。每種現象都有不同證據，不統一用empty_cache或重設seed處理。
 
 ## 寫一份可重現錯誤報告
 
@@ -40,7 +40,7 @@ NaN找最早nonfinite位置，固定一批回FP32；OOM先找保留圖、意外p
 
 ## 練習與解答
 
-拿第2例的廣播錯誤寫報告：pred=[4,1]float、target=[4]float，預期逐筆[4,1]，實際差值[4,4]。解答：這是合法廣播造成語意錯誤，修正target.unsqueeze(1)，並在loss前加shape相等檢查。它不需要重裝Torch，也不是硬體不相容。
+拿第2例的廣播錯誤寫報告： $\mathrm{pred}=[4,1]\mathrm{float}$ 、 $\mathrm{target}=[4]\mathrm{float}$ ，預期逐筆[4,1]，實際差值[4,4]。解答：這是合法廣播造成語意錯誤，修正target.unsqueeze(1)，並在loss前加shape相等檢查。它不需要重裝Torch，也不是硬體不相容。
 
 ## 官方來源與延伸閱讀
 

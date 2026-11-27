@@ -19,7 +19,7 @@
 
 ## 外功算術
 
-固定力F、與水平位移夾角θ、距離d：
+固定力F、與水平位移夾角 $\theta $ 、距離d：
 
 $$
 W=F d\cos\theta,\quad P=\frac{W}{t}

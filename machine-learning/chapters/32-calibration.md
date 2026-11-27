@@ -30,7 +30,7 @@ Sigmoid學平滑映射，Isotonic學單調分段映射，需要足夠資料。�
 
 ## 本章真實執行
 
-以StandardScaler+LinearSVC當base，method='sigmoid'、cv=3，實際fit校準ensemble，再在獨立holdout報Brier／log loss等。它不是mock，也不保證此資料上每個指標都進步。SVC原decision score可排序，經校準才進入明確機率輸出介面。
+以 $\mathrm{StandardScaler}+\mathrm{LinearSVC}$ 當base，method='sigmoid'、 `cv=3` ，實際fit校準ensemble，再在獨立holdout報Brier／log loss等。它不是mock，也不保證此資料上每個指標都進步。SVC原decision score可排序，經校準才進入明確機率輸出介面。
 
 ## 已fit模型與版本遷移
 
@@ -38,7 +38,7 @@ Sigmoid學平滑映射，Isotonic學單調分段映射，需要足夠資料。�
 
 ## 練習與解答
 
-$y=[1,0]$、p=[.8,.3]，$\operatorname{Brier}=(.04+.09)/2=.065$。若嚴格單調映射保留排名，AUC可能不變但Brier變。解答：排序與校準是不同維度。資料分布與正例比例改變後重新檢查，不因一次可靠度圖好看就永遠沿用相同信心解讀。
+$y=[1,0]$、 $p=[.8,.3]$ ，$\operatorname{Brier}=(.04+.09)/2=.065$。若嚴格單調映射保留排名，AUC可能不變但Brier變。解答：排序與校準是不同維度。資料分布與正例比例改變後重新檢查，不因一次可靠度圖好看就永遠沿用相同信心解讀。
 
 ## 完整可執行範例
 

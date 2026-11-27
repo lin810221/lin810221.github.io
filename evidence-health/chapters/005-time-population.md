@@ -55,7 +55,7 @@
 
 ## 來源、版本與下一步
 
-- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新。
+- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示 `6.5/2024` ，版本紀錄另列6.5.1更新。
 - [CONSORT／SPIRIT：正式發表版本](https://www.consort-spirit.org/published-statements)：CONSORT 2025與SPIRIT 2025。
 - [Hernán與Robins：明確定義目標試驗](https://pubmed.ncbi.nlm.nih.gov/26994063/)：方法原論文2016，非新年度指南。
 

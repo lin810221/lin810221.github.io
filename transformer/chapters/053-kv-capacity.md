@@ -1,6 +1,6 @@
 # 推論容量與Cache記憶體估算
 
-<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享K/V heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
+<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享 $\frac{K}{V}$  heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
 
 <div class="tf-task"><strong>讀圖任務</strong><p>核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：推論容量與Cache記憶體估算。</p></div>
 
@@ -8,7 +8,7 @@
 
 ## 純KV公式
 
-對每層同形狀、full attention、K/V同dtype的模型，純張量儲存量為：
+對每層同形狀、full attention、 $\frac{K}{V}$ 同dtype的模型，純張量儲存量為：
 
 $$
 M_{KV}=2\,B\,L\,S\,H_{KV}\,D_h\,b
@@ -18,7 +18,7 @@ $$
 
 ## 一個可核對的算例
 
-B2、L32、S4096、Hkv8、Dh128、b2，得到1,073,741,824bytes=1GiB。若序列長度加倍，這個純cache加倍；若改為MHA32heads，四倍。20_kv_capacity.py列出MHA、GQA與MQA對照。
+B2、L32、S4096、Hkv8、Dh128、b2，得到 $1,073,741,824\mathrm{bytes}=1GiB$ 。若序列長度加倍，這個純cache加倍；若改為MHA32heads，四倍。20_kv_capacity.py列出MHA、GQA與MQA對照。
 
 圖中另一個小算例B1、L2、S1024、Dh64、float16，MHA8heads為4MiB；GQA4heads為2MiB。不同算例數字不混在同一公式代入；先核對全部變數再比較。
 
@@ -30,7 +30,7 @@ B2、L32、S4096、Hkv8、Dh128、b2，得到1,073,741,824bytes=1GiB。若序列
 
 ## Batch與序列長度
 
-簡單padding batch可能按最大長度配置，短請求也付出空間。分頁和動態管理可減少浪費，但不能突破實際有效K/V與權重的需求。服務排程要同時看輸入長度、最大新增長度、到達率與延遲要求。
+簡單padding batch可能按最大長度配置，短請求也付出空間。分頁和動態管理可減少浪費，但不能突破實際有效 $\frac{K}{V}$ 與權重的需求。服務排程要同時看輸入長度、最大新增長度、到達率與延遲要求。
 
 ## 練習與解析
 

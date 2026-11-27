@@ -14,7 +14,7 @@ Dataset 回傳一筆資料，DataLoader 決定索引順序、批次大小、載�
 
 ## 先採容易除錯的設定
 
-本課 CPU 入門先用 `num_workers=0`，在主進程載入資料，錯誤堆疊較直接。訓練通常 shuffle=True，驗證／測試通常 shuffle=False，且 drop_last=False，確保最後不足一批的樣本仍被評估。驗證不打亂是方便追蹤與固定順序，不代表只有這個設定才有合法數學結果；重點是所有樣本與身分對應都正確。
+本課 CPU 入門先用 `num_workers=0`，在主進程載入資料，錯誤堆疊較直接。訓練通常  `shuffle=True` ，驗證／測試通常  `shuffle=False` ，且  `drop_last=False` ，確保最後不足一批的樣本仍被評估。驗證不打亂是方便追蹤與固定順序，不代表只有這個設定才有合法數學結果；重點是所有樣本與身分對應都正確。
 
 batch_size 是每次組成幾筆；更大會增加輸入與活化記憶體，也可能改變最佳化行為。num_workers 是載入端並行數，不是模型計算執行緒數，也不會憑空增加 GPU。先量測資料等待與計算時間，再比較 0、1、2 等有限設定，避免把能跑的流程調成大量進程競爭。
 
@@ -43,7 +43,7 @@ def make_loader(train_dataset):
         drop_last=False, pin_memory=False)
 ```
 
-num_workers=0 時不會呼叫 worker_init_fn，主進程的 seed 因此前面另設。若程式使用 `np.random.default_rng` 的獨立 Generator，`np.random.seed` 不會改變它，應明確建立並傳遞該 Generator。記錄 seed 只是重現條件的一部分，不保證不同硬體、套件版號與後端的每個浮點位元都相同。
+ `num_workers=0`  時不會呼叫 worker_init_fn，主進程的 seed 因此前面另設。若程式使用 `np.random.default_rng` 的獨立 Generator，`np.random.seed` 不會改變它，應明確建立並傳遞該 Generator。記錄 seed 只是重現條件的一部分，不保證不同硬體、套件版號與後端的每個浮點位元都相同。
 
 ## Windows 多進程的必要結構
 
@@ -65,7 +65,7 @@ persistent_workers 可減少重啟成本，但 worker 的隨機狀態與資料�
 
 ## 練習與解析
 
-**題目：** 驗證集 19 張、batch size 8，drop_last=True 會評估幾張？為何固定 seed 後每次按第二次訓練仍可能不同？
+**題目：** 驗證集 19 張、batch size 8， `drop_last=True`  會評估幾張？為何固定 seed 後每次按第二次訓練仍可能不同？
 
 **解析：** 只評估 16 張，最後 3 張被丟掉，可能讓結果偏向特定順序。Notebook 或同一進程的隨機狀態已被前次訓練消耗，模型與 loader 也可能未重新初始化；要重新建立完整狀態或從新程式執行。再核對其他 RNG、worker 與非確定性操作。
 

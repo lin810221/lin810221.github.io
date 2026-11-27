@@ -31,9 +31,9 @@ GPT-2 是理解 decoder 家族的重要歷史例子；現代公開模型則可�
 
 ## 一個維度完整的小模型
 
-原創配置取 hidden size=32、query heads=4、KV heads=2、head dimension=8。單筆長 6 的 query 投影可排成 1×4×6×8，K、V 各為 1×2×6×8。K、V 沒有因為模型 hidden size 是 32，就一定也保留四個頭。
+原創配置取 hidden  `size=32` 、query  `heads=4` 、KV  `heads=2` 、head  $\mathrm{dimension}=8$ 。單筆長 6 的 query 投影可排成  $1\times 4\times 6\times 8$ ，K、V 各為  $1\times 2\times 6\times 8$ 。K、V 沒有因為模型 hidden size 是 32，就一定也保留四個頭。
 
-若兩層 full-attention cache、batch=1、序列長 100、float32，純 KV tensor 為 \(2\times2\times1\times100\times2\times8\times4=25600\) bytes。這不含權重、暫時張量與配置器；把 KV 頭改成四個會使這部分變 51200 bytes，卻不能說整個模型記憶體也必定加倍。
+若兩層 full-attention cache、 `batch=1` 、序列長 100、float32，純 KV tensor 為 \(2\times2\times1\times100\times2\times8\times4=25600\) bytes。這不含權重、暫時張量與配置器；把 KV 頭改成四個會使這部分變 51200 bytes，卻不能說整個模型記憶體也必定加倍。
 
 ## 隨機架構不等於已學會語言
 

@@ -36,11 +36,11 @@ print(device, float(loss.detach().cpu()))
 
 ## forward 裡建立新 Tensor
 
-優先 `torch.zeros_like(x)`、`x.new_zeros(...)` 或明確傳 `device=x.device`。把 Tensor `.to(...)` 的回傳值接住。需要浮點特徵轉 dtype 與移 device 可以一次 `.to(device=device,dtype=torch.float32)`；類別索引仍維持 long。
+優先 `torch.zeros_like(x)`、`x.new_zeros(...)` 或明確傳  `device=x.device` 。把 Tensor `.to(...)` 的回傳值接住。需要浮點特徵轉 dtype 與移 device 可以一次  `.to(device=device,dtype=torch.float32)` ；類別索引仍維持 long。
 
 ## 搬移是否可以更快
 
-GPU 資料載入常會比較 pin_memory 與 non_blocking 搬移，是否能重疊還取決於記憶體類型、stream 與後續依賴。不要把 non_blocking=True 當任何硬體都變快的保證。少量資料頻繁 CPU↔GPU 往返，可能比直接在 CPU 更慢；「[輸入管線與記憶體：先量測，再增加workers](#35-input-performance)」、「[CUDA實務：非同步、OOM、allocated與reserved](#37-cuda-memory)」會量測。
+GPU 資料載入常會比較 pin_memory 與 non_blocking 搬移，是否能重疊還取決於記憶體類型、stream 與後續依賴。不要把  `non_blocking=True`  當任何硬體都變快的保證。少量資料頻繁 CPU↔GPU 往返，可能比直接在 CPU 更慢；「[輸入管線與記憶體：先量測，再增加workers](#35-input-performance)」、「[CUDA實務：非同步、OOM、allocated與reserved](#37-cuda-memory)」會量測。
 
 ## 練習與解答
 

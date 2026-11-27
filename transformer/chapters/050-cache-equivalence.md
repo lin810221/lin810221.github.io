@@ -8,7 +8,7 @@
 
 ## 因果條件帶著偏移
 
-past長P，新query長Q，key長K=P+Q。新query的局部列i對應全域位置P+i，允許的key條件為j≤P+i。不是j≤i；後者是左上對齊，會錯誤遮掉已存在的前綴。
+past長P，新query長Q，key長 $K=P+Q$ 。新query的局部列i對應全域位置 $P+i$ ，允許的key條件為 $j\le P+i$ 。不是 $j\le i$ ；後者是左上對齊，會錯誤遮掉已存在的前綴。
 
 $$
 M_{ij}=\mathbf 1[j\le P+i],\quad i\in[0,Q),\ j\in[0,P+Q)
@@ -18,7 +18,7 @@ $P=3$、$Q=2$時，第一列11110，第二列11111；$Q=1$時，唯一新query�
 
 ## SDPA的明確做法
 
-本課用bool allowed mask、is_causal=False、dropout_p=0做推論。PyTorch SDPA的非方形is_causal=True按左上對齊，和cached尾段需求不同。MultiheadAttention的bool True又代表阻擋，不能把同一矩陣不取反就跨API使用。
+本課用bool allowed mask、 `is_causal=False` 、 `dropout_p=0` 做推論。PyTorch SDPA的非方形 `is_causal=True` 按左上對齊，和cached尾段需求不同。MultiheadAttention的bool True又代表阻擋，不能把同一矩陣不取反就跨API使用。
 
 07_sdpa_masks.py把explicit mask結果和手寫softmax參考比較，再故意用錯的矩形is_causal，讓差異可觀察。手寫參考對完全沒有合法key的列報錯，而不是讓softmax(-inf,...)產生NaN。
 

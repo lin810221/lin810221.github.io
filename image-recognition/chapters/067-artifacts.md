@@ -8,7 +8,7 @@
 
 ## 輸入契約
 
-保存layout、dtype、range、色彩順序、尺寸策略、EXIF及透明度處理、Normalize與允許的輸入格式。對本課分類器而言，輸入為float32 NCHW、3通道RGB、24×24、0到1，沒有ImageNet Normalize。部署時額外加Normalize會改變函數，即使模型檔完全相同。
+保存layout、dtype、range、色彩順序、尺寸策略、EXIF及透明度處理、Normalize與允許的輸入格式。對本課分類器而言，輸入為float32 NCHW、3通道RGB、 $24\times 24$ 、0到1，沒有ImageNet Normalize。部署時額外加Normalize會改變函數，即使模型檔完全相同。
 
 偵測常需要記錄resize及letterbox的實際比例、offset和原圖大小，輸出框才能反轉回原圖；分割則需要把logits或mask還原，並清楚定義插值、argmax順序與ignore區域。硬裁切掉的資訊不能靠座標反轉恢復。
 

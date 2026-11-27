@@ -1,6 +1,6 @@
 # Learning Notes · 學習空間
 
-每個領域一個資料夾，使用深色網頁整理從觀念到實作的完整教材。
+每門課程一個獨立資料夾，使用深色網頁整理從觀念到實作的完整教材。首頁依五大知識領域分類。
 
 網站已在 <https://lin810221.github.io/> 上線。長期維護採用 **修改原稿 → Commit → Push → GitHub Actions 編譯、檢查與發布**，設定和 SourceTree 操作見 [GIT_WORKFLOW.md](GIT_WORKFLOW.md)。GitHub Actions 自動發布已啟用，推送到 `main` 後會自動執行。
 
@@ -8,7 +8,7 @@
 
 直接雙擊根目錄的 `index.html`，或執行 `開始學習.cmd`。不需要 Node.js、Python、API Key 或本機伺服器。保留整個資料夾，讓 CSS、章節資料及字型可正確載入。
 
-目前有二十三個領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
+目前有二十七門課程，整理為五大領域：**LangGraph 完整教學**（6 章、28 個單元、12 份 Python 範例）、**LLM 服務與 AI Agents**（8 章、38 個單元、12 份範例）、**RAG 檢索增強生成**（8 章、42 個單元、16 份範例、3 個互動實驗室）、**Embedding 與表示學習**（8 章、48 個單元、20 份範例、4 個互動實驗室）、**PyTorch 實作工程**（8 章、48 個單元、24 份範例、4 個互動實驗室）、**機器學習**（10 章、60 個單元、30 份範例、5 個互動實驗室）、**深度學習**（12 章、72 個單元、42 份範例、6 個互動實驗室）、**應用統計**（10 章主線、70 個單元、40 份範例、8 個互動實驗室），以及 **MCP 與工具整合**（9 章、54 個單元、30 份範例、6 個互動實驗；MCP 2026-07-28／Python SDK 2.3.0）。新增 **搜尋引擎與向量資料庫**（10 章、60 個單元、32 份範例、7 個互動實驗；SQLite 3.54.1、Elasticsearch 9.5.6、Qdrant 1.20.0、Faiss 1.15.1、PostgreSQL 18.6／pgvector 0.8.7）。另新增 **經濟學**（14章、84個單元、42份標準函式庫範例、10個互動實驗；Python 3.15.2）。另新增 **營養學與飲食科學**（16章、96個單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核台灣DRIs第八版、現行標示與WHO指南）。另新增 **運動科學與訓練原理**（16章、96單元、48份標準函式庫範例、12個互動實驗；2026-11-09查核ACSM2026、WHO2020與Python3.15.2）。LLM、RAG 與 Embedding 範例預設離線，API 呼叫須明確加上 `--live`；Embedding 的模型下載另外明確指定。
 
 新增 **[代謝健康與慢性病預防](metabolic-health/index.html)**：16章、96單元、48份標準函式庫範例、12個互動實驗。2026-11-10查核ADA／CKM／血脂2026、AGA2026、KDIGO2024正式版、台灣高齡血壓及預防保健。
 
@@ -21,6 +21,12 @@
 提供全文搜尋（Ctrl+K）、程式碼複製、章節目錄、閱讀進度、每章筆記、列印與互動流程示範。進度與筆記儲存在目前瀏覽器 localStorage，無跨裝置同步；重要內容請自行備份。檔案模式的儲存行為依瀏覽器而異，移動資料夾後可能需要重新記錄。
 
 ## 資料夾約定
+
+右上角的「簡易版」還原原本的單欄橫式課程清單；「詳細版」提供新版分類、路線與直式牌卡。切回詳細版時會恢復搜尋與篩選條件，瀏覽器會記住顯示選擇。
+
+詳細版可點選領域、學習起點與 tag 即時篩選，也能搜尋課名、主題和關鍵字。tag 每次選一個，可搭配其他條件；點選已選 tag 或條件旁的 × 即可取消。篩選網址可分享，重新整理及返回上一頁會恢復條件。課程卡上的 tag 也可以直接點選。
+
+「接著學下去」讀取目前瀏覽器內既有的課程進度，連回上次閱讀或第一個未完成單元；沒有紀錄時不顯示。首頁原稿與新增課程的分類方式見 [課程製作規範](COURSE_AUTHORING.md#首頁分類與探索)。只調整首頁時，執行 `python tools/build_library.py`，再以 `python tools/build_library.py --check` 確認產出。
 
 ```text
 LearningNote/
@@ -398,7 +404,7 @@ python -X utf8 tools/prepare_pages.py --target pages
 
 ## Transformer與LLM原理
 
-新增[完整課程](transformer/index.html)：16章、96單元、32張原創中文SVG、28份離線Python範例、10個互動實驗與110個術語。從條件機率、UTF8／BPE、Embedding、Q／K／V、位置與區塊，走到手寫GPT訓練、生成、KV Cache、GQA、推論效率、模型家族、後訓練、評估與可靠性。保留必要數學、手算、練習解析及完整專題；API操作連回LLM服務課，獨立微調工程仍為未來規劃。
+新增[完整課程](transformer/index.html)：16章、96單元、32張原創中文SVG、28份離線Python範例、10個互動實驗與110個術語。從條件機率、UTF8／BPE、Embedding、Q／K／V、位置與區塊，走到手寫GPT訓練、生成、KV Cache、GQA、推論效率、模型家族、後訓練、評估與可靠性。保留必要數學、手算、練習解析及完整專題；API操作連回LLM服務課，微調工程另見[LLM微調與模型適應](finetuning/index.html)。
 
 2026-11-24查核與CPU實測基準：Python3.15.2、PyTorch2.15.0、Transformers5.24.0、Tokenizers0.23.3、Safetensors0.8.0、NumPy2.5.5。新API採cache=／output.cache及TokenizersBackend；不沿用已棄用的Llama快取名稱。其他課程維持各自更新時的版本基準。
 
@@ -413,3 +419,39 @@ python -X utf8 tools/prepare_pages.py --target pages
 ```
 
 一般讀者的環境與操作見[範例README](transformer/examples/README.md)，執行界線見[驗證紀錄](transformer/examples/VERIFICATION.md)。tools/test-transformer-reader.mjs檢查十個實驗及閱讀器，並接入全站獨立worker回歸。此次僅準備本機教材與發布檔，沒有推送或部署。
+
+
+## LLM微調與模型適應
+
+新增[完整課程](finetuning/index.html)：12章、72單元、24張原創中文SVG、24份離線Python入口、8個互動實驗與91術語。從方法選擇、資料權利與切分、chat template、位移與mask，走到完整SFT、LoRA、QLoRA、訓練工程、DPO、持續預訓練、蒸餾、遺忘、評估與模型交付。圖解、題目、解析與公式均保存在可編輯原稿。
+
+2026-11-25查核：Python3.15.2、PyTorch2.15.0、Transformers5.24.1、PEFT0.22.0、TRL1.18.2、Accelerate1.16.0、Datasets5.2.0。CPU主線使用本地初始化小模型與原創合成資料，實測真實PEFT及TRL；不下載權重。另提供接受本地預訓練模型與JSONL的 `train_local.py`，支援完整微調、LoRA與具條件的QLoRA路線。GPU量化、分散式及付費託管工作未冒稱實測，其他課程保留原版本基準。
+
+[程式包](finetuning/examples.zip)包含核心、24個入口、實際模型遷移工具、測試與完整鎖版；[圖解學習包](finetuning/study-pack.zip)包含72份題目與解析、91術語、24圖及來源。數學內容已加入全站逐主題覆蓋與靜態KaTeX驗收，新增閱讀器及下載包回歸，CI使用獨立Python環境驗證。
+
+
+## Django完整網站實作
+
+新增[Django課程](django/index.html)：14章84單元、28張原創中文SVG、24個離線Python實驗、8個互動算例及104術語。以StudyHub學習任務網站貫穿HTTP、設定、路由、模板、ORM、migration、自訂User、表單、登入與物件授權、Admin、私人附件、郵件、DRF API、測試、快取、Tasks、async與部署。
+
+2026-11-26查核及Windows CPU實測：Python3.15.2、Django6.1.3、DRF3.18.3、WhiteNoise6.12.0與Waitress3.0.2。完整網站使用本地SQLite；獨立實驗與測試採記憶體資料及本地替身，不連外部API。Django6.1的fetch modes與內建Tasks均有實際執行；ImmediateBackend不是背景worker。外部PostgreSQL、SMTP、共享快取與worker另需驗收。
+
+[完整專案](django/examples.zip)包含Model、初始migration、專案層帳號模板、app模板與CSS、API、管理命令及43項測試；[學習包](django/study-pack.zip)含84題與解析、104術語及28張圖。教材可在GitHub Pages閱讀，動態Django專案需另外的Python服務。正式設定保留HSTS子網域與preload的條件，不將部署檢查警告隱藏或冒稱已公開部署。
+
+
+## SQL與資料工程
+
+新增[完整課程](sql/index.html)：18章108單元、36張原創中文圖解、36個可執行入口、12個網頁互動實驗與90餘個術語。從SQL、JOIN、視窗與交易，走到資料模型、效能、CSV／Parquet、ETL／ELT、增量、CDC、DAG、品質、分析倉儲、安全與資料治理。
+
+以DataHarbor訂單專案貫穿來源契約、序號、晚到更正、刪除、冪等、checkpoint、outbox與版本發布。[完整範例](sql/examples.zip)包含固定資料、SQL、Python、操作手冊與52項測試；[學習包](sql/study-pack.zip)包含108題與解析、術語、官方來源及36張圖。首頁簡易版與詳細版皆可進入，分類於軟體與資料工程，支援SQL／資料工程標籤。
+
+2026-11-27實際驗證Python3.15.2、DuckDB2.0.1與選用Psycopg3.3.9。私人PostgreSQL19.0測試通過隔離快照、SKIP LOCKED、序列化衝突、RLS、IGNORE NULLS與DO SELECT RETURNING。主線套件安裝後可離線執行；網頁互動為概念模擬，Airflow、dbt、Debezium與雲端服務未部署。詳見[驗證紀錄](sql/examples/VERIFICATION.md)。
+
+
+## 多模態與文件AI
+
+新增[完整課程](multimodal/index.html)：16章96單元、32張原創中文圖解、32個實作入口、12個互動實驗、96題與解析及115術語。從影像座標、PDF、真實OCR、版面、表格、表單與schema，走到CLIP／VLM、三家服務契約、DocVQA、跨模態檢索、評估、安全、音訊／影片時間概念和DocWeave專題。
+
+2026-11-27核對並Windows CPU實測PyMuPDF2.2、pypdf7.2.0、RapidOCR3.10.0、ONNX Runtime1.32.0與Pydantic2.14.4。因ONNX Runtime沒有Python3.15 wheel，採相容分支最新修補版Python3.14.10。58項測試涵蓋真正PP-OCRv6、PDF與表格、AcroForm、redaction、區域引用、WAV／動畫GIF和版本發布恢復。
+
+[範例包](multimodal/examples.zip)包含完整來源、合成資料、操作手冊與測試；[學習包](multimodal/study-pack.zip)包含圖解、學習單、答案、術語和版本。API預設dry-run，OpenAI Responses、Gemini穩定Interactions v1與Claude Messages只做離線契約驗證。手工向量不是語意模型，逐字稿為人工fixture；大型VLM、ASR、MP4與雲端未代跑。首頁簡易版與詳細版、文件AI標籤和跨課路線均已納入。

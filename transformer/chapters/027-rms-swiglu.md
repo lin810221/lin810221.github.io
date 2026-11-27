@@ -18,9 +18,9 @@ $$
 \operatorname{RMSNorm}(x)_i=\gamma_i\frac{x_i}{\sqrt{\frac{1}{D}\sum_j x_j^2+\epsilon}}
 $$
 
-它使用均方根縮放，沒有LayerNorm的減均值；常見形式只有可學gamma，不含beta。x=`[1,3]`的均方為5，忽略ε與gamma取1時，輸出約`[.44721,1.34164]`，不是LayerNorm的`[-1,1]`。把x整體加5後，輸出會改變，不能把LN的平移不變性直接套上。
+它使用均方根縮放，沒有LayerNorm的減均值；常見形式只有可學gamma，不含beta。x=`[1,3]`的均方為5，忽略 $\varepsilon $ 與gamma取1時，輸出約`[.44721,1.34164]`，不是LayerNorm的`[-1,1]`。把x整體加5後，輸出會改變，不能把LN的平移不變性直接套上。
 
-[RMSNorm原始論文](https://arxiv.org/abs/1910.07467)提供此設計背景。ε、累積精度與affine設定要依實作固定；近似尺度不變不代表在有ε時對任意極小向量都嚴格完全不變。
+[RMSNorm原始論文](https://arxiv.org/abs/1910.07467)提供此設計背景。 $\varepsilon $ 、累積精度與affine設定要依實作固定；近似尺度不變不代表在有 $\varepsilon $ 時對任意極小向量都嚴格完全不變。
 
 ## SwiGLU先產生兩條中間支路
 
@@ -30,13 +30,13 @@ $$
 \operatorname{SwiGLU}(x)=\left[\operatorname{SiLU}(xW_g)\odot(xW_u)\right]W_d
 $$
 
-Wg、Wu為`[D,F]`，Wd為`[F,D]`，兩支中間shape都是`[B,T,F]`。SiLU(z)=z·sigmoid(z)，不是只取sigmoid當0到1機率門；其輸出可為負，也不被限制在1以下。gate這個詞在此是連續乘法調節，不是MoE的離散專家路由。
+Wg、Wu為`[D,F]`，Wd為`[F,D]`，兩支中間shape都是`[B,T,F]`。 $\operatorname{SiLU}\left(z\right)=z\cdot \operatorname{sigmoid}\left(z\right)$ ，不是只取sigmoid當0到1機率門；其輸出可為負，也不被限制在1以下。gate這個詞在此是連續乘法調節，不是MoE的離散專家路由。
 
-原創純量例：兩支投影值為1與2，最後乘3，SiLU(1)≈.73106，結果約4.38635。若gate支路值0，則這個中間通道被乘成0。改變gate與up的先後語意，未必能不調權重就保持相同結果。
+原創純量例：兩支投影值為1與2，最後乘3， $\operatorname{SiLU}\left(1\right)\approx .73106$ ，結果約4.38635。若gate支路值0，則這個中間通道被乘成0。改變gate與up的先後語意，未必能不調權重就保持相同結果。
 
 ## 三個矩陣與公平的參數比較
 
-無bias SwiGLU有3DF個參數；基本兩矩陣FFN有2DF。若沿用相同F，SwiGLU參數更多；要比較相近預算，可能調小其F。$D=4$時，基本FFN F=12有96個權重；SwiGLU F=8也有96。這是清楚的參數預算算例，不保證效能或品質完全相同。
+無bias SwiGLU有3DF個參數；基本兩矩陣FFN有2DF。若沿用相同F，SwiGLU參數更多；要比較相近預算，可能調小其F。$D=4$時，基本FFN  $F=12$ 有96個權重；SwiGLU  $F=8$ 也有96。這是清楚的參數預算算例，不保證效能或品質完全相同。
 
 [GLU變體原始論文](https://arxiv.org/abs/2002.05202)討論門控非線性。實際模型常為硬體友善將F取特定倍數，因此不能只用一個理論比例猜精確中間寬度；載入config與權重shape才是證據。
 

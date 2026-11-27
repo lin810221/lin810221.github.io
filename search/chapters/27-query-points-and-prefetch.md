@@ -25,7 +25,7 @@ models.FusionQuery(fusion=models.Fusion.RRF)
 
 ## 控制回傳欄位
 
-with_vectors=False 可避免為展示結果傳回整個向量；with_payload 可限制必要欄位。這減少傳輸與不必要資訊，但不是 ACL 替代品。若後續再用 point ID retrieve，仍需確保身份與租戶範圍，不讓 ID 查詢繞過搜尋端 Filter。
+ `with_vectors=False`  可避免為展示結果傳回整個向量；with_payload 可限制必要欄位。這減少傳輸與不必要資訊，但不是 ACL 替代品。若後續再用 point ID retrieve，仍需確保身份與租戶範圍，不讓 ID 查詢繞過搜尋端 Filter。
 
 ## Score 與 Threshold
 
@@ -37,7 +37,7 @@ Prefetch 數、每路 budget、Filter、payload 與 rerank 共同決定耗時。
 
 ## 練習與解答
 
-**請先嘗試：** 外層 limit=5，兩個 prefetch 各 limit=1000，是否只是取五筆所以很便宜？
+**請先嘗試：** 外層  `limit=5` ，兩個 prefetch 各  `limit=1000` ，是否只是取五筆所以很便宜？
 
 <details><summary>展開解答與判斷依據</summary>
 

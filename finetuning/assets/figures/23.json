@@ -1,0 +1,9 @@
+{
+  "title": "第一個專案的完整交付鏈",
+  "alt": "資料與模板經基準及訓練、保留評估、成品回讀最後形成可重現報告。",
+  "caption": "先用本課合成CPU主線驗證，再移植真實資料與模型。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

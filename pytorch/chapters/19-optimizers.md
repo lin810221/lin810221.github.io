@@ -18,6 +18,14 @@
 
 ## SGD 與 AdamW 的起點
 
+先看不含動量與權重衰減的基本 SGD。$\theta_t$ 是目前參數，$\eta_t$ 是學習率，$L_t$ 是本批次的損失：
+
+<!-- equation:sgd-update -->
+$$
+g_t=\nabla_\theta L_t(\theta_t),\qquad
+\theta_{t+1}=\theta_t-\eta_tg_t.
+$$
+
 SGD 沿梯度下降，Momentum 加入歷史方向；AdamW 使用各參數的一階／二階估計並解耦 weight decay。這些狀態解釋了為何續訓不能只存模型。相同 lr 在不同 optimizer、loss 縮放與 batch 下，更新行為不同。AdamW 的 weight_decay 也不是任何情境都等同在 loss 手加 L2。
 
 ## 參數分組
@@ -38,7 +46,7 @@ for group in optimizer.param_groups:
 
 ## 梯度清除與 clipping
 
-每次有效更新先 zero_grad，再 forward/backward。需要 clipping 時放 backward 之後、step 之前；AMP 則先 unscale。zero_grad(set_to_none=True) 不會把參數歸零，只清除梯度。optimizer.step 可能有動量與 decay，不能單憑本輪 grad 為零推定參數絕不變動。
+每次有效更新先 zero_grad，再 forward/backward。需要 clipping 時放 backward 之後、step 之前；AMP 則先 unscale。 `zero_grad(set_to_none=True)`  不會把參數歸零，只清除梯度。optimizer.step 可能有動量與 decay，不能單憑本輪 grad 為零推定參數絕不變動。
 
 ## 練習與解答
 

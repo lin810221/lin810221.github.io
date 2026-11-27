@@ -14,7 +14,7 @@
 
 ## 為什麼保留 Tombstone
 
-若刪掉所有來源紀錄，延遲的 revision=1 upsert 可能被當新文件。active=False、revision=3 的 tombstone 表示這個 logical ID 已在更高版本失效；worker 與重建流程都以它為準。本例保留該狀態，但正式系統應依事件保留與資料政策決定何時可安全清理 tombstones。
+若刪掉所有來源紀錄，延遲的  `revision=1`  upsert 可能被當新文件。 `active=False` 、 `revision=3`  的 tombstone 表示這個 logical ID 已在更高版本失效；worker 與重建流程都以它為準。本例保留該狀態，但正式系統應依事件保留與資料政策決定何時可安全清理 tombstones。
 
 ## 刪除的不同階段
 
@@ -37,7 +37,7 @@ outbox → 向量庫刪除 ID → 候選不再占位
 
 ## 驗收案例
 
-新增v1→更新v2→刪除v3→重送v1/v2→重建新索引，文件都不應復活。接著檢查每租戶 ID、來源內容與 index count。部分服務的物理回收是非同步的，報告應分開列出功能刪除已確認、實體回收未驗證等狀態。
+新增v1→更新v2→刪除v3→重送 `v1/v2` →重建新索引，文件都不應復活。接著檢查每租戶 ID、來源內容與 index count。部分服務的物理回收是非同步的，報告應分開列出功能刪除已確認、實體回收未驗證等狀態。
 
 ## 練習與解答
 

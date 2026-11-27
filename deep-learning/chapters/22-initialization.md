@@ -27,7 +27,7 @@ $$
 
 ## Second moment與variance
 
-ReLU輸出有正均值，E[h²]與Var(h)=E[h²]-E[h]²不同。He常見訊號分析需明確指出在維持哪項近似。第14例用128fan-in與1024個隨機樣本，列weight variance、input／ReLU second moment及中心化variance，預期ReLU second moment約1而variance較小。
+ReLU輸出有正均值， $E[h^{2}]$ 與 $\operatorname{Var}\left(h\right)=E[h^{2}]-E[h]^{2}$ 不同。He常見訊號分析需明確指出在維持哪項近似。第14例用128fan-in與1024個隨機樣本，列weight variance、input／ReLU second moment及中心化variance，預期ReLU second moment約1而variance較小。
 
 ## API方向與模型結構
 

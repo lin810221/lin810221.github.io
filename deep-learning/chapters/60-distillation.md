@@ -18,7 +18,7 @@
 
 ## 目標與方向
 
-teacher機率作為固定目標，student提供log機率，計算KL(teacher∥student)。本課以batchmean reduction，soft項乘T²，hard項使用未除T的student logits做CE。T²是常見的尺度補償慣例，改T仍會改變目標與梯度，不表示任意溫度完全等價。
+teacher機率作為固定目標，student提供log機率，計算KL(teacher∥student)。本課以batchmean reduction，soft項乘 $T^{2}$ ，hard項使用未除T的student logits做CE。 $T^{2}$ 是常見的尺度補償慣例，改T仍會改變目標與梯度，不表示任意溫度完全等價。
 
 $$
 L=\lambda L_{\rm CE}(z_s,y)
@@ -37,7 +37,7 @@ $$
 
 ## 怎麼擴成真正比較
 
-保留固定資料和student初始化，比較hard-only、soft-only與混合目標。teacher只看train，T與λ只依validation調整，最後各用一次test。測推論延遲時固定batch、輸入shape、裝置與暖機方式，GPU還需正確同步，這部分接到PyTorch工程課。
+保留固定資料和student初始化，比較hard-only、soft-only與混合目標。teacher只看train，T與 $\lambda $ 只依validation調整，最後各用一次test。測推論延遲時固定batch、輸入shape、裝置與暖機方式，GPU還需正確同步，這部分接到PyTorch工程課。
 
 ## 練習與解答
 

@@ -56,7 +56,7 @@ AI附了十篇真實文獻，是否足以證明一段健康摘要可靠？
 ## 來源、版本與下一步
 
 - [ICMJE：作者使用AI](https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html)：現行建議；2026-11-16查核。
-- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)：TRIPOD+AI 2024及TRIPOD-LLM官方入口。
+- [TRIPOD：預測模型與LLM報告](https://www.tripod-statement.org/)： $\mathrm{TRIPOD}+AI$  2024及TRIPOD-LLM官方入口。
 - [ICMJE：更正與版本控制](https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html)：現行建議；2026-11-16查核。
 
 圖解與教材查核2026-11-16；查核日、網頁更新與正式文件出版日期分開。圖為本課原創，未複製或改編正式工具題庫及評分表。

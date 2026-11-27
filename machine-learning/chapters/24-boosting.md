@@ -14,17 +14,17 @@
 
 ## 與Bagging的差別
 
-Bagging傾向平行訓練不同抽樣模型；Boosting逐步加入新模型修正目前誤差。加法形式累積許多小樹；每一步的修正目標依loss而定。平方誤差時可理解為擬合殘差，分類log loss則是對應負梯度，不能把所有boosting都說成直接預測y-ŷ。
+Bagging傾向平行訓練不同抽樣模型；Boosting逐步加入新模型修正目前誤差。加法形式累積許多小樹；每一步的修正目標依loss而定。平方誤差時可理解為擬合殘差，分類log loss則是對應負梯度，不能把所有boosting都說成直接預測 $y-\hat y$ 。
 
 $$
 F_m(x)=F_{m-1}(x)+\eta h_m(x)
 $$
 
-learning_rate η縮小每步影響，通常需與迭代數共同考慮。較小步長不保證相同樹數下更好，也不意味一定免於過擬合。
+learning_rate  $\eta $ 縮小每步影響，通常需與迭代數共同考慮。較小步長不保證相同樹數下更好，也不意味一定免於過擬合。
 
 ## Histogram與缺失
 
-HistGradientBoosting先以bin整理連續特徵，減少切點搜尋成本，並支援特定missing處理。小例使用max_iter50、leaf7、early_stopping=False明確控制預算。真實問題可使用驗證式early stopping，但驗證資料仍有角色，不能再拿同一份當最終test。
+HistGradientBoosting先以bin整理連續特徵，減少切點搜尋成本，並支援特定missing處理。小例使用max_iter50、leaf7、 `early_stopping=False` 明確控制預算。真實問題可使用驗證式early stopping，但驗證資料仍有角色，不能再拿同一份當最終test。
 
 ## 重要參數與診斷
 

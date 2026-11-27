@@ -14,11 +14,11 @@
 
 ## 固定網路與數字
 
-$x=2$，$w1=.3$、$b1=-.1$，$a=w1x+b1=.5$，$h=\operatorname{sigmoid}(a)$；輸出$\hat y=w2h+b2$，$w2=-.7$、$b2=.2$，target=.8。loss=.5(ŷ-target)²。先列這些中間值，再算導數，比直接展開所有指數更容易核對。
+$x=2$，$w1=.3$、$b1=-.1$，$a=w1x+b1=.5$，$h=\operatorname{sigmoid}(a)$；輸出$\hat y=w2h+b2$，$w2=-.7$、$b2=.2$， $\mathrm{target}=.8$ 。 $\mathrm{loss}=.5(\hat y-\mathrm{target})^{2}$ 。先列這些中間值，再算導數，比直接展開所有指數更容易核對。
 
 ## 從輸出往回
 
-令$e=\hat y-\operatorname{target}$，則$\frac{\partial L}{\partial\hat y}=e$。輸出層$\frac{\partial L}{\partial w_2}=eh$，$\frac{\partial L}{\partial b_2}=e$；對hidden傳回eh的係數需注意是e×w2，不是再次乘h。sigmoid的局部導數h(1-h)，最後乘x得到w1梯度。
+令$e=\hat y-\operatorname{target}$，則$\frac{\partial L}{\partial\hat y}=e$。輸出層$\frac{\partial L}{\partial w_2}=eh$，$\frac{\partial L}{\partial b_2}=e$；對hidden傳回eh的係數需注意是 $e\times w2$ ，不是再次乘h。sigmoid的局部導數h(1-h)，最後乘x得到w1梯度。
 
 $$
 \delta_a=e\,w_2\,h(1-h),\quad

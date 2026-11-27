@@ -18,7 +18,7 @@
 
 ## 先驗證不依賴「好看」的契約
 
-AE重建loss應有限並在固定資料上下降；VAE的KL在$\mu =0$、logvar=0時應為0；GAN的D step不更新G、G step能穿過D對G求導。Diffusion檢查alpha_bar乘積、q_sample閉式公式和每步posterior variance；Flow檢查端點、target velocity與Euler步進。這些都可用已知值測試，比肉眼挑好看的樣本更可靠。
+AE重建loss應有限並在固定資料上下降；VAE的KL在$\mu =0$、 $\mathrm{logvar}=0$ 時應為0；GAN的D step不更新G、G step能穿過D對G求導。Diffusion檢查alpha_bar乘積、q_sample閉式公式和每步posterior variance；Flow檢查端點、target velocity與Euler步進。這些都可用已知值測試，比肉眼挑好看的樣本更可靠。
 
 ## 採樣必須真的執行
 
@@ -30,7 +30,7 @@ DDPM例真的從Gaussian逐步反向去噪，Flow例真的以學得速度場做3
 
 ## 自己建立一份生成報告
 
-寫出資料分布、目標公式、訓練樣本與步數、sampler及噪音排程，再列可證明的測試和無法證明的品質。若改動β、GAN更新比例或Flow coupling，先更改單一因素。不要把VAE deterministic mean reconstruction的MSE叫作ELBO，也不要把GAN loss有限叫作收斂。
+寫出資料分布、目標公式、訓練樣本與步數、sampler及噪音排程，再列可證明的測試和無法證明的品質。若改動 $\beta $ 、GAN更新比例或Flow coupling，先更改單一因素。不要把VAE deterministic mean reconstruction的MSE叫作ELBO，也不要把GAN loss有限叫作收斂。
 
 ## 練習與解答
 

@@ -1,0 +1,9 @@
+{
+  "title": "資料切分的單位是群組",
+  "alt": "群組A與B全部放入訓練，群組C保留；群組隔離之外仍檢查複製內容。",
+  "caption": "不同ID不等於資訊獨立。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

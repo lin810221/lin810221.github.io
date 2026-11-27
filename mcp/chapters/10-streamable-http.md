@@ -44,7 +44,7 @@ Client 要能處理 `application/json` 與 `text/event-stream`，並在請求送
 
 ## 練習與解答
 
-先啟動 Server 再呼叫一次，停止 Server 後重試。第二次預期是連線失敗，並非 `matches=[]`。如果路徑寫成 `/sse` 卻用 Streamable HTTP Client，也可能是路由錯誤；請先核對端點及傳輸，再改模型提示詞。
+先啟動 Server 再呼叫一次，停止 Server 後重試。第二次預期是連線失敗，並非  `matches=[]` 。如果路徑寫成 `/sse` 卻用 Streamable HTTP Client，也可能是路由錯誤；請先核對端點及傳輸，再改模型提示詞。
 
 ## 可執行範例
 

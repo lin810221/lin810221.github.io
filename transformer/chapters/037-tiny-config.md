@@ -8,7 +8,7 @@
 
 ## 本課到底要訓練什麼
 
-我們訓練decoder-only、next-token模型。ByteTokenizer用0表示PAD、1表示BOS、2表示EOS，其餘256種位元組加3，所以vocab_size=259。這個固定byte tokenizer沒有BPE合併；另一個TinyBPE只用於理解分詞，不可以混用兩者的ID。
+我們訓練decoder-only、next-token模型。ByteTokenizer用0表示PAD、1表示BOS、2表示EOS，其餘256種位元組加3，所以 `vocab_size=259` 。這個固定byte tokenizer沒有BPE合併；另一個TinyBPE只用於理解分詞，不可以混用兩者的ID。
 
 輸入ids是long[B,T]，輸出logits是float[B,T,259]。標籤在模型外位移一次，並用-100忽略padding。模型不幫你判斷中文語意，也不自帶聊天規則；它先學習原創簡短英文語法，用來驗證訓練機制。
 
@@ -16,7 +16,7 @@
 
 Config預設d_model32、4heads、2layers、FFN hidden96、context64。位置採可學得的絕對embedding，區塊採PreNorm LayerNorm、GELU與殘差，輸出head和token embedding綁定。這是明確選擇的教學架構，不宣稱就是現代Llama的完整複刻。RoPE、RMSNorm、SwiGLU與GQA另有對照實驗。
 
-head_dim=32/4=8。若改heads=3，無法平均分頭，本課會拒絕該設定；不能靠reshape隨機湊出合法數字。將vocab改成300也不會自動變成有300種可解碼token，資料編碼與模型詞表要一起管理。
+ `head_dim=32/4=8` 。若改 `heads=3` ，無法平均分頭，本課會拒絕該設定；不能靠reshape隨機湊出合法數字。將vocab改成300也不會自動變成有300種可解碼token，資料編碼與模型詞表要一起管理。
 
 ## 先列形狀再跑forward
 

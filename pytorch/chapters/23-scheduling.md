@@ -41,7 +41,7 @@ for epoch in range(4):
 
 ## 練習與解答
 
-val losses為[.8,.6,.61,.62,.59]，patience=2且min_delta=0時，會在第4輪停止；第5輪不會發生。若你事後看到.59才調patience，就是用額外資訊做選擇，需要誠實記錄。另一題：只存best weights可以續訓到完全相同結果嗎？答案：不足，仍缺current optimizer、RNG、scheduler與資料位置等狀態。
+val losses為[.8,.6,.61,.62,.59]， `patience=2` 且 `min_delta=0` 時，會在第4輪停止；第5輪不會發生。若你事後看到.59才調patience，就是用額外資訊做選擇，需要誠實記錄。另一題：只存best weights可以續訓到完全相同結果嗎？答案：不足，仍缺current optimizer、RNG、scheduler與資料位置等狀態。
 
 ## 官方來源與延伸閱讀
 

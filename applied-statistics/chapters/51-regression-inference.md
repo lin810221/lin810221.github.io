@@ -14,7 +14,7 @@
 
 ## 斜率標準誤與檢定
 
-傳統獨立等變異常態誤差下，s²=SSE/(n−2)，SE(b1)=s/√Sxx，(b1−β10)/SE參照t_(n−2)。只用n−1分母會漏掉已估兩個參數。常態主要用於精確小樣本推論，OLS點估計本身的代數計算不需Y正常。
+傳統獨立等變異常態誤差下， $s^{2}=\frac{\mathrm{SSE}}{n-2}$ ， $\operatorname{SE}\left(b1\right)=\frac{s}{\sqrt{S}xx}$ ， $\frac{b1-\beta 10}{\mathrm{SE}}$ 參照 `t_(n−2)` 。只用 $n-1$ 分母會漏掉已估兩個參數。常態主要用於精確小樣本推論，OLS點估計本身的代數計算不需Y正常。
 
 $$
 SE(b_1)=\frac{s}{\sqrt{S_{xx}}},\qquad
@@ -23,7 +23,17 @@ $$
 
 ## 平均反應與個別預測
 
-在x0的平均反應SE=s√(1/n+(x0−x̄)²/Sxx)。新觀察還有個體誤差，預測SE要在根號內多加1，所以通常更寬；遠離x̄時兩者都增寬。軟體summary_frame的mean_ci與obs_ci是不同欄位，不可挑較窄者冒充個別預測。
+**區分兩個目標。** 在傳統簡單線性迴歸的獨立常態、等變異誤差條件下，第一列估計固定 $x_0$ 的平均反應；第二列預測一個新觀察，多出的 1 代表個別誤差。令 $S_{xx}=\sum_i(x_i-\bar x)^2$。
+
+<!-- equation:regression-mean-and-prediction-interval -->
+$$
+\begin{aligned}
+\text{mean response: }&\hat y_0\pm t_{1-\alpha/2,n-2}s\sqrt{\frac1n+\frac{(x_0-\bar x)^2}{S_{xx}}},\\[4pt]
+\text{new observation: }&\hat y_0\pm t_{1-\alpha/2,n-2}s\sqrt{1+\frac1n+\frac{(x_0-\bar x)^2}{S_{xx}}}.
+\end{aligned}
+$$
+
+在x0的平均反應 $\operatorname{SE}=s\sqrt{\frac1n+\frac{(x_0-\bar x)^2}{S_{xx}}}$ 。新觀察還有個體誤差，預測SE要在根號內多加1，所以通常更寬；遠離 $\bar{x}$ 時兩者都增寬。軟體summary_frame的mean_ci與obs_ci是不同欄位，不可挑較窄者冒充個別預測。
 
 ## 異質變異與HC3
 

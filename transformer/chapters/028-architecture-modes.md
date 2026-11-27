@@ -24,15 +24,15 @@ Decoder-only可把問題、指令或文件放在前綴，再接答案序列，�
 
 ## Encoder–Decoder的兩種Attention
 
-來源序列先經Encoder得到`[B,T_s,D]`；目標Decoder的SelfAttention讀取自己的有效前綴，CrossAttention以目標表示作Q、來源表示作K/V。若來源長3、目前目標長2，CrossAttention權重為`[B,H,2,3]`，輸出仍有兩個目標位置。
+來源序列先經Encoder得到`[B,T_s,D]`；目標Decoder的SelfAttention讀取自己的有效前綴，CrossAttention以目標表示作Q、來源表示作 $\frac{K}{V}$ 。若來源長3、目前目標長2，CrossAttention權重為`[B,H,2,3]`，輸出仍有兩個目標位置。
 
-來源已知，所以CrossAttention通常可讀完整有效來源，而非一律套2×3下三角；目標自注意力仍causal。來源padding和目標padding各有不同軸，要分別處理。[T5原始研究](https://arxiv.org/abs/1910.10683)是統一文字到文字架構的一個代表性原始來源，不是本課CPU小模型的外部權重依賴。
+來源已知，所以CrossAttention通常可讀完整有效來源，而非一律套 $2\times 3$ 下三角；目標自注意力仍causal。來源padding和目標padding各有不同軸，要分別處理。[T5原始研究](https://arxiv.org/abs/1910.10683)是統一文字到文字架構的一個代表性原始來源，不是本課CPU小模型的外部權重依賴。
 
 ## 任務、架構與輸出頭可以組合
 
 Encoder最後接分類頭、Token分類頭或表示投影，和語言模型輸出全部詞彙的head不同；Decoder也可被改作其他任務。模型能輸出向量不表示那個向量已訓練成適合檢索的句表示；要看訓練目標、pooling與任務評估。
 
-序列生成時，Encoder來源通常可先算一次保存；Decoder每步更新目標前綴。cache節省什麼取決於哪些K/V固定、哪些隨目標增加。若把Encoder來源每步任意改寫，先前cache可能失效，不能一概沿用。
+序列生成時，Encoder來源通常可先算一次保存；Decoder每步更新目標前綴。cache節省什麼取決於哪些 $\frac{K}{V}$ 固定、哪些隨目標增加。若把Encoder來源每步任意改寫，先前cache可能失效，不能一概沿用。
 
 ## 練習與解析
 

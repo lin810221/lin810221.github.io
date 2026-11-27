@@ -40,7 +40,7 @@ Host 的允許清單可以改善使用範圍，但無法取代 Server 的資料�
 
 ## 練習與解答
 
-把提案改成 close_ticket，本例 Host 應拒絕，因為只允許 search_notes。再送三次搜尋、max_calls=2，第三次應被預算阻止。這兩個測試驗證的是程式可強制的控制，不是模型是否願意遵守一句「不要亂用工具」。需要更完整編排可接 [LangGraph](../langgraph/index.html)。
+把提案改成 close_ticket，本例 Host 應拒絕，因為只允許 search_notes。再送三次搜尋、 `max_calls=2` ，第三次應被預算阻止。這兩個測試驗證的是程式可強制的控制，不是模型是否願意遵守一句「不要亂用工具」。需要更完整編排可接 [LangGraph](../langgraph/index.html)。
 
 ## 可執行範例
 

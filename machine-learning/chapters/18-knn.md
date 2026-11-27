@@ -21,7 +21,7 @@ d(x,z)=\sqrt{\sum_j(x_j-z_j)^2},\qquad
 \hat p_c=\frac{\sum_{i\in N_k(x)}a_i\,1[y_i=c]}{\sum_{i\in N_k(x)}a_i}
 $$
 
-uniform時a_i=1；distance權重依距離。輸出比例是鄰域估計，不自動等於已校準的機率。
+uniform時 $a_{i}=1$ ；distance權重依距離。輸出比例是鄰域估計，不自動等於已校準的機率。
 
 ## k控制局部細節
 

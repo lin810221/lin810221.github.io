@@ -8,13 +8,13 @@
 
 ## 任務與輸出
 
-辨識24×24影像中的正方形或細長矩形。標籤0為square、1為bar，背景有小幅隨機雜訊，前景位置改變。這是明確控制因素的教學資料，沒有攝影機或自然影像泛化宣稱；它能讓你確認管線確實更新參數。
+辨識 $24\times 24$ 影像中的正方形或細長矩形。標籤0為square、1為bar，背景有小幅隨機雜訊，前景位置改變。這是明確控制因素的教學資料，沒有攝影機或自然影像泛化宣稱；它能讓你確認管線確實更新參數。
 
 make_shapes以seed23產生96張訓練影像、seed41產生48張驗證影像。不同種子避免完全相同生成樣本，但仍共享同一生成機制，因此不把它等同跨設備的真實外部驗證。真實專題要用工件、個體或拍攝場次分組切分。
 
 ## 依序執行
 
-先跑01_image_io.py與06_group_split.py建立輸入及切分直覺，再執行09_train_classifier.py。追讀vision_core.py中的模型：兩層卷積、池化、3×3適應池化及2類head。每次更新使用AdamW與CrossEntropy，驗證時eval和inference_mode。
+先跑01_image_io.py與06_group_split.py建立輸入及切分直覺，再執行09_train_classifier.py。追讀vision_core.py中的模型：兩層卷積、池化、 $3\times 3$ 適應池化及2類head。每次更新使用AdamW與CrossEntropy，驗證時eval和inference_mode。
 
 接著跑10_classification_metrics.py核對手算矩陣，再跑20_shift_slices.py比較原生成條件與刻意反轉亮度。最後用21_export_onnx.py理解獨立的匯出一致性測試；預設是未訓練模型，加入`--trained --output outputs/onnx`則先訓練本課分類器，再匯出並驗證同一個模型。也可在自己的程式把已訓練model傳入export_and_compare，避免將不同成品混在一起。
 

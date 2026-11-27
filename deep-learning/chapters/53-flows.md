@@ -18,7 +18,7 @@ normalizing flow以可逆轉換與Jacobian處理密度；continuous flow以時�
 
 ## 本課的線性條件路徑
 
-取noise z與target x1，t∈[0,1]，x_t=(1-t)z+tx1，條件速度為x1-z。對獨立配對抽樣訓練MSE，固定(x_t,t)可能對應不同配對，最適回歸是相應條件期望，不是網路能對每組noise完全還原其隱藏配對。
+取noise z與target x1，t∈[0,1]， $x_{t}=(1-t)z+tx1$ ，條件速度為x1-z。對獨立配對抽樣訓練MSE，固定(x_t,t)可能對應不同配對，最適回歸是相應條件期望，不是網路能對每組noise完全還原其隱藏配對。
 
 $$
 x_t=(1-t)z+tx_1,\qquad u_t=x_1-z,\qquad
@@ -27,7 +27,7 @@ $$
 
 ## 取樣使用積分
 
-從base noise開始，解dx/dt=vθ(x,t)。第38例真正學1D向量場，再30次Euler更新x+=vΔt，target為mean2、std.5 Gaussian。小模型、有限訓練與離散步數都有誤差，只報finite loss與samples統計，不冒稱已驗證真實生成品質。
+從base noise開始，解 $\frac{dx}{dt}=v\theta (x,t)$ 。第38例真正學1D向量場，再30次Euler更新x+=vΔt，target為mean2、std.5 Gaussian。小模型、有限訓練與離散步數都有誤差，只報finite loss與samples統計，不冒稱已驗證真實生成品質。
 
 ## 與Diffusion的關係
 
@@ -35,7 +35,7 @@ $$
 
 ## 練習與解答
 
-$z=1$、$x1=3$，t=.25時x_t=1.5、u=2；t0回noise、t1回target。解答：這是配對路徑的精確手算，生成時只有學得vθ與base，沒有拿未知x1當輸入偷用答案。Euler步數變化需比較數值誤差與成本，而不只看單次sample mean。
+$z=1$、$x1=3$， $t=.25$ 時 $x_{t}=1.5$ 、 $u=2$ ；t0回noise、t1回target。解答：這是配對路徑的精確手算，生成時只有學得vθ與base，沒有拿未知x1當輸入偷用答案。Euler步數變化需比較數值誤差與成本，而不只看單次sample mean。
 
 ## 完整可執行範例
 

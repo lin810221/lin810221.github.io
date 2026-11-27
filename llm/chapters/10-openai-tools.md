@@ -61,7 +61,7 @@ for item in response.output:
 
 工具參數的 schema 是給應用執行工作；最終答案的 schema 是給產品或後續程式使用。兩者都可能是 JSON，但責任不同。
 
-Responses 的最終格式在 `text.format`，例如 type=json_schema、name、schema、strict。官方 Python SDK 也有 `responses.parse(..., text_format=YourPydanticModel)` 的便利方式。
+Responses 的最終格式在 `text.format`，例如  `type=json_schema` 、name、schema、strict。官方 Python SDK 也有 `responses.parse(..., text_format=YourPydanticModel)` 的便利方式。
 
 即使 schema 保證形狀，也必須處理拒絕與 incomplete，並驗證來源、權限與業務規則。正確的 JSON 仍可能包含錯誤的訂單號碼。
 

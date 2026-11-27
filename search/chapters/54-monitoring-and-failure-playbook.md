@@ -14,7 +14,7 @@
 
 ## 三種指標一起看
 
-服務指標包含 p50/p95、QPS、錯誤與 timeout；資料指標包含 source/index count、outbox lag、失效候選與版本不符；品質指標包含零命中、ANN Recall 監測與人工 qrels 回歸。CPU 正常不代表資料同步正常，HTTP 200 也不代表結果完整。
+服務指標包含  $\frac{p50}{p95}$ 、QPS、錯誤與 timeout；資料指標包含 source/index count、outbox lag、失效候選與版本不符；品質指標包含零命中、ANN Recall 監測與人工 qrels 回歸。CPU 正常不代表資料同步正常，HTTP 200 也不代表結果完整。
 
 ## 對應症狀的順序
 

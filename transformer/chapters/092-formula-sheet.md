@@ -34,7 +34,7 @@ $$
 
 ## KV cache純張量容量
 
-假設每層K/V同shape與dtype、full attention且沒有量化，容量為：
+假設每層 $\frac{K}{V}$ 同shape與dtype、full attention且沒有量化，容量為：
 
 $$
 M_{KV}=2\times B\times L\times T_k\times H_{kv}\times d_h\times b.
@@ -46,7 +46,7 @@ $b$是每元素bytes，前面的2代表K與V。以預設TinyGPT、batch1、長�
 
 ## 時間與工作記憶體要分開
 
-完整dense self-attention的主要QK與AV算術約為$O(BT^2D)$；投影和MLP還有$O(BTD^2)$、$O(BTDF)$等成本。cache decode單次只有少量queries，但要讀歷史K/V；不能因query長度1就說每步完全不受context影響。
+完整dense self-attention的主要QK與AV算術約為$O(BT^2D)$；投影和MLP還有$O(BTD^2)$、$O(BTDF)$等成本。cache decode單次只有少量queries，但要讀歷史 $\frac{K}{V}$ ；不能因query長度1就說每步完全不受context影響。
 
 若把完整scores實體化，元素數為$B H_q T_q T_k$。FlashAttention類方法可以避免保存完整矩陣，減少資料搬運與中間記憶體，不代表所有dense attention算術都變成線性。判斷瓶頸需要裝置與kernel的實際量測，而不是只比較Big-O符號。
 
@@ -60,7 +60,7 @@ float32權重、float32梯度與Adam兩份float32動量，核心張量約需每�
 
 **題目：** 模型有8個query heads、2個KV heads，其他維度不變。學生用8代入KV公式，並把scores容量也稱為cache。如何修正？
 
-**解析：** KV用2，所以學生在這一分項高估4倍；scores是當前query與key的配對工作矩陣，cache是跨步保存的K/V。兩者的長度、heads及生命週期不同。先分開列shape、dtype與是否保存，再討論峰值和持續占用。
+**解析：** KV用2，所以學生在這一分項高估4倍；scores是當前query與key的配對工作矩陣，cache是跨步保存的 $\frac{K}{V}$ 。兩者的長度、heads及生命週期不同。先分開列shape、dtype與是否保存，再討論峰值和持續占用。
 
 ## 參考與日期
 

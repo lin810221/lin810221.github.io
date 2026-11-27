@@ -28,7 +28,7 @@ $$
 
 ## 更新D時切斷G
 
-fake=G(z).detach，D loss用real label1、fake0，step只更新D。更新G時fake不能detach，否則G沒有路徑；D weights暫時不求參數grad，但仍需讓其運算對G輸出可微。no_grad包整個D會錯切訊號。
+ $fake=G(z).\mathrm{detach}$ ，D loss用real label1、fake0，step只更新D。更新G時fake不能detach，否則G沒有路徑；D weights暫時不求參數grad，但仍需讓其運算對G輸出可微。no_grad包整個D會錯切訊號。
 
 ## 本章實際訓練
 

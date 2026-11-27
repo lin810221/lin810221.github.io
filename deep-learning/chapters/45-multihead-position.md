@@ -20,11 +20,11 @@ $$
 \mathrm{MHA}(X)=\mathrm{Concat}(O_1,\ldots,O_H)W_O
 $$
 
-常見設定d_model可被H整除，每head d_model/H。本課8維、2head，實作batch_first=True，避免把時間與batch顛倒。
+常見設定d_model可被H整除，每head $\frac{d_{\rm model}}{H}$。本課8維、2head，實作 `batch_first=True` ，避免把時間與batch顛倒。
 
 ## 從batch一路追到每個head
 
-輸入[B,T,8]，三個可學投影產生同形狀Q、K、V，再重排為[B,2,T,4]。QKᵀ得到[B,2,T,T]，沿最後的key軸softmax；乘V回[B,2,T,4]，合併head回[B,T,8]，最後經輸出投影。跨Attention時query長度Tq、key長度Tk可不同，權重矩陣改為[B,H,Tq,Tk]。
+輸入[B,T,8]，三個可學投影產生同形狀Q、K、V，再重排為[B,2,T,4]。 $QK^{\top}$ 得到[B,2,T,T]，沿最後的key軸softmax；乘V回[B,2,T,4]，合併head回[B,T,8]，最後經輸出投影。跨Attention時query長度Tq、key長度Tk可不同，權重矩陣改為[B,H,Tq,Tk]。
 
 2個head不是把序列切成前半和後半，而是拆每個token的表示維度。投影也不是單純切割原始特徵：不同head的可學線性組合，讓每個head可使用全部原始維度的資訊。
 
@@ -34,7 +34,7 @@ $$
 
 ## 本課位置範例的界線
 
-第32例在小block輸入加手工sin(position/frequency)特徵，明確只為示意，不聲稱完整重現原論文所有sin/cos或現代LLM的RoPE。模型隨機初始化，沒有tokenizer、預訓練或生成能力；它只讓你測shape與causal結構。
+第32例在小block輸入加手工$\sin\left(\frac{\mathrm{position}}{\mathrm{frequency}}\right)$特徵，明確只為示意，不聲稱完整重現原論文所有sin/cos或現代LLM的RoPE。模型隨機初始化，沒有tokenizer、預訓練或生成能力；它只讓你測shape與causal結構。
 
 ## 原始sinusoidal位置公式
 
@@ -49,7 +49,7 @@ $$
 
 ## 成本的概念
 
-一般dense attention權重涉及T×T，序列長度增加會影響時間／記憶體；不同kernel與sparse／linear等變體有不同取捨。CPU小例不能推論GPU吞吐，較新平台能力也不是架構原理的替代。
+一般dense attention權重涉及 $T\times T$ ，序列長度增加會影響時間／記憶體；不同kernel與sparse／linear等變體有不同取捨。CPU小例不能推論GPU吞吐，較新平台能力也不是架構原理的替代。
 
 ## 練習與解答
 

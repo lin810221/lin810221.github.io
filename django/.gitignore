@@ -1,0 +1,6 @@
+examples/db.sqlite3
+examples/private-media/
+examples/staticfiles/
+examples/.runtime/
+examples/.env
+__pycache__/

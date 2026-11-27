@@ -1,0 +1,24 @@
+{
+  "checked": "2026-11-26",
+  "python": "3.15.2",
+  "packages": {
+    "Django": "6.1.3",
+    "asgiref": "3.13.0",
+    "sqlparse": "0.6.1",
+    "tzdata": "2026.6",
+    "djangorestframework": "3.18.3",
+    "whitenoise": "6.12.0",
+    "waitress": "3.0.2"
+  },
+  "optional_postgresql_driver": "3.3.9",
+  "sources": {
+    "Django": "https://pypi.org/pypi/Django/json",
+    "asgiref": "https://pypi.org/pypi/asgiref/json",
+    "sqlparse": "https://pypi.org/pypi/sqlparse/json",
+    "tzdata": "https://pypi.org/pypi/tzdata/json",
+    "djangorestframework": "https://pypi.org/pypi/djangorestframework/json",
+    "whitenoise": "https://pypi.org/pypi/whitenoise/json",
+    "waitress": "https://pypi.org/pypi/waitress/json",
+    "psycopg": "https://pypi.org/pypi/psycopg/json"
+  }
+}

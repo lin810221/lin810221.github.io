@@ -35,7 +35,7 @@
 
 三種概念切面：矢狀分左右、冠狀分前後、橫斷分上下。斜面為透視符號，不表示影像顯示方向。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/61-planes.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{61}-\mathrm{planes}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NCI：骨骼肌構造](https://training.seer.cancer.gov/anatomy/muscular/structure.html)
 - [NCI：神經組織](https://training.seer.cancer.gov/anatomy/nervous/tissue.html)
@@ -62,7 +62,7 @@
 
 Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊，不是肌絲消失或自身縮短。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/20-sarcomere.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{20}-\mathrm{sarcomere}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NCI：骨骼肌構造](https://training.seer.cancer.gov/anatomy/muscular/structure.html)
 - [NCI：神經組織](https://training.seer.cancer.gov/anatomy/nervous/tissue.html)
@@ -390,7 +390,7 @@ Z線之間是肌節，細肌絲連向Z線、粗肌絲居中；滑動改變重疊
 
 體溫調節涉及下視丘整合、皮膚血流與汗液蒸發，環境影響效果；出汗不保證散熱充分。
 
-本學習空間原創圖再用：anatomy-physiology/assets/figures/15-heat-loss.svg；只計本課一張，不宣稱為新增原創圖。
+本學習空間原創圖再用： $\mathrm{anatomy}-\frac{\frac{\frac{\mathrm{physiology}}{\mathrm{assets}}}{\mathrm{figures}}}{15}-heat-\mathrm{loss}.svg$ ；只計本課一張，不宣稱為新增原創圖。
 
 - [NCI：皮膚層次](https://www.training.seer.cancer.gov/melanoma/anatomy/layers.html)
 - [WHO：2020身體活動與久坐正式指南](https://www.who.int/publications/i/item/9789240015128)

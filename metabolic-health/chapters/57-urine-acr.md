@@ -47,7 +47,7 @@ KDIGO2024在CKD評估使用白蛋白尿資訊，但單次升高可能受暫時�
 
 <details><summary>展開驗算與理由</summary>
 
-單位錯了。1000 mg/$L=1$ g/L，因此30÷1=30 mg/g；若先算mg/mg，還要換成mg/g。
+單位錯了。1000 mg/$L=1$ g/L，因此30÷ $1=30$  mg/g；若先算mg/mg，還要換成mg/g。
 
 </details>
 

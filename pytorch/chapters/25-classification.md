@@ -14,7 +14,7 @@
 
 ## 專案輸入與產出
 
-每筆4個浮點特徵，3類單選，總共160筆合成資料。teacher線性映射產生標籤，但學生只得到x與y。固定切分96/32/32，train-only標準化；TinyMLP使用4→12→3與Dropout。這是用來練工程流程的小問題，不是現實資料集的benchmark。
+每筆4個浮點特徵，3類單選，總共160筆合成資料。teacher線性映射產生標籤，但學生只得到x與y。固定切分 $\frac{\frac{96}{32}}{32}$ ，train-only標準化；TinyMLP使用4→12→3與Dropout。這是用來練工程流程的小問題，不是現實資料集的benchmark。
 
 ## 按資料流讀 course_core
 

@@ -61,7 +61,7 @@
 
 - [CDC：描述流行病學資料](https://www.cdc.gov/field-epi-manual/php/chapters/describing-epi-data.html)：現行網頁2024-08-08；人、時、地及資料呈現。
 - [CDC／NCHS：年齡調整](https://www.cdc.gov/nchs/hus/sources-definitions/age-adjustment.htm)：網頁更新2026-09-16；所用美國標準人口仍為2000年。
-- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本GHE/2026.3。
+- [WHO：GHE2023疾病負擔方法](https://cdn.who.int/media/docs/default-source/gho-documents/global-health-estimates/ghe2023_daly_methods.pdf)：正式技術文件2026年9月；估計年2000–2023，版本 `GHE/2026.3` 。
 
 教材與圖解查核2026-11-17；資料涵蓋年、出版、正式修訂與查核日分開。圖與案例為原創教學材料，非真實疫情、地區排名或機關授權工具。
 

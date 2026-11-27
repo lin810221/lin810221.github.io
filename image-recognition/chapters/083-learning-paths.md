@@ -28,7 +28,7 @@ python image-recognition/examples/20_shift_slices.py
 
 ## 路線二：學會像素與定位答案
 
-若目標是分割，先驗收 mask ID、最近鄰 resize、ignore=255、共同增強與逐類 IoU／Dice，再訓練小型前景分割模型。若目標是框，先手算半開 XYXY、IoU、NMS 與一對一匹配，之後理解單物件定位和一般多物件偵測的差別。
+若目標是分割，先驗收 mask ID、最近鄰 resize、 `ignore=255` 、共同增強與逐類 IoU／Dice，再訓練小型前景分割模型。若目標是框，先手算半開 XYXY、IoU、NMS 與一對一匹配，之後理解單物件定位和一般多物件偵測的差別。
 
 ```powershell
 python image-recognition/examples/17_train_segmenter.py

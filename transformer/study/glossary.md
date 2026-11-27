@@ -44,10 +44,10 @@
 | Attention head／注意力頭 | 以自己的投影和維度執行關聯聚合的一組計算，不保證對應固定語法功能。 |
 | Head dimension／每頭維度 | 每個head內向量寬度；MHA常需D能被query head數整除。 |
 | MHA／多頭注意力 | query heads與KV heads同數的常見設計，各head形成自己的關聯聚合。 |
-| GQA／分組查詢注意力 | 多個query heads共用一組K/V，純KV容量依KV head數估算。 |
-| MQA／多查詢注意力 | 所有query heads共用一組K/V的特例；不是只保留一個query。 |
+| GQA／分組查詢注意力 | 多個query heads共用一組 $\frac{K}{V}$ ，純KV容量依KV head數估算。 |
+| MQA／多查詢注意力 | 所有query heads共用一組 $\frac{K}{V}$ 的特例；不是只保留一個query。 |
 | Self-attention／自注意力 | Q/K/V來自同一序列表示的注意力，可依任務採雙向或因果限制。 |
-| Cross-attention／交叉注意力 | Q與K/V來自不同序列的聚合，矩陣長度通常可不相同。 |
+| Cross-attention／交叉注意力 | Q與 $\frac{K}{V}$ 來自不同序列的聚合，矩陣長度通常可不相同。 |
 | Encoder／編碼器 | 常以雙向內容形成序列表示的架構家族，任務仍取決於訓練目標。 |
 | Decoder／解碼器 | 常以因果前綴逐步生成的架構家族，也可經設計用於其他任務。 |
 | FFN／逐位置前饋網路 | 對每個token的特徵維度做非線性轉換的子層，常不混合不同位置。 |
@@ -63,7 +63,7 @@
 | Loss mask／損失遮罩 | 指定哪些位置參與目標與分母，例如忽略PAD或只訓練回答部分。 |
 | Position ID／位置索引 | 提供位置機制的整數索引；含padding時未必等於cache實體格號。 |
 | Learned position／可學習位置表 | 每個位置有可學習向量的設計；超出表長需明確政策。 |
-| RoPE／旋轉位置嵌入 | 對Q/K成對維度旋轉，把位置差帶入內積的一種位置機制。 |
+| RoPE／旋轉位置嵌入 | 對 $\frac{Q}{K}$ 成對維度旋轉，把位置差帶入內積的一種位置機制。 |
 | RMSNorm／均方根正規化 | 以特徵均方根調整尺度的一類Norm，不先減平均，與LayerNorm不同。 |
 | LayerNorm／層正規化 | 通常在單token特徵軸估計平均與變異，再以可學仿射參數調整。 |
 | Pre-norm／子層前正規化 | 在attention或FFN之前套Norm的block排序，不是任意交換層都等價。 |
@@ -111,7 +111,7 @@
 | Autoregression／自回歸 | 依已有前綴逐步建模後續token的機制，不是一次看見完整未來。 |
 | Prefill／前綴計算 | 處理已知prompt並建立所需狀態的階段，常影響首次輸出延遲。 |
 | Decode step／逐步解碼 | 依當前前綴產生下一token的步驟，與文字decode函式需依語境區分。 |
-| KV cache／鍵值快取 | 跨生成步保存每層歷史K/V的狀態，用記憶體換取部分重算減少。 |
+| KV cache／鍵值快取 | 跨生成步保存每層歷史 $\frac{K}{V}$ 的狀態，用記憶體換取部分重算減少。 |
 | DynamicCache／動態快取容器 | HF可增長並更新的cache類別；不能直接當成所有手寫cache的通用介面。 |
 | Temperature／溫度 | 採樣前將logits除以正值的尺度設定，改變分布集中程度。 |
 | Greedy decoding／貪婪解碼 | 每步選當前最大分數token的策略，不保證整段機率或事實最佳。 |
@@ -142,7 +142,7 @@
 
 ## 把名詞放回一個算例
 
-取同一段文字，tokenizer把它轉成IDs；embedding將IDs查成hidden states；attention以Q/K計分並加權V；lm_head產生logits，softmax形成候選分布。訓練用有效目標計算NLL，生成則使用greedy或採樣策略。這是一條依序發生的機制，不能因為每步都有數字，就把logit、attention weight與token probability叫成同一個信心分數。
+取同一段文字，tokenizer把它轉成IDs；embedding將IDs查成hidden states；attention以 $\frac{Q}{K}$ 計分並加權V；lm_head產生logits，softmax形成候選分布。訓練用有效目標計算NLL，生成則使用greedy或採樣策略。這是一條依序發生的機制，不能因為每步都有數字，就把logit、attention weight與token probability叫成同一個信心分數。
 
 例如兩批有效目標數2與8、平均NLL1與3，token-weighted mean是2.6；PPL為其指數，不是批次PPL平均。這個小例同時用到valid target、NLL sum、weighted mean和PPL，並說明為什麼詞表裡的分母定義會影響實際報告。
 

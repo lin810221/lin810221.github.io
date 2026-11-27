@@ -10,7 +10,7 @@
 
 **解析：**手寫主線target為`[10,20,EOS]`，每個logit預測下一個Token。高階模型需按其labels契約，不能把已shift資料再讓內部shift一次。最小序列逐格列出prefix與target，能抓出沒位移、位移兩次與對角線偷看三種不同問題。
 
-logits為`[B,T,V]`時，PyTorch CE可攤成`[B*T,V]`或轉成`[B,V,T]`；不要讓T誤成類別軸。測試使用T≠V，避免形狀巧合讓錯誤安靜通過。
+logits為`[B,T,V]`時，PyTorch CE可攤成`[B*T,V]`或轉成`[B,V,T]`；不要讓T誤成類別軸。測試使用 $T\ne V$ ，避免形狀巧合讓錯誤安靜通過。
 
 ## 題目二：文件獨立packing
 
@@ -24,7 +24,7 @@ A=`[BOS,a,EOS]`、B=`[BOS,b,EOS]`串接後，input=`[BOS,a,EOS,BOS,b]`，target�
 
 microbatch一有2個有效Token、NLL總和6；microbatch二有8個、總和8。全視窗mean loss與兩個batch mean的簡單平均各是多少？
 
-**解析：**Token等權平均14/10=1.4；batch等權平均(3+1)/2=2。若目標是每個有效Token等權，梯度也要以總有效數10縮放，不只是顯示時把loss改成1.4。最後不足預定步數的視窗同樣使用實際有效數。
+**解析：**Token等權平均 $\frac{14}{10}=1.4$ ；batch等權平均 $\frac{3+1}{2}=2$ 。若目標是每個有效Token等權，梯度也要以總有效數10縮放，不只是顯示時把loss改成1.4。最後不足預定步數的視窗同樣使用實際有效數。
 
 驗證PPL應對整體平均NLL取exp，而不是平均每批PPL。若批次有效數不同，先保存sum與count，能避免大部分分母錯誤。
 

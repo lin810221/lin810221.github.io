@@ -27,6 +27,14 @@ $$
 
 ## RMSNorm的差別
 
+以一筆長度為 $d$ 的表示為例，基本 RMSNorm 依均方根縮放，但不先減去平均。$\gamma_i$ 是可學習縮放，$\epsilon>0$ 避免零分母：
+
+<!-- equation:rms-normalization -->
+$$
+\operatorname{RMS}(x)=\sqrt{\frac1d\sum_{j=1}^d x_j^2+\epsilon},\qquad
+y_i=\gamma_i\frac{x_i}{\operatorname{RMS}(x)}.
+$$
+
 RMSNorm按均方根縮放，一般不減mean；它與LayerNorm不是只改名稱。具體affine、epsilon與實作支援看目前API及模型設定。某些架構常用不代表所有任務都需替換既有norm，先維持可比實驗。
 
 ## 現成數值檢查

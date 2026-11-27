@@ -1,0 +1,10 @@
+# This file is documentation, not loaded automatically.
+DJANGO_SETTINGS_MODULE=studyhub.production
+DJANGO_SECRET_KEY=provide-a-new-strong-secret-via-your-platform
+DJANGO_ALLOWED_HOSTS=your-domain.example
+# Optional PostgreSQL settings (not provisioned by this project):
+POSTGRES_DB=studyhub
+POSTGRES_USER=studyhub
+POSTGRES_HOST=your-database-host
+POSTGRES_PASSWORD=provide-via-secret-manager
+POSTGRES_SSLMODE=require

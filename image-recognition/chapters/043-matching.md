@@ -14,7 +14,7 @@
 
 同一張圖有兩個真實框A、B。設定IoU門檻0.5，預測依分數排序如下：p1分數0.95，與A的IoU0.8；p2分數0.9，與A的IoU0.7、與B為0；p3分數0.8，與B的IoU0.6；p4分數0.7，與所有框IoU0。第一筆p1匹配A，為TP；第二筆雖也在A附近，但A已被用過，故為重複FP；p3匹配B，為TP；p4是背景誤報FP。
 
-結果TP=2、$FP=2$、$FN=0$，$\operatorname{precision}=2/4=0.5$，$\operatorname{recall}=2/2=1$。FN不是「錯誤預測框的數量」，而是仍未找到對應預測的真實目標數；若把FP也算FN，會把兩種不同錯誤混在一起。
+結果 $\mathrm{TP}=2$ 、$FP=2$、$FN=0$，$\operatorname{precision}=2/4=0.5$，$\operatorname{recall}=2/2=1$。FN不是「錯誤預測框的數量」，而是仍未找到對應預測的真實目標數；若把FP也算FN，會把兩種不同錯誤混在一起。
 
 ## 分數排序會影響哪一筆拿到命中
 
@@ -43,7 +43,7 @@ for each image and class:
 
 ## 練習與解析
 
-沿用四筆預測，把評估IoU門檻提高到0.75。p1的0.8仍為TP；p2對A已重複且0.7不足；p3的0.6不再達標，變FP；p4仍FP。結果TP=1、$FP=3$、$FN=1$，$\operatorname{precision}=0.25$、$\operatorname{recall}=0.5$。模型與分數都沒改，評估要求變嚴格，因此分數改變。
+沿用四筆預測，把評估IoU門檻提高到0.75。p1的0.8仍為TP；p2對A已重複且0.7不足；p3的0.6不再達標，變FP；p4仍FP。結果 $\mathrm{TP}=1$ 、$FP=3$、$FN=1$，$\operatorname{precision}=0.25$、$\operatorname{recall}=0.5$。模型與分數都沒改，評估要求變嚴格，因此分數改變。
 
 請在預測表增加`matched_gt_id`與`reason`欄，區分重複、類別、定位和背景；同時留存原始框，讓其他人可以獨立重算。正式資料的ignore與crowd要依[COCOeval原始碼](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)處理；不要在教學配對器上貼上COCO名稱。
 

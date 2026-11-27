@@ -178,7 +178,7 @@
 
 ## CrossAttention與SDPA介面
 
-將不同來源的Q與K/V接起來，以明確mask和dropout設定核對手寫與框架運算。
+將不同來源的Q與 $\frac{K}{V}$ 接起來，以明確mask和dropout設定核對手寫與框架運算。
 
 依Q、K、V與遮罩逐步計算；核對每列權重分母、head軸和可見位置。 本頁主題：CrossAttention與SDPA介面。
 
@@ -410,7 +410,7 @@ KV cache保存每層已處理token的key與value，讓後續decode重用前綴�
 
 ## MHA、GQA與MQA的分工
 
-Query heads與KV heads不必相同；GQA和MQA透過共享K/V減少cache與部分投影成本。
+Query heads與KV heads不必相同；GQA和MQA透過共享 $\frac{K}{V}$ 減少cache與部分投影成本。
 
 核對past、新query、key與位置的關係，先寫出shape和允許矩陣，再討論容量或效能。 本頁主題：MHA、GQA與MQA的分工。
 

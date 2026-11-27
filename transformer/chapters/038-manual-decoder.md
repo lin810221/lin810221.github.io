@@ -16,7 +16,7 @@
 
 本模型的因果遮罩控制「哪些key可看」，位置embedding表達「目前在第幾個有效token」。沒有cache時方陣下三角足夠；加入padding要另限制key有效性；加入cache則query位於整個key序列尾端，遮罩需帶past偏移。
 
-例如past3、新token2，兩列允許矩陣為11110、11111。若直接使用is_causal=True的左上對齊矩形，就會讓尾端query只能看前一兩個key，輸出雖然合法，語意已經錯了。本課採explicit bool mask及is_causal=False，True表示可參與。
+例如past3、新token2，兩列允許矩陣為11110、11111。若直接使用 `is_causal=True` 的左上對齊矩形，就會讓尾端query只能看前一兩個key，輸出雖然合法，語意已經錯了。本課採explicit bool mask及 `is_causal=False` ，True表示可參與。
 
 ## 模式與數值
 

@@ -1,0 +1,9 @@
+{
+  "title": "碼本的間距可以不同",
+  "alt": "上列均勻碼本等距，下列非均勻碼本在中心較密；下列僅示意，不是完整NF4常數表。",
+  "caption": "圓點表示可重建值；本圖不列出實際NF4碼表。",
+  "sources": [
+    "https://arxiv.org/abs/2305.14314"
+  ],
+  "license": "original educational diagram"
+}

@@ -18,11 +18,11 @@
 
 ## 真正執行的分析
 
-第40例讀本機CSV，驗證schema與ID，計摘要與alpha、兩因素principal-axis+varimax、A/B Welch、前後差t、三組Welch ANOVA與Games–Howell，最後輸出JSON。它是探索教學的多方法整合，不宣稱已控制所有目標的整體確認性錯誤率。
+第40例讀本機CSV，驗證schema與ID，計摘要與alpha、兩因素 $\mathrm{principal}-axis+\mathrm{varimax}$ 、A/B Welch、前後差t、三組Welch ANOVA與Games–Howell，最後輸出JSON。它是探索教學的多方法整合，不宣稱已控制所有目標的整體確認性錯誤率。
 
 ## 先讀估計，再讀p
 
-例如A−B約−.2056且區間跨0；前後差約2.9556；三組平均依序增加，但只有A/C那對在三對Games–Howell下拒絕。每項需要回到分數定義、單位與設計。前後改變沒有控制組，不能當作某方案造成改善。
+例如 $A-B$ 約−.2056且區間跨0；前後差約2.9556；三組平均依序增加，但只有 $\frac{A}{C}$ 那對在三對Games–Howell下拒絕。每項需要回到分數定義、單位與設計。前後改變沒有控制組，不能當作某方案造成改善。
 
 ## 保存與重跑
 

@@ -1,0 +1,10 @@
+{
+  "title": "不同適應方法需要不同資料",
+  "alt": "持續預訓練使用領域文字，SFT使用示範，蒸餾使用教師訊號；三者目標不能直接互換。",
+  "caption": "資料可組合，仍需分別定義損失與評估。",
+  "sources": [
+    "https://arxiv.org/abs/1503.02531",
+    "https://arxiv.org/abs/2004.10964"
+  ],
+  "license": "original educational diagram"
+}

@@ -28,7 +28,7 @@ Q[L,d_k]、K[S,d_k]、V[S,d_v]，權重[L,S]，輸出[L,d_v]。每個query row�
 
 ## 真正數值對照
 
-第30例生成double Q/K/V、算softmax與AV，再比F.scaled_dot_product_attention(dropout_p=0)。每row sum為1，輸出誤差接近精度。CPU驗證只保證這個數學契約，沒有報FlashAttention或GPU速度。
+第30例生成double Q/K/V、算softmax與AV，再比 `F.scaled_dot_product_attention(dropout_p=0)` 。每row sum為1，輸出誤差接近精度。CPU驗證只保證這個數學契約，沒有報FlashAttention或GPU速度。
 
 ## 權重如何解讀
 

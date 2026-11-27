@@ -19,21 +19,21 @@ python transformer/examples/25_hf_cache.py
 
 ## 一定要覆寫預設大尺寸
 
-`LlamaForCausalLM(LlamaConfig(...))`根據config建模。若直接採預設大規格，可能在還沒學會forward前就耗盡記憶體。本例明確設定vocab_size=300、hidden_size=32、intermediate_size=64、2層、4個query heads、2個KV heads、max_position_embeddings=64，並指定PAD/BOS/EOS為0/1/2。
+`LlamaForCausalLM(LlamaConfig(...))`根據config建模。若直接採預設大規格，可能在還沒學會forward前就耗盡記憶體。本例明確設定 `vocab_size=300` 、 `hidden_size=32` 、 `intermediate_size=64` 、2層、4個query heads、2個KV heads、 `max_position_embeddings=64` ，並指定PAD/BOS/EOS為 $\frac{\frac{0}{1}}{2}$ 。
 
 它與本課TinyGPT不同：這裡用框架的Llama架構及GQA設定，不能把TinyGPT的learned position、LayerNorm或tied head假設直接套過去。需要哪些機制，應從該版本config與modeling原始碼確認。程式選eager attention以便在小CPU例中觀察數值；這不宣稱eager是所有裝置最快的實作。
 
 ## Forward輸出先看形狀
 
-輸入`ids=[[1,30,31,2]]`有batch 1、長度4。輸出logits形狀應是$1\times4\times300$，每個位置有300個詞表分數。這個shape能由config與程式推導，數值是否正常仍需實際執行。採`use_cache=False`取得完整前向作為後續重讀與cache對照的參考。
+輸入 `ids=[[1,30,31,2]]` 有batch 1、長度4。輸出logits形狀應是$1\times4\times300$，每個位置有300個詞表分數。這個shape能由config與程式推導，數值是否正常仍需實際執行。採`use_cache=False`取得完整前向作為後續重讀與cache對照的參考。
 
 最小紀錄包含輸入IDs、attention mask、position IDs、dtype、attention implementation和模型是否eval。只印模型類別名稱無法定位錯誤；取錯回傳欄位或把最後有效token與PAD混淆，也不是重裝套件能解決的問題。
 
 ## 5.24的cache介面
 
-本課依5.24 tag核對，採`DynamicCache(config=model.config)`，forward傳`cache=cache`，從`out.cache`讀取結果。不要因為舊範例使用`past_key_values`，就把舊名稱當作當日推薦寫法；也不要傳一個框架實際沒有使用的`cache_position`，便以為絕對位置已被處理。
+本課依5.24 tag核對，採`DynamicCache(config=model.config)`，forward傳 `cache=cache` ，從`out.cache`讀取結果。不要因為舊範例使用`past_key_values`，就把舊名稱當作當日推薦寫法；也不要傳一個框架實際沒有使用的`cache_position`，便以為絕對位置已被處理。
 
-範例先prefill前三個token，再傳最後兩個新token，完整attention mask覆蓋5個key位置，position_ids明列`[[3,4]]`。比較完整前向後兩位置與cache路徑的logits，再核對cache長度和每層K/V形狀。query heads為4、KV heads為2，所以key head軸應反映2，而不是用4個query heads推測K形狀。
+範例先prefill前三個token，再傳最後兩個新token，完整attention mask覆蓋5個key位置，position_ids明列`[[3,4]]`。比較完整前向後兩位置與cache路徑的logits，再核對cache長度和每層 $\frac{K}{V}$ 形狀。query heads為4、KV heads為2，所以key head軸應反映2，而不是用4個query heads推測K形狀。
 
 DynamicCache可能原地更新。做多條對照路徑時，每條都建立自己的新cache，不能把已增加到長度5的物件，當成原本長度3的快取重用。這種狀態污染會讓測試在不同執行順序下得到不同結果。
 

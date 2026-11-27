@@ -38,7 +38,7 @@ eval關閉Dropout及調整BatchNorm等行為，不自動關梯度；no_grad／in
 
 ## 練習與解答
 
-batch大小4與2，mean loss1與3，整體是(4+6)/6=1.6667，而不是2。eval後忘記train，後續Dropout不再隨機，可能改變學習方案。解答：train_epoch入口明確train，evaluate用try/finally，並測模式與grad沒有意外改動。
+batch大小4與2，mean loss1與3，整體是 $\frac{4+6}{6}=1.6667$ ，而不是2。eval後忘記train，後續Dropout不再隨機，可能改變學習方案。解答：train_epoch入口明確train，evaluate用try/finally，並測模式與grad沒有意外改動。
 
 ## 完整可執行範例
 

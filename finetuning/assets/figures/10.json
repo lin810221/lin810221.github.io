@@ -1,0 +1,9 @@
+{
+  "title": "零初始化的第一步梯度",
+  "alt": "B為零而A隨機時，初始輸出保持基底，A首步梯度為零，B通常可更新。",
+  "caption": "不能把A首步零梯度直接判為凍結錯誤。",
+  "sources": [
+    "https://arxiv.org/abs/2106.09685"
+  ],
+  "license": "original educational diagram"
+}

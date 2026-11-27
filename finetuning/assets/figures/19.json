@@ -1,0 +1,9 @@
+{
+  "title": "由機制驗收到任務驗收",
+  "alt": "下層數值契約、中層獨立保留評估與上層部署任務檢查逐層支撐，任何一層不能被另一層取代。",
+  "caption": "圖層表示檢查範圍，寬度不代表樣本數。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

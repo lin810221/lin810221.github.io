@@ -33,7 +33,7 @@
 
 ## 目前實測範圍
 
-Python3.11與PyTorch2.15.0+cpu，40項測試，24個預設入口。真實CPU訓練、save/load、epoch-boundary resume、尾批梯度等價、Profiler、compile的eager backend與torch.export往返均有執行。沒有聲稱CUDA AMP、多GPU/DDP通訊、Inductor效能或ONNX runtime已通過。網頁實驗是JavaScript數值示範，不在瀏覽器執行Torch。
+Python3.11與 $\mathrm{PyTorch}2.15.0+cpu$ ，40項測試，24個預設入口。真實CPU訓練、save/load、epoch-boundary resume、尾批梯度等價、Profiler、compile的eager backend與torch.export往返均有執行。沒有聲稱CUDA AMP、多GPU/DDP通訊、Inductor效能或ONNX runtime已通過。網頁實驗是JavaScript數值示範，不在瀏覽器執行Torch。
 
 ## 舊寫法的遷移提示
 

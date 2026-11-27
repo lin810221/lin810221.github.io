@@ -1,6 +1,6 @@
 # 權重量化與低精度的原理
 
-<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享K/V heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
+<figure class="tf-figure"><a href="assets/figures/18-mha-gqa-mqa.svg" target="_blank" rel="noopener"><img src="assets/figures/18-mha-gqa-mqa.svg" alt="MHA八個query分別對八KV組，GQA每兩query共用一組共四組，MQA八query共一組；快取4,2,0.5MiB。" loading="lazy"></a><figcaption>共享 $\frac{K}{V}$  heads，改變cache容量。記憶體公式使用Hkv而不是Hq；GQA還需核對整除關係與實際kernel支援。 點選圖像可放大；原創教學算例，非外部大模型實測。</figcaption></figure>
 
 <div class="tf-task"><strong>讀圖任務</strong><p>說明本頁方法改變計算、記憶體流量、儲存或排程中的哪一項；列出圖外仍需實測的成本。 本頁主題：權重量化與低精度的原理。</p></div>
 
@@ -8,7 +8,7 @@
 
 ## 最簡單的對稱INT8
 
-本課將每列權重的最大絕對值除127作scale，q=round(w/scale)並夾在-127到127，還原值約為q×scale。每列有自己的scale可減少不同動態範圍間的誤差，但需要額外metadata。
+本課將每列權重的最大絕對值除127作scale， $q=\operatorname{round}\left(\frac{w}{\mathrm{scale}}\right)$ 並夾在-127到127，還原值約為 $q\times \mathrm{scale}$ 。每列有自己的scale可減少不同動態範圍間的誤差，但需要額外metadata。
 
 $$
 q=\operatorname{clip}(\operatorname{round}(w/s),-127,127),\qquad \hat w=sq

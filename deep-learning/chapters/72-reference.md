@@ -14,7 +14,7 @@
 
 ## 版本與實測基準
 
-查核日期2026-10-30，採官方最新穩定版PyTorch2.15.0，實測Python3.11、torch2.15.0+cpu。需求檔固定torch==2.15.0，CPU安裝使用官方CPU index；+cpu為build標記。首次安裝需要網路，安裝完成後42個Python入口只用自產資料或包內fixture，不下載模型或資料。
+查核日期2026-10-30，採官方最新穩定版PyTorch2.15.0，實測Python3.11、 $\mathrm{torch}2.15.0+cpu$ 。需求檔固定torch==2.15.0，CPU安裝使用官方CPU index；+cpu為build標記。首次安裝需要網路，安裝完成後42個Python入口只用自產資料或包內fixture，不下載模型或資料。
 
 ## 一眼分清楚的術語
 
@@ -22,7 +22,7 @@ parameter是optimizer可更新的模型狀態，buffer如BatchNorm running stati
 
 ## 常用公式與分母
 
-row-batch Linear為$Z=XW^\top+b$，PyTorch Linear.weight shape為[out,in]。無權重、無忽略標籤的mean CE對logits梯度為(P−Y)/N；weighted CE須看實際分母。SGD更新θ−ηg，AdamW另有decoupled decay。KL非負但不對稱；β-VAE的β不等於1時，目標不再直接是標準ELBO負號。
+row-batch Linear為$Z=XW^\top+b$，PyTorch Linear.weight shape為[out,in]。無權重、無忽略標籤的mean CE對logits梯度為 $\frac{P-Y}{N}$ ；weighted CE須看實際分母。SGD更新 $\theta -\eta g$ ，AdamW另有decoupled decay。KL非負但不對稱；β-VAE的 $\beta $ 不等於1時，目標不再直接是標準ELBO負號。
 
 $$
 \operatorname{Attention}(Q,K,V)=

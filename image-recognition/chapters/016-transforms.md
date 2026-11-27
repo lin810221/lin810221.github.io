@@ -16,7 +16,7 @@
 
 偵測的框、實例 mask 與語意 mask 都有空間資訊。若影像翻轉但框沒翻，或分別呼叫兩個隨機翻轉，會出現有時對齊、有時錯位的隱性標註錯誤。相同 seed 並不自動保證兩條任意程式路徑抽到相同變換，正確做法是共同傳入一次幾何變換，或先抽明確參數再對所有目標應用。
 
-TorchVision v2 可透過 `tv_tensors.Image`、`BoundingBoxes`、`Mask` 區分資料角色。框要附 `format='XYXY'` 和 `canvas_size=(H,W)`；一般浮點陣列只靠形狀不足以告訴函式它是影像還是框。具型別結構讓同一次變換能更新各種幾何資訊，同時對 mask 採合法取樣。
+TorchVision v2 可透過 `tv_tensors.Image`、`BoundingBoxes`、`Mask` 區分資料角色。框要附 `format='XYXY'` 和  `canvas_size=(H,W)` ；一般浮點陣列只靠形狀不足以告訴函式它是影像還是框。具型別結構讓同一次變換能更新各種幾何資訊，同時對 mask 採合法取樣。
 
 ## 共同翻轉的自足示意
 
@@ -40,7 +40,7 @@ assert torch.equal(out['boxes'], torch.tensor([[6.,1.,10.,5.]]))
 assert int(out['masks'][:,1:5,6:10].sum()) == 16
 ```
 
-後續用 ToDtype 將影像轉 float32、scale=True；mask 維持整數 ID，不做影像 Normalize。若要對 mask 明確轉 int64，可按 TVTensor 型別指定 dtype，其他欄位保留原樣。色彩變換應作用於影像，不修改 class ID、box 座標或 mask 的語意。
+後續用 ToDtype 將影像轉 float32、 `scale=True` ；mask 維持整數 ID，不做影像 Normalize。若要對 mask 明確轉 int64，可按 TVTensor 型別指定 dtype，其他欄位保留原樣。色彩變換應作用於影像，不修改 class ID、box 座標或 mask 的語意。
 
 ## 裁切後要處理消失的目標
 

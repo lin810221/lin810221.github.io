@@ -23,7 +23,7 @@ OpenAI Agents SDK、Google ADK、Claude Agent SDK 的抽象與執行環境不同
 
 ## 不依賴高層框架的完整原生迴圈
 
-以下 live_agents.py 可供三家真實工具呼叫使用。它只開放有界的 multiply，保留各自的原生歷史；預設 live=False，只產生請求。
+以下 live_agents.py 可供三家真實工具呼叫使用。它只開放有界的 multiply，保留各自的原生歷史；預設  `live=False` ，只產生請求。
 
 <!-- example:live_agents.py -->
 

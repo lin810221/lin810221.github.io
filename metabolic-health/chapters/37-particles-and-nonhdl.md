@@ -23,7 +23,7 @@
 
 ## 算術和目標分開
 
-TC=200、HDL-$C=50$ mg/dL時，non-HDL-$C=150$ mg/dL。這個差值本身不決定個人疾病或治療，目標需依風險與指南。若HDL大於總膽固醇，應查資料，而不是把負數截成零。
+ $\mathrm{TC}=200$ 、HDL-$C=50$ mg/dL時，non-HDL-$C=150$ mg/dL。這個差值本身不決定個人疾病或治療，目標需依風險與指南。若HDL大於總膽固醇，應查資料，而不是把負數截成零。
 
 ## 為何有多項指標
 
@@ -41,7 +41,7 @@ LDL-C、non-HDL-C和apoB各提供不同訊息，尤其在三酸甘油酯較高�
 
 <details><summary>展開驗算與理由</summary>
 
-不是。non-HDL=TC−HDL=150 mg/dL，TG不在這個減式。這是同單位算術，不是個人治療目標判定。
+不是。 $non-\mathrm{HDL}=\mathrm{TC}-\mathrm{HDL}=150$  mg/dL，TG不在這個減式。這是同單位算術，不是個人治療目標判定。
 
 </details>
 

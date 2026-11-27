@@ -14,7 +14,7 @@
 
 ## 分頁KV在管理什麼
 
-PagedAttention把邏輯序列的K/V映射到實體區塊，減少連續大空間配置和浪費，並支持某些共享。物理區塊不必連續，但attention仍需讀對應key/value。分頁沒有讓有效KV所需bytes變成零，還有區塊內空間及metadata成本。
+PagedAttention把邏輯序列的 $\frac{K}{V}$ 映射到實體區塊，減少連續大空間配置和浪費，並支持某些共享。物理區塊不必連續，但attention仍需讀對應key/value。分頁沒有讓有效KV所需bytes變成零，還有區塊內空間及metadata成本。
 
 相同prefix共享也要核對權重、tokenizer、位置和cache政策；不能因顯示文字相同就假設ID及狀態相同。跨使用者資料隔離、生命週期與引用計數是正式服務需要處理的工程條件。
 

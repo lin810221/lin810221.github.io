@@ -8,13 +8,13 @@
 
 ## 題目：辨識三種實驗
 
-A使用weights=None並只跑forward；B下載ImageNet權重、替換head後訓練；C從零訓練全部參數。哪個可以稱為遷移學習？
+A使用 `weights=None` 並只跑forward；B下載ImageNet權重、替換head後訓練；C從零訓練全部參數。哪個可以稱為遷移學習？
 
-解析：B才使用已學得的表示作新任務起點。A是架構與輸出契約檢查，C是從零訓練；三種都有用途，但證據不同。A即使輸出softmax=.99，也不能說「有99%信心辨識出瑕疵」。
+解析：B才使用已學得的表示作新任務起點。A是架構與輸出契約檢查，C是從零訓練；三種都有用途，但證據不同。A即使輸出 $\mathrm{softmax}=.99$ ，也不能說「有99%信心辨識出瑕疵」。
 
 ## 題目：凍結後模型還在變
 
-骨幹全部requires_grad=False，每個epoch驗證結果仍受到batch順序影響，可能發生什麼？
+骨幹全部 `requires_grad=False` ，每個epoch驗證結果仍受到batch順序影響，可能發生什麼？
 
 解析：檢查BatchNorm running state是否仍更新、Dropout是否仍啟用、資料增強是否誤用在驗證集。requires_grad只管參數梯度，不等同eval。先保存同一輸入兩次forward的結果與模型狀態差異，再定位是哪個層。
 
@@ -26,11 +26,11 @@ A使用weights=None並只跑forward；B下載ImageNet權重、替換head後訓�
 
 ## 題目：計算人工複核負荷
 
-每天5000張、陽性率2%、TPR=.9、FPR=.01，預期真陽性90、假陽性49、陽性複核139、precision約64.75%。若FPR增加到.03，假陽性147、precision約37.97%。即使recall不變，工作量也明顯改變。
+每天5000張、陽性率2%、 $\mathrm{TPR}=.9$ 、 $\mathrm{FPR}=.01$ ，預期真陽性90、假陽性49、陽性複核139、precision約64.75%。若FPR增加到.03，假陽性147、precision約37.97%。即使recall不變，工作量也明顯改變。
 
 ## 實作與交付
 
-執行11_resnet_contract.py，說明輸出[2,2]與1026個可訓練參數的來源：512×2+2。這個數字對應ResNet18的head，不應泛用到ResNet50。再閱讀權重enum與其transforms輸出，將模型來源與新任務label map分開記錄。
+執行11_resnet_contract.py，說明輸出[2,2]與1026個可訓練參數的來源： $512\times 2+2$ 。這個數字對應ResNet18的head，不應泛用到ResNet50。再閱讀權重enum與其transforms輸出，將模型來源與新任務label map分開記錄。
 
 真正進行外部權重微調時，交付資料切分、具名權重、前處理、freeze政策、param groups、驗證選模依據、各類指標、錯例及部署門檻。教材附的無下載範例先檢查這些工程契約，真實權重及大型資料的成效由你自己的實驗補上。
 

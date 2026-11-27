@@ -1,0 +1,9 @@
+{
+  "title": "QLoRA記憶體不能只算權重",
+  "alt": "堆疊前的四種獨立成本包括量化基底、adapter與最佳化器、activation暫存及量化metadata。",
+  "caption": "條長為示意，沒有真實容量或固定比例的意義。",
+  "sources": [
+    "https://arxiv.org/abs/2305.14314"
+  ],
+  "license": "original educational diagram"
+}

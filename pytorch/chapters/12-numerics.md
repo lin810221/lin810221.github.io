@@ -14,7 +14,7 @@
 
 ## 問題可能比 backward 更早
 
-loss=NaN 的原因可以是輸入缺失、除以零、log(0)、overflow 或學習率太大。先查資料與 forward 中間量，再查梯度。用 `torch.isfinite(tensor).all()` 找第一個非有限值；只把最後 loss 的 NaN 改成零，會隱藏上游問題，也可能讓模型停止學習。
+ `loss=NaN`  的原因可以是輸入缺失、除以零、log(0)、overflow 或學習率太大。先查資料與 forward 中間量，再查梯度。用 `torch.isfinite(tensor).all()` 找第一個非有限值；只把最後 loss 的 NaN 改成零，會隱藏上游問題，也可能讓模型停止學習。
 
 ## 用穩定的運算式
 
@@ -42,7 +42,7 @@ float16 的範圍與有效位數不同於 bfloat16、float32；AMP 會依運算�
 
 ## 練習與解答
 
-模型第一個 batch 就 NaN：先看 x/y、標準差、loss 的輸入契約；第十個 epoch 才 NaN：再看梯度範數、更新幅度與中間 activation。解答順序是縮小到一批並固定 seed，記錄首次壞值的位置，確認公式與 dtype，再嘗試降低 lr 或 gradient clipping。clipping 處理大梯度，不能修好本來就無效的標籤或除零。
+模型第一個 batch 就 NaN：先看  $\frac{x}{y}$ 、標準差、loss 的輸入契約；第十個 epoch 才 NaN：再看梯度範數、更新幅度與中間 activation。解答順序是縮小到一批並固定 seed，記錄首次壞值的位置，確認公式與 dtype，再嘗試降低 lr 或 gradient clipping。clipping 處理大梯度，不能修好本來就無效的標籤或除零。
 
 ## 官方來源與延伸閱讀
 

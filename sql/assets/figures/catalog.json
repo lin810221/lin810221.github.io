@@ -1,0 +1,434 @@
+[
+  {
+    "id": "figure-01",
+    "file": "assets/figures/01.svg",
+    "title": "從一筆訂單到一份可驗證報表",
+    "alt": "追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。",
+    "caption": "靜態教材不執行資料庫；Python與伺服器在自己的環境執行。",
+    "readingTask": "追蹤來源、契約、查詢與交付四層，區分短交易和分析報表各自的責任。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/clients/python/overview"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-02",
+    "file": "assets/figures/02.svg",
+    "title": "資料粒度與一對多的方向",
+    "alt": "同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。",
+    "caption": "先寫清楚一列代表什麼，再解讀COUNT與JOIN。",
+    "readingTask": "同一訂單102對應兩筆不同商品明細，指出重複訂單鍵為何不是應刪除的重複事實。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-constraints.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-03",
+    "file": "assets/figures/03.svg",
+    "title": "型別、NULL與聚合分母",
+    "alt": "逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。",
+    "caption": "WHERE只保留true；unknown不會自動變成true。",
+    "readingTask": "逐列比較NULL、零和空字串，辨認一般比較、空值判定和COUNT如何處理它們。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/functions-comparison.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-04",
+    "file": "assets/figures/04.svg",
+    "title": "用約束保護可表達的資料契約",
+    "alt": "從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。",
+    "caption": "CHECK不等於NOT NULL；跨列業務規則仍需另行驗證。",
+    "readingTask": "從唯一客戶鍵走向訂單外鍵，再檢查重複鍵、不存在的關聯與非法欄位值會在哪裡被拒絕。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-constraints.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-05",
+    "file": "assets/figures/05.svg",
+    "title": "WHERE選集合，CASE產生標籤",
+    "alt": "先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。",
+    "caption": "條件先核對括號、空值、邊界與單位。",
+    "readingTask": "先找哪些訂單通過付款條件，再用4000美分門檻分類，別把篩選與輸出標籤混為一件事。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/queries.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-06",
+    "file": "assets/figures/06.svg",
+    "title": "分組平均需要回到原始分子分母",
+    "alt": "獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。",
+    "caption": "此圖是獨立算例；不是訂單fixture的平均金額。",
+    "readingTask": "獨立教學算例中兩組大小不同，使用總和與筆數重建整體平均，說明不可讓組別取得相同權重。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/functions-aggregate.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-07",
+    "file": "assets/figures/07.svg",
+    "title": "LEFT JOIN保留未配對客戶",
+    "alt": "找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。",
+    "caption": "左列保留與後續條件需一起閱讀。",
+    "readingTask": "找到沒有訂單的客戶4，對照補出的NULL與右側鍵計數為零，解釋COUNT星號的不同結果。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-08",
+    "file": "assets/figures/08.svg",
+    "title": "Fanout是配對乘法，不是隨機重複",
+    "alt": "數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。",
+    "caption": "SUM DISTINCT金額會刪掉合法同值，不是通用修法。",
+    "readingTask": "數出兩筆明細與兩筆退款形成的四格配對，再說明直接SUM為何重複，及先各自聚合如何修正。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-09",
+    "file": "assets/figures/09.svg",
+    "title": "CTE讓中間粒度可以被檢查",
+    "alt": "沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。",
+    "caption": "CTE命名不代表一定物化；物理計畫仍需檢查。",
+    "readingTask": "沿商品與退款兩條分支觀察粒度先縮成每訂單一列，再連到訂單主表，逐層核對唯一性。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/query_syntax/with"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-10",
+    "file": "assets/figures/10.svg",
+    "title": "遞迴從anchor展開階層",
+    "alt": "從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。",
+    "caption": "樹、一般圖、可達節點與所有路徑是不同問題。",
+    "readingTask": "從根1沿父子邊讀出2與5，再到3與4；辨認深度上限只限制展開，不等於完整循環偵測。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/query_syntax/with"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-11",
+    "file": "assets/figures/11.svg",
+    "title": "逐列累積與同時間peer的差異",
+    "alt": "比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。",
+    "caption": "ROWS加入訂單鍵穩定同值順序；RANGE保留時間peer。",
+    "readingTask": "比較每列金額與兩種累積，指出102和103的時間相同，RANGE因此共享同一個時間邊界總額。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/functions/window_functions"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-12",
+    "file": "assets/figures/12.svg",
+    "title": "前後列的順序與NULL政策",
+    "alt": "讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。",
+    "caption": "跳過空值沒有補回缺失測量，仍要保存品質資訊。",
+    "readingTask": "讀取三列測量值，對照第三列的前值，並辨認PostgreSQL 19與DuckDB空值選項的語法位置不同。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/functions-window.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-13",
+    "file": "assets/figures/13.svg",
+    "title": "資料與處理位置共同提交",
+    "alt": "在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。",
+    "caption": "檔案與外部服務不在這個資料庫交易框內。",
+    "readingTask": "在交易邊界內找出四個變更，指出提交前失敗時為何資料與checkpoint都不能前進。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/statements/transactions"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-14",
+    "file": "assets/figures/14.svg",
+    "title": "PostgreSQL兩種快照的雙連線對照",
+    "alt": "沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。",
+    "caption": "相同快照不等於所有跨列業務決策都可序列化。",
+    "readingTask": "沿讀取、另一連線提交與再次讀取三個時點，分辨Read Committed和Repeatable Read的可見值。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/transaction-iso.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-15",
+    "file": "assets/figures/15.svg",
+    "title": "拆分重複的目前客戶事實",
+    "alt": "左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。",
+    "caption": "拆分後仍需驗證鍵與可重建性；代理鍵不會自動修復相依。",
+    "readingTask": "左側多筆訂單重複客戶地區，右側將目前客戶與訂單關聯分開，辨認更新異常與外鍵責任。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-constraints.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-16",
+    "file": "assets/figures/16.svg",
+    "title": "SCD2以半開區間唯一配對",
+    "alt": "共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。",
+    "caption": "包含valid_from，不包含valid_to；重疊或空窗都需驗收。",
+    "readingTask": "共享邊界11月2日屬於南部新版本，追蹤101和102各自配到的歷史版本，不能用目前地區代替。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-17",
+    "file": "assets/figures/17.svg",
+    "title": "從掃描到聚合的計畫閱讀",
+    "alt": "沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。",
+    "caption": "示意節點，不假裝與每個引擎的實際列印格式完全相同。",
+    "readingTask": "沿五列來源、四列付款與三組客戶追蹤列數，區分實際計畫證據與只憑函數名稱的推測。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/guides/meta/explain_analyze"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-18",
+    "file": "assets/figures/18.svg",
+    "title": "複合索引與列組裁剪的不同責任",
+    "alt": "左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。",
+    "caption": "產品、資料分布和計畫決定實際採用方式，不作無例外推論。",
+    "readingTask": "左側按客戶與日期排列鍵，右側按列組日期範圍判斷候選；分辨交易索引與分析資料布局。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/indexes-multicolumn.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-19",
+    "file": "assets/figures/19.svg",
+    "title": "CSV引號與schema必須一起處理",
+    "alt": "將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。",
+    "caption": "使用成熟解析器，再對輸入與輸出筆數驗收。",
+    "readingTask": "將同一列CSV讀成三個合法欄位，指出引號中的逗號不是分隔，001也不是可任意轉型的整數。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/data/csv/overview"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-20",
+    "file": "assets/figures/20.svg",
+    "title": "Parquet的欄位與列組",
+    "alt": "找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。",
+    "caption": "區塊大小是結構示意，不代表真實壓縮或I/O比例。",
+    "readingTask": "找出只需要金額且日期相交的候選區塊，理解投影和列組裁剪是不同維度，並非保證所有查詢只讀一格。",
+    "sources": [
+      "https://parquet.apache.org/docs/file-format/"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-21",
+    "file": "assets/figures/21.svg",
+    "title": "Raw與typed staging保留不同證據",
+    "alt": "比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。",
+    "caption": "轉型成功只是品質的一部分，不能靜默補零。",
+    "readingTask": "比較非法文字與來源空值在轉型後都可能變成NULL，必須用原始欄位保留不同失敗原因。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/data/csv/overview"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-22",
+    "file": "assets/figures/22.svg",
+    "title": "來源版本勝出與衝突拒絕",
+    "alt": "對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。",
+    "caption": "事件識別去重和業務實體最新狀態是兩種粒度。",
+    "readingTask": "對每個業務鍵依來源序列選最新版本，另辨認相同版本不同內容的情況，不能用讀取順序冒充權威。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/functions/window_functions"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-23",
+    "file": "assets/figures/23.svg",
+    "title": "來源範圍與邊界的包含方式",
+    "alt": "辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。",
+    "caption": "上界需要來源完整性證據，不只是目前看過的最大時間。",
+    "readingTask": "辨認本課序列範圍不包含after而包含through，再與日期半開區間對照，避免把兩個契約混成同一條件。",
+    "sources": [
+      "https://debezium.io/documentation/reference/stable/connectors/postgresql.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-24",
+    "file": "assets/figures/24.svg",
+    "title": "CDC新增、更正與刪除的位置",
+    "alt": "追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。",
+    "caption": "seq是本課單一稠密合成序列，不是PostgreSQL LSN。",
+    "readingTask": "追蹤八個合成來源事件，核對第二批不是只有新增，並指出墓碑為何要留下刪除版本證據。",
+    "sources": [
+      "https://debezium.io/documentation/reference/stable/connectors/postgresql.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-25",
+    "file": "assets/figures/25.svg",
+    "title": "工作依賴與DAG驗證",
+    "alt": "由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。",
+    "caption": "手動執行器會跑真實工作，但不是排程服務。",
+    "readingTask": "由兩個來源追蹤到staging及品質發布，辨認紅色回邊會構成循環，圖的合法性不等於資料正確。",
+    "sources": [
+      "https://airflow.apache.org/docs/apache-airflow/3.4.0/core-concepts/dag-run.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-26",
+    "file": "assets/figures/26.svg",
+    "title": "有限重試的等待預算",
+    "alt": "從五次嘗試數出只有四個間隔，核對上限退避的等待時間，並把等待與工作耗時分開。",
+    "caption": "永久輸入錯誤不應進入同一個重試迴圈。",
+    "readingTask": "從五次嘗試數出只有四個間隔，核對上限退避的等待時間，並把等待與工作耗時分開。",
+    "sources": [
+      "https://airflow.apache.org/docs/apache-airflow/3.4.0/core-concepts/tasks.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-27",
+    "file": "assets/figures/27.svg",
+    "title": "品質指標要帶分子與分母",
+    "alt": "逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。",
+    "caption": "高比例不代表關鍵資料正確；來源完整性需另驗收。",
+    "readingTask": "逐列數完整欄位，再對已知鍵算不同鍵數；看見缺值與重複是不同責任，空分母需另行回報。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-constraints.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-28",
+    "file": "assets/figures/28.svg",
+    "title": "逐鍵對帳避免差異互相抵消",
+    "alt": "在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。",
+    "caption": "正常fixture每筆差異為零；本圖特別示範失敗資料。",
+    "readingTask": "在故意修改的反例中找出正負100的兩筆差異，說明只核對全體總額會漏掉個別錯誤。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/functions-aggregate.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-29",
+    "file": "assets/figures/29.svg",
+    "title": "星型模型中的鍵與時間角色",
+    "alt": "找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。",
+    "caption": "本課實作保存order_day；日期維度可按任務另行擴充。",
+    "readingTask": "找到事實主鍵和歷史維度代理鍵，解釋多個客戶版本不應讓同一筆訂單多配對。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-constraints.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-30",
+    "file": "assets/figures/30.svg",
+    "title": "SCD重疊不應由任意挑選掩蓋",
+    "alt": "追蹤垂直事實時點穿過兩個有效版本，確認候選數為二，應修復歷史而非任選一筆。",
+    "caption": "空窗為零配對，同樣不是可直接發布的成功結果。",
+    "readingTask": "追蹤垂直事實時點穿過兩個有效版本，確認候選數為二，應修復歷史而非任選一筆。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/queries-table-expressions.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-31",
+    "file": "assets/figures/31.svg",
+    "title": "物件權限與RLS的不同層次",
+    "alt": "以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。",
+    "caption": "匯出檔案不會自動繼承原資料庫的RLS政策。",
+    "readingTask": "以受限角色追蹤租戶資料列，指出表級SELECT權限不等於可以讀取所有租戶，也不能用superuser代替驗收。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/ddl-rowsecurity.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-32",
+    "file": "assets/figures/32.svg",
+    "title": "追溯與恢復都需要可讀回證據",
+    "alt": "沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。",
+    "caption": "檔案存在、雜湊一致、資料可用與恢復目標是不同驗收。",
+    "readingTask": "沿來源到manifest再回讀，並在獨立恢復時間算例中區分資料落後和服務恢復時間。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/backup.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-33",
+    "file": "assets/figures/33.svg",
+    "title": "DataHarbor從兩批事件到目前快照",
+    "alt": "核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。",
+    "caption": "這是另一份專題fixture，不與基本SQL商店數字混用。",
+    "readingTask": "核對第一批12000與第二批11500的不同來源狀態，指出更正、刪除及重播各自影響哪些層。",
+    "sources": [
+      "https://duckdb.org/docs/2.0/sql/statements/transactions"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-34",
+    "file": "assets/figures/34.svg",
+    "title": "發布邊界與三種故障狀態",
+    "alt": "以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。",
+    "caption": "此圖為首次發布；程序中斷測試不等於所有斷電或分散式故障。",
+    "readingTask": "以首次發布來源0到4為例，比對提交前、提交後與指標替換後的狀態，說明恢復不能再次套用業務變更。",
+    "sources": [
+      "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-writes.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-35",
+    "file": "assets/figures/35.svg",
+    "title": "跨引擎的共同概念與不同語法",
+    "alt": "比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。",
+    "caption": "SQLite版本另行核對；Python版本不等於SQLite版本。",
+    "readingTask": "比較兩個實測引擎的參數與空值選項，再區分程序內分析和獨立伺服器責任，不能整段互貼語法。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/functions-window.html"
+    ],
+    "license": "original educational diagram"
+  },
+  {
+    "id": "figure-36",
+    "file": "assets/figures/36.svg",
+    "title": "升版與交接保留可重新執行的證據",
+    "alt": "沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。",
+    "caption": "程式版本回退不會自動還原schema與已改寫資料。",
+    "readingTask": "沿四種不同版本追蹤變動，再說明哪一組反例與恢復測試能證明語意在升級後仍成立。",
+    "sources": [
+      "https://www.postgresql.org/docs/19/release-19.html"
+    ],
+    "license": "original educational diagram"
+  }
+]

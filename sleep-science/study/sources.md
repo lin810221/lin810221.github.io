@@ -6,7 +6,7 @@
 
 NHLBI、NIGMS等官方基礎生理資料依各頁日期；AASM／SRS成人2015與兒少2016共識、AAP2022安全睡眠等資料不虛構2026新版。專業評分手冊及ICSD分類的授權全文未因能看官方索引就宣稱全部讀過。
 
-VA/DoD2025失眠／OSA指南有美國成人照護情境。AASM2026-04-13失眠合併治療指南處理特定比較，不代表每人都應加藥；2021行為心理治療指南、2025中樞型呼吸中止等正式文件用途另列。
+ `VA/DoD2025` 失眠／OSA指南有美國成人照護情境。AASM2026-04-13失眠合併治療指南處理特定比較，不代表每人都應加藥；2021行為心理治療指南、2025中樞型呼吸中止等正式文件用途另列。
 
 輪班工作障礙正式指南於2026-10-24線上發表，與2025公眾諮詢稿、2026年5月會議摘要、2026年12月集合日期分開。Yellow Book 2026版的時差章頁日期2025-04-23；版年不等於頁面更新年。
 
@@ -71,7 +71,7 @@ AASM評分手冊Version3與ICSD-3-TR僅核對官方版本索引，未取得授�
 - [NHLBI：睡眠檢查與訊號](https://www.nhlbi.nih.gov/health/sleep-studies)：2022-03-24基礎科普；檢查用途由專業依問題決定。
 - [AASM：消費型睡眠科技立場](https://pubmed.ncbi.nlm.nih.gov/29734997/)：2018立場；不據舊文概括2026所有裝置的監管狀態。
 - [NSF：消費型睡眠科技官方公開立場](https://www.thensf.org/wp-content/uploads/2025/09/National-Sleep-Foundation-Consumer-SleepTech-Position-Statement.pdf)：官方公開PDF，網址含2025；另有2026期刊聲明，不宣稱兩文件完全逐字相同。
-- [NSF：消費型睡眠科技期刊立場索引](https://pubmed.ncbi.nlm.nih.gov/41792005/)：2026正式期刊立場，DOI10.1016/j.sleh.2026.02.003；出版商全文403，公開摘要可核對。
+- [NSF：消費型睡眠科技期刊立場索引](https://pubmed.ncbi.nlm.nih.gov/41792005/)：2026正式期刊立場， `DOI10.1016/j.sleh.2026.02.003` ；出版商全文403，公開摘要可核對。
 - [Baron等：追蹤睡眠造成困擾的案例討論](https://doi.org/10.5664/jcsm.6472)：2017原始案例討論；orthosomnia不是本課可自動判定的診斷。
 - [NHLBI：健康睡眠習慣](https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits)：官方基礎頁；原則依任務與個別條件理解。
 - [NIOSH：咖啡因與半衰期](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod6/11.html)：官方工作時數教學；半衰期有個體差異，非個人給藥模型。
@@ -253,7 +253,7 @@ S不是血中腺苷讀數；兩者相關但不能直接視為同一個可量測�
 
 [開啟圖檔](../assets/figures/11-molecular-peripheral.svg)
 
-左側哺乳類CLOCK/BMAL1促進Per/Cry表達，延遲形成的PER/CRY參與抑制；右側不同組織可有不同相位，受中樞及其他訊號協調。
+左側哺乳類 $\frac{\mathrm{CLOCK}}{BMAL1}$ 促進Per/Cry表達，延遲形成的PER/CRY參與抑制；右側不同組織可有不同相位，受中樞及其他訊號協調。
 
 右側是任意相位示意，無濃度刻度；果蠅PER/TIM不直接當作人類全部機制。
 

@@ -6,7 +6,7 @@
 
 ## 兩種本機詞表要先分清楚
 
-本課有兩條可讀的實作：`ByteTokenizer`以固定byte+3映射，詞表259；`03_local_tokenizer.py`則使用Tokenizers套件訓練一個本機byte-level BPE。前者方便追蹤每個byte，後者讓你實際查看子詞合併。它們不是同一個詞表，ID也不能互換；不能把第二條產生的ID直接送進預設259詞表的TinyGPT，卻仍沿用原本的embedding。
+本課有兩條可讀的實作：`ByteTokenizer`以固定 $byte+3$ 映射，詞表259；`03_local_tokenizer.py`則使用Tokenizers套件訓練一個本機byte-level BPE。前者方便追蹤每個byte，後者讓你實際查看子詞合併。它們不是同一個詞表，ID也不能互換；不能把第二條產生的ID直接送進預設259詞表的TinyGPT，卻仍沿用原本的embedding。
 
 這個專題交付`tokenizer.json`、特殊token與ID對照、訓練文字來源、正規化規則、round-trip案例及聊天模板。模型權重和tokenizer要成套版本化；即使兩個tokenizer的詞表大小相同，也可能把同一個ID解讀成不同片段。
 
@@ -18,7 +18,7 @@
 python transformer/examples/03_local_tokenizer.py
 ```
 
-程式使用`Tokenizer(models.BPE())`、ByteLevel前切分器與decoder，BpeTrainer預設納入完整256個byte字母表，再加入PAD、BOS、EOS。requested vocab_size=300是訓練設定，不應未查看輸出就宣稱實際一定學滿300個token。資料很小或可合併組合不足時，實際詞表數可不同。
+程式使用`Tokenizer(models.BPE())`、ByteLevel前切分器與decoder，BpeTrainer預設納入完整256個byte字母表，再加入PAD、BOS、EOS。requested  `vocab_size=300` 是訓練設定，不應未查看輸出就宣稱實際一定學滿300個token。資料很小或可合併組合不足時，實際詞表數可不同。
 
 完整byte字母表讓新文字仍能拆成基本bytes。以ASCII的A為例，UTF-8只需1 byte；「貓」有3 bytes，emoji也可能需要多個bytes。BPE可把常見片段合成較長token，但不會把byte、Unicode碼點與「畫面看起來一個字」變成同一單位。比較模型成本和context前，必須用該tokenizer實際編碼。
 
@@ -42,11 +42,11 @@ python transformer/examples/03_local_tokenizer.py
 
 保存tokenizer時，同時保存chat template、特殊ID和正規化設定。重讀本機資料後，比較同一段文字的IDs、相同messages的模板結果，以及特殊token的ID。再檢查模型embedding列數、lm_head輸出維度與tokenizer最大ID；新增token後，模型對應權重也必須有明確處理。
 
-模型config的vocab_size可以大於實際用到的token數，但不能小於輸入最大ID+1。若訓練資料從不使用某些ID，隨機模型仍可能輸出這些位置的分數，這是另一個需要限制或訓練處理的契約問題，不能靠decode默默丟掉來掩蓋。
+模型config的vocab_size可以大於實際用到的token數，但不能小於輸入最大 $ID+1$ 。若訓練資料從不使用某些ID，隨機模型仍可能輸出這些位置的分數，這是另一個需要限制或訓練處理的契約問題，不能靠decode默默丟掉來掩蓋。
 
 ## 練習與解析
 
-**題目：** 一個模型原本使用詞表259，你換成requested vocab_size=300的BPE，文字decode仍正確。這樣能否不改模型直接訓練？
+**題目：** 一個模型原本使用詞表259，你換成requested  `vocab_size=300` 的BPE，文字decode仍正確。這樣能否不改模型直接訓練？
 
 **解析：** 不能由decode成功推出模型相容。先查實際詞表、ID範圍與特殊ID，並比對模型embedding和輸出head的列數及語意。即使所有ID碰巧小於259，原權重每列代表的片段也可能不同。最簡單的課內方案是為新tokenizer建立一致的新模型設定，而不是把兩套ID混接。
 

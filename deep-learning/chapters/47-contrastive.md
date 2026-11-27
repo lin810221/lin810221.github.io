@@ -26,7 +26,7 @@ $$
 
 ## 實作與collapse檢查
 
-第33例雙向平均a→b與b→a，實際對兩組向量backward，列grad norm。所有向量相同時logits相同，loss=logN；這是數學核對，不表示collapse已被所有目標自動排除。零向量cosine語意不明，本課直接拒絕。
+第33例雙向平均a→b與b→a，實際對兩組向量backward，列grad norm。所有向量相同時logits相同， $\mathrm{loss}=\log N$ ；這是數學核對，不表示collapse已被所有目標自動排除。零向量cosine語意不明，本課直接拒絕。
 
 ## 評估不只訓練loss
 
@@ -34,7 +34,7 @@ $$
 
 ## 練習與解答
 
-N4且所有logits相等，positive機率1/4、loss約1.386。解答：如果把loss報成「相似度86%」就搞錯量。新增負例可能使loss比較基準改變，不能跨不同candidate數直接以原始loss大小判斷表示品質。
+N4且所有logits相等，positive機率 $\frac{1}{4}$ 、loss約1.386。解答：如果把loss報成「相似度86%」就搞錯量。新增負例可能使loss比較基準改變，不能跨不同candidate數直接以原始loss大小判斷表示品質。
 
 ## 完整可執行範例
 

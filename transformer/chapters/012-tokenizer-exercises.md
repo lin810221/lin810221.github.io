@@ -14,7 +14,7 @@
 
 ## 題目二：固定byte映射
 
-本課PAD=0、BOS=1、EOS=2，byte值b映射b+3。ASCII字母A值65，輸入`A`且由框架加入BOS與EOS，ID序列為何？
+本課 $\mathrm{PAD}=0$ 、 $\mathrm{BOS}=1$ 、 $\mathrm{EOS}=2$ ，byte值b映射 $b+3$ 。ASCII字母A值65，輸入`A`且由框架加入BOS與EOS，ID序列為何？
 
 **解析：**`[1,68,2]`。一般文字編碼`<eos>`不應因可見字樣相似就自動成為ID2；核心byte主線將它視為普通bytes，控制ID由框架加入。這個設計讓原文與框架結構可分開驗證，但不表示所有外部Tokenizer採相同特殊字串政策。
 

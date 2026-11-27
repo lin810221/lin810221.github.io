@@ -1,0 +1,1 @@
+{% extends 'desk/base.html' %}{% block content %}<p class="eyebrow">PLAN YOUR NEXT STEP</p><h1>{% if object %}編輯任務{% else %}新增學習任務{% endif %}</h1><form method="post" class="editor">{% csrf_token %}{{ form.non_field_errors }}{{ form.as_p }}<button>儲存任務</button></form><a href="{% url 'desk:list' %}">返回列表</a>{% endblock %}

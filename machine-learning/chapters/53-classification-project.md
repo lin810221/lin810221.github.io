@@ -14,7 +14,7 @@
 
 ## 專題驗收條件
 
-400筆合成資料，3個數值欄與1個類別欄，含missing。固定240train、80val、80test。所有前處理只fit train；train內3折搜尋C；用獨立val分數選5FN+FP成本門檻；模型與門檻固定後才評估test。最後實際保存、載入，對raw records推論。
+400筆合成資料，3個數值欄與1個類別欄，含missing。固定240train、80val、80test。所有前處理只fit train；train內3折搜尋C；用獨立val分數選 $5\mathrm{FN}+\mathrm{FP}$ 成本門檻；模型與門檻固定後才評估test。最後實際保存、載入，對raw records推論。
 
 ## 如何執行
 
@@ -35,7 +35,7 @@ training_selection含train CV AP與C，以及validation成本／threshold；fina
 
 ## 轉成自己的資料
 
-替換資料載入，先定raw schema、label時間、group／time切分與缺失政策；保留原數值測試作對照。C搜尋空間與成本依任務重設，在開test前固定。若重fit train+val，原validation已參與模型weights，threshold與校準也需重新設計，不直接沿用舊分數而宣稱同樣保證。
+替換資料載入，先定raw schema、label時間、group／time切分與缺失政策；保留原數值測試作對照。C搜尋空間與成本依任務重設，在開test前固定。若重fit  $\mathrm{train}+\mathrm{val}$ ，原validation已參與模型weights，threshold與校準也需重新設計，不直接沿用舊分數而宣稱同樣保證。
 
 ## 練習與解答
 

@@ -1,0 +1,39 @@
+{
+  "checked": "2026-11-25",
+  "python": "3.15.2",
+  "packages": {
+    "torch": "2.15.0",
+    "transformers": "5.24.1",
+    "peft": "0.22.0",
+    "trl": "1.18.2",
+    "accelerate": "1.16.0",
+    "datasets": "5.2.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.3",
+    "numpy": "2.5.5",
+    "pyarrow": "26.0.1"
+  },
+  "optional_gpu": {
+    "bitsandbytes": "0.50.2"
+  },
+  "sources": {
+    "torch": "https://pypi.org/project/torch/2.15.0/",
+    "transformers": "https://pypi.org/project/transformers/5.24.1/",
+    "peft": "https://pypi.org/project/peft/0.22.0/",
+    "trl": "https://pypi.org/project/trl/1.18.2/",
+    "accelerate": "https://pypi.org/project/accelerate/1.16.0/",
+    "datasets": "https://pypi.org/project/datasets/5.2.0/",
+    "safetensors": "https://pypi.org/project/safetensors/0.8.0/",
+    "tokenizers": "https://pypi.org/project/tokenizers/0.23.3/",
+    "numpy": "https://pypi.org/project/numpy/2.5.5/",
+    "pyarrow": "https://pypi.org/project/pyarrow/26.0.1/"
+  },
+  "runtime": "Python 3.15.2 Windows x64 CPU",
+  "evidence": "examples/VERIFICATION.md in the separate Python download; optional CUDA and hosted training not executed",
+  "documentation": {
+    "checked": "2026-11-25",
+    "transformers": "https://huggingface.co/docs/transformers/chat_templating",
+    "accelerate": "https://huggingface.co/docs/accelerate/usage_guides/gradient_accumulation",
+    "scope": "Live official stable documentation; tested APIs are pinned in requirements-lock.txt"
+  }
+}

@@ -55,7 +55,7 @@
 
 ## 來源、版本與下一步
 
-- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示6.5/2024，版本紀錄另列6.5.1更新。
+- [Cochrane：研究問題、納入標準與結果選擇](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03)：線上章節；入口標示 `6.5/2024` ，版本紀錄另列6.5.1更新。
 - [CONSORT／SPIRIT：正式發表版本](https://www.consort-spirit.org/published-statements)：CONSORT 2025與SPIRIT 2025。
 
 圖解與教材查核2026-11-16；查核日、網頁更新與正式文件出版日期分開。圖為本課原創，未複製或改編正式工具題庫及評分表。

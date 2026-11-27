@@ -18,7 +18,7 @@
 
 ## Collate與模型
 
-collate回tokens[N,T]、lengths[N]與labels[N]。Embedding9×8，GRU hidden12，head12→2。pack_padded_sequence使用lengths CPU、enforce_sorted=False，讓每筆最後有效state對齊，不讓額外PAD參與遞迴。回傳h_n[-1]再分類。
+collate回tokens[N,T]、lengths[N]與labels[N]。 $\mathrm{Embedding}9\times 8$ ，GRU hidden12，head12→2。pack_padded_sequence使用lengths CPU、 `enforce_sorted=False` ，讓每筆最後有效state對齊，不讓額外PAD參與遞迴。回傳h_n[-1]再分類。
 
 ## 資料與模式
 

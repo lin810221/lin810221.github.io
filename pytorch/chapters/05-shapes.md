@@ -33,7 +33,7 @@ print(x.mean(dim=1, keepdim=True).shape)   # [3,1]
 
 ## unsqueeze、squeeze、permute
 
-`unsqueeze(1)` 將 `[N]` 變 `[N,1]`；`squeeze(1)` 只移除指定長度為 1 的軸。無參數 squeeze 可能把 batch_size=1 的 batch 軸也刪掉，造成訓練時正常、單筆推論失敗。影像 HWC→CHW 使用 permute(2,0,1)，因為它是調換軸，不是單純重排形狀。
+`unsqueeze(1)` 將 `[N]` 變 `[N,1]`；`squeeze(1)` 只移除指定長度為 1 的軸。無參數 squeeze 可能把  `batch_size=1`  的 batch 軸也刪掉，造成訓練時正常、單筆推論失敗。影像 HWC→CHW 使用 permute(2,0,1)，因為它是調換軸，不是單純重排形狀。
 
 ## 最容易漏掉的回歸錯誤
 
@@ -41,7 +41,7 @@ print(x.mean(dim=1, keepdim=True).shape)   # [3,1]
 
 ## 練習與解答
 
-`x[2,3,4]` 對 dim=1 求和，keepdim=False 輸出 `[2,4]`；True 為 `[2,1,4]`。若每個樣本要有一個分數，需再決定聚合哪一軸。不要用 `view(-1)` 抹平所有維度來消除錯誤，因為那同時抹去了 batch 的意義。執行範例，親眼核對錯誤與修正後的差值形狀。
+`x[2,3,4]` 對  `dim=1`  求和， `keepdim=False`  輸出 `[2,4]`；True 為 `[2,1,4]`。若每個樣本要有一個分數，需再決定聚合哪一軸。不要用 `view(-1)` 抹平所有維度來消除錯誤，因為那同時抹去了 batch 的意義。執行範例，親眼核對錯誤與修正後的差值形狀。
 
 ## 完整可執行範例
 

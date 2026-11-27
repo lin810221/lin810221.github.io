@@ -36,7 +36,7 @@ torchrun --standalone --nproc-per-node=2 pytorch/examples/23_distributed.py --ru
 
 ## 延伸與練習
 
-DDP每rank保存完整模型，模型本身放不下時才進一步研究FSDP2、tensor/pipeline parallel與distributed checkpoint。它們有不同的分片、通訊與保存契約，不能只換類別名稱。練習$N=10$、world_size=3，說明為何sampler需要補樣本或丟資料；解答：不能整除，需明確決定策略並讓評估分母與覆蓋一致。
+DDP每rank保存完整模型，模型本身放不下時才進一步研究FSDP2、tensor/pipeline parallel與distributed checkpoint。它們有不同的分片、通訊與保存契約，不能只換類別名稱。練習$N=10$、 `world_size=3` ，說明為何sampler需要補樣本或丟資料；解答：不能整除，需明確決定策略並讓評估分母與覆蓋一致。
 
 ## 完整可執行範例
 

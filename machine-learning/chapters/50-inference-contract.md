@@ -26,7 +26,7 @@ null→NaN後，沿用train imputer與encoder；new_plan走handle_unknown政策�
 
 ## 輸出包含什麼
 
-scores是positive_class=1對應欄的機率，labels由保存threshold決定。回傳threshold便於追蹤，正式服務另附model_version、schema_version、錯誤狀態與label名稱。不能假設predict_proba[:,1]永遠是你想要的正例；先看classes_。
+scores是 `positive_class=1` 對應欄的機率，labels由保存threshold決定。回傳threshold便於追蹤，正式服務另附model_version、schema_version、錯誤狀態與label名稱。不能假設predict_proba[:,1]永遠是你想要的正例；先看classes_。
 
 ```python
 from course_core import experiment,predict_records,sample_records

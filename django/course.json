@@ -1,0 +1,1554 @@
+{
+  "slug": "django",
+  "title": "Django 完整實作教學",
+  "shortTitle": "Django",
+  "updated": "2026-11-26",
+  "baseline": "Django 6.1.3 · Python 3.15.2 · DRF 3.18.3",
+  "footerLabel": "THE DJANGO FIELD GUIDE",
+  "exampleBundle": "examples.zip",
+  "exampleFileExtensions": [
+    ".html",
+    ".css",
+    ".example"
+  ],
+  "exampleExcludeDirectories": [
+    "private-media",
+    "staticfiles",
+    ".runtime"
+  ],
+  "studyBundle": "study-pack.zip",
+  "studyFiles": [
+    "study",
+    "assets/figures"
+  ],
+  "learningResources": [
+    "study/README.md",
+    "study/worksheet.md",
+    "study/answers.md",
+    "study/glossary.md",
+    "study/sources.md",
+    "study/versions.json"
+  ],
+  "visualPresentation": "custom",
+  "searchHint": "搜尋 ORM、表單、權限、Admin、REST API…",
+  "groups": [
+    {
+      "id": "foundations",
+      "number": "01",
+      "title": "從零理解網站與Django",
+      "description": "HTTP、環境、專案、app與第一個請求。"
+    },
+    {
+      "id": "routing",
+      "number": "02",
+      "title": "設定、路由與請求處理",
+      "description": "設定分層、URL、View與middleware。"
+    },
+    {
+      "id": "templates",
+      "number": "03",
+      "title": "模板與使用者介面",
+      "description": "模板、繼承、context、靜態檔與可及性。"
+    },
+    {
+      "id": "models",
+      "number": "04",
+      "title": "資料模型與migration",
+      "description": "欄位、關聯、自訂User、schema演進與約束。"
+    },
+    {
+      "id": "orm",
+      "number": "05",
+      "title": "查詢、交易與效能",
+      "description": "QuerySet、關聯載入、聚合與併發。"
+    },
+    {
+      "id": "forms",
+      "number": "06",
+      "title": "表單與完整CRUD",
+      "description": "驗證、ModelForm、PRG、CBV與分頁。"
+    },
+    {
+      "id": "auth",
+      "number": "07",
+      "title": "帳號、權限與資料擁有權",
+      "description": "Session、登入、物件授權與CSRF。"
+    },
+    {
+      "id": "content",
+      "number": "08",
+      "title": "Admin、檔案與郵件",
+      "description": "後台範圍、私人附件與郵件流程。"
+    },
+    {
+      "id": "api",
+      "number": "09",
+      "title": "建立REST API",
+      "description": "Serializer、ViewSet、Session驗證與錯誤。"
+    },
+    {
+      "id": "testing",
+      "number": "10",
+      "title": "測試每個重要邊界",
+      "description": "資料庫、HTTP、權限、API與查詢測試。"
+    },
+    {
+      "id": "advanced",
+      "number": "11",
+      "title": "快取、非同步與工作",
+      "description": "快取範圍、服務層、async與Tasks。"
+    },
+    {
+      "id": "deployment",
+      "number": "12",
+      "title": "從本機走向部署",
+      "description": "WSGI、正式設定、靜態檔、PostgreSQL與維運。"
+    },
+    {
+      "id": "projects",
+      "number": "13",
+      "title": "完成StudyHub專題",
+      "description": "建置、種子資料、端到端流程與交付。"
+    },
+    {
+      "id": "maintenance",
+      "number": "14",
+      "title": "排錯、更新與長期維護",
+      "description": "診斷、威脅案例、升版、術語及來源。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "001-web-and-django",
+      "group": "foundations",
+      "title": "網站、後端與Django的角色",
+      "summary": "先知道瀏覽器在哪裡、Python在哪裡，才不會把部署方式混在一起。",
+      "tags": [
+        "foundations",
+        "web-and-django",
+        "Django"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「網站、後端與Django的角色」讀圖：追蹤瀏覽器與伺服器的請求及回應，指出靜態教材與Django程式各在哪裡執行。再回答：為什麼教材能放GitHub Pages，但StudyHub登入與儲存不能直接靠它執行？"
+    },
+    {
+      "id": "002-environment",
+      "group": "foundations",
+      "title": "安裝Django 6.1.3與隔離環境",
+      "summary": "以2026-11-26最新穩定版實測，不拿舊環境充當版本基準。",
+      "tags": [
+        "foundations",
+        "environment",
+        "Django"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「安裝Django 6.1.3與隔離環境」讀圖：追蹤瀏覽器與伺服器的請求及回應，指出靜態教材與Django程式各在哪裡執行。再回答：終端顯示已安裝Django，程式卻說找不到模組，先查什麼？",
+      "example": "01_environment.py"
+    },
+    {
+      "id": "003-project-app",
+      "group": "foundations",
+      "title": "Project、app與可重用功能",
+      "summary": "project組合整個網站，app描述一組功能。",
+      "tags": [
+        "foundations",
+        "project-app",
+        "Django"
+      ],
+      "visual": "figure-01",
+      "visualTask": "「Project、app與可重用功能」讀圖：追蹤瀏覽器與伺服器的請求及回應，指出靜態教材與Django程式各在哪裡執行。再回答：建立了desk資料夾就會自動出現資料表嗎？"
+    },
+    {
+      "id": "004-request-mvt",
+      "group": "foundations",
+      "title": "請求生命週期與MVT",
+      "summary": "沿著URL、View、Model與Template追蹤資料。",
+      "tags": [
+        "foundations",
+        "request-mvt",
+        "Django"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「請求生命週期與MVT」讀圖：區分project、app與設定，沿管理命令走到第一個頁面。再回答：health回傳200，是否代表整個網站都可用？",
+      "example": "03_request_response.py"
+    },
+    {
+      "id": "005-first-run",
+      "group": "foundations",
+      "title": "啟動第一個完整網站",
+      "summary": "從資料表、帳號與種子資料走到可以操作的頁面。",
+      "tags": [
+        "foundations",
+        "first-run",
+        "Django"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「啟動第一個完整網站」讀圖：區分project、app與設定，沿管理命令走到第一個頁面。再回答：重開01獨立算例後資料不見，但runserver資料還在，為什麼？"
+    },
+    {
+      "id": "006-foundation-exercises",
+      "group": "foundations",
+      "title": "起步練習：畫出你正在執行的系統",
+      "summary": "先用最小可用網站建立可驗證的操作習慣。",
+      "tags": [
+        "foundations",
+        "foundation-exercises",
+        "Django"
+      ],
+      "visual": "figure-02",
+      "visualTask": "「起步練習：畫出你正在執行的系統」讀圖：區分project、app與設定，沿管理命令走到第一個頁面。再回答：看到ModuleNotFoundError與404，應採取相同排錯方式嗎？"
+    },
+    {
+      "id": "007-project-layout",
+      "group": "routing",
+      "title": "閱讀完整專案目錄",
+      "summary": "知道檔案放在哪裡，也知道哪些是執行產物。",
+      "tags": [
+        "routing",
+        "project-layout",
+        "Django"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「閱讀完整專案目錄」讀圖：沿路由比對順序找到View，再檢查reverse的參數與名稱。再回答：migration與db.sqlite3為什麼不能用相同方式管理？"
+    },
+    {
+      "id": "008-settings",
+      "group": "routing",
+      "title": "設定、環境變數與秘密",
+      "summary": "設定模組是Python程式，環境變數不會自動從.env讀入。",
+      "tags": [
+        "routing",
+        "settings",
+        "Django"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「設定、環境變數與秘密」讀圖：沿路由比對順序找到View，再檢查reverse的參數與名稱。再回答：建立.env後設定沒有改變，可能是什麼原因？"
+    },
+    {
+      "id": "009-urls-reverse",
+      "group": "routing",
+      "title": "URL、converter與reverse",
+      "summary": "路由有順序，網址也應以名稱產生。",
+      "tags": [
+        "routing",
+        "urls-reverse",
+        "Django"
+      ],
+      "visual": "figure-03",
+      "visualTask": "「URL、converter與reverse」讀圖：沿路由比對順序找到View，再檢查reverse的參數與名稱。再回答：使用UUID網址後，可以省掉物件權限檢查嗎？",
+      "example": "02_url_reverse.py"
+    },
+    {
+      "id": "010-views-response",
+      "group": "routing",
+      "title": "View、狀態碼與回應內容",
+      "summary": "HTTP狀態描述結果，不能所有情況都回200。",
+      "tags": [
+        "routing",
+        "views-response",
+        "Django"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「View、狀態碼與回應內容」讀圖：依序讀middleware進入與返回路徑，指出本單元的檢查點。再回答：API回傳登入頁HTML，客戶端JSON解析失敗，應先查哪裡？"
+    },
+    {
+      "id": "011-middleware",
+      "group": "routing",
+      "title": "Middleware的順序與責任",
+      "summary": "請求向內、回應向外，順序會影響可用資訊。",
+      "tags": [
+        "routing",
+        "middleware",
+        "Django"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「Middleware的順序與責任」讀圖：依序讀middleware進入與返回路徑，指出本單元的檢查點。再回答：把View總耗時與其中資料庫耗時相加，會有什麼問題？",
+      "example": "03_request_response.py"
+    },
+    {
+      "id": "012-routing-exercises",
+      "group": "routing",
+      "title": "請求處理練習：找出失敗在哪一層",
+      "summary": "以狀態、路由與設定建立可重跑的診斷。",
+      "tags": [
+        "routing",
+        "routing-exercises",
+        "Django"
+      ],
+      "visual": "figure-04",
+      "visualTask": "「請求處理練習：找出失敗在哪一層」讀圖：依序讀middleware進入與返回路徑，指出本單元的檢查點。再回答：把所有404改成200並顯示錯誤文字，會讓網站更容易使用嗎？"
+    },
+    {
+      "id": "013-template-language",
+      "group": "templates",
+      "title": "Django模板語言與自動跳脫",
+      "summary": "模板負責呈現，不應直接承擔任意Python運算。",
+      "tags": [
+        "templates",
+        "template-language",
+        "Django"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「Django模板語言與自動跳脫」讀圖：追蹤模板繼承、context與輸出，指出哪些內容應保持自動跳脫。再回答：使用safe之前，應先回答什麼？",
+      "example": "04_escaping.py"
+    },
+    {
+      "id": "014-template-inheritance",
+      "group": "templates",
+      "title": "模板繼承與可重用版面",
+      "summary": "讓共用導覽、表單與內容區有明確的替換位置。",
+      "tags": [
+        "templates",
+        "template-inheritance",
+        "Django"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「模板繼承與可重用版面」讀圖：追蹤模板繼承、context與輸出，指出哪些內容應保持自動跳脫。再回答：把完整HTML複製到每個頁面，長期會遇到什麼問題？"
+    },
+    {
+      "id": "015-context-and-query",
+      "group": "templates",
+      "title": "Context與模板中的隱藏查詢",
+      "summary": "畫面只是一個迴圈，資料庫卻可能多跑很多次。",
+      "tags": [
+        "templates",
+        "context-and-query",
+        "Django"
+      ],
+      "visual": "figure-05",
+      "visualTask": "「Context與模板中的隱藏查詢」讀圖：追蹤模板繼承、context與輸出，指出哪些內容應保持自動跳脫。再回答：模板裡只加一個owner名稱，為何也可能影響效能？"
+    },
+    {
+      "id": "016-static-assets",
+      "group": "templates",
+      "title": "Static、media與collectstatic",
+      "summary": "程式資產與使用者檔案具有不同的保存和授權需求。",
+      "tags": [
+        "templates",
+        "static-assets",
+        "Django"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「Static、media與collectstatic」讀圖：區分靜態資產、使用者檔案與頁面內容，找出可及性與保存位置。再回答：為什麼不應把私人附件直接放進static？"
+    },
+    {
+      "id": "017-accessible-forms",
+      "group": "templates",
+      "title": "可及性、錯誤提示與深色介面",
+      "summary": "表單需要能操作、能理解，也能知道下一步。",
+      "tags": [
+        "templates",
+        "accessible-forms",
+        "Django"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「可及性、錯誤提示與深色介面」讀圖：區分靜態資產、使用者檔案與頁面內容，找出可及性與保存位置。再回答：只把錯誤欄位邊框變紅，是否足夠？"
+    },
+    {
+      "id": "018-template-exercises",
+      "group": "templates",
+      "title": "介面練習：把資料變成可操作的畫面",
+      "summary": "同時檢查呈現、查詢與檔案邊界。",
+      "tags": [
+        "templates",
+        "template-exercises",
+        "Django"
+      ],
+      "visual": "figure-06",
+      "visualTask": "「介面練習：把資料變成可操作的畫面」讀圖：區分靜態資產、使用者檔案與頁面內容，找出可及性與保存位置。再回答：模板越少行就一定比較快嗎？"
+    },
+    {
+      "id": "019-model-fields",
+      "group": "models",
+      "title": "Model欄位、驗證與資料庫型別",
+      "summary": "Model是資料契約，不只是產生表格的捷徑。",
+      "tags": [
+        "models",
+        "model-fields",
+        "Django"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「Model欄位、驗證與資料庫型別」讀圖：數清楚一對多與多對多的方向，指出外鍵與中介表的角色。再回答：加了MinValueValidator，是否所有直接資料庫寫入都一定被擋下？"
+    },
+    {
+      "id": "020-relations",
+      "group": "models",
+      "title": "外鍵、多對多與刪除行為",
+      "summary": "資料關係決定查詢、權限與刪除的後果。",
+      "tags": [
+        "models",
+        "relations",
+        "Django"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「外鍵、多對多與刪除行為」讀圖：數清楚一對多與多對多的方向，指出外鍵與中介表的角色。再回答：外鍵能找到tag，是否代表目前使用者可以使用它？",
+      "example": "05_relations.py"
+    },
+    {
+      "id": "021-custom-user",
+      "group": "models",
+      "title": "在第一個migration前決定User",
+      "summary": "可擴充帳號模型的決策要及早做。",
+      "tags": [
+        "models",
+        "custom-user",
+        "Django"
+      ],
+      "visual": "figure-07",
+      "visualTask": "「在第一個migration前決定User」讀圖：數清楚一對多與多對多的方向，指出外鍵與中介表的角色。再回答：已經migrate並有真實帳號後，能直接修改AUTH_USER_MODEL嗎？"
+    },
+    {
+      "id": "022-migrations",
+      "group": "models",
+      "title": "Migration：schema演進與資料搬移",
+      "summary": "makemigrations產生計畫，migrate才會套用。",
+      "tags": [
+        "models",
+        "migrations",
+        "Django"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「Migration：schema演進與資料搬移」讀圖：沿schema變更與資料搬移的順序，說明哪些舊資料必須先處理。再回答：修改models.py後，資料庫為什麼沒有立刻改變？"
+    },
+    {
+      "id": "023-constraints",
+      "group": "models",
+      "title": "Unique、CheckConstraint與索引",
+      "summary": "正確性與查詢速度是不同的設計問題。",
+      "tags": [
+        "models",
+        "constraints",
+        "Django"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「Unique、CheckConstraint與索引」讀圖：沿schema變更與資料搬移的順序，說明哪些舊資料必須先處理。再回答：UniqueConstraint能不能代替所有表單驗證？",
+      "example": "06_constraints.py"
+    },
+    {
+      "id": "024-model-exercises",
+      "group": "models",
+      "title": "資料模型練習：變更之前先問資料",
+      "summary": "用關係、約束與migration一起描述需求。",
+      "tags": [
+        "models",
+        "model-exercises",
+        "Django"
+      ],
+      "visual": "figure-08",
+      "visualTask": "「資料模型練習：變更之前先問資料」讀圖：沿schema變更與資料搬移的順序，說明哪些舊資料必須先處理。再回答：本機資料庫有欄位，migration卻沒有，能直接交付嗎？"
+    },
+    {
+      "id": "025-querysets",
+      "group": "orm",
+      "title": "QuerySet的惰性、篩選與SQL",
+      "summary": "寫出查詢描述，不等於已經執行查詢。",
+      "tags": [
+        "orm",
+        "querysets",
+        "Django"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「QuerySet的惰性、篩選與SQL」讀圖：比較逐列關聯查詢與批次載入，核對查詢次數及欄位範圍。再回答：filter接了三次，就一定執行三次SQL嗎？",
+      "example": "07_queryset.py"
+    },
+    {
+      "id": "026-orm-writes",
+      "group": "orm",
+      "title": "建立、更新、刪除與驗證邊界",
+      "summary": "模型實例與批次QuerySet操作有不同生命週期。",
+      "tags": [
+        "orm",
+        "orm-writes",
+        "Django"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「建立、更新、刪除與驗證邊界」讀圖：比較逐列關聯查詢與批次載入，核對查詢次數及欄位範圍。再回答：QuerySet.update後post_save沒有觸發，是Django壞了嗎？"
+    },
+    {
+      "id": "027-related-loading",
+      "group": "orm",
+      "title": "關聯載入、額外查詢與6.1 fetch modes",
+      "summary": "用查詢數驗證，避免只靠直覺優化。",
+      "tags": [
+        "orm",
+        "related-loading",
+        "Django"
+      ],
+      "visual": "figure-09",
+      "visualTask": "「關聯載入、額外查詢與6.1 fetch modes」讀圖：比較逐列關聯查詢與批次載入，核對查詢次數及欄位範圍。再回答：select_related與prefetch_related可以不分關係全部互換嗎？",
+      "example": "08_n_plus_one.py"
+    },
+    {
+      "id": "028-aggregation",
+      "group": "orm",
+      "title": "Count、annotate與統計分母",
+      "summary": "資料庫聚合能省傳輸，但條件與關聯仍要核對。",
+      "tags": [
+        "orm",
+        "aggregation",
+        "Django"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「Count、annotate與統計分母」讀圖：沿交易邊界讀提交與回滾，指出跨資料庫不能直接推論的部分。再回答：列表只顯示第一頁五筆，總任務數是否就應該是五？",
+      "example": "09_aggregation.py"
+    },
+    {
+      "id": "029-transactions",
+      "group": "orm",
+      "title": "Atomic、on_commit與併發界線",
+      "summary": "一次成功提交與一次HTTP請求不是相同概念。",
+      "tags": [
+        "orm",
+        "transactions",
+        "Django"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「Atomic、on_commit與併發界線」讀圖：沿交易邊界讀提交與回滾，指出跨資料庫不能直接推論的部分。再回答：SQLite測試通過，就能保證select_for_update在PostgreSQL的所有併發行為嗎？",
+      "example": "10_transaction.py"
+    },
+    {
+      "id": "030-orm-exercises",
+      "group": "orm",
+      "title": "ORM練習：先手算，再看SQL",
+      "summary": "用小資料驗證結果，用較多資料觀察成本。",
+      "tags": [
+        "orm",
+        "orm-exercises",
+        "Django"
+      ],
+      "visual": "figure-10",
+      "visualTask": "「ORM練習：先手算，再看SQL」讀圖：沿交易邊界讀提交與回滾，指出跨資料庫不能直接推論的部分。再回答：所有查詢結果正確，就代表效能也合格嗎？",
+      "example": "24_fetch_mode.py"
+    },
+    {
+      "id": "031-forms",
+      "group": "forms",
+      "title": "Form、is_valid與cleaned_data",
+      "summary": "先驗證再使用輸入，錯誤也是正常流程的一部分。",
+      "tags": [
+        "forms",
+        "forms",
+        "Django"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「Form、is_valid與cleaned_data」讀圖：追蹤輸入到cleaned_data，指出資料擁有權與欄位白名單在哪裡確認。再回答：只限制前端下拉選單，是否就能防止提交別人的tag ID？",
+      "example": "11_form_scope.py"
+    },
+    {
+      "id": "032-model-forms",
+      "group": "forms",
+      "title": "ModelForm與安全的欄位白名單",
+      "summary": "使用Model定義，不代表把所有欄位都開放編輯。",
+      "tags": [
+        "forms",
+        "model-forms",
+        "Django"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「ModelForm與安全的欄位白名單」讀圖：追蹤輸入到cleaned_data，指出資料擁有權與欄位白名單在哪裡確認。再回答：把所有Model欄位自動放進表單，可能帶來什麼維護風險？"
+    },
+    {
+      "id": "033-crud-prg",
+      "group": "forms",
+      "title": "CRUD與POST Redirect GET",
+      "summary": "把修改成功與重新整理的行為設計清楚。",
+      "tags": [
+        "forms",
+        "crud-prg",
+        "Django"
+      ],
+      "visual": "figure-11",
+      "visualTask": "「CRUD與POST Redirect GET」讀圖：追蹤輸入到cleaned_data，指出資料擁有權與欄位白名單在哪裡確認。再回答：使用PRG後，是否就不用處理重複付款或重複命令？",
+      "example": "12_create_prg.py"
+    },
+    {
+      "id": "034-class-based-views",
+      "group": "forms",
+      "title": "Class-based View與Mixin順序",
+      "summary": "使用框架生命週期，也要知道你覆寫哪一步。",
+      "tags": [
+        "forms",
+        "class-based-views",
+        "Django"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「Class-based View與Mixin順序」讀圖：沿POST、redirect與GET追蹤重新整理，核對分頁與狀態變更。再回答：使用UpdateView就會自動防止編輯別人的資料嗎？"
+    },
+    {
+      "id": "035-pagination",
+      "group": "forms",
+      "title": "分頁、穩定排序與篩選",
+      "summary": "頁碼、總數與篩選條件要一起維持。",
+      "tags": [
+        "forms",
+        "pagination",
+        "Django"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「分頁、穩定排序與篩選」讀圖：沿POST、redirect與GET追蹤重新整理，核對分頁與狀態變更。再回答：十二筆資料每頁五筆，最後一頁應有幾筆？",
+      "example": "19_pagination.py"
+    },
+    {
+      "id": "036-form-exercises",
+      "group": "forms",
+      "title": "表單與CRUD驗收練習",
+      "summary": "讓成功、錯誤與越權各有可重跑的結果。",
+      "tags": [
+        "forms",
+        "form-exercises",
+        "Django"
+      ],
+      "visual": "figure-12",
+      "visualTask": "「表單與CRUD驗收練習」讀圖：沿POST、redirect與GET追蹤重新整理，核對分頁與狀態變更。再回答：測到表單拒絕外部tag後，還需測API嗎？"
+    },
+    {
+      "id": "037-authentication",
+      "group": "auth",
+      "title": "認證、Session與Cookie",
+      "summary": "知道誰發出請求，和允許他做什麼，是兩個步驟。",
+      "tags": [
+        "auth",
+        "authentication",
+        "Django"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「認證、Session與Cookie」讀圖：區分身分驗證與物件授權，找出每次查詢的擁有者條件。再回答：用force_login測到頁面可開，是否已驗證密碼登入正確？",
+      "example": "13_sessions.py"
+    },
+    {
+      "id": "038-signup-login",
+      "group": "auth",
+      "title": "註冊、登入、登出與安全跳轉",
+      "summary": "優先使用框架表單與View，再補上你的流程。",
+      "tags": [
+        "auth",
+        "signup-login",
+        "Django"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「註冊、登入、登出與安全跳轉」讀圖：區分身分驗證與物件授權，找出每次查詢的擁有者條件。再回答：建立帳號時直接將password欄位寫進User.password，會有什麼問題？"
+    },
+    {
+      "id": "039-ownership",
+      "group": "auth",
+      "title": "物件授權與資料擁有者",
+      "summary": "每個列表、詳情、修改、下載與API都要有範圍。",
+      "tags": [
+        "auth",
+        "ownership",
+        "Django"
+      ],
+      "visual": "figure-13",
+      "visualTask": "「物件授權與資料擁有者」讀圖：區分身分驗證與物件授權，找出每次查詢的擁有者條件。再回答：detail有owner檢查，API列表是否就自然只顯示自己的任務？",
+      "example": "14_ownership.py"
+    },
+    {
+      "id": "040-csrf-xss",
+      "group": "auth",
+      "title": "CSRF、XSS、CSP與CORS的不同責任",
+      "summary": "相似的安全縮寫處理不同威脅，不能互相替代。",
+      "tags": [
+        "auth",
+        "csrf-xss",
+        "Django"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「CSRF、XSS、CSP與CORS的不同責任」讀圖：追蹤cookie、CSRF token及來源，說明哪些防護不能互相取代。再回答：測試Client的POST成功，是否表示CSRF設定已驗收？",
+      "example": "15_csrf_rejected.py"
+    },
+    {
+      "id": "041-permissions",
+      "group": "auth",
+      "title": "群組、模型permission與Admin身分",
+      "summary": "一組權限名稱，仍需要入口真正使用它。",
+      "tags": [
+        "auth",
+        "permissions",
+        "Django"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「群組、模型permission與Admin身分」讀圖：追蹤cookie、CSRF token及來源，說明哪些防護不能互相取代。再回答：使用者有export_task，是否代表能匯出所有帳號資料？"
+    },
+    {
+      "id": "042-auth-exercises",
+      "group": "auth",
+      "title": "帳號與授權驗收矩陣",
+      "summary": "用第二個帳號主動找出漏掉的入口。",
+      "tags": [
+        "auth",
+        "auth-exercises",
+        "Django"
+      ],
+      "visual": "figure-14",
+      "visualTask": "「帳號與授權驗收矩陣」讀圖：追蹤cookie、CSRF token及來源，說明哪些防護不能互相取代。再回答：越權測試回404，但資料真的被更新了，算通過嗎？",
+      "example": "16_csrf_valid.py"
+    },
+    {
+      "id": "043-admin-basics",
+      "group": "content",
+      "title": "Admin的模型管理與操作體驗",
+      "summary": "快速得到後台，仍需規劃可見欄位與編輯範圍。",
+      "tags": [
+        "content",
+        "admin-basics",
+        "Django"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「Admin的模型管理與操作體驗」讀圖：沿staff、模型權限與資料範圍三道檢查，找出後台可看的資料。再回答：啟用staff旗標，是否就自動取得所有模型修改權限？"
+    },
+    {
+      "id": "044-admin-scope",
+      "group": "content",
+      "title": "管理後台的資料範圍與關聯選項",
+      "summary": "Admin也不能成為跨帳號查詢的捷徑。",
+      "tags": [
+        "content",
+        "admin-scope",
+        "Django"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「管理後台的資料範圍與關聯選項」讀圖：沿staff、模型權限與資料範圍三道檢查，找出後台可看的資料。再回答：主列表已限制owner，還要檢查關聯欄位嗎？"
+    },
+    {
+      "id": "045-uploads",
+      "group": "content",
+      "title": "上傳文字附件：驗證與儲存",
+      "summary": "限制示範範圍，不把副檔名檢查當成通用檔案安全方案。",
+      "tags": [
+        "content",
+        "uploads",
+        "Django"
+      ],
+      "visual": "figure-15",
+      "visualTask": "「上傳文字附件：驗證與儲存」讀圖：沿staff、模型權限與資料範圍三道檢查，找出後台可看的資料。再回答：檔名結尾是.txt，是否就能信任內容？",
+      "example": "17_private_upload.py"
+    },
+    {
+      "id": "046-private-files",
+      "group": "content",
+      "title": "私人下載、回應標頭與刪除",
+      "summary": "檔案的URL不應繞過資料擁有者。",
+      "tags": [
+        "content",
+        "private-files",
+        "Django"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「私人下載、回應標頭與刪除」讀圖：沿私人檔案的上傳及下載路徑，指出哪裡再次檢查擁有者。再回答：FileResponse設為as_attachment，是否就保證只有owner能下載？"
+    },
+    {
+      "id": "047-email-reset",
+      "group": "content",
+      "title": "郵件後端與密碼重設流程",
+      "summary": "本地郵件可測流程，正式寄送仍需服務與設定。",
+      "tags": [
+        "content",
+        "email-reset",
+        "Django"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「郵件後端與密碼重設流程」讀圖：沿私人檔案的上傳及下載路徑，指出哪裡再次檢查擁有者。再回答：測試的mail.outbox有一封信，能否證明SMTP正式配置正常？"
+    },
+    {
+      "id": "048-content-exercises",
+      "group": "content",
+      "title": "後台與附件驗收練習",
+      "summary": "資料管理功能越方便，越要確認每條存取路徑。",
+      "tags": [
+        "content",
+        "content-exercises",
+        "Django"
+      ],
+      "visual": "figure-16",
+      "visualTask": "「後台與附件驗收練習」讀圖：沿私人檔案的上傳及下載路徑，指出哪裡再次檢查擁有者。再回答：交易回滾後，若檔案已被永久刪除，表示哪個邊界設計錯了？"
+    },
+    {
+      "id": "049-http-json",
+      "group": "api",
+      "title": "REST API與HTTP資源",
+      "summary": "API不只是把模板換成JSON，還要定義輸入和錯誤。",
+      "tags": [
+        "api",
+        "http-json",
+        "Django"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「REST API與HTTP資源」讀圖：追蹤JSON輸入到Serializer，再檢查哪些欄位由伺服器決定。再回答：JsonResponse是否自動提供Serializer、物件權限與分頁？"
+    },
+    {
+      "id": "050-serializers",
+      "group": "api",
+      "title": "Serializer的輸入驗證與唯讀欄位",
+      "summary": "序列化、驗證及建立更新具有不同責任。",
+      "tags": [
+        "api",
+        "serializers",
+        "Django"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「Serializer的輸入驗證與唯讀欄位」讀圖：追蹤JSON輸入到Serializer，再檢查哪些欄位由伺服器決定。再回答：把owner設成唯讀後，建立時應由誰填入？"
+    },
+    {
+      "id": "051-viewsets",
+      "group": "api",
+      "title": "ViewSet、router與共享服務",
+      "summary": "使用標準動作，也保留任務特有的行為契約。",
+      "tags": [
+        "api",
+        "viewsets",
+        "Django"
+      ],
+      "visual": "figure-17",
+      "visualTask": "「ViewSet、router與共享服務」讀圖：追蹤JSON輸入到Serializer，再檢查哪些欄位由伺服器決定。再回答：額外complete action可直接只憑主鍵取得任務嗎？",
+      "example": "18_rest_create.py"
+    },
+    {
+      "id": "052-api-auth",
+      "group": "api",
+      "title": "API驗證、Session CSRF與物件權限",
+      "summary": "預設認證方案決定回應語意，不能只背狀態碼。",
+      "tags": [
+        "api",
+        "api-auth",
+        "Django"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「API驗證、Session CSRF與物件權限」讀圖：依API回應狀態與分頁內容，指出驗證、授權及錯誤的差異。再回答：只寫IsOwner.has_object_permission，是否已保護列表內容？",
+      "example": "14_ownership.py"
+    },
+    {
+      "id": "053-api-errors-pagination",
+      "group": "api",
+      "title": "API分頁、驗證錯誤與一致回應",
+      "summary": "錯誤格式是客戶端契約的一部分。",
+      "tags": [
+        "api",
+        "api-errors-pagination",
+        "Django"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「API分頁、驗證錯誤與一致回應」讀圖：依API回應狀態與分頁內容，指出驗證、授權及錯誤的差異。再回答：count為十二、results只有五筆，是錯誤嗎？",
+      "example": "19_pagination.py"
+    },
+    {
+      "id": "054-api-exercises",
+      "group": "api",
+      "title": "REST API專題練習",
+      "summary": "同一資料契約，經由另一種介面驗收。",
+      "tags": [
+        "api",
+        "api-exercises",
+        "Django"
+      ],
+      "visual": "figure-18",
+      "visualTask": "「REST API專題練習」讀圖：依API回應狀態與分頁內容，指出驗證、授權及錯誤的差異。再回答：API建立成功後只檢查201，還漏掉什麼？"
+    },
+    {
+      "id": "055-testcase",
+      "group": "testing",
+      "title": "TestCase、測試資料庫與隔離",
+      "summary": "測試必須能在乾淨環境重建，而非依賴本機資料。",
+      "tags": [
+        "testing",
+        "testcase",
+        "Django"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「TestCase、測試資料庫與隔離」讀圖：由資料模型到HTTP層讀測試範圍，指出這個單元能驗證的責任。再回答：Django TestCase通過，是否代表真實多程序列鎖已驗證？"
+    },
+    {
+      "id": "056-client-csrf-tests",
+      "group": "testing",
+      "title": "HTTP測試Client與CSRF反例",
+      "summary": "測到拒絕與成功兩條路，才知道保護確實存在。",
+      "tags": [
+        "testing",
+        "client-csrf-tests",
+        "Django"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「HTTP測試Client與CSRF反例」讀圖：由資料模型到HTTP層讀測試範圍，指出這個單元能驗證的責任。再回答：為什麼要保留一個預期403的測試？",
+      "example": "15_csrf_rejected.py"
+    },
+    {
+      "id": "057-api-tests",
+      "group": "testing",
+      "title": "API測試與越權回歸",
+      "summary": "把使用者、資料與輸入矩陣一起建立。",
+      "tags": [
+        "testing",
+        "api-tests",
+        "Django"
+      ],
+      "visual": "figure-19",
+      "visualTask": "「API測試與越權回歸」讀圖：由資料模型到HTTP層讀測試範圍，指出這個單元能驗證的責任。再回答：用戶提交另一個owner，API忽略它並建立自己的資料，測試應檢查什麼？"
+    },
+    {
+      "id": "058-fixtures-factories",
+      "group": "testing",
+      "title": "測試資料、fixtures與可讀性",
+      "summary": "每筆資料應讓被測條件更清楚，而不是堆數量。",
+      "tags": [
+        "testing",
+        "fixtures-factories",
+        "Django"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「測試資料、fixtures與可讀性」讀圖：比較正常與越權案例，確認測試真的會攔住錯誤行為。再回答：測試資料越多，越能證明正確嗎？"
+    },
+    {
+      "id": "059-query-sideeffect-tests",
+      "group": "testing",
+      "title": "查詢數、on_commit與外部副作用",
+      "summary": "驗證的範圍要和測試工具真正執行的行為一致。",
+      "tags": [
+        "testing",
+        "query-sideeffect-tests",
+        "Django"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「查詢數、on_commit與外部副作用」讀圖：比較正常與越權案例，確認測試真的會攔住錯誤行為。再回答：測試註冊了on_commit但未執行，可以宣稱檔案已清除嗎？"
+    },
+    {
+      "id": "060-testing-exercises",
+      "group": "testing",
+      "title": "測試驗收：讓錯誤真的會被抓到",
+      "summary": "測試數量之外，還要檢查它們能否推翻錯誤實作。",
+      "tags": [
+        "testing",
+        "testing-exercises",
+        "Django"
+      ],
+      "visual": "figure-20",
+      "visualTask": "「測試驗收：讓錯誤真的會被抓到」讀圖：比較正常與越權案例，確認測試真的會攔住錯誤行為。再回答：測試很多但全是正常成功案例，最可能漏掉什麼？"
+    },
+    {
+      "id": "061-caching",
+      "group": "advanced",
+      "title": "快取範圍、TTL與失效策略",
+      "summary": "快取能縮短查詢，也可能把錯誤資料更快地送給別人。",
+      "tags": [
+        "advanced",
+        "caching",
+        "Django"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「快取範圍、TTL與失效策略」讀圖：沿使用者範圍與快取鍵，說明命中、失效與資料隔離。再回答：快取命中率很高，但不同使用者看到同一份摘要，代表什麼？",
+      "example": "20_cache_scope.py"
+    },
+    {
+      "id": "062-services-signals",
+      "group": "advanced",
+      "title": "服務層、Signals與副作用",
+      "summary": "讓動作有明確入口，避免重要規則藏在隱性連動。",
+      "tags": [
+        "advanced",
+        "services-signals",
+        "Django"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「服務層、Signals與副作用」讀圖：沿使用者範圍與快取鍵，說明命中、失效與資料隔離。再回答：一項重要規則只放post_save，所有更新都一定遵守嗎？"
+    },
+    {
+      "id": "063-async",
+      "group": "advanced",
+      "title": "Async View、非同步ORM與同步邊界",
+      "summary": "async是執行模型，不是把所有網站自動變快的關鍵字。",
+      "tags": [
+        "advanced",
+        "async",
+        "Django"
+      ],
+      "visual": "figure-21",
+      "visualTask": "「Async View、非同步ORM與同步邊界」讀圖：沿使用者範圍與快取鍵，說明命中、失效與資料隔離。再回答：把View改成async def後，裡面的同步資料庫與CPU工作會自動變成非阻塞嗎？",
+      "example": "23_async_view.py"
+    },
+    {
+      "id": "064-tasks",
+      "group": "advanced",
+      "title": "Django Tasks與真正的背景worker",
+      "summary": "內建協定可定義工作，不代表已經有持續運行的佇列。",
+      "tags": [
+        "advanced",
+        "tasks",
+        "Django"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「Django Tasks與真正的背景worker」讀圖：區分request、佇列與worker，指出ImmediateBackend的執行位置。再回答：看到TaskResult成功，能否證明工作是在背景worker執行？",
+      "example": "21_tasks.py"
+    },
+    {
+      "id": "065-idempotency",
+      "group": "advanced",
+      "title": "重試、冪等與命令識別",
+      "summary": "相同請求可能再來一次，業務動作要有明確規則。",
+      "tags": [
+        "advanced",
+        "idempotency",
+        "Django"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「重試、冪等與命令識別」讀圖：區分request、佇列與worker，指出ImmediateBackend的執行位置。再回答：相同命令識別回傳相同結果，是否保證外部郵件只寄一次？",
+      "example": "22_idempotency.py"
+    },
+    {
+      "id": "066-advanced-exercises",
+      "group": "advanced",
+      "title": "進階工程練習：速度與可靠性一起檢查",
+      "summary": "新增快取或背景工作時，原本的資料邊界仍需成立。",
+      "tags": [
+        "advanced",
+        "advanced-exercises",
+        "Django"
+      ],
+      "visual": "figure-22",
+      "visualTask": "「進階工程練習：速度與可靠性一起檢查」讀圖：區分request、佇列與worker，指出ImmediateBackend的執行位置。再回答：快取、async與queue一次全開後出錯，應如何縮小範圍？"
+    },
+    {
+      "id": "067-wsgi-asgi",
+      "group": "deployment",
+      "title": "WSGI、ASGI與正式服務入口",
+      "summary": "Django應用程式需要服務程序與網路邊界。",
+      "tags": [
+        "deployment",
+        "wsgi-asgi",
+        "Django"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「WSGI、ASGI與正式服務入口」讀圖：沿反向代理、WSGI及資料庫追蹤請求，指出各服務的責任。再回答：把runserver綁到公開IP，是否等於正式部署？"
+    },
+    {
+      "id": "068-production-security",
+      "group": "deployment",
+      "title": "正式設定、DEBUG與安全檢查",
+      "summary": "檢查工具能找部分問題，不能替你確認整個環境。",
+      "tags": [
+        "deployment",
+        "production-security",
+        "Django"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「正式設定、DEBUG與安全檢查」讀圖：沿反向代理、WSGI及資料庫追蹤請求，指出各服務的責任。再回答：check --deploy沒有ERROR，就能宣稱正式網站安全完成嗎？"
+    },
+    {
+      "id": "069-static-deployment",
+      "group": "deployment",
+      "title": "正式靜態檔與儲存策略",
+      "summary": "資產收集、版本與私人檔案分別管理。",
+      "tags": [
+        "deployment",
+        "static-deployment",
+        "Django"
+      ],
+      "visual": "figure-23",
+      "visualTask": "「正式靜態檔與儲存策略」讀圖：沿反向代理、WSGI及資料庫追蹤請求，指出各服務的責任。再回答：collectstatic完成後，私人附件也會自動安全提供嗎？"
+    },
+    {
+      "id": "070-postgresql",
+      "group": "deployment",
+      "title": "從SQLite到PostgreSQL",
+      "summary": "連線字串改了，資料與交易語意仍需驗證。",
+      "tags": [
+        "deployment",
+        "postgresql",
+        "Django"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「從SQLite到PostgreSQL」讀圖：區分程式、資料、靜態檔與備份，確認更新與回復的順序。再回答：切到PostgreSQL後執行migrate，原SQLite資料會自動出現嗎？"
+    },
+    {
+      "id": "071-operations",
+      "group": "deployment",
+      "title": "日誌、健康檢查、備份與回復",
+      "summary": "可運作的網站還需要能被觀察與恢復。",
+      "tags": [
+        "deployment",
+        "operations",
+        "Django"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「日誌、健康檢查、備份與回復」讀圖：區分程式、資料、靜態檔與備份，確認更新與回復的順序。再回答：有Git repo就等於有完整網站備份嗎？"
+    },
+    {
+      "id": "072-deployment-exercises",
+      "group": "deployment",
+      "title": "部署提案與驗收清單",
+      "summary": "把本地已驗證與目標環境待驗證寫清楚。",
+      "tags": [
+        "deployment",
+        "deployment-exercises",
+        "Django"
+      ],
+      "visual": "figure-24",
+      "visualTask": "「部署提案與驗收清單」讀圖：區分程式、資料、靜態檔與備份，確認更新與回復的順序。再回答：正式方案尚未決定網域，應直接開啟所有HSTS子網域選項嗎？"
+    },
+    {
+      "id": "073-capstone-plan",
+      "group": "projects",
+      "title": "StudyHub專題：先定義交付範圍",
+      "summary": "將所有章節組成一個可以交接的完整網站。",
+      "tags": [
+        "projects",
+        "capstone-plan",
+        "Django"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「StudyHub專題：先定義交付範圍」讀圖：沿專題的資料到評估路徑，列出每一階段應留下的成果。再回答：哪些功能最適合先做成可驗證基準？"
+    },
+    {
+      "id": "074-seed-demo",
+      "group": "projects",
+      "title": "合成資料與管理命令",
+      "summary": "可重跑示例，不預先建立通用密碼。",
+      "tags": [
+        "projects",
+        "seed-demo",
+        "Django"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「合成資料與管理命令」讀圖：沿專題的資料到評估路徑，列出每一階段應留下的成果。再回答：為什麼不在教材提供大家共用的admin密碼？"
+    },
+    {
+      "id": "075-end-to-end",
+      "group": "projects",
+      "title": "從登入到附件的一次完整操作",
+      "summary": "將成功流程與跨帳號反例放在一起演練。",
+      "tags": [
+        "projects",
+        "end-to-end",
+        "Django"
+      ],
+      "visual": "figure-25",
+      "visualTask": "「從登入到附件的一次完整操作」讀圖：沿專題的資料到評估路徑，列出每一階段應留下的成果。再回答：兩個頁面都顯示不同使用者名稱，足夠證明資料隔離嗎？"
+    },
+    {
+      "id": "076-performance-report",
+      "group": "projects",
+      "title": "專題報告：查詢、快取與限制",
+      "summary": "只報你量測過的條件，不把算例當成負載結果。",
+      "tags": [
+        "projects",
+        "performance-report",
+        "Django"
+      ],
+      "visual": "figure-26",
+      "visualTask": "「專題報告：查詢、快取與限制」讀圖：依端到端操作找出帳號、CRUD、附件與API共用的權限邊界。再回答：查詢從二十一次變一次，就能宣稱網站快二十一倍嗎？",
+      "example": "08_n_plus_one.py"
+    },
+    {
+      "id": "077-api-client-project",
+      "group": "projects",
+      "title": "API客戶端與共用業務流程",
+      "summary": "用同一契約檢查網站與程式客戶端。",
+      "tags": [
+        "projects",
+        "api-client-project",
+        "Django"
+      ],
+      "visual": "figure-26",
+      "visualTask": "「API客戶端與共用業務流程」讀圖：依端到端操作找出帳號、CRUD、附件與API共用的權限邊界。再回答：Django Client API測試成功，能否證明另一個網域的前端已完成CORS及Cookie整合？",
+      "example": "18_rest_create.py"
+    },
+    {
+      "id": "078-handoff-project",
+      "group": "projects",
+      "title": "交接專題：乾淨環境重新啟動",
+      "summary": "成品能被另一個人重建，才算完成工程主線。",
+      "tags": [
+        "projects",
+        "handoff-project",
+        "Django"
+      ],
+      "visual": "figure-26",
+      "visualTask": "「交接專題：乾淨環境重新啟動」讀圖：依端到端操作找出帳號、CRUD、附件與API共用的權限邊界。再回答：交接時最不應放進公開程式包的是什麼？"
+    },
+    {
+      "id": "079-troubleshooting",
+      "group": "maintenance",
+      "title": "排錯指南：環境、路由、資料與資產",
+      "summary": "先定位症狀，再使用最小可重現案例。",
+      "tags": [
+        "maintenance",
+        "troubleshooting",
+        "Django"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「排錯指南：環境、路由、資料與資產」讀圖：從症狀選最小反例，說明要蒐集什麼證據才能判定原因。再回答：CSRF失敗後直接加csrf_exempt，是否算找出原因？"
+    },
+    {
+      "id": "080-threat-model",
+      "group": "maintenance",
+      "title": "常見威脅與反例清單",
+      "summary": "將安全需求變成具體輸入與可觀察結果。",
+      "tags": [
+        "maintenance",
+        "threat-model",
+        "Django"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「常見威脅與反例清單」讀圖：從症狀選最小反例，說明要蒐集什麼證據才能判定原因。再回答：使用Django ORM後，能否把使用者字串任意拼進raw SQL？"
+    },
+    {
+      "id": "081-upgrades",
+      "group": "maintenance",
+      "title": "更新Django與相依套件",
+      "summary": "查當日穩定版，再在隔離環境驗證遷移。",
+      "tags": [
+        "maintenance",
+        "upgrades",
+        "Django"
+      ],
+      "visual": "figure-27",
+      "visualTask": "「更新Django與相依套件」讀圖：從症狀選最小反例，說明要蒐集什麼證據才能判定原因。再回答：只將requirements裡版本加大，其他測試都沒跑，算完成更新嗎？"
+    },
+    {
+      "id": "082-engineering-checklist",
+      "group": "maintenance",
+      "title": "Django工程完成清單",
+      "summary": "用可重跑的成果確認這門課真正串起來。",
+      "tags": [
+        "maintenance",
+        "engineering-checklist",
+        "Django"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「Django工程完成清單」讀圖：沿版本、測試與回復流程，指出交接前最後需要確認的內容。再回答：程式包漏掉templates，但原作者電腦能開網站，哪項驗收會發現？"
+    },
+    {
+      "id": "083-glossary-routes",
+      "group": "maintenance",
+      "title": "術語與三條學習路線",
+      "summary": "依起點安排閱讀，仍保留完整網站主線。",
+      "tags": [
+        "maintenance",
+        "glossary-routes",
+        "Django"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「術語與三條學習路線」讀圖：沿版本、測試與回復流程，指出交接前最後需要確認的內容。再回答：已有API經驗，哪部分仍值得優先補？"
+    },
+    {
+      "id": "084-sources",
+      "group": "maintenance",
+      "title": "版本來源、實測與界線",
+      "summary": "把教材日期、軟體版本與驗證環境明確連起來。",
+      "tags": [
+        "maintenance",
+        "sources",
+        "Django"
+      ],
+      "visual": "figure-28",
+      "visualTask": "「版本來源、實測與界線」讀圖：沿版本、測試與回復流程，指出交接前最後需要確認的內容。再回答：查核官方文件就足以宣稱範例已實測嗎？"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "figure-01",
+      "file": "assets/figures/01.svg",
+      "title": "靜態教材與動態網站在哪裡執行",
+      "alt": "上列瀏覽器下載靜態教材，下列請求由Python與資料庫處理；兩種網站有不同部署需求。",
+      "caption": "GitHub Pages能提供教材；Django後端需要Python服務。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/intro/overview/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-02",
+      "file": "assets/figures/02.svg",
+      "title": "Project、app與管理入口",
+      "alt": "project組合設定與根路由，app提供功能，管理命令建立與維護環境。",
+      "caption": "建立目錄、註冊app與套用migration是不同動作。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/intro/overview/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-03",
+      "file": "assets/figures/03.svg",
+      "title": "路由依順序選擇View",
+      "alt": "三條路由依固定與整數參數轉向不同View；reverse使用名稱和參數產生網址。",
+      "caption": "URL能定位物件，不代表使用者有權存取。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/http/urls/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-04",
+      "file": "assets/figures/04.svg",
+      "title": "Middleware的進入與返回",
+      "alt": "請求依序經安全、session、認證到View，回應反向經過；順序影響可用資訊。",
+      "caption": "計時分項不可重複；View耗時可能已包含資料庫。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/http/middleware/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-05",
+      "file": "assets/figures/05.svg",
+      "title": "模板繼承與資料輸出",
+      "alt": "共用base模板向三種子模板提供結構，各模板使用context呈現資料並保持自動跳脫。",
+      "caption": "繼承結構不是把任意Python放進HTML執行。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/templates/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-06",
+      "file": "assets/figures/06.svg",
+      "title": "程式資產與私人檔案的邊界",
+      "alt": "static、頁面HTML與使用者檔案分別有建置、呈現與授權流程，不應全部公開在同一資料夾。",
+      "caption": "可及性檢查橫跨頁面：label、焦點、錯誤與對比。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/howto/static-files/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-07",
+      "file": "assets/figures/07.svg",
+      "title": "StudyHub資料關係",
+      "alt": "User透過owner連到多個Task，Task與Tag為多對多，每個Task可有多個附件。",
+      "caption": "關聯存在性不等於擁有者授權。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/db/models/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-08",
+      "file": "assets/figures/08.svg",
+      "title": "Schema演進與資料搬移",
+      "alt": "模型變更先產生migration，審查SQL與資料轉換後才套用至資料庫。",
+      "caption": "有版本的migration才能在乾淨環境重建schema。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/migrations/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-09",
+      "file": "assets/figures/09.svg",
+      "title": "二十筆資料的關聯查詢算例",
+      "alt": "在指定假設下逐列讀取owner需二十一次，批次載入兩次，單值join一次；並非所有關係皆如此。",
+      "caption": "查詢數是指定算例，不能推論實際耗時比例。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/db/optimization/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-10",
+      "file": "assets/figures/10.svg",
+      "title": "交易提交、回滾與副作用",
+      "alt": "atomic中的相關寫入一起提交或回滾，外部副作用透過on_commit延後，仍需另外處理失敗。",
+      "caption": "SQLite與PostgreSQL的鎖定語意需分別驗證。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/db/transactions/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-11",
+      "file": "assets/figures/11.svg",
+      "title": "表單輸入經過哪些檢查",
+      "alt": "原始輸入經欄位轉型與驗證，再按owner範圍確認關聯，最後才寫入。",
+      "caption": "前端選單不能替代伺服器驗證。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/forms/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-12",
+      "file": "assets/figures/12.svg",
+      "title": "POST Redirect GET與重新整理",
+      "alt": "成功POST儲存後回傳redirect，瀏覽器GET詳情；重新整理通常重做GET，並非完整去重機制。",
+      "caption": "PRG改善互動；重試仍需要命令識別與冪等策略。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/forms/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-13",
+      "file": "assets/figures/13.svg",
+      "title": "認證之後仍要限制物件範圍",
+      "alt": "Alice只能操作屬於自己的任務，Bob的物件被拒絕；登入本身不授予所有資料權限。",
+      "caption": "列表、詳情、寫入、下載與API都要核對owner。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/auth/default/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-14",
+      "file": "assets/figures/14.svg",
+      "title": "CSRF與其他防護不能互相取代",
+      "alt": "Session寫入需CSRF及資料授權，CORS只處理瀏覽器跨來源讀取條件，CSP亦有不同責任。",
+      "caption": "本圖簡化流程；實際還需來源、Cookie及HTTP條件。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/ref/csrf/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-15",
+      "file": "assets/figures/15.svg",
+      "title": "Admin的三道範圍",
+      "alt": "staff資格、模型permission與物件queryset依序限制後台能做的動作與可見資料。",
+      "caption": "列表安全之外，還要檢查關聯選單與action。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/ref/contrib/admin/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-16",
+      "file": "assets/figures/16.svg",
+      "title": "私人附件的存取路徑",
+      "alt": "上傳先確認任務owner再驗證內容，儲存後下載仍需重新授權，不提供公開media捷徑。",
+      "caption": "FileResponse的attachment標頭不會替你做授權。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/files/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-17",
+      "file": "assets/figures/17.svg",
+      "title": "JSON到Serializer再到服務",
+      "alt": "JSON輸入經Serializer驗證與唯讀白名單，再由伺服器補owner並呼叫共用服務。",
+      "caption": "ModelSerializer不是把所有Model欄位自動公開。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/forms/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-18",
+      "file": "assets/figures/18.svg",
+      "title": "API狀態與分頁內容",
+      "alt": "建立、輸入錯誤與授權失敗保留不同狀態；分頁count和results也有不同分母。",
+      "caption": "401或403取決於認證方案；不要只背固定對照。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/http/urls/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-19",
+      "file": "assets/figures/19.svg",
+      "title": "不同測試層回答不同問題",
+      "alt": "底層資料與服務、HTTP及API、部署與真實瀏覽器各有範圍，不能互相冒名。",
+      "caption": "區塊寬度表示範圍示意，不代表測試數量。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/testing/overview/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-20",
+      "file": "assets/figures/20.svg",
+      "title": "以反例覆蓋每一個入口",
+      "alt": "HTML、API與Admin分別檢查正常、非法及跨帳號情境，不以單一成功案例替代全部。",
+      "caption": "拒絕回應之外，還要檢查資料沒有被修改。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/testing/tools/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-21",
+      "file": "assets/figures/21.svg",
+      "title": "快取鍵必須包含資料範圍",
+      "alt": "不同使用者有不同摘要鍵，提交後只清除相應owner；TTL不是唯一失效策略。",
+      "caption": "LocMem每程序獨立，不代表多worker共用快取。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/cache/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-22",
+      "file": "assets/figures/22.svg",
+      "title": "Tasks、queue與worker的責任",
+      "alt": "請求提交後可enqueue工作，由外部worker執行；本課ImmediateBackend則在原程序立即執行。",
+      "caption": "Django Tasks提供協定；真正worker與queue需另配置。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/tasks/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-23",
+      "file": "assets/figures/23.svg",
+      "title": "正式服務的組件邊界",
+      "alt": "請求經TLS反向代理、WSGI或ASGI服務、Django後端到資料庫，每層都需自己的設定。",
+      "caption": "反向代理標頭只能信任已確認的代理設定。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/howto/deployment/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-24",
+      "file": "assets/figures/24.svg",
+      "title": "部署時分開管理四種內容",
+      "alt": "程式、資料庫、靜態資產與私人檔案有不同版本、保存與回復需求，不應只備份原始碼。",
+      "caption": "更新前確認資料相容性與可用回復路徑。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-25",
+      "file": "assets/figures/25.svg",
+      "title": "StudyHub專題的交付鏈",
+      "alt": "從契約與資料模型、介面與API、測試及成品，到部署條件逐步完成同一專題。",
+      "caption": "所有入口共用資料範圍與明確業務服務。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/intro/overview/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-26",
+      "file": "assets/figures/26.svg",
+      "title": "一次完整操作經過的邊界",
+      "alt": "使用者登入後建立任務、上傳附件，最後透過頁面或API更新；每一步重新檢查授權。",
+      "caption": "共用Model不代表每個入口已自動套用相同權限。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/auth/default/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-27",
+      "file": "assets/figures/27.svg",
+      "title": "排錯先縮小，再提出原因",
+      "alt": "由症狀分成環境路由、資料權限與資產部署，使用最小可重現案例判斷。",
+      "caption": "保存版本、設定、request ID與完整錯誤，遮蔽秘密。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/topics/logging/"
+      ],
+      "license": "original educational diagram"
+    },
+    {
+      "id": "figure-28",
+      "file": "assets/figures/28.svg",
+      "title": "更新版本與回復流程",
+      "alt": "查核相容性後在隔離環境升級，驗證migration與功能，再進行有回復計畫的發布。",
+      "caption": "版本、資料與測試證據一起交付。",
+      "sources": [
+        "https://docs.djangoproject.com/en/6.1/howto/upgrade-version/"
+      ],
+      "license": "original educational diagram"
+    }
+  ]
+}

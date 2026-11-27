@@ -22,7 +22,7 @@ mean pooling忽略順序，[1,2]與[2,1]得到相同句向量。若任務需要�
 
 ## Padding 的兩個測試
 
-增加尾部PAD不應改變句子表示；padding_idx=0那一列的梯度應為零。本課測試對兩項都驗證。label float或token ID超出vocabulary時，應先修資料契約，不用clamp把所有未知詞默默改成最後一個token。正式tokenizer應定義UNK與PAD規則。
+增加尾部PAD不應改變句子表示； `padding_idx=0` 那一列的梯度應為零。本課測試對兩項都驗證。label float或token ID超出vocabulary時，應先修資料契約，不用clamp把所有未知詞默默改成最後一個token。正式tokenizer應定義UNK與PAD規則。
 
 ## 訓練與推論的相同契約
 
@@ -30,7 +30,7 @@ mean pooling忽略順序，[1,2]與[2,1]得到相同句向量。若任務需要�
 
 ## 練習與解答
 
-讓`[1,2,0,0]`和`[1,2]`分別推論，比較logits，應在容許誤差內相同。把mean改成普通`.mean(dim=1)`後，結果開始依PAD長度改變，證明錯誤來自分母。再比較[1,2]與[2,1]，mean模型完全相同是架構限制，不是訓練不夠久。
+讓`[1,2,0,0]`和`[1,2]`分別推論，比較logits，應在容許誤差內相同。把mean改成普通 `.mean(dim=1)` 後，結果開始依PAD長度改變，證明錯誤來自分母。再比較[1,2]與[2,1]，mean模型完全相同是架構限制，不是訓練不夠久。
 
 最後嘗試用三類而非兩類標籤，修改head與資料，核對target範圍。不必為了擴類改Embedding的vocabulary，因為詞表大小與輸出類別數是兩個不同概念。執行本章範例，觀察loss與PAD梯度，而非只看模型印出幾個數。
 

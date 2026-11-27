@@ -1,0 +1,9 @@
+{
+  "title": "一次實驗必須留下哪些身分",
+  "alt": "資料、模板、基底與設定流向訓練，訓練成果須經保留評估才能交付。",
+  "caption": "權重檔本身不足以重建實驗。",
+  "sources": [
+    "https://huggingface.co/docs/trl/v1.18.2/sft_trainer"
+  ],
+  "license": "original educational diagram"
+}

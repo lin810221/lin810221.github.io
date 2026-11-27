@@ -38,7 +38,7 @@
 
 ## 練習與解答
 
-**請先嘗試：** 兩個 tenant 都有 doc_id=AX-100，是否能用 doc_id 直接當所有引擎的唯一 ID？
+**請先嘗試：** 兩個 tenant 都有  `doc_id=AX-100` ，是否能用 doc_id 直接當所有引擎的唯一 ID？
 
 <details><summary>展開解答與判斷依據</summary>
 

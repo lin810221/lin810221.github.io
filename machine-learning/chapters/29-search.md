@@ -26,15 +26,15 @@ C或alpha跨數量級時，選對數尺度比等差0到100常更合理。depth�
 
 ## 成本與輸出
 
-候選數M、K折，大約M×K次fit，加上refit；嵌套搜尋再乘外折。閱讀cv_results_的每折score、mean/std、fit時間與參數，不只best_params。對於失敗候選，開發時error_score='raise'可直接定位，正式搜尋則需記錄失敗政策。
+候選數M、K折，大約 $M\times K$ 次fit，加上refit；嵌套搜尋再乘外折。閱讀cv_results_的每折score、mean/std、fit時間與參數，不只best_params。對於失敗候選，開發時error_score='raise'可直接定位，正式搜尋則需記錄失敗政策。
 
 ## 保留資料的角色
 
-本章只在train索引搜$C=[.01,.1,1,10]$，test_used=False。下一步可以用獨立val調threshold；若繼續用val挑更多模型，也要記錄它參與的決策。若要評估整套搜尋而沒有充足holdout，使用nested CV。
+本章只在train索引搜$C=[.01,.1,1,10]$， `test_used=False` 。下一步可以用獨立val調threshold；若繼續用val挑更多模型，也要記錄它參與的決策。若要評估整套搜尋而沒有充足holdout，使用nested CV。
 
 ## 練習與解答
 
-3個depth×4個leaf×5個樹數，5折約300次fit，加refit約301。解答：先估預算並縮小有意義空間，別等一整天才發現大多候選無效。若最佳參數落搜尋邊界，可有理由擴充train CV，但不能根據test表現擴範圍後仍報原test未碰過。
+3個 $\mathrm{depth}\times 4$ 個 $\mathrm{leaf}\times 5$ 個樹數，5折約300次fit，加refit約301。解答：先估預算並縮小有意義空間，別等一整天才發現大多候選無效。若最佳參數落搜尋邊界，可有理由擴充train CV，但不能根據test表現擴範圍後仍報原test未碰過。
 
 ## 完整可執行範例
 

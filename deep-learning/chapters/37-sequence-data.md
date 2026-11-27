@@ -26,7 +26,7 @@ many-to-one可用最後有效hidden或mask pooling，many-to-many每步輸出，
 
 ## Shape與batch規則
 
-Torch RNN可batch_first=True使用[N,T,D]，hidden state仍有[num_layers×directions,N,H]形式。LSTM還有cell state；不能看到batch_first就把所有state軸也交換。長度與mask是明確metadata，不應把PAD0當普通token參與平均。
+Torch RNN可 `batch_first=True` 使用[N,T,D]，hidden state仍有 $[num_{\mathrm{layers}}\times \mathrm{directions},N,H]$ 形式。LSTM還有cell state；不能看到batch_first就把所有state軸也交換。長度與mask是明確metadata，不應把PAD0當普通token參與平均。
 
 ## 本課的生成任務
 

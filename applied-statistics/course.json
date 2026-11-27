@@ -378,7 +378,7 @@
       "id": "25-proportion-sampling",
       "group": "sampling",
       "title": "樣本比例的抽樣分配",
-      "summary": "從成功次數到比例，明確區分p與p̂。",
+      "summary": "從成功次數到比例，明確區分母體比例 $p$ 與樣本比例 $\\hat p$。",
       "tags": [
         "抽樣及抽樣分配",
         "proportion sampling"

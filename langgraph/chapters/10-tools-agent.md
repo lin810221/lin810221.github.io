@@ -23,7 +23,7 @@ user → agent ──有 tool_calls──→ tools ──→ agent
 
 ## 不花 API 費用的完整協定示範
 
-這段程式使用真正的工具物件與 ToolNode，但模型節點以固定請求模擬。它固定計算 6×7，不會解析任意算式。
+這段程式使用真正的工具物件與 ToolNode，但模型節點以固定請求模擬。它固定計算  $6\times 7$ ，不會解析任意算式。
 
 <!-- example:04_tools_agent.py -->
 

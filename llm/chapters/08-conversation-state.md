@@ -30,7 +30,7 @@
 
 OpenAI Responses 可依介面使用 previous_response_id 或 Conversations。Gemini Interactions 提供 previous_interaction_id。引用歷史不表示新的 system、tools 或 generation config 全部自動繼承；應查各欄位的當輪規則並明確提供。
 
-本課的最小 REST 範例使用 store=false，因此不以服務端保存串接示範多輪。若改採服務端歷史，需重新確認保存設定與可用能力，不能一邊禁止資源保存、一邊假設往後仍可引用其 ID。
+本課的最小 REST 範例使用  `store=false` ，因此不以服務端保存串接示範多輪。若改採服務端歷史，需重新確認保存設定與可用能力，不能一邊禁止資源保存、一邊假設往後仍可引用其 ID。
 
 ## Claude Messages 的歷史
 

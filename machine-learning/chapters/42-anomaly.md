@@ -22,7 +22,7 @@
 
 ## LOF與novelty
 
-LocalOutlierFactor比較局部密度與鄰居，適合找局部異常。預設outlier detection與novelty=True的使用介面不同，後者才設計對未見資料做相應predict／score；不能把訓練與新資料分數混用。OneClassSVM也有kernel、尺度與ν等假設。
+LocalOutlierFactor比較局部密度與鄰居，適合找局部異常。預設outlier detection與 `novelty=True` 的使用介面不同，後者才設計對未見資料做相應predict／score；不能把訓練與新資料分數混用。OneClassSVM也有kernel、尺度與 $\nu $ 等假設。
 
 ## 分數方向要寫清楚
 

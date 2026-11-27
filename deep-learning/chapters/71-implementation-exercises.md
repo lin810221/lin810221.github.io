@@ -22,7 +22,7 @@
 
 ## 挑戰三：辨認凍結的三個意思
 
-將模型分為backbone與head，要求backbone參數不更新，但head可學。解答：設定backbone requires_grad=False，optimizer只收head，若backbone含BatchNorm／Dropout還需決定其模式與buffer政策。只檢查weight不變，不能證明running statistics不變。第25例特別使用隨機backbone，不把這叫作預訓練效益。
+將模型分為backbone與head，要求backbone參數不更新，但head可學。解答：設定backbone  `requires_grad=False` ，optimizer只收head，若backbone含BatchNorm／Dropout還需決定其模式與buffer政策。只檢查weight不變，不能證明running statistics不變。第25例特別使用隨機backbone，不把這叫作預訓練效益。
 
 ## 挑戰四：最後小批次的梯度累積
 

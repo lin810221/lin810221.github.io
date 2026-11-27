@@ -32,7 +32,7 @@ print(torch.autograd.gradcheck(lambda v: (v.sin()*v).sum(), (x,)))
 
 ## 三個會切斷路徑的行為
 
-先 item 再用 Python 數字重建 loss；將中間值 detach；把 Tensor 轉 NumPy 計算再包回 Tensor。這些操作可能讓數值看起來正常，卻無法回傳原參數的導數。若確實需要不可微分的流程，應明確設計訓練目標，而非用 requires_grad=True 偽造原本的連接。
+先 item 再用 Python 數字重建 loss；將中間值 detach；把 Tensor 轉 NumPy 計算再包回 Tensor。這些操作可能讓數值看起來正常，卻無法回傳原參數的導數。若確實需要不可微分的流程，應明確設計訓練目標，而非用  `requires_grad=True`  偽造原本的連接。
 
 ## in-place 與 anomaly detection
 

@@ -8,9 +8,9 @@ Prefill處理已知的整段prompt；decode則逐步加入新token。兩者使�
 
 ## Prefill建立什麼
 
-長度P的prompt一次forward，算出各層hidden states與K/V，最後位置的logits用來選第一個新token。若啟用cache，前綴的K/V會保留下來，之後不必重新計算相同前綴的每一層投影。
+長度P的prompt一次forward，算出各層hidden states與 $\frac{K}{V}$ ，最後位置的logits用來選第一個新token。若啟用cache，前綴的 $\frac{K}{V}$ 會保留下來，之後不必重新計算相同前綴的每一層投影。
 
-對完整dense attention而言，prefill內部有P×P的因果關係；高效kernel能改善記憶體流量，但不是讓所有計算消失。較長prompt還會增加tokenization、排程及cache配置成本，需分開量測。
+對完整dense attention而言，prefill內部有 $P\times P$ 的因果關係；高效kernel能改善記憶體流量，但不是讓所有計算消失。較長prompt還會增加tokenization、排程及cache配置成本，需分開量測。
 
 ## Decode新增什麼
 
@@ -26,7 +26,7 @@ TTFT通常描述到第一個輸出token的時間；每輸出token延遲、總生
 
 ## 動手觀察shape
 
-17_cache_equivalence.py保留prefix的cache，再送尾段chunk；輸出cache長度從3增加到5。20_kv_capacity.py可估純K/V儲存量，但沒有包含權重、workspace或排隊。CPU小模型的延遲不拿來代表GPU服務。
+17_cache_equivalence.py保留prefix的cache，再送尾段chunk；輸出cache長度從3增加到5。20_kv_capacity.py可估純 $\frac{K}{V}$ 儲存量，但沒有包含權重、workspace或排隊。CPU小模型的延遲不拿來代表GPU服務。
 
 ## 練習與解析
 

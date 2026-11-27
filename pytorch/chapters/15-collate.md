@@ -14,11 +14,11 @@
 
 ## 為什麼預設堆疊會失敗
 
-兩個 token list 長度分別 2 與 3，無法直接 stack 成一般矩形 Tensor。collate_fn 接收一批樣本 list，將內容整理成模型可接受的契約。本課使用 PAD=0，真實 token 從 1 開始，輸出 tokens[N,T]、mask[N,T] 與 labels[N]。
+兩個 token list 長度分別 2 與 3，無法直接 stack 成一般矩形 Tensor。collate_fn 接收一批樣本 list，將內容整理成模型可接受的契約。本課使用  $\mathrm{PAD}=0$ ，真實 token 從 1 開始，輸出 tokens[N,T]、mask[N,T] 與 labels[N]。
 
 ## 看懂補零後的意義
 
-序列 `[1,2]` 與 `[3]` 變成 `[[1,2],[3,0]]`，mask 為 `[[True,True],[True,False]]`。PAD 的 embedding 可設 padding_idx=0 以免更新該列，但若最後對兩個位置直接 mean，第二句仍被多除了一次。因此需要 mask 與有效 token 計數，而不只是將 PAD 向量設零。
+序列 `[1,2]` 與 `[3]` 變成 `[[1,2],[3,0]]`，mask 為 `[[True,True],[True,False]]`。PAD 的 embedding 可設  `padding_idx=0`  以免更新該列，但若最後對兩個位置直接 mean，第二句仍被多除了一次。因此需要 mask 與有效 token 計數，而不只是將 PAD 向量設零。
 
 $$
 h_i=\frac{\sum_t m_{i,t}e_{i,t}}{\sum_t m_{i,t}}

@@ -27,11 +27,11 @@ $$
 
 ## 偏差校正如何手算
 
-初始m與v為0，第一步會偏向0。校正使用$\hat m_t=\frac{m_t}{1-\beta_1^t}$、$\hat v_t=\frac{v_t}{1-\beta_2^t}$。例如第一步$g=2$、β₁=.9、β₂=.999，m=.2、$v=.004$；校正後$\hat m=2$、$\hat v=4$。在忽略epsilon的簡化下，該座標資料梯度更新量約為lr，而不是2lr。這並不表示Adam永遠只看符號，後續歷史會改變兩個估計。
+初始m與v為0，第一步會偏向0。校正使用$\hat m_t=\frac{m_t}{1-\beta_1^t}$、$\hat v_t=\frac{v_t}{1-\beta_2^t}$。例如第一步$g=2$、 $\beta _{1}=.9$ 、 $\beta _{2}=.999$ ， $m=.2$ 、$v=.004$；校正後$\hat m=2$、$\hat v=4$。在忽略epsilon的簡化下，該座標資料梯度更新量約為lr，而不是2lr。這並不表示Adam永遠只看符號，後續歷史會改變兩個估計。
 
 ## 為什麼AdamW分開decay
 
-將λθ加進gradient會經過自適應縮放；解耦decay則在更新中直接對weight收縮。一般SGD的某些形式可對應L2，但Adam下兩者不等價。選API時記錄Adam／AdamW及decay規則，不只寫「用了Adam加正則化」。
+將 $\lambda \theta $ 加進gradient會經過自適應縮放；解耦decay則在更新中直接對weight收縮。一般SGD的某些形式可對應L2，但Adam下兩者不等價。選API時記錄Adam／AdamW及decay規則，不只寫「用了Adam加正則化」。
 
 $$
 \theta_{t+1}=(1-\eta\lambda)\theta_t
@@ -42,7 +42,7 @@ $$
 
 ## 可手算的零資料梯度
 
-$w=2$、lr=.1、AdamW decay=.2、當前資料grad=0時，解耦項使w變2×(1-.02)=1.96。第12例同時列Adam以L2型weight_decay的第一步，結果不同。若grad為None，optimizer是否跳過該參數也需按API理解，不把None與零Tensor混為一談。
+$w=2$、 `lr=.1` 、AdamW  `decay=.2` 、當前資料 `grad=0` 時，解耦項使w變 $2\times (1-.02)=1.96$ 。第12例同時列Adam以L2型weight_decay的第一步，結果不同。若grad為None，optimizer是否跳過該參數也需按API理解，不把None與零Tensor混為一談。
 
 ## 參數分組與續訓
 

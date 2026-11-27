@@ -373,7 +373,7 @@
       "id": "23-perfect-competition",
       "group": "producers",
       "title": "完全競爭：價格接受者的供給決策",
-      "summary": "從利潤函數推到P=MC，再補上停工與可行條件。",
+      "summary": "從利潤函數推到 $P=\\operatorname{MC}$，再補上停工與可行條件。",
       "tags": [
         "生產、成本與完全競爭",
         "perfect competition"
@@ -1086,7 +1086,7 @@
       "id": "80-ols-did-and-limitations",
       "group": "evidence",
       "title": "OLS與差中差：算式之外的識別條件",
-      "summary": "讀懂簡單迴歸與2×2 DID，並列出它們不能自動解決的問題。",
+      "summary": "讀懂簡單迴歸與 $2\\times2$ DID，並列出它們不能自動解決的問題。",
       "tags": [
         "資料、證據與整合專題",
         "ols did and limitations"

@@ -14,7 +14,7 @@
 
 ## 任務不是一張模糊的表格
 
-本專題生成480筆、每筆4個常態特徵，標籤依x1x2+.25x3−.1x4>0。交乘讓它含非線性交互，MLP可學這種表示。因為規則公開，直接計算規則有完美答案；這是教學用oracle，現實未知標籤通常沒有可直接查詢的規則。
+本專題生成480筆、每筆4個常態特徵，標籤依 $x1x2+.25x3-.1x4>0$ 。交乘讓它含非線性交互，MLP可學這種表示。因為規則公開，直接計算規則有完美答案；這是教學用oracle，現實未知標籤通常沒有可直接查詢的規則。
 
 ## 切分與前處理
 
@@ -22,7 +22,7 @@
 
 ## 模型與訓練協定
 
-4→24→24→2的ReLU MLP共有770個參數。batch24、AdamW lr=.02、weight_decay=.001，訓練24epochs。每epoch以validation loss挑最佳快照，再載回最佳state；保存快照使用detach／clone，避免被後續更新覆寫。accuracy為輔助指標，主選擇標準在訓練前就寫好。
+4→24→24→2的ReLU MLP共有770個參數。batch24、AdamW  `lr=.02` 、 `weight_decay=.001` ，訓練24epochs。每epoch以validation loss挑最佳快照，再載回最佳state；保存快照使用detach／clone，避免被後續更新覆寫。accuracy為輔助指標，主選擇標準在訓練前就寫好。
 
 $$
 \hat e=\arg\min_{e\in\{1,\ldots,24\}}L_{\rm val}(\theta_e),
